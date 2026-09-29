@@ -1,0 +1,308 @@
+{
+ "id": "amtrak-69-2026",
+ "route_id": "69",
+ "line_ids": [
+  "amtrak-69"
+ ],
+ "company": "Amtrak",
+ "service": "Palmetto",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "89",
+   "name": "Palmetto",
+   "headsign": "Savannah",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "06:02"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "06:16",
+     "depart": "06:19"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "06:31",
+     "depart": "06:33"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "06:54",
+     "depart": "06:56"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "07:26",
+     "depart": "07:32"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "07:53",
+     "depart": "07:55"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 7,
+     "arrive": "08:43",
+     "depart": "08:51"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 8,
+     "arrive": "09:05",
+     "depart": "09:08"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 9,
+     "arrive": "09:22",
+     "depart": "09:24"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 10,
+     "arrive": "09:46",
+     "depart": "12:55"
+    },
+    {
+     "station": "alexandria",
+     "seq": 11,
+     "arrive": "13:10",
+     "depart": "13:14"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 12,
+     "arrive": "14:53",
+     "depart": "15:01"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 13,
+     "arrive": "15:32",
+     "depart": "15:35"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 14,
+     "arrive": "17:08",
+     "depart": "17:13"
+    },
+    {
+     "station": "wilson",
+     "seq": 15,
+     "arrive": "17:30",
+     "depart": "17:33"
+    },
+    {
+     "station": "selma",
+     "seq": 16,
+     "arrive": "18:01",
+     "depart": "18:03"
+    },
+    {
+     "station": "fayetteville-amtrak-station",
+     "seq": 17,
+     "arrive": "18:53",
+     "depart": "18:57"
+    },
+    {
+     "station": "dillon-amtrak-station",
+     "seq": 18,
+     "arrive": "19:48",
+     "depart": "19:50"
+    },
+    {
+     "station": "florence-amtrak-station",
+     "seq": 19,
+     "arrive": "20:43",
+     "depart": "20:48"
+    },
+    {
+     "station": "kingstree-amtrak-station",
+     "seq": 20,
+     "arrive": "21:21",
+     "depart": "21:24"
+    },
+    {
+     "station": "charleston-amtrak-station",
+     "seq": 21,
+     "arrive": "22:21",
+     "depart": "22:28"
+    },
+    {
+     "station": "yemassee-amtrak",
+     "seq": 22,
+     "arrive": "23:14",
+     "depart": "23:17"
+    },
+    {
+     "station": "savannah",
+     "seq": 23,
+     "arrive": "24:21"
+    }
+   ]
+  },
+  {
+   "number": "90",
+   "name": "Palmetto",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "savannah",
+     "seq": 1,
+     "depart": "07:35"
+    },
+    {
+     "station": "yemassee-amtrak",
+     "seq": 2,
+     "arrive": "08:20",
+     "depart": "08:23"
+    },
+    {
+     "station": "charleston-amtrak-station",
+     "seq": 3,
+     "arrive": "09:08",
+     "depart": "09:15"
+    },
+    {
+     "station": "kingstree-amtrak-station",
+     "seq": 4,
+     "arrive": "10:06",
+     "depart": "10:10"
+    },
+    {
+     "station": "florence-amtrak-station",
+     "seq": 5,
+     "arrive": "10:49",
+     "depart": "10:54"
+    },
+    {
+     "station": "dillon-amtrak-station",
+     "seq": 6,
+     "arrive": "11:27",
+     "depart": "11:29"
+    },
+    {
+     "station": "fayetteville-amtrak-station",
+     "seq": 7,
+     "arrive": "12:15",
+     "depart": "12:22"
+    },
+    {
+     "station": "selma",
+     "seq": 8,
+     "arrive": "13:09",
+     "depart": "13:11"
+    },
+    {
+     "station": "wilson",
+     "seq": 9,
+     "arrive": "13:38",
+     "depart": "13:43"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 10,
+     "arrive": "14:08",
+     "depart": "14:13"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 11,
+     "arrive": "15:41",
+     "depart": "15:44"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 12,
+     "arrive": "16:31",
+     "depart": "16:41"
+    },
+    {
+     "station": "alexandria",
+     "seq": 13,
+     "arrive": "18:31",
+     "depart": "18:34"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 14,
+     "arrive": "19:10",
+     "depart": "19:57"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 15,
+     "arrive": "20:07",
+     "depart": "20:08"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 16,
+     "arrive": "20:21",
+     "depart": "20:23"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 17,
+     "arrive": "20:36",
+     "depart": "20:40"
+    },
+    {
+     "station": "wilmington",
+     "seq": 18,
+     "arrive": "21:26",
+     "depart": "21:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 19,
+     "arrive": "21:54",
+     "depart": "21:58"
+    },
+    {
+     "station": "trenton",
+     "seq": 20,
+     "arrive": "22:23",
+     "depart": "22:26"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 21,
+     "arrive": "22:48",
+     "depart": "22:48"
+    },
+    {
+     "station": "newark",
+     "seq": 22,
+     "arrive": "23:03",
+     "depart": "23:03"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 23,
+     "arrive": "23:23"
+    }
+   ]
+  }
+ ]
+}

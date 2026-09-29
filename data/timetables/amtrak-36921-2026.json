@@ -1,0 +1,984 @@
+{
+ "id": "amtrak-36921-2026",
+ "route_id": "36921",
+ "line_ids": [
+  "amtrak-36921",
+  "amtrak-36921-niagara",
+  "amtrak-36921-west"
+ ],
+ "company": "Amtrak",
+ "service": "Empire Service",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "280",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "niagara-falls-amtrak-station",
+     "seq": 1,
+     "depart": "03:42"
+    },
+    {
+     "station": "buffalo",
+     "seq": 2,
+     "arrive": "04:16",
+     "depart": "04:18"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 3,
+     "arrive": "04:31",
+     "depart": "04:35"
+    },
+    {
+     "station": "rochester",
+     "seq": 4,
+     "arrive": "05:27",
+     "depart": "05:31"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 5,
+     "arrive": "06:53",
+     "depart": "07:02"
+    },
+    {
+     "station": "rome-amtrak-station",
+     "seq": 6,
+     "arrive": "07:41",
+     "depart": "07:42"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 7,
+     "arrive": "07:56",
+     "depart": "07:58"
+    },
+    {
+     "station": "amsterdam-amtrak-station",
+     "seq": 8,
+     "arrive": "09:01",
+     "depart": "09:01"
+    },
+    {
+     "station": "schenectady",
+     "seq": 9,
+     "arrive": "09:21",
+     "depart": "09:21"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 10,
+     "arrive": "09:42",
+     "depart": "10:05"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 11,
+     "arrive": "10:26",
+     "depart": "10:28"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 12,
+     "arrive": "10:49",
+     "depart": "10:51"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 13,
+     "arrive": "11:10",
+     "depart": "11:10"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 14,
+     "arrive": "11:50",
+     "depart": "11:50"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 15,
+     "arrive": "12:45"
+    }
+   ]
+  },
+  {
+   "number": "230",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 1,
+     "depart": "05:00"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 2,
+     "arrive": "05:20",
+     "depart": "05:22"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 3,
+     "arrive": "05:42",
+     "depart": "05:44"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 4,
+     "arrive": "06:35",
+     "depart": "06:36"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 5,
+     "arrive": "07:20"
+    }
+   ]
+  },
+  {
+   "number": "232",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 1,
+     "depart": "05:55"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 2,
+     "arrive": "06:15",
+     "depart": "06:17"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 3,
+     "arrive": "06:37",
+     "depart": "06:39"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 4,
+     "arrive": "07:30",
+     "depart": "07:31"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 5,
+     "arrive": "08:15"
+    }
+   ]
+  },
+  {
+   "number": "284",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "niagara-falls-amtrak-station",
+     "seq": 1,
+     "depart": "06:27"
+    },
+    {
+     "station": "buffalo",
+     "seq": 2,
+     "arrive": "07:00",
+     "depart": "07:02"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 3,
+     "arrive": "07:15",
+     "depart": "07:19"
+    },
+    {
+     "station": "rochester",
+     "seq": 4,
+     "arrive": "08:11",
+     "depart": "08:15"
+    },
+    {
+     "station": "ny-state-fair",
+     "seq": 5,
+     "arrive": "09:29",
+     "depart": "09:30"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 6,
+     "arrive": "09:41",
+     "depart": "09:51"
+    },
+    {
+     "station": "rome-amtrak-station",
+     "seq": 7,
+     "arrive": "10:30",
+     "depart": "10:31"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 8,
+     "arrive": "10:45",
+     "depart": "10:47"
+    },
+    {
+     "station": "amsterdam-amtrak-station",
+     "seq": 9,
+     "arrive": "11:48",
+     "depart": "11:50"
+    },
+    {
+     "station": "schenectady",
+     "seq": 10,
+     "arrive": "12:17",
+     "depart": "12:17"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 11,
+     "arrive": "12:39",
+     "depart": "13:20"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 12,
+     "arrive": "13:41",
+     "depart": "13:43"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 13,
+     "arrive": "14:04",
+     "depart": "14:06"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 14,
+     "arrive": "14:24",
+     "depart": "14:25"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 15,
+     "arrive": "15:04",
+     "depart": "15:05"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 16,
+     "arrive": "15:25",
+     "depart": "15:26"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 17,
+     "arrive": "15:55"
+    }
+   ]
+  },
+  {
+   "number": "234",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 1,
+     "depart": "06:50"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 2,
+     "arrive": "07:10",
+     "depart": "07:12"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 3,
+     "arrive": "07:34",
+     "depart": "07:36"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "07:51",
+     "depart": "07:51"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 5,
+     "arrive": "08:31",
+     "depart": "08:33"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 6,
+     "arrive": "08:54",
+     "depart": "08:55"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "09:21"
+    }
+   ]
+  },
+  {
+   "number": "236",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 1,
+     "depart": "08:15"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 2,
+     "arrive": "08:35",
+     "depart": "08:37"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 3,
+     "arrive": "08:58",
+     "depart": "09:00"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "09:14",
+     "depart": "09:15"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 5,
+     "arrive": "09:53",
+     "depart": "09:54"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 6,
+     "arrive": "10:15",
+     "depart": "10:16"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "10:45"
+    }
+   ]
+  },
+  {
+   "number": "281",
+   "name": "Empire Service",
+   "headsign": "Niagara Falls",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "10:20"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 2,
+     "arrive": "11:01",
+     "depart": "11:01"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 3,
+     "arrive": "11:46",
+     "depart": "11:48"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 4,
+     "arrive": "12:03",
+     "depart": "12:05"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 5,
+     "arrive": "12:28",
+     "depart": "12:30"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 6,
+     "arrive": "12:55",
+     "depart": "13:15"
+    },
+    {
+     "station": "schenectady",
+     "seq": 7,
+     "arrive": "13:39",
+     "depart": "13:39"
+    },
+    {
+     "station": "amsterdam-amtrak-station",
+     "seq": 8,
+     "arrive": "13:57",
+     "depart": "13:57"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 9,
+     "arrive": "14:54",
+     "depart": "14:56"
+    },
+    {
+     "station": "rome-amtrak-station",
+     "seq": 10,
+     "arrive": "15:12",
+     "depart": "15:13"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 11,
+     "arrive": "15:59",
+     "depart": "16:09"
+    },
+    {
+     "station": "ny-state-fair",
+     "seq": 12,
+     "arrive": "16:21",
+     "depart": "16:22"
+    },
+    {
+     "station": "rochester",
+     "seq": 13,
+     "arrive": "17:34",
+     "depart": "17:40"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 14,
+     "arrive": "18:50",
+     "depart": "18:50"
+    },
+    {
+     "station": "buffalo",
+     "seq": 15,
+     "arrive": "19:13",
+     "depart": "19:13"
+    },
+    {
+     "station": "niagara-falls-amtrak-station",
+     "seq": 16,
+     "arrive": "19:55"
+    }
+   ]
+  },
+  {
+   "number": "240",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 1,
+     "depart": "11:19"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 2,
+     "arrive": "11:39",
+     "depart": "11:41"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 3,
+     "arrive": "12:01",
+     "depart": "12:03"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "12:18",
+     "depart": "12:19"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 5,
+     "arrive": "12:58",
+     "depart": "12:59"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 6,
+     "arrive": "13:19",
+     "depart": "13:20"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "13:49"
+    }
+   ]
+  },
+  {
+   "number": "238",
+   "name": "Empire Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 1,
+     "depart": "12:00"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 2,
+     "arrive": "12:20",
+     "depart": "12:22"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 3,
+     "arrive": "12:42",
+     "depart": "12:44"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "13:04",
+     "depart": "13:05"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 5,
+     "arrive": "13:44",
+     "depart": "13:45"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 6,
+     "arrive": "14:05",
+     "depart": "14:06"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "14:40"
+    }
+   ]
+  },
+  {
+   "number": "283",
+   "name": "Empire Service",
+   "headsign": "Niagara Falls",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "13:20"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "13:44",
+     "depart": "13:44"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "14:03",
+     "depart": "14:03"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "14:46",
+     "depart": "14:48"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "15:01",
+     "depart": "15:03"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "15:23",
+     "depart": "15:25"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "15:48",
+     "depart": "16:10"
+    },
+    {
+     "station": "schenectady",
+     "seq": 8,
+     "arrive": "16:34",
+     "depart": "16:34"
+    },
+    {
+     "station": "amsterdam-amtrak-station",
+     "seq": 9,
+     "arrive": "16:52",
+     "depart": "16:52"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 10,
+     "arrive": "17:49",
+     "depart": "17:51"
+    },
+    {
+     "station": "rome-amtrak-station",
+     "seq": 11,
+     "arrive": "18:06",
+     "depart": "18:07"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 12,
+     "arrive": "18:51",
+     "depart": "19:01"
+    },
+    {
+     "station": "ny-state-fair",
+     "seq": 13,
+     "arrive": "19:13",
+     "depart": "19:14"
+    },
+    {
+     "station": "rochester",
+     "seq": 14,
+     "arrive": "20:23",
+     "depart": "20:27"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 15,
+     "arrive": "21:37",
+     "depart": "21:37"
+    },
+    {
+     "station": "buffalo",
+     "seq": 16,
+     "arrive": "22:00",
+     "depart": "22:00"
+    },
+    {
+     "station": "niagara-falls-amtrak-station",
+     "seq": 17,
+     "arrive": "22:48"
+    }
+   ]
+  },
+  {
+   "number": "235",
+   "name": "Empire Service",
+   "headsign": "Rensselaer",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "15:15"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "15:38",
+     "depart": "15:39"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "15:56",
+     "depart": "15:58"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "16:38",
+     "depart": "16:40"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "16:56",
+     "depart": "16:57"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "17:16",
+     "depart": "17:17"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "17:47"
+    }
+   ]
+  },
+  {
+   "number": "237",
+   "name": "Empire Service",
+   "headsign": "Rensselaer",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "16:45"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 2,
+     "arrive": "17:27",
+     "depart": "17:29"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 3,
+     "arrive": "18:08",
+     "depart": "18:10"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 4,
+     "arrive": "18:20",
+     "depart": "18:22"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 5,
+     "arrive": "18:41",
+     "depart": "18:43"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 6,
+     "arrive": "19:10"
+    }
+   ]
+  },
+  {
+   "number": "239",
+   "name": "Empire Service",
+   "headsign": "Rensselaer",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "17:47"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 2,
+     "arrive": "18:32",
+     "depart": "18:32"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 3,
+     "arrive": "19:22",
+     "depart": "19:22"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 4,
+     "arrive": "19:36",
+     "depart": "19:38"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 5,
+     "arrive": "20:02",
+     "depart": "20:02"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 6,
+     "arrive": "20:33"
+    }
+   ]
+  },
+  {
+   "number": "241",
+   "name": "Empire Service",
+   "headsign": "Rensselaer",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "18:46"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "19:08",
+     "depart": "19:09"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "19:26",
+     "depart": "19:28"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "20:08",
+     "depart": "20:10"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "20:23",
+     "depart": "20:25"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "20:44",
+     "depart": "20:46"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "21:15"
+    }
+   ]
+  },
+  {
+   "number": "243",
+   "name": "Empire Service",
+   "headsign": "Rensselaer",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "21:30"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "21:54",
+     "depart": "21:55"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "22:12",
+     "depart": "22:14"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "22:54",
+     "depart": "22:56"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "23:10",
+     "depart": "23:10"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "23:31",
+     "depart": "23:31"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "23:59"
+    }
+   ]
+  },
+  {
+   "number": "245",
+   "name": "Empire Service",
+   "headsign": "Rensselaer",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "23:25"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 2,
+     "arrive": "24:04",
+     "depart": "24:06"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 3,
+     "arrive": "24:46",
+     "depart": "24:48"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 4,
+     "arrive": "25:03",
+     "depart": "25:03"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 5,
+     "arrive": "25:23",
+     "depart": "25:23"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 6,
+     "arrive": "25:56"
+    }
+   ]
+  }
+ ]
+}

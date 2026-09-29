@@ -1,0 +1,332 @@
+{
+ "id": "amtrak-85-2026",
+ "route_id": "85",
+ "line_ids": [
+  "amtrak-85"
+ ],
+ "company": "Amtrak",
+ "service": "Carolinian",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "80",
+   "name": "Carolinian",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Fri, Sun",
+   "stops": [
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 1,
+     "depart": "06:45"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 2,
+     "arrive": "07:09",
+     "depart": "07:10"
+    },
+    {
+     "station": "salisbury",
+     "seq": 3,
+     "arrive": "07:26",
+     "depart": "07:28"
+    },
+    {
+     "station": "high-point",
+     "seq": 4,
+     "arrive": "08:01",
+     "depart": "08:02"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "08:20",
+     "depart": "08:24"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 6,
+     "arrive": "08:44",
+     "depart": "08:46"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 7,
+     "arrive": "09:23",
+     "depart": "09:27"
+    },
+    {
+     "station": "cary",
+     "seq": 8,
+     "arrive": "09:45",
+     "depart": "09:47"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 9,
+     "arrive": "10:05",
+     "depart": "10:13"
+    },
+    {
+     "station": "selma",
+     "seq": 10,
+     "arrive": "10:46",
+     "depart": "10:48"
+    },
+    {
+     "station": "wilson",
+     "seq": 11,
+     "arrive": "11:14",
+     "depart": "11:18"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 12,
+     "arrive": "11:35",
+     "depart": "11:40"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 13,
+     "arrive": "13:09",
+     "depart": "13:11"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 14,
+     "arrive": "13:57",
+     "depart": "14:04"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 15,
+     "arrive": "14:56",
+     "depart": "15:00"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 16,
+     "arrive": "15:20",
+     "depart": "15:22"
+    },
+    {
+     "station": "alexandria",
+     "seq": 17,
+     "arrive": "16:00",
+     "depart": "16:03"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 18,
+     "arrive": "16:31",
+     "depart": "17:15"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 19,
+     "arrive": "17:47",
+     "depart": "17:50"
+    },
+    {
+     "station": "wilmington",
+     "seq": 20,
+     "arrive": "18:36",
+     "depart": "18:39"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 21,
+     "arrive": "19:05",
+     "depart": "19:14"
+    },
+    {
+     "station": "trenton",
+     "seq": 22,
+     "arrive": "19:42",
+     "depart": "19:45"
+    },
+    {
+     "station": "newark",
+     "seq": 23,
+     "arrive": "20:22",
+     "depart": "20:22"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 24,
+     "arrive": "20:45"
+    }
+   ]
+  },
+  {
+   "number": "79",
+   "name": "Carolinian",
+   "headsign": "Charlotte",
+   "direction": "1",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "07:04"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "07:20",
+     "depart": "07:24"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "07:38",
+     "depart": "07:40"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 4,
+     "arrive": "07:49",
+     "depart": "07:51"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 5,
+     "arrive": "08:05",
+     "depart": "08:07"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "08:16",
+     "depart": "08:19"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 7,
+     "arrive": "08:47",
+     "depart": "08:56"
+    },
+    {
+     "station": "wilmington",
+     "seq": 8,
+     "arrive": "09:15",
+     "depart": "09:18"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 9,
+     "arrive": "10:09",
+     "depart": "10:13"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 10,
+     "arrive": "10:25",
+     "depart": "10:28"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 11,
+     "arrive": "11:02",
+     "depart": "13:05"
+    },
+    {
+     "station": "alexandria",
+     "seq": 12,
+     "arrive": "13:20",
+     "depart": "13:23"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 13,
+     "arrive": "15:15",
+     "depart": "15:24"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 14,
+     "arrive": "15:59",
+     "depart": "16:01"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 15,
+     "arrive": "17:28",
+     "depart": "17:32"
+    },
+    {
+     "station": "wilson",
+     "seq": 16,
+     "arrive": "17:50",
+     "depart": "17:54"
+    },
+    {
+     "station": "selma",
+     "seq": 17,
+     "arrive": "18:27",
+     "depart": "18:27"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 18,
+     "arrive": "19:07",
+     "depart": "19:15"
+    },
+    {
+     "station": "cary",
+     "seq": 19,
+     "arrive": "19:26",
+     "depart": "19:28"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 20,
+     "arrive": "19:55",
+     "depart": "19:58"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 21,
+     "arrive": "20:36",
+     "depart": "20:37"
+    },
+    {
+     "station": "greensboro",
+     "seq": 22,
+     "arrive": "21:01",
+     "depart": "21:05"
+    },
+    {
+     "station": "high-point",
+     "seq": 23,
+     "arrive": "21:20",
+     "depart": "21:21"
+    },
+    {
+     "station": "salisbury",
+     "seq": 24,
+     "arrive": "21:53",
+     "depart": "21:55"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 25,
+     "arrive": "22:11",
+     "depart": "22:12"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 26,
+     "arrive": "22:45"
+    }
+   ]
+  }
+ ]
+}

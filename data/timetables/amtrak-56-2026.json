@@ -1,0 +1,164 @@
+{
+ "id": "amtrak-56-2026",
+ "route_id": "56",
+ "line_ids": [
+  "amtrak-56"
+ ],
+ "company": "Amtrak",
+ "service": "Illini",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "393",
+   "name": "Illini",
+   "headsign": "Carbondale",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "17:05"
+    },
+    {
+     "station": "homewood",
+     "seq": 2,
+     "arrive": "17:46",
+     "depart": "17:46"
+    },
+    {
+     "station": "kankakee",
+     "seq": 3,
+     "arrive": "18:15",
+     "depart": "18:15"
+    },
+    {
+     "station": "gilman-amtrak",
+     "seq": 4,
+     "arrive": "18:40",
+     "depart": "18:40"
+    },
+    {
+     "station": "rantoul-amtrak",
+     "seq": 5,
+     "arrive": "19:08",
+     "depart": "19:08"
+    },
+    {
+     "station": "champaign-urbana",
+     "seq": 6,
+     "arrive": "19:36",
+     "depart": "19:36"
+    },
+    {
+     "station": "mattoon-amtrak-station",
+     "seq": 7,
+     "arrive": "20:23",
+     "depart": "20:23"
+    },
+    {
+     "station": "effingham-amtrak-station",
+     "seq": 8,
+     "arrive": "20:47",
+     "depart": "20:47"
+    },
+    {
+     "station": "centralia-amtrak-station-cen",
+     "seq": 9,
+     "arrive": "21:34",
+     "depart": "21:34"
+    },
+    {
+     "station": "du-quoin-amtrak-station",
+     "seq": 10,
+     "arrive": "22:07",
+     "depart": "22:07"
+    },
+    {
+     "station": "carbondale",
+     "seq": 11,
+     "arrive": "22:35"
+    }
+   ]
+  },
+  {
+   "number": "392",
+   "name": "Illini",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "carbondale",
+     "seq": 1,
+     "depart": "17:15"
+    },
+    {
+     "station": "du-quoin-amtrak-station",
+     "seq": 2,
+     "arrive": "17:36",
+     "depart": "17:36"
+    },
+    {
+     "station": "centralia-amtrak-station-cen",
+     "seq": 3,
+     "arrive": "18:07",
+     "depart": "18:08"
+    },
+    {
+     "station": "effingham-amtrak-station",
+     "seq": 4,
+     "arrive": "18:53",
+     "depart": "18:54"
+    },
+    {
+     "station": "mattoon-amtrak-station",
+     "seq": 5,
+     "arrive": "19:18",
+     "depart": "19:19"
+    },
+    {
+     "station": "champaign-urbana",
+     "seq": 6,
+     "arrive": "20:05",
+     "depart": "20:08"
+    },
+    {
+     "station": "rantoul-amtrak",
+     "seq": 7,
+     "arrive": "20:23",
+     "depart": "20:24"
+    },
+    {
+     "station": "gilman-amtrak",
+     "seq": 8,
+     "arrive": "20:50",
+     "depart": "20:51"
+    },
+    {
+     "station": "kankakee",
+     "seq": 9,
+     "arrive": "21:14",
+     "depart": "21:14"
+    },
+    {
+     "station": "homewood",
+     "seq": 10,
+     "arrive": "21:55",
+     "depart": "21:55"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 11,
+     "arrive": "22:45"
+    }
+   ]
+  }
+ ]
+}

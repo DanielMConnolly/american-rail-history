@@ -1,0 +1,152 @@
+{
+ "id": "amtrak-36948-2026",
+ "route_id": "36948",
+ "line_ids": [
+  "amtrak-36948"
+ ],
+ "company": "Amtrak",
+ "service": "Missouri River Runner",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "311",
+   "name": "Missouri River Runner",
+   "headsign": "Kansas City",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "st-louis",
+     "seq": 1,
+     "depart": "09:10"
+    },
+    {
+     "station": "kirkwood-amtrak-station",
+     "seq": 2,
+     "arrive": "09:39",
+     "depart": "09:39"
+    },
+    {
+     "station": "washington-amtrak-station",
+     "seq": 3,
+     "arrive": "10:16",
+     "depart": "10:16"
+    },
+    {
+     "station": "hermann",
+     "seq": 4,
+     "arrive": "10:45",
+     "depart": "10:45"
+    },
+    {
+     "station": "jefferson-city-amtrak-station",
+     "seq": 5,
+     "arrive": "11:35",
+     "depart": "11:35"
+    },
+    {
+     "station": "sedalia-amtrak-station",
+     "seq": 6,
+     "arrive": "12:45",
+     "depart": "12:45"
+    },
+    {
+     "station": "warrensburg-amtrak-station",
+     "seq": 7,
+     "arrive": "13:16",
+     "depart": "13:16"
+    },
+    {
+     "station": "lee-s-summit-amtrak",
+     "seq": 8,
+     "arrive": "14:03",
+     "depart": "14:03"
+    },
+    {
+     "station": "independence-amtrak-station",
+     "seq": 9,
+     "arrive": "14:20",
+     "depart": "14:20"
+    },
+    {
+     "station": "kansas-city",
+     "seq": 10,
+     "arrive": "14:50"
+    }
+   ]
+  },
+  {
+   "number": "316",
+   "name": "Missouri River Runner",
+   "headsign": "St. Louis",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "kansas-city",
+     "seq": 1,
+     "depart": "17:05"
+    },
+    {
+     "station": "independence-amtrak-station",
+     "seq": 2,
+     "arrive": "17:24",
+     "depart": "17:24"
+    },
+    {
+     "station": "lee-s-summit-amtrak",
+     "seq": 3,
+     "arrive": "17:41",
+     "depart": "17:41"
+    },
+    {
+     "station": "warrensburg-amtrak-station",
+     "seq": 4,
+     "arrive": "18:24",
+     "depart": "18:24"
+    },
+    {
+     "station": "sedalia-amtrak-station",
+     "seq": 5,
+     "arrive": "18:54",
+     "depart": "18:54"
+    },
+    {
+     "station": "jefferson-city-amtrak-station",
+     "seq": 6,
+     "arrive": "20:12",
+     "depart": "20:12"
+    },
+    {
+     "station": "hermann",
+     "seq": 7,
+     "arrive": "20:57",
+     "depart": "20:57"
+    },
+    {
+     "station": "washington-amtrak-station",
+     "seq": 8,
+     "arrive": "21:24",
+     "depart": "21:24"
+    },
+    {
+     "station": "kirkwood-amtrak-station",
+     "seq": 9,
+     "arrive": "22:13",
+     "depart": "22:13"
+    },
+    {
+     "station": "st-louis",
+     "seq": 10,
+     "arrive": "22:45"
+    }
+   ]
+  }
+ ]
+}

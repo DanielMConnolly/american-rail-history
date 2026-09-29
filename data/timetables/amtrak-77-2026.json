@@ -1,0 +1,56 @@
+{
+ "id": "amtrak-77-2026",
+ "route_id": "77",
+ "line_ids": [
+  "amtrak-77"
+ ],
+ "company": "Amtrak",
+ "service": "Auto Train",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "52",
+   "name": "Auto Train",
+   "headsign": "Lorton",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "sanford-amtrak-auto-train-station",
+     "seq": 1,
+     "depart": "16:00"
+    },
+    {
+     "station": "lorton-amtrak-auto-train-station",
+     "seq": 2,
+     "arrive": "32:59"
+    }
+   ]
+  },
+  {
+   "number": "53",
+   "name": "Auto Train",
+   "headsign": "Sanford",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "lorton-amtrak-auto-train-station",
+     "seq": 1,
+     "depart": "16:00"
+    },
+    {
+     "station": "sanford-amtrak-auto-train-station",
+     "seq": 2,
+     "arrive": "32:59"
+    }
+   ]
+  }
+ ]
+}

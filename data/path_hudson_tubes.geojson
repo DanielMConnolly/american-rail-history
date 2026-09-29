@@ -1,0 +1,985 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Hudson Tubes: the first rail tunnels under the Hudson River and still the only rapid-transit link between Manhattan and New Jersey. William Gibbs McAdoo's Hudson and Manhattan Railroad opened its first tube between Hoboken and 19th Street at midnight on 26 February 1908, reached the Hudson Terminal in Lower Manhattan in July 1909 and Newark on 26 November 1911. The company never recovered from the Depression and the loss of ferry traffic; the Port Authority took it over in September 1962 and rebranded it PATH. Its Lower Manhattan terminal, by then the World Trade Center station, was destroyed on 11 September 2001, and the two services that used it did not run again until a temporary station opened on 23 November 2003 — a real two-year gap in service, drawn here as a gap.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/PATH_(rail_system) (H&M opening dates, the 1962 Port Authority takeover, the four service patterns, 13.8 mi system route length, and the 2001–2003 World Trade Center closure)",
+   "OpenStreetMap route relations, extracted 29 August 2026; traced length is compared with the documented route length on each feature."
+  ],
+  "not_yet_sourced": "Every headway_min and avg_speed_kmh here is an estimate; no PATH or H&M timetable was consulted. The pre-1962 features draw today's alignment, including the World Trade Center station rather than the Hudson Terminal it replaced in 1971. Whether the H&M ran exactly these four service patterns throughout 1908–1962 has not been checked — the modern patterns have been carried back."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hudson and Manhattan Railroad",
+    "line": "Hudson and Manhattan: Hoboken – 33rd Street",
+    "id": "hm-hoboken-33rd",
+    "color": "#7E4A6B",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: an electric rapid-transit tube railway; no timetable consulted",
+    "geometry_quality": "Traced 3.52 mi from the modern OSM route relation for this service pattern, against 4.1 mi documented. NOTE: this draws today's alignment for a pre-1962 feature.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1962,
+      "headway_min": 6,
+      "note": "The Hudson and Manhattan Railroad's first tube opened for revenue service between Hoboken and 19th Street at midnight on 26 February 1908; Hudson Terminal service began July 1909 and the line reached Park Place, Newark on 26 November 1911. The Port Authority took the company over in September 1962. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.988748,
+      40.748602
+     ],
+     [
+      -73.999154,
+      40.734247
+     ],
+     [
+      -74.007226,
+      40.732958
+     ],
+     [
+      -74.007574,
+      40.732685
+     ],
+     [
+      -74.007961,
+      40.731364
+     ],
+     [
+      -74.008219,
+      40.731152
+     ],
+     [
+      -74.028596,
+      40.731561
+     ],
+     [
+      -74.03209,
+      40.731747
+     ],
+     [
+      -74.033374,
+      40.73209
+     ],
+     [
+      -74.033782,
+      40.732549
+     ],
+     [
+      -74.033929,
+      40.733232
+     ],
+     [
+      -74.033412,
+      40.734811
+     ],
+     [
+      -74.032905,
+      40.735352
+     ],
+     [
+      -74.031937,
+      40.735617
+     ],
+     [
+      -74.02817,
+      40.735423
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hudson and Manhattan Railroad",
+    "line": "Hudson and Manhattan: Hoboken – Hudson Terminal",
+    "id": "hm-hoboken-hudson-terminal",
+    "color": "#7E4A6B",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: an electric rapid-transit tube railway; no timetable consulted",
+    "geometry_quality": "Traced 2.90 mi from the modern OSM route relation for this service pattern, against 2.4 mi documented. NOTE: this draws today's alignment for a pre-1962 feature. The Lower Manhattan terminal in this era was the Hudson Terminal on Church Street, demolished in 1971 — the drawn line ends at the World Trade Center station that replaced it, about 150 m away.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1962,
+      "headway_min": 6,
+      "note": "The Hudson and Manhattan Railroad's first tube opened for revenue service between Hoboken and 19th Street at midnight on 26 February 1908; Hudson Terminal service began July 1909 and the line reached Park Place, Newark on 26 November 1911. The Port Authority took the company over in September 1962. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.012955,
+      40.710745
+     ],
+     [
+      -74.013303,
+      40.710592
+     ],
+     [
+      -74.013877,
+      40.710774
+     ],
+     [
+      -74.014117,
+      40.711601
+     ],
+     [
+      -74.014959,
+      40.711967
+     ],
+     [
+      -74.018537,
+      40.712617
+     ],
+     [
+      -74.030519,
+      40.716212
+     ],
+     [
+      -74.0361,
+      40.717124
+     ],
+     [
+      -74.037,
+      40.717799
+     ],
+     [
+      -74.037091,
+      40.71828
+     ],
+     [
+      -74.035794,
+      40.725067
+     ],
+     [
+      -74.034558,
+      40.727411
+     ],
+     [
+      -74.034703,
+      40.729061
+     ],
+     [
+      -74.03393,
+      40.732642
+     ],
+     [
+      -74.033938,
+      40.733604
+     ],
+     [
+      -74.033512,
+      40.73484
+     ],
+     [
+      -74.032969,
+      40.735417
+     ],
+     [
+      -74.032179,
+      40.735685
+     ],
+     [
+      -74.028138,
+      40.735489
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hudson and Manhattan Railroad",
+    "line": "Hudson and Manhattan: Newark – Hudson Terminal",
+    "id": "hm-newark-hudson-terminal",
+    "color": "#7E4A6B",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: an electric rapid-transit tube railway; no timetable consulted",
+    "geometry_quality": "Traced 8.83 mi from the modern OSM route relation for this service pattern, against 8.8 mi documented. NOTE: this draws today's alignment for a pre-1962 feature. The Lower Manhattan terminal in this era was the Hudson Terminal on Church Street, demolished in 1971 — the drawn line ends at the World Trade Center station that replaced it, about 150 m away.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1962,
+      "headway_min": 6,
+      "note": "The Hudson and Manhattan Railroad's first tube opened for revenue service between Hoboken and 19th Street at midnight on 26 February 1908; Hudson Terminal service began July 1909 and the line reached Park Place, Newark on 26 November 1911. The Port Authority took the company over in September 1962. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.01302,
+      40.710687
+     ],
+     [
+      -74.013422,
+      40.710597
+     ],
+     [
+      -74.013877,
+      40.710774
+     ],
+     [
+      -74.014117,
+      40.711601
+     ],
+     [
+      -74.014959,
+      40.711967
+     ],
+     [
+      -74.018537,
+      40.712617
+     ],
+     [
+      -74.030519,
+      40.716212
+     ],
+     [
+      -74.033903,
+      40.716698
+     ],
+     [
+      -74.0356,
+      40.717122
+     ],
+     [
+      -74.052968,
+      40.722625
+     ],
+     [
+      -74.053898,
+      40.723124
+     ],
+     [
+      -74.054721,
+      40.723864
+     ],
+     [
+      -74.057438,
+      40.727459
+     ],
+     [
+      -74.061331,
+      40.730848
+     ],
+     [
+      -74.063858,
+      40.732313
+     ],
+     [
+      -74.065506,
+      40.7344
+     ],
+     [
+      -74.067307,
+      40.735566
+     ],
+     [
+      -74.069226,
+      40.736357
+     ],
+     [
+      -74.074147,
+      40.737762
+     ],
+     [
+      -74.086982,
+      40.741081
+     ],
+     [
+      -74.103803,
+      40.74174
+     ],
+     [
+      -74.117405,
+      40.743097
+     ],
+     [
+      -74.125517,
+      40.743254
+     ],
+     [
+      -74.136162,
+      40.742524
+     ],
+     [
+      -74.139686,
+      40.741869
+     ],
+     [
+      -74.144559,
+      40.741453
+     ],
+     [
+      -74.151199,
+      40.741224
+     ],
+     [
+      -74.152381,
+      40.74099
+     ],
+     [
+      -74.153492,
+      40.740527
+     ],
+     [
+      -74.158908,
+      40.737137
+     ],
+     [
+      -74.160433,
+      40.736519
+     ],
+     [
+      -74.162837,
+      40.73517
+     ],
+     [
+      -74.164813,
+      40.733812
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hudson and Manhattan Railroad",
+    "line": "Hudson and Manhattan: Journal Square – 33rd Street",
+    "id": "hm-journal-square-33rd",
+    "color": "#7E4A6B",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: an electric rapid-transit tube railway; no timetable consulted",
+    "geometry_quality": "Traced 5.72 mi from the modern OSM route relation for this service pattern, against 6.6 mi documented. NOTE: this draws today's alignment for a pre-1962 feature.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1962,
+      "headway_min": 6,
+      "note": "The Hudson and Manhattan Railroad's first tube opened for revenue service between Hoboken and 19th Street at midnight on 26 February 1908; Hudson Terminal service began July 1909 and the line reached Park Place, Newark on 26 November 1911. The Port Authority took the company over in September 1962. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.062995,
+      40.731841
+     ],
+     [
+      -74.061496,
+      40.731042
+     ],
+     [
+      -74.057105,
+      40.727197
+     ],
+     [
+      -74.054908,
+      40.724142
+     ],
+     [
+      -74.053546,
+      40.722944
+     ],
+     [
+      -74.04039,
+      40.718728
+     ],
+     [
+      -74.03753,
+      40.718005
+     ],
+     [
+      -74.037041,
+      40.718571
+     ],
+     [
+      -74.035794,
+      40.725067
+     ],
+     [
+      -74.034558,
+      40.727411
+     ],
+     [
+      -74.034703,
+      40.729061
+     ],
+     [
+      -74.034438,
+      40.730394
+     ],
+     [
+      -74.033575,
+      40.731612
+     ],
+     [
+      -74.03272,
+      40.731825
+     ],
+     [
+      -74.021845,
+      40.731332
+     ],
+     [
+      -74.009902,
+      40.731268
+     ],
+     [
+      -74.008328,
+      40.731131
+     ],
+     [
+      -74.007981,
+      40.731324
+     ],
+     [
+      -74.007574,
+      40.732685
+     ],
+     [
+      -74.007226,
+      40.732958
+     ],
+     [
+      -73.99926,
+      40.73418
+     ],
+     [
+      -73.988602,
+      40.748541
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Port Authority Trans-Hudson (PATH)",
+    "line": "PATH: Hoboken – 33rd Street",
+    "id": "path-hoboken-33rd",
+    "color": "#C64B3C",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no PATH timetable consulted",
+    "geometry_quality": "Traced from the OSM route relation for this service pattern. The four PATH patterns share track, so the trans-Hudson tubes are drawn more than once — once per service. Total PATH route length is 13.8 mi.",
+    "segments": [
+     {
+      "start": 1962,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "One of PATH's four service patterns; runs weekdays, with the Journal Square – 33rd Street service extended via Hoboken at nights and weekends. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.988748,
+      40.748602
+     ],
+     [
+      -73.999154,
+      40.734247
+     ],
+     [
+      -74.007226,
+      40.732958
+     ],
+     [
+      -74.007574,
+      40.732685
+     ],
+     [
+      -74.007961,
+      40.731364
+     ],
+     [
+      -74.008219,
+      40.731152
+     ],
+     [
+      -74.028596,
+      40.731561
+     ],
+     [
+      -74.03209,
+      40.731747
+     ],
+     [
+      -74.033374,
+      40.73209
+     ],
+     [
+      -74.033782,
+      40.732549
+     ],
+     [
+      -74.033929,
+      40.733232
+     ],
+     [
+      -74.033412,
+      40.734811
+     ],
+     [
+      -74.032905,
+      40.735352
+     ],
+     [
+      -74.031937,
+      40.735617
+     ],
+     [
+      -74.02817,
+      40.735423
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Port Authority Trans-Hudson (PATH)",
+    "line": "PATH: Journal Square – 33rd Street",
+    "id": "path-journal-square-33rd",
+    "color": "#C64B3C",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no PATH timetable consulted",
+    "geometry_quality": "Traced from the OSM route relation for this service pattern. The four PATH patterns share track, so the trans-Hudson tubes are drawn more than once — once per service. Total PATH route length is 13.8 mi.",
+    "segments": [
+     {
+      "start": 1962,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "One of PATH's four service patterns, running up the uptown Hudson tubes via Grove Street and Christopher Street. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.062995,
+      40.731841
+     ],
+     [
+      -74.061496,
+      40.731042
+     ],
+     [
+      -74.057105,
+      40.727197
+     ],
+     [
+      -74.054908,
+      40.724142
+     ],
+     [
+      -74.053546,
+      40.722944
+     ],
+     [
+      -74.04039,
+      40.718728
+     ],
+     [
+      -74.03753,
+      40.718005
+     ],
+     [
+      -74.037041,
+      40.718571
+     ],
+     [
+      -74.035794,
+      40.725067
+     ],
+     [
+      -74.034558,
+      40.727411
+     ],
+     [
+      -74.034703,
+      40.729061
+     ],
+     [
+      -74.034438,
+      40.730394
+     ],
+     [
+      -74.033575,
+      40.731612
+     ],
+     [
+      -74.03272,
+      40.731825
+     ],
+     [
+      -74.021845,
+      40.731332
+     ],
+     [
+      -74.009902,
+      40.731268
+     ],
+     [
+      -74.008328,
+      40.731131
+     ],
+     [
+      -74.007981,
+      40.731324
+     ],
+     [
+      -74.007574,
+      40.732685
+     ],
+     [
+      -74.007226,
+      40.732958
+     ],
+     [
+      -73.99926,
+      40.73418
+     ],
+     [
+      -73.988602,
+      40.748541
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Port Authority Trans-Hudson (PATH)",
+    "line": "PATH: Hoboken – World Trade Center",
+    "id": "path-hoboken-wtc",
+    "color": "#C64B3C",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no PATH timetable consulted",
+    "geometry_quality": "Traced from the OSM route relation for this service pattern. The four PATH patterns share track, so the trans-Hudson tubes are drawn more than once — once per service. Total PATH route length is 13.8 mi.",
+    "segments": [
+     {
+      "start": 1962,
+      "end": 2001,
+      "headway_min": 10,
+      "note": "Ran into the World Trade Center station from 1971, replacing the Hudson Terminal. Service stopped when the station was destroyed in the 11 September 2001 attacks. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     },
+     {
+      "start": 2003,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "Service to Lower Manhattan resumed on 23 November 2003 at a new $323 million temporary station; the permanent Oculus followed in 2016. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.012955,
+      40.710745
+     ],
+     [
+      -74.013303,
+      40.710592
+     ],
+     [
+      -74.013877,
+      40.710774
+     ],
+     [
+      -74.014117,
+      40.711601
+     ],
+     [
+      -74.014959,
+      40.711967
+     ],
+     [
+      -74.018537,
+      40.712617
+     ],
+     [
+      -74.030519,
+      40.716212
+     ],
+     [
+      -74.0361,
+      40.717124
+     ],
+     [
+      -74.037,
+      40.717799
+     ],
+     [
+      -74.037091,
+      40.71828
+     ],
+     [
+      -74.035794,
+      40.725067
+     ],
+     [
+      -74.034558,
+      40.727411
+     ],
+     [
+      -74.034703,
+      40.729061
+     ],
+     [
+      -74.03393,
+      40.732642
+     ],
+     [
+      -74.033938,
+      40.733604
+     ],
+     [
+      -74.033512,
+      40.73484
+     ],
+     [
+      -74.032969,
+      40.735417
+     ],
+     [
+      -74.032179,
+      40.735685
+     ],
+     [
+      -74.028138,
+      40.735489
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Port Authority Trans-Hudson (PATH)",
+    "line": "PATH: Newark – World Trade Center",
+    "id": "path-newark-wtc",
+    "color": "#C64B3C",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no PATH timetable consulted",
+    "geometry_quality": "Traced from the OSM route relation for this service pattern. The four PATH patterns share track, so the trans-Hudson tubes are drawn more than once — once per service. Total PATH route length is 13.8 mi.",
+    "segments": [
+     {
+      "start": 1962,
+      "end": 2001,
+      "headway_min": 8,
+      "note": "PATH's busiest service, Newark Penn Station to Lower Manhattan. Suspended when the World Trade Center station was destroyed on 11 September 2001. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     },
+     {
+      "start": 2003,
+      "end": 2026,
+      "headway_min": 8,
+      "note": "Resumed 23 November 2003 into the rebuilt World Trade Center station. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 26 February 1908 first tube, July 1909 Hudson Terminal service, 26 November 1911 Newark extension, the September 1962 Port Authority takeover and the September 2001 – November 2003 closure of the World Trade Center station are all stated in the reference below, checked 29 August 2026.",
+       "https://en.wikipedia.org/wiki/PATH_(rail_system)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.01302,
+      40.710687
+     ],
+     [
+      -74.013422,
+      40.710597
+     ],
+     [
+      -74.013877,
+      40.710774
+     ],
+     [
+      -74.014117,
+      40.711601
+     ],
+     [
+      -74.014959,
+      40.711967
+     ],
+     [
+      -74.018537,
+      40.712617
+     ],
+     [
+      -74.030519,
+      40.716212
+     ],
+     [
+      -74.033903,
+      40.716698
+     ],
+     [
+      -74.0356,
+      40.717122
+     ],
+     [
+      -74.052968,
+      40.722625
+     ],
+     [
+      -74.053898,
+      40.723124
+     ],
+     [
+      -74.054721,
+      40.723864
+     ],
+     [
+      -74.057438,
+      40.727459
+     ],
+     [
+      -74.061331,
+      40.730848
+     ],
+     [
+      -74.063858,
+      40.732313
+     ],
+     [
+      -74.065506,
+      40.7344
+     ],
+     [
+      -74.067307,
+      40.735566
+     ],
+     [
+      -74.069226,
+      40.736357
+     ],
+     [
+      -74.074147,
+      40.737762
+     ],
+     [
+      -74.086982,
+      40.741081
+     ],
+     [
+      -74.103803,
+      40.74174
+     ],
+     [
+      -74.117405,
+      40.743097
+     ],
+     [
+      -74.125517,
+      40.743254
+     ],
+     [
+      -74.136162,
+      40.742524
+     ],
+     [
+      -74.139686,
+      40.741869
+     ],
+     [
+      -74.144559,
+      40.741453
+     ],
+     [
+      -74.151199,
+      40.741224
+     ],
+     [
+      -74.152381,
+      40.74099
+     ],
+     [
+      -74.153492,
+      40.740527
+     ],
+     [
+      -74.158908,
+      40.737137
+     ],
+     [
+      -74.160433,
+      40.736519
+     ],
+     [
+      -74.162837,
+      40.73517
+     ],
+     [
+      -74.164813,
+      40.733812
+     ]
+    ]
+   }
+  }
+ ]
+}

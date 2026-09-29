@@ -1,0 +1,416 @@
+{
+ "id": "amtrak-51-2026",
+ "route_id": "51",
+ "line_ids": [
+  "amtrak-51"
+ ],
+ "company": "Amtrak",
+ "service": "Southwest Chief",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "3",
+   "name": "Southwest Chief",
+   "headsign": "Los Angeles",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "14:30"
+    },
+    {
+     "station": "naperville-amtrak-station",
+     "seq": 2,
+     "arrive": "15:00",
+     "depart": "15:03"
+    },
+    {
+     "station": "mendota-amtrak-station",
+     "seq": 3,
+     "arrive": "15:53",
+     "depart": "15:54"
+    },
+    {
+     "station": "princeton-amtrak-station",
+     "seq": 4,
+     "arrive": "16:14",
+     "depart": "16:16"
+    },
+    {
+     "station": "galesburg-amtrak-station",
+     "seq": 5,
+     "arrive": "17:06",
+     "depart": "17:09"
+    },
+    {
+     "station": "fort-madison",
+     "seq": 6,
+     "arrive": "18:05",
+     "depart": "18:10"
+    },
+    {
+     "station": "la-plata-amtrak-station",
+     "seq": 7,
+     "arrive": "19:22",
+     "depart": "19:24"
+    },
+    {
+     "station": "kansas-city",
+     "seq": 8,
+     "arrive": "21:53",
+     "depart": "22:37"
+    },
+    {
+     "station": "lawrence-amtrak-station",
+     "seq": 9,
+     "arrive": "23:45",
+     "depart": "23:47"
+    },
+    {
+     "station": "topeka-amtrak-station",
+     "seq": 10,
+     "arrive": "24:21",
+     "depart": "24:24"
+    },
+    {
+     "station": "newton",
+     "seq": 11,
+     "arrive": "26:36",
+     "depart": "26:40"
+    },
+    {
+     "station": "hutchinson-amtrak-station",
+     "seq": 12,
+     "arrive": "27:13",
+     "depart": "27:15"
+    },
+    {
+     "station": "dodge-city-amtrak-station",
+     "seq": 13,
+     "arrive": "29:08",
+     "depart": "29:14"
+    },
+    {
+     "station": "garden-city-amtrak-station",
+     "seq": 14,
+     "arrive": "30:03",
+     "depart": "30:05"
+    },
+    {
+     "station": "lamar-amtrak",
+     "seq": 15,
+     "arrive": "31:31",
+     "depart": "31:33"
+    },
+    {
+     "station": "la-junta-amtrak-station",
+     "seq": 16,
+     "arrive": "32:35",
+     "depart": "32:50"
+    },
+    {
+     "station": "trinidad-amtrak",
+     "seq": 17,
+     "arrive": "34:10",
+     "depart": "34:10"
+    },
+    {
+     "station": "raton",
+     "seq": 18,
+     "arrive": "35:07",
+     "depart": "35:12"
+    },
+    {
+     "station": "las-vegas-amtrak-station",
+     "seq": 19,
+     "arrive": "36:57",
+     "depart": "36:57"
+    },
+    {
+     "station": "lamy",
+     "seq": 20,
+     "arrive": "38:49",
+     "depart": "38:53"
+    },
+    {
+     "station": "albuquerque-alvarado-transportation-center",
+     "seq": 21,
+     "arrive": "40:24",
+     "depart": "41:14"
+    },
+    {
+     "station": "gallup-amtrak-station",
+     "seq": 22,
+     "arrive": "43:54",
+     "depart": "43:54"
+    },
+    {
+     "station": "winslow-amtrak",
+     "seq": 23,
+     "arrive": "45:41",
+     "depart": "45:43"
+    },
+    {
+     "station": "flagstaff",
+     "seq": 24,
+     "arrive": "46:49",
+     "depart": "46:55"
+    },
+    {
+     "station": "kingman",
+     "seq": 25,
+     "arrive": "49:42",
+     "depart": "49:49"
+    },
+    {
+     "station": "needles-amtrak",
+     "seq": 26,
+     "arrive": "50:49",
+     "depart": "50:54"
+    },
+    {
+     "station": "barstow",
+     "seq": 27,
+     "arrive": "54:18",
+     "depart": "54:23"
+    },
+    {
+     "station": "victorville-amtrak",
+     "seq": 28,
+     "arrive": "55:00",
+     "depart": "55:02"
+    },
+    {
+     "station": "san-bernardino",
+     "seq": 29,
+     "arrive": "56:26",
+     "depart": "56:26"
+    },
+    {
+     "station": "riverside",
+     "seq": 30,
+     "arrive": "56:50",
+     "depart": "56:52"
+    },
+    {
+     "station": "fullerton-amtrak-station",
+     "seq": 31,
+     "arrive": "58:24",
+     "depart": "58:24"
+    },
+    {
+     "station": "los-angeles",
+     "seq": 32,
+     "arrive": "59:12"
+    }
+   ]
+  },
+  {
+   "number": "4",
+   "name": "Southwest Chief",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "los-angeles",
+     "seq": 1,
+     "depart": "19:55"
+    },
+    {
+     "station": "fullerton-amtrak-station",
+     "seq": 2,
+     "arrive": "20:25",
+     "depart": "20:33"
+    },
+    {
+     "station": "riverside",
+     "seq": 3,
+     "arrive": "21:14",
+     "depart": "21:18"
+    },
+    {
+     "station": "san-bernardino",
+     "seq": 4,
+     "arrive": "21:36",
+     "depart": "21:43"
+    },
+    {
+     "station": "victorville-amtrak",
+     "seq": 5,
+     "arrive": "22:51",
+     "depart": "22:54"
+    },
+    {
+     "station": "barstow",
+     "seq": 6,
+     "arrive": "23:42",
+     "depart": "23:47"
+    },
+    {
+     "station": "needles-amtrak",
+     "seq": 7,
+     "arrive": "26:20",
+     "depart": "26:22"
+    },
+    {
+     "station": "kingman",
+     "seq": 8,
+     "arrive": "27:27",
+     "depart": "27:37"
+    },
+    {
+     "station": "flagstaff",
+     "seq": 9,
+     "arrive": "30:31",
+     "depart": "30:39"
+    },
+    {
+     "station": "winslow-amtrak",
+     "seq": 10,
+     "arrive": "31:39",
+     "depart": "31:43"
+    },
+    {
+     "station": "gallup-amtrak-station",
+     "seq": 11,
+     "arrive": "33:36",
+     "depart": "33:36"
+    },
+    {
+     "station": "albuquerque-alvarado-transportation-center",
+     "seq": 12,
+     "arrive": "36:41",
+     "depart": "37:31"
+    },
+    {
+     "station": "lamy",
+     "seq": 13,
+     "arrive": "38:34",
+     "depart": "38:38"
+    },
+    {
+     "station": "las-vegas-amtrak-station",
+     "seq": 14,
+     "arrive": "40:27",
+     "depart": "40:27"
+    },
+    {
+     "station": "raton",
+     "seq": 15,
+     "arrive": "42:14",
+     "depart": "42:18"
+    },
+    {
+     "station": "trinidad-amtrak",
+     "seq": 16,
+     "arrive": "43:17",
+     "depart": "43:17"
+    },
+    {
+     "station": "la-junta-amtrak-station",
+     "seq": 17,
+     "arrive": "44:45",
+     "depart": "44:55"
+    },
+    {
+     "station": "lamar-amtrak",
+     "seq": 18,
+     "arrive": "45:47",
+     "depart": "45:49"
+    },
+    {
+     "station": "garden-city-amtrak-station",
+     "seq": 19,
+     "arrive": "47:18",
+     "depart": "47:20"
+    },
+    {
+     "station": "dodge-city-amtrak-station",
+     "seq": 20,
+     "arrive": "48:09",
+     "depart": "48:15"
+    },
+    {
+     "station": "hutchinson-amtrak-station",
+     "seq": 21,
+     "arrive": "50:08",
+     "depart": "50:10"
+    },
+    {
+     "station": "newton",
+     "seq": 22,
+     "arrive": "50:47",
+     "depart": "50:51"
+    },
+    {
+     "station": "topeka-amtrak-station",
+     "seq": 23,
+     "arrive": "53:14",
+     "depart": "53:17"
+    },
+    {
+     "station": "lawrence-amtrak-station",
+     "seq": 24,
+     "arrive": "53:44",
+     "depart": "53:46"
+    },
+    {
+     "station": "kansas-city",
+     "seq": 25,
+     "arrive": "55:28",
+     "depart": "56:13"
+    },
+    {
+     "station": "la-plata-amtrak-station",
+     "seq": 26,
+     "arrive": "58:23",
+     "depart": "58:25"
+    },
+    {
+     "station": "fort-madison",
+     "seq": 27,
+     "arrive": "59:35",
+     "depart": "59:41"
+    },
+    {
+     "station": "galesburg-amtrak-station",
+     "seq": 28,
+     "arrive": "60:45",
+     "depart": "60:47"
+    },
+    {
+     "station": "princeton-amtrak-station",
+     "seq": 29,
+     "arrive": "61:38",
+     "depart": "61:40"
+    },
+    {
+     "station": "mendota-amtrak-station",
+     "seq": 30,
+     "arrive": "62:00",
+     "depart": "62:01"
+    },
+    {
+     "station": "naperville-amtrak-station",
+     "seq": 31,
+     "arrive": "63:40",
+     "depart": "63:40"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 32,
+     "arrive": "64:29"
+    }
+   ]
+  }
+ ]
+}

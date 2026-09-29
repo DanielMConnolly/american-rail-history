@@ -1,0 +1,191 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Avon, Geneseo and Mount Morris Railroad (AG&MM) served the Genesee Valley south of Rochester, connecting the villages of Avon, Geneseo, and Mount Morris (later extended to Dansville). Chartered as the Genesee Valley Railroad in 1856, it reached Geneseo and Mount Morris in January 1859, was reorganized as the AG&MM in 1860 after a foreclosure, and was leased to the Erie Railway in 1872 -- eventually becoming the Erie Railroad's 'Mount Morris Branch,' operated in conjunction with the Rochester and Genesee Valley Railroad's line into Rochester. Notably, the Erie fully electrified this branch (Rochester to Mount Morris) in 1906-1907, running it as an hourly electric commuter service until de-electrification began in 1934; passenger service between Rochester and Avon ended September 30 1941, and the line was abandoned in 1940-1941. GEOMETRY NOTE: Rochester-Avon and Mount Morris-Dansville are real-traced from OpenStreetMap active/abandoned rail tagging. The Avon-Geneseo-Mount Morris core segment is a straight-line approximation instead -- the OSM-tagged track in that stretch resolved to a real, connected path, but one that both backtracked (dipping south past Geneseo's latitude before turning back) and totaled roughly 50% longer than the sourced historic '15 miles' Avon-Mount Morris figure, indicating it traces a different, non-historic modern alignment rather than the original 1859 AG&MM route -- flagged honestly rather than presented as accurate track.",
+  "sources": [
+   "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Geneseo January 1 1859, Mount Morris January 13 1859; sold at foreclosure December 1859; reorganized as Avon, Geneseo and Mt. Morris Railroad February 1860; leased to Erie Railway 1872; extension to Dansville completed 1871; ownership progression Genesee Valley RR (1859-1860) -> AG&MM RR (1860-1872) -> Erie Railway (1872-1880) -> New York, Lake Erie and Western Railroad (1880-1895) -> Erie Railroad (1895-1941); station list Avon-Ashantee-Fowlerville-Pierce's-South Avon-Huston-Seven Nations-Jaycock's-Geneseo-Cuylerville-Jones-Shakers-Mount Morris-Sonyea-McNair-West Sparta-Dansville",
+   "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris started late 1906, completed about March 1907; test runs April 1907; regular electric passenger service began May 12 1907 (also cited as June 18 1907 for a 34-mile figure), hourly service 6am-11:30pm, Rochester-Mount Morris in about 1hr10min; de-electrification began 1934; passenger service Rochester-Avon discontinued September 30 1941",
+   "https://www.abandonedrails.com/avon-to-mount-morris (line abandoned between Avon and Mount Morris in 1940)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (via Overpass API, overpass.openstreetmap.fr mirror): railway=rail (active) combined with railway=abandoned/disused tagging; routed via Dijkstra shortest path between geocoded station coordinates for Rochester-Avon and Mount Morris-Dansville, both of which resolved to plausible, non-backtracking real paths. The Avon-Geneseo-Mount Morris stretch was rejected in favor of a straight-line approximation after its traced path both backtracked and measured ~50% longer than the sourced historic mileage for that stretch."
+  ],
+  "not_yet_sourced": "Exact frequency/timetable outside the sourced 1907 hourly-service detail; precise year each of the intermediate corporate name changes (Erie Railway -> NY,LE&W -> Erie Railroad) took effect versus when they were formally completed.",
+  "pulled": "20260824",
+  "line_label_audit": "2026-08-24: line labels normalised repo-wide to \"<operating company>: <line name>\" -- the company's common display name (legal suffixes dropped), then the line as a passenger would have known it, or its two terminals where the line carried no advertised name. Long intermediate station lists were reduced to endpoints. For features spanning several operators the company shown is the one that ran the line for most of its drawn years. See CLAUDE.md Rule 6.",
+  "trim_note": "2026-08-24: this feature previously ran Rochester – Dansville, drawing the Rochester–Avon leg (the Rochester and Genesee Valley Railroad's line, opened 1853) as part of the AG&MM and from 1859, which both attributed it to the wrong company and started it six years late. That leg now lives in data/erie_rochester_branch.geojson, split by operator per Rule 4; this feature was cut back to Avon (its own railroad's actual north end) and relabelled Avon – Dansville. 49 leading vertices removed and replaced with the shared Avon endpoint -77.74880, 42.91243 so the two layers meet."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Avon, Geneseo and Mount Morris Railroad",
+    "line": "Avon, Geneseo and Mount Morris: Avon – Dansville",
+    "id": "avon-geneseo-mount-morris-railroad",
+    "color": "#606c38",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: 1859-1907 steam era, 45 km/h assumed for the 1907-1934 electric interurban era; unsourced",
+    "segments": [
+     {
+      "start": 1859,
+      "end": 1860,
+      "headway_min": 480,
+      "note": "The Genesee Valley Railroad, incorporated 1856 to build a 15-mile line from Avon to Mount Morris, reached Geneseo January 1 1859 and Mount Morris January 13 1859. Sold at foreclosure December 1859. Frequency estimated, unsourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the references below cover this line, but nothing has been checked specifically against this segment's start year, end year or service. Treat the dates and the headway as unverified. Supporting references for the line:",
+       "https://www.abandonedrails.com/avon-to-mount-morris",
+       "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Gene…",
+       "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris …"
+      ]
+     },
+     {
+      "start": 1860,
+      "end": 1872,
+      "headway_min": 420,
+      "note": "Reorganized as the Avon, Geneseo and Mount Morris Railroad in February 1860, connecting at Avon with the Rochester and Genesee Valley Railroad's route into Rochester. Extended to Dansville by 1871. Frequency estimated, unsourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the references below cover this line, but nothing has been checked specifically against this segment's start year, end year or service. Treat the dates and the headway as unverified. Supporting references for the line:",
+       "https://www.abandonedrails.com/avon-to-mount-morris",
+       "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Gene…",
+       "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris …"
+      ]
+     },
+     {
+      "start": 1872,
+      "end": 1895,
+      "headway_min": 300,
+      "note": "Leased to the Erie Railway in 1872; passed to the New York, Lake Erie and Western Railroad (1880-1895) as that company's corporate name changed. Frequency estimated, unsourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the references below cover this line, but nothing has been checked specifically against this segment's start year, end year or service. Treat the dates and the headway as unverified. Supporting references for the line:",
+       "https://www.abandonedrails.com/avon-to-mount-morris",
+       "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Gene…",
+       "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris …"
+      ]
+     },
+     {
+      "start": 1895,
+      "end": 1907,
+      "headway_min": 240,
+      "note": "Erie Railroad era (renamed 1895), operating the route as steam-powered service. Frequency estimated, unsourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the references below cover this line, but nothing has been checked specifically against this segment's start year, end year or service. Treat the dates and the headway as unverified. Supporting references for the line:",
+       "https://www.abandonedrails.com/avon-to-mount-morris",
+       "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Gene…",
+       "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris …"
+      ]
+     },
+     {
+      "start": 1907,
+      "end": 1934,
+      "headway_min": 60,
+      "note": "The Erie electrified the entire line from its Court Street terminus in Rochester to Mount Morris in late 1906-March 1907; regular electric passenger service began May 12 1907 (test runs from April 1907), running hourly 6am-11:30pm and covering Rochester-Mount Morris in about 1 hour 10 minutes. De-electrification began in 1934, with gas-electric motor cars replacing the electric equipment. Frequency from real 1907 timetable detail (hourly).",
+      "sources": [
+       "Segment-level: this segment's own note carries the citation for its dates and service. Supporting references for the line:",
+       "https://www.abandonedrails.com/avon-to-mount-morris",
+       "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Gene…",
+       "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris …"
+      ]
+     },
+     {
+      "start": 1934,
+      "end": 1941,
+      "headway_min": 180,
+      "note": "Gas-electric motor car era following de-electrification. Passenger service between Rochester and Avon was discontinued September 30 1941; the line was abandoned in 1940-1941. Frequency estimated, unsourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the references below cover this line, but nothing has been checked specifically against this segment's start year, end year or service. Treat the dates and the headway as unverified. Supporting references for the line:",
+       "https://www.abandonedrails.com/avon-to-mount-morris",
+       "search results citing: Genesee Valley Railroad incorporated 1856 (Avon-Mount Morris, 15 miles); first train reached Gene…",
+       "search results citing: electrification of the entire line from Erie's Court Street (Rochester) terminus to Mount Morris …"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.7488,
+      42.91243
+     ],
+     [
+      -77.74965,
+      42.91048
+     ],
+     [
+      -77.75102,
+      42.90616
+     ],
+     [
+      -77.81695,
+      42.7959
+     ],
+     [
+      -77.87417,
+      42.72562
+     ],
+     [
+      -77.86426,
+      42.72743
+     ],
+     [
+      -77.78166,
+      42.67171
+     ],
+     [
+      -77.78037,
+      42.66795
+     ],
+     [
+      -77.78076,
+      42.66752
+     ],
+     [
+      -77.78091,
+      42.667
+     ],
+     [
+      -77.78027,
+      42.66527
+     ],
+     [
+      -77.77885,
+      42.66417
+     ],
+     [
+      -77.77394,
+      42.66142
+     ],
+     [
+      -77.77268,
+      42.66039
+     ],
+     [
+      -77.7719,
+      42.65952
+     ],
+     [
+      -77.76703,
+      42.65131
+     ],
+     [
+      -77.71189,
+      42.57453
+     ],
+     [
+      -77.70815,
+      42.57059
+     ],
+     [
+      -77.70331,
+      42.56589
+     ],
+     [
+      -77.70005,
+      42.56349
+     ]
+    ]
+   }
+  }
+ ]
+}

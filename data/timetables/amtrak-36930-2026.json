@@ -1,0 +1,157 @@
+{
+ "id": "amtrak-36930-2026",
+ "route_id": "36930",
+ "line_ids": [
+  "amtrak-36930"
+ ],
+ "company": "Amtrak",
+ "service": "Sunset Limited",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "2",
+   "name": "Sunset Limited",
+   "headsign": "New Orleans",
+   "direction": "1",
+   "days": "Wed, Fri, Sun",
+   "stops": [
+    {
+     "station": "los-angeles",
+     "seq": 1,
+     "depart": "01:00"
+    },
+    {
+     "station": "pomona-amtrak",
+     "seq": 2,
+     "arrive": "01:41",
+     "depart": "01:41"
+    },
+    {
+     "station": "ontario-amtrak",
+     "seq": 3,
+     "arrive": "01:54",
+     "depart": "01:54"
+    },
+    {
+     "station": "palm-springs-amtrak",
+     "seq": 4,
+     "arrive": "03:36",
+     "depart": "03:36"
+    },
+    {
+     "station": "yuma-amtrak",
+     "seq": 5,
+     "arrive": "05:47",
+     "depart": "05:47"
+    },
+    {
+     "station": "maricopa",
+     "seq": 6,
+     "arrive": "08:35",
+     "depart": "08:55"
+    },
+    {
+     "station": "tucson-amtrak-station",
+     "seq": 7,
+     "arrive": "10:38",
+     "depart": "10:53"
+    },
+    {
+     "station": "benson-amtrak",
+     "seq": 8,
+     "arrive": "11:53",
+     "depart": "11:53"
+    },
+    {
+     "station": "lordsburg-amtrak",
+     "seq": 9,
+     "arrive": "13:53",
+     "depart": "13:53"
+    },
+    {
+     "station": "deming-amtrak",
+     "seq": 10,
+     "arrive": "14:48",
+     "depart": "14:48"
+    },
+    {
+     "station": "el-paso",
+     "seq": 11,
+     "arrive": "17:00",
+     "depart": "17:45"
+    },
+    {
+     "station": "alpine-amtrak-station",
+     "seq": 12,
+     "arrive": "21:45",
+     "depart": "21:55"
+    },
+    {
+     "station": "sanderson-amtrak",
+     "seq": 13,
+     "arrive": "23:46",
+     "depart": "23:46"
+    },
+    {
+     "station": "del-rio-amtrak-station",
+     "seq": 14,
+     "arrive": "26:12",
+     "depart": "26:12"
+    },
+    {
+     "station": "san-antonio-amtrak-station",
+     "seq": 15,
+     "arrive": "30:00",
+     "depart": "31:25"
+    },
+    {
+     "station": "houston",
+     "seq": 16,
+     "arrive": "36:10",
+     "depart": "37:10"
+    },
+    {
+     "station": "beaumont-amtrak",
+     "seq": 17,
+     "arrive": "38:53",
+     "depart": "39:05"
+    },
+    {
+     "station": "lake-charles",
+     "seq": 18,
+     "arrive": "40:29",
+     "depart": "40:29"
+    },
+    {
+     "station": "lafayette-amtrak-station-lft",
+     "seq": 19,
+     "arrive": "42:12",
+     "depart": "42:15"
+    },
+    {
+     "station": "new-iberia-amtrak",
+     "seq": 20,
+     "arrive": "42:41",
+     "depart": "42:41"
+    },
+    {
+     "station": "schriever-amtrak",
+     "seq": 21,
+     "arrive": "44:03",
+     "depart": "44:03"
+    },
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 22,
+     "arrive": "46:40"
+    }
+   ]
+  }
+ ]
+}

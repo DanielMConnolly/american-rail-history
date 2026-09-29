@@ -1,0 +1,132 @@
+{
+ "id": "amtrak-42992-2026",
+ "route_id": "42992",
+ "line_ids": [
+  "amtrak-36921",
+  "amtrak-68",
+  "amtrak-81",
+  "amtrak-81-boston",
+  "amtrak-94"
+ ],
+ "company": "Amtrak",
+ "service": "Berkshire Flyer",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "1233",
+   "name": "Berkshire Flyer",
+   "headsign": "Pittsfield",
+   "direction": "0",
+   "days": "Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "11:06"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "11:28",
+     "depart": "11:29"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "11:46",
+     "depart": "11:48"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "12:38",
+     "depart": "12:40"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "12:54",
+     "depart": "12:55"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "13:14",
+     "depart": "13:17"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "13:39",
+     "depart": "13:50"
+    },
+    {
+     "station": "pittsfield-amtrak-station",
+     "seq": 8,
+     "arrive": "15:00"
+    }
+   ]
+  },
+  {
+   "number": "1246",
+   "name": "Berkshire Flyer",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Fri, Sun",
+   "stops": [
+    {
+     "station": "pittsfield-amtrak-station",
+     "seq": 1,
+     "depart": "15:15"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 2,
+     "arrive": "16:25",
+     "depart": "17:14"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 3,
+     "arrive": "17:38",
+     "depart": "17:41"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 4,
+     "arrive": "18:01",
+     "depart": "18:04"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 5,
+     "arrive": "18:16",
+     "depart": "18:18"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 6,
+     "arrive": "18:57",
+     "depart": "18:58"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 7,
+     "arrive": "19:21",
+     "depart": "19:22"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 8,
+     "arrive": "19:51"
+    }
+   ]
+  }
+ ]
+}

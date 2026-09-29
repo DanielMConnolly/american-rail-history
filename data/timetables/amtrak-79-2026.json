@@ -1,0 +1,482 @@
+{
+ "id": "amtrak-79-2026",
+ "route_id": "79",
+ "line_ids": [
+  "amtrak-79"
+ ],
+ "company": "Amtrak",
+ "service": "Piedmont",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "71",
+   "name": "Piedmont",
+   "headsign": "Charlotte",
+   "direction": "0",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "raleigh-union-station",
+     "seq": 1,
+     "depart": "06:30"
+    },
+    {
+     "station": "cary",
+     "seq": 2,
+     "arrive": "06:40",
+     "depart": "06:42"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 3,
+     "arrive": "07:00",
+     "depart": "07:02"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 4,
+     "arrive": "07:38",
+     "depart": "07:38"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "08:04",
+     "depart": "08:06"
+    },
+    {
+     "station": "salisbury",
+     "seq": 6,
+     "arrive": "08:49",
+     "depart": "08:49"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 7,
+     "arrive": "09:08",
+     "depart": "09:09"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 8,
+     "arrive": "09:38"
+    }
+   ]
+  },
+  {
+   "number": "73",
+   "name": "Piedmont",
+   "headsign": "Charlotte",
+   "direction": "0",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "raleigh-union-station",
+     "seq": 1,
+     "depart": "10:00"
+    },
+    {
+     "station": "cary",
+     "seq": 2,
+     "arrive": "10:10",
+     "depart": "10:12"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 3,
+     "arrive": "10:30",
+     "depart": "10:32"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 4,
+     "arrive": "11:08",
+     "depart": "11:09"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "11:34",
+     "depart": "11:36"
+    },
+    {
+     "station": "high-point",
+     "seq": 6,
+     "arrive": "11:52",
+     "depart": "11:53"
+    },
+    {
+     "station": "salisbury",
+     "seq": 7,
+     "arrive": "12:25",
+     "depart": "12:27"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 8,
+     "arrive": "12:42",
+     "depart": "12:43"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 9,
+     "arrive": "13:11"
+    }
+   ]
+  },
+  {
+   "number": "72",
+   "name": "Piedmont",
+   "headsign": "Raleigh",
+   "direction": "1",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 1,
+     "depart": "10:30"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 2,
+     "arrive": "10:54",
+     "depart": "10:55"
+    },
+    {
+     "station": "salisbury",
+     "seq": 3,
+     "arrive": "11:10",
+     "depart": "11:11"
+    },
+    {
+     "station": "high-point",
+     "seq": 4,
+     "arrive": "11:44",
+     "depart": "11:45"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "12:02",
+     "depart": "12:04"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 6,
+     "arrive": "12:25",
+     "depart": "12:26"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 7,
+     "arrive": "13:06",
+     "depart": "13:08"
+    },
+    {
+     "station": "cary",
+     "seq": 8,
+     "arrive": "13:31",
+     "depart": "13:31"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 9,
+     "arrive": "13:46"
+    }
+   ]
+  },
+  {
+   "number": "75",
+   "name": "Piedmont",
+   "headsign": "Charlotte",
+   "direction": "0",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "raleigh-union-station",
+     "seq": 1,
+     "depart": "12:45"
+    },
+    {
+     "station": "cary",
+     "seq": 2,
+     "arrive": "12:55",
+     "depart": "12:57"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 3,
+     "arrive": "13:15",
+     "depart": "13:17"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 4,
+     "arrive": "13:55",
+     "depart": "13:56"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "14:19",
+     "depart": "14:21"
+    },
+    {
+     "station": "high-point",
+     "seq": 6,
+     "arrive": "14:37",
+     "depart": "14:38"
+    },
+    {
+     "station": "salisbury",
+     "seq": 7,
+     "arrive": "15:11",
+     "depart": "15:13"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 8,
+     "arrive": "15:27",
+     "depart": "15:28"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 9,
+     "arrive": "15:56"
+    }
+   ]
+  },
+  {
+   "number": "74",
+   "name": "Piedmont",
+   "headsign": "Raleigh",
+   "direction": "1",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 1,
+     "depart": "14:20"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 2,
+     "arrive": "14:44",
+     "depart": "14:45"
+    },
+    {
+     "station": "salisbury",
+     "seq": 3,
+     "arrive": "15:00",
+     "depart": "15:02"
+    },
+    {
+     "station": "high-point",
+     "seq": 4,
+     "arrive": "15:35",
+     "depart": "15:36"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "15:53",
+     "depart": "15:55"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 6,
+     "arrive": "16:15",
+     "depart": "16:16"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 7,
+     "arrive": "17:00",
+     "depart": "17:02"
+    },
+    {
+     "station": "cary",
+     "seq": 8,
+     "arrive": "17:21",
+     "depart": "17:21"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 9,
+     "arrive": "17:37"
+    }
+   ]
+  },
+  {
+   "number": "77",
+   "name": "Piedmont",
+   "headsign": "Charlotte",
+   "direction": "0",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "raleigh-union-station",
+     "seq": 1,
+     "depart": "15:25"
+    },
+    {
+     "station": "cary",
+     "seq": 2,
+     "arrive": "15:35",
+     "depart": "15:37"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 3,
+     "arrive": "15:55",
+     "depart": "15:57"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 4,
+     "arrive": "16:43",
+     "depart": "16:44"
+    },
+    {
+     "station": "greensboro",
+     "seq": 5,
+     "arrive": "17:07",
+     "depart": "17:09"
+    },
+    {
+     "station": "high-point",
+     "seq": 6,
+     "arrive": "17:25",
+     "depart": "17:26"
+    },
+    {
+     "station": "salisbury",
+     "seq": 7,
+     "arrive": "17:58",
+     "depart": "17:59"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 8,
+     "arrive": "18:38"
+    }
+   ]
+  },
+  {
+   "number": "76",
+   "name": "Piedmont",
+   "headsign": "Raleigh",
+   "direction": "1",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 1,
+     "depart": "16:59"
+    },
+    {
+     "station": "kannapolis",
+     "seq": 2,
+     "arrive": "17:23",
+     "depart": "17:24"
+    },
+    {
+     "station": "salisbury",
+     "seq": 3,
+     "arrive": "17:39",
+     "depart": "17:41"
+    },
+    {
+     "station": "greensboro",
+     "seq": 4,
+     "arrive": "18:25",
+     "depart": "18:27"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 5,
+     "arrive": "18:47",
+     "depart": "18:47"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 6,
+     "arrive": "19:27",
+     "depart": "19:29"
+    },
+    {
+     "station": "cary",
+     "seq": 7,
+     "arrive": "19:49",
+     "depart": "19:49"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 8,
+     "arrive": "20:05"
+    }
+   ]
+  },
+  {
+   "number": "78",
+   "name": "Piedmont",
+   "headsign": "Raleigh",
+   "direction": "1",
+   "days": "Fri-Sun",
+   "stops": [
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 1,
+     "depart": "19:45"
+    },
+    {
+     "station": "salisbury",
+     "seq": 2,
+     "arrive": "20:21",
+     "depart": "20:22"
+    },
+    {
+     "station": "high-point",
+     "seq": 3,
+     "arrive": "20:55",
+     "depart": "20:56"
+    },
+    {
+     "station": "greensboro",
+     "seq": 4,
+     "arrive": "21:13",
+     "depart": "21:15"
+    },
+    {
+     "station": "burlington-amtrak-station-bnc",
+     "seq": 5,
+     "arrive": "21:36",
+     "depart": "21:37"
+    },
+    {
+     "station": "durham-amtrak-station",
+     "seq": 6,
+     "arrive": "22:15",
+     "depart": "22:17"
+    },
+    {
+     "station": "cary",
+     "seq": 7,
+     "arrive": "22:36",
+     "depart": "22:38"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 8,
+     "arrive": "22:52"
+    }
+   ]
+  }
+ ]
+}

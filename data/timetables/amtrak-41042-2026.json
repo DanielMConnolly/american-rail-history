@@ -1,0 +1,287 @@
+{
+ "id": "amtrak-41042-2026",
+ "route_id": "41042",
+ "line_ids": [
+  "amtrak-41042"
+ ],
+ "company": "Amtrak",
+ "service": "Amtrak Hartford Line",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "470",
+   "name": "Amtrak Hartford Line",
+   "headsign": "Hartford",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "new-haven-nhv",
+     "seq": 1,
+     "depart": "10:51"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 2,
+     "arrive": "10:53",
+     "depart": "10:53"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 3,
+     "arrive": "11:05",
+     "depart": "11:05"
+    },
+    {
+     "station": "meriden",
+     "seq": 4,
+     "arrive": "11:15",
+     "depart": "11:15"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "11:23",
+     "depart": "11:23"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 6,
+     "arrive": "11:35"
+    }
+   ]
+  },
+  {
+   "number": "473",
+   "name": "Amtrak Hartford Line",
+   "headsign": "New Haven",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 1,
+     "depart": "12:39"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 2,
+     "arrive": "12:50",
+     "depart": "12:50"
+    },
+    {
+     "station": "meriden",
+     "seq": 3,
+     "arrive": "12:59",
+     "depart": "12:59"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 4,
+     "arrive": "13:07",
+     "depart": "13:07"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 5,
+     "arrive": "13:20",
+     "depart": "13:20"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 6,
+     "arrive": "13:28"
+    }
+   ]
+  },
+  {
+   "number": "475",
+   "name": "Amtrak Hartford Line",
+   "headsign": "New Haven",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "springfield-spg",
+     "seq": 1,
+     "depart": "15:50"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 2,
+     "arrive": "16:09",
+     "depart": "16:09"
+    },
+    {
+     "station": "windsor",
+     "seq": 3,
+     "arrive": "16:14",
+     "depart": "16:14"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 4,
+     "arrive": "16:21",
+     "depart": "16:24"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "16:35",
+     "depart": "16:35"
+    },
+    {
+     "station": "meriden",
+     "seq": 6,
+     "arrive": "16:44",
+     "depart": "16:44"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 7,
+     "arrive": "16:52",
+     "depart": "16:52"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 8,
+     "arrive": "17:05",
+     "depart": "17:05"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "17:13"
+    }
+   ]
+  },
+  {
+   "number": "474",
+   "name": "Amtrak Hartford Line",
+   "headsign": "Springfield",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "new-haven-nhv",
+     "seq": 1,
+     "depart": "16:25"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 2,
+     "arrive": "16:27",
+     "depart": "16:27"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 3,
+     "arrive": "16:40",
+     "depart": "16:40"
+    },
+    {
+     "station": "meriden",
+     "seq": 4,
+     "arrive": "16:47",
+     "depart": "16:47"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "16:56",
+     "depart": "16:56"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 6,
+     "arrive": "17:09",
+     "depart": "17:11"
+    },
+    {
+     "station": "windsor",
+     "seq": 7,
+     "arrive": "17:18",
+     "depart": "17:18"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 8,
+     "arrive": "17:25",
+     "depart": "17:25"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 9,
+     "arrive": "17:50"
+    }
+   ]
+  },
+  {
+   "number": "417",
+   "name": "Amtrak Hartford Line",
+   "headsign": "New Haven",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "springfield-spg",
+     "seq": 1,
+     "depart": "18:50"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 2,
+     "arrive": "19:08",
+     "depart": "19:08"
+    },
+    {
+     "station": "windsor",
+     "seq": 3,
+     "arrive": "19:14",
+     "depart": "19:14"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 4,
+     "arrive": "19:23",
+     "depart": "19:25"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "19:35",
+     "depart": "19:35"
+    },
+    {
+     "station": "meriden",
+     "seq": 6,
+     "arrive": "19:44",
+     "depart": "19:44"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 7,
+     "arrive": "19:52",
+     "depart": "19:52"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 8,
+     "arrive": "20:05",
+     "depart": "20:05"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "20:11"
+    }
+   ]
+  }
+ ]
+}

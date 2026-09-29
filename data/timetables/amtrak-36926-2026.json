@@ -1,0 +1,272 @@
+{
+ "id": "amtrak-36926-2026",
+ "route_id": "36926",
+ "line_ids": [
+  "amtrak-36926"
+ ],
+ "company": "Amtrak",
+ "service": "Lincoln Service Missouri River Runner",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "318",
+   "name": "Lincoln Service Missouri River Runner",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "kansas-city",
+     "seq": 1,
+     "depart": "09:40"
+    },
+    {
+     "station": "independence-amtrak-station",
+     "seq": 2,
+     "arrive": "09:59",
+     "depart": "09:59"
+    },
+    {
+     "station": "lee-s-summit-amtrak",
+     "seq": 3,
+     "arrive": "10:16",
+     "depart": "10:16"
+    },
+    {
+     "station": "warrensburg-amtrak-station",
+     "seq": 4,
+     "arrive": "10:57",
+     "depart": "10:57"
+    },
+    {
+     "station": "sedalia-amtrak-station",
+     "seq": 5,
+     "arrive": "11:27",
+     "depart": "11:27"
+    },
+    {
+     "station": "jefferson-city-amtrak-station",
+     "seq": 6,
+     "arrive": "12:49",
+     "depart": "12:49"
+    },
+    {
+     "station": "hermann",
+     "seq": 7,
+     "arrive": "13:36",
+     "depart": "13:36"
+    },
+    {
+     "station": "washington-amtrak-station",
+     "seq": 8,
+     "arrive": "14:03",
+     "depart": "14:03"
+    },
+    {
+     "station": "kirkwood-amtrak-station",
+     "seq": 9,
+     "arrive": "14:47",
+     "depart": "14:47"
+    },
+    {
+     "station": "st-louis",
+     "seq": 10,
+     "arrive": "15:20",
+     "depart": "15:55"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 11,
+     "arrive": "16:37",
+     "depart": "16:39"
+    },
+    {
+     "station": "carlinville-amtrak-station",
+     "seq": 12,
+     "arrive": "17:05",
+     "depart": "17:05"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 13,
+     "arrive": "17:43",
+     "depart": "17:46"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 14,
+     "arrive": "18:08",
+     "depart": "18:08"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 15,
+     "arrive": "18:32",
+     "depart": "18:35"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 16,
+     "arrive": "18:59",
+     "depart": "18:59"
+    },
+    {
+     "station": "dwight-amtrak-station",
+     "seq": 17,
+     "arrive": "19:12",
+     "depart": "19:12"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 18,
+     "arrive": "19:46",
+     "depart": "19:46"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 19,
+     "arrive": "20:11",
+     "depart": "20:11"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 20,
+     "arrive": "21:00"
+    }
+   ]
+  },
+  {
+   "number": "319",
+   "name": "Lincoln Service Missouri River Runner",
+   "headsign": "Kansas City",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "10:50"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 2,
+     "arrive": "11:13",
+     "depart": "11:13"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 3,
+     "arrive": "11:40",
+     "depart": "11:40"
+    },
+    {
+     "station": "dwight-amtrak-station",
+     "seq": 4,
+     "arrive": "12:09",
+     "depart": "12:09"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 5,
+     "arrive": "12:23",
+     "depart": "12:23"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 6,
+     "arrive": "12:56",
+     "depart": "12:59"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 7,
+     "arrive": "13:25",
+     "depart": "13:25"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 8,
+     "arrive": "13:53",
+     "depart": "13:56"
+    },
+    {
+     "station": "carlinville-amtrak-station",
+     "seq": 9,
+     "arrive": "14:33",
+     "depart": "14:33"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 10,
+     "arrive": "14:57",
+     "depart": "14:59"
+    },
+    {
+     "station": "st-louis",
+     "seq": 11,
+     "arrive": "15:51",
+     "depart": "16:11"
+    },
+    {
+     "station": "kirkwood-amtrak-station",
+     "seq": 12,
+     "arrive": "16:40",
+     "depart": "16:40"
+    },
+    {
+     "station": "washington-amtrak-station",
+     "seq": 13,
+     "arrive": "17:17",
+     "depart": "17:17"
+    },
+    {
+     "station": "hermann",
+     "seq": 14,
+     "arrive": "17:45",
+     "depart": "17:45"
+    },
+    {
+     "station": "jefferson-city-amtrak-station",
+     "seq": 15,
+     "arrive": "18:36",
+     "depart": "18:36"
+    },
+    {
+     "station": "sedalia-amtrak-station",
+     "seq": 16,
+     "arrive": "19:43",
+     "depart": "19:43"
+    },
+    {
+     "station": "warrensburg-amtrak-station",
+     "seq": 17,
+     "arrive": "20:14",
+     "depart": "20:14"
+    },
+    {
+     "station": "lee-s-summit-amtrak",
+     "seq": 18,
+     "arrive": "20:55",
+     "depart": "20:55"
+    },
+    {
+     "station": "independence-amtrak-station",
+     "seq": 19,
+     "arrive": "21:11",
+     "depart": "21:11"
+    },
+    {
+     "station": "kansas-city",
+     "seq": 20,
+     "arrive": "21:51"
+    }
+   ]
+  }
+ ]
+}

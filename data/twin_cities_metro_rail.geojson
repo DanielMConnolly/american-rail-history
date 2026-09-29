@@ -1,0 +1,477 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Light rail in Minneapolis and St. Paul. The Hiawatha Line — now the METRO Blue Line — opened on 26 June 2004 between downtown Minneapolis and Fort Snelling, the first modern light rail in Minnesota, and the Central Corridor Green Line linked the two downtowns on 14 June 2014. Both are drawn in one Metro Transit colour under Rule 4, despite the agency's Blue and Green branding. Also here is the Como–Harriet Streetcar Line, a surviving fragment of the Twin City Rapid Transit system that the Minnesota Streetcar Museum has run as a heritage operation since 1971 — a genuine passenger service under Rule 1, tagged tourist_rail.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/METRO_Blue_Line_(Minnesota) (Hiawatha Line opening 26 June 2004, 12 mi route)",
+   "https://en.wikipedia.org/wiki/METRO_Green_Line_(Minnesota) (Central Corridor opening 14 June 2014, 11 mi route)",
+   "https://en.wikipedia.org/wiki/Como%E2%80%93Harriet_Streetcar_Line (museum operation on former Twin City Rapid Transit right of way)",
+   "OpenStreetMap route relations, extracted 29 August 2026; traced length is compared with the documented route length on each feature."
+  ],
+  "not_yet_sourced": "All headways and speeds are estimates; no timetable was consulted. The Como–Harriet relation traces only 0.64 mi against roughly a mile of surviving track, so the drawn line is short of the operating railway. The Northstar commuter line to Big Lake is NOT in this layer — no OSM route relation was found for it in the bbox searched, and its post-2020 service status was not established."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Metro Transit",
+    "line": "Metro Transit: METRO Blue Line",
+    "id": "metro-blue-line",
+    "color": "#1F6F8B",
+    "mode": "light_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 12.98 mi from the OSM route relation against 12.0 mi documented. One out-and-back artifact remains where the relation follows both tracks through a terminal.",
+    "segments": [
+     {
+      "start": 2004,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "Opened 26 June 2004 as the Hiawatha Line, Minneapolis to Fort Snelling and the airport, reaching the Mall of America later that year; renamed the METRO Blue Line in 2013. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/METRO_Blue_Line_(Minnesota)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.238729,
+      44.854508
+     ],
+     [
+      -93.238685,
+      44.852497
+     ],
+     [
+      -93.235756,
+      44.851913
+     ],
+     [
+      -93.233792,
+      44.851916
+     ],
+     [
+      -93.232983,
+      44.852495
+     ],
+     [
+      -93.232812,
+      44.854964
+     ],
+     [
+      -93.231015,
+      44.856268
+     ],
+     [
+      -93.230268,
+      44.856414
+     ],
+     [
+      -93.223921,
+      44.856378
+     ],
+     [
+      -93.223356,
+      44.856603
+     ],
+     [
+      -93.223083,
+      44.861509
+     ],
+     [
+      -93.223334,
+      44.865253
+     ],
+     [
+      -93.223299,
+      44.872752
+     ],
+     [
+      -93.223496,
+      44.873281
+     ],
+     [
+      -93.224815,
+      44.874883
+     ],
+     [
+      -93.224783,
+      44.875898
+     ],
+     [
+      -93.224242,
+      44.876338
+     ],
+     [
+      -93.223604,
+      44.8765
+     ],
+     [
+      -93.214391,
+      44.876517
+     ],
+     [
+      -93.211695,
+      44.876977
+     ],
+     [
+      -93.207951,
+      44.878799
+     ],
+     [
+      -93.201233,
+      44.883693
+     ],
+     [
+      -93.199903,
+      44.885323
+     ],
+     [
+      -93.198762,
+      44.888364
+     ],
+     [
+      -93.19877,
+      44.891514
+     ],
+     [
+      -93.197585,
+      44.894879
+     ],
+     [
+      -93.197883,
+      44.897505
+     ],
+     [
+      -93.198639,
+      44.898596
+     ],
+     [
+      -93.200431,
+      44.899528
+     ],
+     [
+      -93.201152,
+      44.900175
+     ],
+     [
+      -93.20326,
+      44.905183
+     ],
+     [
+      -93.206444,
+      44.909314
+     ],
+     [
+      -93.212667,
+      44.914513
+     ],
+     [
+      -93.215669,
+      44.916417
+     ],
+     [
+      -93.217938,
+      44.91843
+     ],
+     [
+      -93.219511,
+      44.920162
+     ],
+     [
+      -93.234288,
+      44.941728
+     ],
+     [
+      -93.239867,
+      44.949728
+     ],
+     [
+      -93.241106,
+      44.951186
+     ],
+     [
+      -93.241298,
+      44.953289
+     ],
+     [
+      -93.242802,
+      44.956268
+     ],
+     [
+      -93.247512,
+      44.963156
+     ],
+     [
+      -93.248507,
+      44.96511
+     ],
+     [
+      -93.24973,
+      44.966476
+     ],
+     [
+      -93.254893,
+      44.973881
+     ],
+     [
+      -93.255814,
+      44.974474
+     ],
+     [
+      -93.25792,
+      44.975332
+     ],
+     [
+      -93.26069,
+      44.97477
+     ],
+     [
+      -93.261222,
+      44.974831
+     ],
+     [
+      -93.272595,
+      44.979633
+     ],
+     [
+      -93.27803,
+      44.98326
+     ],
+     [
+      -93.272743,
+      44.979823
+     ],
+     [
+      -93.265477,
+      44.976549
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Metro Transit",
+    "line": "Metro Transit: METRO Green Line",
+    "id": "metro-green-line",
+    "color": "#1F6F8B",
+    "mode": "light_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 11.73 mi from the OSM route relation against 11.0 mi documented. One out-and-back artifact remains at a terminal.",
+    "segments": [
+     {
+      "start": 2014,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "The Central Corridor line opened 14 June 2014 along University Avenue, connecting downtown Minneapolis and downtown St. Paul. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/METRO_Green_Line_(Minnesota)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.086391,
+      44.948443
+     ],
+     [
+      -93.09119,
+      44.946082
+     ],
+     [
+      -93.093179,
+      44.946369
+     ],
+     [
+      -93.09857,
+      44.95165
+     ],
+     [
+      -93.098452,
+      44.951936
+     ],
+     [
+      -93.096632,
+      44.952848
+     ],
+     [
+      -93.096488,
+      44.953135
+     ],
+     [
+      -93.09919,
+      44.955685
+     ],
+     [
+      -93.099614,
+      44.955874
+     ],
+     [
+      -93.107917,
+      44.955724
+     ],
+     [
+      -93.1755,
+      44.955678
+     ],
+     [
+      -93.176803,
+      44.955795
+     ],
+     [
+      -93.178013,
+      44.956139
+     ],
+     [
+      -93.214958,
+      44.970906
+     ],
+     [
+      -93.215204,
+      44.97113
+     ],
+     [
+      -93.21521,
+      44.972735
+     ],
+     [
+      -93.21543,
+      44.973076
+     ],
+     [
+      -93.221678,
+      44.975597
+     ],
+     [
+      -93.222295,
+      44.975499
+     ],
+     [
+      -93.223905,
+      44.973642
+     ],
+     [
+      -93.236789,
+      44.973632
+     ],
+     [
+      -93.247596,
+      44.971767
+     ],
+     [
+      -93.251077,
+      44.970954
+     ],
+     [
+      -93.251935,
+      44.970928
+     ],
+     [
+      -93.252951,
+      44.971376
+     ],
+     [
+      -93.254864,
+      44.973922
+     ],
+     [
+      -93.255969,
+      44.974592
+     ],
+     [
+      -93.258048,
+      44.975386
+     ],
+     [
+      -93.260707,
+      44.97481
+     ],
+     [
+      -93.261289,
+      44.974894
+     ],
+     [
+      -93.272476,
+      44.979662
+     ],
+     [
+      -93.277589,
+      44.983137
+     ],
+     [
+      -93.278991,
+      44.983637
+     ],
+     [
+      -93.277529,
+      44.98307
+     ],
+     [
+      -93.272743,
+      44.979823
+     ],
+     [
+      -93.265387,
+      44.976647
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minnesota Streetcar Museum",
+    "line": "Minnesota Streetcar Museum: Como–Harriet Line",
+    "id": "como-harriet-streetcar",
+    "color": "#8C4A6B",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 15,
+    "speed_source": "estimated: a heritage streetcar operating at low speed; no timetable consulted",
+    "geometry_quality": "Traced 0.64 mi from the OSM route relation. The relation covers only part of the surviving track; the operating line is about a mile between Lake Harriet and Lake Calhoun/Bde Maka Ska.",
+    "segments": [
+     {
+      "start": 1971,
+      "end": 2026,
+      "headway_min": 20,
+      "note": "Museum operation on a surviving fragment of the Twin City Rapid Transit route between Lake Harriet and Lake Calhoun, running restored streetcars since 1971. This is a heritage passenger operation, not a horsecar line — the corridor was electric. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Como%E2%80%93Harriet_Streetcar_Line"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.309541,
+      44.927793
+     ],
+     [
+      -93.308449,
+      44.933264
+     ],
+     [
+      -93.307598,
+      44.93426
+     ],
+     [
+      -93.304983,
+      44.935963
+     ]
+    ]
+   }
+  }
+ ]
+}

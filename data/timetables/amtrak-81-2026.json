@@ -1,0 +1,551 @@
+{
+ "id": "amtrak-81-2026",
+ "route_id": "81",
+ "line_ids": [
+  "amtrak-81",
+  "amtrak-81-boston"
+ ],
+ "company": "Amtrak",
+ "service": "Lake Shore Limited",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "449",
+   "name": "Lake Shore Limited",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "12:50"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "12:57",
+     "depart": "12:57"
+    },
+    {
+     "station": "framingham-amtrak",
+     "seq": 3,
+     "arrive": "13:25",
+     "depart": "13:25"
+    },
+    {
+     "station": "worcester-union-station",
+     "seq": 4,
+     "arrive": "14:00",
+     "depart": "14:06"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 5,
+     "arrive": "15:21",
+     "depart": "15:26"
+    },
+    {
+     "station": "pittsfield-amtrak-station",
+     "seq": 6,
+     "arrive": "16:42",
+     "depart": "16:42"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "18:10",
+     "depart": "19:05"
+    },
+    {
+     "station": "schenectady",
+     "seq": 8,
+     "arrive": "19:27",
+     "depart": "19:33"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 9,
+     "arrive": "20:45",
+     "depart": "20:50"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 10,
+     "arrive": "21:51",
+     "depart": "22:05"
+    },
+    {
+     "station": "rochester",
+     "seq": 11,
+     "arrive": "23:23",
+     "depart": "23:29"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 12,
+     "arrive": "24:29",
+     "depart": "24:39"
+    },
+    {
+     "station": "erie-amtrak-station",
+     "seq": 13,
+     "arrive": "26:10",
+     "depart": "26:16"
+    },
+    {
+     "station": "cleveland",
+     "seq": 14,
+     "arrive": "27:53",
+     "depart": "28:03"
+    },
+    {
+     "station": "elyria-amtrak",
+     "seq": 15,
+     "arrive": "28:32",
+     "depart": "28:36"
+    },
+    {
+     "station": "sandusky-amtrak-station",
+     "seq": 16,
+     "arrive": "29:09",
+     "depart": "29:13"
+    },
+    {
+     "station": "toledo",
+     "seq": 17,
+     "arrive": "30:13",
+     "depart": "30:33"
+    },
+    {
+     "station": "bryan-amtrak-station",
+     "seq": 18,
+     "arrive": "31:23",
+     "depart": "31:23"
+    },
+    {
+     "station": "waterloo-amtrak-station",
+     "seq": 19,
+     "arrive": "31:51",
+     "depart": "31:51"
+    },
+    {
+     "station": "elkhart-amtrak-station",
+     "seq": 20,
+     "arrive": "32:43",
+     "depart": "32:43"
+    },
+    {
+     "station": "south-bend-amtrak-station",
+     "seq": 21,
+     "arrive": "33:04",
+     "depart": "33:07"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 22,
+     "arrive": "35:12"
+    }
+   ]
+  },
+  {
+   "number": "49",
+   "name": "Lake Shore Limited",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "15:40"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 2,
+     "arrive": "16:23",
+     "depart": "16:26"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 3,
+     "arrive": "17:07",
+     "depart": "17:10"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 4,
+     "arrive": "17:24",
+     "depart": "17:27"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 5,
+     "arrive": "18:20",
+     "depart": "19:05"
+    },
+    {
+     "station": "schenectady",
+     "seq": 6,
+     "arrive": "19:27",
+     "depart": "19:33"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 7,
+     "arrive": "20:45",
+     "depart": "20:50"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 8,
+     "arrive": "21:51",
+     "depart": "22:05"
+    },
+    {
+     "station": "rochester",
+     "seq": 9,
+     "arrive": "23:23",
+     "depart": "23:29"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 10,
+     "arrive": "24:29",
+     "depart": "24:39"
+    },
+    {
+     "station": "erie-amtrak-station",
+     "seq": 11,
+     "arrive": "26:10",
+     "depart": "26:16"
+    },
+    {
+     "station": "cleveland",
+     "seq": 12,
+     "arrive": "27:53",
+     "depart": "28:03"
+    },
+    {
+     "station": "elyria-amtrak",
+     "seq": 13,
+     "arrive": "28:32",
+     "depart": "28:36"
+    },
+    {
+     "station": "sandusky-amtrak-station",
+     "seq": 14,
+     "arrive": "29:09",
+     "depart": "29:13"
+    },
+    {
+     "station": "toledo",
+     "seq": 15,
+     "arrive": "30:13",
+     "depart": "30:33"
+    },
+    {
+     "station": "bryan-amtrak-station",
+     "seq": 16,
+     "arrive": "31:23",
+     "depart": "31:23"
+    },
+    {
+     "station": "waterloo-amtrak-station",
+     "seq": 17,
+     "arrive": "31:51",
+     "depart": "31:51"
+    },
+    {
+     "station": "elkhart-amtrak-station",
+     "seq": 18,
+     "arrive": "32:43",
+     "depart": "32:43"
+    },
+    {
+     "station": "south-bend-amtrak-station",
+     "seq": 19,
+     "arrive": "33:04",
+     "depart": "33:07"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 20,
+     "arrive": "35:12"
+    }
+   ]
+  },
+  {
+   "number": "448",
+   "name": "Lake Shore Limited",
+   "headsign": "Boston",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "22:30"
+    },
+    {
+     "station": "south-bend-amtrak-station",
+     "seq": 2,
+     "arrive": "23:59",
+     "depart": "23:59"
+    },
+    {
+     "station": "elkhart-amtrak-station",
+     "seq": 3,
+     "arrive": "24:24",
+     "depart": "24:27"
+    },
+    {
+     "station": "waterloo-amtrak-station",
+     "seq": 4,
+     "arrive": "25:15",
+     "depart": "25:20"
+    },
+    {
+     "station": "bryan-amtrak-station",
+     "seq": 5,
+     "arrive": "25:43",
+     "depart": "25:45"
+    },
+    {
+     "station": "toledo",
+     "seq": 6,
+     "arrive": "27:11",
+     "depart": "27:31"
+    },
+    {
+     "station": "sandusky-amtrak-station",
+     "seq": 7,
+     "arrive": "28:19",
+     "depart": "28:23"
+    },
+    {
+     "station": "elyria-amtrak",
+     "seq": 8,
+     "arrive": "28:58",
+     "depart": "29:02"
+    },
+    {
+     "station": "cleveland",
+     "seq": 9,
+     "arrive": "29:38",
+     "depart": "29:50"
+    },
+    {
+     "station": "erie-amtrak-station",
+     "seq": 10,
+     "arrive": "31:18",
+     "depart": "31:24"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 11,
+     "arrive": "32:53",
+     "depart": "33:05"
+    },
+    {
+     "station": "rochester",
+     "seq": 12,
+     "arrive": "34:00",
+     "depart": "34:06"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 13,
+     "arrive": "35:28",
+     "depart": "35:42"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 14,
+     "arrive": "36:37",
+     "depart": "36:42"
+    },
+    {
+     "station": "schenectady",
+     "seq": 15,
+     "arrive": "38:15",
+     "depart": "38:21"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 16,
+     "arrive": "38:53",
+     "depart": "39:27"
+    },
+    {
+     "station": "pittsfield-amtrak-station",
+     "seq": 17,
+     "arrive": "40:30",
+     "depart": "40:30"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 18,
+     "arrive": "41:49",
+     "depart": "42:04"
+    },
+    {
+     "station": "worcester-union-station",
+     "seq": 19,
+     "arrive": "43:30",
+     "depart": "43:32"
+    },
+    {
+     "station": "framingham-amtrak",
+     "seq": 20,
+     "arrive": "43:58",
+     "depart": "44:00"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 21,
+     "arrive": "44:24",
+     "depart": "44:26"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 22,
+     "arrive": "44:32"
+    }
+   ]
+  },
+  {
+   "number": "48",
+   "name": "Lake Shore Limited",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "22:30"
+    },
+    {
+     "station": "south-bend-amtrak-station",
+     "seq": 2,
+     "arrive": "23:59",
+     "depart": "23:59"
+    },
+    {
+     "station": "elkhart-amtrak-station",
+     "seq": 3,
+     "arrive": "24:24",
+     "depart": "24:27"
+    },
+    {
+     "station": "waterloo-amtrak-station",
+     "seq": 4,
+     "arrive": "25:15",
+     "depart": "25:20"
+    },
+    {
+     "station": "bryan-amtrak-station",
+     "seq": 5,
+     "arrive": "25:43",
+     "depart": "25:45"
+    },
+    {
+     "station": "toledo",
+     "seq": 6,
+     "arrive": "27:11",
+     "depart": "27:31"
+    },
+    {
+     "station": "sandusky-amtrak-station",
+     "seq": 7,
+     "arrive": "28:19",
+     "depart": "28:23"
+    },
+    {
+     "station": "elyria-amtrak",
+     "seq": 8,
+     "arrive": "28:58",
+     "depart": "29:02"
+    },
+    {
+     "station": "cleveland",
+     "seq": 9,
+     "arrive": "29:38",
+     "depart": "29:50"
+    },
+    {
+     "station": "erie-amtrak-station",
+     "seq": 10,
+     "arrive": "31:18",
+     "depart": "31:24"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 11,
+     "arrive": "32:53",
+     "depart": "33:05"
+    },
+    {
+     "station": "rochester",
+     "seq": 12,
+     "arrive": "34:00",
+     "depart": "34:06"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 13,
+     "arrive": "35:28",
+     "depart": "35:42"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 14,
+     "arrive": "36:37",
+     "depart": "36:42"
+    },
+    {
+     "station": "schenectady",
+     "seq": 15,
+     "arrive": "38:15",
+     "depart": "38:21"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 16,
+     "arrive": "38:53",
+     "depart": "40:15"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 17,
+     "arrive": "41:00",
+     "depart": "41:00"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 18,
+     "arrive": "41:18",
+     "depart": "41:18"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 19,
+     "arrive": "41:58",
+     "depart": "41:58"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 20,
+     "arrive": "42:47"
+    }
+   ]
+  }
+ ]
+}

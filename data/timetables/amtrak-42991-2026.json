@@ -1,0 +1,188 @@
+{
+ "id": "amtrak-42991-2026",
+ "route_id": "42991",
+ "line_ids": [
+  "amtrak-42991"
+ ],
+ "company": "Amtrak",
+ "service": "Borealis",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "1333",
+   "name": "Borealis",
+   "headsign": "St. Paul",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "12:10"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "12:31",
+     "depart": "12:34"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "13:11",
+     "depart": "13:12"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "13:25",
+     "depart": "13:27"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "13:42",
+     "depart": "13:49"
+    },
+    {
+     "station": "columbus-amtrak-station",
+     "seq": 6,
+     "arrive": "14:55",
+     "depart": "14:55"
+    },
+    {
+     "station": "portage",
+     "seq": 7,
+     "arrive": "15:23",
+     "depart": "15:23"
+    },
+    {
+     "station": "wisconsin-dells-amtrak-station",
+     "seq": 8,
+     "arrive": "15:43",
+     "depart": "15:43"
+    },
+    {
+     "station": "tomah-amtrak-station",
+     "seq": 9,
+     "arrive": "16:29",
+     "depart": "16:29"
+    },
+    {
+     "station": "la-crosse",
+     "seq": 10,
+     "arrive": "17:11",
+     "depart": "17:11"
+    },
+    {
+     "station": "winona",
+     "seq": 11,
+     "arrive": "17:45",
+     "depart": "17:45"
+    },
+    {
+     "station": "red-wing-amtrak-station",
+     "seq": 12,
+     "arrive": "18:47",
+     "depart": "18:47"
+    },
+    {
+     "station": "st-paul-minneapolis",
+     "seq": 13,
+     "arrive": "20:01"
+    }
+   ]
+  },
+  {
+   "number": "1340",
+   "name": "Borealis",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "st-paul-minneapolis",
+     "seq": 1,
+     "depart": "12:29"
+    },
+    {
+     "station": "red-wing-amtrak-station",
+     "seq": 2,
+     "arrive": "13:27",
+     "depart": "13:27"
+    },
+    {
+     "station": "winona",
+     "seq": 3,
+     "arrive": "14:41",
+     "depart": "14:41"
+    },
+    {
+     "station": "la-crosse",
+     "seq": 4,
+     "arrive": "15:17",
+     "depart": "15:17"
+    },
+    {
+     "station": "tomah-amtrak-station",
+     "seq": 5,
+     "arrive": "15:56",
+     "depart": "15:56"
+    },
+    {
+     "station": "wisconsin-dells-amtrak-station",
+     "seq": 6,
+     "arrive": "16:37",
+     "depart": "16:37"
+    },
+    {
+     "station": "portage",
+     "seq": 7,
+     "arrive": "16:55",
+     "depart": "16:55"
+    },
+    {
+     "station": "columbus-amtrak-station",
+     "seq": 8,
+     "arrive": "17:23",
+     "depart": "17:23"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 9,
+     "arrive": "18:37",
+     "depart": "18:44"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 10,
+     "arrive": "18:53",
+     "depart": "18:55"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 11,
+     "arrive": "19:07",
+     "depart": "19:08"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 12,
+     "arrive": "19:46",
+     "depart": "19:49"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 13,
+     "arrive": "20:21"
+    }
+   ]
+  }
+ ]
+}

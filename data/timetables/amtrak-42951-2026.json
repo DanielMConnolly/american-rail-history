@@ -1,0 +1,390 @@
+{
+ "id": "amtrak-42951-2026",
+ "route_id": "42951",
+ "line_ids": [
+  "amtrak-42951"
+ ],
+ "company": "Amtrak",
+ "service": "Lincoln Service",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "300",
+   "name": "Lincoln Service",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "st-louis",
+     "seq": 1,
+     "depart": "05:30"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 2,
+     "arrive": "06:12",
+     "depart": "06:14"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 3,
+     "arrive": "07:08",
+     "depart": "07:11"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 4,
+     "arrive": "07:36",
+     "depart": "07:36"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 5,
+     "arrive": "08:03",
+     "depart": "08:06"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 6,
+     "arrive": "08:31",
+     "depart": "08:31"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 7,
+     "arrive": "09:24",
+     "depart": "09:24"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 8,
+     "arrive": "09:49",
+     "depart": "09:49"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 9,
+     "arrive": "10:25"
+    }
+   ]
+  },
+  {
+   "number": "302",
+   "name": "Lincoln Service",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "st-louis",
+     "seq": 1,
+     "depart": "07:35"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 2,
+     "arrive": "08:19",
+     "depart": "08:21"
+    },
+    {
+     "station": "carlinville-amtrak-station",
+     "seq": 3,
+     "arrive": "08:46",
+     "depart": "08:46"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 4,
+     "arrive": "09:19",
+     "depart": "09:22"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 5,
+     "arrive": "09:44",
+     "depart": "09:44"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 6,
+     "arrive": "10:13",
+     "depart": "10:16"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 7,
+     "arrive": "10:42",
+     "depart": "10:42"
+    },
+    {
+     "station": "dwight-amtrak-station",
+     "seq": 8,
+     "arrive": "10:58",
+     "depart": "10:58"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 9,
+     "arrive": "11:39",
+     "depart": "11:39"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 10,
+     "arrive": "12:04",
+     "depart": "12:04"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 11,
+     "arrive": "12:40"
+    }
+   ]
+  },
+  {
+   "number": "301",
+   "name": "Lincoln Service",
+   "headsign": "St. Louis",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "08:15"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 2,
+     "arrive": "09:12",
+     "depart": "09:12"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 3,
+     "arrive": "10:13",
+     "depart": "10:16"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 4,
+     "arrive": "11:10",
+     "depart": "11:13"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 5,
+     "arrive": "12:12",
+     "depart": "12:14"
+    },
+    {
+     "station": "st-louis",
+     "seq": 6,
+     "arrive": "13:01"
+    }
+   ]
+  },
+  {
+   "number": "305",
+   "name": "Lincoln Service",
+   "headsign": "St. Louis",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "18:20"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 2,
+     "arrive": "18:42",
+     "depart": "18:42"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 3,
+     "arrive": "19:10",
+     "depart": "19:10"
+    },
+    {
+     "station": "dwight-amtrak-station",
+     "seq": 4,
+     "arrive": "19:42",
+     "depart": "19:42"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 5,
+     "arrive": "19:55",
+     "depart": "19:55"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 6,
+     "arrive": "20:25",
+     "depart": "20:28"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 7,
+     "arrive": "20:58",
+     "depart": "20:58"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 8,
+     "arrive": "21:25",
+     "depart": "21:28"
+    },
+    {
+     "station": "carlinville-amtrak-station",
+     "seq": 9,
+     "arrive": "22:09",
+     "depart": "22:09"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 10,
+     "arrive": "22:36",
+     "depart": "22:38"
+    },
+    {
+     "station": "st-louis",
+     "seq": 11,
+     "arrive": "23:23"
+    }
+   ]
+  },
+  {
+   "number": "306",
+   "name": "Lincoln Service",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "st-louis",
+     "seq": 1,
+     "depart": "18:40"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 2,
+     "arrive": "19:21",
+     "depart": "19:21"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 3,
+     "arrive": "20:21",
+     "depart": "20:24"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 4,
+     "arrive": "20:46",
+     "depart": "20:46"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 5,
+     "arrive": "21:14",
+     "depart": "21:17"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 6,
+     "arrive": "21:46",
+     "depart": "21:46"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 7,
+     "arrive": "22:35",
+     "depart": "22:35"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 8,
+     "arrive": "23:00",
+     "depart": "23:00"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 9,
+     "arrive": "23:43"
+    }
+   ]
+  },
+  {
+   "number": "307",
+   "name": "Lincoln Service",
+   "headsign": "St. Louis",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "20:10"
+    },
+    {
+     "station": "summit-amtrak",
+     "seq": 2,
+     "arrive": "20:32",
+     "depart": "20:32"
+    },
+    {
+     "station": "joliet-gateway-center",
+     "seq": 3,
+     "arrive": "21:00",
+     "depart": "21:00"
+    },
+    {
+     "station": "pontiac-amtrak-station-pon",
+     "seq": 4,
+     "arrive": "21:38",
+     "depart": "21:38"
+    },
+    {
+     "station": "bloomington-normal",
+     "seq": 5,
+     "arrive": "22:16",
+     "depart": "22:19"
+    },
+    {
+     "station": "lincoln-amtrak-station-lcn",
+     "seq": 6,
+     "arrive": "22:47",
+     "depart": "22:47"
+    },
+    {
+     "station": "springfield-spi",
+     "seq": 7,
+     "arrive": "23:16",
+     "depart": "23:19"
+    },
+    {
+     "station": "alton-amtrak-station",
+     "seq": 8,
+     "arrive": "24:20",
+     "depart": "24:22"
+    },
+    {
+     "station": "st-louis",
+     "seq": 9,
+     "arrive": "25:09"
+    }
+   ]
+  }
+ ]
+}

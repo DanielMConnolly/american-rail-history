@@ -1,0 +1,231 @@
+{
+ "id": "amtrak-64-2026",
+ "route_id": "64",
+ "line_ids": [
+  "amtrak-36923",
+  "amtrak-64"
+ ],
+ "company": "Amtrak",
+ "service": "Pennsylvanian",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "42",
+   "name": "Pennsylvanian",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "pittsburgh-amtrak-station",
+     "seq": 1,
+     "depart": "07:30"
+    },
+    {
+     "station": "greensburg-amtrak",
+     "seq": 2,
+     "arrive": "08:09",
+     "depart": "08:11"
+    },
+    {
+     "station": "latrobe-amtrak",
+     "seq": 3,
+     "arrive": "08:20",
+     "depart": "08:21"
+    },
+    {
+     "station": "johnstown-amtrak-station",
+     "seq": 4,
+     "arrive": "09:02",
+     "depart": "09:05"
+    },
+    {
+     "station": "altoona-amtrak-station",
+     "seq": 5,
+     "arrive": "09:59",
+     "depart": "10:03"
+    },
+    {
+     "station": "tyrone-amtrak",
+     "seq": 6,
+     "arrive": "10:19",
+     "depart": "10:21"
+    },
+    {
+     "station": "huntingdon-amtrak-station",
+     "seq": 7,
+     "arrive": "10:46",
+     "depart": "10:48"
+    },
+    {
+     "station": "lewistown-amtrak-station",
+     "seq": 8,
+     "arrive": "11:26",
+     "depart": "11:28"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 9,
+     "arrive": "12:55",
+     "depart": "13:05"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 10,
+     "arrive": "13:22",
+     "depart": "13:23"
+    },
+    {
+     "station": "lancaster",
+     "seq": 11,
+     "arrive": "13:41",
+     "depart": "13:45"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 12,
+     "arrive": "14:16",
+     "depart": "14:17"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 13,
+     "arrive": "14:27",
+     "depart": "14:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 14,
+     "arrive": "14:59",
+     "depart": "15:25"
+    },
+    {
+     "station": "trenton",
+     "seq": 15,
+     "arrive": "15:54",
+     "depart": "15:56"
+    },
+    {
+     "station": "newark",
+     "seq": 16,
+     "arrive": "16:30",
+     "depart": "16:32"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 17,
+     "arrive": "16:50"
+    }
+   ]
+  },
+  {
+   "number": "43",
+   "name": "Pennsylvanian",
+   "headsign": "Pittsburgh",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "10:52"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "11:07",
+     "depart": "11:09"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "11:42",
+     "depart": "11:44"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "12:15",
+     "depart": "12:42"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 5,
+     "arrive": "13:10",
+     "depart": "13:12"
+    },
+    {
+     "station": "lancaster",
+     "seq": 6,
+     "arrive": "13:50",
+     "depart": "13:52"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 7,
+     "arrive": "14:05",
+     "depart": "14:06"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 8,
+     "arrive": "14:26",
+     "depart": "14:36"
+    },
+    {
+     "station": "lewistown-amtrak-station",
+     "seq": 9,
+     "arrive": "15:45",
+     "depart": "15:47"
+    },
+    {
+     "station": "huntingdon-amtrak-station",
+     "seq": 10,
+     "arrive": "16:22",
+     "depart": "16:24"
+    },
+    {
+     "station": "tyrone-amtrak",
+     "seq": 11,
+     "arrive": "16:50",
+     "depart": "16:51"
+    },
+    {
+     "station": "altoona-amtrak-station",
+     "seq": 12,
+     "arrive": "17:12",
+     "depart": "17:16"
+    },
+    {
+     "station": "johnstown-amtrak-station",
+     "seq": 13,
+     "arrive": "18:11",
+     "depart": "18:14"
+    },
+    {
+     "station": "latrobe-amtrak",
+     "seq": 14,
+     "arrive": "18:55",
+     "depart": "18:56"
+    },
+    {
+     "station": "greensburg-amtrak",
+     "seq": 15,
+     "arrive": "19:06",
+     "depart": "19:08"
+    },
+    {
+     "station": "pittsburgh-amtrak-station",
+     "seq": 16,
+     "arrive": "20:05"
+    }
+   ]
+  }
+ ]
+}

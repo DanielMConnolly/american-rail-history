@@ -1,0 +1,584 @@
+{
+ "id": "amtrak-42994-2026",
+ "route_id": "42994",
+ "line_ids": [
+  "amtrak-42994"
+ ],
+ "company": "Amtrak",
+ "service": "Floridian",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "40",
+   "name": "Floridian",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "miami-amtrak-station",
+     "seq": 1,
+     "depart": "11:05"
+    },
+    {
+     "station": "hollywood-amtrak-station",
+     "seq": 2,
+     "arrive": "11:29",
+     "depart": "11:29"
+    },
+    {
+     "station": "fort-lauderdale-amtrak-station",
+     "seq": 3,
+     "arrive": "11:43",
+     "depart": "11:43"
+    },
+    {
+     "station": "deerfield-beach-amtrak-station",
+     "seq": 4,
+     "arrive": "12:00",
+     "depart": "12:00"
+    },
+    {
+     "station": "delray-beach-amtrak",
+     "seq": 5,
+     "arrive": "12:13",
+     "depart": "12:13"
+    },
+    {
+     "station": "west-palm-beach-amtrak-station",
+     "seq": 6,
+     "arrive": "12:35",
+     "depart": "12:35"
+    },
+    {
+     "station": "okeechobee-amtrak",
+     "seq": 7,
+     "arrive": "13:34",
+     "depart": "13:34"
+    },
+    {
+     "station": "sebring-amtrak-station",
+     "seq": 8,
+     "arrive": "14:08",
+     "depart": "14:10"
+    },
+    {
+     "station": "winter-haven",
+     "seq": 9,
+     "arrive": "14:54",
+     "depart": "14:56"
+    },
+    {
+     "station": "lakeland",
+     "seq": 10,
+     "arrive": "15:36",
+     "depart": "15:36"
+    },
+    {
+     "station": "tampa",
+     "seq": 11,
+     "arrive": "16:31",
+     "depart": "16:49"
+    },
+    {
+     "station": "lakeland-amtrak-station",
+     "seq": 12,
+     "arrive": "17:23",
+     "depart": "17:25"
+    },
+    {
+     "station": "kissimmee-amtrak-station",
+     "seq": 13,
+     "arrive": "18:07",
+     "depart": "18:10"
+    },
+    {
+     "station": "orlando",
+     "seq": 14,
+     "arrive": "18:34",
+     "depart": "18:50"
+    },
+    {
+     "station": "winter-park-amtrak-station",
+     "seq": 15,
+     "arrive": "19:05",
+     "depart": "19:07"
+    },
+    {
+     "station": "deland",
+     "seq": 16,
+     "arrive": "19:47",
+     "depart": "19:49"
+    },
+    {
+     "station": "palatka-amtrak",
+     "seq": 17,
+     "arrive": "20:40",
+     "depart": "20:43"
+    },
+    {
+     "station": "jacksonville",
+     "seq": 18,
+     "arrive": "22:13",
+     "depart": "22:33"
+    },
+    {
+     "station": "savannah",
+     "seq": 19,
+     "arrive": "24:53",
+     "depart": "25:41"
+    },
+    {
+     "station": "denmark-amtrak-station",
+     "seq": 20,
+     "arrive": "27:02",
+     "depart": "27:04"
+    },
+    {
+     "station": "columbia-amtrak-station",
+     "seq": 21,
+     "arrive": "28:11",
+     "depart": "28:22"
+    },
+    {
+     "station": "camden-amtrak-station",
+     "seq": 22,
+     "arrive": "29:01",
+     "depart": "29:03"
+    },
+    {
+     "station": "hamlet-amtrak-station",
+     "seq": 23,
+     "arrive": "30:32",
+     "depart": "30:37"
+    },
+    {
+     "station": "southern-pines-amtrak-station",
+     "seq": 24,
+     "arrive": "31:14",
+     "depart": "31:17"
+    },
+    {
+     "station": "cary",
+     "seq": 25,
+     "arrive": "32:24",
+     "depart": "32:33"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 26,
+     "arrive": "33:06",
+     "depart": "33:17"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 27,
+     "arrive": "34:33",
+     "depart": "34:36"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 28,
+     "arrive": "36:02",
+     "depart": "36:04"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 29,
+     "arrive": "36:43",
+     "depart": "36:52"
+    },
+    {
+     "station": "alexandria",
+     "seq": 30,
+     "arrive": "38:43",
+     "depart": "38:43"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 31,
+     "arrive": "39:12",
+     "depart": "39:57"
+    },
+    {
+     "station": "rockville-amtrak",
+     "seq": 32,
+     "arrive": "40:21",
+     "depart": "40:21"
+    },
+    {
+     "station": "harpers-ferry-amtrak",
+     "seq": 33,
+     "arrive": "41:08",
+     "depart": "41:08"
+    },
+    {
+     "station": "martinsburg-amtrak-station",
+     "seq": 34,
+     "arrive": "41:37",
+     "depart": "41:37"
+    },
+    {
+     "station": "cumberland-amtrak-station",
+     "seq": 35,
+     "arrive": "43:09",
+     "depart": "43:16"
+    },
+    {
+     "station": "connellsville-amtrak",
+     "seq": 36,
+     "arrive": "45:39",
+     "depart": "45:39"
+    },
+    {
+     "station": "pittsburgh-amtrak-station",
+     "seq": 37,
+     "arrive": "47:40",
+     "depart": "47:59"
+    },
+    {
+     "station": "alliance-amtrak",
+     "seq": 38,
+     "arrive": "49:39",
+     "depart": "49:39"
+    },
+    {
+     "station": "cleveland",
+     "seq": 39,
+     "arrive": "50:53",
+     "depart": "50:59"
+    },
+    {
+     "station": "elyria-amtrak",
+     "seq": 40,
+     "arrive": "51:29",
+     "depart": "51:29"
+    },
+    {
+     "station": "sandusky-amtrak-station",
+     "seq": 41,
+     "arrive": "52:02",
+     "depart": "52:02"
+    },
+    {
+     "station": "toledo",
+     "seq": 42,
+     "arrive": "53:08",
+     "depart": "53:22"
+    },
+    {
+     "station": "waterloo-amtrak-station",
+     "seq": 43,
+     "arrive": "54:36",
+     "depart": "54:36"
+    },
+    {
+     "station": "elkhart-amtrak-station",
+     "seq": 44,
+     "arrive": "55:29",
+     "depart": "55:29"
+    },
+    {
+     "station": "south-bend-amtrak-station",
+     "seq": 45,
+     "arrive": "55:51",
+     "depart": "55:51"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 46,
+     "arrive": "57:45"
+    }
+   ]
+  },
+  {
+   "number": "41",
+   "name": "Floridian",
+   "headsign": "Miami",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "19:40"
+    },
+    {
+     "station": "south-bend-amtrak-station",
+     "seq": 2,
+     "arrive": "21:09",
+     "depart": "21:09"
+    },
+    {
+     "station": "elkhart-amtrak-station",
+     "seq": 3,
+     "arrive": "21:29",
+     "depart": "21:29"
+    },
+    {
+     "station": "waterloo-amtrak-station",
+     "seq": 4,
+     "arrive": "22:23",
+     "depart": "22:23"
+    },
+    {
+     "station": "toledo",
+     "seq": 5,
+     "arrive": "23:39",
+     "depart": "23:49"
+    },
+    {
+     "station": "sandusky-amtrak-station",
+     "seq": 6,
+     "arrive": "24:40",
+     "depart": "24:40"
+    },
+    {
+     "station": "elyria-amtrak",
+     "seq": 7,
+     "arrive": "25:15",
+     "depart": "25:15"
+    },
+    {
+     "station": "cleveland",
+     "seq": 8,
+     "arrive": "25:45",
+     "depart": "25:54"
+    },
+    {
+     "station": "alliance-amtrak",
+     "seq": 9,
+     "arrive": "27:05",
+     "depart": "27:05"
+    },
+    {
+     "station": "pittsburgh-amtrak-station",
+     "seq": 10,
+     "arrive": "29:05",
+     "depart": "29:25"
+    },
+    {
+     "station": "connellsville-amtrak",
+     "seq": 11,
+     "arrive": "31:04",
+     "depart": "31:04"
+    },
+    {
+     "station": "cumberland-amtrak-station",
+     "seq": 12,
+     "arrive": "33:25",
+     "depart": "33:37"
+    },
+    {
+     "station": "martinsburg-amtrak-station",
+     "seq": 13,
+     "arrive": "35:06",
+     "depart": "35:06"
+    },
+    {
+     "station": "harpers-ferry-amtrak",
+     "seq": 14,
+     "arrive": "35:36",
+     "depart": "35:36"
+    },
+    {
+     "station": "rockville-amtrak",
+     "seq": 15,
+     "arrive": "36:21",
+     "depart": "36:21"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 16,
+     "arrive": "37:10",
+     "depart": "37:48"
+    },
+    {
+     "station": "alexandria",
+     "seq": 17,
+     "arrive": "38:05",
+     "depart": "38:09"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 18,
+     "arrive": "39:57",
+     "depart": "40:07"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 19,
+     "arrive": "40:41",
+     "depart": "40:43"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 20,
+     "arrive": "42:10",
+     "depart": "42:13"
+    },
+    {
+     "station": "raleigh-union-station",
+     "seq": 21,
+     "arrive": "43:41",
+     "depart": "43:54"
+    },
+    {
+     "station": "cary",
+     "seq": 22,
+     "arrive": "44:06",
+     "depart": "44:16"
+    },
+    {
+     "station": "southern-pines-amtrak-station",
+     "seq": 23,
+     "arrive": "45:26",
+     "depart": "45:29"
+    },
+    {
+     "station": "hamlet-amtrak-station",
+     "seq": 24,
+     "arrive": "46:08",
+     "depart": "46:13"
+    },
+    {
+     "station": "camden-amtrak-station",
+     "seq": 25,
+     "arrive": "47:40",
+     "depart": "47:42"
+    },
+    {
+     "station": "columbia-amtrak-station",
+     "seq": 26,
+     "arrive": "48:25",
+     "depart": "48:35"
+    },
+    {
+     "station": "denmark-amtrak-station",
+     "seq": 27,
+     "arrive": "49:30",
+     "depart": "49:32"
+    },
+    {
+     "station": "savannah",
+     "seq": 28,
+     "arrive": "51:18",
+     "depart": "52:03"
+    },
+    {
+     "station": "jacksonville",
+     "seq": 29,
+     "arrive": "54:32",
+     "depart": "54:58"
+    },
+    {
+     "station": "palatka-amtrak",
+     "seq": 30,
+     "arrive": "55:59",
+     "depart": "56:01"
+    },
+    {
+     "station": "deland",
+     "seq": 31,
+     "arrive": "56:53",
+     "depart": "56:55"
+    },
+    {
+     "station": "winter-park-amtrak-station",
+     "seq": 32,
+     "arrive": "57:39",
+     "depart": "57:44"
+    },
+    {
+     "station": "orlando",
+     "seq": 33,
+     "arrive": "58:05",
+     "depart": "58:19"
+    },
+    {
+     "station": "kissimmee-amtrak-station",
+     "seq": 34,
+     "arrive": "58:38",
+     "depart": "58:43"
+    },
+    {
+     "station": "lakeland-amtrak-station",
+     "seq": 35,
+     "arrive": "59:38",
+     "depart": "59:40"
+    },
+    {
+     "station": "tampa",
+     "seq": 36,
+     "arrive": "60:27",
+     "depart": "60:43"
+    },
+    {
+     "station": "lakeland",
+     "seq": 37,
+     "arrive": "61:17",
+     "depart": "61:19"
+    },
+    {
+     "station": "winter-haven",
+     "seq": 38,
+     "arrive": "61:39",
+     "depart": "61:41"
+    },
+    {
+     "station": "sebring-amtrak-station",
+     "seq": 39,
+     "arrive": "62:20",
+     "depart": "62:22"
+    },
+    {
+     "station": "okeechobee-amtrak",
+     "seq": 40,
+     "arrive": "63:03",
+     "depart": "63:03"
+    },
+    {
+     "station": "west-palm-beach-amtrak-station",
+     "seq": 41,
+     "arrive": "64:31",
+     "depart": "64:31"
+    },
+    {
+     "station": "delray-beach-amtrak",
+     "seq": 42,
+     "arrive": "64:53",
+     "depart": "64:53"
+    },
+    {
+     "station": "deerfield-beach-amtrak-station",
+     "seq": 43,
+     "arrive": "65:06",
+     "depart": "65:06"
+    },
+    {
+     "station": "fort-lauderdale-amtrak-station",
+     "seq": 44,
+     "arrive": "65:31",
+     "depart": "65:31"
+    },
+    {
+     "station": "hollywood-amtrak-station",
+     "seq": 45,
+     "arrive": "65:46",
+     "depart": "65:46"
+    },
+    {
+     "station": "miami-amtrak-station",
+     "seq": 46,
+     "arrive": "66:09"
+    }
+   ]
+  }
+ ]
+}

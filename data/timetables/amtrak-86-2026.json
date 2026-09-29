@@ -1,0 +1,116 @@
+{
+ "id": "amtrak-86-2026",
+ "route_id": "86",
+ "line_ids": [
+  "amtrak-86"
+ ],
+ "company": "Amtrak",
+ "service": "Heartland Flyer",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "821",
+   "name": "Heartland Flyer",
+   "headsign": "Fort Worth",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "oklahoma-city",
+     "seq": 1,
+     "depart": "09:25"
+    },
+    {
+     "station": "norman-amtrak-station",
+     "seq": 2,
+     "arrive": "09:47",
+     "depart": "09:47"
+    },
+    {
+     "station": "purcell-amtrak-station",
+     "seq": 3,
+     "arrive": "10:02",
+     "depart": "10:02"
+    },
+    {
+     "station": "pauls-valley-amtrak-station",
+     "seq": 4,
+     "arrive": "10:25",
+     "depart": "10:25"
+    },
+    {
+     "station": "ardmore-amtrak-station-adm",
+     "seq": 5,
+     "arrive": "11:17",
+     "depart": "11:17"
+    },
+    {
+     "station": "gainesville-amtrak-station-gle",
+     "seq": 6,
+     "arrive": "12:03",
+     "depart": "12:03"
+    },
+    {
+     "station": "fort-worth",
+     "seq": 7,
+     "arrive": "13:27"
+    }
+   ]
+  },
+  {
+   "number": "822",
+   "name": "Heartland Flyer",
+   "headsign": "Oklahoma City",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "fort-worth",
+     "seq": 1,
+     "depart": "18:25"
+    },
+    {
+     "station": "gainesville-amtrak-station-gle",
+     "seq": 2,
+     "arrive": "19:28",
+     "depart": "19:28"
+    },
+    {
+     "station": "ardmore-amtrak-station-adm",
+     "seq": 3,
+     "arrive": "20:11",
+     "depart": "20:11"
+    },
+    {
+     "station": "pauls-valley-amtrak-station",
+     "seq": 4,
+     "arrive": "21:03",
+     "depart": "21:03"
+    },
+    {
+     "station": "purcell-amtrak-station",
+     "seq": 5,
+     "arrive": "21:28",
+     "depart": "21:28"
+    },
+    {
+     "station": "norman-amtrak-station",
+     "seq": 6,
+     "arrive": "21:49",
+     "depart": "21:49"
+    },
+    {
+     "station": "oklahoma-city",
+     "seq": 7,
+     "arrive": "22:27"
+    }
+   ]
+  }
+ ]
+}

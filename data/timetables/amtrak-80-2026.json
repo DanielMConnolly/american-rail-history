@@ -1,0 +1,522 @@
+{
+ "id": "amtrak-80-2026",
+ "route_id": "80",
+ "line_ids": [
+  "amtrak-80"
+ ],
+ "company": "Amtrak",
+ "service": "Wolverine",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "351",
+   "name": "Wolverine",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "pontiac-amtrak-station-pnt",
+     "seq": 1,
+     "depart": "05:43"
+    },
+    {
+     "station": "troy-amtrak-station",
+     "seq": 2,
+     "arrive": "05:55",
+     "depart": "05:56"
+    },
+    {
+     "station": "royal-oak-amtrak",
+     "seq": 3,
+     "arrive": "06:02",
+     "depart": "06:03"
+    },
+    {
+     "station": "detroit",
+     "seq": 4,
+     "arrive": "06:28",
+     "depart": "06:31"
+    },
+    {
+     "station": "dearborn",
+     "seq": 5,
+     "arrive": "06:47",
+     "depart": "06:49"
+    },
+    {
+     "station": "ann-arbor-amtrak-station",
+     "seq": 6,
+     "arrive": "07:16",
+     "depart": "07:19"
+    },
+    {
+     "station": "jackson-jxn",
+     "seq": 7,
+     "arrive": "07:54",
+     "depart": "07:56"
+    },
+    {
+     "station": "albion",
+     "seq": 8,
+     "arrive": "08:19",
+     "depart": "08:20"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 9,
+     "arrive": "08:52",
+     "depart": "08:58"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 10,
+     "arrive": "09:24",
+     "depart": "09:26"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 11,
+     "arrive": "11:42"
+    }
+   ]
+  },
+  {
+   "number": "350",
+   "name": "Wolverine",
+   "headsign": "Pontiac",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "07:45"
+    },
+    {
+     "station": "hammond-whiting-amtrak-station",
+     "seq": 2,
+     "arrive": "08:09",
+     "depart": "08:11"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 3,
+     "arrive": "09:02",
+     "depart": "09:04"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 4,
+     "arrive": "09:28",
+     "depart": "09:29"
+    },
+    {
+     "station": "dowagiac-amtrak-station",
+     "seq": 5,
+     "arrive": "09:39",
+     "depart": "09:40"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 6,
+     "arrive": "10:12",
+     "depart": "10:14"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 7,
+     "arrive": "10:50",
+     "depart": "10:56"
+    },
+    {
+     "station": "jackson-jxn",
+     "seq": 8,
+     "arrive": "11:49",
+     "depart": "11:51"
+    },
+    {
+     "station": "ann-arbor-amtrak-station",
+     "seq": 9,
+     "arrive": "12:31",
+     "depart": "12:33"
+    },
+    {
+     "station": "dearborn",
+     "seq": 10,
+     "arrive": "13:02",
+     "depart": "13:02"
+    },
+    {
+     "station": "detroit",
+     "seq": 11,
+     "arrive": "13:30",
+     "depart": "13:30"
+    },
+    {
+     "station": "royal-oak-amtrak",
+     "seq": 12,
+     "arrive": "13:54",
+     "depart": "13:54"
+    },
+    {
+     "station": "troy-amtrak-station",
+     "seq": 13,
+     "arrive": "14:02",
+     "depart": "14:02"
+    },
+    {
+     "station": "pontiac-amtrak-station-pnt",
+     "seq": 14,
+     "arrive": "14:21"
+    }
+   ]
+  },
+  {
+   "number": "353",
+   "name": "Wolverine",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "pontiac-amtrak-station-pnt",
+     "seq": 1,
+     "depart": "08:50"
+    },
+    {
+     "station": "troy-amtrak-station",
+     "seq": 2,
+     "arrive": "09:02",
+     "depart": "09:04"
+    },
+    {
+     "station": "royal-oak-amtrak",
+     "seq": 3,
+     "arrive": "09:10",
+     "depart": "09:12"
+    },
+    {
+     "station": "detroit",
+     "seq": 4,
+     "arrive": "09:37",
+     "depart": "09:40"
+    },
+    {
+     "station": "dearborn",
+     "seq": 5,
+     "arrive": "09:56",
+     "depart": "09:58"
+    },
+    {
+     "station": "ann-arbor-amtrak-station",
+     "seq": 6,
+     "arrive": "10:25",
+     "depart": "10:28"
+    },
+    {
+     "station": "jackson-jxn",
+     "seq": 7,
+     "arrive": "11:01",
+     "depart": "11:03"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 8,
+     "arrive": "12:05",
+     "depart": "12:11"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 9,
+     "arrive": "12:36",
+     "depart": "12:38"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 10,
+     "arrive": "13:10",
+     "depart": "13:11"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 11,
+     "arrive": "13:29",
+     "depart": "13:31"
+    },
+    {
+     "station": "hammond-whiting-amtrak-station",
+     "seq": 12,
+     "arrive": "14:25",
+     "depart": "14:25"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 13,
+     "arrive": "15:12"
+    }
+   ]
+  },
+  {
+   "number": "352",
+   "name": "Wolverine",
+   "headsign": "Pontiac",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "15:35"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 2,
+     "arrive": "16:49",
+     "depart": "16:51"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 3,
+     "arrive": "17:11",
+     "depart": "17:12"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 4,
+     "arrive": "17:44",
+     "depart": "17:46"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 5,
+     "arrive": "18:17",
+     "depart": "18:23"
+    },
+    {
+     "station": "jackson-jxn",
+     "seq": 6,
+     "arrive": "19:13",
+     "depart": "19:15"
+    },
+    {
+     "station": "ann-arbor-amtrak-station",
+     "seq": 7,
+     "arrive": "19:56",
+     "depart": "20:00"
+    },
+    {
+     "station": "dearborn",
+     "seq": 8,
+     "arrive": "20:34",
+     "depart": "20:34"
+    },
+    {
+     "station": "detroit",
+     "seq": 9,
+     "arrive": "21:05",
+     "depart": "21:05"
+    },
+    {
+     "station": "royal-oak-amtrak",
+     "seq": 10,
+     "arrive": "21:29",
+     "depart": "21:29"
+    },
+    {
+     "station": "troy-amtrak-station",
+     "seq": 11,
+     "arrive": "21:36",
+     "depart": "21:36"
+    },
+    {
+     "station": "pontiac-amtrak-station-pnt",
+     "seq": 12,
+     "arrive": "21:59"
+    }
+   ]
+  },
+  {
+   "number": "355",
+   "name": "Wolverine",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "pontiac-amtrak-station-pnt",
+     "seq": 1,
+     "depart": "17:03"
+    },
+    {
+     "station": "troy-amtrak-station",
+     "seq": 2,
+     "arrive": "17:15",
+     "depart": "17:16"
+    },
+    {
+     "station": "royal-oak-amtrak",
+     "seq": 3,
+     "arrive": "17:22",
+     "depart": "17:23"
+    },
+    {
+     "station": "detroit",
+     "seq": 4,
+     "arrive": "17:48",
+     "depart": "17:51"
+    },
+    {
+     "station": "dearborn",
+     "seq": 5,
+     "arrive": "18:07",
+     "depart": "18:09"
+    },
+    {
+     "station": "ann-arbor-amtrak-station",
+     "seq": 6,
+     "arrive": "18:37",
+     "depart": "18:40"
+    },
+    {
+     "station": "jackson-jxn",
+     "seq": 7,
+     "arrive": "19:15",
+     "depart": "19:17"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 8,
+     "arrive": "20:17",
+     "depart": "20:18"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 9,
+     "arrive": "20:43",
+     "depart": "20:45"
+    },
+    {
+     "station": "dowagiac-amtrak-station",
+     "seq": 10,
+     "arrive": "21:13",
+     "depart": "21:14"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 11,
+     "arrive": "21:26",
+     "depart": "21:27"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 12,
+     "arrive": "21:45",
+     "depart": "21:47"
+    },
+    {
+     "station": "hammond-whiting-amtrak-station",
+     "seq": 13,
+     "arrive": "22:37",
+     "depart": "22:37"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 14,
+     "arrive": "23:25"
+    }
+   ]
+  },
+  {
+   "number": "354",
+   "name": "Wolverine",
+   "headsign": "Pontiac",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "18:50"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 2,
+     "arrive": "20:02",
+     "depart": "20:04"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 3,
+     "arrive": "20:23",
+     "depart": "20:24"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 4,
+     "arrive": "20:56",
+     "depart": "20:58"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 5,
+     "arrive": "21:29",
+     "depart": "21:35"
+    },
+    {
+     "station": "albion",
+     "seq": 6,
+     "arrive": "22:03",
+     "depart": "22:03"
+    },
+    {
+     "station": "jackson-jxn",
+     "seq": 7,
+     "arrive": "22:26",
+     "depart": "22:28"
+    },
+    {
+     "station": "ann-arbor-amtrak-station",
+     "seq": 8,
+     "arrive": "23:09",
+     "depart": "23:13"
+    },
+    {
+     "station": "dearborn",
+     "seq": 9,
+     "arrive": "23:42",
+     "depart": "23:42"
+    },
+    {
+     "station": "detroit",
+     "seq": 10,
+     "arrive": "24:15",
+     "depart": "24:15"
+    },
+    {
+     "station": "royal-oak-amtrak",
+     "seq": 11,
+     "arrive": "24:39",
+     "depart": "24:39"
+    },
+    {
+     "station": "troy-amtrak-station",
+     "seq": 12,
+     "arrive": "24:46",
+     "depart": "24:46"
+    },
+    {
+     "station": "pontiac-amtrak-station-pnt",
+     "seq": 13,
+     "arrive": "25:11"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,499 @@
+{
+ "id": "amtrak-54-2026",
+ "route_id": "54",
+ "line_ids": [
+  "amtrak-54"
+ ],
+ "company": "Amtrak",
+ "service": "Hiawatha Service",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "343",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "00:25"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "00:46",
+     "depart": "00:47"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "01:24",
+     "depart": "01:25"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "01:38",
+     "depart": "01:39"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "01:54"
+    }
+   ]
+  },
+  {
+   "number": "329",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "07:10"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "07:31",
+     "depart": "07:32"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "08:09",
+     "depart": "08:10"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "08:23",
+     "depart": "08:24"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "08:39"
+    }
+   ]
+  },
+  {
+   "number": "330",
+   "name": "Hiawatha Service",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "milwaukee",
+     "seq": 1,
+     "depart": "07:15"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 2,
+     "arrive": "07:25",
+     "depart": "07:26"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "07:42",
+     "depart": "07:43"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 4,
+     "arrive": "08:24",
+     "depart": "08:25"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "08:57"
+    }
+   ]
+  },
+  {
+   "number": "332",
+   "name": "Hiawatha Service",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "milwaukee",
+     "seq": 1,
+     "depart": "09:05"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 2,
+     "arrive": "09:14",
+     "depart": "09:15"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "09:27",
+     "depart": "09:28"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 4,
+     "arrive": "10:05",
+     "depart": "10:06"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "10:34"
+    }
+   ]
+  },
+  {
+   "number": "331",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "09:25"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "09:46",
+     "depart": "09:47"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "10:24",
+     "depart": "10:25"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "10:38",
+     "depart": "10:39"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "10:54"
+    }
+   ]
+  },
+  {
+   "number": "334",
+   "name": "Hiawatha Service",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "milwaukee",
+     "seq": 1,
+     "depart": "12:00"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 2,
+     "arrive": "12:09",
+     "depart": "12:10"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "12:22",
+     "depart": "12:23"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 4,
+     "arrive": "13:00",
+     "depart": "13:01"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "13:29"
+    }
+   ]
+  },
+  {
+   "number": "335",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "14:05"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "14:26",
+     "depart": "14:27"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "15:04",
+     "depart": "15:05"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "15:18",
+     "depart": "15:19"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "15:34"
+    }
+   ]
+  },
+  {
+   "number": "336",
+   "name": "Hiawatha Service",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "milwaukee",
+     "seq": 1,
+     "depart": "14:05"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 2,
+     "arrive": "14:14",
+     "depart": "14:15"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "14:27",
+     "depart": "14:28"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 4,
+     "arrive": "15:05",
+     "depart": "15:06"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "15:34"
+    }
+   ]
+  },
+  {
+   "number": "338",
+   "name": "Hiawatha Service",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "milwaukee",
+     "seq": 1,
+     "depart": "16:00"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 2,
+     "arrive": "16:09",
+     "depart": "16:10"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "16:22",
+     "depart": "16:23"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 4,
+     "arrive": "17:00",
+     "depart": "17:01"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "17:29"
+    }
+   ]
+  },
+  {
+   "number": "337",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "16:15"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "16:36",
+     "depart": "16:37"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "17:14",
+     "depart": "17:15"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "17:28",
+     "depart": "17:29"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "17:44"
+    }
+   ]
+  },
+  {
+   "number": "339",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "18:08"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "18:31",
+     "depart": "18:32"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "19:13",
+     "depart": "19:14"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "19:27",
+     "depart": "19:28"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "19:45"
+    }
+   ]
+  },
+  {
+   "number": "342",
+   "name": "Hiawatha Service",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "milwaukee",
+     "seq": 1,
+     "depart": "20:35"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 2,
+     "arrive": "20:44",
+     "depart": "20:45"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "20:57",
+     "depart": "20:58"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 4,
+     "arrive": "21:35",
+     "depart": "21:36"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "22:04"
+    }
+   ]
+  },
+  {
+   "number": "341",
+   "name": "Hiawatha Service",
+   "headsign": "Milwaukee",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "21:05"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "21:26",
+     "depart": "21:27"
+    },
+    {
+     "station": "sturtevant-amtrak-station",
+     "seq": 3,
+     "arrive": "22:04",
+     "depart": "22:05"
+    },
+    {
+     "station": "general-mitchell-intl-airport-amtrak-station",
+     "seq": 4,
+     "arrive": "22:18",
+     "depart": "22:19"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 5,
+     "arrive": "22:34"
+    }
+   ]
+  }
+ ]
+}

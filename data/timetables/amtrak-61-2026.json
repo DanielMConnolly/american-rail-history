@@ -1,0 +1,802 @@
+{
+ "id": "amtrak-61-2026",
+ "route_id": "61",
+ "line_ids": [
+  "amtrak-61"
+ ],
+ "company": "Amtrak",
+ "service": "Downeaster",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "680",
+   "name": "Downeaster",
+   "headsign": "Boston",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 1,
+     "depart": "04:30"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 2,
+     "arrive": "04:43",
+     "depart": "04:43"
+    },
+    {
+     "station": "portland-por",
+     "seq": 3,
+     "arrive": "05:13",
+     "depart": "05:18"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 4,
+     "arrive": "05:40",
+     "depart": "05:40"
+    },
+    {
+     "station": "wells",
+     "seq": 5,
+     "arrive": "05:59",
+     "depart": "05:59"
+    },
+    {
+     "station": "dover",
+     "seq": 6,
+     "arrive": "06:17",
+     "depart": "06:17"
+    },
+    {
+     "station": "durham",
+     "seq": 7,
+     "arrive": "06:25",
+     "depart": "06:25"
+    },
+    {
+     "station": "exeter",
+     "seq": 8,
+     "arrive": "06:39",
+     "depart": "06:39"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 9,
+     "arrive": "07:00",
+     "depart": "07:00"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 10,
+     "arrive": "07:29",
+     "depart": "07:29"
+    },
+    {
+     "station": "boston-bon",
+     "seq": 11,
+     "arrive": "07:50"
+    }
+   ]
+  },
+  {
+   "number": "682",
+   "name": "Downeaster",
+   "headsign": "Boston",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 1,
+     "depart": "06:30"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 2,
+     "arrive": "06:43",
+     "depart": "06:43"
+    },
+    {
+     "station": "portland-por",
+     "seq": 3,
+     "arrive": "07:13",
+     "depart": "07:18"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 4,
+     "arrive": "07:33",
+     "depart": "07:33"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 5,
+     "arrive": "07:40",
+     "depart": "07:40"
+    },
+    {
+     "station": "wells",
+     "seq": 6,
+     "arrive": "07:59",
+     "depart": "07:59"
+    },
+    {
+     "station": "dover",
+     "seq": 7,
+     "arrive": "08:17",
+     "depart": "08:17"
+    },
+    {
+     "station": "durham",
+     "seq": 8,
+     "arrive": "08:25",
+     "depart": "08:25"
+    },
+    {
+     "station": "exeter",
+     "seq": 9,
+     "arrive": "08:39",
+     "depart": "08:39"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 10,
+     "arrive": "09:00",
+     "depart": "09:00"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 11,
+     "arrive": "09:29",
+     "depart": "09:29"
+    },
+    {
+     "station": "boston-bon",
+     "seq": 12,
+     "arrive": "09:50"
+    }
+   ]
+  },
+  {
+   "number": "681",
+   "name": "Downeaster",
+   "headsign": "Brunswick",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bon",
+     "seq": 1,
+     "depart": "08:50"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 2,
+     "arrive": "09:08",
+     "depart": "09:08"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 3,
+     "arrive": "09:38",
+     "depart": "09:38"
+    },
+    {
+     "station": "exeter",
+     "seq": 4,
+     "arrive": "09:59",
+     "depart": "09:59"
+    },
+    {
+     "station": "durham",
+     "seq": 5,
+     "arrive": "10:12",
+     "depart": "10:12"
+    },
+    {
+     "station": "dover",
+     "seq": 6,
+     "arrive": "10:20",
+     "depart": "10:20"
+    },
+    {
+     "station": "wells",
+     "seq": 7,
+     "arrive": "10:38",
+     "depart": "10:38"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 8,
+     "arrive": "10:55",
+     "depart": "10:55"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 9,
+     "arrive": "11:01",
+     "depart": "11:01"
+    },
+    {
+     "station": "portland-por",
+     "seq": 10,
+     "arrive": "11:20",
+     "depart": "11:25"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 11,
+     "arrive": "11:55",
+     "depart": "11:55"
+    },
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 12,
+     "arrive": "12:10"
+    }
+   ]
+  },
+  {
+   "number": "684",
+   "name": "Downeaster",
+   "headsign": "Boston",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 1,
+     "depart": "11:00"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 2,
+     "arrive": "11:13",
+     "depart": "11:13"
+    },
+    {
+     "station": "portland-por",
+     "seq": 3,
+     "arrive": "11:43",
+     "depart": "11:48"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 4,
+     "arrive": "12:03",
+     "depart": "12:03"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 5,
+     "arrive": "12:10",
+     "depart": "12:10"
+    },
+    {
+     "station": "wells",
+     "seq": 6,
+     "arrive": "12:29",
+     "depart": "12:29"
+    },
+    {
+     "station": "dover",
+     "seq": 7,
+     "arrive": "12:47",
+     "depart": "12:47"
+    },
+    {
+     "station": "durham",
+     "seq": 8,
+     "arrive": "12:55",
+     "depart": "12:55"
+    },
+    {
+     "station": "exeter",
+     "seq": 9,
+     "arrive": "13:09",
+     "depart": "13:09"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 10,
+     "arrive": "13:30",
+     "depart": "13:30"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 11,
+     "arrive": "13:59",
+     "depart": "13:59"
+    },
+    {
+     "station": "boston-bon",
+     "seq": 12,
+     "arrive": "14:20"
+    }
+   ]
+  },
+  {
+   "number": "683",
+   "name": "Downeaster",
+   "headsign": "Brunswick",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bon",
+     "seq": 1,
+     "depart": "11:50"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 2,
+     "arrive": "12:08",
+     "depart": "12:08"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 3,
+     "arrive": "12:38",
+     "depart": "12:38"
+    },
+    {
+     "station": "exeter",
+     "seq": 4,
+     "arrive": "12:59",
+     "depart": "12:59"
+    },
+    {
+     "station": "durham",
+     "seq": 5,
+     "arrive": "13:12",
+     "depart": "13:12"
+    },
+    {
+     "station": "dover",
+     "seq": 6,
+     "arrive": "13:20",
+     "depart": "13:20"
+    },
+    {
+     "station": "wells",
+     "seq": 7,
+     "arrive": "13:38",
+     "depart": "13:38"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 8,
+     "arrive": "13:55",
+     "depart": "13:55"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 9,
+     "arrive": "14:01",
+     "depart": "14:01"
+    },
+    {
+     "station": "portland-por",
+     "seq": 10,
+     "arrive": "14:20",
+     "depart": "14:25"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 11,
+     "arrive": "14:55",
+     "depart": "14:55"
+    },
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 12,
+     "arrive": "15:10"
+    }
+   ]
+  },
+  {
+   "number": "686",
+   "name": "Downeaster",
+   "headsign": "Boston",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 1,
+     "depart": "12:55"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 2,
+     "arrive": "13:08",
+     "depart": "13:08"
+    },
+    {
+     "station": "portland-por",
+     "seq": 3,
+     "arrive": "13:38",
+     "depart": "13:43"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 4,
+     "arrive": "13:58",
+     "depart": "13:58"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 5,
+     "arrive": "14:05",
+     "depart": "14:05"
+    },
+    {
+     "station": "wells",
+     "seq": 6,
+     "arrive": "14:24",
+     "depart": "14:24"
+    },
+    {
+     "station": "dover",
+     "seq": 7,
+     "arrive": "14:42",
+     "depart": "14:42"
+    },
+    {
+     "station": "durham",
+     "seq": 8,
+     "arrive": "14:50",
+     "depart": "14:50"
+    },
+    {
+     "station": "exeter",
+     "seq": 9,
+     "arrive": "15:04",
+     "depart": "15:04"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 10,
+     "arrive": "15:25",
+     "depart": "15:25"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 11,
+     "arrive": "15:54",
+     "depart": "15:54"
+    },
+    {
+     "station": "boston-bon",
+     "seq": 12,
+     "arrive": "16:15"
+    }
+   ]
+  },
+  {
+   "number": "685",
+   "name": "Downeaster",
+   "headsign": "Brunswick",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bon",
+     "seq": 1,
+     "depart": "15:45"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 2,
+     "arrive": "16:03",
+     "depart": "16:03"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 3,
+     "arrive": "16:33",
+     "depart": "16:33"
+    },
+    {
+     "station": "exeter",
+     "seq": 4,
+     "arrive": "16:54",
+     "depart": "16:54"
+    },
+    {
+     "station": "durham",
+     "seq": 5,
+     "arrive": "17:07",
+     "depart": "17:07"
+    },
+    {
+     "station": "dover",
+     "seq": 6,
+     "arrive": "17:15",
+     "depart": "17:15"
+    },
+    {
+     "station": "wells",
+     "seq": 7,
+     "arrive": "17:33",
+     "depart": "17:33"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 8,
+     "arrive": "17:50",
+     "depart": "17:50"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 9,
+     "arrive": "17:56",
+     "depart": "17:56"
+    },
+    {
+     "station": "portland-por",
+     "seq": 10,
+     "arrive": "18:15",
+     "depart": "18:20"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 11,
+     "arrive": "18:50",
+     "depart": "18:50"
+    },
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 12,
+     "arrive": "19:05"
+    }
+   ]
+  },
+  {
+   "number": "687",
+   "name": "Downeaster",
+   "headsign": "Brunswick",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bon",
+     "seq": 1,
+     "depart": "17:20"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 2,
+     "arrive": "17:38",
+     "depart": "17:38"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 3,
+     "arrive": "18:08",
+     "depart": "18:08"
+    },
+    {
+     "station": "exeter",
+     "seq": 4,
+     "arrive": "18:29",
+     "depart": "18:29"
+    },
+    {
+     "station": "durham",
+     "seq": 5,
+     "arrive": "18:42",
+     "depart": "18:42"
+    },
+    {
+     "station": "dover",
+     "seq": 6,
+     "arrive": "18:50",
+     "depart": "18:50"
+    },
+    {
+     "station": "wells",
+     "seq": 7,
+     "arrive": "19:08",
+     "depart": "19:08"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 8,
+     "arrive": "19:25",
+     "depart": "19:25"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 9,
+     "arrive": "19:31",
+     "depart": "19:31"
+    },
+    {
+     "station": "portland-por",
+     "seq": 10,
+     "arrive": "19:50",
+     "depart": "19:55"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 11,
+     "arrive": "20:25",
+     "depart": "20:25"
+    },
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 12,
+     "arrive": "20:40"
+    }
+   ]
+  },
+  {
+   "number": "688",
+   "name": "Downeaster",
+   "headsign": "Boston",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 1,
+     "depart": "17:45"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 2,
+     "arrive": "17:58",
+     "depart": "17:58"
+    },
+    {
+     "station": "portland-por",
+     "seq": 3,
+     "arrive": "18:28",
+     "depart": "18:33"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 4,
+     "arrive": "18:48",
+     "depart": "18:48"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 5,
+     "arrive": "18:55",
+     "depart": "18:55"
+    },
+    {
+     "station": "wells",
+     "seq": 6,
+     "arrive": "19:14",
+     "depart": "19:14"
+    },
+    {
+     "station": "dover",
+     "seq": 7,
+     "arrive": "19:32",
+     "depart": "19:32"
+    },
+    {
+     "station": "durham",
+     "seq": 8,
+     "arrive": "19:40",
+     "depart": "19:40"
+    },
+    {
+     "station": "exeter",
+     "seq": 9,
+     "arrive": "19:54",
+     "depart": "19:54"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 10,
+     "arrive": "20:15",
+     "depart": "20:15"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 11,
+     "arrive": "20:44",
+     "depart": "20:44"
+    },
+    {
+     "station": "boston-bon",
+     "seq": 12,
+     "arrive": "21:05"
+    }
+   ]
+  },
+  {
+   "number": "1689",
+   "name": "Downeaster",
+   "headsign": "Brunswick",
+   "direction": "0",
+   "days": "Fri-Sat",
+   "stops": [
+    {
+     "station": "boston-bon",
+     "seq": 1,
+     "depart": "23:25"
+    },
+    {
+     "station": "woburn-amtrak-station",
+     "seq": 2,
+     "arrive": "23:43",
+     "depart": "23:43"
+    },
+    {
+     "station": "haverhill-amtrak",
+     "seq": 3,
+     "arrive": "24:13",
+     "depart": "24:13"
+    },
+    {
+     "station": "exeter",
+     "seq": 4,
+     "arrive": "24:34",
+     "depart": "24:34"
+    },
+    {
+     "station": "durham",
+     "seq": 5,
+     "arrive": "24:47",
+     "depart": "24:47"
+    },
+    {
+     "station": "dover",
+     "seq": 6,
+     "arrive": "24:55",
+     "depart": "24:55"
+    },
+    {
+     "station": "wells",
+     "seq": 7,
+     "arrive": "25:13",
+     "depart": "25:13"
+    },
+    {
+     "station": "saco-amtrak-station",
+     "seq": 8,
+     "arrive": "25:30",
+     "depart": "25:30"
+    },
+    {
+     "station": "old-orchard-beach-amtrak",
+     "seq": 9,
+     "arrive": "25:36",
+     "depart": "25:36"
+    },
+    {
+     "station": "portland-por",
+     "seq": 10,
+     "arrive": "25:55",
+     "depart": "25:55"
+    },
+    {
+     "station": "freeport-amtrak-station",
+     "seq": 11,
+     "arrive": "26:25",
+     "depart": "26:25"
+    },
+    {
+     "station": "brunswick-amtrak-station",
+     "seq": 12,
+     "arrive": "26:40"
+    }
+   ]
+  }
+ ]
+}

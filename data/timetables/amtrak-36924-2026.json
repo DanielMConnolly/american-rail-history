@@ -1,0 +1,386 @@
+{
+ "id": "amtrak-36924-2026",
+ "route_id": "36924",
+ "line_ids": [
+  "amtrak-36924"
+ ],
+ "company": "Amtrak",
+ "service": "Coast Starlight",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "14",
+   "name": "Coast Starlight",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "los-angeles",
+     "seq": 1,
+     "depart": "12:51"
+    },
+    {
+     "station": "van-nuys",
+     "seq": 2,
+     "arrive": "13:14",
+     "depart": "13:18"
+    },
+    {
+     "station": "simi-valley-amtrak",
+     "seq": 3,
+     "arrive": "13:46",
+     "depart": "13:49"
+    },
+    {
+     "station": "oxnard",
+     "seq": 4,
+     "arrive": "14:18",
+     "depart": "14:22"
+    },
+    {
+     "station": "santa-barbara",
+     "seq": 5,
+     "arrive": "15:08",
+     "depart": "15:15"
+    },
+    {
+     "station": "san-luis-obispo",
+     "seq": 6,
+     "arrive": "17:52",
+     "depart": "18:05"
+    },
+    {
+     "station": "paso-robles-amtrak-station",
+     "seq": 7,
+     "arrive": "19:13",
+     "depart": "19:15"
+    },
+    {
+     "station": "salinas",
+     "seq": 8,
+     "arrive": "21:10",
+     "depart": "21:13"
+    },
+    {
+     "station": "san-jose",
+     "seq": 9,
+     "arrive": "22:46",
+     "depart": "22:58"
+    },
+    {
+     "station": "oakland",
+     "seq": 10,
+     "arrive": "24:06",
+     "depart": "24:21"
+    },
+    {
+     "station": "emeryville",
+     "seq": 11,
+     "arrive": "24:31",
+     "depart": "24:41"
+    },
+    {
+     "station": "martinez",
+     "seq": 12,
+     "arrive": "25:14",
+     "depart": "25:26"
+    },
+    {
+     "station": "davis",
+     "seq": 13,
+     "arrive": "26:11",
+     "depart": "26:11"
+    },
+    {
+     "station": "sacramento",
+     "seq": 14,
+     "arrive": "26:49",
+     "depart": "26:49"
+    },
+    {
+     "station": "chico-amtrak",
+     "seq": 15,
+     "arrive": "28:37",
+     "depart": "28:37"
+    },
+    {
+     "station": "redding-amtrak",
+     "seq": 16,
+     "arrive": "30:05",
+     "depart": "30:05"
+    },
+    {
+     "station": "dunsmuir-amtrak-station",
+     "seq": 17,
+     "arrive": "31:58",
+     "depart": "31:58"
+    },
+    {
+     "station": "klamath-falls",
+     "seq": 18,
+     "arrive": "34:33",
+     "depart": "34:43"
+    },
+    {
+     "station": "chemult",
+     "seq": 19,
+     "arrive": "35:59",
+     "depart": "35:59"
+    },
+    {
+     "station": "eugene",
+     "seq": 20,
+     "arrive": "39:29",
+     "depart": "39:37"
+    },
+    {
+     "station": "albany-amtrak-station",
+     "seq": 21,
+     "arrive": "40:20",
+     "depart": "40:23"
+    },
+    {
+     "station": "salem",
+     "seq": 22,
+     "arrive": "41:01",
+     "depart": "41:04"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 23,
+     "arrive": "42:40",
+     "depart": "42:56"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 24,
+     "arrive": "43:13",
+     "depart": "43:16"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 25,
+     "arrive": "43:48",
+     "depart": "43:51"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 26,
+     "arrive": "44:33",
+     "depart": "44:36"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 27,
+     "arrive": "44:59",
+     "depart": "45:01"
+    },
+    {
+     "station": "tacoma",
+     "seq": 28,
+     "arrive": "45:38",
+     "depart": "45:43"
+    },
+    {
+     "station": "seattle",
+     "seq": 29,
+     "arrive": "46:51"
+    }
+   ]
+  },
+  {
+   "number": "11",
+   "name": "Coast Starlight",
+   "headsign": "Los Angeles",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "12:55"
+    },
+    {
+     "station": "tacoma",
+     "seq": 2,
+     "arrive": "13:38",
+     "depart": "13:43"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 3,
+     "arrive": "14:22",
+     "depart": "14:24"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 4,
+     "arrive": "14:45",
+     "depart": "14:48"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 5,
+     "arrive": "15:29",
+     "depart": "15:32"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 6,
+     "arrive": "16:12",
+     "depart": "16:15"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 7,
+     "arrive": "16:55",
+     "depart": "17:22"
+    },
+    {
+     "station": "salem",
+     "seq": 8,
+     "arrive": "18:36",
+     "depart": "18:39"
+    },
+    {
+     "station": "albany-amtrak-station",
+     "seq": 9,
+     "arrive": "19:11",
+     "depart": "19:14"
+    },
+    {
+     "station": "eugene",
+     "seq": 10,
+     "arrive": "20:08",
+     "depart": "20:15"
+    },
+    {
+     "station": "chemult",
+     "seq": 11,
+     "arrive": "23:13",
+     "depart": "23:13"
+    },
+    {
+     "station": "klamath-falls",
+     "seq": 12,
+     "arrive": "24:58",
+     "depart": "25:08"
+    },
+    {
+     "station": "dunsmuir-amtrak-station",
+     "seq": 13,
+     "arrive": "27:45",
+     "depart": "27:45"
+    },
+    {
+     "station": "redding-amtrak",
+     "seq": 14,
+     "arrive": "29:31",
+     "depart": "29:31"
+    },
+    {
+     "station": "chico-amtrak",
+     "seq": 15,
+     "arrive": "31:12",
+     "depart": "31:12"
+    },
+    {
+     "station": "sacramento",
+     "seq": 16,
+     "arrive": "33:28",
+     "depart": "33:48"
+    },
+    {
+     "station": "davis",
+     "seq": 17,
+     "arrive": "34:05",
+     "depart": "34:05"
+    },
+    {
+     "station": "martinez",
+     "seq": 18,
+     "arrive": "34:54",
+     "depart": "34:54"
+    },
+    {
+     "station": "emeryville",
+     "seq": 19,
+     "arrive": "35:29",
+     "depart": "35:39"
+    },
+    {
+     "station": "oakland",
+     "seq": 20,
+     "arrive": "35:54",
+     "depart": "36:09"
+    },
+    {
+     "station": "san-jose",
+     "seq": 21,
+     "arrive": "37:14",
+     "depart": "37:26"
+    },
+    {
+     "station": "salinas",
+     "seq": 22,
+     "arrive": "39:06",
+     "depart": "39:06"
+    },
+    {
+     "station": "paso-robles-amtrak-station",
+     "seq": 23,
+     "arrive": "40:57",
+     "depart": "40:57"
+    },
+    {
+     "station": "san-luis-obispo",
+     "seq": 24,
+     "arrive": "42:24",
+     "depart": "42:37"
+    },
+    {
+     "station": "santa-barbara",
+     "seq": 25,
+     "arrive": "45:12",
+     "depart": "45:19"
+    },
+    {
+     "station": "oxnard",
+     "seq": 26,
+     "arrive": "46:20",
+     "depart": "46:20"
+    },
+    {
+     "station": "simi-valley-amtrak",
+     "seq": 27,
+     "arrive": "47:02",
+     "depart": "47:02"
+    },
+    {
+     "station": "van-nuys",
+     "seq": 28,
+     "arrive": "47:36",
+     "depart": "47:36"
+    },
+    {
+     "station": "burbank-amtrak",
+     "seq": 29,
+     "arrive": "47:44",
+     "depart": "47:44"
+    },
+    {
+     "station": "los-angeles",
+     "seq": 30,
+     "arrive": "48:11"
+    }
+   ]
+  }
+ ]
+}

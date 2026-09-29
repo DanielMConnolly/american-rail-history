@@ -1,0 +1,1050 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Rail transit in Miami-Dade County. Metrorail opened on 20 May 1984 between Dadeland South and Overtown, reached Okeechobee in 1985 and Palmetto in 2003; the Orange Line and its AirportLink branch to Miami International Airport followed on 28 July 2012. The free downtown Metromover people mover opened on 17 April 1986 and gained its Omni and Brickell loops in 1994. The separate MIA Mover has linked the airport to the Miami Intermodal Center since 2011. Under Rule 4 every Miami-Dade Transit line carries one colour even though the agency brands them Green and Orange.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Metrorail_(Miami-Dade_County) (Metrorail 1984 opening, 1985 and 2003 extensions, the 2012 Orange Line and AirportLink)",
+   "https://en.wikipedia.org/wiki/Metromover (Metromover 1986 opening, 1994 Omni and Brickell extensions, 4.4 mi network)",
+   "OpenStreetMap route relations, extracted 29 August 2026; traced length is compared with the documented route length on each feature."
+  ],
+  "not_yet_sourced": "All headways and speeds are estimates. The 1984 and 1985 Metrorail extents are cut from today's relation, so they draw the modern alignment. The three Metromover loops and the two Metrorail lines overlap on shared track, which is therefore drawn more than once."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metrorail Green Line",
+    "id": "mdt-metrorail-green-1984",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 45,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 10.96 mi — the 1984 extent, cut from the modern OSM Green Line relation at Overtown. NOTE: drawn on today's alignment.",
+    "segments": [
+     {
+      "start": 1984,
+      "end": 1985,
+      "headway_min": 8,
+      "note": "Metrorail opened 20 May 1984 between Dadeland South and Overtown. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metrorail_(Miami-Dade_County)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.198563,
+      25.784642
+     ],
+     [
+      -80.197668,
+      25.78425
+     ],
+     [
+      -80.19704,
+      25.78371
+     ],
+     [
+      -80.196568,
+      25.782949
+     ],
+     [
+      -80.196381,
+      25.782087
+     ],
+     [
+      -80.195509,
+      25.762265
+     ],
+     [
+      -80.195953,
+      25.760569
+     ],
+     [
+      -80.197142,
+      25.759102
+     ],
+     [
+      -80.20836,
+      25.751299
+     ],
+     [
+      -80.209884,
+      25.750464
+     ],
+     [
+      -80.251072,
+      25.735378
+     ],
+     [
+      -80.252676,
+      25.734567
+     ],
+     [
+      -80.314125,
+      25.684728
+     ],
+     [
+      -80.313054,
+      25.685504
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metrorail Green Line (to Okeechobee)",
+    "id": "mdt-metrorail-green-1985",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 45,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 20.40 mi — the 1985–2003 extent, cut at Okeechobee. NOTE: drawn on today's alignment.",
+    "segments": [
+     {
+      "start": 1985,
+      "end": 2003,
+      "headway_min": 8,
+      "note": "Extended north-west to Okeechobee in 1985. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metrorail_(Miami-Dade_County)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.288611,
+      25.840608
+     ],
+     [
+      -80.27345,
+      25.841352
+     ],
+     [
+      -80.272302,
+      25.841842
+     ],
+     [
+      -80.269301,
+      25.844521
+     ],
+     [
+      -80.268318,
+      25.844851
+     ],
+     [
+      -80.266206,
+      25.845204
+     ],
+     [
+      -80.245653,
+      25.845898
+     ],
+     [
+      -80.243822,
+      25.845575
+     ],
+     [
+      -80.242881,
+      25.844983
+     ],
+     [
+      -80.242292,
+      25.84433
+     ],
+     [
+      -80.24185,
+      25.843386
+     ],
+     [
+      -80.241662,
+      25.842391
+     ],
+     [
+      -80.2405,
+      25.815368
+     ],
+     [
+      -80.240386,
+      25.814641
+     ],
+     [
+      -80.239995,
+      25.813832
+     ],
+     [
+      -80.238813,
+      25.812824
+     ],
+     [
+      -80.237029,
+      25.812388
+     ],
+     [
+      -80.232791,
+      25.81235
+     ],
+     [
+      -80.218542,
+      25.812714
+     ],
+     [
+      -80.21765,
+      25.812565
+     ],
+     [
+      -80.216742,
+      25.81211
+     ],
+     [
+      -80.215993,
+      25.811328
+     ],
+     [
+      -80.215592,
+      25.810168
+     ],
+     [
+      -80.215033,
+      25.788525
+     ],
+     [
+      -80.214869,
+      25.787633
+     ],
+     [
+      -80.214539,
+      25.787001
+     ],
+     [
+      -80.211921,
+      25.784867
+     ],
+     [
+      -80.210406,
+      25.784239
+     ],
+     [
+      -80.205401,
+      25.784784
+     ],
+     [
+      -80.198563,
+      25.784642
+     ],
+     [
+      -80.197668,
+      25.78425
+     ],
+     [
+      -80.19704,
+      25.78371
+     ],
+     [
+      -80.196568,
+      25.782949
+     ],
+     [
+      -80.196381,
+      25.782087
+     ],
+     [
+      -80.195509,
+      25.762265
+     ],
+     [
+      -80.195953,
+      25.760569
+     ],
+     [
+      -80.197142,
+      25.759102
+     ],
+     [
+      -80.20836,
+      25.751299
+     ],
+     [
+      -80.209884,
+      25.750464
+     ],
+     [
+      -80.251072,
+      25.735378
+     ],
+     [
+      -80.252676,
+      25.734567
+     ],
+     [
+      -80.314125,
+      25.684728
+     ],
+     [
+      -80.313054,
+      25.685504
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metrorail Green Line (Palmetto)",
+    "id": "mdt-metrorail-green",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 45,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 22.80 mi against 22.4 mi documented for Palmetto – Dadeland South.",
+    "segments": [
+     {
+      "start": 2003,
+      "end": 2026,
+      "headway_min": 8,
+      "note": "Extended to Palmetto in 2003. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metrorail_(Miami-Dade_County)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.322917,
+      25.843432
+     ],
+     [
+      -80.324483,
+      25.843339
+     ],
+     [
+      -80.321396,
+      25.843344
+     ],
+     [
+      -80.318302,
+      25.842544
+     ],
+     [
+      -80.313714,
+      25.842426
+     ],
+     [
+      -80.312771,
+      25.842073
+     ],
+     [
+      -80.309843,
+      25.840459
+     ],
+     [
+      -80.3073,
+      25.839518
+     ],
+     [
+      -80.303394,
+      25.839777
+     ],
+     [
+      -80.292031,
+      25.839766
+     ],
+     [
+      -80.288611,
+      25.840608
+     ],
+     [
+      -80.27345,
+      25.841352
+     ],
+     [
+      -80.272302,
+      25.841842
+     ],
+     [
+      -80.269301,
+      25.844521
+     ],
+     [
+      -80.268318,
+      25.844851
+     ],
+     [
+      -80.266206,
+      25.845204
+     ],
+     [
+      -80.245653,
+      25.845898
+     ],
+     [
+      -80.243822,
+      25.845575
+     ],
+     [
+      -80.242881,
+      25.844983
+     ],
+     [
+      -80.242292,
+      25.84433
+     ],
+     [
+      -80.24185,
+      25.843386
+     ],
+     [
+      -80.241662,
+      25.842391
+     ],
+     [
+      -80.2405,
+      25.815368
+     ],
+     [
+      -80.240386,
+      25.814641
+     ],
+     [
+      -80.239995,
+      25.813832
+     ],
+     [
+      -80.238813,
+      25.812824
+     ],
+     [
+      -80.237029,
+      25.812388
+     ],
+     [
+      -80.232791,
+      25.81235
+     ],
+     [
+      -80.218542,
+      25.812714
+     ],
+     [
+      -80.21765,
+      25.812565
+     ],
+     [
+      -80.216742,
+      25.81211
+     ],
+     [
+      -80.215993,
+      25.811328
+     ],
+     [
+      -80.215592,
+      25.810168
+     ],
+     [
+      -80.215033,
+      25.788525
+     ],
+     [
+      -80.214869,
+      25.787633
+     ],
+     [
+      -80.214539,
+      25.787001
+     ],
+     [
+      -80.211921,
+      25.784867
+     ],
+     [
+      -80.210406,
+      25.784239
+     ],
+     [
+      -80.205401,
+      25.784784
+     ],
+     [
+      -80.198563,
+      25.784642
+     ],
+     [
+      -80.197668,
+      25.78425
+     ],
+     [
+      -80.19704,
+      25.78371
+     ],
+     [
+      -80.196568,
+      25.782949
+     ],
+     [
+      -80.196381,
+      25.782087
+     ],
+     [
+      -80.195509,
+      25.762265
+     ],
+     [
+      -80.195953,
+      25.760569
+     ],
+     [
+      -80.197142,
+      25.759102
+     ],
+     [
+      -80.20836,
+      25.751299
+     ],
+     [
+      -80.209884,
+      25.750464
+     ],
+     [
+      -80.251072,
+      25.735378
+     ],
+     [
+      -80.252676,
+      25.734567
+     ],
+     [
+      -80.314125,
+      25.684728
+     ],
+     [
+      -80.313054,
+      25.685504
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metrorail Orange Line",
+    "id": "mdt-metrorail-orange",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 45,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 17.21 mi. The AirportLink branch from Earlington Heights to Miami Intermodal Center opened 28 July 2012; south of Earlington Heights this shares the Green Line's track, so that trunk is drawn twice.",
+    "segments": [
+     {
+      "start": 2012,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "The Orange Line began 28 July 2012 with the AirportLink extension to Miami International Airport. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metrorail_(Miami-Dade_County)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.314125,
+      25.684728
+     ],
+     [
+      -80.252294,
+      25.734717
+     ],
+     [
+      -80.249145,
+      25.736046
+     ],
+     [
+      -80.209844,
+      25.750381
+     ],
+     [
+      -80.197426,
+      25.758756
+     ],
+     [
+      -80.196499,
+      25.759576
+     ],
+     [
+      -80.195856,
+      25.760531
+     ],
+     [
+      -80.19541,
+      25.76207
+     ],
+     [
+      -80.195427,
+      25.765138
+     ],
+     [
+      -80.196272,
+      25.782091
+     ],
+     [
+      -80.196458,
+      25.782993
+     ],
+     [
+      -80.19744,
+      25.784212
+     ],
+     [
+      -80.19816,
+      25.78459
+     ],
+     [
+      -80.199076,
+      25.78479
+     ],
+     [
+      -80.205914,
+      25.784811
+     ],
+     [
+      -80.209673,
+      25.784309
+     ],
+     [
+      -80.210772,
+      25.784391
+     ],
+     [
+      -80.21189,
+      25.784902
+     ],
+     [
+      -80.214497,
+      25.787026
+     ],
+     [
+      -80.214988,
+      25.788527
+     ],
+     [
+      -80.215482,
+      25.810174
+     ],
+     [
+      -80.215896,
+      25.811376
+     ],
+     [
+      -80.216864,
+      25.812294
+     ],
+     [
+      -80.217631,
+      25.812625
+     ],
+     [
+      -80.218537,
+      25.812755
+     ],
+     [
+      -80.233103,
+      25.812442
+     ],
+     [
+      -80.240389,
+      25.812737
+     ],
+     [
+      -80.247774,
+      25.812521
+     ],
+     [
+      -80.249077,
+      25.812298
+     ],
+     [
+      -80.251801,
+      25.810843
+     ],
+     [
+      -80.255899,
+      25.8099
+     ],
+     [
+      -80.256783,
+      25.809363
+     ],
+     [
+      -80.25757,
+      25.80852
+     ],
+     [
+      -80.258122,
+      25.807204
+     ],
+     [
+      -80.258825,
+      25.802343
+     ],
+     [
+      -80.258695,
+      25.797332
+     ],
+     [
+      -80.258636,
+      25.798515
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metromover Inner Loop",
+    "id": "mdt-metromover-inner",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: an automated downtown people mover; no timetable consulted",
+    "geometry_quality": "Traced 0.91 mi from the OSM relation. The three Metromover loops share the downtown circuit, so that track is drawn three times; the whole Metromover network is 4.4 mi.",
+    "segments": [
+     {
+      "start": 1986,
+      "end": 2026,
+      "headway_min": 3,
+      "note": "Metromover opened 17 April 1986 as the downtown Inner Loop; the Omni and Brickell extensions followed in 1994. Free to ride. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metromover"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.192245,
+      25.778885
+     ],
+     [
+      -80.190501,
+      25.779007
+     ],
+     [
+      -80.19011,
+      25.778775
+     ],
+     [
+      -80.189857,
+      25.775356
+     ],
+     [
+      -80.189597,
+      25.775203
+     ],
+     [
+      -80.187827,
+      25.775238
+     ],
+     [
+      -80.187471,
+      25.774898
+     ],
+     [
+      -80.187371,
+      25.77198
+     ],
+     [
+      -80.187648,
+      25.771818
+     ],
+     [
+      -80.190049,
+      25.771742
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metromover Omni Loop",
+    "id": "mdt-metromover-omni",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: an automated downtown people mover; no timetable consulted",
+    "geometry_quality": "Traced 2.30 mi from the OSM relation. The three Metromover loops share the downtown circuit, so that track is drawn three times; the whole Metromover network is 4.4 mi.",
+    "segments": [
+     {
+      "start": 1994,
+      "end": 2026,
+      "headway_min": 3,
+      "note": "Metromover opened 17 April 1986 as the downtown Inner Loop; the Omni and Brickell extensions followed in 1994. Free to ride. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metromover"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.192902,
+      25.77191
+     ],
+     [
+      -80.190047,
+      25.771706
+     ],
+     [
+      -80.187644,
+      25.771782
+     ],
+     [
+      -80.187309,
+      25.772018
+     ],
+     [
+      -80.187529,
+      25.775103
+     ],
+     [
+      -80.18789,
+      25.775281
+     ],
+     [
+      -80.18955,
+      25.775246
+     ],
+     [
+      -80.189802,
+      25.775487
+     ],
+     [
+      -80.189965,
+      25.778598
+     ],
+     [
+      -80.190504,
+      25.779623
+     ],
+     [
+      -80.190821,
+      25.785198
+     ],
+     [
+      -80.190513,
+      25.785495
+     ],
+     [
+      -80.188592,
+      25.78561
+     ],
+     [
+      -80.186747,
+      25.786449
+     ],
+     [
+      -80.18653,
+      25.786827
+     ],
+     [
+      -80.186614,
+      25.789189
+     ],
+     [
+      -80.186848,
+      25.789505
+     ],
+     [
+      -80.19329,
+      25.789395
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Transit",
+    "line": "Miami-Dade Transit: Metromover Brickell Loop",
+    "id": "mdt-metromover-brickell",
+    "color": "#0F7B8A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: an automated downtown people mover; no timetable consulted",
+    "geometry_quality": "Traced 1.91 mi from the OSM relation. The three Metromover loops share the downtown circuit, so that track is drawn three times; the whole Metromover network is 4.4 mi.",
+    "segments": [
+     {
+      "start": 1994,
+      "end": 2026,
+      "headway_min": 3,
+      "note": "Metromover opened 17 April 1986 as the downtown Inner Loop; the Omni and Brickell extensions followed in 1994. Free to ride. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Metromover"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.194802,
+      25.760536
+     ],
+     [
+      -80.195148,
+      25.760788
+     ],
+     [
+      -80.195239,
+      25.763268
+     ],
+     [
+      -80.194929,
+      25.763454
+     ],
+     [
+      -80.192932,
+      25.763526
+     ],
+     [
+      -80.192671,
+      25.763779
+     ],
+     [
+      -80.19207,
+      25.766137
+     ],
+     [
+      -80.192304,
+      25.769663
+     ],
+     [
+      -80.192737,
+      25.771836
+     ],
+     [
+      -80.195286,
+      25.772279
+     ],
+     [
+      -80.196283,
+      25.77284
+     ],
+     [
+      -80.196021,
+      25.773553
+     ],
+     [
+      -80.196186,
+      25.778484
+     ],
+     [
+      -80.195732,
+      25.778856
+     ],
+     [
+      -80.190752,
+      25.779035
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Miami-Dade Aviation Department",
+    "line": "MIA Mover: Airport – Miami Intermodal Center",
+    "id": "mia-mover",
+    "color": "#9C5518",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: an automated airport people mover; no timetable consulted",
+    "geometry_quality": "Traced 1.27 mi against 1.27 mi documented.",
+    "segments": [
+     {
+      "start": 2011,
+      "end": 2026,
+      "headway_min": 4,
+      "note": "An automated people mover linking Miami International Airport with the Miami Intermodal Center and the Metrorail Orange Line, opened September 2011. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/MIA_Mover"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.2774,
+      25.795174
+     ],
+     [
+      -80.272449,
+      25.795369
+     ],
+     [
+      -80.269975,
+      25.795121
+     ],
+     [
+      -80.264051,
+      25.795764
+     ],
+     [
+      -80.263188,
+      25.795677
+     ],
+     [
+      -80.261548,
+      25.795037
+     ],
+     [
+      -80.259654,
+      25.795033
+     ],
+     [
+      -80.259199,
+      25.795434
+     ],
+     [
+      -80.259239,
+      25.797119
+     ]
+    ]
+   }
+  }
+ ]
+}

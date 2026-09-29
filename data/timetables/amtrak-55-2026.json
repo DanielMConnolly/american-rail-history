@@ -1,0 +1,92 @@
+{
+ "id": "amtrak-55-2026",
+ "route_id": "55",
+ "line_ids": [
+  "amtrak-55"
+ ],
+ "company": "Amtrak",
+ "service": "Pere Marquette",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "371",
+   "name": "Pere Marquette",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "grand-rapids-vernon-j-ehlers-station",
+     "seq": 1,
+     "depart": "06:00"
+    },
+    {
+     "station": "holland-amtrak-station",
+     "seq": 2,
+     "arrive": "06:47",
+     "depart": "06:49"
+    },
+    {
+     "station": "bangor-amtrak-station",
+     "seq": 3,
+     "arrive": "07:31",
+     "depart": "07:32"
+    },
+    {
+     "station": "st-joseph-benton-harbor-amtrak-station",
+     "seq": 4,
+     "arrive": "08:09",
+     "depart": "08:10"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 5,
+     "arrive": "10:08"
+    }
+   ]
+  },
+  {
+   "number": "370",
+   "name": "Pere Marquette",
+   "headsign": "Grand Rapids",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "19:30"
+    },
+    {
+     "station": "st-joseph-benton-harbor-amtrak-station",
+     "seq": 2,
+     "arrive": "21:13",
+     "depart": "21:14"
+    },
+    {
+     "station": "bangor-amtrak-station",
+     "seq": 3,
+     "arrive": "21:49",
+     "depart": "21:50"
+    },
+    {
+     "station": "holland-amtrak-station",
+     "seq": 4,
+     "arrive": "22:31",
+     "depart": "22:33"
+    },
+    {
+     "station": "grand-rapids-vernon-j-ehlers-station",
+     "seq": 5,
+     "arrive": "23:34"
+    }
+   ]
+  }
+ ]
+}

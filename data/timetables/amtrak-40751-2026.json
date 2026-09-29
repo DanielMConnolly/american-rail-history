@@ -1,0 +1,1814 @@
+{
+ "id": "amtrak-40751-2026",
+ "route_id": "40751",
+ "line_ids": [
+  "amtrak-40751"
+ ],
+ "company": "Amtrak",
+ "service": "Acela",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "2150",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "04:47"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "05:08",
+     "depart": "05:09"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "05:20",
+     "depart": "05:22"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "06:28",
+     "depart": "06:30"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "07:29",
+     "depart": "07:30"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "07:47",
+     "depart": "07:57"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 7,
+     "arrive": "08:45",
+     "depart": "08:47"
+    },
+    {
+     "station": "providence",
+     "seq": 8,
+     "arrive": "10:57",
+     "depart": "10:57"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 9,
+     "arrive": "11:24",
+     "depart": "11:24"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 10,
+     "arrive": "11:33",
+     "depart": "11:33"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 11,
+     "arrive": "11:44"
+    }
+   ]
+  },
+  {
+   "number": "2151",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "05:00"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "05:04",
+     "depart": "05:05"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "05:13",
+     "depart": "05:14"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "05:34",
+     "depart": "05:36"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 5,
+     "arrive": "07:05",
+     "depart": "07:07"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "07:51",
+     "depart": "07:53"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "08:51",
+     "depart": "09:00"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "09:13",
+     "depart": "09:15"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 9,
+     "arrive": "10:08",
+     "depart": "10:10"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 10,
+     "arrive": "11:19",
+     "depart": "11:20"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 11,
+     "arrive": "11:32",
+     "depart": "11:33"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "11:59"
+    }
+   ]
+  },
+  {
+   "number": "2190",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "05:27"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 2,
+     "arrive": "06:13",
+     "depart": "06:14"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 3,
+     "arrive": "07:10",
+     "depart": "07:13"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "08:40",
+     "depart": "08:40"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 5,
+     "arrive": "09:11",
+     "depart": "09:11"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 6,
+     "arrive": "09:25",
+     "depart": "09:25"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 7,
+     "arrive": "09:32"
+    }
+   ]
+  },
+  {
+   "number": "2102",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "05:48"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "06:20",
+     "depart": "06:21"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "07:05",
+     "depart": "07:05"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "07:35",
+     "depart": "07:36"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "08:35",
+     "depart": "08:35"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "08:54"
+    }
+   ]
+  },
+  {
+   "number": "2103",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "06:10"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 2,
+     "arrive": "06:36",
+     "depart": "06:37"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "07:19",
+     "depart": "07:21"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "07:40",
+     "depart": "07:41"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 5,
+     "arrive": "08:31",
+     "depart": "08:33"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "09:09"
+    }
+   ]
+  },
+  {
+   "number": "2152",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "06:45"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "07:05",
+     "depart": "07:06"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "08:02",
+     "depart": "08:03"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "08:26",
+     "depart": "08:29"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "09:26",
+     "depart": "09:27"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "09:49",
+     "depart": "10:00"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 7,
+     "arrive": "10:50",
+     "depart": "10:52"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 8,
+     "arrive": "11:43",
+     "depart": "11:45"
+    },
+    {
+     "station": "providence",
+     "seq": 9,
+     "arrive": "13:07",
+     "depart": "13:07"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 10,
+     "arrive": "13:36",
+     "depart": "13:37"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 11,
+     "arrive": "13:50",
+     "depart": "13:51"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 12,
+     "arrive": "13:56"
+    }
+   ]
+  },
+  {
+   "number": "2155",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "07:00"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "07:04",
+     "depart": "07:05"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "07:14",
+     "depart": "07:15"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "07:36",
+     "depart": "07:38"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 5,
+     "arrive": "09:11",
+     "depart": "09:14"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "09:57",
+     "depart": "09:59"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "10:50",
+     "depart": "11:06"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "11:19",
+     "depart": "11:21"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 9,
+     "arrive": "12:17",
+     "depart": "12:19"
+    },
+    {
+     "station": "wilmington",
+     "seq": 10,
+     "arrive": "12:36",
+     "depart": "12:38"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 11,
+     "arrive": "13:24",
+     "depart": "13:26"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "14:02"
+    }
+   ]
+  },
+  {
+   "number": "2104",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "07:30"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "08:02",
+     "depart": "08:03"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "08:47",
+     "depart": "08:47"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "09:12",
+     "depart": "09:13"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "10:11",
+     "depart": "10:11"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "10:30"
+    }
+   ]
+  },
+  {
+   "number": "2107",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "07:35"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "07:49",
+     "depart": "07:50"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "08:41",
+     "depart": "08:43"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "09:06",
+     "depart": "09:08"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 5,
+     "arrive": "09:58",
+     "depart": "10:00"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "10:36"
+    }
+   ]
+  },
+  {
+   "number": "2109",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "08:20"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 2,
+     "arrive": "08:45",
+     "depart": "08:46"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "09:29",
+     "depart": "09:31"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "09:53",
+     "depart": "09:54"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 5,
+     "arrive": "10:43",
+     "depart": "10:44"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 6,
+     "arrive": "10:56",
+     "depart": "10:57"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 7,
+     "arrive": "11:27"
+    }
+   ]
+  },
+  {
+   "number": "2154",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "08:30"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "08:51",
+     "depart": "08:53"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "09:04",
+     "depart": "09:06"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "10:12",
+     "depart": "10:13"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "11:09",
+     "depart": "11:09"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "11:27",
+     "depart": "11:40"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 7,
+     "arrive": "12:23",
+     "depart": "12:25"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 8,
+     "arrive": "13:17",
+     "depart": "13:19"
+    },
+    {
+     "station": "providence",
+     "seq": 9,
+     "arrive": "14:48",
+     "depart": "14:48"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 10,
+     "arrive": "15:13",
+     "depart": "15:15"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 11,
+     "arrive": "15:27",
+     "depart": "15:28"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 12,
+     "arrive": "15:34"
+    }
+   ]
+  },
+  {
+   "number": "2159",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "09:00"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "09:04",
+     "depart": "09:05"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "09:13",
+     "depart": "09:15"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "09:35",
+     "depart": "09:37"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 5,
+     "arrive": "11:09",
+     "depart": "11:11"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "11:57",
+     "depart": "11:59"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "12:51",
+     "depart": "13:02"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "13:15",
+     "depart": "13:17"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 9,
+     "arrive": "14:11",
+     "depart": "14:13"
+    },
+    {
+     "station": "wilmington",
+     "seq": 10,
+     "arrive": "14:32",
+     "depart": "14:33"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 11,
+     "arrive": "15:24",
+     "depart": "15:25"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "16:04"
+    }
+   ]
+  },
+  {
+   "number": "2113",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "10:00"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 2,
+     "arrive": "10:26",
+     "depart": "10:27"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "11:08",
+     "depart": "11:10"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "11:30",
+     "depart": "11:31"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 5,
+     "arrive": "12:20",
+     "depart": "12:22"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "13:00"
+    }
+   ]
+  },
+  {
+   "number": "2108",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "10:05"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "10:36",
+     "depart": "10:38"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "11:20",
+     "depart": "11:21"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "11:45",
+     "depart": "11:47"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "12:44",
+     "depart": "12:44"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "13:05"
+    }
+   ]
+  },
+  {
+   "number": "2165",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "11:15"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "11:19",
+     "depart": "11:20"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "11:30",
+     "depart": "11:31"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "11:54",
+     "depart": "11:55"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 5,
+     "arrive": "13:24",
+     "depart": "13:26"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "14:09",
+     "depart": "14:11"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "15:04",
+     "depart": "15:16"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "15:30",
+     "depart": "15:32"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 9,
+     "arrive": "16:25",
+     "depart": "16:27"
+    },
+    {
+     "station": "wilmington",
+     "seq": 10,
+     "arrive": "16:51",
+     "depart": "16:53"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 11,
+     "arrive": "17:44",
+     "depart": "17:46"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "18:26"
+    }
+   ]
+  },
+  {
+   "number": "2112",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "11:50"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "12:20",
+     "depart": "12:22"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "13:05",
+     "depart": "13:06"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "13:31",
+     "depart": "13:33"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 5,
+     "arrive": "14:17",
+     "depart": "14:18"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "14:53"
+    }
+   ]
+  },
+  {
+   "number": "2115",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "11:55"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "12:09",
+     "depart": "12:10"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "13:03",
+     "depart": "13:05"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "14:14",
+     "depart": "14:16"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 5,
+     "arrive": "14:27",
+     "depart": "14:29"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "15:00"
+    }
+   ]
+  },
+  {
+   "number": "2158",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "12:50"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "13:11",
+     "depart": "13:11"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "14:08",
+     "depart": "14:09"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "14:35",
+     "depart": "14:36"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "15:35",
+     "depart": "15:35"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "15:54",
+     "depart": "16:04"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 7,
+     "arrive": "16:52",
+     "depart": "16:54"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 8,
+     "arrive": "17:43",
+     "depart": "17:44"
+    },
+    {
+     "station": "providence",
+     "seq": 9,
+     "arrive": "19:17",
+     "depart": "19:17"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 10,
+     "arrive": "19:45",
+     "depart": "19:46"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 11,
+     "arrive": "19:57",
+     "depart": "19:58"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 12,
+     "arrive": "20:04"
+    }
+   ]
+  },
+  {
+   "number": "2167",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "13:00"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "13:05",
+     "depart": "13:06"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "13:14",
+     "depart": "13:15"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "13:35",
+     "depart": "13:37"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 5,
+     "arrive": "15:14",
+     "depart": "15:16"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "15:59",
+     "depart": "16:01"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "16:50",
+     "depart": "17:00"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "17:13",
+     "depart": "17:15"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 9,
+     "arrive": "18:09",
+     "depart": "18:11"
+    },
+    {
+     "station": "wilmington",
+     "seq": 10,
+     "arrive": "18:31",
+     "depart": "18:32"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 11,
+     "arrive": "19:36",
+     "depart": "19:37"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "20:03"
+    }
+   ]
+  },
+  {
+   "number": "2116",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "13:55"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "14:26",
+     "depart": "14:27"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "15:11",
+     "depart": "15:12"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "15:37",
+     "depart": "15:38"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "16:37",
+     "depart": "16:38"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "16:55"
+    }
+   ]
+  },
+  {
+   "number": "2119",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "14:15"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "14:29",
+     "depart": "14:30"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "15:22",
+     "depart": "15:24"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "15:48",
+     "depart": "15:50"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 5,
+     "arrive": "16:40",
+     "depart": "16:42"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 6,
+     "arrive": "16:54",
+     "depart": "16:55"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 7,
+     "arrive": "17:22"
+    }
+   ]
+  },
+  {
+   "number": "2160",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "14:50"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "15:10",
+     "depart": "15:11"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "16:05",
+     "depart": "16:06"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "16:31",
+     "depart": "16:33"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "17:30",
+     "depart": "17:31"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "17:49",
+     "depart": "18:05"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 7,
+     "arrive": "18:48",
+     "depart": "18:50"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 8,
+     "arrive": "19:42",
+     "depart": "19:44"
+    },
+    {
+     "station": "providence",
+     "seq": 9,
+     "arrive": "21:10",
+     "depart": "21:10"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 10,
+     "arrive": "21:38",
+     "depart": "21:39"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 11,
+     "arrive": "21:50",
+     "depart": "21:51"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 12,
+     "arrive": "21:58"
+    }
+   ]
+  },
+  {
+   "number": "2171",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "15:10"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "15:15",
+     "depart": "15:16"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "15:24",
+     "depart": "15:25"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "15:46",
+     "depart": "15:48"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 5,
+     "arrive": "17:22",
+     "depart": "17:24"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "18:12",
+     "depart": "18:14"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "19:08",
+     "depart": "19:18"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "19:33",
+     "depart": "19:35"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 9,
+     "arrive": "20:29",
+     "depart": "20:31"
+    },
+    {
+     "station": "wilmington",
+     "seq": 10,
+     "arrive": "20:52",
+     "depart": "20:53"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 11,
+     "arrive": "21:44",
+     "depart": "21:46"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "22:22"
+    }
+   ]
+  },
+  {
+   "number": "2118",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "15:25"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "15:56",
+     "depart": "15:58"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "16:46",
+     "depart": "16:47"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "17:10",
+     "depart": "17:12"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "18:06",
+     "depart": "18:07"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "18:24"
+    }
+   ]
+  },
+  {
+   "number": "2123",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "16:13"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "16:28",
+     "depart": "16:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "17:25",
+     "depart": "17:27"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "18:33",
+     "depart": "18:35"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 5,
+     "arrive": "19:11"
+    }
+   ]
+  },
+  {
+   "number": "2162",
+   "name": "Acela",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "16:20"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "16:42",
+     "depart": "16:43"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "16:54",
+     "depart": "16:56"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "18:01",
+     "depart": "18:02"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "19:00",
+     "depart": "19:00"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "19:20",
+     "depart": "19:37"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 7,
+     "arrive": "20:23",
+     "depart": "20:24"
+    },
+    {
+     "station": "providence",
+     "seq": 8,
+     "arrive": "22:47",
+     "depart": "22:47"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 9,
+     "arrive": "23:17",
+     "depart": "23:18"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 10,
+     "arrive": "23:30",
+     "depart": "23:31"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 11,
+     "arrive": "23:37"
+    }
+   ]
+  },
+  {
+   "number": "2120",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "17:05"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "17:36",
+     "depart": "17:38"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "18:22",
+     "depart": "18:23"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "18:44",
+     "depart": "18:46"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 5,
+     "arrive": "19:30",
+     "depart": "19:31"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "20:03"
+    }
+   ]
+  },
+  {
+   "number": "2127",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "18:05"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "18:20",
+     "depart": "18:22"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "19:15",
+     "depart": "19:17"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "20:25",
+     "depart": "20:27"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 5,
+     "arrive": "20:38",
+     "depart": "20:40"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "21:07"
+    }
+   ]
+  },
+  {
+   "number": "2193",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "18:05"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "18:10",
+     "depart": "18:11"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "18:19",
+     "depart": "18:20"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "18:39",
+     "depart": "18:40"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 5,
+     "arrive": "20:49",
+     "depart": "20:51"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "21:46"
+    }
+   ]
+  },
+  {
+   "number": "2124",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "18:13"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "18:43",
+     "depart": "18:45"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "19:30",
+     "depart": "19:31"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "19:55",
+     "depart": "19:57"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 5,
+     "arrive": "21:10"
+    }
+   ]
+  },
+  {
+   "number": "2131",
+   "name": "Acela",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "20:00"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 2,
+     "arrive": "21:07",
+     "depart": "21:09"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "21:30",
+     "depart": "21:31"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "22:18",
+     "depart": "22:20"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 5,
+     "arrive": "23:00"
+    }
+   ]
+  },
+  {
+   "number": "2128",
+   "name": "Acela",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "20:02"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "20:33",
+     "depart": "20:34"
+    },
+    {
+     "station": "wilmington",
+     "seq": 3,
+     "arrive": "21:22",
+     "depart": "21:23"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "21:47",
+     "depart": "21:48"
+    },
+    {
+     "station": "newark",
+     "seq": 5,
+     "arrive": "22:44",
+     "depart": "22:45"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 6,
+     "arrive": "23:03"
+    }
+   ]
+  }
+ ]
+}

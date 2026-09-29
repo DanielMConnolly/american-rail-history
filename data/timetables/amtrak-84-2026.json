@@ -1,0 +1,2451 @@
+{
+ "id": "amtrak-84-2026",
+ "route_id": "84",
+ "line_ids": [
+  "amtrak-36924",
+  "amtrak-84",
+  "amtrak-84-fremont",
+  "amtrak-96"
+ ],
+ "company": "Amtrak",
+ "service": "Capitol Corridor",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "551",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "00:03"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "00:17",
+     "depart": "00:19"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "00:38",
+     "depart": "00:39"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "00:46",
+     "depart": "00:47"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "01:05",
+     "depart": "01:06"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "01:31",
+     "depart": "01:33"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "01:40",
+     "depart": "01:41"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "01:46",
+     "depart": "01:48"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "02:03"
+    }
+   ]
+  },
+  {
+   "number": "552",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Fri",
+   "stops": [
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 1,
+     "depart": "02:30"
+    },
+    {
+     "station": "fremont",
+     "seq": 2,
+     "arrive": "02:49",
+     "depart": "02:51"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 3,
+     "arrive": "03:05",
+     "depart": "03:06"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 4,
+     "arrive": "03:15",
+     "depart": "03:16"
+    },
+    {
+     "station": "oakland",
+     "seq": 5,
+     "arrive": "03:23",
+     "depart": "03:25"
+    },
+    {
+     "station": "emeryville",
+     "seq": 6,
+     "arrive": "03:33",
+     "depart": "03:35"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "03:38",
+     "depart": "03:39"
+    },
+    {
+     "station": "richmond",
+     "seq": 8,
+     "arrive": "03:45",
+     "depart": "03:47"
+    },
+    {
+     "station": "martinez",
+     "seq": 9,
+     "arrive": "04:12",
+     "depart": "04:13"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 10,
+     "arrive": "04:31",
+     "depart": "04:32"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 11,
+     "arrive": "04:37",
+     "depart": "04:38"
+    },
+    {
+     "station": "davis",
+     "seq": 12,
+     "arrive": "05:00",
+     "depart": "05:02"
+    },
+    {
+     "station": "sacramento",
+     "seq": 13,
+     "arrive": "05:25"
+    }
+   ]
+  },
+  {
+   "number": "521",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "07:20"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "07:34",
+     "depart": "07:36"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "07:55",
+     "depart": "07:56"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "08:01",
+     "depart": "08:02"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "08:20",
+     "depart": "08:21"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "08:46",
+     "depart": "08:48"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "08:55",
+     "depart": "08:56"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "09:01",
+     "depart": "09:03"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "09:11",
+     "depart": "09:13"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "09:21",
+     "depart": "09:22"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "09:31",
+     "depart": "09:32"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "09:47",
+     "depart": "09:49"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "10:05",
+     "depart": "10:05"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "10:14",
+     "depart": "10:14"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "10:30"
+    }
+   ]
+  },
+  {
+   "number": "523",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "08:23"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "08:37",
+     "depart": "08:39"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "08:58",
+     "depart": "08:59"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "09:04",
+     "depart": "09:05"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "09:23",
+     "depart": "09:24"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "09:49",
+     "depart": "09:51"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "09:58",
+     "depart": "09:59"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "10:04",
+     "depart": "10:06"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "10:14",
+     "depart": "10:16"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "10:24",
+     "depart": "10:25"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "10:34",
+     "depart": "10:35"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "10:50",
+     "depart": "10:52"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "11:08",
+     "depart": "11:08"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "11:17",
+     "depart": "11:17"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "11:32"
+    }
+   ]
+  },
+  {
+   "number": "520",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "08:28"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "08:36",
+     "depart": "08:38"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "08:41",
+     "depart": "08:42"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "08:48",
+     "depart": "08:50"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "09:16",
+     "depart": "09:17"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "09:35",
+     "depart": "09:36"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "09:41",
+     "depart": "09:42"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "10:04",
+     "depart": "10:06"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "10:32"
+    }
+   ]
+  },
+  {
+   "number": "525",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "09:03"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "09:17",
+     "depart": "09:19"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "09:38",
+     "depart": "09:39"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "09:44",
+     "depart": "09:45"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "10:03",
+     "depart": "10:04"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "10:29",
+     "depart": "10:31"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "10:38",
+     "depart": "10:39"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "10:43",
+     "depart": "10:45"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "11:00"
+    }
+   ]
+  },
+  {
+   "number": "524",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "09:18"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "09:24",
+     "depart": "09:25"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "09:32",
+     "depart": "09:33"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "09:48",
+     "depart": "09:50"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "10:09",
+     "depart": "10:10"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "10:19",
+     "depart": "10:20"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "10:33",
+     "depart": "10:35"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "10:43",
+     "depart": "10:45"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "10:51",
+     "depart": "10:52"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "10:58",
+     "depart": "11:00"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "11:28",
+     "depart": "11:29"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "11:47",
+     "depart": "11:48"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "11:53",
+     "depart": "11:54"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "12:16",
+     "depart": "12:18"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "12:40"
+    }
+   ]
+  },
+  {
+   "number": "522",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "09:28"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "09:36",
+     "depart": "09:38"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "09:41",
+     "depart": "09:42"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "09:48",
+     "depart": "09:50"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "10:16",
+     "depart": "10:17"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "10:35",
+     "depart": "10:36"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "10:41",
+     "depart": "10:42"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "11:04",
+     "depart": "11:06"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "11:30"
+    }
+   ]
+  },
+  {
+   "number": "529",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "auburn-amtrak",
+     "seq": 1,
+     "depart": "09:36"
+    },
+    {
+     "station": "rocklin-amtrak-station",
+     "seq": 2,
+     "arrive": "09:59",
+     "depart": "10:00"
+    },
+    {
+     "station": "roseville-amtrak",
+     "seq": 3,
+     "arrive": "10:08",
+     "depart": "10:09"
+    },
+    {
+     "station": "sacramento",
+     "seq": 4,
+     "arrive": "10:34",
+     "depart": "10:41"
+    },
+    {
+     "station": "davis",
+     "seq": 5,
+     "arrive": "10:55",
+     "depart": "10:57"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 6,
+     "arrive": "11:15",
+     "depart": "11:16"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 7,
+     "arrive": "11:22",
+     "depart": "11:23"
+    },
+    {
+     "station": "martinez",
+     "seq": 8,
+     "arrive": "11:42",
+     "depart": "11:43"
+    },
+    {
+     "station": "richmond",
+     "seq": 9,
+     "arrive": "12:08",
+     "depart": "12:10"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 10,
+     "arrive": "12:17",
+     "depart": "12:18"
+    },
+    {
+     "station": "emeryville",
+     "seq": 11,
+     "arrive": "12:23",
+     "depart": "12:25"
+    },
+    {
+     "station": "oakland",
+     "seq": 12,
+     "arrive": "12:34",
+     "depart": "12:36"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 13,
+     "arrive": "12:44",
+     "depart": "12:45"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 14,
+     "arrive": "12:53",
+     "depart": "12:54"
+    },
+    {
+     "station": "fremont",
+     "seq": 15,
+     "arrive": "13:09",
+     "depart": "13:11"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 16,
+     "arrive": "13:27",
+     "depart": "13:28"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 17,
+     "arrive": "13:38",
+     "depart": "13:39"
+    },
+    {
+     "station": "san-jose",
+     "seq": 18,
+     "arrive": "14:02"
+    }
+   ]
+  },
+  {
+   "number": "527",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "09:43"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "09:56",
+     "depart": "09:58"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "10:17",
+     "depart": "10:18"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "10:23",
+     "depart": "10:24"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "10:42",
+     "depart": "10:43"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "11:07",
+     "depart": "11:09"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "11:16",
+     "depart": "11:17"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "11:21",
+     "depart": "11:23"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "11:37",
+     "depart": "11:39"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "11:47",
+     "depart": "11:48"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "11:58",
+     "depart": "11:59"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "12:13",
+     "depart": "12:15"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "12:31",
+     "depart": "12:31"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "12:40",
+     "depart": "12:40"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "12:54"
+    }
+   ]
+  },
+  {
+   "number": "528",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "11:38"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "11:45",
+     "depart": "11:46"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "11:52",
+     "depart": "11:53"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "12:11",
+     "depart": "12:13"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "12:31",
+     "depart": "12:32"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "12:41",
+     "depart": "12:42"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "12:57",
+     "depart": "12:59"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "13:07",
+     "depart": "13:09"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "13:12",
+     "depart": "13:13"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "13:19",
+     "depart": "13:21"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "13:50",
+     "depart": "13:51"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "14:09",
+     "depart": "14:10"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "14:15",
+     "depart": "14:16"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "14:38",
+     "depart": "14:40"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "15:04"
+    }
+   ]
+  },
+  {
+   "number": "531",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "11:53"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "12:07",
+     "depart": "12:09"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "12:28",
+     "depart": "12:29"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "12:34",
+     "depart": "12:35"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "12:53",
+     "depart": "12:54"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "13:19",
+     "depart": "13:21"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "13:28",
+     "depart": "13:29"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "13:34",
+     "depart": "13:36"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "13:50"
+    }
+   ]
+  },
+  {
+   "number": "526",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "11:58"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "12:06",
+     "depart": "12:08"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "12:11",
+     "depart": "12:12"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "12:18",
+     "depart": "12:20"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "12:46",
+     "depart": "12:47"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "13:05",
+     "depart": "13:06"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "13:11",
+     "depart": "13:12"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "13:34",
+     "depart": "13:36"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "14:00"
+    }
+   ]
+  },
+  {
+   "number": "535",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "12:53"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "13:07",
+     "depart": "13:09"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "13:28",
+     "depart": "13:29"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "13:34",
+     "depart": "13:35"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "13:53",
+     "depart": "13:54"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "14:19",
+     "depart": "14:21"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "14:28",
+     "depart": "14:29"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "14:34",
+     "depart": "14:36"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "14:50"
+    }
+   ]
+  },
+  {
+   "number": "530",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "13:35"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "13:42",
+     "depart": "13:43"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "13:49",
+     "depart": "13:50"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "14:06",
+     "depart": "14:08"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "14:22",
+     "depart": "14:23"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "14:32",
+     "depart": "14:33"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "14:41",
+     "depart": "14:43"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "14:51",
+     "depart": "14:53"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "14:56",
+     "depart": "14:57"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "15:03",
+     "depart": "15:05"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "15:31",
+     "depart": "15:32"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "15:50",
+     "depart": "15:51"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "15:56",
+     "depart": "15:57"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "16:19",
+     "depart": "16:21"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "16:45"
+    }
+   ]
+  },
+  {
+   "number": "537",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "13:53"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "14:07",
+     "depart": "14:09"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "14:28",
+     "depart": "14:29"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "14:34",
+     "depart": "14:35"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "14:53",
+     "depart": "14:54"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "15:19",
+     "depart": "15:21"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "15:28",
+     "depart": "15:29"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "15:34",
+     "depart": "15:36"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "15:50"
+    }
+   ]
+  },
+  {
+   "number": "539",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "14:53"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "15:07",
+     "depart": "15:09"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "15:28",
+     "depart": "15:29"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "15:34",
+     "depart": "15:35"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "15:53",
+     "depart": "15:54"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "16:19",
+     "depart": "16:21"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "16:28",
+     "depart": "16:29"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "16:34",
+     "depart": "16:36"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "16:44",
+     "depart": "16:46"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "16:54",
+     "depart": "16:55"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "17:04",
+     "depart": "17:05"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "17:20",
+     "depart": "17:22"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "17:38",
+     "depart": "17:38"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "17:47",
+     "depart": "17:47"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "18:04"
+    }
+   ]
+  },
+  {
+   "number": "541",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "15:53"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "16:07",
+     "depart": "16:09"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "16:28",
+     "depart": "16:29"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "16:34",
+     "depart": "16:35"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "16:55",
+     "depart": "16:56"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "17:23",
+     "depart": "17:25"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "17:32",
+     "depart": "17:33"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "17:37",
+     "depart": "17:39"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "17:50"
+    }
+   ]
+  },
+  {
+   "number": "532",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "15:58"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "16:06",
+     "depart": "16:08"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "16:11",
+     "depart": "16:12"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "16:18",
+     "depart": "16:20"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "16:46",
+     "depart": "16:47"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "17:05",
+     "depart": "17:06"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "17:11",
+     "depart": "17:12"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "17:34",
+     "depart": "17:36"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "18:00"
+    }
+   ]
+  },
+  {
+   "number": "534",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "16:58"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "17:06",
+     "depart": "17:08"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "17:11",
+     "depart": "17:12"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "17:18",
+     "depart": "17:20"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "17:46",
+     "depart": "17:47"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "18:09",
+     "depart": "18:10"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "18:15",
+     "depart": "18:16"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "18:38",
+     "depart": "18:40"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "19:05"
+    }
+   ]
+  },
+  {
+   "number": "543",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "17:23"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "17:37",
+     "depart": "17:39"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "17:58",
+     "depart": "17:59"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "18:04",
+     "depart": "18:05"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "18:22",
+     "depart": "18:23"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "18:47",
+     "depart": "18:49"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "18:56",
+     "depart": "18:57"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "19:00",
+     "depart": "19:02"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "19:13",
+     "depart": "19:15"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "19:23",
+     "depart": "19:24"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "19:32",
+     "depart": "19:33"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "19:48",
+     "depart": "19:50"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "20:10",
+     "depart": "20:11"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "20:19",
+     "depart": "20:20"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "20:35"
+    }
+   ]
+  },
+  {
+   "number": "538",
+   "name": "Capitol Corridor",
+   "headsign": "Auburn",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "17:50"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "17:57",
+     "depart": "17:58"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "18:06",
+     "depart": "18:07"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "18:24",
+     "depart": "18:26"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "18:40",
+     "depart": "18:41"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "18:50",
+     "depart": "18:51"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "19:00",
+     "depart": "19:02"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "19:11",
+     "depart": "19:13"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "19:16",
+     "depart": "19:17"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "19:23",
+     "depart": "19:25"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "19:51",
+     "depart": "19:52"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "20:10",
+     "depart": "20:11"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "20:16",
+     "depart": "20:17"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "20:39",
+     "depart": "20:41"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "20:56",
+     "depart": "21:03"
+    },
+    {
+     "station": "roseville-amtrak",
+     "seq": 16,
+     "arrive": "21:27",
+     "depart": "21:28"
+    },
+    {
+     "station": "rocklin-amtrak-station",
+     "seq": 17,
+     "arrive": "21:37",
+     "depart": "21:38"
+    },
+    {
+     "station": "auburn-amtrak",
+     "seq": 18,
+     "arrive": "22:10"
+    }
+   ]
+  },
+  {
+   "number": "536",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "17:58"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "18:06",
+     "depart": "18:08"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "18:11",
+     "depart": "18:12"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "18:18",
+     "depart": "18:20"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "18:46",
+     "depart": "18:47"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "19:05",
+     "depart": "19:06"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "19:11",
+     "depart": "19:12"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "19:34",
+     "depart": "19:36"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "20:00"
+    }
+   ]
+  },
+  {
+   "number": "545",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "18:20"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "18:34",
+     "depart": "18:36"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "18:54",
+     "depart": "18:55"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "19:00",
+     "depart": "19:01"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "19:20",
+     "depart": "19:21"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "19:46",
+     "depart": "19:48"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "19:56",
+     "depart": "19:57"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "20:02",
+     "depart": "20:04"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "20:15",
+     "depart": "20:17"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "20:25",
+     "depart": "20:26"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "20:34",
+     "depart": "20:35"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "20:50",
+     "depart": "20:52"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "21:12",
+     "depart": "21:17"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "21:25",
+     "depart": "21:26"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "21:41"
+    }
+   ]
+  },
+  {
+   "number": "542",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "19:17"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "19:24",
+     "depart": "19:25"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "19:31",
+     "depart": "19:32"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "19:47",
+     "depart": "19:49"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "20:03",
+     "depart": "20:04"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "20:13",
+     "depart": "20:14"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "20:21",
+     "depart": "20:23"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "20:31",
+     "depart": "20:33"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "20:37",
+     "depart": "20:38"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "20:45",
+     "depart": "20:47"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "21:12",
+     "depart": "21:13"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "21:31",
+     "depart": "21:32"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "21:37",
+     "depart": "21:38"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "22:00",
+     "depart": "22:02"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "22:26"
+    }
+   ]
+  },
+  {
+   "number": "540",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "oakland",
+     "seq": 1,
+     "depart": "19:22"
+    },
+    {
+     "station": "emeryville",
+     "seq": 2,
+     "arrive": "19:30",
+     "depart": "19:32"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 3,
+     "arrive": "19:35",
+     "depart": "19:36"
+    },
+    {
+     "station": "richmond",
+     "seq": 4,
+     "arrive": "19:42",
+     "depart": "19:44"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "20:10",
+     "depart": "20:11"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 6,
+     "arrive": "20:29",
+     "depart": "20:30"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 7,
+     "arrive": "20:39",
+     "depart": "20:40"
+    },
+    {
+     "station": "davis",
+     "seq": 8,
+     "arrive": "21:00",
+     "depart": "21:02"
+    },
+    {
+     "station": "sacramento",
+     "seq": 9,
+     "arrive": "21:25"
+    }
+   ]
+  },
+  {
+   "number": "547",
+   "name": "Capitol Corridor",
+   "headsign": "San Jose",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "20:01"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "20:15",
+     "depart": "20:17"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "20:36",
+     "depart": "20:37"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "20:42",
+     "depart": "20:43"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "21:01",
+     "depart": "21:02"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "21:27",
+     "depart": "21:29"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "21:36",
+     "depart": "21:37"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "21:41",
+     "depart": "21:43"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "21:51",
+     "depart": "21:53"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 10,
+     "arrive": "22:01",
+     "depart": "22:02"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 11,
+     "arrive": "22:11",
+     "depart": "22:12"
+    },
+    {
+     "station": "fremont",
+     "seq": 12,
+     "arrive": "22:28",
+     "depart": "22:30"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 13,
+     "arrive": "22:46",
+     "depart": "22:46"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 14,
+     "arrive": "22:55",
+     "depart": "22:55"
+    },
+    {
+     "station": "san-jose",
+     "seq": 15,
+     "arrive": "23:14"
+    }
+   ]
+  },
+  {
+   "number": "544",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "20:25"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "20:32",
+     "depart": "20:33"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "20:39",
+     "depart": "20:40"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "20:56",
+     "depart": "20:58"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "21:12",
+     "depart": "21:13"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "21:22",
+     "depart": "21:23"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "21:33",
+     "depart": "21:35"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "21:46",
+     "depart": "21:48"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "21:52",
+     "depart": "21:53"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "21:59",
+     "depart": "22:01"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "22:27",
+     "depart": "22:28"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "22:46",
+     "depart": "22:47"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "22:53",
+     "depart": "22:54"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "23:16",
+     "depart": "23:18"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "23:41"
+    }
+   ]
+  },
+  {
+   "number": "550",
+   "name": "Capitol Corridor",
+   "headsign": "Sacramento",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "san-jose",
+     "seq": 1,
+     "depart": "21:55"
+    },
+    {
+     "station": "santa-clara-amtrak",
+     "seq": 2,
+     "arrive": "22:02",
+     "depart": "22:03"
+    },
+    {
+     "station": "santa-clara-great-america-amtrak",
+     "seq": 3,
+     "arrive": "22:09",
+     "depart": "22:10"
+    },
+    {
+     "station": "fremont",
+     "seq": 4,
+     "arrive": "22:29",
+     "depart": "22:31"
+    },
+    {
+     "station": "hayward-amtrak",
+     "seq": 5,
+     "arrive": "22:45",
+     "depart": "22:46"
+    },
+    {
+     "station": "oakland-coliseum-airport-amtrak",
+     "seq": 6,
+     "arrive": "22:55",
+     "depart": "22:56"
+    },
+    {
+     "station": "oakland",
+     "seq": 7,
+     "arrive": "23:03",
+     "depart": "23:05"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "23:13",
+     "depart": "23:15"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 9,
+     "arrive": "23:18",
+     "depart": "23:19"
+    },
+    {
+     "station": "richmond",
+     "seq": 10,
+     "arrive": "23:25",
+     "depart": "23:27"
+    },
+    {
+     "station": "martinez",
+     "seq": 11,
+     "arrive": "23:52",
+     "depart": "23:53"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 12,
+     "arrive": "24:11",
+     "depart": "24:12"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 13,
+     "arrive": "24:17",
+     "depart": "24:18"
+    },
+    {
+     "station": "davis",
+     "seq": 14,
+     "arrive": "24:40",
+     "depart": "24:42"
+    },
+    {
+     "station": "sacramento",
+     "seq": 15,
+     "arrive": "25:05"
+    }
+   ]
+  },
+  {
+   "number": "549",
+   "name": "Capitol Corridor",
+   "headsign": "Oakland",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "sacramento",
+     "seq": 1,
+     "depart": "22:03"
+    },
+    {
+     "station": "davis",
+     "seq": 2,
+     "arrive": "22:17",
+     "depart": "22:19"
+    },
+    {
+     "station": "fairfield-vacaville-amtrak-station",
+     "seq": 3,
+     "arrive": "22:38",
+     "depart": "22:39"
+    },
+    {
+     "station": "suisun-fairfield",
+     "seq": 4,
+     "arrive": "22:44",
+     "depart": "22:45"
+    },
+    {
+     "station": "martinez",
+     "seq": 5,
+     "arrive": "23:03",
+     "depart": "23:04"
+    },
+    {
+     "station": "richmond",
+     "seq": 6,
+     "arrive": "23:29",
+     "depart": "23:31"
+    },
+    {
+     "station": "berkeley-amtrak",
+     "seq": 7,
+     "arrive": "23:38",
+     "depart": "23:39"
+    },
+    {
+     "station": "emeryville",
+     "seq": 8,
+     "arrive": "23:44",
+     "depart": "23:46"
+    },
+    {
+     "station": "oakland",
+     "seq": 9,
+     "arrive": "24:00"
+    }
+   ]
+  }
+ ]
+}

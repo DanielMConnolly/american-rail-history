@@ -1,0 +1,1165 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Morgantown, West Virginia's electric street railway, drawn 1908-1934. Two routes are drawn: downtown to the factories at Sabraton up the Deckers Creek valley (with Jerome Park, the company's own weekend park, on the way), and downtown north along the river to the Seneca glass works. Contemporary descriptions also put cars south toward Durbannah and a Greenmont turnback at the Arch Street 'island'; those are not drawn separately. Four operators ran the system in succession - Union Utility (1908-1912), West Virginia Traction & Electric (1912-1921), West Virginia Utilities (1921-1927) and Monongahela West Penn Public Service (1927-1934) - so each route appears four times, one feature per owner, each in that owner's color (Rule 4). Streetcars were replaced by buses in 1934 after the Sabraton tin plate mill closed. RULE 5 NOTE: no horsecar predecessor is documented for Morgantown, and none is drawn. GEOMETRY WARNING: both routes are approximations over today's street grid, not traced track - see geometry_quality.",
+  "sources": [
+   "https://www.chicagorailfan.com/aatwv1.html",
+   "https://www.american-rails.com/westvgainter.html",
+   "https://morgantownmag.com/who-built-morgantown/",
+   "https://www.wvencyclopedia.org/entries/579"
+  ],
+  "not_yet_sourced": [
+   "the year the first electric streetcar ran in Morgantown (drawn from 1908, the first sourced company date; electric cars are described as running 'in the early 1900s')",
+   "the streets each route actually used - the geometry is an approximation over the modern street grid",
+   "route-by-route opening and closing dates within the 1908-1934 span",
+   "headways in any era",
+   "whether the southern line to Durbannah was a separate route from the Sabraton line"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Union Utility Company",
+    "line": "Union Utility: Morgantown \u2013 Sabraton",
+    "id": "morgantown-sabraton-1908",
+    "color": "#C0567E",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 3.5 mi drawn here is a routing over today's street grid from High Street downtown to Sabraton, weighted toward Earl Core Road, the road that follows the Deckers Creek valley the sources describe. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1912,
+      "headway_min": 20,
+      "note": "Downtown Morgantown out along Deckers Creek through Greenmont and Jerome Park to the tin plate mill and the other factories at Sabraton - the system's busiest line, and the one whose closure ended it. Union Utility Co. is the first operator recorded for Morgantown's streetcars, from 1908. Electric cars were running in the town before that - contemporary accounts describe competing traction companies in the early 1900s - but no source checked here gives the year the first electric car ran, so the line is drawn from the first company date that is sourced. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.95595,
+      39.629768
+     ],
+     [
+      -79.954297,
+      39.628908
+     ],
+     [
+      -79.953148,
+      39.627415
+     ],
+     [
+      -79.949937,
+      39.627324
+     ],
+     [
+      -79.946737,
+      39.626382
+     ],
+     [
+      -79.946539,
+      39.626062
+     ],
+     [
+      -79.946118,
+      39.623719
+     ],
+     [
+      -79.945637,
+      39.623959
+     ],
+     [
+      -79.944673,
+      39.625032
+     ],
+     [
+      -79.943339,
+      39.62608
+     ],
+     [
+      -79.940181,
+      39.627752
+     ],
+     [
+      -79.938547,
+      39.629399
+     ],
+     [
+      -79.93765,
+      39.62972
+     ],
+     [
+      -79.934682,
+      39.630098
+     ],
+     [
+      -79.933648,
+      39.630091
+     ],
+     [
+      -79.932748,
+      39.629851
+     ],
+     [
+      -79.932159,
+      39.629555
+     ],
+     [
+      -79.925887,
+      39.625612
+     ],
+     [
+      -79.924775,
+      39.624674
+     ],
+     [
+      -79.924129,
+      39.623432
+     ],
+     [
+      -79.923838,
+      39.623459
+     ],
+     [
+      -79.923578,
+      39.623709
+     ],
+     [
+      -79.922386,
+      39.623145
+     ],
+     [
+      -79.921937,
+      39.62311
+     ],
+     [
+      -79.919751,
+      39.623413
+     ],
+     [
+      -79.91718,
+      39.624407
+     ],
+     [
+      -79.916312,
+      39.624523
+     ],
+     [
+      -79.915789,
+      39.625032
+     ],
+     [
+      -79.915548,
+      39.625519
+     ],
+     [
+      -79.915364,
+      39.62721
+     ],
+     [
+      -79.91479,
+      39.628806
+     ],
+     [
+      -79.914039,
+      39.629027
+     ],
+     [
+      -79.913065,
+      39.629686
+     ],
+     [
+      -79.912021,
+      39.630151
+     ],
+     [
+      -79.911716,
+      39.630158
+     ],
+     [
+      -79.91163,
+      39.63005
+     ],
+     [
+      -79.911937,
+      39.629196
+     ],
+     [
+      -79.911934,
+      39.628774
+     ],
+     [
+      -79.911719,
+      39.628539
+     ],
+     [
+      -79.911418,
+      39.628539
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Virginia Traction and Electric Company",
+    "line": "West Virginia Traction and Electric: Morgantown \u2013 Sabraton",
+    "id": "morgantown-sabraton-1912",
+    "color": "#A3336B",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 3.5 mi drawn here is a routing over today's street grid from High Street downtown to Sabraton, weighted toward Earl Core Road, the road that follows the Deckers Creek valley the sources describe. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1921,
+      "headway_min": 20,
+      "note": "Downtown Morgantown out along Deckers Creek through Greenmont and Jerome Park to the tin plate mill and the other factories at Sabraton - the system's busiest line, and the one whose closure ended it. West Virginia Traction & Electric Co. took the system over in 1912 and gave the Sabraton line its weekend traffic generator, building Jerome Park - a refreshment stand and dance pavilion - out along the trolley line between Morgantown and Sabraton. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.95595,
+      39.629768
+     ],
+     [
+      -79.954297,
+      39.628908
+     ],
+     [
+      -79.953148,
+      39.627415
+     ],
+     [
+      -79.949937,
+      39.627324
+     ],
+     [
+      -79.946737,
+      39.626382
+     ],
+     [
+      -79.946539,
+      39.626062
+     ],
+     [
+      -79.946118,
+      39.623719
+     ],
+     [
+      -79.945637,
+      39.623959
+     ],
+     [
+      -79.944673,
+      39.625032
+     ],
+     [
+      -79.943339,
+      39.62608
+     ],
+     [
+      -79.940181,
+      39.627752
+     ],
+     [
+      -79.938547,
+      39.629399
+     ],
+     [
+      -79.93765,
+      39.62972
+     ],
+     [
+      -79.934682,
+      39.630098
+     ],
+     [
+      -79.933648,
+      39.630091
+     ],
+     [
+      -79.932748,
+      39.629851
+     ],
+     [
+      -79.932159,
+      39.629555
+     ],
+     [
+      -79.925887,
+      39.625612
+     ],
+     [
+      -79.924775,
+      39.624674
+     ],
+     [
+      -79.924129,
+      39.623432
+     ],
+     [
+      -79.923838,
+      39.623459
+     ],
+     [
+      -79.923578,
+      39.623709
+     ],
+     [
+      -79.922386,
+      39.623145
+     ],
+     [
+      -79.921937,
+      39.62311
+     ],
+     [
+      -79.919751,
+      39.623413
+     ],
+     [
+      -79.91718,
+      39.624407
+     ],
+     [
+      -79.916312,
+      39.624523
+     ],
+     [
+      -79.915789,
+      39.625032
+     ],
+     [
+      -79.915548,
+      39.625519
+     ],
+     [
+      -79.915364,
+      39.62721
+     ],
+     [
+      -79.91479,
+      39.628806
+     ],
+     [
+      -79.914039,
+      39.629027
+     ],
+     [
+      -79.913065,
+      39.629686
+     ],
+     [
+      -79.912021,
+      39.630151
+     ],
+     [
+      -79.911716,
+      39.630158
+     ],
+     [
+      -79.91163,
+      39.63005
+     ],
+     [
+      -79.911937,
+      39.629196
+     ],
+     [
+      -79.911934,
+      39.628774
+     ],
+     [
+      -79.911719,
+      39.628539
+     ],
+     [
+      -79.911418,
+      39.628539
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Virginia Utilities Company",
+    "line": "West Virginia Utilities: Morgantown \u2013 Sabraton",
+    "id": "morgantown-sabraton-1921",
+    "color": "#4F6D7A",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 3.5 mi drawn here is a routing over today's street grid from High Street downtown to Sabraton, weighted toward Earl Core Road, the road that follows the Deckers Creek valley the sources describe. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1921,
+      "end": 1927,
+      "headway_min": 20,
+      "note": "Downtown Morgantown out along Deckers Creek through Greenmont and Jerome Park to the tin plate mill and the other factories at Sabraton - the system's busiest line, and the one whose closure ended it. West Virginia Utilities Co. held the system from 1921 to 1927. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.95595,
+      39.629768
+     ],
+     [
+      -79.954297,
+      39.628908
+     ],
+     [
+      -79.953148,
+      39.627415
+     ],
+     [
+      -79.949937,
+      39.627324
+     ],
+     [
+      -79.946737,
+      39.626382
+     ],
+     [
+      -79.946539,
+      39.626062
+     ],
+     [
+      -79.946118,
+      39.623719
+     ],
+     [
+      -79.945637,
+      39.623959
+     ],
+     [
+      -79.944673,
+      39.625032
+     ],
+     [
+      -79.943339,
+      39.62608
+     ],
+     [
+      -79.940181,
+      39.627752
+     ],
+     [
+      -79.938547,
+      39.629399
+     ],
+     [
+      -79.93765,
+      39.62972
+     ],
+     [
+      -79.934682,
+      39.630098
+     ],
+     [
+      -79.933648,
+      39.630091
+     ],
+     [
+      -79.932748,
+      39.629851
+     ],
+     [
+      -79.932159,
+      39.629555
+     ],
+     [
+      -79.925887,
+      39.625612
+     ],
+     [
+      -79.924775,
+      39.624674
+     ],
+     [
+      -79.924129,
+      39.623432
+     ],
+     [
+      -79.923838,
+      39.623459
+     ],
+     [
+      -79.923578,
+      39.623709
+     ],
+     [
+      -79.922386,
+      39.623145
+     ],
+     [
+      -79.921937,
+      39.62311
+     ],
+     [
+      -79.919751,
+      39.623413
+     ],
+     [
+      -79.91718,
+      39.624407
+     ],
+     [
+      -79.916312,
+      39.624523
+     ],
+     [
+      -79.915789,
+      39.625032
+     ],
+     [
+      -79.915548,
+      39.625519
+     ],
+     [
+      -79.915364,
+      39.62721
+     ],
+     [
+      -79.91479,
+      39.628806
+     ],
+     [
+      -79.914039,
+      39.629027
+     ],
+     [
+      -79.913065,
+      39.629686
+     ],
+     [
+      -79.912021,
+      39.630151
+     ],
+     [
+      -79.911716,
+      39.630158
+     ],
+     [
+      -79.91163,
+      39.63005
+     ],
+     [
+      -79.911937,
+      39.629196
+     ],
+     [
+      -79.911934,
+      39.628774
+     ],
+     [
+      -79.911719,
+      39.628539
+     ],
+     [
+      -79.911418,
+      39.628539
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Monongahela West Penn Public Service Company",
+    "line": "Monongahela West Penn: Morgantown \u2013 Sabraton",
+    "id": "morgantown-sabraton-1927",
+    "color": "#0F7B8A",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 3.5 mi drawn here is a routing over today's street grid from High Street downtown to Sabraton, weighted toward Earl Core Road, the road that follows the Deckers Creek valley the sources describe. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1927,
+      "end": 1934,
+      "headway_min": 20,
+      "note": "Downtown Morgantown out along Deckers Creek through Greenmont and Jerome Park to the tin plate mill and the other factories at Sabraton - the system's busiest line, and the one whose closure ended it. Monongahela West Penn Public Service Corp. acquired the Morgantown system in 1927 and bought new Kuhlman cars for it (Nos. 113-115) the same year. Service ended in 1934, when the Sabraton tin plate mill - the biggest traffic source on the system - closed and buses took over; car 114 went to the Monongahela West Penn system elsewhere in the state. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.95595,
+      39.629768
+     ],
+     [
+      -79.954297,
+      39.628908
+     ],
+     [
+      -79.953148,
+      39.627415
+     ],
+     [
+      -79.949937,
+      39.627324
+     ],
+     [
+      -79.946737,
+      39.626382
+     ],
+     [
+      -79.946539,
+      39.626062
+     ],
+     [
+      -79.946118,
+      39.623719
+     ],
+     [
+      -79.945637,
+      39.623959
+     ],
+     [
+      -79.944673,
+      39.625032
+     ],
+     [
+      -79.943339,
+      39.62608
+     ],
+     [
+      -79.940181,
+      39.627752
+     ],
+     [
+      -79.938547,
+      39.629399
+     ],
+     [
+      -79.93765,
+      39.62972
+     ],
+     [
+      -79.934682,
+      39.630098
+     ],
+     [
+      -79.933648,
+      39.630091
+     ],
+     [
+      -79.932748,
+      39.629851
+     ],
+     [
+      -79.932159,
+      39.629555
+     ],
+     [
+      -79.925887,
+      39.625612
+     ],
+     [
+      -79.924775,
+      39.624674
+     ],
+     [
+      -79.924129,
+      39.623432
+     ],
+     [
+      -79.923838,
+      39.623459
+     ],
+     [
+      -79.923578,
+      39.623709
+     ],
+     [
+      -79.922386,
+      39.623145
+     ],
+     [
+      -79.921937,
+      39.62311
+     ],
+     [
+      -79.919751,
+      39.623413
+     ],
+     [
+      -79.91718,
+      39.624407
+     ],
+     [
+      -79.916312,
+      39.624523
+     ],
+     [
+      -79.915789,
+      39.625032
+     ],
+     [
+      -79.915548,
+      39.625519
+     ],
+     [
+      -79.915364,
+      39.62721
+     ],
+     [
+      -79.91479,
+      39.628806
+     ],
+     [
+      -79.914039,
+      39.629027
+     ],
+     [
+      -79.913065,
+      39.629686
+     ],
+     [
+      -79.912021,
+      39.630151
+     ],
+     [
+      -79.911716,
+      39.630158
+     ],
+     [
+      -79.91163,
+      39.63005
+     ],
+     [
+      -79.911937,
+      39.629196
+     ],
+     [
+      -79.911934,
+      39.628774
+     ],
+     [
+      -79.911719,
+      39.628539
+     ],
+     [
+      -79.911418,
+      39.628539
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Union Utility Company",
+    "line": "Union Utility: Morgantown \u2013 Seneca",
+    "id": "morgantown-seneca-1908",
+    "color": "#C0567E",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 1.4 mi drawn here is a routing over today's street grid from High Street downtown up Beechurst Avenue to the Seneca glass works site. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1912,
+      "headway_min": 20,
+      "note": "North from downtown along the Monongahela to the Seneca glass works, on the riverfront strip now followed by Beechurst Avenue. Union Utility Co. is the first operator recorded for Morgantown's streetcars, from 1908. Electric cars were running in the town before that - contemporary accounts describe competing traction companies in the early 1900s - but no source checked here gives the year the first electric car ran, so the line is drawn from the first company date that is sourced. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.953902,
+      39.632138
+     ],
+     [
+      -79.955306,
+      39.633067
+     ],
+     [
+      -79.955215,
+      39.633542
+     ],
+     [
+      -79.956552,
+      39.63405
+     ],
+     [
+      -79.956525,
+      39.635067
+     ],
+     [
+      -79.956982,
+      39.636582
+     ],
+     [
+      -79.959369,
+      39.639762
+     ],
+     [
+      -79.962634,
+      39.641984
+     ],
+     [
+      -79.964483,
+      39.642818
+     ],
+     [
+      -79.966056,
+      39.643154
+     ],
+     [
+      -79.966978,
+      39.64322
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Virginia Traction and Electric Company",
+    "line": "West Virginia Traction and Electric: Morgantown \u2013 Seneca",
+    "id": "morgantown-seneca-1912",
+    "color": "#A3336B",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 1.4 mi drawn here is a routing over today's street grid from High Street downtown up Beechurst Avenue to the Seneca glass works site. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1921,
+      "headway_min": 20,
+      "note": "North from downtown along the Monongahela to the Seneca glass works, on the riverfront strip now followed by Beechurst Avenue. West Virginia Traction & Electric Co. took the system over in 1912 and gave the Sabraton line its weekend traffic generator, building Jerome Park - a refreshment stand and dance pavilion - out along the trolley line between Morgantown and Sabraton. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.953902,
+      39.632138
+     ],
+     [
+      -79.955306,
+      39.633067
+     ],
+     [
+      -79.955215,
+      39.633542
+     ],
+     [
+      -79.956552,
+      39.63405
+     ],
+     [
+      -79.956525,
+      39.635067
+     ],
+     [
+      -79.956982,
+      39.636582
+     ],
+     [
+      -79.959369,
+      39.639762
+     ],
+     [
+      -79.962634,
+      39.641984
+     ],
+     [
+      -79.964483,
+      39.642818
+     ],
+     [
+      -79.966056,
+      39.643154
+     ],
+     [
+      -79.966978,
+      39.64322
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Virginia Utilities Company",
+    "line": "West Virginia Utilities: Morgantown \u2013 Seneca",
+    "id": "morgantown-seneca-1921",
+    "color": "#4F6D7A",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 1.4 mi drawn here is a routing over today's street grid from High Street downtown up Beechurst Avenue to the Seneca glass works site. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1921,
+      "end": 1927,
+      "headway_min": 20,
+      "note": "North from downtown along the Monongahela to the Seneca glass works, on the riverfront strip now followed by Beechurst Avenue. West Virginia Utilities Co. held the system from 1921 to 1927. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.953902,
+      39.632138
+     ],
+     [
+      -79.955306,
+      39.633067
+     ],
+     [
+      -79.955215,
+      39.633542
+     ],
+     [
+      -79.956552,
+      39.63405
+     ],
+     [
+      -79.956525,
+      39.635067
+     ],
+     [
+      -79.956982,
+      39.636582
+     ],
+     [
+      -79.959369,
+      39.639762
+     ],
+     [
+      -79.962634,
+      39.641984
+     ],
+     [
+      -79.964483,
+      39.642818
+     ],
+     [
+      -79.966056,
+      39.643154
+     ],
+     [
+      -79.966978,
+      39.64322
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Monongahela West Penn Public Service Company",
+    "line": "Monongahela West Penn: Morgantown \u2013 Seneca",
+    "id": "morgantown-seneca-1927",
+    "color": "#0F7B8A",
+    "mode": "streetcar",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: small-city street railway with frequent stops; unsourced",
+    "geometry_quality": "APPROXIMATE. No source checked here gives the streets this line used. The 1.4 mi drawn here is a routing over today's street grid from High Street downtown up Beechurst Avenue to the Seneca glass works site. Treat the alignment as indicative of the corridor, not of the actual track.",
+    "segments": [
+     {
+      "start": 1927,
+      "end": 1934,
+      "headway_min": 20,
+      "note": "North from downtown along the Monongahela to the Seneca glass works, on the riverfront strip now followed by Beechurst Avenue. Monongahela West Penn Public Service Corp. acquired the Morgantown system in 1927 and bought new Kuhlman cars for it (Nos. 113-115) the same year. Service ended in 1934, when the Sabraton tin plate mill - the biggest traffic source on the system - closed and buses took over; car 114 went to the Monongahela West Penn system elsewhere in the state. Frequency estimated, unsourced.",
+      "sources": [
+       "Segment-level for the company and its dates: the Morgantown entry in the chicagorailfan.com list of West Virginia transit systems, which gives Union Utility Co. 1908-1912, West Virginia Traction & Electric Co. 1912-1921, West Virginia Utilities Co. 1921-1927, Monongahela West Penn Public Service Co. 1927-1944 and 'streetcars replaced with buses' in 1934. NOT SOURCED: this route's own opening year, its streets, and its headway.",
+       "https://www.chicagorailfan.com/aatwv1.html",
+       "https://www.american-rails.com/westvgainter.html",
+       "https://morgantownmag.com/who-built-morgantown/",
+       "https://www.wvencyclopedia.org/entries/579"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.957275,
+      39.629435
+     ],
+     [
+      -79.956554,
+      39.629071
+     ],
+     [
+      -79.953902,
+      39.632138
+     ],
+     [
+      -79.955306,
+      39.633067
+     ],
+     [
+      -79.955215,
+      39.633542
+     ],
+     [
+      -79.956552,
+      39.63405
+     ],
+     [
+      -79.956525,
+      39.635067
+     ],
+     [
+      -79.956982,
+      39.636582
+     ],
+     [
+      -79.959369,
+      39.639762
+     ],
+     [
+      -79.962634,
+      39.641984
+     ],
+     [
+      -79.964483,
+      39.642818
+     ],
+     [
+      -79.966056,
+      39.643154
+     ],
+     [
+      -79.966978,
+      39.64322
+     ]
+    ]
+   }
+  }
+ ]
+}

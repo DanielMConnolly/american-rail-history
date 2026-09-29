@@ -1,0 +1,428 @@
+{
+ "id": "amtrak-42947-2026",
+ "route_id": "42947",
+ "line_ids": [
+  "amtrak-42947"
+ ],
+ "company": "Amtrak",
+ "service": "Silver Meteor",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "98",
+   "name": "Silver Meteor",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri, Sun",
+   "stops": [
+    {
+     "station": "miami-amtrak-station",
+     "seq": 1,
+     "depart": "07:05"
+    },
+    {
+     "station": "hollywood-amtrak-station",
+     "seq": 2,
+     "arrive": "07:29",
+     "depart": "07:29"
+    },
+    {
+     "station": "fort-lauderdale-amtrak-station",
+     "seq": 3,
+     "arrive": "07:45",
+     "depart": "07:45"
+    },
+    {
+     "station": "deerfield-beach-amtrak-station",
+     "seq": 4,
+     "arrive": "08:03",
+     "depart": "08:03"
+    },
+    {
+     "station": "delray-beach-amtrak",
+     "seq": 5,
+     "arrive": "08:17",
+     "depart": "08:17"
+    },
+    {
+     "station": "west-palm-beach-amtrak-station",
+     "seq": 6,
+     "arrive": "08:42",
+     "depart": "08:42"
+    },
+    {
+     "station": "sebring-amtrak-station",
+     "seq": 7,
+     "arrive": "10:21",
+     "depart": "10:23"
+    },
+    {
+     "station": "winter-haven",
+     "seq": 8,
+     "arrive": "11:03",
+     "depart": "11:08"
+    },
+    {
+     "station": "kissimmee-amtrak-station",
+     "seq": 9,
+     "arrive": "11:54",
+     "depart": "11:57"
+    },
+    {
+     "station": "orlando",
+     "seq": 10,
+     "arrive": "12:22",
+     "depart": "12:36"
+    },
+    {
+     "station": "winter-park-amtrak-station",
+     "seq": 11,
+     "arrive": "12:51",
+     "depart": "12:53"
+    },
+    {
+     "station": "deland",
+     "seq": 12,
+     "arrive": "13:38",
+     "depart": "13:40"
+    },
+    {
+     "station": "palatka-amtrak",
+     "seq": 13,
+     "arrive": "14:27",
+     "depart": "14:30"
+    },
+    {
+     "station": "jacksonville",
+     "seq": 14,
+     "arrive": "15:51",
+     "depart": "16:11"
+    },
+    {
+     "station": "jesup-amtrak-station",
+     "seq": 15,
+     "arrive": "17:30",
+     "depart": "17:35"
+    },
+    {
+     "station": "savannah",
+     "seq": 16,
+     "arrive": "18:37",
+     "depart": "18:45"
+    },
+    {
+     "station": "yemassee-amtrak",
+     "seq": 17,
+     "arrive": "19:30",
+     "depart": "19:34"
+    },
+    {
+     "station": "charleston-amtrak-station",
+     "seq": 18,
+     "arrive": "20:25",
+     "depart": "20:34"
+    },
+    {
+     "station": "kingstree-amtrak-station",
+     "seq": 19,
+     "arrive": "21:25",
+     "depart": "21:28"
+    },
+    {
+     "station": "florence-amtrak-station",
+     "seq": 20,
+     "arrive": "22:22",
+     "depart": "22:32"
+    },
+    {
+     "station": "fayetteville-amtrak-station",
+     "seq": 21,
+     "arrive": "23:47",
+     "depart": "23:57"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 22,
+     "arrive": "25:25",
+     "depart": "25:29"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 23,
+     "arrive": "26:50",
+     "depart": "26:53"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 24,
+     "arrive": "27:42",
+     "depart": "27:52"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 25,
+     "arrive": "28:49",
+     "depart": "28:49"
+    },
+    {
+     "station": "alexandria",
+     "seq": 26,
+     "arrive": "29:54",
+     "depart": "29:54"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 27,
+     "arrive": "30:25",
+     "depart": "31:10"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 28,
+     "arrive": "31:53",
+     "depart": "31:57"
+    },
+    {
+     "station": "wilmington",
+     "seq": 29,
+     "arrive": "32:50",
+     "depart": "32:54"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 30,
+     "arrive": "33:20",
+     "depart": "33:25"
+    },
+    {
+     "station": "trenton",
+     "seq": 31,
+     "arrive": "33:53",
+     "depart": "33:55"
+    },
+    {
+     "station": "newark",
+     "seq": 32,
+     "arrive": "34:30",
+     "depart": "34:32"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 33,
+     "arrive": "34:50"
+    }
+   ]
+  },
+  {
+   "number": "97",
+   "name": "Silver Meteor",
+   "headsign": "Miami",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "14:30"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "14:50",
+     "depart": "14:53"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "15:30",
+     "depart": "15:34"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "16:05",
+     "depart": "16:15"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "16:38",
+     "depart": "16:42"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 6,
+     "arrive": "17:38",
+     "depart": "17:38"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 7,
+     "arrive": "18:26",
+     "depart": "19:24"
+    },
+    {
+     "station": "alexandria",
+     "seq": 8,
+     "arrive": "19:41",
+     "depart": "19:45"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 9,
+     "arrive": "20:32",
+     "depart": "20:35"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 10,
+     "arrive": "21:39",
+     "depart": "21:49"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 11,
+     "arrive": "22:21",
+     "depart": "22:23"
+    },
+    {
+     "station": "rocky-mount",
+     "seq": 12,
+     "arrive": "23:52",
+     "depart": "23:55"
+    },
+    {
+     "station": "fayetteville-amtrak-station",
+     "seq": 13,
+     "arrive": "25:17",
+     "depart": "25:27"
+    },
+    {
+     "station": "florence-amtrak-station",
+     "seq": 14,
+     "arrive": "27:10",
+     "depart": "27:18"
+    },
+    {
+     "station": "kingstree-amtrak-station",
+     "seq": 15,
+     "arrive": "27:53",
+     "depart": "27:56"
+    },
+    {
+     "station": "charleston-amtrak-station",
+     "seq": 16,
+     "arrive": "28:48",
+     "depart": "28:56"
+    },
+    {
+     "station": "yemassee-amtrak",
+     "seq": 17,
+     "arrive": "29:44",
+     "depart": "29:48"
+    },
+    {
+     "station": "savannah",
+     "seq": 18,
+     "arrive": "30:43",
+     "depart": "30:49"
+    },
+    {
+     "station": "jesup-amtrak-station",
+     "seq": 19,
+     "arrive": "31:43",
+     "depart": "31:47"
+    },
+    {
+     "station": "jacksonville",
+     "seq": 20,
+     "arrive": "33:24",
+     "depart": "33:49"
+    },
+    {
+     "station": "palatka-amtrak",
+     "seq": 21,
+     "arrive": "34:52",
+     "depart": "34:55"
+    },
+    {
+     "station": "deland",
+     "seq": 22,
+     "arrive": "35:50",
+     "depart": "35:53"
+    },
+    {
+     "station": "winter-park-amtrak-station",
+     "seq": 23,
+     "arrive": "36:39",
+     "depart": "36:41"
+    },
+    {
+     "station": "orlando",
+     "seq": 24,
+     "arrive": "37:04",
+     "depart": "37:19"
+    },
+    {
+     "station": "kissimmee-amtrak-station",
+     "seq": 25,
+     "arrive": "37:38",
+     "depart": "37:41"
+    },
+    {
+     "station": "winter-haven",
+     "seq": 26,
+     "arrive": "38:30",
+     "depart": "38:33"
+    },
+    {
+     "station": "sebring-amtrak-station",
+     "seq": 27,
+     "arrive": "39:11",
+     "depart": "39:14"
+    },
+    {
+     "station": "west-palm-beach-amtrak-station",
+     "seq": 28,
+     "arrive": "41:10",
+     "depart": "41:10"
+    },
+    {
+     "station": "delray-beach-amtrak",
+     "seq": 29,
+     "arrive": "41:33",
+     "depart": "41:33"
+    },
+    {
+     "station": "deerfield-beach-amtrak-station",
+     "seq": 30,
+     "arrive": "41:47",
+     "depart": "41:47"
+    },
+    {
+     "station": "fort-lauderdale-amtrak-station",
+     "seq": 31,
+     "arrive": "42:06",
+     "depart": "42:06"
+    },
+    {
+     "station": "hollywood-amtrak-station",
+     "seq": 32,
+     "arrive": "42:21",
+     "depart": "42:21"
+    },
+    {
+     "station": "miami-amtrak-station",
+     "seq": 33,
+     "arrive": "42:59"
+    }
+   ]
+  }
+ ]
+}

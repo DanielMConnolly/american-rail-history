@@ -1,0 +1,2404 @@
+{
+ "id": "amtrak-94-2026",
+ "route_id": "94",
+ "line_ids": [
+  "amtrak-36923",
+  "amtrak-94"
+ ],
+ "company": "Amtrak",
+ "service": "Keystone Service",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "640",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "05:00"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "05:10",
+     "depart": "05:10"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "05:17",
+     "depart": "05:17"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "05:23",
+     "depart": "05:23"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "05:33",
+     "depart": "05:35"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "05:53",
+     "depart": "05:53"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 7,
+     "arrive": "05:59",
+     "depart": "05:59"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "06:05",
+     "depart": "06:05"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "06:10",
+     "depart": "06:10"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 10,
+     "arrive": "06:19",
+     "depart": "06:19"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 11,
+     "arrive": "06:31",
+     "depart": "06:31"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 12,
+     "arrive": "06:45",
+     "depart": "07:00"
+    },
+    {
+     "station": "north-philadelphia-amtrak-station",
+     "seq": 13,
+     "arrive": "07:08",
+     "depart": "07:08"
+    },
+    {
+     "station": "cornwells-heights-amtrak",
+     "seq": 14,
+     "arrive": "07:21",
+     "depart": "07:23"
+    },
+    {
+     "station": "trenton",
+     "seq": 15,
+     "arrive": "07:35",
+     "depart": "07:37"
+    },
+    {
+     "station": "newark",
+     "seq": 16,
+     "arrive": "08:14",
+     "depart": "08:15"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 17,
+     "arrive": "08:33"
+    }
+   ]
+  },
+  {
+   "number": "601",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "philadelphia",
+     "seq": 1,
+     "depart": "05:10"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 2,
+     "arrive": "05:22",
+     "depart": "05:22"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 3,
+     "arrive": "05:34",
+     "depart": "05:36"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 4,
+     "arrive": "05:43",
+     "depart": "05:43"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 5,
+     "arrive": "05:48",
+     "depart": "05:48"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 6,
+     "arrive": "05:54",
+     "depart": "05:54"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 7,
+     "arrive": "06:00",
+     "depart": "06:00"
+    },
+    {
+     "station": "lancaster",
+     "seq": 8,
+     "arrive": "06:22",
+     "depart": "06:24"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 9,
+     "arrive": "06:35",
+     "depart": "06:35"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 10,
+     "arrive": "06:41",
+     "depart": "06:42"
+    },
+    {
+     "station": "middletown",
+     "seq": 11,
+     "arrive": "06:49",
+     "depart": "06:50"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 12,
+     "arrive": "07:00"
+    }
+   ]
+  },
+  {
+   "number": "607",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "05:50"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "06:05",
+     "depart": "06:07"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 3,
+     "arrive": "06:39",
+     "depart": "06:40"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "07:18",
+     "depart": "07:30"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 5,
+     "arrive": "07:43",
+     "depart": "07:43"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 6,
+     "arrive": "07:56",
+     "depart": "07:56"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "08:04",
+     "depart": "08:04"
+    },
+    {
+     "station": "lancaster",
+     "seq": 8,
+     "arrive": "08:40",
+     "depart": "08:42"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 9,
+     "arrive": "08:57",
+     "depart": "08:58"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 10,
+     "arrive": "09:15"
+    }
+   ]
+  },
+  {
+   "number": "642",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "05:55"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "06:05",
+     "depart": "06:05"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "06:12",
+     "depart": "06:12"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "06:18",
+     "depart": "06:19"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "06:32",
+     "depart": "06:34"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "06:52",
+     "depart": "06:53"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 7,
+     "arrive": "06:59",
+     "depart": "07:00"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "07:05",
+     "depart": "07:07"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "07:12",
+     "depart": "07:14"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 10,
+     "arrive": "07:22",
+     "depart": "07:23"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 11,
+     "arrive": "07:50",
+     "depart": "08:05"
+    },
+    {
+     "station": "trenton",
+     "seq": 12,
+     "arrive": "08:32",
+     "depart": "08:33"
+    },
+    {
+     "station": "newark",
+     "seq": 13,
+     "arrive": "09:04",
+     "depart": "09:06"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 14,
+     "arrive": "09:26"
+    }
+   ]
+  },
+  {
+   "number": "605",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "philadelphia",
+     "seq": 1,
+     "depart": "06:15"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 2,
+     "arrive": "06:27",
+     "depart": "06:27"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 3,
+     "arrive": "06:41",
+     "depart": "06:41"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 4,
+     "arrive": "06:49",
+     "depart": "06:49"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 5,
+     "arrive": "06:53",
+     "depart": "06:53"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 6,
+     "arrive": "06:59",
+     "depart": "06:59"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 7,
+     "arrive": "07:04",
+     "depart": "07:04"
+    },
+    {
+     "station": "lancaster",
+     "seq": 8,
+     "arrive": "07:26",
+     "depart": "07:28"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 9,
+     "arrive": "07:38",
+     "depart": "07:38"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 10,
+     "arrive": "07:45",
+     "depart": "07:45"
+    },
+    {
+     "station": "middletown",
+     "seq": 11,
+     "arrive": "07:53",
+     "depart": "07:53"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 12,
+     "arrive": "08:04"
+    }
+   ]
+  },
+  {
+   "number": "600",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "06:40"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "06:49",
+     "depart": "06:50"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "06:56",
+     "depart": "06:57"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "07:02",
+     "depart": "07:03"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "07:13",
+     "depart": "07:16"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "07:35",
+     "depart": "07:35"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 7,
+     "arrive": "07:41",
+     "depart": "07:41"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "07:47",
+     "depart": "07:47"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "07:53",
+     "depart": "07:54"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 10,
+     "arrive": "08:02",
+     "depart": "08:04"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 11,
+     "arrive": "08:33",
+     "depart": "08:46"
+    },
+    {
+     "station": "trenton",
+     "seq": 12,
+     "arrive": "09:13",
+     "depart": "09:15"
+    },
+    {
+     "station": "newark",
+     "seq": 13,
+     "arrive": "09:46",
+     "depart": "09:47"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 14,
+     "arrive": "10:11"
+    }
+   ]
+  },
+  {
+   "number": "641",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "07:17"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "07:32",
+     "depart": "07:34"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "07:47",
+     "depart": "07:48"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 4,
+     "arrive": "07:56",
+     "depart": "07:58"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 5,
+     "arrive": "08:11",
+     "depart": "08:13"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "08:46",
+     "depart": "08:56"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 7,
+     "arrive": "09:19",
+     "depart": "09:19"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 8,
+     "arrive": "09:26",
+     "depart": "09:26"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 9,
+     "arrive": "09:31",
+     "depart": "09:31"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 10,
+     "arrive": "09:37",
+     "depart": "09:37"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 11,
+     "arrive": "09:43",
+     "depart": "09:43"
+    },
+    {
+     "station": "lancaster",
+     "seq": 12,
+     "arrive": "10:04",
+     "depart": "10:06"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 13,
+     "arrive": "10:16",
+     "depart": "10:16"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 14,
+     "arrive": "10:26",
+     "depart": "10:26"
+    },
+    {
+     "station": "middletown",
+     "seq": 15,
+     "arrive": "10:34",
+     "depart": "10:34"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 16,
+     "arrive": "10:49"
+    }
+   ]
+  },
+  {
+   "number": "644",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "07:55"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 2,
+     "arrive": "08:11",
+     "depart": "08:11"
+    },
+    {
+     "station": "lancaster",
+     "seq": 3,
+     "arrive": "08:25",
+     "depart": "08:27"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 4,
+     "arrive": "09:05",
+     "depart": "09:05"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "09:30",
+     "depart": "09:45"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "10:11",
+     "depart": "10:12"
+    },
+    {
+     "station": "newark",
+     "seq": 7,
+     "arrive": "10:46",
+     "depart": "10:47"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 8,
+     "arrive": "11:05"
+    }
+   ]
+  },
+  {
+   "number": "646",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "09:00"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "09:10",
+     "depart": "09:10"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "09:17",
+     "depart": "09:17"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "09:23",
+     "depart": "09:23"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "09:33",
+     "depart": "09:34"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "09:52",
+     "depart": "09:53"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 7,
+     "arrive": "09:58",
+     "depart": "09:59"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "10:05",
+     "depart": "10:05"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "10:10",
+     "depart": "10:11"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 10,
+     "arrive": "10:17",
+     "depart": "10:19"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 11,
+     "arrive": "10:41",
+     "depart": "10:55"
+    },
+    {
+     "station": "trenton",
+     "seq": 12,
+     "arrive": "11:22",
+     "depart": "11:23"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 13,
+     "arrive": "11:30",
+     "depart": "11:31"
+    },
+    {
+     "station": "newark",
+     "seq": 14,
+     "arrive": "12:00",
+     "depart": "12:01"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 15,
+     "arrive": "12:19"
+    }
+   ]
+  },
+  {
+   "number": "643",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "09:28"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "09:44",
+     "depart": "09:44"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "10:17",
+     "depart": "10:19"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "10:50",
+     "depart": "11:00"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 5,
+     "arrive": "11:23",
+     "depart": "11:23"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 6,
+     "arrive": "11:30",
+     "depart": "11:30"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 7,
+     "arrive": "11:35",
+     "depart": "11:35"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 8,
+     "arrive": "11:41",
+     "depart": "11:41"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 9,
+     "arrive": "11:47",
+     "depart": "11:47"
+    },
+    {
+     "station": "lancaster",
+     "seq": 10,
+     "arrive": "12:09",
+     "depart": "12:11"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 11,
+     "arrive": "12:21",
+     "depart": "12:21"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 12,
+     "arrive": "12:27",
+     "depart": "12:28"
+    },
+    {
+     "station": "middletown",
+     "seq": 13,
+     "arrive": "12:35",
+     "depart": "12:36"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 14,
+     "arrive": "12:47"
+    }
+   ]
+  },
+  {
+   "number": "648",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "10:05"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 2,
+     "arrive": "10:21",
+     "depart": "10:21"
+    },
+    {
+     "station": "lancaster",
+     "seq": 3,
+     "arrive": "10:35",
+     "depart": "10:36"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 4,
+     "arrive": "11:12",
+     "depart": "11:13"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "11:40",
+     "depart": "11:55"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "12:22",
+     "depart": "12:23"
+    },
+    {
+     "station": "newark",
+     "seq": 7,
+     "arrive": "12:57",
+     "depart": "12:57"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 8,
+     "arrive": "13:15"
+    }
+   ]
+  },
+  {
+   "number": "645",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "12:05"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "12:20",
+     "depart": "12:22"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "12:54",
+     "depart": "12:55"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "13:25",
+     "depart": "13:35"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 5,
+     "arrive": "13:57",
+     "depart": "13:59"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 6,
+     "arrive": "14:06",
+     "depart": "14:06"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 7,
+     "arrive": "14:11",
+     "depart": "14:11"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 8,
+     "arrive": "14:17",
+     "depart": "14:17"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 9,
+     "arrive": "14:22",
+     "depart": "14:22"
+    },
+    {
+     "station": "lancaster",
+     "seq": 10,
+     "arrive": "14:44",
+     "depart": "14:46"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 11,
+     "arrive": "14:56",
+     "depart": "14:56"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 12,
+     "arrive": "15:03",
+     "depart": "15:03"
+    },
+    {
+     "station": "middletown",
+     "seq": 13,
+     "arrive": "15:10",
+     "depart": "15:10"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 14,
+     "arrive": "15:21"
+    }
+   ]
+  },
+  {
+   "number": "650",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "12:05"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "12:15",
+     "depart": "12:15"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "12:22",
+     "depart": "12:22"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "12:29",
+     "depart": "12:29"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "12:40",
+     "depart": "12:41"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 6,
+     "arrive": "13:07",
+     "depart": "13:07"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "13:13",
+     "depart": "13:13"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 8,
+     "arrive": "13:21",
+     "depart": "13:22"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 9,
+     "arrive": "13:35",
+     "depart": "13:35"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 10,
+     "arrive": "13:52",
+     "depart": "14:15"
+    },
+    {
+     "station": "trenton",
+     "seq": 11,
+     "arrive": "14:42",
+     "depart": "14:43"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 12,
+     "arrive": "14:50",
+     "depart": "14:51"
+    },
+    {
+     "station": "newark",
+     "seq": 13,
+     "arrive": "15:20",
+     "depart": "15:21"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 14,
+     "arrive": "15:40"
+    }
+   ]
+  },
+  {
+   "number": "609",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "12:54"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "13:09",
+     "depart": "13:10"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "13:26",
+     "depart": "13:27"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "13:51",
+     "depart": "13:53"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "14:19",
+     "depart": "14:40"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 6,
+     "arrive": "15:05",
+     "depart": "15:05"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "15:13",
+     "depart": "15:13"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "15:17",
+     "depart": "15:17"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 9,
+     "arrive": "15:23",
+     "depart": "15:23"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 10,
+     "arrive": "15:28",
+     "depart": "15:28"
+    },
+    {
+     "station": "lancaster",
+     "seq": 11,
+     "arrive": "15:57",
+     "depart": "15:59"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 12,
+     "arrive": "16:09",
+     "depart": "16:09"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 13,
+     "arrive": "16:16",
+     "depart": "16:16"
+    },
+    {
+     "station": "middletown",
+     "seq": 14,
+     "arrive": "16:24",
+     "depart": "16:24"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 15,
+     "arrive": "16:35"
+    }
+   ]
+  },
+  {
+   "number": "647",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "14:11"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "14:27",
+     "depart": "14:28"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 3,
+     "arrive": "14:33",
+     "depart": "14:34"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "15:04",
+     "depart": "15:05"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "15:33",
+     "depart": "15:45"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 6,
+     "arrive": "16:08",
+     "depart": "16:10"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "16:17",
+     "depart": "16:17"
+    },
+    {
+     "station": "lancaster",
+     "seq": 8,
+     "arrive": "16:50",
+     "depart": "16:52"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 9,
+     "arrive": "17:09",
+     "depart": "17:09"
+    },
+    {
+     "station": "middletown",
+     "seq": 10,
+     "arrive": "17:16",
+     "depart": "17:16"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 11,
+     "arrive": "17:27"
+    }
+   ]
+  },
+  {
+   "number": "649",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "14:44"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "14:58",
+     "depart": "14:59"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 3,
+     "arrive": "15:04",
+     "depart": "15:05"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "15:37",
+     "depart": "15:39"
+    },
+    {
+     "station": "cornwells-heights-amtrak",
+     "seq": 5,
+     "arrive": "15:50",
+     "depart": "15:51"
+    },
+    {
+     "station": "north-philadelphia-amtrak-station",
+     "seq": 6,
+     "arrive": "16:02",
+     "depart": "16:03"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 7,
+     "arrive": "16:12",
+     "depart": "16:40"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 8,
+     "arrive": "16:53",
+     "depart": "16:53"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 9,
+     "arrive": "17:08",
+     "depart": "17:08"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 10,
+     "arrive": "17:16",
+     "depart": "17:16"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 11,
+     "arrive": "17:21",
+     "depart": "17:21"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 12,
+     "arrive": "17:28",
+     "depart": "17:28"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 13,
+     "arrive": "17:33",
+     "depart": "17:33"
+    },
+    {
+     "station": "lancaster",
+     "seq": 14,
+     "arrive": "17:57",
+     "depart": "18:00"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 15,
+     "arrive": "18:09",
+     "depart": "18:09"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 16,
+     "arrive": "18:16",
+     "depart": "18:16"
+    },
+    {
+     "station": "middletown",
+     "seq": 17,
+     "arrive": "18:23",
+     "depart": "18:23"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 18,
+     "arrive": "18:39"
+    }
+   ]
+  },
+  {
+   "number": "652",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "15:08"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "15:18",
+     "depart": "15:18"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "15:25",
+     "depart": "15:25"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "15:33",
+     "depart": "15:33"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "15:43",
+     "depart": "15:45"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "16:05",
+     "depart": "16:05"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 7,
+     "arrive": "16:13",
+     "depart": "16:13"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 8,
+     "arrive": "16:19",
+     "depart": "16:19"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 9,
+     "arrive": "16:27",
+     "depart": "16:29"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 10,
+     "arrive": "16:41",
+     "depart": "16:41"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 11,
+     "arrive": "16:58",
+     "depart": "17:18"
+    },
+    {
+     "station": "trenton",
+     "seq": 12,
+     "arrive": "17:44",
+     "depart": "17:45"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 13,
+     "arrive": "17:51",
+     "depart": "17:52"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 14,
+     "arrive": "18:03",
+     "depart": "18:04"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 15,
+     "arrive": "18:16",
+     "depart": "18:17"
+    },
+    {
+     "station": "newark",
+     "seq": 16,
+     "arrive": "18:31",
+     "depart": "18:32"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 17,
+     "arrive": "18:54"
+    }
+   ]
+  },
+  {
+   "number": "651",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "16:03"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "16:18",
+     "depart": "16:20"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "16:53",
+     "depart": "16:55"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "17:23",
+     "depart": "17:35"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 5,
+     "arrive": "17:48",
+     "depart": "17:48"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 6,
+     "arrive": "18:00",
+     "depart": "18:02"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "18:09",
+     "depart": "18:09"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "18:13",
+     "depart": "18:13"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 9,
+     "arrive": "18:19",
+     "depart": "18:19"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 10,
+     "arrive": "18:25",
+     "depart": "18:25"
+    },
+    {
+     "station": "lancaster",
+     "seq": 11,
+     "arrive": "18:49",
+     "depart": "18:50"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 12,
+     "arrive": "18:59",
+     "depart": "18:59"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 13,
+     "arrive": "19:06",
+     "depart": "19:06"
+    },
+    {
+     "station": "middletown",
+     "seq": 14,
+     "arrive": "19:13",
+     "depart": "19:13"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 15,
+     "arrive": "19:25"
+    }
+   ]
+  },
+  {
+   "number": "654",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "16:30"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "16:40",
+     "depart": "16:40"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "16:47",
+     "depart": "16:47"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "16:53",
+     "depart": "16:53"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "17:02",
+     "depart": "17:05"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "17:25",
+     "depart": "17:25"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 7,
+     "arrive": "17:31",
+     "depart": "17:31"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "17:37",
+     "depart": "17:37"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "17:43",
+     "depart": "17:43"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 10,
+     "arrive": "17:50",
+     "depart": "17:52"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 11,
+     "arrive": "18:06",
+     "depart": "18:06"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 12,
+     "arrive": "18:26",
+     "depart": "18:50"
+    },
+    {
+     "station": "trenton",
+     "seq": 13,
+     "arrive": "19:17",
+     "depart": "19:19"
+    },
+    {
+     "station": "newark",
+     "seq": 14,
+     "arrive": "19:53",
+     "depart": "19:54"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 15,
+     "arrive": "20:12"
+    }
+   ]
+  },
+  {
+   "number": "653",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "17:10"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "17:25",
+     "depart": "17:27"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "18:00",
+     "depart": "18:02"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "18:29",
+     "depart": "18:42"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 5,
+     "arrive": "18:55",
+     "depart": "18:55"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 6,
+     "arrive": "19:08",
+     "depart": "19:08"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "19:15",
+     "depart": "19:15"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "19:20",
+     "depart": "19:20"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 9,
+     "arrive": "19:26",
+     "depart": "19:26"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 10,
+     "arrive": "19:31",
+     "depart": "19:31"
+    },
+    {
+     "station": "lancaster",
+     "seq": 11,
+     "arrive": "19:53",
+     "depart": "19:55"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 12,
+     "arrive": "20:04",
+     "depart": "20:04"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 13,
+     "arrive": "20:11",
+     "depart": "20:11"
+    },
+    {
+     "station": "middletown",
+     "seq": 14,
+     "arrive": "20:18",
+     "depart": "20:18"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 15,
+     "arrive": "20:29"
+    }
+   ]
+  },
+  {
+   "number": "656",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "17:40"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "17:50",
+     "depart": "17:50"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "17:57",
+     "depart": "17:57"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "18:03",
+     "depart": "18:03"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "18:12",
+     "depart": "18:15"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "18:33",
+     "depart": "18:33"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 7,
+     "arrive": "18:39",
+     "depart": "18:39"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 8,
+     "arrive": "18:45",
+     "depart": "18:45"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "18:51",
+     "depart": "18:51"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 10,
+     "arrive": "18:58",
+     "depart": "19:00"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 11,
+     "arrive": "19:12",
+     "depart": "19:12"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 12,
+     "arrive": "19:28",
+     "depart": "19:40"
+    },
+    {
+     "station": "trenton",
+     "seq": 13,
+     "arrive": "20:07",
+     "depart": "20:09"
+    },
+    {
+     "station": "newark",
+     "seq": 14,
+     "arrive": "20:44",
+     "depart": "20:44"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 15,
+     "arrive": "21:03"
+    }
+   ]
+  },
+  {
+   "number": "655",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "18:35"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "18:50",
+     "depart": "18:52"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "19:28",
+     "depart": "19:29"
+    },
+    {
+     "station": "cornwells-heights-amtrak",
+     "seq": 4,
+     "arrive": "19:40",
+     "depart": "19:40"
+    },
+    {
+     "station": "north-philadelphia-amtrak-station",
+     "seq": 5,
+     "arrive": "19:52",
+     "depart": "19:52"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "20:00",
+     "depart": "20:15"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 7,
+     "arrive": "20:27",
+     "depart": "20:28"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 8,
+     "arrive": "20:40",
+     "depart": "20:41"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 9,
+     "arrive": "20:48",
+     "depart": "20:48"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 10,
+     "arrive": "20:53",
+     "depart": "20:53"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 11,
+     "arrive": "20:59",
+     "depart": "20:59"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 12,
+     "arrive": "21:04",
+     "depart": "21:04"
+    },
+    {
+     "station": "lancaster",
+     "seq": 13,
+     "arrive": "21:27",
+     "depart": "21:29"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 14,
+     "arrive": "21:38",
+     "depart": "21:38"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 15,
+     "arrive": "21:45",
+     "depart": "21:45"
+    },
+    {
+     "station": "middletown",
+     "seq": 16,
+     "arrive": "21:52",
+     "depart": "21:52"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 17,
+     "arrive": "22:03"
+    }
+   ]
+  },
+  {
+   "number": "658",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "18:40"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "18:50",
+     "depart": "18:50"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "18:57",
+     "depart": "18:57"
+    },
+    {
+     "station": "lancaster",
+     "seq": 4,
+     "arrive": "19:12",
+     "depart": "19:12"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 5,
+     "arrive": "19:30",
+     "depart": "19:30"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 6,
+     "arrive": "19:40",
+     "depart": "19:40"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 7,
+     "arrive": "19:46",
+     "depart": "19:46"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 8,
+     "arrive": "19:53",
+     "depart": "19:55"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 9,
+     "arrive": "20:07",
+     "depart": "20:07"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 10,
+     "arrive": "20:20",
+     "depart": "20:42"
+    },
+    {
+     "station": "trenton",
+     "seq": 11,
+     "arrive": "21:11",
+     "depart": "21:12"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "21:44",
+     "depart": "21:44"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "22:03"
+    }
+   ]
+  },
+  {
+   "number": "626",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "20:00"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "20:10",
+     "depart": "20:10"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "20:16",
+     "depart": "20:17"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "20:22",
+     "depart": "20:22"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "20:31",
+     "depart": "20:32"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "20:50",
+     "depart": "20:50"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 7,
+     "arrive": "21:00",
+     "depart": "21:00"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 8,
+     "arrive": "21:05",
+     "depart": "21:05"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 9,
+     "arrive": "21:13",
+     "depart": "21:13"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 10,
+     "arrive": "21:40",
+     "depart": "21:52"
+    },
+    {
+     "station": "newark",
+     "seq": 11,
+     "arrive": "22:53",
+     "depart": "22:53"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 12,
+     "arrive": "23:14"
+    }
+   ]
+  },
+  {
+   "number": "657",
+   "name": "Keystone Service",
+   "headsign": "Harrisburg",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "20:30"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "20:45",
+     "depart": "20:47"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 3,
+     "arrive": "21:13",
+     "depart": "21:15"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "21:23",
+     "depart": "21:24"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "21:55",
+     "depart": "22:05"
+    },
+    {
+     "station": "ardmore-amtrak-station-ard",
+     "seq": 6,
+     "arrive": "22:17",
+     "depart": "22:18"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 7,
+     "arrive": "22:29",
+     "depart": "22:30"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 8,
+     "arrive": "22:37",
+     "depart": "22:38"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 9,
+     "arrive": "22:42",
+     "depart": "22:42"
+    },
+    {
+     "station": "coatesville-amtrak",
+     "seq": 10,
+     "arrive": "22:49",
+     "depart": "22:49"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 11,
+     "arrive": "22:55",
+     "depart": "22:55"
+    },
+    {
+     "station": "lancaster",
+     "seq": 12,
+     "arrive": "23:17",
+     "depart": "23:18"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 13,
+     "arrive": "23:28",
+     "depart": "23:28"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 14,
+     "arrive": "23:35",
+     "depart": "23:35"
+    },
+    {
+     "station": "middletown",
+     "seq": 15,
+     "arrive": "23:42",
+     "depart": "23:42"
+    },
+    {
+     "station": "harrisburg",
+     "seq": 16,
+     "arrive": "23:56"
+    }
+   ]
+  },
+  {
+   "number": "639",
+   "name": "Keystone Service",
+   "headsign": "Philadelphia",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "21:00"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "21:16",
+     "depart": "21:17"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 3,
+     "arrive": "21:22",
+     "depart": "21:23"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 4,
+     "arrive": "21:32",
+     "depart": "21:33"
+    },
+    {
+     "station": "trenton",
+     "seq": 5,
+     "arrive": "21:55",
+     "depart": "21:56"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "22:27"
+    }
+   ]
+  },
+  {
+   "number": "624",
+   "name": "Keystone Service",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Fri",
+   "stops": [
+    {
+     "station": "harrisburg",
+     "seq": 1,
+     "depart": "21:15"
+    },
+    {
+     "station": "middletown",
+     "seq": 2,
+     "arrive": "21:25",
+     "depart": "21:25"
+    },
+    {
+     "station": "elizabethtown-amtrak-station",
+     "seq": 3,
+     "arrive": "21:31",
+     "depart": "21:32"
+    },
+    {
+     "station": "mount-joy-amtrak",
+     "seq": 4,
+     "arrive": "21:37",
+     "depart": "21:37"
+    },
+    {
+     "station": "lancaster",
+     "seq": 5,
+     "arrive": "21:46",
+     "depart": "21:47"
+    },
+    {
+     "station": "parkesburg-amtrak",
+     "seq": 6,
+     "arrive": "22:05",
+     "depart": "22:05"
+    },
+    {
+     "station": "downingtown-amtrak",
+     "seq": 7,
+     "arrive": "22:15",
+     "depart": "22:15"
+    },
+    {
+     "station": "exton-amtrak",
+     "seq": 8,
+     "arrive": "22:20",
+     "depart": "22:21"
+    },
+    {
+     "station": "paoli-amtrak-station",
+     "seq": 9,
+     "arrive": "22:28",
+     "depart": "22:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 10,
+     "arrive": "22:55",
+     "depart": "23:10"
+    },
+    {
+     "station": "trenton",
+     "seq": 11,
+     "arrive": "23:38",
+     "depart": "23:40"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "24:16",
+     "depart": "24:17"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "24:35"
+    }
+   ]
+  }
+ ]
+}

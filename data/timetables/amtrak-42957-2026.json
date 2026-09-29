@@ -1,0 +1,153 @@
+{
+ "id": "amtrak-42957-2026",
+ "route_id": "42957",
+ "line_ids": [
+  "amtrak-51",
+  "amtrak-72"
+ ],
+ "company": "Amtrak",
+ "service": "Illinois Zephyr",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "380",
+   "name": "Illinois Zephyr",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "quincy-amtrak-station",
+     "seq": 1,
+     "depart": "07:12"
+    },
+    {
+     "station": "macomb-amtrak-station",
+     "seq": 2,
+     "arrive": "07:59",
+     "depart": "08:01"
+    },
+    {
+     "station": "galesburg-amtrak-station",
+     "seq": 3,
+     "arrive": "08:35",
+     "depart": "08:37"
+    },
+    {
+     "station": "kewanee-amtrak-station",
+     "seq": 4,
+     "arrive": "09:06",
+     "depart": "09:07"
+    },
+    {
+     "station": "princeton-amtrak-station",
+     "seq": 5,
+     "arrive": "09:30",
+     "depart": "09:31"
+    },
+    {
+     "station": "mendota-amtrak-station",
+     "seq": 6,
+     "arrive": "09:52",
+     "depart": "09:53"
+    },
+    {
+     "station": "plano-amtrak-station",
+     "seq": 7,
+     "arrive": "10:23",
+     "depart": "10:24"
+    },
+    {
+     "station": "naperville-amtrak-station",
+     "seq": 8,
+     "arrive": "10:58",
+     "depart": "10:58"
+    },
+    {
+     "station": "la-grange-amtrak",
+     "seq": 9,
+     "arrive": "11:14",
+     "depart": "11:14"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 10,
+     "arrive": "11:33"
+    }
+   ]
+  },
+  {
+   "number": "383",
+   "name": "Illinois Zephyr",
+   "headsign": "Quincy",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "18:55"
+    },
+    {
+     "station": "la-grange-amtrak",
+     "seq": 2,
+     "arrive": "19:13",
+     "depart": "19:14"
+    },
+    {
+     "station": "naperville-amtrak-station",
+     "seq": 3,
+     "arrive": "19:28",
+     "depart": "19:30"
+    },
+    {
+     "station": "plano-amtrak-station",
+     "seq": 4,
+     "arrive": "19:53",
+     "depart": "19:54"
+    },
+    {
+     "station": "mendota-amtrak-station",
+     "seq": 5,
+     "arrive": "20:21",
+     "depart": "20:22"
+    },
+    {
+     "station": "princeton-amtrak-station",
+     "seq": 6,
+     "arrive": "20:43",
+     "depart": "20:44"
+    },
+    {
+     "station": "kewanee-amtrak-station",
+     "seq": 7,
+     "arrive": "21:07",
+     "depart": "21:08"
+    },
+    {
+     "station": "galesburg-amtrak-station",
+     "seq": 8,
+     "arrive": "21:41",
+     "depart": "21:43"
+    },
+    {
+     "station": "macomb-amtrak-station",
+     "seq": 9,
+     "arrive": "22:24",
+     "depart": "22:24"
+    },
+    {
+     "station": "quincy-amtrak-station",
+     "seq": 10,
+     "arrive": "23:17"
+    }
+   ]
+  }
+ ]
+}

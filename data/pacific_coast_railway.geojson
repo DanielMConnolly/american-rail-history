@@ -1,0 +1,1714 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Pacific Coast Railway, the 3 ft narrow gauge that ran from the steamer wharf at Port Harford (renamed Port San Luis in 1909) through San Luis Obispo and Santa Maria to Los Olivos, with its predecessor the San Luis Obispo & Santa Maria Valley Railroad drawn as separate features for the years it owned the line. Added 2026-08-26 to fill a hole: nothing on the map served San Luis Obispo before 1937. In 1897 this narrow gauge and Southern Pacific's stub down to Surf (southern_pacific_coast_division.geojson) were the town's two railways. The modern Santa Margarita Ranch excursion line, a separate company that reuses the name, is the last feature.",
+  "source": "OpenStreetMap relation 6454615 and surrounding ways tagged old_railway_operator=Pacific Coast Railway, plus relation 6773665 for the Santa Margarita Ranch excursion line, for geometry; Wikipedia 'Pacific Coast Railway', 'San Luis Obispo station' and 'Pacific Coast Railroad (tourist)', and the Monterey County Historical Society's 'Railroads of the Central Coast' for dates.",
+  "pulled": "20260826",
+  "geometry_quality": "Port Harford - Los Olivos comes out at 75.1 mi traced against a documented system length of about 76 mi, and the Port Harford - San Luis Obispo end at 10.1 mi against a documented 10 mi. 13.6 mi of the total is straight-line bridging where the grade is built over or unmapped; the four legs longer than 1.5 mi are the crossing of San Luis Obispo itself (2.2 mi in and 1.5 mi out, routed via the depot site at Higuera and South streets), 1.9 mi north of Santa Maria, 2.5 mi south of Santa Maria and 3.4 mi over the divide into the Los Alamos valley. Each feature's own geometry_quality names its share. The drawn alignment is the railway's own - the grade was never relocated, only abandoned.",
+  "freight_only_audit": "2026-08-26: the Pacific Coast Railway's branches are deliberately not drawn. The Betteravia branch (1899, electrified 1906, extended to Guadalupe 1909) served the Union Sugar refinery and the Sisquoc branch (1910, electrified) served an oil refinery; both were freight operations, so under Rule 1 they get no drawn years. An 18.8 km abandoned Santa Maria - Sisquoc grade found in OSM during tracing was excluded on those grounds.",
+  "horsecar_audit": "2026-08-26: the 2 ft 6 in horse-powered tramway Ah Louis built between Port Harford and Avila in 1873 is not drawn. Under Rule 5 the Port Harford line starts in 1876, when steam-worked track reached San Luis Obispo. San Luis Obispo's own San Luis Street Railway, running on Higuera Street from about 1890, was horse-drawn and is excluded for the same reason; no evidence was found that it ever electrified.",
+  "not_yet_sourced": "The year Pacific Coast Railway passenger or mixed-train service actually ended is not established. The sources give 1930 (Los Olivos cut to a twice-weekly mixed train), 1933 (Los Olivos service ends), 1936 (line beyond Los Alamos dismantled), 1941 (operations end) and 1942 (rails lifted), but none says when the railway stopped carrying people on the surviving Port San Luis - Santa Maria portion. That portion is drawn to 1941, the end of all operations, which may over-assert passenger service in its final years. No milepost table or station list was obtained, so the split points between features are geocoded town centres, not sourced junctions - Arroyo Grande in particular is 1.3 km off the traced line. No timetable was consulted: every headway_min and avg_speed_kmh in this layer is an estimate."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "San Luis Obispo and Santa Maria Valley Railroad",
+    "line": "San Luis Obispo & Santa Maria Valley: Port Harford \u2013 San Luis Obispo",
+    "id": "slosmv-porth-slo",
+    "color": "#4C9A72",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. A 3 ft gauge line over this profile made perhaps 20-25 mph between stops; no Pacific Coast Railway timetable was consulted for this figure.",
+    "geometry_quality": "Traced from OpenStreetMap ways tagged old_railway_operator=Pacific Coast Railway (relation 6454615 and its untagged neighbours); 10.1 mi traced against a documented 10 mi Port Harford - San Luis Obispo. 3.8 mi of that is straight-line approximation in four legs: 2.2 mi entering San Luis Obispo, routed via the site of the narrow-gauge depot at Higuera and South streets because no track survives there in OSM, and 1.0 mi plus two legs under a quarter-mile up San Luis Obispo Creek where the grade is built over.",
+    "segments": [
+     {
+      "start": 1876,
+      "end": 1882,
+      "headway_min": 360,
+      "note": "The Pacific Coast Steamship Company's 3 ft gauge San Luis Obispo & Santa Maria Valley Railroad, built to feed coastwise steamers at the Port Harford wharf. Steam operation began in 1875 and the track was completed into San Luis Obispo on August 8 1876. A horse-powered 2 ft 6 in tramway had run Port Harford - Avila from 1873; that animal-powered era is deliberately not drawn. Drawn to 1882, when this company merged with the Pacific Coast Railroad Company to form the Pacific Coast Railway - the successor is a separate feature in the new owner's colour.",
+      "sources": [
+       "Segment-level: construction dates from Wikipedia's Pacific Coast Railway article and the Monterey County Historical Society's 'Railroads of the Central Coast'; the headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway",
+       "https://mchsmuseum.com/local-history/american-era-settlement/railroads-of-the-central-coast-an-overview/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.75388,
+      35.1685
+     ],
+     [
+      -120.75648,
+      35.17179
+     ],
+     [
+      -120.7559,
+      35.17422
+     ],
+     [
+      -120.75545,
+      35.17482
+     ],
+     [
+      -120.75306,
+      35.17585
+     ],
+     [
+      -120.75101,
+      35.17728
+     ],
+     [
+      -120.74954,
+      35.1779
+     ],
+     [
+      -120.74565,
+      35.17845
+     ],
+     [
+      -120.74028,
+      35.17813
+     ],
+     [
+      -120.73191,
+      35.18229
+     ],
+     [
+      -120.72918,
+      35.18309
+     ],
+     [
+      -120.72634,
+      35.18354
+     ],
+     [
+      -120.7257,
+      35.18433
+     ],
+     [
+      -120.72623,
+      35.18709
+     ],
+     [
+      -120.726,
+      35.18794
+     ],
+     [
+      -120.72421,
+      35.18908
+     ],
+     [
+      -120.72187,
+      35.18913
+     ],
+     [
+      -120.71926,
+      35.1888
+     ],
+     [
+      -120.7187,
+      35.18853
+     ],
+     [
+      -120.71829,
+      35.18872
+     ],
+     [
+      -120.71592,
+      35.18836
+     ],
+     [
+      -120.71348,
+      35.18838
+     ],
+     [
+      -120.70956,
+      35.18738
+     ],
+     [
+      -120.70781,
+      35.18637
+     ],
+     [
+      -120.70671,
+      35.18516
+     ],
+     [
+      -120.70541,
+      35.18463
+     ],
+     [
+      -120.70428,
+      35.18458
+     ],
+     [
+      -120.70326,
+      35.18527
+     ],
+     [
+      -120.70081,
+      35.18812
+     ],
+     [
+      -120.70033,
+      35.1923
+     ],
+     [
+      -120.69654,
+      35.20722
+     ],
+     [
+      -120.69635,
+      35.2146
+     ],
+     [
+      -120.69552,
+      35.21633
+     ],
+     [
+      -120.69261,
+      35.21959
+     ],
+     [
+      -120.69039,
+      35.2233
+     ],
+     [
+      -120.69067,
+      35.22915
+     ],
+     [
+      -120.68778,
+      35.23348
+     ],
+     [
+      -120.68578,
+      35.23418
+     ],
+     [
+      -120.68448,
+      35.23558
+     ],
+     [
+      -120.6685,
+      35.266
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pacific Coast Railway",
+    "line": "Pacific Coast Railway: Port Harford \u2013 San Luis Obispo",
+    "id": "pcry-porth-slo",
+    "color": "#0B6E4F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. A 3 ft gauge line over this profile made perhaps 20-25 mph between stops; no Pacific Coast Railway timetable was consulted for this figure.",
+    "geometry_quality": "Traced from OpenStreetMap ways tagged old_railway_operator=Pacific Coast Railway (relation 6454615 and its untagged neighbours); 10.1 mi traced against a documented 10 mi Port Harford - San Luis Obispo. 3.8 mi of that is straight-line approximation in four legs: 2.2 mi entering San Luis Obispo, routed via the site of the narrow-gauge depot at Higuera and South streets because no track survives there in OSM, and 1.0 mi plus two legs under a quarter-mile up San Luis Obispo Creek where the grade is built over.",
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1901,
+      "headway_min": 300,
+      "note": "Under the Pacific Coast Railway, formed by the 1882 merger of the San Luis Obispo & Santa Maria Valley Railroad with the Pacific Coast Railroad Company. Until Southern Pacific came over Cuesta Pass in May 1894, this narrow gauge and the steamers waiting at Port Harford were San Luis Obispo's only common-carrier link to the world.",
+      "sources": [
+       "Segment-level: construction dates from Wikipedia's Pacific Coast Railway article and the Monterey County Historical Society's 'Railroads of the Central Coast'; the headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway",
+       "https://mchsmuseum.com/local-history/american-era-settlement/railroads-of-the-central-coast-an-overview/"
+      ]
+     },
+     {
+      "start": 1901,
+      "end": 1930,
+      "headway_min": 300,
+      "note": "Peak years, feeding Southern Pacific's through Coast Line trains at San Luis Obispo from 1901 as well as the steamers. Over 62,000 passenger fares were collected in 1912, the railway's best year. Port Harford was renamed Port San Luis in 1909. headway_min is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer's references date the construction and the closures, but no timetable was checked for this segment's headway, and the year passenger or mixed-train service actually stopped is not established - see the layer's not_yet_sourced field.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway"
+      ]
+     },
+     {
+      "start": 1930,
+      "end": 1941,
+      "headway_min": 720,
+      "note": "Decline. Depression traffic losses and the paved highway cut the service back toward mixed trains; Pacific Coast Railway operations ended in 1941 and the rails were lifted in 1942. The drawn end year is the documented end of operations, not a sourced last passenger train - see the layer's not_yet_sourced field.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer's references date the construction and the closures, but no timetable was checked for this segment's headway, and the year passenger or mixed-train service actually stopped is not established - see the layer's not_yet_sourced field.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.75388,
+      35.1685
+     ],
+     [
+      -120.75648,
+      35.17179
+     ],
+     [
+      -120.7559,
+      35.17422
+     ],
+     [
+      -120.75545,
+      35.17482
+     ],
+     [
+      -120.75306,
+      35.17585
+     ],
+     [
+      -120.75101,
+      35.17728
+     ],
+     [
+      -120.74954,
+      35.1779
+     ],
+     [
+      -120.74565,
+      35.17845
+     ],
+     [
+      -120.74028,
+      35.17813
+     ],
+     [
+      -120.73191,
+      35.18229
+     ],
+     [
+      -120.72918,
+      35.18309
+     ],
+     [
+      -120.72634,
+      35.18354
+     ],
+     [
+      -120.7257,
+      35.18433
+     ],
+     [
+      -120.72623,
+      35.18709
+     ],
+     [
+      -120.726,
+      35.18794
+     ],
+     [
+      -120.72421,
+      35.18908
+     ],
+     [
+      -120.72187,
+      35.18913
+     ],
+     [
+      -120.71926,
+      35.1888
+     ],
+     [
+      -120.7187,
+      35.18853
+     ],
+     [
+      -120.71829,
+      35.18872
+     ],
+     [
+      -120.71592,
+      35.18836
+     ],
+     [
+      -120.71348,
+      35.18838
+     ],
+     [
+      -120.70956,
+      35.18738
+     ],
+     [
+      -120.70781,
+      35.18637
+     ],
+     [
+      -120.70671,
+      35.18516
+     ],
+     [
+      -120.70541,
+      35.18463
+     ],
+     [
+      -120.70428,
+      35.18458
+     ],
+     [
+      -120.70326,
+      35.18527
+     ],
+     [
+      -120.70081,
+      35.18812
+     ],
+     [
+      -120.70033,
+      35.1923
+     ],
+     [
+      -120.69654,
+      35.20722
+     ],
+     [
+      -120.69635,
+      35.2146
+     ],
+     [
+      -120.69552,
+      35.21633
+     ],
+     [
+      -120.69261,
+      35.21959
+     ],
+     [
+      -120.69039,
+      35.2233
+     ],
+     [
+      -120.69067,
+      35.22915
+     ],
+     [
+      -120.68778,
+      35.23348
+     ],
+     [
+      -120.68578,
+      35.23418
+     ],
+     [
+      -120.68448,
+      35.23558
+     ],
+     [
+      -120.6685,
+      35.266
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "San Luis Obispo and Santa Maria Valley Railroad",
+    "line": "San Luis Obispo & Santa Maria Valley: San Luis Obispo \u2013 Arroyo Grande",
+    "id": "slosmv-slo-arroyogrande",
+    "color": "#4C9A72",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. A 3 ft gauge line over this profile made perhaps 20-25 mph between stops; no Pacific Coast Railway timetable was consulted for this figure.",
+    "geometry_quality": "Traced from the same OSM Pacific Coast Railway ways; 15.6 mi traced San Luis Obispo - Arroyo Grande. 1.8 mi is straight-line: 1.5 mi leaving San Luis Obispo from the depot site and 0.3 mi at the Arroyo Grande end.",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1882,
+      "headway_min": 480,
+      "note": "Extended south from San Luis Obispo to Arroyo Grande in 1881 - the last piece built under the San Luis Obispo & Santa Maria Valley name before the 1882 merger into the Pacific Coast Railway.",
+      "sources": [
+       "Segment-level: construction dates from Wikipedia's Pacific Coast Railway article and the Monterey County Historical Society's 'Railroads of the Central Coast'; the headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway",
+       "https://mchsmuseum.com/local-history/american-era-settlement/railroads-of-the-central-coast-an-overview/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.6685,
+      35.266
+     ],
+     [
+      -120.64453,
+      35.25703
+     ],
+     [
+      -120.64131,
+      35.25463
+     ],
+     [
+      -120.64018,
+      35.25335
+     ],
+     [
+      -120.6399,
+      35.25278
+     ],
+     [
+      -120.63892,
+      35.2471
+     ],
+     [
+      -120.63819,
+      35.24609
+     ],
+     [
+      -120.63663,
+      35.2453
+     ],
+     [
+      -120.63287,
+      35.24399
+     ],
+     [
+      -120.63115,
+      35.24302
+     ],
+     [
+      -120.62625,
+      35.2394
+     ],
+     [
+      -120.62103,
+      35.23675
+     ],
+     [
+      -120.61999,
+      35.2358
+     ],
+     [
+      -120.61937,
+      35.2346
+     ],
+     [
+      -120.61934,
+      35.23367
+     ],
+     [
+      -120.61972,
+      35.23181
+     ],
+     [
+      -120.62066,
+      35.22974
+     ],
+     [
+      -120.62098,
+      35.22771
+     ],
+     [
+      -120.62046,
+      35.22142
+     ],
+     [
+      -120.61786,
+      35.21429
+     ],
+     [
+      -120.61578,
+      35.2023
+     ],
+     [
+      -120.61515,
+      35.20073
+     ],
+     [
+      -120.61293,
+      35.19747
+     ],
+     [
+      -120.61304,
+      35.19058
+     ],
+     [
+      -120.61246,
+      35.18897
+     ],
+     [
+      -120.61126,
+      35.18742
+     ],
+     [
+      -120.61041,
+      35.18686
+     ],
+     [
+      -120.60796,
+      35.18608
+     ],
+     [
+      -120.60197,
+      35.18477
+     ],
+     [
+      -120.59862,
+      35.18137
+     ],
+     [
+      -120.59574,
+      35.17966
+     ],
+     [
+      -120.58677,
+      35.17789
+     ],
+     [
+      -120.57256,
+      35.17963
+     ],
+     [
+      -120.57103,
+      35.18057
+     ],
+     [
+      -120.56872,
+      35.18405
+     ],
+     [
+      -120.56724,
+      35.18403
+     ],
+     [
+      -120.56658,
+      35.18344
+     ],
+     [
+      -120.56652,
+      35.18268
+     ],
+     [
+      -120.56865,
+      35.18203
+     ],
+     [
+      -120.56905,
+      35.18144
+     ],
+     [
+      -120.56889,
+      35.1806
+     ],
+     [
+      -120.56308,
+      35.17689
+     ],
+     [
+      -120.56147,
+      35.17451
+     ],
+     [
+      -120.55833,
+      35.17251
+     ],
+     [
+      -120.55675,
+      35.17058
+     ],
+     [
+      -120.55612,
+      35.1694
+     ],
+     [
+      -120.55579,
+      35.16646
+     ],
+     [
+      -120.55659,
+      35.16409
+     ],
+     [
+      -120.55739,
+      35.15931
+     ],
+     [
+      -120.55794,
+      35.15763
+     ],
+     [
+      -120.55957,
+      35.15476
+     ],
+     [
+      -120.55996,
+      35.15358
+     ],
+     [
+      -120.56105,
+      35.14312
+     ],
+     [
+      -120.56194,
+      35.14173
+     ],
+     [
+      -120.56887,
+      35.13511
+     ],
+     [
+      -120.57496,
+      35.12775
+     ],
+     [
+      -120.57535,
+      35.12669
+     ],
+     [
+      -120.5749,
+      35.12547
+     ],
+     [
+      -120.57162,
+      35.12081
+     ],
+     [
+      -120.57729,
+      35.11449
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pacific Coast Railway",
+    "line": "Pacific Coast Railway: San Luis Obispo \u2013 Santa Maria",
+    "id": "pcry-slo-santamaria",
+    "color": "#0B6E4F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. A 3 ft gauge line over this profile made perhaps 20-25 mph between stops; no Pacific Coast Railway timetable was consulted for this figure.",
+    "geometry_quality": "Traced from the same OSM Pacific Coast Railway ways; 30.6 mi traced San Luis Obispo - Santa Maria. 4.0 mi is straight-line, in four legs: 1.5 mi leaving San Luis Obispo from the depot site, 1.9 mi across the built-over grade north of Santa Maria, and two legs under a third of a mile near Arroyo Grande.",
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1901,
+      "headway_min": 300,
+      "note": "Arroyo Grande was reached in 1881 and Santa Maria in 1882, the year the Pacific Coast Railway was formed, so the new company worked the whole of this stretch from the start. Through the 1890s it was the only rail service down the Arroyo Grande and Santa Maria valleys, and from 1895 it faced Southern Pacific's new standard gauge on a roughly parallel alignment.",
+      "sources": [
+       "Segment-level: construction dates from Wikipedia's Pacific Coast Railway article and the Monterey County Historical Society's 'Railroads of the Central Coast'; the headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway",
+       "https://mchsmuseum.com/local-history/american-era-settlement/railroads-of-the-central-coast-an-overview/"
+      ]
+     },
+     {
+      "start": 1901,
+      "end": 1930,
+      "headway_min": 300,
+      "note": "Peak years, with connections at San Luis Obispo to Southern Pacific's through San Francisco - Los Angeles trains from 1901. headway_min is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer's references date the construction and the closures, but no timetable was checked for this segment's headway, and the year passenger or mixed-train service actually stopped is not established - see the layer's not_yet_sourced field.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway"
+      ]
+     },
+     {
+      "start": 1930,
+      "end": 1941,
+      "headway_min": 720,
+      "note": "Decline toward mixed-train service; operations ended in 1941 and the line was scrapped in 1942. The drawn end year is the documented end of operations, not a sourced last passenger train - see not_yet_sourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer's references date the construction and the closures, but no timetable was checked for this segment's headway, and the year passenger or mixed-train service actually stopped is not established - see the layer's not_yet_sourced field.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.6685,
+      35.266
+     ],
+     [
+      -120.64453,
+      35.25703
+     ],
+     [
+      -120.64131,
+      35.25463
+     ],
+     [
+      -120.64018,
+      35.25335
+     ],
+     [
+      -120.6399,
+      35.25278
+     ],
+     [
+      -120.63892,
+      35.2471
+     ],
+     [
+      -120.63819,
+      35.24609
+     ],
+     [
+      -120.63663,
+      35.2453
+     ],
+     [
+      -120.63287,
+      35.24399
+     ],
+     [
+      -120.63115,
+      35.24302
+     ],
+     [
+      -120.62625,
+      35.2394
+     ],
+     [
+      -120.62103,
+      35.23675
+     ],
+     [
+      -120.61999,
+      35.2358
+     ],
+     [
+      -120.61937,
+      35.2346
+     ],
+     [
+      -120.61934,
+      35.23367
+     ],
+     [
+      -120.61972,
+      35.23181
+     ],
+     [
+      -120.62066,
+      35.22974
+     ],
+     [
+      -120.62098,
+      35.22771
+     ],
+     [
+      -120.62046,
+      35.22142
+     ],
+     [
+      -120.61786,
+      35.21429
+     ],
+     [
+      -120.61578,
+      35.2023
+     ],
+     [
+      -120.61515,
+      35.20073
+     ],
+     [
+      -120.61293,
+      35.19747
+     ],
+     [
+      -120.61304,
+      35.19058
+     ],
+     [
+      -120.61246,
+      35.18897
+     ],
+     [
+      -120.61126,
+      35.18742
+     ],
+     [
+      -120.61041,
+      35.18686
+     ],
+     [
+      -120.60796,
+      35.18608
+     ],
+     [
+      -120.60197,
+      35.18477
+     ],
+     [
+      -120.59862,
+      35.18137
+     ],
+     [
+      -120.59574,
+      35.17966
+     ],
+     [
+      -120.58677,
+      35.17789
+     ],
+     [
+      -120.57256,
+      35.17963
+     ],
+     [
+      -120.57103,
+      35.18057
+     ],
+     [
+      -120.56872,
+      35.18405
+     ],
+     [
+      -120.56724,
+      35.18403
+     ],
+     [
+      -120.56658,
+      35.18344
+     ],
+     [
+      -120.56652,
+      35.18268
+     ],
+     [
+      -120.56865,
+      35.18203
+     ],
+     [
+      -120.56905,
+      35.18144
+     ],
+     [
+      -120.56889,
+      35.1806
+     ],
+     [
+      -120.56308,
+      35.17689
+     ],
+     [
+      -120.56147,
+      35.17451
+     ],
+     [
+      -120.55963,
+      35.1735
+     ],
+     [
+      -120.55732,
+      35.1715
+     ],
+     [
+      -120.55612,
+      35.1694
+     ],
+     [
+      -120.55579,
+      35.16646
+     ],
+     [
+      -120.55659,
+      35.16409
+     ],
+     [
+      -120.55739,
+      35.15931
+     ],
+     [
+      -120.55794,
+      35.15763
+     ],
+     [
+      -120.55957,
+      35.15476
+     ],
+     [
+      -120.55996,
+      35.15358
+     ],
+     [
+      -120.56105,
+      35.14312
+     ],
+     [
+      -120.56194,
+      35.14173
+     ],
+     [
+      -120.56887,
+      35.13511
+     ],
+     [
+      -120.57532,
+      35.1271
+     ],
+     [
+      -120.5749,
+      35.12547
+     ],
+     [
+      -120.57162,
+      35.12081
+     ],
+     [
+      -120.57729,
+      35.11449
+     ],
+     [
+      -120.57871,
+      35.11178
+     ],
+     [
+      -120.57874,
+      35.10735
+     ],
+     [
+      -120.57666,
+      35.10365
+     ],
+     [
+      -120.57434,
+      35.10323
+     ],
+     [
+      -120.57331,
+      35.10276
+     ],
+     [
+      -120.5705,
+      35.10009
+     ],
+     [
+      -120.56811,
+      35.09878
+     ],
+     [
+      -120.56605,
+      35.09633
+     ],
+     [
+      -120.56371,
+      35.09482
+     ],
+     [
+      -120.55478,
+      35.08467
+     ],
+     [
+      -120.55314,
+      35.08328
+     ],
+     [
+      -120.55134,
+      35.08217
+     ],
+     [
+      -120.54672,
+      35.07953
+     ],
+     [
+      -120.53587,
+      35.07754
+     ],
+     [
+      -120.53256,
+      35.07542
+     ],
+     [
+      -120.53072,
+      35.07513
+     ],
+     [
+      -120.51784,
+      35.07062
+     ],
+     [
+      -120.51418,
+      35.06863
+     ],
+     [
+      -120.51085,
+      35.06742
+     ],
+     [
+      -120.51028,
+      35.06677
+     ],
+     [
+      -120.50977,
+      35.06527
+     ],
+     [
+      -120.5093,
+      35.06468
+     ],
+     [
+      -120.50775,
+      35.06351
+     ],
+     [
+      -120.504,
+      35.0595
+     ],
+     [
+      -120.50073,
+      35.05662
+     ],
+     [
+      -120.49463,
+      35.05192
+     ],
+     [
+      -120.49111,
+      35.04768
+     ],
+     [
+      -120.48919,
+      35.04601
+     ],
+     [
+      -120.47494,
+      35.03537
+     ],
+     [
+      -120.46835,
+      35.03
+     ],
+     [
+      -120.46738,
+      35.02836
+     ],
+     [
+      -120.46732,
+      35.02672
+     ],
+     [
+      -120.46664,
+      35.02497
+     ],
+     [
+      -120.46553,
+      35.02363
+     ],
+     [
+      -120.46229,
+      35.02087
+     ],
+     [
+      -120.46006,
+      35.01929
+     ],
+     [
+      -120.45556,
+      35.0172
+     ],
+     [
+      -120.45176,
+      35.01361
+     ],
+     [
+      -120.44762,
+      35.01252
+     ],
+     [
+      -120.44445,
+      35.01112
+     ],
+     [
+      -120.4423,
+      35.00977
+     ],
+     [
+      -120.44107,
+      35.00865
+     ],
+     [
+      -120.44031,
+      35.00736
+     ],
+     [
+      -120.43837,
+      35.00137
+     ],
+     [
+      -120.43681,
+      34.99914
+     ],
+     [
+      -120.43574,
+      34.99701
+     ],
+     [
+      -120.43553,
+      34.99347
+     ],
+     [
+      -120.43807,
+      34.98795
+     ],
+     [
+      -120.43992,
+      34.98499
+     ],
+     [
+      -120.44462,
+      34.95743
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pacific Coast Railway",
+    "line": "Pacific Coast Railway: Santa Maria \u2013 Los Alamos",
+    "id": "pcry-santamaria-losalamos",
+    "color": "#0B6E4F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. A 3 ft gauge line over this profile made perhaps 20-25 mph between stops; no Pacific Coast Railway timetable was consulted for this figure.",
+    "geometry_quality": "Traced from the same OSM Pacific Coast Railway ways; 22.0 mi traced Santa Maria - Los Alamos, of which 5.9 mi is straight-line: 2.5 mi south out of Santa Maria and 3.4 mi over the divide into the Los Alamos valley, neither of which is mapped in OSM.",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1930,
+      "headway_min": 480,
+      "note": "Built in 1887 as part of the push to Los Olivos, climbing out of the Santa Maria valley into the Los Alamos valley.",
+      "sources": [
+       "Segment-level: construction dates from Wikipedia's Pacific Coast Railway article and the Monterey County Historical Society's 'Railroads of the Central Coast'; the headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway",
+       "https://mchsmuseum.com/local-history/american-era-settlement/railroads-of-the-central-coast-an-overview/"
+      ]
+     },
+     {
+      "start": 1930,
+      "end": 1936,
+      "headway_min": 1440,
+      "note": "Reduced to a twice-weekly mixed train by 1930. This end outlasted the Los Olivos stub, which quit in 1933; the line beyond Los Alamos was dismantled in 1936, the drawn end year here.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer's references date the construction and the closures, but no timetable was checked for this segment's headway, and the year passenger or mixed-train service actually stopped is not established - see the layer's not_yet_sourced field.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.44462,
+      34.95743
+     ],
+     [
+      -120.44561,
+      34.87422
+     ],
+     [
+      -120.44614,
+      34.8719
+     ],
+     [
+      -120.44917,
+      34.86304
+     ],
+     [
+      -120.45154,
+      34.85471
+     ],
+     [
+      -120.45146,
+      34.84978
+     ],
+     [
+      -120.45001,
+      34.83292
+     ],
+     [
+      -120.44874,
+      34.82611
+     ],
+     [
+      -120.44793,
+      34.81949
+     ],
+     [
+      -120.44552,
+      34.81279
+     ],
+     [
+      -120.44435,
+      34.8057
+     ],
+     [
+      -120.41577,
+      34.76328
+     ],
+     [
+      -120.41316,
+      34.76255
+     ],
+     [
+      -120.40887,
+      34.76037
+     ],
+     [
+      -120.40672,
+      34.75954
+     ],
+     [
+      -120.39784,
+      34.75838
+     ],
+     [
+      -120.39647,
+      34.75853
+     ],
+     [
+      -120.39251,
+      34.75971
+     ],
+     [
+      -120.3911,
+      34.75972
+     ],
+     [
+      -120.38401,
+      34.75862
+     ],
+     [
+      -120.3722,
+      34.75556
+     ],
+     [
+      -120.36759,
+      34.75489
+     ],
+     [
+      -120.36429,
+      34.75473
+     ],
+     [
+      -120.35474,
+      34.7558
+     ],
+     [
+      -120.34772,
+      34.75546
+     ],
+     [
+      -120.34068,
+      34.75653
+     ],
+     [
+      -120.33838,
+      34.75669
+     ],
+     [
+      -120.33377,
+      34.75529
+     ],
+     [
+      -120.31469,
+      34.75149
+     ],
+     [
+      -120.29115,
+      34.74705
+     ],
+     [
+      -120.28039,
+      34.74528
+     ],
+     [
+      -120.27756,
+      34.74459
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pacific Coast Railway",
+    "line": "Pacific Coast Railway: Los Alamos \u2013 Los Olivos",
+    "id": "pcry-losalamos-losolivos",
+    "color": "#0B6E4F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. A 3 ft gauge line over this profile made perhaps 20-25 mph between stops; no Pacific Coast Railway timetable was consulted for this figure.",
+    "geometry_quality": "Traced from the same OSM Pacific Coast Railway ways; 12.4 mi traced Los Alamos - Los Olivos, with no straight-line legs - this end of the railway survives as a continuous mapped grade.",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1930,
+      "headway_min": 480,
+      "note": "Narrow gauge rails reached Los Olivos on November 17 1887 and stopped there for good; it was the southern terminus of the Pacific Coast Railway, with stagecoaches carrying passengers on over San Marcos Pass to Santa Barbara. The intended extension to Santa Barbara was never built.",
+      "sources": [
+       "Segment-level: construction dates from Wikipedia's Pacific Coast Railway article and the Monterey County Historical Society's 'Railroads of the Central Coast'; the headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway",
+       "https://mchsmuseum.com/local-history/american-era-settlement/railroads-of-the-central-coast-an-overview/"
+      ]
+     },
+     {
+      "start": 1930,
+      "end": 1933,
+      "headway_min": 1440,
+      "note": "Service to Los Olivos was down to a twice-weekly mixed train by 1930 and ended in 1933.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer's references date the construction and the closures, but no timetable was checked for this segment's headway, and the year passenger or mixed-train service actually stopped is not established - see the layer's not_yet_sourced field.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.27756,
+      34.74459
+     ],
+     [
+      -120.27298,
+      34.74307
+     ],
+     [
+      -120.26972,
+      34.7407
+     ],
+     [
+      -120.26249,
+      34.73813
+     ],
+     [
+      -120.24458,
+      34.73537
+     ],
+     [
+      -120.22678,
+      34.72775
+     ],
+     [
+      -120.21132,
+      34.72321
+     ],
+     [
+      -120.20955,
+      34.72233
+     ],
+     [
+      -120.20641,
+      34.72026
+     ],
+     [
+      -120.20414,
+      34.71919
+     ],
+     [
+      -120.19356,
+      34.71664
+     ],
+     [
+      -120.18683,
+      34.71398
+     ],
+     [
+      -120.18352,
+      34.71237
+     ],
+     [
+      -120.17946,
+      34.71202
+     ],
+     [
+      -120.17661,
+      34.7101
+     ],
+     [
+      -120.17382,
+      34.70913
+     ],
+     [
+      -120.1715,
+      34.70768
+     ],
+     [
+      -120.16982,
+      34.70586
+     ],
+     [
+      -120.16805,
+      34.70215
+     ],
+     [
+      -120.16361,
+      34.69859
+     ],
+     [
+      -120.16227,
+      34.69721
+     ],
+     [
+      -120.1613,
+      34.69556
+     ],
+     [
+      -120.15984,
+      34.69486
+     ],
+     [
+      -120.15685,
+      34.6928
+     ],
+     [
+      -120.15621,
+      34.69269
+     ],
+     [
+      -120.15525,
+      34.69302
+     ],
+     [
+      -120.15322,
+      34.69529
+     ],
+     [
+      -120.15257,
+      34.6957
+     ],
+     [
+      -120.15128,
+      34.69569
+     ],
+     [
+      -120.15015,
+      34.69487
+     ],
+     [
+      -120.14962,
+      34.6938
+     ],
+     [
+      -120.14969,
+      34.6932
+     ],
+     [
+      -120.15183,
+      34.69018
+     ],
+     [
+      -120.15333,
+      34.68866
+     ],
+     [
+      -120.15407,
+      34.68747
+     ],
+     [
+      -120.15519,
+      34.6847
+     ],
+     [
+      -120.15525,
+      34.68227
+     ],
+     [
+      -120.15505,
+      34.68169
+     ],
+     [
+      -120.15361,
+      34.68106
+     ],
+     [
+      -120.1514,
+      34.68251
+     ],
+     [
+      -120.15052,
+      34.6827
+     ],
+     [
+      -120.14574,
+      34.68124
+     ],
+     [
+      -120.14303,
+      34.68199
+     ],
+     [
+      -120.14044,
+      34.68182
+     ],
+     [
+      -120.13934,
+      34.68149
+     ],
+     [
+      -120.1354,
+      34.67914
+     ],
+     [
+      -120.13307,
+      34.67671
+     ],
+     [
+      -120.13045,
+      34.67565
+     ],
+     [
+      -120.12771,
+      34.6716
+     ],
+     [
+      -120.12606,
+      34.67057
+     ],
+     [
+      -120.12531,
+      34.66878
+     ],
+     [
+      -120.12475,
+      34.66835
+     ],
+     [
+      -120.12282,
+      34.66768
+     ],
+     [
+      -120.11392,
+      34.66755
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pacific Coast Railroad",
+    "line": "Pacific Coast Railroad: Santa Margarita Ranch Excursion",
+    "id": "pacific-coast-rr-tourist",
+    "color": "#7FB069",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 15,
+    "speed_source": "Estimate. A ranch excursion line runs at walking-to-jogging pace; no published figure was consulted.",
+    "geometry_quality": "Traced from OSM relation 6773665; 1.6 mi of 3 ft gauge track, no straight-line legs.",
+    "segments": [
+     {
+      "start": 2004,
+      "end": 2026,
+      "headway_min": 1440,
+      "note": "A modern 3 ft gauge heritage operation at Santa Margarita Ranch, north of San Luis Obispo over Cuesta Pass, established in 2000 and completed in 2004. It carries passengers on limited public excursions, so it counts as passenger service and is drawn as tourist_rail. It is unrelated corporately to the historical Pacific Coast Railway whose name it echoes, hence the separate company and colour. headway_min is a placeholder - operation is occasional, not scheduled.",
+      "sources": [
+       "Segment-level: 2000 establishment and 2004 completion from Wikipedia's Pacific Coast Railroad (tourist) article; the operating frequency is not sourced.",
+       "https://en.wikipedia.org/wiki/Pacific_Coast_Railroad_(tourist)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -120.6131,
+      35.40492
+     ],
+     [
+      -120.61377,
+      35.40326
+     ],
+     [
+      -120.61283,
+      35.40075
+     ],
+     [
+      -120.61294,
+      35.39918
+     ],
+     [
+      -120.61258,
+      35.39798
+     ],
+     [
+      -120.61273,
+      35.39756
+     ],
+     [
+      -120.61353,
+      35.39685
+     ],
+     [
+      -120.61394,
+      35.39588
+     ],
+     [
+      -120.61437,
+      35.39557
+     ],
+     [
+      -120.61498,
+      35.3955
+     ],
+     [
+      -120.61556,
+      35.39591
+     ],
+     [
+      -120.61543,
+      35.39694
+     ],
+     [
+      -120.61599,
+      35.39794
+     ],
+     [
+      -120.61536,
+      35.40126
+     ],
+     [
+      -120.6144,
+      35.403
+     ],
+     [
+      -120.61493,
+      35.40409
+     ],
+     [
+      -120.61481,
+      35.40493
+     ],
+     [
+      -120.61462,
+      35.40542
+     ],
+     [
+      -120.61406,
+      35.4057
+     ],
+     [
+      -120.61342,
+      35.40559
+     ],
+     [
+      -120.61311,
+      35.40512
+     ]
+    ]
+   }
+  }
+ ]
+}

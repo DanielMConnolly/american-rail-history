@@ -1,0 +1,272 @@
+{
+ "id": "amtrak-68-2026",
+ "route_id": "68",
+ "line_ids": [
+  "amtrak-68"
+ ],
+ "company": "Amtrak",
+ "service": "Maple Leaf",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "63",
+   "name": "Maple Leaf",
+   "headsign": "Toronto",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "07:15"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "07:43",
+     "depart": "07:44"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "08:02",
+     "depart": "08:03"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "08:43",
+     "depart": "08:45"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "08:58",
+     "depart": "09:00"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "09:20",
+     "depart": "09:21"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "09:50",
+     "depart": "10:10"
+    },
+    {
+     "station": "schenectady",
+     "seq": 8,
+     "arrive": "10:34",
+     "depart": "10:34"
+    },
+    {
+     "station": "amsterdam-amtrak-station",
+     "seq": 9,
+     "arrive": "10:52",
+     "depart": "10:52"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 10,
+     "arrive": "11:49",
+     "depart": "11:51"
+    },
+    {
+     "station": "rome-amtrak-station",
+     "seq": 11,
+     "arrive": "12:04",
+     "depart": "12:05"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 12,
+     "arrive": "12:49",
+     "depart": "12:59"
+    },
+    {
+     "station": "ny-state-fair",
+     "seq": 13,
+     "arrive": "13:11",
+     "depart": "13:12"
+    },
+    {
+     "station": "rochester",
+     "seq": 14,
+     "arrive": "14:21",
+     "depart": "14:25"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 15,
+     "arrive": "15:35",
+     "depart": "15:35"
+    },
+    {
+     "station": "buffalo",
+     "seq": 16,
+     "arrive": "15:50",
+     "depart": "15:50"
+    },
+    {
+     "station": "niagara-falls-amtrak-station",
+     "seq": 17,
+     "arrive": "17:02",
+     "depart": "17:10"
+    },
+    {
+     "station": "canadian-border",
+     "seq": 18,
+     "arrive": "17:11",
+     "depart": "17:11"
+    },
+    {
+     "station": "niagara-falls",
+     "seq": 19,
+     "arrive": "17:15",
+     "depart": "17:45"
+    },
+    {
+     "station": "toronto",
+     "seq": 20,
+     "arrive": "19:43"
+    }
+   ]
+  },
+  {
+   "number": "64",
+   "name": "Maple Leaf",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "toronto",
+     "seq": 1,
+     "depart": "08:20"
+    },
+    {
+     "station": "niagara-falls",
+     "seq": 2,
+     "arrive": "10:20",
+     "depart": "10:22"
+    },
+    {
+     "station": "canadian-border",
+     "seq": 3,
+     "arrive": "10:37",
+     "depart": "10:37"
+    },
+    {
+     "station": "niagara-falls-amtrak-station",
+     "seq": 4,
+     "arrive": "10:44",
+     "depart": "11:30"
+    },
+    {
+     "station": "buffalo",
+     "seq": 5,
+     "arrive": "12:03",
+     "depart": "12:05"
+    },
+    {
+     "station": "buffalo-depew-station",
+     "seq": 6,
+     "arrive": "12:16",
+     "depart": "12:20"
+    },
+    {
+     "station": "rochester",
+     "seq": 7,
+     "arrive": "13:11",
+     "depart": "13:15"
+    },
+    {
+     "station": "ny-state-fair",
+     "seq": 8,
+     "arrive": "14:29",
+     "depart": "14:30"
+    },
+    {
+     "station": "syracuse-regional-transportation-center",
+     "seq": 9,
+     "arrive": "14:36",
+     "depart": "14:46"
+    },
+    {
+     "station": "rome-amtrak-station",
+     "seq": 10,
+     "arrive": "15:28",
+     "depart": "15:29"
+    },
+    {
+     "station": "utica-amtrak-station",
+     "seq": 11,
+     "arrive": "15:46",
+     "depart": "15:48"
+    },
+    {
+     "station": "amsterdam-amtrak-station",
+     "seq": 12,
+     "arrive": "16:49",
+     "depart": "16:51"
+    },
+    {
+     "station": "schenectady",
+     "seq": 13,
+     "arrive": "17:39",
+     "depart": "17:39"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 14,
+     "arrive": "18:04",
+     "depart": "18:40"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 15,
+     "arrive": "19:01",
+     "depart": "19:03"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 16,
+     "arrive": "19:23",
+     "depart": "19:25"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 17,
+     "arrive": "19:40",
+     "depart": "19:41"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 18,
+     "arrive": "20:21",
+     "depart": "20:22"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 19,
+     "arrive": "20:41",
+     "depart": "20:42"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 20,
+     "arrive": "21:21"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,753 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Chicago Aurora and Elgin Railroad \u2014 the 'Roarin' Elgin' \u2014 was a 600-volt third-rail interurban, not a trolley-wire road, built as an electric railway from the start with no horsecar or steam ancestry. It opened on 25 August 1902 between Aurora and 52nd Avenue (Laramie) in Chicago, reached Elgin in 1903 and Batavia the same autumn, and from 1905 ran its own trains over the Metropolitan West Side Elevated into the Wells Street Terminal in the Loop. The Geneva and St. Charles branch lasted only 1909/1910 to 1937. The fatal blow was the Congress Expressway: on 20 September 1953 the Garfield Park elevated was taken for the highway and CA&E trains were cut back to Des Plaines Avenue in Forest Park, forcing every rider to change to the 'L'; ridership halved. After a long fight before the Illinois Commerce Commission the railroad simply stopped at noon on 3 July 1957, in the middle of a working day, leaving commuters who had ridden in that morning with no way home. Freight ran until 10 June 1959. Much of the right of way became the Illinois Prairie Path, among the first rail-trails in the United States, which is why the geometry here is real traced alignment rather than straight lines.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad \u2014 opening dates for the main line and each branch, the 20 September 1953 cutback to Des Plaines Avenue, the noon 3 July 1957 end of passenger service, the 10 June 1959 end of freight, and the 17.5 mi Elgin branch figure.",
+   "http://www.greatthirdrail.org/routes/main_line.html \u2014 15.6 mi Forest Park\u2013Wheaton main line, the 1902 Aurora\u201352nd Avenue service, and the 1953 rerouting.",
+   "http://www.greatthirdrail.org/routes/batavia.html \u2014 Batavia branch 5.9 mi, late September 1902 opening, Batavia Junction at Eola, and its survival to 3 July 1957.",
+   "http://www.greatthirdrail.org/routes/geneva.html \u2014 Geneva/St. Charles abandonment 31 October 1937 with bus substitution at Lakewood.",
+   "https://en.wikipedia.org/wiki/Westchester_branch \u2014 establishes that the Westchester branch was operated by the Chicago Rapid Transit Company and then the CTA, which is why it is not drawn here."
+  ],
+  "not_yet_sourced": [
+   "Documented route mileage for the Aurora branch (Wheaton\u2013Aurora) and the Geneva branch was not found; only the traced figures are given.",
+   "All headway_min values are estimates. No CA&E public timetable was consulted for any segment.",
+   "The Westchester branch (Bellwood\u2013Westchester, opened 1 October 1926, extended to Mannheim/22nd 1 December 1930, closed 9 December 1951) was built and owned by the CA&E but passenger service on it was run by the Chicago Rapid Transit Company and after 1947 by the CTA. Under Rule 6 it belongs to that operator's layer, not to this one, so it is deliberately absent here.",
+   "The Mount Carmel cemetery branch, over which the CA&E ran funeral cars, is not drawn; the extent and years of any public passenger service on it were not established.",
+   "Whether CA&E trains ran east of Laramie Avenue at all between 1902 and 1905, or whether all passengers changed there, is asserted from secondary sources only."
+  ],
+  "horsecar_audit": "None required \u2014 the CA&E was built as an electric third-rail railway in 1902 and had no animal-powered predecessor. Steam locomotives appeared only in construction service.",
+  "freight_only_audit": "CA&E freight continued for nearly two years after passengers, to 10 June 1959. Those years are deliberately not drawn on any feature.",
+  "interurban_audit": "All features are mode 'interurban'. The CA&E ran no local city streetcar service of its own; its street trackage in Geneva, St. Charles, Aurora and Elgin was terminal access for interurban trains, not a city system."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Main Line (Forest Park \u2013 Wheaton)",
+    "id": "cae-main-line",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 48,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "Traced from OpenStreetMap ways tagged old_railway_operator=CA&E \u2014 the Illinois Prairie Path, which occupies the CA&E right of way continuously from First Avenue in Maywood to Wheaton. Traced 15.3 mi against a documented 15.6 mi Forest Park\u2013Wheaton (greatthirdrail.org); the shortfall is the 1.1 km of straight-line connector across the vanished Des Plaines Avenue\u2013First Avenue yard throat in Forest Park, the only approximated leg. Alignment is the railroad's own, not a later one.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1957,
+      "headway_min": 20,
+      "note": "Opened 25 August 1902 as an electric third-rail interurban \u2014 no horsecar or steam predecessor; steam locomotives were used only to build it. Through Maywood, Bellwood, Berkeley, Elmhurst, Villa Park, Lombard and Glen Ellyn. Every Aurora, Elgin and Batavia train used this stretch, so headway here was the sum of all branches; 20 min is an estimate of the combined weekday base frequency, not a timetable figure. Passenger service ended without warning at noon on 3 July 1957, stranding riders who had commuted in that morning; the Illinois Commerce Commission had authorised discontinuance in April 1957 and the last injunction lapsed that day. Freight lasted to 10 June 1959.",
+      "sources": [
+       "Segment-level: opening date 25 Aug 1902 and the 3 July 1957 noon shutdown both checked against the Wikipedia article and greatthirdrail.org's main-line page.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad",
+       "http://www.greatthirdrail.org/routes/main_line.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.106732,
+      41.864486
+     ],
+     [
+      -88.10089,
+      41.865403
+     ],
+     [
+      -88.091083,
+      41.86767
+     ],
+     [
+      -88.088104,
+      41.869197
+     ],
+     [
+      -88.081258,
+      41.874482
+     ],
+     [
+      -88.076817,
+      41.87608
+     ],
+     [
+      -88.074529,
+      41.876239
+     ],
+     [
+      -88.066479,
+      41.875775
+     ],
+     [
+      -88.050748,
+      41.879781
+     ],
+     [
+      -88.042713,
+      41.880718
+     ],
+     [
+      -88.040922,
+      41.880608
+     ],
+     [
+      -88.039642,
+      41.881037
+     ],
+     [
+      -88.034695,
+      41.881564
+     ],
+     [
+      -88.001138,
+      41.88234
+     ],
+     [
+      -87.985798,
+      41.882301
+     ],
+     [
+      -87.981566,
+      41.882977
+     ],
+     [
+      -87.969375,
+      41.885897
+     ],
+     [
+      -87.962848,
+      41.886466
+     ],
+     [
+      -87.917658,
+      41.882644
+     ],
+     [
+      -87.914918,
+      41.882434
+     ],
+     [
+      -87.914251,
+      41.882673
+     ],
+     [
+      -87.912906,
+      41.88214
+     ],
+     [
+      -87.848729,
+      41.876934
+     ],
+     [
+      -87.842932,
+      41.875289
+     ],
+     [
+      -87.833966,
+      41.875416
+     ],
+     [
+      -87.821822,
+      41.87235
+     ],
+     [
+      -87.819072,
+      41.872795
+     ],
+     [
+      -87.818933,
+      41.873987
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Aurora Branch",
+    "id": "cae-aurora-branch",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 52,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=CA&E (Illinois Prairie Path Aurora Branch) from Wheaton through Warrenville and Eola into downtown Aurora. Traced 14.0 mi Wheaton\u2013Aurora; 1.6 km of straight-line connector across gaps in the trail (chiefly the Fox River approach in Aurora). No documented Wheaton\u2013Aurora mileage was located for comparison \u2014 see metadata.not_yet_sourced.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1957,
+      "headway_min": 60,
+      "note": "Opened with the main line on 25 August 1902; the first through service ran Aurora\u201352nd Avenue (Laramie) in Chicago. 60 min is an estimate of the off-peak Aurora headway, with much closer spacing in the rush; no timetable was consulted. Passenger service ended without warning at noon on 3 July 1957, stranding riders who had commuted in that morning; the Illinois Commerce Commission had authorised discontinuance in April 1957 and the last injunction lapsed that day. Freight lasted to 10 June 1959.",
+      "sources": [
+       "Segment-level: 25 Aug 1902 opening and 3 July 1957 close checked against the Wikipedia article; headway is an unsourced estimate.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.106732,
+      41.864486
+     ],
+     [
+      -88.113016,
+      41.864161
+     ],
+     [
+      -88.116211,
+      41.858532
+     ],
+     [
+      -88.11638,
+      41.852498
+     ],
+     [
+      -88.118269,
+      41.850392
+     ],
+     [
+      -88.130907,
+      41.843662
+     ],
+     [
+      -88.15618,
+      41.83382
+     ],
+     [
+      -88.156396,
+      41.830849
+     ],
+     [
+      -88.161012,
+      41.830504
+     ],
+     [
+      -88.168696,
+      41.828937
+     ],
+     [
+      -88.180955,
+      41.82447
+     ],
+     [
+      -88.184297,
+      41.822834
+     ],
+     [
+      -88.19751,
+      41.81769
+     ],
+     [
+      -88.200842,
+      41.815644
+     ],
+     [
+      -88.220838,
+      41.799887
+     ],
+     [
+      -88.223189,
+      41.798502
+     ],
+     [
+      -88.227984,
+      41.797337
+     ],
+     [
+      -88.230221,
+      41.79893
+     ],
+     [
+      -88.230741,
+      41.796674
+     ],
+     [
+      -88.241548,
+      41.795231
+     ],
+     [
+      -88.289244,
+      41.787389
+     ],
+     [
+      -88.293743,
+      41.78583
+     ],
+     [
+      -88.300139,
+      41.782432
+     ],
+     [
+      -88.301634,
+      41.782306
+     ],
+     [
+      -88.301733,
+      41.781553
+     ],
+     [
+      -88.303438,
+      41.780079
+     ],
+     [
+      -88.307918,
+      41.774066
+     ],
+     [
+      -88.307751,
+      41.769709
+     ],
+     [
+      -88.308846,
+      41.767148
+     ],
+     [
+      -88.309479,
+      41.762595
+     ],
+     [
+      -88.31034,
+      41.761088
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Elgin Branch",
+    "id": "cae-elgin-branch",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 52,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "Weaker than the other branches. Traced only over OSM ways tagged old_railway_operator=CA&E (Illinois Prairie Path Elgin Branch) \u2014 routing across the full rail network detoured down the Geneva branch \u2014 so gaps in the trail are bridged by straight chords: about 3.1 mi of the 15.7 mi drawn is straight-line connector, mostly between Wheaton and Prince Crossing and around West Chicago. A further 1.5 mi from the north end of the trail (42.014,-88.275) into the downtown Elgin terminal site is a straight line, the right of way there having been built over. Traced 15.7 mi against a documented 17.5 mi Wheaton\u2013Elgin.",
+    "segments": [
+     {
+      "start": 1903,
+      "end": 1957,
+      "headway_min": 60,
+      "note": "Opened 29 May 1903 from Wheaton via Prince Crossing, Wayne and Clintonville to Elgin. 60 min is an estimated off-peak headway, not a timetable figure. Passenger service ended without warning at noon on 3 July 1957, stranding riders who had commuted in that morning; the Illinois Commerce Commission had authorised discontinuance in April 1957 and the last injunction lapsed that day. Freight lasted to 10 June 1959.",
+      "sources": [
+       "Segment-level: 29 May 1903 opening and the 17.5 mi length are from the Wikipedia article; the 3 July 1957 close is from the same source.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.106732,
+      41.864486
+     ],
+     [
+      -88.131123,
+      41.877909
+     ],
+     [
+      -88.177337,
+      41.901211
+     ],
+     [
+      -88.201501,
+      41.914517
+     ],
+     [
+      -88.209205,
+      41.921624
+     ],
+     [
+      -88.209885,
+      41.921803
+     ],
+     [
+      -88.214194,
+      41.926187
+     ],
+     [
+      -88.265257,
+      41.972731
+     ],
+     [
+      -88.268336,
+      41.977367
+     ],
+     [
+      -88.268388,
+      41.978112
+     ],
+     [
+      -88.271469,
+      41.978114
+     ],
+     [
+      -88.273031,
+      41.980048
+     ],
+     [
+      -88.274206,
+      41.983416
+     ],
+     [
+      -88.272764,
+      42.004754
+     ],
+     [
+      -88.274811,
+      42.012262
+     ],
+     [
+      -88.274794,
+      42.013624
+     ],
+     [
+      -88.283,
+      42.0345
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Batavia Branch",
+    "id": "cae-batavia-branch",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 48,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=CA&E (Illinois Prairie Path Batavia Spur) from Batavia Junction (Eola) to the south edge of Batavia; the last 0.8 mi into downtown Batavia is a straight line, the right of way having been lifted and built over. Traced 5.1 mi against a documented 5.9 mi (greatthirdrail.org).",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1957,
+      "headway_min": 60,
+      "note": "Built by the Batavia & Eastern Railway, absorbed by the CA&E in March 1902; opened late September 1902, leaving the Aurora branch at Eola Junction (later Batavia Junction). Ran to the very end. Headway is an estimate. Passenger service ended without warning at noon on 3 July 1957, stranding riders who had commuted in that morning; the Illinois Commerce Commission had authorised discontinuance in April 1957 and the last injunction lapsed that day. Freight lasted to 10 June 1959.",
+      "sources": [
+       "Segment-level: opening 'late September 1902', 5.9 mi length and the 3 July 1957 last day are all from greatthirdrail.org's Batavia branch page.",
+       "http://www.greatthirdrail.org/routes/batavia.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.251201,
+      41.801727
+     ],
+     [
+      -88.280003,
+      41.829338
+     ],
+     [
+      -88.284737,
+      41.831512
+     ],
+     [
+      -88.289296,
+      41.832284
+     ],
+     [
+      -88.292867,
+      41.832178
+     ],
+     [
+      -88.302288,
+      41.830374
+     ],
+     [
+      -88.30547,
+      41.830818
+     ],
+     [
+      -88.307275,
+      41.831909
+     ],
+     [
+      -88.308246,
+      41.833364
+     ],
+     [
+      -88.307422,
+      41.839061
+     ],
+     [
+      -88.3118,
+      41.8478
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Geneva Branch",
+    "id": "cae-geneva-branch",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=CA&E (Illinois Prairie Path Geneva Spur) from Prince Crossing on the Elgin branch west into Geneva, including the street trackage on State Street. Traced 7.9 mi; about 1.2 mi of straight-line connector where the trail is interrupted. No documented mileage located.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1937,
+      "headway_min": 90,
+      "note": "Opened to Geneva 1 December 1909. Passenger service over the Geneva and St. Charles line ended 31 October 1937 and was replaced by buses connecting to the Elgin branch at Lakewood; the drawn years stop there. Headway is an estimate.",
+      "sources": [
+       "Segment-level: 1 Dec 1909 opening from the Wikipedia article; the 31 Oct 1937 abandonment from greatthirdrail.org's Geneva branch page.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad",
+       "http://www.greatthirdrail.org/routes/geneva.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.160565,
+      41.882549
+     ],
+     [
+      -88.200892,
+      41.882
+     ],
+     [
+      -88.203223,
+      41.882941
+     ],
+     [
+      -88.204861,
+      41.884521
+     ],
+     [
+      -88.207392,
+      41.891136
+     ],
+     [
+      -88.209246,
+      41.892382
+     ],
+     [
+      -88.21183,
+      41.892863
+     ],
+     [
+      -88.262464,
+      41.892123
+     ],
+     [
+      -88.280282,
+      41.892595
+     ],
+     [
+      -88.299093,
+      41.890874
+     ],
+     [
+      -88.299944,
+      41.890329
+     ],
+     [
+      -88.300438,
+      41.886951
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: St. Charles Extension",
+    "id": "cae-st-charles-extension",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 32,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "Traced from OSM CA&E-tagged street ways (North Bennett Street, East and West Main Street) between Geneva and St. Charles. Traced 2.6 mi; the alignment is street trackage along today's streets, so the geometry is the modern road centreline rather than a surveyed rail alignment.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1937,
+      "headway_min": 90,
+      "note": "Opened 25 August 1910 north from Geneva to St. Charles, largely street running. Abandoned with the Geneva branch on 31 October 1937. Headway is an estimate.",
+      "sources": [
+       "Segment-level: 25 Aug 1910 opening from the Wikipedia article; 31 Oct 1937 abandonment from greatthirdrail.org.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad",
+       "http://www.greatthirdrail.org/routes/geneva.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.300438,
+      41.886951
+     ],
+     [
+      -88.315272,
+      41.888898
+     ],
+     [
+      -88.310554,
+      41.893127
+     ],
+     [
+      -88.313022,
+      41.909118
+     ],
+     [
+      -88.314227,
+      41.913587
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Forest Park \u2013 Laramie",
+    "id": "cae-forest-park-laramie",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "DRAWN ON A LATER ALIGNMENT. The CA&E's own third-rail track from Laramie Avenue west to Forest Park was destroyed for the Congress (Eisenhower) Expressway; nothing of it survives. Drawn on the CTA Forest Park branch in the expressway median, which follows the same corridor within one to two blocks for the whole 3.3 mi but is not the CA&E's track.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1953,
+      "headway_min": 20,
+      "note": "CA&E's own line east to Laramie Avenue (52nd Avenue), where passengers changed to the Metropolitan 'L' until through running began in 1905. Trains were cut back to Des Plaines Avenue in Forest Park on 20 September 1953 for expressway construction, after which this stretch carried no CA&E passengers \u2014 half the railroad's riders were lost within months.",
+      "sources": [
+       "Segment-level: the 20 September 1953 cutback to Des Plaines Avenue is from the Wikipedia article; the 1902 start of CA&E operation to 52nd Avenue is from greatthirdrail.org.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad",
+       "http://www.greatthirdrail.org/routes/main_line.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.817551,
+      41.874288
+     ],
+     [
+      -87.818724,
+      41.874625
+     ],
+     [
+      -87.818931,
+      41.873834
+     ],
+     [
+      -87.818946,
+      41.874482
+     ],
+     [
+      -87.818471,
+      41.874716
+     ],
+     [
+      -87.813772,
+      41.873669
+     ],
+     [
+      -87.809822,
+      41.873857
+     ],
+     [
+      -87.779929,
+      41.871152
+     ],
+     [
+      -87.763912,
+      41.870079
+     ],
+     [
+      -87.758837,
+      41.87144
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago Aurora and Elgin Railroad",
+    "line": "Chicago Aurora and Elgin: Wells Street Terminal \u2013 Laramie",
+    "id": "cae-garfield-park-loop",
+    "color": "#A83F6B",
+    "mode": "interurban",
+    "avg_speed_kmh": 32,
+    "speed_source": "Estimate. CA&E third-rail cars were timed for 60 mph maximum on the private right of way; the figure here is an average over the run including station stops, not a documented schedule speed.",
+    "geometry_quality": "DRAWN ON A LATER ALIGNMENT, and the weakest geometry in this file. CA&E trains ran over the Metropolitan West Side Elevated's Garfield Park line, which was demolished for the Congress Expressway; drawn instead on the CTA Forest Park branch in the expressway median, within a block or two of the old elevated for most of the 6.5 mi. The final 1.2 mi from the Halsted/Clinton area into Wells Street Terminal is a straight line and does not follow the Van Buren Street elevated or the Wells Street structure.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1953,
+      "headway_min": 20,
+      "note": "Through running into the Wells Street Terminal at Wells and Quincy over Metropolitan West Side Elevated (later Chicago Rapid Transit, then CTA) track began in 1905; before that CA&E passengers changed at 52nd Avenue. This was the CA&E's downtown access until the 20 September 1953 cutback to Des Plaines Avenue. Track was shared with 'L' rapid-transit service \u2014 the same corridor appears in the Chicago 'L' layer under its own operator.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1905 start of through running to Wells Street is the conventional date and the layer's references cover the route, but no source was checked specifically for that year. The 1953 cutback is sourced.",
+       "https://en.wikipedia.org/wiki/Chicago_Aurora_and_Elgin_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.758837,
+      41.87144
+     ],
+     [
+      -87.739805,
+      41.871766
+     ],
+     [
+      -87.732919,
+      41.873835
+     ],
+     [
+      -87.70865,
+      41.874162
+     ],
+     [
+      -87.697282,
+      41.87546
+     ],
+     [
+      -87.656238,
+      41.875853
+     ],
+     [
+      -87.6337,
+      41.8779
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,1009 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Chicago North Shore and Milwaukee Railroad \u2014 the North Shore Line \u2014 was the fastest and the most famous of the American interurbans, and among the last to die. It grew out of the Bluff City Electric Street Railway, an electric street railway opened in Waukegan in May 1895 and bought in 1898 by the Chicago and Milwaukee Electric Railroad; through service from Waukegan to Church Street in Evanston opened in August 1899, reached Zion and Kenosha in 1905, Racine in 1906 and Milwaukee in October 1908. Samuel Insull rebuilt it after 1916, and in 1919 trackage rights over the Chicago Rapid Transit's elevated gave it a downtown Chicago terminal on the Loop. On 5 June 1926 it opened the Skokie Valley Route, a high-speed inland bypass of the slow lakefront Shore Line, and from February 1941 the two articulated Electroliner streamliners ran Chicago\u2013Milwaukee over it. The Shore Line Route was abandoned after 24 July 1955 and the whole railroad quit on 21 January 1963. Its Skokie Valley trackage between Howard Street and Dempster Street was bought by the CTA and reopened in 1964 as the Skokie Swift, today's Yellow Line, so part of this map is still carrying passengers under another flag.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad \u2014 the Bluff City Electric Street Railway of May 1895 and its electric-from-the-start operation, the August 1899 Waukegan\u2013Evanston through service, Zion and Kenosha 1905, Racine 1906, Milwaukee October 1908, the 1919 elevated trackage rights, the 5 June 1926 Skokie Valley opening, the February 1941 Electroliners, the 24 July 1955 last day on the Shore Line, the 21 January 1963 abandonment, the 1920 terminal at 6th and Michigan with its 2.8 mi city line, the 1947 expiry of the Waukegan streetcar franchise, and the 1954 division mileages (Shore Line 19.4, Skokie Valley 25, Milwaukee Division 48.2, Libertyville Division 8.6).",
+   "OpenStreetMap ways tagged old_railway_operator=CNS&M (Green Bay Trail, Robert McClory Bike Path, North Shore Bike Path, Skokie Valley Bikeway, Kenosha County Bicycle Trail, Skokie Swift, and ways named 'North Shore Line' and 'Chicago, The North Shore Line, Milwaukee') \u2014 the source of nearly all the geometry.",
+   "OpenStreetMap relation 2400824, CTA Purple Line Linden\u2013Loop \u2014 used for the Evanston branch and Loop elevated legs, which the North Shore ran over on trackage rights.",
+   "OpenStreetMap Commonwealth Edison 'Waukegan \u2013 Skokie' 138 kV and 345 kV transmission-line ways \u2014 used as the alignment proxy for the unmapped Skokie Valley right of way between Dempster Street and Lake-Cook Road."
+  ],
+  "not_yet_sourced": [
+   "The documented 19.4 mi 'Chicago Division' (Shore Line Route) figure is shorter than the straight-line distance from Church Street, Evanston to North Chicago Junction, so it evidently measures a shorter portion of the route than the Shore Line feature draws. Which endpoints the 19.4 mi covers was not established.",
+   "The exact opening year of the Lake Bluff\u2013Libertyville branch within the stated 1902\u20131904 construction period.",
+   "All headway_min values are estimates; no North Shore Line public timetable was consulted for any segment.",
+   "The company's two Waukegan and North Chicago city streetcar lines, whose franchise expired in 1947 and which were replaced by buses, are NOT drawn: no route geometry for them was found in OpenStreetMap and no street-by-street description was sourced. They would be mode 'streetcar' if added.",
+   "Whether North Shore trains continued to use the Evanston branch north of Howard Street right up to 24 July 1955, or stopped earlier.",
+   "The pre-1920 Milwaukee city routing to the 2nd Street terminal, which is not drawn at all."
+  ],
+  "horsecar_audit": "None required. The company's oldest ancestor, the Bluff City Electric Street Railway of May 1895, was electric from the start; no segment in this file covers animal haulage.",
+  "freight_only_audit": "The North Shore Line carried freight, and merchandise dispatch and carload freight outlasted some passenger cutbacks, but the railroad quit entirely on 21 January 1963 and no feature here is drawn past that date. The Shore Line Route features stop at 1955, when passenger service on that route ended.",
+  "interurban_audit": "Every feature is mode 'interurban', including the Milwaukee city street line and the elevated legs in Chicago, because all of them carried the same Chicago\u2013Milwaukee interurban trains rather than local city service. The company's genuinely local Waukegan and North Chicago streetcar routes are not drawn (see not_yet_sourced)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Shore Line Route",
+    "id": "cnsm-shore-line",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 48,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=CNS&M \u2014 the Green Bay Trail, the Greenleaf Avenue street trackage in Wilmette, the Robert McClory Bike Path and the razed 'Chicago, The North Shore Line, Milwaukee' ways \u2014 from Wilmette north to North Chicago Junction, with only 0.44 km of straight-line connector. APPROXIMATED LEG: the 2.4 mi from Church Street in Evanston to Wilmette, where the North Shore's own right of way is unmapped, is drawn on the parallel CTA Purple Line (Evanston branch) alignment a few hundred metres to the west \u2014 that is not the North Shore's track. Traced 22.0 mi Church Street\u2013North Chicago Junction against a documented 19.4 mi for the 1954 'Chicago Division'; see metadata.not_yet_sourced, since 19.4 mi is less than the straight-line distance between those two points and evidently measures a shorter piece of the route.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1955,
+      "headway_min": 30,
+      "note": "Through service from downtown Waukegan to Church Street in Evanston opened in August 1899, over the electric line built by the Chicago and Milwaukee Electric Railroad; its ancestor, the Bluff City Electric Street Railway of May 1895 in Waukegan, was electric from the start and there is no animal-powered era to exclude. The Shore Line was the original route \u2014 slow, with street running in Evanston and Wilmette and many stops through the wealthy lakefront suburbs. It lost its traffic to the faster Skokie Valley Route and the parallel North Shore Line was abandoned after the last day of service on 24 July 1955. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the August 1899 Waukegan\u2013Church Street opening, the May 1895 electric Bluff City predecessor, and the 24 July 1955 final day are all from the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.683735,
+      42.047152
+     ],
+     [
+      -87.683514,
+      42.058446
+     ],
+     [
+      -87.683719,
+      42.060131
+     ],
+     [
+      -87.690781,
+      42.073287
+     ],
+     [
+      -87.699136,
+      42.075215
+     ],
+     [
+      -87.691501,
+      42.075172
+     ],
+     [
+      -87.707799,
+      42.075739
+     ],
+     [
+      -87.794345,
+      42.178966
+     ],
+     [
+      -87.807637,
+      42.199368
+     ],
+     [
+      -87.819615,
+      42.215629
+     ],
+     [
+      -87.82263,
+      42.220299
+     ],
+     [
+      -87.823671,
+      42.221274
+     ],
+     [
+      -87.825032,
+      42.22345
+     ],
+     [
+      -87.826598,
+      42.225214
+     ],
+     [
+      -87.833602,
+      42.234837
+     ],
+     [
+      -87.835167,
+      42.238285
+     ],
+     [
+      -87.846193,
+      42.275305
+     ],
+     [
+      -87.846212,
+      42.282708
+     ],
+     [
+      -87.846467,
+      42.284858
+     ],
+     [
+      -87.846247,
+      42.309142
+     ],
+     [
+      -87.845684,
+      42.312415
+     ],
+     [
+      -87.844223,
+      42.315619
+     ],
+     [
+      -87.844713,
+      42.316314
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Howard \u2013 Church Street ('L')",
+    "id": "cnsm-evanston-branch",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Real geometry, taken from the OSM relation for the CTA Purple Line (Evanston branch), which is the same physical line the North Shore used. 2.0 mi. Shared trackage: this corridor also belongs to the Chicago 'L' operator's own layer.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1955,
+      "headway_min": 30,
+      "note": "From 1919 the North Shore ran its own trains south of Church Street over the Chicago Rapid Transit Company's Evanston branch and on to the Loop, ending the change of cars at Church Street. This access lasted as long as the Shore Line Route itself, to 24 July 1955; Skokie Valley trains used Howard Street instead. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1919 trackage-rights agreement and the 1955 Shore Line abandonment are both in the layer's references, but no source was checked for the specific claim that North Shore trains left the Evanston branch in 1955 rather than earlier.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.683735,
+      42.047152
+     ],
+     [
+      -87.682031,
+      42.04276
+     ],
+     [
+      -87.677351,
+      42.022477
+     ],
+     [
+      -87.676278,
+      42.020811
+     ],
+     [
+      -87.674214,
+      42.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Howard Street \u2013 Loop ('L')",
+    "id": "cnsm-chicago-l",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 32,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Real geometry, from the OSM relation for the CTA Purple Line express (Howard\u2013Loop), which is the North Side elevated the North Shore actually used, including the Loop circuit. 10.5 mi. Shared trackage \u2014 the same structure appears in the Chicago 'L' operator's own layer under its own company.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1963,
+      "headway_min": 30,
+      "note": "Trackage rights negotiated in 1919 let North Shore trains run over the elevated from Church Street south to the Loop and on to Roosevelt Road, giving the interurban a downtown Chicago terminal. The Electroliners ran round the Loop from February 1941 until the last day. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1919 date and the Roosevelt Road destination are from the Wikipedia article; the exact Loop routing drawn here was not checked against a North Shore timetable or track map.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.674214,
+      42.02
+     ],
+     [
+      -87.666928,
+      42.013792
+     ],
+     [
+      -87.666215,
+      42.012402
+     ],
+     [
+      -87.665975,
+      42.006297
+     ],
+     [
+      -87.665418,
+      42.00472
+     ],
+     [
+      -87.663972,
+      42.002955
+     ],
+     [
+      -87.660734,
+      42.000745
+     ],
+     [
+      -87.65947,
+      41.998638
+     ],
+     [
+      -87.658411,
+      41.965923
+     ],
+     [
+      -87.657082,
+      41.961737
+     ],
+     [
+      -87.656815,
+      41.954391
+     ],
+     [
+      -87.65608,
+      41.953824
+     ],
+     [
+      -87.654109,
+      41.953775
+     ],
+     [
+      -87.653725,
+      41.953296
+     ],
+     [
+      -87.6535,
+      41.940337
+     ],
+     [
+      -87.652485,
+      41.913881
+     ],
+     [
+      -87.64955,
+      41.911617
+     ],
+     [
+      -87.647665,
+      41.911424
+     ],
+     [
+      -87.647363,
+      41.910598
+     ],
+     [
+      -87.647015,
+      41.910366
+     ],
+     [
+      -87.6381,
+      41.910402
+     ],
+     [
+      -87.637474,
+      41.910131
+     ],
+     [
+      -87.637061,
+      41.90334
+     ],
+     [
+      -87.636504,
+      41.902313
+     ],
+     [
+      -87.636739,
+      41.901283
+     ],
+     [
+      -87.636588,
+      41.897418
+     ],
+     [
+      -87.635731,
+      41.896402
+     ],
+     [
+      -87.635564,
+      41.890387
+     ],
+     [
+      -87.634067,
+      41.889496
+     ],
+     [
+      -87.633931,
+      41.885848
+     ],
+     [
+      -87.630531,
+      41.885697
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Skokie Valley Route",
+    "id": "cnsm-skokie-valley",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 64,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Mixed. About 16 mi is real traced alignment \u2014 the CTA Yellow Line ('Skokie Swift'), which still runs on the North Shore's own track, plus the Skokie Valley Bikeway and Skokie Valley Trail on the lifted right of way. APPROXIMATED: roughly 7.6 mi between Dempster Street in Skokie and Lake-Cook Road is drawn on the Commonwealth Edison 'Waukegan \u2013 Skokie' 138 kV and 345 kV transmission-line ways, which occupy the old right of way but are pylon-to-pylon straight segments rather than the railroad's curves; a further 2.1 mi is straight-line connector. Traced 25.9 mi against a documented 25 mi, a good match.",
+    "segments": [
+     {
+      "start": 1926,
+      "end": 1963,
+      "headway_min": 30,
+      "note": "Opened 5 June 1926 as a high-speed bypass of the Shore Line, running inland from Howard Street on a private right of way beside what is now the Edens Expressway and US 41 to North Chicago Junction. This was the route of the Electroliners from February 1941. CTA bought the Howard\u2013Dempster end in 1964 and reopened it as the Skokie Swift, so that portion is still carrying passengers under another operator. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "Segment-level: the 5 June 1926 opening, the 25 mi length and the 21 January 1963 abandonment are from the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.674023,
+      42.01995
+     ],
+     [
+      -87.676423,
+      42.0212
+     ],
+     [
+      -87.678929,
+      42.021801
+     ],
+     [
+      -87.688265,
+      42.021871
+     ],
+     [
+      -87.692901,
+      42.022314
+     ],
+     [
+      -87.697361,
+      42.022304
+     ],
+     [
+      -87.701634,
+      42.022705
+     ],
+     [
+      -87.71747,
+      42.022761
+     ],
+     [
+      -87.723096,
+      42.022407
+     ],
+     [
+      -87.741399,
+      42.022413
+     ],
+     [
+      -87.743167,
+      42.022744
+     ],
+     [
+      -87.744791,
+      42.023421
+     ],
+     [
+      -87.746032,
+      42.024304
+     ],
+     [
+      -87.746992,
+      42.025484
+     ],
+     [
+      -87.749681,
+      42.033471
+     ],
+     [
+      -87.752563,
+      42.040558
+     ],
+     [
+      -87.754266,
+      42.051507
+     ],
+     [
+      -87.755725,
+      42.051558
+     ],
+     [
+      -87.767916,
+      42.089979
+     ],
+     [
+      -87.769062,
+      42.095367
+     ],
+     [
+      -87.771121,
+      42.101774
+     ],
+     [
+      -87.772263,
+      42.10434
+     ],
+     [
+      -87.808442,
+      42.159593
+     ],
+     [
+      -87.81268,
+      42.166321
+     ],
+     [
+      -87.815272,
+      42.171226
+     ],
+     [
+      -87.819255,
+      42.177358
+     ],
+     [
+      -87.822688,
+      42.181708
+     ],
+     [
+      -87.826987,
+      42.188594
+     ],
+     [
+      -87.827687,
+      42.189276
+     ],
+     [
+      -87.834421,
+      42.200128
+     ],
+     [
+      -87.836833,
+      42.20345
+     ],
+     [
+      -87.859197,
+      42.237844
+     ],
+     [
+      -87.8612,
+      42.24186
+     ],
+     [
+      -87.861707,
+      42.245215
+     ],
+     [
+      -87.861573,
+      42.256288
+     ],
+     [
+      -87.861813,
+      42.26159
+     ],
+     [
+      -87.862009,
+      42.263031
+     ],
+     [
+      -87.86507,
+      42.272919
+     ],
+     [
+      -87.864985,
+      42.275067
+     ],
+     [
+      -87.864347,
+      42.276706
+     ],
+     [
+      -87.863515,
+      42.277722
+     ],
+     [
+      -87.86167,
+      42.278711
+     ],
+     [
+      -87.85976,
+      42.279219
+     ],
+     [
+      -87.847556,
+      42.280957
+     ],
+     [
+      -87.84725,
+      42.282295
+     ],
+     [
+      -87.847012,
+      42.305558
+     ],
+     [
+      -87.844713,
+      42.316314
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: North Chicago \u2013 Kenosha",
+    "id": "cnsm-milwaukee-div-kenosha",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 64,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from CNS&M-tagged OSM ways (Robert McClory Bike Path, Kenosha County Bicycle Trail, 30th Avenue) with about 1.5 mi of straight-line connector. Traced 18.9 mi; the Milwaukee Division as a whole is documented at 48.2 mi and this is its southern third.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1963,
+      "headway_min": 60,
+      "note": "The line reached Zion in the summer of 1905 and Kenosha in December 1905. Headway is an estimate; hourly limiteds plus locals is the usual description, but no timetable was consulted. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "Segment-level: summer 1905 to Zion and December 1905 to Kenosha are from the Wikipedia article, as is the 21 January 1963 abandonment.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.844713,
+      42.316314
+     ],
+     [
+      -87.844739,
+      42.317209
+     ],
+     [
+      -87.846129,
+      42.31792
+     ],
+     [
+      -87.846521,
+      42.318511
+     ],
+     [
+      -87.846701,
+      42.32696
+     ],
+     [
+      -87.845379,
+      42.410021
+     ],
+     [
+      -87.845748,
+      42.417693
+     ],
+     [
+      -87.844376,
+      42.554829
+     ],
+     [
+      -87.851417,
+      42.574653
+     ],
+     [
+      -87.844695,
+      42.578104
+     ],
+     [
+      -87.842488,
+      42.579824
+     ],
+     [
+      -87.835705,
+      42.58332
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Kenosha \u2013 Racine",
+    "id": "cnsm-milwaukee-div-racine",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 64,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "The weakest leg on the Milwaukee Division. The right of way between Kenosha and Racine is largely unmapped as railway in OSM; drawn mostly on Racine County's 'North Shore Trail' cycleway, which occupies the old grade, with about 2.5 mi of straight-line connector where even the trail is missing. Traced 11.1 mi.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1963,
+      "headway_min": 60,
+      "note": "Extended from Kenosha to Racine in September 1906. Headway is an estimate. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "Segment-level: September 1906 Racine extension from the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.835705,
+      42.58332
+     ],
+     [
+      -87.833015,
+      42.584179
+     ],
+     [
+      -87.827151,
+      42.584953
+     ],
+     [
+      -87.826478,
+      42.585293
+     ],
+     [
+      -87.826225,
+      42.585721
+     ],
+     [
+      -87.825798,
+      42.599001
+     ],
+     [
+      -87.842166,
+      42.60617
+     ],
+     [
+      -87.842186,
+      42.613541
+     ],
+     [
+      -87.840929,
+      42.619284
+     ],
+     [
+      -87.837282,
+      42.628786
+     ],
+     [
+      -87.837356,
+      42.629132
+     ],
+     [
+      -87.833675,
+      42.637809
+     ],
+     [
+      -87.817049,
+      42.68149
+     ],
+     [
+      -87.81633,
+      42.685252
+     ],
+     [
+      -87.816255,
+      42.69701
+     ],
+     [
+      -87.816324,
+      42.698327
+     ],
+     [
+      -87.816659,
+      42.698521
+     ],
+     [
+      -87.816405,
+      42.699008
+     ],
+     [
+      -87.816249,
+      42.704109
+     ],
+     [
+      -87.816307,
+      42.712302
+     ],
+     [
+      -87.813696,
+      42.71703
+     ],
+     [
+      -87.814692,
+      42.717773
+     ],
+     [
+      -87.814831,
+      42.718325
+     ],
+     [
+      -87.814604,
+      42.7186
+     ],
+     [
+      -87.818649,
+      42.728162
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Racine \u2013 Milwaukee",
+    "id": "cnsm-milwaukee-div-north",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 68,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=CNS&M and named 'North Shore Line', which cover this leg well; about 1.5 mi of straight-line connector. Traced 19.3 mi, ending where the private right of way met the city street trackage on the south side of Milwaukee \u2014 the 6th Street city line is drawn as a separate feature.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1963,
+      "headway_min": 60,
+      "note": "Through service between Evanston and Milwaukee began in October 1908, completing the interurban. From February 1941 the Electroliners covered Chicago\u2013Milwaukee over this route. Headway is an estimate. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "Segment-level: October 1908 through service Evanston\u2013Milwaukee and the February 1941 Electroliner debut are from the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.818649,
+      42.728162
+     ],
+     [
+      -87.833405,
+      42.757154
+     ],
+     [
+      -87.916162,
+      42.926914
+     ],
+     [
+      -87.917959,
+      42.931101
+     ],
+     [
+      -87.918603,
+      42.933591
+     ],
+     [
+      -87.91896,
+      42.937386
+     ],
+     [
+      -87.918662,
+      42.984942
+     ],
+     [
+      -87.91856,
+      42.99226
+     ],
+     [
+      -87.918284,
+      42.994378
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Milwaukee City Line (6th Street)",
+    "id": "cnsm-milwaukee-city-line",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 24,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT LINE, 2.8 mi. The double-track street trackage up South 6th Street to the terminal at 6th and Michigan is not in OSM; drawn as a single straight segment between the end of the traced private right of way and the terminal site. 6th Street runs almost due north here, so the straight line stays within a block of the real route for its whole length, but it is an approximation. The 2.8 mi drawn matches the documented post-1920 city mileage.",
+    "segments": [
+     {
+      "start": 1920,
+      "end": 1963,
+      "headway_min": 60,
+      "note": "A dedicated passenger terminal was built near 6th and Michigan Streets in 1920, cutting the Milwaukee city street operation to 2.8 miles. Before 1920 trains ran a longer 3.46-mile city line, operated by the Chicago and Milwaukee Electric Railway subsidiary, to a terminal on 2nd Street; that earlier alignment is not drawn, so the years here start at 1920. Trolley wire, not third rail, and entirely in city streets. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "Segment-level: the 1920 terminal at 6th and Michigan, the 2.8 mi and 3.46 mi city-line figures and the earlier 2nd Street terminal are from the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.918284,
+      42.994378
+     ],
+     [
+      -87.9195,
+      43.0345
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Lake Bluff \u2013 Libertyville",
+    "id": "cnsm-mundelein-lake-bluff",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 48,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from CNS&M-tagged OSM ways (North Shore Bike Path, Libertyville Branch) with about 0.5 mi of straight-line connector. Traced 5.5 mi; the Libertyville Division as a whole is documented at 8.6 mi.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1963,
+      "headway_min": 60,
+      "note": "Built between 1902 and 1904 west from Lake Bluff to Libertyville. The exact opening year is not pinned down by the source consulted, so 1904 is the conservative end of the construction period. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the Wikipedia article gives 1902\u20131904 as the construction period without an opening date, so the 1904 start year is inferred, not sourced.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.846496,
+      42.278964
+     ],
+     [
+      -87.846944,
+      42.279306
+     ],
+     [
+      -87.847973,
+      42.279195
+     ],
+     [
+      -87.849557,
+      42.279407
+     ],
+     [
+      -87.866395,
+      42.279368
+     ],
+     [
+      -87.909773,
+      42.279996
+     ],
+     [
+      -87.924723,
+      42.279884
+     ],
+     [
+      -87.952944,
+      42.282308
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago North Shore and Milwaukee Railroad",
+    "line": "Chicago North Shore and Milwaukee: Mundelein Branch",
+    "id": "cnsm-mundelein-branch",
+    "color": "#1E8449",
+    "mode": "interurban",
+    "avg_speed_kmh": 48,
+    "speed_source": "Estimate. The North Shore Line was fast for an interurban \u2014 the 1941 Electroliners covered Chicago\u2013Milwaukee in about 105 minutes for roughly 88 route miles \u2014 but the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from CNS&M-tagged OSM ways (North Shore Bike Path) with about 0.3 mi of straight-line connector. Traced 2.1 mi.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1963,
+      "headway_min": 60,
+      "note": "Extended west from Libertyville to Mundelein \u2014 then called Rockefeller \u2014 in 1905. The branch ran to the very end of the railroad, worked by shuttle cars from Lake Bluff. Headway is an estimate. The whole railroad was abandoned on 21 January 1963, one of the last true interurbans in the United States.",
+      "sources": [
+       "Segment-level: the 1905 Mundelein/Rockefeller extension and the 21 January 1963 abandonment are from the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Chicago_North_Shore_and_Milwaukee_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.952944,
+      42.282308
+     ],
+     [
+      -87.959489,
+      42.282465
+     ],
+     [
+      -87.965344,
+      42.281957
+     ],
+     [
+      -87.970904,
+      42.280922
+     ],
+     [
+      -87.97362,
+      42.280171
+     ],
+     [
+      -87.973824,
+      42.280651
+     ],
+     [
+      -87.974263,
+      42.27996
+     ],
+     [
+      -87.97923,
+      42.278122
+     ],
+     [
+      -87.990252,
+      42.272442
+     ]
+    ]
+   }
+  }
+ ]
+}

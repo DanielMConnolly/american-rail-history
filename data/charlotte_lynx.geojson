@@ -1,0 +1,412 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Rail transit in Charlotte, North Carolina. The LYNX Blue Line opened on 24 November 2007 from uptown south to I-485, the first light rail in the Carolinas, and was extended north-east through NoDa to UNC Charlotte on 16 March 2018. The CityLYNX Gold Line, a genuine street-running streetcar rather than light rail, opened along Elizabeth Avenue and Trade Street on 14 July 2015 and was extended in 2021. Both carry one Charlotte Area Transit System colour under Rule 4 despite the Blue and Gold branding.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Lynx_Blue_Line (2007 opening, 2018 Blue Line Extension, 18.9 mi route)",
+   "https://en.wikipedia.org/wiki/CityLynx_Gold_Line (2015 opening, 2021 extension)",
+   "OpenStreetMap route relations, extracted 29 August 2026; traced length is compared with the documented route length on each feature."
+  ],
+  "not_yet_sourced": "Headways and speeds are estimates. The Blue Line is drawn at its full post-2018 extent for the whole period since 2007 — the pre-extension southern-only line is not drawn separately, so the 2007–2018 years show more track than existed. The Gold Line's 2015 phase-1 extent is likewise not separated from the 2021 extension."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Charlotte Area Transit System",
+    "line": "CATS: LYNX Blue Line",
+    "id": "lynx-blue-line",
+    "color": "#6B4C9A",
+    "mode": "light_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no timetable consulted",
+    "geometry_quality": "Traced 18.75 mi from the OSM route relation against 18.9 mi documented. NOTE: this is the post-2018 extent; the 2007–2018 line ran only from uptown south to I-485 and is not drawn separately.",
+    "segments": [
+     {
+      "start": 2007,
+      "end": 2018,
+      "headway_min": 15,
+      "note": "Opened 24 November 2007, uptown Charlotte to I-485/South Boulevard — the first light rail in the Carolinas. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Lynx_Blue_Line"
+      ]
+     },
+     {
+      "start": 2018,
+      "end": 2026,
+      "headway_min": 10,
+      "note": "The Blue Line Extension opened 16 March 2018, running north-east through NoDa to UNC Charlotte. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/Lynx_Blue_Line"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.734286,
+      35.312193
+     ],
+     [
+      -80.733176,
+      35.312159
+     ],
+     [
+      -80.735962,
+      35.312404
+     ],
+     [
+      -80.736474,
+      35.312711
+     ],
+     [
+      -80.737752,
+      35.314332
+     ],
+     [
+      -80.738326,
+      35.314754
+     ],
+     [
+      -80.739512,
+      35.315056
+     ],
+     [
+      -80.7406,
+      35.314889
+     ],
+     [
+      -80.741335,
+      35.314459
+     ],
+     [
+      -80.744771,
+      35.311211
+     ],
+     [
+      -80.749019,
+      35.306873
+     ],
+     [
+      -80.753809,
+      35.299692
+     ],
+     [
+      -80.755929,
+      35.292888
+     ],
+     [
+      -80.756847,
+      35.29095
+     ],
+     [
+      -80.758292,
+      35.289191
+     ],
+     [
+      -80.763077,
+      35.284727
+     ],
+     [
+      -80.765094,
+      35.281813
+     ],
+     [
+      -80.766039,
+      35.279282
+     ],
+     [
+      -80.76843,
+      35.267571
+     ],
+     [
+      -80.769751,
+      35.265151
+     ],
+     [
+      -80.772296,
+      35.262495
+     ],
+     [
+      -80.772953,
+      35.259102
+     ],
+     [
+      -80.773337,
+      35.258555
+     ],
+     [
+      -80.77609,
+      35.256356
+     ],
+     [
+      -80.778028,
+      35.255073
+     ],
+     [
+      -80.779625,
+      35.254234
+     ],
+     [
+      -80.782525,
+      35.25314
+     ],
+     [
+      -80.78514,
+      35.252533
+     ],
+     [
+      -80.796676,
+      35.250883
+     ],
+     [
+      -80.798752,
+      35.250241
+     ],
+     [
+      -80.805291,
+      35.249376
+     ],
+     [
+      -80.808461,
+      35.248553
+     ],
+     [
+      -80.810698,
+      35.247556
+     ],
+     [
+      -80.811321,
+      35.246973
+     ],
+     [
+      -80.812346,
+      35.245311
+     ],
+     [
+      -80.823958,
+      35.236429
+     ],
+     [
+      -80.824641,
+      35.23608
+     ],
+     [
+      -80.826958,
+      35.235435
+     ],
+     [
+      -80.82788,
+      35.234959
+     ],
+     [
+      -80.841734,
+      35.224672
+     ],
+     [
+      -80.844053,
+      35.223081
+     ],
+     [
+      -80.848016,
+      35.220835
+     ],
+     [
+      -80.856843,
+      35.214591
+     ],
+     [
+      -80.857855,
+      35.213576
+     ],
+     [
+      -80.871771,
+      35.196451
+     ],
+     [
+      -80.877932,
+      35.185639
+     ],
+     [
+      -80.878625,
+      35.183746
+     ],
+     [
+      -80.879479,
+      35.179345
+     ],
+     [
+      -80.879419,
+      35.177012
+     ],
+     [
+      -80.87792,
+      35.170489
+     ],
+     [
+      -80.87754,
+      35.16503
+     ],
+     [
+      -80.877666,
+      35.160123
+     ],
+     [
+      -80.877162,
+      35.158309
+     ],
+     [
+      -80.876981,
+      35.156572
+     ],
+     [
+      -80.877155,
+      35.154803
+     ],
+     [
+      -80.878554,
+      35.147881
+     ],
+     [
+      -80.878623,
+      35.146453
+     ],
+     [
+      -80.875901,
+      35.13323
+     ],
+     [
+      -80.875811,
+      35.131847
+     ],
+     [
+      -80.876226,
+      35.130182
+     ],
+     [
+      -80.882598,
+      35.118618
+     ],
+     [
+      -80.883624,
+      35.1162
+     ],
+     [
+      -80.883885,
+      35.112365
+     ],
+     [
+      -80.882857,
+      35.106561
+     ],
+     [
+      -80.882934,
+      35.10745
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Charlotte Area Transit System",
+    "line": "CATS: CityLYNX Gold Line",
+    "id": "citylynx-gold-line",
+    "color": "#6B4C9A",
+    "mode": "streetcar",
+    "avg_speed_kmh": 18,
+    "speed_source": "estimated: a street-running streetcar in mixed traffic; no timetable consulted",
+    "geometry_quality": "Traced 3.78 mi from the OSM route relation against 4.0 mi documented. Street-running, so the drawn line follows the roadway centreline.",
+    "segments": [
+     {
+      "start": 2015,
+      "end": 2026,
+      "headway_min": 20,
+      "note": "A street-running streetcar, not light rail: phase 1 opened 14 July 2015 on Elizabeth Avenue and Trade Street, extended in 2021. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/CityLynx_Gold_Line"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.856867,
+      35.246117
+     ],
+     [
+      -80.856996,
+      35.245452
+     ],
+     [
+      -80.857802,
+      35.244365
+     ],
+     [
+      -80.858649,
+      35.242164
+     ],
+     [
+      -80.858444,
+      35.239627
+     ],
+     [
+      -80.858878,
+      35.23774
+     ],
+     [
+      -80.858469,
+      35.236835
+     ],
+     [
+      -80.857401,
+      35.236293
+     ],
+     [
+      -80.853633,
+      35.235473
+     ],
+     [
+      -80.851653,
+      35.234313
+     ],
+     [
+      -80.848488,
+      35.23192
+     ],
+     [
+      -80.835103,
+      35.220393
+     ],
+     [
+      -80.832133,
+      35.218228
+     ],
+     [
+      -80.825773,
+      35.213069
+     ],
+     [
+      -80.825367,
+      35.213088
+     ],
+     [
+      -80.819627,
+      35.217869
+     ],
+     [
+      -80.818853,
+      35.219515
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,447 @@
+{
+ "id": "amtrak-36923-2026",
+ "route_id": "36923",
+ "line_ids": [
+  "amtrak-36923",
+  "amtrak-36930"
+ ],
+ "company": "Amtrak",
+ "service": "Crescent",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "20",
+   "name": "Crescent",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Fri-Sat",
+   "stops": [
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 1,
+     "depart": "10:10"
+    },
+    {
+     "station": "slidell-amtrak-station",
+     "seq": 2,
+     "arrive": "11:00",
+     "depart": "11:02"
+    },
+    {
+     "station": "picayune-amtrak-station",
+     "seq": 3,
+     "arrive": "11:25",
+     "depart": "11:27"
+    },
+    {
+     "station": "hattiesburg-amtrak-station",
+     "seq": 4,
+     "arrive": "12:31",
+     "depart": "12:35"
+    },
+    {
+     "station": "laurel-amtrak-station",
+     "seq": 5,
+     "arrive": "13:08",
+     "depart": "13:10"
+    },
+    {
+     "station": "meridian-union-station",
+     "seq": 6,
+     "arrive": "14:27",
+     "depart": "14:32"
+    },
+    {
+     "station": "tuscaloosa-amtrak-station",
+     "seq": 7,
+     "arrive": "16:06",
+     "depart": "16:09"
+    },
+    {
+     "station": "birmingham",
+     "seq": 8,
+     "arrive": "18:15",
+     "depart": "18:24"
+    },
+    {
+     "station": "anniston-amtrak-station",
+     "seq": 9,
+     "arrive": "19:57",
+     "depart": "19:59"
+    },
+    {
+     "station": "atlanta",
+     "seq": 10,
+     "arrive": "23:00",
+     "depart": "23:29"
+    },
+    {
+     "station": "gainesville-amtrak-station-gns",
+     "seq": 11,
+     "arrive": "24:21",
+     "depart": "24:24"
+    },
+    {
+     "station": "toccoa-amtrak-station",
+     "seq": 12,
+     "arrive": "25:03",
+     "depart": "25:05"
+    },
+    {
+     "station": "clemson-amtrak-station",
+     "seq": 13,
+     "arrive": "25:40",
+     "depart": "25:41"
+    },
+    {
+     "station": "greenville-amtrak-station",
+     "seq": 14,
+     "arrive": "26:18",
+     "depart": "26:23"
+    },
+    {
+     "station": "spartanburg-amtrak-station",
+     "seq": 15,
+     "arrive": "27:01",
+     "depart": "27:04"
+    },
+    {
+     "station": "gastonia-amtrak-station",
+     "seq": 16,
+     "arrive": "28:04",
+     "depart": "28:04"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 17,
+     "arrive": "29:06",
+     "depart": "29:31"
+    },
+    {
+     "station": "salisbury",
+     "seq": 18,
+     "arrive": "30:15",
+     "depart": "30:17"
+    },
+    {
+     "station": "high-point",
+     "seq": 19,
+     "arrive": "31:01",
+     "depart": "31:01"
+    },
+    {
+     "station": "greensboro",
+     "seq": 20,
+     "arrive": "31:22",
+     "depart": "31:29"
+    },
+    {
+     "station": "danville-amtrak-station",
+     "seq": 21,
+     "arrive": "32:26",
+     "depart": "32:28"
+    },
+    {
+     "station": "lynchburg",
+     "seq": 22,
+     "arrive": "33:37",
+     "depart": "33:41"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 23,
+     "arrive": "34:54",
+     "depart": "34:59"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 24,
+     "arrive": "35:50",
+     "depart": "35:51"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 25,
+     "arrive": "36:23",
+     "depart": "36:25"
+    },
+    {
+     "station": "alexandria",
+     "seq": 26,
+     "arrive": "37:19",
+     "depart": "37:19"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 27,
+     "arrive": "37:47",
+     "depart": "38:12"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 28,
+     "arrive": "38:37",
+     "depart": "38:39"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 29,
+     "arrive": "38:53",
+     "depart": "38:56"
+    },
+    {
+     "station": "wilmington",
+     "seq": 30,
+     "arrive": "39:44",
+     "depart": "39:47"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 31,
+     "arrive": "40:14",
+     "depart": "40:20"
+    },
+    {
+     "station": "trenton",
+     "seq": 32,
+     "arrive": "40:48",
+     "depart": "40:50"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 33,
+     "arrive": "41:14",
+     "depart": "41:16"
+    },
+    {
+     "station": "newark",
+     "seq": 34,
+     "arrive": "41:29",
+     "depart": "41:32"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 35,
+     "arrive": "41:54"
+    }
+   ]
+  },
+  {
+   "number": "19",
+   "name": "Crescent",
+   "headsign": "New Orleans",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "14:00"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "14:15",
+     "depart": "14:20"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "14:57",
+     "depart": "15:01"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "15:31",
+     "depart": "15:38"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "15:59",
+     "depart": "16:02"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 6,
+     "arrive": "16:53",
+     "depart": "17:00"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 7,
+     "arrive": "17:13",
+     "depart": "17:15"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 8,
+     "arrive": "17:48",
+     "depart": "18:30"
+    },
+    {
+     "station": "alexandria",
+     "seq": 9,
+     "arrive": "18:46",
+     "depart": "18:49"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 10,
+     "arrive": "19:20",
+     "depart": "19:22"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 11,
+     "arrive": "19:54",
+     "depart": "19:55"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 12,
+     "arrive": "20:47",
+     "depart": "20:52"
+    },
+    {
+     "station": "lynchburg",
+     "seq": 13,
+     "arrive": "22:00",
+     "depart": "22:16"
+    },
+    {
+     "station": "danville-amtrak-station",
+     "seq": 14,
+     "arrive": "23:22",
+     "depart": "23:24"
+    },
+    {
+     "station": "greensboro",
+     "seq": 15,
+     "arrive": "24:25",
+     "depart": "24:32"
+    },
+    {
+     "station": "high-point",
+     "seq": 16,
+     "arrive": "24:49",
+     "depart": "24:49"
+    },
+    {
+     "station": "salisbury",
+     "seq": 17,
+     "arrive": "25:25",
+     "depart": "25:27"
+    },
+    {
+     "station": "charlotte-amtrak-station",
+     "seq": 18,
+     "arrive": "26:30",
+     "depart": "26:55"
+    },
+    {
+     "station": "gastonia-amtrak-station",
+     "seq": 19,
+     "arrive": "27:22",
+     "depart": "27:22"
+    },
+    {
+     "station": "spartanburg-amtrak-station",
+     "seq": 20,
+     "arrive": "28:21",
+     "depart": "28:24"
+    },
+    {
+     "station": "greenville-amtrak-station",
+     "seq": 21,
+     "arrive": "29:24",
+     "depart": "29:31"
+    },
+    {
+     "station": "clemson-amtrak-station",
+     "seq": 22,
+     "arrive": "30:07",
+     "depart": "30:09"
+    },
+    {
+     "station": "toccoa-amtrak-station",
+     "seq": 23,
+     "arrive": "30:45",
+     "depart": "30:45"
+    },
+    {
+     "station": "gainesville-amtrak-station-gns",
+     "seq": 24,
+     "arrive": "31:25",
+     "depart": "31:28"
+    },
+    {
+     "station": "atlanta",
+     "seq": 25,
+     "arrive": "32:43",
+     "depart": "33:08"
+    },
+    {
+     "station": "anniston-amtrak-station",
+     "seq": 26,
+     "arrive": "35:28",
+     "depart": "35:30"
+    },
+    {
+     "station": "birmingham",
+     "seq": 27,
+     "arrive": "37:45",
+     "depart": "38:03"
+    },
+    {
+     "station": "tuscaloosa-amtrak-station",
+     "seq": 28,
+     "arrive": "38:58",
+     "depart": "39:02"
+    },
+    {
+     "station": "meridian-union-station",
+     "seq": 29,
+     "arrive": "41:13",
+     "depart": "41:19"
+    },
+    {
+     "station": "laurel-amtrak-station",
+     "seq": 30,
+     "arrive": "42:14",
+     "depart": "42:16"
+    },
+    {
+     "station": "hattiesburg-amtrak-station",
+     "seq": 31,
+     "arrive": "42:49",
+     "depart": "42:53"
+    },
+    {
+     "station": "picayune-amtrak-station",
+     "seq": 32,
+     "arrive": "43:55",
+     "depart": "43:57"
+    },
+    {
+     "station": "slidell-amtrak-station",
+     "seq": 33,
+     "arrive": "44:19",
+     "depart": "44:22"
+    },
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 34,
+     "arrive": "46:12"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+ "id": "amtrak-90-2026",
+ "route_id": "90",
+ "line_ids": [
+  "amtrak-90"
+ ],
+ "company": "Amtrak",
+ "service": "Vermonter",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "56",
+   "name": "Vermonter",
+   "headsign": "St Albans",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "08:08"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "08:17",
+     "depart": "08:18"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "08:31",
+     "depart": "08:33"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "08:46",
+     "depart": "08:48"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "09:30",
+     "depart": "09:32"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "09:58",
+     "depart": "10:01"
+    },
+    {
+     "station": "trenton",
+     "seq": 7,
+     "arrive": "10:26",
+     "depart": "10:28"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "11:01",
+     "depart": "11:03"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "11:21",
+     "depart": "11:33"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 10,
+     "arrive": "12:16",
+     "depart": "12:18"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 11,
+     "arrive": "12:45",
+     "depart": "12:46"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 12,
+     "arrive": "13:11",
+     "depart": "13:36"
+    },
+    {
+     "station": "meriden",
+     "seq": 13,
+     "arrive": "13:56",
+     "depart": "13:56"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 14,
+     "arrive": "14:14",
+     "depart": "14:17"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 15,
+     "arrive": "14:28",
+     "depart": "14:28"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 16,
+     "arrive": "15:01",
+     "depart": "15:15"
+    },
+    {
+     "station": "holyoke-amtrak",
+     "seq": 17,
+     "arrive": "15:41",
+     "depart": "15:41"
+    },
+    {
+     "station": "northampton",
+     "seq": 18,
+     "arrive": "15:57",
+     "depart": "15:57"
+    },
+    {
+     "station": "greenfield-amtrak-station",
+     "seq": 19,
+     "arrive": "16:22",
+     "depart": "16:22"
+    },
+    {
+     "station": "brattleboro-amtrak-station",
+     "seq": 20,
+     "arrive": "16:56",
+     "depart": "16:56"
+    },
+    {
+     "station": "bellows-falls-amtrak-station",
+     "seq": 21,
+     "arrive": "17:26",
+     "depart": "17:26"
+    },
+    {
+     "station": "claremont-amtrak",
+     "seq": 22,
+     "arrive": "17:47",
+     "depart": "17:47"
+    },
+    {
+     "station": "windsor-mt-ascutney-amtrak",
+     "seq": 23,
+     "arrive": "17:56",
+     "depart": "17:56"
+    },
+    {
+     "station": "white-river-junction-amtrak-station",
+     "seq": 24,
+     "arrive": "18:15",
+     "depart": "18:18"
+    },
+    {
+     "station": "randolph-amtrak",
+     "seq": 25,
+     "arrive": "18:56",
+     "depart": "18:56"
+    },
+    {
+     "station": "montpelier-berlin-amtrak-station",
+     "seq": 26,
+     "arrive": "19:34",
+     "depart": "19:34"
+    },
+    {
+     "station": "waterbury-stowe-amtrak-station",
+     "seq": 27,
+     "arrive": "19:50",
+     "depart": "19:50"
+    },
+    {
+     "station": "essex-junction-burlington-amtrak-station",
+     "seq": 28,
+     "arrive": "20:18",
+     "depart": "20:18"
+    },
+    {
+     "station": "st-albans-amtrak-station",
+     "seq": 29,
+     "arrive": "20:50"
+    }
+   ]
+  },
+  {
+   "number": "55",
+   "name": "Vermonter",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "st-albans-amtrak-station",
+     "seq": 1,
+     "depart": "09:15"
+    },
+    {
+     "station": "essex-junction-burlington-amtrak-station",
+     "seq": 2,
+     "arrive": "09:44",
+     "depart": "09:44"
+    },
+    {
+     "station": "waterbury-stowe-amtrak-station",
+     "seq": 3,
+     "arrive": "10:10",
+     "depart": "10:10"
+    },
+    {
+     "station": "montpelier-berlin-amtrak-station",
+     "seq": 4,
+     "arrive": "10:25",
+     "depart": "10:25"
+    },
+    {
+     "station": "randolph-amtrak",
+     "seq": 5,
+     "arrive": "10:59",
+     "depart": "10:59"
+    },
+    {
+     "station": "white-river-junction-amtrak-station",
+     "seq": 6,
+     "arrive": "11:37",
+     "depart": "11:37"
+    },
+    {
+     "station": "windsor-mt-ascutney-amtrak",
+     "seq": 7,
+     "arrive": "11:56",
+     "depart": "11:56"
+    },
+    {
+     "station": "claremont-amtrak",
+     "seq": 8,
+     "arrive": "12:06",
+     "depart": "12:06"
+    },
+    {
+     "station": "bellows-falls-amtrak-station",
+     "seq": 9,
+     "arrive": "12:30",
+     "depart": "12:30"
+    },
+    {
+     "station": "brattleboro-amtrak-station",
+     "seq": 10,
+     "arrive": "12:59",
+     "depart": "13:02"
+    },
+    {
+     "station": "greenfield-amtrak-station",
+     "seq": 11,
+     "arrive": "13:36",
+     "depart": "13:36"
+    },
+    {
+     "station": "northampton",
+     "seq": 12,
+     "arrive": "14:01",
+     "depart": "14:01"
+    },
+    {
+     "station": "holyoke-amtrak",
+     "seq": 13,
+     "arrive": "14:16",
+     "depart": "14:16"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 14,
+     "arrive": "14:35",
+     "depart": "14:45"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 15,
+     "arrive": "15:07",
+     "depart": "15:07"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 16,
+     "arrive": "15:20",
+     "depart": "15:22"
+    },
+    {
+     "station": "meriden",
+     "seq": 17,
+     "arrive": "15:44",
+     "depart": "15:44"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 18,
+     "arrive": "16:08",
+     "depart": "16:31"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 19,
+     "arrive": "16:52",
+     "depart": "16:53"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 20,
+     "arrive": "17:19",
+     "depart": "17:20"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 21,
+     "arrive": "18:11",
+     "depart": "18:45"
+    },
+    {
+     "station": "newark",
+     "seq": 22,
+     "arrive": "19:02",
+     "depart": "19:03"
+    },
+    {
+     "station": "trenton",
+     "seq": 23,
+     "arrive": "19:36",
+     "depart": "19:38"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 24,
+     "arrive": "20:07",
+     "depart": "20:11"
+    },
+    {
+     "station": "wilmington",
+     "seq": 25,
+     "arrive": "20:30",
+     "depart": "20:32"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 26,
+     "arrive": "21:21",
+     "depart": "21:25"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 27,
+     "arrive": "21:37",
+     "depart": "21:39"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 28,
+     "arrive": "21:53",
+     "depart": "21:54"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 29,
+     "arrive": "22:07"
+    }
+   ]
+  }
+ ]
+}

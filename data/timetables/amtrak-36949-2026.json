@@ -1,0 +1,212 @@
+{
+ "id": "amtrak-36949-2026",
+ "route_id": "36949",
+ "line_ids": [
+  "amtrak-36949"
+ ],
+ "company": "Amtrak",
+ "service": "Ethan Allen Express",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "290",
+   "name": "Ethan Allen Express",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "burlington",
+     "seq": 1,
+     "depart": "09:25"
+    },
+    {
+     "station": "ferrisburgh",
+     "seq": 2,
+     "arrive": "09:54",
+     "depart": "09:54"
+    },
+    {
+     "station": "middlebury",
+     "seq": 3,
+     "arrive": "10:11",
+     "depart": "10:11"
+    },
+    {
+     "station": "rutland",
+     "seq": 4,
+     "arrive": "10:56",
+     "depart": "11:06"
+    },
+    {
+     "station": "castleton-amtrak-station",
+     "seq": 5,
+     "arrive": "11:23",
+     "depart": "11:24"
+    },
+    {
+     "station": "fort-edward-amtrak",
+     "seq": 6,
+     "arrive": "12:11",
+     "depart": "12:13"
+    },
+    {
+     "station": "saratoga-springs-amtrak-station",
+     "seq": 7,
+     "arrive": "12:33",
+     "depart": "12:35"
+    },
+    {
+     "station": "schenectady",
+     "seq": 8,
+     "arrive": "13:09",
+     "depart": "13:11"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 9,
+     "arrive": "13:34",
+     "depart": "13:49"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 10,
+     "arrive": "14:09",
+     "depart": "14:11"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 11,
+     "arrive": "14:31",
+     "depart": "14:33"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 12,
+     "arrive": "14:45",
+     "depart": "14:46"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 13,
+     "arrive": "15:26",
+     "depart": "15:27"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 14,
+     "arrive": "15:47",
+     "depart": "15:48"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 15,
+     "arrive": "16:27"
+    }
+   ]
+  },
+  {
+   "number": "291",
+   "name": "Ethan Allen Express",
+   "headsign": "Burlington",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "14:19"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "14:42",
+     "depart": "14:43"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "15:00",
+     "depart": "15:02"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "15:42",
+     "depart": "15:44"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "15:58",
+     "depart": "16:00"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "16:19",
+     "depart": "16:21"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "16:49",
+     "depart": "17:04"
+    },
+    {
+     "station": "schenectady",
+     "seq": 8,
+     "arrive": "17:28",
+     "depart": "17:28"
+    },
+    {
+     "station": "saratoga-springs-amtrak-station",
+     "seq": 9,
+     "arrive": "17:54",
+     "depart": "17:56"
+    },
+    {
+     "station": "fort-edward-amtrak",
+     "seq": 10,
+     "arrive": "18:16",
+     "depart": "18:17"
+    },
+    {
+     "station": "castleton-amtrak-station",
+     "seq": 11,
+     "arrive": "19:07",
+     "depart": "19:08"
+    },
+    {
+     "station": "rutland",
+     "seq": 12,
+     "arrive": "19:35",
+     "depart": "19:45"
+    },
+    {
+     "station": "middlebury",
+     "seq": 13,
+     "arrive": "20:26",
+     "depart": "20:26"
+    },
+    {
+     "station": "ferrisburgh",
+     "seq": 14,
+     "arrive": "20:45",
+     "depart": "20:45"
+    },
+    {
+     "station": "burlington",
+     "seq": 15,
+     "arrive": "21:26"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,248 @@
+{
+ "id": "amtrak-95-2026",
+ "route_id": "95",
+ "line_ids": [
+  "amtrak-95"
+ ],
+ "company": "Amtrak",
+ "service": "Adirondack",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "69",
+   "name": "Adirondack",
+   "headsign": "Montreal",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "08:15"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 2,
+     "arrive": "08:43",
+     "depart": "08:44"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 3,
+     "arrive": "09:02",
+     "depart": "09:03"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 4,
+     "arrive": "09:44",
+     "depart": "09:45"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 5,
+     "arrive": "10:00",
+     "depart": "10:02"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 6,
+     "arrive": "10:33",
+     "depart": "10:34"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 7,
+     "arrive": "11:02",
+     "depart": "11:45"
+    },
+    {
+     "station": "schenectady",
+     "seq": 8,
+     "arrive": "12:06",
+     "depart": "12:08"
+    },
+    {
+     "station": "saratoga-springs-amtrak-station",
+     "seq": 9,
+     "arrive": "12:33",
+     "depart": "12:35"
+    },
+    {
+     "station": "fort-edward-amtrak",
+     "seq": 10,
+     "arrive": "12:55",
+     "depart": "12:56"
+    },
+    {
+     "station": "whitehall-amtrak",
+     "seq": 11,
+     "arrive": "13:18",
+     "depart": "13:19"
+    },
+    {
+     "station": "ticonderoga-amtrak",
+     "seq": 12,
+     "arrive": "13:51",
+     "depart": "13:52"
+    },
+    {
+     "station": "port-henry-amtrak-station",
+     "seq": 13,
+     "arrive": "14:13",
+     "depart": "14:14"
+    },
+    {
+     "station": "westport",
+     "seq": 14,
+     "arrive": "14:36",
+     "depart": "14:37"
+    },
+    {
+     "station": "plattsburgh-amtrak-station",
+     "seq": 15,
+     "arrive": "15:59",
+     "depart": "16:02"
+    },
+    {
+     "station": "rouses-point-amtrak",
+     "seq": 16,
+     "arrive": "16:35",
+     "depart": "16:38"
+    },
+    {
+     "station": "st-lambert-amtrak-station",
+     "seq": 17,
+     "arrive": "20:03",
+     "depart": "20:03"
+    },
+    {
+     "station": "montreal-central-station",
+     "seq": 18,
+     "arrive": "20:16"
+    }
+   ]
+  },
+  {
+   "number": "68",
+   "name": "Adirondack",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "montreal-central-station",
+     "seq": 1,
+     "depart": "11:10"
+    },
+    {
+     "station": "st-lambert-amtrak-station",
+     "seq": 2,
+     "arrive": "11:25",
+     "depart": "11:25"
+    },
+    {
+     "station": "rouses-point-amtrak",
+     "seq": 3,
+     "arrive": "13:05",
+     "depart": "14:15"
+    },
+    {
+     "station": "plattsburgh-amtrak-station",
+     "seq": 4,
+     "arrive": "14:42",
+     "depart": "14:45"
+    },
+    {
+     "station": "westport",
+     "seq": 5,
+     "arrive": "15:45",
+     "depart": "15:46"
+    },
+    {
+     "station": "port-henry-amtrak-station",
+     "seq": 6,
+     "arrive": "16:10",
+     "depart": "16:11"
+    },
+    {
+     "station": "ticonderoga-amtrak",
+     "seq": 7,
+     "arrive": "16:34",
+     "depart": "16:35"
+    },
+    {
+     "station": "whitehall-amtrak",
+     "seq": 8,
+     "arrive": "17:06",
+     "depart": "17:07"
+    },
+    {
+     "station": "fort-edward-amtrak",
+     "seq": 9,
+     "arrive": "17:31",
+     "depart": "17:33"
+    },
+    {
+     "station": "saratoga-springs-amtrak-station",
+     "seq": 10,
+     "arrive": "18:00",
+     "depart": "18:02"
+    },
+    {
+     "station": "schenectady",
+     "seq": 11,
+     "arrive": "18:36",
+     "depart": "18:38"
+    },
+    {
+     "station": "albany-rensselaer-amtrak-station",
+     "seq": 12,
+     "arrive": "19:00",
+     "depart": "19:35"
+    },
+    {
+     "station": "hudson-amtrak-station",
+     "seq": 13,
+     "arrive": "19:56",
+     "depart": "19:58"
+    },
+    {
+     "station": "rhinecliff-amtrak-station",
+     "seq": 14,
+     "arrive": "20:18",
+     "depart": "20:20"
+    },
+    {
+     "station": "poughkeepsie-amtrak-station",
+     "seq": 15,
+     "arrive": "20:39",
+     "depart": "20:40"
+    },
+    {
+     "station": "croton-harmon-amtrak-station",
+     "seq": 16,
+     "arrive": "21:19",
+     "depart": "21:21"
+    },
+    {
+     "station": "yonkers-amtrak-station",
+     "seq": 17,
+     "arrive": "21:41",
+     "depart": "21:42"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 18,
+     "arrive": "22:15"
+    }
+   ]
+  }
+ ]
+}

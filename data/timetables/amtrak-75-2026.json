@@ -1,0 +1,995 @@
+{
+ "id": "amtrak-75-2026",
+ "route_id": "75",
+ "line_ids": [
+  "amtrak-75",
+  "amtrak-75-seattle"
+ ],
+ "company": "Amtrak",
+ "service": "Empire Builder",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "27",
+   "name": "Empire Builder",
+   "headsign": "Portland",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "16:05"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "16:29",
+     "depart": "16:29"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 3,
+     "arrive": "17:35",
+     "depart": "17:45"
+    },
+    {
+     "station": "columbus-amtrak-station",
+     "seq": 4,
+     "arrive": "18:55",
+     "depart": "18:55"
+    },
+    {
+     "station": "portage",
+     "seq": 5,
+     "arrive": "19:24",
+     "depart": "19:24"
+    },
+    {
+     "station": "wisconsin-dells-amtrak-station",
+     "seq": 6,
+     "arrive": "19:42",
+     "depart": "19:42"
+    },
+    {
+     "station": "tomah-amtrak-station",
+     "seq": 7,
+     "arrive": "20:20",
+     "depart": "20:20"
+    },
+    {
+     "station": "la-crosse",
+     "seq": 8,
+     "arrive": "21:04",
+     "depart": "21:04"
+    },
+    {
+     "station": "winona",
+     "seq": 9,
+     "arrive": "21:34",
+     "depart": "21:40"
+    },
+    {
+     "station": "red-wing-amtrak-station",
+     "seq": 10,
+     "arrive": "22:42",
+     "depart": "22:42"
+    },
+    {
+     "station": "st-paul-minneapolis",
+     "seq": 11,
+     "arrive": "23:56",
+     "depart": "24:13"
+    },
+    {
+     "station": "st-cloud-amtrak-station",
+     "seq": 12,
+     "arrive": "26:09",
+     "depart": "26:09"
+    },
+    {
+     "station": "staples-amtrak-station",
+     "seq": 13,
+     "arrive": "27:10",
+     "depart": "27:10"
+    },
+    {
+     "station": "detroit-lakes-amtrak-station",
+     "seq": 14,
+     "arrive": "28:06",
+     "depart": "28:06"
+    },
+    {
+     "station": "fargo-amtrak-station",
+     "seq": 15,
+     "arrive": "29:13",
+     "depart": "29:13"
+    },
+    {
+     "station": "grand-forks-amtrak-station",
+     "seq": 16,
+     "arrive": "30:34",
+     "depart": "30:34"
+    },
+    {
+     "station": "devils-lake-amtrak-station",
+     "seq": 17,
+     "arrive": "31:59",
+     "depart": "31:59"
+    },
+    {
+     "station": "rugby-amtrak-station",
+     "seq": 18,
+     "arrive": "32:53",
+     "depart": "32:53"
+    },
+    {
+     "station": "minot-amtrak-station",
+     "seq": 19,
+     "arrive": "34:06",
+     "depart": "34:51"
+    },
+    {
+     "station": "stanley-amtrak-station",
+     "seq": 20,
+     "arrive": "35:46",
+     "depart": "35:46"
+    },
+    {
+     "station": "williston-amtrak-station",
+     "seq": 21,
+     "arrive": "36:59",
+     "depart": "36:59"
+    },
+    {
+     "station": "wolf-point-amtrak-station",
+     "seq": 22,
+     "arrive": "38:34",
+     "depart": "38:34"
+    },
+    {
+     "station": "glasgow-amtrak-station",
+     "seq": 23,
+     "arrive": "39:20",
+     "depart": "39:20"
+    },
+    {
+     "station": "malta-amtrak-station",
+     "seq": 24,
+     "arrive": "40:20",
+     "depart": "40:20"
+    },
+    {
+     "station": "havre-amtrak-station",
+     "seq": 25,
+     "arrive": "41:54",
+     "depart": "42:15"
+    },
+    {
+     "station": "shelby-amtrak-station",
+     "seq": 26,
+     "arrive": "44:13",
+     "depart": "44:21"
+    },
+    {
+     "station": "cut-bank-amtrak-station",
+     "seq": 27,
+     "arrive": "44:51",
+     "depart": "44:51"
+    },
+    {
+     "station": "east-glacier-park-amtrak-station",
+     "seq": 28,
+     "arrive": "45:48",
+     "depart": "45:48"
+    },
+    {
+     "station": "essex-amtrak",
+     "seq": 29,
+     "arrive": "46:44",
+     "depart": "46:44"
+    },
+    {
+     "station": "west-glacier-amtrak",
+     "seq": 30,
+     "arrive": "47:27",
+     "depart": "47:27"
+    },
+    {
+     "station": "whitefish-amtrak-station",
+     "seq": 31,
+     "arrive": "48:06",
+     "depart": "48:21"
+    },
+    {
+     "station": "libby-amtrak-station",
+     "seq": 32,
+     "arrive": "50:05",
+     "depart": "50:05"
+    },
+    {
+     "station": "sandpoint-amtrak",
+     "seq": 33,
+     "arrive": "51:55",
+     "depart": "51:55"
+    },
+    {
+     "station": "spokane",
+     "seq": 34,
+     "arrive": "53:44",
+     "depart": "54:49"
+    },
+    {
+     "station": "pasco-amtrak-station",
+     "seq": 35,
+     "arrive": "57:40",
+     "depart": "57:40"
+    },
+    {
+     "station": "wishram-amtrak",
+     "seq": 36,
+     "arrive": "59:35",
+     "depart": "59:35"
+    },
+    {
+     "station": "bingen-white-salmon-amtrak",
+     "seq": 37,
+     "arrive": "60:10",
+     "depart": "60:10"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 38,
+     "arrive": "61:35",
+     "depart": "61:35"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 39,
+     "arrive": "62:17"
+    }
+   ]
+  },
+  {
+   "number": "7",
+   "name": "Empire Builder",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "16:05"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 2,
+     "arrive": "16:29",
+     "depart": "16:29"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 3,
+     "arrive": "17:35",
+     "depart": "17:45"
+    },
+    {
+     "station": "columbus-amtrak-station",
+     "seq": 4,
+     "arrive": "18:55",
+     "depart": "18:55"
+    },
+    {
+     "station": "portage",
+     "seq": 5,
+     "arrive": "19:24",
+     "depart": "19:24"
+    },
+    {
+     "station": "wisconsin-dells-amtrak-station",
+     "seq": 6,
+     "arrive": "19:42",
+     "depart": "19:42"
+    },
+    {
+     "station": "tomah-amtrak-station",
+     "seq": 7,
+     "arrive": "20:20",
+     "depart": "20:20"
+    },
+    {
+     "station": "la-crosse",
+     "seq": 8,
+     "arrive": "21:04",
+     "depart": "21:04"
+    },
+    {
+     "station": "winona",
+     "seq": 9,
+     "arrive": "21:34",
+     "depart": "21:40"
+    },
+    {
+     "station": "red-wing-amtrak-station",
+     "seq": 10,
+     "arrive": "22:42",
+     "depart": "22:42"
+    },
+    {
+     "station": "st-paul-minneapolis",
+     "seq": 11,
+     "arrive": "23:56",
+     "depart": "24:13"
+    },
+    {
+     "station": "st-cloud-amtrak-station",
+     "seq": 12,
+     "arrive": "26:09",
+     "depart": "26:09"
+    },
+    {
+     "station": "staples-amtrak-station",
+     "seq": 13,
+     "arrive": "27:10",
+     "depart": "27:10"
+    },
+    {
+     "station": "detroit-lakes-amtrak-station",
+     "seq": 14,
+     "arrive": "28:06",
+     "depart": "28:06"
+    },
+    {
+     "station": "fargo-amtrak-station",
+     "seq": 15,
+     "arrive": "29:13",
+     "depart": "29:13"
+    },
+    {
+     "station": "grand-forks-amtrak-station",
+     "seq": 16,
+     "arrive": "30:34",
+     "depart": "30:34"
+    },
+    {
+     "station": "devils-lake-amtrak-station",
+     "seq": 17,
+     "arrive": "31:59",
+     "depart": "31:59"
+    },
+    {
+     "station": "rugby-amtrak-station",
+     "seq": 18,
+     "arrive": "32:53",
+     "depart": "32:53"
+    },
+    {
+     "station": "minot-amtrak-station",
+     "seq": 19,
+     "arrive": "34:06",
+     "depart": "34:51"
+    },
+    {
+     "station": "stanley-amtrak-station",
+     "seq": 20,
+     "arrive": "35:46",
+     "depart": "35:46"
+    },
+    {
+     "station": "williston-amtrak-station",
+     "seq": 21,
+     "arrive": "36:59",
+     "depart": "36:59"
+    },
+    {
+     "station": "wolf-point-amtrak-station",
+     "seq": 22,
+     "arrive": "38:34",
+     "depart": "38:34"
+    },
+    {
+     "station": "glasgow-amtrak-station",
+     "seq": 23,
+     "arrive": "39:20",
+     "depart": "39:20"
+    },
+    {
+     "station": "malta-amtrak-station",
+     "seq": 24,
+     "arrive": "40:20",
+     "depart": "40:20"
+    },
+    {
+     "station": "havre-amtrak-station",
+     "seq": 25,
+     "arrive": "41:54",
+     "depart": "42:15"
+    },
+    {
+     "station": "shelby-amtrak-station",
+     "seq": 26,
+     "arrive": "44:13",
+     "depart": "44:21"
+    },
+    {
+     "station": "cut-bank-amtrak-station",
+     "seq": 27,
+     "arrive": "44:51",
+     "depart": "44:51"
+    },
+    {
+     "station": "east-glacier-park-amtrak-station",
+     "seq": 28,
+     "arrive": "45:48",
+     "depart": "45:48"
+    },
+    {
+     "station": "essex-amtrak",
+     "seq": 29,
+     "arrive": "46:44",
+     "depart": "46:44"
+    },
+    {
+     "station": "west-glacier-amtrak",
+     "seq": 30,
+     "arrive": "47:27",
+     "depart": "47:27"
+    },
+    {
+     "station": "whitefish-amtrak-station",
+     "seq": 31,
+     "arrive": "48:06",
+     "depart": "48:21"
+    },
+    {
+     "station": "libby-amtrak-station",
+     "seq": 32,
+     "arrive": "50:05",
+     "depart": "50:05"
+    },
+    {
+     "station": "sandpoint-amtrak",
+     "seq": 33,
+     "arrive": "51:55",
+     "depart": "51:55"
+    },
+    {
+     "station": "spokane",
+     "seq": 34,
+     "arrive": "53:44",
+     "depart": "54:19"
+    },
+    {
+     "station": "ephrata-amtrak",
+     "seq": 35,
+     "arrive": "56:28",
+     "depart": "56:28"
+    },
+    {
+     "station": "wenatchee-amtrak",
+     "seq": 36,
+     "arrive": "57:35",
+     "depart": "57:45"
+    },
+    {
+     "station": "leavenworth-amtrak",
+     "seq": 37,
+     "arrive": "58:18",
+     "depart": "58:18"
+    },
+    {
+     "station": "everett-amtrak-station",
+     "seq": 38,
+     "arrive": "61:03",
+     "depart": "61:03"
+    },
+    {
+     "station": "edmonds",
+     "seq": 39,
+     "arrive": "61:35",
+     "depart": "61:35"
+    },
+    {
+     "station": "seattle",
+     "seq": 40,
+     "arrive": "62:29"
+    }
+   ]
+  },
+  {
+   "number": "28",
+   "name": "Empire Builder",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "portland-pdx",
+     "seq": 1,
+     "depart": "19:45"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 2,
+     "arrive": "20:09",
+     "depart": "20:09"
+    },
+    {
+     "station": "bingen-white-salmon-amtrak",
+     "seq": 3,
+     "arrive": "21:24",
+     "depart": "21:24"
+    },
+    {
+     "station": "wishram-amtrak",
+     "seq": 4,
+     "arrive": "21:59",
+     "depart": "21:59"
+    },
+    {
+     "station": "pasco-amtrak-station",
+     "seq": 5,
+     "arrive": "24:06",
+     "depart": "24:06"
+    },
+    {
+     "station": "spokane",
+     "seq": 6,
+     "arrive": "27:17",
+     "depart": "28:15"
+    },
+    {
+     "station": "sandpoint-amtrak",
+     "seq": 7,
+     "arrive": "29:20",
+     "depart": "29:20"
+    },
+    {
+     "station": "libby-amtrak-station",
+     "seq": 8,
+     "arrive": "31:11",
+     "depart": "31:11"
+    },
+    {
+     "station": "whitefish-amtrak-station",
+     "seq": 9,
+     "arrive": "33:11",
+     "depart": "33:26"
+    },
+    {
+     "station": "west-glacier-amtrak",
+     "seq": 10,
+     "arrive": "33:57",
+     "depart": "33:57"
+    },
+    {
+     "station": "essex-amtrak",
+     "seq": 11,
+     "arrive": "34:37",
+     "depart": "34:37"
+    },
+    {
+     "station": "east-glacier-park-amtrak-station",
+     "seq": 12,
+     "arrive": "35:36",
+     "depart": "35:36"
+    },
+    {
+     "station": "cut-bank-amtrak-station",
+     "seq": 13,
+     "arrive": "36:27",
+     "depart": "36:27"
+    },
+    {
+     "station": "shelby-amtrak-station",
+     "seq": 14,
+     "arrive": "37:20",
+     "depart": "37:28"
+    },
+    {
+     "station": "havre-amtrak-station",
+     "seq": 15,
+     "arrive": "39:05",
+     "depart": "39:24"
+    },
+    {
+     "station": "malta-amtrak-station",
+     "seq": 16,
+     "arrive": "40:43",
+     "depart": "40:43"
+    },
+    {
+     "station": "glasgow-amtrak-station",
+     "seq": 17,
+     "arrive": "41:44",
+     "depart": "41:44"
+    },
+    {
+     "station": "wolf-point-amtrak-station",
+     "seq": 18,
+     "arrive": "42:32",
+     "depart": "42:32"
+    },
+    {
+     "station": "williston-amtrak-station",
+     "seq": 19,
+     "arrive": "44:21",
+     "depart": "44:21"
+    },
+    {
+     "station": "stanley-amtrak-station",
+     "seq": 20,
+     "arrive": "45:22",
+     "depart": "45:22"
+    },
+    {
+     "station": "minot-amtrak-station",
+     "seq": 21,
+     "arrive": "47:08",
+     "depart": "47:53"
+    },
+    {
+     "station": "rugby-amtrak-station",
+     "seq": 22,
+     "arrive": "48:49",
+     "depart": "48:49"
+    },
+    {
+     "station": "devils-lake-amtrak-station",
+     "seq": 23,
+     "arrive": "49:44",
+     "depart": "49:44"
+    },
+    {
+     "station": "grand-forks-amtrak-station",
+     "seq": 24,
+     "arrive": "51:10",
+     "depart": "51:10"
+    },
+    {
+     "station": "fargo-amtrak-station",
+     "seq": 25,
+     "arrive": "52:21",
+     "depart": "52:29"
+    },
+    {
+     "station": "detroit-lakes-amtrak-station",
+     "seq": 26,
+     "arrive": "53:27",
+     "depart": "53:27"
+    },
+    {
+     "station": "staples-amtrak-station",
+     "seq": 27,
+     "arrive": "54:27",
+     "depart": "54:27"
+    },
+    {
+     "station": "st-cloud-amtrak-station",
+     "seq": 28,
+     "arrive": "55:32",
+     "depart": "55:32"
+    },
+    {
+     "station": "st-paul-minneapolis",
+     "seq": 29,
+     "arrive": "57:33",
+     "depart": "57:50"
+    },
+    {
+     "station": "red-wing-amtrak-station",
+     "seq": 30,
+     "arrive": "58:44",
+     "depart": "58:44"
+    },
+    {
+     "station": "winona",
+     "seq": 31,
+     "arrive": "59:54",
+     "depart": "60:01"
+    },
+    {
+     "station": "la-crosse",
+     "seq": 32,
+     "arrive": "60:37",
+     "depart": "60:37"
+    },
+    {
+     "station": "tomah-amtrak-station",
+     "seq": 33,
+     "arrive": "61:16",
+     "depart": "61:16"
+    },
+    {
+     "station": "wisconsin-dells-amtrak-station",
+     "seq": 34,
+     "arrive": "61:58",
+     "depart": "61:58"
+    },
+    {
+     "station": "portage",
+     "seq": 35,
+     "arrive": "62:17",
+     "depart": "62:17"
+    },
+    {
+     "station": "columbus-amtrak-station",
+     "seq": 36,
+     "arrive": "62:47",
+     "depart": "62:47"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 37,
+     "arrive": "63:57",
+     "depart": "64:05"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 38,
+     "arrive": "65:12",
+     "depart": "65:12"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 39,
+     "arrive": "65:45"
+    }
+   ]
+  },
+  {
+   "number": "8",
+   "name": "Empire Builder",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "19:55"
+    },
+    {
+     "station": "edmonds",
+     "seq": 2,
+     "arrive": "20:27",
+     "depart": "20:27"
+    },
+    {
+     "station": "everett-amtrak-station",
+     "seq": 3,
+     "arrive": "20:55",
+     "depart": "20:55"
+    },
+    {
+     "station": "leavenworth-amtrak",
+     "seq": 4,
+     "arrive": "23:17",
+     "depart": "23:17"
+    },
+    {
+     "station": "wenatchee-amtrak",
+     "seq": 5,
+     "arrive": "23:51",
+     "depart": "23:57"
+    },
+    {
+     "station": "ephrata-amtrak",
+     "seq": 6,
+     "arrive": "24:58",
+     "depart": "24:58"
+    },
+    {
+     "station": "spokane",
+     "seq": 7,
+     "arrive": "27:37",
+     "depart": "28:15"
+    },
+    {
+     "station": "sandpoint-amtrak",
+     "seq": 8,
+     "arrive": "29:20",
+     "depart": "29:20"
+    },
+    {
+     "station": "libby-amtrak-station",
+     "seq": 9,
+     "arrive": "31:11",
+     "depart": "31:11"
+    },
+    {
+     "station": "whitefish-amtrak-station",
+     "seq": 10,
+     "arrive": "33:11",
+     "depart": "33:26"
+    },
+    {
+     "station": "west-glacier-amtrak",
+     "seq": 11,
+     "arrive": "33:57",
+     "depart": "33:57"
+    },
+    {
+     "station": "essex-amtrak",
+     "seq": 12,
+     "arrive": "34:37",
+     "depart": "34:37"
+    },
+    {
+     "station": "east-glacier-park-amtrak-station",
+     "seq": 13,
+     "arrive": "35:36",
+     "depart": "35:36"
+    },
+    {
+     "station": "cut-bank-amtrak-station",
+     "seq": 14,
+     "arrive": "36:27",
+     "depart": "36:27"
+    },
+    {
+     "station": "shelby-amtrak-station",
+     "seq": 15,
+     "arrive": "37:20",
+     "depart": "37:28"
+    },
+    {
+     "station": "havre-amtrak-station",
+     "seq": 16,
+     "arrive": "39:05",
+     "depart": "39:24"
+    },
+    {
+     "station": "malta-amtrak-station",
+     "seq": 17,
+     "arrive": "40:43",
+     "depart": "40:43"
+    },
+    {
+     "station": "glasgow-amtrak-station",
+     "seq": 18,
+     "arrive": "41:44",
+     "depart": "41:44"
+    },
+    {
+     "station": "wolf-point-amtrak-station",
+     "seq": 19,
+     "arrive": "42:32",
+     "depart": "42:32"
+    },
+    {
+     "station": "williston-amtrak-station",
+     "seq": 20,
+     "arrive": "44:21",
+     "depart": "44:21"
+    },
+    {
+     "station": "stanley-amtrak-station",
+     "seq": 21,
+     "arrive": "45:22",
+     "depart": "45:22"
+    },
+    {
+     "station": "minot-amtrak-station",
+     "seq": 22,
+     "arrive": "47:08",
+     "depart": "47:53"
+    },
+    {
+     "station": "rugby-amtrak-station",
+     "seq": 23,
+     "arrive": "48:49",
+     "depart": "48:49"
+    },
+    {
+     "station": "devils-lake-amtrak-station",
+     "seq": 24,
+     "arrive": "49:44",
+     "depart": "49:44"
+    },
+    {
+     "station": "grand-forks-amtrak-station",
+     "seq": 25,
+     "arrive": "51:10",
+     "depart": "51:10"
+    },
+    {
+     "station": "fargo-amtrak-station",
+     "seq": 26,
+     "arrive": "52:21",
+     "depart": "52:29"
+    },
+    {
+     "station": "detroit-lakes-amtrak-station",
+     "seq": 27,
+     "arrive": "53:27",
+     "depart": "53:27"
+    },
+    {
+     "station": "staples-amtrak-station",
+     "seq": 28,
+     "arrive": "54:27",
+     "depart": "54:27"
+    },
+    {
+     "station": "st-cloud-amtrak-station",
+     "seq": 29,
+     "arrive": "55:32",
+     "depart": "55:32"
+    },
+    {
+     "station": "st-paul-minneapolis",
+     "seq": 30,
+     "arrive": "57:33",
+     "depart": "57:50"
+    },
+    {
+     "station": "red-wing-amtrak-station",
+     "seq": 31,
+     "arrive": "58:44",
+     "depart": "58:44"
+    },
+    {
+     "station": "winona",
+     "seq": 32,
+     "arrive": "59:54",
+     "depart": "60:01"
+    },
+    {
+     "station": "la-crosse",
+     "seq": 33,
+     "arrive": "60:37",
+     "depart": "60:37"
+    },
+    {
+     "station": "tomah-amtrak-station",
+     "seq": 34,
+     "arrive": "61:16",
+     "depart": "61:16"
+    },
+    {
+     "station": "wisconsin-dells-amtrak-station",
+     "seq": 35,
+     "arrive": "61:58",
+     "depart": "61:58"
+    },
+    {
+     "station": "portage",
+     "seq": 36,
+     "arrive": "62:17",
+     "depart": "62:17"
+    },
+    {
+     "station": "columbus-amtrak-station",
+     "seq": 37,
+     "arrive": "62:47",
+     "depart": "62:47"
+    },
+    {
+     "station": "milwaukee",
+     "seq": 38,
+     "arrive": "63:57",
+     "depart": "64:05"
+    },
+    {
+     "station": "glenview-amtrak-station",
+     "seq": 39,
+     "arrive": "65:12",
+     "depart": "65:12"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 40,
+     "arrive": "65:45"
+    }
+   ]
+  }
+ ]
+}

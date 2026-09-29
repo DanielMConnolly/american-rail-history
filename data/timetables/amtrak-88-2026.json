@@ -1,0 +1,5019 @@
+{
+ "id": "amtrak-88-2026",
+ "route_id": "88",
+ "line_ids": [
+  "amtrak-36923",
+  "amtrak-41042",
+  "amtrak-58",
+  "amtrak-69",
+  "amtrak-77",
+  "amtrak-81-boston",
+  "amtrak-85",
+  "amtrak-88",
+  "amtrak-88-newport",
+  "amtrak-88-norfolk",
+  "amtrak-88-roanoke",
+  "amtrak-90"
+ ],
+ "company": "Amtrak",
+ "service": "Northeast Regional",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "86",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "newport-news",
+     "seq": 1,
+     "depart": "04:08"
+    },
+    {
+     "station": "williamsburg-amtrak-station",
+     "seq": 2,
+     "arrive": "04:21",
+     "depart": "04:24"
+    },
+    {
+     "station": "richmond-main-street-amtrak-station",
+     "seq": 3,
+     "arrive": "05:14",
+     "depart": "05:19"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 4,
+     "arrive": "05:49",
+     "depart": "05:54"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 5,
+     "arrive": "06:07",
+     "depart": "06:08"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 6,
+     "arrive": "06:51",
+     "depart": "06:53"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 7,
+     "arrive": "07:12",
+     "depart": "07:14"
+    },
+    {
+     "station": "woodbridge-amtrak",
+     "seq": 8,
+     "arrive": "07:25",
+     "depart": "07:26"
+    },
+    {
+     "station": "alexandria",
+     "seq": 9,
+     "arrive": "07:50",
+     "depart": "07:52"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 10,
+     "arrive": "08:18",
+     "depart": "08:55"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 11,
+     "arrive": "09:16",
+     "depart": "09:17"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 12,
+     "arrive": "09:30",
+     "depart": "09:32"
+    },
+    {
+     "station": "newark-amtrak",
+     "seq": 13,
+     "arrive": "10:10",
+     "depart": "10:11"
+    },
+    {
+     "station": "wilmington",
+     "seq": 14,
+     "arrive": "10:21",
+     "depart": "10:23"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "10:47",
+     "depart": "10:51"
+    },
+    {
+     "station": "trenton",
+     "seq": 16,
+     "arrive": "11:17",
+     "depart": "11:19"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 17,
+     "arrive": "11:42",
+     "depart": "11:43"
+    },
+    {
+     "station": "newark",
+     "seq": 18,
+     "arrive": "11:56",
+     "depart": "11:58"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 19,
+     "arrive": "12:16"
+    }
+   ]
+  },
+  {
+   "number": "141",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "springfield-spg",
+     "seq": 1,
+     "depart": "04:10"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 2,
+     "arrive": "04:35",
+     "depart": "04:35"
+    },
+    {
+     "station": "windsor",
+     "seq": 3,
+     "arrive": "04:41",
+     "depart": "04:41"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 4,
+     "arrive": "04:48",
+     "depart": "04:51"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "05:02",
+     "depart": "05:02"
+    },
+    {
+     "station": "meriden",
+     "seq": 6,
+     "arrive": "05:13",
+     "depart": "05:13"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 7,
+     "arrive": "05:21",
+     "depart": "05:21"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 8,
+     "arrive": "05:34",
+     "depart": "05:34"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "05:42",
+     "depart": "06:12"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 10,
+     "arrive": "06:31",
+     "depart": "06:32"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 11,
+     "arrive": "07:03",
+     "depart": "07:04"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 12,
+     "arrive": "07:25",
+     "depart": "07:26"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "07:55",
+     "depart": "08:23"
+    },
+    {
+     "station": "newark",
+     "seq": 14,
+     "arrive": "08:39",
+     "depart": "08:39"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 15,
+     "arrive": "08:43",
+     "depart": "08:44"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 16,
+     "arrive": "08:55",
+     "depart": "08:56"
+    },
+    {
+     "station": "trenton",
+     "seq": 17,
+     "arrive": "09:18",
+     "depart": "09:20"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 18,
+     "arrive": "09:47",
+     "depart": "09:50"
+    },
+    {
+     "station": "wilmington",
+     "seq": 19,
+     "arrive": "10:10",
+     "depart": "10:12"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 20,
+     "arrive": "11:04",
+     "depart": "11:06"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 21,
+     "arrive": "11:17",
+     "depart": "11:19"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 22,
+     "arrive": "11:32",
+     "depart": "11:33"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 23,
+     "arrive": "11:47"
+    }
+   ]
+  },
+  {
+   "number": "111",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "04:50"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "05:05",
+     "depart": "05:06"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "05:18",
+     "depart": "05:20"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 4,
+     "arrive": "05:29",
+     "depart": "05:30"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 5,
+     "arrive": "05:42",
+     "depart": "05:43"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "05:51",
+     "depart": "05:53"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 7,
+     "arrive": "06:21",
+     "depart": "06:24"
+    },
+    {
+     "station": "wilmington",
+     "seq": 8,
+     "arrive": "06:41",
+     "depart": "06:43"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 9,
+     "arrive": "07:43",
+     "depart": "07:45"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 10,
+     "arrive": "07:56",
+     "depart": "07:58"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 11,
+     "arrive": "08:14",
+     "depart": "08:15"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 12,
+     "arrive": "08:31"
+    }
+   ]
+  },
+  {
+   "number": "151",
+   "name": "Northeast Regional",
+   "headsign": "Roanoke",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "philadelphia",
+     "seq": 1,
+     "depart": "04:57"
+    },
+    {
+     "station": "wilmington",
+     "seq": 2,
+     "arrive": "05:18",
+     "depart": "05:20"
+    },
+    {
+     "station": "newark-amtrak",
+     "seq": 3,
+     "arrive": "05:28",
+     "depart": "05:29"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "06:14",
+     "depart": "06:16"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 5,
+     "arrive": "06:30",
+     "depart": "06:31"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "06:58",
+     "depart": "07:30"
+    },
+    {
+     "station": "alexandria",
+     "seq": 7,
+     "arrive": "07:48",
+     "depart": "07:50"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 8,
+     "arrive": "08:22",
+     "depart": "08:24"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 9,
+     "arrive": "09:00",
+     "depart": "09:01"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 10,
+     "arrive": "09:59",
+     "depart": "10:07"
+    },
+    {
+     "station": "lynchburg",
+     "seq": 11,
+     "arrive": "11:22",
+     "depart": "11:24"
+    },
+    {
+     "station": "roanoke",
+     "seq": 12,
+     "arrive": "12:40"
+    }
+   ]
+  },
+  {
+   "number": "170",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "05:05"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "05:28",
+     "depart": "05:29"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "05:42",
+     "depart": "05:44"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "06:28",
+     "depart": "06:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "06:55",
+     "depart": "06:58"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "07:27",
+     "depart": "07:29"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 7,
+     "arrive": "07:52",
+     "depart": "07:53"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "08:06",
+     "depart": "08:07"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "08:27",
+     "depart": "08:45"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 10,
+     "arrive": "09:19",
+     "depart": "09:20"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 11,
+     "arrive": "10:08",
+     "depart": "10:09"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 12,
+     "arrive": "10:36",
+     "depart": "10:44"
+    },
+    {
+     "station": "new-london",
+     "seq": 13,
+     "arrive": "11:29",
+     "depart": "11:30"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 14,
+     "arrive": "12:01",
+     "depart": "12:02"
+    },
+    {
+     "station": "providence",
+     "seq": 15,
+     "arrive": "12:20",
+     "depart": "12:20"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 16,
+     "arrive": "12:53",
+     "depart": "12:53"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 17,
+     "arrive": "13:04",
+     "depart": "13:04"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 18,
+     "arrive": "13:11"
+    }
+   ]
+  },
+  {
+   "number": "181",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "05:45"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "06:00",
+     "depart": "06:01"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 3,
+     "arrive": "07:08",
+     "depart": "07:11"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "07:31",
+     "depart": "07:33"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 5,
+     "arrive": "08:23",
+     "depart": "08:26"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 6,
+     "arrive": "09:06"
+    }
+   ]
+  },
+  {
+   "number": "190",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "philadelphia",
+     "seq": 1,
+     "depart": "05:58"
+    },
+    {
+     "station": "trenton",
+     "seq": 2,
+     "arrive": "06:25",
+     "depart": "06:27"
+    },
+    {
+     "station": "newark",
+     "seq": 3,
+     "arrive": "07:05",
+     "depart": "07:07"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 4,
+     "arrive": "07:26",
+     "depart": "07:41"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 5,
+     "arrive": "08:12",
+     "depart": "08:13"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 6,
+     "arrive": "08:31",
+     "depart": "08:33"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 7,
+     "arrive": "09:03",
+     "depart": "09:04"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 8,
+     "arrive": "09:32",
+     "depart": "09:39"
+    },
+    {
+     "station": "new-london",
+     "seq": 9,
+     "arrive": "10:24",
+     "depart": "10:25"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 10,
+     "arrive": "10:36",
+     "depart": "10:37"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 11,
+     "arrive": "10:58",
+     "depart": "10:59"
+    },
+    {
+     "station": "providence",
+     "seq": 12,
+     "arrive": "11:17",
+     "depart": "11:17"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 13,
+     "arrive": "11:48",
+     "depart": "11:48"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 14,
+     "arrive": "11:59",
+     "depart": "11:59"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 15,
+     "arrive": "12:06"
+    }
+   ]
+  },
+  {
+   "number": "95",
+   "name": "Northeast Regional",
+   "headsign": "Norfolk",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "06:10"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "06:14",
+     "depart": "06:15"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "06:24",
+     "depart": "06:25"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "06:48",
+     "depart": "06:50"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "07:09",
+     "depart": "07:11"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 6,
+     "arrive": "07:24",
+     "depart": "07:25"
+    },
+    {
+     "station": "new-london",
+     "seq": 7,
+     "arrive": "07:44",
+     "depart": "07:45"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 8,
+     "arrive": "08:03",
+     "depart": "08:04"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "08:41",
+     "depart": "08:43"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 10,
+     "arrive": "09:28",
+     "depart": "09:30"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 11,
+     "arrive": "10:22",
+     "depart": "10:35"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "10:51",
+     "depart": "10:53"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 13,
+     "arrive": "11:05",
+     "depart": "11:07"
+    },
+    {
+     "station": "trenton",
+     "seq": 14,
+     "arrive": "11:28",
+     "depart": "11:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "11:56",
+     "depart": "12:01"
+    },
+    {
+     "station": "wilmington",
+     "seq": 16,
+     "arrive": "12:21",
+     "depart": "12:24"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 17,
+     "arrive": "13:22",
+     "depart": "13:27"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 18,
+     "arrive": "13:38",
+     "depart": "13:40"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 19,
+     "arrive": "13:53",
+     "depart": "13:55"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 20,
+     "arrive": "14:05",
+     "depart": "14:35"
+    },
+    {
+     "station": "alexandria",
+     "seq": 21,
+     "arrive": "14:53",
+     "depart": "14:56"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 22,
+     "arrive": "15:42",
+     "depart": "15:44"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 23,
+     "arrive": "16:52",
+     "depart": "16:57"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 24,
+     "arrive": "17:37",
+     "depart": "17:39"
+    },
+    {
+     "station": "norfolk",
+     "seq": 25,
+     "arrive": "19:24"
+    }
+   ]
+  },
+  {
+   "number": "130",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "06:20"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "06:31",
+     "depart": "06:32"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "07:03",
+     "depart": "07:05"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 4,
+     "arrive": "07:27",
+     "depart": "07:29"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "07:54",
+     "depart": "07:55"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "08:27",
+     "depart": "08:34"
+    },
+    {
+     "station": "trenton",
+     "seq": 7,
+     "arrive": "09:00",
+     "depart": "09:02"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 8,
+     "arrive": "09:24",
+     "depart": "09:26"
+    },
+    {
+     "station": "newark",
+     "seq": 9,
+     "arrive": "09:42",
+     "depart": "09:42"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 10,
+     "arrive": "10:02"
+    }
+   ]
+  },
+  {
+   "number": "113",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "06:32"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "06:46",
+     "depart": "06:48"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "07:29",
+     "depart": "07:30"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "07:59",
+     "depart": "08:01"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "08:22",
+     "depart": "08:23"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 6,
+     "arrive": "09:13",
+     "depart": "09:15"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 7,
+     "arrive": "10:01"
+    }
+   ]
+  },
+  {
+   "number": "110",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "philadelphia",
+     "seq": 1,
+     "depart": "06:47"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "07:48",
+     "depart": "07:50"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 3,
+     "arrive": "08:08"
+    }
+   ]
+  },
+  {
+   "number": "172",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "07:06"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "07:18",
+     "depart": "07:19"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "07:33",
+     "depart": "07:34"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "07:48",
+     "depart": "07:50"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "08:38",
+     "depart": "08:40"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "09:05",
+     "depart": "09:08"
+    },
+    {
+     "station": "trenton",
+     "seq": 7,
+     "arrive": "09:37",
+     "depart": "09:38"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 8,
+     "arrive": "09:47",
+     "depart": "09:48"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 9,
+     "arrive": "10:05",
+     "depart": "10:06"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 10,
+     "arrive": "10:17",
+     "depart": "10:18"
+    },
+    {
+     "station": "newark",
+     "seq": 11,
+     "arrive": "10:23",
+     "depart": "10:24"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 12,
+     "arrive": "10:45",
+     "depart": "11:00"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 13,
+     "arrive": "11:27",
+     "depart": "11:27"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 14,
+     "arrive": "11:46",
+     "depart": "11:48"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 15,
+     "arrive": "12:15",
+     "depart": "12:16"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 16,
+     "arrive": "12:44",
+     "depart": "12:46"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 17,
+     "arrive": "13:15",
+     "depart": "13:15"
+    },
+    {
+     "station": "new-london",
+     "seq": 18,
+     "arrive": "13:34",
+     "depart": "13:35"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 19,
+     "arrive": "13:46",
+     "depart": "13:47"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 20,
+     "arrive": "13:56",
+     "depart": "13:57"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 21,
+     "arrive": "14:11",
+     "depart": "14:13"
+    },
+    {
+     "station": "providence",
+     "seq": 22,
+     "arrive": "14:32",
+     "depart": "14:32"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 23,
+     "arrive": "15:08",
+     "depart": "15:08"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 24,
+     "arrive": "15:20",
+     "depart": "15:20"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 25,
+     "arrive": "15:28"
+    }
+   ]
+  },
+  {
+   "number": "183",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "07:25"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "07:40",
+     "depart": "07:41"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "07:55",
+     "depart": "07:56"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "08:26",
+     "depart": "08:28"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "08:57",
+     "depart": "09:00"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "09:18",
+     "depart": "09:20"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 7,
+     "arrive": "09:51",
+     "depart": "09:52"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 8,
+     "arrive": "10:17",
+     "depart": "10:20"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 9,
+     "arrive": "10:31",
+     "depart": "10:33"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 10,
+     "arrive": "10:48",
+     "depart": "10:49"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 11,
+     "arrive": "11:04"
+    }
+   ]
+  },
+  {
+   "number": "125",
+   "name": "Northeast Regional",
+   "headsign": "Newport News",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "springfield-spg",
+     "seq": 1,
+     "depart": "07:28"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 2,
+     "arrive": "07:49",
+     "depart": "07:49"
+    },
+    {
+     "station": "windsor",
+     "seq": 3,
+     "arrive": "07:55",
+     "depart": "07:55"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 4,
+     "arrive": "08:03",
+     "depart": "08:06"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "08:17",
+     "depart": "08:17"
+    },
+    {
+     "station": "meriden",
+     "seq": 6,
+     "arrive": "08:29",
+     "depart": "08:29"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 7,
+     "arrive": "08:42",
+     "depart": "08:42"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 8,
+     "arrive": "09:03",
+     "depart": "09:03"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "09:05",
+     "depart": "09:35"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 10,
+     "arrive": "09:56",
+     "depart": "09:57"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 11,
+     "arrive": "10:24",
+     "depart": "10:25"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 12,
+     "arrive": "10:45",
+     "depart": "10:46"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "11:21",
+     "depart": "11:35"
+    },
+    {
+     "station": "newark",
+     "seq": 14,
+     "arrive": "11:51",
+     "depart": "11:52"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 15,
+     "arrive": "12:04",
+     "depart": "12:06"
+    },
+    {
+     "station": "trenton",
+     "seq": 16,
+     "arrive": "12:28",
+     "depart": "12:30"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 17,
+     "arrive": "13:00",
+     "depart": "13:07"
+    },
+    {
+     "station": "wilmington",
+     "seq": 18,
+     "arrive": "13:31",
+     "depart": "13:33"
+    },
+    {
+     "station": "newark-amtrak",
+     "seq": 19,
+     "arrive": "13:43",
+     "depart": "13:44"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 20,
+     "arrive": "14:09",
+     "depart": "14:10"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 21,
+     "arrive": "14:31",
+     "depart": "14:34"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 22,
+     "arrive": "14:45",
+     "depart": "14:47"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 23,
+     "arrive": "15:00",
+     "depart": "15:01"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 24,
+     "arrive": "15:17",
+     "depart": "15:50"
+    },
+    {
+     "station": "alexandria",
+     "seq": 25,
+     "arrive": "16:07",
+     "depart": "16:09"
+    },
+    {
+     "station": "woodbridge-amtrak",
+     "seq": 26,
+     "arrive": "16:26",
+     "depart": "16:27"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 27,
+     "arrive": "16:39",
+     "depart": "16:40"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 28,
+     "arrive": "17:05",
+     "depart": "17:07"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 29,
+     "arrive": "17:48",
+     "depart": "17:49"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 30,
+     "arrive": "18:21",
+     "depart": "18:28"
+    },
+    {
+     "station": "richmond-main-street-amtrak-station",
+     "seq": 31,
+     "arrive": "18:54",
+     "depart": "18:57"
+    },
+    {
+     "station": "williamsburg-amtrak-station",
+     "seq": 32,
+     "arrive": "19:47",
+     "depart": "19:47"
+    },
+    {
+     "station": "newport-news",
+     "seq": 33,
+     "arrive": "20:19"
+    }
+   ]
+  },
+  {
+   "number": "112",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "07:40"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "08:06",
+     "depart": "08:07"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "08:20",
+     "depart": "08:22"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "09:09",
+     "depart": "09:11"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "09:37",
+     "depart": "09:40"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 6,
+     "arrive": "10:16",
+     "depart": "10:18"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 7,
+     "arrive": "10:31",
+     "depart": "10:32"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "10:55",
+     "depart": "10:55"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "11:14"
+    }
+   ]
+  },
+  {
+   "number": "171",
+   "name": "Northeast Regional",
+   "headsign": "Roanoke",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "08:12"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "08:16",
+     "depart": "08:18"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "08:27",
+     "depart": "08:28"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "08:51",
+     "depart": "08:52"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "09:13",
+     "depart": "09:14"
+    },
+    {
+     "station": "new-london",
+     "seq": 6,
+     "arrive": "09:45",
+     "depart": "09:47"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 7,
+     "arrive": "10:36",
+     "depart": "10:38"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 8,
+     "arrive": "10:59",
+     "depart": "11:00"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 9,
+     "arrive": "11:26",
+     "depart": "11:27"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 10,
+     "arrive": "12:24",
+     "depart": "12:40"
+    },
+    {
+     "station": "newark",
+     "seq": 11,
+     "arrive": "12:56",
+     "depart": "12:57"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 12,
+     "arrive": "13:01",
+     "depart": "13:02"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 13,
+     "arrive": "13:15",
+     "depart": "13:17"
+    },
+    {
+     "station": "trenton",
+     "seq": 14,
+     "arrive": "13:44",
+     "depart": "13:46"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "14:15",
+     "depart": "14:18"
+    },
+    {
+     "station": "wilmington",
+     "seq": 16,
+     "arrive": "14:37",
+     "depart": "14:39"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 17,
+     "arrive": "15:33",
+     "depart": "15:36"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 18,
+     "arrive": "15:49",
+     "depart": "15:51"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 19,
+     "arrive": "16:09",
+     "depart": "16:10"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 20,
+     "arrive": "16:28",
+     "depart": "17:00"
+    },
+    {
+     "station": "alexandria",
+     "seq": 21,
+     "arrive": "17:20",
+     "depart": "17:22"
+    },
+    {
+     "station": "burke-centre-amtrak",
+     "seq": 22,
+     "arrive": "17:40",
+     "depart": "17:41"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 23,
+     "arrive": "17:58",
+     "depart": "18:00"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 24,
+     "arrive": "18:37",
+     "depart": "18:38"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 25,
+     "arrive": "19:34",
+     "depart": "19:44"
+    },
+    {
+     "station": "lynchburg",
+     "seq": 26,
+     "arrive": "20:54",
+     "depart": "20:57"
+    },
+    {
+     "station": "roanoke",
+     "seq": 27,
+     "arrive": "22:13"
+    }
+   ]
+  },
+  {
+   "number": "94",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "norfolk",
+     "seq": 1,
+     "depart": "08:54"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 2,
+     "arrive": "10:18",
+     "depart": "10:20"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 3,
+     "arrive": "10:56",
+     "depart": "11:01"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 4,
+     "arrive": "11:15",
+     "depart": "11:16"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 5,
+     "arrive": "12:00",
+     "depart": "12:02"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 6,
+     "arrive": "12:21",
+     "depart": "12:22"
+    },
+    {
+     "station": "alexandria",
+     "seq": 7,
+     "arrive": "12:55",
+     "depart": "12:57"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 8,
+     "arrive": "13:23",
+     "depart": "14:00"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 9,
+     "arrive": "14:11",
+     "depart": "14:12"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 10,
+     "arrive": "14:26",
+     "depart": "14:28"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 11,
+     "arrive": "14:41",
+     "depart": "14:43"
+    },
+    {
+     "station": "wilmington",
+     "seq": 12,
+     "arrive": "15:33",
+     "depart": "15:35"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 13,
+     "arrive": "15:58",
+     "depart": "16:01"
+    },
+    {
+     "station": "trenton",
+     "seq": 14,
+     "arrive": "16:26",
+     "depart": "16:28"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 15,
+     "arrive": "16:57",
+     "depart": "16:59"
+    },
+    {
+     "station": "newark",
+     "seq": 16,
+     "arrive": "17:03",
+     "depart": "17:05"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 17,
+     "arrive": "17:24",
+     "depart": "17:38"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 18,
+     "arrive": "18:06",
+     "depart": "18:07"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 19,
+     "arrive": "18:28",
+     "depart": "18:30"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 20,
+     "arrive": "18:59",
+     "depart": "19:00"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 21,
+     "arrive": "19:25",
+     "depart": "19:27"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 22,
+     "arrive": "19:55",
+     "depart": "19:56"
+    },
+    {
+     "station": "new-london",
+     "seq": 23,
+     "arrive": "20:13",
+     "depart": "20:14"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 24,
+     "arrive": "20:45",
+     "depart": "20:47"
+    },
+    {
+     "station": "providence",
+     "seq": 25,
+     "arrive": "21:12",
+     "depart": "21:12"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 26,
+     "arrive": "21:48",
+     "depart": "21:48"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 27,
+     "arrive": "22:00",
+     "depart": "22:00"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 28,
+     "arrive": "22:06"
+    }
+   ]
+  },
+  {
+   "number": "93",
+   "name": "Northeast Regional",
+   "headsign": "Norfolk",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "09:20"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "09:24",
+     "depart": "09:26"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "09:35",
+     "depart": "09:36"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "09:58",
+     "depart": "10:01"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "10:20",
+     "depart": "10:22"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 6,
+     "arrive": "10:35",
+     "depart": "10:36"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 7,
+     "arrive": "10:45",
+     "depart": "10:46"
+    },
+    {
+     "station": "new-london",
+     "seq": 8,
+     "arrive": "11:00",
+     "depart": "11:02"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 9,
+     "arrive": "11:20",
+     "depart": "11:21"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 10,
+     "arrive": "11:54",
+     "depart": "11:58"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 11,
+     "arrive": "12:21",
+     "depart": "12:22"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 12,
+     "arrive": "12:51",
+     "depart": "12:53"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 13,
+     "arrive": "13:16",
+     "depart": "13:17"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 14,
+     "arrive": "13:47",
+     "depart": "14:02"
+    },
+    {
+     "station": "newark",
+     "seq": 15,
+     "arrive": "14:18",
+     "depart": "14:19"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 16,
+     "arrive": "14:32",
+     "depart": "14:34"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 17,
+     "arrive": "15:24",
+     "depart": "15:29"
+    },
+    {
+     "station": "wilmington",
+     "seq": 18,
+     "arrive": "15:51",
+     "depart": "15:53"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 19,
+     "arrive": "16:45",
+     "depart": "16:47"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 20,
+     "arrive": "16:58",
+     "depart": "17:00"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 21,
+     "arrive": "17:13",
+     "depart": "17:14"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 22,
+     "arrive": "17:33",
+     "depart": "18:05"
+    },
+    {
+     "station": "alexandria",
+     "seq": 23,
+     "arrive": "18:24",
+     "depart": "18:27"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 24,
+     "arrive": "18:57",
+     "depart": "18:57"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 25,
+     "arrive": "19:19",
+     "depart": "19:22"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 26,
+     "arrive": "20:06",
+     "depart": "20:06"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 27,
+     "arrive": "20:30",
+     "depart": "20:37"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 28,
+     "arrive": "21:11",
+     "depart": "21:13"
+    },
+    {
+     "station": "norfolk",
+     "seq": 29,
+     "arrive": "22:53"
+    }
+   ]
+  },
+  {
+   "number": "185",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "09:25"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "09:41",
+     "depart": "09:42"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 3,
+     "arrive": "09:46",
+     "depart": "09:46"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 4,
+     "arrive": "09:58",
+     "depart": "09:59"
+    },
+    {
+     "station": "trenton",
+     "seq": 5,
+     "arrive": "10:20",
+     "depart": "10:22"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "10:52",
+     "depart": "10:55"
+    },
+    {
+     "station": "wilmington",
+     "seq": 7,
+     "arrive": "11:14",
+     "depart": "11:16"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 8,
+     "arrive": "12:06",
+     "depart": "12:08"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 9,
+     "arrive": "12:19",
+     "depart": "12:21"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 10,
+     "arrive": "12:58"
+    }
+   ]
+  },
+  {
+   "number": "182",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "09:29"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "09:40",
+     "depart": "09:41"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "09:55",
+     "depart": "09:57"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "10:11",
+     "depart": "10:13"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "11:05",
+     "depart": "11:07"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "11:31",
+     "depart": "11:34"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 7,
+     "arrive": "12:30",
+     "depart": "12:31"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "12:38",
+     "depart": "12:38"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "12:56",
+     "depart": "13:10"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 10,
+     "arrive": "13:58",
+     "depart": "13:59"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 11,
+     "arrive": "14:26",
+     "depart": "14:27"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 12,
+     "arrive": "14:51",
+     "depart": "14:55"
+    },
+    {
+     "station": "new-london",
+     "seq": 13,
+     "arrive": "15:39",
+     "depart": "15:39"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 14,
+     "arrive": "16:11",
+     "depart": "16:13"
+    },
+    {
+     "station": "providence",
+     "seq": 15,
+     "arrive": "16:34",
+     "depart": "16:34"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 16,
+     "arrive": "17:05",
+     "depart": "17:05"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 17,
+     "arrive": "17:19",
+     "depart": "17:19"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 18,
+     "arrive": "17:25"
+    }
+   ]
+  },
+  {
+   "number": "178",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "roanoke",
+     "seq": 1,
+     "depart": "09:35"
+    },
+    {
+     "station": "lynchburg",
+     "seq": 2,
+     "arrive": "10:54",
+     "depart": "10:57"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 3,
+     "arrive": "12:15",
+     "depart": "12:25"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 4,
+     "arrive": "13:16",
+     "depart": "13:17"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 5,
+     "arrive": "13:50",
+     "depart": "13:52"
+    },
+    {
+     "station": "burke-centre-amtrak",
+     "seq": 6,
+     "arrive": "14:08",
+     "depart": "14:09"
+    },
+    {
+     "station": "alexandria",
+     "seq": 7,
+     "arrive": "14:30",
+     "depart": "14:32"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 8,
+     "arrive": "14:55",
+     "depart": "15:56"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 9,
+     "arrive": "16:22",
+     "depart": "16:23"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 10,
+     "arrive": "16:37",
+     "depart": "16:39"
+    },
+    {
+     "station": "wilmington",
+     "seq": 11,
+     "arrive": "17:25",
+     "depart": "17:27"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 12,
+     "arrive": "17:54",
+     "depart": "18:00"
+    },
+    {
+     "station": "trenton",
+     "seq": 13,
+     "arrive": "18:25",
+     "depart": "18:27"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 14,
+     "arrive": "18:57",
+     "depart": "18:58"
+    },
+    {
+     "station": "newark",
+     "seq": 15,
+     "arrive": "19:03",
+     "depart": "19:04"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 16,
+     "arrive": "19:24",
+     "depart": "19:50"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 17,
+     "arrive": "20:25",
+     "depart": "20:25"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 18,
+     "arrive": "20:43",
+     "depart": "20:45"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 19,
+     "arrive": "21:12",
+     "depart": "21:13"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 20,
+     "arrive": "21:40",
+     "depart": "21:42"
+    },
+    {
+     "station": "new-london",
+     "seq": 21,
+     "arrive": "22:30",
+     "depart": "22:32"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 22,
+     "arrive": "23:08",
+     "depart": "23:10"
+    },
+    {
+     "station": "providence",
+     "seq": 23,
+     "arrive": "23:29",
+     "depart": "23:29"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 24,
+     "arrive": "23:58",
+     "depart": "23:58"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 25,
+     "arrive": "24:10",
+     "depart": "24:10"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 26,
+     "arrive": "24:15"
+    }
+   ]
+  },
+  {
+   "number": "85",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "10:20"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "10:24",
+     "depart": "10:26"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "10:35",
+     "depart": "10:37"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "10:59",
+     "depart": "11:01"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 5,
+     "arrive": "12:07",
+     "depart": "12:08"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 6,
+     "arrive": "12:40",
+     "depart": "12:42"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 7,
+     "arrive": "13:03",
+     "depart": "13:04"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 8,
+     "arrive": "13:30",
+     "depart": "13:31"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "14:29",
+     "depart": "15:05"
+    },
+    {
+     "station": "newark",
+     "seq": 10,
+     "arrive": "15:21",
+     "depart": "15:22"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 11,
+     "arrive": "15:26",
+     "depart": "15:26"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 12,
+     "arrive": "15:38",
+     "depart": "15:40"
+    },
+    {
+     "station": "trenton",
+     "seq": 13,
+     "arrive": "16:00",
+     "depart": "16:02"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 14,
+     "arrive": "16:28",
+     "depart": "16:32"
+    },
+    {
+     "station": "wilmington",
+     "seq": 15,
+     "arrive": "16:55",
+     "depart": "16:58"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 16,
+     "arrive": "17:28",
+     "depart": "17:30"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 17,
+     "arrive": "17:53",
+     "depart": "17:56"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 18,
+     "arrive": "18:07",
+     "depart": "18:09"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 19,
+     "arrive": "18:23",
+     "depart": "18:24"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 20,
+     "arrive": "18:45"
+    }
+   ]
+  },
+  {
+   "number": "174",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "10:35"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "10:46",
+     "depart": "10:47"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "11:01",
+     "depart": "11:02"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "11:16",
+     "depart": "11:18"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "12:02",
+     "depart": "12:04"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "12:28",
+     "depart": "12:33"
+    },
+    {
+     "station": "trenton",
+     "seq": 7,
+     "arrive": "13:01",
+     "depart": "13:03"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 8,
+     "arrive": "13:11",
+     "depart": "13:12"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 9,
+     "arrive": "13:24",
+     "depart": "13:25"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 10,
+     "arrive": "13:36",
+     "depart": "13:37"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 11,
+     "arrive": "13:47",
+     "depart": "13:48"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "13:52",
+     "depart": "13:54"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "14:14",
+     "depart": "14:29"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 14,
+     "arrive": "14:56",
+     "depart": "14:56"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 15,
+     "arrive": "15:15",
+     "depart": "15:17"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 16,
+     "arrive": "15:44",
+     "depart": "15:45"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 17,
+     "arrive": "16:11",
+     "depart": "16:14"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 18,
+     "arrive": "16:44",
+     "depart": "16:45"
+    },
+    {
+     "station": "new-london",
+     "seq": 19,
+     "arrive": "17:03",
+     "depart": "17:05"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 20,
+     "arrive": "17:16",
+     "depart": "17:17"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 21,
+     "arrive": "17:26",
+     "depart": "17:27"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 22,
+     "arrive": "17:41",
+     "depart": "17:43"
+    },
+    {
+     "station": "providence",
+     "seq": 23,
+     "arrive": "18:01",
+     "depart": "18:01"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 24,
+     "arrive": "18:40",
+     "depart": "18:40"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 25,
+     "arrive": "18:56",
+     "depart": "18:56"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 26,
+     "arrive": "19:04"
+    }
+   ]
+  },
+  {
+   "number": "84",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "11:02"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "11:12",
+     "depart": "11:14"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "11:28",
+     "depart": "11:30"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "11:43",
+     "depart": "11:46"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 5,
+     "arrive": "12:11",
+     "depart": "12:12"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "12:37",
+     "depart": "12:38"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 7,
+     "arrive": "13:04",
+     "depart": "13:07"
+    },
+    {
+     "station": "trenton",
+     "seq": 8,
+     "arrive": "13:34",
+     "depart": "13:36"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 9,
+     "arrive": "13:58",
+     "depart": "13:59"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 10,
+     "arrive": "14:09",
+     "depart": "14:09"
+    },
+    {
+     "station": "newark",
+     "seq": 11,
+     "arrive": "14:16",
+     "depart": "14:16"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 12,
+     "arrive": "14:34"
+    }
+   ]
+  },
+  {
+   "number": "119",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "11:16"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "11:31",
+     "depart": "11:32"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 3,
+     "arrive": "11:36",
+     "depart": "11:37"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "12:13",
+     "depart": "12:14"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "12:45",
+     "depart": "12:47"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "13:12",
+     "depart": "13:13"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 7,
+     "arrive": "14:08",
+     "depart": "14:10"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 8,
+     "arrive": "14:21",
+     "depart": "14:23"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 9,
+     "arrive": "14:52"
+    }
+   ]
+  },
+  {
+   "number": "173",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "11:40"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "11:44",
+     "depart": "11:46"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "11:55",
+     "depart": "11:57"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "12:19",
+     "depart": "12:21"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "12:41",
+     "depart": "12:41"
+    },
+    {
+     "station": "new-london",
+     "seq": 6,
+     "arrive": "13:13",
+     "depart": "13:13"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 7,
+     "arrive": "14:05",
+     "depart": "14:07"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 8,
+     "arrive": "14:29",
+     "depart": "14:30"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 9,
+     "arrive": "15:00",
+     "depart": "15:01"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 10,
+     "arrive": "15:22",
+     "depart": "15:23"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 11,
+     "arrive": "15:52",
+     "depart": "16:05"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "16:20",
+     "depart": "16:22"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 13,
+     "arrive": "16:27",
+     "depart": "16:28"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 14,
+     "arrive": "16:39",
+     "depart": "16:40"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "17:29",
+     "depart": "17:32"
+    },
+    {
+     "station": "wilmington",
+     "seq": 16,
+     "arrive": "17:52",
+     "depart": "17:54"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 17,
+     "arrive": "18:46",
+     "depart": "18:49"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 18,
+     "arrive": "19:00",
+     "depart": "19:02"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 19,
+     "arrive": "19:38"
+    }
+   ]
+  },
+  {
+   "number": "134",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "11:56"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "12:07",
+     "depart": "12:08"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "12:22",
+     "depart": "12:23"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "12:36",
+     "depart": "12:38"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "13:26",
+     "depart": "13:28"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "13:55",
+     "depart": "13:58"
+    },
+    {
+     "station": "trenton",
+     "seq": 7,
+     "arrive": "14:25",
+     "depart": "14:26"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 8,
+     "arrive": "14:47",
+     "depart": "14:48"
+    },
+    {
+     "station": "newark",
+     "seq": 9,
+     "arrive": "15:01",
+     "depart": "15:01"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 10,
+     "arrive": "15:20"
+    }
+   ]
+  },
+  {
+   "number": "131",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "12:10"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "12:25",
+     "depart": "12:26"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 3,
+     "arrive": "12:50",
+     "depart": "12:52"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 4,
+     "arrive": "13:04",
+     "depart": "13:06"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "13:43",
+     "depart": "13:47"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "14:06",
+     "depart": "14:08"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 7,
+     "arrive": "14:58",
+     "depart": "15:00"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 8,
+     "arrive": "15:12",
+     "depart": "15:14"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 9,
+     "arrive": "15:48"
+    }
+   ]
+  },
+  {
+   "number": "138",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "norfolk",
+     "seq": 1,
+     "depart": "12:54"
+    },
+    {
+     "station": "petersburg-amtrak-station",
+     "seq": 2,
+     "arrive": "14:18",
+     "depart": "14:20"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 3,
+     "arrive": "14:59",
+     "depart": "15:06"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 4,
+     "arrive": "15:20",
+     "depart": "15:21"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 5,
+     "arrive": "16:09",
+     "depart": "16:11"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 6,
+     "arrive": "16:30",
+     "depart": "16:31"
+    },
+    {
+     "station": "woodbridge-amtrak",
+     "seq": 7,
+     "arrive": "16:42",
+     "depart": "16:44"
+    },
+    {
+     "station": "alexandria",
+     "seq": 8,
+     "arrive": "17:12",
+     "depart": "17:14"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 9,
+     "arrive": "17:42",
+     "depart": "18:35"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 10,
+     "arrive": "18:46",
+     "depart": "18:47"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 11,
+     "arrive": "19:01",
+     "depart": "19:03"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 12,
+     "arrive": "19:16",
+     "depart": "19:18"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 13,
+     "arrive": "19:40",
+     "depart": "19:41"
+    },
+    {
+     "station": "wilmington",
+     "seq": 14,
+     "arrive": "20:05",
+     "depart": "20:07"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "20:31",
+     "depart": "20:35"
+    },
+    {
+     "station": "trenton",
+     "seq": 16,
+     "arrive": "21:03",
+     "depart": "21:04"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 17,
+     "arrive": "21:12",
+     "depart": "21:13"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 18,
+     "arrive": "21:26",
+     "depart": "21:27"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 19,
+     "arrive": "21:36",
+     "depart": "21:37"
+    },
+    {
+     "station": "newark",
+     "seq": 20,
+     "arrive": "21:54",
+     "depart": "21:54"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 21,
+     "arrive": "22:17"
+    }
+   ]
+  },
+  {
+   "number": "184",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "13:20"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 2,
+     "arrive": "13:52",
+     "depart": "13:54"
+    },
+    {
+     "station": "newark-amtrak",
+     "seq": 3,
+     "arrive": "14:31",
+     "depart": "14:32"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "14:42",
+     "depart": "14:44"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "15:20",
+     "depart": "15:23"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "15:51",
+     "depart": "15:53"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 7,
+     "arrive": "16:14",
+     "depart": "16:15"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "16:29",
+     "depart": "16:30"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "16:50",
+     "depart": "17:07"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 10,
+     "arrive": "17:43",
+     "depart": "17:43"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 11,
+     "arrive": "18:01",
+     "depart": "18:03"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 12,
+     "arrive": "18:36",
+     "depart": "18:37"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 13,
+     "arrive": "19:01",
+     "depart": "19:03"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 14,
+     "arrive": "20:02",
+     "depart": "20:03"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 15,
+     "arrive": "20:12",
+     "depart": "20:13"
+    },
+    {
+     "station": "providence",
+     "seq": 16,
+     "arrive": "20:43",
+     "depart": "20:43"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 17,
+     "arrive": "21:14",
+     "depart": "21:14"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 18,
+     "arrive": "21:29",
+     "depart": "21:29"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 19,
+     "arrive": "21:36"
+    }
+   ]
+  },
+  {
+   "number": "137",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "13:37"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "13:41",
+     "depart": "13:43"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "13:52",
+     "depart": "13:54"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "14:17",
+     "depart": "14:17"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "14:39",
+     "depart": "14:41"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 6,
+     "arrive": "14:54",
+     "depart": "14:56"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 7,
+     "arrive": "15:05",
+     "depart": "15:06"
+    },
+    {
+     "station": "new-london",
+     "seq": 8,
+     "arrive": "15:18",
+     "depart": "15:19"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 9,
+     "arrive": "15:38",
+     "depart": "15:44"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 10,
+     "arrive": "16:17",
+     "depart": "16:21"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 11,
+     "arrive": "16:44",
+     "depart": "16:45"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 12,
+     "arrive": "17:09",
+     "depart": "17:11"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 13,
+     "arrive": "17:30",
+     "depart": "17:31"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 14,
+     "arrive": "18:09",
+     "depart": "18:27"
+    },
+    {
+     "station": "newark",
+     "seq": 15,
+     "arrive": "18:42",
+     "depart": "18:44"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 16,
+     "arrive": "18:48",
+     "depart": "18:49"
+    },
+    {
+     "station": "trenton",
+     "seq": 17,
+     "arrive": "19:23",
+     "depart": "19:24"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 18,
+     "arrive": "19:52",
+     "depart": "19:55"
+    },
+    {
+     "station": "wilmington",
+     "seq": 19,
+     "arrive": "20:17",
+     "depart": "20:19"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 20,
+     "arrive": "21:10",
+     "depart": "21:12"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 21,
+     "arrive": "21:23",
+     "depart": "21:25"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 22,
+     "arrive": "22:00"
+    }
+   ]
+  },
+  {
+   "number": "148",
+   "name": "Northeast Regional",
+   "headsign": "Springfield",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "14:55"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "15:06",
+     "depart": "15:07"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "15:21",
+     "depart": "15:22"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "15:36",
+     "depart": "15:38"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 5,
+     "arrive": "16:02",
+     "depart": "16:03"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "16:28",
+     "depart": "16:30"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 7,
+     "arrive": "16:54",
+     "depart": "16:57"
+    },
+    {
+     "station": "trenton",
+     "seq": 8,
+     "arrive": "17:22",
+     "depart": "17:24"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 9,
+     "arrive": "17:47",
+     "depart": "17:48"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 10,
+     "arrive": "18:00",
+     "depart": "18:01"
+    },
+    {
+     "station": "newark",
+     "seq": 11,
+     "arrive": "18:07",
+     "depart": "18:09"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 12,
+     "arrive": "18:27",
+     "depart": "18:40"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 13,
+     "arrive": "19:15",
+     "depart": "19:16"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 14,
+     "arrive": "19:35",
+     "depart": "19:36"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 15,
+     "arrive": "20:06",
+     "depart": "20:07"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 16,
+     "arrive": "20:32",
+     "depart": "21:02"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 17,
+     "arrive": "21:03",
+     "depart": "21:03"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 18,
+     "arrive": "21:20",
+     "depart": "21:20"
+    },
+    {
+     "station": "meriden",
+     "seq": 19,
+     "arrive": "21:31",
+     "depart": "21:31"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 20,
+     "arrive": "21:44",
+     "depart": "21:44"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 21,
+     "arrive": "21:58",
+     "depart": "21:59"
+    },
+    {
+     "station": "windsor",
+     "seq": 22,
+     "arrive": "22:08",
+     "depart": "22:08"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 23,
+     "arrive": "22:14",
+     "depart": "22:14"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 24,
+     "arrive": "22:37"
+    }
+   ]
+  },
+  {
+   "number": "175",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "15:15"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "15:19",
+     "depart": "15:21"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "15:30",
+     "depart": "15:32"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "15:54",
+     "depart": "15:56"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "16:15",
+     "depart": "16:17"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 6,
+     "arrive": "16:38",
+     "depart": "16:40"
+    },
+    {
+     "station": "new-london",
+     "seq": 7,
+     "arrive": "16:52",
+     "depart": "16:54"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 8,
+     "arrive": "17:19",
+     "depart": "17:21"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "17:53",
+     "depart": "17:55"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 10,
+     "arrive": "18:43",
+     "depart": "18:43"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 11,
+     "arrive": "19:38",
+     "depart": "19:52"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "20:08",
+     "depart": "20:09"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 13,
+     "arrive": "20:22",
+     "depart": "20:24"
+    },
+    {
+     "station": "trenton",
+     "seq": 14,
+     "arrive": "20:47",
+     "depart": "20:49"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "21:19",
+     "depart": "21:23"
+    },
+    {
+     "station": "wilmington",
+     "seq": 16,
+     "arrive": "21:42",
+     "depart": "21:44"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 17,
+     "arrive": "22:35",
+     "depart": "22:37"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 18,
+     "arrive": "22:49",
+     "depart": "22:51"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 19,
+     "arrive": "23:19"
+    }
+   ]
+  },
+  {
+   "number": "176",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "15:30"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "15:52",
+     "depart": "15:53"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "16:06",
+     "depart": "16:08"
+    },
+    {
+     "station": "newark-amtrak",
+     "seq": 4,
+     "arrive": "16:46",
+     "depart": "16:47"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "16:57",
+     "depart": "16:59"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "17:24",
+     "depart": "17:27"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 7,
+     "arrive": "18:00",
+     "depart": "18:02"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 8,
+     "arrive": "18:18",
+     "depart": "18:19"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 9,
+     "arrive": "18:31",
+     "depart": "18:33"
+    },
+    {
+     "station": "newark",
+     "seq": 10,
+     "arrive": "18:37",
+     "depart": "18:38"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 11,
+     "arrive": "18:58",
+     "depart": "19:12"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 12,
+     "arrive": "19:44",
+     "depart": "19:44"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 13,
+     "arrive": "20:03",
+     "depart": "20:05"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 14,
+     "arrive": "20:32",
+     "depart": "20:33"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 15,
+     "arrive": "20:59",
+     "depart": "21:01"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 16,
+     "arrive": "21:29",
+     "depart": "21:31"
+    },
+    {
+     "station": "new-london",
+     "seq": 17,
+     "arrive": "21:53",
+     "depart": "21:55"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 18,
+     "arrive": "22:14",
+     "depart": "22:16"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 19,
+     "arrive": "22:29",
+     "depart": "22:29"
+    },
+    {
+     "station": "providence",
+     "seq": 20,
+     "arrive": "22:52",
+     "depart": "22:52"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 21,
+     "arrive": "23:31",
+     "depart": "23:31"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 22,
+     "arrive": "23:43",
+     "depart": "23:43"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 23,
+     "arrive": "23:50"
+    }
+   ]
+  },
+  {
+   "number": "186",
+   "name": "Northeast Regional",
+   "headsign": "Philadelphia",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "newport-news",
+     "seq": 1,
+     "depart": "15:42"
+    },
+    {
+     "station": "williamsburg-amtrak-station",
+     "seq": 2,
+     "arrive": "15:55",
+     "depart": "15:58"
+    },
+    {
+     "station": "richmond-main-street-amtrak-station",
+     "seq": 3,
+     "arrive": "16:48",
+     "depart": "16:51"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 4,
+     "arrive": "17:23",
+     "depart": "17:26"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 5,
+     "arrive": "17:38",
+     "depart": "17:39"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 6,
+     "arrive": "18:24",
+     "depart": "18:26"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 7,
+     "arrive": "18:46",
+     "depart": "18:48"
+    },
+    {
+     "station": "woodbridge-amtrak",
+     "seq": 8,
+     "arrive": "19:00",
+     "depart": "19:02"
+    },
+    {
+     "station": "alexandria",
+     "seq": 9,
+     "arrive": "19:31",
+     "depart": "19:33"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 10,
+     "arrive": "19:55",
+     "depart": "20:30"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 11,
+     "arrive": "20:40",
+     "depart": "20:42"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 12,
+     "arrive": "20:56",
+     "depart": "20:57"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 13,
+     "arrive": "21:12",
+     "depart": "21:14"
+    },
+    {
+     "station": "wilmington",
+     "seq": 14,
+     "arrive": "22:01",
+     "depart": "22:02"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "22:30"
+    }
+   ]
+  },
+  {
+   "number": "66",
+   "name": "Northeast Regional",
+   "headsign": "Boston",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "roanoke",
+     "seq": 1,
+     "depart": "16:23"
+    },
+    {
+     "station": "lynchburg",
+     "seq": 2,
+     "arrive": "17:37",
+     "depart": "17:40"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 3,
+     "arrive": "18:51",
+     "depart": "19:01"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 4,
+     "arrive": "19:52",
+     "depart": "19:53"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 5,
+     "arrive": "20:28",
+     "depart": "20:30"
+    },
+    {
+     "station": "alexandria",
+     "seq": 6,
+     "arrive": "21:10",
+     "depart": "21:12"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 7,
+     "arrive": "21:28",
+     "depart": "22:00"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 8,
+     "arrive": "22:33",
+     "depart": "22:35"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 9,
+     "arrive": "22:49",
+     "depart": "23:01"
+    },
+    {
+     "station": "wilmington",
+     "seq": 10,
+     "arrive": "23:57",
+     "depart": "23:59"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 11,
+     "arrive": "24:22",
+     "depart": "27:25"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "28:45",
+     "depart": "28:48"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "29:11",
+     "depart": "29:44"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 14,
+     "arrive": "30:13",
+     "depart": "30:13"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 15,
+     "arrive": "30:33",
+     "depart": "30:34"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 16,
+     "arrive": "31:04",
+     "depart": "31:05"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 17,
+     "arrive": "31:24",
+     "depart": "31:26"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 18,
+     "arrive": "31:54",
+     "depart": "31:54"
+    },
+    {
+     "station": "new-london",
+     "seq": 19,
+     "arrive": "32:14",
+     "depart": "32:15"
+    },
+    {
+     "station": "mystic-amtrak",
+     "seq": 20,
+     "arrive": "32:27",
+     "depart": "32:28"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 21,
+     "arrive": "32:37",
+     "depart": "32:39"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 22,
+     "arrive": "32:53",
+     "depart": "32:55"
+    },
+    {
+     "station": "providence",
+     "seq": 23,
+     "arrive": "33:15",
+     "depart": "33:17"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 24,
+     "arrive": "33:42",
+     "depart": "33:42"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 25,
+     "arrive": "33:58",
+     "depart": "33:58"
+    },
+    {
+     "station": "boston-bos",
+     "seq": 26,
+     "arrive": "34:05"
+    }
+   ]
+  },
+  {
+   "number": "129",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "16:24"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "16:39",
+     "depart": "16:41"
+    },
+    {
+     "station": "new-brunswick-amtrak-station",
+     "seq": 3,
+     "arrive": "17:04",
+     "depart": "17:05"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 4,
+     "arrive": "17:17",
+     "depart": "17:19"
+    },
+    {
+     "station": "trenton",
+     "seq": 5,
+     "arrive": "17:29",
+     "depart": "17:30"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "17:57",
+     "depart": "18:00"
+    },
+    {
+     "station": "wilmington",
+     "seq": 7,
+     "arrive": "18:19",
+     "depart": "18:21"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 8,
+     "arrive": "19:12",
+     "depart": "19:18"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 9,
+     "arrive": "19:31",
+     "depart": "19:33"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 10,
+     "arrive": "20:01"
+    }
+   ]
+  },
+  {
+   "number": "136",
+   "name": "Northeast Regional",
+   "headsign": "Springfield",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "17:00"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 2,
+     "arrive": "17:11",
+     "depart": "17:12"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 3,
+     "arrive": "17:26",
+     "depart": "17:27"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 4,
+     "arrive": "17:41",
+     "depart": "17:43"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "18:27",
+     "depart": "18:29"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 6,
+     "arrive": "18:53",
+     "depart": "18:56"
+    },
+    {
+     "station": "trenton",
+     "seq": 7,
+     "arrive": "19:28",
+     "depart": "19:30"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 8,
+     "arrive": "19:53",
+     "depart": "19:54"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 9,
+     "arrive": "20:05",
+     "depart": "20:06"
+    },
+    {
+     "station": "newark",
+     "seq": 10,
+     "arrive": "20:11",
+     "depart": "20:13"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 11,
+     "arrive": "20:31",
+     "depart": "20:50"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 12,
+     "arrive": "21:23",
+     "depart": "21:24"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 13,
+     "arrive": "21:43",
+     "depart": "21:44"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 14,
+     "arrive": "22:11",
+     "depart": "22:12"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 15,
+     "arrive": "22:40",
+     "depart": "23:10"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 16,
+     "arrive": "23:12",
+     "depart": "23:12"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 17,
+     "arrive": "23:26",
+     "depart": "23:26"
+    },
+    {
+     "station": "meriden",
+     "seq": 18,
+     "arrive": "23:34",
+     "depart": "23:34"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 19,
+     "arrive": "23:43",
+     "depart": "23:43"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 20,
+     "arrive": "23:56",
+     "depart": "23:59"
+    },
+    {
+     "station": "windsor",
+     "seq": 21,
+     "arrive": "24:06",
+     "depart": "24:06"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 22,
+     "arrive": "24:14",
+     "depart": "24:14"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 23,
+     "arrive": "24:41"
+    }
+   ]
+  },
+  {
+   "number": "177",
+   "name": "Northeast Regional",
+   "headsign": "Philadelphia",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "17:30"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "17:34",
+     "depart": "17:35"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "17:44",
+     "depart": "17:46"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "18:08",
+     "depart": "18:10"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "18:32",
+     "depart": "18:34"
+    },
+    {
+     "station": "westerly-amtrak-station",
+     "seq": 6,
+     "arrive": "18:47",
+     "depart": "18:48"
+    },
+    {
+     "station": "new-london",
+     "seq": 7,
+     "arrive": "19:09",
+     "depart": "19:11"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 8,
+     "arrive": "19:30",
+     "depart": "19:32"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "20:05",
+     "depart": "20:13"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 10,
+     "arrive": "20:33",
+     "depart": "20:35"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 11,
+     "arrive": "21:02",
+     "depart": "21:04"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 12,
+     "arrive": "21:22",
+     "depart": "21:24"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 13,
+     "arrive": "21:52",
+     "depart": "22:05"
+    },
+    {
+     "station": "newark",
+     "seq": 14,
+     "arrive": "22:21",
+     "depart": "22:22"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 15,
+     "arrive": "22:36",
+     "depart": "22:38"
+    },
+    {
+     "station": "princeton-junction-amtrak-station",
+     "seq": 16,
+     "arrive": "23:00",
+     "depart": "23:01"
+    },
+    {
+     "station": "trenton",
+     "seq": 17,
+     "arrive": "23:08",
+     "depart": "23:09"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 18,
+     "arrive": "23:45"
+    }
+   ]
+  },
+  {
+   "number": "193",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "17:47"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "18:02",
+     "depart": "18:03"
+    },
+    {
+     "station": "newark-liberty-international-airport",
+     "seq": 3,
+     "arrive": "18:09",
+     "depart": "18:10"
+    },
+    {
+     "station": "trenton",
+     "seq": 4,
+     "arrive": "18:44",
+     "depart": "18:45"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "19:13",
+     "depart": "19:18"
+    },
+    {
+     "station": "wilmington",
+     "seq": 6,
+     "arrive": "19:43",
+     "depart": "19:44"
+    },
+    {
+     "station": "newark-amtrak",
+     "seq": 7,
+     "arrive": "19:52",
+     "depart": "19:53"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 8,
+     "arrive": "20:39",
+     "depart": "20:41"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 9,
+     "arrive": "20:52",
+     "depart": "20:54"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 10,
+     "arrive": "21:07",
+     "depart": "21:08"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 11,
+     "arrive": "21:27"
+    }
+   ]
+  },
+  {
+   "number": "196",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "18:08"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "18:31",
+     "depart": "18:33"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "18:46",
+     "depart": "18:49"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "19:37",
+     "depart": "19:39"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "20:03",
+     "depart": "20:08"
+    },
+    {
+     "station": "newark",
+     "seq": 6,
+     "arrive": "21:04",
+     "depart": "21:04"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 7,
+     "arrive": "21:26"
+    }
+   ]
+  },
+  {
+   "number": "197",
+   "name": "Northeast Regional",
+   "headsign": "Washington",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "18:09"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "18:25",
+     "depart": "18:27"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 3,
+     "arrive": "18:40",
+     "depart": "18:42"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "19:33",
+     "depart": "19:36"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "19:56",
+     "depart": "19:56"
+    },
+    {
+     "station": "aberdeen-amtrak-station",
+     "seq": 6,
+     "arrive": "20:25",
+     "depart": "20:25"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 7,
+     "arrive": "20:48",
+     "depart": "20:49"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 8,
+     "arrive": "21:32"
+    }
+   ]
+  },
+  {
+   "number": "65",
+   "name": "Northeast Regional",
+   "headsign": "Newport News",
+   "direction": "1",
+   "days": "Fri-Sat",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "18:45"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "18:50",
+     "depart": "18:51"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "19:00",
+     "depart": "19:01"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "19:23",
+     "depart": "19:25"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "19:43",
+     "depart": "19:44"
+    },
+    {
+     "station": "new-london",
+     "seq": 6,
+     "arrive": "20:17",
+     "depart": "20:17"
+    },
+    {
+     "station": "old-saybrook-amtrak-station",
+     "seq": 7,
+     "arrive": "20:35",
+     "depart": "20:36"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 8,
+     "arrive": "21:08",
+     "depart": "21:10"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 9,
+     "arrive": "21:27",
+     "depart": "21:27"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 10,
+     "arrive": "21:55",
+     "depart": "21:55"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 11,
+     "arrive": "22:16",
+     "depart": "22:16"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 12,
+     "arrive": "23:02",
+     "depart": "23:23"
+    },
+    {
+     "station": "newark",
+     "seq": 13,
+     "arrive": "23:40",
+     "depart": "23:42"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 14,
+     "arrive": "23:55",
+     "depart": "23:57"
+    },
+    {
+     "station": "trenton",
+     "seq": 15,
+     "arrive": "24:21",
+     "depart": "24:22"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 16,
+     "arrive": "24:51",
+     "depart": "28:20"
+    },
+    {
+     "station": "wilmington",
+     "seq": 17,
+     "arrive": "28:42",
+     "depart": "28:45"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 18,
+     "arrive": "29:36",
+     "depart": "29:39"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 19,
+     "arrive": "29:51",
+     "depart": "29:53"
+    },
+    {
+     "station": "new-carrollton-amtrak-station",
+     "seq": 20,
+     "arrive": "30:09",
+     "depart": "30:11"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 21,
+     "arrive": "30:29",
+     "depart": "31:00"
+    },
+    {
+     "station": "alexandria",
+     "seq": 22,
+     "arrive": "31:15",
+     "depart": "31:18"
+    },
+    {
+     "station": "quantico-amtrak",
+     "seq": 23,
+     "arrive": "31:43",
+     "depart": "31:44"
+    },
+    {
+     "station": "fredericksburg-amtrak",
+     "seq": 24,
+     "arrive": "32:04",
+     "depart": "32:05"
+    },
+    {
+     "station": "ashland-amtrak",
+     "seq": 25,
+     "arrive": "32:46",
+     "depart": "32:47"
+    },
+    {
+     "station": "richmond-staples-mill-road-amtrak-station",
+     "seq": 26,
+     "arrive": "33:03",
+     "depart": "33:08"
+    },
+    {
+     "station": "richmond-main-street-amtrak-station",
+     "seq": 27,
+     "arrive": "33:32",
+     "depart": "33:34"
+    },
+    {
+     "station": "williamsburg-amtrak-station",
+     "seq": 28,
+     "arrive": "34:36",
+     "depart": "34:38"
+    },
+    {
+     "station": "newport-news",
+     "seq": 29,
+     "arrive": "35:09"
+    }
+   ]
+  },
+  {
+   "number": "192",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "19:12"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "19:36",
+     "depart": "19:37"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "19:52",
+     "depart": "19:54"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "20:43",
+     "depart": "20:45"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "21:10",
+     "depart": "21:14"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "21:40",
+     "depart": "21:41"
+    },
+    {
+     "station": "newark",
+     "seq": 7,
+     "arrive": "22:18",
+     "depart": "22:19"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 8,
+     "arrive": "22:38"
+    }
+   ]
+  },
+  {
+   "number": "179",
+   "name": "Northeast Regional",
+   "headsign": "Philadelphia",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "boston-bos",
+     "seq": 1,
+     "depart": "19:47"
+    },
+    {
+     "station": "boston-bby",
+     "seq": 2,
+     "arrive": "19:52",
+     "depart": "19:52"
+    },
+    {
+     "station": "route-128-amtrak-station",
+     "seq": 3,
+     "arrive": "20:02",
+     "depart": "20:03"
+    },
+    {
+     "station": "providence",
+     "seq": 4,
+     "arrive": "20:26",
+     "depart": "20:28"
+    },
+    {
+     "station": "kingston-amtrak-station",
+     "seq": 5,
+     "arrive": "20:49",
+     "depart": "20:50"
+    },
+    {
+     "station": "new-london",
+     "seq": 6,
+     "arrive": "21:21",
+     "depart": "21:22"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 7,
+     "arrive": "22:09",
+     "depart": "22:12"
+    },
+    {
+     "station": "bridgeport-amtrak-station",
+     "seq": 8,
+     "arrive": "22:33",
+     "depart": "22:33"
+    },
+    {
+     "station": "stamford-amtrak-station",
+     "seq": 9,
+     "arrive": "22:59",
+     "depart": "23:00"
+    },
+    {
+     "station": "new-rochelle-amtrak-station",
+     "seq": 10,
+     "arrive": "23:17",
+     "depart": "23:17"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 11,
+     "arrive": "23:49",
+     "depart": "24:11"
+    },
+    {
+     "station": "newark",
+     "seq": 12,
+     "arrive": "24:27",
+     "depart": "24:28"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 13,
+     "arrive": "24:42",
+     "depart": "24:44"
+    },
+    {
+     "station": "trenton",
+     "seq": 14,
+     "arrive": "25:08",
+     "depart": "25:09"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 15,
+     "arrive": "25:39"
+    }
+   ]
+  },
+  {
+   "number": "198",
+   "name": "Northeast Regional",
+   "headsign": "New York",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "washington-union-station",
+     "seq": 1,
+     "depart": "21:15"
+    },
+    {
+     "station": "bwi-thurgood-marshall-airport-station",
+     "seq": 2,
+     "arrive": "21:42",
+     "depart": "21:43"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 3,
+     "arrive": "21:57",
+     "depart": "21:59"
+    },
+    {
+     "station": "wilmington",
+     "seq": 4,
+     "arrive": "22:51",
+     "depart": "22:53"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 5,
+     "arrive": "23:13",
+     "depart": "23:17"
+    },
+    {
+     "station": "trenton",
+     "seq": 6,
+     "arrive": "23:44",
+     "depart": "23:45"
+    },
+    {
+     "station": "metropark-amtrak-station",
+     "seq": 7,
+     "arrive": "24:12",
+     "depart": "24:13"
+    },
+    {
+     "station": "newark",
+     "seq": 8,
+     "arrive": "24:26",
+     "depart": "24:27"
+    },
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 9,
+     "arrive": "24:45"
+    }
+   ]
+  }
+ ]
+}

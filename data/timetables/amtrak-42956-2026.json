@@ -1,0 +1,164 @@
+{
+ "id": "amtrak-42956-2026",
+ "route_id": "42956",
+ "line_ids": [
+  "amtrak-42956"
+ ],
+ "company": "Amtrak",
+ "service": "Blue Water",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "365",
+   "name": "Blue Water",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "port-huron-amtrak-station",
+     "seq": 1,
+     "depart": "06:20"
+    },
+    {
+     "station": "lapeer-amtrak-station",
+     "seq": 2,
+     "arrive": "07:06",
+     "depart": "07:08"
+    },
+    {
+     "station": "flint-amtrak-station",
+     "seq": 3,
+     "arrive": "07:30",
+     "depart": "07:35"
+    },
+    {
+     "station": "durand-amtrak-station",
+     "seq": 4,
+     "arrive": "08:06",
+     "depart": "08:08"
+    },
+    {
+     "station": "east-lansing-amtrak-station",
+     "seq": 5,
+     "arrive": "08:49",
+     "depart": "08:54"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 6,
+     "arrive": "10:05",
+     "depart": "10:10"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 7,
+     "arrive": "10:33",
+     "depart": "10:36"
+    },
+    {
+     "station": "dowagiac-amtrak-station",
+     "seq": 8,
+     "arrive": "11:01",
+     "depart": "11:02"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 9,
+     "arrive": "11:11",
+     "depart": "11:14"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 10,
+     "arrive": "11:32",
+     "depart": "11:34"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 11,
+     "arrive": "12:55"
+    }
+   ]
+  },
+  {
+   "number": "364",
+   "name": "Blue Water",
+   "headsign": "Port Huron",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "17:00"
+    },
+    {
+     "station": "new-buffalo-amtrak",
+     "seq": 2,
+     "arrive": "18:08",
+     "depart": "18:10"
+    },
+    {
+     "station": "niles-amtrak-station",
+     "seq": 3,
+     "arrive": "18:29",
+     "depart": "18:32"
+    },
+    {
+     "station": "dowagiac-amtrak-station",
+     "seq": 4,
+     "arrive": "18:42",
+     "depart": "18:43"
+    },
+    {
+     "station": "kalamazoo",
+     "seq": 5,
+     "arrive": "19:08",
+     "depart": "19:11"
+    },
+    {
+     "station": "battle-creek",
+     "seq": 6,
+     "arrive": "19:33",
+     "depart": "19:38"
+    },
+    {
+     "station": "east-lansing-amtrak-station",
+     "seq": 7,
+     "arrive": "21:05",
+     "depart": "21:10"
+    },
+    {
+     "station": "durand-amtrak-station",
+     "seq": 8,
+     "arrive": "21:45",
+     "depart": "21:47"
+    },
+    {
+     "station": "flint-amtrak-station",
+     "seq": 9,
+     "arrive": "22:13",
+     "depart": "22:18"
+    },
+    {
+     "station": "lapeer-amtrak-station",
+     "seq": 10,
+     "arrive": "22:42",
+     "depart": "22:44"
+    },
+    {
+     "station": "port-huron-amtrak-station",
+     "seq": 11,
+     "arrive": "23:41"
+    }
+   ]
+  }
+ ]
+}

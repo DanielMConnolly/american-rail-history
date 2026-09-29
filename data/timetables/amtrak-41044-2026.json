@@ -1,0 +1,454 @@
+{
+ "id": "amtrak-41044-2026",
+ "route_id": "41044",
+ "line_ids": [
+  "amtrak-41044",
+  "amtrak-81-boston",
+  "amtrak-88",
+  "amtrak-90"
+ ],
+ "company": "Amtrak",
+ "service": "Valley Flyer",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "425",
+   "name": "Valley Flyer",
+   "headsign": "Springfield",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "greenfield-amtrak-station",
+     "seq": 1,
+     "depart": "06:05"
+    },
+    {
+     "station": "northampton",
+     "seq": 2,
+     "arrive": "06:30",
+     "depart": "06:30"
+    },
+    {
+     "station": "holyoke-amtrak",
+     "seq": 3,
+     "arrive": "06:45",
+     "depart": "06:45"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 4,
+     "arrive": "07:13"
+    }
+   ]
+  },
+  {
+   "number": "495",
+   "name": "Valley Flyer",
+   "headsign": "New Haven",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "springfield-spg",
+     "seq": 1,
+     "depart": "07:05"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 2,
+     "arrive": "07:24",
+     "depart": "07:24"
+    },
+    {
+     "station": "windsor",
+     "seq": 3,
+     "arrive": "07:29",
+     "depart": "07:29"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 4,
+     "arrive": "07:36",
+     "depart": "07:39"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "07:49",
+     "depart": "07:49"
+    },
+    {
+     "station": "meriden",
+     "seq": 6,
+     "arrive": "07:58",
+     "depart": "07:58"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 7,
+     "arrive": "08:06",
+     "depart": "08:06"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 8,
+     "arrive": "08:19",
+     "depart": "08:19"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 9,
+     "arrive": "08:27"
+    }
+   ]
+  },
+  {
+   "number": "471",
+   "name": "Valley Flyer",
+   "headsign": "New Haven",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 1,
+     "depart": "09:35"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 2,
+     "arrive": "09:46",
+     "depart": "09:46"
+    },
+    {
+     "station": "meriden",
+     "seq": 3,
+     "arrive": "09:55",
+     "depart": "09:55"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 4,
+     "arrive": "10:03",
+     "depart": "10:03"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 5,
+     "arrive": "10:16",
+     "depart": "10:16"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 6,
+     "arrive": "10:24"
+    }
+   ]
+  },
+  {
+   "number": "486",
+   "name": "Valley Flyer",
+   "headsign": "Greenfield",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "new-haven-nhv",
+     "seq": 1,
+     "depart": "15:10"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 2,
+     "arrive": "15:12",
+     "depart": "15:12"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 3,
+     "arrive": "15:25",
+     "depart": "15:25"
+    },
+    {
+     "station": "meriden",
+     "seq": 4,
+     "arrive": "15:35",
+     "depart": "15:35"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "15:43",
+     "depart": "15:43"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 6,
+     "arrive": "15:56",
+     "depart": "15:58"
+    },
+    {
+     "station": "windsor",
+     "seq": 7,
+     "arrive": "16:13",
+     "depart": "16:13"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 8,
+     "arrive": "16:23",
+     "depart": "16:23"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 9,
+     "arrive": "16:44",
+     "depart": "17:00"
+    },
+    {
+     "station": "holyoke-amtrak",
+     "seq": 10,
+     "arrive": "17:26",
+     "depart": "17:26"
+    },
+    {
+     "station": "northampton",
+     "seq": 11,
+     "arrive": "17:42",
+     "depart": "17:42"
+    },
+    {
+     "station": "greenfield-amtrak-station",
+     "seq": 12,
+     "arrive": "18:08"
+    }
+   ]
+  },
+  {
+   "number": "479",
+   "name": "Valley Flyer",
+   "headsign": "New Haven",
+   "direction": "1",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "greenfield-amtrak-station",
+     "seq": 1,
+     "depart": "18:40"
+    },
+    {
+     "station": "northampton",
+     "seq": 2,
+     "arrive": "19:05",
+     "depart": "19:05"
+    },
+    {
+     "station": "holyoke-amtrak",
+     "seq": 3,
+     "arrive": "19:20",
+     "depart": "19:20"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 4,
+     "arrive": "19:48",
+     "depart": "20:16"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 5,
+     "arrive": "20:35",
+     "depart": "20:35"
+    },
+    {
+     "station": "windsor",
+     "seq": 6,
+     "arrive": "20:40",
+     "depart": "20:40"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 7,
+     "arrive": "20:47",
+     "depart": "20:50"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 8,
+     "arrive": "21:01",
+     "depart": "21:01"
+    },
+    {
+     "station": "meriden",
+     "seq": 9,
+     "arrive": "21:10",
+     "depart": "21:10"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 10,
+     "arrive": "21:18",
+     "depart": "21:18"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 11,
+     "arrive": "21:31",
+     "depart": "21:31"
+    },
+    {
+     "station": "new-haven-nhv",
+     "seq": 12,
+     "arrive": "21:35"
+    }
+   ]
+  },
+  {
+   "number": "494",
+   "name": "Valley Flyer",
+   "headsign": "Greenfield",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "new-haven-nhv",
+     "seq": 1,
+     "depart": "19:45"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 2,
+     "arrive": "19:47",
+     "depart": "19:47"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 3,
+     "arrive": "19:59",
+     "depart": "19:59"
+    },
+    {
+     "station": "meriden",
+     "seq": 4,
+     "arrive": "20:07",
+     "depart": "20:08"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "20:17",
+     "depart": "20:17"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 6,
+     "arrive": "20:27",
+     "depart": "20:30"
+    },
+    {
+     "station": "windsor",
+     "seq": 7,
+     "arrive": "20:40",
+     "depart": "20:40"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 8,
+     "arrive": "20:47",
+     "depart": "20:47"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 9,
+     "arrive": "21:09",
+     "depart": "21:25"
+    },
+    {
+     "station": "holyoke-amtrak",
+     "seq": 10,
+     "arrive": "21:51",
+     "depart": "21:51"
+    },
+    {
+     "station": "northampton",
+     "seq": 11,
+     "arrive": "22:07",
+     "depart": "22:07"
+    },
+    {
+     "station": "greenfield-amtrak-station",
+     "seq": 12,
+     "arrive": "22:33"
+    }
+   ]
+  },
+  {
+   "number": "478",
+   "name": "Valley Flyer",
+   "headsign": "Springfield",
+   "direction": "0",
+   "days": "Mon-Fri",
+   "stops": [
+    {
+     "station": "new-haven-nhv",
+     "seq": 1,
+     "depart": "22:00"
+    },
+    {
+     "station": "new-haven-sts",
+     "seq": 2,
+     "arrive": "22:02",
+     "depart": "22:02"
+    },
+    {
+     "station": "wallingford-amtrak",
+     "seq": 3,
+     "arrive": "22:15",
+     "depart": "22:15"
+    },
+    {
+     "station": "meriden",
+     "seq": 4,
+     "arrive": "22:25",
+     "depart": "22:25"
+    },
+    {
+     "station": "berlin-amtrak",
+     "seq": 5,
+     "arrive": "22:33",
+     "depart": "22:33"
+    },
+    {
+     "station": "hartford-amtrak-station",
+     "seq": 6,
+     "arrive": "22:45",
+     "depart": "22:47"
+    },
+    {
+     "station": "windsor",
+     "seq": 7,
+     "arrive": "22:54",
+     "depart": "22:54"
+    },
+    {
+     "station": "windsor-locks",
+     "seq": 8,
+     "arrive": "23:00",
+     "depart": "23:00"
+    },
+    {
+     "station": "springfield-spg",
+     "seq": 9,
+     "arrive": "23:23"
+    }
+   ]
+  }
+ ]
+}

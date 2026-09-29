@@ -1,0 +1,235 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Morgantown Personal Rapid Transit is the passenger rail Morgantown has today, and the only one it has had since 1953. Automated rubber-tyred cars on an elevated guideway link WVU's downtown and Evansdale campuses: Walnut, Beechurst, Engineering, Towers and Medical. Phase I (Walnut - Engineering) opened in 1975; Phase II (on to Medical) during the 1978-79 school year. It is drawn as two features so each half appears in the year it opened. Mode is recorded as rapid_transit - it is a grade-separated automated guideway system, closest in character to the other rapid_transit layers here, though OSM tags it railway=monorail.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Morgantown_Personal_Rapid_Transit",
+   "https://prt.wvu.edu/about-the-prt"
+  ],
+  "not_yet_sourced": [
+   "the exact opening date of Phase II (drawn from 1979)",
+   "published headways - the 5-minute figure is the peak dispatch interval, not a timetabled headway",
+   "seasonal closure is noted but not modelled: the PRT does not run over the summer or normally on Sundays"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Virginia University",
+    "line": "West Virginia University: PRT Walnut \u2013 Engineering",
+    "id": "wvu-prt-walnut-engineering",
+    "color": "#EAAA00",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 32,
+    "speed_source": "estimated from the documented 30 mph maximum speed and the 11.5-minute Walnut-to-Medical end-to-end run over 3.6 mi; not a published average",
+    "geometry_quality": "real-traced from the OpenStreetMap route relation 12316476 ('WVU PRT: Walnut - Medical', railway=monorail). The relation is the Walnut-to-Medical direction of the guideway and traces 3.06 mi against a documented 3.6 mi system length - the difference is the opposite-direction guideway and station loops, which are not drawn.",
+    "segments": [
+     {
+      "start": 1975,
+      "end": 2026,
+      "headway_min": 5,
+      "note": "The Morgantown Personal Rapid Transit, built for WVU with federal funding as a demonstration of automated small-vehicle transit, opened in 1975 with three stations - Walnut (downtown), Beechurst and Engineering. Rubber-tyred driverless cars run on a dedicated concrete guideway; on demand off-peak, and dispatched on headways of roughly five minutes when waiting builds at peak. It still runs, carrying about 16,000 riders a day during term, and a renewal project approved in 2012 has been replacing the control system and the fleet. Note that it runs term-time only (roughly 6:30am-10:15pm weekdays, normally closed Sundays and over the summer).",
+      "sources": [
+       "Segment-level: the 1975 Phase I opening with three stations, the 30 mph maximum, the ~5-minute peak dispatch interval and the 2012 renewal are from the Wikipedia article on the Morgantown PRT and WVU's own PRT pages.",
+       "https://en.wikipedia.org/wiki/Morgantown_Personal_Rapid_Transit",
+       "https://prt.wvu.edu/about-the-prt"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.95729,
+      39.62999
+     ],
+     [
+      -79.95728,
+      39.630371
+     ],
+     [
+      -79.958357,
+      39.631036
+     ],
+     [
+      -79.957418,
+      39.63274
+     ],
+     [
+      -79.957192,
+      39.63394
+     ],
+     [
+      -79.955929,
+      39.634693
+     ],
+     [
+      -79.955997,
+      39.635273
+     ],
+     [
+      -79.95682,
+      39.635681
+     ],
+     [
+      -79.957394,
+      39.636127
+     ],
+     [
+      -79.958128,
+      39.63719
+     ],
+     [
+      -79.961303,
+      39.640374
+     ],
+     [
+      -79.963766,
+      39.641804
+     ],
+     [
+      -79.964403,
+      39.642312
+     ],
+     [
+      -79.966922,
+      39.643094
+     ],
+     [
+      -79.970592,
+      39.642753
+     ],
+     [
+      -79.972293,
+      39.642913
+     ],
+     [
+      -79.97357,
+      39.643437
+     ],
+     [
+      -79.975278,
+      39.644553
+     ],
+     [
+      -79.975586,
+      39.644918
+     ],
+     [
+      -79.975469,
+      39.64573
+     ],
+     [
+      -79.97581,
+      39.646547
+     ],
+     [
+      -79.975712,
+      39.6469
+     ],
+     [
+      -79.974471,
+      39.64759
+     ],
+     [
+      -79.974042,
+      39.647542
+     ],
+     [
+      -79.973149,
+      39.647022
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Virginia University",
+    "line": "West Virginia University: PRT Engineering \u2013 Medical",
+    "id": "wvu-prt-engineering-medical",
+    "color": "#EAAA00",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 32,
+    "speed_source": "estimated from the documented 30 mph maximum speed and the 11.5-minute end-to-end run; not a published average",
+    "geometry_quality": "real-traced from the OpenStreetMap route relation 12316476 ('WVU PRT: Walnut - Medical', railway=monorail). The relation is the Walnut-to-Medical direction of the guideway and traces 3.06 mi against a documented 3.6 mi system length - the difference is the opposite-direction guideway and station loops, which are not drawn.",
+    "segments": [
+     {
+      "start": 1979,
+      "end": 2026,
+      "headway_min": 5,
+      "note": "Phase II, opened during the 1978-79 academic year, carried the guideway on from Engineering past Towers to Medical, at the Health Sciences Center - the northern end of the present five-station system. End to end, Walnut to Medical takes 11.5 minutes.",
+      "sources": [
+       "Segment-level: the Phase II 1978-79 extension, the five-station order and the 11.5-minute end-to-end time are from the Wikipedia article on the Morgantown PRT. The 1979 start year is this dataset's reading of 'expanded during the 1978-1979 school year'; the exact opening date is NOT sourced.",
+       "https://en.wikipedia.org/wiki/Morgantown_Personal_Rapid_Transit",
+       "https://prt.wvu.edu/about-the-prt"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.973149,
+      39.647022
+     ],
+     [
+      -79.972511,
+      39.646717
+     ],
+     [
+      -79.972003,
+      39.64668
+     ],
+     [
+      -79.970417,
+      39.647222
+     ],
+     [
+      -79.96847,
+      39.647565
+     ],
+     [
+      -79.968125,
+      39.647765
+     ],
+     [
+      -79.965772,
+      39.650285
+     ],
+     [
+      -79.96513,
+      39.650756
+     ],
+     [
+      -79.964213,
+      39.651126
+     ],
+     [
+      -79.9624,
+      39.651375
+     ],
+     [
+      -79.961068,
+      39.651733
+     ],
+     [
+      -79.960792,
+      39.652067
+     ],
+     [
+      -79.960785,
+      39.653443
+     ],
+     [
+      -79.960411,
+      39.654617
+     ]
+    ]
+   }
+  }
+ ]
+}

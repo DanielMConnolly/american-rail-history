@@ -1,0 +1,152 @@
+{
+ "id": "amtrak-72-2026",
+ "route_id": "72",
+ "line_ids": [
+  "amtrak-72"
+ ],
+ "company": "Amtrak",
+ "service": "Carl Sandburg",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "381",
+   "name": "Carl Sandburg",
+   "headsign": "Quincy",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "chicago-union-station",
+     "seq": 1,
+     "depart": "08:40"
+    },
+    {
+     "station": "la-grange-amtrak",
+     "seq": 2,
+     "arrive": "08:58",
+     "depart": "08:59"
+    },
+    {
+     "station": "naperville-amtrak-station",
+     "seq": 3,
+     "arrive": "09:13",
+     "depart": "09:15"
+    },
+    {
+     "station": "plano-amtrak-station",
+     "seq": 4,
+     "arrive": "09:36",
+     "depart": "09:37"
+    },
+    {
+     "station": "mendota-amtrak-station",
+     "seq": 5,
+     "arrive": "10:04",
+     "depart": "10:05"
+    },
+    {
+     "station": "princeton-amtrak-station",
+     "seq": 6,
+     "arrive": "10:25",
+     "depart": "10:26"
+    },
+    {
+     "station": "kewanee-amtrak-station",
+     "seq": 7,
+     "arrive": "10:48",
+     "depart": "10:49"
+    },
+    {
+     "station": "galesburg-amtrak-station",
+     "seq": 8,
+     "arrive": "11:21",
+     "depart": "11:23"
+    },
+    {
+     "station": "macomb-amtrak-station",
+     "seq": 9,
+     "arrive": "12:04",
+     "depart": "12:04"
+    },
+    {
+     "station": "quincy-amtrak-station",
+     "seq": 10,
+     "arrive": "13:02"
+    }
+   ]
+  },
+  {
+   "number": "382",
+   "name": "Carl Sandburg",
+   "headsign": "Chicago",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "quincy-amtrak-station",
+     "seq": 1,
+     "depart": "18:30"
+    },
+    {
+     "station": "macomb-amtrak-station",
+     "seq": 2,
+     "arrive": "19:17",
+     "depart": "19:19"
+    },
+    {
+     "station": "galesburg-amtrak-station",
+     "seq": 3,
+     "arrive": "19:54",
+     "depart": "19:56"
+    },
+    {
+     "station": "kewanee-amtrak-station",
+     "seq": 4,
+     "arrive": "20:22",
+     "depart": "20:23"
+    },
+    {
+     "station": "princeton-amtrak-station",
+     "seq": 5,
+     "arrive": "20:46",
+     "depart": "20:47"
+    },
+    {
+     "station": "mendota-amtrak-station",
+     "seq": 6,
+     "arrive": "21:08",
+     "depart": "21:09"
+    },
+    {
+     "station": "plano-amtrak-station",
+     "seq": 7,
+     "arrive": "21:37",
+     "depart": "21:38"
+    },
+    {
+     "station": "naperville-amtrak-station",
+     "seq": 8,
+     "arrive": "22:15",
+     "depart": "22:15"
+    },
+    {
+     "station": "la-grange-amtrak",
+     "seq": 9,
+     "arrive": "22:31",
+     "depart": "22:31"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 10,
+     "arrive": "22:51"
+    }
+   ]
+  }
+ ]
+}

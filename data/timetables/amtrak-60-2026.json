@@ -1,0 +1,946 @@
+{
+ "id": "amtrak-60-2026",
+ "route_id": "60",
+ "line_ids": [
+  "amtrak-36924",
+  "amtrak-60-vancouver",
+  "amtrak-75"
+ ],
+ "company": "Amtrak",
+ "service": "Amtrak Cascades",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "500",
+   "name": "Amtrak Cascades",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "portland-pdx",
+     "seq": 1,
+     "depart": "09:45"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 2,
+     "arrive": "10:01",
+     "depart": "10:03"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 3,
+     "arrive": "10:36",
+     "depart": "10:38"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 4,
+     "arrive": "11:17",
+     "depart": "11:19"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 5,
+     "arrive": "11:38",
+     "depart": "11:40"
+    },
+    {
+     "station": "tacoma",
+     "seq": 6,
+     "arrive": "12:18",
+     "depart": "12:18"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 7,
+     "arrive": "12:49",
+     "depart": "12:49"
+    },
+    {
+     "station": "seattle",
+     "seq": 8,
+     "arrive": "13:10"
+    }
+   ]
+  },
+  {
+   "number": "503",
+   "name": "Amtrak Cascades",
+   "headsign": "Eugene",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "10:10"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 2,
+     "arrive": "10:23",
+     "depart": "10:25"
+    },
+    {
+     "station": "tacoma",
+     "seq": 3,
+     "arrive": "10:57",
+     "depart": "11:00"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 4,
+     "arrive": "11:31",
+     "depart": "11:33"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 5,
+     "arrive": "11:51",
+     "depart": "11:53"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 6,
+     "arrive": "12:32",
+     "depart": "12:32"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 7,
+     "arrive": "13:09",
+     "depart": "13:09"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 8,
+     "arrive": "13:35",
+     "depart": "14:08"
+    },
+    {
+     "station": "oregon-city-amtrak",
+     "seq": 9,
+     "arrive": "14:33",
+     "depart": "14:33"
+    },
+    {
+     "station": "salem",
+     "seq": 10,
+     "arrive": "15:20",
+     "depart": "15:20"
+    },
+    {
+     "station": "albany-amtrak-station",
+     "seq": 11,
+     "arrive": "15:55",
+     "depart": "15:55"
+    },
+    {
+     "station": "eugene",
+     "seq": 12,
+     "arrive": "16:48"
+    }
+   ]
+  },
+  {
+   "number": "517",
+   "name": "Amtrak Cascades",
+   "headsign": "Portland",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "vancouver-vac",
+     "seq": 1,
+     "depart": "10:25"
+    },
+    {
+     "station": "bellingham-amtrak-station",
+     "seq": 2,
+     "arrive": "12:11",
+     "depart": "12:14"
+    },
+    {
+     "station": "mount-vernon-amtrak-station",
+     "seq": 3,
+     "arrive": "12:41",
+     "depart": "12:43"
+    },
+    {
+     "station": "stanwood-amtrak",
+     "seq": 4,
+     "arrive": "12:55",
+     "depart": "12:57"
+    },
+    {
+     "station": "everett-amtrak-station",
+     "seq": 5,
+     "arrive": "13:34",
+     "depart": "13:37"
+    },
+    {
+     "station": "edmonds",
+     "seq": 6,
+     "arrive": "13:58",
+     "depart": "14:00"
+    },
+    {
+     "station": "seattle",
+     "seq": 7,
+     "arrive": "14:40",
+     "depart": "15:10"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 8,
+     "arrive": "15:23",
+     "depart": "15:25"
+    },
+    {
+     "station": "tacoma",
+     "seq": 9,
+     "arrive": "15:55",
+     "depart": "15:58"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 10,
+     "arrive": "16:29",
+     "depart": "16:31"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 11,
+     "arrive": "16:49",
+     "depart": "16:51"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 12,
+     "arrive": "17:30",
+     "depart": "17:30"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 13,
+     "arrive": "18:09",
+     "depart": "18:09"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 14,
+     "arrive": "18:35"
+    }
+   ]
+  },
+  {
+   "number": "504",
+   "name": "Amtrak Cascades",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "eugene",
+     "seq": 1,
+     "depart": "10:45"
+    },
+    {
+     "station": "albany-amtrak-station",
+     "seq": 2,
+     "arrive": "11:24",
+     "depart": "11:26"
+    },
+    {
+     "station": "salem",
+     "seq": 3,
+     "arrive": "11:54",
+     "depart": "11:56"
+    },
+    {
+     "station": "oregon-city-amtrak",
+     "seq": 4,
+     "arrive": "12:38",
+     "depart": "12:39"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 5,
+     "arrive": "13:20",
+     "depart": "13:40"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 6,
+     "arrive": "13:56",
+     "depart": "13:58"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 7,
+     "arrive": "14:31",
+     "depart": "14:33"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 8,
+     "arrive": "15:12",
+     "depart": "15:14"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 9,
+     "arrive": "15:33",
+     "depart": "15:35"
+    },
+    {
+     "station": "tacoma",
+     "seq": 10,
+     "arrive": "16:13",
+     "depart": "16:13"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 11,
+     "arrive": "16:44",
+     "depart": "16:44"
+    },
+    {
+     "station": "seattle",
+     "seq": 12,
+     "arrive": "17:05"
+    }
+   ]
+  },
+  {
+   "number": "502",
+   "name": "Amtrak Cascades",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "portland-pdx",
+     "seq": 1,
+     "depart": "11:30"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 2,
+     "arrive": "11:46",
+     "depart": "11:48"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 3,
+     "arrive": "12:21",
+     "depart": "12:23"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 4,
+     "arrive": "13:02",
+     "depart": "13:04"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 5,
+     "arrive": "13:23",
+     "depart": "13:25"
+    },
+    {
+     "station": "tacoma",
+     "seq": 6,
+     "arrive": "14:03",
+     "depart": "14:03"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 7,
+     "arrive": "14:34",
+     "depart": "14:34"
+    },
+    {
+     "station": "seattle",
+     "seq": 8,
+     "arrive": "14:55"
+    }
+   ]
+  },
+  {
+   "number": "516",
+   "name": "Amtrak Cascades",
+   "headsign": "Vancouver",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "11:30"
+    },
+    {
+     "station": "edmonds",
+     "seq": 2,
+     "arrive": "11:54",
+     "depart": "11:56"
+    },
+    {
+     "station": "everett-amtrak-station",
+     "seq": 3,
+     "arrive": "12:18",
+     "depart": "12:21"
+    },
+    {
+     "station": "stanwood-amtrak",
+     "seq": 4,
+     "arrive": "12:49",
+     "depart": "12:51"
+    },
+    {
+     "station": "mount-vernon-amtrak-station",
+     "seq": 5,
+     "arrive": "13:02",
+     "depart": "13:04"
+    },
+    {
+     "station": "bellingham-amtrak-station",
+     "seq": 6,
+     "arrive": "13:34",
+     "depart": "13:37"
+    },
+    {
+     "station": "vancouver-vac",
+     "seq": 7,
+     "arrive": "15:30"
+    }
+   ]
+  },
+  {
+   "number": "505",
+   "name": "Amtrak Cascades",
+   "headsign": "Portland",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "11:55"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 2,
+     "arrive": "12:08",
+     "depart": "12:10"
+    },
+    {
+     "station": "tacoma",
+     "seq": 3,
+     "arrive": "12:40",
+     "depart": "12:43"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 4,
+     "arrive": "13:14",
+     "depart": "13:16"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 5,
+     "arrive": "13:34",
+     "depart": "13:36"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 6,
+     "arrive": "14:15",
+     "depart": "14:15"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 7,
+     "arrive": "14:54",
+     "depart": "14:54"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 8,
+     "arrive": "15:20"
+    }
+   ]
+  },
+  {
+   "number": "518",
+   "name": "Amtrak Cascades",
+   "headsign": "Vancouver",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "portland-pdx",
+     "seq": 1,
+     "depart": "17:10"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 2,
+     "arrive": "17:26",
+     "depart": "17:28"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 3,
+     "arrive": "18:01",
+     "depart": "18:03"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 4,
+     "arrive": "18:42",
+     "depart": "18:44"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 5,
+     "arrive": "19:03",
+     "depart": "19:05"
+    },
+    {
+     "station": "tacoma",
+     "seq": 6,
+     "arrive": "19:47",
+     "depart": "19:47"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 7,
+     "arrive": "20:16",
+     "depart": "20:16"
+    },
+    {
+     "station": "seattle",
+     "seq": 8,
+     "arrive": "20:37",
+     "depart": "21:00"
+    },
+    {
+     "station": "edmonds",
+     "seq": 9,
+     "arrive": "21:24",
+     "depart": "21:26"
+    },
+    {
+     "station": "everett-amtrak-station",
+     "seq": 10,
+     "arrive": "21:48",
+     "depart": "21:51"
+    },
+    {
+     "station": "stanwood-amtrak",
+     "seq": 11,
+     "arrive": "22:19",
+     "depart": "22:21"
+    },
+    {
+     "station": "mount-vernon-amtrak-station",
+     "seq": 12,
+     "arrive": "22:32",
+     "depart": "22:34"
+    },
+    {
+     "station": "bellingham-amtrak-station",
+     "seq": 13,
+     "arrive": "23:04",
+     "depart": "23:07"
+    },
+    {
+     "station": "vancouver-vac",
+     "seq": 14,
+     "arrive": "25:00"
+    }
+   ]
+  },
+  {
+   "number": "507",
+   "name": "Amtrak Cascades",
+   "headsign": "Eugene",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "17:20"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 2,
+     "arrive": "17:33",
+     "depart": "17:35"
+    },
+    {
+     "station": "tacoma",
+     "seq": 3,
+     "arrive": "18:05",
+     "depart": "18:08"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 4,
+     "arrive": "18:39",
+     "depart": "18:41"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 5,
+     "arrive": "18:59",
+     "depart": "19:01"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 6,
+     "arrive": "19:40",
+     "depart": "19:40"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 7,
+     "arrive": "20:19",
+     "depart": "20:19"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 8,
+     "arrive": "20:45",
+     "depart": "21:09"
+    },
+    {
+     "station": "oregon-city-amtrak",
+     "seq": 9,
+     "arrive": "21:33",
+     "depart": "21:34"
+    },
+    {
+     "station": "salem",
+     "seq": 10,
+     "arrive": "22:19",
+     "depart": "22:21"
+    },
+    {
+     "station": "albany-amtrak-station",
+     "seq": 11,
+     "arrive": "22:50",
+     "depart": "22:52"
+    },
+    {
+     "station": "eugene",
+     "seq": 12,
+     "arrive": "23:47"
+    }
+   ]
+  },
+  {
+   "number": "508",
+   "name": "Amtrak Cascades",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "eugene",
+     "seq": 1,
+     "depart": "19:30"
+    },
+    {
+     "station": "albany-amtrak-station",
+     "seq": 2,
+     "arrive": "20:09",
+     "depart": "20:11"
+    },
+    {
+     "station": "salem",
+     "seq": 3,
+     "arrive": "20:39",
+     "depart": "20:41"
+    },
+    {
+     "station": "oregon-city-amtrak",
+     "seq": 4,
+     "arrive": "21:23",
+     "depart": "21:24"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 5,
+     "arrive": "22:05",
+     "depart": "22:25"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 6,
+     "arrive": "22:41",
+     "depart": "22:43"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 7,
+     "arrive": "23:16",
+     "depart": "23:18"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 8,
+     "arrive": "23:57",
+     "depart": "23:59"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 9,
+     "arrive": "24:18",
+     "depart": "24:20"
+    },
+    {
+     "station": "tacoma",
+     "seq": 10,
+     "arrive": "24:58",
+     "depart": "24:58"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 11,
+     "arrive": "25:29",
+     "depart": "25:29"
+    },
+    {
+     "station": "seattle",
+     "seq": 12,
+     "arrive": "25:50"
+    }
+   ]
+  },
+  {
+   "number": "519",
+   "name": "Amtrak Cascades",
+   "headsign": "Seattle",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "vancouver-vac",
+     "seq": 1,
+     "depart": "19:55"
+    },
+    {
+     "station": "bellingham-amtrak-station",
+     "seq": 2,
+     "arrive": "21:41",
+     "depart": "21:44"
+    },
+    {
+     "station": "mount-vernon-amtrak-station",
+     "seq": 3,
+     "arrive": "22:11",
+     "depart": "22:13"
+    },
+    {
+     "station": "stanwood-amtrak",
+     "seq": 4,
+     "arrive": "22:25",
+     "depart": "22:27"
+    },
+    {
+     "station": "everett-amtrak-station",
+     "seq": 5,
+     "arrive": "23:04",
+     "depart": "23:07"
+    },
+    {
+     "station": "edmonds",
+     "seq": 6,
+     "arrive": "23:28",
+     "depart": "23:30"
+    },
+    {
+     "station": "seattle",
+     "seq": 7,
+     "arrive": "24:10"
+    }
+   ]
+  },
+  {
+   "number": "509",
+   "name": "Amtrak Cascades",
+   "headsign": "Portland",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "20:40"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 2,
+     "arrive": "20:53",
+     "depart": "20:55"
+    },
+    {
+     "station": "tacoma",
+     "seq": 3,
+     "arrive": "21:25",
+     "depart": "21:28"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 4,
+     "arrive": "21:59",
+     "depart": "22:01"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 5,
+     "arrive": "22:19",
+     "depart": "22:21"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 6,
+     "arrive": "23:00",
+     "depart": "23:00"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 7,
+     "arrive": "23:39",
+     "depart": "23:39"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 8,
+     "arrive": "24:05"
+    }
+   ]
+  },
+  {
+   "number": "506",
+   "name": "Amtrak Cascades",
+   "headsign": "Seattle",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "portland-pdx",
+     "seq": 1,
+     "depart": "20:55"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 2,
+     "arrive": "21:11",
+     "depart": "21:13"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 3,
+     "arrive": "21:46",
+     "depart": "21:48"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 4,
+     "arrive": "22:27",
+     "depart": "22:29"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 5,
+     "arrive": "22:48",
+     "depart": "22:50"
+    },
+    {
+     "station": "tacoma",
+     "seq": 6,
+     "arrive": "23:28",
+     "depart": "23:28"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 7,
+     "arrive": "23:59",
+     "depart": "23:59"
+    },
+    {
+     "station": "seattle",
+     "seq": 8,
+     "arrive": "24:20"
+    }
+   ]
+  },
+  {
+   "number": "511",
+   "name": "Amtrak Cascades",
+   "headsign": "Portland",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "seattle",
+     "seq": 1,
+     "depart": "22:50"
+    },
+    {
+     "station": "tukwila-amtrak",
+     "seq": 2,
+     "arrive": "23:03",
+     "depart": "23:05"
+    },
+    {
+     "station": "tacoma",
+     "seq": 3,
+     "arrive": "23:35",
+     "depart": "23:38"
+    },
+    {
+     "station": "olympia-lacey-amtrak-station",
+     "seq": 4,
+     "arrive": "24:09",
+     "depart": "24:11"
+    },
+    {
+     "station": "centralia-amtrak-station-ctl",
+     "seq": 5,
+     "arrive": "24:29",
+     "depart": "24:31"
+    },
+    {
+     "station": "kelso-longview",
+     "seq": 6,
+     "arrive": "25:10",
+     "depart": "25:10"
+    },
+    {
+     "station": "vancouver-van",
+     "seq": 7,
+     "arrive": "25:49",
+     "depart": "25:49"
+    },
+    {
+     "station": "portland-pdx",
+     "seq": 8,
+     "arrive": "26:15"
+    }
+   ]
+  }
+ ]
+}

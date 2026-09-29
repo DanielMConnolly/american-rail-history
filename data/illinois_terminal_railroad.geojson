@@ -1,0 +1,1344 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Illinois Terminal Railroad \u2014 the Illinois Traction System until 1937 \u2014 was the largest interurban network in the Midwest outside Ohio and Indiana, some 550 miles at its height and still 462 route miles in 1950, radiating from Springfield to St. Louis, Peoria, Bloomington, Decatur, Champaign and Danville. William B. McKinley built it from 1901 onward, beginning with a short line from Danville to Westville in October 1901, and it was unusual among interurbans in almost everything: it was originally electrified at 3,300 volts single-phase AC before being converted to 650-volt DC around 1910, it built its own bridge over the Mississippi \u2014 the McKinley Bridge, opened to the cars on 1 October 1910 \u2014 to reach downtown St. Louis rather than pay a rival, it carried heavy carload freight as well as passengers, and it is remembered for running sleeping cars, a thing almost no other interurban attempted. The passenger network came apart in stages: the small Danville branches went in the 1920s and 1930s, the Bloomington routes and the Danville\u2013Champaign line in 1953, Decatur\u2013Springfield and Champaign\u2013Decatur in 1955, and interurban passenger service ended altogether on 3 March 1956. Only the St. Louis\u2013Granite City suburban trains ran on, to 21 June 1958. Freight lasted far longer, into the Norfolk Southern era, but none of those years are drawn here.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad \u2014 the twelve-route table with opening and closing years used for almost every segment's end date, the 3 March 1956 end of interurban passenger service, the 1958 end of St. Louis\u2013Granite City commuter service, the 3,300 V AC to 650 V DC re-electrification around 1910, the 550-mile system size, and the McKinley Bridge.",
+   "https://www.american-rails.com/it.html \u2014 precise opening dates (Danville\u2013Westville 20 October 1901, Catlin 29 May 1902, Georgetown 27 August 1902, Champaign 6 September 1903, Springfield\u2013Decatur 25 September 1904, Ridge Farm 1 October 1905, St. Louis & Springfield and St. Louis & North Eastern 16 February 1906, Decatur\u2013Bloomington 1 August 1906, Bloomington\u2013Peoria via Mackinaw 21 April 1907, Lincoln\u2013Mackinaw 1 January 1908, McKinley Bridge 1 October 1910), the 1930 Alton acquisition, the 462 route miles of 1950 and the 21 June 1958 end of suburban service.",
+   "https://pantagraph.com/special-section/news/history-and-events/04-12-09-bloomington-once-a-stop-on-electric-railway-system/article_d6bb0165-4806-578a-9f55-f788b64840dc.html \u2014 the six cities served and the 1948 figure of 48 stops on the 37-mile Peoria\u2013Bloomington run.",
+   "OpenStreetMap ways tagged old_railway_operator=IT / 'Illinois Terminal' / 'Illinois Traction' \u2014 the source of all real geometry in this file: the Madison County Transit trails, the McKinley Bridge, the Alton District, and the razed main line from Worden through Staunton, Carlinville and Girard to Springfield and east toward Illiopolis."
+  ],
+  "not_yet_sourced": [
+   "GEOMETRY: seven features (Decatur\u2013Champaign, Champaign\u2013Danville, Decatur\u2013Bloomington, Bloomington\u2013Peoria, Springfield\u2013Peoria, Staunton\u2013Hillsboro, Danville\u2013Ridge Farm, Danville\u2013Catlin) are straight lines between documented towns, not traced alignments. Nothing in OpenStreetMap east or north of Springfield carries an Illinois Terminal operator tag, and corridor routing over the surviving abandoned grades produced the Baltimore and Ohio, Illinois Central and Wabash alignments instead. These are the highest-value targets for re-tracing.",
+   "DATE CONFLICTS between the Wikipedia route table and american-rails.com, in every case resolved here by drawing the LATER opening year: Springfield\u2013Granite City 1904 vs February 1906; Danville\u2013Champaign 1902 vs September 1903; Decatur\u2013Bloomington 1905 vs August 1906; Danville\u2013Ridge Farm 1901 vs October 1905 (1901 is the Westville opening).",
+   "The Alton branch: american-rails.com dates the acquisition to 1930, and the Wikipedia route table omits Alton entirely. Earlier electric passenger service on the Alton\u2013Edwardsville corridor under predecessor companies is neither confirmed nor drawn.",
+   "The interurban sleeping cars, for which this railroad is best known, are described in the layer note but no source consulted here gives the years, the route or the last night they ran.",
+   "The affiliated city streetcar systems in Springfield, Decatur, Danville, Champaign-Urbana, Peoria and Alton are NOT drawn. No route geometry or electrification and closure dates were found for any of them. They would be mode 'streetcar' if added, and several of them began under animal power, so Rule 5 would require drawing them from electrification rather than from the founding of the company.",
+   "All headway_min values are estimates; no Illinois Terminal public timetable was consulted for any segment.",
+   "Route mileages: no per-route documented mileage was found except the 37-mile Peoria\u2013Bloomington figure, so traced-vs-documented comparison is only possible for that one line."
+  ],
+  "horsecar_audit": "No animal-powered operation is drawn. Every feature here is an interurban route built new as an electric railway from 1901 onward. The company's affiliated city streetcar systems, several of which did begin with mules, are deliberately not drawn at all (see not_yet_sourced).",
+  "freight_only_audit": "The Illinois Terminal was a serious freight carrier and hauled carload freight for decades after the interurbans stopped \u2014 the last passenger service of any kind was the St. Louis\u2013Granite City suburban run, which ended 21 June 1958. No feature in this file is drawn past its own route's last passenger year, and none past 1958.",
+  "interurban_audit": "Every feature is mode 'interurban': all are inter-city electric railway routes. The street trackage in St. Louis, Venice, Madison and Springfield is drawn as part of the interurban routes it served, not as local city service. The company's genuinely local city streetcar systems are not drawn."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: St. Louis \u2013 Granite City",
+    "id": "it-st-louis-granite-city",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 32,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=IT \u2014 the McKinley Bridge and its bikeway, the Trestle, Broadway, McCambridge and Madison Avenue street trackage through Venice and Madison \u2014 with 1.2 mi of straight-line connector where the approach tracks in St. Louis have gone. Traced 5.6 mi.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1958,
+      "headway_min": 20,
+      "note": "The McKinley Bridge, built by the Illinois Traction System's own promoter William B. McKinley and opened to the railway on 1 October 1910, gave the interurban its own crossing of the Mississippi and a downtown St. Louis terminal. This was the last passenger service the company ran: the St. Louis\u2013Granite City suburban trains outlived the through interurbans by two years and stopped on 21 June 1958. Headway is an estimate for the suburban service; through interurban trains were far less frequent.",
+      "sources": [
+       "Segment-level: the 1 October 1910 McKinley Bridge opening and the 21 June 1958 end of St. Louis\u2013Granite City suburban service are from american-rails.com; the Wikipedia route table gives the same 1910\u20131958 span for Granite City\u2013St. Louis.",
+       "https://www.american-rails.com/it.html",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.194405,
+      38.638202
+     ],
+     [
+      -90.192038,
+      38.643239
+     ],
+     [
+      -90.190199,
+      38.646001
+     ],
+     [
+      -90.190517,
+      38.648778
+     ],
+     [
+      -90.190264,
+      38.649444
+     ],
+     [
+      -90.189435,
+      38.650011
+     ],
+     [
+      -90.18525,
+      38.651347
+     ],
+     [
+      -90.184453,
+      38.65225
+     ],
+     [
+      -90.187429,
+      38.662924
+     ],
+     [
+      -90.187211,
+      38.664005
+     ],
+     [
+      -90.186644,
+      38.664395
+     ],
+     [
+      -90.17865,
+      38.665614
+     ],
+     [
+      -90.164084,
+      38.675459
+     ],
+     [
+      -90.159186,
+      38.678266
+     ],
+     [
+      -90.158575,
+      38.679169
+     ],
+     [
+      -90.154336,
+      38.693299
+     ],
+     [
+      -90.146537,
+      38.699623
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Granite City \u2013 Springfield",
+    "id": "it-granite-city-springfield",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "The best geometry in this file. Traced from OSM ways tagged old_railway_operator=IT / 'Illinois Terminal' / 'Illinois Traction' \u2014 the Madison County Transit trails (Nature, Goshen, Quercus Grove, Schoolhouse) on the right of way south of Edwardsville and a long chain of razed IT ways north through Worden, Staunton, Carlinville and Girard to the eastern edge of Springfield \u2014 with about 4.9 mi of straight-line connector spread over ten gaps. APPROXIMATED LEG: the last 1.7 mi into the Springfield terminal at 5th and Jefferson is a single straight segment, that stretch having been street trackage which is not mapped. Traced 97.3 mi; no documented Granite City\u2013Springfield mileage was located for comparison.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1956,
+      "headway_min": 120,
+      "note": "The Wikipedia route table dates Springfield\u2013Granite City 1904\u20131956; american-rails.com dates the St. Louis & Springfield line to Staunton and the St. Louis & North Eastern to Granite City both to 16 February 1906. The later date is used here so the drawn years do not assert service before it is agreed to have run \u2014 the conflict is recorded in metadata.not_yet_sourced. This was the system's trunk, carrying the through St. Louis\u2013Springfield\u2013Peoria trains. Interurban passenger service over it ended on 3 March 1956. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 3 March 1956 end of interurban passenger service is from the Wikipedia article; the 1906 opening dates are from american-rails.com and conflict with Wikipedia's 1904.",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad",
+       "https://www.american-rails.com/it.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.146537,
+      38.699623
+     ],
+     [
+      -90.12393,
+      38.717479
+     ],
+     [
+      -90.123011,
+      38.718443
+     ],
+     [
+      -90.122731,
+      38.719406
+     ],
+     [
+      -90.122293,
+      38.698616
+     ],
+     [
+      -90.116619,
+      38.69569
+     ],
+     [
+      -90.109717,
+      38.701807
+     ],
+     [
+      -90.095678,
+      38.707327
+     ],
+     [
+      -90.097248,
+      38.711881
+     ],
+     [
+      -90.094367,
+      38.713369
+     ],
+     [
+      -90.078828,
+      38.721043
+     ],
+     [
+      -90.050926,
+      38.729799
+     ],
+     [
+      -90.046014,
+      38.732081
+     ],
+     [
+      -90.043938,
+      38.733598
+     ],
+     [
+      -90.041615,
+      38.73597
+     ],
+     [
+      -90.006928,
+      38.778799
+     ],
+     [
+      -90.003709,
+      38.780641
+     ],
+     [
+      -89.965841,
+      38.79591
+     ],
+     [
+      -89.963223,
+      38.796232
+     ],
+     [
+      -89.956166,
+      38.796121
+     ],
+     [
+      -89.95551,
+      38.795803
+     ],
+     [
+      -89.948715,
+      38.797156
+     ],
+     [
+      -89.943148,
+      38.802108
+     ],
+     [
+      -89.941446,
+      38.806651
+     ],
+     [
+      -89.94121,
+      38.808629
+     ],
+     [
+      -89.942579,
+      38.813844
+     ],
+     [
+      -89.942823,
+      38.819248
+     ],
+     [
+      -89.942089,
+      38.820609
+     ],
+     [
+      -89.933302,
+      38.826372
+     ],
+     [
+      -89.91809,
+      38.832418
+     ],
+     [
+      -89.911032,
+      38.834349
+     ],
+     [
+      -89.901521,
+      38.840125
+     ],
+     [
+      -89.89411,
+      38.845987
+     ],
+     [
+      -89.886024,
+      38.853376
+     ],
+     [
+      -89.879052,
+      38.857868
+     ],
+     [
+      -89.857358,
+      38.877265
+     ],
+     [
+      -89.838423,
+      38.8952
+     ],
+     [
+      -89.838074,
+      38.896166
+     ],
+     [
+      -89.837864,
+      38.909527
+     ],
+     [
+      -89.836795,
+      38.924572
+     ],
+     [
+      -89.837365,
+      38.926698
+     ],
+     [
+      -89.836881,
+      38.928427
+     ],
+     [
+      -89.836753,
+      38.931896
+     ],
+     [
+      -89.835106,
+      38.934913
+     ],
+     [
+      -89.832409,
+      38.937778
+     ],
+     [
+      -89.832054,
+      38.940454
+     ],
+     [
+      -89.829495,
+      38.943606
+     ],
+     [
+      -89.821953,
+      38.954469
+     ],
+     [
+      -89.820947,
+      38.956898
+     ],
+     [
+      -89.818426,
+      38.959599
+     ],
+     [
+      -89.787309,
+      39.004271
+     ],
+     [
+      -89.787478,
+      39.019746
+     ],
+     [
+      -89.796069,
+      39.035295
+     ],
+     [
+      -89.799671,
+      39.042485
+     ],
+     [
+      -89.800078,
+      39.053284
+     ],
+     [
+      -89.800787,
+      39.055633
+     ],
+     [
+      -89.806881,
+      39.061415
+     ],
+     [
+      -89.807846,
+      39.062565
+     ],
+     [
+      -89.808521,
+      39.064175
+     ],
+     [
+      -89.808793,
+      39.08712
+     ],
+     [
+      -89.806833,
+      39.09344
+     ],
+     [
+      -89.806956,
+      39.106751
+     ],
+     [
+      -89.807951,
+      39.109343
+     ],
+     [
+      -89.813453,
+      39.116437
+     ],
+     [
+      -89.813792,
+      39.117468
+     ],
+     [
+      -89.813991,
+      39.124412
+     ],
+     [
+      -89.820499,
+      39.130483
+     ],
+     [
+      -89.821225,
+      39.131741
+     ],
+     [
+      -89.821626,
+      39.173218
+     ],
+     [
+      -89.822695,
+      39.177017
+     ],
+     [
+      -89.825227,
+      39.181026
+     ],
+     [
+      -89.862455,
+      39.218255
+     ],
+     [
+      -89.864574,
+      39.220905
+     ],
+     [
+      -89.866352,
+      39.227285
+     ],
+     [
+      -89.869631,
+      39.234101
+     ],
+     [
+      -89.870695,
+      39.238098
+     ],
+     [
+      -89.87164,
+      39.239972
+     ],
+     [
+      -89.873023,
+      39.240588
+     ],
+     [
+      -89.874553,
+      39.240747
+     ],
+     [
+      -89.878817,
+      39.240078
+     ],
+     [
+      -89.881641,
+      39.24028
+     ],
+     [
+      -89.882966,
+      39.240919
+     ],
+     [
+      -89.883703,
+      39.242085
+     ],
+     [
+      -89.884561,
+      39.244119
+     ],
+     [
+      -89.885502,
+      39.249437
+     ],
+     [
+      -89.884386,
+      39.253442
+     ],
+     [
+      -89.884064,
+      39.256682
+     ],
+     [
+      -89.884397,
+      39.258567
+     ],
+     [
+      -89.882906,
+      39.267651
+     ],
+     [
+      -89.88282,
+      39.289592
+     ],
+     [
+      -89.832351,
+      39.362527
+     ],
+     [
+      -89.811293,
+      39.393373
+     ],
+     [
+      -89.810102,
+      39.395927
+     ],
+     [
+      -89.799577,
+      39.410567
+     ],
+     [
+      -89.780338,
+      39.438753
+     ],
+     [
+      -89.778034,
+      39.443029
+     ],
+     [
+      -89.777546,
+      39.444346
+     ],
+     [
+      -89.777477,
+      39.447678
+     ],
+     [
+      -89.776259,
+      39.449289
+     ],
+     [
+      -89.77213,
+      39.468659
+     ],
+     [
+      -89.767257,
+      39.488975
+     ],
+     [
+      -89.76733,
+      39.496411
+     ],
+     [
+      -89.765057,
+      39.506738
+     ],
+     [
+      -89.765135,
+      39.511056
+     ],
+     [
+      -89.764435,
+      39.512648
+     ],
+     [
+      -89.763273,
+      39.514065
+     ],
+     [
+      -89.762807,
+      39.515466
+     ],
+     [
+      -89.762903,
+      39.529587
+     ],
+     [
+      -89.761675,
+      39.532032
+     ],
+     [
+      -89.75653,
+      39.537915
+     ],
+     [
+      -89.753961,
+      39.549343
+     ],
+     [
+      -89.754208,
+      39.594301
+     ],
+     [
+      -89.753285,
+      39.595487
+     ],
+     [
+      -89.752196,
+      39.596231
+     ],
+     [
+      -89.743516,
+      39.596496
+     ],
+     [
+      -89.741296,
+      39.597397
+     ],
+     [
+      -89.740588,
+      39.598356
+     ],
+     [
+      -89.694531,
+      39.693139
+     ],
+     [
+      -89.688991,
+      39.703941
+     ],
+     [
+      -89.682135,
+      39.715739
+     ],
+     [
+      -89.680975,
+      39.71884
+     ],
+     [
+      -89.678736,
+      39.721836
+     ],
+     [
+      -89.667744,
+      39.741506
+     ],
+     [
+      -89.668007,
+      39.762647
+     ],
+     [
+      -89.667342,
+      39.763431
+     ],
+     [
+      -89.665528,
+      39.764255
+     ],
+     [
+      -89.654285,
+      39.766004
+     ],
+     [
+      -89.652305,
+      39.766214
+     ],
+     [
+      -89.630669,
+      39.766178
+     ],
+     [
+      -89.627512,
+      39.766754
+     ],
+     [
+      -89.62461,
+      39.76793
+     ],
+     [
+      -89.622856,
+      39.769612
+     ],
+     [
+      -89.618252,
+      39.77836
+     ],
+     [
+      -89.61845,
+      39.784462
+     ],
+     [
+      -89.615301,
+      39.78984
+     ],
+     [
+      -89.615402,
+      39.801896
+     ],
+     [
+      -89.648,
+      39.8018
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Springfield \u2013 Decatur",
+    "id": "it-springfield-decatur",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "PART TRACED, PART STRAIGHT LINE. The western 17.4 mi out of Springfield is traced from OSM ways tagged old_railway_operator='Illinois Terminal' with no connectors at all \u2014 genuinely the railroad's own alignment. The 1.7 mi from the Springfield terminal to the start of that trace, and the eastern 21 mi from Illiopolis into Decatur, are straight segments: the grade east of Illiopolis is not identifiable in OpenStreetMap. Drawn length 38.8 mi.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1955,
+      "headway_min": 120,
+      "note": "Opened 25 September 1904, the first of the Illinois Traction's long interurban routes and the spine of the eastern system. Passenger service ended in 1955. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 25 September 1904 opening is from american-rails.com and the 1904\u20131955 span from the Wikipedia route table, which agree.",
+       "https://www.american-rails.com/it.html",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.648,
+      39.8018
+     ],
+     [
+      -89.615402,
+      39.801896
+     ],
+     [
+      -89.615495,
+      39.814037
+     ],
+     [
+      -89.605566,
+      39.823972
+     ],
+     [
+      -89.560314,
+      39.835947
+     ],
+     [
+      -89.558964,
+      39.836756
+     ],
+     [
+      -89.55816,
+      39.837753
+     ],
+     [
+      -89.558326,
+      39.841333
+     ],
+     [
+      -89.557387,
+      39.842776
+     ],
+     [
+      -89.554743,
+      39.844008
+     ],
+     [
+      -89.547541,
+      39.845529
+     ],
+     [
+      -89.539475,
+      39.845711
+     ],
+     [
+      -89.538361,
+      39.845326
+     ],
+     [
+      -89.532128,
+      39.845231
+     ],
+     [
+      -89.51518,
+      39.845394
+     ],
+     [
+      -89.489422,
+      39.845905
+     ],
+     [
+      -89.482559,
+      39.846379
+     ],
+     [
+      -89.464435,
+      39.846398
+     ],
+     [
+      -89.463218,
+      39.846934
+     ],
+     [
+      -89.458833,
+      39.851847
+     ],
+     [
+      -89.456719,
+      39.852506
+     ],
+     [
+      -89.323992,
+      39.852609
+     ],
+     [
+      -89.2465,
+      39.8503
+     ],
+     [
+      -89.162,
+      39.857
+     ],
+     [
+      -88.9548,
+      39.8403
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Alton \u2013 Edwardsville",
+    "id": "it-alton-branch",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "Traced from OSM ways tagged old_railway_operator=IT \u2014 the Alton District (A&E Line) and the Sam Vadalabene Trail \u2014 with 0.3 mi of straight-line connector. Traced 15.4 mi. Note that some of the IT-tagged track here is freight-era Alton District trackage; whether the passenger interurban used exactly this alignment for its whole length was not verified.",
+    "segments": [
+     {
+      "start": 1930,
+      "end": 1956,
+      "headway_min": 120,
+      "note": "american-rails.com states the Alton branch was acquired in 1930 to give the system access to Alton. Electric railways had served the Alton\u2013Edwardsville corridor earlier under other companies, but neither their years nor whether the Illinois Terminal ran passengers over this line before 1930 was established, so the drawn years start at the acquisition. Ends with the 3 March 1956 close of interurban passenger service. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: american-rails.com gives the 1930 acquisition, but no source was checked for Illinois Terminal passenger service on this branch, its frequency, or its last year. The Wikipedia route table has no Alton entry at all.",
+       "https://www.american-rails.com/it.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.184557,
+      38.888995
+     ],
+     [
+      -90.176816,
+      38.888517
+     ],
+     [
+      -90.172729,
+      38.886934
+     ],
+     [
+      -90.168006,
+      38.88677
+     ],
+     [
+      -90.164263,
+      38.885196
+     ],
+     [
+      -90.129841,
+      38.874832
+     ],
+     [
+      -90.124783,
+      38.872743
+     ],
+     [
+      -90.106973,
+      38.863294
+     ],
+     [
+      -90.105162,
+      38.862007
+     ],
+     [
+      -90.102094,
+      38.857844
+     ],
+     [
+      -90.095052,
+      38.844061
+     ],
+     [
+      -90.093719,
+      38.842643
+     ],
+     [
+      -90.091879,
+      38.841662
+     ],
+     [
+      -90.089268,
+      38.84119
+     ],
+     [
+      -90.061759,
+      38.840981
+     ],
+     [
+      -90.055084,
+      38.839189
+     ],
+     [
+      -90.048563,
+      38.835142
+     ],
+     [
+      -90.035347,
+      38.83239
+     ],
+     [
+      -90.033286,
+      38.832388
+     ],
+     [
+      -90.028324,
+      38.833087
+     ],
+     [
+      -90.021169,
+      38.835237
+     ],
+     [
+      -90.016523,
+      38.835817
+     ],
+     [
+      -90.012867,
+      38.83552
+     ],
+     [
+      -89.998442,
+      38.832741
+     ],
+     [
+      -89.995767,
+      38.831733
+     ],
+     [
+      -89.987069,
+      38.826761
+     ],
+     [
+      -89.985524,
+      38.825485
+     ],
+     [
+      -89.984469,
+      38.823495
+     ],
+     [
+      -89.98339,
+      38.816299
+     ],
+     [
+      -89.981177,
+      38.810387
+     ],
+     [
+      -89.979899,
+      38.80914
+     ],
+     [
+      -89.972908,
+      38.804884
+     ],
+     [
+      -89.961831,
+      38.801187
+     ],
+     [
+      -89.960785,
+      38.801459
+     ],
+     [
+      -89.958864,
+      38.804743
+     ],
+     [
+      -89.959222,
+      38.809774
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Decatur \u2013 Champaign",
+    "id": "it-decatur-champaign",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 42.2 mi straight.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1955,
+      "headway_min": 120,
+      "note": "Champaign\u2013Decatur ran 1907\u20131955 per the Wikipedia route table, closing with the Springfield\u2013Decatur line. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 1907\u20131955 span is from the Wikipedia route table.",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.9548,
+      39.8403
+     ],
+     [
+      -88.2434,
+      40.1164
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Champaign \u2013 Danville",
+    "id": "it-champaign-danville",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 32.4 mi straight.",
+    "segments": [
+     {
+      "start": 1903,
+      "end": 1953,
+      "headway_min": 120,
+      "note": "The Danville\u2013Champaign route is dated 1902\u20131953 in the Wikipedia route table, but american-rails.com says the Champaign connection was completed on 6 September 1903; the later date is used so the drawn years do not assert service before it is agreed to have run. Closed 1953 with the Bloomington routes, the beginning of the end for the system. Headway is an estimate.",
+      "sources": [
+       "Segment-level: 1953 close from the Wikipedia route table; the 6 September 1903 Champaign completion from american-rails.com, which conflicts with Wikipedia's 1902.",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad",
+       "https://www.american-rails.com/it.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.2434,
+      40.1164
+     ],
+     [
+      -87.63,
+      40.1245
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Decatur \u2013 Bloomington",
+    "id": "it-decatur-bloomington",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 44.5 mi straight through Clinton.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1953,
+      "headway_min": 120,
+      "note": "North from Decatur through Clinton to Bloomington. The Wikipedia route table dates it 1905\u20131953; american-rails.com gives 1 August 1906 as the opening. The later date is drawn and the conflict recorded. Its closure in 1953, with Bloomington\u2013Peoria, is described as the beginning of the end of the system. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 1953 close is from the Wikipedia route table; the 1 August 1906 opening is from american-rails.com and conflicts with Wikipedia's 1905. Clinton as the intermediate city is from the Pantagraph/mchistory summary of the route.",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad",
+       "https://www.american-rails.com/it.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.9548,
+      39.8403
+     ],
+     [
+      -88.9648,
+      40.1531
+     ],
+     [
+      -88.9937,
+      40.4842
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Bloomington \u2013 Peoria",
+    "id": "it-bloomington-peoria",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 35.7 mi straight through Mackinaw.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1953,
+      "headway_min": 120,
+      "note": "Opened 21 April 1907 westward from Bloomington via Mackinaw to Peoria. As late as 1948 the Illinois Terminal was still making 48 stops on the 37-mile Peoria\u2013Bloomington run \u2014 which is a useful check on the 35.7 mi of straight line drawn here. Closed 1953. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 21 April 1907 opening and the routing via Mackinaw are from american-rails.com; the 1953 close is from the Wikipedia route table; the 37-mile / 48-stop 1948 figure is from the Pantagraph article.",
+       "https://www.american-rails.com/it.html",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad",
+       "https://pantagraph.com/special-section/news/history-and-events/04-12-09-bloomington-once-a-stop-on-electric-railway-system/article_d6bb0165-4806-578a-9f55-f788b64840dc.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.9937,
+      40.4842
+     ],
+     [
+      -89.3573,
+      40.5378
+     ],
+     [
+      -89.589,
+      40.6936
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Springfield \u2013 Peoria",
+    "id": "it-springfield-peoria",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 58,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 71.4 mi straight through Lincoln and Mackinaw.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1956,
+      "headway_min": 120,
+      "note": "Springfield north to Lincoln opened in 1906; the Lincoln\u2013Mackinaw connector opened on New Year's Day 1908, completing the through Springfield\u2013Peoria route and joining the Bloomington line at Mackinaw. The whole feature is drawn from 1908, when the route it represents could first be ridden end to end. This was one of the last two interurban routes running, to 3 March 1956. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the New Year's Day 1908 Lincoln\u2013Mackinaw opening is from american-rails.com; the Wikipedia route table gives Peoria\u2013Springfield as 1906\u20131956 and the 3 March 1956 end of interurban passenger service is from the Wikipedia article.",
+       "https://www.american-rails.com/it.html",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.648,
+      39.8018
+     ],
+     [
+      -89.3648,
+      40.1481
+     ],
+     [
+      -89.3573,
+      40.5378
+     ],
+     [
+      -89.589,
+      40.6936
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Staunton \u2013 Hillsboro",
+    "id": "it-staunton-hillsboro",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 18.9 mi straight.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1935,
+      "headway_min": 180,
+      "note": "A branch east from the St. Louis\u2013Springfield main line at Staunton to Hillsboro, 1905\u20131935 \u2014 the first of the system's routes to lose its passengers. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 1905\u20131935 span is from the Wikipedia route table.",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.7909,
+      39.0122
+     ],
+     [
+      -89.4954,
+      39.1606
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Danville \u2013 Ridge Farm",
+    "id": "it-danville-ridge-farm",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 16.1 mi straight through Westville and Georgetown.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1936,
+      "headway_min": 180,
+      "note": "The system's oldest line: Danville to Westville opened 20 October 1901, Georgetown on 27 August 1902 and Ridge Farm on 1 October 1905. The whole feature is drawn from 1905, when it first reached Ridge Farm. Abandoned 1936. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 20 October 1901, 27 August 1902 and 1 October 1905 opening dates are from american-rails.com; the 1936 close is from the Wikipedia route table, which dates the route 1901\u20131936.",
+       "https://www.american-rails.com/it.html",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.63,
+      40.1245
+     ],
+     [
+      -87.6389,
+      40.0417
+     ],
+     [
+      -87.6339,
+      39.9784
+     ],
+     [
+      -87.6564,
+      39.8942
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Illinois Terminal Railroad",
+    "line": "Illinois Terminal: Danville \u2013 Catlin",
+    "id": "it-danville-catlin",
+    "color": "#CC8400",
+    "mode": "interurban",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate. Illinois Traction limiteds were timed at roughly 40 mph over the road; the figures here are averages including stops, not documented schedule speeds.",
+    "geometry_quality": "STRAIGHT-LINE APPROXIMATION. No Illinois Terminal alignment is identifiable in OpenStreetMap along this corridor \u2014 nothing carries old_railway_operator=IT east or north of Springfield, and routing over the surviving abandoned grades put the line on the B&O, the Illinois Central or the Wabash instead, which would have been worse than a straight line. This feature is therefore drawn as straight segments between the towns the route is documented to have served; intermediate stations and every curve are missing. Length below is the straight-line length, not the railroad's mileage. Drawn 5.6 mi straight.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1939,
+      "headway_min": 180,
+      "note": "Opened to Catlin on 29 May 1902; the Wikipedia route table runs it to 1939, making it one of the longer-lived of the small Danville branches. Headway is an estimate.",
+      "sources": [
+       "Segment-level: the 29 May 1902 opening is from american-rails.com; the 1902\u20131939 span is from the Wikipedia route table.",
+       "https://www.american-rails.com/it.html",
+       "https://en.wikipedia.org/wiki/Illinois_Terminal_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.63,
+      40.1245
+     ],
+     [
+      -87.7003,
+      40.0645
+     ]
+    ]
+   }
+  }
+ ]
+}

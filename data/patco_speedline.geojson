@@ -1,0 +1,325 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The PATCO Speedline and the Bridge Line it grew out of. The Delaware River Joint Commission opened a two-station rapid-transit line across the Benjamin Franklin Bridge from Philadelphia to Camden on 7 June 1936 — the 'Bridge Line'. The Port Authority Transit Corporation, a subsidiary of the Delaware River Port Authority, rebuilt and extended it out to Lindenwold over the old Pennsylvania-Reading Seashore Lines right of way, opening the full Speedline in 1969. It was one of the first fully automated rapid-transit lines in the United States and still runs 24 hours a day.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/PATCO_Speedline (1936 Bridge Line, the 1969 PATCO extension to Lindenwold, 14.2 mi route length and 24-hour operation)",
+   "OpenStreetMap route relations, extracted 29 August 2026; traced length is compared with the documented route length on each feature."
+  ],
+  "not_yet_sourced": "Headways and speeds are estimates; no PATCO timetable was consulted. The exact 1969 opening dates of the Camden–Lindenwold and Philadelphia sections have not been checked against a source, and the Bridge Line feature's western end is cut at 8th and Market, the 1936 terminal, on today's alignment."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Delaware River Joint Commission",
+    "line": "Bridge Line: Philadelphia – Camden",
+    "id": "bridge-line-philadelphia-camden",
+    "color": "#3F7A5A",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: a short high-frequency bridge shuttle; no timetable consulted",
+    "geometry_quality": "Traced 2.29 mi from the modern PATCO OSM relation, cut at 8th and Market (the 1936 western terminal) and Broadway, Camden. NOTE: this draws the post-1969 rebuilt alignment for a 1936–1969 feature.",
+    "segments": [
+     {
+      "start": 1936,
+      "end": 1969,
+      "headway_min": 10,
+      "note": "Opened 7 June 1936 across the Benjamin Franklin Bridge with stations at 8th and Market in Philadelphia and Broadway in Camden. Absorbed into the PATCO Speedline when the Lindenwold extension opened in 1969. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/PATCO_Speedline"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.152833,
+      39.954281
+     ],
+     [
+      -75.152443,
+      39.954825
+     ],
+     [
+      -75.151854,
+      39.955042
+     ],
+     [
+      -75.147662,
+      39.955085
+     ],
+     [
+      -75.129102,
+      39.951912
+     ],
+     [
+      -75.123477,
+      39.950871
+     ],
+     [
+      -75.121954,
+      39.9504
+     ],
+     [
+      -75.120535,
+      39.949673
+     ],
+     [
+      -75.120184,
+      39.94905
+     ],
+     [
+      -75.12156,
+      39.944125
+     ],
+     [
+      -75.121376,
+      39.943516
+     ],
+     [
+      -75.120324,
+      39.943142
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Port Authority Transit Corporation (PATCO)",
+    "line": "PATCO: Speedline",
+    "id": "patco-speedline",
+    "color": "#B5651D",
+    "mode": "rapid_transit",
+    "avg_speed_kmh": 50,
+    "speed_source": "estimated: no PATCO timetable consulted",
+    "geometry_quality": "Traced 14.82 mi from the OSM route relation against 14.2 mi documented. One out-and-back artifact remains at a terminal where the relation follows both platform tracks.",
+    "segments": [
+     {
+      "start": 1969,
+      "end": 2026,
+      "headway_min": 8,
+      "note": "The Port Authority Transit Corporation opened the full Lindenwold–Philadelphia Speedline in 1969, rebuilding the Bridge Line and extending east over the former Pennsylvania-Reading Seashore Lines right of way. One of the first automated rapid-transit lines in the country; runs 24 hours a day. Headway is an estimate.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the layer references below cover this line, but nothing has been checked specifically against this segment’s start year, end year or headway. Treat the dates and the headway as unverified. Supporting references for the layer:",
+       "https://en.wikipedia.org/wiki/PATCO_Speedline"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.156117,
+      39.947176
+     ],
+     [
+      -75.166255,
+      39.948383
+     ],
+     [
+      -75.156126,
+      39.947135
+     ],
+     [
+      -75.15473,
+      39.947101
+     ],
+     [
+      -75.154382,
+      39.947436
+     ],
+     [
+      -75.152833,
+      39.954281
+     ],
+     [
+      -75.152443,
+      39.954825
+     ],
+     [
+      -75.151854,
+      39.955042
+     ],
+     [
+      -75.147662,
+      39.955085
+     ],
+     [
+      -75.129102,
+      39.951912
+     ],
+     [
+      -75.123477,
+      39.950871
+     ],
+     [
+      -75.121954,
+      39.9504
+     ],
+     [
+      -75.120535,
+      39.949673
+     ],
+     [
+      -75.120184,
+      39.94905
+     ],
+     [
+      -75.12156,
+      39.944125
+     ],
+     [
+      -75.121376,
+      39.943516
+     ],
+     [
+      -75.120324,
+      39.943142
+     ],
+     [
+      -75.115128,
+      39.942906
+     ],
+     [
+      -75.113928,
+      39.94254
+     ],
+     [
+      -75.113048,
+      39.941779
+     ],
+     [
+      -75.112765,
+      39.941283
+     ],
+     [
+      -75.110875,
+      39.935204
+     ],
+     [
+      -75.109241,
+      39.933166
+     ],
+     [
+      -75.107672,
+      39.932041
+     ],
+     [
+      -75.100715,
+      39.92837
+     ],
+     [
+      -75.092573,
+      39.923115
+     ],
+     [
+      -75.089772,
+      39.921722
+     ],
+     [
+      -75.086804,
+      39.920626
+     ],
+     [
+      -75.051853,
+      39.90952
+     ],
+     [
+      -75.047479,
+      39.907512
+     ],
+     [
+      -75.044957,
+      39.906092
+     ],
+     [
+      -75.042407,
+      39.904313
+     ],
+     [
+      -75.040031,
+      39.902252
+     ],
+     [
+      -75.038525,
+      39.900292
+     ],
+     [
+      -75.034834,
+      39.89418
+     ],
+     [
+      -75.032143,
+      39.887674
+     ],
+     [
+      -75.030538,
+      39.88531
+     ],
+     [
+      -75.026591,
+      39.881853
+     ],
+     [
+      -75.0241,
+      39.880043
+     ],
+     [
+      -75.017779,
+      39.876585
+     ],
+     [
+      -75.015288,
+      39.87487
+     ],
+     [
+      -75.013781,
+      39.873525
+     ],
+     [
+      -75.011888,
+      39.871127
+     ],
+     [
+      -75.010428,
+      39.868504
+     ],
+     [
+      -75.00953,
+      39.865608
+     ],
+     [
+      -75.009135,
+      39.854834
+     ],
+     [
+      -75.008553,
+      39.852032
+     ],
+     [
+      -75.00177,
+      39.835773
+     ],
+     [
+      -75.000964,
+      39.834308
+     ],
+     [
+      -75.000016,
+      39.833159
+     ],
+     [
+      -75.001092,
+      39.834556
+     ]
+    ]
+   }
+  }
+ ]
+}

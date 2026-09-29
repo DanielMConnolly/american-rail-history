@@ -1,0 +1,217 @@
+{
+ "id": "amtrak-58-2026",
+ "route_id": "58",
+ "line_ids": [
+  "amtrak-58"
+ ],
+ "company": "Amtrak",
+ "service": "Cardinal",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "51",
+   "name": "Cardinal",
+   "headsign": "Chicago",
+   "direction": "0",
+   "days": "Wed, Fri",
+   "stops": [
+    {
+     "station": "ny-moynihan-train-hall-at-penn-station",
+     "seq": 1,
+     "depart": "06:40"
+    },
+    {
+     "station": "newark",
+     "seq": 2,
+     "arrive": "06:57",
+     "depart": "07:02"
+    },
+    {
+     "station": "trenton",
+     "seq": 3,
+     "arrive": "07:38",
+     "depart": "07:42"
+    },
+    {
+     "station": "philadelphia",
+     "seq": 4,
+     "arrive": "08:07",
+     "depart": "08:20"
+    },
+    {
+     "station": "wilmington",
+     "seq": 5,
+     "arrive": "08:42",
+     "depart": "08:45"
+    },
+    {
+     "station": "baltimore-penn-station",
+     "seq": 6,
+     "arrive": "09:35",
+     "depart": "09:38"
+    },
+    {
+     "station": "washington-union-station",
+     "seq": 7,
+     "arrive": "10:19",
+     "depart": "11:39"
+    },
+    {
+     "station": "alexandria",
+     "seq": 8,
+     "arrive": "11:59",
+     "depart": "11:59"
+    },
+    {
+     "station": "manassas-amtrak-station",
+     "seq": 9,
+     "arrive": "12:32",
+     "depart": "12:32"
+    },
+    {
+     "station": "culpeper-amtrak-station",
+     "seq": 10,
+     "arrive": "13:05",
+     "depart": "13:05"
+    },
+    {
+     "station": "charlottesville",
+     "seq": 11,
+     "arrive": "14:23",
+     "depart": "14:32"
+    },
+    {
+     "station": "staunton-amtrak-station",
+     "seq": 12,
+     "arrive": "15:34",
+     "depart": "15:34"
+    },
+    {
+     "station": "clifton-forge-amtrak-station",
+     "seq": 13,
+     "arrive": "16:53",
+     "depart": "16:53"
+    },
+    {
+     "station": "white-sulphur-springs-amtrak",
+     "seq": 14,
+     "arrive": "17:45",
+     "depart": "17:45"
+    },
+    {
+     "station": "alderson-amtrak",
+     "seq": 15,
+     "arrive": "18:16",
+     "depart": "18:16"
+    },
+    {
+     "station": "hinton-amtrak-station",
+     "seq": 16,
+     "arrive": "18:46",
+     "depart": "18:46"
+    },
+    {
+     "station": "prince-amtrak-station",
+     "seq": 17,
+     "arrive": "19:23",
+     "depart": "19:23"
+    },
+    {
+     "station": "thurmond-amtrak",
+     "seq": 18,
+     "arrive": "19:39",
+     "depart": "19:39"
+    },
+    {
+     "station": "montgomery-amtrak",
+     "seq": 19,
+     "arrive": "20:30",
+     "depart": "20:30"
+    },
+    {
+     "station": "charleston",
+     "seq": 20,
+     "arrive": "21:09",
+     "depart": "21:09"
+    },
+    {
+     "station": "huntington-amtrak-station",
+     "seq": 21,
+     "arrive": "22:24",
+     "depart": "22:31"
+    },
+    {
+     "station": "ashland-amtrak-station",
+     "seq": 22,
+     "arrive": "22:54",
+     "depart": "22:54"
+    },
+    {
+     "station": "south-portsmouth-amtrak",
+     "seq": 23,
+     "arrive": "23:37",
+     "depart": "23:37"
+    },
+    {
+     "station": "maysville-amtrak-station",
+     "seq": 24,
+     "arrive": "24:32",
+     "depart": "24:32"
+    },
+    {
+     "station": "cincinnati-union-terminal",
+     "seq": 25,
+     "arrive": "26:11",
+     "depart": "26:21"
+    },
+    {
+     "station": "connersville-amtrak",
+     "seq": 26,
+     "arrive": "28:16",
+     "depart": "28:16"
+    },
+    {
+     "station": "indianapolis",
+     "seq": 27,
+     "arrive": "29:55",
+     "depart": "30:25"
+    },
+    {
+     "station": "crawfordsville-amtrak",
+     "seq": 28,
+     "arrive": "31:23",
+     "depart": "31:23"
+    },
+    {
+     "station": "lafayette-amtrak-station-laf",
+     "seq": 29,
+     "arrive": "32:01",
+     "depart": "32:01"
+    },
+    {
+     "station": "rensselaer-amtrak",
+     "seq": 30,
+     "arrive": "33:05",
+     "depart": "33:05"
+    },
+    {
+     "station": "dyer-amtrak",
+     "seq": 31,
+     "arrive": "33:54",
+     "depart": "33:54"
+    },
+    {
+     "station": "chicago-union-station",
+     "seq": 32,
+     "arrive": "35:25"
+    }
+   ]
+  }
+ ]
+}

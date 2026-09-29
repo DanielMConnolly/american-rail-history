@@ -1,0 +1,190 @@
+{
+ "id": "amtrak-42996-2026",
+ "route_id": "42996",
+ "line_ids": [
+  "amtrak-42996"
+ ],
+ "company": "Amtrak",
+ "service": "Amtrak Mardi Gras Service",
+ "published": "2026-08",
+ "service_date": "2026-08-28",
+ "source": {
+  "feed": "https://content.amtrak.com/content/gtfs/GTFS.zip",
+  "feed_last_modified": "",
+  "note": "Train numbers and times read directly from GTFS trips.txt and stop_times.txt for the service date above. Times past midnight keep the GTFS convention of an hour of 24 or more."
+ },
+ "trains": [
+  {
+   "number": "23",
+   "name": "Amtrak Mardi Gras Service",
+   "headsign": "New Orleans",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "mobile-amtrak-sta",
+     "seq": 1,
+     "depart": "06:30"
+    },
+    {
+     "station": "pascagoula",
+     "seq": 2,
+     "arrive": "07:11",
+     "depart": "07:13"
+    },
+    {
+     "station": "biloxi-amtrak-sta",
+     "seq": 3,
+     "arrive": "07:46",
+     "depart": "07:48"
+    },
+    {
+     "station": "gulfport-amtrak-sta",
+     "seq": 4,
+     "arrive": "08:09",
+     "depart": "08:11"
+    },
+    {
+     "station": "bay-st-louis",
+     "seq": 5,
+     "arrive": "08:40",
+     "depart": "08:42"
+    },
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 6,
+     "arrive": "11:13"
+    }
+   ]
+  },
+  {
+   "number": "24",
+   "name": "Amtrak Mardi Gras Service",
+   "headsign": "Mobile Amtrak Sta",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 1,
+     "depart": "08:35"
+    },
+    {
+     "station": "bay-st-louis",
+     "seq": 2,
+     "arrive": "08:57",
+     "depart": "08:59"
+    },
+    {
+     "station": "gulfport-amtrak-sta",
+     "seq": 3,
+     "arrive": "09:29",
+     "depart": "09:31"
+    },
+    {
+     "station": "biloxi-amtrak-sta",
+     "seq": 4,
+     "arrive": "09:53",
+     "depart": "09:55"
+    },
+    {
+     "station": "pascagoula",
+     "seq": 5,
+     "arrive": "10:27",
+     "depart": "10:29"
+    },
+    {
+     "station": "mobile-amtrak-sta",
+     "seq": 6,
+     "arrive": "11:18"
+    }
+   ]
+  },
+  {
+   "number": "25",
+   "name": "Amtrak Mardi Gras Service",
+   "headsign": "New Orleans",
+   "direction": "0",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "mobile-amtrak-sta",
+     "seq": 1,
+     "depart": "16:30"
+    },
+    {
+     "station": "pascagoula",
+     "seq": 2,
+     "arrive": "17:11",
+     "depart": "17:13"
+    },
+    {
+     "station": "biloxi-amtrak-sta",
+     "seq": 3,
+     "arrive": "17:46",
+     "depart": "17:48"
+    },
+    {
+     "station": "gulfport-amtrak-sta",
+     "seq": 4,
+     "arrive": "18:09",
+     "depart": "18:11"
+    },
+    {
+     "station": "bay-st-louis",
+     "seq": 5,
+     "arrive": "18:40",
+     "depart": "18:42"
+    },
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 6,
+     "arrive": "21:13"
+    }
+   ]
+  },
+  {
+   "number": "26",
+   "name": "Amtrak Mardi Gras Service",
+   "headsign": "Mobile Amtrak Sta",
+   "direction": "1",
+   "days": "daily",
+   "stops": [
+    {
+     "station": "new-orleans-union-passenger-terminal",
+     "seq": 1,
+     "depart": "18:31"
+    },
+    {
+     "station": "bay-st-louis",
+     "seq": 2,
+     "arrive": "18:58",
+     "depart": "19:00"
+    },
+    {
+     "station": "gulfport-amtrak-sta",
+     "seq": 3,
+     "arrive": "19:30",
+     "depart": "19:32"
+    },
+    {
+     "station": "biloxi-amtrak-sta",
+     "seq": 4,
+     "arrive": "19:54",
+     "depart": "19:56"
+    },
+    {
+     "station": "pascagoula",
+     "seq": 5,
+     "arrive": "20:26",
+     "depart": "20:28"
+    },
+    {
+     "station": "mobile-amtrak-sta",
+     "seq": 6,
+     "arrive": "21:14"
+    }
+   ]
+  }
+ ]
+}
