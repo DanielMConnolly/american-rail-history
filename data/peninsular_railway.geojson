@@ -3,14 +3,17 @@
  "metadata": {
   "name": "Peninsular Railway (Santa Clara County interurban)",
   "pulled": "20260930",
-  "note": "The Peninsular Railway - \"the Pin\", \"Big Red\" - was the Southern Pacific's electric interurban in western Santa Clara County: hourly red cars from the Market Street depot in San Jose west along Stevens Creek Road and down the SP Mayfield Cut-off through Cupertino and Los Altos to Palo Alto and Stanford, southwest via Saratoga to Los Gatos with a branch to Congress Springs, and south through Campbell to Los Gatos, plus Palo Alto's city streetcars. It grew out of the San Jose and Los Gatos Interurban Railway (opened 19 March 1904, quietly SP-controlled from April 1904), the Peninsular Railroad (incorporated 21 December 1905) and the Santa Clara Interurban (Palo Alto streetcars from 15 November 1906), all consolidated as the Peninsular Railway on 30 June 1909. Through San Jose-Palo Alto service began 5 March 1910. Routes were cut back from 1925 (Palo Alto locals), 1929 (Palo Alto/Stanford), 1932 (Campbell, Congress Springs) and 1933 (via Saratoga); the last interurban ran 30 September 1934.",
+  "note": "The Peninsular Railway - \"the Pin\", \"Big Red\" - was the Southern Pacific's electric interurban in western Santa Clara County: hourly red cars from the Market Street depot in San Jose west along Stevens Creek Road and down the SP Mayfield Cut-off through Cupertino and Los Altos to Palo Alto and Stanford, southwest via Saratoga to Los Gatos with a branch to Congress Springs, and south through Campbell to Los Gatos, plus Palo Alto's city streetcars and four San Jose city lines. It grew out of the San Jose and Los Gatos Interurban Railway (opened 19 March 1904, quietly SP-controlled from April 1904), the Peninsular Railroad (incorporated 21 December 1905) and the Santa Clara Interurban (Palo Alto streetcars from 15 November 1906), all consolidated as the Peninsular Railway on 30 June 1909. Through San Jose-Palo Alto service began 5 March 1910. Routes were cut back from 1925 (Palo Alto locals), 1929 (Palo Alto/Stanford), 1932 (Campbell, Congress Springs) and 1933 (via Saratoga); the last interurban ran 30 September 1934.",
   "ownership_note": "Rule 4 judgment. (1) Southern Pacific controlled the San Jose and Los Gatos Interurban from April 1904 and owned the Peninsular throughout, but the trains ran under the San Jose and Los Gatos Interurban name until the 30 June 1909 consolidation and under the Peninsular name, timetables and livery after it, never as SP trains - so each operating company keeps its own colour and nothing is drawn in SP red (#C1272D). (2) Features are split at 30 June 1909, when the predecessors' trains became Peninsular trains. (3) The Peninsular Railroad (1905) and Peninsular Railway (1909) are treated as ONE company: the same SP-controlled corporation reincorporated under a near-identical name, with the same president. (4) The brief reserved one spare colour, #7BA05B, for Peninsular predecessors; it is given to the San Jose and Los Gatos Interurban. The Santa Clara Interurban Railroad is a different company, so it gets its own new colour #6E8B3D (checked absent from data/ before use) rather than sharing #7BA05B.",
   "colour_note": "Peninsular Railway #3A7D44; San Jose and Los Gatos Interurban Railway #7BA05B; Santa Clara Interurban Railroad #6E8B3D (new). Checked programmatically: every feature in data/ carrying each company string has the identical colour.",
-  "mode_note": "Rule 7: the regional San Jose-Los Gatos, San Jose-Palo Alto, Cupertino-Los Gatos and Congress Springs routes linked separate communities and are mode \"interurban\" (dashed). The Palo Alto city lines and the Palo Alto depot-Stanford shuttle ran within one built-up area and are \"streetcar\".",
+  "mode_note": "Rule 7: the regional San Jose-Los Gatos, San Jose-Palo Alto, Cupertino-Los Gatos and Congress Springs routes linked separate communities and are mode \"interurban\" (dashed). The Palo Alto city lines, the Palo Alto depot-Stanford shuttle and the four San Jose city lines ran within one built-up area and are \"streetcar\".",
   "sp_track_note": "Where Peninsular cars ran on or beside SP property it is drawn as Peninsular service: (a) the Mayfield Cut-off (SP Los Altos Branch), Mayfield-Monta Vista-Congress Junction, where the Peninsular had its own electrified track on the SP right of way; (b) Campbell, where the Campbell route paralleled the SP Vasona line and briefly shared the SP narrow-gauge Almaden branch. The SP's own steam passenger trains on the cut-off (to 1964) and to Los Gatos are NOT drawn here - they are Southern Pacific service.",
-  "geometry_quality": "No straight-line legs anywhere. All 15 features are wholly or partly street-routed on today's OSM road centrelines (Rule 2: a later alignment than the line's own era, since the roads have been widened and the interurban often ran on private right of way beside them). The Mayfield Cut-off sections (Monta Vista-El Camino Real 8.56 mi, Monta Vista-Congress Junction 4.27 mi) are traced from OpenHistoricalMap relation 2749538 (CC0), which is the SP track on the shared right of way. Campbell Avenue-Camden Avenue (about 0.9 mi) is on the OSM ex-SP Vasona Industrial Lead. Mileage checks: San Jose-Saratoga 11.18 mi vs documented 11; Saratoga-Los Gatos 4.03 mi vs documented 4. Per-feature detail is in each geometry_quality. Every finished line passed reversal (>120 deg on legs >200 m) and revisit (<350 m after >1 km of path) checks with zero hits.",
-  "omitted": "Deliberately not drawn: (1) the Alum Rock line and the Berryessa Road (1913-1934) and King Road (1923-1934) routes in San Jose - Peninsular-owned, but Wikipedia says passenger service was often run by San Jose Railroads, and they are San Jose city/suburban routes left to the San Jose Railroads layer; (2) the Bascom and Naglee Park local routes in San Jose, transferred to San Jose Railroads in 1933 (city streetcars, other layer); (3) the San Jose & Santa Clara Railway, which Santa Cruz Trains says was consolidated into the Peninsular in 1909 but which ran as part of San Jose Railroads (other layer); (4) the 1909 \"stub service\" on the Mayfield Cut-off that Wikipedia mentions without dates or termini; (5) Peninsular freight (Congress Springs quarry, Alum Rock, fruit) and the Visalia Electric freight operation at Alum Rock after 1934 - freight, Rule 1; (6) SP steam passenger service on the Mayfield Cut-off and to Los Gatos - Southern Pacific, not Peninsular. No horsecar years exist: every company here was electric from opening.",
+  "geometry_quality": "One straight-line leg in the whole layer: 0.41 mi on San Carlos Street through the San Jose State campus (Naglee Park loop), where the street no longer exists. All 19 features are wholly or partly street-routed on today's OSM road centrelines (Rule 2: a later alignment than the line's own era, since the roads have been widened and the interurban often ran on private right of way beside them). The Mayfield Cut-off sections (Monta Vista-El Camino Real 8.56 mi, Monta Vista-Congress Junction 4.27 mi) are traced from OpenHistoricalMap relation 2749538 (CC0), which is the SP track on the shared right of way. Campbell Avenue-Camden Avenue (about 0.9 mi) is on the OSM ex-SP Vasona Industrial Lead. Mileage checks: San Jose-Saratoga 11.18 mi vs documented 11; Saratoga-Los Gatos 4.03 mi vs documented 4. Per-feature detail is in each geometry_quality. Seventeenth Street and Park Avenue geometry is copied from the San Jose Railroads layer. Every finished line passed reversal (>120 deg on legs >200 m) and revisit (<350 m after >1 km of path) checks with zero hits.",
+  "omitted": "Deliberately not drawn: (1) the Alum Rock Park service. 1923-1932 via King Road and Berryessa Road is drawn in the San Jose Railroads layer as San Jose Railroads service (CPUC Decision 24622, 1932: SJRR ran the passenger cars over Peninsular-owned track), so it is not repeated here. The 1913-1923 park service via 17th Street and Berryessa Road is not drawn by either layer: chicagorailfan lists the Peninsular Railroad as the company for the Berryessa Road route from 12 September 1913 (SJRR's sources say 2 September), but that table names the company that built a route, not who ran the cars, and no source says who operated them - left as an open question; (2) the Santa Clara Depot city route (chicagorailfan: Peninsular, 1913 to 27 January 1923) - streets unknown; (3b) the San Jose & Santa Clara Railway, which Santa Cruz Trains says was consolidated into the Peninsular in 1909 but which ran as part of San Jose Railroads (other layer); (4) the 1909 \"stub service\" on the Mayfield Cut-off that Wikipedia mentions without dates or termini; (5) Peninsular freight (Congress Springs quarry, Alum Rock, fruit) and the Visalia Electric freight operation at Alum Rock after 1934 - freight, Rule 1; (6) SP steam passenger service on the Mayfield Cut-off and to Los Gatos - Southern Pacific, not Peninsular. No horsecar years exist: every company here was electric from opening.",
+  "coordination_note": "Coordinated with the San Jose Railroads layer (san_jose_railroads.geojson, PR #3): the four Peninsular-built San Jose city lines (Seventeenth Street, Bascom, Park Avenue, Naglee) are drawn HERE for their Peninsular years ending 1933 and THERE from the 1933 takeover; the Alum Rock Park line via King Road 1923-1932 is drawn only THERE. Seventeenth Street and Park Avenue reuse that layer's geometry so the two eras line up.",
   "not_yet_sourced": [
+   "Who ran the Alum Rock Park cars via 17th Street and Berryessa Road, 1913-1923 (Peninsular or San Jose Railroads) - not drawn in either layer.",
+   "Peninsular-era routings of the Seventeenth Street and Park Avenue city lines (drawn on the 1935-franchise streets) and who ran the city cars before the 1909 consolidation.",
    "End-to-end mileages for the Campbell route, San Jose-Palo Alto, Congress Springs and the Palo Alto locals (only San Jose-Saratoga-Los Gatos has a documented figure).",
    "Every headway is an estimate: hourly for interurbans per Wikipedia/McCaleb and Santa Cruz Trains, 15-20 min for Palo Alto locals per Wikipedia; no dated public timetable was read. A Los Gatos Mail weekly timetable (1908-1912) and McCaleb, Tracks, Tires and Wires (1981) pp.94-97 would settle them.",
    "What ran in 1907-1910 on the Peninsular's new track: chicagorailfan dates San Jose-Cupertino to 1907, Santa Cruz Trains puts a 5 Nov 1907 opening at the Mayfield end, Wikipedia mentions only a 1909 stub on the cut-off. Drawn as San Jose-Cupertino 1907-1910.",
@@ -3377,6 +3380,366 @@
      [
       -122.167357,
       37.430892
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peninsular Railway",
+    "line": "Peninsular Railway: Bascom",
+    "id": "peninsular-bascom-local",
+    "color": "#3A7D44",
+    "mode": "streetcar",
+    "avg_speed_kmh": 15,
+    "speed_source": "ESTIMATE; city streetcar.",
+    "geometry_quality": "Traced 3.35 mi: Market Street depot (Bassett) - South Market - West San Carlos to Bascom Avenue, the Peninsular-era route Wikipedia gives (\"Market street, pair of tracks on Park and San Carlos, Stevens Creek Road\" to \"Stevens Creek Road and Bascom\"). Street-routed on today's OSM road centrelines; the westbound Park Avenue track of the one-way pair is not drawn. No straight-line legs. Different downtown routing from the San Jose Railroads layer's 1935-franchise version (San Fernando/Delmas).",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1933,
+      "headway_min": 30,
+      "note": "San Jose local short-working of the interurban, Market Street depot to Bascom Avenue, every 30 minutes per Wikipedia's short-turn table (no start date there; chicagorailfan gives 1907). The chicagorailfan route table lists the Peninsular Railroad (PR) as the company that opened this line, and San Jose Railroads took over the Peninsular's San Jose city trackage and operation in 1933 (chicagorailfan; Wikipedia says 1934, c.1938 for the transfer - CONFLICT recorded). It ends here in 1933 to meet the San Jose Railroads layer, which draws it from 1933 (coordinated with that layer). The Peninsular Railroad of 1905 and the Peninsular Railway of 1909 are treated as one company; who operated the car before the 30 June 1909 consolidation is not otherwise sourced. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: opening year and original company from the chicagorailfan route table; 1933 end is the San Jose Railroads takeover date (chicagorailfan), Wikipedia's later date recorded as a conflict; headway an estimate.",
+       "https://web.archive.org/web/20160204195910/http://www.chicagorailfan.com/sjcdate.html",
+       "https://en.wikipedia.org/wiki/Peninsular_Railway_(California)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.896084,
+      37.340969
+     ],
+     [
+      -121.8953,
+      37.340028
+     ],
+     [
+      -121.895342,
+      37.339836
+     ],
+     [
+      -121.890626,
+      37.333517
+     ],
+     [
+      -121.890536,
+      37.332808
+     ],
+     [
+      -121.890076,
+      37.332122
+     ],
+     [
+      -121.889445,
+      37.331345
+     ],
+     [
+      -121.888827,
+      37.331131
+     ],
+     [
+      -121.888515,
+      37.330911
+     ],
+     [
+      -121.89605,
+      37.327343
+     ],
+     [
+      -121.897648,
+      37.326328
+     ],
+     [
+      -121.901115,
+      37.324331
+     ],
+     [
+      -121.901609,
+      37.324156
+     ],
+     [
+      -121.903256,
+      37.32406
+     ],
+     [
+      -121.904876,
+      37.323835
+     ],
+     [
+      -121.910324,
+      37.323595
+     ],
+     [
+      -121.931874,
+      37.323453
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peninsular Railway",
+    "line": "Peninsular Railway: Naglee Park",
+    "id": "peninsular-naglee-park-local",
+    "color": "#3A7D44",
+    "mode": "streetcar",
+    "avg_speed_kmh": 15,
+    "speed_source": "ESTIMATE; city streetcar.",
+    "geometry_quality": "Traced 2.83 mi as a loop drawn open: Market Street depot - South Market - East San Fernando - 15th Street - East San Carlos - back to Market and San Carlos, the loop Wikipedia describes. Street-routed on today's OSM roads except ONE STRAIGHT-LINE LEG of 0.41 mi on San Carlos Street between 10th and 4th Streets, where the street was closed through the San Jose State campus; the ruled line follows the former street, which was straight. Different from the San Jose Railroads layer's 1935 version (San Fernando and 15th only, from Second Street).",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1933,
+      "headway_min": 15,
+      "note": "Naglee Park local from the Market Street depot, every 15 minutes per Wikipedia's short-turn table, which notes it was originally intended to be the start of a route to Lick Observatory (no start date there; chicagorailfan gives 1907). The chicagorailfan route table lists the Peninsular Railroad (PR) as the company that opened this line, and San Jose Railroads took over the Peninsular's San Jose city trackage and operation in 1933 (chicagorailfan; Wikipedia says 1934, c.1938 for the transfer - CONFLICT recorded). It ends here in 1933 to meet the San Jose Railroads layer, which draws it from 1933 (coordinated with that layer). The Peninsular Railroad of 1905 and the Peninsular Railway of 1909 are treated as one company; who operated the car before the 30 June 1909 consolidation is not otherwise sourced. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: opening year and original company from the chicagorailfan route table; 1933 end is the San Jose Railroads takeover date (chicagorailfan), Wikipedia's later date recorded as a conflict; headway an estimate.",
+       "https://web.archive.org/web/20160204195910/http://www.chicagorailfan.com/sjcdate.html",
+       "https://en.wikipedia.org/wiki/Peninsular_Railway_(California)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.896084,
+      37.340969
+     ],
+     [
+      -121.8953,
+      37.340028
+     ],
+     [
+      -121.895342,
+      37.339836
+     ],
+     [
+      -121.890717,
+      37.333645
+     ],
+     [
+      -121.882499,
+      37.337492
+     ],
+     [
+      -121.880073,
+      37.338708
+     ],
+     [
+      -121.874961,
+      37.341132
+     ],
+     [
+      -121.874877,
+      37.341171
+     ],
+     [
+      -121.874831,
+      37.341112
+     ],
+     [
+      -121.872725,
+      37.338282
+     ],
+     [
+      -121.888328,
+      37.330859
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peninsular Railway",
+    "line": "Peninsular Railway: Seventeenth Street",
+    "id": "peninsular-seventeenth-street",
+    "color": "#3A7D44",
+    "mode": "streetcar",
+    "avg_speed_kmh": 15,
+    "speed_source": "ESTIMATE; city streetcar.",
+    "geometry_quality": "Traced 2.41 mi. Geometry COPIED from the San Jose Railroads layer (feature sjrr-seventeenth-street, PR #3), which routed the 1935 franchise streets on today's OSM road grid: North 17th Street, Julian, 11th, St. James, 6th, St. John and 2nd Streets. That is the line's 1933-36 routing; its Peninsular-era (1907-1933) downtown routing is NOT sourced and may differ - in particular it may have reached the Market Street depot rather than Second Street. No straight-line legs.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1933,
+      "headway_min": 20,
+      "note": "Seventeenth Street line (chicagorailfan: Peninsular Railroad, electric 1907). From 2 September 1913 to 1923 the Alum Rock Park cars connected from 17th Street up Berryessa Road (see metadata - that park service is not drawn because its operator is unsourced). The chicagorailfan route table lists the Peninsular Railroad (PR) as the company that opened this line, and San Jose Railroads took over the Peninsular's San Jose city trackage and operation in 1933 (chicagorailfan; Wikipedia says 1934, c.1938 for the transfer - CONFLICT recorded). It ends here in 1933 to meet the San Jose Railroads layer, which draws it from 1933 (coordinated with that layer). The Peninsular Railroad of 1905 and the Peninsular Railway of 1909 are treated as one company; who operated the car before the 30 June 1909 consolidation is not otherwise sourced. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: opening year and original company from the chicagorailfan route table; 1933 end is the San Jose Railroads takeover date (chicagorailfan), Wikipedia's later date recorded as a conflict; headway an estimate.",
+       "https://web.archive.org/web/20160204195910/http://www.chicagorailfan.com/sjcdate.html",
+       "https://files.cpuc.ca.gov/LegacyCPUCDecisionsAndResolutions/Decisions/Decisions_D25901_to_D40599/D27719_19350204_A19727.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.886409,
+      37.359996
+     ],
+     [
+      -121.877661,
+      37.348233
+     ],
+     [
+      -121.883204,
+      37.345607
+     ],
+     [
+      -121.882203,
+      37.344119
+     ],
+     [
+      -121.887432,
+      37.341635
+     ],
+     [
+      -121.886375,
+      37.340194
+     ],
+     [
+      -121.890638,
+      37.338188
+     ],
+     [
+      -121.88812,
+      37.334846
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peninsular Railway",
+    "line": "Peninsular Railway: Park Avenue",
+    "id": "peninsular-park-avenue",
+    "color": "#3A7D44",
+    "mode": "streetcar",
+    "avg_speed_kmh": 15,
+    "speed_source": "ESTIMATE; city streetcar.",
+    "geometry_quality": "Traced 2.38 mi. Geometry COPIED from the San Jose Railroads layer (feature sjrr-park-avenue, PR #3): Bassett Street from 1st to Market, Market Street to Park Avenue, Park Avenue to Meridian, Meridian north to San Carlos, routed on today's OSM road grid from the 1935 franchise. Park Avenue and Market Street were the Peninsular's own interurban tracks (Wikipedia), so the routing is likely the same in Peninsular years, but that is an inference. No straight-line legs.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1933,
+      "headway_min": 20,
+      "note": "Park Avenue line (chicagorailfan: Peninsular Railroad, electric 1906 - before the 1909 consolidation, while the San Jose and Los Gatos Interurban still ran the interurbans on the same tracks under its own name; which company ran this local car in 1906-1909 is not settled). The chicagorailfan route table lists the Peninsular Railroad (PR) as the company that opened this line, and San Jose Railroads took over the Peninsular's San Jose city trackage and operation in 1933 (chicagorailfan; Wikipedia says 1934, c.1938 for the transfer - CONFLICT recorded). It ends here in 1933 to meet the San Jose Railroads layer, which draws it from 1933 (coordinated with that layer). The Peninsular Railroad of 1905 and the Peninsular Railway of 1909 are treated as one company; who operated the car before the 30 June 1909 consolidation is not otherwise sourced. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: opening year and original company from the chicagorailfan route table; 1933 end is the San Jose Railroads takeover date (chicagorailfan), Wikipedia's later date recorded as a conflict; headway an estimate.",
+       "https://web.archive.org/web/20160204195910/http://www.chicagorailfan.com/sjcdate.html",
+       "https://en.wikipedia.org/wiki/Peninsular_Railway_(California)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.89475,
+      37.341618
+     ],
+     [
+      -121.896084,
+      37.340969
+     ],
+     [
+      -121.8953,
+      37.340028
+     ],
+     [
+      -121.895342,
+      37.339836
+     ],
+     [
+      -121.890626,
+      37.333517
+     ],
+     [
+      -121.890536,
+      37.332808
+     ],
+     [
+      -121.890076,
+      37.332122
+     ],
+     [
+      -121.891473,
+      37.331434
+     ],
+     [
+      -121.891762,
+      37.331218
+     ],
+     [
+      -121.892639,
+      37.330763
+     ],
+     [
+      -121.892671,
+      37.330661
+     ],
+     [
+      -121.893508,
+      37.330219
+     ],
+     [
+      -121.896208,
+      37.328917
+     ],
+     [
+      -121.896394,
+      37.328894
+     ],
+     [
+      -121.898008,
+      37.328058
+     ],
+     [
+      -121.899572,
+      37.326916
+     ],
+     [
+      -121.9002,
+      37.326586
+     ],
+     [
+      -121.900948,
+      37.326486
+     ],
+     [
+      -121.904334,
+      37.326275
+     ],
+     [
+      -121.904469,
+      37.326199
+     ],
+     [
+      -121.906303,
+      37.326257
+     ],
+     [
+      -121.913805,
+      37.325911
+     ],
+     [
+      -121.913765,
+      37.323558
      ]
     ]
    }
