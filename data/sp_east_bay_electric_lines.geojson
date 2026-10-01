@@ -1,0 +1,3461 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Southern Pacific's East Bay Electric Lines - the 'Big Red Cars' - and their 1938-1941 successor the Interurban Electric Railway. In 1911-1912 SP double-tracked and electrified (1,200 V DC overhead) its steam suburban 'locals' in Oakland, Berkeley and Alameda and built several new lines, to answer the Key System's electric ferry trains. Trains of 72-ft steel cars ran from Thousand Oaks, Albany, Berkeley, downtown Oakland, East Oakland/San Leandro (Dutton Avenue) and Alameda to the Oakland and Alameda ferry piers. Electric service began on the Encinal Avenue line on 1 June 1911. The Harrison Street bridge's removal ended the Webster Street line in December 1923, and the March 1933 SP-Key System agreement ended the California Street, Ellsworth Street and 18th Street lines. From 15 January 1939 the surviving lines ran over the Bay Bridge to the Transbay Terminal in San Francisco; the Alameda lines ended 17 January 1941, Seventh Street in March 1941 and Shattuck/Ninth Street on 25/26 July 1941. Ridership peaked near 22 million a year about 1920 and was 9.9 million in 1939. Ferry-era and bridge-era features are separate because the route west of 16th Street changed completely in 1939 (pier versus flyover and bridge). Steam-era SP/Central Pacific locals over the same streets (from the 1860s-1870s) are NOT drawn: they are real passenger service, but their per-line dates were not sourced well enough here; they are a candidate for a separate commuter_rail feature set. The Fruitvale-Melrose stretch of the Seventh Street line ran on SP's four-tracked main line (main-line trains are in other SP layers). The Encinal Avenue line ran over the former South Pacific Coast route on Alameda island and the Lincoln Avenue line over the former San Francisco and Alameda Railroad - both drawn by other layers for their own steam years. After 1941 the Key System reused the Shattuck, Monterey/Colusa and East Oakland track (Key System layer) and SP kept freight on parts of the 9th Street, Shattuck, 7th Street and Lincoln lines (not drawn, Rule 1).",
+  "mode_note": "Tagged interurban (Rule 7): heavy 1,200 V DC electric trains linking separate cities (Berkeley, Albany, Oakland, Alameda, San Leandro) to the ferry and later to San Francisco, often on private right of way. They were run under steam-railroad work rules and could be called commuter_rail; interurban was preferred because they were electric trolley-wire cars, matching how the Key System's parallel transbay trains are treated. The 1912-1926 SP streetcar service is not drawn.",
+  "ownership_note": "Rule 4 judgment: all features are Southern Pacific #C1272D, including the 1938-1941 Interurban Electric Railway. IER was incorporated by SP on 14 November 1934; SP kept all 20,000 shares; IER began operating on 1 December 1938, leased SP's facilities for $50,000 a year, ran only the passenger trains (SP kept the steam-hauled freight switching) and kept SP's steam-railroad crew rules (motorman, conductor and flagman). It existed to hold the Bay Bridge franchise and the California Toll Bridge Authority's car-rebuilding money (the TBA took title to 58 cars). Cars were relettered 'Interurban Electric Railway Company' for bridge service, so the trains did carry a distinct name; but with SP-owned stock, SP-leased track, SP rules and a life of under three years, it is treated as SP's operating subsidiary rather than a separate operator. The change is recorded as a 1938 segment boundary in each ferry-era feature and in every bridge-era note. A reviewer who prefers the 'subsidiary running under its own name keeps its own colour' reading (as the Pacific Electric layer does) would split the 1938-1941 segments into IER-coloured features.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines - lines, opening and closing dates per line (citing the Oakland Tribune, Berkeley Gazette, Oakland Post Enquirer and Alameda Daily Argus), equipment and the 1933 consolidation.",
+   "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\") - IER incorporation, stock ownership, lease, 1 December 1938 start, 15 January 1939 bridge opening, ferry-era and bridge-era headways, ridership, 26 February 1940 cuts, and the January/March/July 1941 abandonments.",
+   "https://en.wikipedia.org/wiki/Northbrae_Tunnel - Thousand Oaks extension, 1 January 1912 opening, July 1941 end.",
+   "https://en.wikipedia.org/wiki/San_Francisco_and_Alameda_Railroad - Lincoln Avenue line electrification (1911) and loop.",
+   "https://en.wikipedia.org/wiki/San_Francisco_and_Oakland_Railroad - Seventh Street line origins and 1941 end.",
+   "https://en.wikipedia.org/wiki/Berkeley_Branch_Railroad - Berkeley Branch steam predecessor and 1911 electrification.",
+   "https://en.wikipedia.org/wiki/Oakland_Long_Wharf - Oakland Pier; electric trains left it 15 January 1939.",
+   "https://en.wikipedia.org/wiki/Alameda_Mole - Alameda Pier and the Horseshoe Line.",
+   "https://en.wikipedia.org/wiki/Template:Attached_KML/East_Bay_Electric_Lines - 1927 system map (route reference only; no vertices copied)."
+  ],
+  "geometry_quality": "Ferry-era Berkeley and Oakland lines: 1.2-1.9 mi of straight line each, 0.9-1.1 mi of it the Oakland Mole; Encinal and Lincoln Avenue lines: 1.6 mi straight (the Alameda Mole); Webster Street 2.4 mi and Horseshoe 2.5 mi (both moles/estuary); bridge-era lines: 3.3-3.7 mi straight, 2.8 mi of it the demolished 1936 east span, plus an approximated Transbay Terminal approach. Everything else is routed on OSM/OHM ways along the reference alignment; see each feature. No documented route mileages were found to check against, so each feature records the 1927-map length instead.",
+  "not_yet_sourced": [
+   "Per-line route mileages (the 1912 Railway Age Gazette article by R. T. Guppy, 'Electrification of Oakland Suburban Lines', and Ford's Red Trains in the East Bay (1977) should have them; neither was reachable).",
+   "When electric trains first ran to Dutton Avenue (the Seventh Street line reached 55th Avenue in December 1911 and Melrose in full in December 1912; a Suburban Connection train served Dutton Avenue before 1924).",
+   "Exact 1911 date of Lincoln Avenue line electrification.",
+   "Start date and frequency of the Alameda Horseshoe Line; its January 1939 end is 'citation needed' in Wikipedia.",
+   "Any headway other than the late ferry-era and opening bridge-era figures in the Western Railroader; the 26 February 1940 reduced schedules are not quantified.",
+   "Running times / average speeds (all estimates).",
+   "SP streetcar service 1912-1926 (Crosstown line between Oakland 16th Street and an Alameda loop via the Harrison Street bridge) - left out: its dates are 'citation needed' and its Alameda street loop was not traced.",
+   "Steam-era SP/Central Pacific locals on the same corridors before 1911 - left out pending per-line dates.",
+   "Last day of Shattuck/Ninth Street service: 25 July 1941 (Western Railroader) vs 26 July 1941 (Wikipedia).",
+   "Bay Bridge start: January 1938 (Wikipedia history section, an error) vs 15 January 1939 (Western Railroader, Oakland Long Wharf article) vs December 1939 (Northbrae Tunnel article)."
+  ],
+  "shared_track_note": "Coordination with south_pacific_coast layer (PR #4): its SPC/SP steam features run Alameda Point-Fernside to 1911, the San Leandro Bay bridge and the Webster Street-Oakland line to 1906, and Elmhurst-Newark-San Jose to 1960. This layer starts the electric Encinal Avenue line in 1911 (electric conversion, 1 June 1911) and the Webster Street electric line in 1911 (29 June 1911), so steam and electric years are not double-drawn; the shared track in electric years belongs to the same company and colour.",
+  "pulled": "20260930"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Shattuck Avenue Line (to Oakland Pier)",
+    "id": "sp-ebel-shattuck-ferry",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 28,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 8.53 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 8.51 mi. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 1.34 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 3.77 mi on OHM historic SP track, 0.9 mi on the very streets the sources name, 1.23 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.31 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.16 mi near 37.8089,-122.3052; 1.1 mi near 37.8096,-122.3236. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1938,
+      "headway_min": 20,
+      "note": "Electrified successor to the Central Pacific/SP Berkeley Branch steam local (opened 1876-78; steam years are not drawn here - see layer note). Electric service from Oakland Pier up Shattuck Avenue began 23 December 1911; the new extension from Vine Street through the Northbrae Tunnel to Thousand Oaks (Solano and Colusa) opened 1 January 1912, which is why this feature starts in 1912 rather than claiming the last eight days of 1911 for a tunnel section that had only inspection trains. Route: Thousand Oaks - Solano - Northbrae Tunnel - Sutter - Henry - Shattuck (Berkeley station) - Adeline - Stanford - upper level of Oakland 16th Street station - Oakland Pier, where passengers took the SP ferry to the San Francisco Ferry Building. Second-busiest line of the system. The 20-minute headway is the daytime ferry-train frequency the Western Railroader gives for the Oakland and Berkeley lines just before the bridge (40 minutes in the evening); peak-era (c. 1920) service was heavier and is not sourced. Survived the March 1933 SP-Key System consolidation.",
+      "sources": [
+       "Segment-level: 23 December 1911 electrification (Oakland Tribune, via Wikipedia), route and second-busiest ranking from the East Bay Electric Lines article; 1 January 1912 Thousand Oaks opening from the Northbrae Tunnel article; 20/40-minute ferry-era frequency from The Western Railroader, May 1956, p. 3.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/Northbrae_Tunnel",
+       "https://en.wikipedia.org/wiki/Berkeley_Branch_Railroad",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1939,
+      "headway_min": 20,
+      "note": "From 1 December 1938 the trains were run by the Interurban Electric Railway, a company Southern Pacific had incorporated on 14 November 1934 and whose entire stock it held; IER leased SP's electric-line facilities for $50,000 a year and ran only the passenger trains. This was the last six weeks of ferry-pier service before the Bay Bridge railway opened on 15 January 1939.",
+      "sources": [
+       "Segment-level: the 1 December 1938 IER start of operation, the 14 November 1934 incorporation and SP's ownership of all 20,000 shares, and the 15 January 1939 start of bridge service are from The Western Railroader, May 1956, p. 3. Headway as for the preceding segment (not separately sourced for these six weeks).",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.279248,
+      37.891366
+     ],
+     [
+      -122.277196,
+      37.891476
+     ],
+     [
+      -122.275063,
+      37.890711
+     ],
+     [
+      -122.273485,
+      37.890609
+     ],
+     [
+      -122.272547,
+      37.890184
+     ],
+     [
+      -122.272451,
+      37.889929
+     ],
+     [
+      -122.272301,
+      37.886961
+     ],
+     [
+      -122.272015,
+      37.886469
+     ],
+     [
+      -122.271374,
+      37.885822
+     ],
+     [
+      -122.271216,
+      37.885484
+     ],
+     [
+      -122.270813,
+      37.882486
+     ],
+     [
+      -122.270531,
+      37.882102
+     ],
+     [
+      -122.269759,
+      37.881548
+     ],
+     [
+      -122.26944,
+      37.88094
+     ],
+     [
+      -122.267032,
+      37.860713
+     ],
+     [
+      -122.267143,
+      37.860043
+     ],
+     [
+      -122.271597,
+      37.848497
+     ],
+     [
+      -122.272418,
+      37.84675
+     ],
+     [
+      -122.273368,
+      37.845664
+     ],
+     [
+      -122.27428,
+      37.844826
+     ],
+     [
+      -122.275475,
+      37.844153
+     ],
+     [
+      -122.289217,
+      37.838284
+     ],
+     [
+      -122.290249,
+      37.837672
+     ],
+     [
+      -122.291041,
+      37.8368
+     ],
+     [
+      -122.291391,
+      37.835775
+     ],
+     [
+      -122.291199,
+      37.834189
+     ],
+     [
+      -122.290828,
+      37.833965
+     ],
+     [
+      -122.290755,
+      37.832715
+     ],
+     [
+      -122.291036,
+      37.828356
+     ],
+     [
+      -122.291521,
+      37.82542
+     ],
+     [
+      -122.292061,
+      37.82336
+     ],
+     [
+      -122.292606,
+      37.821891
+     ],
+     [
+      -122.294338,
+      37.819699
+     ],
+     [
+      -122.294891,
+      37.818422
+     ],
+     [
+      -122.295848,
+      37.816995
+     ],
+     [
+      -122.296244,
+      37.81697
+     ],
+     [
+      -122.302515,
+      37.812389
+     ],
+     [
+      -122.303132,
+      37.811764
+     ],
+     [
+      -122.303616,
+      37.811077
+     ],
+     [
+      -122.304136,
+      37.809668
+     ],
+     [
+      -122.306235,
+      37.808135
+     ],
+     [
+      -122.307685,
+      37.808218
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.312415,
+      37.80867
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: California Street Line (to Oakland Pier)",
+    "id": "sp-ebel-california-street",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 28,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 8.18 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 8.14 mi. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 2.45 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 2.97 mi on the very streets the sources name, 1.1 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.69 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.13 mi near 37.85,-122.2762; 0.14 mi near 37.8454,-122.2753; 0.16 mi near 37.8089,-122.3052; 1.1 mi near 37.8096,-122.3236. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1933,
+      "headway_min": 20,
+      "note": "A newly built electric line (no steam predecessor), opened with partial service on 3 January 1912: Thousand Oaks (Colusa wye) - Colusa - Monterey - private right of way - California Street - Stanford - Oakland 16th Street (upper level) - Oakland Pier. Ended after 31 March 1933 under the SP-Key System agreement to stop duplicating each other's lines ahead of the Bay Bridge; the Key System reused the Monterey/Colusa track for its H line until July 1941. Headway NOT SOURCED: 20 minutes is assumed from the system-wide ferry-train pattern for the Oakland and Berkeley lines and is an estimate.",
+      "sources": [
+       "Segment-level: 3 January 1912 opening (Berkeley Gazette, 4 January 1912) and termination after 31 March 1933 (Oakland Post Enquirer, 25 March 1933) as cited in the East Bay Electric Lines article. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.279248,
+      37.891366
+     ],
+     [
+      -122.278414,
+      37.887207
+     ],
+     [
+      -122.279081,
+      37.886899
+     ],
+     [
+      -122.279694,
+      37.88648
+     ],
+     [
+      -122.280615,
+      37.885545
+     ],
+     [
+      -122.281296,
+      37.884524
+     ],
+     [
+      -122.281652,
+      37.883394
+     ],
+     [
+      -122.282151,
+      37.882561
+     ],
+     [
+      -122.282186,
+      37.882219
+     ],
+     [
+      -122.281583,
+      37.880628
+     ],
+     [
+      -122.280831,
+      37.87971
+     ],
+     [
+      -122.280958,
+      37.879662
+     ],
+     [
+      -122.28073,
+      37.879064
+     ],
+     [
+      -122.279955,
+      37.872731
+     ],
+     [
+      -122.279004,
+      37.863189
+     ],
+     [
+      -122.278711,
+      37.862438
+     ],
+     [
+      -122.275094,
+      37.844421
+     ],
+     [
+      -122.275873,
+      37.843978
+     ],
+     [
+      -122.288151,
+      37.838774
+     ],
+     [
+      -122.289694,
+      37.83803
+     ],
+     [
+      -122.290535,
+      37.837393
+     ],
+     [
+      -122.290974,
+      37.83672
+     ],
+     [
+      -122.291097,
+      37.836113
+     ],
+     [
+      -122.290753,
+      37.832627
+     ],
+     [
+      -122.291195,
+      37.827109
+     ],
+     [
+      -122.292061,
+      37.82336
+     ],
+     [
+      -122.292606,
+      37.821891
+     ],
+     [
+      -122.294338,
+      37.819699
+     ],
+     [
+      -122.294891,
+      37.818422
+     ],
+     [
+      -122.295848,
+      37.816995
+     ],
+     [
+      -122.296244,
+      37.81697
+     ],
+     [
+      -122.302515,
+      37.812389
+     ],
+     [
+      -122.303132,
+      37.811764
+     ],
+     [
+      -122.303616,
+      37.811077
+     ],
+     [
+      -122.304136,
+      37.809668
+     ],
+     [
+      -122.306235,
+      37.808135
+     ],
+     [
+      -122.307685,
+      37.808218
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.312415,
+      37.80867
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Ninth Street Line (to Oakland Pier)",
+    "id": "sp-ebel-ninth-street",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 28,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 8.82 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 8.77 mi. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 2.66 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 3.53 mi on the very streets the sources name, 1.09 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.55 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.11 mi near 37.8831,-122.2994; 0.1 mi near 37.8706,-122.2951; 0.16 mi near 37.8089,-122.3052; 1.1 mi near 37.8096,-122.3236. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1938,
+      "headway_min": 20,
+      "note": "A newly built electric line, opened 7 February 1912 (Albany celebrated its arrival): Thousand Oaks (Colusa wye) - Solano - Jackson (Albany) - private right of way - Ninth Street (west Berkeley) - private right of way through Emeryville (now the Emeryville Greenway) - Stanford - Oakland 16th Street (upper level) - Oakland Pier. An extension to Richmond was surveyed in 1912 but never built. Headway: 20 minutes daytime is the Western Railroader's ferry-era figure for the Oakland and Berkeley lines as a group; not checked against a Ninth Street timetable.",
+      "sources": [
+       "Segment-level: 7 February 1912 opening (Berkeley Gazette, 8 February 1912) and route from the East Bay Electric Lines article; ferry-era 20-minute daytime frequency for the Oakland and Berkeley lines from The Western Railroader, May 1956, p. 3.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1939,
+      "headway_min": 20,
+      "note": "From 1 December 1938 the trains were run by the Interurban Electric Railway, a company Southern Pacific had incorporated on 14 November 1934 and whose entire stock it held; IER leased SP's electric-line facilities for $50,000 a year and ran only the passenger trains. This was the last six weeks of ferry-pier service before the Bay Bridge railway opened on 15 January 1939.",
+      "sources": [
+       "Segment-level: the 1 December 1938 IER start of operation, the 14 November 1934 incorporation and SP's ownership of all 20,000 shares, and the 15 January 1939 start of bridge service are from The Western Railroader, May 1956, p. 3. Headway as for the preceding segment (not separately sourced for these six weeks).",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.279248,
+      37.891366
+     ],
+     [
+      -122.298314,
+      37.890313
+     ],
+     [
+      -122.299333,
+      37.890225
+     ],
+     [
+      -122.301578,
+      37.889795
+     ],
+     [
+      -122.299906,
+      37.88454
+     ],
+     [
+      -122.299902,
+      37.883781
+     ],
+     [
+      -122.298845,
+      37.882436
+     ],
+     [
+      -122.28905,
+      37.852078
+     ],
+     [
+      -122.288844,
+      37.850337
+     ],
+     [
+      -122.289425,
+      37.846246
+     ],
+     [
+      -122.288287,
+      37.842533
+     ],
+     [
+      -122.288275,
+      37.842068
+     ],
+     [
+      -122.28954,
+      37.838405
+     ],
+     [
+      -122.28992,
+      37.837877
+     ],
+     [
+      -122.290535,
+      37.837393
+     ],
+     [
+      -122.291014,
+      37.836566
+     ],
+     [
+      -122.291097,
+      37.836113
+     ],
+     [
+      -122.290753,
+      37.832627
+     ],
+     [
+      -122.290903,
+      37.831439
+     ],
+     [
+      -122.291036,
+      37.828356
+     ],
+     [
+      -122.291435,
+      37.825807
+     ],
+     [
+      -122.292061,
+      37.82336
+     ],
+     [
+      -122.292499,
+      37.822096
+     ],
+     [
+      -122.292692,
+      37.821734
+     ],
+     [
+      -122.294338,
+      37.819699
+     ],
+     [
+      -122.294891,
+      37.818422
+     ],
+     [
+      -122.295848,
+      37.816995
+     ],
+     [
+      -122.296244,
+      37.81697
+     ],
+     [
+      -122.302515,
+      37.812389
+     ],
+     [
+      -122.303132,
+      37.811764
+     ],
+     [
+      -122.303616,
+      37.811077
+     ],
+     [
+      -122.304136,
+      37.809668
+     ],
+     [
+      -122.306235,
+      37.808135
+     ],
+     [
+      -122.307685,
+      37.808218
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.312415,
+      37.80867
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Ellsworth Street Line (to Oakland Pier)",
+    "id": "sp-ebel-ellsworth-street",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 28,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 7.07 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 7.00 mi. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 2.45 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 1.83 mi on the very streets the sources name, 1.09 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.72 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.22 mi near 37.8544,-122.261; 0.16 mi near 37.8089,-122.3052; 1.1 mi near 37.8096,-122.3236. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1933,
+      "headway_min": 20,
+      "note": "A spur of the Berkeley Branch near the University of California, electric service from 3 January 1912: Ellsworth Street at Allston Way - Ellsworth - Woolsey - Adeline - Stanford - Oakland 16th Street (upper level) - Oakland Pier. Cut back one block to Bancroft Way in 1931 (not shown; the drawn line still reaches Allston Way). Ended after 31 March 1933 under the SP-Key System consolidation. Headway NOT SOURCED: 20 minutes is an estimate from the system-wide ferry-train pattern.",
+      "sources": [
+       "Segment-level: 3 January 1912 start, 1931 cut-back and termination after 31 March 1933 from the East Bay Electric Lines article (citing the Berkeley Gazette, 4 January 1912, and Oakland Post Enquirer, 25 March 1933). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.263927,
+      37.868959
+     ],
+     [
+      -122.261235,
+      37.855987
+     ],
+     [
+      -122.260825,
+      37.852876
+     ],
+     [
+      -122.263415,
+      37.852541
+     ],
+     [
+      -122.26457,
+      37.852592
+     ],
+     [
+      -122.269786,
+      37.851922
+     ],
+     [
+      -122.270045,
+      37.851955
+     ],
+     [
+      -122.270241,
+      37.851431
+     ],
+     [
+      -122.270583,
+      37.85104
+     ],
+     [
+      -122.270652,
+      37.85059
+     ],
+     [
+      -122.27141,
+      37.848586
+     ],
+     [
+      -122.271641,
+      37.847199
+     ],
+     [
+      -122.272181,
+      37.846884
+     ],
+     [
+      -122.272894,
+      37.846028
+     ],
+     [
+      -122.274192,
+      37.84487
+     ],
+     [
+      -122.275002,
+      37.844333
+     ],
+     [
+      -122.275094,
+      37.844421
+     ],
+     [
+      -122.275873,
+      37.843978
+     ],
+     [
+      -122.288151,
+      37.838774
+     ],
+     [
+      -122.289694,
+      37.83803
+     ],
+     [
+      -122.290535,
+      37.837393
+     ],
+     [
+      -122.290974,
+      37.83672
+     ],
+     [
+      -122.291097,
+      37.836113
+     ],
+     [
+      -122.290753,
+      37.832627
+     ],
+     [
+      -122.291127,
+      37.827625
+     ],
+     [
+      -122.291521,
+      37.82542
+     ],
+     [
+      -122.292499,
+      37.822096
+     ],
+     [
+      -122.292692,
+      37.821734
+     ],
+     [
+      -122.294338,
+      37.819699
+     ],
+     [
+      -122.294891,
+      37.818422
+     ],
+     [
+      -122.295848,
+      37.816995
+     ],
+     [
+      -122.296244,
+      37.81697
+     ],
+     [
+      -122.302515,
+      37.812389
+     ],
+     [
+      -122.303132,
+      37.811764
+     ],
+     [
+      -122.303616,
+      37.811077
+     ],
+     [
+      -122.304136,
+      37.809668
+     ],
+     [
+      -122.306235,
+      37.808135
+     ],
+     [
+      -122.307048,
+      37.808149
+     ],
+     [
+      -122.307685,
+      37.808218
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.312415,
+      37.80867
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: 18th Street Line (to Oakland Pier)",
+    "id": "sp-ebel-eighteenth-street",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 4.34 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 4.37 mi. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 0.0 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 1.51 mi on the very streets the sources name, 1.43 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.9 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.15 mi near 37.8106,-122.2747; 0.14 mi near 37.8157,-122.2969; 0.16 mi near 37.8089,-122.3052; 1.1 mi near 37.8096,-122.3236. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1933,
+      "headway_min": 20,
+      "note": "Downtown Oakland branch, opened March 1912: 14th and Franklin station - Franklin - 20th (alternating with 21st) - West Street - diagonal private right of way - 18th Street - Oakland 16th Street (upper level) - Oakland Pier. From 1926 trips began at Webster and 2nd Street and ran up Webster to 20th (not drawn separately). Ended after 31 March 1933 under the SP-Key System consolidation. Headway NOT SOURCED: 20 minutes is an estimate.",
+      "sources": [
+       "Segment-level: March 1912 start (Alameda Daily Argus, 23 April 1912), 1926 Webster Street extension and termination after 31 March 1933 from the East Bay Electric Lines article. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.26998,
+      37.80385
+     ],
+     [
+      -122.26782,
+      37.807306
+     ],
+     [
+      -122.267782,
+      37.808849
+     ],
+     [
+      -122.269732,
+      37.809608
+     ],
+     [
+      -122.273481,
+      37.810207
+     ],
+     [
+      -122.276414,
+      37.811279
+     ],
+     [
+      -122.28094,
+      37.811389
+     ],
+     [
+      -122.285002,
+      37.812313
+     ],
+     [
+      -122.286185,
+      37.812785
+     ],
+     [
+      -122.291692,
+      37.814035
+     ],
+     [
+      -122.295647,
+      37.816009
+     ],
+     [
+      -122.29572,
+      37.815917
+     ],
+     [
+      -122.298177,
+      37.815573
+     ],
+     [
+      -122.302044,
+      37.812756
+     ],
+     [
+      -122.302735,
+      37.812188
+     ],
+     [
+      -122.303387,
+      37.811432
+     ],
+     [
+      -122.303871,
+      37.810558
+     ],
+     [
+      -122.304136,
+      37.809668
+     ],
+     [
+      -122.306235,
+      37.808135
+     ],
+     [
+      -122.307685,
+      37.808218
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.312415,
+      37.80867
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Seventh Street Line (to Oakland Pier)",
+    "id": "sp-ebel-seventh-street",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 28,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 12.30 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 12.26 mi. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 2.65 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 7.99 mi on the very streets the sources name, 0.51 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.16 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.24 mi near 37.7695,-122.2132; 0.87 mi near 37.8097,-122.3257. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1938,
+      "headway_min": 20,
+      "note": "The busiest line of the system, electrified successor to the San Francisco and Oakland Railroad steam local of 1863 (steam years not drawn - see layer note). Electric service began 30 December 1911, at first only as far as 55th Avenue; full electric service to Melrose followed on 13 December 1912, and until February 1924 most trains turned at Havenscourt and Beck with a 'Suburban Connection' train running on to Dutton Avenue in San Leandro. The feature is drawn to Dutton Avenue from 1912; WHEN ELECTRIC TRAINS FIRST REACHED DUTTON AVENUE IS NOT SOURCED (see not_yet_sourced). Route: Oakland Pier - Seventh Street - SP main line tracks through Fruitvale (four-tracked here, shared with SP's main-line trains) - Melrose - Bond, Beck, Blanche and Almond streets and the private rights of way between them (all now Bancroft Avenue) - Bancroft - Dutton Avenue. A rush-hour express ran via Alameda Pier, the Lincoln Avenue line and the Fruitvale Bridge (see the Alameda Horseshoe feature). Headway: 20 minutes daytime per the Western Railroader's ferry-era figure for the Oakland lines.",
+      "sources": [
+       "Segment-level: 30 December 1911 start, 55th Avenue/Melrose staging (13 December 1912), February 1924 through-running and the route from the East Bay Electric Lines article; ferry-era 20-minute frequency from The Western Railroader, May 1956, p. 3.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/San_Francisco_and_Oakland_Railroad",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1939,
+      "headway_min": 20,
+      "note": "From 1 December 1938 the trains were run by the Interurban Electric Railway, a company Southern Pacific had incorporated on 14 November 1934 and whose entire stock it held; IER leased SP's electric-line facilities for $50,000 a year and ran only the passenger trains. This was the last six weeks of ferry-pier service before the Bay Bridge railway opened on 15 January 1939.",
+      "sources": [
+       "Segment-level: the 1 December 1938 IER start of operation, the 14 November 1934 incorporation and SP's ownership of all 20,000 shares, and the 15 January 1939 start of bridge service are from The Western Railroader, May 1956, p. 3. Headway as for the preceding segment (not separately sourced for these six weeks).",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.151017,
+      37.733525
+     ],
+     [
+      -122.156171,
+      37.740554
+     ],
+     [
+      -122.157023,
+      37.741495
+     ],
+     [
+      -122.157541,
+      37.742385
+     ],
+     [
+      -122.170809,
+      37.760272
+     ],
+     [
+      -122.175701,
+      37.764944
+     ],
+     [
+      -122.176917,
+      37.765636
+     ],
+     [
+      -122.177747,
+      37.766241
+     ],
+     [
+      -122.180716,
+      37.769156
+     ],
+     [
+      -122.181108,
+      37.769404
+     ],
+     [
+      -122.182018,
+      37.769622
+     ],
+     [
+      -122.197943,
+      37.771722
+     ],
+     [
+      -122.209225,
+      37.771772
+     ],
+     [
+      -122.210254,
+      37.77154
+     ],
+     [
+      -122.211766,
+      37.770833
+     ],
+     [
+      -122.214572,
+      37.768203
+     ],
+     [
+      -122.21579,
+      37.767928
+     ],
+     [
+      -122.216324,
+      37.767922
+     ],
+     [
+      -122.216865,
+      37.768028
+     ],
+     [
+      -122.218188,
+      37.768704
+     ],
+     [
+      -122.219668,
+      37.769675
+     ],
+     [
+      -122.240709,
+      37.784209
+     ],
+     [
+      -122.243059,
+      37.785587
+     ],
+     [
+      -122.24616,
+      37.787086
+     ],
+     [
+      -122.249902,
+      37.788571
+     ],
+     [
+      -122.25172,
+      37.78952
+     ],
+     [
+      -122.253408,
+      37.789992
+     ],
+     [
+      -122.253743,
+      37.790597
+     ],
+     [
+      -122.255624,
+      37.791257
+     ],
+     [
+      -122.257217,
+      37.792464
+     ],
+     [
+      -122.2596,
+      37.792978
+     ],
+     [
+      -122.261036,
+      37.793508
+     ],
+     [
+      -122.261998,
+      37.794077
+     ],
+     [
+      -122.263405,
+      37.795124
+     ],
+     [
+      -122.264326,
+      37.795608
+     ],
+     [
+      -122.281973,
+      37.802543
+     ],
+     [
+      -122.282396,
+      37.802656
+     ],
+     [
+      -122.283472,
+      37.802748
+     ],
+     [
+      -122.289318,
+      37.804029
+     ],
+     [
+      -122.301598,
+      37.80687
+     ],
+     [
+      -122.303673,
+      37.807697
+     ],
+     [
+      -122.305254,
+      37.808074
+     ],
+     [
+      -122.307491,
+      37.808186
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.311069,
+      37.808862
+     ],
+     [
+      -122.312188,
+      37.808663
+     ],
+     [
+      -122.316962,
+      37.808966
+     ],
+     [
+      -122.31774,
+      37.808913
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Oakland – Alameda Pier (via Webster Street)",
+    "id": "sp-ebel-oakland-alameda-pier",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 4.11 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 4.13 mi. The Alameda Pier (Alameda Mole) end is a 1.6 mi straight chord over the former Naval Air Station Alameda fill: the mole was a straight pier, but its position is placed from the 1927 map, not surveyed. Composition of the routed path: 0.56 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 0.77 mi on the very streets the sources name, 0.48 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 2.45 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.35 mi near 37.792,-122.2754; 0.23 mi near 37.7901,-122.2809; 0.17 mi near 37.7898,-122.2923; 1.6 mi near 37.7934,-122.3164. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track. The estuary crossing is drawn where Webster Street meets the water; the 1923-removed swing bridge's exact line is not mapped.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1923,
+      "headway_min": 30,
+      "note": "Former South Pacific Coast steam route, electrified 29 June 1911: 14th and Franklin station - Webster Street - the Harrison Street (Webster Street) swing bridge over the Oakland Estuary - private right of way along the Alameda shore - Alameda Pier, connecting downtown Oakland with the Alameda ferry. Ended after 26 December 1923 when the Harrison Street bridge was removed (the Posey Tube replaced it in 1928). Headway NOT SOURCED: 30 minutes is assumed from the Alameda ferry frequency and is an estimate.",
+      "sources": [
+       "Segment-level: 29 June 1911 electrification (Oakland Tribune) and end after 26 December 1923 (Oakland Tribune, 'S.P. Bridge Service to End Tonight') as cited in the East Bay Electric Lines article. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.26998,
+      37.80385
+     ],
+     [
+      -122.269799,
+      37.803779
+     ],
+     [
+      -122.269455,
+      37.802335
+     ],
+     [
+      -122.27217,
+      37.797848
+     ],
+     [
+      -122.274394,
+      37.794404
+     ],
+     [
+      -122.273706,
+      37.794123
+     ],
+     [
+      -122.277186,
+      37.789839
+     ],
+     [
+      -122.278779,
+      37.790124
+     ],
+     [
+      -122.282971,
+      37.790023
+     ],
+     [
+      -122.283452,
+      37.790199
+     ],
+     [
+      -122.290814,
+      37.790056
+     ],
+     [
+      -122.293884,
+      37.789451
+     ],
+     [
+      -122.294405,
+      37.789601
+     ],
+     [
+      -122.295286,
+      37.789692
+     ],
+     [
+      -122.300554,
+      37.789967
+     ],
+     [
+      -122.302164,
+      37.790146
+     ],
+     [
+      -122.302478,
+      37.790083
+     ],
+     [
+      -122.330403,
+      37.796695
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Encinal Avenue Line (to Alameda Pier)",
+    "id": "sp-ebel-encinal-avenue",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 6.64 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 6.65 mi. The Alameda Pier (Alameda Mole) end is a 1.6 mi straight chord over the former Naval Air Station Alameda fill: the mole was a straight pier, but its position is placed from the 1927 map, not surveyed. Composition of the routed path: 0.0 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 5.02 mi on the very streets the sources name, 0.03 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.6 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 1.6 mi near 37.7934,-122.3164. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1938,
+      "headway_min": 30,
+      "note": "The first SP line in the East Bay to run electric, on 1 June 1911 (steam trains still covered the rush hours for the first weeks): Alameda Pier - private right of way - Main Street - Central Avenue - Encinal Avenue - High Street South, over the former South Pacific Coast narrow-gauge route on Alameda island (that railroad's own years are another layer). SP had meant to electrify the whole South Pacific Coast line to San Jose and Los Gatos, but 1906 earthquake damage to the San Leandro Bay bridge stopped it at Alameda. Outbound Encinal trains at High Street South became inbound Lincoln Avenue trains, running the loop around the east end of the island. Headway: 30 minutes, the Western Railroader's ferry-era figure for the Alameda lines.",
+      "sources": [
+       "Segment-level: 1 June 1911 start (Oakland Tribune, 1 June 1911; Oakland Enquirer, 8 June 1911), route and the South Pacific Coast electrification plan from the East Bay Electric Lines article; 30-minute ferry-era Alameda headway from The Western Railroader, May 1956, p. 3.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/Alameda_Mole"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1939,
+      "headway_min": 30,
+      "note": "From 1 December 1938 the trains were run by the Interurban Electric Railway, a company Southern Pacific had incorporated on 14 November 1934 and whose entire stock it held; IER leased SP's electric-line facilities for $50,000 a year and ran only the passenger trains. This was the last six weeks of ferry-pier service before the Bay Bridge railway opened on 15 January 1939.",
+      "sources": [
+       "Segment-level: the 1 December 1938 IER start of operation, the 14 November 1934 incorporation and SP's ownership of all 20,000 shares, and the 15 January 1939 start of bridge service are from The Western Railroader, May 1956, p. 3. Headway as for the preceding segment (not separately sourced for these six weeks).",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.330403,
+      37.796695
+     ],
+     [
+      -122.302478,
+      37.790083
+     ],
+     [
+      -122.302164,
+      37.790146
+     ],
+     [
+      -122.300554,
+      37.789967
+     ],
+     [
+      -122.295286,
+      37.789692
+     ],
+     [
+      -122.294405,
+      37.789601
+     ],
+     [
+      -122.293884,
+      37.789451
+     ],
+     [
+      -122.293315,
+      37.789143
+     ],
+     [
+      -122.292836,
+      37.788667
+     ],
+     [
+      -122.291706,
+      37.787012
+     ],
+     [
+      -122.291452,
+      37.786346
+     ],
+     [
+      -122.29126,
+      37.778543
+     ],
+     [
+      -122.29134,
+      37.776854
+     ],
+     [
+      -122.291047,
+      37.776415
+     ],
+     [
+      -122.291088,
+      37.775159
+     ],
+     [
+      -122.290987,
+      37.774545
+     ],
+     [
+      -122.290425,
+      37.773785
+     ],
+     [
+      -122.28863,
+      37.772787
+     ],
+     [
+      -122.288274,
+      37.772498
+     ],
+     [
+      -122.287802,
+      37.772348
+     ],
+     [
+      -122.286954,
+      37.771889
+     ],
+     [
+      -122.286091,
+      37.771774
+     ],
+     [
+      -122.285799,
+      37.771656
+     ],
+     [
+      -122.263696,
+      37.771045
+     ],
+     [
+      -122.244239,
+      37.762538
+     ],
+     [
+      -122.23841,
+      37.759179
+     ],
+     [
+      -122.234093,
+      37.756214
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Lincoln Avenue Line (to Alameda Pier)",
+    "id": "sp-ebel-lincoln-avenue",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 7.81 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 7.81 mi. The Alameda Pier (Alameda Mole) end is a 1.6 mi straight chord over the former Naval Air Station Alameda fill: the mole was a straight pier, but its position is placed from the 1927 map, not surveyed. Composition of the routed path: 0.03 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 5.39 mi on the very streets the sources name, 0.8 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 1.6 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 1.6 mi near 37.7934,-122.3164. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1938,
+      "headway_min": 30,
+      "note": "Electrified in 1911 over the original 1864 San Francisco and Alameda Railroad route on the island: Alameda Pier - private right of way - Main Street - Pacific Avenue - 4th/5th Street - Lincoln Avenue - Alameda station at Park Street - Fernside - the new loop round the east end of the island - High Street South, where trains became Encinal Avenue trains. THE EXACT 1911 START DATE IS NOT SOURCED (the San Francisco and Alameda Railroad article gives only '1911'). Headway: 30 minutes, the Western Railroader's ferry-era figure for the Alameda lines.",
+      "sources": [
+       "Segment-level: 1911 electrification year and the loop arrangement from the San Francisco and Alameda Railroad article; route from the East Bay Electric Lines article; 30-minute ferry-era Alameda headway from The Western Railroader, May 1956, p. 3. Exact 1911 date not checked.",
+       "https://en.wikipedia.org/wiki/San_Francisco_and_Alameda_Railroad",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1939,
+      "headway_min": 30,
+      "note": "From 1 December 1938 the trains were run by the Interurban Electric Railway, a company Southern Pacific had incorporated on 14 November 1934 and whose entire stock it held; IER leased SP's electric-line facilities for $50,000 a year and ran only the passenger trains. This was the last six weeks of ferry-pier service before the Bay Bridge railway opened on 15 January 1939.",
+      "sources": [
+       "Segment-level: the 1 December 1938 IER start of operation, the 14 November 1934 incorporation and SP's ownership of all 20,000 shares, and the 15 January 1939 start of bridge service are from The Western Railroader, May 1956, p. 3. Headway as for the preceding segment (not separately sourced for these six weeks).",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.330403,
+      37.796695
+     ],
+     [
+      -122.302478,
+      37.790083
+     ],
+     [
+      -122.302164,
+      37.790146
+     ],
+     [
+      -122.300887,
+      37.789989
+     ],
+     [
+      -122.294817,
+      37.789652
+     ],
+     [
+      -122.294219,
+      37.789558
+     ],
+     [
+      -122.293577,
+      37.789308
+     ],
+     [
+      -122.293178,
+      37.789037
+     ],
+     [
+      -122.292738,
+      37.788541
+     ],
+     [
+      -122.291706,
+      37.787012
+     ],
+     [
+      -122.291452,
+      37.786346
+     ],
+     [
+      -122.29126,
+      37.778543
+     ],
+     [
+      -122.29134,
+      37.776854
+     ],
+     [
+      -122.291112,
+      37.77653
+     ],
+     [
+      -122.28585,
+      37.776394
+     ],
+     [
+      -122.284434,
+      37.776167
+     ],
+     [
+      -122.282827,
+      37.775565
+     ],
+     [
+      -122.281653,
+      37.775311
+     ],
+     [
+      -122.269402,
+      37.77502
+     ],
+     [
+      -122.260102,
+      37.774645
+     ],
+     [
+      -122.258948,
+      37.774318
+     ],
+     [
+      -122.24283,
+      37.767304
+     ],
+     [
+      -122.240664,
+      37.766554
+     ],
+     [
+      -122.238965,
+      37.766492
+     ],
+     [
+      -122.237565,
+      37.766715
+     ],
+     [
+      -122.233549,
+      37.767577
+     ],
+     [
+      -122.233039,
+      37.767421
+     ],
+     [
+      -122.229162,
+      37.765434
+     ],
+     [
+      -122.226247,
+      37.763407
+     ],
+     [
+      -122.225878,
+      37.763032
+     ],
+     [
+      -122.225621,
+      37.762596
+     ],
+     [
+      -122.225511,
+      37.761646
+     ],
+     [
+      -122.225807,
+      37.759083
+     ],
+     [
+      -122.226029,
+      37.758533
+     ],
+     [
+      -122.226689,
+      37.757821
+     ],
+     [
+      -122.230839,
+      37.754075
+     ],
+     [
+      -122.233803,
+      37.75615
+     ],
+     [
+      -122.234093,
+      37.756214
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Alameda Pier – Oakland Pier (Horseshoe Line)",
+    "id": "sp-ebel-alameda-horseshoe",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE. No end-to-end running time for this line was found in the sources checked. The cars were geared for 42.5 mph (Western Railroader, May 1956), and short-stop suburban service from the ferry pier with street running at the outer end suggests an average in the high teens mph; 28 km/h is about 17 mph.",
+    "geometry_quality": "Drawn 13.45 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML, with a few hand-placed terminal points) measures 13.41 mi. The Alameda Pier (Alameda Mole) end is a 1.6 mi straight chord over the former Naval Air Station Alameda fill: the mole was a straight pier, but its position is placed from the 1927 map, not surveyed. The Oakland Pier (Oakland Mole) end is a 1.1 mi straight chord across what is now the Port of Oakland fill: the mole itself was a straight solid-fill pier, but its exact 1882-1939 position is not in OSM and is placed from the 1927 map. Composition of the routed path: 2.46 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 7.47 mi on the very streets the sources name, 1.02 mi on other modern streets standing in for a vanished private right of way, 0.0 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 2.52 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 1.6 mi near 37.7934,-122.3164; 0.87 mi near 37.8097,-122.3257. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1938,
+      "headway_min": 60,
+      "note": "The 'Horseshoe' ran from Alameda Pier (or another stop on the Lincoln Avenue line) across the Fruitvale Bridge to Fruitvale and then along the Seventh Street line to Oakland Pier, mainly so that Alameda residents could reach SP main-line trains at Oakland Pier; it used the former Central Pacific steam route over the Fruitvale Bridge. From February 1924 a rush-hour Seventh Street express also ran this way. START YEAR NOT SOURCED: the line is drawn from 1912, when the Seventh Street line it joins was electrified, but no source checked gives its electric start. Headway NOT SOURCED: 60 minutes is a placeholder estimate.",
+      "sources": [
+       "NOT SOURCED: the East Bay Electric Lines article describes the route but marks its dates 'citation needed'; nothing else checked gives the electric start year or the frequency. The 1924 express is from the same article's Seventh Street entry.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/Alameda_Mole"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1939,
+      "headway_min": 60,
+      "note": "From 1 December 1938 the trains were run by the Interurban Electric Railway, a company Southern Pacific had incorporated on 14 November 1934 and whose entire stock it held; IER leased SP's electric-line facilities for $50,000 a year and ran only the passenger trains. This was the last six weeks of ferry-pier service before the Bay Bridge railway opened on 15 January 1939. The Horseshoe ended in January 1939 when bridge service replaced the piers (date 'citation needed' in Wikipedia; consistent with Oakland Pier losing its electric trains on 15 January 1939).",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the January 1939 end is 'citation needed' in the East Bay Electric Lines article; the 15 January 1939 end of electric service to Oakland Pier is from the Oakland Long Wharf article and The Western Railroader.",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/Oakland_Long_Wharf",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.330403,
+      37.796695
+     ],
+     [
+      -122.302478,
+      37.790083
+     ],
+     [
+      -122.302164,
+      37.790146
+     ],
+     [
+      -122.300887,
+      37.789989
+     ],
+     [
+      -122.294817,
+      37.789652
+     ],
+     [
+      -122.294219,
+      37.789558
+     ],
+     [
+      -122.293577,
+      37.789308
+     ],
+     [
+      -122.293178,
+      37.789037
+     ],
+     [
+      -122.292738,
+      37.788541
+     ],
+     [
+      -122.291706,
+      37.787012
+     ],
+     [
+      -122.291452,
+      37.786346
+     ],
+     [
+      -122.29126,
+      37.778543
+     ],
+     [
+      -122.29134,
+      37.776854
+     ],
+     [
+      -122.291112,
+      37.77653
+     ],
+     [
+      -122.28585,
+      37.776394
+     ],
+     [
+      -122.284434,
+      37.776167
+     ],
+     [
+      -122.282827,
+      37.775565
+     ],
+     [
+      -122.281653,
+      37.775311
+     ],
+     [
+      -122.269402,
+      37.77502
+     ],
+     [
+      -122.265393,
+      37.774815
+     ],
+     [
+      -122.260813,
+      37.77471
+     ],
+     [
+      -122.259934,
+      37.774617
+     ],
+     [
+      -122.258948,
+      37.774318
+     ],
+     [
+      -122.242192,
+      37.767043
+     ],
+     [
+      -122.240803,
+      37.766631
+     ],
+     [
+      -122.239712,
+      37.766546
+     ],
+     [
+      -122.237958,
+      37.766716
+     ],
+     [
+      -122.235153,
+      37.767334
+     ],
+     [
+      -122.234656,
+      37.767936
+     ],
+     [
+      -122.234268,
+      37.767773
+     ],
+     [
+      -122.233853,
+      37.767744
+     ],
+     [
+      -122.231528,
+      37.768198
+     ],
+     [
+      -122.231119,
+      37.768345
+     ],
+     [
+      -122.230836,
+      37.768583
+     ],
+     [
+      -122.229242,
+      37.770636
+     ],
+     [
+      -122.227861,
+      37.774078
+     ],
+     [
+      -122.227813,
+      37.774515
+     ],
+     [
+      -122.228041,
+      37.775214
+     ],
+     [
+      -122.22955,
+      37.77644
+     ],
+     [
+      -122.231987,
+      37.778221
+     ],
+     [
+      -122.240709,
+      37.784209
+     ],
+     [
+      -122.243059,
+      37.785587
+     ],
+     [
+      -122.24616,
+      37.787086
+     ],
+     [
+      -122.249902,
+      37.788571
+     ],
+     [
+      -122.25172,
+      37.78952
+     ],
+     [
+      -122.253408,
+      37.789992
+     ],
+     [
+      -122.253743,
+      37.790597
+     ],
+     [
+      -122.255624,
+      37.791257
+     ],
+     [
+      -122.257217,
+      37.792464
+     ],
+     [
+      -122.2596,
+      37.792978
+     ],
+     [
+      -122.261036,
+      37.793508
+     ],
+     [
+      -122.261998,
+      37.794077
+     ],
+     [
+      -122.263405,
+      37.795124
+     ],
+     [
+      -122.264326,
+      37.795608
+     ],
+     [
+      -122.282075,
+      37.802579
+     ],
+     [
+      -122.283472,
+      37.802748
+     ],
+     [
+      -122.295945,
+      37.805528
+     ],
+     [
+      -122.301598,
+      37.80687
+     ],
+     [
+      -122.303673,
+      37.807697
+     ],
+     [
+      -122.305254,
+      37.808074
+     ],
+     [
+      -122.307491,
+      37.808186
+     ],
+     [
+      -122.310643,
+      37.808858
+     ],
+     [
+      -122.311069,
+      37.808862
+     ],
+     [
+      -122.312188,
+      37.808663
+     ],
+     [
+      -122.316962,
+      37.808966
+     ],
+     [
+      -122.31774,
+      37.808913
+     ],
+     [
+      -122.333579,
+      37.81053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Shattuck Avenue Line (IER, to Transbay Terminal)",
+    "id": "sp-ier-shattuck-bridge",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. The cars were geared for 42.5 mph with a 35 mph limit on the Bay Bridge (Western Railroader, May 1956); no published end-to-end running time was found. 30 km/h is about 19 mph including the street and suburban running at the outer end.",
+    "geometry_quality": "Drawn 12.46 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML east of the Oakland 16th Street flyover, plus hand-placed points for the bridge, Yerba Buena Island and the Transbay Terminal) measures 12.42 mi. BRIDGE-ERA GEOMETRY: from the 26th Street flyover (razed OSM trestle ways) west to the bridge the line follows disused OSM track and then the modern I-80 approach. The 1936 EAST SPAN (cantilever and trusses, demolished 2013-2017) is NOT in OSM; it is drawn as the 2.8 mi straight chord from the Oakland touchdown to Yerba Buena Island, which is close to the old span's nearly straight alignment but is not a survey of it. The Yerba Buena Island tunnel and the 1936 WEST SPAN are drawn on today's I-80 roadway - the same structure the trains used (rail ran on the south side of the lower deck until 1958), so this is the right era's structure, but it is the roadway centreline, not the rail centreline. The approach into the 1939 Transbay Terminal at First and Mission (about 0.4 mi) is routed on modern San Francisco street and ramp ways along hand-placed points; the 1939 rail ramps were demolished in 2010, so this is an approximation. Composition of the routed path: 1.4 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 3.77 mi on OHM historic SP track, 0.9 mi on the very streets the sources name, 0.39 mi on other modern streets standing in for a vanished private right of way, 2.82 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 3.19 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.2 mi near 37.8237,-122.298; 2.82 mi near 37.8168,-122.3402. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1941,
+      "headway_min": 20,
+      "note": "Bay Bridge era. From 15 January 1939 the Interurban Electric Railway (SP's wholly owned operating subsidiary) ran this line across the lower deck of the San Francisco-Oakland Bay Bridge to the new Transbay Terminal at First and Mission, instead of to a ferry pier. The Berkeley lines turned west at an elevated wye over the SP main line just north of Oakland 16th Street station (the 26th Street flyover) for the Bridge Yard and the bridge; tracks from the Bridge Yard to the terminal were shared with the Key System and Sacramento Northern. Shattuck Avenue was IER Line 3 (local) and Line 9 (express), routed straight to the bridge without calling at 16th Street; the last train of the night ran on from Thousand Oaks over the outer Ninth Street line to Albany. Opening headway 20 minutes daytime / 40 evening; service was cut drastically from 26 February 1940 (new frequency not sourced). Last IER train ran on 25 July 1941 (Western Railroader) or 26 July 1941 (Wikipedia, Northbrae Tunnel article) - SOURCE CONFLICT, both inside 1941. The Key System F line took over the Shattuck track from 6 August 1941. SOURCE CONFLICT on the start: the East Bay Electric Lines article's history section says bridge trains began 'January 1938', its own lead and the Oakland Long Wharf article say January 1939, and the Northbrae Tunnel article says December 1939; the Western Railroader's 15 January 1939 is used (the bridge railway did not open until 1939).",
+      "sources": [
+       "Segment-level: 15 January 1939 start of bridge service, the routing, the opening 20-minute daytime / 40-minute evening headway for the Oakland and Berkeley lines and 40 minutes on each Alameda line, the 26 February 1940 service cuts and the end dates are from The Western Railroader, May 1956, pp. 3 and 7; line numbers and routes from the East Bay Electric Lines article.",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/Northbrae_Tunnel"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.279248,
+      37.891366
+     ],
+     [
+      -122.277196,
+      37.891476
+     ],
+     [
+      -122.274963,
+      37.890684
+     ],
+     [
+      -122.273281,
+      37.890552
+     ],
+     [
+      -122.272644,
+      37.890264
+     ],
+     [
+      -122.272476,
+      37.890092
+     ],
+     [
+      -122.272272,
+      37.886869
+     ],
+     [
+      -122.272015,
+      37.886469
+     ],
+     [
+      -122.271374,
+      37.885822
+     ],
+     [
+      -122.271216,
+      37.885484
+     ],
+     [
+      -122.270764,
+      37.882384
+     ],
+     [
+      -122.270531,
+      37.882102
+     ],
+     [
+      -122.269759,
+      37.881548
+     ],
+     [
+      -122.26944,
+      37.88094
+     ],
+     [
+      -122.267032,
+      37.860713
+     ],
+     [
+      -122.267143,
+      37.860043
+     ],
+     [
+      -122.271597,
+      37.848497
+     ],
+     [
+      -122.272418,
+      37.84675
+     ],
+     [
+      -122.273368,
+      37.845664
+     ],
+     [
+      -122.27428,
+      37.844826
+     ],
+     [
+      -122.275475,
+      37.844153
+     ],
+     [
+      -122.289217,
+      37.838284
+     ],
+     [
+      -122.290249,
+      37.837672
+     ],
+     [
+      -122.291041,
+      37.8368
+     ],
+     [
+      -122.291391,
+      37.835775
+     ],
+     [
+      -122.291071,
+      37.832248
+     ],
+     [
+      -122.291118,
+      37.829703
+     ],
+     [
+      -122.291359,
+      37.827305
+     ],
+     [
+      -122.291868,
+      37.825034
+     ],
+     [
+      -122.292255,
+      37.823983
+     ],
+     [
+      -122.292748,
+      37.823308
+     ],
+     [
+      -122.29306,
+      37.822643
+     ],
+     [
+      -122.294102,
+      37.822784
+     ],
+     [
+      -122.296227,
+      37.82333
+     ],
+     [
+      -122.299783,
+      37.824046
+     ],
+     [
+      -122.301578,
+      37.824255
+     ],
+     [
+      -122.302254,
+      37.824258
+     ],
+     [
+      -122.304269,
+      37.823957
+     ],
+     [
+      -122.305217,
+      37.823682
+     ],
+     [
+      -122.306003,
+      37.824434
+     ],
+     [
+      -122.308848,
+      37.824358
+     ],
+     [
+      -122.310209,
+      37.824198
+     ],
+     [
+      -122.315762,
+      37.823183
+     ],
+     [
+      -122.36469,
+      37.810457
+     ],
+     [
+      -122.390695,
+      37.786183
+     ],
+     [
+      -122.391689,
+      37.786298
+     ],
+     [
+      -122.391981,
+      37.7867
+     ],
+     [
+      -122.394104,
+      37.788375
+     ],
+     [
+      -122.394383,
+      37.788422
+     ],
+     [
+      -122.394363,
+      37.788598
+     ],
+     [
+      -122.395598,
+      37.789589
+     ],
+     [
+      -122.3963,
+      37.7896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Ninth Street Line (IER, to Transbay Terminal)",
+    "id": "sp-ier-ninth-street-bridge",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. The cars were geared for 42.5 mph with a 35 mph limit on the Bay Bridge (Western Railroader, May 1956); no published end-to-end running time was found. 30 km/h is about 19 mph including the street and suburban running at the outer end.",
+    "geometry_quality": "Drawn 12.75 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML east of the Oakland 16th Street flyover, plus hand-placed points for the bridge, Yerba Buena Island and the Transbay Terminal) measures 12.68 mi. BRIDGE-ERA GEOMETRY: from the 26th Street flyover (razed OSM trestle ways) west to the bridge the line follows disused OSM track and then the modern I-80 approach. The 1936 EAST SPAN (cantilever and trusses, demolished 2013-2017) is NOT in OSM; it is drawn as the 2.8 mi straight chord from the Oakland touchdown to Yerba Buena Island, which is close to the old span's nearly straight alignment but is not a survey of it. The Yerba Buena Island tunnel and the 1936 WEST SPAN are drawn on today's I-80 roadway - the same structure the trains used (rail ran on the south side of the lower deck until 1958), so this is the right era's structure, but it is the roadway centreline, not the rail centreline. The approach into the 1939 Transbay Terminal at First and Mission (about 0.4 mi) is routed on modern San Francisco street and ramp ways along hand-placed points; the 1939 rail ramps were demolished in 2010, so this is an approximation. Composition of the routed path: 2.7 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 3.53 mi on the very streets the sources name, 0.25 mi on other modern streets standing in for a vanished private right of way, 2.82 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 3.46 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.11 mi near 37.8831,-122.2994; 0.1 mi near 37.8706,-122.2951; 0.2 mi near 37.8237,-122.298; 2.82 mi near 37.8168,-122.3402. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1941,
+      "headway_min": 20,
+      "note": "Bay Bridge era. From 15 January 1939 the Interurban Electric Railway (SP's wholly owned operating subsidiary) ran this line across the lower deck of the San Francisco-Oakland Bay Bridge to the new Transbay Terminal at First and Mission, instead of to a ferry pier. The Berkeley lines turned west at an elevated wye over the SP main line just north of Oakland 16th Street station (the 26th Street flyover) for the Bridge Yard and the bridge; tracks from the Bridge Yard to the terminal were shared with the Key System and Sacramento Northern. Ninth Street was IER Line 5, routed straight to the bridge without calling at 16th Street. Opening headway 20 minutes daytime per the Western Railroader's figure for the Oakland and Berkeley lines; cut from 26 February 1940. Abandoned with the Shattuck line, last train 25 July 1941 (Western Railroader; Wikipedia says 26 July) and replaced by buses; most of the Ninth Street track was later reused by the Richmond Shipyard Railway. SOURCE CONFLICT on the start: the East Bay Electric Lines article's history section says bridge trains began 'January 1938', its own lead and the Oakland Long Wharf article say January 1939, and the Northbrae Tunnel article says December 1939; the Western Railroader's 15 January 1939 is used (the bridge railway did not open until 1939).",
+      "sources": [
+       "Segment-level: 15 January 1939 start of bridge service, the routing, the opening 20-minute daytime / 40-minute evening headway for the Oakland and Berkeley lines and 40 minutes on each Alameda line, the 26 February 1940 service cuts and the end dates are from The Western Railroader, May 1956, pp. 3 and 7; line numbers and routes from the East Bay Electric Lines article.",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.279248,
+      37.891366
+     ],
+     [
+      -122.298314,
+      37.890313
+     ],
+     [
+      -122.299333,
+      37.890225
+     ],
+     [
+      -122.301578,
+      37.889795
+     ],
+     [
+      -122.299906,
+      37.88454
+     ],
+     [
+      -122.299902,
+      37.883781
+     ],
+     [
+      -122.298845,
+      37.882436
+     ],
+     [
+      -122.28905,
+      37.852078
+     ],
+     [
+      -122.288939,
+      37.851435
+     ],
+     [
+      -122.288864,
+      37.849972
+     ],
+     [
+      -122.289425,
+      37.846246
+     ],
+     [
+      -122.288287,
+      37.842533
+     ],
+     [
+      -122.288275,
+      37.842068
+     ],
+     [
+      -122.28954,
+      37.838405
+     ],
+     [
+      -122.28992,
+      37.837877
+     ],
+     [
+      -122.290535,
+      37.837393
+     ],
+     [
+      -122.291014,
+      37.836566
+     ],
+     [
+      -122.291097,
+      37.836113
+     ],
+     [
+      -122.290753,
+      37.832627
+     ],
+     [
+      -122.291372,
+      37.827212
+     ],
+     [
+      -122.291805,
+      37.82524
+     ],
+     [
+      -122.292205,
+      37.824113
+     ],
+     [
+      -122.29306,
+      37.822643
+     ],
+     [
+      -122.294102,
+      37.822784
+     ],
+     [
+      -122.296227,
+      37.82333
+     ],
+     [
+      -122.299783,
+      37.824046
+     ],
+     [
+      -122.301578,
+      37.824255
+     ],
+     [
+      -122.302254,
+      37.824258
+     ],
+     [
+      -122.304269,
+      37.823957
+     ],
+     [
+      -122.305217,
+      37.823682
+     ],
+     [
+      -122.306003,
+      37.824434
+     ],
+     [
+      -122.308848,
+      37.824358
+     ],
+     [
+      -122.310209,
+      37.824198
+     ],
+     [
+      -122.315762,
+      37.823183
+     ],
+     [
+      -122.36469,
+      37.810457
+     ],
+     [
+      -122.390695,
+      37.786183
+     ],
+     [
+      -122.391689,
+      37.786298
+     ],
+     [
+      -122.391981,
+      37.7867
+     ],
+     [
+      -122.394104,
+      37.788375
+     ],
+     [
+      -122.394383,
+      37.788422
+     ],
+     [
+      -122.394363,
+      37.788598
+     ],
+     [
+      -122.395598,
+      37.789589
+     ],
+     [
+      -122.3963,
+      37.7896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Seventh Street Line (IER, to Transbay Terminal)",
+    "id": "sp-ier-seventh-street-bridge",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. The cars were geared for 42.5 mph with a 35 mph limit on the Bay Bridge (Western Railroader, May 1956); no published end-to-end running time was found. 30 km/h is about 19 mph including the street and suburban running at the outer end.",
+    "geometry_quality": "Drawn 18.65 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML east of the Oakland 16th Street flyover, plus hand-placed points for the bridge, Yerba Buena Island and the Transbay Terminal) measures 18.87 mi. BRIDGE-ERA GEOMETRY: from the 26th Street flyover (razed OSM trestle ways) west to the bridge the line follows disused OSM track and then the modern I-80 approach. The 1936 EAST SPAN (cantilever and trusses, demolished 2013-2017) is NOT in OSM; it is drawn as the 2.8 mi straight chord from the Oakland touchdown to Yerba Buena Island, which is close to the old span's nearly straight alignment but is not a survey of it. The Yerba Buena Island tunnel and the 1936 WEST SPAN are drawn on today's I-80 roadway - the same structure the trains used (rail ran on the south side of the lower deck until 1958), so this is the right era's structure, but it is the roadway centreline, not the rail centreline. The approach into the 1939 Transbay Terminal at First and Mission (about 0.4 mi) is routed on modern San Francisco street and ramp ways along hand-placed points; the 1939 rail ramps were demolished in 2010, so this is an approximation. Composition of the routed path: 3.13 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 7.22 mi on the very streets the sources name, 0.77 mi on other modern streets standing in for a vanished private right of way, 4.06 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 3.8 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.24 mi near 37.7695,-122.2132; 0.2 mi near 37.8237,-122.298; 2.82 mi near 37.8168,-122.3402. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1941,
+      "headway_min": 20,
+      "note": "Bay Bridge era. From 15 January 1939 the Interurban Electric Railway (SP's wholly owned operating subsidiary) ran this line across the lower deck of the San Francisco-Oakland Bay Bridge to the new Transbay Terminal at First and Mission, instead of to a ferry pier. The Berkeley lines turned west at an elevated wye over the SP main line just north of Oakland 16th Street station (the 26th Street flyover) for the Bridge Yard and the bridge; tracks from the Bridge Yard to the terminal were shared with the Key System and Sacramento Northern. Seventh Street was IER Line 2 (local) and Line 7 (express): Dutton Avenue - Bancroft - Melrose - Fruitvale - Seventh Street to just beyond Pine Street, then north over the former Berkeley tracks through the upper level of 16th Street station to the flyover and the bridge. From March 1939 all trains ran through to Dutton Avenue. Opening headway 20 minutes daytime; cut from 26 February 1940. Last trains 21 March 1941 - the Western Railroader says the trains 'ceased operation' on 22 March 1941, when the Key System A line was extended out East 14th Street in their place; the Key took over the Melrose-Havenscourt track from 4 April 1941. SOURCE CONFLICT on the start: the East Bay Electric Lines article's history section says bridge trains began 'January 1938', its own lead and the Oakland Long Wharf article say January 1939, and the Northbrae Tunnel article says December 1939; the Western Railroader's 15 January 1939 is used (the bridge railway did not open until 1939).",
+      "sources": [
+       "Segment-level: 15 January 1939 start of bridge service, the routing, the opening 20-minute daytime / 40-minute evening headway for the Oakland and Berkeley lines and 40 minutes on each Alameda line, the 26 February 1940 service cuts and the end dates are from The Western Railroader, May 1956, pp. 3 and 7; line numbers and routes from the East Bay Electric Lines article.",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/San_Francisco_and_Oakland_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.151017,
+      37.733525
+     ],
+     [
+      -122.156171,
+      37.740554
+     ],
+     [
+      -122.157023,
+      37.741495
+     ],
+     [
+      -122.157541,
+      37.742385
+     ],
+     [
+      -122.170809,
+      37.760272
+     ],
+     [
+      -122.175655,
+      37.764902
+     ],
+     [
+      -122.176917,
+      37.765636
+     ],
+     [
+      -122.177747,
+      37.766241
+     ],
+     [
+      -122.180986,
+      37.769348
+     ],
+     [
+      -122.18149,
+      37.769549
+     ],
+     [
+      -122.197943,
+      37.771722
+     ],
+     [
+      -122.209225,
+      37.771772
+     ],
+     [
+      -122.210254,
+      37.77154
+     ],
+     [
+      -122.211766,
+      37.770833
+     ],
+     [
+      -122.214572,
+      37.768203
+     ],
+     [
+      -122.21579,
+      37.767928
+     ],
+     [
+      -122.216324,
+      37.767922
+     ],
+     [
+      -122.216865,
+      37.768028
+     ],
+     [
+      -122.218188,
+      37.768704
+     ],
+     [
+      -122.219668,
+      37.769675
+     ],
+     [
+      -122.241265,
+      37.784572
+     ],
+     [
+      -122.243059,
+      37.785587
+     ],
+     [
+      -122.245398,
+      37.786753
+     ],
+     [
+      -122.249902,
+      37.788571
+     ],
+     [
+      -122.25172,
+      37.78952
+     ],
+     [
+      -122.253408,
+      37.789992
+     ],
+     [
+      -122.253743,
+      37.790597
+     ],
+     [
+      -122.255624,
+      37.791257
+     ],
+     [
+      -122.257217,
+      37.792464
+     ],
+     [
+      -122.2596,
+      37.792978
+     ],
+     [
+      -122.260718,
+      37.793368
+     ],
+     [
+      -122.261622,
+      37.793827
+     ],
+     [
+      -122.263405,
+      37.795124
+     ],
+     [
+      -122.264326,
+      37.795608
+     ],
+     [
+      -122.282075,
+      37.802579
+     ],
+     [
+      -122.283472,
+      37.802748
+     ],
+     [
+      -122.290162,
+      37.804216
+     ],
+     [
+      -122.302053,
+      37.807023
+     ],
+     [
+      -122.304446,
+      37.809699
+     ],
+     [
+      -122.303885,
+      37.811197
+     ],
+     [
+      -122.303247,
+      37.812147
+     ],
+     [
+      -122.302326,
+      37.813075
+     ],
+     [
+      -122.300684,
+      37.814238
+     ],
+     [
+      -122.29744,
+      37.816322
+     ],
+     [
+      -122.296281,
+      37.817273
+     ],
+     [
+      -122.295345,
+      37.818194
+     ],
+     [
+      -122.2924,
+      37.821844
+     ],
+     [
+      -122.293269,
+      37.822677
+     ],
+     [
+      -122.294102,
+      37.822784
+     ],
+     [
+      -122.296227,
+      37.82333
+     ],
+     [
+      -122.299783,
+      37.824046
+     ],
+     [
+      -122.301578,
+      37.824255
+     ],
+     [
+      -122.302254,
+      37.824258
+     ],
+     [
+      -122.304269,
+      37.823957
+     ],
+     [
+      -122.305217,
+      37.823682
+     ],
+     [
+      -122.306003,
+      37.824434
+     ],
+     [
+      -122.308848,
+      37.824358
+     ],
+     [
+      -122.310209,
+      37.824198
+     ],
+     [
+      -122.315762,
+      37.823183
+     ],
+     [
+      -122.36469,
+      37.810457
+     ],
+     [
+      -122.390695,
+      37.786183
+     ],
+     [
+      -122.391689,
+      37.786298
+     ],
+     [
+      -122.391981,
+      37.7867
+     ],
+     [
+      -122.394104,
+      37.788375
+     ],
+     [
+      -122.394383,
+      37.788422
+     ],
+     [
+      -122.394363,
+      37.788598
+     ],
+     [
+      -122.395598,
+      37.789589
+     ],
+     [
+      -122.3963,
+      37.7896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Encinal Avenue Line (IER, to Transbay Terminal)",
+    "id": "sp-ier-alameda-encinal-bridge",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. The cars were geared for 42.5 mph with a 35 mph limit on the Bay Bridge (Western Railroader, May 1956); no published end-to-end running time was found. 30 km/h is about 19 mph including the street and suburban running at the outer end.",
+    "geometry_quality": "Drawn 19.61 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML east of the Oakland 16th Street flyover, plus hand-placed points for the bridge, Yerba Buena Island and the Transbay Terminal) measures 19.90 mi. BRIDGE-ERA GEOMETRY: from the 26th Street flyover (razed OSM trestle ways) west to the bridge the line follows disused OSM track and then the modern I-80 approach. The 1936 EAST SPAN (cantilever and trusses, demolished 2013-2017) is NOT in OSM; it is drawn as the 2.8 mi straight chord from the Oakland touchdown to Yerba Buena Island, which is close to the old span's nearly straight alignment but is not a survey of it. The Yerba Buena Island tunnel and the 1936 WEST SPAN are drawn on today's I-80 roadway - the same structure the trains used (rail ran on the south side of the lower deck until 1958), so this is the right era's structure, but it is the roadway centreline, not the rail centreline. The approach into the 1939 Transbay Terminal at First and Mission (about 0.4 mi) is routed on modern San Francisco street and ramp ways along hand-placed points; the 1939 rail ramps were demolished in 2010, so this is an approximation. Composition of the routed path: 2.86 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 8.68 mi on the very streets the sources name, 0.79 mi on other modern streets standing in for a vanished private right of way, 4.06 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 3.57 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.2 mi near 37.8237,-122.298; 2.82 mi near 37.8168,-122.3402. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1941,
+      "headway_min": 40,
+      "note": "Bay Bridge era. From 15 January 1939 the Interurban Electric Railway (SP's wholly owned operating subsidiary) ran this line across the lower deck of the San Francisco-Oakland Bay Bridge to the new Transbay Terminal at First and Mission, instead of to a ferry pier. The Berkeley lines turned west at an elevated wye over the SP main line just north of Oakland 16th Street station (the 26th Street flyover) for the Bridge Yard and the bridge; tracks from the Bridge Yard to the terminal were shared with the Key System and Sacramento Northern. Alameda passengers lost by the change: with no tube under the Oakland Inner Harbor, trains ran 'backwards' from West Alameda round the east end of the island and over the Fruitvale Bridge to join the Seventh Street line at Fruitvale - a large U-shaped route that doubled back on itself - and then via 16th Street to the bridge. The Encinal Avenue and Lincoln Avenue lines formed a loop numbered Line 4 one way and Line 6 the other, each on a 40-minute headway staggered to give Alameda 20-minute service. Service ceased on 18 January 1941 (last trains 17 January) and Key System buses through the Posey Tube took over. This feature is the Encinal Avenue side of the loop: West Alameda - private right of way - Main - Central - Encinal - High Street South - Fernside - private right of way - Fruitvale Bridge - Fruitvale - Seventh Street line - 16th Street - bridge. SOURCE CONFLICT on the start: the East Bay Electric Lines article's history section says bridge trains began 'January 1938', its own lead and the Oakland Long Wharf article say January 1939, and the Northbrae Tunnel article says December 1939; the Western Railroader's 15 January 1939 is used (the bridge railway did not open until 1939).",
+      "sources": [
+       "Segment-level: 15 January 1939 start of bridge service, the routing, the opening 20-minute daytime / 40-minute evening headway for the Oakland and Berkeley lines and 40 minutes on each Alameda line, the 26 February 1940 service cuts and the end dates are from The Western Railroader, May 1956, pp. 3 and 7; line numbers and routes from the East Bay Electric Lines article.",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/San_Francisco_and_Alameda_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.296028,
+      37.789828
+     ],
+     [
+      -122.296087,
+      37.789726
+     ],
+     [
+      -122.294219,
+      37.789558
+     ],
+     [
+      -122.293439,
+      37.789228
+     ],
+     [
+      -122.292738,
+      37.788541
+     ],
+     [
+      -122.291633,
+      37.786875
+     ],
+     [
+      -122.291398,
+      37.785908
+     ],
+     [
+      -122.29126,
+      37.778543
+     ],
+     [
+      -122.29134,
+      37.776854
+     ],
+     [
+      -122.291047,
+      37.776415
+     ],
+     [
+      -122.291088,
+      37.775159
+     ],
+     [
+      -122.290987,
+      37.774545
+     ],
+     [
+      -122.29069,
+      37.774046
+     ],
+     [
+      -122.290222,
+      37.773639
+     ],
+     [
+      -122.28863,
+      37.772787
+     ],
+     [
+      -122.288274,
+      37.772498
+     ],
+     [
+      -122.287802,
+      37.772348
+     ],
+     [
+      -122.286954,
+      37.771889
+     ],
+     [
+      -122.286091,
+      37.771774
+     ],
+     [
+      -122.285799,
+      37.771656
+     ],
+     [
+      -122.263696,
+      37.771045
+     ],
+     [
+      -122.244239,
+      37.762538
+     ],
+     [
+      -122.238327,
+      37.759127
+     ],
+     [
+      -122.234184,
+      37.756238
+     ],
+     [
+      -122.233803,
+      37.75615
+     ],
+     [
+      -122.230839,
+      37.754075
+     ],
+     [
+      -122.226689,
+      37.757821
+     ],
+     [
+      -122.226029,
+      37.758533
+     ],
+     [
+      -122.225775,
+      37.759276
+     ],
+     [
+      -122.225499,
+      37.761843
+     ],
+     [
+      -122.22556,
+      37.762419
+     ],
+     [
+      -122.225878,
+      37.763032
+     ],
+     [
+      -122.226247,
+      37.763407
+     ],
+     [
+      -122.229162,
+      37.765434
+     ],
+     [
+      -122.233039,
+      37.767421
+     ],
+     [
+      -122.233169,
+      37.767872
+     ],
+     [
+      -122.231119,
+      37.768345
+     ],
+     [
+      -122.230836,
+      37.768583
+     ],
+     [
+      -122.229405,
+      37.770385
+     ],
+     [
+      -122.227813,
+      37.774235
+     ],
+     [
+      -122.227841,
+      37.774665
+     ],
+     [
+      -122.228041,
+      37.775214
+     ],
+     [
+      -122.22955,
+      37.77644
+     ],
+     [
+      -122.231987,
+      37.778221
+     ],
+     [
+      -122.241265,
+      37.784572
+     ],
+     [
+      -122.243059,
+      37.785587
+     ],
+     [
+      -122.245398,
+      37.786753
+     ],
+     [
+      -122.249902,
+      37.788571
+     ],
+     [
+      -122.25172,
+      37.78952
+     ],
+     [
+      -122.253408,
+      37.789992
+     ],
+     [
+      -122.253743,
+      37.790597
+     ],
+     [
+      -122.255624,
+      37.791257
+     ],
+     [
+      -122.257217,
+      37.792464
+     ],
+     [
+      -122.2596,
+      37.792978
+     ],
+     [
+      -122.261036,
+      37.793508
+     ],
+     [
+      -122.264081,
+      37.7955
+     ],
+     [
+      -122.281973,
+      37.802543
+     ],
+     [
+      -122.282396,
+      37.802656
+     ],
+     [
+      -122.283472,
+      37.802748
+     ],
+     [
+      -122.290162,
+      37.804216
+     ],
+     [
+      -122.302053,
+      37.807023
+     ],
+     [
+      -122.304446,
+      37.809699
+     ],
+     [
+      -122.304125,
+      37.810708
+     ],
+     [
+      -122.303662,
+      37.811573
+     ],
+     [
+      -122.302965,
+      37.81247
+     ],
+     [
+      -122.302093,
+      37.813261
+     ],
+     [
+      -122.297928,
+      37.815972
+     ],
+     [
+      -122.296176,
+      37.817368
+     ],
+     [
+      -122.294867,
+      37.818736
+     ],
+     [
+      -122.2924,
+      37.821844
+     ],
+     [
+      -122.293269,
+      37.822677
+     ],
+     [
+      -122.294102,
+      37.822784
+     ],
+     [
+      -122.296227,
+      37.82333
+     ],
+     [
+      -122.299783,
+      37.824046
+     ],
+     [
+      -122.302066,
+      37.824271
+     ],
+     [
+      -122.304269,
+      37.823957
+     ],
+     [
+      -122.305217,
+      37.823682
+     ],
+     [
+      -122.306003,
+      37.824434
+     ],
+     [
+      -122.308848,
+      37.824358
+     ],
+     [
+      -122.310209,
+      37.824198
+     ],
+     [
+      -122.315762,
+      37.823183
+     ],
+     [
+      -122.36469,
+      37.810457
+     ],
+     [
+      -122.390695,
+      37.786183
+     ],
+     [
+      -122.391689,
+      37.786298
+     ],
+     [
+      -122.391981,
+      37.7867
+     ],
+     [
+      -122.394104,
+      37.788375
+     ],
+     [
+      -122.394383,
+      37.788422
+     ],
+     [
+      -122.394363,
+      37.788598
+     ],
+     [
+      -122.395598,
+      37.789589
+     ],
+     [
+      -122.3963,
+      37.7896
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Lincoln Avenue Line (IER, to Transbay Terminal)",
+    "id": "sp-ier-alameda-lincoln-bridge",
+    "color": "#C1272D",
+    "mode": "interurban",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. The cars were geared for 42.5 mph with a 35 mph limit on the Bay Bridge (Western Railroader, May 1956); no published end-to-end running time was found. 30 km/h is about 19 mph including the street and suburban running at the outer end.",
+    "geometry_quality": "Drawn 17.85 mi. No documented route mileage was found for this line (the sources give streets, not mileposts); for comparison the reference sketch it was routed along (the 1927 system map in the Wikipedia KML east of the Oakland 16th Street flyover, plus hand-placed points for the bridge, Yerba Buena Island and the Transbay Terminal) measures 18.07 mi. BRIDGE-ERA GEOMETRY: from the 26th Street flyover (razed OSM trestle ways) west to the bridge the line follows disused OSM track and then the modern I-80 approach. The 1936 EAST SPAN (cantilever and trusses, demolished 2013-2017) is NOT in OSM; it is drawn as the 2.8 mi straight chord from the Oakland touchdown to Yerba Buena Island, which is close to the old span's nearly straight alignment but is not a survey of it. The Yerba Buena Island tunnel and the 1936 WEST SPAN are drawn on today's I-80 roadway - the same structure the trains used (rail ran on the south side of the lower deck until 1958), so this is the right era's structure, but it is the roadway centreline, not the rail centreline. The approach into the 1939 Transbay Terminal at First and Mission (about 0.4 mi) is routed on modern San Francisco street and ramp ways along hand-placed points; the 1939 rail ramps were demolished in 2010, so this is an approximation. Composition of the routed path: 2.93 mi on OSM railway ways (abandoned/disused/razed grades and, through Fruitvale, the active ex-SP main line), 0.0 mi on OHM historic SP track, 6.35 mi on the very streets the sources name, 1.28 mi on other modern streets standing in for a vanished private right of way, 4.06 mi on the modern I-80 roadway (Bay Bridge west span, Yerba Buena Island and the east approach), and 3.57 mi of straight-line approximation. STRAIGHT-LINE legs of 0.1 mi or more: 0.2 mi near 37.8237,-122.298; 2.82 mi near 37.8168,-122.3402. Reference alignment (which streets and rights of way the line used) is taken from the street-by-street route descriptions in the Wikipedia East Bay Electric Lines article and from the 1927 system map attached to that article as KML; the drawn vertices themselves come from OpenStreetMap (roads and abandoned/disused/active railway ways, ODbL) and, on Shattuck Avenue between Adeline and Vine, from the OpenHistoricalMap 'Southern Pacific' Berkeley Branch ways traced from the 1895 USGS sheet (CC0). Where neither had anything within ~150 m of the reference, a plain straight chord is drawn (labelled below); no vertex is copied from the KML. Most of this system ran on private right of way that is now a street (Bancroft Avenue, Adeline Street, Colusa Avenue, Fernside Boulevard, the Emeryville Greenway) or in the street itself, so 'traced on today's street' is usually the true location to within a street width - but it is a modern street, not surviving track.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1941,
+      "headway_min": 40,
+      "note": "Bay Bridge era. From 15 January 1939 the Interurban Electric Railway (SP's wholly owned operating subsidiary) ran this line across the lower deck of the San Francisco-Oakland Bay Bridge to the new Transbay Terminal at First and Mission, instead of to a ferry pier. The Berkeley lines turned west at an elevated wye over the SP main line just north of Oakland 16th Street station (the 26th Street flyover) for the Bridge Yard and the bridge; tracks from the Bridge Yard to the terminal were shared with the Key System and Sacramento Northern. Alameda passengers lost by the change: with no tube under the Oakland Inner Harbor, trains ran 'backwards' from West Alameda round the east end of the island and over the Fruitvale Bridge to join the Seventh Street line at Fruitvale - a large U-shaped route that doubled back on itself - and then via 16th Street to the bridge. The Encinal Avenue and Lincoln Avenue lines formed a loop numbered Line 4 one way and Line 6 the other, each on a 40-minute headway staggered to give Alameda 20-minute service. Service ceased on 18 January 1941 (last trains 17 January) and Key System buses through the Posey Tube took over. This feature is the Lincoln Avenue side of the loop: West Alameda - private right of way - Main - Pacific - 4th/5th Street - Lincoln - Alameda station (Park Street) - private right of way - Fruitvale Bridge - Fruitvale - Seventh Street line - 16th Street - bridge. SOURCE CONFLICT on the start: the East Bay Electric Lines article's history section says bridge trains began 'January 1938', its own lead and the Oakland Long Wharf article say January 1939, and the Northbrae Tunnel article says December 1939; the Western Railroader's 15 January 1939 is used (the bridge railway did not open until 1939).",
+      "sources": [
+       "Segment-level: 15 January 1939 start of bridge service, the routing, the opening 20-minute daytime / 40-minute evening headway for the Oakland and Berkeley lines and 40 minutes on each Alameda line, the 26 February 1940 service cuts and the end dates are from The Western Railroader, May 1956, pp. 3 and 7; line numbers and routes from the East Bay Electric Lines article.",
+       "https://archive.org/details/sim_western-railroader-the-western-railfan_1956-05_19_7 (The Western Railroader vol. 19 no. 7, May 1956, \"IER, The Big Red Cars\")",
+       "https://en.wikipedia.org/wiki/East_Bay_Electric_Lines",
+       "https://en.wikipedia.org/wiki/San_Francisco_and_Alameda_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.296028,
+      37.789828
+     ],
+     [
+      -122.296087,
+      37.789726
+     ],
+     [
+      -122.294219,
+      37.789558
+     ],
+     [
+      -122.293315,
+      37.789143
+     ],
+     [
+      -122.292738,
+      37.788541
+     ],
+     [
+      -122.291571,
+      37.786738
+     ],
+     [
+      -122.291398,
+      37.785908
+     ],
+     [
+      -122.29126,
+      37.778543
+     ],
+     [
+      -122.29134,
+      37.776854
+     ],
+     [
+      -122.291112,
+      37.77653
+     ],
+     [
+      -122.28585,
+      37.776394
+     ],
+     [
+      -122.284434,
+      37.776167
+     ],
+     [
+      -122.282827,
+      37.775565
+     ],
+     [
+      -122.281653,
+      37.775311
+     ],
+     [
+      -122.269402,
+      37.77502
+     ],
+     [
+      -122.265393,
+      37.774815
+     ],
+     [
+      -122.260813,
+      37.77471
+     ],
+     [
+      -122.259934,
+      37.774617
+     ],
+     [
+      -122.258948,
+      37.774318
+     ],
+     [
+      -122.242677,
+      37.76724
+     ],
+     [
+      -122.240803,
+      37.766631
+     ],
+     [
+      -122.239319,
+      37.766542
+     ],
+     [
+      -122.237958,
+      37.766716
+     ],
+     [
+      -122.235153,
+      37.767334
+     ],
+     [
+      -122.234656,
+      37.767936
+     ],
+     [
+      -122.234268,
+      37.767773
+     ],
+     [
+      -122.233853,
+      37.767744
+     ],
+     [
+      -122.231321,
+      37.768248
+     ],
+     [
+      -122.230836,
+      37.768583
+     ],
+     [
+      -122.229242,
+      37.770636
+     ],
+     [
+      -122.227813,
+      37.774235
+     ],
+     [
+      -122.227926,
+      37.774979
+     ],
+     [
+      -122.228129,
+      37.775316
+     ],
+     [
+      -122.231987,
+      37.778221
+     ],
+     [
+      -122.240709,
+      37.784209
+     ],
+     [
+      -122.242343,
+      37.785201
+     ],
+     [
+      -122.244574,
+      37.786365
+     ],
+     [
+      -122.24616,
+      37.787086
+     ],
+     [
+      -122.249902,
+      37.788571
+     ],
+     [
+      -122.25172,
+      37.78952
+     ],
+     [
+      -122.253408,
+      37.789992
+     ],
+     [
+      -122.253743,
+      37.790597
+     ],
+     [
+      -122.255624,
+      37.791257
+     ],
+     [
+      -122.257217,
+      37.792464
+     ],
+     [
+      -122.2596,
+      37.792978
+     ],
+     [
+      -122.261036,
+      37.793508
+     ],
+     [
+      -122.261998,
+      37.794077
+     ],
+     [
+      -122.263405,
+      37.795124
+     ],
+     [
+      -122.264326,
+      37.795608
+     ],
+     [
+      -122.281973,
+      37.802543
+     ],
+     [
+      -122.282396,
+      37.802656
+     ],
+     [
+      -122.283472,
+      37.802748
+     ],
+     [
+      -122.290162,
+      37.804216
+     ],
+     [
+      -122.302053,
+      37.807023
+     ],
+     [
+      -122.304446,
+      37.809699
+     ],
+     [
+      -122.304125,
+      37.810708
+     ],
+     [
+      -122.303662,
+      37.811573
+     ],
+     [
+      -122.302965,
+      37.81247
+     ],
+     [
+      -122.302093,
+      37.813261
+     ],
+     [
+      -122.297928,
+      37.815972
+     ],
+     [
+      -122.296176,
+      37.817368
+     ],
+     [
+      -122.294867,
+      37.818736
+     ],
+     [
+      -122.2924,
+      37.821844
+     ],
+     [
+      -122.293269,
+      37.822677
+     ],
+     [
+      -122.294102,
+      37.822784
+     ],
+     [
+      -122.296227,
+      37.82333
+     ],
+     [
+      -122.300184,
+      37.824106
+     ],
+     [
+      -122.302254,
+      37.824258
+     ],
+     [
+      -122.304269,
+      37.823957
+     ],
+     [
+      -122.305217,
+      37.823682
+     ],
+     [
+      -122.306003,
+      37.824434
+     ],
+     [
+      -122.308848,
+      37.824358
+     ],
+     [
+      -122.310209,
+      37.824198
+     ],
+     [
+      -122.315762,
+      37.823183
+     ],
+     [
+      -122.36469,
+      37.810457
+     ],
+     [
+      -122.390695,
+      37.786183
+     ],
+     [
+      -122.391689,
+      37.786298
+     ],
+     [
+      -122.391981,
+      37.7867
+     ],
+     [
+      -122.394104,
+      37.788375
+     ],
+     [
+      -122.394383,
+      37.788422
+     ],
+     [
+      -122.394363,
+      37.788598
+     ],
+     [
+      -122.395598,
+      37.789589
+     ],
+     [
+      -122.3963,
+      37.7896
+     ]
+    ]
+   }
+  }
+ ]
+}
