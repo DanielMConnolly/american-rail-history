@@ -356,7 +356,8 @@
   "ymv_memphis_vicksburg.geojson",
   "youngstown_railroads.geojson",
   "milwaukee_road_pacific_extension.geojson",
-  "wabash_railroad.geojson"
+  "wabash_railroad.geojson",
+  "soo_line_wisconsin_central.geojson"
  ],
  "stations": [
   "stations/amtrak.geojson"
