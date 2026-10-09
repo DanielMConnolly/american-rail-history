@@ -1,0 +1,1003 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Bridgton and Saco River Railroad, a 2 ft gauge common carrier from Bridgton Junction on the Maine Central Mountain Division (near Hiram) to Bridgton (opened 1883), extended to Harrison at the head of Long Lake in 1898 (20.8 route-miles). Under Maine Central stock control 1912-1927; surrendered to the town of Bridgton 1 Oct 1927 and renamed the Bridgton and Saco River Railway in receivership; bought by the Bridgton and Harrison Railway in mid-1930. Harrison extension closed Oct 1930; line abandoned 1941 (last scheduled train 7 Sep 1941) and scrapped. Drawn from research/branches/bridgton_and_saco_river_railroad.txt in the site repo (DanielMConnolly/historical-trains) (2026-10-09); only the report's drawable spans are drawn. Rule 4 split: the main line is two features with identical geometry - Bridgton and Saco River 1883-1930 and Bridgton and Harrison 1930-1937 - split at the 1930 receiver's sale, the clean change of operator. The Harrison extension needs no split (its drawable span ends 1929). Locomotives later ran at Edaville (South Carver MA) and the Maine Narrow Gauge Railroad Museum (Portland) on OTHER track; neither is drawn as a continuation.",
+  "sources": [
+   "https://bridgtonrailroad.org/b%26sr-railroad",
+   "https://bridgtonrailroad.org/b%26h-railway",
+   "https://en.wikipedia.org/wiki/Bridgton_and_Saco_River_Railroad (citing Moody 1959, Mead 1968, Jones 1993)",
+   "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 36; station letters keyed to MEC public timetables 1892/94, 1921, 1932)",
+   "https://nashuacitystation.org/history/bridgton-and-saco-river-railroad-company/",
+   "https://www.nashuacitystation.org/history/bridgton-and-saco-river-railway/",
+   "https://commons.wikimedia.org/wiki/File:Bridgton_%26_Harrison_Fan_Trip,_1937.jpg",
+   "https://en.wikipedia.org/wiki/1941_in_rail_transport"
+  ],
+  "source_conflicts": [
+   "1927 vs 1930 operator change: the B&H was chartered 28 Mar 1927 and MEC surrendered the road 1 Oct 1927 (company renamed B&SR Railway, in receivership), but the B&H only bought the property at the receiver's sale in mid-1930. One search summary claims the B&H 'took over operations' 1 Oct 1927; that sentence was not found on its cited page. The split is drawn at 1930; move it to 1927 if a source shows the B&H running trains from Oct 1927.",
+   "Mid-1930 sale date: 15 Jun 1930 (bridgtonrailroad.org) vs 1 Jul 1930 (Nashua City Station).",
+   "Maine Central control 1912-1927: bridgtonrailroad.org and the repo's maine_central_railroad.txt say the B&SR kept its own identity, timetables and equipment; Wikipedia writes 'Under Maine Central operation' and the B&SR was printed in MEC public timetables. Drawn as B&SR in its own colour (no 1912 split, a stock purchase); if Moody/Jones show MEC operated the trains, 1912-1927 should take MEC's colour (#457B9D) as a split feature."
+  ],
+  "not_yet_sourced": [
+   "OPEN END, main line (bh-main-bridgton-junction-bridgton): passenger service confirmed only to 1937 (27 Jun 1937 fan-trip charter). Was there passenger service 1938-1941? The last scheduled train ran 7 Sep 1941 (Jones 1993 p.194); whether it or earlier 1938-41 trains carried passengers is unread. Check Jones 'Two Feet to the Lakes' p.194, Moody 'The Maine Two-Footers' p.143, or a 1938-41 timetable/newspaper. The end would move from 1937 to as late as 1941.",
+   "OPEN END, Harrison extension (bsr-bridgton-harrison): confirmed to 1929; whether passenger-carrying trains reached Harrison between the 15 Jun 1930 derailment and the Oct 1930 closure is unknown.",
+   "Who operated the trains Oct 1927 - mid-1930 (the receiver of the B&SR Railway, or the B&H under some arrangement).",
+   "Dates of use of the 1927-Chevrolet railbus and ex-SR&RL railbus #4 (B&H #3) in passenger service.",
+   "Headways 1883-1912 and 1930-1937 and all avg_speed_kmh values are estimates.",
+   "Not read directly: ICC valuation report, Moody's Manual, Moody 1959, Jones 1993, Mead 1968 - all attributions are via Wikipedia or the Bridgton & Saco River Railroad Museum site."
+  ],
+  "freight_only_audit": "Nothing excluded: the road had no freight-only branches and no freight afterlife (scrapped 1941). Industrial spurs not drawn.",
+  "horsecar_audit": "None: steam from opening (1883); the 1930s railbus was a petrol rail motor car (mechanical).",
+  "line_label_audit": "Labels written to the Rule 6 pattern at creation.",
+  "interurban_audit": "Not interurban: a steam narrow-gauge common carrier, drawn intercity_rail."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Bridgton and Saco River Railroad",
+    "line": "Bridgton and Saco River: Bridgton Junction – Bridgton",
+    "id": "bsr-main-bridgton-junction-bridgton",
+    "color": "#8F7A2B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: Mead 1968 (via Wikipedia) says the mixed trains seldom exceeded 20 mph; ~25 km/h average is an estimate, not computed from a timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), probed with opstrace.py fetch_gap. OSM tags the lifted grade old_railway_operator='Bridgton and Saco River Railroad' (gauge 610; partly the Narrow Gauge Trail at Hiram). OHM ways 201884615 (main line, 'Bridgton and Saco River Railroad') and 201884617 (Harrison extension, cited to USGS 3DEP lidar) used for geometry only, never for dates. Waypoints taken from the grade itself, not from Nominatim (Maine geocodes return township centroids).",
+    "geometry_quality": "Traced: 15.9 mi against the documented 15.9 mi (Fowler: Bridgton MP 15.9; Wikipedia/Jones 15.8). No straight-line leg; after Douglas-Peucker (8 m) the longest vertex spacing is 2.4 km, on straight tangent track within 8 m of the source ways. Bridgton Junction - Bridgton: OSM B&SR-tagged abandoned grade and Narrow Gauge Trail (ways 1052078931, 1062184083, 1052078933, 643924121, 11413520, 11384881, 11455472, 172367324), which agrees with the OHM main-line way to within ~20 m throughout. The last ~0.3 mi into Bridgton Junction and the last ~0.13 mi into the Bridgton wye follow the OHM way. Junction end snapped onto the existing Maine Central Mountain Division geometry (maine_central_mountain_division.geojson) at 43.86813, -70.80224, about 0.5 mi on the Portland side of the Hiram crossing, matching MEC MP 35.2 vs Hiram MP 35.7. OSM also carries a B&SR-tagged 2-ft track continuing ~1.4 mi south beside the MEC to 43.853 N; it is not drawn - its purpose (spur, transfer or gravel-pit track) is unconfirmed and it lies beyond MP 0. The line was lifted in 1941, so this is the line's own (only) alignment, not a later one.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1912,
+      "headway_min": 720,
+      "note": "Line completed 21 Jan 1883 and 'officially open for business' 29 Jan 1883 with two daily passenger trains Bridgton - Hiram (Bridgton Junction), where passengers changed to the Maine Central's Mountain Division. 2 ft gauge, steam (Hinkley Forneys). Stations: Rankin's Mill, Twin Lake, West Sebago, Perley's Mill, Ingall's Road, South Bridgton, Sandy Creek. Headway 720 is the two-a-day of 1883 carried across the period; frequency between 1883 and 1912 is not separately sourced.",
+      "sources": [
+       "Segment-level: 1883 opening and two daily trains from bridgtonrailroad.org's B&SR history; stations from Fowler (MEC public timetable 1892/94). Headway after 1883 estimated.",
+       "https://bridgtonrailroad.org/b%26sr-railroad",
+       "https://en.wikipedia.org/wiki/Bridgton_and_Saco_River_Railroad (citing Moody 1959, Mead 1968, Jones 1993)",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 36; station letters keyed to MEC public timetables 1892/94, 1921, 1932)"
+      ]
+     },
+     {
+      "start": 1912,
+      "end": 1930,
+      "headway_min": 240,
+      "note": "Maine Central took majority stock control in July 1912; the B&SR kept its own name, crews and equipment and is drawn in its own colour (no Rule 4 split at 1912 - whether MEC itself ran the trains is disputed, see metadata). Four mixed round trips daily Harrison - Bridgton Junction, first leaving Harrison 5:15 am, speed seldom over 20 mph (Mead 1968 pp.28-29 via Wikipedia); mixed trains carried passengers. MEC surrendered the road to the town of Bridgton 1 Oct 1927 and the company, renamed Bridgton and Saco River Railway, went into receivership; this feature ends at the mid-1930 sale to the Bridgton and Harrison (15 Jun 1930 per bridgtonrailroad.org, 1 Jul 1930 per Nashua City Station). Who ran the trains Oct 1927 - mid-1930 is not established.",
+      "sources": [
+       "Segment-level: four daily mixed round trips from Mead 1968 via Wikipedia; 1912/1927/1930 dates from bridgtonrailroad.org and Nashua City Station (which conflict on the 1930 day).",
+       "https://en.wikipedia.org/wiki/Bridgton_and_Saco_River_Railroad (citing Moody 1959, Mead 1968, Jones 1993)",
+       "https://bridgtonrailroad.org/b%26sr-railroad",
+       "https://bridgtonrailroad.org/b%26h-railway",
+       "https://nashuacitystation.org/history/bridgton-and-saco-river-railroad-company/",
+       "https://www.nashuacitystation.org/history/bridgton-and-saco-river-railway/",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 36; station letters keyed to MEC public timetables 1892/94, 1921, 1932)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.80224,
+      43.868131
+     ],
+     [
+      -70.803152,
+      43.869749
+     ],
+     [
+      -70.803175,
+      43.870027
+     ],
+     [
+      -70.803016,
+      43.870394
+     ],
+     [
+      -70.800952,
+      43.872475
+     ],
+     [
+      -70.799905,
+      43.875122
+     ],
+     [
+      -70.799491,
+      43.875519
+     ],
+     [
+      -70.796446,
+      43.877326
+     ],
+     [
+      -70.793403,
+      43.8789
+     ],
+     [
+      -70.79221,
+      43.879226
+     ],
+     [
+      -70.790859,
+      43.879382
+     ],
+     [
+      -70.775949,
+      43.878803
+     ],
+     [
+      -70.772608,
+      43.879079
+     ],
+     [
+      -70.771759,
+      43.879326
+     ],
+     [
+      -70.770951,
+      43.879768
+     ],
+     [
+      -70.768931,
+      43.881458
+     ],
+     [
+      -70.768429,
+      43.881737
+     ],
+     [
+      -70.767871,
+      43.881806
+     ],
+     [
+      -70.764206,
+      43.881638
+     ],
+     [
+      -70.763761,
+      43.881728
+     ],
+     [
+      -70.763386,
+      43.881965
+     ],
+     [
+      -70.763172,
+      43.882379
+     ],
+     [
+      -70.763165,
+      43.883959
+     ],
+     [
+      -70.762687,
+      43.887205
+     ],
+     [
+      -70.760701,
+      43.890451
+     ],
+     [
+      -70.760543,
+      43.891092
+     ],
+     [
+      -70.761773,
+      43.895719
+     ],
+     [
+      -70.763992,
+      43.899981
+     ],
+     [
+      -70.764042,
+      43.900663
+     ],
+     [
+      -70.763764,
+      43.901442
+     ],
+     [
+      -70.762978,
+      43.902387
+     ],
+     [
+      -70.760335,
+      43.90463
+     ],
+     [
+      -70.759007,
+      43.905165
+     ],
+     [
+      -70.754675,
+      43.906115
+     ],
+     [
+      -70.753494,
+      43.906769
+     ],
+     [
+      -70.74664,
+      43.915068
+     ],
+     [
+      -70.742732,
+      43.925505
+     ],
+     [
+      -70.742613,
+      43.927704
+     ],
+     [
+      -70.741913,
+      43.930117
+     ],
+     [
+      -70.74203,
+      43.931525
+     ],
+     [
+      -70.74153,
+      43.932484
+     ],
+     [
+      -70.740926,
+      43.933024
+     ],
+     [
+      -70.740161,
+      43.933286
+     ],
+     [
+      -70.737705,
+      43.93322
+     ],
+     [
+      -70.736492,
+      43.93351
+     ],
+     [
+      -70.73373,
+      43.935001
+     ],
+     [
+      -70.731528,
+      43.936432
+     ],
+     [
+      -70.731289,
+      43.937358
+     ],
+     [
+      -70.732226,
+      43.940141
+     ],
+     [
+      -70.732263,
+      43.942063
+     ],
+     [
+      -70.733438,
+      43.94683
+     ],
+     [
+      -70.733618,
+      43.948305
+     ],
+     [
+      -70.736084,
+      43.959722
+     ],
+     [
+      -70.735879,
+      43.962268
+     ],
+     [
+      -70.738062,
+      43.967857
+     ],
+     [
+      -70.737937,
+      43.968565
+     ],
+     [
+      -70.736619,
+      43.970901
+     ],
+     [
+      -70.736489,
+      43.972059
+     ],
+     [
+      -70.736935,
+      43.972992
+     ],
+     [
+      -70.738344,
+      43.974913
+     ],
+     [
+      -70.738927,
+      43.97554
+     ],
+     [
+      -70.740155,
+      43.976478
+     ],
+     [
+      -70.74035,
+      43.976958
+     ],
+     [
+      -70.737592,
+      43.983595
+     ],
+     [
+      -70.737435,
+      43.984736
+     ],
+     [
+      -70.737473,
+      43.990315
+     ],
+     [
+      -70.736203,
+      43.994667
+     ],
+     [
+      -70.735843,
+      43.995428
+     ],
+     [
+      -70.729589,
+      44.004122
+     ],
+     [
+      -70.710308,
+      44.020953
+     ],
+     [
+      -70.708968,
+      44.021673
+     ],
+     [
+      -70.706797,
+      44.022356
+     ],
+     [
+      -70.706034,
+      44.022711
+     ],
+     [
+      -70.703319,
+      44.025498
+     ],
+     [
+      -70.70103,
+      44.027597
+     ],
+     [
+      -70.700028,
+      44.030001
+     ],
+     [
+      -70.699721,
+      44.032245
+     ],
+     [
+      -70.699779,
+      44.033445
+     ],
+     [
+      -70.700271,
+      44.036247
+     ],
+     [
+      -70.701155,
+      44.045161
+     ],
+     [
+      -70.701601,
+      44.046318
+     ],
+     [
+      -70.704323,
+      44.049676
+     ],
+     [
+      -70.705929,
+      44.052627
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Bridgton and Harrison Railway",
+    "line": "Bridgton and Harrison: Bridgton Junction – Bridgton",
+    "id": "bh-main-bridgton-junction-bridgton",
+    "color": "#9C4F96",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: Mead 1968 (via Wikipedia) says the mixed trains seldom exceeded 20 mph; ~25 km/h average is an estimate, not computed from a timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), probed with opstrace.py fetch_gap. OSM tags the lifted grade old_railway_operator='Bridgton and Saco River Railroad' (gauge 610; partly the Narrow Gauge Trail at Hiram). OHM ways 201884615 (main line, 'Bridgton and Saco River Railroad') and 201884617 (Harrison extension, cited to USGS 3DEP lidar) used for geometry only, never for dates. Waypoints taken from the grade itself, not from Nominatim (Maine geocodes return township centroids).",
+    "geometry_quality": "Traced: 15.9 mi against the documented 15.9 mi (Fowler: Bridgton MP 15.9; Wikipedia/Jones 15.8). No straight-line leg; after Douglas-Peucker (8 m) the longest vertex spacing is 2.4 km, on straight tangent track within 8 m of the source ways. Bridgton Junction - Bridgton: OSM B&SR-tagged abandoned grade and Narrow Gauge Trail (ways 1052078931, 1062184083, 1052078933, 643924121, 11413520, 11384881, 11455472, 172367324), which agrees with the OHM main-line way to within ~20 m throughout. The last ~0.3 mi into Bridgton Junction and the last ~0.13 mi into the Bridgton wye follow the OHM way. Junction end snapped onto the existing Maine Central Mountain Division geometry (maine_central_mountain_division.geojson) at 43.86813, -70.80224, about 0.5 mi on the Portland side of the Hiram crossing, matching MEC MP 35.2 vs Hiram MP 35.7. OSM also carries a B&SR-tagged 2-ft track continuing ~1.4 mi south beside the MEC to 43.853 N; it is not drawn - its purpose (spur, transfer or gravel-pit track) is unconfirmed and it lies beyond MP 0. The line was lifted in 1941, so this is the line's own (only) alignment, not a later one.",
+    "segments": [
+     {
+      "start": 1930,
+      "end": 1937,
+      "headway_min": 720,
+      "note": "Bridgton and Harrison Railway (town-backed), owner from the mid-1930 receiver's sale. Passenger service confirmed in 1932 (MEC public timetable shows Bridgton as terminus, Fowler 'c') and by a dated railfan charter from Bridgton Junction on 27 Jun 1937; a railbus built from a 1927 Chevrolet handled light freight and passengers (dates of use not given). END IS OPEN: 1937 is the last CONFIRMED passenger year, not a known end. The last scheduled train ran 7 Sep 1941 (Jones 1993 p.194) but no source read says it or any 1938-41 train carried passengers. Do not extend without evidence. Headway 720 (about two trains a day) is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 1930 start from the receiver's sale (bridgtonrailroad.org / Nashua City Station); 1932 from Fowler's MEC 1932 timetable letter; 1937 from the dated Commons fan-trip photo. End open. Headway NOT SOURCED.",
+       "https://bridgtonrailroad.org/b%26h-railway",
+       "https://en.wikipedia.org/wiki/Bridgton_and_Saco_River_Railroad (citing Moody 1959, Mead 1968, Jones 1993)",
+       "https://commons.wikimedia.org/wiki/File:Bridgton_%26_Harrison_Fan_Trip,_1937.jpg",
+       "https://www.nashuacitystation.org/history/bridgton-and-saco-river-railway/",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 36; station letters keyed to MEC public timetables 1892/94, 1921, 1932)",
+       "https://en.wikipedia.org/wiki/1941_in_rail_transport"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.80224,
+      43.868131
+     ],
+     [
+      -70.803152,
+      43.869749
+     ],
+     [
+      -70.803175,
+      43.870027
+     ],
+     [
+      -70.803016,
+      43.870394
+     ],
+     [
+      -70.800952,
+      43.872475
+     ],
+     [
+      -70.799905,
+      43.875122
+     ],
+     [
+      -70.799491,
+      43.875519
+     ],
+     [
+      -70.796446,
+      43.877326
+     ],
+     [
+      -70.793403,
+      43.8789
+     ],
+     [
+      -70.79221,
+      43.879226
+     ],
+     [
+      -70.790859,
+      43.879382
+     ],
+     [
+      -70.775949,
+      43.878803
+     ],
+     [
+      -70.772608,
+      43.879079
+     ],
+     [
+      -70.771759,
+      43.879326
+     ],
+     [
+      -70.770951,
+      43.879768
+     ],
+     [
+      -70.768931,
+      43.881458
+     ],
+     [
+      -70.768429,
+      43.881737
+     ],
+     [
+      -70.767871,
+      43.881806
+     ],
+     [
+      -70.764206,
+      43.881638
+     ],
+     [
+      -70.763761,
+      43.881728
+     ],
+     [
+      -70.763386,
+      43.881965
+     ],
+     [
+      -70.763172,
+      43.882379
+     ],
+     [
+      -70.763165,
+      43.883959
+     ],
+     [
+      -70.762687,
+      43.887205
+     ],
+     [
+      -70.760701,
+      43.890451
+     ],
+     [
+      -70.760543,
+      43.891092
+     ],
+     [
+      -70.761773,
+      43.895719
+     ],
+     [
+      -70.763992,
+      43.899981
+     ],
+     [
+      -70.764042,
+      43.900663
+     ],
+     [
+      -70.763764,
+      43.901442
+     ],
+     [
+      -70.762978,
+      43.902387
+     ],
+     [
+      -70.760335,
+      43.90463
+     ],
+     [
+      -70.759007,
+      43.905165
+     ],
+     [
+      -70.754675,
+      43.906115
+     ],
+     [
+      -70.753494,
+      43.906769
+     ],
+     [
+      -70.74664,
+      43.915068
+     ],
+     [
+      -70.742732,
+      43.925505
+     ],
+     [
+      -70.742613,
+      43.927704
+     ],
+     [
+      -70.741913,
+      43.930117
+     ],
+     [
+      -70.74203,
+      43.931525
+     ],
+     [
+      -70.74153,
+      43.932484
+     ],
+     [
+      -70.740926,
+      43.933024
+     ],
+     [
+      -70.740161,
+      43.933286
+     ],
+     [
+      -70.737705,
+      43.93322
+     ],
+     [
+      -70.736492,
+      43.93351
+     ],
+     [
+      -70.73373,
+      43.935001
+     ],
+     [
+      -70.731528,
+      43.936432
+     ],
+     [
+      -70.731289,
+      43.937358
+     ],
+     [
+      -70.732226,
+      43.940141
+     ],
+     [
+      -70.732263,
+      43.942063
+     ],
+     [
+      -70.733438,
+      43.94683
+     ],
+     [
+      -70.733618,
+      43.948305
+     ],
+     [
+      -70.736084,
+      43.959722
+     ],
+     [
+      -70.735879,
+      43.962268
+     ],
+     [
+      -70.738062,
+      43.967857
+     ],
+     [
+      -70.737937,
+      43.968565
+     ],
+     [
+      -70.736619,
+      43.970901
+     ],
+     [
+      -70.736489,
+      43.972059
+     ],
+     [
+      -70.736935,
+      43.972992
+     ],
+     [
+      -70.738344,
+      43.974913
+     ],
+     [
+      -70.738927,
+      43.97554
+     ],
+     [
+      -70.740155,
+      43.976478
+     ],
+     [
+      -70.74035,
+      43.976958
+     ],
+     [
+      -70.737592,
+      43.983595
+     ],
+     [
+      -70.737435,
+      43.984736
+     ],
+     [
+      -70.737473,
+      43.990315
+     ],
+     [
+      -70.736203,
+      43.994667
+     ],
+     [
+      -70.735843,
+      43.995428
+     ],
+     [
+      -70.729589,
+      44.004122
+     ],
+     [
+      -70.710308,
+      44.020953
+     ],
+     [
+      -70.708968,
+      44.021673
+     ],
+     [
+      -70.706797,
+      44.022356
+     ],
+     [
+      -70.706034,
+      44.022711
+     ],
+     [
+      -70.703319,
+      44.025498
+     ],
+     [
+      -70.70103,
+      44.027597
+     ],
+     [
+      -70.700028,
+      44.030001
+     ],
+     [
+      -70.699721,
+      44.032245
+     ],
+     [
+      -70.699779,
+      44.033445
+     ],
+     [
+      -70.700271,
+      44.036247
+     ],
+     [
+      -70.701155,
+      44.045161
+     ],
+     [
+      -70.701601,
+      44.046318
+     ],
+     [
+      -70.704323,
+      44.049676
+     ],
+     [
+      -70.705929,
+      44.052627
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Bridgton and Saco River Railroad",
+    "line": "Bridgton and Saco River: Bridgton – Harrison",
+    "id": "bsr-bridgton-harrison",
+    "color": "#8F7A2B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: Mead 1968 (via Wikipedia) says the mixed trains seldom exceeded 20 mph; ~25 km/h average is an estimate, not computed from a timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), probed with opstrace.py fetch_gap. OSM tags the lifted grade old_railway_operator='Bridgton and Saco River Railroad' (gauge 610; partly the Narrow Gauge Trail at Hiram). OHM ways 201884615 (main line, 'Bridgton and Saco River Railroad') and 201884617 (Harrison extension, cited to USGS 3DEP lidar) used for geometry only, never for dates. Waypoints taken from the grade itself, not from Nominatim (Maine geocodes return township centroids).",
+    "geometry_quality": "Traced: 5.0 mi against the documented 4.9 mi (Fowler: Bridgton 15.9 - Harrison 20.8; Wikipedia/Jones Harrison MP 20.7). No straight-line leg. Drawn wholly from the OHM Harrison-extension way (cited to USGS 3DEP lidar), from the Bridgton wye to Harrison at the head of Long Lake. The OSM way for this section (172365491) is tagged 'approxiamte alignment' and runs up to ~1 km east of the OHM/lidar line between Bridgton and North Bridgton and stops ~0.3 mi short of Harrison, so it was NOT used. Lifted 1930-41; no later alignment exists.",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1912,
+      "headway_min": 720,
+      "note": "Harrison extension opened 3 Aug 1898 (35 lb rail, Moody 1959 p.132), via Farmers Market, Forest Mills and North Bridgton to Harrison at the head of Long Lake. Headway before 1912 is not sourced; 720 is an estimate carried from the main line.",
+      "sources": [
+       "Segment-level: 1898 opening from bridgtonrailroad.org and Wikipedia (Moody 1959 p.132). Headway estimated.",
+       "https://bridgtonrailroad.org/b%26sr-railroad",
+       "https://en.wikipedia.org/wiki/Bridgton_and_Saco_River_Railroad (citing Moody 1959, Mead 1968, Jones 1993)"
+      ]
+     },
+     {
+      "start": 1912,
+      "end": 1929,
+      "headway_min": 240,
+      "note": "In the Maine Central control era the four daily mixed trains ran through Harrison - Bridgton Junction (Mead 1968 via Wikipedia); North Bridgton and Harrison appear in the 1921 MEC timetable (Fowler 'b'). END IS OPEN: 1929 is the last CONFIRMED passenger year, not a known end. The extension closed in October 1930 after engine #8 derailed on a sun kink on 15 Jun 1930; whether passenger-carrying trains reached Harrison during 1930 is not established, so the 1930 season is withheld. Do not extend without evidence. By 1932 the MEC timetable shows Bridgton as the terminus.",
+      "sources": [
+       "Segment-level: four mixed trains through Harrison from Mead via Wikipedia; 1921 station listing from Fowler; Oct 1930 closure from bridgtonrailroad.org.",
+       "https://en.wikipedia.org/wiki/Bridgton_and_Saco_River_Railroad (citing Moody 1959, Mead 1968, Jones 1993)",
+       "https://bridgtonrailroad.org/b%26h-railway",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 36; station letters keyed to MEC public timetables 1892/94, 1921, 1932)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.705929,
+      44.052627
+     ],
+     [
+      -70.706375,
+      44.053944
+     ],
+     [
+      -70.706432,
+      44.055076
+     ],
+     [
+      -70.706047,
+      44.0558
+     ],
+     [
+      -70.705345,
+      44.056223
+     ],
+     [
+      -70.70269,
+      44.057291
+     ],
+     [
+      -70.702429,
+      44.05773
+     ],
+     [
+      -70.702271,
+      44.059627
+     ],
+     [
+      -70.702645,
+      44.06324
+     ],
+     [
+      -70.701132,
+      44.072345
+     ],
+     [
+      -70.701121,
+      44.073439
+     ],
+     [
+      -70.701583,
+      44.076521
+     ],
+     [
+      -70.700486,
+      44.082601
+     ],
+     [
+      -70.70012,
+      44.083716
+     ],
+     [
+      -70.699317,
+      44.085084
+     ],
+     [
+      -70.698361,
+      44.085679
+     ],
+     [
+      -70.696724,
+      44.086179
+     ],
+     [
+      -70.695985,
+      44.086903
+     ],
+     [
+      -70.695148,
+      44.089356
+     ],
+     [
+      -70.695357,
+      44.090682
+     ],
+     [
+      -70.696149,
+      44.093408
+     ],
+     [
+      -70.696709,
+      44.096542
+     ],
+     [
+      -70.696777,
+      44.098634
+     ],
+     [
+      -70.696575,
+      44.099198
+     ],
+     [
+      -70.696224,
+      44.09974
+     ],
+     [
+      -70.694635,
+      44.100847
+     ],
+     [
+      -70.693106,
+      44.101189
+     ],
+     [
+      -70.69177,
+      44.101075
+     ],
+     [
+      -70.690796,
+      44.10114
+     ],
+     [
+      -70.690377,
+      44.101319
+     ],
+     [
+      -70.689346,
+      44.102449
+     ],
+     [
+      -70.689165,
+      44.102921
+     ],
+     [
+      -70.68938,
+      44.105068
+     ],
+     [
+      -70.689211,
+      44.106361
+     ],
+     [
+      -70.689596,
+      44.107621
+     ],
+     [
+      -70.689663,
+      44.109272
+     ],
+     [
+      -70.689482,
+      44.109785
+     ],
+     [
+      -70.688871,
+      44.110581
+     ],
+     [
+      -70.686996,
+      44.112437
+     ],
+     [
+      -70.685821,
+      44.112868
+     ],
+     [
+      -70.683949,
+      44.113059
+     ],
+     [
+      -70.68334,
+      44.11301
+     ],
+     [
+      -70.683031,
+      44.112868
+     ],
+     [
+      -70.681022,
+      44.110761
+     ]
+    ]
+   }
+  }
+ ]
+}
