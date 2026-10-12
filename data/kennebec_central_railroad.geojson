@@ -1,0 +1,166 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Kennebec Central Railroad, Randolph - Togus, Maine: a 5-mile 2 ft gauge steam line built to carry Civil War veterans at the Togus National Home to Gardiner. One line, no branches, one operator throughout (no lease or control change), so one feature in one colour.",
+  "researched_from": "research/branches/kennebec_central_railroad.txt",
+  "freight_only_audit": "Nothing excluded as a line. Coal-only running is not drawn: passenger service is confirmed only to 1928, and Jan-Jun 1929 (to the 29 Jun 1929 suspension) may have been coal-only, so the segment stops at 1928.",
+  "horsecar_audit": "None. Steam from opening in 1890.",
+  "not_yet_sourced": [
+   "[OPEN] end: did passenger trains run in Jan-Jun 1929, before all operation stopped on 29 Jun 1929? The 1928 company public timetable (Fowler) is the last positive evidence; the segment is drawn to 1928 only. Resolve from Jones, Two Feet to Togus (1999); Moody, The Maine Two-Footers (1959) pp.163-165; Kennebec Journal / Gardiner papers, June 1929.",
+   "Whether passenger service ended before the line closed (a 1920s discontinuance with coal-only running) is not ruled out for 1929, though the 1928 public timetable argues against it earlier.",
+   "headway_min (from four round trips/day in the early years) and avg_speed_kmh (~20 min for 5 mi) are estimates; later frequency unknown.",
+   "Exact Togus terminal site, and whether the Randolph station stood nearer the Gardiner-Randolph bridge than where the OSM grade begins.",
+   "OSM way 1004140950's beyond-Togus tail is assumed to be the Augusta-Togus trolley grade, not a Kennebec Central extension (no source mentions one)."
+  ],
+  "references": [
+   "https://en.wikipedia.org/wiki/Kennebec_Central_Railroad",
+   "https://www.branchline.uk/jfpdf/mainerrs.pdf",
+   "https://www.mainetrailfinder.com/trails/trail/old-narrow-gauge-rail-trail",
+   "https://railfan.com/?p=13277",
+   "https://web.colby.edu/csc-home/?p=10097"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Kennebec Central",
+    "line": "Kennebec Central: Randolph – Togus",
+    "id": "kennebec-central-randolph-togus",
+    "color": "#6A5ACD",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "ESTIMATE: ~20 minutes for 5 miles per the Maine Trail Finder description of the Old Narrow Gauge Rail Trail -- a trail-site statement, not a timetable.",
+    "gauge": "2 ft (610 mm)",
+    "geometry_source": "OpenStreetMap ways 1004140951, 172368110 (also the Old Narrow Gauge Rail Trail, highway=path) and 1004140950, all railway=abandoned gauge=610 named Kennebec Central Railroad; fetched by id 2026-10-12, joined end to end (0 m gaps), cut at Togus, Douglas-Peucker 8 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Fully traced on the railroad's own abandoned grade; no straight-line legs. Traced 5.03 mi (8.10 km) against 5 mi documented (Fowler Maine line 38: Randolph 0.0, National Home 5; Wikipedia 8 km). OSM way 1004140950 continues ~4.2 mi (6.73 km) past Togus north and west toward Augusta -- almost certainly the 1901 Augusta-Togus electric line's grade mislabelled as Kennebec Central; that tail is CUT at the vertex nearest the Togus VA Medical Center (44.27941,-69.70421, 112 m from the hospital centroid, OSM way 384248063). The exact Togus terminal site on the Home grounds is not established; that vertex is a proxy. Randolph end: the OSM grade begins at 44.22918,-69.76655 on Water St (Route 27) by the river, at the rail-trail trailhead, ~0.3 mi (~500 m) south of the east abutment of the modern Gardiner-Randolph (Bridge St) bridge. Sources put the station at the foot of stairs up to the old covered bridge; whether that bridge landed at today's crossing or the station stood at the grade's south end is not verified, so up to ~0.3 mi of terminal trackage by the bridge may be missing. Not extended -- the 5.03 mi trace already matches the documented 5 mi. Era: the grade drawn is the line's own 1890-1929 alignment (lifted ~1932-33); no later alignment involved.",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1928,
+      "headway_min": 180,
+      "note": "Kennebec Central Railroad, 2 ft gauge steam common carrier, Randolph (across the Kennebec from Gardiner; passengers climbed stairs from the Randolph station to the Gardiner-Randolph covered bridge and walked over -- no rail connection) to the National Home for Disabled Volunteer Soldiers at Togus, flag stop at Chelsea. Opening: first train 23 Jul 1890 (Wikipedia, citing Jones, Two Feet to Togus, 1999, p.18); excursion cars bought the first summer for the crowds. 1928: both stations appear under 1928 company public-timetable names ('Randolph & Gardiner 1928t', 'National Soldiers Home 1928t') in Fowler's Maine station list (branchline.uk, Maine line 38) -- the last positive evidence of passenger service. END IS [OPEN]: 1928 is the last CONFIRMED passenger year, not a known end. All operation stopped 29 Jun 1929 when the federal Togus coal-haul contract went to a trucking firm (Wikipedia/Jones 1999), but no source read says the Jan-Jun 1929 trains still carried passengers, so 1929 is withheld. Extend to 1929 only on evidence (Jones 1999; Moody, The Maine Two-Footers, 1959, pp.163-165; Kennebec Journal, June 1929). Traffic fell after the Augusta & Togus electric line opened in 1901 and again with the automobile; the coal contract kept the road alive. Equipment sat idle until sold ~1932-33 (locos 3 and 4 to the WW&F as 8 and 9). headway_min 180 is an ESTIMATE from 'four round trips per day' in the early profitable years (Wikipedia/Jones 1999) spread over a service day; later frequency is unknown and not timetable-sourced.",
+      "sources": [
+       "Segment-level: this segment's own note carries the citation for its dates and service -- opening 1890 from Wikipedia citing Jones 1999; 1928 from the company public timetable listed by Fowler (branchline.uk). headway_min and avg_speed_kmh are estimates; the 1928 end is [OPEN].",
+       "https://en.wikipedia.org/wiki/Kennebec_Central_Railroad",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -69.766551,
+      44.229177
+     ],
+     [
+      -69.765387,
+      44.228619
+     ],
+     [
+      -69.764695,
+      44.228441
+     ],
+     [
+      -69.763315,
+      44.228599
+     ],
+     [
+      -69.76302,
+      44.22878
+     ],
+     [
+      -69.762144,
+      44.23002
+     ],
+     [
+      -69.757465,
+      44.232132
+     ],
+     [
+      -69.755533,
+      44.233578
+     ],
+     [
+      -69.754722,
+      44.235006
+     ],
+     [
+      -69.754038,
+      44.238999
+     ],
+     [
+      -69.753338,
+      44.240412
+     ],
+     [
+      -69.752617,
+      44.242632
+     ],
+     [
+      -69.751803,
+      44.243425
+     ],
+     [
+      -69.749169,
+      44.245081
+     ],
+     [
+      -69.748758,
+      44.246258
+     ],
+     [
+      -69.745389,
+      44.250005
+     ],
+     [
+      -69.744493,
+      44.25039
+     ],
+     [
+      -69.74366,
+      44.250549
+     ],
+     [
+      -69.735354,
+      44.251797
+     ],
+     [
+      -69.730497,
+      44.253656
+     ],
+     [
+      -69.730061,
+      44.253882
+     ],
+     [
+      -69.728137,
+      44.25574
+     ],
+     [
+      -69.719732,
+      44.262567
+     ],
+     [
+      -69.710732,
+      44.267475
+     ],
+     [
+      -69.708204,
+      44.271281
+     ],
+     [
+      -69.707026,
+      44.273372
+     ],
+     [
+      -69.70421,
+      44.279414
+     ]
+    ]
+   }
+  }
+ ]
+}
