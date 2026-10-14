@@ -1,0 +1,1311 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Franklin and Megantic (Strong - Kingfield, 1884) and its extension the Kingfield and Dead River (Kingfield - Carrabassett 1894, Bigelow 1899/1900), 2 ft gauge steam feeders of the Sandy River Railroad in Franklin County, Maine, consolidated with it on 30 Jan 1908 as the Sandy River and Rangeley Lakes Railroad. Abandoned 1935, lifted 1935-36. Drawn from research/branches/franklin_and_megantic_railway.txt in the site repo (DanielMConnolly/historical-trains), 2026-10-12; only the report's drawable spans are drawn. Rule 4 split at the 1908 consolidation: F&M and K&DR features share identical geometry with the SR&RL features that follow them.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Franklin_and_Megantic_Railway (citing Crittenden 1976)",
+   "https://en.wikipedia.org/wiki/Sandy_River_and_Rangeley_Lakes_Railroad (citing Crittenden 1966, Jones 1980)",
+   "https://nashuacitystation.org/history/franklin-and-megantic-railroad (citing ICC Reports 1926, SR&RL, pp.173-185)",
+   "https://nashuacitystation.org/history/kingfield-and-dead-river-railroad (citing ICC 1926)",
+   "https://nashuacitystation.org/history/sandy-river-and-rangeley-lakes-railroad-1908 (ICC 1926)",
+   "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 42 'SRRL: Strong - Bigelow'; z = 1894 Pathfinder, a = 1910 PTT, b = 1921 PTT, c = 1930 ticket list)",
+   "https://www.sunjournal.com/2024/11/28/origins-of-the-narrow-gauge-pathway/",
+   "http://www.kingfield.me/history/",
+   "https://en.wikipedia.org/wiki/1884_in_rail_transport"
+  ],
+  "colour_note": "Sandy River and Rangeley Lakes Railroad colour is #6B4E9B, introduced here. The later sandy_river_railroad layer (SR&RL main line and branches) must reuse it for every SR&RL feature. Franklin and Megantic #2E6B4F and Kingfield and Dead River #8C3B3B are also new.",
+  "source_conflicts": [
+   "K&DR operator 1894-1907: the K&DR was promoted by F&M interests (Crittenden 1976 p.65) and bought by the F&M at auction 2 Aug 1898 (Wikipedia, uncited), but no source read says the F&M leased it or ran its trains in the F&M's name. Drawn as the K&DR in its own colour. If a source shows F&M operation from 1898, split kdr-kingfield-carrabassett at that year and give the later part the F&M's company and colour (#2E6B4F).",
+   "Strong - Kingfield opening: 10 Dec 1884 (uncited Wikipedia year list) vs 'rail operations 1885' (Nashua City Station). Drawn from 1885.",
+   "Carrabassett - Bigelow opening: 1899 (Crittenden 1976 via Wikipedia) vs 1900 (Sun Journal, TrailLink).",
+   "Bigelow rail removal: summer 1926, 4.4 mi Carrabasset - Bigelow (Crittenden 1966 p.182) vs Jul/Aug 1927, 5.4 mi Bigelow Station - Huston Brook (Sun Journal).",
+   "F&M reorganization: 3 Jan 1897 vs 3 Jun 1897 (Nashua City Station gives both). Maine Central control from 1911 (Crittenden 1976) vs 1912 (Crittenden 1966); not a split either way.",
+   "SR&RL final end: 2 Jul 1935 (Wikipedia, Jones 1980) vs 30 May 1935 (film blurb) vs 'summer of 1936' (Kingfield town history, probably the scrapping)."
+  ],
+  "not_yet_sourced": [
+   "OPEN END, srrl-strong-kingfield and srrl-kingfield-carrabassett: passenger service confirmed only to 1930 (ticket list). Probably ran to the 8 Jul 1932 suspension (end would become 1932); whether the 17 Apr 1933 - 2 Jul 1935 restart for Lawrence Plywood carried passengers (mixed train or combine) is unread. Check Crittenden 1966 pp.175-189, Jones 1980 pp.244-253, or a Chronicling America 'last train' story.",
+   "OPEN END, srrl-carrabassett-bigelow: confirmed 1910-1921 only; the last passenger year lies between 1921 and the 1926/27 lifting.",
+   "OMITTED: Kingfield and Dead River Carrabassett - Bigelow 1900-1907 (report block [2b]). The extension opened 1899/1900 but no passenger listing for Bigelow before the 1910 SR&RL timetable was found, so under Rule 3 its K&DR-era years are not drawn. Add a K&DR feature on the srrl-carrabassett-bigelow geometry if a pre-1908 timetable or guide lists Bigelow, and move the SR&RL start back to 1908 if one shows Bigelow in 1908-1909.",
+   "Whether the F&M operated the K&DR's trains after the 2 Aug 1898 auction (decides the K&DR colour, see source_conflicts).",
+   "All headway_min and avg_speed_kmh values are estimates.",
+   "Not read directly: Crittenden 1966/1976, Jones 1979/1980, ICC 1926 valuation report, any primary timetable; attributions are via Wikipedia, Nashua City Station and Fowler."
+  ],
+  "freight_only_audit": "Nothing drawn for freight-only years. Not drawn for lack of passenger evidence: the Mount Abram Branch (Mount Abram Jct - Soule's mill, 1886-1924), the Hammond Field log trestle (1906-07), the Huston Brook stub after the 1926/27 lifting, and the 1933-35 operation (freight to 1935).",
+  "horsecar_audit": "None: steam from opening (locomotive B.V. Meade, 1884).",
+  "line_label_audit": "Labels written to the Rule 6 pattern at creation.",
+  "interurban_audit": "Not interurban: a steam narrow-gauge common carrier, drawn intercity_rail (as bridgton_and_saco_river_railroad.geojson)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Franklin and Megantic Railway",
+    "line": "Franklin and Megantic: Strong – Kingfield",
+    "id": "fm-strong-kingfield",
+    "color": "#2E6B4F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no timetable running time for the branch was read; ~25 km/h is a typical 2 ft gauge mixed-train average, not computed from a source (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), the ways tagged old_railway_operator='Sandy River & Rangeley Lakes Railroad' (gauge 610) north of Strong, chained directly way-to-way (no router snapping), filtered to exclude the SR&RL main line and the Mount Abram Branch. Cross-checked against OpenHistoricalMap (CC0) ways 201882175/201882176 ('Franklin and Megantic Railroad', USGS topo + 3DEP), 201882172 and 201882177 ('Kingfield and Dead River Railroad'); OHM geometry used only as a check and for one 0.2 mi tail, never for dates. Douglas-Peucker 8 m, then trim_reversals. Waypoints pinned onto the grade itself (Nominatim returned township centroids for Strong, Kingfield and Carrabassett Valley).",
+    "geometry_quality": "Traced: 14.56 mi against the documented 14.8 mi (Fowler MP 11.1-25.9; Wikipedia 14.9; infobox 14.5) - within 2%. Strong junction at 44.80555, -70.22084, the OSM node the branch shares with the SR&RL main-line way 1350824913, in Strong village. Kingfield end at 44.95544, -70.16024 on the through line; a 0.2 mi OSM-tagged stub (way 1107125365) running east toward the village to 44.9580, -70.1575 is NOT drawn because its use (station track, wye leg or the pre-1894 terminal) is unconfirmed. Only straight leg: a 0.15 mi (249 m) bridge over a hole between OSM ways 1107125362 and 821682593 near Salem (44.9068,-70.2540 to 44.9077,-70.2511). Agrees with the OHM F&M ways to within ~30 m except the first ~0.1 mi at Strong, where OHM joins the main line ~130 m further south-east. Mileposts check: Fowler's Mount Abram Junction (MP 10.1 from Strong) lands ~0.3 mi short of the OSM junction node. The line was lifted 1935-36; this is its own (only) alignment, not a later one.",
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1907,
+      "headway_min": 720,
+      "note": "2 ft gauge steam lumber road from Strong (Sandy River Railroad) over the Summit/Salem height of land to Kingfield. Opened to Kingfield 10 Dec 1884 per one uncited list; drawn from 1885 (Nashua City Station: rail operations from 1885; first combine, #1, built 1885). Passenger stations West Freeman, Hillside, Summit, Salem, Mountain (Mount Abram) Junction, North Freeman and Kingfield appear in the 1894 Pathfinder (Fowler 'z'). Franklin & Megantic Railroad 1884-1897, reorganized as the F&M Railway 1897; under common management with the Sandy River from 1897/98 (Maxcy stock control, not a change of operator). Ends 1907: consolidated into the Sandy River & Rangeley Lakes on 30 Jan 1908. Headway 720 (about two trains a day each way, likely mixed) is an ESTIMATE: no timetable frequency for this branch was read (Rule 3).",
+      "sources": [
+       "Segment-level: opening and 1908 consolidation from Wikipedia (Crittenden 1976) and Nashua City Station (ICC 1926); passenger stations from Fowler's 1894 Pathfinder letters. Headway and speed estimated.",
+       "https://en.wikipedia.org/wiki/Franklin_and_Megantic_Railway (citing Crittenden 1976)",
+       "https://nashuacitystation.org/history/franklin-and-megantic-railroad (citing ICC Reports 1926, SR&RL, pp.173-185)",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 42 'SRRL: Strong - Bigelow'; z = 1894 Pathfinder, a = 1910 PTT, b = 1921 PTT, c = 1930 ticket list)",
+       "https://en.wikipedia.org/wiki/1884_in_rail_transport"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.220844,
+      44.80555
+     ],
+     [
+      -70.220259,
+      44.805774
+     ],
+     [
+      -70.21969,
+      44.806874
+     ],
+     [
+      -70.217806,
+      44.80868
+     ],
+     [
+      -70.217375,
+      44.809468
+     ],
+     [
+      -70.217175,
+      44.810858
+     ],
+     [
+      -70.217391,
+      44.814504
+     ],
+     [
+      -70.216823,
+      44.817352
+     ],
+     [
+      -70.216651,
+      44.820995
+     ],
+     [
+      -70.217178,
+      44.8229
+     ],
+     [
+      -70.217663,
+      44.823785
+     ],
+     [
+      -70.218615,
+      44.824669
+     ],
+     [
+      -70.219797,
+      44.825184
+     ],
+     [
+      -70.223658,
+      44.827764
+     ],
+     [
+      -70.225813,
+      44.828654
+     ],
+     [
+      -70.226824,
+      44.829254
+     ],
+     [
+      -70.227813,
+      44.830517
+     ],
+     [
+      -70.229374,
+      44.833287
+     ],
+     [
+      -70.233701,
+      44.839071
+     ],
+     [
+      -70.234775,
+      44.841456
+     ],
+     [
+      -70.23615,
+      44.845985
+     ],
+     [
+      -70.236324,
+      44.847656
+     ],
+     [
+      -70.237418,
+      44.849313
+     ],
+     [
+      -70.23805,
+      44.851609
+     ],
+     [
+      -70.237683,
+      44.852599
+     ],
+     [
+      -70.236657,
+      44.853431
+     ],
+     [
+      -70.236152,
+      44.85413
+     ],
+     [
+      -70.235931,
+      44.855909
+     ],
+     [
+      -70.235875,
+      44.859756
+     ],
+     [
+      -70.23607,
+      44.860491
+     ],
+     [
+      -70.237574,
+      44.862156
+     ],
+     [
+      -70.239371,
+      44.864723
+     ],
+     [
+      -70.239834,
+      44.865605
+     ],
+     [
+      -70.240069,
+      44.867443
+     ],
+     [
+      -70.240636,
+      44.868086
+     ],
+     [
+      -70.241739,
+      44.868571
+     ],
+     [
+      -70.247537,
+      44.870274
+     ],
+     [
+      -70.251303,
+      44.871128
+     ],
+     [
+      -70.251996,
+      44.871408
+     ],
+     [
+      -70.252614,
+      44.872036
+     ],
+     [
+      -70.25346,
+      44.87514
+     ],
+     [
+      -70.250905,
+      44.879191
+     ],
+     [
+      -70.250777,
+      44.879472
+     ],
+     [
+      -70.250922,
+      44.880363
+     ],
+     [
+      -70.252126,
+      44.882029
+     ],
+     [
+      -70.252634,
+      44.883236
+     ],
+     [
+      -70.253202,
+      44.884039
+     ],
+     [
+      -70.256603,
+      44.886858
+     ],
+     [
+      -70.265417,
+      44.89571
+     ],
+     [
+      -70.265545,
+      44.896102
+     ],
+     [
+      -70.265431,
+      44.897505
+     ],
+     [
+      -70.26452,
+      44.902889
+     ],
+     [
+      -70.263679,
+      44.903705
+     ],
+     [
+      -70.262572,
+      44.904114
+     ],
+     [
+      -70.25111,
+      44.907685
+     ],
+     [
+      -70.245771,
+      44.908386
+     ],
+     [
+      -70.245167,
+      44.90855
+     ],
+     [
+      -70.242098,
+      44.910241
+     ],
+     [
+      -70.236318,
+      44.913134
+     ],
+     [
+      -70.235306,
+      44.914129
+     ],
+     [
+      -70.232311,
+      44.918237
+     ],
+     [
+      -70.232057,
+      44.918816
+     ],
+     [
+      -70.231802,
+      44.920958
+     ],
+     [
+      -70.23097,
+      44.923323
+     ],
+     [
+      -70.230394,
+      44.924188
+     ],
+     [
+      -70.229292,
+      44.925044
+     ],
+     [
+      -70.227714,
+      44.925537
+     ],
+     [
+      -70.220326,
+      44.927299
+     ],
+     [
+      -70.217368,
+      44.927989
+     ],
+     [
+      -70.216142,
+      44.928159
+     ],
+     [
+      -70.212259,
+      44.927893
+     ],
+     [
+      -70.207828,
+      44.926805
+     ],
+     [
+      -70.206417,
+      44.926735
+     ],
+     [
+      -70.204999,
+      44.926949
+     ],
+     [
+      -70.203348,
+      44.92759
+     ],
+     [
+      -70.192563,
+      44.933141
+     ],
+     [
+      -70.187242,
+      44.936301
+     ],
+     [
+      -70.185011,
+      44.938124
+     ],
+     [
+      -70.183646,
+      44.938604
+     ],
+     [
+      -70.180508,
+      44.939096
+     ],
+     [
+      -70.179324,
+      44.939504
+     ],
+     [
+      -70.163058,
+      44.952597
+     ],
+     [
+      -70.160868,
+      44.954459
+     ],
+     [
+      -70.160243,
+      44.955445
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Kingfield and Dead River Railway",
+    "line": "Kingfield and Dead River: Kingfield – Carrabassett",
+    "id": "kdr-kingfield-carrabassett",
+    "color": "#8C3B3B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no timetable running time for the branch was read; ~25 km/h is a typical 2 ft gauge mixed-train average, not computed from a source (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), the ways tagged old_railway_operator='Sandy River & Rangeley Lakes Railroad' (gauge 610) north of Strong, chained directly way-to-way (no router snapping), filtered to exclude the SR&RL main line and the Mount Abram Branch. Cross-checked against OpenHistoricalMap (CC0) ways 201882175/201882176 ('Franklin and Megantic Railroad', USGS topo + 3DEP), 201882172 and 201882177 ('Kingfield and Dead River Railroad'); OHM geometry used only as a check and for one 0.2 mi tail, never for dates. Douglas-Peucker 8 m, then trim_reversals. Waypoints pinned onto the grade itself (Nominatim returned township centroids for Strong, Kingfield and Carrabassett Valley).",
+    "geometry_quality": "Traced: 9.54 mi against the documented 9.3 mi (Fowler MP 25.9-35.2; Wikipedia 9.2) - 2.6% long, about the 0.25 mi by which the Kingfield end sits south of OHM's F&M/K&DR break. Carrabassett end pinned at Jerusalem Circle (45.08195, -70.21084), where OHM ends the 1896 K&DR way and starts the 1899 extension, 39 m from that OHM break; 'Jerusalem' was the 1894 name of the terminus. One 22 m connector, no straight legs. Agrees with OHM ways 201882172 to within ~26 m. Own (only) alignment.",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1907,
+      "headway_min": 720,
+      "note": "2 ft gauge extension up the Carrabassett River from Kingfield to Carrabassett (called Jerusalem in 1894). Kingfield & Dead River Railroad incorporated 19 Jun 1893, reorganized as a Railway 1897, bought by the F&M at auction 2 Aug 1898. 1894 is positive evidence: the 1894 Pathfinder lists Jerusalem as the passenger terminus, with Park Road and Tufts Pond as stops (Fowler 'z'). Drawn as the K&DR's own company and colour: no source read shows the F&M running the trains in its own name (see metadata source_conflicts). Ends 1907: consolidated into the SR&RL 30 Jan 1908. Headway 720 (about two trains a day each way, likely mixed) is an ESTIMATE: no timetable frequency for this branch was read (Rule 3).",
+      "sources": [
+       "Segment-level: 1894 passenger listing of Jerusalem from Fowler (1894 Pathfinder); incorporation, auction and 1908 consolidation from Nashua City Station (ICC 1926) and Wikipedia (Crittenden 1976). Headway and speed estimated.",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 42 'SRRL: Strong - Bigelow'; z = 1894 Pathfinder, a = 1910 PTT, b = 1921 PTT, c = 1930 ticket list)",
+       "https://nashuacitystation.org/history/kingfield-and-dead-river-railroad (citing ICC 1926)",
+       "https://en.wikipedia.org/wiki/Franklin_and_Megantic_Railway (citing Crittenden 1976)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.160243,
+      44.955445
+     ],
+     [
+      -70.160094,
+      44.956407
+     ],
+     [
+      -70.16036,
+      44.95711
+     ],
+     [
+      -70.168496,
+      44.973401
+     ],
+     [
+      -70.170178,
+      44.979439
+     ],
+     [
+      -70.172235,
+      44.983241
+     ],
+     [
+      -70.172625,
+      44.984637
+     ],
+     [
+      -70.170755,
+      44.996258
+     ],
+     [
+      -70.169222,
+      45.003162
+     ],
+     [
+      -70.17022,
+      45.007752
+     ],
+     [
+      -70.169648,
+      45.011556
+     ],
+     [
+      -70.169724,
+      45.012605
+     ],
+     [
+      -70.17226,
+      45.022531
+     ],
+     [
+      -70.172078,
+      45.028287
+     ],
+     [
+      -70.172354,
+      45.029695
+     ],
+     [
+      -70.173808,
+      45.031544
+     ],
+     [
+      -70.17615,
+      45.033338
+     ],
+     [
+      -70.176454,
+      45.033949
+     ],
+     [
+      -70.176785,
+      45.035855
+     ],
+     [
+      -70.17738,
+      45.036629
+     ],
+     [
+      -70.178457,
+      45.037212
+     ],
+     [
+      -70.18499,
+      45.039039
+     ],
+     [
+      -70.187972,
+      45.040431
+     ],
+     [
+      -70.189584,
+      45.04201
+     ],
+     [
+      -70.192172,
+      45.043887
+     ],
+     [
+      -70.192933,
+      45.044766
+     ],
+     [
+      -70.194175,
+      45.047357
+     ],
+     [
+      -70.197337,
+      45.06301
+     ],
+     [
+      -70.197919,
+      45.065044
+     ],
+     [
+      -70.198785,
+      45.066444
+     ],
+     [
+      -70.20126,
+      45.06954
+     ],
+     [
+      -70.202929,
+      45.073296
+     ],
+     [
+      -70.204572,
+      45.074942
+     ],
+     [
+      -70.210839,
+      45.081949
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Sandy River and Rangeley Lakes Railroad",
+    "line": "Sandy River and Rangeley Lakes: Strong – Kingfield",
+    "id": "srrl-strong-kingfield",
+    "color": "#6B4E9B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no timetable running time for the branch was read; ~25 km/h is a typical 2 ft gauge mixed-train average, not computed from a source (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), the ways tagged old_railway_operator='Sandy River & Rangeley Lakes Railroad' (gauge 610) north of Strong, chained directly way-to-way (no router snapping), filtered to exclude the SR&RL main line and the Mount Abram Branch. Cross-checked against OpenHistoricalMap (CC0) ways 201882175/201882176 ('Franklin and Megantic Railroad', USGS topo + 3DEP), 201882172 and 201882177 ('Kingfield and Dead River Railroad'); OHM geometry used only as a check and for one 0.2 mi tail, never for dates. Douglas-Peucker 8 m, then trim_reversals. Waypoints pinned onto the grade itself (Nominatim returned township centroids for Strong, Kingfield and Carrabassett Valley).",
+    "geometry_quality": "Traced: 14.56 mi against the documented 14.8 mi (Fowler MP 11.1-25.9; Wikipedia 14.9; infobox 14.5) - within 2%. Strong junction at 44.80555, -70.22084, the OSM node the branch shares with the SR&RL main-line way 1350824913, in Strong village. Kingfield end at 44.95544, -70.16024 on the through line; a 0.2 mi OSM-tagged stub (way 1107125365) running east toward the village to 44.9580, -70.1575 is NOT drawn because its use (station track, wye leg or the pre-1894 terminal) is unconfirmed. Only straight leg: a 0.15 mi (249 m) bridge over a hole between OSM ways 1107125362 and 821682593 near Salem (44.9068,-70.2540 to 44.9077,-70.2511). Agrees with the OHM F&M ways to within ~30 m except the first ~0.1 mi at Strong, where OHM joins the main line ~130 m further south-east. Mileposts check: Fowler's Mount Abram Junction (MP 10.1 from Strong) lands ~0.3 mi short of the OSM junction node. The line was lifted 1935-36; this is its own (only) alignment, not a later one.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1930,
+      "headway_min": 720,
+      "note": "Former F&M, operated by the Sandy River & Rangeley Lakes from the 30 Jan 1908 consolidation. Kingfield, Summit and Salem are in the 1910 and 1921 public timetables and on the 1930 ticket list (Fowler 'abc'). Maine Central stock control 1911/12-1923 and the 1923 receivership did not change the operating company. Passenger service confirmed to 1930 only, by Fowler's 1930 TICKET list (letter c), after the 1910 and 1921 public timetables. 1930 is the last CONFIRMED year, not a known end: SR&RL service was suspended 8 Jul 1932 and resumed 17 Apr 1933 - 2 Jul 1935 for Lawrence Plywood traffic, and whether any of 1931-1935 carried passengers on this branch is unsourced. Do not extend without evidence. Headway 720 (about two trains a day each way, likely mixed) is an ESTIMATE: no timetable frequency for this branch was read (Rule 3).",
+      "sources": [
+       "Segment-level: 1908 consolidation from Nashua City Station (ICC 1926); 1910/1921 timetable and 1930 ticket listings from Fowler; 1932-35 events from Wikipedia (Crittenden 1966, Jones 1980). End year is OPEN. Headway and speed estimated.",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 42 'SRRL: Strong - Bigelow'; z = 1894 Pathfinder, a = 1910 PTT, b = 1921 PTT, c = 1930 ticket list)",
+       "https://nashuacitystation.org/history/sandy-river-and-rangeley-lakes-railroad-1908 (ICC 1926)",
+       "https://en.wikipedia.org/wiki/Sandy_River_and_Rangeley_Lakes_Railroad (citing Crittenden 1966, Jones 1980)",
+       "http://www.kingfield.me/history/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.220844,
+      44.80555
+     ],
+     [
+      -70.220259,
+      44.805774
+     ],
+     [
+      -70.21969,
+      44.806874
+     ],
+     [
+      -70.217806,
+      44.80868
+     ],
+     [
+      -70.217375,
+      44.809468
+     ],
+     [
+      -70.217175,
+      44.810858
+     ],
+     [
+      -70.217391,
+      44.814504
+     ],
+     [
+      -70.216823,
+      44.817352
+     ],
+     [
+      -70.216651,
+      44.820995
+     ],
+     [
+      -70.217178,
+      44.8229
+     ],
+     [
+      -70.217663,
+      44.823785
+     ],
+     [
+      -70.218615,
+      44.824669
+     ],
+     [
+      -70.219797,
+      44.825184
+     ],
+     [
+      -70.223658,
+      44.827764
+     ],
+     [
+      -70.225813,
+      44.828654
+     ],
+     [
+      -70.226824,
+      44.829254
+     ],
+     [
+      -70.227813,
+      44.830517
+     ],
+     [
+      -70.229374,
+      44.833287
+     ],
+     [
+      -70.233701,
+      44.839071
+     ],
+     [
+      -70.234775,
+      44.841456
+     ],
+     [
+      -70.23615,
+      44.845985
+     ],
+     [
+      -70.236324,
+      44.847656
+     ],
+     [
+      -70.237418,
+      44.849313
+     ],
+     [
+      -70.23805,
+      44.851609
+     ],
+     [
+      -70.237683,
+      44.852599
+     ],
+     [
+      -70.236657,
+      44.853431
+     ],
+     [
+      -70.236152,
+      44.85413
+     ],
+     [
+      -70.235931,
+      44.855909
+     ],
+     [
+      -70.235875,
+      44.859756
+     ],
+     [
+      -70.23607,
+      44.860491
+     ],
+     [
+      -70.237574,
+      44.862156
+     ],
+     [
+      -70.239371,
+      44.864723
+     ],
+     [
+      -70.239834,
+      44.865605
+     ],
+     [
+      -70.240069,
+      44.867443
+     ],
+     [
+      -70.240636,
+      44.868086
+     ],
+     [
+      -70.241739,
+      44.868571
+     ],
+     [
+      -70.247537,
+      44.870274
+     ],
+     [
+      -70.251303,
+      44.871128
+     ],
+     [
+      -70.251996,
+      44.871408
+     ],
+     [
+      -70.252614,
+      44.872036
+     ],
+     [
+      -70.25346,
+      44.87514
+     ],
+     [
+      -70.250905,
+      44.879191
+     ],
+     [
+      -70.250777,
+      44.879472
+     ],
+     [
+      -70.250922,
+      44.880363
+     ],
+     [
+      -70.252126,
+      44.882029
+     ],
+     [
+      -70.252634,
+      44.883236
+     ],
+     [
+      -70.253202,
+      44.884039
+     ],
+     [
+      -70.256603,
+      44.886858
+     ],
+     [
+      -70.265417,
+      44.89571
+     ],
+     [
+      -70.265545,
+      44.896102
+     ],
+     [
+      -70.265431,
+      44.897505
+     ],
+     [
+      -70.26452,
+      44.902889
+     ],
+     [
+      -70.263679,
+      44.903705
+     ],
+     [
+      -70.262572,
+      44.904114
+     ],
+     [
+      -70.25111,
+      44.907685
+     ],
+     [
+      -70.245771,
+      44.908386
+     ],
+     [
+      -70.245167,
+      44.90855
+     ],
+     [
+      -70.242098,
+      44.910241
+     ],
+     [
+      -70.236318,
+      44.913134
+     ],
+     [
+      -70.235306,
+      44.914129
+     ],
+     [
+      -70.232311,
+      44.918237
+     ],
+     [
+      -70.232057,
+      44.918816
+     ],
+     [
+      -70.231802,
+      44.920958
+     ],
+     [
+      -70.23097,
+      44.923323
+     ],
+     [
+      -70.230394,
+      44.924188
+     ],
+     [
+      -70.229292,
+      44.925044
+     ],
+     [
+      -70.227714,
+      44.925537
+     ],
+     [
+      -70.220326,
+      44.927299
+     ],
+     [
+      -70.217368,
+      44.927989
+     ],
+     [
+      -70.216142,
+      44.928159
+     ],
+     [
+      -70.212259,
+      44.927893
+     ],
+     [
+      -70.207828,
+      44.926805
+     ],
+     [
+      -70.206417,
+      44.926735
+     ],
+     [
+      -70.204999,
+      44.926949
+     ],
+     [
+      -70.203348,
+      44.92759
+     ],
+     [
+      -70.192563,
+      44.933141
+     ],
+     [
+      -70.187242,
+      44.936301
+     ],
+     [
+      -70.185011,
+      44.938124
+     ],
+     [
+      -70.183646,
+      44.938604
+     ],
+     [
+      -70.180508,
+      44.939096
+     ],
+     [
+      -70.179324,
+      44.939504
+     ],
+     [
+      -70.163058,
+      44.952597
+     ],
+     [
+      -70.160868,
+      44.954459
+     ],
+     [
+      -70.160243,
+      44.955445
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Sandy River and Rangeley Lakes Railroad",
+    "line": "Sandy River and Rangeley Lakes: Kingfield – Carrabassett",
+    "id": "srrl-kingfield-carrabassett",
+    "color": "#6B4E9B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no timetable running time for the branch was read; ~25 km/h is a typical 2 ft gauge mixed-train average, not computed from a source (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), the ways tagged old_railway_operator='Sandy River & Rangeley Lakes Railroad' (gauge 610) north of Strong, chained directly way-to-way (no router snapping), filtered to exclude the SR&RL main line and the Mount Abram Branch. Cross-checked against OpenHistoricalMap (CC0) ways 201882175/201882176 ('Franklin and Megantic Railroad', USGS topo + 3DEP), 201882172 and 201882177 ('Kingfield and Dead River Railroad'); OHM geometry used only as a check and for one 0.2 mi tail, never for dates. Douglas-Peucker 8 m, then trim_reversals. Waypoints pinned onto the grade itself (Nominatim returned township centroids for Strong, Kingfield and Carrabassett Valley).",
+    "geometry_quality": "Traced: 9.54 mi against the documented 9.3 mi (Fowler MP 25.9-35.2; Wikipedia 9.2) - 2.6% long, about the 0.25 mi by which the Kingfield end sits south of OHM's F&M/K&DR break. Carrabassett end pinned at Jerusalem Circle (45.08195, -70.21084), where OHM ends the 1896 K&DR way and starts the 1899 extension, 39 m from that OHM break; 'Jerusalem' was the 1894 name of the terminus. One 22 m connector, no straight legs. Agrees with OHM ways 201882172 to within ~26 m. Own (only) alignment.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1930,
+      "headway_min": 720,
+      "note": "Former K&DR, operated by the SR&RL from 30 Jan 1908. Carrabasset is in the 1910 and 1921 public timetables and on the 1930 ticket list (Fowler 'abc'). Winter service north of Kingfield was suspended 21 Dec 1921 - 1 May 1922 (Crittenden 1966 p.175), a seasonal gap the map cannot show at year resolution. Passenger service confirmed to 1930 only, by Fowler's 1930 TICKET list (letter c), after the 1910 and 1921 public timetables. 1930 is the last CONFIRMED year, not a known end: SR&RL service was suspended 8 Jul 1932 and resumed 17 Apr 1933 - 2 Jul 1935 for Lawrence Plywood traffic, and whether any of 1931-1935 carried passengers on this branch is unsourced. Do not extend without evidence. Headway 720 (about two trains a day each way, likely mixed) is an ESTIMATE: no timetable frequency for this branch was read (Rule 3).",
+      "sources": [
+       "Segment-level: Carrabasset listings from Fowler (1910, 1921 PTTs; 1930 ticket); 1908 consolidation from Nashua City Station (ICC 1926); 1921-22 suspension from Wikipedia (Crittenden 1966). End year is OPEN. Headway and speed estimated.",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 42 'SRRL: Strong - Bigelow'; z = 1894 Pathfinder, a = 1910 PTT, b = 1921 PTT, c = 1930 ticket list)",
+       "https://nashuacitystation.org/history/sandy-river-and-rangeley-lakes-railroad-1908 (ICC 1926)",
+       "https://en.wikipedia.org/wiki/Sandy_River_and_Rangeley_Lakes_Railroad (citing Crittenden 1966, Jones 1980)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.160243,
+      44.955445
+     ],
+     [
+      -70.160094,
+      44.956407
+     ],
+     [
+      -70.16036,
+      44.95711
+     ],
+     [
+      -70.168496,
+      44.973401
+     ],
+     [
+      -70.170178,
+      44.979439
+     ],
+     [
+      -70.172235,
+      44.983241
+     ],
+     [
+      -70.172625,
+      44.984637
+     ],
+     [
+      -70.170755,
+      44.996258
+     ],
+     [
+      -70.169222,
+      45.003162
+     ],
+     [
+      -70.17022,
+      45.007752
+     ],
+     [
+      -70.169648,
+      45.011556
+     ],
+     [
+      -70.169724,
+      45.012605
+     ],
+     [
+      -70.17226,
+      45.022531
+     ],
+     [
+      -70.172078,
+      45.028287
+     ],
+     [
+      -70.172354,
+      45.029695
+     ],
+     [
+      -70.173808,
+      45.031544
+     ],
+     [
+      -70.17615,
+      45.033338
+     ],
+     [
+      -70.176454,
+      45.033949
+     ],
+     [
+      -70.176785,
+      45.035855
+     ],
+     [
+      -70.17738,
+      45.036629
+     ],
+     [
+      -70.178457,
+      45.037212
+     ],
+     [
+      -70.18499,
+      45.039039
+     ],
+     [
+      -70.187972,
+      45.040431
+     ],
+     [
+      -70.189584,
+      45.04201
+     ],
+     [
+      -70.192172,
+      45.043887
+     ],
+     [
+      -70.192933,
+      45.044766
+     ],
+     [
+      -70.194175,
+      45.047357
+     ],
+     [
+      -70.197337,
+      45.06301
+     ],
+     [
+      -70.197919,
+      45.065044
+     ],
+     [
+      -70.198785,
+      45.066444
+     ],
+     [
+      -70.20126,
+      45.06954
+     ],
+     [
+      -70.202929,
+      45.073296
+     ],
+     [
+      -70.204572,
+      45.074942
+     ],
+     [
+      -70.210839,
+      45.081949
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Sandy River and Rangeley Lakes Railroad",
+    "line": "Sandy River and Rangeley Lakes: Carrabassett – Bigelow",
+    "id": "srrl-carrabassett-bigelow",
+    "color": "#6B4E9B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no timetable running time for the branch was read; ~25 km/h is a typical 2 ft gauge mixed-train average, not computed from a source (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), the ways tagged old_railway_operator='Sandy River & Rangeley Lakes Railroad' (gauge 610) north of Strong, chained directly way-to-way (no router snapping), filtered to exclude the SR&RL main line and the Mount Abram Branch. Cross-checked against OpenHistoricalMap (CC0) ways 201882175/201882176 ('Franklin and Megantic Railroad', USGS topo + 3DEP), 201882172 and 201882177 ('Kingfield and Dead River Railroad'); OHM geometry used only as a check and for one 0.2 mi tail, never for dates. Douglas-Peucker 8 m, then trim_reversals. Waypoints pinned onto the grade itself (Nominatim returned township centroids for Strong, Kingfield and Carrabassett Valley).",
+    "geometry_quality": "Traced: 6.12 mi against the documented 6.2 mi (Fowler MP 35.2-41.4; Wikipedia 6.1; OHM way 201882177 6.15) - within 1.5%. OSM Huston Brook Road and the Narrow Gauge Pathway rail-trail to the end of the 'Bigelow Station' road (45.0814, -70.3194), then the last 0.2 mi from OHM way 201882177 to 45.08140, -70.32341. No straight legs; within ~26 m of OHM throughout. Own (only) alignment.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1921,
+      "headway_min": 720,
+      "note": "Lumber extension to the Prouty & Miller sawmill at Bigelow (formerly Crockertown), opened 1899 or 1900. Drawn from 1910, the first confirmed passenger listing (Bigelow in the 1910 public timetable, Fowler 'a'), to 1921, the last (1921 timetable, 'b'; Bigelow is not on the 1930 ticket list). 1921 is the last CONFIRMED year, not a known end: passenger service may have run to the rail removal of summer 1926 (Crittenden 1966 p.182) or Jul/Aug 1927 (Sun Journal), or may not have survived the 1921-22 winter suspension. The Huston Brook stub left after the lifting has no confirmed passenger years and is not drawn later. Do not extend without evidence. Headway 720 (about two trains a day each way, likely mixed) is an ESTIMATE: no timetable frequency for this branch was read (Rule 3).",
+      "sources": [
+       "Segment-level: Bigelow's 1910 and 1921 timetable listings from Fowler; lifting dates from Wikipedia (Crittenden 1966) and the Sun Journal. Headway and speed estimated.",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (Fowler, Maine line 42 'SRRL: Strong - Bigelow'; z = 1894 Pathfinder, a = 1910 PTT, b = 1921 PTT, c = 1930 ticket list)",
+       "https://en.wikipedia.org/wiki/Sandy_River_and_Rangeley_Lakes_Railroad (citing Crittenden 1966, Jones 1980)",
+       "https://www.sunjournal.com/2024/11/28/origins-of-the-narrow-gauge-pathway/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.210839,
+      45.081949
+     ],
+     [
+      -70.210945,
+      45.082518
+     ],
+     [
+      -70.21238,
+      45.084479
+     ],
+     [
+      -70.213061,
+      45.085855
+     ],
+     [
+      -70.216628,
+      45.088758
+     ],
+     [
+      -70.218324,
+      45.090617
+     ],
+     [
+      -70.219695,
+      45.091725
+     ],
+     [
+      -70.220942,
+      45.092107
+     ],
+     [
+      -70.233899,
+      45.094244
+     ],
+     [
+      -70.237707,
+      45.094372
+     ],
+     [
+      -70.239655,
+      45.094971
+     ],
+     [
+      -70.240771,
+      45.095052
+     ],
+     [
+      -70.241591,
+      45.094912
+     ],
+     [
+      -70.242959,
+      45.094098
+     ],
+     [
+      -70.243919,
+      45.093805
+     ],
+     [
+      -70.24446,
+      45.093729
+     ],
+     [
+      -70.24688,
+      45.09393
+     ],
+     [
+      -70.250169,
+      45.093177
+     ],
+     [
+      -70.251497,
+      45.093232
+     ],
+     [
+      -70.252709,
+      45.093514
+     ],
+     [
+      -70.254076,
+      45.093485
+     ],
+     [
+      -70.258148,
+      45.092436
+     ],
+     [
+      -70.260571,
+      45.091943
+     ],
+     [
+      -70.264122,
+      45.091814
+     ],
+     [
+      -70.267876,
+      45.091298
+     ],
+     [
+      -70.272872,
+      45.091733
+     ],
+     [
+      -70.273757,
+      45.091707
+     ],
+     [
+      -70.283531,
+      45.088982
+     ],
+     [
+      -70.284199,
+      45.088972
+     ],
+     [
+      -70.285695,
+      45.089332
+     ],
+     [
+      -70.287082,
+      45.089383
+     ],
+     [
+      -70.291547,
+      45.088392
+     ],
+     [
+      -70.30263,
+      45.087059
+     ],
+     [
+      -70.304277,
+      45.086745
+     ],
+     [
+      -70.305847,
+      45.085864
+     ],
+     [
+      -70.306647,
+      45.085604
+     ],
+     [
+      -70.311265,
+      45.084739
+     ],
+     [
+      -70.31944,
+      45.08142
+     ],
+     [
+      -70.321365,
+      45.081252
+     ],
+     [
+      -70.323408,
+      45.081397
+     ]
+    ]
+   }
+  }
+ ]
+}
