@@ -1,0 +1,914 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Maine Central's Dexter Branch (also called the Foxcroft or Dover and Foxcroft branch): Newport Junction on the MEC main line through Corinna to Dexter (Dexter and Newport Railroad, 1868) and on to Dover and Foxcroft (Dexter and Piscataquis Railroad, 1889). Both companies were leased to and worked by the Maine Central. Drawn from research/branches/dexter_and_newport_railroad.txt in the site repo (DanielMConnolly/historical-trains), researched 2026-10-11; only the report's drawable spans are drawn. The Newport - Dexter half is split at 1889 because the 1868 line ended at a first Dexter station on a 1.26-mile stub north of Dexter Junction that went out of use when the extension opened and Dexter got a relocated station on the new line. Freight continued until abandonment in 1990 and is not drawn (Rule 1). The MEC main line Waterville - Newport - Bangor is not drawn in any layer, so the branch is unconnected at Newport Junction.",
+  "sources": [
+   "https://archive.org/details/poorsmanualofrai00unse (Poor's Manual 1873-74: Dexter and Newport RR, Newport to Dexter 14 miles, leased to the Maine Central for 30 years from Dec 1 1868)",
+   "https://archive.org/details/poorsmanualofrai11newyuoft (Poor's Manual 1878: D&N completed July 1868 and leased to the Maine Central)",
+   "https://archive.org/details/annualreportrai11commgoog (Maine Railroad Commissioners' annual report: Newport to Dexter 14.23 mi, Dexter Junction to Foxcroft 16.54 mi; D&P charter Oct 24 1888, leased to MEC Dec 30 1888)",
+   "https://www.branchline.uk/jfpdf/mainerrs.pdf (J. Fowler, Maine Railroads - Passenger Stations & Stops, line 12 'Dexter Branch (MEC)'; MEC letters z=1892/94, a=1911, b=1921, c=1932, d=1954 public timetables)",
+   "https://www.loc.gov/resource/sn82014248/1919-11-29/ed-1/?sp=9 (Daily Kennebec Journal 29 Nov 1919 p.9: a passenger train 'from Foxcroft to Newport Junction' on the Foxcroft branch)",
+   "https://www.loc.gov/resource/sn82014248/1924-07-29/ed-1/?sp=9 (Daily Kennebec Journal 29 Jul 1924: Old Orchard excursion fares from 'Foxcroft Branch' stations)",
+   "https://www.loc.gov/resource/sn82014248/1926-07-31/ed-1/?sp=12 (Daily Kennebec Journal 31 Jul 1926 p.12: announced Old Orchard excursion special to run from the Dover-Foxcroft branch on Sunday 1 Aug 1926)",
+   "research/sources/official_guide_1952.txt in the site repo (Official Guide, Feb 1952, MEC Table 14 Newport - Dover (Foxcroft): bus only)",
+   "https://en.wikipedia.org/wiki/Dexter_and_Newport_Railroad (completed 1868; Foxcroft extension 1889; abandoned 1990)"
+  ],
+  "source_conflicts": [
+   "D&N charter: 30 Mar 1853 (Maine RR Commissioners) vs 'about 1865' (Poor's 1878). Does not affect drawn years.",
+   "D&N lease to the Maine Central: from 1 Dec 1868 (Poor's 1873 and 1878) vs 'the following year' (Wikipedia) vs 1877 (MEC corporate lists, per maine_central_railroad.txt). Drawn on Poor's.",
+   "Lease terms in the Commissioners' OCR read 988 and 899 years; read as 999 like the other MEC leases on the same list.",
+   "Mileage: Newport - Dexter 14 (Poor's) vs 14.23 (Commissioners) vs Fowler's first Dexter station at MP 14; Dexter Junction - Foxcroft 16.54 (Commissioners) vs 29.4/29.8 - ~13.0 = 16.4/16.8 by Fowler. Consistent within a few tenths."
+  ],
+  "not_yet_sourced": [
+   "End of regular passenger service on both halves: between 1922 and 1931. Fowler's 1921 letter is a floor; Bangor Daily News / Piscataquis Observer 1926-1931 and Maine PUC annual reports (discontinuance needed PUC approval after 1915) are the likely sources. Both features ending 1921 are [OPEN].",
+   "Whether the announced 1 Aug 1926 excursion special from the Dover-Foxcroft branch actually ran (announcement only; not drawn).",
+   "Whether both halves lost their passengers in the same year (assumed, not shown).",
+   "Who ran the trains July - Nov 1868, between completion and the start of the Maine Central lease.",
+   "Opening year of the Dexter & Piscataquis extension: 1889 rests on Wikipedia (and an ICC valuation quotation carried in OSM); first primary confirmation is Fowler's 1892/94 letter, hence the 1892 start for Dexter - Dover and Foxcroft. The 1889 start of the Newport - Dexter feature's new alignment rests on the same evidence.",
+   "D&N charter date: 30 Mar 1853 vs about 1865 (recorded, not resolved).",
+   "Exact positions of the first Dexter station (OSM marks the stub's north end 'verify') and the second Dexter station (placed by milepost), and whether the Dover & Foxcroft MEC station (MP 29.4) lay short of the drawn end at the B&A junction.",
+   "Headways and speeds are estimates; no timetable was read for frequency or running time.",
+   "Official Guide coverage was thin: Corinna has no hits and Dexter, Me. could not be found in the 1952 station index OCR."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maine Central Railroad",
+    "line": "Maine Central: Newport – Dexter (original 1868 line)",
+    "id": "maine-central-dexter-branch-newport-dexter-original",
+    "color": "#457B9D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: Maine branch-line local of 1870s-1920s, 30 km/h; not computed from a timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), traced with opstrace.py over ways tagged old_railway_operator=MEC: the Newport/Dover-Foxcroft Rail Trail (the lifted 1990 grade) plus the untagged-name abandoned way 171492983 for the original 1868 Dexter terminal (tagged note:old_railway_operator='Dexter and Newport Railroad'). OpenHistoricalMap fetched over the corridor as a fallback; not needed. Waypoints hand-pinned onto the grade itself, not taken from Nominatim (which returns township centroids in Maine). Newport Junction end on the live CSX Waterville Subdivision (the MEC main line) at the west leg of the wye, 44.8312 N, -69.2803. The MEC main line Waterville - Newport - Bangor is not drawn in any layer, so this branch floats unconnected at its south end.",
+    "geometry_quality": "Traced 13.9 mi against a documented 14 mi (Poor's 1873/1878) / 14.23 mi (Maine RR Commissioners). OSM MEC-tagged lifted grade throughout, no straight-line leg. Newport Junction - Dexter Junction is the Newport/Dover-Foxcroft Rail Trail (12.7 mi on the trace; documented MP ~12.97 = 14.23 - 1.26); Dexter Junction - first Dexter station is OSM abandoned way 171492983, 1.2 mi against the 1.26 mi the ICC valuation (quoted in that way's OSM source tag) gives for the stub 'north of the junction with the railroad of the Dexter & Piscataquis ... not used since 1889'. ERA: this is the line's own 1868-1888 alignment, ending at the first Dexter station at the north end of that stub (45.0143 N, -69.2941; OSM marks the north end 'verify', so the station position is to within a few hundred metres). The original 1868 junction arrangement at Newport is not known to match the surviving wye; drawn on the wye's west leg.",
+    "segments": [
+     {
+      "start": 1868,
+      "end": 1888,
+      "headway_min": 360,
+      "note": "Dexter and Newport Railroad, completed July 1868 (Poor's 1878) and leased to the Maine Central for 30 years from 1 Dec 1868 (Poor's 1873 and 1878; Wikipedia's 'the following year' is a month off); the 30-year lease was replaced by a 999-year one on 13 Dec 1888, which did not change who ran the trains. Who ran the trains July - Nov 1868 is unknown; drawn as Maine Central for the whole span. 'Operations included in returns of Maine Central' (Poor's 1873). Ends 1888 on THIS geometry because from 1889 the trains ran over the new Dexter & Piscataquis line to a relocated Dexter station (see maine-central-dexter-branch-newport-dexter) and the original 1.26-mile stub to the first station 'has not been used' since 1889 (ICC valuation, as quoted in the OSM way's source tag). Headway 360 (about two trains each way a day) is an estimate; no 1868-1888 timetable was read.",
+      "sources": [
+       "Segment-level: Poor's 1873 and 1878 for the July 1868 completion and Dec 1 1868 lease; Maine RR Commissioners for the 14.23 mi; ICC valuation quotation (via OSM way 171492983, not checked against the ICC report itself) for the 1889 abandonment of the original terminal stub. Headway NOT SOURCED.",
+       "https://archive.org/details/poorsmanualofrai00unse (Poor's Manual 1873-74: Dexter and Newport RR, Newport to Dexter 14 miles, leased to the Maine Central for 30 years from Dec 1 1868)",
+       "https://archive.org/details/poorsmanualofrai11newyuoft (Poor's Manual 1878: D&N completed July 1868 and leased to the Maine Central)",
+       "https://archive.org/details/annualreportrai11commgoog (Maine Railroad Commissioners' annual report: Newport to Dexter 14.23 mi, Dexter Junction to Foxcroft 16.54 mi; D&P charter Oct 24 1888, leased to MEC Dec 30 1888)",
+       "https://en.wikipedia.org/wiki/Dexter_and_Newport_Railroad (completed 1868; Foxcroft extension 1889; abandoned 1990)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -69.2803403,
+      44.8311646
+     ],
+     [
+      -69.2799267,
+      44.8317559
+     ],
+     [
+      -69.2798868,
+      44.8324666
+     ],
+     [
+      -69.2801339,
+      44.832925
+     ],
+     [
+      -69.2814653,
+      44.8341461
+     ],
+     [
+      -69.2823706,
+      44.8363049
+     ],
+     [
+      -69.2831947,
+      44.8386089
+     ],
+     [
+      -69.2841754,
+      44.842486
+     ],
+     [
+      -69.2844087,
+      44.8438176
+     ],
+     [
+      -69.2843245,
+      44.8446333
+     ],
+     [
+      -69.2840042,
+      44.8455663
+     ],
+     [
+      -69.2834534,
+      44.8462147
+     ],
+     [
+      -69.2749592,
+      44.8533044
+     ],
+     [
+      -69.2685502,
+      44.8640509
+     ],
+     [
+      -69.2677444,
+      44.8657844
+     ],
+     [
+      -69.2676077,
+      44.8689967
+     ],
+     [
+      -69.2680129,
+      44.8726028
+     ],
+     [
+      -69.270041,
+      44.87681
+     ],
+     [
+      -69.274097,
+      44.884264
+     ],
+     [
+      -69.2743439,
+      44.8884069
+     ],
+     [
+      -69.27404,
+      44.8893759
+     ],
+     [
+      -69.2729161,
+      44.8908923
+     ],
+     [
+      -69.2626862,
+      44.9018118
+     ],
+     [
+      -69.2616598,
+      44.903651
+     ],
+     [
+      -69.261521,
+      44.9056188
+     ],
+     [
+      -69.2621235,
+      44.9090889
+     ],
+     [
+      -69.262241,
+      44.911773
+     ],
+     [
+      -69.2598949,
+      44.9210951
+     ],
+     [
+      -69.2597567,
+      44.9224258
+     ],
+     [
+      -69.2608588,
+      44.9304636
+     ],
+     [
+      -69.2604491,
+      44.9356238
+     ],
+     [
+      -69.2599416,
+      44.9371251
+     ],
+     [
+      -69.2598271,
+      44.9381843
+     ],
+     [
+      -69.260033,
+      44.9389794
+     ],
+     [
+      -69.2609015,
+      44.9402302
+     ],
+     [
+      -69.2830351,
+      44.9618993
+     ],
+     [
+      -69.299226,
+      44.9796749
+     ],
+     [
+      -69.3004395,
+      44.9814123
+     ],
+     [
+      -69.3006268,
+      44.9825981
+     ],
+     [
+      -69.3001709,
+      44.9841972
+     ],
+     [
+      -69.2936343,
+      44.9920971
+     ],
+     [
+      -69.2931314,
+      44.9928932
+     ],
+     [
+      -69.2929402,
+      44.9935197
+     ],
+     [
+      -69.2934547,
+      45.0123804
+     ],
+     [
+      -69.2940554,
+      45.0143108
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maine Central Railroad",
+    "line": "Maine Central: Newport – Dexter",
+    "id": "maine-central-dexter-branch-newport-dexter",
+    "color": "#457B9D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: Maine branch-line local of 1870s-1920s, 30 km/h; not computed from a timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), traced with opstrace.py over ways tagged old_railway_operator=MEC: the Newport/Dover-Foxcroft Rail Trail (the lifted 1990 grade) plus the untagged-name abandoned way 171492983 for the original 1868 Dexter terminal (tagged note:old_railway_operator='Dexter and Newport Railroad'). OpenHistoricalMap fetched over the corridor as a fallback; not needed. Waypoints hand-pinned onto the grade itself, not taken from Nominatim (which returns township centroids in Maine). Newport Junction end on the live CSX Waterville Subdivision (the MEC main line) at the west leg of the wye, 44.8312 N, -69.2803. The MEC main line Waterville - Newport - Bangor is not drawn in any layer, so this branch floats unconnected at its south end.",
+    "geometry_quality": "Traced 15.1 mi against a documented 15.4 mi (Fowler MP 15.4 for the second Dexter station; Wikipedia 15.3). OSM MEC-tagged lifted grade (Newport/Dover-Foxcroft Rail Trail) throughout, no straight-line leg. Dexter Junction at 12.7 mi on the trace. The end - the second Dexter station - is NOT located from a source: it is placed by milepost, 2.43 mi beyond Dexter Junction (Fowler MP 15.4 less MP 12.97), scaled to the trace's length, at 45.0283 N, -69.2887; treat it as good to about 0.3 mi. Corinna falls at 6.7 mi on the trace (Fowler MP 7.1); the whole trace runs about 2% short of Fowler's mileposts. This is the line's own 1889-1921 alignment (the Dexter Junction - Dexter stretch is the Dexter & Piscataquis extension, built 1889).",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1921,
+      "headway_min": 360,
+      "note": "Newport Junction - Dexter after the 1889 Dexter & Piscataquis extension: trains left the 1868 line at Dexter Junction and ran through the town to a relocated Dexter station (Fowler MP 15.4) on the new line. The 1889 start rests on Wikipedia's 1889 completion of the extension and the ICC valuation's statement (quoted in OSM) that the original stub has not been used since 1889; no 1889 opening notice was found. Regular service at Corinna and Dexter confirmed by Fowler's 1892/94, 1911 and 1921 timetable letters; Camp Benson, Lincoln's Mills and Moody's carry only the 1911 and/or 1921 letters. Maine Central under the 999-year D&N lease of 13 Dec 1888 and the D&P lease of 30 Dec 1888. END IS OPEN: 1921 is the last CONFIRMED year of regular passenger service (Fowler's 1921 MEC public-timetable letter b at every station on the branch, no 1932 letter c; corroborated by a regular Foxcroft - Newport Junction passenger train in the Daily Kennebec Journal of 29 Nov 1919). It is not a known end: the trains stopped some time between 1922 and 1931 and no source found dates the last one. Do not extend without evidence. An excursion special was ANNOUNCED to run from the Dover-Foxcroft branch on Sun 1 Aug 1926 (DKJ 31 Jul 1926) - not drawn, because only the announcement was found and 1922-1925 are unconfirmed. Freight (pulpwood loading through the 1970s) continued until abandonment in 1990; those years are not drawn (Rule 1). By Jan 1952 Newport - Dover (Foxcroft) was Maine Central bus only (OG 1952 Table 14). Headway 360 is an estimate; no timetable was read for frequency.",
+      "sources": [
+       "Segment-level: Fowler line 12 (1892/94, 1911, 1921 letters; no 1932 letter) for service and the 1921 last confirmed year; DKJ 29 Nov 1919 for a regular passenger train; Wikipedia and the ICC quotation in OSM for the 1889 start of this alignment (unconfirmed by a primary source). Headway NOT SOURCED.",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (J. Fowler, Maine Railroads - Passenger Stations & Stops, line 12 'Dexter Branch (MEC)'; MEC letters z=1892/94, a=1911, b=1921, c=1932, d=1954 public timetables)",
+       "https://www.loc.gov/resource/sn82014248/1919-11-29/ed-1/?sp=9 (Daily Kennebec Journal 29 Nov 1919 p.9: a passenger train 'from Foxcroft to Newport Junction' on the Foxcroft branch)",
+       "https://www.loc.gov/resource/sn82014248/1926-07-31/ed-1/?sp=12 (Daily Kennebec Journal 31 Jul 1926 p.12: announced Old Orchard excursion special to run from the Dover-Foxcroft branch on Sunday 1 Aug 1926)",
+       "https://archive.org/details/annualreportrai11commgoog (Maine Railroad Commissioners' annual report: Newport to Dexter 14.23 mi, Dexter Junction to Foxcroft 16.54 mi; D&P charter Oct 24 1888, leased to MEC Dec 30 1888)",
+       "https://en.wikipedia.org/wiki/Dexter_and_Newport_Railroad (completed 1868; Foxcroft extension 1889; abandoned 1990)",
+       "research/sources/official_guide_1952.txt in the site repo (Official Guide, Feb 1952, MEC Table 14 Newport - Dover (Foxcroft): bus only)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -69.2803403,
+      44.8311646
+     ],
+     [
+      -69.2799267,
+      44.8317559
+     ],
+     [
+      -69.2798868,
+      44.8324666
+     ],
+     [
+      -69.2801339,
+      44.832925
+     ],
+     [
+      -69.2814653,
+      44.8341461
+     ],
+     [
+      -69.2823706,
+      44.8363049
+     ],
+     [
+      -69.2831947,
+      44.8386089
+     ],
+     [
+      -69.2841754,
+      44.842486
+     ],
+     [
+      -69.2844087,
+      44.8438176
+     ],
+     [
+      -69.2843245,
+      44.8446333
+     ],
+     [
+      -69.2840042,
+      44.8455663
+     ],
+     [
+      -69.2834534,
+      44.8462147
+     ],
+     [
+      -69.2749592,
+      44.8533044
+     ],
+     [
+      -69.2685502,
+      44.8640509
+     ],
+     [
+      -69.2677444,
+      44.8657844
+     ],
+     [
+      -69.2676077,
+      44.8689967
+     ],
+     [
+      -69.2680129,
+      44.8726028
+     ],
+     [
+      -69.270041,
+      44.87681
+     ],
+     [
+      -69.274097,
+      44.884264
+     ],
+     [
+      -69.2743439,
+      44.8884069
+     ],
+     [
+      -69.27404,
+      44.8893759
+     ],
+     [
+      -69.2729161,
+      44.8908923
+     ],
+     [
+      -69.2626862,
+      44.9018118
+     ],
+     [
+      -69.2616598,
+      44.903651
+     ],
+     [
+      -69.261521,
+      44.9056188
+     ],
+     [
+      -69.2621235,
+      44.9090889
+     ],
+     [
+      -69.262241,
+      44.911773
+     ],
+     [
+      -69.2598949,
+      44.9210951
+     ],
+     [
+      -69.2597567,
+      44.9224258
+     ],
+     [
+      -69.2608588,
+      44.9304636
+     ],
+     [
+      -69.2604491,
+      44.9356238
+     ],
+     [
+      -69.2599416,
+      44.9371251
+     ],
+     [
+      -69.2598271,
+      44.9381843
+     ],
+     [
+      -69.260033,
+      44.9389794
+     ],
+     [
+      -69.2609015,
+      44.9402302
+     ],
+     [
+      -69.2830351,
+      44.9618993
+     ],
+     [
+      -69.299226,
+      44.9796749
+     ],
+     [
+      -69.3004395,
+      44.9814123
+     ],
+     [
+      -69.3006268,
+      44.9825981
+     ],
+     [
+      -69.3001709,
+      44.9841972
+     ],
+     [
+      -69.2936343,
+      44.9920971
+     ],
+     [
+      -69.2931314,
+      44.9928932
+     ],
+     [
+      -69.2929002,
+      44.9938019
+     ],
+     [
+      -69.2929928,
+      44.9969814
+     ],
+     [
+      -69.2931395,
+      44.9975125
+     ],
+     [
+      -69.2935936,
+      44.9984334
+     ],
+     [
+      -69.2951276,
+      45.0003197
+     ],
+     [
+      -69.2956276,
+      45.0011392
+     ],
+     [
+      -69.297283,
+      45.00593
+     ],
+     [
+      -69.2970143,
+      45.0097811
+     ],
+     [
+      -69.2984354,
+      45.0174506
+     ],
+     [
+      -69.2983868,
+      45.0183032
+     ],
+     [
+      -69.2980874,
+      45.0189784
+     ],
+     [
+      -69.2976382,
+      45.0194779
+     ],
+     [
+      -69.2963794,
+      45.0204041
+     ],
+     [
+      -69.2950433,
+      45.0211812
+     ],
+     [
+      -69.2929363,
+      45.0232274
+     ],
+     [
+      -69.2918897,
+      45.0246733
+     ],
+     [
+      -69.2912991,
+      45.0251965
+     ],
+     [
+      -69.2900103,
+      45.0259849
+     ],
+     [
+      -69.2887122,
+      45.0283443
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maine Central Railroad",
+    "line": "Maine Central: Dexter – Dover and Foxcroft",
+    "id": "maine-central-dexter-branch-dexter-dover-foxcroft",
+    "color": "#457B9D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: Maine branch-line local of 1870s-1920s, 30 km/h; not computed from a timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror), traced with opstrace.py over ways tagged old_railway_operator=MEC: the Newport/Dover-Foxcroft Rail Trail (the lifted 1990 grade) plus the untagged-name abandoned way 171492983 for the original 1868 Dexter terminal (tagged note:old_railway_operator='Dexter and Newport Railroad'). OpenHistoricalMap fetched over the corridor as a fallback; not needed. Waypoints hand-pinned onto the grade itself, not taken from Nominatim (which returns township centroids in Maine). Newport Junction end on the live CSX Waterville Subdivision (the MEC main line) at the west leg of the wye, 44.8312 N, -69.2803. The MEC main line Waterville - Newport - Bangor is not drawn in any layer, so this branch floats unconnected at its south end.",
+    "geometry_quality": "Traced 14.0 mi against a documented 14.0 mi (Fowler MP 15.4 Dexter to 29.4 Dover & Foxcroft MEC station) / 14.4 mi (to the union station with the Bangor & Aroostook at MP 29.8). OSM MEC-tagged lifted grade (Newport/Dover-Foxcroft Rail Trail) throughout, no straight-line leg. Dexter end placed by milepost (see maine-central-dexter-branch-newport-dexter; good to about 0.3 mi). Dover-Foxcroft end where the MEC-tagged grade meets the Bangor & Aroostook grade (45.1879 N, -69.2301), the nearest mapped point to the union station; whether the MEC station at MP 29.4 lay short of it is not resolved. Whole branch traced 29.1 mi against 29.4-29.8 mi (Fowler) / 29.5 (Wikipedia). This is the line's own 1889 alignment.",
+    "segments": [
+     {
+      "start": 1892,
+      "end": 1921,
+      "headway_min": 360,
+      "note": "Dexter and Piscataquis Railroad, chartered 24 Oct 1888 and leased to the Maine Central for 999 years on 30 Dec 1888, before it opened (no ownership split). Wikipedia says it was completed in 1889, but no primary source for that was found, so the drawn start is 1892, the first CONFIRMED passenger year (Fowler's 1892/94 timetable letter at Silver's Mills and Dover & Foxcroft). If an 1889 opening notice turns up, move the start back. Worked as one branch with Newport - Dexter; the end is assumed to coincide with that half's, not proven. END IS OPEN: 1921 is the last CONFIRMED year of regular passenger service (Fowler's 1921 MEC public-timetable letter b at every station on the branch, no 1932 letter c; corroborated by a regular Foxcroft - Newport Junction passenger train in the Daily Kennebec Journal of 29 Nov 1919). It is not a known end: the trains stopped some time between 1922 and 1931 and no source found dates the last one. Do not extend without evidence. An excursion special was ANNOUNCED to run from the Dover-Foxcroft branch on Sun 1 Aug 1926 (DKJ 31 Jul 1926) - not drawn, because only the announcement was found and 1922-1925 are unconfirmed. Freight (pulpwood loading through the 1970s) continued until abandonment in 1990; those years are not drawn (Rule 1). By Jan 1952 Newport - Dover (Foxcroft) was Maine Central bus only (OG 1952 Table 14). Headway 360 is an estimate; no timetable was read for frequency.",
+      "sources": [
+       "Segment-level: Fowler line 12 (1892/94 letter for the start; 1911, 1921 letters, no 1932) for service and the 1921 last confirmed year; DKJ 29 Nov 1919 for a regular Foxcroft - Newport Junction passenger train; Maine RR Commissioners for the charter and lease. Headway NOT SOURCED.",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf (J. Fowler, Maine Railroads - Passenger Stations & Stops, line 12 'Dexter Branch (MEC)'; MEC letters z=1892/94, a=1911, b=1921, c=1932, d=1954 public timetables)",
+       "https://www.loc.gov/resource/sn82014248/1919-11-29/ed-1/?sp=9 (Daily Kennebec Journal 29 Nov 1919 p.9: a passenger train 'from Foxcroft to Newport Junction' on the Foxcroft branch)",
+       "https://www.loc.gov/resource/sn82014248/1926-07-31/ed-1/?sp=12 (Daily Kennebec Journal 31 Jul 1926 p.12: announced Old Orchard excursion special to run from the Dover-Foxcroft branch on Sunday 1 Aug 1926)",
+       "https://archive.org/details/annualreportrai11commgoog (Maine Railroad Commissioners' annual report: Newport to Dexter 14.23 mi, Dexter Junction to Foxcroft 16.54 mi; D&P charter Oct 24 1888, leased to MEC Dec 30 1888)",
+       "https://en.wikipedia.org/wiki/Dexter_and_Newport_Railroad (completed 1868; Foxcroft extension 1889; abandoned 1990)",
+       "research/sources/official_guide_1952.txt in the site repo (Official Guide, Feb 1952, MEC Table 14 Newport - Dover (Foxcroft): bus only)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -69.2887122,
+      45.0283443
+     ],
+     [
+      -69.2873277,
+      45.0308608
+     ],
+     [
+      -69.2845373,
+      45.0350232
+     ],
+     [
+      -69.2825115,
+      45.0372433
+     ],
+     [
+      -69.2820175,
+      45.0381537
+     ],
+     [
+      -69.2812645,
+      45.040308
+     ],
+     [
+      -69.2800256,
+      45.0417778
+     ],
+     [
+      -69.2777903,
+      45.0435521
+     ],
+     [
+      -69.2702293,
+      45.0475581
+     ],
+     [
+      -69.2694387,
+      45.0481958
+     ],
+     [
+      -69.2685313,
+      45.0492408
+     ],
+     [
+      -69.2681015,
+      45.0500424
+     ],
+     [
+      -69.2678889,
+      45.0513714
+     ],
+     [
+      -69.2685445,
+      45.0565128
+     ],
+     [
+      -69.2682441,
+      45.0573284
+     ],
+     [
+      -69.2668187,
+      45.0598159
+     ],
+     [
+      -69.2666896,
+      45.063014
+     ],
+     [
+      -69.2663103,
+      45.0644951
+     ],
+     [
+      -69.2659907,
+      45.0650877
+     ],
+     [
+      -69.2652561,
+      45.0658921
+     ],
+     [
+      -69.2592837,
+      45.0712288
+     ],
+     [
+      -69.2581758,
+      45.0725136
+     ],
+     [
+      -69.254903,
+      45.0795331
+     ],
+     [
+      -69.2540785,
+      45.0808344
+     ],
+     [
+      -69.2526232,
+      45.0820145
+     ],
+     [
+      -69.2492176,
+      45.0838419
+     ],
+     [
+      -69.2470306,
+      45.0846397
+     ],
+     [
+      -69.2434312,
+      45.0853767
+     ],
+     [
+      -69.2419448,
+      45.0859793
+     ],
+     [
+      -69.2403882,
+      45.0867925
+     ],
+     [
+      -69.2371397,
+      45.0887533
+     ],
+     [
+      -69.2357114,
+      45.0901926
+     ],
+     [
+      -69.2351214,
+      45.0911344
+     ],
+     [
+      -69.2349572,
+      45.0919763
+     ],
+     [
+      -69.2351539,
+      45.0928235
+     ],
+     [
+      -69.2370234,
+      45.0968951
+     ],
+     [
+      -69.2383851,
+      45.0984508
+     ],
+     [
+      -69.2419157,
+      45.101028
+     ],
+     [
+      -69.2435622,
+      45.1027287
+     ],
+     [
+      -69.2445838,
+      45.1047373
+     ],
+     [
+      -69.2447851,
+      45.1066968
+     ],
+     [
+      -69.2442516,
+      45.1087142
+     ],
+     [
+      -69.2433255,
+      45.1102178
+     ],
+     [
+      -69.2359707,
+      45.1179175
+     ],
+     [
+      -69.2350459,
+      45.1192541
+     ],
+     [
+      -69.2348957,
+      45.1198712
+     ],
+     [
+      -69.2349923,
+      45.1211468
+     ],
+     [
+      -69.2368107,
+      45.1246721
+     ],
+     [
+      -69.2370324,
+      45.1262239
+     ],
+     [
+      -69.2365307,
+      45.1278374
+     ],
+     [
+      -69.2338447,
+      45.1321093
+     ],
+     [
+      -69.2334919,
+      45.1331953
+     ],
+     [
+      -69.2339387,
+      45.1400329
+     ],
+     [
+      -69.2344176,
+      45.1418707
+     ],
+     [
+      -69.2361243,
+      45.1465043
+     ],
+     [
+      -69.2370017,
+      45.1476311
+     ],
+     [
+      -69.2391437,
+      45.1492253
+     ],
+     [
+      -69.2417719,
+      45.1505992
+     ],
+     [
+      -69.24272,
+      45.1515441
+     ],
+     [
+      -69.2435968,
+      45.153762
+     ],
+     [
+      -69.2438856,
+      45.1563234
+     ],
+     [
+      -69.2441976,
+      45.1571666
+     ],
+     [
+      -69.2446107,
+      45.1576659
+     ],
+     [
+      -69.245047,
+      45.1580628
+     ],
+     [
+      -69.2460379,
+      45.1585921
+     ],
+     [
+      -69.2470373,
+      45.158869
+     ],
+     [
+      -69.2498763,
+      45.1592545
+     ],
+     [
+      -69.2505358,
+      45.1594739
+     ],
+     [
+      -69.2516626,
+      45.1600902
+     ],
+     [
+      -69.254447,
+      45.1633713
+     ],
+     [
+      -69.2551824,
+      45.1640553
+     ],
+     [
+      -69.2578904,
+      45.1656042
+     ],
+     [
+      -69.2587715,
+      45.1663735
+     ],
+     [
+      -69.2592431,
+      45.1671562
+     ],
+     [
+      -69.2594182,
+      45.1680435
+     ],
+     [
+      -69.2590559,
+      45.1692763
+     ],
+     [
+      -69.2537619,
+      45.1785082
+     ],
+     [
+      -69.2518375,
+      45.1871213
+     ],
+     [
+      -69.2513192,
+      45.1878419
+     ],
+     [
+      -69.2506728,
+      45.1883835
+     ],
+     [
+      -69.2498942,
+      45.1888161
+     ],
+     [
+      -69.2488697,
+      45.1891284
+     ],
+     [
+      -69.2465727,
+      45.1894422
+     ],
+     [
+      -69.2443598,
+      45.1894542
+     ],
+     [
+      -69.2400448,
+      45.1891265
+     ],
+     [
+      -69.2375081,
+      45.1890942
+     ],
+     [
+      -69.2300737,
+      45.1878812
+     ]
+    ]
+   }
+  }
+ ]
+}
