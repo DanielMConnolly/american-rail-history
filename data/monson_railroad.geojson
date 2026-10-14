@@ -1,0 +1,207 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Monson Railroad, Monson Junction - Monson, Maine: a 6.2-mile 2 ft gauge steam common carrier feeding the Bangor and Piscataquis / Bangor and Aroostook Greenville line, built for slate traffic and run by its own company throughout (Monson Slate Co. stock control from 1908 did not change the operator), so one feature in one colour.",
+  "researched_from": "research/branches/monson_railroad.txt",
+  "freight_only_audit": "Drawn to the 1 Nov 1938 end of passenger service only; slate freight 1938 - 12 Jul 1943 is not drawn. The quarry extension beyond the village depot (~1 mi, 1883 on), the 1909-1922 Monson Pond extension, and the 1904 mill/transfer sidings are freight trackage and are omitted.",
+  "horsecar_audit": "None. Steam from the October 1883 opening.",
+  "not_yet_sourced": [
+   "The 1 Nov 1938 passenger end rests on Wikipedia alone (citing Jones, Two Feet to the Quarries, 1998). A second source -- a 1938 Bangor Daily News item, the Maine PUC/ICC docket, or Jones/Moody read directly -- would firm it up. If a second source is required and none is found, the conservative confirmed span ends at 1921.",
+   "Robertson, Slow Train to Yesterday (1945) describes riding the line; not checked for any passenger riding after Nov 1938.",
+   "headway_min (from four and later two round trips a day) and avg_speed_kmh are estimates; no timetable running times were read.",
+   "Exact site of the Monson village depot: the line is cut at the 6.2-mi fork where the quarry extension diverges, not at a mapped depot.",
+   "Whether the quarry extension beyond the depot ever carried passengers (e.g. workmen) -- no evidence either way; omitted."
+  ],
+  "references": [
+   "https://en.wikipedia.org/wiki/Monson_Railroad",
+   "https://www.branchline.uk/jfpdf/mainerrs.pdf",
+   "https://www.openstreetmap.org/way/302533413",
+   "https://www.openhistoricalmap.org/way/201884785"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Monson Railroad",
+    "line": "Monson Railroad: Monson Junction – Monson",
+    "id": "monson-railroad-monson-junction-monson",
+    "color": "#5F7A8A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time was read from a timetable; ~20 km/h assumes roughly half an hour for 6.2 mi on a 2 ft gauge steam line with grades, in line with the other Maine two-footers in this dataset.",
+    "gauge": "2 ft (610 mm)",
+    "geometry_source": "OpenStreetMap ways 302533413, 700929731, 1085189093, 1097148226, 302533414, 908889325, 11475712, 11480723, 302533415, 1086722671, 1410953269, 1410953268, 1086722670, 700769979 (railway=abandoned, gauge=610, mostly name=Monson Railroad; some sections now roads named Forest Brook Drive / Narrow Gauge South / Narrow Gauge North), fetched by bbox Overpass (mail.ru) 2026-10-14, joined end to end (0 m gaps), cut at the Monson village fork, Douglas-Peucker 8 m + trim_reversals (opstrace.py). Cross-checked against OpenHistoricalMap way 201884785 (Monson Railroad, 1883-1943), which follows the same grade.",
+    "geometry_quality": "Fully traced on the railroad's own abandoned grade; no straight-line legs. Traced 6.18 mi (9.95 km) against 6.2 mi documented (Fowler Maine line 40: Monson Junction 0.0, Monson 6.2; Wikipedia 'six miles'). South end: OSM node 45.214618,-69.474122 where the Monson Railroad way leaves the B&A grade ('Monson Junction Lane'); this is an exact shared vertex of bp-abbot-blanchard and bar-greenville-branch in bangor_and_piscataquis_railroad.geojson, so the lines join. North end: the Monson village depot is NOT pinned to a mapped depot site (none found in OSM/OHM); the line is cut at the vertex 45.290257,-69.499031 where OSM way 1350833843 and OHM way 201884785 turn west downhill toward the quarries -- that fork falls at 6.19 mi from the junction, matching Fowler's 6.2 mi milepost, ~0.3 mi NE of the Monson place node. EXCLUDED as freight-only (Rule 1): the ~1 mi quarry extension beyond the depot (OSM 1350833843 / OHM 201884785 tail), the OSM 700769979 stub north of the fork, the 1909-1922 Monson Pond extension (OHM 201884787), the OHM spur 201884788, and junction transfer sidings. Era: the grade drawn is the line's own 1883-1943 alignment (lifted 1943-44); no later alignment.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1921,
+      "headway_min": 240,
+      "note": "Monson Railroad (chartered 1 Nov 1882 as the Monson and Athens; renamed 18 Feb 1885), 2 ft gauge steam common carrier from Monson Junction on the Bangor and Piscataquis (later Bangor and Aroostook) Greenville line to Monson village. Track reached Monson 4 Sep 1883; opened for business 22 Oct 1883 with two Hinkley locomotives and a combination car, running four daily round trips to meet each B&P train (Wikipedia, citing Jones, Two Feet to the Quarries, 1998). Monson appears in the 1894 Pathfinder Guide public timetable (Fowler, Maine line 40, 'z'), independently confirming passenger service. 11,466 paying passengers in 1912 (Wikipedia). Monson Slate Co. bought control in 1908, a stock purchase -- the Monson Railroad kept running its own trains, so no operator change. Service cut from four to two round trips a day effective 10 Oct 1921 (Wikipedia), where this segment ends. Steam from opening; no animal-power era. headway_min is an ESTIMATE derived from the round-trip count spread over a service day, not read from a timetable. (4 round trips/day ~ 240 min.)",
+      "sources": [
+       "Segment-level: this segment's own note carries the citation -- the 22 Oct 1883 opening, four round trips and the 10 Oct 1921 cut from Wikipedia (citing Jones 1998, Barney 1986, Moody 1959, Whitney 1989; the books themselves were not read); public passenger service in 1894 from Fowler's Maine list (Pathfinder Guide). headway_min and avg_speed_kmh are estimates.",
+       "https://en.wikipedia.org/wiki/Monson_Railroad",
+       "https://www.branchline.uk/jfpdf/mainerrs.pdf"
+      ]
+     },
+     {
+      "start": 1921,
+      "end": 1938,
+      "headway_min": 480,
+      "note": "Two round trips a day from 10 Oct 1921 (Wikipedia). From 1936 passengers were sometimes carried in a slate-company highway truck while the one serviceable locomotive was under repair -- intermittent substitution, not an end of rail service. Passenger service discontinued 1 Nov 1938 (Wikipedia, citing Jones 1998). SINGLE SOURCE for the end: no second independent source for the 1938 date was found (Fowler defines no later timetable letter for this line, and the line is beyond the 1952 Official Guide). If a second source is ever required, the most conservative confirmed span would end at 1921. After passengers stopped, slate freight continued to Monson Junction until 12 Jul 1943; the road was dismantled winter 1943-44 -- not drawn (Rule 1). Locomotives 3 and 4 survive at the Maine Narrow Gauge Railroad Museum, Portland. headway_min is an ESTIMATE derived from the round-trip count spread over a service day, not read from a timetable. (2 round trips/day ~ 480 min.)",
+      "sources": [
+       "Segment-level: this segment's own note carries the citation -- the 1921 cut and the 1 Nov 1938 passenger end from Wikipedia (citing Jones 1998; the book itself was not read). The 1938 end rests on that single source. headway_min and avg_speed_kmh are estimates.",
+       "https://en.wikipedia.org/wiki/Monson_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -69.474122,
+      45.214618
+     ],
+     [
+      -69.4728592,
+      45.2148584
+     ],
+     [
+      -69.4723902,
+      45.215116
+     ],
+     [
+      -69.4719815,
+      45.215616
+     ],
+     [
+      -69.471529,
+      45.216783
+     ],
+     [
+      -69.471474,
+      45.218101
+     ],
+     [
+      -69.471124,
+      45.219395
+     ],
+     [
+      -69.4711862,
+      45.2208156
+     ],
+     [
+      -69.4719942,
+      45.2244109
+     ],
+     [
+      -69.4725167,
+      45.2258879
+     ],
+     [
+      -69.4728237,
+      45.2283598
+     ],
+     [
+      -69.4722977,
+      45.2298525
+     ],
+     [
+      -69.4717215,
+      45.2323528
+     ],
+     [
+      -69.4696291,
+      45.2379824
+     ],
+     [
+      -69.4687976,
+      45.2399296
+     ],
+     [
+      -69.4683992,
+      45.2404769
+     ],
+     [
+      -69.4666124,
+      45.2423233
+     ],
+     [
+      -69.4623156,
+      45.2457217
+     ],
+     [
+      -69.461057,
+      45.247302
+     ],
+     [
+      -69.460295,
+      45.249003
+     ],
+     [
+      -69.460051,
+      45.250972
+     ],
+     [
+      -69.460991,
+      45.256891
+     ],
+     [
+      -69.4624883,
+      45.2610326
+     ],
+     [
+      -69.4630806,
+      45.2618495
+     ],
+     [
+      -69.4649765,
+      45.2637044
+     ],
+     [
+      -69.4721895,
+      45.2698126
+     ],
+     [
+      -69.4809379,
+      45.2757351
+     ],
+     [
+      -69.4818506,
+      45.2766223
+     ],
+     [
+      -69.4844109,
+      45.2799289
+     ],
+     [
+      -69.4851651,
+      45.2806637
+     ],
+     [
+      -69.4873193,
+      45.2819808
+     ],
+     [
+      -69.4932638,
+      45.2843782
+     ],
+     [
+      -69.4957743,
+      45.2862125
+     ],
+     [
+      -69.4973383,
+      45.2887851
+     ],
+     [
+      -69.4990309,
+      45.290257
+     ]
+    ]
+   }
+  }
+ ]
+}
