@@ -1,0 +1,4060 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "note": "The Nashua and Lowell Railroad (Lowell MA - Nashua NH, opened 1838, the first railroad in New Hampshire) and the three roads it worked: the Stony Brook RR (North Chelmsford - Ayer, 1848), the Wilton RR (Nashua - Wilton, opened in three legs 1848/1850/1851) and the Peterborough RR (Wilton - Greenfield, 1874). Operators over time (Rule 4): Nashua and Lowell 1838 - Feb 1857; a B&L/N&L pool under one management (manager George Stark of the N&L) Feb 1857 - Dec 1878; Nashua and Lowell alone Dec 1878 - Nov 1880; Boston and Lowell (100-year lease) 1880 - 1887; Boston and Maine (lease of the B&L) from 1887. Each line is drawn as one feature per operator sharing identical geometry. THE POOL IS NOT SPLIT: per the research report's recommended option (a), 1857-1878 stays inside the N&L features as its own segment, whose note describes the pool. Passenger ends: Lowell - Nashua 1967 (plus an MBTA-sponsored trial 1980-81), Stony Brook 1961, Nashua - Wilton 1936, Wilton - Greenfield last confirmed 1932 [OPEN]. A Wilton Scenic Railroad tourist operation ran Wilton - Greenfield 2003-2006. Freight after those years is context only (Rule 1). Lowell - Nashua was previously drawn inside the Concord/Northern feature in nh_concord_northern_railroads.geojson (1842-1967) and as a short N&L stub (1838-1842); both were moved here (see that file's nashua_lowell_fix). Not drawn, because the N&L did not run their trains: the Manchester & Keene beyond Greenfield, the Concord RR, the Worcester & Nashua, the Nashua & Rochester, the Nashua, Acton & Boston and the Fitchburg's Brookline & Milford line.",
+    "research_report": "research/branches/nashua_and_lowell_railroad.txt",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+      "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+      "https://en.wikipedia.org/wiki/Stony_Brook_Railroad",
+      "https://en.wikipedia.org/wiki/Wilton_Scenic_Railroad",
+      "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/",
+      "https://nashuacitystation.org/history/wilton-railroad-company/",
+      "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/routes/wilton-railroad/",
+      "https://nashuacitystation.org/history/manchester-and-keene-railroad/",
+      "https://theclio.com/entry/132898",
+      "https://libguides.uml.edu/early_lowell/Lowell_trains_1850",
+      "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+      "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf",
+      "https://www.loc.gov/resource/sn84023252/1843-06-06/ed-1/?sp=4",
+      "https://www.loc.gov/resource/sn84022932/1850-06-21/ed-1/?sp=3",
+      "https://www.loc.gov/resource/sn84027719/1856-08-30/ed-1/?sp=8",
+      "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+      "https://www.loc.gov/resource/sn84023818/1857-08-29/ed-1/?sp=1",
+      "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+      "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+      "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+      "Official Guide of the Railways, Feb 1952 issue (schedules eff. 30 Sep 1951), cached at research/sources/official_guide_1952.txt"
+    ],
+    "colours": "Boston and Maine #1D3557 pulled from existing Boston and Maine Railroad features. New colours, none previously used by any company in data/: Nashua and Lowell #821458 (the N&L previously had no colour of its own - its 1838-1842 stub wore the B&M's), Boston and Lowell #429A28 (no Boston and Lowell company colour existed; its Lowell Line years are drawn in the MBTA's colour in mbta_commuter_rail.geojson, flagged for a Boston and Lowell pass), Wilton Scenic Railroad #E69E26.",
+    "not_yet_sourced": [
+      "Wilton - Greenfield (Peterborough RR) B&M passenger end: [OPEN] at 1932, the last confirmed year (Fowler \"c\"); no source dates the actual end.",
+      "Nashua - Wilton: The Clio says one passenger car a day rode the freight 1936-1952 (a mixed train, which Rule 1 would include). Unconfirmed by any second source; not drawn. Look for a 1941 B&M employee timetable or Milford Cabinet / Nashua Telegraph \"last passenger\" stories.",
+      "Nashua - Wilton end 1936 rests on one secondary source (The Clio); primary floor 1932.",
+      "Lowell - Nashua end 1967 and Stony Brook end 1961 are year-level secondary (Karr 2017 via en.wikipedia); primary floor for both is the Feb 1952 Official Guide.",
+      "Operator of the 1980-81 MBTA-sponsored trial (Boston and Maine inferred; could be labelled MBTA Commuter Rail).",
+      "Opening months: Stony Brook 1848 (the oft-repeated July 1848 unsourced), Wilton RR to Danforth's Corner 1848 (first primary Mar 1850), Peterborough RR 1874.",
+      "Who hauled the Concord RR's through trains over Lowell - Nashua 1842-1880s (does not change the track's operator).",
+      "The day in late 1880 the B&L took possession under the N&L lease.",
+      "Whether the pool (1857-1878) should be its own Rule 4 feature in B&L colour (option (b)) - a maintainer decision.",
+      "Exact Wilton Scenic Railroad terminus near Greenfield State Park.",
+      "Every headway_min and avg_speed_kmh in this file is an estimate."
+    ],
+    "pulled": "20261015"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Nashua and Lowell Railroad",
+        "line": "Nashua and Lowell: Lowell \u2013 Nashua",
+        "id": "nashua-lowell-main-nl",
+        "color": "#821458",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 30,
+        "speed_source": "estimated: early steam-era line, no timetable timing found; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap (maps.mail.ru Overpass mirror), waypoints Lowell (Gallagher Terminal, the MBTA Lowell Line's drawn end), North Chelmsford, Tyngsborough, Nashua junction; 13.6 mi drawn, 100% on OSM rail tagged old_railway_operator=B&M (CSX Middlesex Subdivision to North Chelmsford, then Nashua Subdivision), no straight-line legs, every waypoint within 0.1 km of the line. Documented: 13.4 mi Lowell (25.6) - Nashua Union Station (39.0) from J. Fowler, Southern New England Railroads table 18; 14.5 mi end to end (Upham 1850, N&L to its own Nashua limits); \"15 miles\" (Pathfinder 1850). Traced length is 1.3% over Fowler's figure. Ends: Lowell is drawn from the B&L's Lowell terminal area (Gallagher Terminal, beside the site of the old Middlesex Street / Lowell Union Station, closed 1959) - the exact 1838 N&L-B&L junction point is not pinned. Nashua is drawn to the junction of the Hillsboro Branch (former Wilton RR) with the main line, taken as the Nashua Union Station site (OSM node at 42.7607 N, 71.4486 W); the N&L's own track on to Nashua City station is drawn with the Wilton features. Alignment era: drawn on the surviving (CSX/Pan Am freight) alignment for every era. Built double track 1848 and later singled under the B&M on the same alignment (en.wikipedia); no relocation is documented. ERA CAVEAT: from 8 Oct to 23 Dec 1838 the line ended at a temporary station south of the Nashua River, short of the drawn Nashua end; not split out (weeks only).",
+        "segments": [
+          {
+            "start": 1838,
+            "end": 1857,
+            "headway_min": 120,
+            "note": "Nashua and Lowell, self-operated. Opened 8 Oct 1838 to a temporary station south of the Nashua River; first train through 23 Dec 1838 (en.wikipedia citing Karr 2017). First railroad in New Hampshire; double-tracked 1848. Pathfinder 1850: \"15 miles ... opened in Oct, 1838 ... 200,000 passengers ... annually\". From 12 Sep 1842 the Concord Railroad's trains ran \"in connection with the cars of the Nashua and Lowell\" (Caledonian 6 Jun 1843), and in 1850 the Concord's superintendent described Lowell - Nashua as \"run over by the Upper Roads\" (NH Statesman 21 Jun 1850) - through traffic over N&L track; the N&L remained the line's operator. 1856: the first and last Concord - Boston trains went via the N&L (Granite Farmer 30 Aug 1856), on top of the N&L's own locals and Wilton trains; headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: opening from en.wikipedia (Karr 2017) and Pathfinder 1850; operator from Nashua City Station (\"Rail Operations 1838-1880\") and the Concord RR cards of 1842/1856 and Upham 1850; end of this era from Springfield Weekly Republican 7 Feb 1857.",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://libguides.uml.edu/early_lowell/Lowell_trains_1850",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/",
+              "https://www.loc.gov/resource/sn84023252/1843-06-06/ed-1/?sp=4",
+              "https://www.loc.gov/resource/sn84022932/1850-06-21/ed-1/?sp=3",
+              "https://www.loc.gov/resource/sn84027719/1856-08-30/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8"
+            ]
+          },
+          {
+            "start": 1857,
+            "end": 1878,
+            "headway_min": 90,
+            "note": "B&L / N&L POOL ERA (1 Feb 1857 - Dec 1878). On Monday 1 Feb 1857 the Boston and Lowell and the Nashua and Lowell put \"the united business\" under \"one management\", with George Stark, the N&L's own superintendent, as Manager for both and the B&L's John B. Winslow as operating superintendent (Springfield Weekly Republican 7 Feb 1857); crews worked both roads (Dollar Weekly Mirror 29 Aug 1857). NOT a lease: each corporation kept its line and revenues were pooled about 69% B&L / 31% N&L. Kept in the N&L feature and colour (research report ownership_split option (a)): the combined operation was headed by the N&L's officer; a B&L-coloured split for these years would also be defensible. Conflicts recorded: en.wikipedia \"Boston and Lowell Railroad\" dates the joint operation \"from 1860\" (contradicted by the 1857 primary); en.wikipedia \"Stony Brook Railroad\" puts the decision to end it in 1877 (the separation itself was Dec 1878). headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: pool start from Springfield Weekly Republican 7 Feb 1857 p.8 (primary); joint crews from Dollar Weekly Mirror 29 Aug 1857; end from Springfield Weekly Republican 6 Dec 1878 p.8 (\"the recent separation\") and en.wikipedia (Boston Evening Transcript 1878); 69/31 split from en.wikipedia; that this line was worked by the pool is inferred from the N&L operating it on both sides of the pool (research report blocks [2], [7], [10], [13]).",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn84023818/1857-08-29/ed-1/?sp=1",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad"
+            ]
+          },
+          {
+            "start": 1878,
+            "end": 1880,
+            "headway_min": 90,
+            "note": "Second N&L-alone era: the two companies resumed independent operation in early December 1878 (Springfield Weekly Republican 6 Dec 1878; en.wikipedia citing the Boston Evening Transcript) until the Nashua and Lowell was leased to the Boston and Lowell for 100 years at $60,000 a year (agreed by 5 Nov 1880; B&L stockholders ratified by 26 Nov 1880). The day the B&L took possession was not found; the split year is 1880 either way. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: separation from Springfield Weekly Republican 6 Dec 1878 p.8; lease from Springfield Weekly Republican 5 Nov 1880 p.8 and 26 Nov 1880 p.8 (primary); Nashua City Station gives the N&L \"Rail Operations 1838-1880\".",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.314422,
+            42.635279
+          ],
+          [
+            -71.316084,
+            42.638647
+          ],
+          [
+            -71.316731,
+            42.639342
+          ],
+          [
+            -71.317657,
+            42.6399
+          ],
+          [
+            -71.319025,
+            42.640238
+          ],
+          [
+            -71.328202,
+            42.640951
+          ],
+          [
+            -71.330578,
+            42.640867
+          ],
+          [
+            -71.349349,
+            42.63792
+          ],
+          [
+            -71.360037,
+            42.63701
+          ],
+          [
+            -71.367887,
+            42.636454
+          ],
+          [
+            -71.369228,
+            42.636461
+          ],
+          [
+            -71.370881,
+            42.636713
+          ],
+          [
+            -71.373637,
+            42.637638
+          ],
+          [
+            -71.374758,
+            42.637782
+          ],
+          [
+            -71.376072,
+            42.63758
+          ],
+          [
+            -71.376546,
+            42.638227
+          ],
+          [
+            -71.376774,
+            42.638951
+          ],
+          [
+            -71.377352,
+            42.639473
+          ],
+          [
+            -71.379176,
+            42.640335
+          ],
+          [
+            -71.393855,
+            42.646221
+          ],
+          [
+            -71.395488,
+            42.647241
+          ],
+          [
+            -71.399377,
+            42.650453
+          ],
+          [
+            -71.400147,
+            42.651421
+          ],
+          [
+            -71.40061,
+            42.652376
+          ],
+          [
+            -71.401291,
+            42.656421
+          ],
+          [
+            -71.402154,
+            42.659102
+          ],
+          [
+            -71.403271,
+            42.661132
+          ],
+          [
+            -71.404763,
+            42.662965
+          ],
+          [
+            -71.406164,
+            42.664242
+          ],
+          [
+            -71.407922,
+            42.665504
+          ],
+          [
+            -71.415524,
+            42.669493
+          ],
+          [
+            -71.419684,
+            42.671109
+          ],
+          [
+            -71.420795,
+            42.67184
+          ],
+          [
+            -71.421586,
+            42.672726
+          ],
+          [
+            -71.421935,
+            42.673374
+          ],
+          [
+            -71.422256,
+            42.674557
+          ],
+          [
+            -71.422386,
+            42.676896
+          ],
+          [
+            -71.422252,
+            42.677797
+          ],
+          [
+            -71.421697,
+            42.67948
+          ],
+          [
+            -71.420156,
+            42.681962
+          ],
+          [
+            -71.419262,
+            42.684125
+          ],
+          [
+            -71.41899,
+            42.685367
+          ],
+          [
+            -71.418951,
+            42.686902
+          ],
+          [
+            -71.419263,
+            42.688356
+          ],
+          [
+            -71.419565,
+            42.689044
+          ],
+          [
+            -71.420599,
+            42.690612
+          ],
+          [
+            -71.421843,
+            42.691798
+          ],
+          [
+            -71.423225,
+            42.692712
+          ],
+          [
+            -71.42453,
+            42.693287
+          ],
+          [
+            -71.427783,
+            42.694353
+          ],
+          [
+            -71.429019,
+            42.694983
+          ],
+          [
+            -71.430401,
+            42.695917
+          ],
+          [
+            -71.431746,
+            42.697296
+          ],
+          [
+            -71.433461,
+            42.699872
+          ],
+          [
+            -71.437062,
+            42.706505
+          ],
+          [
+            -71.437667,
+            42.708239
+          ],
+          [
+            -71.437945,
+            42.709676
+          ],
+          [
+            -71.439299,
+            42.723706
+          ],
+          [
+            -71.439264,
+            42.724583
+          ],
+          [
+            -71.438966,
+            42.725792
+          ],
+          [
+            -71.437821,
+            42.728112
+          ],
+          [
+            -71.437465,
+            42.729235
+          ],
+          [
+            -71.437383,
+            42.731213
+          ],
+          [
+            -71.43772,
+            42.732627
+          ],
+          [
+            -71.440169,
+            42.739201
+          ],
+          [
+            -71.44171,
+            42.746516
+          ],
+          [
+            -71.441878,
+            42.748413
+          ],
+          [
+            -71.441709,
+            42.75238
+          ],
+          [
+            -71.441779,
+            42.753931
+          ],
+          [
+            -71.442494,
+            42.755916
+          ],
+          [
+            -71.443736,
+            42.757549
+          ],
+          [
+            -71.444768,
+            42.758485
+          ],
+          [
+            -71.445968,
+            42.759324
+          ],
+          [
+            -71.448551,
+            42.760711
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Lowell Railroad",
+        "line": "Boston and Lowell: Lowell \u2013 Nashua",
+        "id": "nashua-lowell-main-bl",
+        "color": "#429A28",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 40,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap (maps.mail.ru Overpass mirror), waypoints Lowell (Gallagher Terminal, the MBTA Lowell Line's drawn end), North Chelmsford, Tyngsborough, Nashua junction; 13.6 mi drawn, 100% on OSM rail tagged old_railway_operator=B&M (CSX Middlesex Subdivision to North Chelmsford, then Nashua Subdivision), no straight-line legs, every waypoint within 0.1 km of the line. Documented: 13.4 mi Lowell (25.6) - Nashua Union Station (39.0) from J. Fowler, Southern New England Railroads table 18; 14.5 mi end to end (Upham 1850, N&L to its own Nashua limits); \"15 miles\" (Pathfinder 1850). Traced length is 1.3% over Fowler's figure. Ends: Lowell is drawn from the B&L's Lowell terminal area (Gallagher Terminal, beside the site of the old Middlesex Street / Lowell Union Station, closed 1959) - the exact 1838 N&L-B&L junction point is not pinned. Nashua is drawn to the junction of the Hillsboro Branch (former Wilton RR) with the main line, taken as the Nashua Union Station site (OSM node at 42.7607 N, 71.4486 W); the N&L's own track on to Nashua City station is drawn with the Wilton features. Alignment era: drawn on the surviving (CSX/Pan Am freight) alignment for every era. Built double track 1848 and later singled under the B&M on the same alignment (en.wikipedia); no relocation is documented. ERA CAVEAT: from 8 Oct to 23 Dec 1838 the line ended at a temporary station south of the Nashua River, short of the drawn Nashua end; not split out (weeks only).",
+        "segments": [
+          {
+            "start": 1880,
+            "end": 1887,
+            "headway_min": 90,
+            "note": "Boston and Lowell era: the B&L leased the Nashua and Lowell (with the Stony Brook and Wilton lines it worked) for 100 years in Nov 1880, and was itself leased to the Boston and Maine from 1 April 1887. From 1884 the B&L also leased the Northern RR, so B&L trains ran through Lowell - Nashua - Concord - north; the Concord RR stayed independent. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: lease dates from Springfield Weekly Republican 5 Nov / 26 Nov 1880 (primary) and en.wikipedia \"Boston and Lowell Railroad\" (\"April 1, 1887\"); that the B&L took over this line with the N&L lease is from the research report (blocks [4], [8], [11], [14]).",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.314422,
+            42.635279
+          ],
+          [
+            -71.316084,
+            42.638647
+          ],
+          [
+            -71.316731,
+            42.639342
+          ],
+          [
+            -71.317657,
+            42.6399
+          ],
+          [
+            -71.319025,
+            42.640238
+          ],
+          [
+            -71.328202,
+            42.640951
+          ],
+          [
+            -71.330578,
+            42.640867
+          ],
+          [
+            -71.349349,
+            42.63792
+          ],
+          [
+            -71.360037,
+            42.63701
+          ],
+          [
+            -71.367887,
+            42.636454
+          ],
+          [
+            -71.369228,
+            42.636461
+          ],
+          [
+            -71.370881,
+            42.636713
+          ],
+          [
+            -71.373637,
+            42.637638
+          ],
+          [
+            -71.374758,
+            42.637782
+          ],
+          [
+            -71.376072,
+            42.63758
+          ],
+          [
+            -71.376546,
+            42.638227
+          ],
+          [
+            -71.376774,
+            42.638951
+          ],
+          [
+            -71.377352,
+            42.639473
+          ],
+          [
+            -71.379176,
+            42.640335
+          ],
+          [
+            -71.393855,
+            42.646221
+          ],
+          [
+            -71.395488,
+            42.647241
+          ],
+          [
+            -71.399377,
+            42.650453
+          ],
+          [
+            -71.400147,
+            42.651421
+          ],
+          [
+            -71.40061,
+            42.652376
+          ],
+          [
+            -71.401291,
+            42.656421
+          ],
+          [
+            -71.402154,
+            42.659102
+          ],
+          [
+            -71.403271,
+            42.661132
+          ],
+          [
+            -71.404763,
+            42.662965
+          ],
+          [
+            -71.406164,
+            42.664242
+          ],
+          [
+            -71.407922,
+            42.665504
+          ],
+          [
+            -71.415524,
+            42.669493
+          ],
+          [
+            -71.419684,
+            42.671109
+          ],
+          [
+            -71.420795,
+            42.67184
+          ],
+          [
+            -71.421586,
+            42.672726
+          ],
+          [
+            -71.421935,
+            42.673374
+          ],
+          [
+            -71.422256,
+            42.674557
+          ],
+          [
+            -71.422386,
+            42.676896
+          ],
+          [
+            -71.422252,
+            42.677797
+          ],
+          [
+            -71.421697,
+            42.67948
+          ],
+          [
+            -71.420156,
+            42.681962
+          ],
+          [
+            -71.419262,
+            42.684125
+          ],
+          [
+            -71.41899,
+            42.685367
+          ],
+          [
+            -71.418951,
+            42.686902
+          ],
+          [
+            -71.419263,
+            42.688356
+          ],
+          [
+            -71.419565,
+            42.689044
+          ],
+          [
+            -71.420599,
+            42.690612
+          ],
+          [
+            -71.421843,
+            42.691798
+          ],
+          [
+            -71.423225,
+            42.692712
+          ],
+          [
+            -71.42453,
+            42.693287
+          ],
+          [
+            -71.427783,
+            42.694353
+          ],
+          [
+            -71.429019,
+            42.694983
+          ],
+          [
+            -71.430401,
+            42.695917
+          ],
+          [
+            -71.431746,
+            42.697296
+          ],
+          [
+            -71.433461,
+            42.699872
+          ],
+          [
+            -71.437062,
+            42.706505
+          ],
+          [
+            -71.437667,
+            42.708239
+          ],
+          [
+            -71.437945,
+            42.709676
+          ],
+          [
+            -71.439299,
+            42.723706
+          ],
+          [
+            -71.439264,
+            42.724583
+          ],
+          [
+            -71.438966,
+            42.725792
+          ],
+          [
+            -71.437821,
+            42.728112
+          ],
+          [
+            -71.437465,
+            42.729235
+          ],
+          [
+            -71.437383,
+            42.731213
+          ],
+          [
+            -71.43772,
+            42.732627
+          ],
+          [
+            -71.440169,
+            42.739201
+          ],
+          [
+            -71.44171,
+            42.746516
+          ],
+          [
+            -71.441878,
+            42.748413
+          ],
+          [
+            -71.441709,
+            42.75238
+          ],
+          [
+            -71.441779,
+            42.753931
+          ],
+          [
+            -71.442494,
+            42.755916
+          ],
+          [
+            -71.443736,
+            42.757549
+          ],
+          [
+            -71.444768,
+            42.758485
+          ],
+          [
+            -71.445968,
+            42.759324
+          ],
+          [
+            -71.448551,
+            42.760711
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Maine Railroad",
+        "line": "Boston and Maine: Lowell \u2013 Nashua",
+        "id": "nashua-lowell-main-bm",
+        "color": "#1D3557",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 50,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap (maps.mail.ru Overpass mirror), waypoints Lowell (Gallagher Terminal, the MBTA Lowell Line's drawn end), North Chelmsford, Tyngsborough, Nashua junction; 13.6 mi drawn, 100% on OSM rail tagged old_railway_operator=B&M (CSX Middlesex Subdivision to North Chelmsford, then Nashua Subdivision), no straight-line legs, every waypoint within 0.1 km of the line. Documented: 13.4 mi Lowell (25.6) - Nashua Union Station (39.0) from J. Fowler, Southern New England Railroads table 18; 14.5 mi end to end (Upham 1850, N&L to its own Nashua limits); \"15 miles\" (Pathfinder 1850). Traced length is 1.3% over Fowler's figure. Ends: Lowell is drawn from the B&L's Lowell terminal area (Gallagher Terminal, beside the site of the old Middlesex Street / Lowell Union Station, closed 1959) - the exact 1838 N&L-B&L junction point is not pinned. Nashua is drawn to the junction of the Hillsboro Branch (former Wilton RR) with the main line, taken as the Nashua Union Station site (OSM node at 42.7607 N, 71.4486 W); the N&L's own track on to Nashua City station is drawn with the Wilton features. Alignment era: drawn on the surviving (CSX/Pan Am freight) alignment for every era. Built double track 1848 and later singled under the B&M on the same alignment (en.wikipedia); no relocation is documented. ERA CAVEAT: from 8 Oct to 23 Dec 1838 the line ended at a temporary station south of the Nashua River, short of the drawn Nashua end; not split out (weeks only).",
+        "segments": [
+          {
+            "start": 1887,
+            "end": 1967,
+            "headway_min": 90,
+            "note": "Boston and Maine, as lessee of the Boston and Lowell from 1 April 1887 (bought the N&L outright 13 Oct 1944 - paper only). Carried the Boston - Concord - White Mountains / Montreal trains. End 1967 is year-level and secondary (en.wikipedia citing Karr: \"Passenger service ended in 1967\"; last Boston - Concord round trips 1967 per the B&M research report). The primary floor is the Feb 1952 Official Guide (B&M Tables 1 and 2, Boston - Montreal, legible times at Lowell and Nashua Un. Sta.). Freight continues (Guilford/Pan Am, CSX from 2022) - context only, not drawn. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: start from en.wikipedia \"Boston and Lowell Railroad\" (\"April 1, 1887\"); end from en.wikipedia (Karr 2017), year-level; service confirmed in the Feb 1952 Official Guide Tables 1-2 (Official Guide of the Railways, Feb 1952 issue (schedules eff. 30 Sep 1951), cached at research/sources/official_guide_1952.txt).",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad"
+            ]
+          },
+          {
+            "start": 1980,
+            "end": 1981,
+            "headway_min": 480,
+            "note": "MBTA-sponsored trial commuter service Boston - Lowell - Nashua - Manchester - Concord, 1980 until suspended in Feb 1981 for low ridership (J. Fowler, New Hampshire Railroads table 10, \"s: trial commuter service 1980>1981\"; en.wikipedia). OPERATOR INFERRED: the Boston and Maine was the MBTA's contract operator at the time, but neither source names who ran the trains. Commuter rather than intercity service; drawn in this feature because the track and the (inferred) operator are the same. Headway is a rough estimate for a few daily trips; no timetable counted.",
+            "sources": [
+              "Segment-level: dates from J. Fowler, New Hampshire Railroads table 10 and en.wikipedia; operator NOT sourced (inferred).",
+              "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.314422,
+            42.635279
+          ],
+          [
+            -71.316084,
+            42.638647
+          ],
+          [
+            -71.316731,
+            42.639342
+          ],
+          [
+            -71.317657,
+            42.6399
+          ],
+          [
+            -71.319025,
+            42.640238
+          ],
+          [
+            -71.328202,
+            42.640951
+          ],
+          [
+            -71.330578,
+            42.640867
+          ],
+          [
+            -71.349349,
+            42.63792
+          ],
+          [
+            -71.360037,
+            42.63701
+          ],
+          [
+            -71.367887,
+            42.636454
+          ],
+          [
+            -71.369228,
+            42.636461
+          ],
+          [
+            -71.370881,
+            42.636713
+          ],
+          [
+            -71.373637,
+            42.637638
+          ],
+          [
+            -71.374758,
+            42.637782
+          ],
+          [
+            -71.376072,
+            42.63758
+          ],
+          [
+            -71.376546,
+            42.638227
+          ],
+          [
+            -71.376774,
+            42.638951
+          ],
+          [
+            -71.377352,
+            42.639473
+          ],
+          [
+            -71.379176,
+            42.640335
+          ],
+          [
+            -71.393855,
+            42.646221
+          ],
+          [
+            -71.395488,
+            42.647241
+          ],
+          [
+            -71.399377,
+            42.650453
+          ],
+          [
+            -71.400147,
+            42.651421
+          ],
+          [
+            -71.40061,
+            42.652376
+          ],
+          [
+            -71.401291,
+            42.656421
+          ],
+          [
+            -71.402154,
+            42.659102
+          ],
+          [
+            -71.403271,
+            42.661132
+          ],
+          [
+            -71.404763,
+            42.662965
+          ],
+          [
+            -71.406164,
+            42.664242
+          ],
+          [
+            -71.407922,
+            42.665504
+          ],
+          [
+            -71.415524,
+            42.669493
+          ],
+          [
+            -71.419684,
+            42.671109
+          ],
+          [
+            -71.420795,
+            42.67184
+          ],
+          [
+            -71.421586,
+            42.672726
+          ],
+          [
+            -71.421935,
+            42.673374
+          ],
+          [
+            -71.422256,
+            42.674557
+          ],
+          [
+            -71.422386,
+            42.676896
+          ],
+          [
+            -71.422252,
+            42.677797
+          ],
+          [
+            -71.421697,
+            42.67948
+          ],
+          [
+            -71.420156,
+            42.681962
+          ],
+          [
+            -71.419262,
+            42.684125
+          ],
+          [
+            -71.41899,
+            42.685367
+          ],
+          [
+            -71.418951,
+            42.686902
+          ],
+          [
+            -71.419263,
+            42.688356
+          ],
+          [
+            -71.419565,
+            42.689044
+          ],
+          [
+            -71.420599,
+            42.690612
+          ],
+          [
+            -71.421843,
+            42.691798
+          ],
+          [
+            -71.423225,
+            42.692712
+          ],
+          [
+            -71.42453,
+            42.693287
+          ],
+          [
+            -71.427783,
+            42.694353
+          ],
+          [
+            -71.429019,
+            42.694983
+          ],
+          [
+            -71.430401,
+            42.695917
+          ],
+          [
+            -71.431746,
+            42.697296
+          ],
+          [
+            -71.433461,
+            42.699872
+          ],
+          [
+            -71.437062,
+            42.706505
+          ],
+          [
+            -71.437667,
+            42.708239
+          ],
+          [
+            -71.437945,
+            42.709676
+          ],
+          [
+            -71.439299,
+            42.723706
+          ],
+          [
+            -71.439264,
+            42.724583
+          ],
+          [
+            -71.438966,
+            42.725792
+          ],
+          [
+            -71.437821,
+            42.728112
+          ],
+          [
+            -71.437465,
+            42.729235
+          ],
+          [
+            -71.437383,
+            42.731213
+          ],
+          [
+            -71.43772,
+            42.732627
+          ],
+          [
+            -71.440169,
+            42.739201
+          ],
+          [
+            -71.44171,
+            42.746516
+          ],
+          [
+            -71.441878,
+            42.748413
+          ],
+          [
+            -71.441709,
+            42.75238
+          ],
+          [
+            -71.441779,
+            42.753931
+          ],
+          [
+            -71.442494,
+            42.755916
+          ],
+          [
+            -71.443736,
+            42.757549
+          ],
+          [
+            -71.444768,
+            42.758485
+          ],
+          [
+            -71.445968,
+            42.759324
+          ],
+          [
+            -71.448551,
+            42.760711
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Nashua and Lowell Railroad",
+        "line": "Nashua and Lowell: Stony Brook Railroad (North Chelmsford \u2013 Ayer)",
+        "id": "stony-brook-nl",
+        "color": "#821458",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 30,
+        "speed_source": "estimated: early steam-era line, no timetable timing found; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: North Chelmsford junction (west leg of the wye with the Nashua line) - West Chelmsford - Graniteville - Forge Village - Ayer (OSM Ayer station); 13.0 mi drawn, 12.7 mi on OSM rail tagged old_railway_operator=B&M (CSX Middlesex Subdivision / Pan Am Freight Main Line) and 0.3 mi on untagged OSM rail at the Ayer end, no straight-line legs, all waypoints within 0.4 km. Documented: 13.2 mi North Chelmsford (3.0) - Ayer (16.2), J. Fowler, Southern New England Railroads table 25; \"13 1/2 miles ... to Groton\" (Pathfinder 1850). Traced length is 2% short of Fowler. Trains ran on from Lowell over the first 3.0 mi of the N&L main line, which is drawn in the main-line features, not repeated here. Alignment era: the surviving freight alignment for every era; no relocation is documented, but the 1848 grade has not been checked against it.",
+        "segments": [
+          {
+            "start": 1848,
+            "end": 1857,
+            "headway_min": 360,
+            "note": "Stony Brook Railroad, worked by the Nashua and Lowell under contract/lease from its opening in 1848 (en.wikipedia \"Stony Brook Railroad\" citing Karr 2017 and Wilder 1979; en.wikipedia \"Boston and Lowell Railroad\": \"The N&L leased the Stony Brook in 1848\"); the Stony Brook company never ran its own trains. Opening month not established (a July 1848 date is often repeated but unsourced); first primary evidence is Pathfinder 1850 and Fowler's \"x\" (1850) marks at Westford and Forge Village. A Lowell - Groton Junction (Ayer) link to the Fitchburg RR; trains ran through from Lowell over the N&L main line; headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: opening year from en.wikipedia \"Stony Brook Railroad\" (Karr 2017) and \"Boston and Lowell Railroad\"; first primary Pathfinder 1850; J. Fowler Southern New England table 25 \"x\" marks.",
+              "https://en.wikipedia.org/wiki/Stony_Brook_Railroad",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://libguides.uml.edu/early_lowell/Lowell_trains_1850",
+              "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+            ]
+          },
+          {
+            "start": 1857,
+            "end": 1878,
+            "headway_min": 300,
+            "note": "B&L / N&L POOL ERA (1 Feb 1857 - Dec 1878). On Monday 1 Feb 1857 the Boston and Lowell and the Nashua and Lowell put \"the united business\" under \"one management\", with George Stark, the N&L's own superintendent, as Manager for both and the B&L's John B. Winslow as operating superintendent (Springfield Weekly Republican 7 Feb 1857); crews worked both roads (Dollar Weekly Mirror 29 Aug 1857). NOT a lease: each corporation kept its line and revenues were pooled about 69% B&L / 31% N&L. Kept in the N&L feature and colour (research report ownership_split option (a)): the combined operation was headed by the N&L's officer; a B&L-coloured split for these years would also be defensible. Conflicts recorded: en.wikipedia \"Boston and Lowell Railroad\" dates the joint operation \"from 1860\" (contradicted by the 1857 primary); en.wikipedia \"Stony Brook Railroad\" puts the decision to end it in 1877 (the separation itself was Dec 1878). Fowler marks Westford and Forge Village \"y\" (Pathfinder 1876), a snapshot inside this era. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: pool start from Springfield Weekly Republican 7 Feb 1857 p.8 (primary); joint crews from Dollar Weekly Mirror 29 Aug 1857; end from Springfield Weekly Republican 6 Dec 1878 p.8 (\"the recent separation\") and en.wikipedia (Boston Evening Transcript 1878); 69/31 split from en.wikipedia; that this line was worked by the pool is inferred from the N&L operating it on both sides of the pool (research report blocks [2], [7], [10], [13]).",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn84023818/1857-08-29/ed-1/?sp=1",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad"
+            ]
+          },
+          {
+            "start": 1878,
+            "end": 1880,
+            "headway_min": 300,
+            "note": "Second N&L-alone era: the two companies resumed independent operation in early December 1878 (Springfield Weekly Republican 6 Dec 1878; en.wikipedia citing the Boston Evening Transcript) until the Nashua and Lowell was leased to the Boston and Lowell for 100 years at $60,000 a year (agreed by 5 Nov 1880; B&L stockholders ratified by 26 Nov 1880). The day the B&L took possession was not found; the split year is 1880 either way. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: separation from Springfield Weekly Republican 6 Dec 1878 p.8; lease from Springfield Weekly Republican 5 Nov 1880 p.8 and 26 Nov 1880 p.8 (primary); Nashua City Station gives the N&L \"Rail Operations 1838-1880\".",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.377363,
+            42.636902
+          ],
+          [
+            -71.378349,
+            42.636174
+          ],
+          [
+            -71.382578,
+            42.632291
+          ],
+          [
+            -71.396582,
+            42.622529
+          ],
+          [
+            -71.400114,
+            42.620569
+          ],
+          [
+            -71.40085,
+            42.619763
+          ],
+          [
+            -71.40188,
+            42.617961
+          ],
+          [
+            -71.40259,
+            42.617027
+          ],
+          [
+            -71.403458,
+            42.616262
+          ],
+          [
+            -71.406387,
+            42.614133
+          ],
+          [
+            -71.40975,
+            42.610948
+          ],
+          [
+            -71.420185,
+            42.603207
+          ],
+          [
+            -71.422682,
+            42.60164
+          ],
+          [
+            -71.42944,
+            42.598473
+          ],
+          [
+            -71.431903,
+            42.597576
+          ],
+          [
+            -71.432864,
+            42.597412
+          ],
+          [
+            -71.437361,
+            42.597173
+          ],
+          [
+            -71.448724,
+            42.595264
+          ],
+          [
+            -71.459221,
+            42.592284
+          ],
+          [
+            -71.460285,
+            42.592152
+          ],
+          [
+            -71.461452,
+            42.59218
+          ],
+          [
+            -71.46614,
+            42.592951
+          ],
+          [
+            -71.467268,
+            42.593025
+          ],
+          [
+            -71.469058,
+            42.59286
+          ],
+          [
+            -71.470472,
+            42.59244
+          ],
+          [
+            -71.471968,
+            42.591584
+          ],
+          [
+            -71.48384,
+            42.581982
+          ],
+          [
+            -71.484954,
+            42.581235
+          ],
+          [
+            -71.487051,
+            42.580447
+          ],
+          [
+            -71.490978,
+            42.579219
+          ],
+          [
+            -71.496103,
+            42.578361
+          ],
+          [
+            -71.496934,
+            42.578067
+          ],
+          [
+            -71.497973,
+            42.57748
+          ],
+          [
+            -71.498749,
+            42.576756
+          ],
+          [
+            -71.499242,
+            42.576001
+          ],
+          [
+            -71.500893,
+            42.571692
+          ],
+          [
+            -71.501455,
+            42.570661
+          ],
+          [
+            -71.502727,
+            42.569404
+          ],
+          [
+            -71.504443,
+            42.56848
+          ],
+          [
+            -71.506419,
+            42.567995
+          ],
+          [
+            -71.514421,
+            42.56705
+          ],
+          [
+            -71.515955,
+            42.566749
+          ],
+          [
+            -71.537971,
+            42.559084
+          ],
+          [
+            -71.540608,
+            42.558422
+          ],
+          [
+            -71.544535,
+            42.557753
+          ],
+          [
+            -71.56904,
+            42.555553
+          ],
+          [
+            -71.570914,
+            42.555523
+          ],
+          [
+            -71.573218,
+            42.555823
+          ],
+          [
+            -71.584609,
+            42.558756
+          ],
+          [
+            -71.586406,
+            42.558995
+          ],
+          [
+            -71.58915,
+            42.559048
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Lowell Railroad",
+        "line": "Boston and Lowell: Stony Brook Branch",
+        "id": "stony-brook-bl",
+        "color": "#429A28",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 35,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: North Chelmsford junction (west leg of the wye with the Nashua line) - West Chelmsford - Graniteville - Forge Village - Ayer (OSM Ayer station); 13.0 mi drawn, 12.7 mi on OSM rail tagged old_railway_operator=B&M (CSX Middlesex Subdivision / Pan Am Freight Main Line) and 0.3 mi on untagged OSM rail at the Ayer end, no straight-line legs, all waypoints within 0.4 km. Documented: 13.2 mi North Chelmsford (3.0) - Ayer (16.2), J. Fowler, Southern New England Railroads table 25; \"13 1/2 miles ... to Groton\" (Pathfinder 1850). Traced length is 2% short of Fowler. Trains ran on from Lowell over the first 3.0 mi of the N&L main line, which is drawn in the main-line features, not repeated here. Alignment era: the surviving freight alignment for every era; no relocation is documented, but the 1848 grade has not been checked against it.",
+        "segments": [
+          {
+            "start": 1880,
+            "end": 1887,
+            "headway_min": 240,
+            "note": "Boston and Lowell era: the B&L leased the Nashua and Lowell (with the Stony Brook line it worked) for 100 years in Nov 1880, and was itself leased to the Boston and Maine from 1 April 1887. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: lease dates from Springfield Weekly Republican 5 Nov / 26 Nov 1880 (primary) and en.wikipedia \"Boston and Lowell Railroad\" (\"April 1, 1887\"); that the B&L took over this line with the N&L lease is from the research report (blocks [4], [8], [11], [14]).",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://en.wikipedia.org/wiki/Stony_Brook_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.377363,
+            42.636902
+          ],
+          [
+            -71.378349,
+            42.636174
+          ],
+          [
+            -71.382578,
+            42.632291
+          ],
+          [
+            -71.396582,
+            42.622529
+          ],
+          [
+            -71.400114,
+            42.620569
+          ],
+          [
+            -71.40085,
+            42.619763
+          ],
+          [
+            -71.40188,
+            42.617961
+          ],
+          [
+            -71.40259,
+            42.617027
+          ],
+          [
+            -71.403458,
+            42.616262
+          ],
+          [
+            -71.406387,
+            42.614133
+          ],
+          [
+            -71.40975,
+            42.610948
+          ],
+          [
+            -71.420185,
+            42.603207
+          ],
+          [
+            -71.422682,
+            42.60164
+          ],
+          [
+            -71.42944,
+            42.598473
+          ],
+          [
+            -71.431903,
+            42.597576
+          ],
+          [
+            -71.432864,
+            42.597412
+          ],
+          [
+            -71.437361,
+            42.597173
+          ],
+          [
+            -71.448724,
+            42.595264
+          ],
+          [
+            -71.459221,
+            42.592284
+          ],
+          [
+            -71.460285,
+            42.592152
+          ],
+          [
+            -71.461452,
+            42.59218
+          ],
+          [
+            -71.46614,
+            42.592951
+          ],
+          [
+            -71.467268,
+            42.593025
+          ],
+          [
+            -71.469058,
+            42.59286
+          ],
+          [
+            -71.470472,
+            42.59244
+          ],
+          [
+            -71.471968,
+            42.591584
+          ],
+          [
+            -71.48384,
+            42.581982
+          ],
+          [
+            -71.484954,
+            42.581235
+          ],
+          [
+            -71.487051,
+            42.580447
+          ],
+          [
+            -71.490978,
+            42.579219
+          ],
+          [
+            -71.496103,
+            42.578361
+          ],
+          [
+            -71.496934,
+            42.578067
+          ],
+          [
+            -71.497973,
+            42.57748
+          ],
+          [
+            -71.498749,
+            42.576756
+          ],
+          [
+            -71.499242,
+            42.576001
+          ],
+          [
+            -71.500893,
+            42.571692
+          ],
+          [
+            -71.501455,
+            42.570661
+          ],
+          [
+            -71.502727,
+            42.569404
+          ],
+          [
+            -71.504443,
+            42.56848
+          ],
+          [
+            -71.506419,
+            42.567995
+          ],
+          [
+            -71.514421,
+            42.56705
+          ],
+          [
+            -71.515955,
+            42.566749
+          ],
+          [
+            -71.537971,
+            42.559084
+          ],
+          [
+            -71.540608,
+            42.558422
+          ],
+          [
+            -71.544535,
+            42.557753
+          ],
+          [
+            -71.56904,
+            42.555553
+          ],
+          [
+            -71.570914,
+            42.555523
+          ],
+          [
+            -71.573218,
+            42.555823
+          ],
+          [
+            -71.584609,
+            42.558756
+          ],
+          [
+            -71.586406,
+            42.558995
+          ],
+          [
+            -71.58915,
+            42.559048
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Maine Railroad",
+        "line": "Boston and Maine: Stony Brook Branch",
+        "id": "stony-brook-bm",
+        "color": "#1D3557",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 40,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: North Chelmsford junction (west leg of the wye with the Nashua line) - West Chelmsford - Graniteville - Forge Village - Ayer (OSM Ayer station); 13.0 mi drawn, 12.7 mi on OSM rail tagged old_railway_operator=B&M (CSX Middlesex Subdivision / Pan Am Freight Main Line) and 0.3 mi on untagged OSM rail at the Ayer end, no straight-line legs, all waypoints within 0.4 km. Documented: 13.2 mi North Chelmsford (3.0) - Ayer (16.2), J. Fowler, Southern New England Railroads table 25; \"13 1/2 miles ... to Groton\" (Pathfinder 1850). Traced length is 2% short of Fowler. Trains ran on from Lowell over the first 3.0 mi of the N&L main line, which is drawn in the main-line features, not repeated here. Alignment era: the surviving freight alignment for every era; no relocation is documented, but the 1848 grade has not been checked against it.",
+        "segments": [
+          {
+            "start": 1887,
+            "end": 1961,
+            "headway_min": 240,
+            "note": "Boston and Maine Stony Brook Branch, Lowell - Ayer locals and, in the B&M era, Worcester - Lowell trains via Ayer. End 1961 is year-level and secondary (en.wikipedia \"Stony Brook Railroad\", citing Karr 2017: \"Passenger service last ran on the line in 1961\"). Primary floor: the Feb 1952 Official Guide \"Ayer-Lowell - Stony Brook Branch - Rail and Motor Coach service\" prints two numbered non-bus columns (81, 83) and a footnote \"Lve. Ayer 7 .. arr. Lowell (R.R. Sta.) 8 40, 10 30 a.m.\" among the bus columns. 1911 Buffalo Bill circus-train wreck on the line. Freight continues (Pan Am, CSX) - context only. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: start from en.wikipedia \"Boston and Lowell Railroad\" (B&M lease 1887); end from en.wikipedia \"Stony Brook Railroad\" (Karr 2017), year-level; rail service confirmed in the Feb 1952 Official Guide Stony Brook Branch table (Official Guide of the Railways, Feb 1952 issue (schedules eff. 30 Sep 1951), cached at research/sources/official_guide_1952.txt).",
+              "https://en.wikipedia.org/wiki/Stony_Brook_Railroad",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.377363,
+            42.636902
+          ],
+          [
+            -71.378349,
+            42.636174
+          ],
+          [
+            -71.382578,
+            42.632291
+          ],
+          [
+            -71.396582,
+            42.622529
+          ],
+          [
+            -71.400114,
+            42.620569
+          ],
+          [
+            -71.40085,
+            42.619763
+          ],
+          [
+            -71.40188,
+            42.617961
+          ],
+          [
+            -71.40259,
+            42.617027
+          ],
+          [
+            -71.403458,
+            42.616262
+          ],
+          [
+            -71.406387,
+            42.614133
+          ],
+          [
+            -71.40975,
+            42.610948
+          ],
+          [
+            -71.420185,
+            42.603207
+          ],
+          [
+            -71.422682,
+            42.60164
+          ],
+          [
+            -71.42944,
+            42.598473
+          ],
+          [
+            -71.431903,
+            42.597576
+          ],
+          [
+            -71.432864,
+            42.597412
+          ],
+          [
+            -71.437361,
+            42.597173
+          ],
+          [
+            -71.448724,
+            42.595264
+          ],
+          [
+            -71.459221,
+            42.592284
+          ],
+          [
+            -71.460285,
+            42.592152
+          ],
+          [
+            -71.461452,
+            42.59218
+          ],
+          [
+            -71.46614,
+            42.592951
+          ],
+          [
+            -71.467268,
+            42.593025
+          ],
+          [
+            -71.469058,
+            42.59286
+          ],
+          [
+            -71.470472,
+            42.59244
+          ],
+          [
+            -71.471968,
+            42.591584
+          ],
+          [
+            -71.48384,
+            42.581982
+          ],
+          [
+            -71.484954,
+            42.581235
+          ],
+          [
+            -71.487051,
+            42.580447
+          ],
+          [
+            -71.490978,
+            42.579219
+          ],
+          [
+            -71.496103,
+            42.578361
+          ],
+          [
+            -71.496934,
+            42.578067
+          ],
+          [
+            -71.497973,
+            42.57748
+          ],
+          [
+            -71.498749,
+            42.576756
+          ],
+          [
+            -71.499242,
+            42.576001
+          ],
+          [
+            -71.500893,
+            42.571692
+          ],
+          [
+            -71.501455,
+            42.570661
+          ],
+          [
+            -71.502727,
+            42.569404
+          ],
+          [
+            -71.504443,
+            42.56848
+          ],
+          [
+            -71.506419,
+            42.567995
+          ],
+          [
+            -71.514421,
+            42.56705
+          ],
+          [
+            -71.515955,
+            42.566749
+          ],
+          [
+            -71.537971,
+            42.559084
+          ],
+          [
+            -71.540608,
+            42.558422
+          ],
+          [
+            -71.544535,
+            42.557753
+          ],
+          [
+            -71.56904,
+            42.555553
+          ],
+          [
+            -71.570914,
+            42.555523
+          ],
+          [
+            -71.573218,
+            42.555823
+          ],
+          [
+            -71.584609,
+            42.558756
+          ],
+          [
+            -71.586406,
+            42.558995
+          ],
+          [
+            -71.58915,
+            42.559048
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Nashua and Lowell Railroad",
+        "line": "Nashua and Lowell: Wilton Railroad (Nashua \u2013 Danforth's Corner)",
+        "id": "wilton-rr-nl-nashua-danforths-corner",
+        "color": "#821458",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 30,
+        "speed_source": "estimated: early steam-era line, no timetable timing found; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Nashua - Danforth's Corner (Ponemah): a cut of the Nashua - Wilton trace (see the Boston and Maine Nashua - Wilton feature for method). 9.1 mi drawn vs 9.1 mi (39.0 -> 48.1) documented (J. Fowler, New Hampshire Railroads table 14 mileposts); 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs. Alignment era: the surviving freight alignment; no relocation documented.",
+        "segments": [
+          {
+            "start": 1848,
+            "end": 1857,
+            "headway_min": 360,
+            "note": "First section of the Wilton Railroad, Nashua - Danforth's Corner (later Amherst, then Ponemah station), opened 1848 (en.wikipedia \"Boston and Lowell Railroad\": \"opened a line from Nashua west to Danforth's Corner in 1848\"; The Clio: \"main line was completed in 1848\"). 1848 is secondary; the first PRIMARY is the N&L's \"Nashua and Lowell, and Wilton Railroads Passenger Tariff\" effective 1 Mar 1850 listing Nashville - South Merrimack - Danforth's Corner (Nashua City Station); a strict reading would start this segment in 1850. Pathfinder 1850: \"extending 9 miles, to a point between Amherst and Milford\". Nashua and Lowell operated the Wilton RR from completion (en.wikipedia \"Boston and Lowell Railroad\"; the Wilton RR had \"Rail Operations: None\" per Nashua City Station; the N&L's 1850 tariff covers \"Nashua and Lowell, and Wilton Railroads\"). Lease vs operating contract not established; headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: opening from en.wikipedia \"Boston and Lowell Railroad\" and The Clio (secondary); first primary the 1 Mar 1850 N&L tariff (Nashua City Station) and Pathfinder 1850; operator from Nashua City Station and en.wikipedia.",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://theclio.com/entry/132898",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/routes/wilton-railroad/",
+              "https://nashuacitystation.org/history/wilton-railroad-company/",
+              "https://libguides.uml.edu/early_lowell/Lowell_trains_1850",
+              "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+            ]
+          },
+          {
+            "start": 1857,
+            "end": 1878,
+            "headway_min": 300,
+            "note": "B&L / N&L POOL ERA (1 Feb 1857 - Dec 1878). On Monday 1 Feb 1857 the Boston and Lowell and the Nashua and Lowell put \"the united business\" under \"one management\", with George Stark, the N&L's own superintendent, as Manager for both and the B&L's John B. Winslow as operating superintendent (Springfield Weekly Republican 7 Feb 1857); crews worked both roads (Dollar Weekly Mirror 29 Aug 1857). NOT a lease: each corporation kept its line and revenues were pooled about 69% B&L / 31% N&L. Kept in the N&L feature and colour (research report ownership_split option (a)): the combined operation was headed by the N&L's officer; a B&L-coloured split for these years would also be defensible. Conflicts recorded: en.wikipedia \"Boston and Lowell Railroad\" dates the joint operation \"from 1860\" (contradicted by the 1857 primary); en.wikipedia \"Stony Brook Railroad\" puts the decision to end it in 1877 (the separation itself was Dec 1878). J. Fowler gives no 1876 (\"y\") marks on this line, so there is no primary snapshot inside this era. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: pool start from Springfield Weekly Republican 7 Feb 1857 p.8 (primary); joint crews from Dollar Weekly Mirror 29 Aug 1857; end from Springfield Weekly Republican 6 Dec 1878 p.8 (\"the recent separation\") and en.wikipedia (Boston Evening Transcript 1878); 69/31 split from en.wikipedia; that this line was worked by the pool is inferred from the N&L operating it on both sides of the pool (research report blocks [2], [7], [10], [13]).",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn84023818/1857-08-29/ed-1/?sp=1",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad"
+            ]
+          },
+          {
+            "start": 1878,
+            "end": 1880,
+            "headway_min": 300,
+            "note": "Second N&L-alone era: the two companies resumed independent operation in early December 1878 (Springfield Weekly Republican 6 Dec 1878; en.wikipedia citing the Boston Evening Transcript) until the Nashua and Lowell was leased to the Boston and Lowell for 100 years at $60,000 a year (agreed by 5 Nov 1880; B&L stockholders ratified by 26 Nov 1880). The day the B&L took possession was not found; the split year is 1880 either way. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: separation from Springfield Weekly Republican 6 Dec 1878 p.8; lease from Springfield Weekly Republican 5 Nov 1880 p.8 and 26 Nov 1880 p.8 (primary); Nashua City Station gives the N&L \"Rail Operations 1838-1880\".",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.448551,
+            42.760711
+          ],
+          [
+            -71.450175,
+            42.761268
+          ],
+          [
+            -71.452254,
+            42.761568
+          ],
+          [
+            -71.453306,
+            42.762049
+          ],
+          [
+            -71.457919,
+            42.762254
+          ],
+          [
+            -71.458697,
+            42.762576
+          ],
+          [
+            -71.46075,
+            42.763817
+          ],
+          [
+            -71.462955,
+            42.764255
+          ],
+          [
+            -71.464631,
+            42.764351
+          ],
+          [
+            -71.465547,
+            42.764239
+          ],
+          [
+            -71.466885,
+            42.763857
+          ],
+          [
+            -71.46925,
+            42.762922
+          ],
+          [
+            -71.470122,
+            42.762723
+          ],
+          [
+            -71.471293,
+            42.762721
+          ],
+          [
+            -71.472362,
+            42.76302
+          ],
+          [
+            -71.473543,
+            42.76374
+          ],
+          [
+            -71.475485,
+            42.766092
+          ],
+          [
+            -71.476998,
+            42.76717
+          ],
+          [
+            -71.477948,
+            42.767532
+          ],
+          [
+            -71.479088,
+            42.767747
+          ],
+          [
+            -71.482161,
+            42.767854
+          ],
+          [
+            -71.483444,
+            42.768005
+          ],
+          [
+            -71.485243,
+            42.768602
+          ],
+          [
+            -71.498833,
+            42.776648
+          ],
+          [
+            -71.543585,
+            42.798356
+          ],
+          [
+            -71.546862,
+            42.799561
+          ],
+          [
+            -71.590048,
+            42.811358
+          ],
+          [
+            -71.593095,
+            42.812438
+          ],
+          [
+            -71.601419,
+            42.816351
+          ],
+          [
+            -71.60294,
+            42.8172
+          ],
+          [
+            -71.603788,
+            42.817875
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Nashua and Lowell Railroad",
+        "line": "Nashua and Lowell: Wilton Railroad (Danforth's Corner \u2013 Milford)",
+        "id": "wilton-rr-nl-danforths-corner-milford",
+        "color": "#821458",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 30,
+        "speed_source": "estimated: early steam-era line, no timetable timing found; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Danforth's Corner (Ponemah) - Milford: a cut of the Nashua - Wilton trace (see the Boston and Maine Nashua - Wilton feature for method). 2.7 mi drawn vs 2.7 mi (48.1 -> 50.8) documented (J. Fowler, New Hampshire Railroads table 14 mileposts); 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs. Alignment era: the surviving freight alignment; no relocation documented.",
+        "segments": [
+          {
+            "start": 1850,
+            "end": 1857,
+            "headway_min": 360,
+            "note": "Second section of the Wilton Railroad, Danforth's Corner - Milford, reached Milford in December 1850 (The Clio, citing Livermore & Putnam 1888 and the Farmers' Cabinet; en.wikipedia \"Boston and Lowell Railroad\": \"to Milford in 1850\"). Nashua and Lowell operated the Wilton RR from completion (en.wikipedia \"Boston and Lowell Railroad\"; the Wilton RR had \"Rail Operations: None\" per Nashua City Station; the N&L's 1850 tariff covers \"Nashua and Lowell, and Wilton Railroads\"). The N&L reportedly financed the extension (search summary of Nashua City Station, not read directly); headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: opening from The Clio and en.wikipedia \"Boston and Lowell Railroad\"; operator from Nashua City Station.",
+              "https://theclio.com/entry/132898",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/wilton-railroad-company/"
+            ]
+          },
+          {
+            "start": 1857,
+            "end": 1878,
+            "headway_min": 300,
+            "note": "B&L / N&L POOL ERA (1 Feb 1857 - Dec 1878). On Monday 1 Feb 1857 the Boston and Lowell and the Nashua and Lowell put \"the united business\" under \"one management\", with George Stark, the N&L's own superintendent, as Manager for both and the B&L's John B. Winslow as operating superintendent (Springfield Weekly Republican 7 Feb 1857); crews worked both roads (Dollar Weekly Mirror 29 Aug 1857). NOT a lease: each corporation kept its line and revenues were pooled about 69% B&L / 31% N&L. Kept in the N&L feature and colour (research report ownership_split option (a)): the combined operation was headed by the N&L's officer; a B&L-coloured split for these years would also be defensible. Conflicts recorded: en.wikipedia \"Boston and Lowell Railroad\" dates the joint operation \"from 1860\" (contradicted by the 1857 primary); en.wikipedia \"Stony Brook Railroad\" puts the decision to end it in 1877 (the separation itself was Dec 1878). headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: pool start from Springfield Weekly Republican 7 Feb 1857 p.8 (primary); joint crews from Dollar Weekly Mirror 29 Aug 1857; end from Springfield Weekly Republican 6 Dec 1878 p.8 (\"the recent separation\") and en.wikipedia (Boston Evening Transcript 1878); 69/31 split from en.wikipedia; that this line was worked by the pool is inferred from the N&L operating it on both sides of the pool (research report blocks [2], [7], [10], [13]).",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn84023818/1857-08-29/ed-1/?sp=1",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad"
+            ]
+          },
+          {
+            "start": 1878,
+            "end": 1880,
+            "headway_min": 300,
+            "note": "Second N&L-alone era: the two companies resumed independent operation in early December 1878 (Springfield Weekly Republican 6 Dec 1878; en.wikipedia citing the Boston Evening Transcript) until the Nashua and Lowell was leased to the Boston and Lowell for 100 years at $60,000 a year (agreed by 5 Nov 1880; B&L stockholders ratified by 26 Nov 1880). The day the B&L took possession was not found; the split year is 1880 either way. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: separation from Springfield Weekly Republican 6 Dec 1878 p.8; lease from Springfield Weekly Republican 5 Nov 1880 p.8 and 26 Nov 1880 p.8 (primary); Nashua City Station gives the N&L \"Rail Operations 1838-1880\".",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.603788,
+            42.817875
+          ],
+          [
+            -71.604538,
+            42.818697
+          ],
+          [
+            -71.605772,
+            42.821457
+          ],
+          [
+            -71.606496,
+            42.822443
+          ],
+          [
+            -71.607881,
+            42.823435
+          ],
+          [
+            -71.610068,
+            42.824287
+          ],
+          [
+            -71.615823,
+            42.825386
+          ],
+          [
+            -71.617468,
+            42.825493
+          ],
+          [
+            -71.622608,
+            42.825483
+          ],
+          [
+            -71.624951,
+            42.825702
+          ],
+          [
+            -71.626815,
+            42.826019
+          ],
+          [
+            -71.630156,
+            42.826956
+          ],
+          [
+            -71.645197,
+            42.832374
+          ],
+          [
+            -71.647701,
+            42.832776
+          ],
+          [
+            -71.650253,
+            42.832862
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Nashua and Lowell Railroad",
+        "line": "Nashua and Lowell: Wilton Railroad (Milford \u2013 Wilton)",
+        "id": "wilton-rr-nl-milford-wilton",
+        "color": "#821458",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 30,
+        "speed_source": "estimated: early steam-era line, no timetable timing found; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Milford - Wilton: a cut of the Nashua - Wilton trace (see the Boston and Maine Nashua - Wilton feature for method). 4.6 mi drawn vs 4.4 mi (50.8 -> 55.2) documented (J. Fowler, New Hampshire Railroads table 14 mileposts); 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs. Alignment era: the surviving freight alignment; no relocation documented.",
+        "segments": [
+          {
+            "start": 1851,
+            "end": 1857,
+            "headway_min": 360,
+            "note": "Third section of the Wilton Railroad, Milford - (East) Wilton: \"first official run ... from Nashua City Station to Wilton Station ... Dec. 1, 1851\" (The Clio, citing the Farmers' Cabinet 1851); en.wikipedia \"Boston and Lowell Railroad\": \"to East Wilton in 1851\". Nashua and Lowell operated the Wilton RR from completion (en.wikipedia \"Boston and Lowell Railroad\"; the Wilton RR had \"Rail Operations: None\" per Nashua City Station; the N&L's 1850 tariff covers \"Nashua and Lowell, and Wilton Railroads\"). headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: opening from The Clio (Farmers' Cabinet 1851) and en.wikipedia \"Boston and Lowell Railroad\"; operator from Nashua City Station.",
+              "https://theclio.com/entry/132898",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/wilton-railroad-company/"
+            ]
+          },
+          {
+            "start": 1857,
+            "end": 1878,
+            "headway_min": 300,
+            "note": "B&L / N&L POOL ERA (1 Feb 1857 - Dec 1878). On Monday 1 Feb 1857 the Boston and Lowell and the Nashua and Lowell put \"the united business\" under \"one management\", with George Stark, the N&L's own superintendent, as Manager for both and the B&L's John B. Winslow as operating superintendent (Springfield Weekly Republican 7 Feb 1857); crews worked both roads (Dollar Weekly Mirror 29 Aug 1857). NOT a lease: each corporation kept its line and revenues were pooled about 69% B&L / 31% N&L. Kept in the N&L feature and colour (research report ownership_split option (a)): the combined operation was headed by the N&L's officer; a B&L-coloured split for these years would also be defensible. Conflicts recorded: en.wikipedia \"Boston and Lowell Railroad\" dates the joint operation \"from 1860\" (contradicted by the 1857 primary); en.wikipedia \"Stony Brook Railroad\" puts the decision to end it in 1877 (the separation itself was Dec 1878). headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: pool start from Springfield Weekly Republican 7 Feb 1857 p.8 (primary); joint crews from Dollar Weekly Mirror 29 Aug 1857; end from Springfield Weekly Republican 6 Dec 1878 p.8 (\"the recent separation\") and en.wikipedia (Boston Evening Transcript 1878); 69/31 split from en.wikipedia; that this line was worked by the pool is inferred from the N&L operating it on both sides of the pool (research report blocks [2], [7], [10], [13]).",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn84023818/1857-08-29/ed-1/?sp=1",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad"
+            ]
+          },
+          {
+            "start": 1878,
+            "end": 1880,
+            "headway_min": 300,
+            "note": "Second N&L-alone era: the two companies resumed independent operation in early December 1878 (Springfield Weekly Republican 6 Dec 1878; en.wikipedia citing the Boston Evening Transcript) until the Nashua and Lowell was leased to the Boston and Lowell for 100 years at $60,000 a year (agreed by 5 Nov 1880; B&L stockholders ratified by 26 Nov 1880). The day the B&L took possession was not found; the split year is 1880 either way. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: separation from Springfield Weekly Republican 6 Dec 1878 p.8; lease from Springfield Weekly Republican 5 Nov 1880 p.8 and 26 Nov 1880 p.8 (primary); Nashua City Station gives the N&L \"Rail Operations 1838-1880\".",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.650253,
+            42.832862
+          ],
+          [
+            -71.657254,
+            42.834249
+          ],
+          [
+            -71.673003,
+            42.838821
+          ],
+          [
+            -71.674001,
+            42.838985
+          ],
+          [
+            -71.675387,
+            42.839078
+          ],
+          [
+            -71.680928,
+            42.839063
+          ],
+          [
+            -71.700394,
+            42.841857
+          ],
+          [
+            -71.703264,
+            42.842075
+          ],
+          [
+            -71.70887,
+            42.842163
+          ],
+          [
+            -71.714878,
+            42.841387
+          ],
+          [
+            -71.72477,
+            42.839207
+          ],
+          [
+            -71.725894,
+            42.839062
+          ],
+          [
+            -71.727108,
+            42.839088
+          ],
+          [
+            -71.728587,
+            42.839401
+          ],
+          [
+            -71.733242,
+            42.841309
+          ],
+          [
+            -71.736378,
+            42.842059
+          ],
+          [
+            -71.737152,
+            42.842349
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Lowell Railroad",
+        "line": "Boston and Lowell: Nashua \u2013 Wilton",
+        "id": "wilton-rr-bl",
+        "color": "#429A28",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 35,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: Nashua junction (Union Station site) - South Merrimack - Ponemah - East Milford - Milford - Wilton, on the CSX \"Nashua Subdivision (Hillsboro Branch)\"; 16.4 mi drawn for Nashua - Wilton, 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs, all waypoints within 0.3 km. Documented: 16.2 mi Union Station (39.0) - Wilton (55.2), J. Fowler, New Hampshire Railroads table 14 - traced within 1%. Trace mileposts match Fowler at Ponemah / Danforth's Corner (9.07 vs 9.1) and Milford (11.79 vs 11.8), which is where the three N&L-era leg features are cut. Alignment era: the surviving freight alignment for every era; no relocation is documented. The 1851 Wilton terminus is called East Wilton in some sources; it is drawn to the end of the OSM Hillsboro Branch at Wilton, where the Milford-Bennington track begins.",
+        "segments": [
+          {
+            "start": 1880,
+            "end": 1887,
+            "headway_min": 240,
+            "note": "Boston and Lowell era: the B&L leased the Nashua and Lowell (with the Wilton Railroad it worked) for 100 years in Nov 1880, and was itself leased to the Boston and Maine from 1 April 1887. 1883: \"three westbound passenger trains and four eastbound\" at Wilton (The Clio) - the only 19th-century service count found; the headway is derived from it loosely. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: lease dates from Springfield Weekly Republican 5 Nov / 26 Nov 1880 (primary) and en.wikipedia \"Boston and Lowell Railroad\" (\"April 1, 1887\"); that the B&L took over this line with the N&L lease is from the research report (blocks [4], [8], [11], [14]).",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://theclio.com/entry/132898"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.448551,
+            42.760711
+          ],
+          [
+            -71.450175,
+            42.761268
+          ],
+          [
+            -71.452254,
+            42.761568
+          ],
+          [
+            -71.453306,
+            42.762049
+          ],
+          [
+            -71.457919,
+            42.762254
+          ],
+          [
+            -71.458697,
+            42.762576
+          ],
+          [
+            -71.46075,
+            42.763817
+          ],
+          [
+            -71.462955,
+            42.764255
+          ],
+          [
+            -71.464631,
+            42.764351
+          ],
+          [
+            -71.465547,
+            42.764239
+          ],
+          [
+            -71.466885,
+            42.763857
+          ],
+          [
+            -71.46925,
+            42.762922
+          ],
+          [
+            -71.470122,
+            42.762723
+          ],
+          [
+            -71.471293,
+            42.762721
+          ],
+          [
+            -71.472362,
+            42.76302
+          ],
+          [
+            -71.473543,
+            42.76374
+          ],
+          [
+            -71.475485,
+            42.766092
+          ],
+          [
+            -71.476998,
+            42.76717
+          ],
+          [
+            -71.477948,
+            42.767532
+          ],
+          [
+            -71.479088,
+            42.767747
+          ],
+          [
+            -71.482161,
+            42.767854
+          ],
+          [
+            -71.483444,
+            42.768005
+          ],
+          [
+            -71.485243,
+            42.768602
+          ],
+          [
+            -71.498833,
+            42.776648
+          ],
+          [
+            -71.543585,
+            42.798356
+          ],
+          [
+            -71.546862,
+            42.799561
+          ],
+          [
+            -71.590048,
+            42.811358
+          ],
+          [
+            -71.593095,
+            42.812438
+          ],
+          [
+            -71.601419,
+            42.816351
+          ],
+          [
+            -71.60294,
+            42.8172
+          ],
+          [
+            -71.603788,
+            42.817875
+          ],
+          [
+            -71.604538,
+            42.818697
+          ],
+          [
+            -71.605772,
+            42.821457
+          ],
+          [
+            -71.606496,
+            42.822443
+          ],
+          [
+            -71.607881,
+            42.823435
+          ],
+          [
+            -71.610068,
+            42.824287
+          ],
+          [
+            -71.615823,
+            42.825386
+          ],
+          [
+            -71.617468,
+            42.825493
+          ],
+          [
+            -71.622608,
+            42.825483
+          ],
+          [
+            -71.624951,
+            42.825702
+          ],
+          [
+            -71.626815,
+            42.826019
+          ],
+          [
+            -71.630156,
+            42.826956
+          ],
+          [
+            -71.645197,
+            42.832374
+          ],
+          [
+            -71.647701,
+            42.832776
+          ],
+          [
+            -71.650253,
+            42.832862
+          ],
+          [
+            -71.657254,
+            42.834249
+          ],
+          [
+            -71.673003,
+            42.838821
+          ],
+          [
+            -71.674001,
+            42.838985
+          ],
+          [
+            -71.675387,
+            42.839078
+          ],
+          [
+            -71.680928,
+            42.839063
+          ],
+          [
+            -71.700394,
+            42.841857
+          ],
+          [
+            -71.703264,
+            42.842075
+          ],
+          [
+            -71.70887,
+            42.842163
+          ],
+          [
+            -71.714878,
+            42.841387
+          ],
+          [
+            -71.72477,
+            42.839207
+          ],
+          [
+            -71.725894,
+            42.839062
+          ],
+          [
+            -71.727108,
+            42.839088
+          ],
+          [
+            -71.728587,
+            42.839401
+          ],
+          [
+            -71.733242,
+            42.841309
+          ],
+          [
+            -71.736378,
+            42.842059
+          ],
+          [
+            -71.737152,
+            42.842349
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Maine Railroad",
+        "line": "Boston and Maine: Nashua \u2013 Wilton",
+        "id": "wilton-rr-bm",
+        "color": "#1D3557",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 40,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: Nashua junction (Union Station site) - South Merrimack - Ponemah - East Milford - Milford - Wilton, on the CSX \"Nashua Subdivision (Hillsboro Branch)\"; 16.4 mi drawn for Nashua - Wilton, 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs, all waypoints within 0.3 km. Documented: 16.2 mi Union Station (39.0) - Wilton (55.2), J. Fowler, New Hampshire Railroads table 14 - traced within 1%. Trace mileposts match Fowler at Ponemah / Danforth's Corner (9.07 vs 9.1) and Milford (11.79 vs 11.8), which is where the three N&L-era leg features are cut. Alignment era: the surviving freight alignment for every era; no relocation is documented. The 1851 Wilton terminus is called East Wilton in some sources; it is drawn to the end of the OSM Hillsboro Branch at Wilton, where the Milford-Bennington track begins.",
+        "segments": [
+          {
+            "start": 1887,
+            "end": 1936,
+            "headway_min": 240,
+            "note": "Boston and Maine (later its \"Hillsboro Branch\"). B&M \"snow trains\" ran to Wilton's winter carnival in the late 1920s - 1936 (The Clio). END 1936 rests on ONE secondary source: \"1936: Regularly scheduled passenger service ended\", linked to the March 1936 flood (The Clio, citing the Milford Cabinet 1936 and the 1939 Historical Sketches of Wilton). Primary-derived floor: J. Fowler marks Nashua City, South Merrimack, Ponemah, East Milford, Milford, Richardson and Wilton \"c\" (1932 timetable) and not \"d\" (1947). NOT EXTENDED past 1936: The Clio also says that until 1952 \"only one passenger car per day was attached to the regular freight run\" - a mixed train would count under Rule 1, but no second source confirms it and the Feb 1952 Guide indexes Nashua - Milford only as a bus table. Do not extend without evidence. Freight continues - context only. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: start from en.wikipedia \"Boston and Lowell Railroad\" (1887); end from The Clio (single secondary); 1932 floor from J. Fowler, New Hampshire Railroads table 14.",
+              "https://theclio.com/entry/132898",
+              "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.448551,
+            42.760711
+          ],
+          [
+            -71.450175,
+            42.761268
+          ],
+          [
+            -71.452254,
+            42.761568
+          ],
+          [
+            -71.453306,
+            42.762049
+          ],
+          [
+            -71.457919,
+            42.762254
+          ],
+          [
+            -71.458697,
+            42.762576
+          ],
+          [
+            -71.46075,
+            42.763817
+          ],
+          [
+            -71.462955,
+            42.764255
+          ],
+          [
+            -71.464631,
+            42.764351
+          ],
+          [
+            -71.465547,
+            42.764239
+          ],
+          [
+            -71.466885,
+            42.763857
+          ],
+          [
+            -71.46925,
+            42.762922
+          ],
+          [
+            -71.470122,
+            42.762723
+          ],
+          [
+            -71.471293,
+            42.762721
+          ],
+          [
+            -71.472362,
+            42.76302
+          ],
+          [
+            -71.473543,
+            42.76374
+          ],
+          [
+            -71.475485,
+            42.766092
+          ],
+          [
+            -71.476998,
+            42.76717
+          ],
+          [
+            -71.477948,
+            42.767532
+          ],
+          [
+            -71.479088,
+            42.767747
+          ],
+          [
+            -71.482161,
+            42.767854
+          ],
+          [
+            -71.483444,
+            42.768005
+          ],
+          [
+            -71.485243,
+            42.768602
+          ],
+          [
+            -71.498833,
+            42.776648
+          ],
+          [
+            -71.543585,
+            42.798356
+          ],
+          [
+            -71.546862,
+            42.799561
+          ],
+          [
+            -71.590048,
+            42.811358
+          ],
+          [
+            -71.593095,
+            42.812438
+          ],
+          [
+            -71.601419,
+            42.816351
+          ],
+          [
+            -71.60294,
+            42.8172
+          ],
+          [
+            -71.603788,
+            42.817875
+          ],
+          [
+            -71.604538,
+            42.818697
+          ],
+          [
+            -71.605772,
+            42.821457
+          ],
+          [
+            -71.606496,
+            42.822443
+          ],
+          [
+            -71.607881,
+            42.823435
+          ],
+          [
+            -71.610068,
+            42.824287
+          ],
+          [
+            -71.615823,
+            42.825386
+          ],
+          [
+            -71.617468,
+            42.825493
+          ],
+          [
+            -71.622608,
+            42.825483
+          ],
+          [
+            -71.624951,
+            42.825702
+          ],
+          [
+            -71.626815,
+            42.826019
+          ],
+          [
+            -71.630156,
+            42.826956
+          ],
+          [
+            -71.645197,
+            42.832374
+          ],
+          [
+            -71.647701,
+            42.832776
+          ],
+          [
+            -71.650253,
+            42.832862
+          ],
+          [
+            -71.657254,
+            42.834249
+          ],
+          [
+            -71.673003,
+            42.838821
+          ],
+          [
+            -71.674001,
+            42.838985
+          ],
+          [
+            -71.675387,
+            42.839078
+          ],
+          [
+            -71.680928,
+            42.839063
+          ],
+          [
+            -71.700394,
+            42.841857
+          ],
+          [
+            -71.703264,
+            42.842075
+          ],
+          [
+            -71.70887,
+            42.842163
+          ],
+          [
+            -71.714878,
+            42.841387
+          ],
+          [
+            -71.72477,
+            42.839207
+          ],
+          [
+            -71.725894,
+            42.839062
+          ],
+          [
+            -71.727108,
+            42.839088
+          ],
+          [
+            -71.728587,
+            42.839401
+          ],
+          [
+            -71.733242,
+            42.841309
+          ],
+          [
+            -71.736378,
+            42.842059
+          ],
+          [
+            -71.737152,
+            42.842349
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Nashua and Lowell Railroad",
+        "line": "Nashua and Lowell: Peterborough Railroad (Wilton \u2013 Greenfield)",
+        "id": "peterborough-rr-nl",
+        "color": "#821458",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 30,
+        "speed_source": "estimated: early steam-era line, no timetable timing found; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: Wilton - South Lyndeborough - Greenfield, on the Milford-Bennington Railroad track; 10.7 mi drawn, 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs, waypoints within 0.2 km. Documented: 10.7 mi Wilton (55.2) - Greenfield (65.9), J. Fowler, New Hampshire Railroads table 14 - traced length matches. Greenfield end is the OSM track nearest the Greenfield village geocode. Alignment era: the surviving alignment for every era; no relocation documented.",
+        "segments": [
+          {
+            "start": 1874,
+            "end": 1878,
+            "headway_min": 360,
+            "note": "B&L / N&L POOL ERA (1 Feb 1857 - Dec 1878). On Monday 1 Feb 1857 the Boston and Lowell and the Nashua and Lowell put \"the united business\" under \"one management\", with George Stark, the N&L's own superintendent, as Manager for both and the B&L's John B. Winslow as operating superintendent (Springfield Weekly Republican 7 Feb 1857); crews worked both roads (Dollar Weekly Mirror 29 Aug 1857). NOT a lease: each corporation kept its line and revenues were pooled about 69% B&L / 31% N&L. Kept in the N&L feature and colour (research report ownership_split option (a)): the combined operation was headed by the N&L's officer; a B&L-coloured split for these years would also be defensible. Conflicts recorded: en.wikipedia \"Boston and Lowell Railroad\" dates the joint operation \"from 1860\" (contradicted by the 1857 primary); en.wikipedia \"Stony Brook Railroad\" puts the decision to end it in 1877 (the separation itself was Dec 1878). The Peterborough Railroad (Wilton - Greenfield) was leased by the N&L in 1873 and opened in 1874, i.e. inside the pool, so 1874 - Dec 1878 it was worked by the joint management (en.wikipedia \"Boston and Lowell Railroad\": \"In 1873 the N&L leased it; the road opened in 1874\"; The Clio: \"In 1874 the rail line was extended to Greenfield\"). Opening month not found. At Greenfield it met the Manchester & Keene (opened Dec 1878), not drawn here - no source shows the N&L ran M&K trains. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: opening year 1874 from en.wikipedia \"Boston and Lowell Railroad\" and The Clio (month not found); pool from Springfield Weekly Republican 7 Feb 1857 and 6 Dec 1878; J. Fowler New Hampshire table 14 for the stations.",
+              "https://www.loc.gov/resource/sn83020847/1857-02-07/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://theclio.com/entry/132898",
+              "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+            ]
+          },
+          {
+            "start": 1878,
+            "end": 1880,
+            "headway_min": 360,
+            "note": "Second N&L-alone era: the two companies resumed independent operation in early December 1878 (Springfield Weekly Republican 6 Dec 1878; en.wikipedia citing the Boston Evening Transcript) until the Nashua and Lowell was leased to the Boston and Lowell for 100 years at $60,000 a year (agreed by 5 Nov 1880; B&L stockholders ratified by 26 Nov 1880). The day the B&L took possession was not found; the split year is 1880 either way. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: separation from Springfield Weekly Republican 6 Dec 1878 p.8; lease from Springfield Weekly Republican 5 Nov 1880 p.8 and 26 Nov 1880 p.8 (primary); Nashua City Station gives the N&L \"Rail Operations 1838-1880\".",
+              "https://www.loc.gov/resource/sn83020847/1878-12-06/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Nashua_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/nashua-and-lowell-rail-road-corporation/"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.737152,
+            42.842349
+          ],
+          [
+            -71.739907,
+            42.844653
+          ],
+          [
+            -71.742238,
+            42.845704
+          ],
+          [
+            -71.745269,
+            42.847958
+          ],
+          [
+            -71.746417,
+            42.848318
+          ],
+          [
+            -71.748886,
+            42.84846
+          ],
+          [
+            -71.749944,
+            42.848724
+          ],
+          [
+            -71.750486,
+            42.848973
+          ],
+          [
+            -71.751799,
+            42.849959
+          ],
+          [
+            -71.753735,
+            42.850765
+          ],
+          [
+            -71.755226,
+            42.85175
+          ],
+          [
+            -71.760279,
+            42.853199
+          ],
+          [
+            -71.761067,
+            42.853542
+          ],
+          [
+            -71.761663,
+            42.853987
+          ],
+          [
+            -71.762214,
+            42.854688
+          ],
+          [
+            -71.762557,
+            42.856442
+          ],
+          [
+            -71.762904,
+            42.857369
+          ],
+          [
+            -71.765253,
+            42.861899
+          ],
+          [
+            -71.76899,
+            42.866149
+          ],
+          [
+            -71.771087,
+            42.869154
+          ],
+          [
+            -71.771465,
+            42.870138
+          ],
+          [
+            -71.771472,
+            42.872264
+          ],
+          [
+            -71.771979,
+            42.873269
+          ],
+          [
+            -71.772676,
+            42.874082
+          ],
+          [
+            -71.774871,
+            42.875316
+          ],
+          [
+            -71.775423,
+            42.8758
+          ],
+          [
+            -71.775885,
+            42.876549
+          ],
+          [
+            -71.776372,
+            42.877933
+          ],
+          [
+            -71.777182,
+            42.878736
+          ],
+          [
+            -71.77801,
+            42.879121
+          ],
+          [
+            -71.778787,
+            42.879317
+          ],
+          [
+            -71.779529,
+            42.879364
+          ],
+          [
+            -71.781502,
+            42.879223
+          ],
+          [
+            -71.782978,
+            42.879507
+          ],
+          [
+            -71.785489,
+            42.880862
+          ],
+          [
+            -71.789045,
+            42.883381
+          ],
+          [
+            -71.789931,
+            42.883791
+          ],
+          [
+            -71.791121,
+            42.884094
+          ],
+          [
+            -71.792992,
+            42.884217
+          ],
+          [
+            -71.794414,
+            42.884445
+          ],
+          [
+            -71.801901,
+            42.887399
+          ],
+          [
+            -71.809532,
+            42.888837
+          ],
+          [
+            -71.810832,
+            42.889373
+          ],
+          [
+            -71.812481,
+            42.891068
+          ],
+          [
+            -71.814472,
+            42.894865
+          ],
+          [
+            -71.815417,
+            42.896108
+          ],
+          [
+            -71.821122,
+            42.901094
+          ],
+          [
+            -71.825461,
+            42.904185
+          ],
+          [
+            -71.82803,
+            42.907066
+          ],
+          [
+            -71.830256,
+            42.90897
+          ],
+          [
+            -71.831113,
+            42.90952
+          ],
+          [
+            -71.832325,
+            42.910081
+          ],
+          [
+            -71.839136,
+            42.912765
+          ],
+          [
+            -71.840602,
+            42.913464
+          ],
+          [
+            -71.850489,
+            42.921913
+          ],
+          [
+            -71.851142,
+            42.922646
+          ],
+          [
+            -71.851799,
+            42.923741
+          ],
+          [
+            -71.852227,
+            42.927013
+          ],
+          [
+            -71.852934,
+            42.928561
+          ],
+          [
+            -71.855405,
+            42.931355
+          ],
+          [
+            -71.856414,
+            42.932251
+          ],
+          [
+            -71.859486,
+            42.933978
+          ],
+          [
+            -71.867735,
+            42.942395
+          ],
+          [
+            -71.870477,
+            42.944177
+          ],
+          [
+            -71.8714,
+            42.94544
+          ],
+          [
+            -71.872545,
+            42.948469
+          ],
+          [
+            -71.872894,
+            42.948917
+          ],
+          [
+            -71.873645,
+            42.949471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Lowell Railroad",
+        "line": "Boston and Lowell: Wilton \u2013 Greenfield",
+        "id": "peterborough-rr-bl",
+        "color": "#429A28",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 35,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: Wilton - South Lyndeborough - Greenfield, on the Milford-Bennington Railroad track; 10.7 mi drawn, 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs, waypoints within 0.2 km. Documented: 10.7 mi Wilton (55.2) - Greenfield (65.9), J. Fowler, New Hampshire Railroads table 14 - traced length matches. Greenfield end is the OSM track nearest the Greenfield village geocode. Alignment era: the surviving alignment for every era; no relocation documented.",
+        "segments": [
+          {
+            "start": 1880,
+            "end": 1887,
+            "headway_min": 360,
+            "note": "Boston and Lowell era: the B&L leased the Nashua and Lowell (with the Peterborough Railroad it worked) for 100 years in Nov 1880, and was itself leased to the Boston and Maine from 1 April 1887. In this era the Manchester & Keene beyond Greenfield was conveyed (1884) to the B&L and Concord jointly (Nashua City Station), forming the Nashua - Keene route. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: lease dates from Springfield Weekly Republican 5 Nov / 26 Nov 1880 (primary) and en.wikipedia \"Boston and Lowell Railroad\" (\"April 1, 1887\"); that the B&L took over this line with the N&L lease is from the research report (blocks [4], [8], [11], [14]).",
+              "https://www.loc.gov/resource/sn83020847/1880-11-05/ed-1/?sp=8",
+              "https://www.loc.gov/resource/sn83020847/1880-11-26/ed-1/?sp=8",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad",
+              "https://nashuacitystation.org/history/manchester-and-keene-railroad/",
+              "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.737152,
+            42.842349
+          ],
+          [
+            -71.739907,
+            42.844653
+          ],
+          [
+            -71.742238,
+            42.845704
+          ],
+          [
+            -71.745269,
+            42.847958
+          ],
+          [
+            -71.746417,
+            42.848318
+          ],
+          [
+            -71.748886,
+            42.84846
+          ],
+          [
+            -71.749944,
+            42.848724
+          ],
+          [
+            -71.750486,
+            42.848973
+          ],
+          [
+            -71.751799,
+            42.849959
+          ],
+          [
+            -71.753735,
+            42.850765
+          ],
+          [
+            -71.755226,
+            42.85175
+          ],
+          [
+            -71.760279,
+            42.853199
+          ],
+          [
+            -71.761067,
+            42.853542
+          ],
+          [
+            -71.761663,
+            42.853987
+          ],
+          [
+            -71.762214,
+            42.854688
+          ],
+          [
+            -71.762557,
+            42.856442
+          ],
+          [
+            -71.762904,
+            42.857369
+          ],
+          [
+            -71.765253,
+            42.861899
+          ],
+          [
+            -71.76899,
+            42.866149
+          ],
+          [
+            -71.771087,
+            42.869154
+          ],
+          [
+            -71.771465,
+            42.870138
+          ],
+          [
+            -71.771472,
+            42.872264
+          ],
+          [
+            -71.771979,
+            42.873269
+          ],
+          [
+            -71.772676,
+            42.874082
+          ],
+          [
+            -71.774871,
+            42.875316
+          ],
+          [
+            -71.775423,
+            42.8758
+          ],
+          [
+            -71.775885,
+            42.876549
+          ],
+          [
+            -71.776372,
+            42.877933
+          ],
+          [
+            -71.777182,
+            42.878736
+          ],
+          [
+            -71.77801,
+            42.879121
+          ],
+          [
+            -71.778787,
+            42.879317
+          ],
+          [
+            -71.779529,
+            42.879364
+          ],
+          [
+            -71.781502,
+            42.879223
+          ],
+          [
+            -71.782978,
+            42.879507
+          ],
+          [
+            -71.785489,
+            42.880862
+          ],
+          [
+            -71.789045,
+            42.883381
+          ],
+          [
+            -71.789931,
+            42.883791
+          ],
+          [
+            -71.791121,
+            42.884094
+          ],
+          [
+            -71.792992,
+            42.884217
+          ],
+          [
+            -71.794414,
+            42.884445
+          ],
+          [
+            -71.801901,
+            42.887399
+          ],
+          [
+            -71.809532,
+            42.888837
+          ],
+          [
+            -71.810832,
+            42.889373
+          ],
+          [
+            -71.812481,
+            42.891068
+          ],
+          [
+            -71.814472,
+            42.894865
+          ],
+          [
+            -71.815417,
+            42.896108
+          ],
+          [
+            -71.821122,
+            42.901094
+          ],
+          [
+            -71.825461,
+            42.904185
+          ],
+          [
+            -71.82803,
+            42.907066
+          ],
+          [
+            -71.830256,
+            42.90897
+          ],
+          [
+            -71.831113,
+            42.90952
+          ],
+          [
+            -71.832325,
+            42.910081
+          ],
+          [
+            -71.839136,
+            42.912765
+          ],
+          [
+            -71.840602,
+            42.913464
+          ],
+          [
+            -71.850489,
+            42.921913
+          ],
+          [
+            -71.851142,
+            42.922646
+          ],
+          [
+            -71.851799,
+            42.923741
+          ],
+          [
+            -71.852227,
+            42.927013
+          ],
+          [
+            -71.852934,
+            42.928561
+          ],
+          [
+            -71.855405,
+            42.931355
+          ],
+          [
+            -71.856414,
+            42.932251
+          ],
+          [
+            -71.859486,
+            42.933978
+          ],
+          [
+            -71.867735,
+            42.942395
+          ],
+          [
+            -71.870477,
+            42.944177
+          ],
+          [
+            -71.8714,
+            42.94544
+          ],
+          [
+            -71.872545,
+            42.948469
+          ],
+          [
+            -71.872894,
+            42.948917
+          ],
+          [
+            -71.873645,
+            42.949471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Boston and Maine Railroad",
+        "line": "Boston and Maine: Wilton \u2013 Greenfield",
+        "id": "peterborough-rr-bm",
+        "color": "#1D3557",
+        "mode": "intercity_rail",
+        "avg_speed_kmh": 40,
+        "speed_source": "estimated: no timetable running time counted for this line; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Traced 2026-10-15 with opstrace.py over OpenStreetMap: Wilton - South Lyndeborough - Greenfield, on the Milford-Bennington Railroad track; 10.7 mi drawn, 100% on OSM rail tagged old_railway_operator=B&M, no straight-line legs, waypoints within 0.2 km. Documented: 10.7 mi Wilton (55.2) - Greenfield (65.9), J. Fowler, New Hampshire Railroads table 14 - traced length matches. Greenfield end is the OSM track nearest the Greenfield village geocode. Alignment era: the surviving alignment for every era; no relocation documented.",
+        "segments": [
+          {
+            "start": 1887,
+            "end": 1932,
+            "headway_min": 360,
+            "note": "Boston and Maine, part of its Nashua - Keene through route. [OPEN] END: 1932 is the last CONFIRMED year, NOT a known end - J. Fowler marks South Lyndeborough, Russell and Greenfield \"c\" (1932 timetable) and not \"d\" (1947), and no source found dates when passenger service actually stopped (The Clio's 1936 refers to Wilton). Service probably continued some years past 1932; do not extend without evidence. Milford-Bennington Railroad freight since 1992 - context only. headway is an estimate, not counted from any timetable.",
+            "sources": [
+              "Segment-level: start from en.wikipedia \"Boston and Lowell Railroad\" (1887); 1932 last-confirmed year from J. Fowler, New Hampshire Railroads table 14 (\"c\" marks); actual end NOT SOURCED.",
+              "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+              "https://nashuacitystation.org/history/manchester-and-keene-railroad/",
+              "https://en.wikipedia.org/wiki/Boston_and_Lowell_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.737152,
+            42.842349
+          ],
+          [
+            -71.739907,
+            42.844653
+          ],
+          [
+            -71.742238,
+            42.845704
+          ],
+          [
+            -71.745269,
+            42.847958
+          ],
+          [
+            -71.746417,
+            42.848318
+          ],
+          [
+            -71.748886,
+            42.84846
+          ],
+          [
+            -71.749944,
+            42.848724
+          ],
+          [
+            -71.750486,
+            42.848973
+          ],
+          [
+            -71.751799,
+            42.849959
+          ],
+          [
+            -71.753735,
+            42.850765
+          ],
+          [
+            -71.755226,
+            42.85175
+          ],
+          [
+            -71.760279,
+            42.853199
+          ],
+          [
+            -71.761067,
+            42.853542
+          ],
+          [
+            -71.761663,
+            42.853987
+          ],
+          [
+            -71.762214,
+            42.854688
+          ],
+          [
+            -71.762557,
+            42.856442
+          ],
+          [
+            -71.762904,
+            42.857369
+          ],
+          [
+            -71.765253,
+            42.861899
+          ],
+          [
+            -71.76899,
+            42.866149
+          ],
+          [
+            -71.771087,
+            42.869154
+          ],
+          [
+            -71.771465,
+            42.870138
+          ],
+          [
+            -71.771472,
+            42.872264
+          ],
+          [
+            -71.771979,
+            42.873269
+          ],
+          [
+            -71.772676,
+            42.874082
+          ],
+          [
+            -71.774871,
+            42.875316
+          ],
+          [
+            -71.775423,
+            42.8758
+          ],
+          [
+            -71.775885,
+            42.876549
+          ],
+          [
+            -71.776372,
+            42.877933
+          ],
+          [
+            -71.777182,
+            42.878736
+          ],
+          [
+            -71.77801,
+            42.879121
+          ],
+          [
+            -71.778787,
+            42.879317
+          ],
+          [
+            -71.779529,
+            42.879364
+          ],
+          [
+            -71.781502,
+            42.879223
+          ],
+          [
+            -71.782978,
+            42.879507
+          ],
+          [
+            -71.785489,
+            42.880862
+          ],
+          [
+            -71.789045,
+            42.883381
+          ],
+          [
+            -71.789931,
+            42.883791
+          ],
+          [
+            -71.791121,
+            42.884094
+          ],
+          [
+            -71.792992,
+            42.884217
+          ],
+          [
+            -71.794414,
+            42.884445
+          ],
+          [
+            -71.801901,
+            42.887399
+          ],
+          [
+            -71.809532,
+            42.888837
+          ],
+          [
+            -71.810832,
+            42.889373
+          ],
+          [
+            -71.812481,
+            42.891068
+          ],
+          [
+            -71.814472,
+            42.894865
+          ],
+          [
+            -71.815417,
+            42.896108
+          ],
+          [
+            -71.821122,
+            42.901094
+          ],
+          [
+            -71.825461,
+            42.904185
+          ],
+          [
+            -71.82803,
+            42.907066
+          ],
+          [
+            -71.830256,
+            42.90897
+          ],
+          [
+            -71.831113,
+            42.90952
+          ],
+          [
+            -71.832325,
+            42.910081
+          ],
+          [
+            -71.839136,
+            42.912765
+          ],
+          [
+            -71.840602,
+            42.913464
+          ],
+          [
+            -71.850489,
+            42.921913
+          ],
+          [
+            -71.851142,
+            42.922646
+          ],
+          [
+            -71.851799,
+            42.923741
+          ],
+          [
+            -71.852227,
+            42.927013
+          ],
+          [
+            -71.852934,
+            42.928561
+          ],
+          [
+            -71.855405,
+            42.931355
+          ],
+          [
+            -71.856414,
+            42.932251
+          ],
+          [
+            -71.859486,
+            42.933978
+          ],
+          [
+            -71.867735,
+            42.942395
+          ],
+          [
+            -71.870477,
+            42.944177
+          ],
+          [
+            -71.8714,
+            42.94544
+          ],
+          [
+            -71.872545,
+            42.948469
+          ],
+          [
+            -71.872894,
+            42.948917
+          ],
+          [
+            -71.873645,
+            42.949471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "company": "Wilton Scenic Railroad",
+        "line": "Wilton Scenic Railroad: Wilton \u2013 Greenfield",
+        "id": "wilton-scenic-railroad",
+        "color": "#E69E26",
+        "mode": "tourist_rail",
+        "avg_speed_kmh": 25,
+        "speed_source": "estimated: tourist excursion pace on Milford-Bennington track; unsourced",
+        "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py",
+        "geometry_quality": "Same trace as the Peterborough RR Wilton - Greenfield features (see there; 10.7 mi, 100% OSM rail, no straight-line legs), continued 0.2 mi on along the same OSM track to the point nearest Greenfield State Park; 10.9 mi drawn. Documented: 13 mi for the 2003 run (en.wikipedia), which went about 1 mi past Greenfield to Greenfield State Park from 23 Aug 2003. The exact excursion terminus near the park is not pinned (the park's geocode lies 1.1 km from the track), so the drawn line stops where the track passes nearest the park rather than guessing a further mile; the drawn 10.9 mi is ~2 mi short of the documented 13, which may also include running at the Wilton end that is not drawn. Current alignment, which is the one the 2003-06 trains used.",
+        "segments": [
+          {
+            "start": 2003,
+            "end": 2006,
+            "headway_min": 1440,
+            "note": "Wilton Scenic Railroad LLC tourist excursions with ex-BC Rail Budd RDCs over the ex-Peterborough RR, opened 17 May 2003, extended to Greenfield State Park from 23 Aug 2003, ran through fall 2006; closed after the owner's death and the RDCs sold Oct 2006 (en.wikipedia citing The Cabinet 26 Oct 2006). Not an N&L service. Seasonal / weekend operation; the headway is a rough estimate (about one round trip on operating days), not from a timetable.",
+            "sources": [
+              "Segment-level: dates and operator from en.wikipedia \"Wilton Scenic Railroad\" (citing The Cabinet 26 Oct 2006).",
+              "https://en.wikipedia.org/wiki/Wilton_Scenic_Railroad"
+            ]
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -71.737152,
+            42.842349
+          ],
+          [
+            -71.739907,
+            42.844653
+          ],
+          [
+            -71.742238,
+            42.845704
+          ],
+          [
+            -71.745269,
+            42.847958
+          ],
+          [
+            -71.746417,
+            42.848318
+          ],
+          [
+            -71.748886,
+            42.84846
+          ],
+          [
+            -71.749944,
+            42.848724
+          ],
+          [
+            -71.750486,
+            42.848973
+          ],
+          [
+            -71.751799,
+            42.849959
+          ],
+          [
+            -71.753735,
+            42.850765
+          ],
+          [
+            -71.755226,
+            42.85175
+          ],
+          [
+            -71.760279,
+            42.853199
+          ],
+          [
+            -71.761067,
+            42.853542
+          ],
+          [
+            -71.761663,
+            42.853987
+          ],
+          [
+            -71.762214,
+            42.854688
+          ],
+          [
+            -71.762557,
+            42.856442
+          ],
+          [
+            -71.762904,
+            42.857369
+          ],
+          [
+            -71.765253,
+            42.861899
+          ],
+          [
+            -71.76899,
+            42.866149
+          ],
+          [
+            -71.771087,
+            42.869154
+          ],
+          [
+            -71.771465,
+            42.870138
+          ],
+          [
+            -71.771472,
+            42.872264
+          ],
+          [
+            -71.771979,
+            42.873269
+          ],
+          [
+            -71.772676,
+            42.874082
+          ],
+          [
+            -71.774871,
+            42.875316
+          ],
+          [
+            -71.775423,
+            42.8758
+          ],
+          [
+            -71.775885,
+            42.876549
+          ],
+          [
+            -71.776372,
+            42.877933
+          ],
+          [
+            -71.777182,
+            42.878736
+          ],
+          [
+            -71.77801,
+            42.879121
+          ],
+          [
+            -71.778787,
+            42.879317
+          ],
+          [
+            -71.779529,
+            42.879364
+          ],
+          [
+            -71.781502,
+            42.879223
+          ],
+          [
+            -71.782978,
+            42.879507
+          ],
+          [
+            -71.785489,
+            42.880862
+          ],
+          [
+            -71.789045,
+            42.883381
+          ],
+          [
+            -71.789931,
+            42.883791
+          ],
+          [
+            -71.791121,
+            42.884094
+          ],
+          [
+            -71.792992,
+            42.884217
+          ],
+          [
+            -71.794414,
+            42.884445
+          ],
+          [
+            -71.801901,
+            42.887399
+          ],
+          [
+            -71.809532,
+            42.888837
+          ],
+          [
+            -71.810832,
+            42.889373
+          ],
+          [
+            -71.812481,
+            42.891068
+          ],
+          [
+            -71.814472,
+            42.894865
+          ],
+          [
+            -71.815417,
+            42.896108
+          ],
+          [
+            -71.821122,
+            42.901094
+          ],
+          [
+            -71.825461,
+            42.904185
+          ],
+          [
+            -71.82803,
+            42.907066
+          ],
+          [
+            -71.830256,
+            42.90897
+          ],
+          [
+            -71.831113,
+            42.90952
+          ],
+          [
+            -71.832325,
+            42.910081
+          ],
+          [
+            -71.839136,
+            42.912765
+          ],
+          [
+            -71.840602,
+            42.913464
+          ],
+          [
+            -71.850489,
+            42.921913
+          ],
+          [
+            -71.851142,
+            42.922646
+          ],
+          [
+            -71.851799,
+            42.923741
+          ],
+          [
+            -71.852174,
+            42.926783
+          ],
+          [
+            -71.852575,
+            42.927969
+          ],
+          [
+            -71.852934,
+            42.928561
+          ],
+          [
+            -71.855405,
+            42.931355
+          ],
+          [
+            -71.856705,
+            42.932469
+          ],
+          [
+            -71.859486,
+            42.933978
+          ],
+          [
+            -71.867217,
+            42.941925
+          ],
+          [
+            -71.868191,
+            42.942717
+          ],
+          [
+            -71.870477,
+            42.944177
+          ],
+          [
+            -71.871347,
+            42.945334
+          ],
+          [
+            -71.872545,
+            42.948469
+          ],
+          [
+            -71.872894,
+            42.948917
+          ],
+          [
+            -71.873645,
+            42.949471
+          ],
+          [
+            -71.874522,
+            42.949846
+          ],
+          [
+            -71.875157,
+            42.949991
+          ],
+          [
+            -71.877066,
+            42.950077
+          ]
+        ]
+      }
+    }
+  ]
+}
