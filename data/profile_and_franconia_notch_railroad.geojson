@@ -1,0 +1,1016 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Profile and Franconia Notch Railroad (NH, chartered 11 Jul 1878): a summer-only resort line from Bethlehem Junction on the Mount Washington branch to the Profile House hotel in Franconia Notch (opened 25 Jun 1879), with a branch to Bethlehem village past the Maplewood (opened 1881). 3 ft gauge to 1896, standard gauge from 1897. Each line is split into three features sharing identical geometry, one per operator (Rule 4): the P&FN itself 1879/1881-1892, the Concord and Montreal 1893-1894, and the Boston and Maine (lessee of the C&M from 29 Jun 1895) to the end. Not splits: the C&M's 1892 board control of the P&FN, the 11 Mar 1901 deed of the property to the C&M, the 1919 C&M -> B&M merger, and the 1896/97 regauging (a segment break within the B&M features). The connecting Mount Washington branch (Wing Road - Bethlehem Jct - Fabyan) is not on the map yet, so these lines connect to nothing at Bethlehem Junction.",
+  "researched_from": "research/branches/profile_and_franconia_notch_railroad.txt",
+  "freight_only_audit": "Nothing freight-only drawn. Both lines end at their last passenger year (1920 Profile House line, 1925 Bethlehem Branch); track-lifting dates were not found and were not used. EXCLUDED: the Gale River logging railroad (c.1874-1877/78, logging only, whose grade the P&FN's first ~3 mi reused) - including the railway=abandoned way OSM 1094982329 running south up the Gale River, which looks like its continuation and was not drawn.",
+  "horsecar_audit": "None. Steam from opening (RC1883: 3 wood-burning engines).",
+  "line_label_audit": "Labels per the research report's Rule 6 notes: 'Profile and Franconia Notch: Profile House Line' / 'Bethlehem Branch', 'Concord and Montreal: ...', 'Boston and Maine: Profile House Branch' / 'Bethlehem Branch'.",
+  "not_yet_sourced": [
+   "Profile House line end: 1920 (Fowler JF-NH 35) vs 1921 (ScenicNH, 1900px). Drawn to 1920. A 1921 B&M summer timetable would settle it.",
+   "Bethlehem Branch end 1925 rests on Fowler alone; no second source found.",
+   "Who ran the 1892 season - the P&FN (C&M-controlled) or the C&M itself. Drawn as P&FN (approx); the NH Railroad Commissioners' report for the year to 30 Jun 1893 would settle it.",
+   "Source conflicts recorded, not resolved: Wikipedia 'Profile House' says the railroad was built in 1872 and bought by the B&M in 1892 (uncited; contradicted by the 1878 charter, ICC opening date and the NH commissioners' returns showing the C&M, not the B&M, taking over); 1900px says the BC&M bought it (the BC&M had merged into the C&M in 1889).",
+   "Bethlehem Junction narrow-gauge transfer alignment (Pierce's Bridge, separate narrow-gauge station) vs the post-1897 junction drawn - not established (see geometry_quality).",
+   "Exact Profile House, Maplewood and Bethlehem station sites are not pinned.",
+   "All headway_min and avg_speed_kmh values are estimates; no public timetable was read. Service was summer-only, which whole-year segments over-state.",
+   "Through B&M parlor cars Boston - Profile House in standard-gauge years: widely reported, not sourced."
+  ],
+  "references": [
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Concord_and_Montreal_Railroad",
+   "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+   "https://www.scenicnh.com/blog/2023/12/profile-and-franconia-notch-railroad/",
+   "https://1900px.com/pages/franconia_notch.htm",
+   "https://www.loc.gov/resource/ca05000846/1892-07-13/ed-1/?sp=3",
+   "https://www.loc.gov/resource/ca05000846/1893-08-29/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn82016399/1897-10-01/ed-1/?sp=8",
+   "https://www.loc.gov/resource/sn95066012/1913-01-03/ed-1/?sp=1",
+   "https://archive.org/details/reportrailroadc00hampgoog",
+   "https://archive.org/details/annualreportrai04hampgoog",
+   "https://archive.org/details/annualreportofra1888newh",
+   "https://archive.org/details/annualreport145commgoog",
+   "https://archive.org/details/annualreportrai13commgoog",
+   "https://archive.org/details/annualreport137commgoog",
+   "https://archive.org/details/annualreport44commgoog",
+   "https://archive.org/details/annualreport148commgoog",
+   "https://nashuacitystation.org (B&M Official List of Officers, Agents and Stations 1906/1914, White Mountains Division, Profile Branch)"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Profile and Franconia Notch Railroad",
+    "line": "Profile and Franconia Notch: Profile House Line",
+    "id": "pfn-profile-house-line-pfn",
+    "color": "#7B3F61",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time read from a timetable. ~20 km/h assumes roughly 45-50 min for the ~9.5 mi climb from Bethlehem Junction to the Profile House on a 3 ft (later standard) gauge mountain branch.",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap via the mail.ru Overpass mirror, 2026-10-15: rail-trail/abandoned ways 1103712799/1103712800/1421285871/1421285870/171045387/755510297/1020419957/1020419956/1103712798/1103712797/171045545 (routed by opstrace.py), plus untagged railway=abandoned fragments 1103712787, 171045427, 171045503, 1136622807, 1287750972, 1494629762 chained in order with straight connectors; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap Overpass returned no railway ways in the bbox. No old_railway_operator spelling for this road exists in OSM (P&FN, PFN, 'Profile and Franconia', 'Profile' all 0 hits); its grade is tagged old_railway_operator=B&M where tagged at all.",
+    "geometry_quality": "Partly traced, partly straight-line; drawn length 8.55 mi against 9.46 mi documented (1900px; 9.5 mi JF-NH 35; '10 miles' RC1883) - 10% short, mostly because the straight legs cut the grade's curves through the notch. TRACED (~3.4 mi): Bethlehem Junction (44.2726,-71.6330, the junction node on the abandoned Mount Washington branch grade, OSM way 1103712804) south on the Profile Recreational Rail Trail / OSM railway=abandoned ways tagged old_railway_operator=B&M (note: Concord and Montreal) to 44.2447,-71.6429, ~2.3 mi; then short untagged railway=abandoned fragments in the notch - ways 1103712787 (~0.4 mi, 44.2303-44.2250), 171045427 (B&M-tagged, ~0.3 mi, 44.2087-44.2050), 171045503 (~0.2 mi), 1136622807 (~0.2 mi), 1494629762 (station end, 44.1697,-71.6853). The untagged fragments are attributed to this road by position only (no OSM operator tag, no OpenHistoricalMap way exists in the bbox). STRAIGHT-LINE LEGS (5.16 mi in all): (1) end of the rail trail 44.2447,-71.6429 to way 1103712787 at 44.2303,-71.6718, across the Gale River crossing and Gale River station area, 1.74 mi; (2) way 1103712787 south end 44.2250,-71.6745 to way 171045427 at 44.2087,-71.6850 (Lafayette Brook trestle stretch), 1.24 mi; (3) 44.2050,-71.6817 to way 171045503, 0.56 mi; (4) 171045503 to way 1136622807, 0.51 mi; (5) 1136622807 to the Echo Lake fragment (way 1287750972, its west end dropped by trim_reversals), 0.21 mi; (6) Echo Lake east shore 44.1827,-71.6864 to the Profile House end at 44.1697,-71.6854, 0.90 mi. Profile House end: hand-pinned to the south end of OSM way 1494629762 (44.1696,-71.6851), beside the Cannon Mountain Aerial Tramway base (Nominatim's tramway hit is an information board, type 'board', ~80 m away) and north of Profile Lake; the report puts the station SE of today's tramway parking lot - exact site not pinned. ERA / ALIGNMENT (Rule 2): the traced north end is the B&M-era (post-1897 standard-gauge) grade as OSM maps it. In 1879-1896 the 3 ft gauge P&FN met the standard-gauge BC&M/C&M at Bethlehem Junction by its own covered bridge over the Ammonoosuc (Pierce's Bridge) and a separate narrow-gauge station/transfer; whether the 1897 standard-gauge rebuild realigned the junction tracks to connect directly with the Mount Washington branch is NOT ESTABLISHED, so the first few hundred metres drawn for the 1879-1896 eras may follow a later junction alignment than the narrow-gauge transfer actually used. The rest of the grade is not reported as relocated. Geometry is shared identically by all three operator features (Rule 4 split).",
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1892,
+      "headway_min": 150,
+      "note": "Profile and Franconia Notch Railroad, own trains: 3 ft gauge steam line built by the Profile House proprietors (Taft & Greenleaf) from Bethlehem Junction on the BC&M Mount Washington branch to their hotel at the head of Franconia Notch. Opened 25 Jun 1879 (ICC valuation, vol. 30). RC1883: Bethlehem Junction to Profile House 10 mi, 3 ft gauge, 3 wood-burning engines, 7 passenger cars. RC1892: P&FN's own operating return for the year to 30 Jun 1892 (the 1891 season), passenger $18,474 of $20,099 gross. 1892 passenger service is proven (Among the Clouds, 13 Jul 1892); its attribution to the P&FN rather than the Concord and Montreal is APPROXIMATE - the P&FN account ran to 30 Jun 1893 before being closed into the C&M (RC1894); the 1893 commissioners' report that would settle it was not found. Steam from opening - no animal era. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE, not a timetable figure: RC1892's 19,042 passenger-train-miles over ~13 mi of road imply roughly a dozen train-runs a day across both lines in a ~120-day season; ~150 min (about 3-5 trains each way a day) is arithmetic, not sourced.",
+      "sources": [
+       "Segment-level: start 1879 from the ICC valuation (vol. 30, C&M) opening date 25 Jun 1879; operator through the 1891 season from RC1892 (P&FN's own return); 1892 service from Among the Clouds 13 Jul 1892, operator approx (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources). headway_min is an estimate.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Concord_and_Montreal_Railroad",
+       "https://archive.org/details/annualreportrai04hampgoog",
+       "https://archive.org/details/annualreportofra1888newh",
+       "https://archive.org/details/annualreport145commgoog",
+       "https://archive.org/details/annualreportrai13commgoog",
+       "https://www.loc.gov/resource/ca05000846/1892-07-13/ed-1/?sp=3",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+       "https://www.scenicnh.com/blog/2023/12/profile-and-franconia-notch-railroad/",
+       "https://1900px.com/pages/franconia_notch.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.633004,
+      44.272566
+     ],
+     [
+      -71.633888,
+      44.272484
+     ],
+     [
+      -71.634394,
+      44.272291
+     ],
+     [
+      -71.63464,
+      44.272044
+     ],
+     [
+      -71.636715,
+      44.268183
+     ],
+     [
+      -71.636877,
+      44.267528
+     ],
+     [
+      -71.636013,
+      44.263669
+     ],
+     [
+      -71.636131,
+      44.262337
+     ],
+     [
+      -71.637275,
+      44.260227
+     ],
+     [
+      -71.637298,
+      44.257743
+     ],
+     [
+      -71.63679,
+      44.24723
+     ],
+     [
+      -71.637029,
+      44.24638
+     ],
+     [
+      -71.637468,
+      44.245814
+     ],
+     [
+      -71.637994,
+      44.245364
+     ],
+     [
+      -71.639936,
+      44.244578
+     ],
+     [
+      -71.640988,
+      44.244405
+     ],
+     [
+      -71.641712,
+      44.244421
+     ],
+     [
+      -71.642937,
+      44.244667
+     ],
+     [
+      -71.673986,
+      44.229169
+     ],
+     [
+      -71.674479,
+      44.228746
+     ],
+     [
+      -71.67493,
+      44.227739
+     ],
+     [
+      -71.674919,
+      44.226801
+     ],
+     [
+      -71.674458,
+      44.225038
+     ],
+     [
+      -71.684986,
+      44.208745
+     ],
+     [
+      -71.68487,
+      44.207747
+     ],
+     [
+      -71.684543,
+      44.207148
+     ],
+     [
+      -71.68399,
+      44.206838
+     ],
+     [
+      -71.682507,
+      44.206437
+     ],
+     [
+      -71.682034,
+      44.205954
+     ],
+     [
+      -71.681749,
+      44.204962
+     ],
+     [
+      -71.680666,
+      44.196906
+     ],
+     [
+      -71.680687,
+      44.193545
+     ],
+     [
+      -71.68189,
+      44.186231
+     ],
+     [
+      -71.683158,
+      44.185364
+     ],
+     [
+      -71.684154,
+      44.184025
+     ],
+     [
+      -71.686376,
+      44.182712
+     ],
+     [
+      -71.68536,
+      44.169693
+     ],
+     [
+      -71.685148,
+      44.169571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Concord and Montreal Railroad",
+    "line": "Concord and Montreal: Profile House Line",
+    "id": "pfn-profile-house-line-cm",
+    "color": "#5E7D3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time read from a timetable. ~20 km/h assumes roughly 45-50 min for the ~9.5 mi climb from Bethlehem Junction to the Profile House on a 3 ft (later standard) gauge mountain branch.",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap via the mail.ru Overpass mirror, 2026-10-15: rail-trail/abandoned ways 1103712799/1103712800/1421285871/1421285870/171045387/755510297/1020419957/1020419956/1103712798/1103712797/171045545 (routed by opstrace.py), plus untagged railway=abandoned fragments 1103712787, 171045427, 171045503, 1136622807, 1287750972, 1494629762 chained in order with straight connectors; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap Overpass returned no railway ways in the bbox. No old_railway_operator spelling for this road exists in OSM (P&FN, PFN, 'Profile and Franconia', 'Profile' all 0 hits); its grade is tagged old_railway_operator=B&M where tagged at all.",
+    "geometry_quality": "Partly traced, partly straight-line; drawn length 8.55 mi against 9.46 mi documented (1900px; 9.5 mi JF-NH 35; '10 miles' RC1883) - 10% short, mostly because the straight legs cut the grade's curves through the notch. TRACED (~3.4 mi): Bethlehem Junction (44.2726,-71.6330, the junction node on the abandoned Mount Washington branch grade, OSM way 1103712804) south on the Profile Recreational Rail Trail / OSM railway=abandoned ways tagged old_railway_operator=B&M (note: Concord and Montreal) to 44.2447,-71.6429, ~2.3 mi; then short untagged railway=abandoned fragments in the notch - ways 1103712787 (~0.4 mi, 44.2303-44.2250), 171045427 (B&M-tagged, ~0.3 mi, 44.2087-44.2050), 171045503 (~0.2 mi), 1136622807 (~0.2 mi), 1494629762 (station end, 44.1697,-71.6853). The untagged fragments are attributed to this road by position only (no OSM operator tag, no OpenHistoricalMap way exists in the bbox). STRAIGHT-LINE LEGS (5.16 mi in all): (1) end of the rail trail 44.2447,-71.6429 to way 1103712787 at 44.2303,-71.6718, across the Gale River crossing and Gale River station area, 1.74 mi; (2) way 1103712787 south end 44.2250,-71.6745 to way 171045427 at 44.2087,-71.6850 (Lafayette Brook trestle stretch), 1.24 mi; (3) 44.2050,-71.6817 to way 171045503, 0.56 mi; (4) 171045503 to way 1136622807, 0.51 mi; (5) 1136622807 to the Echo Lake fragment (way 1287750972, its west end dropped by trim_reversals), 0.21 mi; (6) Echo Lake east shore 44.1827,-71.6864 to the Profile House end at 44.1697,-71.6854, 0.90 mi. Profile House end: hand-pinned to the south end of OSM way 1494629762 (44.1696,-71.6851), beside the Cannon Mountain Aerial Tramway base (Nominatim's tramway hit is an information board, type 'board', ~80 m away) and north of Profile Lake; the report puts the station SE of today's tramway parking lot - exact site not pinned. ERA / ALIGNMENT (Rule 2): the traced north end is the B&M-era (post-1897 standard-gauge) grade as OSM maps it. In 1879-1896 the 3 ft gauge P&FN met the standard-gauge BC&M/C&M at Bethlehem Junction by its own covered bridge over the Ammonoosuc (Pierce's Bridge) and a separate narrow-gauge station/transfer; whether the 1897 standard-gauge rebuild realigned the junction tracks to connect directly with the Mount Washington branch is NOT ESTABLISHED, so the first few hundred metres drawn for the 1879-1896 eras may follow a later junction alignment than the narrow-gauge transfer actually used. The rest of the grade is not reported as relocated. Geometry is shared identically by all three operator features (Rule 4 split).",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1894,
+      "headway_min": 150,
+      "note": "Concord and Montreal Railroad: RC1894 (C&M return, year to 30 Jun 1894) lists 'Bethlehem Junction to Profile House (single track)' among branches owned by the company and closes the P&FN account to 30 Jun 1893 into the C&M; there is no separate P&FN return, so the C&M ran the 1893 season. 1893 passenger service also shown by Among the Clouds, 29 Aug 1893 (Profile House in the through New York - White Mountains schedule). Still 3 ft gauge. Ends with the 1894 season: the Boston and Maine leased the C&M from 29 Jun 1895, before the 1895 season (next feature). The 11 Mar 1901 deed of the property to the C&M is ownership paper only, not an operator change. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE, not a timetable figure: RC1892's 19,042 passenger-train-miles over ~13 mi of road imply roughly a dozen train-runs a day across both lines in a ~120-day season; ~150 min (about 3-5 trains each way a day) is arithmetic, not sourced.",
+      "sources": [
+       "Segment-level: operator and years from RC1894 (C&M return) and the 29 Jun 1895 B&M lease date; 1893 service from Among the Clouds 29 Aug 1893 (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources). headway_min is an estimate.",
+       "https://archive.org/details/annualreportrai13commgoog",
+       "https://www.loc.gov/resource/ca05000846/1893-08-29/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Concord_and_Montreal_Railroad",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.633004,
+      44.272566
+     ],
+     [
+      -71.633888,
+      44.272484
+     ],
+     [
+      -71.634394,
+      44.272291
+     ],
+     [
+      -71.63464,
+      44.272044
+     ],
+     [
+      -71.636715,
+      44.268183
+     ],
+     [
+      -71.636877,
+      44.267528
+     ],
+     [
+      -71.636013,
+      44.263669
+     ],
+     [
+      -71.636131,
+      44.262337
+     ],
+     [
+      -71.637275,
+      44.260227
+     ],
+     [
+      -71.637298,
+      44.257743
+     ],
+     [
+      -71.63679,
+      44.24723
+     ],
+     [
+      -71.637029,
+      44.24638
+     ],
+     [
+      -71.637468,
+      44.245814
+     ],
+     [
+      -71.637994,
+      44.245364
+     ],
+     [
+      -71.639936,
+      44.244578
+     ],
+     [
+      -71.640988,
+      44.244405
+     ],
+     [
+      -71.641712,
+      44.244421
+     ],
+     [
+      -71.642937,
+      44.244667
+     ],
+     [
+      -71.673986,
+      44.229169
+     ],
+     [
+      -71.674479,
+      44.228746
+     ],
+     [
+      -71.67493,
+      44.227739
+     ],
+     [
+      -71.674919,
+      44.226801
+     ],
+     [
+      -71.674458,
+      44.225038
+     ],
+     [
+      -71.684986,
+      44.208745
+     ],
+     [
+      -71.68487,
+      44.207747
+     ],
+     [
+      -71.684543,
+      44.207148
+     ],
+     [
+      -71.68399,
+      44.206838
+     ],
+     [
+      -71.682507,
+      44.206437
+     ],
+     [
+      -71.682034,
+      44.205954
+     ],
+     [
+      -71.681749,
+      44.204962
+     ],
+     [
+      -71.680666,
+      44.196906
+     ],
+     [
+      -71.680687,
+      44.193545
+     ],
+     [
+      -71.68189,
+      44.186231
+     ],
+     [
+      -71.683158,
+      44.185364
+     ],
+     [
+      -71.684154,
+      44.184025
+     ],
+     [
+      -71.686376,
+      44.182712
+     ],
+     [
+      -71.68536,
+      44.169693
+     ],
+     [
+      -71.685148,
+      44.169571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Maine Railroad",
+    "line": "Boston and Maine: Profile House Branch",
+    "id": "pfn-profile-house-branch-bm",
+    "color": "#1D3557",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time read from a timetable. ~20 km/h assumes roughly 45-50 min for the ~9.5 mi climb from Bethlehem Junction to the Profile House on a 3 ft (later standard) gauge mountain branch.",
+    "gauge": "3 ft (914 mm) to 1896; 4 ft 8 1/2 in from the 1897 season",
+    "geometry_source": "OpenStreetMap via the mail.ru Overpass mirror, 2026-10-15: rail-trail/abandoned ways 1103712799/1103712800/1421285871/1421285870/171045387/755510297/1020419957/1020419956/1103712798/1103712797/171045545 (routed by opstrace.py), plus untagged railway=abandoned fragments 1103712787, 171045427, 171045503, 1136622807, 1287750972, 1494629762 chained in order with straight connectors; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap Overpass returned no railway ways in the bbox. No old_railway_operator spelling for this road exists in OSM (P&FN, PFN, 'Profile and Franconia', 'Profile' all 0 hits); its grade is tagged old_railway_operator=B&M where tagged at all.",
+    "geometry_quality": "Partly traced, partly straight-line; drawn length 8.55 mi against 9.46 mi documented (1900px; 9.5 mi JF-NH 35; '10 miles' RC1883) - 10% short, mostly because the straight legs cut the grade's curves through the notch. TRACED (~3.4 mi): Bethlehem Junction (44.2726,-71.6330, the junction node on the abandoned Mount Washington branch grade, OSM way 1103712804) south on the Profile Recreational Rail Trail / OSM railway=abandoned ways tagged old_railway_operator=B&M (note: Concord and Montreal) to 44.2447,-71.6429, ~2.3 mi; then short untagged railway=abandoned fragments in the notch - ways 1103712787 (~0.4 mi, 44.2303-44.2250), 171045427 (B&M-tagged, ~0.3 mi, 44.2087-44.2050), 171045503 (~0.2 mi), 1136622807 (~0.2 mi), 1494629762 (station end, 44.1697,-71.6853). The untagged fragments are attributed to this road by position only (no OSM operator tag, no OpenHistoricalMap way exists in the bbox). STRAIGHT-LINE LEGS (5.16 mi in all): (1) end of the rail trail 44.2447,-71.6429 to way 1103712787 at 44.2303,-71.6718, across the Gale River crossing and Gale River station area, 1.74 mi; (2) way 1103712787 south end 44.2250,-71.6745 to way 171045427 at 44.2087,-71.6850 (Lafayette Brook trestle stretch), 1.24 mi; (3) 44.2050,-71.6817 to way 171045503, 0.56 mi; (4) 171045503 to way 1136622807, 0.51 mi; (5) 1136622807 to the Echo Lake fragment (way 1287750972, its west end dropped by trim_reversals), 0.21 mi; (6) Echo Lake east shore 44.1827,-71.6864 to the Profile House end at 44.1697,-71.6854, 0.90 mi. Profile House end: hand-pinned to the south end of OSM way 1494629762 (44.1696,-71.6851), beside the Cannon Mountain Aerial Tramway base (Nominatim's tramway hit is an information board, type 'board', ~80 m away) and north of Profile Lake; the report puts the station SE of today's tramway parking lot - exact site not pinned. ERA / ALIGNMENT (Rule 2): the traced north end is the B&M-era (post-1897 standard-gauge) grade as OSM maps it. In 1879-1896 the 3 ft gauge P&FN met the standard-gauge BC&M/C&M at Bethlehem Junction by its own covered bridge over the Ammonoosuc (Pierce's Bridge) and a separate narrow-gauge station/transfer; whether the 1897 standard-gauge rebuild realigned the junction tracks to connect directly with the Mount Washington branch is NOT ESTABLISHED, so the first few hundred metres drawn for the 1879-1896 eras may follow a later junction alignment than the narrow-gauge transfer actually used. The rest of the grade is not reported as relocated. Geometry is shared identically by all three operator features (Rule 4 split).",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1896,
+      "headway_min": 150,
+      "note": "Boston and Maine, operating under its 29 Jun 1895 lease of the Concord and Montreal; still 3 ft gauge. RC1895 reports B&M plans to rebuild the line and convert it to standard gauge. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE, not a timetable figure: RC1892's 19,042 passenger-train-miles over ~13 mi of road imply roughly a dozen train-runs a day across both lines in a ~120-day season; ~150 min (about 3-5 trains each way a day) is arithmetic, not sourced.",
+      "sources": [
+       "Segment-level: operator from the 29 Jun 1895 B&M lease of the C&M and RC1895 (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources); no 1895-96 timetable read. headway_min is an estimate.",
+       "https://archive.org/details/annualreport137commgoog",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Concord_and_Montreal_Railroad",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+      ]
+     },
+     {
+      "start": 1897,
+      "end": 1920,
+      "headway_min": 150,
+      "note": "Boston and Maine, standard gauge from the 1897 season (RC1897: 'changed from narrow to standard gauge at an expense of $40,000'). Passenger service evidenced by a Willimantic Journal B&M excursion ad of 1 Oct 1897 (coupons 'between Profile House and Bethlehem Junction'), the B&M White Mountains Division branch list (RC1898; 'Profile House to Bethlehem ... 12.84' mi in RC1907) and the Bennington Evening Banner, 3 Jan 1913 (the 'Profile & Franconia Notch railroad' excluded from New Haven mileage tickets - a going passenger line). Through B&M parlor cars from Boston are widely reported but NOT SOURCED here. END 1920 is Fowler's (JF-NH 35 '1879>1920'); ScenicNH and 1900px give 1921 - CONFLICT UNRESOLVED, drawn to the earlier year. Do not extend to 1921 without a 1921 B&M timetable or equivalent. The Profile House hotel burned Aug 1923 (not a rail date); track removal date not established. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE, not a timetable figure: RC1892's 19,042 passenger-train-miles over ~13 mi of road imply roughly a dozen train-runs a day across both lines in a ~120-day season; ~150 min (about 3-5 trains each way a day) is arithmetic, not sourced.",
+      "sources": [
+       "Segment-level: regauging from RC1897; service from Willimantic Journal 1 Oct 1897 p8 and Bennington Evening Banner 3 Jan 1913 p1; end 1920 from Fowler JF-NH table 35 (conflicts with 1921 in ScenicNH/1900px) (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources). headway_min is an estimate.",
+       "https://archive.org/details/annualreport44commgoog",
+       "https://www.loc.gov/resource/sn82016399/1897-10-01/ed-1/?sp=8",
+       "https://archive.org/details/annualreport148commgoog",
+       "https://www.loc.gov/resource/sn95066012/1913-01-03/ed-1/?sp=1",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+       "https://www.scenicnh.com/blog/2023/12/profile-and-franconia-notch-railroad/",
+       "https://1900px.com/pages/franconia_notch.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.633004,
+      44.272566
+     ],
+     [
+      -71.633888,
+      44.272484
+     ],
+     [
+      -71.634394,
+      44.272291
+     ],
+     [
+      -71.63464,
+      44.272044
+     ],
+     [
+      -71.636715,
+      44.268183
+     ],
+     [
+      -71.636877,
+      44.267528
+     ],
+     [
+      -71.636013,
+      44.263669
+     ],
+     [
+      -71.636131,
+      44.262337
+     ],
+     [
+      -71.637275,
+      44.260227
+     ],
+     [
+      -71.637298,
+      44.257743
+     ],
+     [
+      -71.63679,
+      44.24723
+     ],
+     [
+      -71.637029,
+      44.24638
+     ],
+     [
+      -71.637468,
+      44.245814
+     ],
+     [
+      -71.637994,
+      44.245364
+     ],
+     [
+      -71.639936,
+      44.244578
+     ],
+     [
+      -71.640988,
+      44.244405
+     ],
+     [
+      -71.641712,
+      44.244421
+     ],
+     [
+      -71.642937,
+      44.244667
+     ],
+     [
+      -71.673986,
+      44.229169
+     ],
+     [
+      -71.674479,
+      44.228746
+     ],
+     [
+      -71.67493,
+      44.227739
+     ],
+     [
+      -71.674919,
+      44.226801
+     ],
+     [
+      -71.674458,
+      44.225038
+     ],
+     [
+      -71.684986,
+      44.208745
+     ],
+     [
+      -71.68487,
+      44.207747
+     ],
+     [
+      -71.684543,
+      44.207148
+     ],
+     [
+      -71.68399,
+      44.206838
+     ],
+     [
+      -71.682507,
+      44.206437
+     ],
+     [
+      -71.682034,
+      44.205954
+     ],
+     [
+      -71.681749,
+      44.204962
+     ],
+     [
+      -71.680666,
+      44.196906
+     ],
+     [
+      -71.680687,
+      44.193545
+     ],
+     [
+      -71.68189,
+      44.186231
+     ],
+     [
+      -71.683158,
+      44.185364
+     ],
+     [
+      -71.684154,
+      44.184025
+     ],
+     [
+      -71.686376,
+      44.182712
+     ],
+     [
+      -71.68536,
+      44.169693
+     ],
+     [
+      -71.685148,
+      44.169571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Profile and Franconia Notch Railroad",
+    "line": "Profile and Franconia Notch: Bethlehem Branch",
+    "id": "pfn-bethlehem-branch-pfn",
+    "color": "#7B3F61",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time read from a timetable. ~20 km/h assumed for a 3.4 mi resort branch with hotel stops.",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap via the mail.ru Overpass mirror, 2026-10-15: railway=abandoned ways and the Railroad Trail (see geometry_quality), routed by opstrace.py from Bethlehem Junction, plus Railroad Trail way 456280186 and one straight leg; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap returned no ways.",
+    "geometry_quality": "Mostly traced; drawn length 3.25 mi against 3.38 mi documented (1900px; 3.4 mi JF-NH 33, mp 197.4-200.8; '3 1/2 miles' RC1883), 4% short. TRACED (2.69 mi): Bethlehem Junction (44.2726,-71.6330) west-northwest on OSM railway=abandoned ways 1103712793/1102467517-1102467520 and the 'Railroad Trail / Snowmobile Trail NH 104' and 'Railroad Trail' cycleway (ways 1103712795, 1102467519, 1102467518, 1102467516, 1102467515, 1102467512, 456280186) past Maplewood to the trail's west end at 44.2823,-71.6800. None of these carries an operator tag; attribution is by position (the only rail grade from Bethlehem Junction toward Bethlehem village). STRAIGHT-LINE LEG: 44.2823,-71.6800 to Park Avenue, Bethlehem village (Nominatim street centroid 44.2815,-71.6914, type 'residential' street - not a station), 0.56 mi. The report names the terminus as Park Avenue / the Sinclair House; the exact station site is not pinned, and the shortfall against 3.4 mi suggests the true terminus or the junction end lies a little beyond what is drawn. Maplewood: Nominatim returns 'The Village At Maplewood' (residential, 44.2843,-71.6724) - a modern development name, not the station; Maplewood station is not pinned (JF-NH 33 mp 198.3). ERA / ALIGNMENT (Rule 2): same Bethlehem Junction caveat as the Profile House line - the drawn junction end is the grade OSM maps (post-1897 standard-gauge era); the 1881-1896 narrow-gauge transfer arrangement at the junction is NOT ESTABLISHED and may have diverged for a short distance. Geometry is shared identically by all three operator features (Rule 4 split).",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1892,
+      "headway_min": 180,
+      "note": "Profile and Franconia Notch Railroad, own trains: 3 ft gauge branch from Bethlehem Junction past the Maplewood to Bethlehem village (Park Avenue / Sinclair House), opened July 1881 (RC1881 had it contracted 'ready for operation by the first of July'; ICC '1881'; JF-NH 33 '1881 >'). RC1883: 'branch from Bethlehem Junction to Bethlehem, 3 1/2 miles'. 1892 service proven by Among the Clouds 13 Jul 1892 (Maplewood, Bethlehem in the through schedule); 1892 operator attribution to the P&FN is APPROXIMATE, as on the Profile House line. Steam throughout. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE (same RC1892 train-mile arithmetic as the Profile House line); ~180 min is not sourced.",
+      "sources": [
+       "Segment-level: start 1881 from RC1881 / ICC / JF-NH 33; operator from RC1892; 1892 service from Among the Clouds 13 Jul 1892, operator approx (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources). headway_min is an estimate.",
+       "https://archive.org/details/reportrailroadc00hampgoog",
+       "https://archive.org/details/annualreportrai04hampgoog",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Concord_and_Montreal_Railroad",
+       "https://archive.org/details/annualreport145commgoog",
+       "https://www.loc.gov/resource/ca05000846/1892-07-13/ed-1/?sp=3",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf",
+       "https://1900px.com/pages/franconia_notch.htm",
+       "https://www.scenicnh.com/blog/2023/12/profile-and-franconia-notch-railroad/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.633004,
+      44.272566
+     ],
+     [
+      -71.633509,
+      44.272713
+     ],
+     [
+      -71.634118,
+      44.273154
+     ],
+     [
+      -71.635017,
+      44.274292
+     ],
+     [
+      -71.636018,
+      44.27519
+     ],
+     [
+      -71.639855,
+      44.277109
+     ],
+     [
+      -71.640948,
+      44.277771
+     ],
+     [
+      -71.642222,
+      44.278053
+     ],
+     [
+      -71.643136,
+      44.278556
+     ],
+     [
+      -71.645087,
+      44.280461
+     ],
+     [
+      -71.646427,
+      44.282302
+     ],
+     [
+      -71.647545,
+      44.283102
+     ],
+     [
+      -71.648512,
+      44.283583
+     ],
+     [
+      -71.649935,
+      44.283832
+     ],
+     [
+      -71.650983,
+      44.283856
+     ],
+     [
+      -71.654468,
+      44.283596
+     ],
+     [
+      -71.658328,
+      44.283534
+     ],
+     [
+      -71.667968,
+      44.283979
+     ],
+     [
+      -71.6742,
+      44.283487
+     ],
+     [
+      -71.675967,
+      44.283078
+     ],
+     [
+      -71.677213,
+      44.282606
+     ],
+     [
+      -71.678202,
+      44.28245
+     ],
+     [
+      -71.691369,
+      44.281525
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Concord and Montreal Railroad",
+    "line": "Concord and Montreal: Bethlehem Branch",
+    "id": "pfn-bethlehem-branch-cm",
+    "color": "#5E7D3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time read from a timetable. ~20 km/h assumed for a 3.4 mi resort branch with hotel stops.",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap via the mail.ru Overpass mirror, 2026-10-15: railway=abandoned ways and the Railroad Trail (see geometry_quality), routed by opstrace.py from Bethlehem Junction, plus Railroad Trail way 456280186 and one straight leg; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap returned no ways.",
+    "geometry_quality": "Mostly traced; drawn length 3.25 mi against 3.38 mi documented (1900px; 3.4 mi JF-NH 33, mp 197.4-200.8; '3 1/2 miles' RC1883), 4% short. TRACED (2.69 mi): Bethlehem Junction (44.2726,-71.6330) west-northwest on OSM railway=abandoned ways 1103712793/1102467517-1102467520 and the 'Railroad Trail / Snowmobile Trail NH 104' and 'Railroad Trail' cycleway (ways 1103712795, 1102467519, 1102467518, 1102467516, 1102467515, 1102467512, 456280186) past Maplewood to the trail's west end at 44.2823,-71.6800. None of these carries an operator tag; attribution is by position (the only rail grade from Bethlehem Junction toward Bethlehem village). STRAIGHT-LINE LEG: 44.2823,-71.6800 to Park Avenue, Bethlehem village (Nominatim street centroid 44.2815,-71.6914, type 'residential' street - not a station), 0.56 mi. The report names the terminus as Park Avenue / the Sinclair House; the exact station site is not pinned, and the shortfall against 3.4 mi suggests the true terminus or the junction end lies a little beyond what is drawn. Maplewood: Nominatim returns 'The Village At Maplewood' (residential, 44.2843,-71.6724) - a modern development name, not the station; Maplewood station is not pinned (JF-NH 33 mp 198.3). ERA / ALIGNMENT (Rule 2): same Bethlehem Junction caveat as the Profile House line - the drawn junction end is the grade OSM maps (post-1897 standard-gauge era); the 1881-1896 narrow-gauge transfer arrangement at the junction is NOT ESTABLISHED and may have diverged for a short distance. Geometry is shared identically by all three operator features (Rule 4 split).",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1894,
+      "headway_min": 180,
+      "note": "Concord and Montreal Railroad: RC1894 lists 'Bethlehem Junction to Bethlehem (single track)' among branches owned by the company; the C&M ran the 1893 season. 1893 service in Among the Clouds, 29 Aug 1893 (Bethlehem Junc., Maplewood, Bethlehem). Ends with the 1894 season, before the 29 Jun 1895 B&M lease. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE (same RC1892 train-mile arithmetic as the Profile House line); ~180 min is not sourced.",
+      "sources": [
+       "Segment-level: operator and years from RC1894 and the 29 Jun 1895 B&M lease; 1893 service from Among the Clouds 29 Aug 1893 (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources). headway_min is an estimate.",
+       "https://archive.org/details/annualreportrai13commgoog",
+       "https://www.loc.gov/resource/ca05000846/1893-08-29/ed-1/?sp=3",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.633004,
+      44.272566
+     ],
+     [
+      -71.633509,
+      44.272713
+     ],
+     [
+      -71.634118,
+      44.273154
+     ],
+     [
+      -71.635017,
+      44.274292
+     ],
+     [
+      -71.636018,
+      44.27519
+     ],
+     [
+      -71.639855,
+      44.277109
+     ],
+     [
+      -71.640948,
+      44.277771
+     ],
+     [
+      -71.642222,
+      44.278053
+     ],
+     [
+      -71.643136,
+      44.278556
+     ],
+     [
+      -71.645087,
+      44.280461
+     ],
+     [
+      -71.646427,
+      44.282302
+     ],
+     [
+      -71.647545,
+      44.283102
+     ],
+     [
+      -71.648512,
+      44.283583
+     ],
+     [
+      -71.649935,
+      44.283832
+     ],
+     [
+      -71.650983,
+      44.283856
+     ],
+     [
+      -71.654468,
+      44.283596
+     ],
+     [
+      -71.658328,
+      44.283534
+     ],
+     [
+      -71.667968,
+      44.283979
+     ],
+     [
+      -71.6742,
+      44.283487
+     ],
+     [
+      -71.675967,
+      44.283078
+     ],
+     [
+      -71.677213,
+      44.282606
+     ],
+     [
+      -71.678202,
+      44.28245
+     ],
+     [
+      -71.691369,
+      44.281525
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Maine Railroad",
+    "line": "Boston and Maine: Bethlehem Branch",
+    "id": "pfn-bethlehem-branch-bm",
+    "color": "#1D3557",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE: no running time read from a timetable. ~20 km/h assumed for a 3.4 mi resort branch with hotel stops.",
+    "gauge": "3 ft (914 mm) to 1896; 4 ft 8 1/2 in from the 1897 season",
+    "geometry_source": "OpenStreetMap via the mail.ru Overpass mirror, 2026-10-15: railway=abandoned ways and the Railroad Trail (see geometry_quality), routed by opstrace.py from Bethlehem Junction, plus Railroad Trail way 456280186 and one straight leg; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap returned no ways.",
+    "geometry_quality": "Mostly traced; drawn length 3.25 mi against 3.38 mi documented (1900px; 3.4 mi JF-NH 33, mp 197.4-200.8; '3 1/2 miles' RC1883), 4% short. TRACED (2.69 mi): Bethlehem Junction (44.2726,-71.6330) west-northwest on OSM railway=abandoned ways 1103712793/1102467517-1102467520 and the 'Railroad Trail / Snowmobile Trail NH 104' and 'Railroad Trail' cycleway (ways 1103712795, 1102467519, 1102467518, 1102467516, 1102467515, 1102467512, 456280186) past Maplewood to the trail's west end at 44.2823,-71.6800. None of these carries an operator tag; attribution is by position (the only rail grade from Bethlehem Junction toward Bethlehem village). STRAIGHT-LINE LEG: 44.2823,-71.6800 to Park Avenue, Bethlehem village (Nominatim street centroid 44.2815,-71.6914, type 'residential' street - not a station), 0.56 mi. The report names the terminus as Park Avenue / the Sinclair House; the exact station site is not pinned, and the shortfall against 3.4 mi suggests the true terminus or the junction end lies a little beyond what is drawn. Maplewood: Nominatim returns 'The Village At Maplewood' (residential, 44.2843,-71.6724) - a modern development name, not the station; Maplewood station is not pinned (JF-NH 33 mp 198.3). ERA / ALIGNMENT (Rule 2): same Bethlehem Junction caveat as the Profile House line - the drawn junction end is the grade OSM maps (post-1897 standard-gauge era); the 1881-1896 narrow-gauge transfer arrangement at the junction is NOT ESTABLISHED and may have diverged for a short distance. Geometry is shared identically by all three operator features (Rule 4 split).",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1896,
+      "headway_min": 180,
+      "note": "Boston and Maine, under its 29 Jun 1895 lease of the Concord and Montreal; still 3 ft gauge. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE (same RC1892 train-mile arithmetic as the Profile House line); ~180 min is not sourced.",
+      "sources": [
+       "Segment-level: operator from the 29 Jun 1895 B&M lease (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources); no 1895-96 timetable read. headway_min is an estimate.",
+       "https://archive.org/details/annualreport137commgoog",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+      ]
+     },
+     {
+      "start": 1897,
+      "end": 1925,
+      "headway_min": 180,
+      "note": "Boston and Maine, standard gauge from the 1897 season (RC1897). 1897 service: Willimantic Journal 1 Oct 1897 B&M excursion ad sells tickets to 'Bethlehem, Maplewood'. END 1925 rests on Fowler alone (JF-NH 33 '1881 > 1925') - no second source dates the branch's end; it outlived the Profile House line by about five years. Treat 1925 as single-source. CAUTION: 'Littleton & Bethlehem' in later B&M timetables is the Woodsville - Groveton main line at Littleton, not this branch. Track removal date not established. Summer-season only (roughly late June to early October; RC1883 'operated only during the months of summer travel'; 1897 coupons void after 2 Oct) - the map's whole-year drawing over-states a seasonal resort line by construction. headway_min is an ESTIMATE (same RC1892 train-mile arithmetic as the Profile House line); ~180 min is not sourced.",
+      "sources": [
+       "Segment-level: regauging from RC1897; 1897 service from Willimantic Journal 1 Oct 1897 p8; end 1925 from Fowler JF-NH table 33 only (as established in research/branches/profile_and_franconia_notch_railroad.txt; the tracer did not re-read these sources). headway_min is an estimate.",
+       "https://archive.org/details/annualreport44commgoog",
+       "https://www.loc.gov/resource/sn82016399/1897-10-01/ed-1/?sp=8",
+       "https://www.branchline.uk/jfpdf/newhampshirerrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.633004,
+      44.272566
+     ],
+     [
+      -71.633509,
+      44.272713
+     ],
+     [
+      -71.634118,
+      44.273154
+     ],
+     [
+      -71.635017,
+      44.274292
+     ],
+     [
+      -71.636018,
+      44.27519
+     ],
+     [
+      -71.639855,
+      44.277109
+     ],
+     [
+      -71.640948,
+      44.277771
+     ],
+     [
+      -71.642222,
+      44.278053
+     ],
+     [
+      -71.643136,
+      44.278556
+     ],
+     [
+      -71.645087,
+      44.280461
+     ],
+     [
+      -71.646427,
+      44.282302
+     ],
+     [
+      -71.647545,
+      44.283102
+     ],
+     [
+      -71.648512,
+      44.283583
+     ],
+     [
+      -71.649935,
+      44.283832
+     ],
+     [
+      -71.650983,
+      44.283856
+     ],
+     [
+      -71.654468,
+      44.283596
+     ],
+     [
+      -71.658328,
+      44.283534
+     ],
+     [
+      -71.667968,
+      44.283979
+     ],
+     [
+      -71.6742,
+      44.283487
+     ],
+     [
+      -71.675967,
+      44.283078
+     ],
+     [
+      -71.677213,
+      44.282606
+     ],
+     [
+      -71.678202,
+      44.28245
+     ],
+     [
+      -71.691369,
+      44.281525
+     ]
+    ]
+   }
+  }
+ ]
+}
