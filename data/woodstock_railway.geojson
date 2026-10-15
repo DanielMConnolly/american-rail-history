@@ -1,0 +1,503 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Woodstock Railway (Woodstock Railroad Company to 1890) ran 13.88 miles from White River Junction, where it met the Central Vermont and Boston & Maine, via Hartford, Dewey's Mills, the Quechee Gorge bridge, Quechee and Taftsville to Woodstock, Vermont. One local company ran it for its whole passenger life, 1875-1933, so it is one feature in one colour, with segments split only at the 1890 reorganization. Research report: research/branches/woodstock_railway.txt.",
+  "sources": [
+   "Frank J. Barrett Jr., 'The Woodstock Railway, Dewey's Mills, and Quechee' (NNE Chapter SIA tour deck, 2015): https://hartfordvthistory.com/wp-content/uploads/2023/03/Woodstock-railroad-barrett.pdf",
+   "Rutland Herald, 'All aboard! The final passenger train rides on the Woodstock Railway' (quotes Vermont Standard, Apr 6 1933): https://www.rutlandherald.com/news/all-aboard-the-final-passenger-train-rides-on-the-woodstock-railway/article_c7487343-9b50-579e-ab50-21afdfeb5ae5.html",
+   "Wikipedia, Woodstock Railway (cites Edgar T. Mead, 'Over the Hills to Woodstock', 1967): https://en.wikipedia.org/wiki/Woodstock_Railway",
+   "John Fowler, 'Vermont Railroads Passenger Stations & Stops', section 39 Woodstock Rly (letters y = 1876 Pathfinder, z = 1894 Pathfinder, b = 1923 Pathfinder): https://www.branchline.uk/jfpdf/vermontrrs.pdf"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-15)",
+   "OpenHistoricalMap (queried, nothing in corridor)"
+  ],
+  "hartford_wrj_finding": "Open question from the report: did the Woodstock run on its own track between Hartford and White River Junction or use the Central Vermont's? Found: US 4, built on this railway's roadbed (BAR), runs parallel to and south of the CV (NECR, old_railway_operator=CN) main line the whole way from Hartford to the WRJ yard, and OSM keeps an untagged abandoned:railway lead (way 287806338) on the south side of the yard, separate from the CV main. Together with the company's own 13.88-mile length to WRJ and its own engine house at WRJ (BAR), this points to separate track, but no source states it outright. The trace does NOT use the CV main line; it enters WRJ on yard tracks for the last 0.7 mi.",
+  "not_yet_sourced": [
+   "Opening day: Sept 2 1875 (BAR) vs Sept 29 1875 first through train (RH). Year agreed.",
+   "Headway: RH's 'five trains per day' is undated; no timetable with times was read (an 1877 company timetable cited by WP was not seen).",
+   "Location of the Woodstock Railway's Hartford station and whether its track to WRJ was wholly separate from the Central Vermont's (see hartford_wrj_finding).",
+   "Fowler lists a Central Vermont stop 'Woodstock 1874' at CV mp 183 - a CV stop, not this road; not investigated.",
+   "Quechee Times snippet: stockholders voted in 1932 to sell the right of way; a 1937 'abandonment'/bridge-purchase claim is probably formal conveyance. Neither affects the 1933 last passenger train.",
+   "No ICC abandonment docket located."
+  ],
+  "pulled": "20261015"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Woodstock Railway",
+    "line": "Woodstock Railway: White River Junction \u2013 Woodstock",
+    "id": "woodstock-railway",
+    "color": "#7A5C8E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 13.88-mile single-track steam branch run one train at a time; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-15), routed with opstrace.py: WRJ yard tracks and abandoned way 287806338; US 4 highway ways (Woodstock Road / East Woodstock Road); untagged railway=abandoned and railway=demolished ways Quechee - Woodstock, gaps bridged straight. OpenHistoricalMap queried: no railway ways in 43.58,-72.58,43.70,-72.29.",
+    "geometry_quality": "Traced 13.63 mi against 13.88 mi documented (BAR, RH; -1.8%). No OSM way carries an old_railway_operator for this road and OpenHistoricalMap has no railway in the corridor, so the line is assembled from three kinds of geometry. (1) White River Junction, mp 0.0-0.78: OSM yard tracks along the south edge of the White River Junction yard plus the abandoned:railway lead way 287806338, then a 125 m straight link to US 4. The terminal point is the present (1937) White River Junction station, i.e. a site later than this line's era; the 1875-1933 station stood in the same yard. (2) HIGHWAY SUBSTITUTE, mp 0.78-7.88 (7.10 mi): drawn along modern US 4 ('Woodstock Road'), which the State Highway Board built on about eight miles of this railway's roadbed between Quechee and White River Junction in 1933-34 (BAR: 'The New US Route 4 / Former Bed of the Woodstock Railway / Circa 1934'); the 1911 steel Quechee Gorge bridge (mp ~6.8) is the US 4 bridge on the railway's own bridge site, and the Shallies Hill cut is US 4 just west of I-89. This is an approximation via the highway built on the grade, i.e. a LATER alignment than the railway's own: post-1934 road improvements, notably the climb from the White River near I-89 exit 1, may depart from the old grade by tens to hundreds of metres. (3) Quechee - Woodstock, mp 7.88-13.63 (5.75 mi): the untagged railway=abandoned / railway=demolished OSM ways along the Ottauquechee River (1094520784/91/92/94, 1311164073-84, 1539173833-39, 1539751726), the roadbed bypassed by US 4. Gaps between those fragments are STRAIGHT LINES totalling 1.55 mi: 0.43 mi at the Taftsville river crossing (mp 10.85-11.29), and eleven shorter links of 14-328 m between Taftsville and the US 4 junction at Quechee. The western end stops at the end of the mapped grade at Woodstock; the terminal yard (turntable site) lies about 0.2 km beyond and is not drawn. Per-station mileposts on the drawn line vs Fowler BL 39: White River Junction 0.0 (0); Hartford 1.23 (2) - the Woodstock's Hartford station site is not established and was pinned on US 4 opposite Hartford village, so this check is weak; Deweys Mills 6.62 (6); Quechee 7.58 (7); Taftsville 11.08 (11); Woodstock 13.63 (14; 13.88 documented).",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1890,
+      "headway_min": 180,
+      "note": "Woodstock Railroad Company (organized Oct 30 1863). The 13.88-mile line opened in 1875: BAR gives Sept 2 1875 as the opening, RH says the first train ran White River Junction - Woodstock on Sept 29 1875 behind the Central Vermont's borrowed locomotive Winooski (day conflict recorded; year agreed). Steam from the first train, so no animal-power years. Fowler's letter y (1876 Pathfinder) lists all six stations. Ends at the July 1 1890 reorganization as the Woodstock Railway Company (BAR) - a rename of the same local enterprise, not a change of operator. One train at a time on the line (RH); the 'five trains per day' RH gives for 'a number of years' is undated, so headway_min is an ESTIMATE from that figure, not a timetable reading. ",
+      "sources": [
+       "Segment-level: start year from BAR (opened Sept 2 1875) and RH (first train Sept 29 1875), confirmed by Fowler BL 39 letter y (1876 Pathfinder) at all six stations; 1890 split from BAR's dated reorganization (July 1 1890). Headway is an estimate, not sourced.",
+       "Frank J. Barrett Jr., 'The Woodstock Railway, Dewey's Mills, and Quechee' (NNE Chapter SIA tour deck, 2015): https://hartfordvthistory.com/wp-content/uploads/2023/03/Woodstock-railroad-barrett.pdf",
+       "Rutland Herald, 'All aboard! The final passenger train rides on the Woodstock Railway' (quotes Vermont Standard, Apr 6 1933): https://www.rutlandherald.com/news/all-aboard-the-final-passenger-train-rides-on-the-woodstock-railway/article_c7487343-9b50-579e-ab50-21afdfeb5ae5.html",
+       "John Fowler, 'Vermont Railroads Passenger Stations & Stops', section 39 Woodstock Rly (letters y = 1876 Pathfinder, z = 1894 Pathfinder, b = 1923 Pathfinder): https://www.branchline.uk/jfpdf/vermontrrs.pdf",
+       "Wikipedia, Woodstock Railway (cites Edgar T. Mead, 'Over the Hills to Woodstock', 1967): https://en.wikipedia.org/wiki/Woodstock_Railway"
+      ]
+     },
+     {
+      "start": 1890,
+      "end": 1933,
+      "headway_min": 180,
+      "note": "Woodstock Railway Company, reorganized July 1 1890 (BAR; WP). Same company and trains; no lease to or operation by the Central Vermont or Boston & Maine was found (WP/Mead, BAR, RH). Fowler letters z (1894 Pathfinder) and b (1923 Pathfinder) list all six stations. Passenger, express and mail ran to the end: the last trains ran Saturday April 15 1933 (Vermont Standard Apr 6 1933 via RH; BAR; WP), the final run carrying 500+ passengers behind No. 4 'H.H. Paine' with three borrowed B&M coaches. Freight ended the same day - no freight-only tail. Rails lifted summer 1933; about eight miles of roadbed and the Quechee Gorge bridge became US 4. One train at a time on the line (RH); the 'five trains per day' RH gives for 'a number of years' is undated, so headway_min is an ESTIMATE from that figure, not a timetable reading. ",
+      "sources": [
+       "Segment-level: end year from BAR ('April 15 1933 ... The last Run'), RH (Vermont Standard Apr 6 1933: last trains Saturday April 15) and WP; 1890 start from BAR's reorganization date; service between confirmed by Fowler BL 39 letters z (1894) and b (1923) at all six stations. Headway is an estimate, not sourced.",
+       "Frank J. Barrett Jr., 'The Woodstock Railway, Dewey's Mills, and Quechee' (NNE Chapter SIA tour deck, 2015): https://hartfordvthistory.com/wp-content/uploads/2023/03/Woodstock-railroad-barrett.pdf",
+       "Rutland Herald, 'All aboard! The final passenger train rides on the Woodstock Railway' (quotes Vermont Standard, Apr 6 1933): https://www.rutlandherald.com/news/all-aboard-the-final-passenger-train-rides-on-the-woodstock-railway/article_c7487343-9b50-579e-ab50-21afdfeb5ae5.html",
+       "Wikipedia, Woodstock Railway (cites Edgar T. Mead, 'Over the Hills to Woodstock', 1967): https://en.wikipedia.org/wiki/Woodstock_Railway",
+       "John Fowler, 'Vermont Railroads Passenger Stations & Stops', section 39 Woodstock Rly (letters y = 1876 Pathfinder, z = 1894 Pathfinder, b = 1923 Pathfinder): https://www.branchline.uk/jfpdf/vermontrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -72.317702,
+      43.647684
+     ],
+     [
+      -72.318495,
+      43.648681
+     ],
+     [
+      -72.319381,
+      43.649459
+     ],
+     [
+      -72.320625,
+      43.65016
+     ],
+     [
+      -72.325509,
+      43.652278
+     ],
+     [
+      -72.328877,
+      43.653453
+     ],
+     [
+      -72.330108,
+      43.65272
+     ],
+     [
+      -72.332216,
+      43.654393
+     ],
+     [
+      -72.333293,
+      43.655056
+     ],
+     [
+      -72.334787,
+      43.655616
+     ],
+     [
+      -72.337043,
+      43.65614
+     ],
+     [
+      -72.3393,
+      43.656947
+     ],
+     [
+      -72.341134,
+      43.657315
+     ],
+     [
+      -72.343712,
+      43.657271
+     ],
+     [
+      -72.345413,
+      43.657568
+     ],
+     [
+      -72.346648,
+      43.658009
+     ],
+     [
+      -72.350243,
+      43.659772
+     ],
+     [
+      -72.35156,
+      43.660262
+     ],
+     [
+      -72.360877,
+      43.662871
+     ],
+     [
+      -72.364601,
+      43.663409
+     ],
+     [
+      -72.369529,
+      43.663946
+     ],
+     [
+      -72.371564,
+      43.66432
+     ],
+     [
+      -72.375546,
+      43.664246
+     ],
+     [
+      -72.37962,
+      43.66506
+     ],
+     [
+      -72.38432,
+      43.666882
+     ],
+     [
+      -72.385671,
+      43.667042
+     ],
+     [
+      -72.386621,
+      43.666846
+     ],
+     [
+      -72.38756,
+      43.666284
+     ],
+     [
+      -72.388207,
+      43.66556
+     ],
+     [
+      -72.388432,
+      43.664933
+     ],
+     [
+      -72.388405,
+      43.664071
+     ],
+     [
+      -72.387586,
+      43.662129
+     ],
+     [
+      -72.387378,
+      43.661024
+     ],
+     [
+      -72.388265,
+      43.65458
+     ],
+     [
+      -72.3893,
+      43.653222
+     ],
+     [
+      -72.39086,
+      43.652229
+     ],
+     [
+      -72.392138,
+      43.651044
+     ],
+     [
+      -72.392727,
+      43.650303
+     ],
+     [
+      -72.393222,
+      43.649288
+     ],
+     [
+      -72.394161,
+      43.645683
+     ],
+     [
+      -72.394245,
+      43.644608
+     ],
+     [
+      -72.393597,
+      43.642954
+     ],
+     [
+      -72.391978,
+      43.640892
+     ],
+     [
+      -72.391754,
+      43.640265
+     ],
+     [
+      -72.391737,
+      43.639617
+     ],
+     [
+      -72.391959,
+      43.638994
+     ],
+     [
+      -72.392566,
+      43.638249
+     ],
+     [
+      -72.393447,
+      43.637669
+     ],
+     [
+      -72.394458,
+      43.637277
+     ],
+     [
+      -72.396228,
+      43.636976
+     ],
+     [
+      -72.399159,
+      43.637235
+     ],
+     [
+      -72.40596,
+      43.637025
+     ],
+     [
+      -72.407135,
+      43.637114
+     ],
+     [
+      -72.409109,
+      43.637511
+     ],
+     [
+      -72.41017,
+      43.637903
+     ],
+     [
+      -72.410785,
+      43.638372
+     ],
+     [
+      -72.411181,
+      43.638948
+     ],
+     [
+      -72.41197,
+      43.641014
+     ],
+     [
+      -72.412861,
+      43.641857
+     ],
+     [
+      -72.413834,
+      43.642337
+     ],
+     [
+      -72.414962,
+      43.642587
+     ],
+     [
+      -72.418199,
+      43.642872
+     ],
+     [
+      -72.424402,
+      43.644545
+     ],
+     [
+      -72.42556,
+      43.644655
+     ],
+     [
+      -72.425597,
+      43.644889
+     ],
+     [
+      -72.43311,
+      43.647192
+     ],
+     [
+      -72.434812,
+      43.647448
+     ],
+     [
+      -72.438062,
+      43.647498
+     ],
+     [
+      -72.438821,
+      43.64719
+     ],
+     [
+      -72.439585,
+      43.646329
+     ],
+     [
+      -72.44111,
+      43.643134
+     ],
+     [
+      -72.441456,
+      43.641335
+     ],
+     [
+      -72.442073,
+      43.63998
+     ],
+     [
+      -72.443456,
+      43.638517
+     ],
+     [
+      -72.44433,
+      43.63804
+     ],
+     [
+      -72.445968,
+      43.637392
+     ],
+     [
+      -72.447173,
+      43.636705
+     ],
+     [
+      -72.447744,
+      43.636513
+     ],
+     [
+      -72.449506,
+      43.636236
+     ],
+     [
+      -72.45351,
+      43.635039
+     ],
+     [
+      -72.454346,
+      43.634596
+     ],
+     [
+      -72.454984,
+      43.634068
+     ],
+     [
+      -72.455596,
+      43.633183
+     ],
+     [
+      -72.455586,
+      43.630793
+     ],
+     [
+      -72.455163,
+      43.629573
+     ],
+     [
+      -72.455204,
+      43.628935
+     ],
+     [
+      -72.455598,
+      43.628164
+     ],
+     [
+      -72.45688,
+      43.627305
+     ],
+     [
+      -72.457897,
+      43.627063
+     ],
+     [
+      -72.459503,
+      43.627243
+     ],
+     [
+      -72.460785,
+      43.627806
+     ],
+     [
+      -72.464816,
+      43.628992
+     ],
+     [
+      -72.47057,
+      43.633717
+     ],
+     [
+      -72.470743,
+      43.635176
+     ],
+     [
+      -72.472,
+      43.637675
+     ],
+     [
+      -72.472837,
+      43.638179
+     ],
+     [
+      -72.473769,
+      43.638504
+     ],
+     [
+      -72.477496,
+      43.638775
+     ],
+     [
+      -72.479456,
+      43.638678
+     ],
+     [
+      -72.482874,
+      43.638257
+     ],
+     [
+      -72.486241,
+      43.638966
+     ],
+     [
+      -72.48918,
+      43.638881
+     ],
+     [
+      -72.49962,
+      43.636392
+     ],
+     [
+      -72.501199,
+      43.635605
+     ],
+     [
+      -72.504498,
+      43.633167
+     ],
+     [
+      -72.505073,
+      43.632267
+     ],
+     [
+      -72.506464,
+      43.629176
+     ]
+    ]
+   }
+  }
+ ]
+}
