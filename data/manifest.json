@@ -213,6 +213,7 @@
   "milwaukee_road_chicago_aberdeen.geojson",
   "milwaukee_road_hiawatha.geojson",
   "milwaukee_road_north_montana.geojson",
+  "milwaukee_road_pacific_extension.geojson",
   "milwaukee_road_wisconsin_valley.geojson",
   "minneapolis_and_st_louis_railway.geojson",
   "missouri_pacific_eagle.geojson",
@@ -283,6 +284,7 @@
   "plant_system_florida.geojson",
   "pontchartrain_railroad.geojson",
   "portland_and_rochester_railroad.geojson",
+  "profile_and_franconia_notch_railroad.geojson",
   "queen_crescent.geojson",
   "reading_main_line.geojson",
   "rfp_richmond_washington.geojson",
@@ -323,6 +325,7 @@
   "shreveport_railroads.geojson",
   "snake_river_valley_wallula_riparia.geojson",
   "somerset_railway.geojson",
+  "soo_line_wisconsin_central.geojson",
   "sound_transit_2_line.geojson",
   "sound_transit_sounder.geojson",
   "south_carolina_railroad.geojson",
@@ -368,6 +371,7 @@
   "valley_railway_akron.geojson",
   "vermont_central_railroad.geojson",
   "vre.geojson",
+  "wabash_railroad.geojson",
   "walla_walla_columbia_river_railroad.geojson",
   "wallkill_valley_railroad.geojson",
   "watertown_rome_railroad.geojson",
@@ -389,10 +393,7 @@
   "wolfeboro_railroad.geojson",
   "ymv_baton_rouge.geojson",
   "ymv_memphis_vicksburg.geojson",
-  "youngstown_railroads.geojson",
-  "milwaukee_road_pacific_extension.geojson",
-  "wabash_railroad.geojson",
-  "soo_line_wisconsin_central.geojson"
+  "youngstown_railroads.geojson"
  ],
  "stations": [
   "stations/amtrak.geojson"
