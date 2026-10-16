@@ -1,0 +1,2516 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Boston and Worcester Rail Road (chartered 1831) ran Boston - Worcester from 1834/1835 until it was consolidated with the Western Railroad into the Boston and Albany in 1867. This layer draws only the B&W's own operating era, 1834-1867: the main line in its five 1834-1835 opening stages (so the map shows it growing west), the Saxonville, Newton Lower Falls, Brookline and Milford branches, the 1849-1855 Framingham Centre branch, and the Agricultural Branch Railroad's first section, which the B&W leased (1855-1866). One colour for every feature. Research report: research/branches/boston_and_worcester_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad -- WBA",
+   "https://en.wikipedia.org/wiki/Framingham/Worcester_Line -- WFW",
+   "https://en.wikipedia.org/wiki/Newton_Lower_Falls_Branch -- WNLF",
+   "https://en.wikipedia.org/wiki/Highland_branch -- WHB",
+   "https://en.wikipedia.org/wiki/Brookline_Village_station -- WBV",
+   "https://en.wikipedia.org/wiki/Charles_River_Railroad -- WCRR",
+   "https://en.wikipedia.org/wiki/Milford_Branch -- WMB",
+   "https://en.wikipedia.org/wiki/Framingham_station -- WFS",
+   "https://en.wikipedia.org/wiki/Natick_Center_station -- WNC",
+   "https://en.wikipedia.org/wiki/West_Newton_station -- WWN",
+   "https://en.wikipedia.org/wiki/Wellesley_Square_station -- WWS",
+   "https://en.wikipedia.org/wiki/Westborough_station -- WWB",
+   "https://en.wikipedia.org/wiki/Ashland_station_(MBTA) -- WAS",
+   "https://en.wikipedia.org/wiki/Union_Station_(Worcester,_Massachusetts) -- WUS",
+   "https://en.wikipedia.org/wiki/Agricultural_Branch_Railroad -- WAB",
+   "https://en.wikipedia.org/wiki/Grand_Junction_Railroad -- WGJ",
+   "https://whenandwhereinboston.org/?p=29581 -- WWH",
+   "https://twainsgeography.com/railroad/boston-and-worcester-rr -- TG",
+   "https://ldsgenealogy.com/MA/books/History-of-Northborough-Mass-in-various-publications-and-discourses-part-2.htm -- NOR",
+   "https://ldsgenealogy.com/MA/books/History-of-the-town-of-Berlin-Worcester-county-Mass-from-1784-to-1895-part-6.htm -- BER",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf -- F1",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf -- F2",
+   "https://www.loc.gov/resource/sn83021203/1845-07-24/ed-1/?sp=4 -- CA45",
+   "https://www.loc.gov/resource/sn83021203/1847-03-03/ed-1/?sp=2 -- CA47",
+   "https://www.loc.gov/resource/sn83021205/1867-02-18/ed-1/?sp=2 -- CA67",
+   "https://www.loc.gov/resource/sn83021205/1868-02-28/ed-1/?sp=2 -- CA68",
+   "https://www.loc.gov/resource/sn83021205/1872-03-11/ed-1/?sp=1 -- CA72",
+   "https://www.loc.gov/resource/sn83021205/1855-01-01/ed-1/?sp=2 -- CA55a",
+   "https://www.loc.gov/resource/sn83021205/1855-12-19/ed-1/?sp=3 -- CA55b",
+   "https://www.loc.gov/resource/sn83021205/1855-12-27/ed-1/?sp=2 -- CA55c",
+   "https://www.loc.gov/resource/sn83020847/1855-12-29/ed-1/?sp=8 -- CA55d",
+   "https://www.loc.gov/resource/sn83021205/1856-02-11/ed-1/?sp=2 -- CA56",
+   "https://www.loc.gov/resource/sn83021205/1857-06-02/ed-1/?sp=3 -- CA57"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-16): Worcester Main Line / Boston Subdivision, Holliston Industrial Track, Newton Lower Falls Branch, Saxonville Branch and Green Line D (Highland branch) ways tagged old_railway_operator=NYC; Agricultural Branch ('Boston Subdivision - Fitchburg Branch') tagged old_railway_operator=NYNH&H; Cochituate Rail Trail, Upper Charles Trail and Two Bridges Trail; Franklin Street, Framingham, as the proxy for the 1849 branch right of way.",
+   "OpenHistoricalMap (2026-10-16) was searched across the whole corridor (Boston - Worcester, Framingham, Westborough): it holds Boston and Providence, Charles River, Eastern and Boston & Maine pieces but no Boston and Worcester way - nothing for the Beach/Kneeland Street terminal approach, the pre-1899 Westborough town-centre route, the pre-1875 Foster Street approach in Worcester, or the 1849 Framingham Centre branch. Those four places are drawn on the later alignment or a labelled straight line, as each feature's geometry_quality says."
+  ],
+  "operator_split": "Every feature ends at 1867 (consolidation into the Boston and Albany, 4 Sept 1867 per WBA) except the Framingham Branch (1855, absorbed into the Agricultural Branch route) and the Agricultural Branch (1866, see its note). The Boston and Albany era from 1867 is a separate company and colour and is not drawn here.",
+  "omitted": [
+   "Millbury Branch, Millbury Junction - Millbury: HORSE-WORKED for the whole B&W era (Worcester Spy 3 Mar 1847 'horse power being employed instead of steam'; 18 Feb 1867 meeting to introduce steam 'in the place of the present horse power'; a horse-car driver on the branch in 1872) - Rule 5, not drawn.",
+   "Agricultural Branch extension, Northborough - Pratt's Junction (opened 2 July 1866): no source names the B&W as operator (report drawable NONE).",
+   "Agricultural Branch, South Framingham - Framingham Centre on the 1855 realigned track, and the 1.5-mi Marlborough spur: not in the report's drawable span as B&W.",
+   "Charles River Branch, Brookline - Newton Upper Falls - Needham (1852-): operator not established; no source says the B&W ran it.",
+   "Grand Junction Railroad: freight only in the B&W era (Rule 1).",
+   "Boston and Worcester Street Railway (1903-1932): a different company."
+  ],
+  "existing_layer_note": "NOT FIXED HERE (reported only; this layer edits no other file): (1) mbta_commuter_rail.geojson, mbta-CR-Worcester 'MBTA Commuter Rail: Framingham/Worcester Line', draws 1835-1900 in the MBTA colour (#4a4e69) for years the B&W (1834-1867) and the B&A (1867-1900) ran the trains; it also starts a year late (Boston - Westborough opened in 1834) and draws South Station, the 1899 Westborough bypass and the 1911 Worcester Union Station for that era with no geometry_quality. (2) boston_and_albany_railroad.geojson, ba-boston-albany 'Boston and Albany: Boston - Albany', draws 1841-1867 in the B&A colour (#5C677D) before the B&A existed, double-drawing Boston - Worcester with the MBTA feature; Boston - Worcester in those years belongs to the B&W (this layer) and Worcester - Albany to the Western Railroad. With this layer added, Boston - Worcester 1834-1867 is drawn three times (1835-1867 MBTA, 1841-1867 B&A, and this layer) until those two features are trimmed.",
+  "not_yet_sourced": [
+   "All headways and average speeds are estimates, except where a segment note derives a headway from a cited count (Saxonville: never more than three daily round trips, WFS; Newton Lower Falls: five daily round trips by 1850, WNLF; Agricultural: three trains each way daily at Southborough in 1857, Spy). The 1850 B&W directors' report (Google Books h-Y3AAAAIAAJ) would source 1849-50 traffic on every branch and was not read.",
+   "1834 stage days: Wellesley 3 July (WBA); Natick/Framingham/Unionville 20 Sept (WBA) vs 22 Sept (WNC) vs August for South Framingham (WFS); Westborough 17 Nov (WWB) vs 'November' (WBA). All 1834. Karr 1995 pp. 279-280 or Humphrey & Clark 1985 would settle them.",
+   "Merger date: 4 Sept 1867 (WBA) vs 'May, 1867' (TG). Same year; the date the B&A actually took over operation is not established.",
+   "Brookline Branch opening: 10 April 1848 (WHB, WBV) vs 1847 (WBA, WCRR); drawn from 1848.",
+   "Milford Branch: Framingham - Holliston 'by September 1847' and Holliston - Milford 'by July 1848' (WMB) vs the branch as a whole in 1847 (WBA) or 1848 (WFS).",
+   "Framingham Branch 1849-1855: the only passenger evidence is the Framingham Centre station opening in 1849 (WFS); no 1850 Pathfinder letter. The exact 1849 alignment (Franklin Street) needs tracing from old maps.",
+   "Agricultural Branch: (a) did the B&W run the Jan-Dec 1855 trains from Marlboro, or did the Agricultural Branch company (the lease is reported in Dec 1855; WBA dates it 1853)? (b) did the B&W keep running Framingham - Northborough after the 2 July 1866 extension, i.e. in 1867? (c) which Marlborough point was the Jan 1855 terminus? An 1856-1866 Pathfinder or Karr's chapter on the BC&F would settle them.",
+   "Rule 5 on the Saxonville, Newton Lower Falls, Brookline, Milford and Framingham branches: no horse working found, but the Millbury discovery shows the B&W did use horses on a branch; Humphrey & Clark (1985) should be checked.",
+   "Exact sites of the B&W Boston terminals (Washington St 1834-1836; Lincoln & Beach Sts 1836 on), the first Westborough station, and the Foster Street 'Upper Station' in Worcester; and the pre-1899 Westborough and pre-1875 Worcester alignments.",
+   "Millbury Branch opening (by July 1845 per a B&W advertisement; WBA says 1846) and when steam replaced horses - for the B&A researcher; the branch is not drawn."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Boston – Worcester (Boston – West Newton)",
+    "id": "bw-main-boston-west-newton",
+    "color": "#CC00CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1830s-1860s steam on a double-tracked (from the 1840s) main line; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM Worcester Main Line / Boston Subdivision ways tagged old_railway_operator=NYC plus untagged main-line track through Boston, Allston and Newton. OpenHistoricalMap (2026-10-16) has no Boston and Worcester way anywhere in the corridor.",
+    "geometry_quality": "Drawn 9.2 mi (of which 0.4 mi straight, below) against c.8.6 mi documented (Fowler: West Newton 9.2 mi from South Station, the B&W terminal being c.0.6 mi on that scale; +7%). STRAIGHT LEG: the first 0.6 km (0.4 mi), from the B&W terminal at Beach and Lincoln Streets to the present track near Albany/Herald Streets, is a straight line - the B&W approach across the South Cove has been built over and neither OSM nor OpenHistoricalMap has it; the terminal point itself is approximate (block bounded by Kneeland, Beach, Albany and Lincoln Streets, WBA). The 1834-1836 first terminal on Washington Street (Fowler) is not drawn separately; the line ends at the 1836-1867 Lincoln & Beach terminal for the whole span. The B&W never used South Station (opened 1899), and this feature does not go there. LATER-ALIGNMENT NOTE: from Albany Street to the Back Bay the line is drawn on the present railway, i.e. on ground filled after the 1830s; the 1834 line crossed the unfilled Back Bay on a trestle/causeway [WWH]. The corridor is broadly the same, but the drawn track is the later, post-filling (and, west of the Back Bay, Massachusetts Turnpike-era) alignment. At West Newton the last 0.6 km is a join along straight track to the station point shared with the next stage.",
+    "segments": [
+     {
+      "start": 1834,
+      "end": 1867,
+      "headway_min": 90,
+      "note": "Main line, opening stage 1. Boston - West Newton opened 16 April 1834 (WBA citing Karr 1995 pp. 279-280; whenandwhereinboston.org 'April 16, 1834'), the first steam railroad with regular passenger service in Boston; locomotive Meteor, steam from the first day, so no animal-power years (Rule 5). From 1843 the B&W sold season passes to West Newton - one of the first rail commuter services anywhere (WBA, WFW, WWN). Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Headway is an estimate (commuter 'Newton Specials' plus through trains), not sourced.",
+      "sources": [
+       "Segment-level: opening 16 Apr 1834 from the research report (research/branches/boston_and_worcester_railroad.txt, block [1a]), which read it in WBA (citing Karr 1995) and whenandwhereinboston.org; West Newton commuting from WWN/WFW; 1867 end from WBA/TG; Fowler's station list prints the 1850 Pathfinder letter (x) for Brighton, Newton, Newtonville and West Newton. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://whenandwhereinboston.org/?p=29581",
+       "https://en.wikipedia.org/wiki/West_Newton_station",
+       "https://en.wikipedia.org/wiki/Framingham/Worcester_Line",
+       "https://twainsgeography.com/railroad/boston-and-worcester-rr",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0585,
+      42.3512
+     ],
+     [
+      -71.061131,
+      42.346143
+     ],
+     [
+      -71.066004,
+      42.347281
+     ],
+     [
+      -71.069339,
+      42.347693
+     ],
+     [
+      -71.074224,
+      42.347681
+     ],
+     [
+      -71.078589,
+      42.347342
+     ],
+     [
+      -71.081163,
+      42.347542
+     ],
+     [
+      -71.087598,
+      42.347416
+     ],
+     [
+      -71.090182,
+      42.347634
+     ],
+     [
+      -71.099832,
+      42.347542
+     ],
+     [
+      -71.10076,
+      42.347616
+     ],
+     [
+      -71.10712,
+      42.348779
+     ],
+     [
+      -71.108854,
+      42.34928
+     ],
+     [
+      -71.117755,
+      42.353926
+     ],
+     [
+      -71.119026,
+      42.354351
+     ],
+     [
+      -71.131518,
+      42.35621
+     ],
+     [
+      -71.145181,
+      42.35803
+     ],
+     [
+      -71.146754,
+      42.358149
+     ],
+     [
+      -71.148134,
+      42.358101
+     ],
+     [
+      -71.151926,
+      42.357686
+     ],
+     [
+      -71.169594,
+      42.357123
+     ],
+     [
+      -71.171825,
+      42.35727
+     ],
+     [
+      -71.175935,
+      42.358056
+     ],
+     [
+      -71.177499,
+      42.358125
+     ],
+     [
+      -71.179075,
+      42.358024
+     ],
+     [
+      -71.193641,
+      42.354969
+     ],
+     [
+      -71.20557,
+      42.351687
+     ],
+     [
+      -71.207865,
+      42.351262
+     ],
+     [
+      -71.215612,
+      42.3502
+     ],
+     [
+      -71.222087,
+      42.348794
+     ],
+     [
+      -71.225086,
+      42.348347
+     ],
+     [
+      -71.225291,
+      42.348327
+     ],
+     [
+      -71.225414,
+      42.348315
+     ],
+     [
+      -71.226132,
+      42.34825
+     ],
+     [
+      -71.226972,
+      42.348174
+     ],
+     [
+      -71.227144,
+      42.348158
+     ],
+     [
+      -71.227974,
+      42.348083
+     ],
+     [
+      -71.228827,
+      42.348005
+     ],
+     [
+      -71.228865,
+      42.348001
+     ],
+     [
+      -71.22907,
+      42.347983
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Boston – Worcester (West Newton – Wellesley)",
+    "id": "bw-main-west-newton-wellesley",
+    "color": "#CC00CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1830s-1860s steam on a double-tracked (from the 1840s) main line; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM Worcester Main Line ways tagged old_railway_operator=NYC.",
+    "geometry_quality": "Traced 5.4 mi against c.5.5 mi documented (Fowler: 9.2 - 14.7). Fully traced on the present main line; no straight-line leg. The present track is on the 1834 corridor; no relocation of this stage is recorded in the report.",
+    "segments": [
+     {
+      "start": 1834,
+      "end": 1867,
+      "headway_min": 180,
+      "note": "Main line, opening stage 2: extended to Wellesley (then the West Parish of Needham - station 'Needham' in Sherman's Guide 1847, 'West Needham' c.1845, Wellesley from 1863) on 3 July 1834 (WBA; WWS 'mid-1834'). Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 3 July 1834 from the research report (research/branches/boston_and_worcester_railroad.txt, block [1b]), which read it in WBA and WWS; Fowler's station list gives 1850 Pathfinder (x) letters for Auburndale and Grantville. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Wellesley_Square_station",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.22907,
+      42.347983
+     ],
+     [
+      -71.248283,
+      42.346221
+     ],
+     [
+      -71.249532,
+      42.346043
+     ],
+     [
+      -71.250781,
+      42.345715
+     ],
+     [
+      -71.252124,
+      42.345158
+     ],
+     [
+      -71.253436,
+      42.344333
+     ],
+     [
+      -71.257376,
+      42.340332
+     ],
+     [
+      -71.259428,
+      42.338843
+     ],
+     [
+      -71.26136,
+      42.337995
+     ],
+     [
+      -71.267566,
+      42.335995
+     ],
+     [
+      -71.268784,
+      42.335417
+     ],
+     [
+      -71.269982,
+      42.334609
+     ],
+     [
+      -71.270803,
+      42.333848
+     ],
+     [
+      -71.27151,
+      42.332939
+     ],
+     [
+      -71.27196,
+      42.332105
+     ],
+     [
+      -71.272324,
+      42.330924
+     ],
+     [
+      -71.272386,
+      42.329575
+     ],
+     [
+      -71.271819,
+      42.325308
+     ],
+     [
+      -71.272135,
+      42.322974
+     ],
+     [
+      -71.276714,
+      42.31118
+     ],
+     [
+      -71.277286,
+      42.310054
+     ],
+     [
+      -71.278024,
+      42.309141
+     ],
+     [
+      -71.278931,
+      42.30835
+     ],
+     [
+      -71.292612,
+      42.298339
+     ],
+     [
+      -71.29354,
+      42.297761
+     ],
+     [
+      -71.294758,
+      42.297208
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Boston – Worcester (Wellesley – Ashland)",
+    "id": "bw-main-wellesley-ashland",
+    "color": "#CC00CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1830s-1860s steam on a double-tracked (from the 1840s) main line; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM Worcester Main Line / Boston Subdivision ways tagged old_railway_operator=NYC.",
+    "geometry_quality": "Traced 10.4 mi against c.9.5 mi documented (Fowler: 14.7 - 24.2; trace +9%). Fully traced on the present main line through Natick and South Framingham; no straight-line leg.",
+    "segments": [
+     {
+      "start": 1834,
+      "end": 1867,
+      "headway_min": 180,
+      "note": "Main line, opening stage 3: Wellesley ('North Needham') - Natick - South Framingham - Unionville (renamed Ashland 1846). Opened in 1834; the day is disputed - 20 Sept 1834 'to Ashland' (WBA), 22 Sept 1834 'North Needham through Natick to Unionville' (WNC), and 'August 1834' for South Framingham (WFS), which is inconsistent with WNC. All agree on 1834. The B&W built the 1848 South Framingham depot; Framingham was a commuter short-turn point from 1864 (WFS). Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 1834 from the research report (research/branches/boston_and_worcester_railroad.txt, block [1c]), which read WBA, WNC, WFS and WAS and records the day conflict; Fowler's station list gives 1850 Pathfinder (x) letters for Natick, Framingham and Ashland. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Natick_Center_station",
+       "https://en.wikipedia.org/wiki/Framingham_station",
+       "https://en.wikipedia.org/wiki/Ashland_station_(MBTA)",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.294758,
+      42.297208
+     ],
+     [
+      -71.296904,
+      42.296558
+     ],
+     [
+      -71.298895,
+      42.296286
+     ],
+     [
+      -71.309556,
+      42.296467
+     ],
+     [
+      -71.312856,
+      42.296164
+     ],
+     [
+      -71.315807,
+      42.295609
+     ],
+     [
+      -71.322525,
+      42.293577
+     ],
+     [
+      -71.329199,
+      42.29049
+     ],
+     [
+      -71.336198,
+      42.28776
+     ],
+     [
+      -71.338644,
+      42.287022
+     ],
+     [
+      -71.340787,
+      42.286596
+     ],
+     [
+      -71.354407,
+      42.284763
+     ],
+     [
+      -71.359293,
+      42.283656
+     ],
+     [
+      -71.36104,
+      42.283443
+     ],
+     [
+      -71.362921,
+      42.283452
+     ],
+     [
+      -71.367105,
+      42.283959
+     ],
+     [
+      -71.369015,
+      42.284046
+     ],
+     [
+      -71.392557,
+      42.283063
+     ],
+     [
+      -71.39535,
+      42.282424
+     ],
+     [
+      -71.405073,
+      42.2795
+     ],
+     [
+      -71.417426,
+      42.27685
+     ],
+     [
+      -71.423164,
+      42.275259
+     ],
+     [
+      -71.43611,
+      42.274605
+     ],
+     [
+      -71.438381,
+      42.274285
+     ],
+     [
+      -71.439984,
+      42.273806
+     ],
+     [
+      -71.441367,
+      42.273203
+     ],
+     [
+      -71.442691,
+      42.272398
+     ],
+     [
+      -71.443839,
+      42.271448
+     ],
+     [
+      -71.446378,
+      42.268494
+     ],
+     [
+      -71.448866,
+      42.264149
+     ],
+     [
+      -71.450543,
+      42.262418
+     ],
+     [
+      -71.45166,
+      42.26164
+     ],
+     [
+      -71.452965,
+      42.260948
+     ],
+     [
+      -71.454402,
+      42.260388
+     ],
+     [
+      -71.456173,
+      42.25994
+     ],
+     [
+      -71.4582,
+      42.259694
+     ],
+     [
+      -71.460207,
+      42.2597
+     ],
+     [
+      -71.482533,
+      42.261542
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Boston – Worcester (Ashland – Westborough)",
+    "id": "bw-main-ashland-westborough",
+    "color": "#CC00CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1830s-1860s steam on a double-tracked (from the 1840s) main line; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM Boston Subdivision ways tagged old_railway_operator=NYC. OSM and OpenHistoricalMap were both searched for the pre-1899 Westborough route (abandoned/historic railway ways, rail-trails, OHM railway ways); neither has it.",
+    "geometry_quality": "Traced 7.0 mi against c.7.7 mi documented to the first Westborough station (Fowler: 24.2 - 32.0 on the former route). LATER-ALIGNMENT NOTE: Fowler marks 'Former route until 1899: Southville - Westboro (1st) - Westborough (MBTA)'. The B&W ran through Westborough town centre to a station east of Main Street (WWB); the present track is the Boston & Albany's 1899 relocation. This feature draws the roughly 3.5 mi from Southville westward on that post-1899 relocation, because no trace of the old route survives in OSM or OHM, and it ends at the point on the present track nearest the town centre (c.0.5 km north of the town-centre point; the exact site of the first station is not established). No straight-line leg.",
+    "segments": [
+     {
+      "start": 1834,
+      "end": 1867,
+      "headway_min": 180,
+      "note": "Main line, opening stage 4: Unionville (Ashland) - Southville - Westborough, opened in November 1834 - 17 Nov 1834 per WWB, 'November 1834' per WBA. The first train into Westborough was a wood-burning steam locomotive with converted stagecoach bodies (TG). Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: November 1834 from the research report (research/branches/boston_and_worcester_railroad.txt, block [1d]), which read it in WBA, WWB and TG; Fowler's station list gives 1850 Pathfinder (x) letters for Southborough (Southville) and Westboro (1st). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Westborough_station",
+       "https://twainsgeography.com/railroad/boston-and-worcester-rr",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.482533,
+      42.261542
+     ],
+     [
+      -71.488737,
+      42.26206
+     ],
+     [
+      -71.48975,
+      42.262236
+     ],
+     [
+      -71.491441,
+      42.262695
+     ],
+     [
+      -71.497875,
+      42.264964
+     ],
+     [
+      -71.49942,
+      42.265378
+     ],
+     [
+      -71.501591,
+      42.265638
+     ],
+     [
+      -71.505175,
+      42.265555
+     ],
+     [
+      -71.507319,
+      42.265707
+     ],
+     [
+      -71.509473,
+      42.266206
+     ],
+     [
+      -71.513652,
+      42.267662
+     ],
+     [
+      -71.516034,
+      42.268086
+     ],
+     [
+      -71.518877,
+      42.268059
+     ],
+     [
+      -71.526154,
+      42.26683
+     ],
+     [
+      -71.542327,
+      42.265643
+     ],
+     [
+      -71.544951,
+      42.265577
+     ],
+     [
+      -71.54752,
+      42.265985
+     ],
+     [
+      -71.551778,
+      42.267386
+     ],
+     [
+      -71.553964,
+      42.267975
+     ],
+     [
+      -71.556046,
+      42.268347
+     ],
+     [
+      -71.558066,
+      42.26856
+     ],
+     [
+      -71.580927,
+      42.269321
+     ],
+     [
+      -71.602934,
+      42.26954
+     ],
+     [
+      -71.604722,
+      42.269821
+     ],
+     [
+      -71.606324,
+      42.270288
+     ],
+     [
+      -71.611332,
+      42.272614
+     ],
+     [
+      -71.614763,
+      42.273713
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Boston – Worcester (Westborough – Worcester)",
+    "id": "bw-main-westborough-worcester",
+    "color": "#CC00CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1830s-1860s steam on a double-tracked (from the 1840s) main line; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM Worcester Main Line / Boston Subdivision ways tagged old_railway_operator=NYC. OpenHistoricalMap has only the 1911 Union Station in Worcester, no B&W-era way.",
+    "geometry_quality": "Traced 12.3 mi against c.12 mi documented (Fowler: Westboro (1st) 32 - Worcester 44/45). LATER-ALIGNMENT NOTE (Westborough): the first c.1.9 mi, from the town centre to the present Westborough station, is drawn on the Boston & Albany's 1899 relocation (see the Ashland - Westborough feature); the B&W route through the town centre is not in OSM or OHM. LATER-ALIGNMENT NOTE (Worcester): the approach is drawn on the present line into the site of Union Station (1875 / 1911). Fowler records a 'former route until 1875' by which all but the through Boston-Albany expresses reached the B&W's own 'Upper Station' on Foster Street; that route is not in OSM or OHM, and its length is not established. STRAIGHT LEG: the last 0.36 km (0.2 mi) from the present track at Washington Square to the Foster Street depot is a straight line, and the depot point is approximate.",
+    "segments": [
+     {
+      "start": 1835,
+      "end": 1867,
+      "headway_min": 180,
+      "note": "Main line, final stage: Westborough - Grafton - Millbury Junction - Worcester, opened 4 July 1835 (WBA, WUS, WWH; TG 'full service in July 1835'). B&W trains used the company's own Foster Street depot ('Upper Station'); the Western Railroad's 'Lower Station' was separate, and through Boston - Albany service was the Western's west of Worcester from 1839/1841, so this feature stops at Worcester. Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 4 July 1835 from the research report (research/branches/boston_and_worcester_railroad.txt, block [1e]), which read it in WBA, WUS, whenandwhereinboston.org and TG; the Foster Street depot from Fowler's station list ('Worcester (B&W) x', note ** 2). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Union_Station_(Worcester,_Massachusetts)",
+       "https://whenandwhereinboston.org/?p=29581",
+       "https://twainsgeography.com/railroad/boston-and-worcester-rr",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.614763,
+      42.273713
+     ],
+     [
+      -71.617526,
+      42.274231
+     ],
+     [
+      -71.620105,
+      42.274462
+     ],
+     [
+      -71.622546,
+      42.274463
+     ],
+     [
+      -71.625448,
+      42.274191
+     ],
+     [
+      -71.627603,
+      42.273817
+     ],
+     [
+      -71.644971,
+      42.270098
+     ],
+     [
+      -71.64951,
+      42.268999
+     ],
+     [
+      -71.651825,
+      42.268078
+     ],
+     [
+      -71.654205,
+      42.26674
+     ],
+     [
+      -71.655848,
+      42.265401
+     ],
+     [
+      -71.664254,
+      42.257797
+     ],
+     [
+      -71.665368,
+      42.257032
+     ],
+     [
+      -71.669988,
+      42.254389
+     ],
+     [
+      -71.674249,
+      42.251165
+     ],
+     [
+      -71.676678,
+      42.250037
+     ],
+     [
+      -71.677717,
+      42.249733
+     ],
+     [
+      -71.680612,
+      42.249173
+     ],
+     [
+      -71.681977,
+      42.248722
+     ],
+     [
+      -71.683249,
+      42.248035
+     ],
+     [
+      -71.686904,
+      42.245589
+     ],
+     [
+      -71.688057,
+      42.245028
+     ],
+     [
+      -71.689989,
+      42.244523
+     ],
+     [
+      -71.703078,
+      42.243077
+     ],
+     [
+      -71.706584,
+      42.242403
+     ],
+     [
+      -71.709933,
+      42.241263
+     ],
+     [
+      -71.718042,
+      42.237424
+     ],
+     [
+      -71.720317,
+      42.23663
+     ],
+     [
+      -71.722447,
+      42.236062
+     ],
+     [
+      -71.725436,
+      42.235524
+     ],
+     [
+      -71.740093,
+      42.233818
+     ],
+     [
+      -71.742334,
+      42.233894
+     ],
+     [
+      -71.744477,
+      42.234491
+     ],
+     [
+      -71.746219,
+      42.235527
+     ],
+     [
+      -71.747848,
+      42.237186
+     ],
+     [
+      -71.748743,
+      42.238627
+     ],
+     [
+      -71.749427,
+      42.240187
+     ],
+     [
+      -71.750503,
+      42.247784
+     ],
+     [
+      -71.750797,
+      42.248771
+     ],
+     [
+      -71.751396,
+      42.250014
+     ],
+     [
+      -71.752919,
+      42.252229
+     ],
+     [
+      -71.755887,
+      42.255355
+     ],
+     [
+      -71.757409,
+      42.256525
+     ],
+     [
+      -71.760418,
+      42.258428
+     ],
+     [
+      -71.761616,
+      42.259521
+     ],
+     [
+      -71.762556,
+      42.260669
+     ],
+     [
+      -71.763384,
+      42.262104
+     ],
+     [
+      -71.763843,
+      42.263603
+     ],
+     [
+      -71.763913,
+      42.264889
+     ],
+     [
+      -71.763641,
+      42.267687
+     ],
+     [
+      -71.763868,
+      42.268769
+     ],
+     [
+      -71.764256,
+      42.269501
+     ],
+     [
+      -71.764896,
+      42.270252
+     ],
+     [
+      -71.766457,
+      42.271308
+     ],
+     [
+      -71.768192,
+      42.271868
+     ],
+     [
+      -71.770072,
+      42.272091
+     ],
+     [
+      -71.771698,
+      42.272004
+     ],
+     [
+      -71.773213,
+      42.271604
+     ],
+     [
+      -71.77475,
+      42.270754
+     ],
+     [
+      -71.779246,
+      42.267086
+     ],
+     [
+      -71.784887,
+      42.263537
+     ],
+     [
+      -71.786612,
+      42.262886
+     ],
+     [
+      -71.790962,
+      42.262025
+     ],
+     [
+      -71.794081,
+      42.261121
+     ],
+     [
+      -71.7975,
+      42.2632
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Saxonville Branch",
+    "id": "bw-saxonville-branch",
+    "color": "#CC00CC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: the Cochituate Rail Trail (OSM cycleways, routed as the branch grade) and OSM ways tagged old_railway_operator=NYC, name 'Saxonville Branch' (abandoned railway) for the north end.",
+    "geometry_quality": "Traced 3.8 mi against 3.87 mi documented (WBA, WNC; Fowler 4.0). Natick - Saxonville on the Cochituate Rail Trail, which is the branch grade, and the abandoned 'Saxonville Branch' way at the Saxonville end. No straight-line leg; the junction with the main line at Natick is joined by a 10 m link.",
+    "segments": [
+     {
+      "start": 1846,
+      "end": 1867,
+      "headway_min": 300,
+      "note": "Opened from Natick to the Saxonville section of Framingham on 4 July 1846, with through trains to Boston (WNC; WFS 'July 1846'; WBA '1846') - the first trains making commuting possible from west of West Newton (WNC). Never more than three daily round trips (WFS), so the headway of 300 min is derived from that ceiling, not from a timetable. Rule 5: through trains to Boston imply steam; no horse working was found, but that is 'not found', not disproven. Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Passenger service ended in 1936 (WFS), under the B&A.",
+      "sources": [
+       "Segment-level: 4 July 1846 from the research report (research/branches/boston_and_worcester_railroad.txt, block [2]), which read it in WNC, WFS and WBA; Fowler's station list prints 'Saxonville xyz' (1850 Pathfinder). Headway derived from WFS's 'never more than three daily round trips'.",
+       "https://en.wikipedia.org/wiki/Natick_Center_station",
+       "https://en.wikipedia.org/wiki/Framingham_station",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.348805,
+      42.285605
+     ],
+     [
+      -71.350087,
+      42.286009
+     ],
+     [
+      -71.351116,
+      42.286789
+     ],
+     [
+      -71.3594,
+      42.293895
+     ],
+     [
+      -71.362456,
+      42.296335
+     ],
+     [
+      -71.364167,
+      42.297292
+     ],
+     [
+      -71.367407,
+      42.298519
+     ],
+     [
+      -71.369087,
+      42.299569
+     ],
+     [
+      -71.370094,
+      42.300533
+     ],
+     [
+      -71.371628,
+      42.302696
+     ],
+     [
+      -71.372875,
+      42.303945
+     ],
+     [
+      -71.373933,
+      42.304655
+     ],
+     [
+      -71.375101,
+      42.305228
+     ],
+     [
+      -71.378301,
+      42.306247
+     ],
+     [
+      -71.379976,
+      42.307059
+     ],
+     [
+      -71.386926,
+      42.312183
+     ],
+     [
+      -71.387738,
+      42.313013
+     ],
+     [
+      -71.389247,
+      42.314971
+     ],
+     [
+      -71.390649,
+      42.315668
+     ],
+     [
+      -71.392187,
+      42.315969
+     ],
+     [
+      -71.39352,
+      42.316542
+     ],
+     [
+      -71.394468,
+      42.317313
+     ],
+     [
+      -71.39582,
+      42.319044
+     ],
+     [
+      -71.395768,
+      42.319114
+     ],
+     [
+      -71.396788,
+      42.320751
+     ],
+     [
+      -71.396845,
+      42.320844
+     ],
+     [
+      -71.396883,
+      42.320902
+     ],
+     [
+      -71.396898,
+      42.32093
+     ],
+     [
+      -71.396935,
+      42.321015
+     ],
+     [
+      -71.396951,
+      42.321051
+     ],
+     [
+      -71.396965,
+      42.321077
+     ],
+     [
+      -71.397039,
+      42.321154
+     ],
+     [
+      -71.397955,
+      42.322595
+     ],
+     [
+      -71.398,
+      42.322686
+     ],
+     [
+      -71.398047,
+      42.322796
+     ],
+     [
+      -71.398089,
+      42.322927
+     ],
+     [
+      -71.39815,
+      42.323122
+     ],
+     [
+      -71.398186,
+      42.323224
+     ],
+     [
+      -71.398227,
+      42.323315
+     ],
+     [
+      -71.39837,
+      42.323533
+     ],
+     [
+      -71.39841,
+      42.323615
+     ],
+     [
+      -71.398434,
+      42.323702
+     ],
+     [
+      -71.398504,
+      42.324053
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Newton Lower Falls Branch",
+    "id": "bw-newton-lower-falls-branch",
+    "color": "#CC00CC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM ways tagged old_railway_operator=NYC, name 'Newton Lower Falls Branch' (disused/razed) and the Two Bridges Trail on the branch grade.",
+    "geometry_quality": "Traced 1.5 mi against 1.25 mi documented (WBA; Fowler 1.2; trace +24%). Drawn from the main line just west of Auburndale, along the disused junction track, the abandoned/razed branch and the Two Bridges Trail, to the Lower Falls terminus. No straight-line leg. LATER-ALIGNMENT CAVEAT: the B&W-era junction was the original one near Riverside; in 1926 the B&A relocated the northern half of the branch to join the Highland branch (WNLF). The surviving northern ways used here may be partly that 1926 relocation rather than the 1847 grade - which is probably why the trace runs long. Not resolved.",
+    "segments": [
+     {
+      "start": 1847,
+      "end": 1867,
+      "headway_min": 180,
+      "note": "Opened 18 January 1847, when the 'Newton Special' commuter trains were extended from West Newton to Lower Falls (WNLF). 26,381 passengers in 1848 and five daily round trips by 1850 (WNLF, citing the B&W directors' report of 1850); the 180-min headway is derived from those five round trips, not from a timetable. Steam commuter trains, not horse shuttles. Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Passenger service ended August 1957, under the NYC.",
+      "sources": [
+       "Segment-level: 18 Jan 1847 from the research report (research/branches/boston_and_worcester_railroad.txt, block [3]), which read it in WNLF (Good Article citing the 1850 B&W directors' report, Humphrey & Clark and Karr) and WBA; Fowler's station list prints 'Newton Lower Falls xyz'. Headway derived from WNLF's five daily round trips in 1850.",
+       "https://en.wikipedia.org/wiki/Newton_Lower_Falls_Branch",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.255195,
+      42.342554
+     ],
+     [
+      -71.255288,
+      42.342442
+     ],
+     [
+      -71.255371,
+      42.342335
+     ],
+     [
+      -71.255454,
+      42.342221
+     ],
+     [
+      -71.255612,
+      42.342003
+     ],
+     [
+      -71.255679,
+      42.341901
+     ],
+     [
+      -71.25575,
+      42.341782
+     ],
+     [
+      -71.255803,
+      42.341679
+     ],
+     [
+      -71.255842,
+      42.341581
+     ],
+     [
+      -71.255866,
+      42.341484
+     ],
+     [
+      -71.25588,
+      42.341398
+     ],
+     [
+      -71.25589,
+      42.341302
+     ],
+     [
+      -71.255895,
+      42.341209
+     ],
+     [
+      -71.255889,
+      42.341085
+     ],
+     [
+      -71.255871,
+      42.340966
+     ],
+     [
+      -71.255833,
+      42.340829
+     ],
+     [
+      -71.255804,
+      42.340741
+     ],
+     [
+      -71.255752,
+      42.340633
+     ],
+     [
+      -71.255691,
+      42.340523
+     ],
+     [
+      -71.255418,
+      42.34015
+     ],
+     [
+      -71.255112,
+      42.339715
+     ],
+     [
+      -71.25501,
+      42.339587
+     ],
+     [
+      -71.254898,
+      42.33945
+     ],
+     [
+      -71.254803,
+      42.339341
+     ],
+     [
+      -71.25433,
+      42.33881
+     ],
+     [
+      -71.254269,
+      42.338748
+     ],
+     [
+      -71.25421,
+      42.338692
+     ],
+     [
+      -71.25415,
+      42.338639
+     ],
+     [
+      -71.254088,
+      42.338586
+     ],
+     [
+      -71.254016,
+      42.338531
+     ],
+     [
+      -71.253853,
+      42.338415
+     ],
+     [
+      -71.254052,
+      42.338486
+     ],
+     [
+      -71.254487,
+      42.338337
+     ],
+     [
+      -71.255245,
+      42.337166
+     ],
+     [
+      -71.256927,
+      42.335822
+     ],
+     [
+      -71.260471,
+      42.333572
+     ],
+     [
+      -71.261165,
+      42.332703
+     ],
+     [
+      -71.261397,
+      42.332151
+     ],
+     [
+      -71.261837,
+      42.329813
+     ],
+     [
+      -71.261825,
+      42.328761
+     ],
+     [
+      -71.261573,
+      42.327459
+     ],
+     [
+      -71.260744,
+      42.325812
+     ],
+     [
+      -71.26022,
+      42.325126
+     ],
+     [
+      -71.259633,
+      42.32462
+     ],
+     [
+      -71.258419,
+      42.324076
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Brookline Branch",
+    "id": "bw-brookline-branch",
+    "color": "#CC00CC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: the Highland branch (now the MBTA Green Line D branch), OSM light_rail ways tagged old_railway_operator=NYC, from Fenway to Brookline Village.",
+    "geometry_quality": "Traced 1.6 mi against 1.55 mi documented (WBA, WHB). STRAIGHT LEG: the first 0.57 km (0.35 mi), from the main line opposite Kenmore (Governor) Square to the start of the surviving branch grade near Fenway, is a straight line running alongside the main line; the exact junction is not established. LATER-ALIGNMENT NOTE: the drawn track from Fenway to Brookline Village is the Highland branch as rebuilt for light rail in 1959; the horizontal alignment is the B&W branch's, but the structure (and the Fenway portal area) is later.",
+    "segments": [
+     {
+      "start": 1848,
+      "end": 1867,
+      "headway_min": 120,
+      "note": "Opened 10 April 1848 (WHB, WBV, which give the full date); WBA and WCRR say '1847' in year-only summary paragraphs - the later, dated year is drawn and the conflict is recorded in metadata.not_yet_sourced. 'Quickly a success' (WHB). From Nov 1852 the Charles River Branch Railroad's trains also used this branch to reach Boston; who ran those trains is not established and they are not drawn as B&W. Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. The Highland branch carried passengers to 31 May 1958 under the NYC. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 10 April 1848 from the research report (research/branches/boston_and_worcester_railroad.txt, block [4]), which read WHB, WBV, WBA and WCRR and records the 1847/1848 conflict; Fowler's station list prints 'Brookline py-d' and 'Longwood (1st) pyz' (p = 1857 Pathfinder; no 1850 letter - an absence, not evidence). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Highland_branch",
+       "https://en.wikipedia.org/wiki/Brookline_Village_station",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Charles_River_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.096183,
+      42.347577
+     ],
+     [
+      -71.102834,
+      42.34615
+     ],
+     [
+      -71.105256,
+      42.344789
+     ],
+     [
+      -71.10881,
+      42.342553
+     ],
+     [
+      -71.10989,
+      42.341742
+     ],
+     [
+      -71.110855,
+      42.340558
+     ],
+     [
+      -71.111657,
+      42.338211
+     ],
+     [
+      -71.113397,
+      42.335082
+     ],
+     [
+      -71.114797,
+      42.333745
+     ],
+     [
+      -71.116663,
+      42.332676
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Milford Branch (Framingham – Holliston)",
+    "id": "bw-milford-branch-framingham-holliston",
+    "color": "#CC00CC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM 'Holliston Industrial Track' (old_railway_operator=NYC, still railway) out of Framingham and the Upper Charles Trail (OSM cycleways, routed as the branch grade) into Holliston.",
+    "geometry_quality": "Traced 5.4 mi against c.6.3 mi documented (Fowler line 45: 0.0 - 6.3; trace -14%). The whole branch traces to 11.6 mi against 11.97 mi documented (WBA), so the shortfall here is mostly where the Holliston station point falls: this feature ends at Holliston centre on the trail. No straight-line leg beyond a 335 m link from the main line at South Framingham to the surviving industrial track.",
+    "segments": [
+     {
+      "start": 1847,
+      "end": 1867,
+      "headway_min": 300,
+      "note": "Milford Branch, first section: built by the B&W itself (construction began early 1847) and opened from Framingham to Holliston by September 1847 (WMB). The branch is dated 1847 as a whole by WBA and 1848 by WFS; WMB's staged account (Holliston 1847, Milford 1848) reconciles both and is drawn. No horse working found. Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Branch passenger service ended 28 March 1959, under the NYC. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 'by September 1847' from the research report (research/branches/boston_and_worcester_railroad.txt, block [5]), which read it in WMB and WBA; Fowler's station list prints 'Holliston xyz' and 'East Holliston yz [Sherburne x]' (1850 Pathfinder). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Milford_Branch",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.420106,
+      42.276107
+     ],
+     [
+      -71.418679,
+      42.273289
+     ],
+     [
+      -71.415147,
+      42.239265
+     ],
+     [
+      -71.415306,
+      42.239319
+     ],
+     [
+      -71.415279,
+      42.239023
+     ],
+     [
+      -71.415023,
+      42.236678
+     ],
+     [
+      -71.414828,
+      42.236269
+     ],
+     [
+      -71.413037,
+      42.219022
+     ],
+     [
+      -71.413008,
+      42.217121
+     ],
+     [
+      -71.413526,
+      42.214653
+     ],
+     [
+      -71.41433,
+      42.21318
+     ],
+     [
+      -71.424841,
+      42.200207
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Milford Branch (Holliston – Milford)",
+    "id": "bw-milford-branch-holliston-milford",
+    "color": "#CC00CC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: the Upper Charles Trail (OSM cycleways, routed as the branch grade) and short OSM ways tagged old_railway_operator=NYC through Metcalf and Braggville into Milford.",
+    "geometry_quality": "Traced 6.2 mi against c.5.7 mi documented (Fowler line 45: 6.3 - 12.0; trace +9%, the converse of the first section's shortfall at the Holliston split point). No straight-line leg. The Milford terminus point is approximate (the B&A station site in the town centre).",
+    "segments": [
+     {
+      "start": 1848,
+      "end": 1867,
+      "headway_min": 300,
+      "note": "Milford Branch, second section: reached Milford by July 1848 (WMB). The Hopkinton and Milford & Woonsocket connections at Milford came 1869-1872 and are not B&W. Ends 1867, when the B&W was consolidated with the Western Railroad into the Boston and Albany (4 Sept 1867 per WBA; 'May, 1867' per TG - same year). That is an OPERATOR end, not a passenger end: service continued under the B&A, which is a separate company and colour. Branch passenger service ended 28 March 1959, under the NYC. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 'by July 1848' from the research report (research/branches/boston_and_worcester_railroad.txt, block [6]), which read it in WMB, WBA and WFS; Fowler's station list prints 'Metcalf's xyz' and 'Milford xyz' (1850 Pathfinder). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Milford_Branch",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Framingham_station",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.424841,
+      42.200207
+     ],
+     [
+      -71.425313,
+      42.199831
+     ],
+     [
+      -71.4258,
+      42.199021
+     ],
+     [
+      -71.4311,
+      42.192585
+     ],
+     [
+      -71.444846,
+      42.180469
+     ],
+     [
+      -71.446734,
+      42.179288
+     ],
+     [
+      -71.448561,
+      42.17864
+     ],
+     [
+      -71.449817,
+      42.178439
+     ],
+     [
+      -71.454733,
+      42.178034
+     ],
+     [
+      -71.457619,
+      42.177392
+     ],
+     [
+      -71.460613,
+      42.176258
+     ],
+     [
+      -71.463702,
+      42.174545
+     ],
+     [
+      -71.465624,
+      42.172974
+     ],
+     [
+      -71.4781,
+      42.15867
+     ],
+     [
+      -71.478968,
+      42.157919
+     ],
+     [
+      -71.485687,
+      42.153402
+     ],
+     [
+      -71.48671,
+      42.152846
+     ],
+     [
+      -71.487941,
+      42.1524
+     ],
+     [
+      -71.498709,
+      42.149928
+     ],
+     [
+      -71.506627,
+      42.147894
+     ],
+     [
+      -71.507835,
+      42.147286
+     ],
+     [
+      -71.509074,
+      42.146381
+     ],
+     [
+      -71.511867,
+      42.1432
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Framingham Centre Branch",
+    "id": "bw-framingham-branch",
+    "color": "#CC00CC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16): the 'Franklin Street' highway ways in Framingham, used as a proxy for the vanished branch because WFS says 'Franklin Street was built on the former branch right of way'. No railway, rail-trail or OHM way survives.",
+    "geometry_quality": "Drawn 1.8 mi against 2.06 mi documented (WBA; -11%). APPROXIMATE THROUGHOUT: this is the 1849-1855 alignment drawn along the present Franklin Street (OSM road geometry, 1.7 mi), which WFS says was built on the former right of way, joined to the main line at South Framingham by a 221 m straight link. It is NOT the later Agricultural Branch track (the branch was realigned near Framingham Centre in 1855, WFS). Where Franklin Street departs from the old grade is not known, and the 1849 Framingham Centre terminus (Maynard St, per the report) is drawn at the north end of Franklin Street, approximately. Medium-low confidence in the geometry as well as the dates.",
+    "segments": [
+     {
+      "start": 1849,
+      "end": 1855,
+      "headway_min": 300,
+      "note": "B&W-built branch to Framingham Centre, opened 1849 (WBA 'opened in 1849'; WFS: Framingham Centre station 'opened in 1849 when the branch to Framingham Center was completed'). MEDIUM-LOW CONFIDENCE: the station opening is the only passenger evidence for 1849-1855 - Fowler prints no 1850 Pathfinder letter for Framingham Centre (an absence, not evidence). The report's strict alternative would be a one-year 1849 anchor; its drawable span 1849-1855 is drawn. Ends 1855, when the stub was realigned near Framingham Centre and absorbed into the Agricultural Branch through route (WFS) - see the Agricultural Branch feature. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: 1849 from the research report (research/branches/boston_and_worcester_railroad.txt, block [7]), which read it in WFS and WBA; the 1855 realignment and the Franklin Street right of way from WFS. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Framingham_station",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.420057,
+      42.276121
+     ],
+     [
+      -71.417751,
+      42.277146
+     ],
+     [
+      -71.417748,
+      42.277197
+     ],
+     [
+      -71.417733,
+      42.277436
+     ],
+     [
+      -71.417719,
+      42.277665
+     ],
+     [
+      -71.417716,
+      42.277709
+     ],
+     [
+      -71.417841,
+      42.277715
+     ],
+     [
+      -71.41784,
+      42.278039
+     ],
+     [
+      -71.417839,
+      42.278166
+     ],
+     [
+      -71.417839,
+      42.278188
+     ],
+     [
+      -71.417831,
+      42.278486
+     ],
+     [
+      -71.417827,
+      42.278602
+     ],
+     [
+      -71.417831,
+      42.278677
+     ],
+     [
+      -71.417849,
+      42.278743
+     ],
+     [
+      -71.41787,
+      42.278792
+     ],
+     [
+      -71.417935,
+      42.278889
+     ],
+     [
+      -71.418004,
+      42.278954
+     ],
+     [
+      -71.418158,
+      42.279067
+     ],
+     [
+      -71.418201,
+      42.279098
+     ],
+     [
+      -71.418296,
+      42.279165
+     ],
+     [
+      -71.41839,
+      42.27924
+     ],
+     [
+      -71.418455,
+      42.2793
+     ],
+     [
+      -71.4188,
+      42.279668
+     ],
+     [
+      -71.419092,
+      42.280035
+     ],
+     [
+      -71.419107,
+      42.280053
+     ],
+     [
+      -71.419338,
+      42.280344
+     ],
+     [
+      -71.419413,
+      42.280438
+     ],
+     [
+      -71.419928,
+      42.281101
+     ],
+     [
+      -71.42034,
+      42.281615
+     ],
+     [
+      -71.420463,
+      42.281768
+     ],
+     [
+      -71.420529,
+      42.281835
+     ],
+     [
+      -71.420592,
+      42.281889
+     ],
+     [
+      -71.420696,
+      42.281966
+     ],
+     [
+      -71.420805,
+      42.282037
+     ],
+     [
+      -71.42156,
+      42.282518
+     ],
+     [
+      -71.421664,
+      42.282589
+     ],
+     [
+      -71.421761,
+      42.282658
+     ],
+     [
+      -71.421855,
+      42.282739
+     ],
+     [
+      -71.422336,
+      42.28316
+     ],
+     [
+      -71.422429,
+      42.283239
+     ],
+     [
+      -71.422854,
+      42.283599
+     ],
+     [
+      -71.423107,
+      42.283815
+     ],
+     [
+      -71.42319,
+      42.283892
+     ],
+     [
+      -71.423265,
+      42.283974
+     ],
+     [
+      -71.423326,
+      42.284051
+     ],
+     [
+      -71.423555,
+      42.284356
+     ],
+     [
+      -71.423893,
+      42.284812
+     ],
+     [
+      -71.423989,
+      42.284942
+     ],
+     [
+      -71.424565,
+      42.285715
+     ],
+     [
+      -71.424594,
+      42.285752
+     ],
+     [
+      -71.425351,
+      42.286768
+     ],
+     [
+      -71.42573,
+      42.287269
+     ],
+     [
+      -71.425812,
+      42.287353
+     ],
+     [
+      -71.425892,
+      42.287418
+     ],
+     [
+      -71.425984,
+      42.287479
+     ],
+     [
+      -71.426053,
+      42.287521
+     ],
+     [
+      -71.426148,
+      42.287573
+     ],
+     [
+      -71.427069,
+      42.288048
+     ],
+     [
+      -71.42722,
+      42.288127
+     ],
+     [
+      -71.427255,
+      42.288148
+     ],
+     [
+      -71.427291,
+      42.288169
+     ],
+     [
+      -71.427323,
+      42.28819
+     ],
+     [
+      -71.427355,
+      42.288212
+     ],
+     [
+      -71.427384,
+      42.288233
+     ],
+     [
+      -71.427411,
+      42.288253
+     ],
+     [
+      -71.427435,
+      42.288273
+     ],
+     [
+      -71.427461,
+      42.288296
+     ],
+     [
+      -71.427484,
+      42.288315
+     ],
+     [
+      -71.427504,
+      42.288334
+     ],
+     [
+      -71.427525,
+      42.288354
+     ],
+     [
+      -71.427543,
+      42.288373
+     ],
+     [
+      -71.427563,
+      42.288397
+     ],
+     [
+      -71.427582,
+      42.28842
+     ],
+     [
+      -71.427612,
+      42.288458
+     ],
+     [
+      -71.427638,
+      42.288493
+     ],
+     [
+      -71.427735,
+      42.288623
+     ],
+     [
+      -71.427875,
+      42.288809
+     ],
+     [
+      -71.427992,
+      42.288965
+     ],
+     [
+      -71.428073,
+      42.289073
+     ],
+     [
+      -71.428105,
+      42.289115
+     ],
+     [
+      -71.428326,
+      42.289409
+     ],
+     [
+      -71.428388,
+      42.289492
+     ],
+     [
+      -71.428579,
+      42.289746
+     ],
+     [
+      -71.428829,
+      42.29008
+     ],
+     [
+      -71.428948,
+      42.290238
+     ],
+     [
+      -71.42906,
+      42.290381
+     ],
+     [
+      -71.429236,
+      42.290608
+     ],
+     [
+      -71.429556,
+      42.291018
+     ],
+     [
+      -71.429577,
+      42.291046
+     ],
+     [
+      -71.429856,
+      42.291404
+     ],
+     [
+      -71.430068,
+      42.291681
+     ],
+     [
+      -71.430672,
+      42.29247
+     ],
+     [
+      -71.430757,
+      42.29258
+     ],
+     [
+      -71.431056,
+      42.292968
+     ],
+     [
+      -71.431452,
+      42.29349
+     ],
+     [
+      -71.431727,
+      42.293845
+     ],
+     [
+      -71.431822,
+      42.293974
+     ],
+     [
+      -71.432061,
+      42.294294
+     ],
+     [
+      -71.432156,
+      42.294418
+     ],
+     [
+      -71.432621,
+      42.295025
+     ],
+     [
+      -71.432677,
+      42.295107
+     ],
+     [
+      -71.432724,
+      42.295188
+     ],
+     [
+      -71.432763,
+      42.295275
+     ],
+     [
+      -71.432785,
+      42.295349
+     ],
+     [
+      -71.432804,
+      42.295432
+     ],
+     [
+      -71.432868,
+      42.295825
+     ],
+     [
+      -71.432918,
+      42.296164
+     ],
+     [
+      -71.432932,
+      42.296307
+     ],
+     [
+      -71.432936,
+      42.296442
+     ],
+     [
+      -71.432925,
+      42.296581
+     ],
+     [
+      -71.432917,
+      42.296657
+     ],
+     [
+      -71.432909,
+      42.296698
+     ],
+     [
+      -71.432901,
+      42.296742
+     ],
+     [
+      -71.432871,
+      42.2969
+     ],
+     [
+      -71.43286,
+      42.296959
+     ],
+     [
+      -71.432815,
+      42.297202
+     ],
+     [
+      -71.432767,
+      42.29746
+     ],
+     [
+      -71.432704,
+      42.2978
+     ],
+     [
+      -71.432684,
+      42.297867
+     ],
+     [
+      -71.43265,
+      42.297929
+     ],
+     [
+      -71.43263,
+      42.297952
+     ],
+     [
+      -71.432603,
+      42.297981
+     ],
+     [
+      -71.432556,
+      42.298031
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Worcester Railroad",
+    "line": "Boston and Worcester: Agricultural Branch",
+    "id": "bw-agricultural-branch",
+    "color": "#CC00CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: short steam branch with frequent stops; no B&W timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: OSM 'Boston Subdivision - Fitchburg Branch' ways tagged old_railway_operator=NYNH&H (the later Old Colony / New Haven owner of this line) from Framingham Centre through Fayville, Southborough and Marlboro Junction to Northborough.",
+    "geometry_quality": "Traced 12.3 mi against 13.2 mi documented for the Agricultural Branch main line (WAB; -7%; WAB's figure may be measured from South Framingham). Fully traced on surviving track tagged for the line's later owner; no straight-line leg. The feature starts on the 1855 realigned line at Framingham Centre, 0.7 km west of where the 1849 Framingham Branch is drawn to end; South Framingham - Framingham Centre on the 1855 alignment is not drawn for 1855-1866 (the report's drawable span starts at Framingham Centre). The Marlborough spur is not drawn.",
+    "segments": [
+     {
+      "start": 1855,
+      "end": 1866,
+      "headway_min": 300,
+      "note": "Agricultural Branch Railroad (a separate company), drawn as a B&W line because its first section was LEASED TO THE B&W: the directors' annual report, printed in the Worcester Daily Spy of 27 Dec 1855 and the Springfield Weekly Republican of 29 Dec 1855, says 'the first section has been leased to the Boston and Worcester Railroad Company for twenty years', and the Spy of 19 Dec 1855 calls stockholders 'to act upon the contract with the Boston and Worcester Railroad Corporation' (WBA dates the lease 1853). Regular trains for Boston from Marlboro from 1 Jan 1855 (Spy, 1 Jan 1855); open to Northborough by 1 Dec 1855 (WAB; Spy 27 Dec 1855 'in good running order from Framingham to Northboro Centre'). MEDIUM CONFIDENCE: whether the B&W itself ran the Jan-Dec 1855 trains is not established. Ends 1866, the year the Agricultural Branch opened its own extension to Pratt's Junction (2 July 1866); B&W operation after that is not shown - 1867 is withheld, not disproven, and passenger years 1855-1867 are confirmed whoever ran them. Southborough had 'three trains each way daily from Boston and Worcester' in 1857 (Spy, 2 June 1857); the 300-min headway is derived from that, not from a timetable.",
+      "sources": [
+       "Segment-level: lease and 1855 openings from the research report (research/branches/boston_and_worcester_railroad.txt, block [9]), which read them in the Worcester Daily Spy (1 Jan, 19 Dec, 27 Dec 1855; 11 Feb 1856; 2 June 1857) and the Springfield Weekly Republican (29 Dec 1855) on Chronicling America, plus WAB, WBA, WFS and the History of Northborough. Headway derived from the 1857 Spy advertisement.",
+       "https://www.loc.gov/resource/sn83021205/1855-01-01/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn83021205/1855-12-19/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn83021205/1855-12-27/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn83020847/1855-12-29/ed-1/?sp=8",
+       "https://www.loc.gov/resource/sn83021205/1856-02-11/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn83021205/1857-06-02/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Agricultural_Branch_Railroad",
+       "https://en.wikipedia.org/wiki/Boston_and_Albany_Railroad",
+       "https://en.wikipedia.org/wiki/Framingham_station",
+       "https://ldsgenealogy.com/MA/books/History-of-Northborough-Mass-in-various-publications-and-discourses-part-2.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.440932,
+      42.298458
+     ],
+     [
+      -71.442039,
+      42.299524
+     ],
+     [
+      -71.443622,
+      42.300349
+     ],
+     [
+      -71.447243,
+      42.301391
+     ],
+     [
+      -71.448852,
+      42.30163
+     ],
+     [
+      -71.450168,
+      42.301655
+     ],
+     [
+      -71.464856,
+      42.300752
+     ],
+     [
+      -71.471045,
+      42.299286
+     ],
+     [
+      -71.473507,
+      42.298916
+     ],
+     [
+      -71.483161,
+      42.298647
+     ],
+     [
+      -71.493004,
+      42.297284
+     ],
+     [
+      -71.502754,
+      42.296543
+     ],
+     [
+      -71.504454,
+      42.296701
+     ],
+     [
+      -71.52045,
+      42.303373
+     ],
+     [
+      -71.52221,
+      42.304361
+     ],
+     [
+      -71.52329,
+      42.305203
+     ],
+     [
+      -71.52419,
+      42.306195
+     ],
+     [
+      -71.52509,
+      42.307556
+     ],
+     [
+      -71.529056,
+      42.316849
+     ],
+     [
+      -71.529951,
+      42.318429
+     ],
+     [
+      -71.536228,
+      42.32644
+     ],
+     [
+      -71.537256,
+      42.327196
+     ],
+     [
+      -71.538516,
+      42.327891
+     ],
+     [
+      -71.539913,
+      42.32848
+     ],
+     [
+      -71.54076,
+      42.328639
+     ],
+     [
+      -71.541814,
+      42.32854
+     ],
+     [
+      -71.542836,
+      42.328055
+     ],
+     [
+      -71.548637,
+      42.323916
+     ],
+     [
+      -71.555025,
+      42.31854
+     ],
+     [
+      -71.557007,
+      42.317295
+     ],
+     [
+      -71.561279,
+      42.315294
+     ],
+     [
+      -71.563154,
+      42.31456
+     ],
+     [
+      -71.56478,
+      42.314174
+     ],
+     [
+      -71.569948,
+      42.313405
+     ],
+     [
+      -71.573839,
+      42.313353
+     ],
+     [
+      -71.575186,
+      42.313491
+     ],
+     [
+      -71.576708,
+      42.314036
+     ],
+     [
+      -71.579913,
+      42.316003
+     ],
+     [
+      -71.581032,
+      42.316544
+     ],
+     [
+      -71.582549,
+      42.316969
+     ],
+     [
+      -71.584673,
+      42.317121
+     ],
+     [
+      -71.590208,
+      42.317059
+     ],
+     [
+      -71.591933,
+      42.316853
+     ],
+     [
+      -71.593333,
+      42.316535
+     ],
+     [
+      -71.600986,
+      42.313568
+     ],
+     [
+      -71.602142,
+      42.313259
+     ],
+     [
+      -71.604436,
+      42.31292
+     ],
+     [
+      -71.621334,
+      42.313628
+     ],
+     [
+      -71.627216,
+      42.313435
+     ],
+     [
+      -71.62933,
+      42.313787
+     ],
+     [
+      -71.633429,
+      42.315178
+     ],
+     [
+      -71.639434,
+      42.31666
+     ],
+     [
+      -71.640613,
+      42.317214
+     ],
+     [
+      -71.641315,
+      42.317841
+     ],
+     [
+      -71.641693,
+      42.318506
+     ],
+     [
+      -71.641804,
+      42.319734
+     ]
+    ]
+   }
+  }
+ ]
+}
