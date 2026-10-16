@@ -1,0 +1,1751 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Boston and Providence Railroad (1831 charter) ran Boston (Park Square) - Providence from 1834/1835 until the Old Colony Railroad leased it from 1 April 1888 (the New Haven took the Old Colony, and with it this lease, from 1 March 1893). This layer draws only the B&P's own operating era, 1834-1888: the main line in three features (1834 opening stage, 1835-1847 via East Providence and India Point, 1847-1888 via Central Falls), its Dedham, West Roxbury, Stoughton and North Attleborough branches, and two lines Wikipedia says the B&P operated for their owners (Taunton Branch 1836-1840, PW&B 1855-1860). One colour for every feature. Research report: research/branches/boston_and_providence_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad -- Wikipedia, 'Boston and Providence Railroad' (cites Mass. RR Commissioners 1887/1913, ICC 1929, Karr 2017, Humphrey & Clark 1985)",
+   "https://en.wikipedia.org/wiki/Dedham_Branch -- Wikipedia, 'Dedham Branch'",
+   "https://en.wikipedia.org/wiki/History_of_rail_in_Dedham,_Massachusetts -- Wikipedia, 'History of rail in Dedham, Massachusetts' (cites Humphrey & Clark 1985; Hanson 1976; Clarke 1903; Karr 1995)",
+   "https://en.wikipedia.org/wiki/Needham_Line -- Wikipedia, 'Needham Line'",
+   "https://en.wikipedia.org/wiki/Providence/Stoughton_Line -- Wikipedia, 'Providence/Stoughton Line'",
+   "https://en.wikipedia.org/wiki/Stoughton_station -- Wikipedia, 'Stoughton station'",
+   "https://en.wikipedia.org/wiki/Attleboro_station_(Massachusetts) -- Wikipedia, 'Attleboro station (Massachusetts)'",
+   "https://en.wikipedia.org/wiki/Taunton_Branch_Railroad -- Wikipedia, 'Taunton Branch Railroad'",
+   "https://en.wikipedia.org/wiki/Taunton_station_(Amtrak) -- Wikipedia, 'Taunton station (Amtrak)'",
+   "https://en.wikipedia.org/wiki/Providence,_Warren_and_Bristol_Railroad -- Wikipedia, 'Providence, Warren and Bristol Railroad' (cites Karr 2017)",
+   "https://en.wikipedia.org/wiki/India_Point_Railroad_Bridge -- Wikipedia, 'India Point Railroad Bridge'",
+   "https://whenandwhereinboston.org/?p=29586 -- whenandwhereinboston.org, B&P entry dated 4 June 1834",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf -- John Fowler, Southern New England Railroads (2), lines 60-81; dated Pathfinder snapshots 1850-1889",
+   "https://nashuacitystation.org/history/old-colony-railroad-company/routes/providence-division-north-attleboro-branch/ -- Nashua City Station, Old Colony TT No. 44 (14 Oct 1889), North Attleboro Branch",
+   "https://www.loc.gov/resource/sn83021205/1870-12-30/ed-1/?sp=4 -- Worcester Daily Spy, 30 Dec 1870, p.4 (Chronicling America)",
+   "https://www.loc.gov/resource/sn83021113/1871-04-21/ed-1/?sp=3 -- The Weekly Visitor (Central Falls RI), 21 Apr 1871, p.3 (Chronicling America)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-16): Northeast Corridor, Needham Line, Stoughton Branch and East Junction freight track tagged old_railway_operator=NYNH&H; abandoned Dedham Branch / West Roxbury Branch / Mansfield-Taunton fragments; World War II Veterans Memorial Trail; East Bay Bike Path",
+   "OpenHistoricalMap (2026-10-16): 'Boston and Providence Railroad' ways for Park Square, East Providence, the India Point bridge and the 1847 Providence approach; 'Providence, Warren and Bristol Railroad'; the unnamed 1887 North Attleborough branch; the Dedham Branch at Dedham"
+  ],
+  "operator_split": "Every feature ends at 1888 (Old Colony lease, 1 April 1888) except the Taunton Branch (B&P operation ended 1840, New Bedford & Taunton) and the PW&B (B&P operation ended 1860, PW&B's own locomotives). The successor Old Colony (1888-1893) and New Haven eras are not drawn here; the Old Colony is a separate queue entry.",
+  "omitted": [
+   "Easton Branch extension, Stoughton - North Easton (1855): no source names the B&P as operator (report drawable NONE).",
+   "East Junction Branch (the old main line) East Junction - India Point after Oct 1847: no confirmable B&P passenger year 1848-1888 (report drawable NONE); WBP calls it 'primarily freight'.",
+   "Fall River, Warren and Providence, Warren - Fall River: B&P-owned 1872-1873 only, operation not shown (report drawable NONE).",
+   "Seekonk Branch (India Point dock spur, bought 1839): no passenger evidence; Rule 1.",
+   "Needham Cutoff (1906, New Haven) and the Charles River Branch / Needham line (1853): never B&P.",
+   "Horse-car operation on the Dedham Branch before 1842 and the 1858-1875 horse shuttles to East Dedham; the PW&B's horse-hauled city leg India Point - P&W depot to 1857 (Rule 5).",
+   "Dedham Branch 1850-1858: steam passenger service unproven either way, left undrawn."
+  ],
+  "existing_layer_note": "Other layers draw parts of this corridor in the B&P era under successor companies (mbta_commuter_rail.geojson Providence/Stoughton Line from 1835 and Needham Line from 1853; new_haven_shore_line.geojson from 1859). Those overlaps are known defects listed in the research report's EXISTING LAYER CHECK and are left for a separate change; this layer does not edit them.",
+  "not_yet_sourced": [
+   "All headways and average speeds are estimates; no B&P timetable with times was read.",
+   "Dedham Branch horse-to-steam transition: June 1842 (Humphrey & Clark via WHD) vs 1837 (Clarke/Hanson via WHD); drawn from 1842. Steam passenger service via Readville 1850-1858 unproven either way.",
+   "West Roxbury Branch opening: 14 July 1849 (WNL) vs June 1850 (WDH/WHD); drawn from 1850.",
+   "Main line 1835 opening day: 11 June (WWB) vs 28 July (WBP); same year.",
+   "Providence station opening: 25 Oct 1847 (WBP) vs 'op. 1848' (Fowler); 1847 used.",
+   "Whether B&P trains still ran to India Point (e.g. steamboat connections) after Oct 1847; Fowler lists 'Providence (B&P)' at India Point in the 1850 Pathfinder. Not drawn.",
+   "North Attleborough Branch: no B&P-era timetable found; opening year 1871 rests on a newspaper 'open to the public' notice. The drawn geometry is a low-resolution 1887 trace.",
+   "Taunton Branch 1836-1840 and PW&B 1855-1860 operator attribution rests on Wikipedia (plus one secondary summary for the Taunton Branch); Karr, The Rail Lines of Southern New England (2017) would resolve whether trains ran in the B&P's name.",
+   "1836 Taunton depot site and whether the 1836 Taunton Branch alignment matches the later grade drawn.",
+   "Exact site of the 1834 temporary Canton terminal."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: Boston \u2013 Canton (1834 opening stage)",
+    "id": "bp-main-line-1834",
+    "color": "#8C4A2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1830s-1880s steam on a well-built, nearly straight double-track main line; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM NEC ways tagged old_railway_operator=NYNH&H; OHM way -200057269 for the Park Square approach.",
+    "geometry_quality": "Traced 14.2 mi against c.15.0 mi documented (Fowler: Canton Junction 15.0 mi from South Station; Park Square is about 0.6 mi nearer Canton than South Station's measuring point, so the fit is close). No straight-line leg beyond the 78 m Park Square join. Boston terminal is Park Square (the B&P depot, used 1834-1899; South Station opened only in 1899): the first 0.58 mi from Park Square to the Back Bay join is OpenHistoricalMap way -200057269 ('Boston and Providence Railroad', 1834-1899, traced from the USGS 1886-1893 topographic sheets) - the original diagonal approach across the Back Bay, long since built over - joined to OSM track by a 78 m link. From there the line follows the present Northeast Corridor (OSM ways tagged old_railway_operator=NYNH&H, plus some untagged NEC track) through Roxbury, Jamaica Plain, Forest Hills, Hyde Park and Readville. LATER-ALIGNMENT NOTE: Back Bay - Forest Hills ran at grade until raised on embankment in 1889 and was rebuilt again as the 1987 Southwest Corridor; the horizontal alignment is the same right-of-way but the drawn track is the post-B&P structure. The south end is drawn to Canton Junction, i.e. the north side of the Neponset valley at the Canton Viaduct site, which is where the report places the 1834 temporary terminal; the exact temporary-station site is not established.",
+    "segments": [
+     {
+      "start": 1834,
+      "end": 1835,
+      "headway_min": 240,
+      "note": "Opening stage of the Boston and Providence. Trains ran from Boston (Park Square) to just south of Readville ('Dedham Low Plain') from 4 June 1834 (WHD, WWB, WPS) - the opening was hauled by the English locomotive Whistler, so steam from the first day and no animal-power years on the main line - and were extended to a temporary terminal on the north side of the Neponset at Canton on 12 Sept 1834 (WHD). The Canton Viaduct and the line on to Providence opened in 1835, when this stage was folded into the through main line (feature bp-main-line-india-point). The drawable span is the report's 1834-1835. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report (research/branches/boston_and_providence_railroad.txt, block [1]), which read them in Wikipedia's History of rail in Dedham (citing Hanson 1976) and Providence/Stoughton Line, and whenandwhereinboston.org; Fowler's station list confirms Roxbury, Jamaica Plain, Hyde Park and Readville in the 1850 Pathfinder. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/History_of_rail_in_Dedham,_Massachusetts",
+       "https://whenandwhereinboston.org/?p=29586",
+       "https://en.wikipedia.org/wiki/Providence/Stoughton_Line",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.068768,
+      42.351575
+     ],
+     [
+      -71.07137,
+      42.350961
+     ],
+     [
+      -71.072162,
+      42.350686
+     ],
+     [
+      -71.072786,
+      42.350276
+     ],
+     [
+      -71.093007,
+      42.333419
+     ],
+     [
+      -71.0954,
+      42.331181
+     ],
+     [
+      -71.096569,
+      42.329683
+     ],
+     [
+      -71.09746,
+      42.328197
+     ],
+     [
+      -71.098872,
+      42.324755
+     ],
+     [
+      -71.099732,
+      42.323103
+     ],
+     [
+      -71.102861,
+      42.319161
+     ],
+     [
+      -71.103907,
+      42.31758
+     ],
+     [
+      -71.105991,
+      42.312903
+     ],
+     [
+      -71.106837,
+      42.311327
+     ],
+     [
+      -71.112868,
+      42.302076
+     ],
+     [
+      -71.117113,
+      42.295951
+     ],
+     [
+      -71.118242,
+      42.293871
+     ],
+     [
+      -71.118927,
+      42.291939
+     ],
+     [
+      -71.11932,
+      42.289843
+     ],
+     [
+      -71.119776,
+      42.280068
+     ],
+     [
+      -71.124906,
+      42.256602
+     ],
+     [
+      -71.13102,
+      42.243786
+     ],
+     [
+      -71.132165,
+      42.241807
+     ],
+     [
+      -71.133823,
+      42.238405
+     ],
+     [
+      -71.134881,
+      42.237338
+     ],
+     [
+      -71.134539,
+      42.237277
+     ],
+     [
+      -71.134049,
+      42.236514
+     ],
+     [
+      -71.13589,
+      42.233605
+     ],
+     [
+      -71.1541,
+      42.195811
+     ],
+     [
+      -71.155191,
+      42.192972
+     ],
+     [
+      -71.155533,
+      42.191023
+     ],
+     [
+      -71.155562,
+      42.189095
+     ],
+     [
+      -71.154043,
+      42.166573
+     ],
+     [
+      -71.153702,
+      42.16352
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: Boston \u2013 Providence (via India Point)",
+    "id": "bp-main-line-india-point",
+    "color": "#8C4A2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: 1830s-1880s steam on a well-built, nearly straight double-track main line; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM NEC ways (NYNH&H-tagged) Boston - East Junction; OSM freight tracks 'East Junction Industrial Track', 'East Junction Running Track' and 'East Providence Running Track' (NYNH&H-tagged) East Junction - East Providence; OHM ways -200057269 (Park Square), -200075065 (East Providence, from the 1849 Cushing and Walling map), -200075067 (India Point bridge) and -200075066 (India Point terminal).",
+    "geometry_quality": "Traced 41.6 mi against c.43.3 mi documented (Fowler line 60 to East Junction 34.8 mi + line 79 East Junction - Fox Point 8.5 mi, both measured from South Station; about 4% short, partly the shorter Park Square start). No straight-line leg beyond the 78 m Park Square join. Boston terminal is Park Square (the B&P depot, used 1834-1899; South Station opened only in 1899): the first 0.58 mi from Park Square to the Back Bay join is OpenHistoricalMap way -200057269 ('Boston and Providence Railroad', 1834-1899, traced from the USGS 1886-1893 topographic sheets) - the original diagonal approach across the Back Bay, long since built over - joined to OSM track by a 78 m link. From there the line follows the present Northeast Corridor (OSM ways tagged old_railway_operator=NYNH&H, plus some untagged NEC track) through Roxbury, Jamaica Plain, Forest Hills, Hyde Park and Readville. LATER-ALIGNMENT NOTE: Back Bay - Forest Hills ran at grade until raised on embankment in 1889 and was rebuilt again as the 1987 Southwest Corridor; the horizontal alignment is the same right-of-way but the drawn track is the post-B&P structure. South of Attleboro this feature draws the ORIGINAL 1835 route, NOT today's Northeast Corridor: from East Junction it runs south-west in an almost dead-straight line through Perrins and Rumford (Seekonk) to East Providence on the surviving freight track of the later East Junction Branch, then crosses the Seekonk on the India Point bridge to the B&P's India Point / Fox Point terminal. That track agrees with OpenHistoricalMap's B&P East Junction Branch (traced from the 1887 USGS sheet) to a mean 31 m, max 323 m. The bridge (gone; dismantled 2001/2023, WIP) and the terminal approach, 0.2 mi, are OHM's 1849-map geometry, not surviving track. The present-day freight track is a later rebuild on the old main line's right-of-way. Attleboro - Dodgeville was realigned for grade-crossing elimination in 1906 (Fowler); the drawn NEC there is the post-1906 track, a minor offset.",
+    "segments": [
+     {
+      "start": 1835,
+      "end": 1847,
+      "headway_min": 180,
+      "note": "Through Boston - Providence main line on its original route via East Junction, Perrins, Seekonk (Rumford), East Providence and the India Point bridge to the B&P's Providence terminal at India Point / Fox Point on the east side of the city. Opened 1835: to East Providence 11 June 1835 (WWB) vs completion with the Canton Viaduct 28 July 1835 (WBP) - day conflict, same year. Passengers for New York crossed the harbour by ferry from Fox Point to the NY, Providence & Boston's South Providence terminal 1835-1847 (WBP; Fowler line 79), and the B&P fed New York steamboats at Providence. Ends Oct 1847, when the new line via Central Falls to the Providence station opened on 25 Oct 1847 (WBP; WPS 'October 1847') and became the through route (feature bp-main-line-central-falls). After 1847 this alignment became the 'primarily freight' East Junction Branch (WBP); no B&P passenger year on it after 1847 is confirmed, so it is not drawn after 1847. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [2]: Wikipedia Boston and Providence Railroad and India Point Railroad Bridge, whenandwhereinboston.org, Fowler lines 60 and 79 (India Point 'pyz', Providence (B&P) 'x'). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://whenandwhereinboston.org/?p=29586",
+       "https://en.wikipedia.org/wiki/India_Point_Railroad_Bridge",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.068768,
+      42.351575
+     ],
+     [
+      -71.07137,
+      42.350961
+     ],
+     [
+      -71.072162,
+      42.350686
+     ],
+     [
+      -71.072786,
+      42.350276
+     ],
+     [
+      -71.093007,
+      42.333419
+     ],
+     [
+      -71.0954,
+      42.331181
+     ],
+     [
+      -71.096569,
+      42.329683
+     ],
+     [
+      -71.09746,
+      42.328197
+     ],
+     [
+      -71.098872,
+      42.324755
+     ],
+     [
+      -71.099732,
+      42.323103
+     ],
+     [
+      -71.102861,
+      42.319161
+     ],
+     [
+      -71.103907,
+      42.31758
+     ],
+     [
+      -71.105991,
+      42.312903
+     ],
+     [
+      -71.106837,
+      42.311327
+     ],
+     [
+      -71.112868,
+      42.302076
+     ],
+     [
+      -71.117113,
+      42.295951
+     ],
+     [
+      -71.118242,
+      42.293871
+     ],
+     [
+      -71.118927,
+      42.291939
+     ],
+     [
+      -71.11932,
+      42.289843
+     ],
+     [
+      -71.119776,
+      42.280068
+     ],
+     [
+      -71.124906,
+      42.256602
+     ],
+     [
+      -71.13102,
+      42.243786
+     ],
+     [
+      -71.132165,
+      42.241807
+     ],
+     [
+      -71.133823,
+      42.238405
+     ],
+     [
+      -71.134881,
+      42.237338
+     ],
+     [
+      -71.134539,
+      42.237277
+     ],
+     [
+      -71.134049,
+      42.236514
+     ],
+     [
+      -71.13589,
+      42.233605
+     ],
+     [
+      -71.1541,
+      42.195811
+     ],
+     [
+      -71.155191,
+      42.192972
+     ],
+     [
+      -71.155533,
+      42.191023
+     ],
+     [
+      -71.155562,
+      42.189095
+     ],
+     [
+      -71.15372,
+      42.161367
+     ],
+     [
+      -71.153852,
+      42.159092
+     ],
+     [
+      -71.154432,
+      42.156855
+     ],
+     [
+      -71.155225,
+      42.155096
+     ],
+     [
+      -71.156139,
+      42.153602
+     ],
+     [
+      -71.161866,
+      42.146597
+     ],
+     [
+      -71.175479,
+      42.134548
+     ],
+     [
+      -71.183728,
+      42.125353
+     ],
+     [
+      -71.18573,
+      42.122798
+     ],
+     [
+      -71.189453,
+      42.117332
+     ],
+     [
+      -71.190325,
+      42.115817
+     ],
+     [
+      -71.191019,
+      42.114106
+     ],
+     [
+      -71.191482,
+      42.112196
+     ],
+     [
+      -71.19704,
+      42.072856
+     ],
+     [
+      -71.197452,
+      42.070705
+     ],
+     [
+      -71.19842,
+      42.068222
+     ],
+     [
+      -71.209367,
+      42.047733
+     ],
+     [
+      -71.356555,
+      41.839263
+     ],
+     [
+      -71.358314,
+      41.837365
+     ],
+     [
+      -71.360614,
+      41.835648
+     ],
+     [
+      -71.373157,
+      41.828919
+     ],
+     [
+      -71.377148,
+      41.826957
+     ],
+     [
+      -71.378136,
+      41.826331
+     ],
+     [
+      -71.3804,
+      41.824089
+     ],
+     [
+      -71.384865,
+      41.817673
+     ],
+     [
+      -71.385664,
+      41.817069
+     ],
+     [
+      -71.386744,
+      41.816961
+     ],
+     [
+      -71.390585,
+      41.81748
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: Boston \u2013 Providence (via Central Falls)",
+    "id": "bp-main-line-central-falls",
+    "color": "#8C4A2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: 1830s-1880s steam on a well-built, nearly straight double-track main line; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM NEC ways (NYNH&H-tagged, plus untagged NEC track) Boston - Pawtucket - Providence; OHM ways -200057269 (Park Square) and -200076833 ('Boston and Providence Railroad' 1847, shared B&P/P&W track, from the 1849 Cushing and Walling Providence map) for the last approach to the 1848 Union depot.",
+    "geometry_quality": "Traced 43.0 mi against 43.8 mi documented (Fowler: South Station - Providence Union Station; about 2% short, consistent with the Park Square start). No straight-line leg beyond the 78 m Park Square join and a 17 m join to OHM at Providence. Boston terminal is Park Square (the B&P depot, used 1834-1899; South Station opened only in 1899): the first 0.58 mi from Park Square to the Back Bay join is OpenHistoricalMap way -200057269 ('Boston and Providence Railroad', 1834-1899, traced from the USGS 1886-1893 topographic sheets) - the original diagonal approach across the Back Bay, long since built over - joined to OSM track by a 78 m link. From there the line follows the present Northeast Corridor (OSM ways tagged old_railway_operator=NYNH&H, plus some untagged NEC track) through Roxbury, Jamaica Plain, Forest Hills, Hyde Park and Readville. LATER-ALIGNMENT NOTE: Back Bay - Forest Hills ran at grade until raised on embankment in 1889 and was rebuilt again as the 1987 Southwest Corridor; the horizontal alignment is the same right-of-way but the drawn track is the post-B&P structure. Boston - Attleboro - East Junction is the same track as today's NEC; East Junction - Central Falls - Pawtucket follows the 1847 connection, now the NEC (agrees with OpenHistoricalMap's B&P ways from the 1887 USGS sheet to a mean 27 m, max 200 m). LATER-ALIGNMENT NOTES: the Attleboro - Dodgeville stretch was realigned in 1906 (post-B&P, minor offset); and the present NEC through downtown Providence and its 1986 station are a 1980s relocation north of the B&P-era route, so the last 1.3 mi into Providence is replaced by OHM's 1849-map geometry ending at the 1848 Union depot site at Exchange Place.",
+    "segments": [
+     {
+      "start": 1847,
+      "end": 1888,
+      "headway_min": 90,
+      "note": "Boston (Park Square) - Providence on the new line via East Junction, Central Falls and Pawtucket, opened 25 Oct 1847 (WBP; WPS 'October 1847'). South of Central Falls the track was owned jointly with the Providence and Worcester, whose trains shared it (WBP, WPS). The Providence station opened 25 Oct 1847 per WBP; Fowler tags the joint B&P/NYP&B station 'op. 1848', which probably dates the NYP&B through-connection across downtown (WBP: 1848) - conflict recorded, 1847 used. Through Boston - New York cars ran over this line in connection with the Stonington and Shore Line routes, but the Boston - Providence leg was B&P-operated throughout. Ends 1888 because the Old Colony Railroad took over operation under a 99-year lease from 1 April 1888 (WBP); that is an OPERATOR end, not a passenger end - trains continued under the Old Colony and, from 1 March 1893, the New York, New Haven and Hartford. Those successor eras are not drawn in this layer. Headway is an estimate covering through trains and Boston commuter locals together; not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [3]: Wikipedia Boston and Providence Railroad and Providence/Stoughton Line, Fowler line 60 (Mansfield x-ek, Attleboro xyz, Central Falls/Pawtucket xyza, Providence x-e); the 1888 lease date from WBP. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://en.wikipedia.org/wiki/Providence/Stoughton_Line",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.068768,
+      42.351575
+     ],
+     [
+      -71.07137,
+      42.350961
+     ],
+     [
+      -71.072162,
+      42.350686
+     ],
+     [
+      -71.072786,
+      42.350276
+     ],
+     [
+      -71.093007,
+      42.333419
+     ],
+     [
+      -71.0954,
+      42.331181
+     ],
+     [
+      -71.096569,
+      42.329683
+     ],
+     [
+      -71.09746,
+      42.328197
+     ],
+     [
+      -71.098872,
+      42.324755
+     ],
+     [
+      -71.099732,
+      42.323103
+     ],
+     [
+      -71.102861,
+      42.319161
+     ],
+     [
+      -71.103907,
+      42.31758
+     ],
+     [
+      -71.105991,
+      42.312903
+     ],
+     [
+      -71.106837,
+      42.311327
+     ],
+     [
+      -71.112868,
+      42.302076
+     ],
+     [
+      -71.117113,
+      42.295951
+     ],
+     [
+      -71.118242,
+      42.293871
+     ],
+     [
+      -71.118927,
+      42.291939
+     ],
+     [
+      -71.11932,
+      42.289843
+     ],
+     [
+      -71.119776,
+      42.280068
+     ],
+     [
+      -71.124906,
+      42.256602
+     ],
+     [
+      -71.13102,
+      42.243786
+     ],
+     [
+      -71.132165,
+      42.241807
+     ],
+     [
+      -71.133823,
+      42.238405
+     ],
+     [
+      -71.134881,
+      42.237338
+     ],
+     [
+      -71.134539,
+      42.237277
+     ],
+     [
+      -71.134049,
+      42.236514
+     ],
+     [
+      -71.13589,
+      42.233605
+     ],
+     [
+      -71.1541,
+      42.195811
+     ],
+     [
+      -71.155191,
+      42.192972
+     ],
+     [
+      -71.155533,
+      42.191023
+     ],
+     [
+      -71.155562,
+      42.189095
+     ],
+     [
+      -71.15372,
+      42.161367
+     ],
+     [
+      -71.153852,
+      42.159092
+     ],
+     [
+      -71.154432,
+      42.156855
+     ],
+     [
+      -71.155225,
+      42.155096
+     ],
+     [
+      -71.156139,
+      42.153602
+     ],
+     [
+      -71.161866,
+      42.146597
+     ],
+     [
+      -71.175479,
+      42.134548
+     ],
+     [
+      -71.183728,
+      42.125353
+     ],
+     [
+      -71.18573,
+      42.122798
+     ],
+     [
+      -71.189453,
+      42.117332
+     ],
+     [
+      -71.190325,
+      42.115817
+     ],
+     [
+      -71.191019,
+      42.114106
+     ],
+     [
+      -71.191482,
+      42.112196
+     ],
+     [
+      -71.19704,
+      42.072856
+     ],
+     [
+      -71.197452,
+      42.070705
+     ],
+     [
+      -71.19842,
+      42.068222
+     ],
+     [
+      -71.209529,
+      42.047469
+     ],
+     [
+      -71.305074,
+      41.912353
+     ],
+     [
+      -71.307668,
+      41.908878
+     ],
+     [
+      -71.309162,
+      41.907536
+     ],
+     [
+      -71.310881,
+      41.90643
+     ],
+     [
+      -71.312677,
+      41.905601
+     ],
+     [
+      -71.315016,
+      41.904887
+     ],
+     [
+      -71.3792,
+      41.893472
+     ],
+     [
+      -71.380389,
+      41.893165
+     ],
+     [
+      -71.38175,
+      41.892642
+     ],
+     [
+      -71.383623,
+      41.891629
+     ],
+     [
+      -71.384412,
+      41.890864
+     ],
+     [
+      -71.384951,
+      41.889784
+     ],
+     [
+      -71.385516,
+      41.884367
+     ],
+     [
+      -71.385708,
+      41.883602
+     ],
+     [
+      -71.386126,
+      41.8828
+     ],
+     [
+      -71.386717,
+      41.882091
+     ],
+     [
+      -71.387411,
+      41.881541
+     ],
+     [
+      -71.396234,
+      41.876205
+     ],
+     [
+      -71.397482,
+      41.875081
+     ],
+     [
+      -71.403773,
+      41.865029
+     ],
+     [
+      -71.405146,
+      41.862416
+     ],
+     [
+      -71.406668,
+      41.858245
+     ],
+     [
+      -71.407393,
+      41.856765
+     ],
+     [
+      -71.410849,
+      41.851359
+     ],
+     [
+      -71.412724,
+      41.847688
+     ],
+     [
+      -71.414916,
+      41.844848
+     ],
+     [
+      -71.41685,
+      41.841656
+     ],
+     [
+      -71.417059,
+      41.84093
+     ],
+     [
+      -71.417014,
+      41.840033
+     ],
+     [
+      -71.416763,
+      41.839165
+     ],
+     [
+      -71.413022,
+      41.83325
+     ],
+     [
+      -71.412224,
+      41.831557
+     ],
+     [
+      -71.411705,
+      41.829001
+     ],
+     [
+      -71.410769,
+      41.827323
+     ],
+     [
+      -71.410708,
+      41.826563
+     ],
+     [
+      -71.410939,
+      41.825971
+     ],
+     [
+      -71.411385,
+      41.825529
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: Dedham Branch",
+    "id": "bp-dedham-branch",
+    "color": "#8C4A2F",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM abandoned ways 'Dedham Industrial Track', 'Dedham Branch' and 'Proposed Dedham Heritage Rail Trail' (old_railway_operator=NYNH&H) and the Dedham Heritage Rail Trail.",
+    "geometry_quality": "Traced 2.0 mi against c.2.1 mi documented (Fowler line 65: Readville 9.6 - Dedham 11.7). The track is lifted; the drawn line is the abandoned grade as mapped in OSM, matching OpenHistoricalMap's Dedham Branch (Sanborn 1917 / USGS-traced). One straight join of 0.08 mi between OSM fragments east of Dedham is approximated. It starts at the junction with the main line at Readville and ends at the Dedham station site near Eastern Avenue, where it met the West Roxbury Branch; the exact depot position is approximate.",
+    "segments": [
+     {
+      "start": 1842,
+      "end": 1850,
+      "headway_min": 120,
+      "note": "Readville - East Dedham (Mill Village) - Dedham. Rail service began 5 Feb 1835 (WDH, WHD), but RULE 5: Humphrey & Clark (via WHD) say service alternated between through steam 'Dedham Specials' and horse-drawn cars cut out of main-line trains at Readville until the Dedham Specials became permanent in June 1842; Clarke/Hanson (via WHD) say horses ran the first year and steam replaced them in 1837. Drawn only from 1842, the first year steam is confirmed as the regular service; horse cars before that are not drawn. Ends 1850, when commuter service moved to the new West Roxbury Branch route (WHD); whether any steam passenger train used the Readville route 1850-1858 is unproven either way, so those years are left undrawn (omission, not a claim of no service). Norfolk County RR trains also ran over the branch from May 1849 (WDH). Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [4]: Wikipedia Dedham Branch and History of rail in Dedham (citing Humphrey & Clark 1985 pp. 9, 15, 29-38; Hanson 1976; Clarke 1903). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Dedham_Branch",
+       "https://en.wikipedia.org/wiki/History_of_rail_in_Dedham,_Massachusetts",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     },
+     {
+      "start": 1858,
+      "end": 1888,
+      "headway_min": 120,
+      "note": "Readville-route commuter service resumed in 1858 (WHD); horse-drawn shuttles to East Dedham also continued in parallel until 1875 (WHD) - those horse shuttles are not what this segment draws; it draws the steam service. Norfolk County trains used the branch Aug 1855 - Mar 1857 (WDH), before this segment. Ends 1888 because the Old Colony Railroad took over operation under a 99-year lease from 1 April 1888 (WBP); that is an OPERATOR end, not a passenger end - trains continued under the Old Colony and, from 1 March 1893, the New York, New Haven and Hartford. Those successor eras are not drawn in this layer. Dedham Branch passengers ended only on 21 Apr 1967 (WDH), far beyond this layer. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [4]: Wikipedia History of rail in Dedham and Dedham Branch; the 1888 lease date from WBP. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/History_of_rail_in_Dedham,_Massachusetts",
+       "https://en.wikipedia.org/wiki/Dedham_Branch",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.135226,
+      42.237778
+     ],
+     [
+      -71.135817,
+      42.237715
+     ],
+     [
+      -71.136471,
+      42.237806
+     ],
+     [
+      -71.148068,
+      42.241523
+     ],
+     [
+      -71.156667,
+      42.24565
+     ],
+     [
+      -71.158804,
+      42.246485
+     ],
+     [
+      -71.162153,
+      42.246919
+     ],
+     [
+      -71.169556,
+      42.247491
+     ],
+     [
+      -71.170489,
+      42.247433
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: West Roxbury Branch",
+    "id": "bp-west-roxbury-branch",
+    "color": "#8C4A2F",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM Needham Line track Forest Hills - West Roxbury (NYNH&H-tagged and untagged); OSM abandoned ways 'West Roxbury Branch' (1347781118, 1497208230, 1497208228; NYNH&H) south of Spring Street; OHM way -202005448 (Dedham Branch at Dedham, Sanborn 1917) into Dedham.",
+    "geometry_quality": "Traced 5.3 mi against c.5.3 mi documented (Fowler: Forest Hills 5.2 - West Roxbury 8.1 - Dedham 10.5). Forest Hills - Roslindale - Bellevue - Highland - West Roxbury - Spring Street is the present MBTA Needham Line track on the 1850 right-of-way. South of Spring Street the branch is lifted: three short OSM abandoned fragments are used, and the gaps are approximated by STRAIGHT LINES totalling 1.1 mi - 0.37 mi south of Spring Street, 0.08 mi between fragments, and 0.67 mi across the unmapped stretch into Dedham, where no OSM or OHM trace survives. The line stops at the 1850 branch's real end, Dedham station; it does NOT draw the Needham Cutoff (West Roxbury - Needham Junction), which opened 4 Nov 1906 under the New Haven and was never B&P.",
+    "segments": [
+     {
+      "start": 1850,
+      "end": 1888,
+      "headway_min": 90,
+      "note": "Forest Hills (Toll Gate) - South Street (Roslindale) - Central (Bellevue) - Highland (c.1855) - West Roxbury - Spring Street - Dedham, forming a loop with the Dedham Branch. Opening date conflicts: 14 July 1849 (WNL) vs June 1850 (WDH, WHD); drawn from 1850, the later year, which the 1850 Pathfinder (Fowler 'x' on West Roxbury and Dedham) also supports. Ends 1888 because the Old Colony Railroad took over operation under a 99-year lease from 1 April 1888 (WBP); that is an OPERATOR end, not a passenger end - trains continued under the Old Colony and, from 1 March 1893, the New York, New Haven and Hartford. Those successor eras are not drawn in this layer. West Roxbury - Dedham passengers ended 6 May 1940 (WNL); Forest Hills - West Roxbury continues as today's Needham Line. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [5]: Wikipedia Needham Line (citing Humphrey & Clark pp. 21-24, 29, 43-46), Dedham Branch and History of rail in Dedham; Fowler lines 62-63. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Needham_Line",
+       "https://en.wikipedia.org/wiki/Dedham_Branch",
+       "https://en.wikipedia.org/wiki/History_of_rail_in_Dedham,_Massachusetts",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.113961,
+      42.300491
+     ],
+     [
+      -71.115385,
+      42.298964
+     ],
+     [
+      -71.120404,
+      42.295783
+     ],
+     [
+      -71.122417,
+      42.294328
+     ],
+     [
+      -71.123999,
+      42.292808
+     ],
+     [
+      -71.126776,
+      42.2895
+     ],
+     [
+      -71.12802,
+      42.28853
+     ],
+     [
+      -71.129545,
+      42.287719
+     ],
+     [
+      -71.131255,
+      42.287149
+     ],
+     [
+      -71.133189,
+      42.286838
+     ],
+     [
+      -71.147653,
+      42.286528
+     ],
+     [
+      -71.150641,
+      42.286128
+     ],
+     [
+      -71.152618,
+      42.285532
+     ],
+     [
+      -71.154593,
+      42.284613
+     ],
+     [
+      -71.159755,
+      42.281535
+     ],
+     [
+      -71.16195,
+      42.279508
+     ],
+     [
+      -71.164452,
+      42.275649
+     ],
+     [
+      -71.165051,
+      42.274268
+     ],
+     [
+      -71.166919,
+      42.266009
+     ],
+     [
+      -71.167576,
+      42.260197
+     ],
+     [
+      -71.169319,
+      42.250641
+     ],
+     [
+      -71.17137,
+      42.247519
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: Stoughton Branch",
+    "id": "bp-stoughton-branch",
+    "color": "#8C4A2F",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: short steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM 'Stoughton Branch' track (MBTA Stoughton Line, old_railway_operator=NYNH&H).",
+    "geometry_quality": "Traced 4.0 mi against 3.9 mi documented (Fowler line 71: Canton Junction 15.0 - Stoughton 18.9). No straight-line leg. Fully traced on the present MBTA Stoughton Branch, which is the 1845 right-of-way. The Stoughton end is the present station, on the site of the depot that opened in March 1888 (WST); earlier Stoughton depots stood in the same village.",
+    "segments": [
+     {
+      "start": 1845,
+      "end": 1888,
+      "headway_min": 180,
+      "note": "Canton Junction - South Canton (Canton Center) - Springdale - Stoughton, built by the Stoughton Branch Railroad (incorporated 16 April 1844) as a B&P branch and run by the B&P; no source names any other operator. Opened 7 April 1845 (WST; WBP 'early 1845'). Stoughton, South Canton and Bird's appear in the 1850 and 1876 Pathfinders (Fowler 'xy'). Ends 1888 because the Old Colony Railroad took over operation under a 99-year lease from 1 April 1888 (WBP); that is an OPERATOR end, not a passenger end - trains continued under the Old Colony and, from 1 March 1893, the New York, New Haven and Hartford. Those successor eras are not drawn in this layer. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [6]: Wikipedia Stoughton station, Boston and Providence Railroad, Providence/Stoughton Line; Fowler line 71. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Stoughton_station",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://en.wikipedia.org/wiki/Providence/Stoughton_Line",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.153702,
+      42.16352
+     ],
+     [
+      -71.153479,
+      42.162638
+     ],
+     [
+      -71.153016,
+      42.161991
+     ],
+     [
+      -71.146862,
+      42.15746
+     ],
+     [
+      -71.14225,
+      42.155191
+     ],
+     [
+      -71.138798,
+      42.152823
+     ],
+     [
+      -71.130345,
+      42.148881
+     ],
+     [
+      -71.129493,
+      42.148319
+     ],
+     [
+      -71.128164,
+      42.147164
+     ],
+     [
+      -71.126629,
+      42.145468
+     ],
+     [
+      -71.125734,
+      42.14413
+     ],
+     [
+      -71.121105,
+      42.133129
+     ],
+     [
+      -71.119971,
+      42.13168
+     ],
+     [
+      -71.119094,
+      42.130919
+     ],
+     [
+      -71.117954,
+      42.130111
+     ],
+     [
+      -71.116259,
+      42.129232
+     ],
+     [
+      -71.10544,
+      42.125381
+     ],
+     [
+      -71.104199,
+      42.124593
+     ],
+     [
+      -71.102969,
+      42.123404
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: North Attleborough Branch",
+    "id": "bp-north-attleborough-branch",
+    "color": "#8C4A2F",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OpenHistoricalMap way -200053792 (unnamed railway, 'Traced from lowres USGS map', USGS Providence RI 1887 topographic sheet); first 0.32 mi along the main line (OSM NEC).",
+    "geometry_quality": "Drawn 4.6 mi against c.3.9 mi documented (NCS summary of the 1889 Old Colony timetable); about 15% long. The branch is gone (converted to a trolley line 1903, Fowler) and nothing of it is in OSM, so the line is OpenHistoricalMap's trace of the 1887 USGS topographic sheet, which OHM itself flags as low-resolution (4.28 mi from the junction to North Attleborough); expect offsets of the order of 100 m. The first 0.32 mi is an approximated straight line from Attleboro station up the main line to the branch junction - the main line is itself straight there, so this follows the real track. The extra length against 3.9 mi may be the documented figure being measured from the junction, or the low-resolution source; not resolved.",
+    "segments": [
+     {
+      "start": 1871,
+      "end": 1888,
+      "headway_min": 180,
+      "note": "Attleboro - Farmers - Falls Village - North Attleborough. Built by the Attleborough Branch Railroad Co. (owner; still holding annual meetings in April 1871, Weekly Visitor) and leased to and run by the B&P (WBP, WAT). Opening conflicts: 'January 1870' (WAT) / 1870 (WBP body) vs 1871 (WBP lead). The contemporary Worcester Daily Spy of 30 Dec 1870 says 'The North Attleborough branch road will be open to the public next week', i.e. opening in the first week of January 1871; 1871 used. That notice does not literally say 'passenger', and no B&P-era (1871-1888) timetable naming the branch was found; the first passenger timetable seen is the Old Colony's No. 44 of 14 Oct 1889 (NCS), one year after this segment, and no source suggests a gap. Ends 1888 because the Old Colony Railroad took over operation under a 99-year lease from 1 April 1888 (WBP); that is an OPERATOR end, not a passenger end - trains continued under the Old Colony and, from 1 March 1893, the New York, New Haven and Hartford. Those successor eras are not drawn in this layer. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [8]: Chronicling America (Worcester Daily Spy 30 Dec 1870 p.4; Weekly Visitor 21 Apr 1871 p.3), Wikipedia Attleboro station and Boston and Providence Railroad, Nashua City Station's transcription of OC TT No. 44 (1889), Fowler line 69. Headway not sourced.",
+       "https://www.loc.gov/resource/sn83021205/1870-12-30/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn83021113/1871-04-21/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Attleboro_station_(Massachusetts)",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://nashuacitystation.org/history/old-colony-railroad-company/routes/providence-division-north-attleboro-branch/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.2843,
+      41.9418
+     ],
+     [
+      -71.281241,
+      41.945876
+     ],
+     [
+      -71.28092,
+      41.947028
+     ],
+     [
+      -71.281108,
+      41.947626
+     ],
+     [
+      -71.282103,
+      41.948357
+     ],
+     [
+      -71.284483,
+      41.948706
+     ],
+     [
+      -71.290898,
+      41.949377
+     ],
+     [
+      -71.293104,
+      41.949907
+     ],
+     [
+      -71.295047,
+      41.950879
+     ],
+     [
+      -71.295946,
+      41.951479
+     ],
+     [
+      -71.302889,
+      41.957934
+     ],
+     [
+      -71.311296,
+      41.966334
+     ],
+     [
+      -71.314742,
+      41.971875
+     ],
+     [
+      -71.315538,
+      41.972888
+     ],
+     [
+      -71.316654,
+      41.973628
+     ],
+     [
+      -71.324848,
+      41.976561
+     ],
+     [
+      -71.326152,
+      41.976779
+     ],
+     [
+      -71.329181,
+      41.976728
+     ],
+     [
+      -71.332107,
+      41.977151
+     ],
+     [
+      -71.336308,
+      41.978357
+     ],
+     [
+      -71.337608,
+      41.97915
+     ],
+     [
+      -71.338458,
+      41.980567
+     ],
+     [
+      -71.338942,
+      41.983145
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: Mansfield \u2013 Taunton",
+    "id": "bp-taunton-branch",
+    "color": "#8C4A2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: short steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM World War II Veterans Memorial Trail (Mansfield - Norton rail-trail), OSM abandoned and freight track tagged old_railway_operator=NYNH&H Norton - Taunton.",
+    "geometry_quality": "Drawn 10.9 mi against c.10.9 mi documented (Fowler line 74: Mansfield 24.9 - Taunton 35.8). Traced on the World War II Veterans Memorial Trail (5.5 mi, the rail-trail on this grade from Mansfield to Norton) and the later New Haven Mansfield - Taunton track and abandoned grade (4.8 mi). One approximated STRAIGHT LINE of 0.6 mi at the Mansfield end, from Mansfield station to the north end of the rail-trail, where OSM has only unconnected fragments of the lifted grade. The drawn grade is the line as it existed under the New Bedford & Taunton, Old Colony and New Haven; it is assumed but not verified that the 1836 alignment is the same, and the Taunton terminal is drawn to the later Taunton station area - the 1836 Taunton depot site is not established.",
+    "segments": [
+     {
+      "start": 1836,
+      "end": 1840,
+      "headway_min": 240,
+      "note": "Taunton Branch Railroad, Mansfield - Norton - Crane's - Taunton, chartered 1835 as a B&P feeder and opened August 1836 (Wikipedia Taunton station (Amtrak), which credits the opening to the NB&T, a naming slip; WTB '1836'). Drawn as B&P because WBP says the branch was 'operated by the B&P until 1840, when the New Bedford and Taunton Railroad took over', and one secondary summary agrees; WTB does not name the 1836-1840 operator. MEDIUM CONFIDENCE on the operator: whether this meant trains in the B&P's name or B&P-supplied power under the Taunton Branch company's name is not established (Karr 2017 would settle it). Ends 1840 (approximate year) when the NB&T, opened to New Bedford 2 July 1840, took over operation under the same management as the Taunton Branch; passenger service continued long after (Fowler: Taunton xyabcd, Norton x-c) under other companies, which this layer does not draw. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates from the research report, block [9]: Wikipedia Boston and Providence Railroad, Taunton Branch Railroad, Taunton station (Amtrak); Fowler line 74. Operator attribution rests on WBP plus one secondary summary. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Boston_and_Providence_Railroad",
+       "https://en.wikipedia.org/wiki/Taunton_Branch_Railroad",
+       "https://en.wikipedia.org/wiki/Taunton_station_(Amtrak)",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.2201,
+      42.0325
+     ],
+     [
+      -71.219852,
+      42.031538
+     ],
+     [
+      -71.214366,
+      42.024966
+     ],
+     [
+      -71.197228,
+      42.00657
+     ],
+     [
+      -71.196869,
+      42.006163
+     ],
+     [
+      -71.196883,
+      42.006
+     ],
+     [
+      -71.178889,
+      41.986648
+     ],
+     [
+      -71.178335,
+      41.985828
+     ],
+     [
+      -71.17801,
+      41.985772
+     ],
+     [
+      -71.17493,
+      41.982294
+     ],
+     [
+      -71.172561,
+      41.979893
+     ],
+     [
+      -71.172583,
+      41.979671
+     ],
+     [
+      -71.172267,
+      41.979496
+     ],
+     [
+      -71.16235,
+      41.968778
+     ],
+     [
+      -71.126671,
+      41.930018
+     ],
+     [
+      -71.124974,
+      41.928012
+     ],
+     [
+      -71.100862,
+      41.902011
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Providence Railroad",
+    "line": "Boston and Providence: India Point \u2013 Bristol (PW&B)",
+    "id": "bp-providence-warren-bristol",
+    "color": "#8C4A2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: short steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16) and OpenHistoricalMap (overpass-api.openhistoricalmap.org), routed with opstrace.py. OSM East Bay Bike Path (rail-trail on the PW&B grade); OHM ways -200075066/-200075067 (India Point terminal and bridge, 1849 map) and -200053746 ('Providence, Warren and Bristol Railroad', USGS 1887) at the north end.",
+    "geometry_quality": "Traced 13.7 mi against c.15.7 mi documented (Fowler line 81). About 13% short - most likely because Fowler measures from a Providence station across the harbour, not from India Point; not resolved. India Point - Bold Point (about 0.6 mi, including the India Point bridge, gone) is OpenHistoricalMap geometry from the 1849 Cushing and Walling map and the 1887 USGS sheet; the remaining 13.2 mi is the East Bay Bike Path, which keeps within 150 m of OHM's 1887/1890 USGS trace of the PW&B for its whole length. No straight-line leg. The East Bay Bike Path ways are not tagged with any operator in OSM; for routing only, a local cached copy was tagged 'PW&B' so the router would prefer them. The horse-hauled city leg from India Point to the P&W depot (to 1857) is NOT drawn (Rule 5).",
+    "segments": [
+     {
+      "start": 1855,
+      "end": 1860,
+      "headway_min": 180,
+      "note": "Providence, Warren and Bristol Railroad, India Point (Providence) - East Providence - Riverside - Barrington - Warren - Bristol, opened 12 July 1855 (WPWB). WPWB, citing Karr 2017 pp. 165-169, says 'the B&P operated the line until 1860, when the PW&B began using its own locomotives' - so drawn as B&P for 1855-1860 only. SINGLE SOURCE, MEDIUM-LOW CONFIDENCE: the B&P 'operating' may have meant supplying locomotives and crews rather than running trains in its own name. RULE 5: passenger cars were horse-hauled from India Point through the streets to the P&W depot until 1857 (WPWB; Fowler 'until c1850'); that city leg is not drawn - only the steam line India Point - Bristol. From 1860 the PW&B ran its own trains (to 1891), then the Old Colony and the New Haven; passengers lasted to c.1937 (WPWB). None of that is drawn here. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: dates and the operator claim from the research report, block [11]: Wikipedia Providence, Warren and Bristol Railroad (citing Karr 2017 pp. 165-169, 175-183); Fowler line 81. Single-source operator attribution. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Providence,_Warren_and_Bristol_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.390585,
+      41.81748
+     ],
+     [
+      -71.386744,
+      41.816961
+     ],
+     [
+      -71.386243,
+      41.816597
+     ],
+     [
+      -71.387938,
+      41.81578
+     ],
+     [
+      -71.389039,
+      41.814998
+     ],
+     [
+      -71.389887,
+      41.814188
+     ],
+     [
+      -71.390363,
+      41.813229
+     ],
+     [
+      -71.390226,
+      41.812328
+     ],
+     [
+      -71.389428,
+      41.810872
+     ],
+     [
+      -71.387069,
+      41.80747
+     ],
+     [
+      -71.377719,
+      41.795538
+     ],
+     [
+      -71.372396,
+      41.790394
+     ],
+     [
+      -71.371303,
+      41.789124
+     ],
+     [
+      -71.370604,
+      41.788053
+     ],
+     [
+      -71.37013,
+      41.786699
+     ],
+     [
+      -71.369756,
+      41.784008
+     ],
+     [
+      -71.369478,
+      41.783228
+     ],
+     [
+      -71.366102,
+      41.779207
+     ],
+     [
+      -71.363786,
+      41.774479
+     ],
+     [
+      -71.361592,
+      41.771037
+     ],
+     [
+      -71.352896,
+      41.759262
+     ],
+     [
+      -71.352782,
+      41.75893
+     ],
+     [
+      -71.352502,
+      41.758741
+     ],
+     [
+      -71.350839,
+      41.756525
+     ],
+     [
+      -71.34325,
+      41.746013
+     ],
+     [
+      -71.341474,
+      41.744165
+     ],
+     [
+      -71.341158,
+      41.744058
+     ],
+     [
+      -71.340765,
+      41.743581
+     ],
+     [
+      -71.338839,
+      41.742002
+     ],
+     [
+      -71.336097,
+      41.74029
+     ],
+     [
+      -71.333889,
+      41.739287
+     ],
+     [
+      -71.330041,
+      41.738021
+     ],
+     [
+      -71.32969,
+      41.738069
+     ],
+     [
+      -71.327349,
+      41.737639
+     ],
+     [
+      -71.324196,
+      41.737435
+     ],
+     [
+      -71.312564,
+      41.737547
+     ],
+     [
+      -71.312015,
+      41.737457
+     ],
+     [
+      -71.304609,
+      41.73757
+     ],
+     [
+      -71.304337,
+      41.737681
+     ],
+     [
+      -71.303925,
+      41.737558
+     ],
+     [
+      -71.294478,
+      41.737632
+     ],
+     [
+      -71.294081,
+      41.737721
+     ],
+     [
+      -71.293818,
+      41.737638
+     ],
+     [
+      -71.290724,
+      41.737627
+     ],
+     [
+      -71.289664,
+      41.73779
+     ],
+     [
+      -71.288455,
+      41.737784
+     ],
+     [
+      -71.287181,
+      41.737549
+     ],
+     [
+      -71.286072,
+      41.737074
+     ],
+     [
+      -71.28361,
+      41.735577
+     ],
+     [
+      -71.282064,
+      41.734204
+     ],
+     [
+      -71.281177,
+      41.73269
+     ],
+     [
+      -71.280538,
+      41.729976
+     ],
+     [
+      -71.280378,
+      41.728446
+     ],
+     [
+      -71.280588,
+      41.726715
+     ],
+     [
+      -71.28132,
+      41.724714
+     ],
+     [
+      -71.281296,
+      41.724316
+     ],
+     [
+      -71.281531,
+      41.724284
+     ],
+     [
+      -71.282855,
+      41.720567
+     ],
+     [
+      -71.283081,
+      41.720402
+     ],
+     [
+      -71.283069,
+      41.720167
+     ],
+     [
+      -71.290494,
+      41.700842
+     ],
+     [
+      -71.290661,
+      41.700675
+     ],
+     [
+      -71.291402,
+      41.697683
+     ],
+     [
+      -71.291582,
+      41.695014
+     ],
+     [
+      -71.291041,
+      41.692639
+     ],
+     [
+      -71.289926,
+      41.690516
+     ],
+     [
+      -71.288591,
+      41.689065
+     ],
+     [
+      -71.286521,
+      41.687215
+     ],
+     [
+      -71.286342,
+      41.686889
+     ],
+     [
+      -71.285958,
+      41.686756
+     ],
+     [
+      -71.281426,
+      41.682505
+     ],
+     [
+      -71.280358,
+      41.681224
+     ],
+     [
+      -71.279464,
+      41.679418
+     ],
+     [
+      -71.278987,
+      41.67655
+     ],
+     [
+      -71.279013,
+      41.675569
+     ]
+    ]
+   }
+  }
+ ]
+}
