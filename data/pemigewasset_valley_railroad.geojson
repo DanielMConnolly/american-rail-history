@@ -509,7 +509,7 @@
     "company": "Boston and Lowell Railroad",
     "line": "Boston and Lowell: Pemigewasset Valley Branch",
     "id": "pv-bl-plymouth-north-woodstock",
-    "color": "#8d6a9f",
+    "color": "#429A28",
     "mode": "intercity_rail",
     "avg_speed_kmh": 30,
     "speed_source": "estimated: 1880s-1890s steam branch line, ~21 mi; not computed from any timetable (Rule 3)",
