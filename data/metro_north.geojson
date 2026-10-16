@@ -6975,13 +6975,16 @@
     "speed_source": "Estimated, not measured: a never-electrified New Haven Railroad branch. The GTFS-derived figure on this route's Metro-North feature is the only measured speed in this layer.",
     "segments": [
      {
-      "start": 1887,
+      "start": 1892,
       "end": 1969,
       "headway_min": 180,
-      "note": "Under Housatonic and then New Haven control from 1887. The branch was never electrified and was run as a secondary line throughout the New Haven era, which ended with the Penn Central absorption of 1969 - drawn in data/penn_central.geojson. estimated era boundary and frequency: no historical timetable was consulted, unlike the GTFS-sourced 2026 segment. Read headway_min as illustrative.",
+      "note": "The New York, New Haven and Hartford leased the Housatonic Railroad - and with it this branch, which the Housatonic had run as its Danbury & Norwalk Division since leasing the Danbury and Norwalk in 1887 - on July 1 1892 (July 21 1892 per the Wikipedia Danbury and Norwalk Railroad article), and merged the Housatonic in 1898. The 1887-1892 Housatonic years are drawn as their own feature on this same geometry, housatonic-danbury-norwalk-division in data/housatonic_railroad.geojson (CLAUDE.md Rule 4 ownership split, 2026-10-16; this segment previously started in 1887). The branch was run as a secondary line throughout the New Haven era, which ended with the Penn Central absorption of 1969 - drawn in data/penn_central.geojson. Source conflict, not resolved here: this note formerly called the branch never electrified, but Fowler's Southern New England list (line 122) records South Norwalk - Danbury as electrified 1925>1961. estimated era boundary and frequency: no historical timetable was consulted, unlike the GTFS-sourced 2026 segment. Read headway_min as illustrative.",
       "sources": [
-       "Segment-level: the 1887 Housatonic lease and the New Haven's subsequent lease of the Housatonic are from the Wikipedia Danbury Branch article; the 1969 hand-over is drawn and cited in data/penn_central.geojson. The exact year the New Haven took over the Housatonic is not pinned down here.",
+       "Segment-level: the July 1 1892 New Haven lease of the Housatonic is from the Wikipedia Housatonic Railroad article ('Regional railroad: 1836-1898'); the Wikipedia Danbury and Norwalk Railroad article gives July 21 1892. The 1969 hand-over is drawn and cited in data/penn_central.geojson. headway_min and avg_speed_kmh are estimates.",
+       "https://en.wikipedia.org/wiki/Housatonic_Railroad",
+       "https://en.wikipedia.org/wiki/Danbury_and_Norwalk_Railroad",
        "https://en.wikipedia.org/wiki/Danbury_Branch",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
        "data/penn_central.geojson (existing layer: the 1968-1976 Penn Central era on this same geometry)"
       ]
      }
