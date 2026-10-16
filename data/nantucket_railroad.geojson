@@ -1,0 +1,439 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Nantucket Railroad was a 3 ft gauge, summer-season island railroad from Nantucket town to Surfside (1881) and on along the south shore to Siasconset (1884), rerouted in 1895 across the moors to Tom Nevers and 'Sconset after the shore track and the Surfside resort failed, and run until 1917 (dismantled 1918, rails and engine sent to France). Drawn as three features in two eras so neither era is drawn on the other's alignment: the 1881-1894 shore route (Nantucket - Surfside, Surfside - Siasconset) and the 1895-1917 cross-island route, with 1906 withheld. One company, one colour: the Nantucket Railroad, Nantucket Central Railroad and second Nantucket Railroad were successive reorganizations of the same road. Research report: research/branches/nantucket_railroad.txt.",
+  "sources": [
+   "FOW - John Fowler, Southern New England Railroads (2) passenger stations list, entries 153-154: https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+   "CCL - Joe O'Shea, 'When Nantucketers Rode the Rails', Cape Cod Life Annual 2017: https://www.joeoshea.net/articles/when-nantucketers-rode-the-rails/",
+   "EGAN - Egan Maritime Institute, 'From Egan's Collection: The Nantucket Railroad' (2019), quoting Mooney, Portrait of Nantucket 1659-1890 (1989): https://eganmaritime.org/news/the-nantucket-railroad",
+   "NHA-TL - Nantucket Historical Association, 'Sconset 02564' railroad timeline: https://www.nha.org/digitalexhibits/sconset02564/timeline/railroad.html",
+   "NPT - Nantucket Preservation Trust, 'The Nantucket Railroad and Surfside Hotel': https://nantucketpreservation.org/the-nantucket-railroad-and-surfside-hotel-6880/",
+   "NPT-NB - Nantucket Preservation Trust, 'Nuts and Bolts: Railroads': https://nantucketpreservation.org/nuts-and-bolts-railroads-3159/",
+   "YI - Yesterday's Island, 2011 history column (cites Schmid 2000): https://yesterdaysisland.com/2011/history/10.php",
+   "SIN - sinfin.net, Railways in the Islands of Massachusetts: https://www.sinfin.net/railways/world/usa/mass.html",
+   "AR - abandonedrails.com, Nantucket Railroad: https://www.abandonedrails.com/nantucket-railroad",
+   "WIKI - Wikipedia, Nantucket Central Railroad Company: https://en.wikipedia.org/wiki/Nantucket_Central_Railroad_Company",
+   "10E - 10engines blog, Nantucket Railroad: https://10engines.blogspot.com/2010/03/nantucket-railroad.html",
+   "NCS-NC - Nashua City Station, Nantucket Central Railroad Company (cites Schmid 2000): https://nashuacitystation.org/history/nantucket-central-railroad-company/",
+   "NCS-NR - Nashua City Station, Nantucket Railroad (1910) (cites Schmid 2000): https://nashuacitystation.org/history/nantucket-railroad-1910/",
+   "SCA - Siasconset Civic Association, History: https://www.siasconsetcivicassociation.org/History"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap route relation 14522763 ('Nantucket Central Railroad', railway=abandoned, from=1895, to=1917) and its 31 member ways, which include both the cross-island grade and the mapper's shore-line ways named 'Nantucket Railroad' (Overpass, maps.mail.ru mirror, OSM base 2026-10-16T18:54:51Z). Split by era here: shore-line ways to the 1881-1894 features, cross-island ways to the 1895-1917 feature, the Tom Nevers - 'Sconset piece to both.",
+   "OpenHistoricalMap (queried railway ways and railway route relations in 41.23,-70.22,41.32,-69.94: nothing)",
+   "opstrace fetch_operator_ways (old_railway_operator~Nantucket: none) and fetch_gap (only unrelated nature-trail paths)"
+  ],
+  "colour_choice": "Nantucket Railroad: #3FA34D, new. Checked programmatically: no company string in data/ contains 'Nantucket' or 'Siasconset', and no feature in data/ uses this hex. Chosen to stand well apart from the neighbouring Martha's Vineyard Railroad (#BF56AA) and Old Colony (#2F6F9F); its nearest existing colour (#4E9F3D, San Antonio, Uvalde and Gulf) is in Texas.",
+  "ownership_split": "None. Nantucket Railroad (1881) -> bankruptcy -> Nantucket Central Railroad (1894 per CCL / 1895 per NCS-NC, WIKI) -> second Nantucket Railroad (1909 per CCL / 1910 per NCS-NR) are successive corporate shells of one island railroad running the same trains with no outside lessee or parent, so one company string and one colour (Rule 4). The 1895 reorganization coincides with the shore/cross-island geometry split anyway. Rule 6 display name 'Nantucket Railroad' - the name in use 1881-1894 and 1909/10-1917 and the one popular histories use.",
+  "rule_notes": "Rule 1: built and run for summer passengers; no freight-only years. 1918 is the dismantling year, not service, and is not drawn. Rule 5: steam from the first train (Baldwin 4-4-0 'Dionis'), gasoline railcar from 1907; no animal traction to trim. Rule 9: Nantucket is inside the contiguous-US bounds. Not drawn: any Wauwinet line (none found) or a post-1895 Surfside spur (NPT: 'no railroad to Surfside' afterwards).",
+  "not_yet_sourced": [
+   "1906 season: withheld on the sole authority of NCS-NC ('Rail operations: 1895-1905 and 1907-1909', citing Schmid 2000). Confirm or refute from Lancaster, The Far-Out Island Railroad (1972), Schmid, Historic Nantucket Summer 2000, or the 1906 Inquirer and Mirror.",
+   "Siasconset extension opening: 1884 (NHA-TL, NPT, SIN) vs FOW's 1884 Official Guide showing Surfside as terminus and YI's 'began the process' in 1884. Drawn from 1884; 1885 is the conservative reading.",
+   "1894/1895 changeover: no source names the last shore-line train or the first cross-island train; whether a season was lost is unknown.",
+   "Last train in 1917: date not found, and whether the 1917 season ran in full is open.",
+   "Corporate dates: NCRR from 1894 (CCL) vs 1895 (NCS-NC, WIKI); second NRR from 1909 (CCL) vs 1910 (NCS-NR). Immaterial to the drawn map (one company, one colour).",
+   "Town terminal: Steamboat Wharf (Mooney via EGAN, CCL, YI) vs Straight Wharf (EGAN article). The pre-1901 town-end alignment, and whether 1895-1900 trains used the original wharf - Washington St track, are not established; drawn on the post-1901 Easy Street approach.",
+   "How much track the shore line and the cross-island line shared between Tom Nevers Head and 'Sconset is unknown; drawn as shared from the OSM mapper's junction east of Tom Nevers Head. 'Beach House' stop (FOW 1917) not located.",
+   "Gasoline-railcar winter service 1907-1913 (10E, weak source) unconfirmed.",
+   "Headways (120 min, from NHA-TL's undated 'six times each day in the summer season') and avg_speed_kmh (20) are estimates.",
+   "Not consulted: Clay Lancaster, The Far-Out Island Railroad (1972); Peter Schmid, 'The Nantucket Railroad', Historic Nantucket 49:3 (2000); USGS 1893 Nantucket topographic sheet (shore line) for checking the OSM reconstruction."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Nantucket Railroad",
+    "line": "Nantucket Railroad: Nantucket – Surfside",
+    "id": "nantucket-rr-nantucket-surfside",
+    "color": "#3FA34D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: a 3 ft gauge, summer-season steam road (gasoline railcar from 1907 on the cross-island line) with stops on signal across the moors; no timetable with running times was read. About 20 km/h is a guess for a light island narrow-gauge, not a figure from any source.",
+    "gauge": "3 ft",
+    "traction": "steam",
+    "geometry_source": "OpenStreetMap route relation 14522763 member ways (Overpass, maps.mail.ru mirror, OSM base 2026-10-16T18:54:51Z): 997837453, 9170863, 997995480, 997995490, 997995482, 998064983, 9168382, 9170185, 9168963, 697923293, 1090624151, 519334324, 9168987, 1190883402, 1090624148, 110311670, 998039335. OpenHistoricalMap queried: nothing on the island.",
+    "geometry_quality": "Traced 3.07 mi Steamboat Wharf - Surfside against 3.5 mi documented (FOW: Nantucket 0.0, Surfside 3.5; -12%) and 'about three miles' (Mooney via EGAN; +2%). Assembled from the member ways of OSM route relation 14522763 ('Nantucket Central Railroad', railway=abandoned) that the mapper put on the ORIGINAL 1881 line, chained end to end, then opstrace douglas_peucker(8 m) + trim_reversals; no spurs. Composition: 0.95 mi on ways mapped as the railroad itself (railway=abandoned, name 'Nantucket Railroad': 1190883402, 1090624148); 0.48 mi on Hooper Farm Road (9168987, 519334324, 1090624151) and 0.07 mi on two service roads at Surfside (110311670, 998039335), which the mapper put on the grade (Hooper's Farm was a stop, FOW/YI) - later roads standing in for the roadbed, approximately on it; 0.78 mi town end (see below). STRAIGHT-LINE LEGS, 0.80 mi in all: (1) foot of Washington St marsh - north end of Hooper Farm Rd, 0.51 mi, through the Orange Street stop area - the 1881 line's course here (the 'Orange St extension', YI) is not mapped and the chord is an approximation; (2) Hooper Farm Rd - railroad way 1190883402, 0.10 mi; (3) 1190883402 - 1090624148, 0.07 mi; (4) 1090624148 - Surfside service road, 0.12 mi. TOWN END (all features): drawn from Steamboat Wharf along OSM route relation 14522763's road members - Easy Street, Candle Street, Washington Street, Washington Street Extension and a cycleway at the foot of the Washington St marsh (0.78 mi). Easy Street was built on the railroad's waterfront approach after 1918, and a Cape Cod Life photo caption dates trains 'via Easy Street' to 1901 (CCL), so this is a LATER ALIGNMENT than 1881-1900: the original line ran from Steamboat Wharf (Mooney; Straight Wharf per the EGAN article - conflict) through the marsh at the foot of Washington St (YI), roughly the same waterfront corridor, but the exact pre-1901 town-end track is not established. The drawn line ends 37 m from the geocoded Steamboat Wharf. SURFSIDE END: drawn to the west end of the mapped shore-line way 1090624153 (where the south-shore feature continues), 0.3 mi west of the geocoded Surfside hamlet; the depot's exact site is not established, and the south shore here has eroded heavily since 1894 (the Surfside wastewater plant has lost basins to it), so the terminal is approximately placed.",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1894,
+      "headway_min": 120,
+      "note": "Nantucket Railroad Company (1881 company), 3 ft gauge steam: Steamboat Wharf - Main Street - Orange Street - Hooper's Farm - Miacomet Road - Surfside depot (FOW station list; YI). First spike on Steamboat Wharf 31 May 1881 (CCL); inaugural trip 4 July 1881 (EGAN quoting Mooney 1989; NHA-TL 'July 1881'); 30,000+ passengers the first season (YI citing Schmid 2000). Surfside was the terminus 1881-1883 and the 1884 Official Guide still shows it as terminus (FOW '1884G(tm)'); from 1884 (see the Surfside - Siasconset feature) trains ran on along the south shore. Ends 1894: the shore track 'operated from 1881 to 1894' (CCL), FOW dates the Nantucket RR 1881 > 1894, and NPT says the Surfside and south-shore section was closed 'by 1895'; no source names a last Surfside train or says whether the 1894 season ran in full. After 1894 trains used the new cross-island route and there was 'no railroad to Surfside' (NPT). The company went bankrupt and was reorganized as the Nantucket Central (1894 per CCL, 1895 per NCS-NC/WIKI) - same railroad, not split (see metadata.ownership_split). headway_min 120 is an ESTIMATE: NHA-TL says trains ran 'six times each day in the summer season' (undated); about 12 daylight hours / 6 = 120 min. Summer-season service only ('for the most part the train ran only during the summer months', CCL); a drawn year means that year's summer season.",
+      "sources": [
+       "Segment-level: start July 1881 from EGAN (quoting Mooney, Portrait of Nantucket, 1989), NHA-TL and YI; end 1894 from CCL ('operated from 1881 to 1894'), FOW (1881 > 1894) and NPT ('by 1895'); all secondary. The headway is an estimate. Lancaster (1972) and Schmid (2000) not consulted.",
+       "https://eganmaritime.org/news/the-nantucket-railroad",
+       "https://www.nha.org/digitalexhibits/sconset02564/timeline/railroad.html",
+       "https://yesterdaysisland.com/2011/history/10.php",
+       "https://www.joeoshea.net/articles/when-nantucketers-rode-the-rails/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+       "https://nantucketpreservation.org/the-nantucket-railroad-and-surfside-hotel-6880/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.097383,
+      41.285657
+     ],
+     [
+      -70.097414,
+      41.284638
+     ],
+     [
+      -70.096878,
+      41.282649
+     ],
+     [
+      -70.096276,
+      41.282124
+     ],
+     [
+      -70.09555,
+      41.281141
+     ],
+     [
+      -70.093406,
+      41.279322
+     ],
+     [
+      -70.092588,
+      41.27805
+     ],
+     [
+      -70.093733,
+      41.268256
+     ],
+     [
+      -70.096853,
+      41.263811
+     ],
+     [
+      -70.097838,
+      41.262082
+     ],
+     [
+      -70.097777,
+      41.259814
+     ],
+     [
+      -70.096642,
+      41.246409
+     ],
+     [
+      -70.096487,
+      41.245968
+     ],
+     [
+      -70.095052,
+      41.244588
+     ],
+     [
+      -70.093812,
+      41.244196
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Nantucket Railroad",
+    "line": "Nantucket Railroad: Surfside – Siasconset (south shore)",
+    "id": "nantucket-rr-surfside-siasconset-shore",
+    "color": "#3FA34D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: a 3 ft gauge, summer-season steam road (gasoline railcar from 1907 on the cross-island line) with stops on signal across the moors; no timetable with running times was read. About 20 km/h is a guess for a light island narrow-gauge, not a figure from any source.",
+    "gauge": "3 ft",
+    "traction": "steam",
+    "geometry_source": "OpenStreetMap ways (Overpass, maps.mail.ru mirror, OSM base 2026-10-16T18:54:51Z), all members of route relation 14522763: 1090624153, 1487832881, 1487832880, 1190883406 (name 'Nantucket Railroad'), then 1190883408 from its junction node with 1190883406 to its east end, and 1190883407 (name 'Nantucket Central Railroad'). OpenHistoricalMap queried: nothing on the island.",
+    "geometry_quality": "Traced 7.32 mi Surfside - Siasconset against ~7.5 mi documented (FOW: Surfside 3.5, Siasconset 11.0 from town; -2%); with the Nantucket - Surfside feature the whole shore route is 10.39 mi against FOW's 11 (-6%). Assembled from OSM ways chained end to end, then opstrace douglas_peucker(8 m) + trim_reversals; no spurs. 5.80 mi on ways the mapper drew as the shore line itself (railway=abandoned, name 'Nantucket Railroad': 1090624153, 1487832881, 1487832880, 1190883406, all members of route relation 14522763). APPROXIMATED: the whole Surfside - Tom Nevers Head beach stretch (way 1090624153, 5.17 mi) lies on a south shore that was losing ~40 ft a year by 1895 (NPT) and was washed out every winter while the line ran (YI, CCL); the mapped way is a modern reconstruction parallel to today's coast, not a survey of a surviving grade, and much of the 1884-94 roadbed is probably now under the sea - treat the drawn line as following the coast approximately. Tom Nevers Head (geocoded cape) is 95 m from the line. TOM NEVERS HEAD - 'SCONSET (1.33 mi + 0.04 mi): drawn on the mapped cross-island grade (way 1190883408 from its junction with 1190883406, then 1190883407, name 'Nantucket Central Railroad'), because the mapper joins the shore line to it east of Tom Nevers Head and YI/SIN say the 1895 cutoff ran 'back to the Tom Nevers Head crossing'. That makes this piece the same track as the 1895-1917 feature; how much track the two eras actually shared is NOT established (research UNRESOLVED 6), and FOW/YI put the 1884 terminus 'below the bluff' at 'Sconset, which the drawn end (141 m from the Sconset Post Office) only approximates. STRAIGHT-LINE LEGS, 0.21 mi: 1487832880 - 1190883406, 0.16 mi (unmapped gap at Tom Nevers Head); 1190883408 - 1190883407 at 'Sconset, 0.05 mi.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1894,
+      "headway_min": 120,
+      "note": "Nantucket Railroad Company (1881 company): extension from Surfside along the south shore by Nobadeer and Tom Nevers Head to a terminus below the bluff at Siasconset (FOW: 11 mi from town; YI). Start 1884: 'Tracks were extended to 'Sconset in 1884' (NHA-TL), 'By 1884, the train followed the south shore to 'Sconset' (NPT), 'extended 1884' (SIN). SOURCE CONFLICT, recorded not resolved: FOW's 1884 Official Guide entry still shows Surfside as the terminus ('1884G(tm)') and YI says only that in 1884 the railroad 'began the process of finishing the line'. The Guide's month is unknown (a pre-season issue would not show a summer extension), so it is not evidence the extension missed 1884; the strictly conservative start would be 1885. Laid on beach sand, washed out somewhere every winter and rebuilt each spring (YI, CCL); the shore was losing ~40 ft a year by 1895 (NPT). Ends 1894: shore track 'operated from 1881 to 1894' (CCL), closed 'by 1895' (NPT), original line closed when the 1895 cutoff opened (SIN); no source names the last train. headway_min 120 is an ESTIMATE: NHA-TL says trains ran 'six times each day in the summer season' (undated); about 12 daylight hours / 6 = 120 min. Summer-season service only ('for the most part the train ran only during the summer months', CCL); a drawn year means that year's summer season.",
+      "sources": [
+       "Segment-level: start 1884 from NHA-TL, NPT and SIN, against FOW's 1884 Official Guide showing Surfside as terminus and YI's 'began the process' (conflict recorded in the note); end 1894 from CCL, NPT and SIN. All secondary; the headway is an estimate.",
+       "https://www.nha.org/digitalexhibits/sconset02564/timeline/railroad.html",
+       "https://nantucketpreservation.org/the-nantucket-railroad-and-surfside-hotel-6880/",
+       "https://www.sinfin.net/railways/world/usa/mass.html",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+       "https://yesterdaysisland.com/2011/history/10.php",
+       "https://www.joeoshea.net/articles/when-nantucketers-rode-the-rails/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.093726,
+      41.244172
+     ],
+     [
+      -70.092979,
+      41.244012
+     ],
+     [
+      -70.092362,
+      41.244039
+     ],
+     [
+      -70.085228,
+      41.24488
+     ],
+     [
+      -70.081489,
+      41.24494
+     ],
+     [
+      -70.065277,
+      41.244501
+     ],
+     [
+      -70.056195,
+      41.243924
+     ],
+     [
+      -70.052488,
+      41.243884
+     ],
+     [
+      -70.043796,
+      41.2429
+     ],
+     [
+      -70.039643,
+      41.242617
+     ],
+     [
+      -70.032914,
+      41.241673
+     ],
+     [
+      -70.024454,
+      41.240311
+     ],
+     [
+      -70.017738,
+      41.239536
+     ],
+     [
+      -70.015077,
+      41.239334
+     ],
+     [
+      -70.012631,
+      41.239302
+     ],
+     [
+      -70.008511,
+      41.239556
+     ],
+     [
+      -70.005319,
+      41.240084
+     ],
+     [
+      -70.001572,
+      41.24094
+     ],
+     [
+      -69.999987,
+      41.241614
+     ],
+     [
+      -69.98321,
+      41.24581
+     ],
+     [
+      -69.980635,
+      41.246859
+     ],
+     [
+      -69.979204,
+      41.247623
+     ],
+     [
+      -69.968946,
+      41.254272
+     ],
+     [
+      -69.968153,
+      41.255004
+     ],
+     [
+      -69.964935,
+      41.258649
+     ],
+     [
+      -69.963894,
+      41.260843
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Nantucket Railroad",
+    "line": "Nantucket Railroad: Nantucket – Siasconset (cross-island)",
+    "id": "nantucket-rr-nantucket-siasconset-cross-island",
+    "color": "#3FA34D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: a 3 ft gauge, summer-season steam road (gasoline railcar from 1907 on the cross-island line) with stops on signal across the moors; no timetable with running times was read. About 20 km/h is a guess for a light island narrow-gauge, not a figure from any source.",
+    "gauge": "3 ft",
+    "traction": "steam; Fairbanks-Morse gasoline railcar from 1907",
+    "geometry_source": "OpenStreetMap route relation 14522763 ('Nantucket Central Railroad', railway=abandoned, from=1895, to=1917) member ways (Overpass, maps.mail.ru mirror, OSM base 2026-10-16T18:54:51Z): 997837453, 9170863, 997995480, 997995490, 997995482, 998064983, 9168382, 9170185, 9168963, 697923293, 998280696, 1090594892, 1090609876, 9169775, 1090609872, 1062419547, 1090595410, 1090596419, 1190883408, 1190883407. opstrace fetch_operator_ways found no old_railway_operator ways on the island; fetch_gap found only unrelated nature-trail paths; OpenHistoricalMap queried: nothing on the island.",
+    "geometry_quality": "Traced 8.46 mi Steamboat Wharf - Siasconset against 8 mi documented (FOW; +6%) and 9 mi (WIKI; -6%). Assembled from the member ways of OSM route relation 14522763 ('Nantucket Central Railroad', railway=abandoned, from=1895, to=1917, abandoned:gauge=914) chained end to end, then opstrace douglas_peucker(8 m) + trim_reversals; no spurs. The relation's shore-line members (named 'Nantucket Railroad') are NOT used here - they belong to the 1881-1894 features. Composition: 6.49 mi on ways mapped as the railroad itself (railway=abandoned: 1090609876, 1090609872, 1090595410, 1090596419, 1190883408, 1190883407); 0.09 mi on Pleasant Street / Sparks Avenue stubs (998280696, 1090594892) and 0.18 mi on a path and a service road (9169775, 1062419547), relation members the mapper put on the grade; 0.78 mi town end (see below). STRAIGHT-LINE LEGS, 0.93 mi in all: (1) foot of Washington St marsh - Pleasant St, 0.24 mi; (2) Pleasant St - Sparks Ave, 0.05 mi; (3) Sparks Ave - railroad way 1090609876 toward Fairgrounds Rd, 0.22 mi; (4) across the Nantucket Memorial Airport site (1090609872 - 1062419547), 0.27 mi - the grade is gone under airport works; (5) 1062419547 - 1090595410, 0.07 mi; (6) 1090596419 - 1190883408 near Tom Nevers, 0.03 mi; (7) 1190883408 - 1190883407 at 'Sconset, 0.05 mi. The line crosses Milestone Road ('Mile-stone Crossing', FOW) and does NOT follow the Milestone Road bike path, which is not the railroad. Geocoded checks: Tom Nevers 5 m, Nantucket Memorial Airport terminal 0.84 mi (line crosses the airfield), Sconset Post Office 141 m. Whether 1895-1900 trains used the same town-end and Washington St - Sparks Ave track is not established (research UNRESOLVED 5). TOWN END (all features): drawn from Steamboat Wharf along OSM route relation 14522763's road members - Easy Street, Candle Street, Washington Street, Washington Street Extension and a cycleway at the foot of the Washington St marsh (0.78 mi). Easy Street was built on the railroad's waterfront approach after 1918, and a Cape Cod Life photo caption dates trains 'via Easy Street' to 1901 (CCL), so this is a LATER ALIGNMENT than 1881-1900: the original line ran from Steamboat Wharf (Mooney; Straight Wharf per the EGAN article - conflict) through the marsh at the foot of Washington St (YI), roughly the same waterfront corridor, but the exact pre-1901 town-end track is not established. The drawn line ends 37 m from the geocoded Steamboat Wharf.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1905,
+      "headway_min": 120,
+      "note": "New cross-island route, opened 1895: 'In 1895, the line was rerouted' (YI); new line 'opened in 1895, and the original line via Surfside was closed' (SIN); NCRR 'Rail operations: 1895-1905 and 1907-1909' (NCS-NC citing Schmid 2000); FOW 1895 > 1917. No source names a first train date or says whether a season was lost at the 1894/95 changeover. Ends 1905 because NCS-NC (citing Schmid 2000) gives no operation in 1906 - see the next segment. 1906 is WITHHELD, not known to be a gap: only that one source implies it, and Lancaster (1972), Schmid (2000) and the 1906 Inquirer and Mirror were not seen. Do not bridge 1905 to 1907 without evidence. Nantucket Central Railroad (reorganized from the bankrupt 1881 company; 1894 per CCL, 1895 per NCS-NC and WIKI) and, from 1909/1910, a second Nantucket Railroad Company (1909 per CCL, 1910 per NCS-NR) - successive corporate shells of one island railroad, not split (metadata.ownership_split). Route: Steamboat Wharf (via Easy Street from c.1901, CCL) - Washington St - across Orange St - Sparks Ave toward Fairgrounds Rd - across the moors through today's airport site - Mile-stone Crossing - Beach House - Tom Nevers - Siasconset (YI, FOW 1917 company timetable; 'trains stop at any point along the moors on signal'). headway_min 120 is an ESTIMATE: NHA-TL says trains ran 'six times each day in the summer season' (undated); about 12 daylight hours / 6 = 120 min. Summer-season service only ('for the most part the train ran only during the summer months', CCL); a drawn year means that year's summer season.",
+      "sources": [
+       "Segment-level: start 1895 from YI, SIN, NCS-NC (citing Schmid 2000) and FOW; end 1905 from NCS-NC's '1895-1905 and 1907-1909' (single source for the 1906 gap). Secondary sources; the headway is an estimate.",
+       "https://yesterdaysisland.com/2011/history/10.php",
+       "https://www.sinfin.net/railways/world/usa/mass.html",
+       "https://nashuacitystation.org/history/nantucket-central-railroad-company/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     },
+     {
+      "start": 1907,
+      "end": 1917,
+      "headway_min": 120,
+      "note": "Resumes 1907 per NCS-NC ('1895-1905 and 1907-1909', citing Schmid 2000) - 1906 withheld, see previous segment. From 1907 a Fairbanks-Morse gasoline railcar ('the Bug', WIKI's railcar 'Siasconset', towing the 'Bird Cage' baggage trailer) ran to 'Sconset, reportedly to 1913 and including winter service (10E, a weak source; YI, WIKI). The 1909/1910 reorganization as the Nantucket Railroad is read as a corporate changeover, not a lost season (NCS-NC ops to 1909, NCS-NR ops from 1910). Ends 1917: 'the last train raced across The Moors in 1917, bound for 'Sconset' (CCL); FOW lists a 1917 company public timetable with every stop; the company dissolved 1917 (NCS-NR). Whether the 1917 season ran in full is not known (engine No. 2 went to the AEF in France in 1917, WIKI). The '1918' closing date in SIN, SCA, YI and NPT-NB is the year the plant was dismantled and the rails and cars shipped to France (CCL: dismantled spring 1918) - no source describes a 1918 train, so 1918 is not drawn. headway_min 120 is an ESTIMATE: NHA-TL says trains ran 'six times each day in the summer season' (undated); about 12 daylight hours / 6 = 120 min. Summer-season service only ('for the most part the train ran only during the summer months', CCL); a drawn year means that year's summer season. Winter running of the gasoline car 1907-1913 is unconfirmed and does not change the drawn years.",
+      "sources": [
+       "Segment-level: start 1907 from NCS-NC (citing Schmid 2000); end 1917 from CCL ('last train ... in 1917'), FOW (1917 company timetable) and NCS-NR (dissolved 1917). Secondary sources; the headway is an estimate.",
+       "https://nashuacitystation.org/history/nantucket-central-railroad-company/",
+       "https://nashuacitystation.org/history/nantucket-railroad-1910/",
+       "https://www.joeoshea.net/articles/when-nantucketers-rode-the-rails/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+       "https://en.wikipedia.org/wiki/Nantucket_Central_Railroad_Company",
+       "https://10engines.blogspot.com/2010/03/nantucket-railroad.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.097383,
+      41.285657
+     ],
+     [
+      -70.097414,
+      41.284638
+     ],
+     [
+      -70.096878,
+      41.282649
+     ],
+     [
+      -70.096276,
+      41.282124
+     ],
+     [
+      -70.09555,
+      41.281141
+     ],
+     [
+      -70.093406,
+      41.279322
+     ],
+     [
+      -70.092627,
+      41.278216
+     ],
+     [
+      -70.092912,
+      41.275621
+     ],
+     [
+      -70.091841,
+      41.272186
+     ],
+     [
+      -70.090017,
+      41.270823
+     ],
+     [
+      -70.086409,
+      41.269183
+     ],
+     [
+      -70.050615,
+      41.262189
+     ],
+     [
+      -69.999273,
+      41.247718
+     ],
+     [
+      -69.997682,
+      41.247359
+     ],
+     [
+      -69.993738,
+      41.246846
+     ],
+     [
+      -69.989209,
+      41.24573
+     ],
+     [
+      -69.986848,
+      41.245516
+     ],
+     [
+      -69.985271,
+      41.245593
+     ],
+     [
+      -69.984375,
+      41.245751
+     ],
+     [
+      -69.982165,
+      41.246268
+     ],
+     [
+      -69.980635,
+      41.246859
+     ],
+     [
+      -69.979204,
+      41.247623
+     ],
+     [
+      -69.968946,
+      41.254272
+     ],
+     [
+      -69.968153,
+      41.255004
+     ],
+     [
+      -69.964935,
+      41.258649
+     ],
+     [
+      -69.963894,
+      41.260843
+     ]
+    ]
+   }
+  }
+ ]
+}
