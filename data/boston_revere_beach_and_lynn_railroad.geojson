@@ -1,0 +1,1053 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Boston, Revere Beach & Lynn Railroad (\"the Narrow Gauge\"), a 3 ft gauge passenger road from a ferry terminal at Jeffries Point, East Boston (ferry to Rowes Wharf, Boston - not drawn) through Revere Beach to Lynn, 1875-1940, with the Winthrop Loop (1888-1940). Steam to 1928, then electrified. Also drawn: its Winthrop predecessors split by operator under Rule 4 - Boston, Winthrop & Point Shirley (1877-1883), Boston, Winthrop & Shore (1884-1885), BRB&L control (1886-1887) - and the Point Shirley Street Railway (1910-1912) with its BRB&L years (1919-1928). The main line is two features in one colour because its geometry changed: the 1875-1896 beach route and the 1897-1940 inland route between Crescent Beach and Point of Pines. Nothing ran on the right of way 1940-1952; the MTA/MBTA Blue Line on part of the bed is a different company and is drawn in mbta_rapid_transit.geojson.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+   "https://en.wikipedia.org/wiki/Revere_Beach_station",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf",
+   "https://www.bostonglobe.com/arts/2014/02/07/from-archives-the-boston-revere-beach-and-lynn-railroad/UBEBmeE8TIt0qxpiEI4uzK/story.html",
+   "https://en.wikipedia.org/wiki/1940_in_rail_transport",
+   "https://boshw.us/?p=842",
+   "https://assets.booklocker.com/pdfs/9383s.pdf",
+   "https://winthropmemorials.org/books/the-train-on-the-beach/images/Winthrop-MA-Railroad-Map2.pdf",
+   "https://en.wikipedia.org/wiki/Wood_Island_station",
+   "https://en.wikipedia.org/wiki/Lynn_station"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over BRB&L-attributed ways only (the degree rail tiles were deliberately left out so the router could not stray onto B&M or MBTA track). Two OSM sources: the MBTA Blue Line ways tagged old_railway_operator=BRB&L (railway=subway), and OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940), whose members are a mix of railway=abandoned/razed ways named \"Boston, Revere Beach & Lynn\", and the streets, boulevards and paths now laid on the old grade. OpenHistoricalMap was queried for the whole system and has no BRB&L ways (only three \"Eastern Railroad\" ways). Station positions: Wood Island and Harbor View from Wikipedia \"Wood Island station\" (Bromley 1892 atlas); Orient Heights, Suffolk Downs, Beachmont, Revere Beach and Wonderland from the Wikipedia station articles (all Blue Line stations Orient Heights - Wonderland stand on former BRB&L station sites); Lynn terminal \"at Market Street near Broad Street\" and West Lynn \"just east of Commercial Street\" from Wikipedia \"Lynn station\". No Nominatim geocode was used for any waypoint (all hand-pinned to OSM way ends or published coordinates).",
+   "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py over BRB&L-attributed ways only: the Orient Heights stem on Blue Line yard way 250194236 (old_railway_operator=BRB&L), then members of OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940) - ways named \"Boston, Winthrop & Shore Railroad\" (1471857458/63/62/65) and \"Winthrop Loop\" (1471857468, 1211611425, 1211611427, 1220163812, 1148379446) plus the streets and paths the relation includes where the grade became a road (Morton Street, Kilmartin Pathway, Veterans Road, Hagman Road, Walden Street). Station sites checked against the Wikipedia station table (Pleasant St at Belle Isle Terrace; Battery at Banks & Wilshire; Highlands at Crest Ave playground; Ocean Spray at Shirley St & Veterans Rd; Winthrop Beach at Shirley & Washington; Winthrop Centre at Hagman Rd; Ingalls on Walden St). OpenHistoricalMap has nothing here.",
+   "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py over members of OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940): Blue Line yard way 250194236 for the Orient Heights (Winthrop Junction) stem, the ways named \"Boston, Winthrop & Shore Railroad\" (1471857458/63/62/65 and 1471857461) to Revere Street, then unnamed railway=abandoned ways 1471857472, 1471857470, 1471857473 with paths 111762739/1201789312 and Brewster Avenue (791278819) down the shore past Great Head and Short Beach to Point Shirley. OpenHistoricalMap has nothing here. Cottage Hill checked against Nominatim (type=peak, 42.3682 N 70.9689 W, 0.15 km west of the line).",
+   "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py along the present Shirley Street (OSM way 347765211) and Tafts Avenue (ways 8616796, 1075931093, 8616743) in Winthrop - the streets the line was laid in (Wikipedia: via Shirley Street and Tafts Avenue). No rail survives and neither OSM nor OpenHistoricalMap maps the line. Winthrop Beach end at the Shirley Street crossing of the loop; Point Shirley end on Tafts Avenue at 42.3560 N."
+  ],
+  "omitted": [
+   "Boston, Winthrop & Shore \"Broad Gauge Division\", Point Shirley - Ocean Spray - Winthrop Highlands - Beachmont - Crescent Beach - Point of Pines (6.8 mi, standard gauge, summers 1884 and 1885 only; Fowler line 58): two summers, geometry largely lost - not drawn. Its Beachmont - Crescent Beach grade is in OSM relation 14534040 (Winthrop Parkway and the south end of Revere Beach Boulevard) if anyone draws it later; it needs its own feature in the BW&S colour.",
+   "Point Shirley Street Railway under BRB&L ownership Oct 1912 - 1918: rail operation proven for part of the period but the date buses took over is unknown; omitted rather than invented.",
+   "Winthrop Railroad horsecar line, 1873 - Jun 1877: animal-powered, excluded under Rule 5 (separate company; its rails were torn up when the BW&PS steam line opened).",
+   "BRB&L ferry East Boston - Rowes Wharf: not rail.",
+   "A \"Boston & Winthrop\" railroad proposed c.1880 for the Buchanan Street area: not established that it was built."
+  ],
+  "not_yet_sourced": "(1) Winthrop ownership split: 1886 (BRB&L \"took control\"/\"stepped in\") vs 1891 (merger; trains advertised as BW&S until then). Whether 1886 was a lease/operating agreement or a stock purchase is unresolved (Lieberman full book Table D-2 / ch.4, or Stanley 1980, would settle it). Drawn as BRB&L from 1886. (2) Main-line inland move: April 1897 (Cheney 2003 via Wikipedia \"Revere Beach station\"), 1896-1900 (Wikipedia main article), 1895-96 (Wikipedia \"Revere Beach\") - split at 1896/1897. (3) Whether Lynn opened with the rest on 29 Jul 1875 (Fowler letters Lynn/West Lynn only from the 1876 Pathfinder). (4) Winthrop Loop opening 1887 vs 1888 - drawn from 1888. (5) Mileage: 8.5 mi (Fowler) vs 9.7 mi (boshw.us) East Boston - Lynn; the trace (8.5 mi) agrees with Fowler. (6) No headway is sourced for any feature; Lieberman gives 5 trips/day for the BW&PS in 1877 rising to hourly. (7) Point Shirley Street Railway: date buses replaced the first BRB&L battery car (1913-1919). (8) Winter service on the Winthrop line after BRB&L control. (9) Exact positions of the East Boston ferry terminal (placed at the Jeffries Point waterfront off Marginal Street, at the south mouth of the surviving tunnel - not at Lewis Mall), the Point Shirley Pier, and the Lynn depot (Market Street near Broad Street).",
+  "rule_notes": "Rule 7: commuter_rail, not interurban, for every BRB&L rail line including 1928-1940 - it was built in 1875 as a steam common-carrier commuter road; 1928 electrification converted the same coaches. Only the Point Shirley line is streetcar. Rule 1: the road was a passenger carrier to its last day; no freight-only years exist.",
+  "traced": "2026-10-16 from research/branches/boston_revere_beach_and_lynn_railroad.txt"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Revere Beach and Lynn Railroad",
+    "line": "Boston, Revere Beach and Lynn: East Boston – Lynn (beach route)",
+    "id": "brbl-east-boston-lynn-beach-route",
+    "color": "#8C2D04",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 3 ft gauge steam commuter road, 8.5 mi with about 14 stops; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over BRB&L-attributed ways only (the degree rail tiles were deliberately left out so the router could not stray onto B&M or MBTA track). Two OSM sources: the MBTA Blue Line ways tagged old_railway_operator=BRB&L (railway=subway), and OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940), whose members are a mix of railway=abandoned/razed ways named \"Boston, Revere Beach & Lynn\", and the streets, boulevards and paths now laid on the old grade. OpenHistoricalMap was queried for the whole system and has no BRB&L ways (only three \"Eastern Railroad\" ways). Station positions: Wood Island and Harbor View from Wikipedia \"Wood Island station\" (Bromley 1892 atlas); Orient Heights, Suffolk Downs, Beachmont, Revere Beach and Wonderland from the Wikipedia station articles (all Blue Line stations Orient Heights - Wonderland stand on former BRB&L station sites); Lynn terminal \"at Market Street near Broad Street\" and West Lynn \"just east of Commercial Street\" from Wikipedia \"Lynn station\". No Nominatim geocode was used for any waypoint (all hand-pinned to OSM way ends or published coordinates).",
+    "geometry_quality": "Traced 8.44 mi against a documented 8.5 mi East Boston - Lynn (Fowler JF-SNE1 line 55; the boshw.us marker gives 9.7 mi - conflict recorded, the trace sides with Fowler). East Boston - Harbor View (1.49 mi of the drawn line) is approximated: the line starts at a hand-placed point on the Jeffries Point waterfront just south of Marginal Street (0.05 mi straight to the tunnel mouth), follows OSM way 93277538 (the surviving BRB&L tunnel under Jeffries Point, 0.09 mi), then runs straight 0.57 mi across what is now Logan Airport to OSM way 1033234153 (a 0.05 mi relation member), then straight 0.73 mi via the Wood Island station site (Prescott Street, Bromley 1892 coordinates) to Harbor View (Short Street). The right of way from Byron Street to Tomahawk Drive was taken for Logan Airport and nothing of it is mapped. The Blue Line's own Airport - Wood Island - Day Square stretch is a 1952 MTA connection off the Eastern Railroad East Boston branch (relocated again c.1999-2004) and is NOT used. From Harbor View to Wonderland the line is drawn on the Blue Line, which the MTA laid on the BRB&L bed (Wikipedia; Fowler: \"Blue Line built on BRBL track bed between Orient Heights and Wonderland\") - a 1952-54 rebuild on the same formation, standard gauge in place of 3 ft. BEACH ALIGNMENT (this feature, 1875-1896): from just north of Beachmont the line leaves the Blue Line bed (0.08 mi straight join) for OSM way 1471436380 (railway=razed) to the beach at Crescent Beach (1st), then follows Revere Beach Boulevard, whose ways the relation tags railway=abandoned (the boulevard was laid on the vacated beach grade), to Point of Pines (OSM ways 1471436381, 426846808, 9531367, 426651146, 426651150, 9531611, 1100967698, 347399165, 1471436367). LATER ALIGNMENT CAVEAT: East Boston - Beachmont (1.9 mi from Harbor View) is drawn on the post-1897 bed as the Blue Line now runs; Orient Heights station itself moved (1st at mp 2.3, 2nd at 2.0, Fowler) and whether the 1875 track differed there is not established. Saugus River: the mapped grade stops at the south bank (OSM way 1231313257) and resumes at the surviving bridge structure (OSM way 1097592242, railway=disused, bridge=yes) - a 0.37 mi straight leg joins them. North of the bridge OSM ways 1231313256/1231313255 carry the line to Commercial Street, West Lynn. West Lynn - Lynn (Market Street near Broad Street) is approximated by two straight legs, 0.69 mi in all, kept on the south side of the B&M Eastern Route (the BRB&L ran beside the Eastern into Lynn; most of its Lynn right of way went into GE's River Works and nothing is mapped). Approximated (straight) legs total: 0.05 + 0.57 + 0.73 + 0.37 + 0.69 = 2.41 mi. ",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1896,
+      "headway_min": 30,
+      "note": "East Boston (ferry from Rowes Wharf, Boston; the ferry is not drawn) - Wood Island - Harbor View - Orient Heights - Beachmont - Crescent Beach (1st) - Atlantic - Oak Island (1st) - Revere Beach (1st) - Point of Pines - Saugus River - West Lynn - Lynn, 3 ft gauge, steam. Opened 29 July 1875 East Boston to Lynn. In this era the line ran along the beach between Crescent Beach and Point of Pines, on the strip that later became Revere Beach Boulevard. In April 1897 it was moved inland onto the bed of the Eastern/B&M Point of Pines branch and the 1884-85 BW&S broad-gauge line (see the 1897-1940 feature); the date is a source conflict - April 1897 (Wikipedia \"Revere Beach station\", citing Cheney 2003), 1896-1900 (Wikipedia main article), 1895-96 (Wikipedia \"Revere Beach\") - so this feature ends with the 1896 season and the inland feature starts in 1897. Headway is an estimate only: no timetable for this era was read (Rule 3).",
+      "sources": [
+       "Segment-level: opening 29 Jul 1875 East Boston - Lynn from Wikipedia \"Revere Beach station\" (citing Bradlee 1921) and the BRB&L article (\"opened July 29, 1875\", citing Stanley 1980 p.114); Fowler JF-SNE1 line 55 header \"1875 > 1940\" with 1875 company-timetable and 1876 Pathfinder letters; end = 1897 move inland per Wikipedia \"Revere Beach station\" citing Cheney 2003 (conflicting dates recorded in the note). Headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Revere_Beach_station",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0333,
+      42.364
+     ],
+     [
+      -71.02374,
+      42.37461
+     ],
+     [
+      -71.015723,
+      42.381139
+     ],
+     [
+      -71.010965,
+      42.384651
+     ],
+     [
+      -71.009551,
+      42.385289
+     ],
+     [
+      -71.000257,
+      42.388367
+     ],
+     [
+      -70.998327,
+      42.389467
+     ],
+     [
+      -70.99704,
+      42.39063
+     ],
+     [
+      -70.996279,
+      42.391684
+     ],
+     [
+      -70.992142,
+      42.397947
+     ],
+     [
+      -70.991711,
+      42.398807
+     ],
+     [
+      -70.991402,
+      42.400197
+     ],
+     [
+      -70.99141,
+      42.406495
+     ],
+     [
+      -70.991151,
+      42.408689
+     ],
+     [
+      -70.989899,
+      42.412709
+     ],
+     [
+      -70.987695,
+      42.417557
+     ],
+     [
+      -70.984706,
+      42.422185
+     ],
+     [
+      -70.980523,
+      42.427429
+     ],
+     [
+      -70.978831,
+      42.429178
+     ],
+     [
+      -70.977152,
+      42.430644
+     ],
+     [
+      -70.972328,
+      42.433996
+     ],
+     [
+      -70.970294,
+      42.436624
+     ],
+     [
+      -70.967026,
+      42.444311
+     ],
+     [
+      -70.963367,
+      42.453519
+     ],
+     [
+      -70.962324,
+      42.454643
+     ],
+     [
+      -70.960999,
+      42.455454
+     ],
+     [
+      -70.960159,
+      42.455779
+     ],
+     [
+      -70.958608,
+      42.456109
+     ],
+     [
+      -70.9525,
+      42.4589
+     ],
+     [
+      -70.9468,
+      42.461
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Revere Beach and Lynn Railroad",
+    "line": "Boston, Revere Beach and Lynn: East Boston – Lynn",
+    "id": "brbl-east-boston-lynn",
+    "color": "#8C2D04",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 3 ft gauge commuter road (steam to 1928, then trolley-pole electric MU), 8.5 mi with about 14 stops; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over BRB&L-attributed ways only (the degree rail tiles were deliberately left out so the router could not stray onto B&M or MBTA track). Two OSM sources: the MBTA Blue Line ways tagged old_railway_operator=BRB&L (railway=subway), and OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940), whose members are a mix of railway=abandoned/razed ways named \"Boston, Revere Beach & Lynn\", and the streets, boulevards and paths now laid on the old grade. OpenHistoricalMap was queried for the whole system and has no BRB&L ways (only three \"Eastern Railroad\" ways). Station positions: Wood Island and Harbor View from Wikipedia \"Wood Island station\" (Bromley 1892 atlas); Orient Heights, Suffolk Downs, Beachmont, Revere Beach and Wonderland from the Wikipedia station articles (all Blue Line stations Orient Heights - Wonderland stand on former BRB&L station sites); Lynn terminal \"at Market Street near Broad Street\" and West Lynn \"just east of Commercial Street\" from Wikipedia \"Lynn station\". No Nominatim geocode was used for any waypoint (all hand-pinned to OSM way ends or published coordinates).",
+    "geometry_quality": "Traced 8.50 mi against a documented 8.5 mi East Boston - Lynn (Fowler JF-SNE1 line 55: East Boston 0.0, West Lynn 7.7, Lynn 8.5; boshw.us gives 9.7 mi - conflict recorded, the trace sides with Fowler). East Boston - Harbor View (1.49 mi of the drawn line) is approximated: the line starts at a hand-placed point on the Jeffries Point waterfront just south of Marginal Street (0.05 mi straight to the tunnel mouth), follows OSM way 93277538 (the surviving BRB&L tunnel under Jeffries Point, 0.09 mi), then runs straight 0.57 mi across what is now Logan Airport to OSM way 1033234153 (a 0.05 mi relation member), then straight 0.73 mi via the Wood Island station site (Prescott Street, Bromley 1892 coordinates) to Harbor View (Short Street). The right of way from Byron Street to Tomahawk Drive was taken for Logan Airport and nothing of it is mapped. The Blue Line's own Airport - Wood Island - Day Square stretch is a 1952 MTA connection off the Eastern Railroad East Boston branch (relocated again c.1999-2004) and is NOT used. From Harbor View to Wonderland the line is drawn on the Blue Line, which the MTA laid on the BRB&L bed (Wikipedia; Fowler: \"Blue Line built on BRBL track bed between Orient Heights and Wonderland\") - a 1952-54 rebuild on the same formation, standard gauge in place of 3 ft. INLAND ALIGNMENT (this feature, 1897-1940): Blue Line to Wonderland (= Revere Street), then the BRB&L grade as OSM maps it, a few hundred feet behind the beach: ways 1471436357, 1471436358 (named \"Boston, Revere Beach & Lynn\"), 1471436360, 1208912612, 1077819140 (railway=razed, through Oak Island - today a National Grid utility corridor) and 1231313257 to Point of Pines. Saugus River: the mapped grade stops at the south bank (OSM way 1231313257) and resumes at the surviving bridge structure (OSM way 1097592242, railway=disused, bridge=yes) - a 0.37 mi straight leg joins them. North of the bridge OSM ways 1231313256/1231313255 carry the line to Commercial Street, West Lynn. West Lynn - Lynn (Market Street near Broad Street) is approximated by two straight legs, 0.69 mi in all, kept on the south side of the B&M Eastern Route (the BRB&L ran beside the Eastern into Lynn; most of its Lynn right of way went into GE's River Works and nothing is mapped). Approximated (straight) legs total: 0.05 + 0.57 + 0.73 + 0.37 + 0.69 = 2.41 mi. ",
+    "segments": [
+     {
+      "start": 1897,
+      "end": 1940,
+      "headway_min": 15,
+      "note": "East Boston - Wood Island - Harbor View - Orient Heights (Winthrop Loop junction) - Suffolk Downs/Belle Isle - Beachmont - Crescent Beach (2nd) - Bath House - Revere Street - Oak Island - Point of Pines - West Lynn - Lynn. From April 1897 the Crescent Beach - Point of Pines section ran inland on the former Eastern/B&M Point of Pines branch bed (date conflict: see the beach-route feature). Double-tracked by 1903; over seven million passengers in 1914 (Public Service Commission, via Wikipedia). Electrified 1928 (overhead trolley; steam gone by the end of 1928). Bankrupt 1937; the Sept 1938 hurricane damaged the East Boston terminal; a railfan excursion ran 15 Oct 1939; last trains Saturday 27 January 1940 (one Globe caption puts the last-train crowd on the 28th - same year). The track was scrapped in 1940 and nothing ran on the bed until the MTA Revere Extension (a different company, drawn in mbta_rapid_transit.geojson from 1952). Headway is an estimate only - no timetable was read; the traffic density suggests frequent service but no figure was found (Rule 3).",
+      "sources": [
+       "Segment-level: end 27 Jan 1940 from Wikipedia BRB&L article (citing Stanley 1980 p.117), Boston Globe 2014 archive piece and \"1940 in rail transport\"; Fowler line 55 \"> 1940\"; start = 1897 move inland per Wikipedia \"Revere Beach station\" citing Cheney 2003. Headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://en.wikipedia.org/wiki/Revere_Beach_station",
+       "https://www.bostonglobe.com/arts/2014/02/07/from-archives-the-boston-revere-beach-and-lynn-railroad/UBEBmeE8TIt0qxpiEI4uzK/story.html",
+       "https://en.wikipedia.org/wiki/1940_in_rail_transport",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.0333,
+      42.364
+     ],
+     [
+      -71.02374,
+      42.37461
+     ],
+     [
+      -71.015723,
+      42.381139
+     ],
+     [
+      -71.010965,
+      42.384651
+     ],
+     [
+      -71.009551,
+      42.385289
+     ],
+     [
+      -71.000257,
+      42.388367
+     ],
+     [
+      -70.998327,
+      42.389467
+     ],
+     [
+      -70.99704,
+      42.39063
+     ],
+     [
+      -70.996279,
+      42.391684
+     ],
+     [
+      -70.992142,
+      42.397947
+     ],
+     [
+      -70.991601,
+      42.39915
+     ],
+     [
+      -70.991456,
+      42.40036
+     ],
+     [
+      -70.992533,
+      42.407945
+     ],
+     [
+      -70.992713,
+      42.409361
+     ],
+     [
+      -70.992614,
+      42.410841
+     ],
+     [
+      -70.992341,
+      42.411971
+     ],
+     [
+      -70.991801,
+      42.413196
+     ],
+     [
+      -70.990385,
+      42.415733
+     ],
+     [
+      -70.989088,
+      42.417696
+     ],
+     [
+      -70.981059,
+      42.428138
+     ],
+     [
+      -70.979809,
+      42.429452
+     ],
+     [
+      -70.977493,
+      42.431286
+     ],
+     [
+      -70.971997,
+      42.4349
+     ],
+     [
+      -70.970976,
+      42.435778
+     ],
+     [
+      -70.970345,
+      42.436552
+     ],
+     [
+      -70.967026,
+      42.444311
+     ],
+     [
+      -70.963557,
+      42.453201
+     ],
+     [
+      -70.962713,
+      42.454284
+     ],
+     [
+      -70.96166,
+      42.455118
+     ],
+     [
+      -70.960662,
+      42.4556
+     ],
+     [
+      -70.958608,
+      42.456109
+     ],
+     [
+      -70.9525,
+      42.4589
+     ],
+     [
+      -70.9468,
+      42.461
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Revere Beach and Lynn Railroad",
+    "line": "Boston, Revere Beach and Lynn: Winthrop Loop",
+    "id": "brbl-winthrop-loop",
+    "color": "#8C2D04",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 3 ft gauge loop of about 4.5 mi with nine stations; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py over BRB&L-attributed ways only: the Orient Heights stem on Blue Line yard way 250194236 (old_railway_operator=BRB&L), then members of OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940) - ways named \"Boston, Winthrop & Shore Railroad\" (1471857458/63/62/65) and \"Winthrop Loop\" (1471857468, 1211611425, 1211611427, 1220163812, 1148379446) plus the streets and paths the relation includes where the grade became a road (Morton Street, Kilmartin Pathway, Veterans Road, Hagman Road, Walden Street). Station sites checked against the Wikipedia station table (Pleasant St at Belle Isle Terrace; Battery at Banks & Wilshire; Highlands at Crest Ave playground; Ocean Spray at Shirley St & Veterans Rd; Winthrop Beach at Shirley & Washington; Winthrop Centre at Hagman Rd; Ingalls on Walden St). OpenHistoricalMap has nothing here.",
+    "geometry_quality": "Traced 4.19 mi against a documented 4.5 mi (Fowler line 56: Orient Heights 2.0 -> loop closes at Pleasant Street 6.5). Drawn from Orient Heights through the junction east of the station, out the Belle Isle marsh stem to Pleasant Street, then clockwise Battery - Highlands - Ocean Spray - Winthrop Beach - Thornton - Winthrop Centre - Ingalls. Approximated (straight) leg: 0.20 mi Winthrop Beach - Thornton round Crystal Cove (the grade curved out into the cove; no way is mapped). The line is deliberately drawn OPEN, stopping at the north end of Walden Street about 0.2 mi short of where the loop rejoins its own stem at Pleasant Street (OSM way 1471857469 not drawn), so the closing is not read as an out-and-back spur by the layer checks. The Orient Heights stem (0.31 mi) uses a present-day Blue Line yard track on the former BRB&L yard site - a later layout than the BRB&L junction. Street-laid parts (Veterans Road, Hagman Road, Walden Street) follow the road built on the vacated grade, within a few metres of it.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1940,
+      "headway_min": 30,
+      "note": "Orient Heights - Pleasant Street - Battery (Cherry Street) - Highlands - Ocean Spray - Playstead - Winthrop Beach - Thornton - Winthrop Centre - Ingalls - Pleasant Street, worked one way clockwise (Wikipedia station listing; the research report's via list runs the other way round). Built 1888 by the BRB&L management, partly on the BW&S Winthrop line it had controlled since 1886; until the 1 July 1891 merger it was advertised to the public as the Boston, Winthrop & Shore (Lieberman's map: \"operated as Boston, Winthrop & Shore Railroad, 1888-1891\"). Drawn in BRB&L colour throughout because BRB&L management ran the trains from 1886 - the 1886-vs-1891 control question is in metadata.not_yet_sourced. Opening is \"1887/88\" in Fowler and 1888 elsewhere; drawn from 1888. Double-tracked 1903; electrified 1928 with the rest of the road; closed with the system 27 January 1940 (Winthrop Beach - Maverick buses replaced it). Headway is an estimate only (Rule 3).",
+      "sources": [
+       "Segment-level: start 1888 (Wikipedia BRB&L article and Lieberman's Winthrop railroad map \"1888-1940\"; Fowler line 56 header \"1887/88 > 1940\", the later side taken); end 27 Jan 1940 with the main line (Wikipedia, citing Stanley 1980). Headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://winthropmemorials.org/books/the-train-on-the-beach/images/Winthrop-MA-Railroad-Map2.pdf",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.003496,
+      42.387277
+     ],
+     [
+      -71.002702,
+      42.387352
+     ],
+     [
+      -70.997912,
+      42.385627
+     ],
+     [
+      -70.997502,
+      42.385455
+     ],
+     [
+      -70.996597,
+      42.384493
+     ],
+     [
+      -70.995799,
+      42.384213
+     ],
+     [
+      -70.994767,
+      42.384105
+     ],
+     [
+      -70.986154,
+      42.383895
+     ],
+     [
+      -70.985143,
+      42.383995
+     ],
+     [
+      -70.980136,
+      42.386549
+     ],
+     [
+      -70.97845,
+      42.386928
+     ],
+     [
+      -70.977435,
+      42.386905
+     ],
+     [
+      -70.973353,
+      42.385819
+     ],
+     [
+      -70.972567,
+      42.384991
+     ],
+     [
+      -70.972667,
+      42.384072
+     ],
+     [
+      -70.973773,
+      42.382684
+     ],
+     [
+      -70.974936,
+      42.381936
+     ],
+     [
+      -70.975361,
+      42.38149
+     ],
+     [
+      -70.975906,
+      42.38062
+     ],
+     [
+      -70.976023,
+      42.379759
+     ],
+     [
+      -70.975815,
+      42.378801
+     ],
+     [
+      -70.974577,
+      42.376559
+     ],
+     [
+      -70.97152,
+      42.372469
+     ],
+     [
+      -70.971476,
+      42.371869
+     ],
+     [
+      -70.971914,
+      42.371253
+     ],
+     [
+      -70.972634,
+      42.3709
+     ],
+     [
+      -70.973172,
+      42.370823
+     ],
+     [
+      -70.981389,
+      42.371245
+     ],
+     [
+      -70.982705,
+      42.371417
+     ],
+     [
+      -70.983688,
+      42.371879
+     ],
+     [
+      -70.984677,
+      42.372791
+     ],
+     [
+      -70.986556,
+      42.375165
+     ],
+     [
+      -70.986966,
+      42.375957
+     ],
+     [
+      -70.987267,
+      42.382065
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Winthrop and Point Shirley Railroad",
+    "line": "Boston, Winthrop and Point Shirley: Winthrop Junction – Short Beach",
+    "id": "bwps-winthrop-junction-short-beach",
+    "color": "#C0587E",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 3 ft gauge seasonal steam shuttle of about 2-3.5 mi; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py over members of OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940): Blue Line yard way 250194236 for the Orient Heights (Winthrop Junction) stem, the ways named \"Boston, Winthrop & Shore Railroad\" (1471857458/63/62/65 and 1471857461) to Revere Street, then unnamed railway=abandoned ways 1471857472, 1471857470, 1471857473 with paths 111762739/1201789312 and Brewster Avenue (791278819) down the shore past Great Head and Short Beach to Point Shirley. OpenHistoricalMap has nothing here. Cottage Hill checked against Nominatim (type=peak, 42.3682 N 70.9689 W, 0.15 km west of the line).",
+    "geometry_quality": "Traced 3.07 mi from Orient Heights (Winthrop Junction) to Short Beach, the 1882 terminus; Fowler line 57 gives 3.5 mi to Point Shirley and the line was \"the two-mile route\" at opening (Lieberman; Wikipedia 1.8 mi to Winthrop Center). Approximated (straight) leg: 0.31 mi Revere Street (Winthrop 2nd) - Ocean Spray/Sea Foam Avenue, where OSM maps nothing between way 1471857464 and way 1471857472. The Orient Heights stem (0.31 mi) uses a present-day Blue Line yard track. LATER ALIGNMENT: the whole feature draws the 1881-1887 route (via Branch Junction, Revere Street and Ocean Spray). For 1877-1881 this is a LATER alignment than the era: the original line ran Pleasant Street - Winthrop (Magee's Corner) - Buchanan Street - Shirley, abandoned in the 1881 reroute, and nothing of it is mapped. It also OVERSTATES the reach in the early years: the terminus was Buchanan Street (1877), Shirley (1878), Great Head (1879) and Short Beach only from 1882. Drawing the 1881-1887 route for every year is a deliberate simplification.",
+    "segments": [
+     {
+      "start": 1877,
+      "end": 1883,
+      "headway_min": 120,
+      "note": "Winthrop Junction (BRB&L Orient Heights; passengers changed trains, the companies did not interchange cars) - Pleasant Street - Winthrop - Shirley - Great Head - Short Beach, 3 ft gauge steam, run by the Boston, Winthrop & Point Shirley with its own trains and crews. Opened to the public 7 June 1877, replacing the Winthrop Railroad horsecar line (1873-1877, not drawn: Rule 5). SUMMER-ONLY: \"the railroad did not run during the winter\" (Lieberman). Consolidated with the Eastern Junction, Broad Sound Pier & Point Shirley as the Boston, Winthrop & Shore on 12 Dec 1883, after the 1883 season, so the 1883 season is this company's. Headway: 5 trips a day at opening, \"eventually ... an hourly schedule\" (Lieberman, year not given); 120 min is an estimate between the two.",
+      "sources": [
+       "Segment-level: opening 7 Jun 1877, summer-only operation, 5 trips/day and later hourly from Lieberman, The Train on the Beach (publisher excerpt pp.31-36); Wikipedia BRB&L article agrees on 1877; Fowler line 57 \"1877 > 1887/88\"; 12 Dec 1883 consolidation per the research report's reading of Lieberman. Headway value is an estimate.",
+       "https://assets.booklocker.com/pdfs/9383s.pdf",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.003496,
+      42.387277
+     ],
+     [
+      -71.002702,
+      42.387352
+     ],
+     [
+      -70.997638,
+      42.385525
+     ],
+     [
+      -70.996766,
+      42.384586
+     ],
+     [
+      -70.995799,
+      42.384213
+     ],
+     [
+      -70.991203,
+      42.383975
+     ],
+     [
+      -70.986154,
+      42.383895
+     ],
+     [
+      -70.984318,
+      42.383638
+     ],
+     [
+      -70.983112,
+      42.383267
+     ],
+     [
+      -70.982066,
+      42.382699
+     ],
+     [
+      -70.981325,
+      42.382068
+     ],
+     [
+      -70.978373,
+      42.380082
+     ],
+     [
+      -70.974369,
+      42.376358
+     ],
+     [
+      -70.973786,
+      42.376028
+     ],
+     [
+      -70.971898,
+      42.375369
+     ],
+     [
+      -70.971305,
+      42.374921
+     ],
+     [
+      -70.969713,
+      42.372894
+     ],
+     [
+      -70.966842,
+      42.36822
+     ],
+     [
+      -70.9668,
+      42.367893
+     ],
+     [
+      -70.966916,
+      42.367628
+     ],
+     [
+      -70.96771,
+      42.367024
+     ],
+     [
+      -70.968665,
+      42.365907
+     ],
+     [
+      -70.969918,
+      42.363349
+     ],
+     [
+      -70.970643,
+      42.360364
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Winthrop and Shore Railroad",
+    "line": "Boston, Winthrop and Shore: Winthrop Junction – Point Shirley",
+    "id": "bws-winthrop-junction-point-shirley",
+    "color": "#5B8C2A",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 3 ft gauge seasonal steam line of 3.5 mi; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py over members of OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940): Blue Line yard way 250194236 for the Orient Heights (Winthrop Junction) stem, the ways named \"Boston, Winthrop & Shore Railroad\" (1471857458/63/62/65 and 1471857461) to Revere Street, then unnamed railway=abandoned ways 1471857472, 1471857470, 1471857473 with paths 111762739/1201789312 and Brewster Avenue (791278819) down the shore past Great Head and Short Beach to Point Shirley. OpenHistoricalMap has nothing here. Cottage Hill checked against Nominatim (type=peak, 42.3682 N 70.9689 W, 0.15 km west of the line).",
+    "geometry_quality": "Traced 3.27 mi against a documented 3.5 mi Winthrop Junction - Point Shirley (Fowler line 57). Approximated (straight) leg: 0.31 mi Revere Street (Winthrop 2nd) - Ocean Spray/Sea Foam Avenue, where OSM maps nothing between way 1471857464 and way 1471857472. The Orient Heights stem (0.31 mi) uses a present-day Blue Line yard track. LATER ALIGNMENT: the whole feature draws the 1881-1887 route (via Branch Junction, Revere Street and Ocean Spray). The far end is drawn to Point Shirley (end of OSM way 1471857473), where the Point Shirley Pier steamboat connection ran in the summers of 1884-85; the pier's exact position is not established.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1885,
+      "headway_min": 60,
+      "note": "Winthrop Junction (Orient Heights) - Pleasant Street - Branch Junction - Revere Street - Ocean Spray - Sea Foam Avenue - Shirley - Great Head - Short Beach - Point Shirley Pier, 3 ft gauge steam, SUMMER-ONLY. Run by the Boston, Winthrop & Shore, formed 12 Dec 1883 from the BW&PS and the Eastern Railroad-backed Eastern Junction, Broad Sound Pier & Point Shirley, so its first season was 1884. Steamboat connection from Point Shirley Pier to Boston summers 1884-85 only. The 1885 storm wrecked the line south of Great Head, and BRB&L management took control in 1886 (see the next feature). The BW&S \"Broad Gauge Division\" Point Shirley - Point of Pines (1884-85) is not drawn - see metadata. Drawn years trimmed from the report's 1883-1886 to 1884-1885: the 1883 season was the BW&PS's (consolidation in December) and the 1886 season ran under BRB&L control. Headway is an estimate taken from Lieberman's \"eventually hourly\" (year not given).",
+      "sources": [
+       "Segment-level: BW&S formation 12 Dec 1883 and BRB&L control from 1886 from Lieberman (excerpt) and Wikipedia BRB&L article; Point Shirley Pier service 1884-85 from Lieberman's Winthrop map and Fowler; summer-only from Lieberman. Headway NOT SOURCED (estimate).",
+       "https://assets.booklocker.com/pdfs/9383s.pdf",
+       "https://winthropmemorials.org/books/the-train-on-the-beach/images/Winthrop-MA-Railroad-Map2.pdf",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.003496,
+      42.387277
+     ],
+     [
+      -71.002702,
+      42.387352
+     ],
+     [
+      -70.997638,
+      42.385525
+     ],
+     [
+      -70.996766,
+      42.384586
+     ],
+     [
+      -70.995799,
+      42.384213
+     ],
+     [
+      -70.991203,
+      42.383975
+     ],
+     [
+      -70.986154,
+      42.383895
+     ],
+     [
+      -70.984318,
+      42.383638
+     ],
+     [
+      -70.983112,
+      42.383267
+     ],
+     [
+      -70.982066,
+      42.382699
+     ],
+     [
+      -70.981325,
+      42.382068
+     ],
+     [
+      -70.978373,
+      42.380082
+     ],
+     [
+      -70.974369,
+      42.376358
+     ],
+     [
+      -70.973786,
+      42.376028
+     ],
+     [
+      -70.971898,
+      42.375369
+     ],
+     [
+      -70.971305,
+      42.374921
+     ],
+     [
+      -70.969713,
+      42.372894
+     ],
+     [
+      -70.966842,
+      42.36822
+     ],
+     [
+      -70.9668,
+      42.367893
+     ],
+     [
+      -70.966916,
+      42.367628
+     ],
+     [
+      -70.96771,
+      42.367024
+     ],
+     [
+      -70.968665,
+      42.365907
+     ],
+     [
+      -70.969918,
+      42.363349
+     ],
+     [
+      -70.970643,
+      42.360364
+     ],
+     [
+      -70.972504,
+      42.357773
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Revere Beach and Lynn Railroad",
+    "line": "Boston, Revere Beach and Lynn: Winthrop Junction – Cottage Hill",
+    "id": "brbl-winthrop-junction-cottage-hill",
+    "color": "#8C2D04",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 3 ft gauge seasonal steam line; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py over members of OSM route relation 14534040 (\"Boston, Revere Beach and Lynn Railroad\", railway=abandoned, gauge=914, from=1875, to=1940): Blue Line yard way 250194236 for the Orient Heights (Winthrop Junction) stem, the ways named \"Boston, Winthrop & Shore Railroad\" (1471857458/63/62/65 and 1471857461) to Revere Street, then unnamed railway=abandoned ways 1471857472, 1471857470, 1471857473 with paths 111762739/1201789312 and Brewster Avenue (791278819) down the shore past Great Head and Short Beach to Point Shirley. OpenHistoricalMap has nothing here. Cottage Hill checked against Nominatim (type=peak, 42.3682 N 70.9689 W, 0.15 km west of the line).",
+    "geometry_quality": "Traced 2.48 mi from Orient Heights to Cottage Hill, the 1887 terminus (Fowler) - the same geometry as the BW&PS/BW&S features cut back at Cottage Hill, because the line south of Great Head was given up after the 1885 storm. Approximated (straight) leg: 0.31 mi Revere Street (Winthrop 2nd) - Ocean Spray/Sea Foam Avenue, where OSM maps nothing between way 1471857464 and way 1471857472. The Orient Heights stem (0.31 mi) uses a present-day Blue Line yard track. LATER ALIGNMENT: the whole feature draws the 1881-1887 route (via Branch Junction, Revere Street and Ocean Spray). ",
+    "segments": [
+     {
+      "start": 1886,
+      "end": 1887,
+      "headway_min": 60,
+      "note": "Winthrop Junction (Orient Heights) - Pleasant Street - Revere Street - Ocean Spray - Shirley - Cottage Hill, 3 ft gauge steam, summer service. After the 1885 storm \"the management of the BRB&L stepped in\" (Wikipedia) and took control in 1886 (Lieberman: \"When the BRB&L took control in 1886, it continued to use Pegasus\"); trains were still advertised as the Boston, Winthrop & Shore until the 1 July 1891 merger. Drawn in BRB&L colour from 1886 because the BRB&L ran the trains; whether 1886 was a lease/operating agreement or only a stock purchase is unresolved (metadata.not_yet_sourced) - if the latter, these years belong to the BW&S. Superseded by the Winthrop Loop (1888); Fowler \"1877 > 1887/88\", the earlier side taken. Whether winter service ran after BRB&L control is not established. Headway is an estimate (Rule 3).",
+      "sources": [
+       "Segment-level: BRB&L control 1886 from Lieberman (excerpt) and Wikipedia BRB&L article; end 1887 from Fowler line 57 \"1877 > 1887/88\" (Cottage Hill the 1887 terminus). Headway NOT SOURCED.",
+       "https://assets.booklocker.com/pdfs/9383s.pdf",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.003496,
+      42.387277
+     ],
+     [
+      -71.002702,
+      42.387352
+     ],
+     [
+      -70.997638,
+      42.385525
+     ],
+     [
+      -70.996766,
+      42.384586
+     ],
+     [
+      -70.995799,
+      42.384213
+     ],
+     [
+      -70.991203,
+      42.383975
+     ],
+     [
+      -70.986154,
+      42.383895
+     ],
+     [
+      -70.984318,
+      42.383638
+     ],
+     [
+      -70.982838,
+      42.383138
+     ],
+     [
+      -70.978373,
+      42.380082
+     ],
+     [
+      -70.974369,
+      42.376358
+     ],
+     [
+      -70.973786,
+      42.376028
+     ],
+     [
+      -70.971898,
+      42.375369
+     ],
+     [
+      -70.971305,
+      42.374921
+     ],
+     [
+      -70.969713,
+      42.372894
+     ],
+     [
+      -70.966872,
+      42.368212
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Point Shirley Street Railway",
+    "line": "Point Shirley Street Railway: Winthrop Beach – Point Shirley",
+    "id": "pssr-winthrop-beach-point-shirley",
+    "color": "#81B29A",
+    "mode": "streetcar",
+    "avg_speed_kmh": 12,
+    "speed_source": "estimated: 1.2 mi single-track street line with one self-propelled car; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py along the present Shirley Street (OSM way 347765211) and Tafts Avenue (ways 8616796, 1075931093, 8616743) in Winthrop - the streets the line was laid in (Wikipedia: via Shirley Street and Tafts Avenue). No rail survives and neither OSM nor OpenHistoricalMap maps the line. Winthrop Beach end at the Shirley Street crossing of the loop; Point Shirley end on Tafts Avenue at 42.3560 N.",
+    "geometry_quality": "Drawn 1.29 mi along the streets against a documented 1.2 mi single track (Wikipedia). No straight-line leg. The exact Point Shirley terminus is not established; the line is stopped on Tafts Avenue at the Point Shirley village. Street geometry is today's, which may differ slightly from 1910-28.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1912,
+      "headway_min": 30,
+      "note": "Winthrop Beach (BRB&L Winthrop Loop station) - Shirley Street - Tafts Avenue - Point Shirley, 1.2 mi single track, never wired: worked by a gasoline-electric car (mechanical traction, so Rule 5 does not apply). First spike August 1910, opened later that year. Bought by the BRB&L in October 1912 (legislature-approved); the BRB&L years are a separate feature. Headway is an estimate only (Rule 3).",
+      "sources": [
+       "Segment-level: opening 1910 and BRB&L purchase Oct 1912 from the Wikipedia BRB&L article, Point Shirley Street Railway section (citing Public Service Commission reports 1915, 1920); Lieberman's Winthrop map \"1910-1928 (acquired by BRB&L 1912)\". Headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://winthropmemorials.org/books/the-train-on-the-beach/images/Winthrop-MA-Railroad-Map2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.971134,
+      42.372712
+     ],
+     [
+      -70.970372,
+      42.371783
+     ],
+     [
+      -70.970167,
+      42.371092
+     ],
+     [
+      -70.971504,
+      42.368955
+     ],
+     [
+      -70.971616,
+      42.368258
+     ],
+     [
+      -70.970618,
+      42.36732
+     ],
+     [
+      -70.969271,
+      42.366573
+     ],
+     [
+      -70.968944,
+      42.365993
+     ],
+     [
+      -70.970157,
+      42.363553
+     ],
+     [
+      -70.970846,
+      42.360835
+     ],
+     [
+      -70.971127,
+      42.360374
+     ],
+     [
+      -70.969373,
+      42.356501
+     ],
+     [
+      -70.968655,
+      42.355999
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Revere Beach and Lynn Railroad",
+    "line": "Boston, Revere Beach and Lynn: Winthrop Beach – Point Shirley",
+    "id": "brbl-winthrop-beach-point-shirley",
+    "color": "#8C2D04",
+    "mode": "streetcar",
+    "avg_speed_kmh": 12,
+    "speed_source": "estimated: 1.2 mi single-track street line worked by battery cars; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru), traced with opstrace.py along the present Shirley Street (OSM way 347765211) and Tafts Avenue (ways 8616796, 1075931093, 8616743) in Winthrop - the streets the line was laid in (Wikipedia: via Shirley Street and Tafts Avenue). No rail survives and neither OSM nor OpenHistoricalMap maps the line. Winthrop Beach end at the Shirley Street crossing of the loop; Point Shirley end on Tafts Avenue at 42.3560 N.",
+    "geometry_quality": "Drawn 1.29 mi along the streets against a documented 1.2 mi single track (Wikipedia). No straight-line leg. The exact Point Shirley terminus is not established; the line is stopped on Tafts Avenue at the Point Shirley village. Street geometry is today's, which may differ slightly from 1910-28.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1928,
+      "headway_min": 30,
+      "note": "The former Point Shirley Street Railway, Winthrop Beach - Point Shirley, under BRB&L ownership from October 1912. Two lighter battery cars came in May 1919 and ran until 1928, when buses permanently replaced them. DRAWN FROM 1919 ONLY: the BRB&L ran a battery car on the line at some point after 1912, but buses were in use \"by early 1919\" and the date rail service gave way to buses is unknown, so 1912/13-1918 is omitted rather than invented. Headway is an estimate only (Rule 3).",
+      "sources": [
+       "Segment-level: May 1919 battery cars and 1928 bus replacement from the Wikipedia BRB&L article, Point Shirley Street Railway section (citing PSC annual reports); Lieberman's Winthrop map \"1910-1928\". Headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Boston,_Revere_Beach_and_Lynn_Railroad",
+       "https://winthropmemorials.org/books/the-train-on-the-beach/images/Winthrop-MA-Railroad-Map2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.971134,
+      42.372712
+     ],
+     [
+      -70.970372,
+      42.371783
+     ],
+     [
+      -70.970167,
+      42.371092
+     ],
+     [
+      -70.971504,
+      42.368955
+     ],
+     [
+      -70.971616,
+      42.368258
+     ],
+     [
+      -70.970618,
+      42.36732
+     ],
+     [
+      -70.969271,
+      42.366573
+     ],
+     [
+      -70.968944,
+      42.365993
+     ],
+     [
+      -70.970157,
+      42.363553
+     ],
+     [
+      -70.970846,
+      42.360835
+     ],
+     [
+      -70.971127,
+      42.360374
+     ],
+     [
+      -70.969373,
+      42.356501
+     ],
+     [
+      -70.968655,
+      42.355999
+     ]
+    ]
+   }
+  }
+ ]
+}
