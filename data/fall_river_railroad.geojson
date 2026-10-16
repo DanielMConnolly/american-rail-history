@@ -1,0 +1,1155 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Fall River Railroad (1845/46-1854): Fall River - Myricks opened 9 June 1845, extended north via Middleborough to a junction with the Old Colony at South Braintree in 1846 and to Fall River Wharf (the Fall River Line steamboat landing) in 1847, then consolidated into the Old Colony and Fall River Railroad in 1854. Following the Boston and Providence precedent, this layer draws only the company's own-name era: three features in one colour (Fall River - Myricks 1845-1846; Myricks - South Braintree 1846; the through line Fall River Wharf - South Braintree 1847-1854). It also draws the unrelated second Fall River Railroad (incorporated 1874), whose Watuppa line New Bedford - Fall River opened 1875 and was leased to the Old Colony in 1882, under its own company string ('Fall River Railroad, Watuppa line' - a parenthetical would be stripped by Rule 4 name normalisation and merge the two) and its own colour. Research report: research/branches/fall_river_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Fall_River_Railroad_(1846) -- Wikipedia, 'Fall River Railroad (1846)' (cites Karr, Rail Lines of Southern New England 2nd ed. 2017 pp. 401-405; 1911 Mass. commission report; Fall River Monitor 29 Aug, 14 Nov, 26 Dec 1846; Brooklyn Daily Eagle 5 Jun 1845; Herald of the Times 24 Dec 1846)",
+   "https://en.wikipedia.org/wiki/Old_Colony_Railroad -- Wikipedia, 'Old Colony Railroad' (narrative and line table)",
+   "https://en.wikipedia.org/wiki/Fall_River_station -- Wikipedia, 'Fall River station' (Karr; Humphrey & Clark 1985)",
+   "https://en.wikipedia.org/wiki/Battleship_Cove_station -- Wikipedia, 'Battleship Cove station'",
+   "https://en.wikipedia.org/wiki/Freetown_station -- Wikipedia, 'Freetown station'",
+   "https://en.wikipedia.org/wiki/Middleborough_station -- Wikipedia, 'Middleborough station' (Karr)",
+   "https://en.wikipedia.org/wiki/Lakeville_station -- Wikipedia, 'Lakeville station'",
+   "https://en.wikipedia.org/wiki/Braintree_station_(MBTA) -- Wikipedia, 'Braintree station (MBTA)'",
+   "https://en.wikipedia.org/wiki/Holbrook/Randolph_station -- Wikipedia, 'Holbrook/Randolph station'",
+   "https://en.wikipedia.org/wiki/Brockton_station_(MBTA) -- Wikipedia, 'Brockton station (MBTA)'",
+   "https://en.wikipedia.org/wiki/Bridgewater_station_(MBTA) -- Wikipedia, 'Bridgewater station (MBTA)'",
+   "https://en.wikipedia.org/wiki/Campello_station -- Wikipedia, 'Campello station'",
+   "https://en.wikipedia.org/wiki/Watuppa_Branch -- Wikipedia, 'Watuppa Branch'",
+   "https://wpthistory.org/2003/10/watuppa_railroad_line/ -- Westport Historical Society, 'Watuppa Railroad Line'",
+   "https://nashuacitystation.org/history/united-corporation-of-the-middleborough-railroad-corporation-and-fall-river-branch-railroad-company-and-randolph-and-bridgewater-railroad-corporation/ -- Nashua City Station (ICC 1931 valuation), United Corporation",
+   "https://nashuacitystation.org/history/fall-river-railroad-company-1846/ -- Nashua City Station, Fall River Railroad Company (1846)",
+   "https://nashuacitystation.org/history/old-colony-and-fall-river-railroad-company/ -- Nashua City Station, Old Colony and Fall River Railroad Company",
+   "https://nashuacitystation.org/history/fall-river-railroad-company-1874/ -- Nashua City Station, Fall River Railroad Company (1874)",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf -- John Fowler, Southern New England Railroads (2), Passenger Stations & Stops (lines 75, 83, 92, 94; letter x = 1850 Pathfinder, p4 = 1881 Pathfinder)",
+   "http://www.loc.gov/resource/sn83021169/1851-10-09/ed-1/?sp=1 -- Herald of the Times (Newport RI), 9 Oct 1851 p.1 (Chronicling America)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-16): Fall River Subdivision, razed 'Middleboro Branch' (way 1077812727), Middleborough Main Line, Dartmouth Industrial Track and Quequechan Rail Trail, all tagged old_railway_operator=NYNH&H",
+   "OpenHistoricalMap (2026-10-16): way 198541923 'Fall River and New Bedford Railroad' (Westport - Fall River)"
+  ],
+  "operator_split": "Fall River Railroad features end in 1854 (consolidation into the Old Colony and Fall River RR, a real operator change); the 1845-1846 'United Corporation' is the same company under its pre-rename name and is not split. The Watuppa feature ends in 1882 (Old Colony lease). Successor Old Colony (1854-1893 / 1882-1893) and New Haven (1893 on) eras are not drawn here.",
+  "omitted": [
+   "Report blocks [5]-[7]: Old Colony (and Fall River / and Newport) 1854-1893 on South Braintree - Middleborough, Middleborough - Myricks and Myricks - Fall River incl. the wharf - successor era, out of this layer's scope (B&P precedent).",
+   "Report blocks [8]-[11]: New Haven 1893-1959 South Braintree - Middleborough, 1893-1931 Middleborough - Myricks, 1893-1949 and 1952-1958 Myricks - Fall River, 1893-1932 [OPEN] Fall River Wharf - successor era, out of scope.",
+   "Report blocks [13]-[14]: Old Colony 1882-1893 and New Haven 1893-1904 [OPEN] on the Watuppa line - successor era, out of scope.",
+   "Freight after passenger service ended (Myricks - Middleborough 1931-1937, Watuppa line after c.1904, Fall River Secondary 1958-2025): Rule 1.",
+   "Fall River Line steamers (Fall River - New York): not rail.",
+   "Any Fall River Railroad feature over the New Bedford and Taunton, the Boston and Providence or the Old Colony main line into Boston: through running not established (UNRESOLVED 2 and 3)."
+  ],
+  "existing_layer_note": "No other layer drew this company. mbta_commuter_rail.geojson (Fall River/New Bedford Line, CapeFLYER) draws South Braintree - Middleborough from 1846/1848 in MBTA colour, and its Middleborough - Cotley Jct leg from 1846 to 1960; those are known defects listed in the research report's EXISTING LAYER CHECK and are left for a separate change - this layer does not edit them. During 1846-1854 the MBTA feature therefore overlaps this layer's South Braintree - Middleborough geometry.",
+  "not_yet_sourced": [
+   "All headways and average speeds are estimates; no Fall River Railroad timetable with times was read.",
+   "Union date of the three predecessor companies: 26 Mar 1845 (ICC 1931 via Nashua City Station; Wikipedia/Karr 'March 1845') vs 8 Aug 1845 (Wikipedia Old Colony, uncited). Under the later date the Fall River Branch Railroad would have run Fall River - Myricks in its own name June-Aug 1845; drawn as one company.",
+   "June 1845 - Dec 1846: how Fall River - Boston passengers travelled (change at Myricks to New Bedford & Taunton trains, or through cars) and who ran the trains on the stub.",
+   "1846-1854: whether Fall River RR crews/engines ran Fall River - Boston trains over the Old Colony from South Braintree, or the Old Colony hauled them (the company had its own timetable and conductors; the boat train was joint). Drawn only to South Braintree.",
+   "Boat train / wharf extension start: 19 May 1847 (Wikipedia Old Colony) vs October 1847 (Wikipedia Fall River station / Battleship Cove station citing Karr). Year firm.",
+   "Middleborough completion: 21 Dec 1846 (Wikipedia + two Dec 1846 newspapers) vs 16 Dec (Wikipedia Old Colony narrative) vs 31 Dec (Old Colony table / 1911 report). South Braintree - Randolph: 26 Aug vs 28 Aug 1846. Years firm.",
+   "Myricks - Middleborough opening: only 'mid-1846'; day not established.",
+   "Fall River - Myricks mileage: 10.8 mi (Wikipedia Old Colony table) vs ~8-9 mi implied by Fowler's cumulative figures (which come from two different Boston routes); trace 11.4 mi from Central Street.",
+   "Exact site of the 1845 Central Street depot, the temporary 1845 depot further north, and the 1847 wharf track: hand-pinned approximations on the present track.",
+   "Watuppa line (1874 company): operator 1875-1882 unresolved - the company itself, the New Bedford Railroad's lessees (BC&F / BCF&NB), or the Old Colony through the BCF&NB lease from 1879. Opening day 16 Dec 1875 is uncited (Wikipedia Old Colony table). Westport Historical Society's 1890s 'trolley replaced the railroad' conflicts with Fowler's 1893/96 and 1904 timetable letters (outside this layer's span)."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Fall River Railroad",
+    "line": "Fall River Railroad: Fall River \u2013 Myricks",
+    "id": "frr-fall-river-myricks-1845",
+    "color": "#A5A518",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1840s-1850s single-track steam; no Fall River Railroad timetable with running times was read (the Fall River Monitor's Nov 1846 'Winter Arrangement' is known only by citation in Wikipedia). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: Fall River Subdivision (old_railway_operator=NYNH&H), the razed 'Middleboro Branch' way 1077812727 (railway=razed, old_railway_operator=NYNH&H) for Myricks - Middleborough, and the Middleborough Main Line (old_railway_operator=NYNH&H) north of Middleborough.",
+    "geometry_quality": "Traced 11.4 mi Central Street depot - Myricks junction, no straight-line leg (opstrace: 11.1 mi on NYNH&H-tagged Fall River Subdivision, 0.3 mi untagged track at Myricks). Documented: 10.8 mi (Wikipedia Old Colony line table); Fowler's cumulative figures (Myrick's 41.9, Fall River Bowenville 49.8) imply only ~8-9 mi but are measured along two different Boston routes (line 94 via Middleborough, line 83 via the 1866 Dighton & Somerset route), and the straight-line distance Myricks - Bowenville is itself ~10.4 mi, so the WOC figure is the one to judge by: the trace is ~0.6 mi longer, of which ~0.4 mi is Bowenville - Central Street. LATER-ALIGNMENT NOTE (Fall River): the drawn track through downtown Fall River is the present Fall River Subdivision along the waterfront, rebuilt around the Route 79 / I-195 / Braga Bridge works of the 1960s; the 1845 line ran from a depot at the south end of the Central Street tunnel, and whether today's track keeps exactly that horizontal alignment is not verified. The Central Street depot is hand-pinned on the track at Central Street (41.7041, -71.1594); the September 1845 temporary depot further north is not drawn separately. Myricks end: the line is drawn to the present Fall River Subdivision junction with the New Bedford Main Line at Myricks; the 1845 connection was a crossing/junction with the New Bedford and Taunton at the same place.",
+    "segments": [
+     {
+      "start": 1845,
+      "end": 1846,
+      "headway_min": 240,
+      "note": "First piece of the Fall River Railroad, opened 9 June 1845 (Brooklyn Daily Eagle 5 Jun 1845 via Wikipedia; Wikipedia Fall River station, Freetown station, Old Colony line table) from Fall River to Myricks, where it met the New Bedford and Taunton Railroad. Run by the 'United Corporation' of the Fall River Branch RR, Middleborough RR and Randolph & Bridgewater RR (united 26 Mar 1845 per the ICC 1931 valuation via Nashua City Station; Wikipedia's Old Colony article says 8 Aug 1845 - conflict recorded in metadata), renamed Fall River Railroad 16 Apr 1846: the same company, so one colour. Until the line north to Middleborough and South Braintree opened in stages through 1846 this stub was the whole railroad; how passengers went on to Boston (change at Myricks to NB&T trains or through cars) is not established, so nothing is drawn over the NB&T or the Boston and Providence. Drawn 1845-1846; from 1847 this track is part of the through feature frr-fall-river-south-braintree (Fall River Wharf - South Braintree). The Central Street depot stayed the Fall River terminus until the wharf extension of 1847 (Oct 1847 per Wikipedia Fall River station / Karr; 19 May 1847 per Wikipedia Old Colony), so for part of 1847 the terminal was here rather than at the wharf. Headway is an estimate (perhaps 2-3 trains each way a day), not sourced.",
+      "sources": [
+       "Segment-level: opening date from Wikipedia 'Fall River Railroad (1846)' (citing Karr 2017 pp. 401-405 and the Brooklyn Daily Eagle 5 Jun 1845), Wikipedia 'Fall River station' and 'Freetown station'; operator and 1846 rename from Nashua City Station company pages (ICC 1931 valuation); Fowler's Southern New England (2) lines 83/94 letter x confirms Fall River, Assonet and Myrick's in the 1850 Pathfinder. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Fall_River_Railroad_(1846)",
+       "https://en.wikipedia.org/wiki/Fall_River_station",
+       "https://en.wikipedia.org/wiki/Freetown_station",
+       "https://nashuacitystation.org/history/united-corporation-of-the-middleborough-railroad-corporation-and-fall-river-branch-railroad-company-and-randolph-and-bridgewater-railroad-corporation/",
+       "https://nashuacitystation.org/history/fall-river-railroad-company-1846/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.159412,
+      41.704089
+     ],
+     [
+      -71.158485,
+      41.706761
+     ],
+     [
+      -71.156471,
+      41.710287
+     ],
+     [
+      -71.150378,
+      41.719743
+     ],
+     [
+      -71.149202,
+      41.720896
+     ],
+     [
+      -71.141366,
+      41.726591
+     ],
+     [
+      -71.139818,
+      41.72792
+     ],
+     [
+      -71.138742,
+      41.72946
+     ],
+     [
+      -71.136625,
+      41.734403
+     ],
+     [
+      -71.136043,
+      41.735416
+     ],
+     [
+      -71.135062,
+      41.736548
+     ],
+     [
+      -71.132669,
+      41.73863
+     ],
+     [
+      -71.129329,
+      41.742604
+     ],
+     [
+      -71.127123,
+      41.746249
+     ],
+     [
+      -71.123683,
+      41.753594
+     ],
+     [
+      -71.122654,
+      41.75644
+     ],
+     [
+      -71.121387,
+      41.75933
+     ],
+     [
+      -71.120348,
+      41.760716
+     ],
+     [
+      -71.116398,
+      41.763544
+     ],
+     [
+      -71.114292,
+      41.764597
+     ],
+     [
+      -71.108748,
+      41.766594
+     ],
+     [
+      -71.076931,
+      41.779032
+     ],
+     [
+      -71.074614,
+      41.780165
+     ],
+     [
+      -71.072497,
+      41.781517
+     ],
+     [
+      -71.060364,
+      41.792165
+     ],
+     [
+      -71.058559,
+      41.79428
+     ],
+     [
+      -71.055201,
+      41.799391
+     ],
+     [
+      -71.054337,
+      41.800283
+     ],
+     [
+      -71.040532,
+      41.810028
+     ],
+     [
+      -71.040012,
+      41.810505
+     ],
+     [
+      -71.027254,
+      41.82581
+     ],
+     [
+      -71.026758,
+      41.826996
+     ],
+     [
+      -71.026859,
+      41.828335
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Fall River Railroad",
+    "line": "Fall River Railroad: Myricks \u2013 South Braintree",
+    "id": "frr-myricks-south-braintree-1846",
+    "color": "#A5A518",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1840s-1850s single-track steam; no Fall River Railroad timetable with running times was read (the Fall River Monitor's Nov 1846 'Winter Arrangement' is known only by citation in Wikipedia). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: Fall River Subdivision (old_railway_operator=NYNH&H), the razed 'Middleboro Branch' way 1077812727 (railway=razed, old_railway_operator=NYNH&H) for Myricks - Middleborough, and the Middleborough Main Line (old_railway_operator=NYNH&H) north of Middleborough.",
+    "geometry_quality": "Traced 30.7 mi Myricks - South Braintree (Braintree station), no straight-line leg; documented 30.5 mi (Wikipedia Old Colony table, South Braintree - Myricks; Fowler 7.3 + 23.2 mi agrees). Myricks - Middleborough (7.4 mi traced vs 7.3 documented) follows the razed 'Middleboro Branch' way in OSM (railway=razed, old_railway_operator=NYNH&H) - the original line, abandoned 1937 - NOT the present Middleboro Secondary (the 1856 Middleborough and Taunton). Middleborough - South Braintree (23.3 mi traced vs 23.2 documented) follows the present MBTA Middleborough Main Line. LATER-ALIGNMENT NOTE: north of Middleborough the drawn track is the modern double-track line (second track Campello - Bridgewater 1884; Brockton grade-crossing elimination in the 1890s raised the line through the city) - same right-of-way, later structure. Middleborough end is hand-pinned on the track at the centre of town near the original Station Street depot; Lakeville (1st) is hand-pinned on the razed way 2.2 mi from Middleborough (Fowler's 36.8 - 34.6). South end: drawn to South Braintree station (today's Braintree station), so the last ~0.66 mi runs on the Old Colony main line north of the present junction; the 1846 junction was at South Braintree.",
+    "segments": [
+     {
+      "start": 1846,
+      "end": 1846,
+      "headway_min": 240,
+      "note": "Opening year of the Fall River Railroad's line north from Myricks. Myricks - Middleborough opened 'mid-1846' (Wikipedia Fall River Railroad (1846) and Middleborough station, Karr p. 403; day not established). From the South Braintree end, in three stages: South Braintree - Randolph 26 Aug 1846 (Fall River Monitor 29 Aug 1846 via Wikipedia; Wikipedia Braintree station - CONFLICT: Holbrook/Randolph station article says 28 Aug), Randolph - North Bridgewater (Brockton) 'by October' 1846 (Fall River Monitor 14 Nov 1846 'Winter Arrangement'), North Bridgewater - Middleborough 21 Dec 1846 (Fall River Monitor 26 Dec 1846, Herald of the Times 24 Dec 1846 - CONFLICT: 16 Dec in Wikipedia Old Colony narrative, 31 Dec in its table / the 1911 Mass. report). So in 1846 not all of this line was open all year - drawn as one feature because every piece opened in 1846 and the map resolves years. From 1847 it is part of the through feature frr-fall-river-south-braintree. Trains used the Old Colony from South Braintree into Boston; whether Fall River RR crews/engines ran over the Old Colony is not established, so this feature stops at South Braintree. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: opening dates from Wikipedia 'Fall River Railroad (1846)' (Karr 2017 pp. 401-405 and the 1846 Fall River Monitor and Herald of the Times items it cites), 'Middleborough station' (Karr p. 403), 'Braintree station (MBTA)', 'Holbrook/Randolph station', 'Brockton station (MBTA)', 'Bridgewater station (MBTA)', 'Campello station'. Day-level conflicts recorded in the note; year firm. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Fall_River_Railroad_(1846)",
+       "https://en.wikipedia.org/wiki/Middleborough_station",
+       "https://en.wikipedia.org/wiki/Braintree_station_(MBTA)",
+       "https://en.wikipedia.org/wiki/Holbrook/Randolph_station",
+       "https://en.wikipedia.org/wiki/Brockton_station_(MBTA)",
+       "https://en.wikipedia.org/wiki/Bridgewater_station_(MBTA)",
+       "https://en.wikipedia.org/wiki/Campello_station",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.028106,
+      41.830414
+     ],
+     [
+      -71.028465,
+      41.831327
+     ],
+     [
+      -71.028449,
+      41.832215
+     ],
+     [
+      -71.027941,
+      41.833374
+     ],
+     [
+      -71.027006,
+      41.83437
+     ],
+     [
+      -71.02515,
+      41.835992
+     ],
+     [
+      -70.999701,
+      41.855933
+     ],
+     [
+      -70.99762,
+      41.856966
+     ],
+     [
+      -70.996048,
+      41.857447
+     ],
+     [
+      -70.98018,
+      41.859845
+     ],
+     [
+      -70.977144,
+      41.860564
+     ],
+     [
+      -70.973343,
+      41.862056
+     ],
+     [
+      -70.921047,
+      41.88799
+     ],
+     [
+      -70.920401,
+      41.888464
+     ],
+     [
+      -70.919849,
+      41.889242
+     ],
+     [
+      -70.919339,
+      41.890449
+     ],
+     [
+      -70.919125,
+      41.891513
+     ],
+     [
+      -70.919361,
+      41.893444
+     ],
+     [
+      -70.921658,
+      41.900502
+     ],
+     [
+      -70.922757,
+      41.903359
+     ],
+     [
+      -70.959464,
+      41.977068
+     ],
+     [
+      -70.961201,
+      41.979986
+     ],
+     [
+      -70.962854,
+      41.982223
+     ],
+     [
+      -70.975202,
+      41.995004
+     ],
+     [
+      -70.976763,
+      41.996786
+     ],
+     [
+      -70.978524,
+      41.999206
+     ],
+     [
+      -70.979899,
+      42.001646
+     ],
+     [
+      -70.980584,
+      42.003691
+     ],
+     [
+      -70.981253,
+      42.009664
+     ],
+     [
+      -70.98114,
+      42.019472
+     ],
+     [
+      -70.98278,
+      42.028496
+     ],
+     [
+      -70.983091,
+      42.029626
+     ],
+     [
+      -70.98363,
+      42.030814
+     ],
+     [
+      -70.984933,
+      42.03264
+     ],
+     [
+      -71.012687,
+      42.062868
+     ],
+     [
+      -71.013441,
+      42.06405
+     ],
+     [
+      -71.013879,
+      42.065041
+     ],
+     [
+      -71.016022,
+      42.072889
+     ],
+     [
+      -71.016289,
+      42.076279
+     ],
+     [
+      -71.016978,
+      42.098232
+     ],
+     [
+      -71.017957,
+      42.100762
+     ],
+     [
+      -71.0227,
+      42.107551
+     ],
+     [
+      -71.023348,
+      42.108752
+     ],
+     [
+      -71.023886,
+      42.110303
+     ],
+     [
+      -71.027456,
+      42.126256
+     ],
+     [
+      -71.027533,
+      42.12792
+     ],
+     [
+      -71.026964,
+      42.136294
+     ],
+     [
+      -71.027,
+      42.137824
+     ],
+     [
+      -71.027489,
+      42.14024
+     ],
+     [
+      -71.02891,
+      42.143803
+     ],
+     [
+      -71.029243,
+      42.144981
+     ],
+     [
+      -71.029535,
+      42.147097
+     ],
+     [
+      -71.029418,
+      42.149859
+     ],
+     [
+      -71.028692,
+      42.152817
+     ],
+     [
+      -71.019199,
+      42.177895
+     ],
+     [
+      -71.018711,
+      42.178701
+     ],
+     [
+      -71.017646,
+      42.179916
+     ],
+     [
+      -71.008264,
+      42.186755
+     ],
+     [
+      -71.007218,
+      42.187781
+     ],
+     [
+      -71.006519,
+      42.188858
+     ],
+     [
+      -71.006058,
+      42.19019
+     ],
+     [
+      -71.005191,
+      42.194602
+     ],
+     [
+      -71.004689,
+      42.198362
+     ],
+     [
+      -71.004278,
+      42.199344
+     ],
+     [
+      -71.002947,
+      42.20133
+     ],
+     [
+      -71.002385,
+      42.202545
+     ],
+     [
+      -71.00143,
+      42.207507
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Fall River Railroad",
+    "line": "Fall River Railroad: Fall River \u2013 South Braintree",
+    "id": "frr-fall-river-south-braintree",
+    "color": "#A5A518",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 32,
+    "speed_source": "estimated: 1840s-1850s single-track steam; no Fall River Railroad timetable with running times was read (the Fall River Monitor's Nov 1846 'Winter Arrangement' is known only by citation in Wikipedia). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16), routed with opstrace.py: Fall River Subdivision (old_railway_operator=NYNH&H), the razed 'Middleboro Branch' way 1077812727 (railway=razed, old_railway_operator=NYNH&H) for Myricks - Middleborough, and the Middleborough Main Line (old_railway_operator=NYNH&H) north of Middleborough.",
+    "geometry_quality": "Traced 42.6 mi Fall River Wharf - South Braintree, no straight-line leg (opstrace: 42.6 mi NYNH&H-tagged track incl. the razed Middleboro Branch, 0.3 mi untagged at Myricks). Documented: wharf - Central St ~0.4 mi (traced 0.37) + Fall River - Myricks 10.8 mi (WOC; traced 11.4 from Central St) + Myricks - South Braintree 30.5 mi (WOC/Fowler; traced 30.7) = ~41.7 mi; fit within ~2%. Myricks - Middleborough is the razed original line (OSM railway=razed 'Middleboro Branch', abandoned 1937), NOT the 1856 Middleborough & Taunton / modern Middleboro Secondary. LATER-ALIGNMENT NOTE (Fall River): the drawn track through downtown Fall River is the present Fall River Subdivision along the waterfront, rebuilt around the Route 79 / I-195 / Braga Bridge works of the 1960s; the 1845 line ran from a depot at the south end of the Central Street tunnel, and whether today's track keeps exactly that horizontal alignment is not verified. The Central Street depot is hand-pinned on the track at Central Street (41.7041, -71.1594); the September 1845 temporary depot further north is not drawn separately. Fall River Wharf (the Fall River Line steamboat landing) is hand-pinned on the present track 0.37 mi south-west of Central Street (41.7012, -71.1645), placed by Fowler's mileage (Bowenville 49.8 -> Wharf 50.8); the exact 1847 wharf track is not verified. LATER-ALIGNMENT NOTE north of Middleborough as in frr-myricks-south-braintree (modern MBTA double track; 1884 second track; 1890s Brockton elevation). South end drawn to South Braintree station (today's Braintree), last ~0.66 mi on the Old Colony main line north of the present junction.",
+    "segments": [
+     {
+      "start": 1847,
+      "end": 1854,
+      "headway_min": 180,
+      "note": "The Fall River Railroad as a through route Fall River - Myricks - Middleborough - South Braintree, completed 21 Dec 1846, built so Fall River had a direct line to Boston that bypassed Taunton and the Boston and Providence (Wikipedia Old Colony). From 1847 the line ran on from the Central Street depot to Fall River Wharf, the landing for the Fall River Line steamers to New York; the Boston - Fall River boat train was run jointly 'by the Fall River and Old Colony' and the Central Street station then closed (Wikipedia Fall River station and Battleship Cove station, citing Karr p. 403: October 1847; Wikipedia Old Colony: first boat train 19 May 1847 - CONFLICT, year firm). The steamboat is not rail and is not drawn. The 1850 Pathfinder (Fowler letter x) lists Fall River, Assonet, Myrick's, Haskins (Lakeville), Middleboro, Titicut, East & West Bridgewater, Keith's Furnace, Plain Village, North Bridgewater, East Stoughton and Randolph; a Newport paper of 1851 names 'a conductor on the Fall River Railroad', so the company ran its own trains. Ends 1854: the Fall River Railroad consolidated with the Old Colony Railroad as the Old Colony and Fall River Railroad (stockholder vote 20 Jun 1854 per Wikipedia Old Colony; effective 30 Sep 1854 per ICC via Nashua City Station). Passenger service continued under the Old Colony and later the New Haven; those eras are not drawn in this layer. Headway is an estimate (a few through trains each way a day plus the boat train), not sourced.",
+      "sources": [
+       "Segment-level: through-route completion and 1847 wharf extension from Wikipedia 'Fall River Railroad (1846)' (Karr 2017 pp. 401-405), 'Fall River station' and 'Battleship Cove station' (Karr p. 403) and 'Old Colony Railroad' (conflicting month); 1854 consolidation from Nashua City Station (ICC 1931) and Wikipedia 'Old Colony Railroad'; Fowler line 92/94/83 letter x (1850 Pathfinder); Herald of the Times 9 Oct 1851. Fowler's wharf station letters (z a b c) begin only in 1893, so the wharf in 1847-1854 rests on the Wikipedia/Karr narrative. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Fall_River_Railroad_(1846)",
+       "https://en.wikipedia.org/wiki/Fall_River_station",
+       "https://en.wikipedia.org/wiki/Battleship_Cove_station",
+       "https://en.wikipedia.org/wiki/Old_Colony_Railroad",
+       "https://nashuacitystation.org/history/fall-river-railroad-company-1846/",
+       "https://nashuacitystation.org/history/old-colony-and-fall-river-railroad-company/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+       "http://www.loc.gov/resource/sn83021169/1851-10-09/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.164638,
+      41.70101
+     ],
+     [
+      -71.161429,
+      41.70228
+     ],
+     [
+      -71.15977,
+      41.703578
+     ],
+     [
+      -71.159242,
+      41.704396
+     ],
+     [
+      -71.158485,
+      41.706761
+     ],
+     [
+      -71.156471,
+      41.710287
+     ],
+     [
+      -71.151038,
+      41.71881
+     ],
+     [
+      -71.150098,
+      41.720063
+     ],
+     [
+      -71.149034,
+      41.721023
+     ],
+     [
+      -71.141027,
+      41.726845
+     ],
+     [
+      -71.140049,
+      41.727679
+     ],
+     [
+      -71.139304,
+      41.728531
+     ],
+     [
+      -71.138683,
+      41.729581
+     ],
+     [
+      -71.136625,
+      41.734403
+     ],
+     [
+      -71.136043,
+      41.735416
+     ],
+     [
+      -71.135062,
+      41.736548
+     ],
+     [
+      -71.132669,
+      41.73863
+     ],
+     [
+      -71.130325,
+      41.741335
+     ],
+     [
+      -71.129329,
+      41.742604
+     ],
+     [
+      -71.127696,
+      41.74522
+     ],
+     [
+      -71.123683,
+      41.753594
+     ],
+     [
+      -71.122654,
+      41.75644
+     ],
+     [
+      -71.121387,
+      41.75933
+     ],
+     [
+      -71.120348,
+      41.760716
+     ],
+     [
+      -71.116398,
+      41.763544
+     ],
+     [
+      -71.114292,
+      41.764597
+     ],
+     [
+      -71.108748,
+      41.766594
+     ],
+     [
+      -71.076931,
+      41.779032
+     ],
+     [
+      -71.07419,
+      41.780411
+     ],
+     [
+      -71.071574,
+      41.782231
+     ],
+     [
+      -71.060364,
+      41.792165
+     ],
+     [
+      -71.058559,
+      41.79428
+     ],
+     [
+      -71.055201,
+      41.799391
+     ],
+     [
+      -71.054337,
+      41.800283
+     ],
+     [
+      -71.040532,
+      41.810028
+     ],
+     [
+      -71.038953,
+      41.811696
+     ],
+     [
+      -71.027028,
+      41.826208
+     ],
+     [
+      -71.026719,
+      41.827331
+     ],
+     [
+      -71.026952,
+      41.8286
+     ],
+     [
+      -71.027438,
+      41.82941
+     ],
+     [
+      -71.027868,
+      41.830035
+     ],
+     [
+      -71.0284,
+      41.831048
+     ],
+     [
+      -71.028498,
+      41.831668
+     ],
+     [
+      -71.028337,
+      41.832591
+     ],
+     [
+      -71.027747,
+      41.833618
+     ],
+     [
+      -71.02515,
+      41.835992
+     ],
+     [
+      -71.00115,
+      41.854902
+     ],
+     [
+      -70.999701,
+      41.855933
+     ],
+     [
+      -70.998736,
+      41.85646
+     ],
+     [
+      -70.99762,
+      41.856966
+     ],
+     [
+      -70.996048,
+      41.857447
+     ],
+     [
+      -70.98018,
+      41.859845
+     ],
+     [
+      -70.977144,
+      41.860564
+     ],
+     [
+      -70.973343,
+      41.862056
+     ],
+     [
+      -70.921047,
+      41.88799
+     ],
+     [
+      -70.920491,
+      41.888376
+     ],
+     [
+      -70.920069,
+      41.888883
+     ],
+     [
+      -70.919339,
+      41.890449
+     ],
+     [
+      -70.919113,
+      41.891705
+     ],
+     [
+      -70.919315,
+      41.893279
+     ],
+     [
+      -70.921658,
+      41.900502
+     ],
+     [
+      -70.922757,
+      41.903359
+     ],
+     [
+      -70.959464,
+      41.977068
+     ],
+     [
+      -70.961201,
+      41.979986
+     ],
+     [
+      -70.962854,
+      41.982223
+     ],
+     [
+      -70.975202,
+      41.995004
+     ],
+     [
+      -70.976763,
+      41.996786
+     ],
+     [
+      -70.978524,
+      41.999206
+     ],
+     [
+      -70.979899,
+      42.001646
+     ],
+     [
+      -70.980584,
+      42.003691
+     ],
+     [
+      -70.981253,
+      42.009664
+     ],
+     [
+      -70.98114,
+      42.019472
+     ],
+     [
+      -70.98278,
+      42.028496
+     ],
+     [
+      -70.983547,
+      42.030659
+     ],
+     [
+      -70.984933,
+      42.03264
+     ],
+     [
+      -71.012687,
+      42.062868
+     ],
+     [
+      -71.013441,
+      42.06405
+     ],
+     [
+      -71.013879,
+      42.065041
+     ],
+     [
+      -71.016022,
+      42.072889
+     ],
+     [
+      -71.016289,
+      42.076279
+     ],
+     [
+      -71.016978,
+      42.098232
+     ],
+     [
+      -71.017957,
+      42.100762
+     ],
+     [
+      -71.0227,
+      42.107551
+     ],
+     [
+      -71.023348,
+      42.108752
+     ],
+     [
+      -71.023886,
+      42.110303
+     ],
+     [
+      -71.027456,
+      42.126256
+     ],
+     [
+      -71.027533,
+      42.12792
+     ],
+     [
+      -71.026964,
+      42.136294
+     ],
+     [
+      -71.027,
+      42.137824
+     ],
+     [
+      -71.027489,
+      42.14024
+     ],
+     [
+      -71.02891,
+      42.143803
+     ],
+     [
+      -71.029243,
+      42.144981
+     ],
+     [
+      -71.029535,
+      42.147097
+     ],
+     [
+      -71.029418,
+      42.149859
+     ],
+     [
+      -71.028692,
+      42.152817
+     ],
+     [
+      -71.019199,
+      42.177895
+     ],
+     [
+      -71.018711,
+      42.178701
+     ],
+     [
+      -71.017646,
+      42.179916
+     ],
+     [
+      -71.008264,
+      42.186755
+     ],
+     [
+      -71.007218,
+      42.187781
+     ],
+     [
+      -71.006519,
+      42.188858
+     ],
+     [
+      -71.006058,
+      42.19019
+     ],
+     [
+      -71.005191,
+      42.194602
+     ],
+     [
+      -71.004689,
+      42.198362
+     ],
+     [
+      -71.004278,
+      42.199344
+     ],
+     [
+      -71.002947,
+      42.20133
+     ],
+     [
+      -71.002385,
+      42.202545
+     ],
+     [
+      -71.00143,
+      42.207507
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Fall River Railroad, Watuppa line",
+    "line": "Fall River Railroad, Watuppa line: New Bedford \u2013 Fall River",
+    "id": "frr1874-watuppa-new-bedford-fall-river",
+    "color": "#1CBF7E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1870s single-track steam branch; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-16): Dartmouth Industrial Track (old_railway_operator=NYNH&H) New Bedford - Westport, Quequechan Rail Trail (abandoned railway, old_railway_operator=NYNH&H) in Fall River; OpenHistoricalMap (overpass-api.openhistoricalmap.org, 2026-10-16) way 198541923 'Fall River and New Bedford Railroad' for the lifted Westport - Fall River stretch. Routed with opstrace.py.",
+    "geometry_quality": "Traced 12.2 mi New Bedford junction - Watuppa, no straight-line leg; documented 13.4 mi (Fowler line 75, measured from New Bedford station, i.e. including ~1 mi of the New Bedford main line south of the junction, which is not this company's track) and 12.4 mi (Wikipedia Old Colony table) - fit within ~2% of the latter. East ~9 mi (junction - Westport) is the surviving Dartmouth Industrial Track; the lifted ~3.5 mi Westport - Flint Village - Fall River stretch is OpenHistoricalMap way 198541923 ('Fall River and New Bedford Railroad', a hand-traced historical grade; its OHM start_date is clearly wrong and was ignored), joined to the Quequechan Rail Trail on the old grade in Fall River. Junction end hand-pinned where the industrial track leaves the New Bedford Main Line (41.6606, -70.9343), ~1 km north of the report's 'Junction Switch near Weld St'; Watuppa terminus hand-pinned at Plymouth Avenue (41.6976, -71.1470). Station geocodes for North Dartmouth and Westport Factory returned village centroids 2-3 km off the line and were not used as waypoints.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1882,
+      "headway_min": 300,
+      "note": "Line of the second, unrelated Fall River Railroad Company (incorporated 19 Nov 1874 per ICC via Nashua City Station), built from the New Bedford Railroad near New Bedford west through Dartmouth and Westport to Watuppa in eastern Fall River to serve the Quequechan valley mills. Opened 1875: 16 Dec 1875 per the Wikipedia Old Colony table (uncited); 'opened in 1875' Wikipedia Watuppa Branch; Westport Historical Society likewise. The 1881 Pathfinder lists the line under the Fall River RR name (Fowler line 75, letter p4) - the only dated timetable proof inside this era; no 1876 Pathfinder entry (no letter y). Ends 1882: Old Colony 99-year lease (Wikipedia Old Colony, Watuppa Branch); the Old Colony and New Haven eras (1882-1893, 1893-c.1904) are not drawn in this layer. OPERATOR NOT ESTABLISHED: the 1874 company owned the line, but no source says it ran the trains - it may have been worked by the New Bedford Railroad's lessee (Boston, Clinton & Fitchburg 1874/75-76, BCF&NB 1876-79) or by the Old Colony through the BCF&NB lease from 1879. This feature is coloured for the owning company until a source settles it; recolour or split if one does. Westport Historical Society's 'electric trolley replaced the steam railroad in the 1890s' refers to a parallel street railway and conflicts with Fowler's 1893/96 and 1904 letters; outside this span either way. Headway is an estimate, not sourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the operator 1875-1882 is unresolved. Years: opening from Wikipedia 'Old Colony Railroad' line table (uncited), Wikipedia 'Watuppa Branch' and the Westport Historical Society; 1881 Pathfinder via Fowler line 75 letter p4; incorporation from Nashua City Station (ICC 1931); 1882 lease from Wikipedia. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Watuppa_Branch",
+       "https://en.wikipedia.org/wiki/Old_Colony_Railroad",
+       "https://wpthistory.org/2003/10/watuppa_railroad_line/",
+       "https://nashuacitystation.org/history/fall-river-railroad-company-1874/",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.93432,
+      41.660612
+     ],
+     [
+      -70.934974,
+      41.661315
+     ],
+     [
+      -70.936664,
+      41.662372
+     ],
+     [
+      -70.938769,
+      41.662972
+     ],
+     [
+      -70.94023,
+      41.663132
+     ],
+     [
+      -70.990622,
+      41.659066
+     ],
+     [
+      -71.080086,
+      41.662542
+     ],
+     [
+      -71.08185,
+      41.662685
+     ],
+     [
+      -71.083736,
+      41.663144
+     ],
+     [
+      -71.086247,
+      41.664171
+     ],
+     [
+      -71.087353,
+      41.664911
+     ],
+     [
+      -71.108244,
+      41.677011
+     ],
+     [
+      -71.110566,
+      41.678062
+     ],
+     [
+      -71.113704,
+      41.678884
+     ],
+     [
+      -71.115883,
+      41.679313
+     ],
+     [
+      -71.123677,
+      41.68009
+     ],
+     [
+      -71.125937,
+      41.68009
+     ],
+     [
+      -71.129235,
+      41.679761
+     ],
+     [
+      -71.131938,
+      41.679661
+     ],
+     [
+      -71.133572,
+      41.680047
+     ],
+     [
+      -71.135215,
+      41.680864
+     ],
+     [
+      -71.135686,
+      41.681244
+     ],
+     [
+      -71.136967,
+      41.682974
+     ],
+     [
+      -71.138369,
+      41.685901
+     ],
+     [
+      -71.138821,
+      41.687419
+     ],
+     [
+      -71.141297,
+      41.690167
+     ],
+     [
+      -71.147314,
+      41.69623
+     ],
+     [
+      -71.147744,
+      41.6969
+     ],
+     [
+      -71.147893,
+      41.69743
+     ],
+     [
+      -71.147118,
+      41.69796
+     ]
+    ]
+   }
+  }
+ ]
+}
