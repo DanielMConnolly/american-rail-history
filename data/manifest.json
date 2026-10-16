@@ -404,7 +404,8 @@
   "woodstock_railway.geojson",
   "ymv_baton_rouge.geojson",
   "ymv_memphis_vicksburg.geojson",
-  "youngstown_railroads.geojson"
+  "youngstown_railroads.geojson",
+  "sonoma_marin_area_rail_transit.geojson"
  ],
  "stations": [
   "stations/amtrak.geojson"
