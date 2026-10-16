@@ -1482,7 +1482,7 @@
     "company": "Concord and Montreal Railroad",
     "line": "Concord and Montreal: Pemigewasset Valley Branch",
     "id": "pv-cm-plymouth-north-woodstock",
-    "color": "#5c7aa8",
+    "color": "#5E7D3A",
     "mode": "intercity_rail",
     "avg_speed_kmh": 30,
     "speed_source": "estimated: 1880s-1890s steam branch line, ~21 mi; not computed from any timetable (Rule 3)",
