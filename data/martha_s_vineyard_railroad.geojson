@@ -1,0 +1,719 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Martha's Vineyard Railroad ran a 3 ft gauge, steam-worked, summer-only line of about 9 mi from the Oak Bluffs (Cottage City) steamer wharf along the barrier beach to Edgartown and on to Katama, with a ~0.5 mi extension to South Beach, 1874-1896. Rule 4 splits it into operator eras sharing identical geometry: Martha's Vineyard Railroad Co. 1874-1889; the Old Colony interest 1890-1895 (in the Old Colony Railroad's existing colour); Joseph M. Wardwell's 1896 season, run under the Martha's Vineyard Railroad name and drawn in the original company's colour. Research report: research/branches/martha_s_vineyard_railroad.txt.",
+  "sources": [
+   "WMV - Wikipedia, Martha's Vineyard Railroad (cites Page 2009, Hilton 1990, Vineyard Gazette 16 Jul 1896): https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad",
+   "MVM - Martha's Vineyard Museum, Finding Aid RU 117, Martha's Vineyard Railroad Collection: https://mvmuseum.org/fa_pdfs/RU%20117--Railroad.pdf",
+   "MVM6 - MV Magazine, 'Six historic tales', 1 May 2010: https://mvmagazine.com/news/2010/05/01/six-historic-tales",
+   "MVMR - MV Magazine, 'Relics, ruins and remnants', 1 Dec 2007: https://mvmagazine.com/news/2007/12/01/relics-ruins-and-remnants",
+   "VG09 - Vineyard Gazette, 'Martha's Vineyard Railroad Had a Very Short Ride', 3 Sep 2009: https://vineyardgazette.com/arts-entertainment/art/2009/09/03/marthas-vineyard-railroad-had-very-short-ride/",
+   "VG13 - Vineyard Gazette, Oak Bluffs town column, 11 Apr 2013: https://vineyardgazette.com/towns/oak-bluffs/2013/04/11/oak-bluffs-town-column-april-12/",
+   "VG74 - Vineyard Gazette, 28 Aug 1874, 'The Trial Trip': https://vineyardgazette.com/news/1874/08/28/trial-trip/",
+   "VG90 - Vineyard Gazette, 27 Jun 1890, 'Old Colony Assumes Control': https://vineyardgazette.com/news/1890/06/27/old-colony-assumes-control-marthas-vineyard-railroad-taken-possession/",
+   "VG96 - Vineyard Gazette, 16 Jul 1896, 'The Vineyard Railroad': https://vineyardgazette.com/news/1896/07/16/vineyard-railroad/",
+   "VG21 - Vineyard Gazette, 27 Jan 1921, 'When the Island Echoed to the Locomotive's Whistle': https://vineyardgazette.com/news/1921/01/27/when-island-echoed-locomotives-whistle/",
+   "PN92 - The Providence News, 21 May 1892 p.7: https://www.loc.gov/resource/sn91070630/1892-05-21/ed-1/?sp=7",
+   "SWR92 - Springfield Weekly Republican, 30 Sep 1892 p.5: https://www.loc.gov/resource/sn83020847/1892-09-30/ed-1/?sp=5",
+   "RV91 - The Record-Visitor (Pawtucket RI), 12 Aug 1891 p.2: https://www.loc.gov/resource/sn92064065/1891-08-12/ed-1/?sp=2",
+   "NYT93 - New-York Tribune, 1 Aug 1893 p.1: https://www.loc.gov/resource/sn83030214/1893-08-01/ed-1/?sp=1",
+   "PRN96 - The Providence News, 14 Jul 1896 p.1; Foster's Daily Democrat, 15 Jul 1896 p.2: https://www.loc.gov/resource/sn91070630/1896-07-14/ed-1/?sp=1 ; https://www.loc.gov/resource/sn84023058/1896-07-15/ed-1/?sp=2",
+   "NH96 - Narragansett Herald, 15 Aug 1896 p.1; Essex County Herald, 14 Aug 1896 p.1: https://www.loc.gov/resource/sn92063989/1896-08-15/ed-1/?sp=1 ; https://www.loc.gov/resource/sn84023416/1896-08-14/ed-1/?sp=1"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap route relation 14523218 and its member ways (Overpass, maps.mail.ru mirror, OSM base 2026-10-16T16:03:56Z)",
+   "OpenHistoricalMap (queried, nothing on the island)"
+  ],
+  "colour_choice": "Martha's Vineyard Railroad: #BF56AA, new; checked programmatically against every colour in data/ (none equal; chosen for the largest RGB distance from all of them). Old Colony era: #2F6F9F, pulled from the existing 'Old Colony Railroad' features in boston_clinton_fitchburg_and_new_bedford_railroad.geojson (the only Old Colony company string in data/).",
+  "ownership_split": "Split at June 1890 (Old Colony general manager takes possession for the OC-held mortgage bonds, VG90) and at 1896 (Wardwell, 'new management', VG96/NH96). Not split: the 1877 creditor operation (same company, same trains), and the 1 Mar 1893 New Haven lease of the Old Colony (no source shows it changed who ran the island trains).",
+  "rule_notes": "Rule 1: no freight-only years; rails were salvaged after the 1896 closure (VG13, VG21). Rule 5: steam from the first train (22 Aug 1874), nothing to trim. Out of scope, not drawn: Oak Bluffs' separate street railways (Cottage City Street Railway, horse railroad from 1871/1873, electrified from ~1895; Martha's Vineyard Street Railway etc., closed 1917) - a future layer must start at electrification. Rule 9: inside the contiguous-US bounds.",
+  "not_yet_sourced": [
+   "End of 1896: the exact last day of service, and whether the Railroad Commissioners' threatened injunction (VG96, PRN96) cut the season short, are not established. No source suggests 1897 trains.",
+   "Wardwell's purchase date: plausibly the 31 Oct 1895 public auction (VG13), but that is inference; VG21 says only 'after twenty years of trial'. Name spelled 'Wardell' in WMV; 'of Edgartown' (VG96) vs 'of Bristol, R.I.' (VG21).",
+   "1890 vs 1892 for the Old Colony split: drawn at the June 1890 possession (VG90); a conservative reading would split at the 21 May 1892 purchase (PN92). Also unresolved: whether the island road passed to New Haven control with the 1 Mar 1893 Old Colony lease or stayed with the Old Colony Steamboat Co.",
+   "Mileage conflict: 9 mi (WMV text, MVM, MVMR, VG21) vs 'about twelve miles' (PN92) vs 14 mi at South Beach (WMV route map). Trace: 8.46 mi main + 0.33 mi spur = 8.79 mi, supporting the 9 mi figure.",
+   "South Beach extension opening 1876 rests on one secondary source (WMV citing Page 2009).",
+   "1894 has no direct citation; inferred continuous between 1893 (NYT93) and 1895 (VG13). Length of the 31 Jul 1893 boiler-failure suspension unknown.",
+   "Headway: VG21 'hourly' vs VG13 'seven times daily 6:50 a.m. - 8:50 p.m.'; headway_min 60 is an estimate. avg_speed_kmh is an estimate.",
+   "Charter year 1872 (MVM) vs 1874 (WMV); does not affect the drawn years.",
+   "Not consulted: Herman Page, Rails Across Martha's Vineyard (2009), the authoritative book, which would likely settle the end date, Wardwell purchase, OC split and 1876 extension; and John Fowler's branchline.uk Massachusetts station list."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Martha's Vineyard Railroad",
+    "line": "Martha's Vineyard Railroad: Oak Bluffs – Katama",
+    "id": "mvrr-oak-bluffs-katama",
+    "color": "#BF56AA",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: ~8.5 mi steam 3 ft gauge resort line with one locomotive; VG21's hourly service between terminals implies a single train's round trip in about an hour, i.e. roughly 15-25 km/h. No timetable with running times was read.",
+    "gauge": "3 ft",
+    "traction": "steam",
+    "geometry_source": "OpenStreetMap route relation 14523218 ('Martha's Vineyard Railroad', route=railway, railway=razed, from Oak Bluffs to Katama; relation source tag: massrods.com Dukes County Railroad.pdf), member ways pulled with way(r) from the maps.mail.ru Overpass mirror (OSM base 2026-10-16T16:03:56Z; an overpass.kumi.systems copy dated 2026-06-01 was stale and discarded), including the railway=demolished way 1321959007. Assembled as a Dijkstra shortest path over the relation's own ways (no dangling-end snaps were needed), simplified with opstrace douglas_peucker(8 m) + trim_reversals. Also checked: a bbox query for railway~abandoned|demolished|razed found 3 extra MVRR ways (1551432914/16, 1551856454), all already relation members; opstrace fetch_operator_ways found no old_railway_operator ways on the island; opstrace fetch_gap found only nature-trail paths in OSM and nothing in OpenHistoricalMap (41.30,-70.65,41.48,-70.45).",
+    "geometry_quality": "Traced 8.46 mi Oak Bluffs - Katama, against ~8.5 mi derived (the majority 9 mi total in WMV, MVM, MVMR and VG21, minus the ~0.5 mi South Beach extension; main + traced spur = 8.79 mi vs 9 mi, -2%). CONFLICTING figures: PN92 'about twelve miles' (trace is 27% short of it) and the WMV route map's 14 mi at South Beach (37% short); the trace supports 9 mi. RV91's 'five miles' Cottage City - Edgartown checks against the drawn Edgartown Depot site at mp 5.46. No straight-line legs: the whole line follows OSM ways. About 7.26 mi follow ways mapped as the railway itself (railway=razed/demolished, name 'Martha's Vineyard Railroad'); about 1.21 mi follow modern roads, footways and driveways that the relation's mapper put on the grade (Cow Bay Road, Golf Club Road, Long Hill Road, Norton Orchard Road and Middle Street in Edgartown; footways at the Oak Bluffs end) - those are later ways standing in for the roadbed, approximately on it. BEACH STRETCH APPROXIMATED, roughly mp 0.6 - 3.5 (~2.9 mi), along the barrier beach between Sengekontacket Pond and Nantucket Sound (today's Beach Road / Joseph Sylvia State Beach corridor; the geocoded State Beach lies 62 m from the line): the 1874-96 roadbed there has been washed over and rebuilt many times (MVMR), so the drawn line is an approximation of where the track ran, not a survey of it. OAK BLUFFS END: drawn to the north end of the mapped grade, about 35 m from the steamer wharf; the wharf area (and the railroad's wye) burned on 24 Sep 1892 (SWR92, WMV, MVM) and has been rebuilt since, so the terminal is a later site than the line's era, approximately in place. KATAMA END: drawn to the east end of the mapped grade near the Mattakeset Lodge site (geocoded Katama hamlet 124 m off). Excluded: two unnamed railway=razed service=spur ways (1090638056/57) taken to be the Katama wye/yard tracks, the closed 'Depot Market' outline (212975466) and the parallel Katama Drive member (1090638055). The same geometry is drawn for 1874-1896; the post-1892 loss of the wye changed how trains ran (backwards Oak Bluffs - Katama), not the alignment.",
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1889,
+      "headway_min": 60,
+      "note": "Martha's Vineyard Railroad Company, 3 ft gauge steam, Oak Bluffs (Cottage City) steamer wharf - Edgartown Depot (Main St at Pine St) - Mattakeset Lodge, Katama. Opened with the first locomotive trip on Saturday 22 Aug 1874, Porter 0-6-0 'Active' running Katama - Edgartown - Oak Bluffs and back (VG74, contemporaneous: it 'opened a season for the road'); a steam dummy's trial on 5 Aug 1874 failed at the first tight curve and is not shown to have carried passengers (MVM6, WMV). Ends 1889, the last full season before J. R. Kendrick, the Old Colony Railroad's general manager, took possession in June 1890 for Old Colony-aligned mortgage trustees (VG90) - see the Old Colony feature. WMV says operation was 'temporarily turned over to the principal debt holders' in 1877: creditors running the same company's trains, so not split. Summer-only: no source shows any winter service; the drawn year means the summer season only. headway_min 60 is an ESTIMATE for the summer season: VG21 (1921 retrospective) says trains 'ran hourly between its terminal points' for the greater part of the day, while VG13 (2013, undated figure) gives 'seven times daily from 6:50 a.m. to 8:50 p.m.' (~120 min). The sources disagree. Fares (VG21): 35c Edgartown - Oak Bluffs; 50c Oak Bluffs - Katama round trip with clambake. Steam from the first train, so no animal-power years.",
+      "sources": [
+       "Segment-level: start 22 Aug 1874 from VG74 (contemporaneous Vineyard Gazette), with MVM6 and VG21; end 1889 from VG90 (Old Colony took possession June 1890); hourly service from VG21 (1921 retrospective). The headway is an estimate. Herman Page, Rails Across Martha's Vineyard (2009), not consulted.",
+       "https://vineyardgazette.com/news/1874/08/28/trial-trip/",
+       "https://vineyardgazette.com/news/1890/06/27/old-colony-assumes-control-marthas-vineyard-railroad-taken-possession/",
+       "https://vineyardgazette.com/news/1921/01/27/when-island-echoed-locomotives-whistle/",
+       "https://mvmagazine.com/news/2010/05/01/six-historic-tales",
+       "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad",
+       "https://mvmuseum.org/fa_pdfs/RU%20117--Railroad.pdf"
+      ]
+     },
+     {
+      "start": 1896,
+      "end": 1896,
+      "headway_min": 60,
+      "note": "Joseph M. Wardwell's proprietorship, still run as the Martha's Vineyard Railroad (NH96: 'the Marthas Vineyard railroad company's property'; trains 'as usual under the new management'). ANCHOR: a single proven season. VG96 (16 Jul 1896) quotes Wardwell, 'proprietor': 'We commenced running regularly on Monday' (~13 Jul 1896), while the Board of Railroad Commissioners said the road 'is not now in a condition approved by the Board' and considered an injunction; on 14 Jul the commissioners warned that passengers travel 'at their own risk' (PRN96); NH96 (14 Aug 1896) says trains will run 'as usual'. The 1896 end is a genuine ending - no source shows any 1897 trains; the line was condemned by the Railroad Commission, the locomotive sold and the rails salvaged (VG21, VG13). Not established: the exact last day of 1896, whether the threatened injunction cut the season short, and when Wardwell bought the road (plausibly the 31 Oct 1895 auction, VG13 - inference). The 1895 'last trip' accounts (VG13, VG09) describe the Old Colony-era company's last trip, not the railroad's. Rule 4: Wardwell is a different owner reusing the original company name; drawn in the original company's colour - flagged for the maintainer. Summer-only: no source shows any winter service; the drawn year means the summer season only. headway_min 60 is an ESTIMATE for the summer season: VG21 (1921 retrospective) says trains 'ran hourly between its terminal points' for the greater part of the day, while VG13 (2013, undated figure) gives 'seven times daily from 6:50 a.m. to 8:50 p.m.' (~120 min). The sources disagree.",
+      "sources": [
+       "Segment-level: 1896 operation from VG96 (contemporaneous, ~13 Jul 1896 start), PRN96 (14-15 Jul 1896 wire story) and NH96 (14-15 Aug 1896 wire story); VG21 puts the last whistle 'twenty five years ago'. The end day of 1896 and Wardwell's purchase date are not sourced. The headway is an estimate.",
+       "https://vineyardgazette.com/news/1896/07/16/vineyard-railroad/",
+       "https://www.loc.gov/resource/sn91070630/1896-07-14/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84023058/1896-07-15/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn92063989/1896-08-15/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84023416/1896-08-14/ed-1/?sp=1",
+       "https://vineyardgazette.com/news/1921/01/27/when-island-echoed-locomotives-whistle/",
+       "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.555738,
+      41.457717
+     ],
+     [
+      -70.555014,
+      41.455612
+     ],
+     [
+      -70.553625,
+      41.452456
+     ],
+     [
+      -70.552746,
+      41.449286
+     ],
+     [
+      -70.55289,
+      41.448627
+     ],
+     [
+      -70.554297,
+      41.44686
+     ],
+     [
+      -70.554282,
+      41.445336
+     ],
+     [
+      -70.553607,
+      41.442168
+     ],
+     [
+      -70.553692,
+      41.440898
+     ],
+     [
+      -70.554068,
+      41.439997
+     ],
+     [
+      -70.554937,
+      41.439353
+     ],
+     [
+      -70.555548,
+      41.437785
+     ],
+     [
+      -70.556299,
+      41.433224
+     ],
+     [
+      -70.556332,
+      41.432452
+     ],
+     [
+      -70.555252,
+      41.427095
+     ],
+     [
+      -70.54946,
+      41.416928
+     ],
+     [
+      -70.544487,
+      41.412358
+     ],
+     [
+      -70.543489,
+      41.411586
+     ],
+     [
+      -70.536849,
+      41.408163
+     ],
+     [
+      -70.532857,
+      41.406458
+     ],
+     [
+      -70.53112,
+      41.405902
+     ],
+     [
+      -70.53022,
+      41.405451
+     ],
+     [
+      -70.527943,
+      41.404774
+     ],
+     [
+      -70.527324,
+      41.404318
+     ],
+     [
+      -70.526337,
+      41.403331
+     ],
+     [
+      -70.525066,
+      41.401708
+     ],
+     [
+      -70.523984,
+      41.400038
+     ],
+     [
+      -70.523231,
+      41.397518
+     ],
+     [
+      -70.522584,
+      41.396144
+     ],
+     [
+      -70.521445,
+      41.394907
+     ],
+     [
+      -70.519631,
+      41.393855
+     ],
+     [
+      -70.518794,
+      41.39302
+     ],
+     [
+      -70.518767,
+      41.392387
+     ],
+     [
+      -70.518992,
+      41.391328
+     ],
+     [
+      -70.519312,
+      41.390689
+     ],
+     [
+      -70.520709,
+      41.38883
+     ],
+     [
+      -70.521025,
+      41.387926
+     ],
+     [
+      -70.521085,
+      41.387119
+     ],
+     [
+      -70.520914,
+      41.386351
+     ],
+     [
+      -70.517622,
+      41.379981
+     ],
+     [
+      -70.517272,
+      41.378292
+     ],
+     [
+      -70.517248,
+      41.376711
+     ],
+     [
+      -70.518558,
+      41.368834
+     ],
+     [
+      -70.518884,
+      41.363643
+     ],
+     [
+      -70.518592,
+      41.361862
+     ],
+     [
+      -70.518088,
+      41.360831
+     ],
+     [
+      -70.517133,
+      41.359527
+     ],
+     [
+      -70.515814,
+      41.358456
+     ],
+     [
+      -70.514398,
+      41.357506
+     ],
+     [
+      -70.51148,
+      41.356428
+     ],
+     [
+      -70.510386,
+      41.356227
+     ],
+     [
+      -70.509356,
+      41.356187
+     ],
+     [
+      -70.508176,
+      41.35642
+     ],
+     [
+      -70.507479,
+      41.35667
+     ],
+     [
+      -70.505581,
+      41.35787
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Martha's Vineyard Railroad",
+    "line": "Martha's Vineyard Railroad: South Beach Extension",
+    "id": "mvrr-south-beach-extension",
+    "color": "#BF56AA",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: ~8.5 mi steam 3 ft gauge resort line with one locomotive; VG21's hourly service between terminals implies a single train's round trip in about an hour, i.e. roughly 15-25 km/h. No timetable with running times was read.",
+    "gauge": "3 ft",
+    "traction": "steam",
+    "geometry_source": "OpenStreetMap route relation 14523218 ('Martha's Vineyard Railroad', route=railway, railway=razed, from Oak Bluffs to Katama; relation source tag: massrods.com Dukes County Railroad.pdf), member ways pulled with way(r) from the maps.mail.ru Overpass mirror (OSM base 2026-10-16T16:03:56Z; an overpass.kumi.systems copy dated 2026-06-01 was stale and discarded), including the railway=demolished way 1321959007. Assembled as a Dijkstra shortest path over the relation's own ways (no dangling-end snaps were needed), simplified with opstrace douglas_peucker(8 m) + trim_reversals. Also checked: a bbox query for railway~abandoned|demolished|razed found 3 extra MVRR ways (1551432914/16, 1551856454), all already relation members; opstrace fetch_operator_ways found no old_railway_operator ways on the island; opstrace fetch_gap found only nature-trail paths in OSM and nothing in OpenHistoricalMap (41.30,-70.65,41.48,-70.45).",
+    "geometry_quality": "Traced 0.33 mi against ~0.5 mi documented (WMV 'about half a mile'; -34%). No straight-line legs. From the main-line node at the Katama junction (9989649650) along the south leg of the junction wye (way 1090638056) and OSM way 1190882909 'Martha's Vineyard Railroad South Beach Spur' (railway=razed). The spur ends where the mapped grade ends, 572 m from the geocoded South Beach point: the Katama shoreline has moved repeatedly since the 1870s, so the drawn end is approximate and the true terminal at the 1870s-90s dunes is not established; part of the shortfall against 0.5 mi may be that.",
+    "segments": [
+     {
+      "start": 1876,
+      "end": 1889,
+      "headway_min": 60,
+      "note": "Katama (Mattakeset Lodge) - South Beach, a ~0.5 mi spur to the Atlantic dunes; VG09 describes the line ending in 'two dead ends', the South Beach dunes and the hotel at Katama. Start 1876 rests on ONE secondary source (WMV, citing Page 2009), with no day or month; Page was not consulted. No source says the extension closed separately from the main line; MVM lists South Beach among the four passenger stops. Ends 1889 with the original company's era (VG90). Summer-only: no source shows any winter service; the drawn year means the summer season only. Trains presumably ran through from Oak Bluffs at the main line's frequency; headway_min 60 is an ESTIMATE copied from the main line, not a counted figure.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1876 start comes only from Wikipedia's summary of Page (2009), not checked against Page or any contemporaneous source; the 1889 end is the operator change (VG90), not a closing of the spur. Headway is an estimate.",
+       "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad",
+       "https://mvmuseum.org/fa_pdfs/RU%20117--Railroad.pdf",
+       "https://vineyardgazette.com/arts-entertainment/art/2009/09/03/marthas-vineyard-railroad-had-very-short-ride/",
+       "https://vineyardgazette.com/news/1890/06/27/old-colony-assumes-control-marthas-vineyard-railroad-taken-possession/"
+      ]
+     },
+     {
+      "start": 1896,
+      "end": 1896,
+      "headway_min": 60,
+      "note": "Wardwell's 1896 season (see the main-line feature). ANCHOR year. The 1896 sources (VG96, PRN96, NH96) name the railroad but not South Beach specifically; the spur is drawn because no source says it closed before the parent line and the report's 1896 endpoints run 'Katama / South Beach'. Summer-only: no source shows any winter service; the drawn year means the summer season only. headway_min 60 is an ESTIMATE copied from the main line.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: no 1896 source names South Beach; drawn with the parent line's 1896 season (VG96, NH96). Headway is an estimate.",
+       "https://vineyardgazette.com/news/1896/07/16/vineyard-railroad/",
+       "https://www.loc.gov/resource/sn92063989/1896-08-15/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.512643,
+      41.356795
+     ],
+     [
+      -70.512349,
+      41.356201
+     ],
+     [
+      -70.512268,
+      41.355871
+     ],
+     [
+      -70.512536,
+      41.355198
+     ],
+     [
+      -70.512797,
+      41.35375
+     ],
+     [
+      -70.51272,
+      41.352892
+     ],
+     [
+      -70.51253,
+      41.352095
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Old Colony Railroad",
+    "line": "Old Colony: Martha's Vineyard Railroad (Oak Bluffs – Katama)",
+    "id": "old-colony-mvrr-oak-bluffs-katama",
+    "color": "#2F6F9F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: ~8.5 mi steam 3 ft gauge resort line with one locomotive; VG21's hourly service between terminals implies a single train's round trip in about an hour, i.e. roughly 15-25 km/h. No timetable with running times was read.",
+    "gauge": "3 ft",
+    "traction": "steam",
+    "geometry_source": "OpenStreetMap route relation 14523218 ('Martha's Vineyard Railroad', route=railway, railway=razed, from Oak Bluffs to Katama; relation source tag: massrods.com Dukes County Railroad.pdf), member ways pulled with way(r) from the maps.mail.ru Overpass mirror (OSM base 2026-10-16T16:03:56Z; an overpass.kumi.systems copy dated 2026-06-01 was stale and discarded), including the railway=demolished way 1321959007. Assembled as a Dijkstra shortest path over the relation's own ways (no dangling-end snaps were needed), simplified with opstrace douglas_peucker(8 m) + trim_reversals. Also checked: a bbox query for railway~abandoned|demolished|razed found 3 extra MVRR ways (1551432914/16, 1551856454), all already relation members; opstrace fetch_operator_ways found no old_railway_operator ways on the island; opstrace fetch_gap found only nature-trail paths in OSM and nothing in OpenHistoricalMap (41.30,-70.65,41.48,-70.45).",
+    "geometry_quality": "Traced 8.46 mi Oak Bluffs - Katama, against ~8.5 mi derived (the majority 9 mi total in WMV, MVM, MVMR and VG21, minus the ~0.5 mi South Beach extension; main + traced spur = 8.79 mi vs 9 mi, -2%). CONFLICTING figures: PN92 'about twelve miles' (trace is 27% short of it) and the WMV route map's 14 mi at South Beach (37% short); the trace supports 9 mi. RV91's 'five miles' Cottage City - Edgartown checks against the drawn Edgartown Depot site at mp 5.46. No straight-line legs: the whole line follows OSM ways. About 7.26 mi follow ways mapped as the railway itself (railway=razed/demolished, name 'Martha's Vineyard Railroad'); about 1.21 mi follow modern roads, footways and driveways that the relation's mapper put on the grade (Cow Bay Road, Golf Club Road, Long Hill Road, Norton Orchard Road and Middle Street in Edgartown; footways at the Oak Bluffs end) - those are later ways standing in for the roadbed, approximately on it. BEACH STRETCH APPROXIMATED, roughly mp 0.6 - 3.5 (~2.9 mi), along the barrier beach between Sengekontacket Pond and Nantucket Sound (today's Beach Road / Joseph Sylvia State Beach corridor; the geocoded State Beach lies 62 m from the line): the 1874-96 roadbed there has been washed over and rebuilt many times (MVMR), so the drawn line is an approximation of where the track ran, not a survey of it. OAK BLUFFS END: drawn to the north end of the mapped grade, about 35 m from the steamer wharf; the wharf area (and the railroad's wye) burned on 24 Sep 1892 (SWR92, WMV, MVM) and has been rebuilt since, so the terminal is a later site than the line's era, approximately in place. KATAMA END: drawn to the east end of the mapped grade near the Mattakeset Lodge site (geocoded Katama hamlet 124 m off). Excluded: two unnamed railway=razed service=spur ways (1090638056/57) taken to be the Katama wye/yard tracks, the closed 'Depot Market' outline (212975466) and the parallel Katama Drive member (1090638055). The same geometry is drawn for 1874-1896; the post-1892 loss of the wye changed how trains ran (backwards Oak Bluffs - Katama), not the alignment.",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1895,
+      "headway_min": 60,
+      "note": "Old Colony interest. In June 1890 J. R. Kendrick, general manager of the Old Colony Railroad, took possession ('the previous Monday', ~23 Jun 1890) for the mortgage trustees Charles F. Choate and Frederick L. Ames, Old Colony men; the Old Colony Railroad Co. held all $40,000 of the bonds and Kendrick became the road's general manager (VG90). Formal purchase 'absorbed in the Old Colony system ... henceforward operated and controlled by that corporation' on 21 May 1892, price $27,500 (PN92); WMV names the buyer as the Old Colony Steamboat Co., an Old Colony Railroad subsidiary. Split here at the 1890 possession because VG90 names the Old Colony's general manager as the road's manager from then; a conservative reading would split at 1892 (trusteeship ~ receivership) - recorded in not_yet_sourced. The Old Colony Railroad was itself leased to the New York, New Haven and Hartford on 1 Mar 1893; whether the island road passed to New Haven control with it or stayed with the steamboat company is NOT established, and no source shows a change of island operator, so the feature stays Old Colony to 1895. Events: passenger trains to Edgartown and Katama in Aug 1891 (RV91); the 24 Sep 1892 Cottage City fire destroyed the Sea View House, the Oak Bluffs wharf and the railroad's wye, after which trains ran backwards Oak Bluffs - Katama (SWR92, WMV, MVM); 31 Jul 1893 the only locomotive's boiler burst and 'traffic with Edgartown is suspended' (NYT93) - length of the suspension unknown; 1895 revenue 'a little less than half the income of 1890'; in Sept 1895 the track spread 1.5 mi from Cottage City, derailing what became that company's last trip, and the company was sold at public auction on 31 Oct 1895 (VG13; VG09 'through 1895'). 1894 has NO direct citation: it is inferred continuous between 1893 and 1895. Summer-only: no source shows any winter service; the drawn year means the summer season only. headway_min 60 is an ESTIMATE for the summer season: VG21 (1921 retrospective) says trains 'ran hourly between its terminal points' for the greater part of the day, while VG13 (2013, undated figure) gives 'seven times daily from 6:50 a.m. to 8:50 p.m.' (~120 min). The sources disagree.",
+      "sources": [
+       "Segment-level: 1890 start from VG90 (contemporaneous); 1891 from RV91; 1892 purchase from PN92 and the fire from SWR92; 1893 operation implied by NYT93 (boiler failure 31 Jul 1893); 1895 from VG13 and VG09. 1894 is inferred, not sourced. The headway is an estimate.",
+       "https://vineyardgazette.com/news/1890/06/27/old-colony-assumes-control-marthas-vineyard-railroad-taken-possession/",
+       "https://www.loc.gov/resource/sn92064065/1891-08-12/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn91070630/1892-05-21/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn83020847/1892-09-30/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn83030214/1893-08-01/ed-1/?sp=1",
+       "https://vineyardgazette.com/towns/oak-bluffs/2013/04/11/oak-bluffs-town-column-april-12/",
+       "https://vineyardgazette.com/arts-entertainment/art/2009/09/03/marthas-vineyard-railroad-had-very-short-ride/",
+       "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad",
+       "https://mvmuseum.org/fa_pdfs/RU%20117--Railroad.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.555738,
+      41.457717
+     ],
+     [
+      -70.555014,
+      41.455612
+     ],
+     [
+      -70.553625,
+      41.452456
+     ],
+     [
+      -70.552746,
+      41.449286
+     ],
+     [
+      -70.55289,
+      41.448627
+     ],
+     [
+      -70.554297,
+      41.44686
+     ],
+     [
+      -70.554282,
+      41.445336
+     ],
+     [
+      -70.553607,
+      41.442168
+     ],
+     [
+      -70.553692,
+      41.440898
+     ],
+     [
+      -70.554068,
+      41.439997
+     ],
+     [
+      -70.554937,
+      41.439353
+     ],
+     [
+      -70.555548,
+      41.437785
+     ],
+     [
+      -70.556299,
+      41.433224
+     ],
+     [
+      -70.556332,
+      41.432452
+     ],
+     [
+      -70.555252,
+      41.427095
+     ],
+     [
+      -70.54946,
+      41.416928
+     ],
+     [
+      -70.544487,
+      41.412358
+     ],
+     [
+      -70.543489,
+      41.411586
+     ],
+     [
+      -70.536849,
+      41.408163
+     ],
+     [
+      -70.532857,
+      41.406458
+     ],
+     [
+      -70.53112,
+      41.405902
+     ],
+     [
+      -70.53022,
+      41.405451
+     ],
+     [
+      -70.527943,
+      41.404774
+     ],
+     [
+      -70.527324,
+      41.404318
+     ],
+     [
+      -70.526337,
+      41.403331
+     ],
+     [
+      -70.525066,
+      41.401708
+     ],
+     [
+      -70.523984,
+      41.400038
+     ],
+     [
+      -70.523231,
+      41.397518
+     ],
+     [
+      -70.522584,
+      41.396144
+     ],
+     [
+      -70.521445,
+      41.394907
+     ],
+     [
+      -70.519631,
+      41.393855
+     ],
+     [
+      -70.518794,
+      41.39302
+     ],
+     [
+      -70.518767,
+      41.392387
+     ],
+     [
+      -70.518992,
+      41.391328
+     ],
+     [
+      -70.519312,
+      41.390689
+     ],
+     [
+      -70.520709,
+      41.38883
+     ],
+     [
+      -70.521025,
+      41.387926
+     ],
+     [
+      -70.521085,
+      41.387119
+     ],
+     [
+      -70.520914,
+      41.386351
+     ],
+     [
+      -70.517622,
+      41.379981
+     ],
+     [
+      -70.517272,
+      41.378292
+     ],
+     [
+      -70.517248,
+      41.376711
+     ],
+     [
+      -70.518558,
+      41.368834
+     ],
+     [
+      -70.518884,
+      41.363643
+     ],
+     [
+      -70.518592,
+      41.361862
+     ],
+     [
+      -70.518088,
+      41.360831
+     ],
+     [
+      -70.517133,
+      41.359527
+     ],
+     [
+      -70.515814,
+      41.358456
+     ],
+     [
+      -70.514398,
+      41.357506
+     ],
+     [
+      -70.51148,
+      41.356428
+     ],
+     [
+      -70.510386,
+      41.356227
+     ],
+     [
+      -70.509356,
+      41.356187
+     ],
+     [
+      -70.508176,
+      41.35642
+     ],
+     [
+      -70.507479,
+      41.35667
+     ],
+     [
+      -70.505581,
+      41.35787
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Old Colony Railroad",
+    "line": "Old Colony: Martha's Vineyard Railroad (South Beach Extension)",
+    "id": "old-colony-mvrr-south-beach-extension",
+    "color": "#2F6F9F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: ~8.5 mi steam 3 ft gauge resort line with one locomotive; VG21's hourly service between terminals implies a single train's round trip in about an hour, i.e. roughly 15-25 km/h. No timetable with running times was read.",
+    "gauge": "3 ft",
+    "traction": "steam",
+    "geometry_source": "OpenStreetMap route relation 14523218 ('Martha's Vineyard Railroad', route=railway, railway=razed, from Oak Bluffs to Katama; relation source tag: massrods.com Dukes County Railroad.pdf), member ways pulled with way(r) from the maps.mail.ru Overpass mirror (OSM base 2026-10-16T16:03:56Z; an overpass.kumi.systems copy dated 2026-06-01 was stale and discarded), including the railway=demolished way 1321959007. Assembled as a Dijkstra shortest path over the relation's own ways (no dangling-end snaps were needed), simplified with opstrace douglas_peucker(8 m) + trim_reversals. Also checked: a bbox query for railway~abandoned|demolished|razed found 3 extra MVRR ways (1551432914/16, 1551856454), all already relation members; opstrace fetch_operator_ways found no old_railway_operator ways on the island; opstrace fetch_gap found only nature-trail paths in OSM and nothing in OpenHistoricalMap (41.30,-70.65,41.48,-70.45).",
+    "geometry_quality": "Traced 0.33 mi against ~0.5 mi documented (WMV 'about half a mile'; -34%). No straight-line legs. From the main-line node at the Katama junction (9989649650) along the south leg of the junction wye (way 1090638056) and OSM way 1190882909 'Martha's Vineyard Railroad South Beach Spur' (railway=razed). The spur ends where the mapped grade ends, 572 m from the geocoded South Beach point: the Katama shoreline has moved repeatedly since the 1870s, so the drawn end is approximate and the true terminal at the 1870s-90s dunes is not established; part of the shortfall against 0.5 mi may be that.",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1895,
+      "headway_min": 60,
+      "note": "Katama - South Beach spur in the Old Colony era (see the Old Colony main-line feature for the 1890 possession vs 21 May 1892 purchase, and the 1893 New Haven lease of the Old Colony, which did not demonstrably change the island operator). PN92 (21 May 1892) describes the road as running 'from Cottage City to South Beach', which independently confirms the extension by 1892. Summer-only: no source shows any winter service; the drawn year means the summer season only. headway_min 60 is an ESTIMATE copied from the main line.",
+      "sources": [
+       "Segment-level: PN92 (21 May 1892) confirms the line ran to South Beach in 1892; the other years of this span are not checked against a source naming the spur. Headway is an estimate.",
+       "https://www.loc.gov/resource/sn91070630/1892-05-21/ed-1/?sp=7",
+       "https://vineyardgazette.com/news/1890/06/27/old-colony-assumes-control-marthas-vineyard-railroad-taken-possession/",
+       "https://en.wikipedia.org/wiki/Martha%27s_Vineyard_Railroad",
+       "https://mvmuseum.org/fa_pdfs/RU%20117--Railroad.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -70.512643,
+      41.356795
+     ],
+     [
+      -70.512349,
+      41.356201
+     ],
+     [
+      -70.512268,
+      41.355871
+     ],
+     [
+      -70.512536,
+      41.355198
+     ],
+     [
+      -70.512797,
+      41.35375
+     ],
+     [
+      -70.51272,
+      41.352892
+     ],
+     [
+      -70.51253,
+      41.352095
+     ]
+    ]
+   }
+  }
+ ]
+}
