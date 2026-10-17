@@ -1,0 +1,258 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Newport and Wickford Railroad and Steamboat Company's 3.3-mile branch from Wickford Junction on the Stonington Line / Shore Line (North Kingstown, RI) via La Fayette, Belleville and Wickford village to Wickford Landing on Wickford Harbor, where the company's steamboats connected for Newport. Drawn as two features on identical geometry, split by operator (Rule 4) at the 1 Nov 1909 deed to the New York, New Haven and Hartford: Newport and Wickford 1871-1909, NYNH&H Wickford Branch 1909-1925. Research report: research/branches/newport_and_wickford_railroad_and_steamboat_company.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Newport_and_Wickford_Railroad_and_Steamboat_Company",
+   "https://www.nashuacitystation.org/history/newport-and-wickford-railroad-and-steamboat-company/",
+   "https://nashuacitystation.org/history/wickford-railroad-company/",
+   "https://smallstatebighistory.com/?p=4578",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+   "https://en.wikipedia.org/wiki/Wickford_Junction_station",
+   "https://en.wikipedia.org/wiki/New_York,_Providence_and_Boston_Railroad",
+   "https://www.loc.gov/resource/sn83021432/1871-06-19/ed-1/?sp=1",
+   "https://www.loc.gov/resource/sn92063991/1876-09-15/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn92063989/1877-07-28/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn92063989/1889-04-20/ed-1/?sp=5",
+   "https://www.loc.gov/resource/sn92063989/1890-04-05/ed-1/?sp=5",
+   "https://www.loc.gov/resource/sn91070630/1905-04-13/ed-1/?sp=7",
+   "https://www.loc.gov/resource/sn91070633/1906-07-10/ed-1/?sp=7",
+   "https://www.loc.gov/resource/sn91070633/1908-03-10/ed-1/?sp=1",
+   "https://www.loc.gov/resource/sn91070633/1908-10-06/ed-1/?sp=6"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17): ways 1304566549, 1304566541, 1304566538, 1304566545, 1304566544, 1304566550, 1304566553, 203962745, 1304566536 (grade), 94198095 (Northeast Corridor junction vertex), 19391863 (Steamboat Avenue, guide only), 29313934 (Old Town House, used to place the village depot)",
+   "OpenHistoricalMap (Overpass, 2026-10-17): probed; no way for this railroad"
+  ],
+  "ownership_split": "Split 1 Nov 1909 (foreclosure sale, deed to the NYNH&H). Not split: the NYNH&H's 1892/93 takeover of the New York, Providence and Boston (that changed the main-line operator at Wickford Junction, not the branch's); the 1908-09 receivership (receivers were N&W officers).",
+  "excluded": "Not drawn: the Wickford Landing - Newport steamboat (water, 1871-1925); freight-only years 1925-1938 (Wickford - Wickford Landing) and 1925-1962 (Wickford Junction - Wickford), Rule 1; the junction station stub along the main line beside Ten Rod Road, which would overlap the Shore Line.",
+  "not_yet_sourced": [
+   "[U1] Who ran the trains 1871-1909: Vernon's American Railroad Manual 1874 p.71 (via WP, not read) says operations were contracted to the Stonington Line (New York, Providence and Boston, #70B735); the contemporary evidence treats the N&W as its own operator. If a sustained NYP&B contract is proven, split the 1871-1909 feature (NYP&B to 1892/93, then NYNH&H). A RI Railroad Commissioner report of the 1870s-80s would settle it.",
+   "[U2] Opening year 1871 (Karr; Morning Star 19 Jun 1871) vs 1870 (WP Wickford Junction station) vs 1874 (WP NYP&B); exact opening day (SSBH 1 Jun 1871) uncited.",
+   "[U3] The October 1925 end rests on Heppner 2012 and Evening Tribune items seen only via WP's footnotes; the independently confirmed floor is 1920 (Fowler).",
+   "[U4] Length 3.3 mi (Fowler) vs 3.5 mi (1896 RI Railroad Commissioner); Belleville at 1.9 vs 1.5 mi. Traced 3.34 mi.",
+   "[U7] headway_min and avg_speed_kmh are estimates; no complete branch timetable was read.",
+   "Geometry: the Wickford village depot and Wickford Landing depot positions are placed from SSBH's prose. SSBH says the Landing site is 'now the Wickford Marina', but the place OSM calls Wickford Marina (relation 11999019) is on the north harbour off Enfield Avenue, not on Steamboat Avenue where SSBH also puts the line - the endpoint follows Steamboat Avenue. A Sanborn map or the 1890s USGS Wickford sheet would fix both depots."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Newport and Wickford Railroad and Steamboat Company",
+    "line": "Newport and Wickford: Wickford Junction \u2013 Wickford Landing",
+    "id": "newport-wickford-railroad-1871",
+    "color": "#0A0BC8",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, not sourced: a 3.3-mile single-track steam branch shuttle with two intermediate stops; no timetable giving running times was read.",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17): the abandoned Wickford Branch right of way - ways 1304566549 and 1304566541 ('Wickford Branch', railway=abandoned, old_railway_operator=NYNH&H), paths 1304566538, 1304566545 (bridge) and 1304566544 (old_railway_operator=NYNH&H), and untagged dirt paths on the same grade 1304566550, 1304566553, 203962745 and 1304566536; Northeast Corridor way 94198095 for the junction vertex; Steamboat Avenue (way 19391863) as the guide for the last 0.40 mi. Routed with opstrace.py's Graph/dijkstra over those ways plus the OSM rail tile, douglas_peucker 8 m then trim_reversals. Probes: no OSM way carries an old_railway_operator naming Newport and Wickford / Wickford / N&W (the ex-New Haven tag NYNH&H only, as elsewhere in southern New England); OpenHistoricalMap has no way for this road (in the corridor OHM holds only the Shore Line, way 200057180, and the Sea View Railroad trolley, ways 200511511/512/584/585 - a different company, not used).",
+    "geometry_quality": "Traced 3.34 mi against 3.3 mi documented (Fowler, Southern New England Railroads line 103) - 1% long - and 3.5 mi (1896 RI Railroad Commissioner via Wikipedia; WP infobox) - 5% short. Mileposts on the drawn line: La Fayette 1.02 (Fowler 1.0), Wickford village depot 2.69 (Fowler 2.6; Commissioner 2.5), Wickford Landing 3.34 (Fowler 3.3; Commissioner 3.5); Belleville (Fowler 1.9, Commissioner 1.5) not separately located. SURVIVING GRADE, mp 0 - 2.42 (Wickford Junction to the head of Wickford Cove): OSM ways on the abandoned right of way - 1.27 mi tagged old_railway_operator=NYNH&H (1304566549/1304566541 'Wickford Branch', paths 1304566538, 1304566545, 1304566544) and 1.07 mi of untagged dirt paths of the same 3 m width on the same curve (1304566550, 1304566553, 203962745, 1304566536); one 0.08 mi (130 m) straight connector joins 1304566550 to 1304566553. The line starts on a Northeast Corridor vertex (OSM way 94198095), 13 m from the grade path's west end, so the branch meets the Shore Line itself at Wickford Junction, not a road. APPROXIMATED LEGS: (1) head of Wickford Cove (end of OSM 1304566536) - Wickford village depot, straight, 0.26 mi, across the upper cove where Small State Big History says the line crossed on a trestle and then over Prospect Avenue; the depot point is hand-placed from SSBH's description ('diagonally across from the old Town Hall, near the present Memorial Park': the Old Town House is OSM way 29313934 on Boston Neck Road) and may be ~100 m out. (2) Wickford depot - Steamboat Avenue, straight, 0.25 mi, across Old Shore Road (Boston Neck Road, RI 1A). (3) The last 0.40 mi to Wickford Landing is drawn on the centreline of Steamboat Avenue (OSM way 19391863), which SSBH says the right of way paralleled - road geometry, not a surveyed grade, so tens of metres of offset are possible. In all 0.59 mi straight (plus the 0.08 mi connector) and 0.40 mi road-guided; 2.34 mi on mapped grade. The Landing end is the waterfront end of Steamboat Avenue beside Wickford Shipyard, not the tip of Poplar Point. ERA: the line had one alignment 1871-1925 (no relocation known) and the OSM paths sit on that abandoned grade, so no later alignment is drawn. The junction station stub, which lay along the main line beside Ten Rod Road (OSM 199428902 'Wickford Branch', 0.08 mi parallel to the NEC), is not drawn because it would overlap the Shore Line. The Wickford Landing - Newport steamboat leg is not rail and is not drawn.",
+    "segments": [
+     {
+      "start": 1871,
+      "end": 1909,
+      "headway_min": 150,
+      "note": "Newport and Wickford Railroad and Steamboat Company (Wickford Branch Railroad charter 1862, Wickford Railroad 1864, renamed 28 Jan 1870), from completion in June 1871 (Karr 2017 p.150 via WP; SSBH gives 1 Jun 1871; The Morning Star, Providence, 19 Jun 1871: 'the Wickford Railroad is now in full operation') until the property was deeded to the New York, New Haven and Hartford on 1 Nov 1909 after foreclosure (NCS citing ICC Reports 1931; WP citing The Day 2 & 5 Nov 1909). Receivership from 5 Oct 1908 (News-Democrat 6 Oct 1908) did not change the operator. Steam from opening (Forney 0-4-0T, SSBH); the stage coach to Wickford before 1871 is context only. Trains met Stonington Line / Shore Line trains at Wickford Junction and the company's own boats (Eolus, Tockwogh, General) to Newport at Wickford Landing; the boat is not drawn. OPENING-YEAR CONFLICT: 1871 (Karr, contemporary newspaper) vs 1870 (Wikipedia 'Wickford Junction station') vs 1874 (Wikipedia 'New York, Providence and Boston Railroad', probably the year a steam dummy allowed winter service; trains ran summers only before that per WP/Vernon 1874). OPERATOR CONFLICT: WP, paraphrasing Vernon's American Railroad Manual 1874 p.71 (not read), says train operations were contracted to the Stonington Line; the 1869 subscription terms (News-Democrat 10 Jul 1906), its own 1888-90 cards (Narragansett Herald) and the 1907/08 RI Railroad Commissioner (News-Democrat 10 Mar 1908: one of four RI roads NOT operated by the New Haven) treat the N&W as its own operating road - drawn as N&W throughout. headway_min 150 is an ESTIMATE from the summer 1889 company card (about six Newport departures a day connecting at Wickford); winter service was thinner and no full branch timetable was read. 1909 is an ownership boundary, shared with the New Haven feature, not an end of service.",
+      "sources": [
+       "Segment-level: The Morning Star 19 Jun 1871 (in operation, 1871 start); NCS (ICC 1931) and WP (The Day Nov 1909) for the 1 Nov 1909 transfer; Narragansett Herald 1889-90 company cards (service and frequency 1888-90); News-Democrat 10 Mar 1908 (operator status 1907); WP citing Karr 2017 p.150 and Vernon 1874 p.71 (Vernon not read directly). Headway is an estimate from the 1889 card.",
+       "https://www.loc.gov/resource/sn83021432/1871-06-19/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn92063989/1889-04-20/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn92063989/1890-04-05/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn91070633/1906-07-10/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn91070633/1908-03-10/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn91070633/1908-10-06/ed-1/?sp=6",
+       "https://www.nashuacitystation.org/history/newport-and-wickford-railroad-and-steamboat-company/",
+       "https://en.wikipedia.org/wiki/Newport_and_Wickford_Railroad_and_Steamboat_Company",
+       "https://smallstatebighistory.com/?p=4578"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.492083,
+      41.579294
+     ],
+     [
+      -71.491815,
+      41.578086
+     ],
+     [
+      -71.490646,
+      41.575334
+     ],
+     [
+      -71.489963,
+      41.574475
+     ],
+     [
+      -71.488412,
+      41.572946
+     ],
+     [
+      -71.487468,
+      41.572301
+     ],
+     [
+      -71.485075,
+      41.57116
+     ],
+     [
+      -71.47935,
+      41.569196
+     ],
+     [
+      -71.469037,
+      41.564
+     ],
+     [
+      -71.467738,
+      41.563581
+     ],
+     [
+      -71.464132,
+      41.562878
+     ],
+     [
+      -71.461676,
+      41.562638
+     ],
+     [
+      -71.460235,
+      41.562809
+     ],
+     [
+      -71.458605,
+      41.563401
+     ],
+     [
+      -71.455503,
+      41.564995
+     ],
+     [
+      -71.451,
+      41.5668
+     ],
+     [
+      -71.446205,
+      41.567127
+     ],
+     [
+      -71.443146,
+      41.572498
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York, New Haven and Hartford Railroad",
+    "line": "New York, New Haven and Hartford: Wickford Branch",
+    "id": "newport-wickford-railroad-nynhh",
+    "color": "#7209B7",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, not sourced: a 3.3-mile single-track steam branch shuttle with two intermediate stops; no timetable giving running times was read.",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17): the abandoned Wickford Branch right of way - ways 1304566549 and 1304566541 ('Wickford Branch', railway=abandoned, old_railway_operator=NYNH&H), paths 1304566538, 1304566545 (bridge) and 1304566544 (old_railway_operator=NYNH&H), and untagged dirt paths on the same grade 1304566550, 1304566553, 203962745 and 1304566536; Northeast Corridor way 94198095 for the junction vertex; Steamboat Avenue (way 19391863) as the guide for the last 0.40 mi. Routed with opstrace.py's Graph/dijkstra over those ways plus the OSM rail tile, douglas_peucker 8 m then trim_reversals. Probes: no OSM way carries an old_railway_operator naming Newport and Wickford / Wickford / N&W (the ex-New Haven tag NYNH&H only, as elsewhere in southern New England); OpenHistoricalMap has no way for this road (in the corridor OHM holds only the Shore Line, way 200057180, and the Sea View Railroad trolley, ways 200511511/512/584/585 - a different company, not used).",
+    "geometry_quality": "Traced 3.34 mi against 3.3 mi documented (Fowler, Southern New England Railroads line 103) - 1% long - and 3.5 mi (1896 RI Railroad Commissioner via Wikipedia; WP infobox) - 5% short. Mileposts on the drawn line: La Fayette 1.02 (Fowler 1.0), Wickford village depot 2.69 (Fowler 2.6; Commissioner 2.5), Wickford Landing 3.34 (Fowler 3.3; Commissioner 3.5); Belleville (Fowler 1.9, Commissioner 1.5) not separately located. SURVIVING GRADE, mp 0 - 2.42 (Wickford Junction to the head of Wickford Cove): OSM ways on the abandoned right of way - 1.27 mi tagged old_railway_operator=NYNH&H (1304566549/1304566541 'Wickford Branch', paths 1304566538, 1304566545, 1304566544) and 1.07 mi of untagged dirt paths of the same 3 m width on the same curve (1304566550, 1304566553, 203962745, 1304566536); one 0.08 mi (130 m) straight connector joins 1304566550 to 1304566553. The line starts on a Northeast Corridor vertex (OSM way 94198095), 13 m from the grade path's west end, so the branch meets the Shore Line itself at Wickford Junction, not a road. APPROXIMATED LEGS: (1) head of Wickford Cove (end of OSM 1304566536) - Wickford village depot, straight, 0.26 mi, across the upper cove where Small State Big History says the line crossed on a trestle and then over Prospect Avenue; the depot point is hand-placed from SSBH's description ('diagonally across from the old Town Hall, near the present Memorial Park': the Old Town House is OSM way 29313934 on Boston Neck Road) and may be ~100 m out. (2) Wickford depot - Steamboat Avenue, straight, 0.25 mi, across Old Shore Road (Boston Neck Road, RI 1A). (3) The last 0.40 mi to Wickford Landing is drawn on the centreline of Steamboat Avenue (OSM way 19391863), which SSBH says the right of way paralleled - road geometry, not a surveyed grade, so tens of metres of offset are possible. In all 0.59 mi straight (plus the 0.08 mi connector) and 0.40 mi road-guided; 2.34 mi on mapped grade. The Landing end is the waterfront end of Steamboat Avenue beside Wickford Shipyard, not the tip of Poplar Point. ERA: the line had one alignment 1871-1925 (no relocation known) and the OSM paths sit on that abandoned grade, so no later alignment is drawn. The junction station stub, which lay along the main line beside Ten Rod Road (OSM 199428902 'Wickford Branch', 0.08 mi parallel to the NEC), is not drawn because it would overlap the Shore Line. The Wickford Landing - Newport steamboat leg is not rail and is not drawn.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1925,
+      "headway_min": 150,
+      "note": "New York, New Haven and Hartford Wickford Branch, from the deed of 1 Nov 1909 (NCS citing ICC Reports 1931; WP) to the end of passenger service in October 1925. Fowler's NH timetable letters list La Fayette, Belleville, Wickford and Wickford Landing in 1913 and 1920 (and earlier 1893/96, 1904), and not in 1932. From June 1925 a rail motor car (railbus) worked most trips - still rail passenger service (WP citing Evening Tribune 17 Jun 1925). Passenger trains and the Newport boat (steamer General, sold by the New Haven) ended October 1925 and a New Haven bus replaced the trains (WP citing Heppner 2012 pp.137-138 and Evening Tribune 31 Oct 1928; WP 'Wickford Junction station' and SSBH also give 1925). The 1925 items were seen only through Wikipedia's citations, not read directly; if they failed, the confirmed floor is 1920 (Fowler). Afterlife, context only (Rule 1, not drawn): freight three times a week by 1927; the Wickford - Wickford Landing end wrecked by the 1938 hurricane and abandoned 1938; Navy freight to Quonset/Davisville in the early 1940s; a weekly feed-store car to late 1961; the rest abandoned 1962 (WP, Karr; SSBH says 1963). headway_min 150 is an ESTIMATE carried over from the 1889 card; no New Haven branch timetable was read.",
+      "sources": [
+       "Segment-level: NCS (ICC 1931) and WP (The Day Nov 1909) for the 1909 transfer; Fowler line 103 timetable letters for 1913 and 1920 service; WP citing Heppner 2012 pp.137-138 and Evening Tribune 17 Jun 1925 / 31 Oct 1928 for the October 1925 end - those three were NOT read directly, only through Wikipedia's citations. Headway not sourced (estimate).",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf",
+       "https://en.wikipedia.org/wiki/Newport_and_Wickford_Railroad_and_Steamboat_Company",
+       "https://en.wikipedia.org/wiki/Wickford_Junction_station",
+       "https://www.nashuacitystation.org/history/newport-and-wickford-railroad-and-steamboat-company/",
+       "https://smallstatebighistory.com/?p=4578"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.492083,
+      41.579294
+     ],
+     [
+      -71.491815,
+      41.578086
+     ],
+     [
+      -71.490646,
+      41.575334
+     ],
+     [
+      -71.489963,
+      41.574475
+     ],
+     [
+      -71.488412,
+      41.572946
+     ],
+     [
+      -71.487468,
+      41.572301
+     ],
+     [
+      -71.485075,
+      41.57116
+     ],
+     [
+      -71.47935,
+      41.569196
+     ],
+     [
+      -71.469037,
+      41.564
+     ],
+     [
+      -71.467738,
+      41.563581
+     ],
+     [
+      -71.464132,
+      41.562878
+     ],
+     [
+      -71.461676,
+      41.562638
+     ],
+     [
+      -71.460235,
+      41.562809
+     ],
+     [
+      -71.458605,
+      41.563401
+     ],
+     [
+      -71.455503,
+      41.564995
+     ],
+     [
+      -71.451,
+      41.5668
+     ],
+     [
+      -71.446205,
+      41.567127
+     ],
+     [
+      -71.443146,
+      41.572498
+     ]
+    ]
+   }
+  }
+ ]
+}
