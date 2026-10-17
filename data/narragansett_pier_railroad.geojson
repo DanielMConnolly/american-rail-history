@@ -1,0 +1,806 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Narragansett Pier Railroad ran 8.03 miles from Kingston (West Kingston) on the Stonington Line / New Haven Shore Line via Gould's, Peace Dale, Wakefield and Sprague Park to Narragansett Pier, Rhode Island, 1876-1952. Drawn as three features on identical geometry, split by operator (Rule 4): Narragansett Pier Railroad 1876-1911, Rhode Island Company (lessee) 1911-1919, Narragansett Pier Railroad 1920-1952. The two NPRR features share one colour. Research report: research/branches/narragansett_pier_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Narragansett_Pier_Railroad (cites Henwood, 'A Short Haul to the Bay', 1969; Heppner, 'Railroads of Rhode Island', 2012; Karr 2017)",
+   "https://nashuacitystation.org/history/the-narragansett-pier-railroad-company/ (cites ICC, 'The Rhode Island Company and The Narragansett Pier Railroad Company', ICC Reports 1925 pp.299-311)",
+   "https://www.rihs.org/mssinv/Mss483sg34.htm",
+   "https://sites.google.com/site/rhodeislandrailroads/home/east-providence-south/east-providence-north/pwb-route/narragansett",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf (line 155, letters z=1894, a=1904, b=1920, c=1932, d=1953)",
+   "Official Guide of the Railways, Feb 1952 (schedules eff. Sept 30 1951), page 128, table 'NARRAGANSETT PIER RAILROAD - Kingston to Narragansett Pier' (research/sources/official_guide_1952.txt lines 26273-26310)",
+   "https://smallstatebighistory.com/narraganset-pier-railroads-operations-in-1964-described-by-the-companys-president",
+   "https://www.frrandp.com/2019/10/the-narragansett-pier-railroad.html (gives a 1953 end; conflicts, see not_yet_sourced)"
+  ],
+  "geometry_sources": [
+   "OpenHistoricalMap (Overpass, 2026-10-17): way 200057054 and station nodes 2114133775-7",
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17): William C. O'Neill Bike Path cycleways, rail tiles"
+  ],
+  "ownership_split": "Split 30 Jun 1911 (lease to the Rhode Island Company) and 1919/1920 (return to the NPRR). Not split: USRA federal control 1918-1920 (overlaps the lease; the map has no USRA operator convention), the Apr 1946 stock sale to American Associates, and the 1953-c.1977 freight-era owner changes.",
+  "excluded": "Not drawn: (a) Kingston - Wakefield 1953-1981, freight only (Rule 1); (b) the South Pier spur at Narragansett Pier, no passenger evidence; (c) the 1960s-70s excursion trips on the Kingston - Wakefield remnant (see not_yet_sourced); (d) Sea View Railroad trolleys over NPRR track Peace Dale - Pier 1902-1907, a different company - belongs in a future Sea View Railroad layer.",
+  "not_yet_sourced": [
+   "Excursion / fan-trip era (research block [4]), NOT DRAWN: Hanold (owner from 1964) ran weekend excursion trains (WP); RIR captions date excursion equipment to 1965 ('Excursion Service Lasted Only A Year') and a rail fan special at Peace Dale to June 1972; Veitsch & Leviton (from 1971) revived excursions, undated (WP). The report rated these photo-caption anchors low confidence (1965 [ANCHOR], 1972 [ANCHOR]) and they are withheld here pending Henwood (1969), the 1966 NYT article cited by WP (W. B. Young, 'Clear the Track for the High Society Line') or a 1960s-70s newspaper. If drawn later: tourist_rail, Kingston - Wakefield remnant only (Wakefield - Pier was lifted 1953), exact excursion terminals not established.",
+   "Lease end: 1919 (RIHS) vs 1 Mar 1920 (WP/Henwood; NCS). The ICC 1925 decision (ICC Reports pp.299-311) would settle it and was not read. Drawn 1911-1919 RI Company / 1920 on NPRR, leaving 1919-1920 undrawn.",
+   "Whether the Rhode Island Company's own crews ran the trains 1911-1919, or the lease was financial control only (RIHS says 'leased and operated'; no timetable naming the operator was read).",
+   "Passenger end: last rail trip 21 Jun 1952 (RIR; WP June 1952) vs FRR's 'ended in 1953' and an RIR caption 'ended in 1951'; the Sept 1951 Guide table with times rules out a pre-Sept-1951 end. 1953/1955 are sale and abandonment years.",
+   "Headways: only 1951 is counted (about four round trips, Official Guide). WP's 'eleven daily' (pre-1918) and 'six' (federal control) are undated by year; every other headway is an estimate.",
+   "Opening years of Gould's and Sprague Park stops (Fowler b/c only)."
+  ],
+  "pulled": "20261017"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Narragansett Pier Railroad",
+    "line": "Narragansett Pier Railroad: Kingston \u2013 Narragansett Pier",
+    "id": "narragansett-pier-railroad-1876",
+    "color": "#DC18A1",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 8-mile single-track steam branch; no timetable with running times of this era was read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap way 200057054 'Narragansett Pier Railroad' (CC0; source tag 'USGS 1889 topographic maps for Charlestown and Newport RI'; OHM dates used for nothing) and OHM station nodes 2114133775-7 (waypoints), routed with opstrace.py 2026-10-17 over OSM rail tiles plus OSM William C. O'Neill Bike Path cycleways (maps.mail.ru Overpass mirror); douglas_peucker 8 m then trim_reversals. OSM has no old_railway_operator tag for this road (probed 'Narragansett', NPRR/NP, 'Wakefield' - zero ways) and no railway=abandoned/razed/demolished ways in the corridor.",
+    "geometry_quality": "Traced 7.94 mi against 8.03 mi documented (Official Guide 1951 table, Kingston - Narragansett Pier; Fowler 8.1; Wikipedia infobox 8.5) - 1.1% short. No straight-line approximated legs: the whole line is the OpenHistoricalMap way 200057054 'Narragansett Pier Railroad' (traced by its mapper from the USGS 1889 Charlestown and Newport topographic sheets and aligned to the modern bike path), routed with opstrace.py. About 5.55 mi of it lies within 60 m of the William C. O'Neill Bike Path (OSM cycleways), which occupies the railway's own grade from West Kingston through Peace Dale and Wakefield to about mp 7.0 near the Narragansett town line, so that stretch is cross-checked against surviving surveyed geometry. The last ~0.9 mi (mp 7.0 - 7.94) into Narragansett Pier and the curve into Kingston (mp 0 - 0.3) have no surviving OSM feature and rest on the OHM mapper's reading of the 1889 topo alone - position accuracy there is uncertain (tens of metres). The alignment is the line's own era (1889 survey; no relocation of this road is known), not a later one. The Kingston end is the OHM way's end, 89 m from today's Amtrak Kingston station point and 61 m from the Northeast Corridor track, so the branch meets the Shore Line at Kingston (West Kingston) and does not run along it. The Narragansett Pier end is 64 m from OHM's 'Narragansett Station' node; OHM's way continues 0.46 mi further south-east (probably the South Pier freight spur, no passenger evidence) and that tail is NOT drawn. Mileposts on the drawn line vs the 1951 Guide: Peace Dale 4.72 (4.78), Wakefield 5.48 (5.58), Narragansett Pier 7.94 (8.03). Gould's and Sprague Park are not separately located.",
+    "segments": [
+     {
+      "start": 1876,
+      "end": 1911,
+      "headway_min": 90,
+      "note": "Narragansett Pier Rail Road Company, run by the Hazard family of the Peace Dale mills, from the first train on 17 Jul 1876 (WP, citing Henwood 1969 and Heppner 2012) until the property was leased for 99 years to the Rhode Island Company on 30 Jun 1911 (NCS, citing ICC Reports 1925 pp.299-311; RIHS and WP agree on 1911; RIR's '1910' is an outlier). Steam from opening - no animal-power years. Branch shuttle connecting with Stonington Line / Shore Line trains at Kingston, with seasonal resort traffic to the Pier hotels. Fowler lists Peace Dale, Wakefield and Narragansett Pier in the 1894 (z) and 1904 (a) timetables. 1902-1907 Sea View Railroad trolleys also ran over this track Peace Dale - Pier under wire - a different company's cars, not drawn here. headway_min 90 is an ESTIMATE: WP's 'eleven daily' trips is a pre-1918 figure of unstated date and direction; no timetable of this era was read. Boundary year 1911 is shared with the Rhode Island Company feature.",
+      "sources": [
+       "Segment-level: WP (Henwood 1969; Heppner 2012) for the 17 Jul 1876 opening; NCS (ICC 1925) for the 30 Jun 1911 lease; Fowler z/a letters for 1894/1904 presence. Headway not sourced.",
+       "https://nashuacitystation.org/history/the-narragansett-pier-railroad-company/",
+       "https://en.wikipedia.org/wiki/Narragansett_Pier_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.5616006,
+      41.4836384
+     ],
+     [
+      -71.5637656,
+      41.4819873
+     ],
+     [
+      -71.5640376,
+      41.4811137
+     ],
+     [
+      -71.5635952,
+      41.4801652
+     ],
+     [
+      -71.5624915,
+      41.479318
+     ],
+     [
+      -71.5549009,
+      41.4747119
+     ],
+     [
+      -71.5541727,
+      41.4740575
+     ],
+     [
+      -71.547448,
+      41.46502
+     ],
+     [
+      -71.5469996,
+      41.464108
+     ],
+     [
+      -71.5464472,
+      41.461812
+     ],
+     [
+      -71.5454244,
+      41.4606142
+     ],
+     [
+      -71.5445763,
+      41.4601672
+     ],
+     [
+      -71.5436622,
+      41.4598695
+     ],
+     [
+      -71.5344054,
+      41.4591321
+     ],
+     [
+      -71.533623,
+      41.4591698
+     ],
+     [
+      -71.5277704,
+      41.4601964
+     ],
+     [
+      -71.5266561,
+      41.4601062
+     ],
+     [
+      -71.5189341,
+      41.4584403
+     ],
+     [
+      -71.5180839,
+      41.4581184
+     ],
+     [
+      -71.5146862,
+      41.4566133
+     ],
+     [
+      -71.5140155,
+      41.4562057
+     ],
+     [
+      -71.5110477,
+      41.4534211
+     ],
+     [
+      -71.5102798,
+      41.4530049
+     ],
+     [
+      -71.5091088,
+      41.4526674
+     ],
+     [
+      -71.5080251,
+      41.4526041
+     ],
+     [
+      -71.5061924,
+      41.4528438
+     ],
+     [
+      -71.5032705,
+      41.4526469
+     ],
+     [
+      -71.4998158,
+      41.4516554
+     ],
+     [
+      -71.4991755,
+      41.4513533
+     ],
+     [
+      -71.4986622,
+      41.4508253
+     ],
+     [
+      -71.4982502,
+      41.4502793
+     ],
+     [
+      -71.4980708,
+      41.4497
+     ],
+     [
+      -71.498267,
+      41.4458164
+     ],
+     [
+      -71.5000824,
+      41.4413042
+     ],
+     [
+      -71.5001347,
+      41.440818
+     ],
+     [
+      -71.4998809,
+      41.4402441
+     ],
+     [
+      -71.4988916,
+      41.4394068
+     ],
+     [
+      -71.4981535,
+      41.4390378
+     ],
+     [
+      -71.4965349,
+      41.4388135
+     ],
+     [
+      -71.489921,
+      41.4394047
+     ],
+     [
+      -71.4876592,
+      41.4389424
+     ],
+     [
+      -71.4871281,
+      41.438713
+     ],
+     [
+      -71.4827358,
+      41.4388429
+     ],
+     [
+      -71.4822351,
+      41.4385175
+     ],
+     [
+      -71.48216,
+      41.4381672
+     ],
+     [
+      -71.4800245,
+      41.4375744
+     ],
+     [
+      -71.4747127,
+      41.4374402
+     ],
+     [
+      -71.4741085,
+      41.4373382
+     ],
+     [
+      -71.4690475,
+      41.4355899
+     ],
+     [
+      -71.468364,
+      41.4350444
+     ],
+     [
+      -71.4677205,
+      41.4340165
+     ],
+     [
+      -71.4670501,
+      41.4308649
+     ],
+     [
+      -71.4660552,
+      41.4282184
+     ],
+     [
+      -71.4646326,
+      41.4271024
+     ],
+     [
+      -71.4625967,
+      41.4266052
+     ],
+     [
+      -71.4610213,
+      41.4260131
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Rhode Island Company",
+    "line": "Rhode Island Company: Kingston \u2013 Narragansett Pier",
+    "id": "narragansett-pier-railroad-rhode-island-company",
+    "color": "#18DC2C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: same steam branch under lease; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap way 200057054 'Narragansett Pier Railroad' (CC0; source tag 'USGS 1889 topographic maps for Charlestown and Newport RI'; OHM dates used for nothing) and OHM station nodes 2114133775-7 (waypoints), routed with opstrace.py 2026-10-17 over OSM rail tiles plus OSM William C. O'Neill Bike Path cycleways (maps.mail.ru Overpass mirror); douglas_peucker 8 m then trim_reversals. OSM has no old_railway_operator tag for this road (probed 'Narragansett', NPRR/NP, 'Wakefield' - zero ways) and no railway=abandoned/razed/demolished ways in the corridor.",
+    "geometry_quality": "Traced 7.94 mi against 8.03 mi documented (Official Guide 1951 table, Kingston - Narragansett Pier; Fowler 8.1; Wikipedia infobox 8.5) - 1.1% short. No straight-line approximated legs: the whole line is the OpenHistoricalMap way 200057054 'Narragansett Pier Railroad' (traced by its mapper from the USGS 1889 Charlestown and Newport topographic sheets and aligned to the modern bike path), routed with opstrace.py. About 5.55 mi of it lies within 60 m of the William C. O'Neill Bike Path (OSM cycleways), which occupies the railway's own grade from West Kingston through Peace Dale and Wakefield to about mp 7.0 near the Narragansett town line, so that stretch is cross-checked against surviving surveyed geometry. The last ~0.9 mi (mp 7.0 - 7.94) into Narragansett Pier and the curve into Kingston (mp 0 - 0.3) have no surviving OSM feature and rest on the OHM mapper's reading of the 1889 topo alone - position accuracy there is uncertain (tens of metres). The alignment is the line's own era (1889 survey; no relocation of this road is known), not a later one. The Kingston end is the OHM way's end, 89 m from today's Amtrak Kingston station point and 61 m from the Northeast Corridor track, so the branch meets the Shore Line at Kingston (West Kingston) and does not run along it. The Narragansett Pier end is 64 m from OHM's 'Narragansett Station' node; OHM's way continues 0.46 mi further south-east (probably the South Pier freight spur, no passenger evidence) and that tail is NOT drawn. Mileposts on the drawn line vs the 1951 Guide: Peace Dale 4.72 (4.78), Wakefield 5.48 (5.58), Narragansett Pier 7.94 (8.03). Gould's and Sprague Park are not separately located.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1919,
+      "headway_min": 110,
+      "note": "Leased 30 Jun 1911 for 99 years to the Rhode Island Company, the New Haven-controlled Rhode Island streetcar company, which 'leased and operated' it (RIHS) - a steam road inside the otherwise all-electric RI Company system (WP). Under USRA federal control from 1 Jan 1918; WP says trips fell from eleven daily to six under federal control, with three overworked steam locomotives. Ends 1919: SOURCE CONFLICT - RIHS says the NPRR regained the line in 1919 after the RI Company receivership; WP (Henwood pp.32-33) says the lease was cancelled after the RI Co. failure of 30 Jan 1919 and operations returned to the Hazards on 1 Mar 1920; NCS gives rail operations '1876-1911, 1920-1981'. Drawn to the earlier year (1919), with the NPRR resuming 1920, so neither era over-claims and 1919-1920 is left undrawn. Not established: whether RI Company crews actually ran the trains (no timetable naming the operator was read); if the lease proved to be financial control only, this feature would fold back into the NPRR. headway_min 110 is an ESTIMATE averaging WP's eleven (pre-1918) and six (federal control) daily trips; no timetable was read.",
+      "sources": [
+       "Segment-level: NCS (ICC 1925) for the 30 Jun 1911 lease; RIHS Mss 483 sg 34 for 1911 lease / 1919 return; WP (Henwood 1969 pp.29-33; Heppner 2012 pp.129-130) for USRA control, 11->6 daily trips and the 1 Mar 1920 return. Headway estimated.",
+       "https://nashuacitystation.org/history/the-narragansett-pier-railroad-company/",
+       "https://www.rihs.org/mssinv/Mss483sg34.htm",
+       "https://en.wikipedia.org/wiki/Narragansett_Pier_Railroad",
+       "https://sites.google.com/site/rhodeislandrailroads/home/east-providence-south/east-providence-north/pwb-route/narragansett"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.5616006,
+      41.4836384
+     ],
+     [
+      -71.5637656,
+      41.4819873
+     ],
+     [
+      -71.5640376,
+      41.4811137
+     ],
+     [
+      -71.5635952,
+      41.4801652
+     ],
+     [
+      -71.5624915,
+      41.479318
+     ],
+     [
+      -71.5549009,
+      41.4747119
+     ],
+     [
+      -71.5541727,
+      41.4740575
+     ],
+     [
+      -71.547448,
+      41.46502
+     ],
+     [
+      -71.5469996,
+      41.464108
+     ],
+     [
+      -71.5464472,
+      41.461812
+     ],
+     [
+      -71.5454244,
+      41.4606142
+     ],
+     [
+      -71.5445763,
+      41.4601672
+     ],
+     [
+      -71.5436622,
+      41.4598695
+     ],
+     [
+      -71.5344054,
+      41.4591321
+     ],
+     [
+      -71.533623,
+      41.4591698
+     ],
+     [
+      -71.5277704,
+      41.4601964
+     ],
+     [
+      -71.5266561,
+      41.4601062
+     ],
+     [
+      -71.5189341,
+      41.4584403
+     ],
+     [
+      -71.5180839,
+      41.4581184
+     ],
+     [
+      -71.5146862,
+      41.4566133
+     ],
+     [
+      -71.5140155,
+      41.4562057
+     ],
+     [
+      -71.5110477,
+      41.4534211
+     ],
+     [
+      -71.5102798,
+      41.4530049
+     ],
+     [
+      -71.5091088,
+      41.4526674
+     ],
+     [
+      -71.5080251,
+      41.4526041
+     ],
+     [
+      -71.5061924,
+      41.4528438
+     ],
+     [
+      -71.5032705,
+      41.4526469
+     ],
+     [
+      -71.4998158,
+      41.4516554
+     ],
+     [
+      -71.4991755,
+      41.4513533
+     ],
+     [
+      -71.4986622,
+      41.4508253
+     ],
+     [
+      -71.4982502,
+      41.4502793
+     ],
+     [
+      -71.4980708,
+      41.4497
+     ],
+     [
+      -71.498267,
+      41.4458164
+     ],
+     [
+      -71.5000824,
+      41.4413042
+     ],
+     [
+      -71.5001347,
+      41.440818
+     ],
+     [
+      -71.4998809,
+      41.4402441
+     ],
+     [
+      -71.4988916,
+      41.4394068
+     ],
+     [
+      -71.4981535,
+      41.4390378
+     ],
+     [
+      -71.4965349,
+      41.4388135
+     ],
+     [
+      -71.489921,
+      41.4394047
+     ],
+     [
+      -71.4876592,
+      41.4389424
+     ],
+     [
+      -71.4871281,
+      41.438713
+     ],
+     [
+      -71.4827358,
+      41.4388429
+     ],
+     [
+      -71.4822351,
+      41.4385175
+     ],
+     [
+      -71.48216,
+      41.4381672
+     ],
+     [
+      -71.4800245,
+      41.4375744
+     ],
+     [
+      -71.4747127,
+      41.4374402
+     ],
+     [
+      -71.4741085,
+      41.4373382
+     ],
+     [
+      -71.4690475,
+      41.4355899
+     ],
+     [
+      -71.468364,
+      41.4350444
+     ],
+     [
+      -71.4677205,
+      41.4340165
+     ],
+     [
+      -71.4670501,
+      41.4308649
+     ],
+     [
+      -71.4660552,
+      41.4282184
+     ],
+     [
+      -71.4646326,
+      41.4271024
+     ],
+     [
+      -71.4625967,
+      41.4266052
+     ],
+     [
+      -71.4610213,
+      41.4260131
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Narragansett Pier Railroad",
+    "line": "Narragansett Pier Railroad: Kingston \u2013 Narragansett Pier",
+    "id": "narragansett-pier-railroad-1920",
+    "color": "#DC18A1",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "Official Guide Feb 1952 (eff. Sept 30 1951): Narragansett Pier lv 7 25, Kingston ar 7 48 = 8.03 mi in 23 min, about 34 km/h, for the rail-bus era. Earlier rail-bus years assumed similar - estimate.",
+    "geometry_source": "OpenHistoricalMap way 200057054 'Narragansett Pier Railroad' (CC0; source tag 'USGS 1889 topographic maps for Charlestown and Newport RI'; OHM dates used for nothing) and OHM station nodes 2114133775-7 (waypoints), routed with opstrace.py 2026-10-17 over OSM rail tiles plus OSM William C. O'Neill Bike Path cycleways (maps.mail.ru Overpass mirror); douglas_peucker 8 m then trim_reversals. OSM has no old_railway_operator tag for this road (probed 'Narragansett', NPRR/NP, 'Wakefield' - zero ways) and no railway=abandoned/razed/demolished ways in the corridor.",
+    "geometry_quality": "Traced 7.94 mi against 8.03 mi documented (Official Guide 1951 table, Kingston - Narragansett Pier; Fowler 8.1; Wikipedia infobox 8.5) - 1.1% short. No straight-line approximated legs: the whole line is the OpenHistoricalMap way 200057054 'Narragansett Pier Railroad' (traced by its mapper from the USGS 1889 Charlestown and Newport topographic sheets and aligned to the modern bike path), routed with opstrace.py. About 5.55 mi of it lies within 60 m of the William C. O'Neill Bike Path (OSM cycleways), which occupies the railway's own grade from West Kingston through Peace Dale and Wakefield to about mp 7.0 near the Narragansett town line, so that stretch is cross-checked against surviving surveyed geometry. The last ~0.9 mi (mp 7.0 - 7.94) into Narragansett Pier and the curve into Kingston (mp 0 - 0.3) have no surviving OSM feature and rest on the OHM mapper's reading of the 1889 topo alone - position accuracy there is uncertain (tens of metres). The alignment is the line's own era (1889 survey; no relocation of this road is known), not a later one. The Kingston end is the OHM way's end, 89 m from today's Amtrak Kingston station point and 61 m from the Northeast Corridor track, so the branch meets the Shore Line at Kingston (West Kingston) and does not run along it. The Narragansett Pier end is 64 m from OHM's 'Narragansett Station' node; OHM's way continues 0.46 mi further south-east (probably the South Pier freight spur, no passenger evidence) and that tail is NOT drawn. Mileposts on the drawn line vs the 1951 Guide: Peace Dale 4.72 (4.78), Wakefield 5.48 (5.58), Narragansett Pier 7.94 (8.03). Gould's and Sprague Park are not separately located.",
+    "segments": [
+     {
+      "start": 1920,
+      "end": 1952,
+      "headway_min": 240,
+      "note": "Narragansett Pier Railroad again, from the return of operations on 1 Mar 1920 (WP/Henwood; NCS 1920) to the last rail passenger trip on 21 Jun 1952, when rail bus No. 36 broke an axle and was not repaired (RIR caption; WP gives June 1952). Thereafter passengers rode in taxis or the superintendent's car until the RI PUC approved abandonment of passenger service at the end of 1952 - road vehicles, not drawn. Rail buses ('Micky-Dinks', Mack-Brill from 9 Jun 1921), steam retired 1937, Evans Auto-Railer 1941, International rail bus No. 36 from 1949 - all rail vehicles on flanged wheels. Owners changed (Hazard / N. T. Bacon to 1946, American Associates from Apr 1946) but the NPRR ran its own trains throughout, so no split. The company's 1925-1936 bus services were buses, not drawn. Positive late evidence: the Official Guide of Feb 1952 prints the Kingston - Narragansett Pier rail table effective Sept 30 1951 with times (e.g. Pier lv 7 25, Gould's 7 39, Kingston ar 7 48), no motor-coach or freight-only wording; Fowler c=1932 present at all stops. After passengers: the Wakefield Branch Company bought the line 1 Apr 1953, abandoned Wakefield - Pier in 1953 and ran Kingston - Wakefield as a freight short line until 1979-81 - freight only, not drawn. 1953 (FRR) and 1955 are sale/abandonment years, not passenger years. headway_min 240 is counted only for 1951 (about four round trips visible in the Guide table); other years of this era are unsourced estimates.",
+      "sources": [
+       "Segment-level: Official Guide Feb 1952 p.128 (Sept 30 1951 table with times) for 1951 service and headway; WP (Henwood 1969 pp.34-42) for the 1 Mar 1920 return, rail buses and June 1952 end; RIR caption 'axle broke June 21, 1952'; Fowler c letter (1932).",
+       "Official Guide of the Railways, Feb 1952 (schedules eff. Sept 30 1951), page 128, table 'NARRAGANSETT PIER RAILROAD - Kingston to Narragansett Pier' (research/sources/official_guide_1952.txt lines 26273-26310)",
+       "https://en.wikipedia.org/wiki/Narragansett_Pier_Railroad",
+       "https://sites.google.com/site/rhodeislandrailroads/home/east-providence-south/east-providence-north/pwb-route/narragansett",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.5616006,
+      41.4836384
+     ],
+     [
+      -71.5637656,
+      41.4819873
+     ],
+     [
+      -71.5640376,
+      41.4811137
+     ],
+     [
+      -71.5635952,
+      41.4801652
+     ],
+     [
+      -71.5624915,
+      41.479318
+     ],
+     [
+      -71.5549009,
+      41.4747119
+     ],
+     [
+      -71.5541727,
+      41.4740575
+     ],
+     [
+      -71.547448,
+      41.46502
+     ],
+     [
+      -71.5469996,
+      41.464108
+     ],
+     [
+      -71.5464472,
+      41.461812
+     ],
+     [
+      -71.5454244,
+      41.4606142
+     ],
+     [
+      -71.5445763,
+      41.4601672
+     ],
+     [
+      -71.5436622,
+      41.4598695
+     ],
+     [
+      -71.5344054,
+      41.4591321
+     ],
+     [
+      -71.533623,
+      41.4591698
+     ],
+     [
+      -71.5277704,
+      41.4601964
+     ],
+     [
+      -71.5266561,
+      41.4601062
+     ],
+     [
+      -71.5189341,
+      41.4584403
+     ],
+     [
+      -71.5180839,
+      41.4581184
+     ],
+     [
+      -71.5146862,
+      41.4566133
+     ],
+     [
+      -71.5140155,
+      41.4562057
+     ],
+     [
+      -71.5110477,
+      41.4534211
+     ],
+     [
+      -71.5102798,
+      41.4530049
+     ],
+     [
+      -71.5091088,
+      41.4526674
+     ],
+     [
+      -71.5080251,
+      41.4526041
+     ],
+     [
+      -71.5061924,
+      41.4528438
+     ],
+     [
+      -71.5032705,
+      41.4526469
+     ],
+     [
+      -71.4998158,
+      41.4516554
+     ],
+     [
+      -71.4991755,
+      41.4513533
+     ],
+     [
+      -71.4986622,
+      41.4508253
+     ],
+     [
+      -71.4982502,
+      41.4502793
+     ],
+     [
+      -71.4980708,
+      41.4497
+     ],
+     [
+      -71.498267,
+      41.4458164
+     ],
+     [
+      -71.5000824,
+      41.4413042
+     ],
+     [
+      -71.5001347,
+      41.440818
+     ],
+     [
+      -71.4998809,
+      41.4402441
+     ],
+     [
+      -71.4988916,
+      41.4394068
+     ],
+     [
+      -71.4981535,
+      41.4390378
+     ],
+     [
+      -71.4965349,
+      41.4388135
+     ],
+     [
+      -71.489921,
+      41.4394047
+     ],
+     [
+      -71.4876592,
+      41.4389424
+     ],
+     [
+      -71.4871281,
+      41.438713
+     ],
+     [
+      -71.4827358,
+      41.4388429
+     ],
+     [
+      -71.4822351,
+      41.4385175
+     ],
+     [
+      -71.48216,
+      41.4381672
+     ],
+     [
+      -71.4800245,
+      41.4375744
+     ],
+     [
+      -71.4747127,
+      41.4374402
+     ],
+     [
+      -71.4741085,
+      41.4373382
+     ],
+     [
+      -71.4690475,
+      41.4355899
+     ],
+     [
+      -71.468364,
+      41.4350444
+     ],
+     [
+      -71.4677205,
+      41.4340165
+     ],
+     [
+      -71.4670501,
+      41.4308649
+     ],
+     [
+      -71.4660552,
+      41.4282184
+     ],
+     [
+      -71.4646326,
+      41.4271024
+     ],
+     [
+      -71.4625967,
+      41.4266052
+     ],
+     [
+      -71.4610213,
+      41.4260131
+     ]
+    ]
+   }
+  }
+ ]
+}
