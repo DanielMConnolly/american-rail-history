@@ -1,0 +1,853 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Catskill Mountain Railway system, Greene County, New York: four separately incorporated companies under common Beach-family / Catskill Mountain House management, all 3 ft gauge, feeding the Catskill resort hotels from the Hudson River boats and the West Shore - the Catskill Mountain Railway (Catskill Landing - Palenville, 1882-1918; Catskill Mountain Railroad until the 1885 reorganization), its Cairo branch (Cairo Railroad Co., 1885-1918), the Otis Elevating Railway cable incline (1892-1918) and the Catskill and Tannersville Railway (Otis Summit - Tannersville, 1899-1918). All closed 1918 and were scrapped 1918-19. Research report: research/branches/catskill_mountain_railway.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Catskill_Mountain_Railway -- Wikipedia, Catskill Mountain Railway (organized 1880, built 1881-82, reorganized 1885; 15.73 mi; seasonal pattern; last trains 1918)",
+   "https://en.wikipedia.org/wiki/Otis_Elevating_Railway -- Wikipedia, Otis Elevating Railway (opened Aug 7 1892; 7,000 ft, 1,630 ft rise; shortened 1904; closed 1918)",
+   "https://en.wikipedia.org/wiki/Catskill_and_Tannersville_Railway -- Wikipedia, Catskill and Tannersville Railway (5.2 mi; built 1899; bankrupt 1918; scrapped 1919)",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf -- John Fowler, New York State Railroads (2), sections 96, 97, 112: station lists and mileposts (no timetable-year letters)",
+   "https://www.wgpfoundation.org/historic-markers/south-cairo-depot/ -- William G. Pomeroy Foundation marker, South Cairo Depot (opened July 28 1882; 'until May 1919')",
+   "https://www.vizettes.com/kt/rr/catskill-rr-history/index.htm -- The Growth of Railroads in the Catskill Mountains (Palenville 1882; C&T 'by 1897')",
+   "https://www.udrrhs.org/html/cairo.htm -- UDRRHS, Cairo Railroad (NOT READ DIRECTLY; known from a search-engine summary)",
+   "https://www.scenichudson.org/viewfinder/the-mountainside-ride-that-opened-up-the-catskills/ -- Scenic Hudson (Otis 1892-1918, scrapped)",
+   "Chronicling America (loc.gov) page OCR: New-York Tribune 11, 16 Jul, 7, 13 Aug 1882, 10 Jul 1883, 4 Jul 1900; The Sun 6 Aug 1882; New York Journal 23 Aug 1899 -- https://www.loc.gov/resource/sn83030214/1882-07-11/ed-1/?sp=5, https://www.loc.gov/resource/sn83030272/1882-08-06/ed-1/?sp=8, https://www.loc.gov/resource/sn83030214/1882-08-07/ed-1/?sp=3, https://www.loc.gov/resource/sn83030214/1882-08-13/ed-1/?sp=7, https://www.loc.gov/resource/sn83030214/1883-07-10/ed-1/?sp=7, https://www.loc.gov/resource/sn83030180/1899-08-23/ed-1/?sp=7, https://www.loc.gov/resource/sn83030214/1900-07-04/ed-1/?sp=12"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-18): railway=abandoned ways named 'Catskill Mountain Railway', 'Canajoharie and Catskill Railroad', 'Otis Elevating Railroad', 'Catskill and Tannersville Railroad'; NY Route 32 as a stand-in on the Cairo branch. No way in the corridor carries any CMRy/Otis/C&T old_railway_operator spelling; no railway=demolished/razed ways.",
+   "OpenHistoricalMap (2026-10-18): queried over 42.13,-74.17,42.33,-73.84 - only NYS Thruway ways, nothing for these lines."
+  ],
+  "operator_split": "None drawn. CMRR -> CMRy (1885) was a reorganization of the same enterprise; the Otis foreclosure sale (April 1899) changed the owning corporation with no evidence of a change of operator; the 1916 auction of CMRy, Otis and C&T is followed by unchanged running to 1918 with buyer unknown. The four companies are drawn as separate features; the Otis and the C&T carry their own colours as legally separate companies, the Cairo branch the CMRy colour as the CMRy's own branch in every operating description found.",
+  "omitted": [
+   "A possible Catskill - Cairo winter service into May 1919 (Pomeroy marker only) - not drawn; held at 1918.",
+   "Any C&T years 1897-1898 (conflicting 'built in 1897' / 'by 1897') - drawn from 1899.",
+   "The C&T's real route round South Lake between Otis Summit and Kaaterskill Falls (not mapped in OSM or OHM); drawn as a labelled straight chord.",
+   "The post-1904 shortened foot of the Otis incline (not located).",
+   "The Ulster and Delaware Kaaterskill Railroad east of Tannersville (Tannersville - Haines Falls - Kaaterskill - Otis Summit), a different company: not drawn here and not in ulster_delaware_railroad.geojson either, whose Kaaterskill Branch feature stops at Tannersville - noted as a gap, not fixed (out of scope).",
+   "No freight-only or horsecar content existed to omit (whole system scrapped within months of the last passenger season; steam and cable throughout)."
+  ],
+  "existing_layer_note": "No existing feature for any of the four companies before this layer (grep for Catskill Mountain, Otis, Catskill and Tannersville, Cairo, Palenville, Mountain House across data/; only Cairo IL, Otis IN and Otisville NY hits, and prose mentions in ulster_delaware_railroad.geojson).",
+  "not_yet_sourced": [
+   "All headways and speeds: estimates; no timetable frequency was found for any of the four lines.",
+   "catskill-mountain-railway-*: end year 1918 (Wikipedia, Scenic Hudson) vs 'until May 1919' (Pomeroy marker) for the year-round Catskill - Cairo section.",
+   "catskill-mountain-railway-catskill-landing-palenville: the month in 1882 the Palenville end opened; contemporary items of 13 Aug 1882 still call the line 'very nearly completed'.",
+   "catskill-mountain-railway-cairo-branch: passenger start 1885 (second-hand UDRRHS summary; 'opened for business'); whether the Cairo Railroad Co. or the CMRy ran the trains.",
+   "catskill-and-tannersville-otis-summit-tannersville: opening 1897 vs 1899.",
+   "Buyer at the 1916 auction and the April 1899 Otis foreclosure, and whether management changed.",
+   "Geometry: the CMRy's re-use of the Canajoharie and Catskill grade Catskill - South Cairo is inferred from OSM naming and the milepost fit; NY 32 as the Cairo branch grade is inferred from the OSM way split."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Catskill Mountain Railway",
+    "line": "Catskill Mountain Railway: Catskill Landing \u2013 Palenville",
+    "id": "catskill-mountain-railway-catskill-landing-palenville",
+    "color": "#880090",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h: the only figure found is the projected 1882 running time, '...the sixteen miles in about forty-five minutes to Palenville' (New-York Tribune 13 Aug 1882 p7) - a promoter's projection, not a measured timetable. Treat as an estimate.",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass via maps.mail.ru, 2026-10-18: ways named 'Catskill Mountain Railway' and 'Canajoharie and Catskill Railroad' (47060230, 89633029, 89633030, 362203708, 779670763, 47060232, 1461488170, 1266692930, 89583205, 1461488169, 1461488168, 1461488167, 1461488166, 1461489256, 1461488165, 1266692944, 1266692935, 1461489255, 1266693000, 1418309731, 1418309730, 1418309727, 1418309729, 1418309728, 47061992), chained in order; opstrace.py probe/gap fetch (no old_railway_operator ways, no OHM ways); Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: 15.65 mi drawn against 15.73 mi documented (Wikipedia) and 15.8 mi (Fowler station list), 0.5% short. Per-station check against Fowler's mileposts: West Shore crossing 1.16 (Fowler 1.2), Cairo Junction 9.22 (9.4), Lawrenceville 11.27 (11.5), Otis Junction 14.53 (14.8), Palenville 15.65 (15.8). The lifted grade survives in OSM only as fragmentary railway=abandoned ways with no old_railway_operator (probed 'Catskill Mountain', 'CMRy', 'Catskill Mountain Railway', 'Otis', 'Catskill & Tannersville': none); OpenHistoricalMap has nothing in the corridor, and no railway=demolished/razed ways exist there. Catskill Landing \u2013 Catskill village and South Cairo \u2013 Palenville are on ways OSM names 'Catskill Mountain Railway'. Catskill village \u2013 Leeds \u2013 South Cairo is on ways OSM names 'Canajoharie and Catskill Railroad', the 1830s grade the CMRy evidently re-used here (the OSM mapping splits the two names at South Cairo, where the C&C grade carries on to Cairo); that re-use is inferred from the OSM mapping and the milepost fit, not from a written source. APPROXIMATED: 17 straight-line bridges between mapped fragments, 3.47 mi in all, none longer than 0.46 mi - Catskill village, east of the West Shore crossing 711 m (0.44 mi); Catskill village \u2013 Jefferson Heights 539 m (0.33 mi); north of Leeds 544 m (0.34 mi); Leeds \u2013 South Cairo 579 m (0.36 mi); Leeds \u2013 South Cairo 746 m (0.46 mi); approaching South Cairo 551 m (0.34 mi); Lawrenceville 286 m (0.18 mi); Lawrenceville 404 m (0.25 mi); Kiskatom \u2013 Otis Junction 285 m (0.18 mi); Kiskatom \u2013 Otis Junction 316 m (0.2 mi); plus 7 under 250 m (619 m together). Gaps were bridged straight rather than routed over roads. The despike step was not applied (chain assembled in order from the road's own ways), so no curve was cut; simplified Douglas-Peucker 8 m + trim_reversals (0.02 mi lost). ALIGNMENT: drawn on the single surviving grade; no realignment is recorded.",
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1885,
+      "headway_min": 180,
+      "note": "3 ft gauge steam line from Catskill Landing (Hudson River steamboat wharf; ferry to Hudson) through Catskill village, the West Shore station (from 1883), Leeds, South Cairo and Cairo Junction to Otis Junction and Palenville, at the foot of the Mountain House escarpment and the mouth of Kaaterskill Clove. Built 1881-82 by the Catskill Mountain Railroad (Beach family / Catskill Mountain House). Passengers rode to South Cairo by July 28 1882 (Pomeroy marker); 'NOW IN OPERATION' ads from 6 Aug 1882, connecting with the Hudson River Day Line, Catskill night boats and the New York Central; reached Palenville in 1882 per secondary histories (the month is not established; by July 1883 it was advertised as the through route). Steam from opening; no animal traction. Summer-season service only between Cairo Junction and Palenville. Reorganized as the Catskill Mountain Railway in 1885 - the same enterprise and management, not a change of operator. Headway is an ESTIMATE: no frequency was sourced.",
+      "sources": [
+       "Segment-level: 1882 start from the Pomeroy South Cairo Depot marker (opened July 28 1882) and New-York Tribune / The Sun ads and correspondence of July-August 1882 and July 1883; Palenville reached 1882 per Wikipedia and the vizettes history; 1885 reorganization per Wikipedia. Headway NOT sourced - estimate.",
+       "https://www.wgpfoundation.org/historic-markers/south-cairo-depot/",
+       "https://www.loc.gov/resource/sn83030214/1882-07-11/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn83030272/1882-08-06/ed-1/?sp=8",
+       "https://www.loc.gov/resource/sn83030214/1882-08-07/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn83030214/1882-08-13/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn83030214/1883-07-10/ed-1/?sp=7",
+       "https://en.wikipedia.org/wiki/Catskill_Mountain_Railway",
+       "https://www.vizettes.com/kt/rr/catskill-rr-history/index.htm"
+      ]
+     },
+     {
+      "start": 1885,
+      "end": 1918,
+      "headway_min": 180,
+      "note": "Catskill Mountain Railway (reorganized 1885). Catskill - Cairo Junction ran with the year-round Cairo branch trains; Cairo Junction - Palenville and the Otis connection were summer only (Wikipedia). Sold at auction at the Catskill courthouse in 1916 (second-hand) but kept running; last trains 1918 (Wikipedia; Scenic Hudson), and the system was scrapped 1918-19 - its 4-4-0s went to the Oak Grove & Georgetown and its coaches to Mexico in 1920. CONFLICT: the Pomeroy marker says South Cairo depot served the railway 'until May 1919'; a winter 1918-19 service on the year-round Catskill - Cairo Junction stretch is plausible but unproven, so the drawn end is held at 1918 rather than inventing the 1919 tail. Headway is an ESTIMATE: no frequency was sourced.",
+      "sources": [
+       "Segment-level: 1918 end from Wikipedia ('last trains ran in 1918') and Scenic Hudson ('closed in 1918'); conflict with the Pomeroy marker's 'until May 1919' recorded in the note. Headway NOT sourced - estimate.",
+       "https://en.wikipedia.org/wiki/Catskill_Mountain_Railway",
+       "https://www.scenichudson.org/viewfinder/the-mountainside-ride-that-opened-up-the-catskills/",
+       "https://www.wgpfoundation.org/historic-markers/south-cairo-depot/",
+       "https://www.loc.gov/resource/sn83030180/1899-08-23/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn83030214/1900-07-04/ed-1/?sp=12"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.855347,
+      42.211632
+     ],
+     [
+      -73.859688,
+      42.212975
+     ],
+     [
+      -73.862719,
+      42.21419
+     ],
+     [
+      -73.864793,
+      42.214715
+     ],
+     [
+      -73.865694,
+      42.215841
+     ],
+     [
+      -73.866393,
+      42.218766
+     ],
+     [
+      -73.86798,
+      42.221345
+     ],
+     [
+      -73.869715,
+      42.221911
+     ],
+     [
+      -73.877893,
+      42.223953
+     ],
+     [
+      -73.883107,
+      42.224887
+     ],
+     [
+      -73.886955,
+      42.228809
+     ],
+     [
+      -73.88788,
+      42.23018
+     ],
+     [
+      -73.888804,
+      42.2328
+     ],
+     [
+      -73.88891,
+      42.233648
+     ],
+     [
+      -73.888897,
+      42.234422
+     ],
+     [
+      -73.888381,
+      42.236183
+     ],
+     [
+      -73.888561,
+      42.236995
+     ],
+     [
+      -73.889528,
+      42.238499
+     ],
+     [
+      -73.890815,
+      42.239773
+     ],
+     [
+      -73.892253,
+      42.240687
+     ],
+     [
+      -73.892681,
+      42.241196
+     ],
+     [
+      -73.892623,
+      42.241699
+     ],
+     [
+      -73.892168,
+      42.242758
+     ],
+     [
+      -73.892135,
+      42.243262
+     ],
+     [
+      -73.89249,
+      42.24377
+     ],
+     [
+      -73.892969,
+      42.244134
+     ],
+     [
+      -73.893571,
+      42.24432
+     ],
+     [
+      -73.895705,
+      42.244323
+     ],
+     [
+      -73.896307,
+      42.244509
+     ],
+     [
+      -73.896713,
+      42.244855
+     ],
+     [
+      -73.896924,
+      42.245271
+     ],
+     [
+      -73.896915,
+      42.245794
+     ],
+     [
+      -73.896531,
+      42.246997
+     ],
+     [
+      -73.897582,
+      42.247889
+     ],
+     [
+      -73.898282,
+      42.24804
+     ],
+     [
+      -73.899058,
+      42.24803
+     ],
+     [
+      -73.899669,
+      42.247783
+     ],
+     [
+      -73.901402,
+      42.246206
+     ],
+     [
+      -73.903004,
+      42.245282
+     ],
+     [
+      -73.905028,
+      42.244899
+     ],
+     [
+      -73.905679,
+      42.245085
+     ],
+     [
+      -73.907956,
+      42.247989
+     ],
+     [
+      -73.909042,
+      42.249692
+     ],
+     [
+      -73.910331,
+      42.250875
+     ],
+     [
+      -73.913308,
+      42.252579
+     ],
+     [
+      -73.913857,
+      42.253106
+     ],
+     [
+      -73.914088,
+      42.253757
+     ],
+     [
+      -73.914028,
+      42.254405
+     ],
+     [
+      -73.914284,
+      42.255037
+     ],
+     [
+      -73.918362,
+      42.258884
+     ],
+     [
+      -73.918491,
+      42.259443
+     ],
+     [
+      -73.918804,
+      42.259795
+     ],
+     [
+      -73.920217,
+      42.260453
+     ],
+     [
+      -73.922732,
+      42.260125
+     ],
+     [
+      -73.923211,
+      42.260182
+     ],
+     [
+      -73.930215,
+      42.263599
+     ],
+     [
+      -73.938568,
+      42.26621
+     ],
+     [
+      -73.93905,
+      42.266964
+     ],
+     [
+      -73.939351,
+      42.268124
+     ],
+     [
+      -73.939769,
+      42.268957
+     ],
+     [
+      -73.941475,
+      42.270339
+     ],
+     [
+      -73.942162,
+      42.270744
+     ],
+     [
+      -73.94847,
+      42.272411
+     ],
+     [
+      -73.948846,
+      42.27222
+     ],
+     [
+      -73.949511,
+      42.271482
+     ],
+     [
+      -73.949586,
+      42.270767
+     ],
+     [
+      -73.949919,
+      42.270116
+     ],
+     [
+      -73.950552,
+      42.269616
+     ],
+     [
+      -73.951024,
+      42.269378
+     ],
+     [
+      -73.952117,
+      42.269133
+     ],
+     [
+      -73.953379,
+      42.269054
+     ],
+     [
+      -73.954548,
+      42.268795
+     ],
+     [
+      -73.957649,
+      42.267526
+     ],
+     [
+      -73.959144,
+      42.266567
+     ],
+     [
+      -73.959752,
+      42.264969
+     ],
+     [
+      -73.960325,
+      42.264038
+     ],
+     [
+      -73.961358,
+      42.263129
+     ],
+     [
+      -73.962249,
+      42.262038
+     ],
+     [
+      -73.964734,
+      42.258368
+     ],
+     [
+      -73.965174,
+      42.256697
+     ],
+     [
+      -73.965278,
+      42.25477
+     ],
+     [
+      -73.96558,
+      42.254071
+     ],
+     [
+      -73.966341,
+      42.253537
+     ],
+     [
+      -73.967242,
+      42.253275
+     ],
+     [
+      -73.973073,
+      42.252535
+     ],
+     [
+      -73.974439,
+      42.252025
+     ],
+     [
+      -73.974884,
+      42.25147
+     ],
+     [
+      -73.975462,
+      42.242776
+     ],
+     [
+      -73.975722,
+      42.241679
+     ],
+     [
+      -73.976272,
+      42.240657
+     ],
+     [
+      -73.980575,
+      42.23448
+     ],
+     [
+      -73.981788,
+      42.232069
+     ],
+     [
+      -73.982237,
+      42.229939
+     ],
+     [
+      -73.982491,
+      42.229343
+     ],
+     [
+      -73.985416,
+      42.226425
+     ],
+     [
+      -73.98859,
+      42.225186
+     ],
+     [
+      -73.990533,
+      42.224933
+     ],
+     [
+      -73.992545,
+      42.224897
+     ],
+     [
+      -73.993398,
+      42.224598
+     ],
+     [
+      -73.994873,
+      42.223278
+     ],
+     [
+      -73.995274,
+      42.222471
+     ],
+     [
+      -73.995547,
+      42.220528
+     ],
+     [
+      -73.99547,
+      42.217753
+     ],
+     [
+      -73.99529,
+      42.216833
+     ],
+     [
+      -73.994399,
+      42.214988
+     ],
+     [
+      -73.994046,
+      42.213673
+     ],
+     [
+      -73.99404,
+      42.213166
+     ],
+     [
+      -73.994368,
+      42.212358
+     ],
+     [
+      -73.994912,
+      42.211678
+     ],
+     [
+      -73.998,
+      42.209472
+     ],
+     [
+      -73.999338,
+      42.206821
+     ],
+     [
+      -74.001788,
+      42.202732
+     ],
+     [
+      -74.003398,
+      42.198963
+     ],
+     [
+      -74.005554,
+      42.194353
+     ],
+     [
+      -74.006126,
+      42.193421
+     ],
+     [
+      -74.007243,
+      42.192613
+     ],
+     [
+      -74.00929,
+      42.191946
+     ],
+     [
+      -74.010034,
+      42.191439
+     ],
+     [
+      -74.012043,
+      42.188096
+     ],
+     [
+      -74.012311,
+      42.187007
+     ],
+     [
+      -74.011959,
+      42.185722
+     ],
+     [
+      -74.011956,
+      42.184971
+     ],
+     [
+      -74.012465,
+      42.182586
+     ],
+     [
+      -74.013091,
+      42.178371
+     ],
+     [
+      -74.01465,
+      42.174852
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Catskill Mountain Railway",
+    "line": "Catskill Mountain Railway: Cairo Branch",
+    "id": "catskill-mountain-railway-cairo-branch",
+    "color": "#880090",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 3.8-mile 3 ft gauge steam branch; no running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass via maps.mail.ru, 2026-10-18: way 921490959 named 'Catskill Mountain Railway', NY Route 32 ways 921490963 and 921490954 as a stand-in, and the 3 ft disused fragment 395019739; Douglas-Peucker 8 m.",
+    "geometry_quality": "3.81 mi drawn against 3.8 mi documented (Fowler: Cairo Junction 9.4, Cairo 13.2). Cairo Junction \u2013 a point 1.2 mi north is on the OSM way named 'Catskill Mountain Railway' (921490959). LATER ALIGNMENT / STAND-IN: the next 2.0 mi into Cairo are drawn on NY Route 32 (ways 921490963, 921490954), which the OSM mapper split exactly where the named grade meets it, consistent with the highway having been built on or beside the lifted grade - but no source confirms the road follows the grade, so treat this 2.0 mi as approximate. APPROXIMATED: the final 0.54 mi (866 m) from NY 32 / NY 23 to the terminal is a straight line ending at a short 3 ft-gauge railway=disused fragment (way 395019739) off Railroad Avenue, taken as the Cairo station site. A second tiny 'Catskill Mountain Railway' fragment 0.4 mi further north (way 47061993) is not drawn.",
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1918,
+      "headway_min": 240,
+      "note": "Cairo Junction (on the CMRy main line, 9.4 mi from Catskill Landing) - Cairo, 3 ft gauge. Owned by the separately chartered Cairo Railroad Co. (chartered April 1884, opened for business June 1885 per a second-hand summary of the UDRRHS page); drawn as the CMRy's own branch because the only operating descriptions (Wikipedia, Fowler) treat it so - whether the Cairo RR ran its own trains or the CMRy worked it under lease/agreement is not established. The only year-round line of the system, built for bluestone, hay and fruit and later shale for the Catskill Shale Brick Co. (1894-1914); passengers rode connecting trains from Catskill - 'Trains for Cairo ... connect' (Catskill Evening Line ads, Aug 1899 and July 1900). Freight began 1884 per a town history (freight, not a passenger start). Ended after the 1918 season (UDRRHS summary; Wikipedia); a possible run into May 1919 (Pomeroy marker) is not drawn. 'Cairo' in the 1882-83 ads was a stage connection from South Cairo, not rail. Headway is an ESTIMATE: no frequency was sourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1885 start is from a second-hand search summary of the UDRRHS Cairo Railroad page (not read directly), and its 'opened for business' does not separate passenger from freight service; the 1918 end is from Wikipedia and the same second-hand summary. Passenger trains to Cairo are positively attested only for 1899 and 1900 (Evening Line steamer ads). Headway NOT sourced - estimate.",
+       "https://www.udrrhs.org/html/cairo.htm",
+       "https://en.wikipedia.org/wiki/Catskill_Mountain_Railway",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+       "https://www.loc.gov/resource/sn83030180/1899-08-23/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn83030214/1900-07-04/ed-1/?sp=12"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.968537,
+      42.253128
+     ],
+     [
+      -73.968941,
+      42.253146
+     ],
+     [
+      -73.969276,
+      42.253419
+     ],
+     [
+      -73.969607,
+      42.253945
+     ],
+     [
+      -73.970258,
+      42.25568
+     ],
+     [
+      -73.972264,
+      42.263515
+     ],
+     [
+      -73.972684,
+      42.264546
+     ],
+     [
+      -73.977489,
+      42.273739
+     ],
+     [
+      -73.979631,
+      42.278478
+     ],
+     [
+      -73.980779,
+      42.280382
+     ],
+     [
+      -73.983821,
+      42.284756
+     ],
+     [
+      -73.986072,
+      42.290079
+     ],
+     [
+      -73.989761,
+      42.294357
+     ],
+     [
+      -73.989918,
+      42.295023
+     ],
+     [
+      -73.989804,
+      42.295617
+     ],
+     [
+      -73.989409,
+      42.296213
+     ],
+     [
+      -73.988832,
+      42.29668
+     ],
+     [
+      -73.997829,
+      42.300969
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Otis Elevating Railway",
+    "line": "Otis Elevating Railway: Otis Junction \u2013 Otis Summit",
+    "id": "otis-elevating-railway-otis-junction-otis-summit",
+    "color": "#D060D0",
+    "mode": "cable_car",
+    "avg_speed_kmh": 10,
+    "speed_source": "estimated: cable funicular; no trip time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass via maps.mail.ru, 2026-10-18: way 72946122 'Otis Elevating Railroad' (railway=abandoned).",
+    "geometry_quality": "Single straight OSM way 'Otis Elevating Railroad' (72946122, railway=abandoned, 2 nodes) from its foot at Otis Junction on the CMRy to Otis Summit; a funicular incline is straight, so the 2-node way is a faithful trace. 1.22 mi horizontal drawn against 7,000 ft (1.33 mi) as built along the slope (Wikipedia) and 1.3 mi (Fowler); with the 1,630 ft rise the drawn line is about 6,640 ft on the slope, so it runs the full as-built length from the CMRy. ALIGNMENT: the line was shortened in 1904 when the lower trestle was eliminated (Wikipedia). The drawn geometry is the AS-BUILT 1892 length for both segments; the post-1904 foot of the incline was not located, so the 1904-1918 segment is drawn slightly too long at the bottom by an unknown amount.",
+    "segments": [
+     {
+      "start": 1892,
+      "end": 1904,
+      "headway_min": 60,
+      "note": "3 ft gauge cable funicular up the Hudson-facing escarpment from Otis Junction on the Catskill Mountain Railway to Otis Summit beside the Catskill Mountain House: 7,000 ft long, 1,630 ft rise, maximum grade 34%, passing loop at mid-point; built by the Otis Elevator Co. for Charles L. Beach. Opened Aug 7 1892 (Wikipedia; NYT 5 Oct 1892 inspection trip). Mechanical traction, in scope (Rule 5). At the top it connected with the U&D's Kaaterskill Railroad and, from 1899, the Catskill and Tannersville. Sold at foreclosure April 1899 (NYT 9 Apr 1899, per Wikipedia), apparently to the same Catskill interests - a change of owning corporation with no evidence of a change in who ran the cars, so not split. Summer season only. Segment ends at the 1904 shortening (lower trestle eliminated) only to record the alignment change; service was continuous. Headway is an ESTIMATE (cars met the trains): no frequency was sourced.",
+      "sources": [
+       "Segment-level: opening Aug 7 1892 and 1904 shortening from Wikipedia (citing NYT 1892-10-05, 1899-04-09, 1899-08-25). Headway NOT sourced - estimate.",
+       "https://en.wikipedia.org/wiki/Otis_Elevating_Railway",
+       "https://www.scenichudson.org/viewfinder/the-mountainside-ride-that-opened-up-the-catskills/"
+      ]
+     },
+     {
+      "start": 1904,
+      "end": 1918,
+      "headway_min": 60,
+      "note": "Shortened 1904, the lower trestle eliminated (Wikipedia); the drawn line is still the as-built length (see geometry_quality). From 1904 freight cars were interchanged with the Catskill and Tannersville at the summit; passengers still changed cars. Closed 1918 with the CMRy and the C&T and sold for scrap (Wikipedia; Scenic Hudson - scrap for WWI armaments); the cars went to the Lookout Mountain Incline, Chattanooga. Headway is an ESTIMATE: no frequency was sourced.",
+      "sources": [
+       "Segment-level: 1918 closure from Wikipedia ('in 1918 all three railroads were closed') and Scenic Hudson. Headway NOT sourced - estimate.",
+       "https://en.wikipedia.org/wiki/Otis_Elevating_Railway",
+       "https://www.scenichudson.org/viewfinder/the-mountainside-ride-that-opened-up-the-catskills/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.01076,
+      42.190661
+     ],
+     [
+      -74.033383,
+      42.196071
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Catskill and Tannersville Railway",
+    "line": "Catskill and Tannersville: Otis Summit \u2013 Tannersville",
+    "id": "catskill-and-tannersville-otis-summit-tannersville",
+    "color": "#70C800",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 5.2-mile 3 ft gauge mountain-top steam line with eight stops; no running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass via maps.mail.ru, 2026-10-18: ways 1340750854 and 47062176 named 'Catskill and Tannersville Railroad', starting from the summit node of way 72946122; Douglas-Peucker 8 m.",
+    "geometry_quality": "5.13 mi drawn against 5.2 mi documented (Fowler, Wikipedia). Per-station: Haines Falls village 3.33 (Fowler Haines Falls 3.5), Tannersville 5.13 (5.2). Traced on OSM ways named 'Catskill and Tannersville Railroad' (1340750854 near Kaaterskill Falls; 47062176 from east of Haines Falls to Tannersville; 3 ft gauge tagged). Deliberately NOT routed over the parallel Ulster and Delaware Kaaterskill Railroad ways (tagged old_railway_operator=NYC 'Kaaterskill Branch' and 'Kaaterskill Rail Trail'), which run 30-500 m away and were a separate, competing line. APPROXIMATED: (1) Otis Summit \u2013 Kaaterskill Falls, 1.24 mi (1,996 m) straight - this chord CROSSES SOUTH LAKE, so it is certainly not the alignment; the C&T's route round the lake between the summit and Laurel House is not mapped in OSM or OHM and is not drawn; (2) Kaaterskill Falls \u2013 east of Haines Falls, 0.84 mi (1,359 m) straight, passing north of the U&D grade. 2.08 mi of 5.13 (41%) is straight-line.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1918,
+      "headway_min": 120,
+      "note": "3 ft gauge steam line ('The Huckleberry') across the mountain top from Otis Summit by Mountain Crest, Laurel House, Kaaterskill Falls, Sunset View, The Antlers, Haines Falls and Clum Road to Tannersville (Fowler). Built in 1899 after the Ulster and Delaware standard-gauged its Kaaterskill Railroad, breaking the narrow-gauge connection at Otis Summit; it paralleled and competed with that U&D line (drawn separately in ulster_delaware_railroad.geojson). Locomotives came via the Otis company in 1899. Common Beach-family management with the CMRy and the Otis, but its own company. Summer only. Bankrupt and closed 1918, torn up and scrapped 1919 - 1919 is the scrapping year, not a passenger year. CONFLICT on the start: 1899 (Wikipedia C&T and CMRy articles) vs 'built in 1897' (Wikipedia CMRy) and 'by 1897' (vizettes); drawn from 1899, the later candidate. Headway is an ESTIMATE: no frequency was sourced.",
+      "sources": [
+       "Segment-level: 1899 opening and 1918 closure from Wikipedia (Catskill and Tannersville Railway; Catskill Mountain Railway; Otis Elevating Railway 'in 1918 all three railroads were closed'); 1897 conflict from vizettes. The 1899/1900 Evening Line ads naming Haines Corners and Tannersville trains are supportive only - those could be U&D trains. Headway NOT sourced - estimate.",
+       "https://en.wikipedia.org/wiki/Catskill_and_Tannersville_Railway",
+       "https://en.wikipedia.org/wiki/Catskill_Mountain_Railway",
+       "https://en.wikipedia.org/wiki/Otis_Elevating_Railway",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+       "https://www.vizettes.com/kt/rr/catskill-rr-history/index.htm",
+       "https://www.loc.gov/resource/sn83030180/1899-08-23/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn83030214/1900-07-04/ed-1/?sp=12"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.033383,
+      42.196071
+     ],
+     [
+      -74.057617,
+      42.195894
+     ],
+     [
+      -74.061327,
+      42.195951
+     ],
+     [
+      -74.065533,
+      42.195752
+     ],
+     [
+      -74.066715,
+      42.195841
+     ],
+     [
+      -74.085702,
+      42.198559
+     ],
+     [
+      -74.091517,
+      42.198257
+     ],
+     [
+      -74.092218,
+      42.198134
+     ],
+     [
+      -74.094655,
+      42.197162
+     ],
+     [
+      -74.096704,
+      42.196098
+     ],
+     [
+      -74.099087,
+      42.195486
+     ],
+     [
+      -74.102611,
+      42.194088
+     ],
+     [
+      -74.103278,
+      42.193934
+     ],
+     [
+      -74.110679,
+      42.19455
+     ],
+     [
+      -74.126913,
+      42.194206
+     ],
+     [
+      -74.131709,
+      42.193899
+     ]
+    ]
+   }
+  }
+ ]
+}
