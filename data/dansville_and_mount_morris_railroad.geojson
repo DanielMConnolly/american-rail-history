@@ -1,0 +1,319 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Mount Morris - Sonyea - Groveland - West Sparta - Dansville, Livingston County NY, ~14.5 mi, built to the Erie's 6 ft gauge 1871-72 by the Erie and Genesee Valley Railroad. Two features on identical geometry, split by operator (Rule 4): the Erie ran it under lease 1872 - 21 Oct 1891; the independent Dansville and Mount Morris Railroad ran it from 22 Oct 1891 until passenger service ended in 1939. Until 2026-10-18 this stretch was drawn as the Dansville tail of avon_geneseo_mount_morris_railroad.geojson (1859-1941, AG&MM colour); that feature now ends at Mount Morris. The D&MM's Dansville and Groveland stations are distinct from the DL&W's stations of the same names on the parallel Lackawanna main line.",
+  "research_report": "research/branches/dansville_and_mount_morris_railroad.txt",
+  "sources": [
+   "https://chroniclingamerica.loc.gov — New York Herald 10 Jul 1872 p.9 (Erie's list of leased lines: 'The Erie and Genesee Valley Railroad - Dansville to Mount Morris, leased')",
+   "https://www.loc.gov/collections/chronicling-america/ — New-York Tribune 21 Oct 1891 p.9 ('To discontinue a branch line': NY,LE&W to cease operating the Erie and Genesee Valley road)",
+   "https://www.loc.gov/collections/chronicling-america/ — New-York Tribune 26 May 1894 p.1 (D&MM trains carrying express, suspended by flood)",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs3.pdf (table 159; Erie legend y = listed in 1875 Official Guide)",
+   "https://ldsgenealogy.com/NY/books/History-of-Livingston-County-New-York-with-illustrations-and-biographical-sketches-of-some-of-its-prominent-men-and-pioneers-part-23.htm",
+   "https://ldsgenealogy.com/NY/books/A-history-of-Livingston-County-New-York-part-32.htm",
+   "https://livingstoncountyny.gov/DocumentCenter/View/11712",
+   "https://www.american-rails.com/dmm.html",
+   "http://www.rochester-railfan.net/dmm.htm",
+   "research/sources/official_guide_1952.txt (D&MM table 'Freight Service only', local TT Aug 1951)"
+  ],
+  "not_yet_sourced": "Exact passenger end date (1939 is year-only; the D&MM's ICC reports 1901-1939 and PSC reports 1914-1954 in the Livingston County Historian's collection C100 would settle it). D&MM passenger continuity 1892-1938 and any break at the 1891 changeover or during the 1894-1927 receivership. Equipment and frequency in both eras (all headways and speeds are estimates). Erie-era through running Rochester/Avon - Dansville vs a Mount Morris shuttle. Opening: fall 1871 vs 1872 (drawn 1872). Mileage: 12 / 14.5 / 14.75 / 15 mi in different sources. Exact Mount Morris terminal/junction location (the north 1.5 mi is a straight-line approximation).",
+  "freight_only_audit": "Not drawn (Rule 1): D&MM freight after 1939, the 1943-1985 Groveland - Dansville stub, the c.1933 DL&W connection at Groveland (freight interchange), and today's G&W / Rochester & Southern operation.",
+  "pulled": "20261018"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Erie Railroad",
+    "line": "Erie: Mount Morris – Dansville",
+    "id": "erie-mount-morris-dansville",
+    "color": "#22223B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 30 km/h assumed for a 14.5-mi steam branch with five intermediate stops; no timetable running time found; unsourced",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced 2026-10-18 with opstrace.py (D&MM-named ways 1x, untagged rail 1.25x, other named operators incl. DL&W 12x); OpenHistoricalMap queried, no ways in corridor.",
+    "geometry_quality": "Real-traced from OpenStreetMap except two short straight legs at the Mount Morris end. Mount Morris - Sonyea - Groveland: OSM ways tagged railway=abandoned, name='Dansville and Mount Morris Railroad' (~5.9 mi; lifted 1940-43). Groveland - West Sparta - Dansville: the surviving active Rochester & Southern 'Genesee and Wyoming Subdivision' stub (~7.5 mi; OSM carries no old_railway_operator on it, but it is the D&MM's own 7.8-mi Groveland - Dansville remnant per the research report), ending on the OSM 'Dansville and Mount Morris Railroad' way at the D&MM's own Dansville depot - NOT the DL&W's hillside Dansville station. Straight-line legs: (1) 0.5 mi from the Mount Morris vertex shared with avon_geneseo_mount_morris_railroad.geojson (a village-centre point, not a surveyed station) to the south end of the Erie's own abandoned grade into Mount Morris; (2) 1.0 mi from there to the north end of the OSM D&MM grade - no OSM or OpenHistoricalMap way survives for this lifted stretch (OHM returned nothing for the corridor). Traced length 13.4 mi + 1.5 mi straight = 14.9 mi total, against 14.5 mi documented (branchline.uk table 159; Erie 1872: 14 3/4; county historian: 15). Checked against the Lackawanna: of 421 points sampled every 50 m along the line, only 2 fall within 40 m of an OSM way tagged old_railway_operator=DL&W, both at the Groveland crossing/interchange; the DL&W's own Groveland - Dansville grade is the separate abandoned hillside line to the east and is not used. Era of alignment: the OSM grade is the D&MM's 1872-1940 route; no realignment of this line is recorded, so no later-alignment caveat is known, but the Groveland - Dansville stub is drawn as the track exists today.",
+    "segments": [
+     {
+      "start": 1872,
+      "end": 1891,
+      "headway_min": 480,
+      "note": "Built 1871-72 by the Erie and Genesee Valley Railroad and leased to the Erie Railway (New York, Lake Erie and Western from 1878 - a rename, same operator), which ran it as a stub of its Rochester - Avon - Mount Morris branch. Sources conflict on opening: one county history says cars entered Dansville in the fall of 1871; Smith's 1881 History of Livingston County (citing the State Engineer's 1879 report) says 7 miles were built in 1871 and the rest in 1872. Drawn from 1872, when the Erie's July 1872 list of leased lines (NY Herald 10 Jul 1872) confirms it in operation. Dansville, McNair (Groveland), Sonyea and Mount Morris appear in the 1875 Official Guide (branchline.uk table 159). Ends 1891: the NY Tribune of 21 Oct 1891 reports the NY,LE&W ceasing to operate the road the next day over a rental dispute. Whether Erie trains ran through from Rochester/Avon or as a Mount Morris shuttle is unverified. Headway (two round trips a day) is an ESTIMATE, unsourced.",
+      "sources": [
+       "Segment-level: this segment's note names the sources for its start year (NY Herald 10 Jul 1872; Smith 1881) and end year (NY Tribune 21 Oct 1891). The headway is not sourced.",
+       "https://chroniclingamerica.loc.gov — New York Herald 10 Jul 1872 p.9 (Erie's list of leased lines: 'The Erie and Genesee Valley Railroad - Dansville to Mount Morris, leased')",
+       "https://www.loc.gov/collections/chronicling-america/ — New-York Tribune 21 Oct 1891 p.9 ('To discontinue a branch line': NY,LE&W to cease operating the Erie and Genesee Valley road)",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs3.pdf (table 159; Erie legend y = listed in 1875 Official Guide)",
+       "https://ldsgenealogy.com/NY/books/History-of-Livingston-County-New-York-with-illustrations-and-biographical-sketches-of-some-of-its-prominent-men-and-pioneers-part-23.htm",
+       "https://ldsgenealogy.com/NY/books/A-history-of-Livingston-County-New-York-part-32.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.87417,
+      42.72562
+     ],
+     [
+      -77.8692,
+      42.719
+     ],
+     [
+      -77.860307,
+      42.706064
+     ],
+     [
+      -77.857622,
+      42.703438
+     ],
+     [
+      -77.85524,
+      42.701534
+     ],
+     [
+      -77.850083,
+      42.698764
+     ],
+     [
+      -77.841231,
+      42.694733
+     ],
+     [
+      -77.839772,
+      42.693779
+     ],
+     [
+      -77.831987,
+      42.687692
+     ],
+     [
+      -77.830372,
+      42.687002
+     ],
+     [
+      -77.827698,
+      42.686087
+     ],
+     [
+      -77.815486,
+      42.683123
+     ],
+     [
+      -77.803121,
+      42.681194
+     ],
+     [
+      -77.796494,
+      42.680365
+     ],
+     [
+      -77.794868,
+      42.680045
+     ],
+     [
+      -77.79332,
+      42.679229
+     ],
+     [
+      -77.787897,
+      42.673392
+     ],
+     [
+      -77.78133,
+      42.666021
+     ],
+     [
+      -77.778853,
+      42.664165
+     ],
+     [
+      -77.773936,
+      42.661423
+     ],
+     [
+      -77.772678,
+      42.660393
+     ],
+     [
+      -77.771899,
+      42.65952
+     ],
+     [
+      -77.767026,
+      42.651314
+     ],
+     [
+      -77.711887,
+      42.574533
+     ],
+     [
+      -77.708145,
+      42.570587
+     ],
+     [
+      -77.703312,
+      42.565893
+     ],
+     [
+      -77.70005,
+      42.563487
+     ],
+     [
+      -77.699447,
+      42.562675
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Dansville and Mount Morris Railroad",
+    "line": "Dansville and Mount Morris: Mount Morris – Dansville",
+    "id": "dansville-and-mount-morris-railroad",
+    "color": "#8b3a62",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 30 km/h assumed for a 14.5-mi steam branch with five intermediate stops; no timetable running time found; unsourced",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced 2026-10-18 with opstrace.py (D&MM-named ways 1x, untagged rail 1.25x, other named operators incl. DL&W 12x); OpenHistoricalMap queried, no ways in corridor.",
+    "geometry_quality": "Real-traced from OpenStreetMap except two short straight legs at the Mount Morris end. Mount Morris - Sonyea - Groveland: OSM ways tagged railway=abandoned, name='Dansville and Mount Morris Railroad' (~5.9 mi; lifted 1940-43). Groveland - West Sparta - Dansville: the surviving active Rochester & Southern 'Genesee and Wyoming Subdivision' stub (~7.5 mi; OSM carries no old_railway_operator on it, but it is the D&MM's own 7.8-mi Groveland - Dansville remnant per the research report), ending on the OSM 'Dansville and Mount Morris Railroad' way at the D&MM's own Dansville depot - NOT the DL&W's hillside Dansville station. Straight-line legs: (1) 0.5 mi from the Mount Morris vertex shared with avon_geneseo_mount_morris_railroad.geojson (a village-centre point, not a surveyed station) to the south end of the Erie's own abandoned grade into Mount Morris; (2) 1.0 mi from there to the north end of the OSM D&MM grade - no OSM or OpenHistoricalMap way survives for this lifted stretch (OHM returned nothing for the corridor). Traced length 13.4 mi + 1.5 mi straight = 14.9 mi total, against 14.5 mi documented (branchline.uk table 159; Erie 1872: 14 3/4; county historian: 15). Checked against the Lackawanna: of 421 points sampled every 50 m along the line, only 2 fall within 40 m of an OSM way tagged old_railway_operator=DL&W, both at the Groveland crossing/interchange; the DL&W's own Groveland - Dansville grade is the separate abandoned hillside line to the east and is not used. Era of alignment: the OSM grade is the D&MM's 1872-1940 route; no realignment of this line is recorded, so no later-alignment caveat is known, but the Groveland - Dansville stub is drawn as the track exists today.",
+    "segments": [
+     {
+      "start": 1891,
+      "end": 1939,
+      "headway_min": 480,
+      "note": "The independent Dansville and Mount Morris Railroad (reorganized 1891 from the Erie and Genesee Valley) took over operation when the Erie withdrew on 22 Oct 1891 (NY Tribune 21 Oct 1891); whether passenger trains ran without a break across the changeover is not established. In receivership 1894 - 30 Sep 1927 (same company ran the trains, not an operator change). Primary touch-downs: 1894, D&MM trains carrying express (NY Tribune 26 May 1894); 1912, traffic suspended by a washout (Springfield Weekly Republican 4 Apr 1912, not passenger-specific). Passenger service ended 1939 per three agreeing secondary sources (Livingston County Historian's 2015 guide to the company's records, american-rails.com, rochester-railfan.net) - year only, no day or month. Freight continued after passengers ended (Mount Morris - Sonyea lifted 1940, Sonyea - Groveland 1943; the Groveland - Dansville stub is still worked by Rochester & Southern for G&W) - not drawn, Rule 1. The 1952 Official Guide lists the D&MM as 'Freight Service only'. Equipment (mixed train? motor car?) and frequency are unknown: the headway (two round trips a day) is an ESTIMATE, unsourced.",
+      "sources": [
+       "Segment-level: start year (22 Oct 1891 takeover, NY Tribune) and end year (1939, year only, three secondary sources) are checked against the references below. Passenger continuity across 1892-1938 is asserted by the secondary sources, not shown year by year (only 1894 has a contemporary touch-down), and the headway is NOT sourced.",
+       "https://www.loc.gov/collections/chronicling-america/ — New-York Tribune 21 Oct 1891 p.9 ('To discontinue a branch line': NY,LE&W to cease operating the Erie and Genesee Valley road)",
+       "https://www.loc.gov/collections/chronicling-america/ — New-York Tribune 26 May 1894 p.1 (D&MM trains carrying express, suspended by flood)",
+       "https://livingstoncountyny.gov/DocumentCenter/View/11712",
+       "https://www.american-rails.com/dmm.html",
+       "http://www.rochester-railfan.net/dmm.htm",
+       "research/sources/official_guide_1952.txt (D&MM table 'Freight Service only', local TT Aug 1951)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.87417,
+      42.72562
+     ],
+     [
+      -77.8692,
+      42.719
+     ],
+     [
+      -77.860307,
+      42.706064
+     ],
+     [
+      -77.857622,
+      42.703438
+     ],
+     [
+      -77.85524,
+      42.701534
+     ],
+     [
+      -77.850083,
+      42.698764
+     ],
+     [
+      -77.841231,
+      42.694733
+     ],
+     [
+      -77.839772,
+      42.693779
+     ],
+     [
+      -77.831987,
+      42.687692
+     ],
+     [
+      -77.830372,
+      42.687002
+     ],
+     [
+      -77.827698,
+      42.686087
+     ],
+     [
+      -77.815486,
+      42.683123
+     ],
+     [
+      -77.803121,
+      42.681194
+     ],
+     [
+      -77.796494,
+      42.680365
+     ],
+     [
+      -77.794868,
+      42.680045
+     ],
+     [
+      -77.79332,
+      42.679229
+     ],
+     [
+      -77.787897,
+      42.673392
+     ],
+     [
+      -77.78133,
+      42.666021
+     ],
+     [
+      -77.778853,
+      42.664165
+     ],
+     [
+      -77.773936,
+      42.661423
+     ],
+     [
+      -77.772678,
+      42.660393
+     ],
+     [
+      -77.771899,
+      42.65952
+     ],
+     [
+      -77.767026,
+      42.651314
+     ],
+     [
+      -77.711887,
+      42.574533
+     ],
+     [
+      -77.708145,
+      42.570587
+     ],
+     [
+      -77.703312,
+      42.565893
+     ],
+     [
+      -77.70005,
+      42.563487
+     ],
+     [
+      -77.699447,
+      42.562675
+     ]
+    ]
+   }
+  }
+ ]
+}
