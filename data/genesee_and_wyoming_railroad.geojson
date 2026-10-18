@@ -1,0 +1,596 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Genesee and Wyoming, a Livingston County NY salt road built for the Retsof mine. Three features in two colours, split by operator at 20 Mar 1899 (Rule 4): the Genesee and Wyoming Valley Railway (chartered 27 Apr 1891; receivership 15 Nov 1898 - 19 Mar 1899; foreclosure sale 7 Mar 1899) ran the 1893 stub-line trains and the 1895-1897 Retsof - Caledonia trains; the Genesee and Wyoming Railroad (operating from 20 Mar 1899) ran the Greigsville - P&L Junction mixed train from 2 Oct 1899 to (secondary sources) Dec 1929. Passenger service was suspended from no later than 30 Jun 1898 to 2 Oct 1899, and that gap is not drawn. The 1977 Genesee & Wyoming Inc. holding-company reorganization post-dates passenger service and is not a split.",
+  "research_report": "research/branches/genesee_and_wyoming_railroad.txt",
+  "sources": [
+   "NY Board of Railroad Commissioners, Annual Reports FY1893-FY1906 (archive.org: annualreport104commgoog, annualreport119commgoog, annualreport106commgoog, annualreport97commgoog, annualreport101commgoog, 153unkngoog, annualreport18commgoog, annualreport29commgoog, reportbo02newy, annualreport109commgoog, 25unkngoog, documentsofsenat1304newy)",
+   "https://archive.org/details/annualreport100commgoog (Commissioners' 1899 report: 7 Jun 1899 inspection; complaint case LIV)",
+   "https://archive.org/details/106unkngoog (13 Jul 1905 inspection)",
+   "NY Public Service Commission, Second District, Annual Reports 1907-1919 (archive.org: annualreportpub09distgoog, annualreportpub06distgoog, annualreportpub07distgoog, documentsofassem1346newy, annualreportpub04distgoog, legislativedocu35legigoog)",
+   "https://archive.org/details/LVRR_1895_Report (Lehigh Valley Railroad, 41st Annual Report, p.18-19)",
+   "https://archive.org/details/sim_railroad-history_1937-10_44 (W. W. Robinson, 'Genesee and Wyoming', RLHS Bulletin 44, Oct 1937)",
+   "https://archive.org/details/americanshortlin0000lewi (E. A. Lewis, American Shortline Railway Guide)",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf (J. Fowler, New York State Railroads part 4, entry 216)",
+   "https://scotlawrence.github.io/GW/GWpage.html (railfan timeline)",
+   "research/sources/official_guide_1952.txt (Feb 1952 Official Guide: Retsof and Greigsville daggered 'For freight only')"
+  ],
+  "not_yet_sourced": "END OF PASSENGER SERVICE: the 1929 end of genesee-wyoming-greigsville-pl-junction rests on Lewis's American Shortline Railway Guide ('discontinued in December 1929', read only as snippets) and an unsourced railfan timeline; the last primary record is the PSC passenger-train table for the year ended 30 Jun 1919. The 1920s PSC / Transit Commission statistical volumes, ICC Valuation Docket 428, or a Livingston County newspaper 'last passenger train' story would settle it. Also unresolved: whether 1898 saw G&WV passenger trains (FY1898 passengers may all pre-date 1898); whether 1895-97 trains also ran Retsof - Greigsville; the true span of the c.1891-1895 stub-line service (only 1893 is anchored); whether Fowler's 'operated over BRP / PRR / LV' entries were G&WV trains on trackage rights or through cars; the FY1893 passenger count (OCR 8,646 vs 3,646) and the FY1919 train count (622, read by column position); whether the passenger train ever ran south of Retsof to Halite (1912-1934); all headways and speeds (estimates); the exact Caledonia LV and Greigsville DL&W station sites.",
+  "omitted": "Not drawn: (1) Halite & Northern, Retsof - Halite (Cuylerville), 3.2 mi, leased by the G&W 1912-1934 - research report block [4], drawable NONE: no passenger evidence found (PSC 1912: 'opened for freight traffic'); add only if a source shows passengers. (2) The 10 Oct 1986 railfan special Rochester - P&L Junction - Retsof - report block [5]: it was a Rochester & Southern train (R&S GP40), not a Genesee and Wyoming passenger service, ran one day, and is known only from a search snippet of Passenger Train Journal; a one-day trip would draw a whole year on the slider. The '1975?' National Railway Bulletin fantrip to Groveland is unconfirmed in year and in whether it ran on G&W rails, so it is omitted too. (3) Through running beyond the company's own rails (BR&P Rochester - P&L Jct, WNY&P/PRR to Retsof Jct, LV via Wadsworth Jct) - those miles belong to the BR&P, PRR and LV layers.",
+  "freight_only_audit": "Not drawn (Rule 1): the Retsof - Retsof Junction branch after the 1893 anchor (not operated by 1895, freight/switching only in 1905-1909); the Retsof mine trackage; the Halite & Northern; the G&WV's freight-only operation Jul 1898 - 1 Oct 1899; and the whole road from 1930 to its 2003 absorption into the Rochester & Southern, including the 1982 ex-DL&W Greigsville - Groveland line and every later Genesee & Wyoming Inc. property.",
+  "horsecar_audit": "Not applicable: steam from the start (diesel from 1944).",
+  "pulled": "20261018"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Genesee and Wyoming Valley Railway",
+    "line": "Genesee and Wyoming Valley: Retsof \u2013 Caledonia",
+    "id": "genesee-wyoming-valley-retsof-caledonia",
+    "color": "#8CD15E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, unsourced: 25 km/h (about 15 mph) assumed for a mixed/passenger steam train on an 11.9-mi salt road with five intermediate stops; no timetable running time found.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced 2026-10-18 with opstrace.py. OSM carries no old_railway_operator for this company (probe of G&W|GNWR|GWV|G&WV|Genes+ee.*Wyoming|Rochester.*Southern|R&S over 42.70,-78.05,43.05,-77.70 returned 0 ways), so the company's own track was identified by OSM name ('Genesee and Wyoming Subdivision' / 'Genesee and Wyoming Railroad', operator=Rochester and Southern Railroad) or TIGER tiger:name_base='Genessee and Wyoming Railroad', excluding ways carrying old_railway_operator (the ex-DL&W Greigsville - Groveland track is also named 'Genesee and Wyoming Subdivision' and was costed as another railroad's, 12x). OpenHistoricalMap queried for the Caledonia, Retsof Junction and Greigsville stretches: no ways.",
+    "geometry_quality": "Real-traced from OpenStreetMap, no straight-line leg. Traced 11.6 mi against 11.9 mi documented (Retsof - P&L Jct 10.66 mi, PSC FY1910 Table 107 / Fowler 10.7; P&L Jct - Caledonia 1.2 mi, Fowler). Retsof - York Center - Inverness - Fraser - Taylor - P&L Junction: 10.3 mi on OSM way 131410530, railway=rail, name='Genesee and Wyoming Subdivision', operator=Rochester and Southern Railroad, tiger:name_base='Genessee and Wyoming Railroad' - the company's own line, still in use. P&L Junction - Caledonia (LV station): 1.3 mi that the G&WV ran over LEHIGH VALLEY TRACKAGE, not its own rails (LV 41st Annual Report, FY to 30 Nov 1895, p.18-19: the G&WV's passenger trains 'are now using our tracks between the point of connection and our station at Caledonia'): the first 0.7 mi from the end of the G&W way is on present-day untagged Rochester & Southern yard/connecting track beside the ex-BR&P (whose it was in 1895 is not known - it may be a later connection), the last 0.6 mi on OSM ways tagged old_railway_operator=LV (way 50934828, railway=rail, then railway=abandoned east of it). The Caledonia LV station point is placed on the LV about 1.2 mi from P&L Jct by Fowler's mileage, not at a surveyed depot site. Era of alignment: this is the line as it exists in OSM today; no realignment of Retsof - P&L Jct is recorded, so it is believed to be the 1895 route, but the Retsof end starts in the modern Retsof mine yard and the P&L Junction connection is drawn on today's track layout.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1897,
+      "headway_min": 720,
+      "note": "Genesee and Wyoming Valley Railway passenger and mixed trains, Retsof - P&L Junction on its own northern line (10.06 mi constructed and opened during FY1895 per the NY Railroad Commissioners' FY1895 return; an opening date of 1 Apr 1895 is given by a railfan timeline of unknown source), then over the Lehigh Valley 1.2 mi into the LV's Caledonia station (LV 41st Annual Report, fiscal year to 30 Nov 1895, p.18-19). Commissioners' returns: FY1896 4,098 passengers; FY1897 4,617 passengers; FY1898 about 3,025 (OCR scrambled). Drawn 1895-1897 only: FY1896-97 cover Jul 1895 - Jun 1897 and FY1898 passengers prove at least some service after Jul 1897; 1898 is possible but unproven. The road was not operated 1 Jul - 15 Nov 1898, then ran freight only under the receiver and the successor company until 2 Oct 1899 - that gap is deliberately not bridged. Headway ESTIMATE: two round trips a day, inferred only from the FY1895 mail contract for 'two mails per day, excluding Sundays'; no timetable seen. Whether these trains also ran Retsof - Greigsville is not established. Fowler records some 1896 running over the BR&P and LV beyond the company's rails; those miles belong to the BR&P and LV layers and are not drawn here.",
+      "sources": [
+       "Segment-level: this segment's note names its sources - NY Board of Railroad Commissioners' annual statistical returns FY1895-FY1898 (start, and passengers through FY1898) and the Lehigh Valley 41st Annual Report (running into Caledonia over the LV). The headway is an estimate from a mail contract, not a timetable.",
+       "https://archive.org/details/annualreport106commgoog (NY Railroad Commissioners, FY1895 return)",
+       "https://archive.org/details/annualreport97commgoog (FY1896)",
+       "https://archive.org/details/annualreport101commgoog (FY1897)",
+       "https://archive.org/details/153unkngoog (FY1898; not operated 1 Jul - 15 Nov 1898)",
+       "https://archive.org/details/LVRR_1895_Report (Lehigh Valley 41st Annual Report, p.18-19)",
+       "https://archive.org/details/annualreport100commgoog (inspection of 7 Jun 1899: 'The road runs no passenger trains')"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.883711,
+      42.835471
+     ],
+     [
+      -77.882141,
+      42.842326
+     ],
+     [
+      -77.86746,
+      42.884546
+     ],
+     [
+      -77.86693,
+      42.886256
+     ],
+     [
+      -77.866731,
+      42.887948
+     ],
+     [
+      -77.866896,
+      42.889582
+     ],
+     [
+      -77.867233,
+      42.890752
+     ],
+     [
+      -77.872653,
+      42.902817
+     ],
+     [
+      -77.873167,
+      42.904445
+     ],
+     [
+      -77.873491,
+      42.906627
+     ],
+     [
+      -77.873431,
+      42.908594
+     ],
+     [
+      -77.872846,
+      42.911105
+     ],
+     [
+      -77.869254,
+      42.918266
+     ],
+     [
+      -77.868999,
+      42.919646
+     ],
+     [
+      -77.869176,
+      42.921434
+     ],
+     [
+      -77.869727,
+      42.922848
+     ],
+     [
+      -77.870318,
+      42.923782
+     ],
+     [
+      -77.871273,
+      42.924837
+     ],
+     [
+      -77.875098,
+      42.928354
+     ],
+     [
+      -77.880045,
+      42.93511
+     ],
+     [
+      -77.880775,
+      42.936686
+     ],
+     [
+      -77.882849,
+      42.944008
+     ],
+     [
+      -77.885336,
+      42.949243
+     ],
+     [
+      -77.885912,
+      42.956298
+     ],
+     [
+      -77.885579,
+      42.957746
+     ],
+     [
+      -77.883414,
+      42.961571
+     ],
+     [
+      -77.882986,
+      42.962692
+     ],
+     [
+      -77.882904,
+      42.963848
+     ],
+     [
+      -77.883303,
+      42.966019
+     ],
+     [
+      -77.882877,
+      42.97747
+     ],
+     [
+      -77.882597,
+      42.978125
+     ],
+     [
+      -77.882083,
+      42.978557
+     ],
+     [
+      -77.880253,
+      42.979065
+     ],
+     [
+      -77.877663,
+      42.980157
+     ],
+     [
+      -77.87699,
+      42.980316
+     ],
+     [
+      -77.876227,
+      42.980318
+     ],
+     [
+      -77.873874,
+      42.980081
+     ],
+     [
+      -77.868327,
+      42.977744
+     ],
+     [
+      -77.866967,
+      42.977301
+     ],
+     [
+      -77.864946,
+      42.976878
+     ],
+     [
+      -77.863403,
+      42.976697
+     ],
+     [
+      -77.86139,
+      42.97669
+     ],
+     [
+      -77.858194,
+      42.97701
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Genesee and Wyoming Valley Railway",
+    "line": "Genesee and Wyoming Valley: Retsof Junction \u2013 Greigsville",
+    "id": "genesee-wyoming-valley-retsof-jct-greigsville",
+    "color": "#8CD15E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE, unsourced: 20 km/h assumed for a mixed train on a 3.8-mi industrial stub; no running time found.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced 2026-10-18 with opstrace.py. OSM carries no old_railway_operator for this company (probe of G&W|GNWR|GWV|G&WV|Genes+ee.*Wyoming|Rochester.*Southern|R&S over 42.70,-78.05,43.05,-77.70 returned 0 ways), so the company's own track was identified by OSM name ('Genesee and Wyoming Subdivision' / 'Genesee and Wyoming Railroad', operator=Rochester and Southern Railroad) or TIGER tiger:name_base='Genessee and Wyoming Railroad', excluding ways carrying old_railway_operator (the ex-DL&W Greigsville - Groveland track is also named 'Genesee and Wyoming Subdivision' and was costed as another railroad's, 12x). OpenHistoricalMap queried for the Caledonia, Retsof Junction and Greigsville stretches: no ways.",
+    "geometry_quality": "Real-traced from OpenStreetMap, no straight-line leg. Traced 3.7 mi against 3.8 mi documented (Retsof Jct - Retsof 2.3 mi Fowler / 2.27 mi 1905 inspection; Retsof - Greigsville 1.5 mi Fowler; PSC FY1910 3.73 mi). Retsof Junction (the PRR / WNY&P Rochester Branch near Piffard) - Retsof: 2.3 mi on TIGER-imported ways tagged tiger:name_base='Genessee and Wyoming Railroad' - way 20108906 (railway=abandoned, 1.7 mi) and way 20108924 (railway=rail, service=spur, 0.5 mi into the Retsof mine yard). Retsof - Greigsville: 1.5 mi on OSM way 95045800, railway=rail, name='Genesee and Wyoming Subdivision', ending at its junction with the DL&W main line. The drawn Greigsville end is that junction, about 0.7 mi south of Greigsville hamlet; the DL&W's Greigsville station site is not pinned. Era of alignment: today's OSM track and abandoned grade; no realignment recorded, but the Retsof end runs through the modern mine-yard layout.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1893,
+      "headway_min": 1440,
+      "note": "[ANCHOR] One proven calendar year. The Genesee and Wyoming Valley's first lines - Retsof Junction (connection with the Western New York & Pennsylvania, later PRR, near Piffard) - Retsof, and Retsof - Greigsville (DL&W) - were built c.1891, and were all the road had before the northern line opened in 1895. Fowler letters Retsof Junction, Retsof and Greigsville as listed in the 1893 WNY&P public timetable, which is what pins calendar 1893; the Commissioners' returns for FY1893, FY1894 and FY1895 all report passengers (FY1894: 1,000 passengers, mixed-train mileage). Service certainly ran wider than 1893 both ways (probably c.1892-1895), but each fiscal year straddles two calendar years and no other calendar year is confirmed - do not widen this anchor without a dated source. The Retsof Junction leg 'has not been in operation for four years' by Jun 1899 and was freight-only afterwards (1905, 1908 inspections); the Retsof - Greigsville leg carries passengers again from 1899 under the Genesee and Wyoming Railroad (separate feature). Headway ESTIMATE (one mixed train a day assumed); unsourced.",
+      "sources": [
+       "Segment-level: this segment's note names its source for the 1893 year - Fowler, New York State Railroads part 4, entry 216 (stations lettered as in the 1893 WNY&P public timetable) - with the Commissioners' FY1893-FY1895 returns showing passenger traffic. The headway is not sourced.",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf (entry 216, Genesee & Wyoming RR)",
+       "https://archive.org/details/annualreport104commgoog (NY Railroad Commissioners, FY1893 return)",
+       "https://archive.org/details/annualreport119commgoog (FY1894)",
+       "https://archive.org/details/annualreport100commgoog (inspection of 7 Jun 1899: Retsof Branch not operated for four years)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.848111,
+      42.843982
+     ],
+     [
+      -77.848522,
+      42.842986
+     ],
+     [
+      -77.849181,
+      42.83938
+     ],
+     [
+      -77.849875,
+      42.838741
+     ],
+     [
+      -77.850668,
+      42.838414
+     ],
+     [
+      -77.858923,
+      42.838348
+     ],
+     [
+      -77.863402,
+      42.839968
+     ],
+     [
+      -77.864041,
+      42.840078
+     ],
+     [
+      -77.86539,
+      42.839772
+     ],
+     [
+      -77.865876,
+      42.839363
+     ],
+     [
+      -77.866956,
+      42.837843
+     ],
+     [
+      -77.867943,
+      42.837421
+     ],
+     [
+      -77.869597,
+      42.837088
+     ],
+     [
+      -77.870651,
+      42.837023
+     ],
+     [
+      -77.878958,
+      42.836995
+     ],
+     [
+      -77.882478,
+      42.836244
+     ],
+     [
+      -77.883197,
+      42.835868
+     ],
+     [
+      -77.883711,
+      42.835471
+     ],
+     [
+      -77.886582,
+      42.832087
+     ],
+     [
+      -77.887119,
+      42.831122
+     ],
+     [
+      -77.888359,
+      42.827002
+     ],
+     [
+      -77.889128,
+      42.826007
+     ],
+     [
+      -77.890105,
+      42.825401
+     ],
+     [
+      -77.891325,
+      42.825053
+     ],
+     [
+      -77.897455,
+      42.824983
+     ],
+     [
+      -77.898497,
+      42.824698
+     ],
+     [
+      -77.899124,
+      42.824263
+     ],
+     [
+      -77.899489,
+      42.823703
+     ],
+     [
+      -77.899615,
+      42.820854
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Genesee and Wyoming Railroad",
+    "line": "Genesee and Wyoming: Greigsville \u2013 P&L Junction",
+    "id": "genesee-wyoming-greigsville-pl-junction",
+    "color": "#1FB9D1",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, unsourced: 25 km/h (about 15 mph) assumed for one mixed train each way a day on 12 mi; the research report suggests 15-20 mph is plausible but no timetable running time was found.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced 2026-10-18 with opstrace.py. OSM carries no old_railway_operator for this company (probe of G&W|GNWR|GWV|G&WV|Genes+ee.*Wyoming|Rochester.*Southern|R&S over 42.70,-78.05,43.05,-77.70 returned 0 ways), so the company's own track was identified by OSM name ('Genesee and Wyoming Subdivision' / 'Genesee and Wyoming Railroad', operator=Rochester and Southern Railroad) or TIGER tiger:name_base='Genessee and Wyoming Railroad', excluding ways carrying old_railway_operator (the ex-DL&W Greigsville - Groveland track is also named 'Genesee and Wyoming Subdivision' and was costed as another railroad's, 12x). OpenHistoricalMap queried for the Caledonia, Retsof Junction and Greigsville stretches: no ways.",
+    "geometry_quality": "Real-traced from OpenStreetMap, no straight-line leg. Traced 11.8 mi against 12.12 mi documented (1905 inspection; Fowler 12.2). Greigsville (junction with the DL&W) - Retsof: 1.5 mi on OSM way 95045800, railway=rail, name='Genesee and Wyoming Subdivision', tiger:name_base='Genessee and Wyoming Railroad'. Retsof - York Center - Inverness - Fraser - Taylor - P&L Junction: 10.3 mi on OSM way 131410530 (same tags, operator=Rochester and Southern Railroad), ending where it meets the ex-BR&P line at P&L Junction. The drawn Greigsville end is the G&W's junction with the DL&W, about 0.7 mi south of Greigsville hamlet; the station site is not pinned. Era of alignment: this is the line as it exists in OSM today (Rochester & Southern since 2003); no realignment is recorded, so it is believed to be the 1899-1929 route, but the Retsof section runs through the modern mine-yard track layout.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1918,
+      "headway_min": 1440,
+      "note": "Genesee and Wyoming Railroad (Fuller / International Salt interests; operated the property from 20 Mar 1899 after the 7 Mar 1899 foreclosure sale of the Genesee and Wyoming Valley). Passenger trains began 2 Oct 1899: answering A. B. Taylor's complaint of 6 Sep 1899 (NY Railroad Commissioners case LIV, decided 4 Oct 1899), the company said it would start running passenger trains on 2 October and then notified the Board that it had done so, enclosing its timetable. Mixed train with a combine: FY1900 1,861 passengers; FY1903 1,417; FY1905 2,362 (5,840 mixed train-miles); FY1906 2,481; 30 Aug 1907 inspection 'one train in each direction daily is run on which passengers are carried'. The PSC's 'Passenger Train Movement, Year Ended June 30, 1919' table lists the G&W (622 trains, figure read from a scrambled OCR column and not certain), the last PRIMARY record - so this segment ends at 1918 as the last primary-confirmed calendar year, and the next segment carries the secondary-only years. Per Robinson (RLHS Bulletin 44, 1937) the train left Greigsville in the morning and connected at P&L Junction with BR&P trains for Rochester, returning on the evening train's arrival; no evidence G&W trains ran into the LV's Caledonia station after 1899. Headway ESTIMATE: about one round trip a day, from the 1907 inspection and the FY1919 train count, not from a timetable.",
+      "sources": [
+       "Segment-level: this segment's note names its sources - the 1899 start from NY Railroad Commissioners' complaint case LIV (decided 4 Oct 1899), the service through 1918 from the Commissioners' FY1900-FY1906 returns, the 1905 and 1907 inspections, and the PSC Second District's passenger-train-movement table for the year ended 30 Jun 1919. The headway is an estimate from the 1907 inspection and the FY1919 count.",
+       "https://archive.org/details/annualreport100commgoog (Commissioners' 1899 report: complaint case LIV, A. B. Taylor)",
+       "https://archive.org/details/annualreport29commgoog (FY1900 return)",
+       "https://archive.org/details/25unkngoog (FY1905 return)",
+       "https://archive.org/details/106unkngoog (inspection of 13 Jul 1905)",
+       "https://archive.org/details/annualreportpub09distgoog (PSC 2nd District, 30 Aug 1907 inspection)",
+       "https://archive.org/details/legislativedocu35legigoog (PSC 'Passenger Train Movement, Year Ended June 30, 1919')"
+      ]
+     },
+     {
+      "start": 1919,
+      "end": 1929,
+      "headway_min": 1440,
+      "note": "Continuation of the same mixed-train service, on SECONDARY evidence only. The end year comes from Edward A. Lewis, American Shortline Railway Guide: 'Passenger service was discontinued in December 1929' (1986 and 1996 eds.; the 1991 ed. says 'in 1929'), read only as full-text search snippets. A railfan timeline (scotlawrence.github.io) also gives 1929, unsourced and possibly copied from Lewis; Robinson (RLHS Bulletin 44, Oct 1937) says only that passenger service 'was abandoned several years ago'. 1919 itself is covered by the PSC table for the year ended 30 Jun 1919; no primary record for Jul 1919 - 1929 was found (the 1920s PSC / Transit Commission statistics and ICC Valuation Docket 428 would settle it). The Feb 1952 Official Guide marks Retsof and Greigsville freight-only, which proves only that service had ended by 1951. Do not extend past 1929. Freight (salt) continued, and the road was folded into the Rochester & Southern in 2002-03; none of that is drawn (Rule 1). Headway ESTIMATE: one round trip a day assumed to continue.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: no primary source has been checked for 1920-1929. The 1929 end year rests on a secondary source (Lewis, American Shortline Railway Guide, 1986/1991/1996 eds., read as search snippets only) and an unsourced railfan timeline; 1919 is covered only by the PSC table for the year ended 30 Jun 1919. The headway is an estimate.",
+       "https://archive.org/details/americanshortlin0000lewi (Lewis, American Shortline Railway Guide - lending-only; snippets)",
+       "https://scotlawrence.github.io/GW/GWpage.html (railfan timeline, '1929 - G&W ends passenger service', no source)",
+       "https://archive.org/details/sim_railroad-history_1937-10_44 (Robinson, RLHS Bulletin 44, 1937)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.899615,
+      42.820854
+     ],
+     [
+      -77.899489,
+      42.823703
+     ],
+     [
+      -77.899124,
+      42.824263
+     ],
+     [
+      -77.898497,
+      42.824698
+     ],
+     [
+      -77.897455,
+      42.824983
+     ],
+     [
+      -77.891325,
+      42.825053
+     ],
+     [
+      -77.890105,
+      42.825401
+     ],
+     [
+      -77.889128,
+      42.826007
+     ],
+     [
+      -77.888359,
+      42.827002
+     ],
+     [
+      -77.886881,
+      42.831608
+     ],
+     [
+      -77.883711,
+      42.835471
+     ],
+     [
+      -77.882141,
+      42.842326
+     ],
+     [
+      -77.86746,
+      42.884546
+     ],
+     [
+      -77.866792,
+      42.887062
+     ],
+     [
+      -77.866788,
+      42.888905
+     ],
+     [
+      -77.867233,
+      42.890752
+     ],
+     [
+      -77.872653,
+      42.902817
+     ],
+     [
+      -77.873167,
+      42.904445
+     ],
+     [
+      -77.873491,
+      42.906627
+     ],
+     [
+      -77.873431,
+      42.908594
+     ],
+     [
+      -77.872846,
+      42.911105
+     ],
+     [
+      -77.869254,
+      42.918266
+     ],
+     [
+      -77.868999,
+      42.919646
+     ],
+     [
+      -77.869176,
+      42.921434
+     ],
+     [
+      -77.869727,
+      42.922848
+     ],
+     [
+      -77.870318,
+      42.923782
+     ],
+     [
+      -77.871273,
+      42.924837
+     ],
+     [
+      -77.875098,
+      42.928354
+     ],
+     [
+      -77.880045,
+      42.93511
+     ],
+     [
+      -77.880775,
+      42.936686
+     ],
+     [
+      -77.882849,
+      42.944008
+     ],
+     [
+      -77.885336,
+      42.949243
+     ],
+     [
+      -77.885912,
+      42.956298
+     ],
+     [
+      -77.885579,
+      42.957746
+     ],
+     [
+      -77.883414,
+      42.961571
+     ],
+     [
+      -77.882986,
+      42.962692
+     ],
+     [
+      -77.882904,
+      42.963848
+     ],
+     [
+      -77.883303,
+      42.966019
+     ],
+     [
+      -77.882877,
+      42.97747
+     ],
+     [
+      -77.882597,
+      42.978125
+     ],
+     [
+      -77.882083,
+      42.978557
+     ]
+    ]
+   }
+  }
+ ]
+}
