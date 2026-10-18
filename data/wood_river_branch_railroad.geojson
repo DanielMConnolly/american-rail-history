@@ -1,0 +1,192 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Wood River Branch Railroad ran 5.6 miles from Wood River Junction (Richmond, RI) on the Stonington Line / New Haven Shore Line via Woodville, Canonchet and Crossing to Hope Valley (Hopkinton, RI). Passenger service 1 Jul 1874 - Nov 1927, drawn 1874-1927 as one feature in the company's own colour. Research report: research/branches/wood_river_branch_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wood_River_Branch_Railroad (Featured Article; cites Kennedy, 'Two Tickets on the Wood River Train', 2018; Karr, 'The Rail Lines of Southern New England', 2nd ed. 2017, pp.152-153; Heppner, 'Railroads of Rhode Island', 2012, pp.124-125; Hope Valley Advertiser 1903-1927; Evening Tribune (Providence) 1927-1928)",
+   "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf (table 105 'WOOD RIVER BRANCH RR (NH)'; letters z=1893/96 or 1894, a=1904, b=1920, c=1932, d=1953)"
+  ],
+  "geometry_sources": [
+   "OpenHistoricalMap (Overpass, 2026-10-17): ways 202031249-202031253 'Wood River Branch Railroad' and switch node 2148174371",
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17, answered after retries): rail tiles, including railway=abandoned 'Wood River Branch Railroad' ways used as a cross-check, and the Northeast Corridor track at Wood River Junction"
+  ],
+  "freight_only": "Not drawn (Rule 1): the whole line Apr 1928 - Aug 1947, reopened after the Nov 1927 flood 'for freight service only' under the Feb 1928 New Haven agreement and worked by a Plymouth gasoline locomotive; ICC abandonment 8 Aug 1947, scrapped Nov 1947. The OHM ways' end_date (1947) is the abandonment, not a passenger year.",
+  "ownership_split": "None. The Wood River Branch Railroad Co. ran its own passenger trains 1874-1927. Not split: the NYP&B (1873-) and NYNH&H (1892-) stock and creditor interest, which was not a lease or operation; locomotive leases from the New Haven; USRA federal control Dec 1917 - 1 Mar 1920 (the map has no USRA operator convention). The only real change of operator, the New Haven as 'official operator' from Feb/Apr 1928, falls in the freight-only era and never reaches the map; the 1937 sale to Roy Rawlings likewise.",
+  "excluded": "Not drawn: (a) Apr 1928 - Aug 1947 freight-only operation (Rule 1); (b) the 'President's Special' (Apr 1938 - 1947), seats from retired coach No. 1 on an unpowered track car pushed or pulled by a gas speeder, used for stockholder trips, outings and track inspection with no public timetable or fares found - not counted as passenger or charter service; (c) the unbuilt 1867 'Wood River Railroad' charter route Richmond Switch - Greene.",
+  "not_yet_sourced": [
+   "Exact last passenger day: all trains stopped with the early-November 1927 washouts and passenger service never resumed; the date of the last scheduled passenger train is not stated in the sources read (Kennedy 2018 p.99 would settle it). The year 1927 is firm.",
+   "Headways: only Dec 1903 (four weekday round trips, Timetable No. 76) is counted; 'six runs per day before the flood' is a secondary paraphrase of Kennedy p.104 and 'runs' is read as one-way trips, unconfirmed; 1874-1902 frequency is unsourced.",
+   "Speed: no steam timetable running time was read; the ~18 min end-to-end figure is from the 1938 track car.",
+   "Woodville: WP calls it a flag stop from July 1910; Fowler letters it 'zb' (in the 1893/96 timetable). Probably both right (regular stop, later flag stop); not resolved, and it does not affect the drawn years.",
+   "President's Special 1938-1947: if evidence shows it carried the public on a regular or advertised basis, it would be a separate tourist_rail/charter question. Omitted until then.",
+   "Primary books (Kennedy 2018, Karr 2017, Heppner 2012) were seen only through Wikipedia's citations, not read directly."
+  ],
+  "pulled": "20261017"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Wood River Branch Railroad",
+    "line": "Wood River Branch Railroad: Wood River Junction – Hope Valley",
+    "id": "wood-river-branch-railroad",
+    "color": "#2E8B7A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 28,
+    "speed_source": "estimated: 5.6-mile single-track steam branch shuttle; the only running time found (about 18 min end to end) is from the 1938 track-car trip, not a steam passenger timetable. Unsourced.",
+    "geometry_source": "OpenHistoricalMap ways 202031249, 202031250, 202031251, 202031252 and 202031253 'Wood River Branch Railroad' (railway=rail, start_date 1874-07-04, end_date 1947-08-08; OHM's operator tag 'New York, New Haven and Hartford Railroad' and its dates were used for nothing) and OHM switch node 2148174371 at Wood River Junction, routed with opstrace.py 2026-10-17 over OSM rail tiles (maps.mail.ru Overpass mirror, which answered after retries); douglas_peucker 8 m then trim_reversals. Cross-checked against OSM railway=abandoned ways 1147804810-12, 1523540217-35 'Wood River Branch Railroad' and the Black Farm Management Area Trail (1110644402, 1523540231), which sit on the grade.",
+    "geometry_quality": "Traced 5.59 mi against 5.6 mi documented (Wikipedia infobox and station table; Fowler SNE(2) table 105) - 0.2% short. No straight-line approximated legs: the whole line is the five OpenHistoricalMap ways 202031249-53 'Wood River Branch Railroad', joined end to end (5.60 mi before simplifying). Cross-check against OpenStreetMap, which maps the lifted grade as railway=abandoned ('Wood River Branch Railroad', plus a stretch under the Black Farm Management Area Trail): 4.81 mi of the drawn 5.59 mi lies within 60 m of an OSM abandoned way (4.21 mi within 15 m). The other ~0.8 mi falls in six short stretches (mp 0.62-0.71, 1.39-1.43, 1.87-1.96, 2.51-2.63, 4.24-4.52, 4.74-4.91) where OSM maps no grade way, so there the line rests on the OHM mapper alone; the nearest other OSM abandoned way is up to 284 m off, which measures OSM's gap, not a known error. Alignment is the line's own (built 1874, lifted Nov 1947; no relocation is known), not a later one. South end is OHM's switch node at Wood River Junction (Richmond), 5 m from the OSM Northeast Corridor track (way 1217102452), so the branch meets the Stonington Line / New Haven Shore Line there; the drawn new_haven_shore_line.geojson passes 138 m away only because that layer is simplified to a 2.9-mi chord through Wood River Junction. North end is OHM's terminus at the Locustville end of Hope Valley (Hopkinton). Woodville falls at mp 2.31 on the drawn line (documented 2.3). Canonchet (3.7), 'Crossing' (5.3) and Hope Valley (5.6) are not separately located: Nominatim's 'Canonchet' is a neighbourhood point 1.2 km off the grade and was dropped as a waypoint; Hope Valley geocoded to a statistical (CDP) centroid 484 m off and was pinned to the OHM terminus.",
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1927,
+      "headway_min": 210,
+      "note": "Wood River Branch Railroad Company's own steam passenger-and-freight shuttle between Wood River Junction (Richmond Switch) on the Stonington Line / New Haven Shore Line and Hope Valley, serving the Wood/Pawcatuck River mill villages, via Woodville, Canonchet and 'Crossing'. Opened 1 Jul 1874 (WP, citing Karr 2017 p.152) with a new Osgood Bradley coach and the 4-4-0 'Gardner Nichols' - steam from the first day, no animal-power years. Mixed trains on a single coach, timed to meet main-line trains to Providence. The company ran its own trains with its own crews and engines throughout; the NYP&B (from 1873) and the New Haven (from 1892) held stock and debt only, leased locomotives late on (NH No. 10 from 1918) and USRA federal control Dec 1917 - 1 Mar 1920 did not change who ran the trains, so no ownership split. Fowler SNE(2) table 105 shows the line in the 1893/96 (z), 1904 (a) and 1920 (b) public timetables. Ends 1927: washouts from the early-November 1927 flood between Woodville and Hope Valley stopped all trains; directors voted 15 Nov 1927 to seek abandonment (Evening Tribune 15 Nov 1927, via WP). The line reopened in Apr 1928 for freight only, a condition of the New Haven's Feb 1928 agreement, and freight ran until ICC abandonment on 8 Aug 1947 (scrapped Nov 1947) - not drawn (Rule 1). The exact last passenger day in Nov 1927 is not established. headway_min 210 is an ESTIMATE: the only counted service is four weekday round trips in Timetable No. 76 (Hope Valley Advertiser 31 Dec 1903, via WP), with 'six runs per day before the flood' (Kennedy p.104, via WP) for the 1920s; 1874-1902 frequency is unsourced. Sunday trains ran only 29 Jul 1903 - 11 Sep 1904.",
+      "sources": [
+       "Segment-level: per the research report (research/branches/wood_river_branch_railroad.txt), WP (citing Karr 2017 p.152; Kennedy 2018 pp.10-11, 99-104; Hope Valley Advertiser 31 Dec 1903 and 17 Nov 1927; Evening Tribune 15 Nov 1927 and 24 Mar 1928) for the 1 Jul 1874 opening, the Nov 1927 passenger end and the Apr 1928 freight-only reopening; Fowler SNE(2) table 105 z/a/b letters for 1893/96, 1904 and 1920 presence. These were read by the researcher, not re-opened when this layer was traced; the books were seen only through WP's citations. Headway estimated.",
+       "https://en.wikipedia.org/wiki/Wood_River_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/southernnewenglandrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.691329,
+      41.437128
+     ],
+     [
+      -71.692306,
+      41.437077
+     ],
+     [
+      -71.693155,
+      41.437185
+     ],
+     [
+      -71.694048,
+      41.437611
+     ],
+     [
+      -71.694526,
+      41.438051
+     ],
+     [
+      -71.700256,
+      41.447344
+     ],
+     [
+      -71.705027,
+      41.454771
+     ],
+     [
+      -71.710613,
+      41.460369
+     ],
+     [
+      -71.71194,
+      41.461142
+     ],
+     [
+      -71.713387,
+      41.461593
+     ],
+     [
+      -71.714444,
+      41.461636
+     ],
+     [
+      -71.71701,
+      41.46146
+     ],
+     [
+      -71.718413,
+      41.461626
+     ],
+     [
+      -71.720322,
+      41.462674
+     ],
+     [
+      -71.720984,
+      41.463254
+     ],
+     [
+      -71.721371,
+      41.463905
+     ],
+     [
+      -71.721509,
+      41.46464
+     ],
+     [
+      -71.721429,
+      41.465201
+     ],
+     [
+      -71.71854,
+      41.47569
+     ],
+     [
+      -71.718595,
+      41.476474
+     ],
+     [
+      -71.719458,
+      41.479839
+     ],
+     [
+      -71.719334,
+      41.481432
+     ],
+     [
+      -71.718498,
+      41.484273
+     ],
+     [
+      -71.718787,
+      41.486472
+     ],
+     [
+      -71.717699,
+      41.489669
+     ],
+     [
+      -71.716524,
+      41.4924
+     ],
+     [
+      -71.716261,
+      41.493414
+     ],
+     [
+      -71.71629,
+      41.494963
+     ],
+     [
+      -71.717314,
+      41.499114
+     ],
+     [
+      -71.717281,
+      41.502278
+     ],
+     [
+      -71.71716,
+      41.502694
+     ],
+     [
+      -71.716336,
+      41.504014
+     ],
+     [
+      -71.716264,
+      41.506329
+     ]
+    ]
+   }
+  }
+ ]
+}
