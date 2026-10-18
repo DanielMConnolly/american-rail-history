@@ -1,0 +1,248 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Bath and Hammondsport Railroad, Steuben County, New York: a 9-mile steam short line from Bath, on the Erie and the DL&W, to Hammondsport at the head of Keuka Lake, built to carry passengers to the Keuka Lake steamers and grapes and wine out. Chartered Jan 17 1872, opened June 30 1875 as a 3 ft narrow gauge, standard-gauged Aug 1889, Erie-controlled from 1903/1908 to 1935-36. Regular passenger service drawn 1875-1917 [OPEN]. Nicknamed 'The Champagne Route' (a slogan, not a train name). Research report: research/branches/bath_and_hammondsport_railroad.txt.",
+  "sources": [
+   "https://rgvrrm.org/erie-railroad-rochester-division-chapter-four/ -- Ted Jackson, Erie Railroad Rochester Division, chapter four (opening June 30 1875; regauged Aug 17 1889; Erie control by 1908; passenger service 'into the mid-1920s'; 1935 flood and abandonment; 1936 sale; 1937 reorganisation)",
+   "https://crookedlakereview.com/articles/67_100/80nov1994/80palmer.html -- Richard F. Palmer, Crooked Lake Review Nov 1994 (3 ft gauge; Erie control 1903-1935; passenger business discontinued 1917; 1936 Wine Special; 1940s NRHS excursions)",
+   "https://crookedlakereview.com/articles/67_100/89aug1995/89sherer.html -- Crooked Lake Review Aug 1995 (Sherer): '10 trips a day', up to 12 in grape season (undated)",
+   "https://american-rails.com/bh.html -- American-Rails (charter, Wood and Stebbins leases, 1889 regauging, Erie control 1908-1936)",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs3.pdf -- John Fowler, New York State Railroads (3), section 156: station list and mileposts; 1875 Official Guide / 1876 Rand McNally letters",
+   "https://en.wikipedia.org/wiki/Bath_and_Hammondsport_Railroad -- Wikipedia, Bath and Hammondsport Railroad (passenger service ended 1917)",
+   "https://railcitymuseum.com/Bath_and_Hammondsport_RR.html -- Rail City Museum (conflicting 'first train summer of 1874')",
+   "https://en.wikipedia.org/wiki/B%26H_Rail_Corporation -- Wikipedia, B&H Rail Corporation (Champagne Railroad excursions to 1994 on the county-owned line; rails lifted Rheims - Hammondsport 2008)",
+   "research/sources/official_guide_1952.txt -- Official Guide Feb 1952, lines 21832-21838 (B&H entry, Aug 1951: 9 miles, 'Freight and express service') and 289844-289846 (Hammondsport daggered freight-only)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17): Erie-tagged 'B&H Rail Corporation' ways, Bath - Hammondsport (rail / disused / abandoned)",
+   "OpenHistoricalMap (2026-10-17): queried for Rheims - Hammondsport, no ways returned"
+  ],
+  "operator_split": "None drawn. Lessees Allen Wood (1874/75-1886) and Henry Stebbins (1886-?) worked the line as the B&H. Erie control (1903 per Palmer/Wikipedia, by 1908 per Jackson/American-Rails) appears to have been stock control - the B&H stayed a separate company (sold as the B&H in 1936; own entry in the 1951 Official Guide). If a source shows the Erie operated the passenger trains, split at 1903 into an Erie feature, Erie colour pulled programmatically.",
+  "omitted": [
+   "Report block [2] (drawable: NONE): the July 25 1936 'Wine Special', undated 1940s NRHS excursions, and the 1993-1994 Champagne Railroad excursions (which ran on the county-owned ex-DL&W Bath - Wayland line, not established as reaching Hammondsport).",
+   "All freight-only years: Bath - Hammondsport after regular passenger service ended (freight and express only by Aug 1951; freight under the B&H and B&H Rail Corp thereafter), and B&H Rail Corp's freight operation of the ex-DL&W Bath - Wayland and NS Painted Post - Bath lines (Rule 1).",
+   "The run of a few tenths of a mile over the shared Erie/DL&W corridor to the Bath depots (depot sites not located; see geometry_quality)."
+  ],
+  "existing_layer_note": "No existing feature for this company before this layer (grep for Hammondsport across data/).",
+  "not_yet_sourced": [
+   "bath-and-hammondsport-bath-hammondsport: [OPEN] end - passenger service confirmed only to 1917 (Palmer); Jackson says it continued into the mid-1920s. Actual end not found; no timetable or dated last train for either claim (report U1).",
+   "Erie control 1903 vs 1908, and whether it meant Erie operation of the trains (would require a split) or stock control only (report U2).",
+   "Opening: June 30 1875 (Jackson, American-Rails) vs 'first train summer of 1874' (Rail City Museum) (report U7).",
+   "All headways and speeds: estimates; the only frequency, '10 trips a day', is undated (report U4).",
+   "Whether the 1875-1889 narrow-gauge alignment differed from the standard-gauge one drawn, and the sites of the Bath Erie and DL&W depots (report U6).",
+   "Who held the Stebbins lease after 1886 up to Erie control (report U7)."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Bath and Hammondsport",
+    "line": "Bath and Hammondsport: Bath – Hammondsport",
+    "id": "bath-and-hammondsport-bath-hammondsport",
+    "color": "#8C3B5E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: a 9-mile steam short line with many stops (Fowler lists 11 stations/stops); no timetable running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass via maps.mail.ru, 2026-10-17: ways 254596631, 236765548, 1373464405/06/15/16/01/02, 236765549, 254596630, 760858742, 760858743, 254596629, 995935534 (all old_railway_operator=Erie, tiger:name_base 'Bath and Hammondsport Railroad'), routed with opstrace.py, Douglas-Peucker 8 m, trim_reversals. The DL&W-tagged 'B&H Rail Corporation' ways (ex-Lackawanna Bath - Wayland), the Erie Rochester Division main through Bath and the Kanona and Prattsburgh grade were excluded. OpenHistoricalMap returned no ways for the Rheims - Hammondsport stretch.",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-17) with opstrace.py; no approximated (straight-line) legs. 8.2 mi traced against 9 mi documented (Official Guide Feb 1952 company entry) and 9.2 mi Bath (DL&W depot) - Hammondsport / 9.0 mi from the Bath Erie depot (Fowler) - about 9% short. The shortfall is at the Bath end: the line is drawn from where the B&H's own track leaves the shared Erie/DL&W corridor in south-east Bath (42.3270, -77.3110); the B&H's run of a few tenths of a mile over that corridor to the Bath depots is NOT drawn, because neither depot's site was located (Fowler's Lackawanna Street 1.0 / Washington Street 1.3 mileposts could not be reconciled with the modern street crossings). Every traced mile is on ways tagged old_railway_operator=Erie and tiger:name_base 'Bath and Hammondsport Railroad' (name 'B&H Rail Corporation'): rail/spur from Bath to near the Fish Hatchery, railway=disused through Pleasant Valley to Rheims, and railway=abandoned (rails lifted 2008) Rheims - Hammondsport lake front. LATER ALIGNMENT: this is the surviving standard-gauge alignment. The line was built 3 ft gauge and re-laid to standard gauge in Aug 1889; whether the 1875-1889 narrow-gauge line followed exactly the same alignment (curves, Bath approach) is not established, so the 1875-1889 segment may be drawn on a slightly later alignment.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1889,
+      "headway_min": 120,
+      "note": "Bath (connection with the Erie and the DL&W) up the Cohocton valley and Pleasant Valley to Hammondsport at the south end of Keuka Lake, where trains met the lake steamers. Built 3 ft gauge; completed and opened June 30 1875 (Jackson, RGVRRM; American-Rails) by lessee Allen Wood, who held a 99-year lease from Dec 15 1874; lease passed to Henry Stebbins Nov 15 1886 - individuals working the B&H under its own name, not a change of company. Steam from opening; no animal traction recorded. Rail City Museum's 'first train ... summer of 1874' conflicts with the June 1875 opening and is probably a construction train (rail was laid only after the Dec 1874 lease). Segment ends at the August 1889 regauging (Jackson: track re-laid Aug 17 1889; American-Rails: reopened Aug 1 1889 - dates conflict; a weeks-long closure, not a gap in drawn years). Headway is an ESTIMATE: the only frequency found, '10 trips a day' (Sherer), is an undated peak figure.",
+      "sources": [
+       "Segment-level: opening June 30 1875 (Jackson, RGVRRM; American-Rails), corroborated by Fowler's 1875 Official Guide letter 'y' on Bath and Hammondsport; 3 ft gauge and Aug 1889 regauging (Jackson, American-Rails, Wikipedia, Fowler 'ex 3' 0\" gauge'). Headway NOT sourced - estimate.",
+       "https://rgvrrm.org/erie-railroad-rochester-division-chapter-four/",
+       "https://american-rails.com/bh.html",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs3.pdf",
+       "https://crookedlakereview.com/articles/67_100/80nov1994/80palmer.html",
+       "https://en.wikipedia.org/wiki/Bath_and_Hammondsport_Railroad",
+       "https://railcitymuseum.com/Bath_and_Hammondsport_RR.html"
+      ]
+     },
+     {
+      "start": 1889,
+      "end": 1917,
+      "headway_min": 120,
+      "note": "Standard gauge from Aug 1889. Erie Railroad stock control from 1903 (Palmer; Wikipedia 'around 1903') or by 1908 (Jackson; American-Rails) - the B&H kept its own corporate identity, so this is not drawn as an Erie feature (see metadata.not_yet_sourced). At its height '10 trips a day to Hammondsport', up to 12 in grape season (Sherer, undated); headway_min is an ESTIMATE from that figure. Passenger business was killed by the automobile; Palmer (Crooked Lake Review, Nov 1994) dates its discontinuance to 1917, 'about the same time the Keuka Lake steamers ceased operation', with a few coaches kept for special events. END IS [OPEN]: 1917 is the earliest end any source asserts and the last year treated as CONFIRMED - it is not a known end. Jackson (RGVRRM) says passenger service 'continued into the mid-1920s'; neither source cites a timetable or a dated last train. Do not extend without evidence (an Official Guide of c.1920-1930 or a 'last passenger train' newspaper story). Context, not drawn: USRA control from Jan 1918; July 8 1935 flood washout near the Fish Hatchery and Erie abandonment approval Aug 23 1935; sold to Hammondsport businessmen and reopened July 4 1936 as a freight and express road (Official Guide Aug 1951: 'Freight and express service', Hammondsport daggered freight-only); a one-off 'Wine Special' July 25 1936 and undated 1940s NRHS excursions; freight continued under the B&H and its successors.",
+      "sources": [
+       "Segment-level: start = Aug 1889 standard-gauge reopening (Jackson; American-Rails); end 1917 per Palmer, Crooked Lake Review Nov 1994 (and Wikipedia, which probably follows Palmer) - conflicts with Jackson (RGVRRM) 'mid-1920s'; [OPEN] end. Peak frequency from Sherer (undated). Headway is an estimate.",
+       "https://crookedlakereview.com/articles/67_100/80nov1994/80palmer.html",
+       "https://rgvrrm.org/erie-railroad-rochester-division-chapter-four/",
+       "https://en.wikipedia.org/wiki/Bath_and_Hammondsport_Railroad",
+       "https://crookedlakereview.com/articles/67_100/89aug1995/89sherer.html",
+       "https://american-rails.com/bh.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.310974,
+      42.327039
+     ],
+     [
+      -77.310034,
+      42.326672
+     ],
+     [
+      -77.309028,
+      42.326551
+     ],
+     [
+      -77.308135,
+      42.326696
+     ],
+     [
+      -77.307041,
+      42.327312
+     ],
+     [
+      -77.301593,
+      42.336182
+     ],
+     [
+      -77.300789,
+      42.339499
+     ],
+     [
+      -77.300077,
+      42.341101
+     ],
+     [
+      -77.298169,
+      42.347473
+     ],
+     [
+      -77.294207,
+      42.356941
+     ],
+     [
+      -77.29412,
+      42.358065
+     ],
+     [
+      -77.294478,
+      42.360735
+     ],
+     [
+      -77.295411,
+      42.363792
+     ],
+     [
+      -77.295477,
+      42.364531
+     ],
+     [
+      -77.294864,
+      42.366499
+     ],
+     [
+      -77.293949,
+      42.367691
+     ],
+     [
+      -77.293421,
+      42.368038
+     ],
+     [
+      -77.286959,
+      42.371083
+     ],
+     [
+      -77.286176,
+      42.371819
+     ],
+     [
+      -77.28426,
+      42.374803
+     ],
+     [
+      -77.283563,
+      42.375481
+     ],
+     [
+      -77.281279,
+      42.376579
+     ],
+     [
+      -77.277428,
+      42.377591
+     ],
+     [
+      -77.276698,
+      42.377854
+     ],
+     [
+      -77.275638,
+      42.37847
+     ],
+     [
+      -77.274537,
+      42.379584
+     ],
+     [
+      -77.271823,
+      42.38442
+     ],
+     [
+      -77.266014,
+      42.390736
+     ],
+     [
+      -77.259034,
+      42.395973
+     ],
+     [
+      -77.25521,
+      42.399345
+     ],
+     [
+      -77.253864,
+      42.400299
+     ],
+     [
+      -77.2519,
+      42.401059
+     ],
+     [
+      -77.249167,
+      42.40152
+     ],
+     [
+      -77.241856,
+      42.402168
+     ],
+     [
+      -77.222803,
+      42.404913
+     ],
+     [
+      -77.221215,
+      42.405423
+     ],
+     [
+      -77.220009,
+      42.406266
+     ],
+     [
+      -77.219165,
+      42.407338
+     ],
+     [
+      -77.219045,
+      42.40773
+     ],
+     [
+      -77.219127,
+      42.408004
+     ]
+    ]
+   }
+  }
+ ]
+}
