@@ -1,0 +1,381 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Mohawk and Hudson Rail Road (chartered 17 Apr 1826; renamed Albany and Schenectady Railroad 19 Apr 1847; consolidated into the New York Central 1853), New York's first railroad, Albany - Schenectady. One company throughout - the 1847 rename and Whittemore's 1843 change of control did not change who ran the trains - so one colour and no Rule 4 split; the two features are two ALIGNMENTS of one continuous 1832-1853 service, split at the 1844 replacement of the Albany inclined plane by the Tivoli Hollow line (Rule 2). Replaces the former new_york_central.geojson feature 'mohawk-hudson-albany-schenectady' (1831-1836, drawn on the post-1844 alignment in NYC grey). Research report: research/branches/mohawk_and_hudson_railroad.txt.",
+  "sources": [
+   "Alvin F. Harlow, The Road of the Century (1947), ch. I, transcribed by Bill Thayer: https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/HARROC/1*.html",
+   "Harry L. Taylor, 1908 talk to the NY State Historical Association (route description), reprinted New York Almanack 11 May 2024: https://www.newyorkalmanack.com/2024/05/mohawk-hudson-railroad-route/",
+   "Wikipedia, Albany and Schenectady Railroad (charter 1826, rename 19 Apr 1847, consolidation 17 May 1853): https://en.wikipedia.org/wiki/Albany_and_Schenectady_Railroad",
+   "Henry Whittemore, Fulfillment of the Remarkable Prophecies Relating to the Development of Railroad Transportation (1909): https://www.catskillarchive.com/rrextra/abnyrr.Html",
+   "History of the Mohawk Valley: Gateway to the West 1614-1925 (1925), ch. 87: https://www.schenectadyhistory.org/resources/mvgw/history/087.html",
+   "vizettes.com, History of the Schenectady Railroad Station (hobbyist, uncited; Schenectady plane top near Crane St / Chrysler Ave): https://www.vizettes.com/kt/rr/schenectady-rr-station/index.htm"
+  ],
+  "horsecar_audit": "Rule 5, applied at creation (2026-10-19): NOT DRAWN - (1) the 1831 opening season, plane-top to plane-top, worked 'partly by steam and partly by horse power' (Harlow), with a horse-path between the rails; the line starts 1832; (2) the Albany street track down Broadway to the South Ferry, 1841-1844, cars 'drawn by horses' to the plane foot (Taylor); (3) the Schenectady street leg from the foot of the Prospect Hill plane into the city, 1832-1841, horse-worked (MVG); (4) the State Street branch to Van Vechten Hall, Albany, 1833-1841 (Taylor), whose motive power no source records and which was most likely horse-worked. The two inclined planes were cable-worked by stationary steam engines and are drawn (the Albany plane only - see geometry_quality).",
+  "freight_only_audit": "None: passenger-first road (freight only 'in a small way' from 1832, Harlow); no freight-only piece exists.",
+  "not_yet_sourced": "(1) Inclined-plane removal dates are in conflict: the Schenectady plane 1841 (MVG; vizettes), 1843 (Whittemore, both planes) or Sept 1844 (Harlow, 'the planes', plural); the Albany plane Sept 1844 (Harlow; Taylor) or by Sept 1843 (Whittemore's 22 Sept 1843 run in 30 minutes). This layer switches alignment in 1844 for both ends; if the Schenectady plane went in 1841 the plane-era feature's west end is three years too late. MVG's further claim that tracks moved to the present alignment in 1847 conflicts with its own 1841 date and is unresolved. ICC Valuation Reports vol. 27 (1930) and Timothy Starr, Early Railroads of New York's Capital District (2011) would likely settle these; neither consulted. (2) Exact plane-era alignment: Albany plane foot and engine house hand-pinned from Taylor's words; the Schenectady plane foot is not located at all; whether the modern Pine Bush tangent is the 1831 bed is inferred (geometry), not sourced. (3) Whether horses hauled any passenger trains on the level after 1831 - no source says so, none says they stopped. (4) Every headway: the only frequency found is two trains a day from Albany in 1836. (5) Consolidation day: 17 May 1853 (Wikipedia; Whittemore) vs 1 Jan 1853 (Harlow). (6) Clinton first run 2 Jul 1831 (Wikipedia) vs 3 Aug 1831 (Munsell via Harlow) - outside the drawn years."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mohawk and Hudson Railroad",
+    "line": "Mohawk and Hudson: Albany \u2013 Schenectady (inclined planes)",
+    "id": "mohawk-hudson-inclined-plane-line",
+    "color": "#57B250",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated, unsourced: early-1830s steam on the level section plus two cable-worked planes (the Albany plane, 3/4 mi, took about four minutes in May 1832 per the American Railroad Journal via Harlow). No end-to-end running time for 1832-1844 was found.",
+    "geometry_source": "Hand-placed approximation at both ends from Taylor's 1908 street description and vizettes.com's Crane St plane top; middle 7.9 mi traced with opstrace.py over OpenStreetMap (maps.mail.ru Overpass mirror, 2026-10-19) on the Amtrak 'Hudson Line' ways tagged old_railway_operator=NYC through the Pine Bush. No OSM or OpenHistoricalMap way is tagged as the Mohawk and Hudson roadbed anywhere in the corridor (fetch_gap over Albany and Schenectady found none).",
+    "geometry_quality": "APPROXIMATE, and in its middle a LATER TRACK than its own era. Drawn 14.54 mi from the foot of the Albany plane to the top of the Schenectady plane, against 15.875 mi documented for the whole road including both planes (Harlow) and 'less than thirteen' / 12.5 mi plane-top to plane-top (Munsell via Harlow; Whittemore); the drawn plane-top-to-plane-top distance (Albany engine house to Crane St) is 13.87 mi, about 7-11% over those figures, so the ends are probably placed a little too far out. Legs, east to west: (1) STRAIGHT LINE 0.66 mi, the Albany inclined plane, from an assumed foot just west of South Pearl St near Gansevoort St (42.6386,-73.7595; the plane foot was at the foot of a graded street 'now known as Third avenue' in 1908, a street not in OSM today) up to the stationary-engine house 'south of Morton street and about 500 feet east of Delaware avenue' (42.6448,-73.7695), both hand-pinned from Taylor's description; documented length 3/4 mi (ARJ 1832 via Harlow). (2) STRAIGHT LINE 0.11 mi to the Delaware Ave crossing at Morton Ave (Taylor's surviving 1908 embankment). (3) STRAIGHT LINE 1.79 mi through the blocks across New Scotland Ave to the Madison Ave / Western Ave junction (OSM street intersection), the 1831 Albany terminus (Taylor; Wikipedia). (4) STRAIGHT LINE 2.76 mi from Madison/Western past Manning Blvd to the point west of West Albany (42.6969,-73.8275) where the modern track joins. (5) OSM-TRACED 7.89 mi on the modern Amtrak/CSX track through the Pine Bush, which runs dead straight. (6) STRAIGHT LINE 1.32 mi from where the modern track leaves that straight (42.7831,-73.9296) to the Schenectady plane top on Crane St at 42.7974,-73.9468 (vizettes.com: 'near the intersection of Crane and Chrysler Avenues'; no Chrysler Ave exists in OSM today, so the point is on Crane St). Legs 3, 4 and 6 are drawn as the straight prolongation of the modern Pine Bush tangent, and that is evidence-based, not a convenience: extended east, that tangent passes within 60 m of the Madison/Western junction and within about 310 m of Delaware Ave at Morton; extended west it meets Crane St within about 40-100 m. That the modern Pine Bush track sits on the 1831 bed is therefore likely, as Taylor implies (the old line was abandoned only east of 'a point west of West Albany'), but not proven - Harlow says the present course 'is quite different from that of the Mohawk & Hudson' - so leg 5 should be read as a later track believed to follow the original bed. Not drawn: the Schenectady plane itself (its foot is not located by any source read; MVG's 'Prospect Street' is not on Mont Pleasant), and the horse-worked street legs below both planes (Rule 5). The 1832 Albany terminus at Gansevoort and Quay streets (Taylor) is below the plane foot and is not drawn: how cars reached it before 1841 is not recorded, and from 1841 horses hauled them (Rule 5).",
+    "segments": [
+     {
+      "start": 1832,
+      "end": 1844,
+      "headway_min": 720,
+      "note": "The Mohawk and Hudson's original line, worked by steam locomotives on the level between two inclined planes pulled by stationary steam engines and cables (mechanical, allowed under Rule 5; no source found that horses worked either plane). Start 1832, not 1831: the road carried passengers from August-September 1831 on a shorter plane-top-to-plane-top line, but 'The railroad operated that autumn partly by steam and partly by horse power' (Harlow) and was shut 31 Dec 1831 until spring, so under Rule 5 the 1831 season is left off. It reopened about 14 May 1832 over the planes, 'The English Engine is doing all the business' (American Railroad Journal, 19 May 1832, via Harlow); 'four or five hundred [passengers] a day'. From 1 Aug 1836 it connected at Schenectady with the Utica and Schenectady, passengers changing cars there; the U&S did not run over this road. End 1844: the Albany plane was replaced 'late in September, 1844' by the Tivoli Hollow line (Harlow; Taylor 'In 1844'); service continued without a break on the next feature. The end year is in conflict (Whittemore implies the planes were gone by Sept 1843) and the Schenectady plane may have gone as early as 1841 (MVG; vizettes), so the Schenectady end of this geometry may be several years too late - see not_yet_sourced. Headway 720 min is an ESTIMATE: the only frequency found is two trains a day from Albany in 1836 (7.30 a.m. and 1.30 p.m., Harlow); 1832's 400-500 passengers a day suggests more trains then.",
+      "sources": [
+       "Segment-level: 1831 mixed horse/steam working and 1832 reopening over the planes from Harlow (quoting the American Railroad Journal, 19 May 1832) and Whittemore ('In the spring of 1832 the road was completed through the whole line'); route and 1844 end from Taylor and Harlow; 1841 Schenectady relocation from MVG. Headway is an estimate from one 1836 data point, not a sourced headway.",
+       "Alvin F. Harlow, The Road of the Century (1947), ch. I, transcribed by Bill Thayer: https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/HARROC/1*.html",
+       "Harry L. Taylor, 1908 talk to the NY State Historical Association (route description), reprinted New York Almanack 11 May 2024: https://www.newyorkalmanack.com/2024/05/mohawk-hudson-railroad-route/",
+       "Henry Whittemore, Fulfillment of the Remarkable Prophecies Relating to the Development of Railroad Transportation (1909): https://www.catskillarchive.com/rrextra/abnyrr.Html",
+       "History of the Mohawk Valley: Gateway to the West 1614-1925 (1925), ch. 87: https://www.schenectadyhistory.org/resources/mvgw/history/087.html",
+       "vizettes.com, History of the Schenectady Railroad Station (hobbyist, uncited; Schenectady plane top near Crane St / Chrysler Ave): https://www.vizettes.com/kt/rr/schenectady-rr-station/index.htm",
+       "Wikipedia, Albany and Schenectady Railroad (charter 1826, rename 19 Apr 1847, consolidation 17 May 1853): https://en.wikipedia.org/wiki/Albany_and_Schenectady_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.7595,
+      42.6386
+     ],
+     [
+      -73.7695,
+      42.6448
+     ],
+     [
+      -73.77139,
+      42.64561
+     ],
+     [
+      -73.79222,
+      42.66658
+     ],
+     [
+      -73.827483,
+      42.696915
+     ],
+     [
+      -73.828754,
+      42.697847
+     ],
+     [
+      -73.841836,
+      42.708788
+     ],
+     [
+      -73.907486,
+      42.764033
+     ],
+     [
+      -73.929549,
+      42.783108
+     ],
+     [
+      -73.94681,
+      42.79737
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mohawk and Hudson Railroad",
+    "line": "Mohawk and Hudson: Albany \u2013 Schenectady (Tivoli Hollow line)",
+    "id": "mohawk-hudson-tivoli-hollow-line",
+    "color": "#57B250",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated, unsourced: 1840s steam with a pusher up Tivoli Hollow (Harlow). Whittemore records one train of three cars Albany-Schenectady in thirty minutes on 22 Sept 1843 (about 50 km/h over the drawn distance), a single notable run rather than a schedule.",
+    "geometry_source": "opstrace.py over OpenStreetMap (maps.mail.ru Overpass mirror, 2026-10-19): 16.6 mi on the Amtrak 'Hudson Line' ways tagged old_railway_operator=NYC (plus 0.1 mi untagged rail) from north Albany up Tivoli Hollow / Patroon's Creek through West Albany and the Pine Bush to Schenectady station; the Albany riverfront 0.51 mi south to Maiden Lane from OpenHistoricalMap ways 198303507 and 198305694 (unnamed railway=rail; their 1828 start_date is tagged as an arbitrary placeholder, not evidence). Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced 17.15 mi, all on mapped track, no straight-line legs. No documented mileage for the 1844 alignment was found (the original road was 15.875 mi including planes, Harlow), so the fit cannot be checked against a figure. This feature draws the MODERN track, which is a LATER ALIGNMENT in places: Harlow says the 1844 line went up 'the glen of Patroon's Creek, just where the New York Central runs today', which supports the Tivoli Hollow section, but the drawn Schenectady approach (the modern line curving off Mont Pleasant into the station) and the Albany river front are present-day / OHM track, not surveyed 1844 positions. Albany terminus: drawn to the OHM riverfront track at Maiden Lane (42.6499,-73.7488), standing for Taylor's 1844 terminus 'in Montgomery, near Maiden Lane' with the waiting room near Maiden Lane and Dean St; position from street names only. Schenectady terminus: the modern station (42.8174,-73.9414), on the site of the State Street depot used from the relocation (MVG). The 1844 Schenectady approach may itself date from 1841 (MVG) and MVG also claims a further move 'to their present alignment' in 1847 - unresolved, see not_yet_sourced. The OSM abandoned way 'Tivoli Hollow Branch' (94792447) is not used; its relation to the 1844 line is not established.",
+    "segments": [
+     {
+      "start": 1844,
+      "end": 1847,
+      "headway_min": 720,
+      "note": "Mohawk and Hudson via Tivoli Hollow: the inclined planes were eliminated 'late in September, 1844' and the new track 'wriggled for two miles and more up the glen of Patroon's Creek', trains aided by a pusher engine (Harlow); Taylor: 'In 1844 ... the present route laid out through Tivoli Hollow terminating in Montgomery, near Maiden Lane'. Start year in conflict with Whittemore, whose 22 Sept 1843 run in thirty minutes implies an 1843 opening; 1844 is used. Steam throughout. Ends 1847 only because the company changed its name - the trains did not change (next segment). Headway 720 min is an ESTIMATE carried from the single 1836 frequency (two trains a day from Albany, Harlow); not sourced for this era.",
+      "sources": [
+       "Segment-level: 1844 opening of the Tivoli Hollow line from Harlow ('late in September, 1844') and Taylor ('In 1844'); conflicting 1843 from Whittemore; 1847 rename date from Wikipedia. Headway is an estimate, not sourced.",
+       "Alvin F. Harlow, The Road of the Century (1947), ch. I, transcribed by Bill Thayer: https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/HARROC/1*.html",
+       "Harry L. Taylor, 1908 talk to the NY State Historical Association (route description), reprinted New York Almanack 11 May 2024: https://www.newyorkalmanack.com/2024/05/mohawk-hudson-railroad-route/",
+       "Henry Whittemore, Fulfillment of the Remarkable Prophecies Relating to the Development of Railroad Transportation (1909): https://www.catskillarchive.com/rrextra/abnyrr.Html",
+       "Wikipedia, Albany and Schenectady Railroad (charter 1826, rename 19 Apr 1847, consolidation 17 May 1853): https://en.wikipedia.org/wiki/Albany_and_Schenectady_Railroad"
+      ]
+     },
+     {
+      "start": 1847,
+      "end": 1853,
+      "headway_min": 720,
+      "note": "Same company and trains under its new name, the Albany and Schenectady Railroad (renamed 19 Apr 1847, Wikipedia; Harlow gives only 1847 and notes 'the new name never seemed to take effect on the public mind'), so no Rule 4 split. Through Albany-Buffalo travel over the chain of Mohawk Valley roads; the Albany and Schenectady minutes record cooperation with the Utica and Schenectady on passes in 1849 (Harlow). Ends 1853 at consolidation into the New York Central (17 May 1853 per Wikipedia and Whittemore; 1 Jan 1853 per Harlow - year agreed), which data/new_york_central.geojson draws from 1853. Headway 720 min is an ESTIMATE, not sourced for this era.",
+      "sources": [
+       "Segment-level: 1847 rename from Wikipedia and Harlow; 1853 consolidation from Wikipedia, Whittemore and Harlow (day in conflict, year agreed). Headway is an estimate, not sourced.",
+       "Wikipedia, Albany and Schenectady Railroad (charter 1826, rename 19 Apr 1847, consolidation 17 May 1853): https://en.wikipedia.org/wiki/Albany_and_Schenectady_Railroad",
+       "Alvin F. Harlow, The Road of the Century (1947), ch. I, transcribed by Bill Thayer: https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/HARROC/1*.html",
+       "Henry Whittemore, Fulfillment of the Remarkable Prophecies Relating to the Development of Railroad Transportation (1909): https://www.catskillarchive.com/rrextra/abnyrr.Html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.748818,
+      42.649948
+     ],
+     [
+      -73.748627,
+      42.650345
+     ],
+     [
+      -73.748453,
+      42.650706
+     ],
+     [
+      -73.748335,
+      42.6511
+     ],
+     [
+      -73.748217,
+      42.651945
+     ],
+     [
+      -73.747895,
+      42.652576
+     ],
+     [
+      -73.747777,
+      42.653136
+     ],
+     [
+      -73.747283,
+      42.654059
+     ],
+     [
+      -73.747031,
+      42.654635
+     ],
+     [
+      -73.747085,
+      42.65634
+     ],
+     [
+      -73.747101,
+      42.656679
+     ],
+     [
+      -73.747105,
+      42.656786
+     ],
+     [
+      -73.747144,
+      42.6571
+     ],
+     [
+      -73.746671,
+      42.657152
+     ],
+     [
+      -73.747062,
+      42.658312
+     ],
+     [
+      -73.74641,
+      42.662964
+     ],
+     [
+      -73.746553,
+      42.663614
+     ],
+     [
+      -73.746888,
+      42.664214
+     ],
+     [
+      -73.747685,
+      42.664956
+     ],
+     [
+      -73.751078,
+      42.666943
+     ],
+     [
+      -73.75459,
+      42.670216
+     ],
+     [
+      -73.755808,
+      42.671013
+     ],
+     [
+      -73.756821,
+      42.671428
+     ],
+     [
+      -73.757978,
+      42.671694
+     ],
+     [
+      -73.761424,
+      42.671644
+     ],
+     [
+      -73.762297,
+      42.671772
+     ],
+     [
+      -73.763125,
+      42.672058
+     ],
+     [
+      -73.76648,
+      42.673907
+     ],
+     [
+      -73.770069,
+      42.676477
+     ],
+     [
+      -73.771965,
+      42.677633
+     ],
+     [
+      -73.780193,
+      42.681737
+     ],
+     [
+      -73.7898,
+      42.686287
+     ],
+     [
+      -73.792279,
+      42.686932
+     ],
+     [
+      -73.815569,
+      42.691148
+     ],
+     [
+      -73.818539,
+      42.692253
+     ],
+     [
+      -73.827483,
+      42.696915
+     ],
+     [
+      -73.828754,
+      42.697847
+     ],
+     [
+      -73.841836,
+      42.708788
+     ],
+     [
+      -73.907486,
+      42.764033
+     ],
+     [
+      -73.929549,
+      42.783108
+     ],
+     [
+      -73.931708,
+      42.784606
+     ],
+     [
+      -73.933808,
+      42.785761
+     ],
+     [
+      -73.935659,
+      42.786582
+     ],
+     [
+      -73.953522,
+      42.793243
+     ],
+     [
+      -73.954659,
+      42.793764
+     ],
+     [
+      -73.955568,
+      42.794358
+     ],
+     [
+      -73.956391,
+      42.795146
+     ],
+     [
+      -73.956906,
+      42.79587
+     ],
+     [
+      -73.957282,
+      42.796679
+     ],
+     [
+      -73.957468,
+      42.797545
+     ],
+     [
+      -73.957445,
+      42.798576
+     ],
+     [
+      -73.956727,
+      42.800408
+     ],
+     [
+      -73.953447,
+      42.80419
+     ],
+     [
+      -73.950394,
+      42.809132
+     ],
+     [
+      -73.949324,
+      42.810104
+     ],
+     [
+      -73.944598,
+      42.8127
+     ],
+     [
+      -73.943668,
+      42.813325
+     ],
+     [
+      -73.942093,
+      42.815297
+     ],
+     [
+      -73.941604,
+      42.816381
+     ],
+     [
+      -73.941426,
+      42.817394
+     ]
+    ]
+   }
+  }
+ ]
+}
