@@ -1,0 +1,1325 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Middletown, Unionville and Water Gap Railroad (organized 1866, built 1866-67) ran 14 miles from Middletown, NY south through Slate Hill, Johnson and Westtown to Unionville and the New Jersey state line at Hanford, all in Orange County, NY. The owning company never ran trains; it was worked in turn by the Erie (1868-72, as its 'Unionville Branch'), the New York and Oswego Midland (1872-73), the New Jersey Midland / Midland Railroad of New Jersey (1873-81) and the New York, Susquehanna and Western (1881-1913). From 1 Dec 1913 its bondholders' Middletown and Unionville Railroad ran its own trains - steam mixed trains and gasoline rail buses - until passenger service ended on 20 Jun 1940. Features are split by operator (Rule 4) and share geometry except at the Middletown end, where the Erie-era feature runs into the Erie station rather than over the 1871 connection to East Main Street. Only years with positive passenger evidence are drawn, so the pre-1913 eras are drawn far narrower than they ran. The line was freight-only from 1940 (M&U to 1946, then the Middletown and New Jersey Railway); the M&NJ still operates the Middletown end.",
+  "sources": [
+   "https://mnjrhs.org/?p=18",
+   "https://mnjrhs.org/all-time-station-list/",
+   "https://en.wikipedia.org/wiki/Middletown_and_New_Jersey_Railroad",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf",
+   "Official Guide of the Railways, Feb 1952: Middletown and New Jersey Railway Co., Inc., 'OPERATED FOR FREIGHT SERVICE ONLY' (research/sources/official_guide_1952.txt)",
+   "https://www.loc.gov/resource/sn83030313/1912-01-23/ed-1/?sp=16"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. Middletown East Main Street - Slate Hill area runs on present Middletown and New Jersey Railroad track (active in the north, railway=disused further south); south of there on the lifted M&NJ grade, tagged railway=abandoned + old_railway_operator=M&NJ (OSM ways 51537665, 20689623, 20689619, 350623980/3). The Middletown end follows the M&NJ ways tagged old_railway_operator=NYO&W, i.e. the 1871 NY&OM connection north to the O&W at East Main Street (later leased by the M&U from the O&W, 1.107 mi per MNJRHS). State Line is taken as the point where OSM's M&NJ tagging ends and the abandoned NYS&W 'Unionville Branch' (way 95481460) begins, 41.2960 N 74.5602 W, beside Hanford NJ. OpenHistoricalMap was queried for the corridor (3 ways, none used). Waypoints: East Main Street grade crossing (Middletown), Dolson Avenue crossing, Slate Hill, Johnson, Westtown (Nominatim hamlet/village nodes, types checked; Middletown and Unionville came back as 'administrative' and were not used as waypoints), the Main Street grade crossing at Unionville (computed from OSM's Main Street way), and the State Line tag change. Every waypoint lies within 0.2 km of the drawn line.",
+   "As the later features from just east of Dolson Avenue to Unionville (OpenStreetMap M&NJ track and grade, opstrace.py). North of there this feature leaves the 1871 connection and runs on the old Erie main line through Middletown, which OSM maps as the Orange Heritage Trail (cycleways tagged old_railway_operator=Erie, ways 1218027735, 1218027736, 1525012617/8, 1181783745/8, 1525012631/2), to the trail's north end at East Main Street, then a straight line west through downtown, where the grade is not mapped, to the Erie depot site on Depot Street (Nominatim: Thrall Library, 11 Depot Street, which occupies the 1896 Erie passenger station)."
+  ],
+  "not_yet_sourced": [
+   "Erie era: whether the regular trains from May 1868 carried passengers (first positive evidence is the 1869 Official Guide); start day 4 May 1868 (MNJRHS) vs 15 May 1868 (Wikipedia).",
+   "New York and Oswego Midland era (1 Apr 1872 - Nov 1873): NOT DRAWN (report block 2, drawable NONE). MNJRHS names only a milk train; NY&OM through passenger service to Jersey City via the MU&WG and NJ Midland is asserted by secondary histories but no timetable was found.",
+   "New Jersey Midland 1873 and 1877-1881, and NYS&W 1881-1912: passenger years not individually confirmed; only 1874, 1876 and (by inference) 1913 are drawn.",
+   "Unionville - State Line: whether M&U passenger trains ran to State Line after 1933 (TT 32 of 1937 ends at Unionville Main Street); the 1933 end is the last confirmed year, not a known end. Fowler's 'c' at the junction may be a connection listing, not a stop.",
+   "Middletown & Orange (Empire State Railway Museum) steam excursions on the M&NJ, 1962-1966: NOT DRAWN (report block 7). The years are reasonably sourced but how far the excursions ran is not; Edgar T. Mead, 'The Empire State Railroad Museum Story' (1964) and the MNJRHS newsletter are the sources to check.",
+   "Station positions by era were not traced: the Erie-era Middletown station (drawn to the 1896 Erie depot site), the NJM/NYS&W-era Middletown station, the M&U's Main Street depot in Middletown, the exact site of Unionville Junction with the Erie, and the exact State Line junction.",
+   "Mileage disagreement at the south end: Fowler (Unionville 13.8, Main Street 13.9, M&U Junction 14.6) vs MNJRHS mileposts (13.5, 13.7, 14.3) - recorded, not resolved."
+  ],
+  "omitted": [
+   "Report block 2, New York and Oswego Midland through route 1872-1873: drawable NONE (no positive passenger evidence).",
+   "Report block 7, Middletown & Orange tourist excursions 1962-1966: geometry extent unsourced; drawing the whole line would assert steam passenger trains over miles that may never have seen one.",
+   "Middletown and New Jersey Railway 1947-present and the M&U 1940-1946: freight only (Rule 1).",
+   "NYS&W Hanford Branch, State Line - Hanford - Sussex - Franklin - Beaver Lake (NJ): NYS&W track, not this road."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Erie Railroad",
+    "line": "Erie: Unionville Branch",
+    "id": "erie-unionville-branch-middletown-unionville",
+    "color": "#22223B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 1860s-70s broad-gauge steam branch local over 14 miles; no timetable running time consulted (Rule 3)",
+    "geometry_source": "As the later features from just east of Dolson Avenue to Unionville (OpenStreetMap M&NJ track and grade, opstrace.py). North of there this feature leaves the 1871 connection and runs on the old Erie main line through Middletown, which OSM maps as the Orange Heritage Trail (cycleways tagged old_railway_operator=Erie, ways 1218027735, 1218027736, 1525012617/8, 1181783745/8, 1525012631/2), to the trail's north end at East Main Street, then a straight line west through downtown, where the grade is not mapped, to the Erie depot site on Depot Street (Nominatim: Thrall Library, 11 Depot Street, which occupies the 1896 Erie passenger station).",
+    "geometry_quality": "Middletown (Erie depot site, Depot Street) - Unionville (Main Street crossing): drawn 14.05 mi against a documented 13.89 mi Erie Middletown station - Unionville (MNJRHS, land survey) and 13.8 mi (Fowler, Middletown - Unionville). Approximated (straight) legs: 0.38 mi from the Erie depot site east through downtown Middletown to the north end of the Orange Heritage Trail (the old Erie main is not mapped there), and about 0.05 mi joining the Erie main to the MU&WG at the presumed Unionville Junction just east of Dolson Avenue (the junction track itself is not mapped; its exact site is not sourced) - about 0.43 mi in all. ERA CAVEATS: this feature deliberately does NOT use the 1871 NY&OM connection north to East Main Street that the later features draw (MNJRHS: built Aug-Nov 1871 'from just east of the present day Dolson Ave grade crossing to the NY&OM tracks at East Main Street'); in 1869-72 Erie trains used the Erie station via Unionville Junction on the south side of town. South of Dolson Avenue the line is drawn on the track/grade as OSM maps it (the M&NJ as it stood at abandonment), a later layout than 1869-72; the Erie-era station positions at Middletown and Unionville were not separately located (the depot point is the 1896 Erie station building, taken as the site of its predecessor; the Unionville end is the Main Street crossing, ~0.1 mi beyond Fowler's 'Unionville' at 13.8).",
+    "segments": [
+     {
+      "start": 1869,
+      "end": 1872,
+      "headway_min": 360,
+      "note": "Erie Railway 'Unionville Branch': the Middletown, Unionville and Water Gap Railroad (built 1866-67, broad gauge) worked under contract by the Erie from regular operations on 4 May 1868 (MNJRHS; Wikipedia gives 15 May 1868 - conflict recorded, not resolved) to 31 Mar 1872, when the New York and Oswego Midland took over operation. Trains ran Middletown (Erie station) - Slate Hill - Johnsons - West Town - Unionville. Drawn from 1869, the earliest year with positive passenger evidence (Rutger's and Waterloo Mills stops printed in the 1869 Official Guide, per Fowler NY list 4 line 219); no source found says the May 1868 trains carried passengers, so 1868 is withheld. End 1872 is an operator change, not an end of service. Headway is an estimate: no Erie timetable for the branch was consulted (Rule 3).",
+      "sources": [
+       "Segment-level: start year from Fowler, NY State Railroads list 4 line 219 ('Rutger's 1869G', 'Waterloo Mills 1869G' = 1869 Official Guide); Erie operation 4 May 1868 - 31 Mar 1872 and the end year from MNJRHS (Brill, 'A Brief History'). Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf",
+       "https://mnjrhs.org/?p=18",
+       "https://en.wikipedia.org/wiki/Middletown_and_New_Jersey_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.420552,
+      41.447081
+     ],
+     [
+      -74.413345,
+      41.446072
+     ],
+     [
+      -74.412986,
+      41.445481
+     ],
+     [
+      -74.412713,
+      41.444598
+     ],
+     [
+      -74.412659,
+      41.443623
+     ],
+     [
+      -74.412967,
+      41.44285
+     ],
+     [
+      -74.416229,
+      41.439403
+     ],
+     [
+      -74.417168,
+      41.43815
+     ],
+     [
+      -74.417522,
+      41.437409
+     ],
+     [
+      -74.417784,
+      41.436394
+     ],
+     [
+      -74.417842,
+      41.435374
+     ],
+     [
+      -74.417478,
+      41.433529
+     ],
+     [
+      -74.420036,
+      41.432862
+     ],
+     [
+      -74.422521,
+      41.43252
+     ],
+     [
+      -74.424689,
+      41.432514
+     ],
+     [
+      -74.425911,
+      41.432297
+     ],
+     [
+      -74.427046,
+      41.43186
+     ],
+     [
+      -74.428978,
+      41.430523
+     ],
+     [
+      -74.430306,
+      41.429923
+     ],
+     [
+      -74.431656,
+      41.429625
+     ],
+     [
+      -74.433612,
+      41.429468
+     ],
+     [
+      -74.435122,
+      41.429051
+     ],
+     [
+      -74.436144,
+      41.428483
+     ],
+     [
+      -74.446852,
+      41.420999
+     ],
+     [
+      -74.448126,
+      41.419827
+     ],
+     [
+      -74.450371,
+      41.416837
+     ],
+     [
+      -74.450913,
+      41.415549
+     ],
+     [
+      -74.451265,
+      41.413532
+     ],
+     [
+      -74.451902,
+      41.412225
+     ],
+     [
+      -74.452702,
+      41.411323
+     ],
+     [
+      -74.454352,
+      41.409985
+     ],
+     [
+      -74.455193,
+      41.408865
+     ],
+     [
+      -74.455606,
+      41.407812
+     ],
+     [
+      -74.455895,
+      41.405768
+     ],
+     [
+      -74.456391,
+      41.404606
+     ],
+     [
+      -74.462759,
+      41.397501
+     ],
+     [
+      -74.464231,
+      41.396561
+     ],
+     [
+      -74.470469,
+      41.393619
+     ],
+     [
+      -74.475786,
+      41.39127
+     ],
+     [
+      -74.477874,
+      41.390015
+     ],
+     [
+      -74.47899,
+      41.389108
+     ],
+     [
+      -74.484568,
+      41.383601
+     ],
+     [
+      -74.496651,
+      41.375906
+     ],
+     [
+      -74.498257,
+      41.374668
+     ],
+     [
+      -74.499584,
+      41.373179
+     ],
+     [
+      -74.501869,
+      41.369598
+     ],
+     [
+      -74.504071,
+      41.366572
+     ],
+     [
+      -74.506203,
+      41.364043
+     ],
+     [
+      -74.507571,
+      41.36287
+     ],
+     [
+      -74.508838,
+      41.361959
+     ],
+     [
+      -74.516245,
+      41.357731
+     ],
+     [
+      -74.526236,
+      41.35272
+     ],
+     [
+      -74.529506,
+      41.349257
+     ],
+     [
+      -74.540802,
+      41.339639
+     ],
+     [
+      -74.542794,
+      41.337099
+     ],
+     [
+      -74.543859,
+      41.336496
+     ],
+     [
+      -74.545504,
+      41.335882
+     ],
+     [
+      -74.546727,
+      41.335246
+     ],
+     [
+      -74.550265,
+      41.332939
+     ],
+     [
+      -74.561207,
+      41.326362
+     ],
+     [
+      -74.565832,
+      41.322979
+     ],
+     [
+      -74.567364,
+      41.321663
+     ],
+     [
+      -74.567732,
+      41.32042
+     ],
+     [
+      -74.56766,
+      41.319738
+     ],
+     [
+      -74.565098,
+      41.310049
+     ],
+     [
+      -74.562879,
+      41.306982
+     ],
+     [
+      -74.562194,
+      41.305624
+     ],
+     [
+      -74.562078,
+      41.304901
+     ],
+     [
+      -74.563175,
+      41.302079
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Midland Railway",
+    "line": "New Jersey Midland: Middletown \u2013 Unionville",
+    "id": "njm-middletown-unionville",
+    "color": "#3B7A57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 1870s steam main-line local on the west end of the NJM; no timetable running time consulted (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. Middletown East Main Street - Slate Hill area runs on present Middletown and New Jersey Railroad track (active in the north, railway=disused further south); south of there on the lifted M&NJ grade, tagged railway=abandoned + old_railway_operator=M&NJ (OSM ways 51537665, 20689623, 20689619, 350623980/3). The Middletown end follows the M&NJ ways tagged old_railway_operator=NYO&W, i.e. the 1871 NY&OM connection north to the O&W at East Main Street (later leased by the M&U from the O&W, 1.107 mi per MNJRHS). State Line is taken as the point where OSM's M&NJ tagging ends and the abandoned NYS&W 'Unionville Branch' (way 95481460) begins, 41.2960 N 74.5602 W, beside Hanford NJ. OpenHistoricalMap was queried for the corridor (3 ways, none used). Waypoints: East Main Street grade crossing (Middletown), Dolson Avenue crossing, Slate Hill, Johnson, Westtown (Nominatim hamlet/village nodes, types checked; Middletown and Unionville came back as 'administrative' and were not used as waypoints), the Main Street grade crossing at Unionville (computed from OSM's Main Street way), and the State Line tag change. Every waypoint lies within 0.2 km of the drawn line.",
+    "geometry_quality": "Middletown (East Main Street, O&W junction) - Unionville (Main Street crossing): traced 13.67 mi, no straight-line legs, against Fowler 13.8 mi Middletown - Unionville / 13.9 mi to Unionville Main Street, and MNJRHS mileposts 13.5 / 13.7. Drawn to Unionville only (the report's drawing extent and the last station of the 1874 timetable listing); the NJM's trains ran on past State Line into New Jersey over its own track, not drawn here. ERA CAVEATS: drawn on the track/grade as OSM maps it (the Middletown and New Jersey as it stood at abandonment, still active in the north) - a later layout than 1874-76 wherever the line was realigned; the Unionville end is the Main Street crossing, about 0.1 mi past Fowler's 'Unionville' station (13.8); the Middletown end is the East Main Street crossing at the north end of the 1871 connection, which is correct for this era (built 1871), but the NJM-era Middletown station position was not located.",
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1876,
+      "headway_min": 360,
+      "note": "New Jersey Midland Railway era: the NJM took over operation of the MU&WG on 23 Nov 1873 (permanent lease 30 Jan 1874) and ran it as the west end of its main line (Jersey City - Paterson - Two Bridges - Franklin - Sussex - State Line - Middletown) until it became the Midland Railroad of New Jersey (15 May 1880, same operator) and merged into the NYS&W on 31 Mar 1881 (MNJRHS). Only 1874 and 1876 carry positive passenger evidence: Fowler's 'y' letter = the 1874 New Jersey Midland timetable, carried by Middletown, Slate Hill, Johnson's, West Town and Unionville; 'Haunted House 1876t' (Springside) is a company timetable of 1876. Drawn 1874-1876 (confirmed years only); service very probably ran across the whole 1873-1881 operator span, but 1873 and 1877-1881 are not confirmed and are withheld. Headway is an estimate (Rule 3).",
+      "sources": [
+       "Segment-level: 1874 and 1876 from Fowler, NY State Railroads list 4 line 219 (legend 'y: 1874 New Jersey Midland TT'; 'Haunted House 1876t'); NJM operator span from MNJRHS (Brill). Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf",
+       "https://mnjrhs.org/?p=18"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.413243,
+      41.446278
+     ],
+     [
+      -74.412336,
+      41.445009
+     ],
+     [
+      -74.412131,
+      41.444064
+     ],
+     [
+      -74.413027,
+      41.442234
+     ],
+     [
+      -74.414861,
+      41.440256
+     ],
+     [
+      -74.415536,
+      41.43927
+     ],
+     [
+      -74.415835,
+      41.438341
+     ],
+     [
+      -74.416053,
+      41.436066
+     ],
+     [
+      -74.416624,
+      41.434958
+     ],
+     [
+      -74.417356,
+      41.434192
+     ],
+     [
+      -74.4185,
+      41.433402
+     ],
+     [
+      -74.420036,
+      41.432862
+     ],
+     [
+      -74.422521,
+      41.43252
+     ],
+     [
+      -74.424689,
+      41.432514
+     ],
+     [
+      -74.425911,
+      41.432297
+     ],
+     [
+      -74.427046,
+      41.43186
+     ],
+     [
+      -74.428978,
+      41.430523
+     ],
+     [
+      -74.430306,
+      41.429923
+     ],
+     [
+      -74.431656,
+      41.429625
+     ],
+     [
+      -74.433612,
+      41.429468
+     ],
+     [
+      -74.435122,
+      41.429051
+     ],
+     [
+      -74.436144,
+      41.428483
+     ],
+     [
+      -74.446852,
+      41.420999
+     ],
+     [
+      -74.448126,
+      41.419827
+     ],
+     [
+      -74.450371,
+      41.416837
+     ],
+     [
+      -74.450913,
+      41.415549
+     ],
+     [
+      -74.451265,
+      41.413532
+     ],
+     [
+      -74.451902,
+      41.412225
+     ],
+     [
+      -74.452702,
+      41.411323
+     ],
+     [
+      -74.454352,
+      41.409985
+     ],
+     [
+      -74.455193,
+      41.408865
+     ],
+     [
+      -74.455606,
+      41.407812
+     ],
+     [
+      -74.455895,
+      41.405768
+     ],
+     [
+      -74.456391,
+      41.404606
+     ],
+     [
+      -74.462759,
+      41.397501
+     ],
+     [
+      -74.464231,
+      41.396561
+     ],
+     [
+      -74.470469,
+      41.393619
+     ],
+     [
+      -74.475786,
+      41.39127
+     ],
+     [
+      -74.477874,
+      41.390015
+     ],
+     [
+      -74.47899,
+      41.389108
+     ],
+     [
+      -74.484568,
+      41.383601
+     ],
+     [
+      -74.496651,
+      41.375906
+     ],
+     [
+      -74.498257,
+      41.374668
+     ],
+     [
+      -74.499584,
+      41.373179
+     ],
+     [
+      -74.501869,
+      41.369598
+     ],
+     [
+      -74.504071,
+      41.366572
+     ],
+     [
+      -74.506203,
+      41.364043
+     ],
+     [
+      -74.507571,
+      41.36287
+     ],
+     [
+      -74.508838,
+      41.361959
+     ],
+     [
+      -74.516245,
+      41.357731
+     ],
+     [
+      -74.526236,
+      41.35272
+     ],
+     [
+      -74.529506,
+      41.349257
+     ],
+     [
+      -74.540802,
+      41.339639
+     ],
+     [
+      -74.542794,
+      41.337099
+     ],
+     [
+      -74.543859,
+      41.336496
+     ],
+     [
+      -74.545504,
+      41.335882
+     ],
+     [
+      -74.546727,
+      41.335246
+     ],
+     [
+      -74.550265,
+      41.332939
+     ],
+     [
+      -74.561207,
+      41.326362
+     ],
+     [
+      -74.565832,
+      41.322979
+     ],
+     [
+      -74.567364,
+      41.321663
+     ],
+     [
+      -74.567732,
+      41.32042
+     ],
+     [
+      -74.56766,
+      41.319738
+     ],
+     [
+      -74.565098,
+      41.310049
+     ],
+     [
+      -74.562879,
+      41.306982
+     ],
+     [
+      -74.562194,
+      41.305624
+     ],
+     [
+      -74.562078,
+      41.304901
+     ],
+     [
+      -74.563175,
+      41.302079
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York, Susquehanna and Western Railway",
+    "line": "New York, Susquehanna and Western: Middletown Branch",
+    "id": "nysw-middletown-branch-middletown-unionville",
+    "color": "#7a5c8a",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: branch local and milk trains; no timetable running time consulted (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. Middletown East Main Street - Slate Hill area runs on present Middletown and New Jersey Railroad track (active in the north, railway=disused further south); south of there on the lifted M&NJ grade, tagged railway=abandoned + old_railway_operator=M&NJ (OSM ways 51537665, 20689623, 20689619, 350623980/3). The Middletown end follows the M&NJ ways tagged old_railway_operator=NYO&W, i.e. the 1871 NY&OM connection north to the O&W at East Main Street (later leased by the M&U from the O&W, 1.107 mi per MNJRHS). State Line is taken as the point where OSM's M&NJ tagging ends and the abandoned NYS&W 'Unionville Branch' (way 95481460) begins, 41.2960 N 74.5602 W, beside Hanford NJ. OpenHistoricalMap was queried for the corridor (3 ways, none used). Waypoints: East Main Street grade crossing (Middletown), Dolson Avenue crossing, Slate Hill, Johnson, Westtown (Nominatim hamlet/village nodes, types checked; Middletown and Unionville came back as 'administrative' and were not used as waypoints), the Main Street grade crossing at Unionville (computed from OSM's Main Street way), and the State Line tag change. Every waypoint lies within 0.2 km of the drawn line.",
+    "geometry_quality": "Middletown (East Main Street, O&W junction) - Unionville (Main Street crossing): traced 13.67 mi, no straight-line legs, against Fowler 13.8 / 13.9 mi and MNJRHS mileposts 13.5 / 13.7. Identical geometry to the NJM and M&U features (Rule 4 split). Drawn to Unionville, the terminus MNJRHS names for the trains discontinued in 1913; the NYS&W's own Middletown Branch track south of State Line (Hanford - Sussex - Franklin - Beaver Lake, NJ) is not this road's and is not drawn. ERA CAVEAT: drawn on the track/grade as OSM maps it (the M&NJ at abandonment); the Unionville end is the Main Street crossing, ~0.1 mi past Fowler's 'Unionville' station.",
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1913,
+      "headway_min": 180,
+      "note": "[ANCHOR] New York, Susquehanna and Western era (operator 31 Mar 1881 - 30 Nov 1913; the Erie's stock control of the NYS&W from 1 Jul 1898 did not change who ran the trains). One year only, and inference-grade: MNJRHS records that 'effective December 1, 1913, the NYS&W discontinued a dozen trains between Unionville and Middletown', and that the new Middletown and Unionville had to buy a coach and two combination passenger cars at once 'to cover the fledgling road's passenger and mail service obligations' - i.e. passenger service existed immediately before the hand-over. Service certainly ran much wider both ways (main line to 9 Oct 1882, then a milk-heavy branch), but no NYS&W timetable for the branch was found and no other year is confirmed. Do not widen this anchor without a dated passenger listing. Headway is an estimate from 'a dozen trains' (both directions, milk trains included) and is not sourced as a passenger frequency (Rule 3).",
+      "sources": [
+       "Segment-level: inference-grade only. 1913 from MNJRHS (Brill) - NYS&W discontinued 'a dozen trains between Unionville and Middletown' effective 1 Dec 1913 and the M&U took over 'passenger and mail service obligations'. No NYS&W passenger timetable for the branch was seen. Headway not sourced.",
+       "https://mnjrhs.org/?p=18"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.413243,
+      41.446278
+     ],
+     [
+      -74.412336,
+      41.445009
+     ],
+     [
+      -74.412131,
+      41.444064
+     ],
+     [
+      -74.413027,
+      41.442234
+     ],
+     [
+      -74.414861,
+      41.440256
+     ],
+     [
+      -74.415536,
+      41.43927
+     ],
+     [
+      -74.415835,
+      41.438341
+     ],
+     [
+      -74.416053,
+      41.436066
+     ],
+     [
+      -74.416624,
+      41.434958
+     ],
+     [
+      -74.417356,
+      41.434192
+     ],
+     [
+      -74.4185,
+      41.433402
+     ],
+     [
+      -74.420036,
+      41.432862
+     ],
+     [
+      -74.422521,
+      41.43252
+     ],
+     [
+      -74.424689,
+      41.432514
+     ],
+     [
+      -74.425911,
+      41.432297
+     ],
+     [
+      -74.427046,
+      41.43186
+     ],
+     [
+      -74.428978,
+      41.430523
+     ],
+     [
+      -74.430306,
+      41.429923
+     ],
+     [
+      -74.431656,
+      41.429625
+     ],
+     [
+      -74.433612,
+      41.429468
+     ],
+     [
+      -74.435122,
+      41.429051
+     ],
+     [
+      -74.436144,
+      41.428483
+     ],
+     [
+      -74.446852,
+      41.420999
+     ],
+     [
+      -74.448126,
+      41.419827
+     ],
+     [
+      -74.450371,
+      41.416837
+     ],
+     [
+      -74.450913,
+      41.415549
+     ],
+     [
+      -74.451265,
+      41.413532
+     ],
+     [
+      -74.451902,
+      41.412225
+     ],
+     [
+      -74.452702,
+      41.411323
+     ],
+     [
+      -74.454352,
+      41.409985
+     ],
+     [
+      -74.455193,
+      41.408865
+     ],
+     [
+      -74.455606,
+      41.407812
+     ],
+     [
+      -74.455895,
+      41.405768
+     ],
+     [
+      -74.456391,
+      41.404606
+     ],
+     [
+      -74.462759,
+      41.397501
+     ],
+     [
+      -74.464231,
+      41.396561
+     ],
+     [
+      -74.470469,
+      41.393619
+     ],
+     [
+      -74.475786,
+      41.39127
+     ],
+     [
+      -74.477874,
+      41.390015
+     ],
+     [
+      -74.47899,
+      41.389108
+     ],
+     [
+      -74.484568,
+      41.383601
+     ],
+     [
+      -74.496651,
+      41.375906
+     ],
+     [
+      -74.498257,
+      41.374668
+     ],
+     [
+      -74.499584,
+      41.373179
+     ],
+     [
+      -74.501869,
+      41.369598
+     ],
+     [
+      -74.504071,
+      41.366572
+     ],
+     [
+      -74.506203,
+      41.364043
+     ],
+     [
+      -74.507571,
+      41.36287
+     ],
+     [
+      -74.508838,
+      41.361959
+     ],
+     [
+      -74.516245,
+      41.357731
+     ],
+     [
+      -74.526236,
+      41.35272
+     ],
+     [
+      -74.529506,
+      41.349257
+     ],
+     [
+      -74.540802,
+      41.339639
+     ],
+     [
+      -74.542794,
+      41.337099
+     ],
+     [
+      -74.543859,
+      41.336496
+     ],
+     [
+      -74.545504,
+      41.335882
+     ],
+     [
+      -74.546727,
+      41.335246
+     ],
+     [
+      -74.550265,
+      41.332939
+     ],
+     [
+      -74.561207,
+      41.326362
+     ],
+     [
+      -74.565832,
+      41.322979
+     ],
+     [
+      -74.567364,
+      41.321663
+     ],
+     [
+      -74.567732,
+      41.32042
+     ],
+     [
+      -74.56766,
+      41.319738
+     ],
+     [
+      -74.565098,
+      41.310049
+     ],
+     [
+      -74.562879,
+      41.306982
+     ],
+     [
+      -74.562194,
+      41.305624
+     ],
+     [
+      -74.562078,
+      41.304901
+     ],
+     [
+      -74.563175,
+      41.302079
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Middletown and Unionville Railroad",
+    "line": "Middletown and Unionville: Middletown \u2013 Unionville",
+    "id": "mu-middletown-unionville",
+    "color": "#9B4F2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 14-mile rural branch worked by mixed trains and gasoline rail buses; no timetable running time consulted (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. Middletown East Main Street - Slate Hill area runs on present Middletown and New Jersey Railroad track (active in the north, railway=disused further south); south of there on the lifted M&NJ grade, tagged railway=abandoned + old_railway_operator=M&NJ (OSM ways 51537665, 20689623, 20689619, 350623980/3). The Middletown end follows the M&NJ ways tagged old_railway_operator=NYO&W, i.e. the 1871 NY&OM connection north to the O&W at East Main Street (later leased by the M&U from the O&W, 1.107 mi per MNJRHS). State Line is taken as the point where OSM's M&NJ tagging ends and the abandoned NYS&W 'Unionville Branch' (way 95481460) begins, 41.2960 N 74.5602 W, beside Hanford NJ. OpenHistoricalMap was queried for the corridor (3 ways, none used). Waypoints: East Main Street grade crossing (Middletown), Dolson Avenue crossing, Slate Hill, Johnson, Westtown (Nominatim hamlet/village nodes, types checked; Middletown and Unionville came back as 'administrative' and were not used as waypoints), the Main Street grade crossing at Unionville (computed from OSM's Main Street way), and the State Line tag change. Every waypoint lies within 0.2 km of the drawn line.",
+    "geometry_quality": "Middletown (East Main Street, O&W junction) - Unionville (Main Street crossing): traced 13.67 mi, no straight-line legs, against Fowler 13.9 mi Middletown - Unionville Main Street and MNJRHS milepost 13.7. The Middletown end follows the 1871 connection the M&U leased from the O&W (1.107 mi per its ICC filings, MNJRHS) - traced 1.1 mi from East Main Street to just east of Dolson Avenue - which is the right alignment for this era. ERA CAVEATS: drawn on the track/grade as OSM maps it (the M&NJ as it stood at abandonment; still active in the north), a later layout than 1913-40 wherever it was altered; the M&U's own Main Street depot in Middletown was not located, so the line ends at the East Main Street crossing at the O&W junction.",
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1918,
+      "headway_min": 300,
+      "note": "Middletown and Unionville Railroad, organized by the MU&WG's bondholders, ran its own trains from 1 Dec 1913 (the first eleven days with a leased NYS&W locomotive and combination mail and express car). M&U Time Table No. 2 (eff. 4 Feb 1914) listed westbound passenger trains 3, 7, 9 and eastbound 2, 8, 10, 12, of which only 3 and 8 ran daily and 7 and 2 daily except Sunday; milk and mixed trains also carried passengers (MNJRHS, from the company timetables). Stations Middletown, Pound's, Slate Hill, Johnson, Westtown, Unionville, Unionville Main Street. USRA federal control (1917-20) did not change the operator. The 1918/1919 segment boundary marks the change to rail buses (TT 9), not a break in service. Headway is an estimate from the 1914 train count (Rule 3).",
+      "sources": [
+       "Segment-level: start 1 Dec 1913 and the 1914 train list from MNJRHS (Brill, 'A Brief History', citing M&U Time Table No. 2). Headway is an estimate from that train list.",
+       "https://mnjrhs.org/?p=18",
+       "https://en.wikipedia.org/wiki/Middletown_and_New_Jersey_Railroad"
+      ]
+     },
+     {
+      "start": 1919,
+      "end": 1930,
+      "headway_min": 180,
+      "note": "Rail-bus era: two Reo rail buses 1919 (sold the same year), two more Reos 1921, a Gramm-Bernstein rail bus 1922-26 and a Brill Model 55 rail bus from 1926. Time Table No. 9 (Apr 1919) showed 5 daily motor round trips; No. 11 (Oct 1919) made all trains mixed, 3 daily round trips; No. 17 (Apr 1922) three motor trains daily except Sunday plus mixed; No. 20 (1 Jul 1924) two pairs of mixed and four pairs of motor trains (MNJRHS). Passenger traffic declined from 1920 to automobile and bus competition. Highway buses of the M&U-owned Middletown & Sussex Transit Co. (1926-34) are not rail and add nothing here. Headway is an estimate from these round-trip counts (Rule 3).",
+      "sources": [
+       "Segment-level: M&U Time Tables 9, 11, 17 and 20 as summarized by MNJRHS (Brill). Headway is an estimate from the round-trip counts.",
+       "https://mnjrhs.org/?p=18"
+      ]
+     },
+     {
+      "start": 1931,
+      "end": 1940,
+      "headway_min": 480,
+      "note": "Late service: Time Table No. 28 (Sep 1931) two pairs of motor trains daily except Sunday plus a Sunday mixed; No. 32 (8 Sep 1937) two first-class trains daily except Saturday and Sunday, Middletown - Main Street, Unionville, 'the remaining passenger service'. By the 1930s the trains ran mainly for Middletown High School pupils and were annulled each summer. Fowler's 'c' letter (1933 company timetable) is carried by every station. Passenger service ended 20 Jun 1940 (MNJRHS: the Brill rail bus 'served the M&U until the cessation of passenger service on June 20, 1940'; Wikipedia: 'ended with the close of the school year in June 1940'). Freight only from then (M&U to 31 May 1946, then the Middletown and New Jersey Railway, listed 'OPERATED FOR FREIGHT SERVICE ONLY' in the Feb 1952 Official Guide) - not drawn (Rule 1). Wikipedia's 'Unionville' article dates the end of passenger service to 1968; that is the last freight run to Unionville (31 Dec 1968), not a passenger date. Headway is an estimate (Rule 3).",
+      "sources": [
+       "Segment-level: end date 20 Jun 1940 and Time Tables 28 and 32 from MNJRHS (Brill); 1933 timetable listing from Fowler, NY State Railroads list 4 line 219 ('c: 1933t'); Wikipedia (Middletown and New Jersey Railroad) agrees on June 1940. Headway is an estimate.",
+       "https://mnjrhs.org/?p=18",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf",
+       "https://en.wikipedia.org/wiki/Middletown_and_New_Jersey_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.413243,
+      41.446278
+     ],
+     [
+      -74.412336,
+      41.445009
+     ],
+     [
+      -74.412131,
+      41.444064
+     ],
+     [
+      -74.413027,
+      41.442234
+     ],
+     [
+      -74.414861,
+      41.440256
+     ],
+     [
+      -74.415536,
+      41.43927
+     ],
+     [
+      -74.415835,
+      41.438341
+     ],
+     [
+      -74.416053,
+      41.436066
+     ],
+     [
+      -74.416624,
+      41.434958
+     ],
+     [
+      -74.417356,
+      41.434192
+     ],
+     [
+      -74.4185,
+      41.433402
+     ],
+     [
+      -74.420036,
+      41.432862
+     ],
+     [
+      -74.422521,
+      41.43252
+     ],
+     [
+      -74.424689,
+      41.432514
+     ],
+     [
+      -74.425911,
+      41.432297
+     ],
+     [
+      -74.427046,
+      41.43186
+     ],
+     [
+      -74.428978,
+      41.430523
+     ],
+     [
+      -74.430306,
+      41.429923
+     ],
+     [
+      -74.431656,
+      41.429625
+     ],
+     [
+      -74.433612,
+      41.429468
+     ],
+     [
+      -74.435122,
+      41.429051
+     ],
+     [
+      -74.436144,
+      41.428483
+     ],
+     [
+      -74.446852,
+      41.420999
+     ],
+     [
+      -74.448126,
+      41.419827
+     ],
+     [
+      -74.450371,
+      41.416837
+     ],
+     [
+      -74.450913,
+      41.415549
+     ],
+     [
+      -74.451265,
+      41.413532
+     ],
+     [
+      -74.451902,
+      41.412225
+     ],
+     [
+      -74.452702,
+      41.411323
+     ],
+     [
+      -74.454352,
+      41.409985
+     ],
+     [
+      -74.455193,
+      41.408865
+     ],
+     [
+      -74.455606,
+      41.407812
+     ],
+     [
+      -74.455895,
+      41.405768
+     ],
+     [
+      -74.456391,
+      41.404606
+     ],
+     [
+      -74.462759,
+      41.397501
+     ],
+     [
+      -74.464231,
+      41.396561
+     ],
+     [
+      -74.470469,
+      41.393619
+     ],
+     [
+      -74.475786,
+      41.39127
+     ],
+     [
+      -74.477874,
+      41.390015
+     ],
+     [
+      -74.47899,
+      41.389108
+     ],
+     [
+      -74.484568,
+      41.383601
+     ],
+     [
+      -74.496651,
+      41.375906
+     ],
+     [
+      -74.498257,
+      41.374668
+     ],
+     [
+      -74.499584,
+      41.373179
+     ],
+     [
+      -74.501869,
+      41.369598
+     ],
+     [
+      -74.504071,
+      41.366572
+     ],
+     [
+      -74.506203,
+      41.364043
+     ],
+     [
+      -74.507571,
+      41.36287
+     ],
+     [
+      -74.508838,
+      41.361959
+     ],
+     [
+      -74.516245,
+      41.357731
+     ],
+     [
+      -74.526236,
+      41.35272
+     ],
+     [
+      -74.529506,
+      41.349257
+     ],
+     [
+      -74.540802,
+      41.339639
+     ],
+     [
+      -74.542794,
+      41.337099
+     ],
+     [
+      -74.543859,
+      41.336496
+     ],
+     [
+      -74.545504,
+      41.335882
+     ],
+     [
+      -74.546727,
+      41.335246
+     ],
+     [
+      -74.550265,
+      41.332939
+     ],
+     [
+      -74.561207,
+      41.326362
+     ],
+     [
+      -74.565832,
+      41.322979
+     ],
+     [
+      -74.567364,
+      41.321663
+     ],
+     [
+      -74.567732,
+      41.32042
+     ],
+     [
+      -74.56766,
+      41.319738
+     ],
+     [
+      -74.565098,
+      41.310049
+     ],
+     [
+      -74.562879,
+      41.306982
+     ],
+     [
+      -74.562194,
+      41.305624
+     ],
+     [
+      -74.562078,
+      41.304901
+     ],
+     [
+      -74.563175,
+      41.302079
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Middletown and Unionville Railroad",
+    "line": "Middletown and Unionville: Unionville \u2013 State Line",
+    "id": "mu-unionville-state-line",
+    "color": "#9B4F2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 14-mile rural branch worked by mixed trains and gasoline rail buses; no timetable running time consulted (Rule 3)",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. Middletown East Main Street - Slate Hill area runs on present Middletown and New Jersey Railroad track (active in the north, railway=disused further south); south of there on the lifted M&NJ grade, tagged railway=abandoned + old_railway_operator=M&NJ (OSM ways 51537665, 20689623, 20689619, 350623980/3). The Middletown end follows the M&NJ ways tagged old_railway_operator=NYO&W, i.e. the 1871 NY&OM connection north to the O&W at East Main Street (later leased by the M&U from the O&W, 1.107 mi per MNJRHS). State Line is taken as the point where OSM's M&NJ tagging ends and the abandoned NYS&W 'Unionville Branch' (way 95481460) begins, 41.2960 N 74.5602 W, beside Hanford NJ. OpenHistoricalMap was queried for the corridor (3 ways, none used). Waypoints: East Main Street grade crossing (Middletown), Dolson Avenue crossing, Slate Hill, Johnson, Westtown (Nominatim hamlet/village nodes, types checked; Middletown and Unionville came back as 'administrative' and were not used as waypoints), the Main Street grade crossing at Unionville (computed from OSM's Main Street way), and the State Line tag change. Every waypoint lies within 0.2 km of the drawn line.",
+    "geometry_quality": "Unionville (Main Street crossing) - State Line / Middletown & Unionville Junction: traced 0.45 mi, no straight-line legs, against a documented 0.7 mi (Fowler, Unionville Main Street 13.9 - M&U Junction 14.6) or 0.6 mi (MNJRHS mileposts 13.7 - 14.3). The shortfall is at the south end: State Line is placed where OSM's M&NJ tagging gives way to the abandoned NYS&W 'Unionville Branch' beside Hanford NJ, and the junction's true position may lie a few hundred feet further south. Whole line traced 14.12 mi East Main Street - State Line against the M&U's own 14.121 mi (MNJRHS; whether that figure includes the 1.107 mi leased connection is not clear) and Fowler's 14.6. ERA CAVEAT: drawn on the grade as OSM maps it (the M&NJ at abandonment).",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1933,
+      "headway_min": 480,
+      "note": "M&U trains beyond Unionville Main Street to the State Line connection with the NYS&W (whose passenger trains reached Hanford NJ from 27 Nov 1914): the M&U timetable corrected to 1 Mar 1915 shows trains 1 and 3 westbound and 2 and 6 eastbound connecting 'at State Line with NYS&W passenger trains' (MNJRHS). Fowler lists Middletown & Union[ville] Junction (State Line) with 'c' = the 1933 company timetable. 1933 is the last CONFIRMED year, not a known end: by Time Table No. 32 (Sep 1937) passenger trains ran only to Unionville Main Street, and no source dates when they stopped running to State Line. Fowler's 'c' at a junction may record a connection point rather than a passenger stop; the conservative alternative is 1915 alone. Do not extend without evidence. Headway is an estimate from the two connecting pairs of 1915 (Rule 3).",
+      "sources": [
+       "Segment-level: 1915 from MNJRHS (Brill), M&U timetable corrected to 1 Mar 1915 (State Line connections); 1933 from Fowler, NY State Railroads list 4 line 219 ('Middletown & Union Junction c', c = 1933t). End is the last confirmed year, not a known end. Headway is an estimate.",
+       "https://mnjrhs.org/?p=18",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.563175,
+      41.302079
+     ],
+     [
+      -74.563112,
+      41.300754
+     ],
+     [
+      -74.562776,
+      41.299947
+     ],
+     [
+      -74.56025,
+      41.29604
+     ]
+    ]
+   }
+  }
+ ]
+}
