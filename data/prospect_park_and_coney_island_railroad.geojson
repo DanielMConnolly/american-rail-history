@@ -1,0 +1,795 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Prospect Park and Coney Island Railroad - 'the Culver Line' - a steam road from Greenwood (Prospect Park) to Coney Island, with its Norton's Point (NY&CI) and Union Depot (PP&SB) affiliates, 1875-1898; plus the LIRR's 1898-1902 39th Street Ferry approach to Parkville Jct. Drawn only to the research report's drawable spans (research/branches/prospect_park_and_coney_island_railroad.txt, blocks [1], [2], [3], [6]). Features split at the January 1893 LIRR purchase share identical geometry (Rule 4).",
+  "sources": [
+   "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913",
+   "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2010/2010-05-bulletin.pdf",
+   "https://www.loc.gov/resource/sn83030193/1893-01-25/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn83030214/1875-06-19/ed-1/?sp=12",
+   "https://en.wikipedia.org/wiki/Culver_Line_(surface)",
+   "https://en.wikipedia.org/wiki/IND_Culver_Line",
+   "https://en.wikipedia.org/wiki/Culver_Depot",
+   "https://en.wikipedia.org/wiki/B74_(New_York_City_bus)",
+   "https://en.wikipedia.org/wiki/South_Brooklyn_Railway",
+   "https://en.wikipedia.org/wiki/B67_and_B69_buses",
+   "http://arrts-arrchives.com/ppcirr.html"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap IND Culver Line ways (the 1919-20 McDonald Ave elevated), abandoned BMT Culver Line ways, South Brooklyn Railway track and yard ways, routed with opstrace.py's Graph/cost model (corridor-confined shortest path between own-tagged nodes) from a local Overpass extract",
+   "OSM street geometry (McDonald Ave, 20th St, 37th St, 39th St, 5th Ave, Mermaid Ave intersections) for the north-end street-line leg and to place endpoints",
+   "hand-placed straight legs where the line is lifted and unmapped (named per feature in geometry_quality); old_railway_operator probes (PP&CI, Prospect Park, Coney Island, Culver, LIRR, Long Island, BMT, BRT, South Brooklyn, Norton) found only three abandoned BMT Culver ways; OpenHistoricalMap held only the modern subway"
+  ],
+  "ownership_split": "24 Jan 1893: Prospect Park and Coney Island -> Long Island Rail Road (outright purchase: Chiasson, ERA Bulletin Jul 2016; Evening World 25 Jan 1893; Feinman 'owned and operated'). Spring 1899: LIRR -> Brooklyn Rapid Transit (BRT took over 1 Apr 1899, Feinman; Brooklyn Heights RR lease 17/18 Jun 1899, Wikipedia; reopened 17 Jun 1899, Chiasson) - ends this layer; 1899 onward belongs to a future BRT/BMT/NYC Subway layer. Not splits: the PP&SB and NY&CI being separate corporations (worked by PP&CI throughout); the 1922-23 South Brooklyn Railway sale/merger (paper).",
+  "color_note": "Prospect Park and Coney Island takes #2F8F4E, a colour no other company in data/ used when this layer was written. LIRR features take #0072CE, pulled programmatically from the existing Long Island Rail Road features (lirr.geojson, manhattan_beach_railway.geojson).",
+  "not_yet_sourced": [
+   "Whether 1893 was a real operator change or a stock purchase: Feinman says the LIRR 'owned and operated' the Culver as part of its New York & Manhattan Beach Division, but the PP&CI corporation survived to 1923 and Chiasson calls it the LIRR's 'affiliate' (an 1894 map: 'subsidiaries'). An 1893-98 public timetable or LIRR annual report showing whose name and crews were on the trains would settle it; if trains stayed PP&CI, drop the 1893 split.",
+   "Norton's Point 1893-98 operator label: Chiasson (May 2016) says it was 'never directly served by LIRR trains in any manner'; drawn as LIRR (owner of the PP&CI) at low-medium confidence.",
+   "Opening day to Coney Island in 1875: 25 Jun (Wikipedia, IND Culver Line), 27 Jun (Wikipedia, Culver Line (surface)), 27 Jul (Feinman; Wikipedia, Culver Depot), or regular trips 'to Coney Island' from 20 Jun announced by the New-York Tribune of 19 Jun 1875. Year firm.",
+   "Union Depot start: 7 Jun 1890 (Chiasson; Wikipedia) vs 30 May 1890 (Feinman). Year firm.",
+   "Seasonality of the Norton's Point shuttle and the 39th St Ferry trains (probably summer-only; not settled; does not change drawn years).",
+   "Every headway_min and avg_speed_kmh is an estimate: no PP&CI or LIRR timetable was read (Arrt's Arrchives shows untranscribed 1878 and LIRR-era timetable images).",
+   "The June 1899 BRT lease story and any 1893-98 Brooklyn Daily Eagle item on whose name was on the trains were not read (Chronicling America rate-limited).",
+   "Exact steam alignment at the south end (Ave X - Culver Depot) and at the Norton's Point landing; exact 39th St ferry slip position."
+  ],
+  "source_conflicts": [
+   "LIRR ownership start: 1893 (Chiasson; Feinman; Wikipedia IND Culver Line citing Brooklyn Daily Eagle 24 Jan 1893; Evening World 25 Jan 1893) vs 1895 (Wikipedia, Culver Line (surface)) - 1893 used.",
+   "Union Depot service start: 1890 (Chiasson, Feinman, Wikipedia IND Culver Line) vs 1880 (Wikipedia, Culver Line (surface)) - 1880 rejected (PP&SB incorporated 1888; El reached 36th St 1889).",
+   "Electrification: 1899 (Chiasson; Linder; Feinman - wire strung April 1899) vs 'electric trolley cars ... in 1890' (Wikipedia, Culver Depot) - 1899 used; immaterial to drawn years.",
+   "Kensington Junction location: drawn at McDonald Ave & Ditmas Ave per the tracing brief; Chiasson's 1898 station list puts it at Ave C."
+  ],
+  "omitted": [
+   "[4] Brooklyn Elevated through trains over the Culver 1895-1898 - BER crews and equipment (another company's trains); future Brooklyn Elevated/BRT layer.",
+   "[5] PP&CI trains into Bay Ridge via Parkville Jct 1885-1892 - joint service over LIRR track already drawn as 'Long Island Rail Road: Bay Ridge - Parkville Junction' (manhattan_beach_railway.geojson); not duplicated.",
+   "[7] LIRR Gravesend Race Track specials 1886-1892, 1899-1909 - race days only; low priority, not drawn.",
+   "[8] PP&CI Vanderbilt Avenue horsecar line 1874-1885 - Rule 5.",
+   "[9] BRT / BMT / NYC Subway eras from 17 Jun 1899 (Culver El, McDonald Ave trolleys, Norton's Point trolley, IND/F) - other companies; future layer.",
+   "1899: LIRR steam ran Jan-Apr 1899; not drawn on any feature so the Apr-Jun 1899 shutdown and the BRT handover stay unbridged."
+  ],
+  "freight_only": "Not drawn: the South Brooklyn Railway's freight use of the Culver surface tracks beneath the 1919-20 el (to the 1950s; a 6.41-mile freight carrier in the Sept 1951 Official Guide), and the Parkville Jct freight interchange with the LIRR after the last LIRR passenger use (Rule 1).",
+  "horsecar": "The PP&CI's Vanderbilt Avenue horsecar line (1874-1885, animal-powered throughout its PP&CI life) is omitted in full (Rule 5). The steam road and the NY&CI were steam from opening - nothing trimmed."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Prospect Park and Coney Island",
+    "line": "Prospect Park and Coney Island: Culver Line",
+    "id": "ppci-culver-line",
+    "color": "#2F8F4E",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "OSM IND Culver Line ways (McDonald Ave el) via opstrace.py graph; hand-placed street-line and straight legs at both ends (see geometry_quality)",
+    "geometry_quality": "Drawn 5.73 mi against ~5.5-6 mi (research report's map estimate; no published route-mileage found - the Evening World's 1893 '60 1/2 miles' is track-miles). TRACED 3.80 mi (Church Ave - Ave X) with opstrace.py's graph and cost model over OSM's IND Culver Line ways along McDonald Ave (formerly Gravesend Ave); every snap within 30 m of its waypoint except as noted, Kensington Jct (McDonald & Ditmas) and Parkville Jct (exact vertex of manhattan_beach_railway.geojson) inserted as vertices 11 m and 39 m off the traced track. LATER ALIGNMENT: this is the 1919-20 elevated (and, for c.0.3 mi between Church Ave and the portal north of Ditmas, the 1933 IND tunnel and its 1954 connecting ramp) - the steam road ran AT GRADE in Gravesend Ave beneath where the el now stands, the same corridor and within c.30 m in plan. APPROXIMATED: (1) Greenwood Depot (Prospect Park West = 9th Ave x 20th St) - McDonald Ave x 20th St, 0.15 mi straight line along 20th St; (2) McDonald Ave x 20th St - Church Ave, 0.74 mi hand-placed along the OSM street centreline of McDonald Ave, not traced from rail (the IND subway here runs under Prospect Park SW, 100-350 m east, a different corridor, and was not used); (3) Ave X - Culver Depot (north side of Surf Ave, half a block west of W 5th St), 1.02 mi straight line - the razed depot (1923) and the steam road's approach are unmapped. In plan this chord lies close to the line of Shell Road, but it is NOT a trace of the el's Shell Road / W 6th St / Stillwell Ave approach (later alignment, deliberately not followed); the exact steam alignment past Van Sicklen's (Neptune Ave) is unverified. Approximated total 1.91 mi of 5.73.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1892,
+      "headway_min": 30,
+      "note": "Steam railroad from Greenwood Depot (9th Ave & 20th St, beside Green-Wood Cemetery) down Gravesend Ave to Culver Depot, Coney Island - 'the Culver Line'. Opened 19 Jun 1875 to Gravesend Ave & Neck Road (Feinman; Linder, ERA Bulletin May 2010; the New-York Tribune of 19 Jun 1875 reports the first trip on 18 Jun and regular trips from 9th Ave & 20th St from 20 Jun). Through to Culver Depot 25 Jun (Wikipedia, IND Culver Line), 27 Jun (Wikipedia, Culver Line (surface)) or 27 Jul 1875 (Feinman; Wikipedia, Culver Depot) - the day is disputed, the year is not. Steam from the first day (Linder; Feinman): no animal-power era on the steam road - the PP&CI's Vanderbilt Ave horsecar line was a separate street railway and is not drawn (Rule 5). Double-tracked by April 1878 (Feinman). Year-round local service to the Gravesend villages plus heavy summer beach traffic. Stations c.1885-88: Washington (Cemetery), Woodlawn, Kings Highway, Gravesend (Neck Road), Van Sicklen's, Culver Depot (Chiasson, ERA Bulletin May 2016). Culver trains also ran into Bay Ridge over LIRR track via Parkville Jct 1885-87 (joint service; LIRR track already drawn in manhattan_beach_railway.geojson - not duplicated). ENDS 1892: bought outright by the Long Island Rail Road 24 Jan 1893 (Chiasson, ERA Bulletin Jul 2016; Evening World 25 Jan 1893), continued on the LIRR feature. headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: start 1875 from Feinman (nycsubway.org), Linder (ERA Bulletin May 2010) and the New-York Tribune of 19 Jun 1875; end 1892 = the LIRR purchase of 24 Jan 1893 (Chiasson, ERA Bulletin Jul 2016; Evening World 25 Jan 1893). Headway not sourced.",
+       "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913",
+       "https://erausa.org/pdf/bulletin/2010s/2010/2010-05-bulletin.pdf",
+       "https://www.loc.gov/resource/sn83030214/1875-06-19/ed-1/?sp=12",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://www.loc.gov/resource/sn83030193/1893-01-25/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/IND_Culver_Line",
+       "https://en.wikipedia.org/wiki/Culver_Line_(surface)",
+       "https://en.wikipedia.org/wiki/Culver_Depot"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.98402,
+      40.65659
+     ],
+     [
+      -73.98181,
+      40.65527
+     ],
+     [
+      -73.9817694,
+      40.6551556
+     ],
+     [
+      -73.981584,
+      40.6540981
+     ],
+     [
+      -73.9815483,
+      40.6539084
+     ],
+     [
+      -73.9814751,
+      40.6535231
+     ],
+     [
+      -73.9814538,
+      40.6534172
+     ],
+     [
+      -73.9814429,
+      40.6533537
+     ],
+     [
+      -73.9813227,
+      40.6527213
+     ],
+     [
+      -73.9813062,
+      40.6526344
+     ],
+     [
+      -73.981299,
+      40.6525967
+     ],
+     [
+      -73.9811215,
+      40.6516621
+     ],
+     [
+      -73.9811084,
+      40.6515936
+     ],
+     [
+      -73.9810293,
+      40.6511773
+     ],
+     [
+      -73.980735,
+      40.6496282
+     ],
+     [
+      -73.980716,
+      40.6495281
+     ],
+     [
+      -73.980702,
+      40.6494526
+     ],
+     [
+      -73.9804603,
+      40.6481615
+     ],
+     [
+      -73.980388,
+      40.6477844
+     ],
+     [
+      -73.9803752,
+      40.6477076
+     ],
+     [
+      -73.9803549,
+      40.6476137
+     ],
+     [
+      -73.9803286,
+      40.6474877
+     ],
+     [
+      -73.9803085,
+      40.6473916
+     ],
+     [
+      -73.9802923,
+      40.6473034
+     ],
+     [
+      -73.9802735,
+      40.6472002
+     ],
+     [
+      -73.9802191,
+      40.6469119
+     ],
+     [
+      -73.980174,
+      40.6466727
+     ],
+     [
+      -73.9798959,
+      40.6451988
+     ],
+     [
+      -73.9798789,
+      40.6451091
+     ],
+     [
+      -73.9798636,
+      40.6450282
+     ],
+     [
+      -73.9797835,
+      40.6446042
+     ],
+     [
+      -73.9798067,
+      40.6448348
+     ],
+     [
+      -73.9788005,
+      40.6389666
+     ],
+     [
+      -73.97827,
+      40.63548
+     ],
+     [
+      -73.9762142,
+      40.6273516
+     ],
+     [
+      -73.9723297,
+      40.6050639
+     ],
+     [
+      -73.9726936,
+      40.6012423
+     ],
+     [
+      -73.9742102,
+      40.5903294
+     ],
+     [
+      -73.9746,
+      40.5755
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Culver Line",
+    "id": "lirr-culver-line",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "OSM IND Culver Line ways (McDonald Ave el) via opstrace.py graph; hand-placed street-line and straight legs at both ends (see geometry_quality)",
+    "geometry_quality": "Drawn 5.73 mi against ~5.5-6 mi (research report's map estimate; no published route-mileage found - the Evening World's 1893 '60 1/2 miles' is track-miles). TRACED 3.80 mi (Church Ave - Ave X) with opstrace.py's graph and cost model over OSM's IND Culver Line ways along McDonald Ave (formerly Gravesend Ave); every snap within 30 m of its waypoint except as noted, Kensington Jct (McDonald & Ditmas) and Parkville Jct (exact vertex of manhattan_beach_railway.geojson) inserted as vertices 11 m and 39 m off the traced track. LATER ALIGNMENT: this is the 1919-20 elevated (and, for c.0.3 mi between Church Ave and the portal north of Ditmas, the 1933 IND tunnel and its 1954 connecting ramp) - the steam road ran AT GRADE in Gravesend Ave beneath where the el now stands, the same corridor and within c.30 m in plan. APPROXIMATED: (1) Greenwood Depot (Prospect Park West = 9th Ave x 20th St) - McDonald Ave x 20th St, 0.15 mi straight line along 20th St; (2) McDonald Ave x 20th St - Church Ave, 0.74 mi hand-placed along the OSM street centreline of McDonald Ave, not traced from rail (the IND subway here runs under Prospect Park SW, 100-350 m east, a different corridor, and was not used); (3) Ave X - Culver Depot (north side of Surf Ave, half a block west of W 5th St), 1.02 mi straight line - the razed depot (1923) and the steam road's approach are unmapped. In plan this chord lies close to the line of Shell Road, but it is NOT a trace of the el's Shell Road / W 6th St / Stillwell Ave approach (later alignment, deliberately not followed); the exact steam alignment past Van Sicklen's (Neptune Ave) is unverified. Approximated total 1.91 mi of 5.73.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1898,
+      "headway_min": 30,
+      "note": "The Culver Line under the Long Island Rail Road: bought outright 24 Jan 1893 (Chiasson, ERA Bulletin Jul 2016; LIRR stockholders' confirmation in the Evening World, 25 Jan 1893); Feinman: 'From 1893 to 1899, the LIRR owned and operated the Culver line as a part of the New York and Manhattan Beach division'. CAVEAT (see metadata.not_yet_sourced): the PP&CI corporation survived to 1923 and Chiasson calls it the LIRR's 'affiliate' - if 1893-98 timetables show trains still advertised and crewed as PP&CI, this split should be dropped. Wikipedia (Culver Line (surface)) says LIRR ownership began 1895; rejected against four sources for 1893. 1898 stations: Kensington Junction (Ave C), Parkville (Ave I), Woodlawn (Ave N), Kings Highway, Gravesend, Van Sicklen, Culver Depot (Chiasson). From May 1898 LIRR Coney Island trains ran from Union Depot (nominally) and the 39th Street Ferry (Chiasson). Brooklyn Elevated trains also ran over the line to Coney Island 1895-98 with BER crews and equipment - another company's trains, not drawn here. ENDS 1898: LIRR steam ran on into early 1899 but was suspended in April 1899 for electrification, and the line reopened 17 Jun 1899 under Brooklyn Rapid Transit (Chiasson; Feinman: BRT took over 1 Apr 1899). 1899 is left to a future BRT layer and is NOT claimed here; the Apr-Jun 1899 shutdown must not be bridged. headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: start 1893 from Chiasson (ERA Bulletin Jul 2016), the Evening World of 25 Jan 1893 and Feinman; end at the April 1899 suspension (Chiasson; Feinman), last full year drawn 1898 by layer convention. Headway not sourced.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://www.loc.gov/resource/sn83030193/1893-01-25/ed-1/?sp=3",
+       "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913",
+       "https://en.wikipedia.org/wiki/IND_Culver_Line",
+       "https://erausa.org/pdf/bulletin/2010s/2010/2010-05-bulletin.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.98402,
+      40.65659
+     ],
+     [
+      -73.98181,
+      40.65527
+     ],
+     [
+      -73.9817694,
+      40.6551556
+     ],
+     [
+      -73.981584,
+      40.6540981
+     ],
+     [
+      -73.9815483,
+      40.6539084
+     ],
+     [
+      -73.9814751,
+      40.6535231
+     ],
+     [
+      -73.9814538,
+      40.6534172
+     ],
+     [
+      -73.9814429,
+      40.6533537
+     ],
+     [
+      -73.9813227,
+      40.6527213
+     ],
+     [
+      -73.9813062,
+      40.6526344
+     ],
+     [
+      -73.981299,
+      40.6525967
+     ],
+     [
+      -73.9811215,
+      40.6516621
+     ],
+     [
+      -73.9811084,
+      40.6515936
+     ],
+     [
+      -73.9810293,
+      40.6511773
+     ],
+     [
+      -73.980735,
+      40.6496282
+     ],
+     [
+      -73.980716,
+      40.6495281
+     ],
+     [
+      -73.980702,
+      40.6494526
+     ],
+     [
+      -73.9804603,
+      40.6481615
+     ],
+     [
+      -73.980388,
+      40.6477844
+     ],
+     [
+      -73.9803752,
+      40.6477076
+     ],
+     [
+      -73.9803549,
+      40.6476137
+     ],
+     [
+      -73.9803286,
+      40.6474877
+     ],
+     [
+      -73.9803085,
+      40.6473916
+     ],
+     [
+      -73.9802923,
+      40.6473034
+     ],
+     [
+      -73.9802735,
+      40.6472002
+     ],
+     [
+      -73.9802191,
+      40.6469119
+     ],
+     [
+      -73.980174,
+      40.6466727
+     ],
+     [
+      -73.9798959,
+      40.6451988
+     ],
+     [
+      -73.9798789,
+      40.6451091
+     ],
+     [
+      -73.9798636,
+      40.6450282
+     ],
+     [
+      -73.9797835,
+      40.6446042
+     ],
+     [
+      -73.9798067,
+      40.6448348
+     ],
+     [
+      -73.9788005,
+      40.6389666
+     ],
+     [
+      -73.97827,
+      40.63548
+     ],
+     [
+      -73.9762142,
+      40.6273516
+     ],
+     [
+      -73.9723297,
+      40.6050639
+     ],
+     [
+      -73.9726936,
+      40.6012423
+     ],
+     [
+      -73.9742102,
+      40.5903294
+     ],
+     [
+      -73.9746,
+      40.5755
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Prospect Park and Coney Island",
+    "line": "Prospect Park and Coney Island: Union Depot – Kensington",
+    "id": "ppci-union-depot-kensington",
+    "color": "#2F8F4E",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "OSM abandoned BMT Culver Line, South Brooklyn Railway yard and Culver el ways via opstrace.py graph; straight legs between (see geometry_quality)",
+    "geometry_quality": "Drawn 1.80 mi against ~1.5-2 mi (research report's map estimate). TRACED 0.49 mi: 0.15 mi on OSM's (dis)used BMT/IND Culver el tracks north of Ditmas Ave to the 1919 shuttle divergence, and 0.34 mi on OSM's abandoned BMT Culver Line and South Brooklyn Railway yard tracks from Fort Hamilton Pkwy past 9th Ave (City Line Jct) to 8th Ave - one SBK way there is OSM-tagged start_date 1888-06-15, the PP&SB incorporation date. APPROXIMATED 1.30 mi: (1) shuttle divergence N of Ditmas - 37th St x Fort Hamilton Pkwy, 0.71 mi straight line (the 37th St corridor of the later Culver Shuttle el, razed 1985, unmapped); (2) 37th St x Fort Hamilton Pkwy - the abandoned BMT ways, 0.10 mi straight; (3) 8th Ave - Union Depot (5th Ave x 36th St, from OSM street geometry), 0.49 mi straight line along the open cut - the BMT West End tracks that now occupy the cut were deliberately NOT followed (another company). LATER ALIGNMENT: the traced pieces are the 1919 Culver el / later yard tracks on the PP&SB's corridor; the Union Depot end was rebuilt for the 1914-16 4th Ave subway connection. Kensington Jct is drawn at McDonald & Ditmas per the brief; ERA07's 1898 list places Kensington Junction at Ave C.",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1892,
+      "headway_min": 30,
+      "note": "Kensington Jct - City Line Jct (37th St & 9th Ave) - Union Depot (5th Ave & 36th St, under the 5th Ave El station), built by the Prospect Park & South Brooklyn Railroad (incorporated 15 Jun 1888, a PP&CI affiliate; Arrt's Arrchives) and worked by PP&CI trains, giving the Culver a connection to the 5th Ave El. Opened 7 Jun 1890 (Chiasson, ERA Bulletin Jul 2016; Wikipedia, IND Culver Line) - Feinman gives 30 May 1890 for the shared Union terminal; Wikipedia's 'Culver Line (surface)' says 1880, rejected (PP&SB not incorporated until 1888, El reached 36th St only in 1889). Union Depot was shared 'in equal partnership' with trains of the Brooklyn, Bath & West End until 14 Jul 1892 (Chiasson) - the BB&WE ran its own track west of City Line Jct and is another company, not drawn here. ENDS 1892 at the LIRR purchase (24 Jan 1893). headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: start 1890 from Chiasson (ERA Bulletin Jul 2016) and Wikipedia (IND Culver Line), with Feinman's 30 May 1890 recorded; end 1892 = LIRR purchase of Jan 1893 (Chiasson; Evening World). Headway not sourced.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913",
+       "https://en.wikipedia.org/wiki/IND_Culver_Line",
+       "http://arrts-arrchives.com/kensingtonjct.html",
+       "http://arrts-arrchives.com/UNIONDEPOT.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.97827,
+      40.63548
+     ],
+     [
+      -73.9785953,
+      40.6375986
+     ],
+     [
+      -73.98906,
+      40.64413
+     ],
+     [
+      -73.9908173,
+      40.6447994
+     ],
+     [
+      -73.9920881,
+      40.6455233
+     ],
+     [
+      -73.9935269,
+      40.645714
+     ],
+     [
+      -73.9962465,
+      40.6473874
+     ],
+     [
+      -74.00216,
+      40.65295
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Union Depot – Kensington",
+    "id": "lirr-union-depot-kensington",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "OSM abandoned BMT Culver Line, South Brooklyn Railway yard and Culver el ways via opstrace.py graph; straight legs between (see geometry_quality)",
+    "geometry_quality": "Drawn 1.80 mi against ~1.5-2 mi (research report's map estimate). TRACED 0.49 mi: 0.15 mi on OSM's (dis)used BMT/IND Culver el tracks north of Ditmas Ave to the 1919 shuttle divergence, and 0.34 mi on OSM's abandoned BMT Culver Line and South Brooklyn Railway yard tracks from Fort Hamilton Pkwy past 9th Ave (City Line Jct) to 8th Ave - one SBK way there is OSM-tagged start_date 1888-06-15, the PP&SB incorporation date. APPROXIMATED 1.30 mi: (1) shuttle divergence N of Ditmas - 37th St x Fort Hamilton Pkwy, 0.71 mi straight line (the 37th St corridor of the later Culver Shuttle el, razed 1985, unmapped); (2) 37th St x Fort Hamilton Pkwy - the abandoned BMT ways, 0.10 mi straight; (3) 8th Ave - Union Depot (5th Ave x 36th St, from OSM street geometry), 0.49 mi straight line along the open cut - the BMT West End tracks that now occupy the cut were deliberately NOT followed (another company). LATER ALIGNMENT: the traced pieces are the 1919 Culver el / later yard tracks on the PP&SB's corridor; the Union Depot end was rebuilt for the 1914-16 4th Ave subway connection. Kensington Jct is drawn at McDonald & Ditmas per the brief; ERA07's 1898 list places Kensington Junction at Ave C.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1898,
+      "headway_min": 30,
+      "note": "The PP&SB link under LIRR ownership of the PP&CI (from 24 Jan 1893; same operator caveat as the Culver Line feature). The 5th Ave El's ramp at 36th St (1895) tied into this trackage for BER-run through trains 1895-98 - another company's trains, not drawn. From 1898 LIRR Coney Island trains originated at Union Depot only 'nominally' (Chiasson). ENDS 1898: steam operations 'from both Greenwood and Union Depots' were suspended in April 1899 for electrification and BRT reopened the line 17 Jun 1899 (Chiasson) - 1899 not claimed. headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: start 1893 from Chiasson (ERA Bulletin Jul 2016) and the Evening World of 25 Jan 1893; end at the April 1899 suspension of steam from Union Depot (Chiasson). Headway not sourced.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://www.loc.gov/resource/sn83030193/1893-01-25/ed-1/?sp=3",
+       "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.97827,
+      40.63548
+     ],
+     [
+      -73.9785953,
+      40.6375986
+     ],
+     [
+      -73.98906,
+      40.64413
+     ],
+     [
+      -73.9908173,
+      40.6447994
+     ],
+     [
+      -73.9920881,
+      40.6455233
+     ],
+     [
+      -73.9935269,
+      40.645714
+     ],
+     [
+      -73.9962465,
+      40.6473874
+     ],
+     [
+      -74.00216,
+      40.65295
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Prospect Park and Coney Island",
+    "line": "Prospect Park and Coney Island: Norton's Point",
+    "id": "ppci-nortons-point",
+    "color": "#2F8F4E",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "hand-placed straight legs along Mermaid Ave (no surviving or mapped right-of-way)",
+    "geometry_quality": "Drawn 1.99 mi against ~2 mi (research report's map estimate). ENTIRELY APPROXIMATED: five hand-placed straight legs, 1.99 mi in all - Culver Depot - Mermaid Ave x Stillwell Ave 0.37 mi, then westward c.60 m north of the Mermaid Ave centreline past W 17th St (0.21 mi), W 27th St (0.42 mi) and W 37th St (0.52 mi), then to Norton's Point 0.48 mi. The NY&CI right-of-way (later the Norton's Point trolley, to 1948) is not mapped in OSM or OpenHistoricalMap (fetch_gap over Coney Island found nothing but the modern subway). The west end is placed near the Coney Island Light in Sea Gate; the steamboat landing's exact position is not established (+/- 0.3 mi). No later-alignment issue: nothing here is traced from a later railway.",
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1892,
+      "headway_min": 30,
+      "note": "New York and Coney Island Railroad: single-track steam line from Culver Depot west to Norton's Point (the west tip of Coney Island, today's Sea Gate) to carry steamboat passengers. Opened 9 Jun 1879 (Wikipedia, B74 bus); leased to and run by the PP&CI from 1879 (Feinman; Chiasson, ERA Bulletin May 2016 gives 1879). Steam from opening - no animal-power era found. Probably summer-only (steamboat-dependent), but no source says so; seasonality does not change the drawn years. ENDS 1892 at the LIRR purchase of the PP&CI (24 Jan 1893). headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: start 1879 from Wikipedia (B74 bus, 9 Jun 1879), Feinman and Chiasson (ERA Bulletin May 2016); end 1892 = LIRR purchase of the PP&CI, Jan 1893 (Chiasson Jul 2016; Evening World). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/B74_(New_York_City_bus)",
+       "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "http://arrts-arrchives.com/nyci.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.9746,
+      40.5755
+     ],
+     [
+      -73.9812,
+      40.5775
+     ],
+     [
+      -73.9851,
+      40.5772
+     ],
+     [
+      -73.9929,
+      40.5762
+     ],
+     [
+      -74.0028,
+      40.5756
+     ],
+     [
+      -74.0115,
+      40.5775
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Norton's Point",
+    "id": "lirr-nortons-point",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "hand-placed straight legs along Mermaid Ave (no surviving or mapped right-of-way)",
+    "geometry_quality": "Drawn 1.99 mi against ~2 mi (research report's map estimate). ENTIRELY APPROXIMATED: five hand-placed straight legs, 1.99 mi in all - Culver Depot - Mermaid Ave x Stillwell Ave 0.37 mi, then westward c.60 m north of the Mermaid Ave centreline past W 17th St (0.21 mi), W 27th St (0.42 mi) and W 37th St (0.52 mi), then to Norton's Point 0.48 mi. The NY&CI right-of-way (later the Norton's Point trolley, to 1948) is not mapped in OSM or OpenHistoricalMap (fetch_gap over Coney Island found nothing but the modern subway). The west end is placed near the Coney Island Light in Sea Gate; the steamboat landing's exact position is not established (+/- 0.3 mi). No later-alignment issue: nothing here is traced from a later railway.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1898,
+      "headway_min": 30,
+      "note": "The Norton's Point shuttle as part of the LIRR-owned PP&CI. OPERATOR LABEL LOW-MEDIUM CONFIDENCE: Feinman says the LIRR owned and operated the Culver line 1893-99, but Chiasson (ERA Bulletin May 2016) says Norton's Point was 'never directly served by LIRR trains in any manner' - read here as no LIRR through trains from its own lines, not that the LIRR-owned PP&CI stopped running the shuttle. ENDS 1898: steam operations 'to Coney Island and Norton's Point' were suspended in April 1899 for electrification (Chiasson, Jul 2016); BRT trolleys/El cars afterwards (to 1948) belong to a future layer - 1899 not claimed. headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: years from Chiasson (ERA Bulletin Jul 2016: LIRR purchase Jan 1893; Norton's Point steam suspended April 1899). The LIRR operator label for this branch is an inference from Feinman's whole-line statement and conflicts in tone with Chiasson (May 2016); not sourced for the branch itself. Headway not sourced.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://www.nycsubway.org/wiki/Early_Rapid_Transit_in_Brooklyn,_1878-1913",
+       "https://en.wikipedia.org/wiki/B74_(New_York_City_bus)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.9746,
+      40.5755
+     ],
+     [
+      -73.9812,
+      40.5775
+     ],
+     [
+      -73.9851,
+      40.5772
+     ],
+     [
+      -73.9929,
+      40.5762
+     ],
+     [
+      -74.0028,
+      40.5756
+     ],
+     [
+      -74.0115,
+      40.5775
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: 39th Street Ferry – Parkville Junction",
+    "id": "lirr-39th-street-ferry-parkville",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul Brooklyn steam suburban/excursion railroad with frequent stops; no running times or timetable checked (Rule 3)",
+    "geometry_source": "OSM South Brooklyn Railway, abandoned BMT Culver / SBK yard and IND Culver el ways via opstrace.py graph; straight legs between (see geometry_quality)",
+    "geometry_quality": "Drawn 3.09 mi (ferry - City Line Jct c.1.6 mi against the report's ~2 mi map estimate; then City Line Jct - Kensington Jct - Parkville Jct). TRACED 1.61 mi: 0.55 mi on OSM's South Brooklyn Railway track along 39th St (1st - 4th Ave); 0.34 mi on abandoned BMT Culver / SBK yard tracks 8th Ave - Fort Hamilton Pkwy; 0.15 mi on the Culver el tracks north of Ditmas; 0.57 mi on the IND Culver el over McDonald Ave from Kensington Jct to Parkville Jct (exact vertex shared with manhattan_beach_railway.geojson's 'Parkville Junction - Manhattan Beach Junction'). APPROXIMATED 1.48 mi: foot of 39th St (west end of OSM's 39th Street, on modern Bush Terminal-era landfill; the 1898 ferry slip's exact position is not established) - SBK track 0.10 mi straight; 4th Ave - 8th Ave along the 38th/39th St open cut 0.57 mi straight (the BMT West End tracks in the cut not followed); 37th St x Fort Hamilton Pkwy legs 0.10 + 0.71 mi straight, shared with the Union Depot - Kensington feature. LATER ALIGNMENT: the el/yard tracks traced are post-1899 structures on the 1887-1890 corridors; the steam road ran at grade beneath them. Trains reversed direction nowhere: they ran east through the cut and onto the Culver at Kensington Jct, then south to Parkville Jct.",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1902,
+      "headway_min": 60,
+      "note": "Summer boat trains: from the 39th Street Ferry (foot of 39th St, Upper Bay) through the South Brooklyn Railroad & Terminal Co.'s 1887 open cut along 38th/39th St (lease acquired by the LIRR 1897; Wikipedia, South Brooklyn Railway), onto the Culver at Kensington Jct, and south to Parkville Jct, continuing east to Manhattan Beach over the LIRR feature already drawn 1898-1902 in manhattan_beach_railway.geojson ('Parkville Junction - Manhattan Beach Junction'). LIRR Coney Island trains also ran from the ferry from May 1898 (1898 only - covered south of Kensington by the LIRR Culver Line feature); 39th St Ferry - Manhattan Beach trains from 16 Jun 1898, last run after 6 Oct 1902 (Chiasson, ERA Bulletin Jul 2016). Trains from the cut missed City Line Jct station (Chiasson). North of Parkville the 1899-1902 trains ran over BRT-owned Culver track (trackage rights; the drawn operator is the LIRR, whose trains these were). Summer only; seasonality does not change the drawn years. headway_min is an ESTIMATE (Rule 3): no PP&CI or LIRR timetable for this line was read.",
+      "sources": [
+       "Segment-level: years from Chiasson (ERA Bulletin Jul 2016: May / 16 Jun 1898 - 6 Oct 1902); the cut's ownership from Wikipedia (South Brooklyn Railway). Headway not sourced.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/South_Brooklyn_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.01424,
+      40.65753
+     ],
+     [
+      -74.0129574,
+      40.6564208
+     ],
+     [
+      -74.0122234,
+      40.6567305
+     ],
+     [
+      -74.011494,
+      40.6566067
+     ],
+     [
+      -74.0103828,
+      40.6559228
+     ],
+     [
+      -74.0098934,
+      40.6552059
+     ],
+     [
+      -74.008642,
+      40.6544787
+     ],
+     [
+      -74.0076938,
+      40.6543306
+     ],
+     [
+      -74.0053347,
+      40.6527318
+     ],
+     [
+      -74.0047475,
+      40.6524782
+     ],
+     [
+      -73.9962465,
+      40.6473874
+     ],
+     [
+      -73.9935269,
+      40.645714
+     ],
+     [
+      -73.9920881,
+      40.6455233
+     ],
+     [
+      -73.9908173,
+      40.6447994
+     ],
+     [
+      -73.98906,
+      40.64413
+     ],
+     [
+      -73.9785953,
+      40.6375986
+     ],
+     [
+      -73.9780882,
+      40.6353953
+     ],
+     [
+      -73.9762142,
+      40.6273516
+     ]
+    ]
+   }
+  }
+ ]
+}
