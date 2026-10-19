@@ -1,0 +1,337 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Two connected steam short lines in Schoharie County, New York, about 10 miles end to end, run in tandem as the 'Pride of the Valley': the Schoharie Valley (Rail Road Co. 1865, Railway Co. 1880) from Schoharie Junction on the Albany and Susquehanna / D&H main, 0.9 mi east of Central Bridge, to Schoharie village, and the Middleburgh and Schoharie (1867) on from Schoharie to Middleburgh. They were separate companies that pooled locomotives, equipment and facilities and ran through trains, so under Rule 4 they are two features in two colours; neither is split for ownership (the D&H's 1907 stock purchase of the SV did not change who ran its trains, see U4). Both ends are [OPEN]: 1927 is the last confirmed passenger year on both lines; the M&S was abandoned in 1936 and the SV in 1942. Research report: research/branches/middleburgh_and_schoharie_railroad.txt.",
+  "sources": [
+   "Historical Marker Database, Schoharie Junction marker ('Run 1-4-1867'; read only as a search-result snippet, page returned 403): https://www.hmdb.org/m.asp?m=31928",
+   "John Fowler, 'New York State Railroads Passenger Stations & Stops (2)', section 118 Schoharie Valley RR and Middleburgh & Schoharie RR (letters 1868G = 1868 Official Guide, y = 1875 Official Guide, p = 1876 Rand McNally Guide): https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+   "Nashua City Station, Schoharie Valley Railway Co., route 'Schoharie Junction and Middleburgh' (transcribes Delaware and Hudson Time Tables corrected to October 31, 1927; original not seen): https://www.nashuacitystation.org/history/schoharie-valley-railway-company/routes/schoharie-junction-and-middleburgh",
+   "Nashua City Station, Schoharie Valley Railway Company (corporate history; cites ICC Reports, 'Schoharie Valley Railway Company', pp. 833-845, 1934): https://nashuacitystation.org/history/schoharie-valley-railway-company/",
+   "Nashua City Station, Schoharie Valley Rail Road Company (corporate history): https://nashuacitystation.org/history/schoharie-valley-rail-road-company/",
+   "Wikipedia, Schoharie Valley Railroad Complex (NRHP 72000914): https://en.wikipedia.org/wiki/Schoharie_Valley_Railroad_Complex",
+   "Wikipedia, Middleburgh and Schoharie Railroad (1936 last day; locomotive roster): https://en.wikipedia.org/wiki/Middleburgh_and_Schoharie_Railroad",
+   "William G. Pomeroy Foundation, Railroad Depot marker, Middleburgh ('EST. 1867', ceased 1936, '5-mile line'): https://www.wgpfoundation.org/historic-markers/railroad-depot-3/",
+   "Old Stone Fort Museum, Town of Middleburgh ('constructed in 1867'): https://theoldstonefort.org/town-of-middleburgh/",
+   "Village of Middleburgh, history page (1912: 'Two passenger trains and one freight train left each day'): https://villageofmiddleburgh.com/?p=5912",
+   "Goodreads author blog, 'All Aboard' (4.2 mi SV, 5.7 mi M&S, M&S first run 1868; secondary): https://www.goodreads.com/author_blog_posts/3592173-all-aboard",
+   "gino.cdfw.net, Middleburgh & Schoharie RR page (did not resolve; quoted only via search summary, 'made her last trip' Sep 30 1936): http://gino.cdfw.net/Schoharie_Valley_Railway/msrr.html"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-19): named Schoharie Valley Railway and Middleburgh and Schoharie Railroad ways, and power=line way 20157142 on the former M&S right of way",
+   "OpenHistoricalMap (queried via opstrace fetch_gap, nothing in 42.55,-74.40,42.75,-74.25)"
+  ],
+  "open_ends": [
+   "Schoharie Valley: Schoharie Junction - Schoharie: end 1927 is the last CONFIRMED passenger year, not a known end (company ran to 1942).",
+   "Middleburgh and Schoharie: Schoharie - Middleburgh: start 1875 is the first PRIMARY confirmation (probable opening 1868); end 1927 is the last CONFIRMED passenger year, not a known end (company ran to 1936)."
+  ],
+  "colour_choice": "Neither company had a colour anywhere in data/ (checked programmatically 2026-10-19). New colours chosen as unused by any company and not near the D&H's #146B70 that the lines meet: Schoharie Valley #B3A44A, Middleburgh and Schoharie #8F1A86.",
+  "not_yet_sourced": [
+   "U1. PASSENGER END, both lines. Last confirmed passenger year is 1927 (one secondary transcription of a D&H timetable). M&S last trip Sep 24 or Sep 30 1936 (sources conflict); SV last run Sep 17 1942. Whether passengers rode to the end on either line, e.g. on a mixed train, is unknown. Best next sources: the 1934 ICC report on the Schoharie Valley Railway Co. (pp. 833-845; valuation docket No. 1132, decided Jun 10 1933), the ICC abandonment reports for the M&S (1936) and SV (1942), and the Schoharie Republican / Middleburgh News / Cobleskill Index on nyshistoricnewspapers.org (blocked by Cloudflare during research).",
+   "U2. M&S START: 1868 (goodreads blog; 1868 steam-dummy purchase) vs the first primary confirmation, the 1875 Official Guide; village history says 1866. Drawn conservatively from 1875 [OPEN]; move to 1868 only if a primary source confirms the opening.",
+   "U3. One feature or two: the companies were separate but pooled equipment and ran through Schoharie Junction - Middleburgh, and the 1927 timetable lists the whole run under the Schoharie Valley Railway Co. Who actually ran the through trains in which years (M&S engines, SV engines, or both) is not established. Drawn as two companies, two colours.",
+   "U4. D&H Dec 1907 acquisition of the SV: stock control vs operation. Treated as NOT an operator change (USRA took the SV over in its own name 1918-20; the 1927 timetable still names it). If a source shows D&H crews/equipment running the trains after 1907, split the SV feature at 1907 into the D&H colour.",
+   "U5. Mileage: SV 4.2 (marker) vs ~5 (Fowler), traced 4.30; M&S 5.7 (blog) vs '5-mile' (Pomeroy) vs ~6 (Fowler), traced 5.32. Also whether the Schoharie depot - Fair Street 0.55 mi (named 'Schoharie Valley Railway' in OSM) belonged to the SV or the M&S.",
+   "U6. Whether trains ran on to Central Bridge over the D&H (Fowler lists Central Bridge in the SV/M&S table), and whether 'Schoharie Junction' and Central Bridge were the same stop in 1863 (the Albany and Susquehanna layer's note says so; Fowler separates them at A&S mp 35.3 and 36.2). Not drawn.",
+   "SV 1874-1880: who ran the trains between the foreclosure sale to W. H. Sidney and Jacob Vroman's purchase is not established.",
+   "SV start 1867 rests on a search-result snippet of the Schoharie Junction marker (hmdb.org m=31928 returned 403); the strict alternative is 1868 from the 1868 Official Guide.",
+   "Headways and speeds on both features are estimates; the only frequency found is the M&S's two passenger trains a day in 1912."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Schoharie Valley Railway",
+    "line": "Schoharie Valley: Schoharie Junction \u2013 Schoharie",
+    "id": "schoharie-valley-schoharie-junction-schoharie",
+    "color": "#B3A44A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 4.2-mile steam short line with three intermediate stops, run in pool with the Middleburgh and Schoharie; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-19), routed with opstrace.py over the ways OSM names 'Schoharie Valley Railway' (old_railway_operator=D&H): 699548734, 699548733, 699548732, 1488979570, 51188000, 375882265. The live Norfolk Southern / ex-D&H main (the Albany and Susquehanna, 'Freight Line') was costed 12x and is not used. OpenHistoricalMap and OSM rail-trail/abandoned queries (opstrace fetch_gap) returned nothing for the one lifted stretch.",
+    "geometry_quality": "Traced 4.30 mi against 4.2 mi documented (Schoharie Junction marker, goodreads; +2%); Fowler's table rounds Schoharie to ~5 mi from the junction. Mileposts on the drawn line: mp 0.00-1.19 OSM SV ways (disused/abandoned) from the junction south along Schoharie Creek; mp 1.19-1.70 STRAIGHT LINE, 0.51 mi, over a lifted stretch where neither OSM nor OpenHistoricalMap has any way (between 42.7065,-74.3200 and 42.7018,-74.3121); mp 1.70-4.30 OSM way 51188000 (railway=abandoned) and the surviving museum track 375882265 into the Schoharie depot at Depot Lane (Schoharie Valley Railroad Museum). The north end is the north end of the OSM SV way at 42.7221,-74.3252, 62 m from Nominatim's Schoharie Junction hamlet point, where the branch met the A&S main; it does not run on the D&H main line, which the Albany and Susquehanna layer draws. Hallenbeck's and Vroman's (W. L. Dietz's) could not be located (Nominatim returns nothing for Hallenbeck's and returns Vroman's Nose near Middleburgh, the wrong place) and are not checked against the line. This is the company's own grade; no later realignment is known. Fowler lists Central Bridge (D&H, 0.9 mi west of the junction) at mile 1 of the table, suggesting trains ran on over D&H track at some period; that leg is not drawn here (U6).",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1880,
+      "headway_min": 360,
+      "note": "Schoharie Valley Rail Road Company (incorporated Jun 14 1865). Start year from the Schoharie Junction historical marker ('Run 1-4-1867', i.e. first run Jan 4 1867), read only as a search-result snippet of hmdb.org m=31928 because the page returned 403; corroborated by a primary guide, Fowler's letter 1868G showing Vroman's as 'W. L. Dietz's' in the 1868 Official Guide. If the snippet is not trusted the strict start is 1868 (the 1868 Guide); this layer follows the research report's drawable start of 1867. Rejected: a 'built in 1859' claim (search summary of Hudson Valley One), which predates the 1865 charter. Fowler letters y (1875 Official Guide) and p (1876 Rand McNally) confirm service in the mid-1870s. The company was foreclosed and sold to W. H. Sidney Apr 7 1874 and bought by Jacob Vroman Mar 3 1880; who ran the trains 1874-1880 is not established, but it was the same line and the same local people, so this is not treated as an operator change. Steam throughout; no animal traction. Headway is an estimate (the only frequency found is the M&S's 1912 'two passenger trains' a day, which ran through over this line), not sourced.",
+      "sources": [
+       "Segment-level: 1867 start from the Schoharie Junction marker (snippet only) corroborated by Fowler s.118 letter 1868G; service mid-1870s from Fowler letters y (1875G) and p (1876); 1874 foreclosure and 1880 sale/reorganization dates from Nashua City Station corporate history. Headway is an estimate, not sourced.",
+       "Historical Marker Database, Schoharie Junction marker ('Run 1-4-1867'; read only as a search-result snippet, page returned 403): https://www.hmdb.org/m.asp?m=31928",
+       "John Fowler, 'New York State Railroads Passenger Stations & Stops (2)', section 118 Schoharie Valley RR and Middleburgh & Schoharie RR (letters 1868G = 1868 Official Guide, y = 1875 Official Guide, p = 1876 Rand McNally Guide): https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+       "Nashua City Station, Schoharie Valley Rail Road Company (corporate history): https://nashuacitystation.org/history/schoharie-valley-rail-road-company/",
+       "Nashua City Station, Schoharie Valley Railway Company (corporate history; cites ICC Reports, 'Schoharie Valley Railway Company', pp. 833-845, 1934): https://nashuacitystation.org/history/schoharie-valley-railway-company/"
+      ]
+     },
+     {
+      "start": 1880,
+      "end": 1927,
+      "headway_min": 360,
+      "note": "Schoharie Valley Railway Company (incorporated Mar 10 1880; took over the Rail Road Co. Mar 9/31 1880). The Delaware and Hudson Company bought the company's stock in Dec 1907, but the Schoharie Valley stayed a separately operated carrier - USRA took it over in its own name (Jan 1 1918 - Feb 29 1920) and the 1927 timetable listing still names the Schoharie Valley Railway Co. - so the feature is not split at 1907 (see not_yet_sourced U4). Through trains worked Schoharie Junction - Middleburgh in pool with the Middleburgh and Schoharie, sharing locomotives, equipment and facilities. Passenger service confirmed to 1927 by the Delaware and Hudson Time Tables corrected to October 31, 1927, which list the Schoharie Junction - Middleburgh run (Nashua City Station transcription; original not seen). This is the last CONFIRMED year, not a known end - no source dates when passenger service actually stopped. Do not extend without evidence. The company ran (at least freight) until its last run on Sep 17 1942 and abandonment that year; that is an abandonment, not a demonstrated passenger end, so 1928-1942 is left off the map as unproven passenger service. A local account says the SV 'stopped running to Middleburgh' before the 1936 M&S closure. Headway is an estimate (two passenger trains a day in 1912 on the M&S, which ran through), not sourced.",
+      "sources": [
+       "Segment-level: 1880 start from the Schoharie Valley Railway Co. incorporation and takeover (Nashua City Station corporate history, citing the 1934 ICC report); 1927 end is the last confirmed passenger year, from the Oct 31 1927 D&H Time Tables as transcribed by Nashua City Station - [OPEN], not a known end. 1907 D&H stock purchase and 1918-20 USRA control from the same corporate history. Headway is an estimate, not sourced.",
+       "Nashua City Station, Schoharie Valley Railway Company (corporate history; cites ICC Reports, 'Schoharie Valley Railway Company', pp. 833-845, 1934): https://nashuacitystation.org/history/schoharie-valley-railway-company/",
+       "Nashua City Station, Schoharie Valley Railway Co., route 'Schoharie Junction and Middleburgh' (transcribes Delaware and Hudson Time Tables corrected to October 31, 1927; original not seen): https://www.nashuacitystation.org/history/schoharie-valley-railway-company/routes/schoharie-junction-and-middleburgh"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.3251567,
+      42.7220593
+     ],
+     [
+      -74.32422,
+      42.718024
+     ],
+     [
+      -74.323525,
+      42.716867
+     ],
+     [
+      -74.321805,
+      42.715488
+     ],
+     [
+      -74.321277,
+      42.714621
+     ],
+     [
+      -74.321043,
+      42.713683
+     ],
+     [
+      -74.320979,
+      42.712872
+     ],
+     [
+      -74.3212567,
+      42.7113897
+     ],
+     [
+      -74.3220099,
+      42.7106127
+     ],
+     [
+      -74.3224581,
+      42.7099225
+     ],
+     [
+      -74.3223439,
+      42.7090448
+     ],
+     [
+      -74.3220827,
+      42.7083838
+     ],
+     [
+      -74.3212787,
+      42.7073985
+     ],
+     [
+      -74.3199545,
+      42.7065004
+     ],
+     [
+      -74.312095,
+      42.7018223
+     ],
+     [
+      -74.310634,
+      42.700905
+     ],
+     [
+      -74.309515,
+      42.700484
+     ],
+     [
+      -74.306638,
+      42.700124
+     ],
+     [
+      -74.305347,
+      42.699774
+     ],
+     [
+      -74.302967,
+      42.698661
+     ],
+     [
+      -74.301998,
+      42.697935
+     ],
+     [
+      -74.301421,
+      42.697121
+     ],
+     [
+      -74.300967,
+      42.696253
+     ],
+     [
+      -74.300883,
+      42.695028
+     ],
+     [
+      -74.301228,
+      42.692599
+     ],
+     [
+      -74.301309,
+      42.689699
+     ],
+     [
+      -74.301569,
+      42.688278
+     ],
+     [
+      -74.302048,
+      42.68693
+     ],
+     [
+      -74.30307,
+      42.685027
+     ],
+     [
+      -74.303803,
+      42.682852
+     ],
+     [
+      -74.305503,
+      42.679242
+     ],
+     [
+      -74.30904,
+      42.67287
+     ],
+     [
+      -74.3110419,
+      42.6705703
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Middleburgh and Schoharie Railroad",
+    "line": "Middleburgh and Schoharie: Schoharie \u2013 Middleburgh",
+    "id": "middleburgh-and-schoharie-schoharie-middleburgh",
+    "color": "#8F1A86",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 5.7-mile steam short line on the flat valley floor, run in pool with the Schoharie Valley; no timetable with running times was read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-19), routed with opstrace.py: OSM way 375882266 (named 'Schoharie Valley Railway') from the Schoharie depot to Fair Street; OSM way 95028279 (railway=abandoned, name 'Middleburgh and Schoharie Railroad') Fair Street - Frisbieville - north of Middleburgh; then OSM power=line way 20157142 (TIGER-imported), which runs 25-35 m from the abandoned grade where both are mapped and stands in for the lifted right of way that New York Power and Light bought in 1938. OpenHistoricalMap and OSM rail-trail queries returned nothing.",
+    "geometry_quality": "Traced 5.32 mi against 5.7 mi documented (goodreads; -7%); the Pomeroy marker calls it a '5-mile line' and Fowler's table puts Middleburgh ~6 mi beyond Schoharie. Mileposts on the drawn line: mp 0.00-0.55 OSM way 375882266, which OSM names 'Schoharie Valley Railway' - whether the Schoharie depot - Fair Street stretch belonged to the SV or the M&S is not established; it is drawn here because the report gives the M&S as Schoharie - Middleburgh; mp 0.55-3.46 the OSM 'Middleburgh and Schoharie Railroad' abandoned grade (2.9 mi); mp 3.46-5.12 POWER-LINE PROXY, 1.66 mi, along the New York Power and Light line that took over the right of way (OSM way 20157142; it parallels the mapped grade within ~30 m for the 0.5 mi where both exist, which is the evidence it follows the old line) - an approximation of the railway's alignment, i.e. a later utility corridor standing in for the rails, accurate to perhaps tens of metres; mp 5.12-5.32 STRAIGHT LINE, 0.20 mi, from the end of the power line to Railroad Avenue, Middleburgh (the depot site; the depot was moved across the street in 1938 and the yard is now a village park). Fair Street is on the line (way 95028279 begins at the Fair Street geocode); Frisbieville was geocoded only to Frisbieville Lane, 0.4 km off the line, so that check is weak; Borst's Crossing and Davis Crossing could not be located.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1927,
+      "headway_min": 360,
+      "note": "Middleburgh and Schoharie Railroad Company (organized 1867 - Pomeroy marker 'EST. 1867', Old Stone Fort 'constructed in 1867'), operating its own locomotives (No. 1, a Danforth steam dummy bought 1868; No. 2, a Schenectady 2-4-4T, 1895-1936) with equipment and facilities pooled with the Schoharie Valley, and trains apparently working through to Schoharie Junction. START IS [OPEN]: drawn from 1875, the first PRIMARY confirmation (Fowler letter y, Middleburgh in the 1875 Official Guide). The line very probably carried passengers from about 1868 (goodreads blog: first run 1868; the 1868 steam-dummy purchase), but no primary source for 1868 was found, so 1868-1874 is withheld; move the start earlier only on primary evidence. The village history's 1866 is rejected (it predates the 1867 organization). 1912: 'Two passenger trains and one freight train left each day' (Village of Middleburgh). Passenger service confirmed to 1927 by the Delaware and Hudson Time Tables corrected to October 31, 1927, which list the Schoharie Junction - Middleburgh run (Nashua City Station transcription; original not seen). This is the last CONFIRMED year, not a known end - no source dates when passenger service actually stopped. Do not extend without evidence. The last trip and abandonment came in 1936 - Sep 24 (Wikipedia, citing Pomeroy, which says only '1936') or Sep 30 (gino.cdfw.net via search summary); sources conflict on the day - and the track was scrapped and the right of way sold to New York Power and Light in 1938. That is an abandonment, not a demonstrated passenger end, so 1928-1936 is left off the map. Steam throughout (the 1868 dummy was a steam dummy); no animal traction. Headway is an estimate from the 1912 two passenger trains a day, not a timetable.",
+      "sources": [
+       "Segment-level: 1875 start from Fowler s.118 letter y (1875 Official Guide) at Middleburgh - [OPEN], first primary confirmation only; 1912 two passenger trains a day from the Village of Middleburgh history; 1927 end is the last confirmed passenger year, from the Oct 31 1927 D&H Time Tables as transcribed by Nashua City Station - [OPEN], not a known end. 1867 organization from the Pomeroy marker and Old Stone Fort; 1868 first run and 5.7 mi from the goodreads blog; 1936 last trip from Wikipedia (Sep 24) and gino.cdfw.net via search summary (Sep 30). Headway is an estimate, not sourced.",
+       "John Fowler, 'New York State Railroads Passenger Stations & Stops (2)', section 118 Schoharie Valley RR and Middleburgh & Schoharie RR (letters 1868G = 1868 Official Guide, y = 1875 Official Guide, p = 1876 Rand McNally Guide): https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+       "Village of Middleburgh, history page (1912: 'Two passenger trains and one freight train left each day'): https://villageofmiddleburgh.com/?p=5912",
+       "Nashua City Station, Schoharie Valley Railway Co., route 'Schoharie Junction and Middleburgh' (transcribes Delaware and Hudson Time Tables corrected to October 31, 1927; original not seen): https://www.nashuacitystation.org/history/schoharie-valley-railway-company/routes/schoharie-junction-and-middleburgh",
+       "Wikipedia, Middleburgh and Schoharie Railroad (1936 last day; locomotive roster): https://en.wikipedia.org/wiki/Middleburgh_and_Schoharie_Railroad",
+       "William G. Pomeroy Foundation, Railroad Depot marker, Middleburgh ('EST. 1867', ceased 1936, '5-mile line'): https://www.wgpfoundation.org/historic-markers/railroad-depot-3/",
+       "Old Stone Fort Museum, Town of Middleburgh ('constructed in 1867'): https://theoldstonefort.org/town-of-middleburgh/",
+       "Goodreads author blog, 'All Aboard' (4.2 mi SV, 5.7 mi M&S, M&S first run 1868; secondary): https://www.goodreads.com/author_blog_posts/3592173-all-aboard",
+       "gino.cdfw.net, Middleburgh & Schoharie RR page (did not resolve; quoted only via search summary, 'made her last trip' Sep 30 1936): http://gino.cdfw.net/Schoharie_Valley_Railway/msrr.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.3110419,
+      42.6705703
+     ],
+     [
+      -74.313194,
+      42.66796
+     ],
+     [
+      -74.317317,
+      42.663698
+     ],
+     [
+      -74.319936,
+      42.660706
+     ],
+     [
+      -74.32068,
+      42.659629
+     ],
+     [
+      -74.322865,
+      42.653969
+     ],
+     [
+      -74.326165,
+      42.648819
+     ],
+     [
+      -74.331404,
+      42.64269
+     ],
+     [
+      -74.333209,
+      42.640359
+     ],
+     [
+      -74.334764,
+      42.638693
+     ],
+     [
+      -74.335803,
+      42.637366
+     ],
+     [
+      -74.336277,
+      42.63636
+     ],
+     [
+      -74.336385,
+      42.635334
+     ],
+     [
+      -74.335032,
+      42.631886
+     ],
+     [
+      -74.334764,
+      42.629579
+     ],
+     [
+      -74.3344753,
+      42.6256214
+     ],
+     [
+      -74.33477,
+      42.625254
+     ],
+     [
+      -74.333567,
+      42.60972
+     ],
+     [
+      -74.332598,
+      42.601738
+     ],
+     [
+      -74.3334231,
+      42.5988447
+     ]
+    ]
+   }
+  }
+ ]
+}
