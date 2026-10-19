@@ -1,0 +1,428 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Kanona and Prattsburg(h) Railway, Steuben County, New York: an independent, locally owned 11.4-mile steam branch from the Erie Rochester Division at Kanona north to Prattsburgh, opened 1889. Sold at foreclosure in 1917 and reorganised as the Prattsburgh Railway Corporation. Passenger (mixed-train) service drawn 1889-1929; freight and express continued to 1959 and is not drawn (Rule 1). Spelling 'Prattsburg'/'Prattsburgh' varies by source and era. Research report: research/branches/kanona_and_prattsburgh_railway.txt.",
+  "sources": [
+   "https://theclio.com/entry/184350 -- Clio, Wheeler Center Depot (opening Oct 1889; passenger end 9 Mar 1929; last train 29 Sept 1959)",
+   "https://crookedlakereview.com/articles/67_100/67oct1993/67palmer.html -- Richard F. Palmer, Crooked Lake Review, Oct 1993, quoting a 1939 50th-anniversary article (Sept/Oct 1889 opening; 1917 foreclosure and reorganisation; passengers discontinued 1929)",
+   "https://www.wgpfoundation.org/historic-markers/wheeler-station/ -- William G. Pomeroy Foundation, Wheeler Station marker",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf -- Fowler, New York State railroads part 4, table 222 (stations and mileages; 1895 Peoples Guide)",
+   "research/sources/official_guide_1952.txt -- Official Guide Feb 1952, Prattsburgh Railway Corporation: 11.4 mi, freight and express only, Aug 1951"
+  ],
+  "operator_split": "Split at 1917 into two features with identical geometry (CLAUDE.md Rule 4): the 1917 foreclosure sale created a new operating company, the Prattsburgh Railway Corporation, so 1889-1917 is drawn in the Kanona and Prattsburg Railway's colour and 1917-1929 in the Prattsburgh Railway's. No Erie lease or operation at any time.",
+  "freight_only_audit": "Not drawn: 9 Mar 1929 - 29 Sept 1959 freight and express only (and the 1961 auction). Segments end at the 1929 passenger end.",
+  "not_yet_sourced": [
+   "Primary source for the 9 March 1929 passenger end: only secondary sources (Clio; Palmer's reproduction of a 1939 article) found. A Steuben County newspaper 'last train' story (nyshistoricnewspapers.org, fultonhistory.com) would give a primary citation.",
+   "Month of the 1917 foreclosure sale and reorganisation (Palmer gives the year only); the feature split is drawn at 1917.",
+   "Headway and average speed: no public timetable found for 1889-1929; both are estimates.",
+   "Opening month conflict: Sept 1889 (Palmer, fair traffic to a temporary railhead) vs Oct 1889 (Clio) - same year.",
+   "Organisation date conflict: 1886 (Wheeler station marker) vs 1888 (Palmer) - pre-opening, does not affect drawn years.",
+   "Whether passengers rode freight trains after 9 Mar 1929: no evidence either way; not drawn."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Kanona and Prattsburg Railway",
+    "line": "Kanona and Prattsburg: Kanona – Prattsburgh",
+    "id": "kanona-and-prattsburg-kanona-prattsburgh",
+    "color": "#7A4E9C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: an 11.4-mile steam branch with mixed trains, a 258-ft climb toward Prattsburgh and seven flag stops; no timetable or running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL): ways 1515730995, 1515730994, 49095598, 902712162, 902712161 fetched 2026-10-18 from the OSM API (Overpass mirrors timing out); surrounding rail graph from Overpass (overpass.kumi.systems). Routed with opstrace.py Kanona (Erie junction) - Wheeler - Prattsburgh, Douglas-Peucker 8 m, trim_reversals. No old_railway_operator tag exists for this road in OSM (probed 'Kanona|Prattsburg').",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. The whole line survives in OSM as railway=abandoned named 'Kanona and Prattsburgh Railroad', a continuous chain Kanona -> Prattsburgh (ways 1515730995, 1515730994, 49095598, 902712162, 902712161); the opstrace.py route ran entirely on that chain (max deviation 0 m from the raw chain). 11.56 mi traced (11.57 mi before Douglas-Peucker 8 m + trim_reversals) against 11.4 mi documented (Official Guide Feb 1952; Fowler table 222; Palmer) and 11.44 mi (Clio) - about 1.5% long. Kanona end is the K&P way's first node, which is shared with the abandoned Erie Rochester Division way 1299059965 (the Erie connection; the K&P used the Erie's Kanona station). Prattsburgh end is the end of way 902712161 at Prattsburgh village; the Prattsburgh yard/turntable stubs (ways 902712170, 902712157-60) are not drawn. Alignment era: no later realignment is known - a single alignment for the line's whole life, so the drawing is of the line's own era.",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1917,
+      "headway_min": 720,
+      "note": "Kanona (connection with the Erie Rochester Division, using the Erie station) - Jordan's - Marshall's - Wheeler - Renchan's - Dinehart's - Stickney's - Bean's Station - Prattsburgh, 11.4 mi. Opened 1889: Palmer (Crooked Lake Review, Oct 1993, quoting a 1939 50th-anniversary newspaper article) has passengers carried in Sept 1889 to a temporary railhead about a mile short of Prattsburg for the county fair, line completed Oct 1889; Clio gives 'opening day in October of 1889' - same year either way. Steam from the first day (4-4-0 No. 1 'Old Huldey', Pittsburgh 1889, built the line with work trains); trains ran as small mixed consists, which count as passenger service. Segment ends at the 1917 foreclosure sale and reorganisation as the Prattsburgh Railway Corporation (Palmer; month not found) - a change of operating company, not an end of service, which continues in the Prattsburgh Railway feature. Independent throughout; never leased to or operated by the Erie. headway_min 720 (about two trains a day each way) is an ESTIMATE: no timetable for the road was found, and the research report says only that a mixed train once or twice daily is plausible but unproven.",
+      "sources": [
+       "Segment-level: 1889 opening from Clio (Wheeler Center Depot entry) and Palmer, Crooked Lake Review Oct 1993; 1917 foreclosure/reorganisation from Palmer (month not established). Stations confirmed by 1895 per Fowler table 222 (1895 Peoples Guide). Headway and speed NOT sourced - estimates.",
+       "https://theclio.com/entry/184350",
+       "https://crookedlakereview.com/articles/67_100/67oct1993/67palmer.html",
+       "https://www.wgpfoundation.org/historic-markers/wheeler-station/",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.365565,
+      42.375432
+     ],
+     [
+      -77.365684,
+      42.376027
+     ],
+     [
+      -77.366544,
+      42.377715
+     ],
+     [
+      -77.366108,
+      42.37933
+     ],
+     [
+      -77.364879,
+      42.380712
+     ],
+     [
+      -77.358154,
+      42.386653
+     ],
+     [
+      -77.355223,
+      42.38819
+     ],
+     [
+      -77.347419,
+      42.391639
+     ],
+     [
+      -77.346834,
+      42.392035
+     ],
+     [
+      -77.346722,
+      42.392744
+     ],
+     [
+      -77.347589,
+      42.399615
+     ],
+     [
+      -77.346598,
+      42.40453
+     ],
+     [
+      -77.346171,
+      42.408025
+     ],
+     [
+      -77.345448,
+      42.410165
+     ],
+     [
+      -77.344408,
+      42.412258
+     ],
+     [
+      -77.344034,
+      42.413292
+     ],
+     [
+      -77.343732,
+      42.414933
+     ],
+     [
+      -77.34334,
+      42.415674
+     ],
+     [
+      -77.337646,
+      42.421244
+     ],
+     [
+      -77.334737,
+      42.423741
+     ],
+     [
+      -77.33211,
+      42.426344
+     ],
+     [
+      -77.324742,
+      42.436487
+     ],
+     [
+      -77.323799,
+      42.437965
+     ],
+     [
+      -77.32325,
+      42.439543
+     ],
+     [
+      -77.322356,
+      42.44102
+     ],
+     [
+      -77.321217,
+      42.44243
+     ],
+     [
+      -77.319574,
+      42.443747
+     ],
+     [
+      -77.316196,
+      42.445801
+     ],
+     [
+      -77.313228,
+      42.448031
+     ],
+     [
+      -77.311124,
+      42.450342
+     ],
+     [
+      -77.307834,
+      42.452895
+     ],
+     [
+      -77.306988,
+      42.453756
+     ],
+     [
+      -77.293583,
+      42.472082
+     ],
+     [
+      -77.291092,
+      42.477027
+     ],
+     [
+      -77.289004,
+      42.481999
+     ],
+     [
+      -77.287463,
+      42.485109
+     ],
+     [
+      -77.286533,
+      42.488302
+     ],
+     [
+      -77.282437,
+      42.506156
+     ],
+     [
+      -77.281602,
+      42.509973
+     ],
+     [
+      -77.281503,
+      42.511938
+     ],
+     [
+      -77.281639,
+      42.516996
+     ],
+     [
+      -77.282229,
+      42.52291
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Prattsburgh Railway",
+    "line": "Prattsburgh Railway: Kanona – Prattsburgh",
+    "id": "prattsburgh-railway-kanona-prattsburgh",
+    "color": "#1F7A8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: an 11.4-mile steam branch with mixed trains, a 258-ft climb toward Prattsburgh and seven flag stops; no timetable or running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL): ways 1515730995, 1515730994, 49095598, 902712162, 902712161 fetched 2026-10-18 from the OSM API (Overpass mirrors timing out); surrounding rail graph from Overpass (overpass.kumi.systems). Routed with opstrace.py Kanona (Erie junction) - Wheeler - Prattsburgh, Douglas-Peucker 8 m, trim_reversals. No old_railway_operator tag exists for this road in OSM (probed 'Kanona|Prattsburg').",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. The whole line survives in OSM as railway=abandoned named 'Kanona and Prattsburgh Railroad', a continuous chain Kanona -> Prattsburgh (ways 1515730995, 1515730994, 49095598, 902712162, 902712161); the opstrace.py route ran entirely on that chain (max deviation 0 m from the raw chain). 11.56 mi traced (11.57 mi before Douglas-Peucker 8 m + trim_reversals) against 11.4 mi documented (Official Guide Feb 1952; Fowler table 222; Palmer) and 11.44 mi (Clio) - about 1.5% long. Kanona end is the K&P way's first node, which is shared with the abandoned Erie Rochester Division way 1299059965 (the Erie connection; the K&P used the Erie's Kanona station). Prattsburgh end is the end of way 902712161 at Prattsburgh village; the Prattsburgh yard/turntable stubs (ways 902712170, 902712157-60) are not drawn. Alignment era: no later realignment is known - a single alignment for the line's whole life, so the drawing is of the line's own era.",
+    "segments": [
+     {
+      "start": 1917,
+      "end": 1929,
+      "headway_min": 720,
+      "note": "Same 11.4-mi Kanona - Prattsburgh line and steam operation, now run by the Prattsburgh Railway Corporation, formed by 171 local subscribers after the 1917 foreclosure sale (Palmer; month not found). Passenger service ended 9 March 1929 (Clio, which supplies the day; Palmer's 1939 text: 'Passenger service was discontinued in 1929'). Context only, not drawn: the road then carried freight and express only - the Feb 1952 Official Guide lists it as 'Freight and express service only' - until the last train on 29 Sept 1959 (Clio, Wheeler marker); property auctioned 1961. headway_min 720 (about two trains a day each way) is an ESTIMATE: no timetable for the road was found, and the research report says only that a mixed train once or twice daily is plausible but unproven.",
+      "sources": [
+       "Segment-level: 1917 reorganisation from Palmer, Crooked Lake Review Oct 1993 (month not established); passenger end 9 March 1929 from Clio, corroborated by Palmer's 1939 newspaper text. Feb 1952 Official Guide (research/sources/official_guide_1952.txt) confirms freight-only in 1951 only - not used as the end date. Headway and speed NOT sourced - estimates.",
+       "https://theclio.com/entry/184350",
+       "https://crookedlakereview.com/articles/67_100/67oct1993/67palmer.html",
+       "research/sources/official_guide_1952.txt"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.365565,
+      42.375432
+     ],
+     [
+      -77.365684,
+      42.376027
+     ],
+     [
+      -77.366544,
+      42.377715
+     ],
+     [
+      -77.366108,
+      42.37933
+     ],
+     [
+      -77.364879,
+      42.380712
+     ],
+     [
+      -77.358154,
+      42.386653
+     ],
+     [
+      -77.355223,
+      42.38819
+     ],
+     [
+      -77.347419,
+      42.391639
+     ],
+     [
+      -77.346834,
+      42.392035
+     ],
+     [
+      -77.346722,
+      42.392744
+     ],
+     [
+      -77.347589,
+      42.399615
+     ],
+     [
+      -77.346598,
+      42.40453
+     ],
+     [
+      -77.346171,
+      42.408025
+     ],
+     [
+      -77.345448,
+      42.410165
+     ],
+     [
+      -77.344408,
+      42.412258
+     ],
+     [
+      -77.344034,
+      42.413292
+     ],
+     [
+      -77.343732,
+      42.414933
+     ],
+     [
+      -77.34334,
+      42.415674
+     ],
+     [
+      -77.337646,
+      42.421244
+     ],
+     [
+      -77.334737,
+      42.423741
+     ],
+     [
+      -77.33211,
+      42.426344
+     ],
+     [
+      -77.324742,
+      42.436487
+     ],
+     [
+      -77.323799,
+      42.437965
+     ],
+     [
+      -77.32325,
+      42.439543
+     ],
+     [
+      -77.322356,
+      42.44102
+     ],
+     [
+      -77.321217,
+      42.44243
+     ],
+     [
+      -77.319574,
+      42.443747
+     ],
+     [
+      -77.316196,
+      42.445801
+     ],
+     [
+      -77.313228,
+      42.448031
+     ],
+     [
+      -77.311124,
+      42.450342
+     ],
+     [
+      -77.307834,
+      42.452895
+     ],
+     [
+      -77.306988,
+      42.453756
+     ],
+     [
+      -77.293583,
+      42.472082
+     ],
+     [
+      -77.291092,
+      42.477027
+     ],
+     [
+      -77.289004,
+      42.481999
+     ],
+     [
+      -77.287463,
+      42.485109
+     ],
+     [
+      -77.286533,
+      42.488302
+     ],
+     [
+      -77.282437,
+      42.506156
+     ],
+     [
+      -77.281602,
+      42.509973
+     ],
+     [
+      -77.281503,
+      42.511938
+     ],
+     [
+      -77.281639,
+      42.516996
+     ],
+     [
+      -77.282229,
+      42.52291
+     ]
+    ]
+   }
+  }
+ ]
+}
