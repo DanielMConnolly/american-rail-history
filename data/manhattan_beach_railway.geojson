@@ -1,0 +1,1411 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Corbin's Manhattan Beach system in Brooklyn and Ridgewood: the New York and Manhattan Beach Railway's narrow-gauge era (1877-1882) and the Long Island Rail Road's Manhattan Beach Division (1883-1924). Drawn only to the research report's drawable spans (research/branches/manhattan_beach_railway.txt). Features split at the 1882/1883 operator change share identical geometry (Rule 4).",
+  "sources": [
+   "https://erausa.org/pdf/bulletin/2010s/2016/2016-04-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2017/2017-01-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2017/2017-02-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2017/2017-05-bulletin.pdf",
+   "https://erausa.org/pdf/bulletin/2010s/2017/2017-10-bulletin.pdf",
+   "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch",
+   "https://en.wikipedia.org/wiki/Bay_Ridge_Branch",
+   "http://www.trainsarefun.com/lirr/branchnotes.htm",
+   "https://www1.columbia.edu/~brennan/abandoned/eny.html",
+   "https://forgotten-ny.com/?p=20118",
+   "https://michaelminn.net/newyork/areas/sunset-park-waterfront/65th-street-railyard/index.html"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (live Bay Ridge Branch / Fremont Industrial Track; abandoned ways 601377483, 295951391, 295951390; razed way 601392952), traced with opstrace.py",
+   "OpenHistoricalMap way 199298351 (NY&MB track, 1888 Sanborn)",
+   "hand-placed straight legs where the line is lifted and unmapped (named per feature in geometry_quality)"
+  ],
+  "ownership_split": "1882/1883: New York and Manhattan Beach Railway to 1882, Long Island Rail Road from 1883, following Chiasson (May 1883 the 'first operational season under LIRR auspices') over the Dec 1881 lease date (Wikipedia). The 1885 New York, Brooklyn & Manhattan Beach merger/lease and the 1925 merger into the LIRR are paper changes, not operator changes.",
+  "not_yet_sourced": [
+   "Bay Ridge passenger end: 1897 (Chiasson, drawn) vs 14 May 1924 (Wikipedia station table; Emery's MB section). Needs an LIRR public timetable of c.1898-1923; the Brooklyn Daily Eagle was not searched.",
+   "1882 season operator: LIRR lease Dec 1881 (Wikipedia) vs first LIRR-run season 1883 (Chiasson). Drawn as NY&MB through 1882.",
+   "Greenpoint start 16 May 1878 (Chiasson, Wikipedia) vs 1879 (Emery); Greenpoint shuttle end Sep 1885 (Chiasson, drawn) vs 8 May 1886 (Emery).",
+   "Parkville Jct - Manhattan Beach Jct after 6 Oct 1902: the 1904 '4 trains a day from 65th St Ferry' are cited but doubted by Chiasson; not drawn.",
+   "1909 Manhattan Beach terminal opening: 19 Jun 1909 vs 29 Jul 1909 (both Chiasson). Geometry only.",
+   "Every headway_min is an estimate; only Chiasson's counts (13 trips each way 1877; 67/day division-wide 1897; 8/day 1910; 4/day 1913; 3/day 1918; 2 round trips 1921-24) are sourced.",
+   "Cooper Ave - East River mileage: '~3 mi' in the LIRR research file (Emery) vs c.4.2 mi drawn and c.3.8 mi straight-line; the published figure is not credible for Cooper Ave and is unresolved.",
+   "Long Island City - Fresh Pond Jct (LIRR Montauk Division), over which the 1883-1924 LIC trains ran, is drawn neither here nor in lirr.geojson.",
+   "Manhattan Beach Hotel and Oriental Hotel sites and the pre-1909 crossing of Sheepshead Bay are placed approximately; no surveyed alignment was found."
+  ],
+  "omitted": [
+   "Block 4: New York, Bay Ridge & Jamaica 1876 season (Bay Ridge - Bath Jct, BB&WE trackage to Coney Island) - a different company's single season; omitted by instruction.",
+   "Block 9: BRT Sheepshead Bay - Manhattan Beach shuttle 1899-1903 (Brooklyn Rapid Transit trains over LIRR track) - another company; no BRT layer yet.",
+   "Block 10: BRT Brighton Line diversion over the branch 1906-1908 - another company's construction diversion.",
+   "Block 11: Culver Line under LIRR 1893-1899 - deferred to a Culver Line research pass.",
+   "Block 12: Marine Railway (Manhattan Beach - Brighton Beach) - a separate company; low priority, largely unplaceable.",
+   "Block 13: Kings County Central 'Prospect Park Division' 1878 [ANCHOR] - not drawn: its alignment is undocumented, and even its junction is uncertain (New York Ave per the report's block 13, a transfer 'next to the stop at Flatlands' i.e. Flatbush Ave per Chiasson May 2016), so it cannot be placed honestly.",
+   "Block 14: Sheepshead Bay Race Track spur 1909 [OPEN]-1910 - deferred; under 1 mi and unplaced."
+  ],
+  "freight_only": "Not drawn (Rule 1): Bay Ridge - Parkville after 1897, Parkville - MB Jct after 1902, MB Jct - East New York - Fresh Pond after 13 May 1924 (New Haven/NY Connecting freight, today's NY&A), the Manhattan Beach Branch 1924-1935 freight, the Greenpoint end's freight after 1885 and the Evergreen Branch after 1894, and the 65th Street float yard.",
+  "horsecar": "None on this road: all NYBR&J/NY&MB/LIRR service here was steam (Rule 5). The Bushwick horse operation in Emery is the South Side RR's, not this line."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York and Manhattan Beach Railway",
+    "line": "Manhattan Beach Railway: Bay Ridge – Manhattan Beach",
+    "id": "manhattan-beach-railway-bay-ridge",
+    "color": "#C04000",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail (Bay Ridge Branch) via opstrace.py; OSM razed way 601392952; hand-placed straight legs south of Ave I",
+    "geometry_quality": "Bay Ridge (65th St) - Parkville Jct - Manhattan Beach Jct (2.92 + 0.95 mi) traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg): the present freight-only Bay Ridge Branch (New York & Atlantic) and, north of Myrtle Ave, the Fremont Industrial Track to Fresh Pond Jct. Documented: Bay Ridge - Parkville ~3 mi and Parkville - MB Jct ~2 mi are the research report's own map estimates, not published figures; the trace's 0.95 mi for Parkville (McDonald Ave) - MB Jct (Ocean Ave) is the real distance between those streets. MB Jct (Ocean Ave/Ave I) follows OSM razed way 601392952 'Manhattan Beach Branch' for 0.13 mi; south of it the branch was lifted 1938-41 and neither OSM nor OpenHistoricalMap has it, so it is APPROXIMATED by hand-placed straight legs a few dozen metres east of the BMT Brighton Line (deliberately NOT snapped to the Brighton subway tracks, which are another company's): Ave I/E 16th St - South Greenfield (Ave M) 0.72 mi, South Greenfield - Kings Highway 0.64 mi, Kings Highway - Neck Road 0.93 mi, Neck Road - Sheepshead Bay 0.60 mi, Sheepshead Bay - Sheepshead Bay inlet (E 16th St/Emmons Ave) 0.24 mi, inlet - West End Ave & Oriental Blvd 0.44 mi, West End Ave & Oriental Blvd - Manhattan Beach Hotel (approx. site) 0.40 mi, Manhattan Beach Hotel - Oriental Hotel (approx. site) 0.46 mi. Total 8.42 mi, of which 4.42 mi approximated. Fit: South Greenfield - Manhattan Beach Hotel draws 3.25 mi against 3.23 mi documented (Wikipedia station table from the 16 Jun 1908 employee timetable: South Greenfield MP 12.87, Manhattan Beach MP 16.10). This feature draws the ORIGINAL 1877-1908 terminal approach east along the shore to the Oriental Hotel (alignment (a)), which is right for its era; the hotel sites are approximate. The 1907-09 relocation onto an embankment on the east side of the Brighton Line moved the branch north of Sheepshead Bay by about a block at most; at this approximation the pre- and post-1909 lines are not distinguishable. The line was regraded into an open cut / onto embankment in the 1905-1918 Bay Ridge Improvements; the drawn plan alignment is today's, substantially the original. The Bay Ridge end is drawn to the OSM end of track inside today's 65th Street Yard, c.0.3 mi short of the old ferry slip at the foot of 65th St.",
+    "segments": [
+     {
+      "start": 1877,
+      "end": 1882,
+      "headway_min": 60,
+      "note": "3-ft gauge steam, summer seasons only. Opened 18 Jul 1877 with 13 trips a day each way from both Bay Ridge (boats from Manhattan) and East New York to the Oriental Hotel (Chiasson, ERA Bulletin Apr 2016); the 1882 season, the last narrow-gauge season, ended Oct 1882 (Chiasson May 2016). Built by the New York, Bay Ridge & Jamaica (Bay Ridge - Manhattan Beach Jct, leased to the NY&MB) and the NY&MB (the branch). The 1876 NYBR&J standard-gauge season Bay Ridge - Bath Jct is not drawn. The 1882/1883 operator split is UNRESOLVED: the LIRR leased the system in Dec 1881 (Wikipedia) but Chiasson calls May 1883 the first season 'under LIRR auspices'; this layer follows Chiasson. The headway is an ESTIMATE (Rule 3), not timetable-derived (about 13 trips each way in a c.14-hour day in 1877).",
+      "sources": [
+       "Segment-level: dates and frequency from Chiasson, ERA NY Division Bulletin Apr 2016 and May 2016; opening date also Wikipedia.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-04-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.0258683,
+      40.6401617
+     ],
+     [
+      -74.0224643,
+      40.6380851
+     ],
+     [
+      -74.021557,
+      40.6376485
+     ],
+     [
+      -74.0101986,
+      40.6344653
+     ],
+     [
+      -73.9964268,
+      40.6262798
+     ],
+     [
+      -73.9950024,
+      40.625688
+     ],
+     [
+      -73.9931806,
+      40.6253537
+     ],
+     [
+      -73.9916016,
+      40.6253629
+     ],
+     [
+      -73.9842922,
+      40.6260684
+     ],
+     [
+      -73.9762142,
+      40.6273516
+     ],
+     [
+      -73.9725501,
+      40.6279337
+     ],
+     [
+      -73.9582854,
+      40.6294493
+     ],
+     [
+      -73.9582788,
+      40.6294172
+     ],
+     [
+      -73.9584644,
+      40.6293425
+     ],
+     [
+      -73.9588452,
+      40.6292447
+     ],
+     [
+      -73.95921,
+      40.6290778
+     ],
+     [
+      -73.9593602,
+      40.6289475
+     ],
+     [
+      -73.9595748,
+      40.6287124
+     ],
+     [
+      -73.959666,
+      40.6285457
+     ],
+     [
+      -73.9597347,
+      40.6283708
+     ],
+     [
+      -73.959843,
+      40.6281181
+     ],
+     [
+      -73.9587,
+      40.6178
+     ],
+     [
+      -73.9569,
+      40.6087
+     ],
+     [
+      -73.9546,
+      40.5953
+     ],
+     [
+      -73.9535,
+      40.5866
+     ],
+     [
+      -73.9527,
+      40.5832
+     ],
+     [
+      -73.95289,
+      40.57688
+     ],
+     [
+      -73.9455,
+      40.5757
+     ],
+     [
+      -73.937,
+      40.5772
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York and Manhattan Beach Railway",
+    "line": "Manhattan Beach Railway: East New York – Manhattan Beach Junction",
+    "id": "manhattan-beach-railway-east-new-york",
+    "color": "#C04000",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail (Bay Ridge Branch) via opstrace.py",
+    "geometry_quality": "traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg): the present freight-only Bay Ridge Branch (New York & Atlantic) and, north of Myrtle Ave, the Fremont Industrial Track to Fresh Pond Jct. Drawn 5.21 mi against ~5 mi documented (the research report's map estimate; no published figure found). No straight-line leg. LATER ALIGNMENT: at East New York the drawn line is the Nov 1915 East New York Tunnel alignment; 1877-1915 trains ran at street level on Van Sinderen (Vesta) Ave, within c.100 m of the drawn line in plan (Chiasson ERA May 2017). The whole Manhattan Beach Jct - Fresh Pond trunk was also regraded (depressed/elevated) in the 1905-1918 Bay Ridge Improvements; the plan alignment is substantially the original. Trains continued south over the Manhattan Beach trunk, which is drawn once, on the 'Bay Ridge – Manhattan Beach' feature.",
+    "segments": [
+     {
+      "start": 1877,
+      "end": 1882,
+      "headway_min": 60,
+      "note": "3-ft gauge steam, summer only: East New York (temporary terminal at the Metropolitan Hotel, Van Sinderen Ave & Fulton St) - Manhattan Beach Jct, thence to Manhattan Beach; 13 trips a day each way in 1877 (Chiasson, ERA Bulletin Apr 2016). Built by the NYBR&J (Bath Jct - New Lots) and NY&MB (New Lots - East New York). Last narrow-gauge season 1882 (Chiasson May 2016); 1882/1883 operator split unresolved (see layer metadata). The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates and frequency from Chiasson, ERA NY Division Bulletin Apr 2016 and May 2016; Wikipedia Bay Ridge Branch station table (Kouwenhoven, New Lots Road, East New York opened 18 Jul 1877).",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-04-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Bay_Ridge_Branch"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.9044751,
+      40.6780038
+     ],
+     [
+      -73.8998703,
+      40.6605345
+     ],
+     [
+      -73.8996303,
+      40.6584371
+     ],
+     [
+      -73.9002094,
+      40.6566302
+     ],
+     [
+      -73.9010098,
+      40.6556434
+     ],
+     [
+      -73.9023241,
+      40.6546128
+     ],
+     [
+      -73.9162275,
+      40.645553
+     ],
+     [
+      -73.9240452,
+      40.6394082
+     ],
+     [
+      -73.9263567,
+      40.6380329
+     ],
+     [
+      -73.9364449,
+      40.6327816
+     ],
+     [
+      -73.9388911,
+      40.6318142
+     ],
+     [
+      -73.941783,
+      40.6312027
+     ],
+     [
+      -73.9582854,
+      40.6294493
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York and Manhattan Beach Railway",
+    "line": "Manhattan Beach Railway: Greenpoint Division",
+    "id": "manhattan-beach-railway-greenpoint",
+    "color": "#C04000",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail via opstrace.py; OSM abandoned ways 601377483, 295951391, 295951390; OHM way 199298351; hand-placed straight legs",
+    "geometry_quality": "East New York - Cooper Ave Jct 0.98 mi traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg) (live Bay Ridge Branch). Cooper Ave Jct - South Side Crossing 2.05 mi: OSM abandoned way 601377483 (0.65 mi, Cooper Ave Jct - Brooklyn/Queens line), then APPROXIMATED straight 0.64 mi to OSM spur 295951391 (DeKalb & Wyckoff), straight 0.31 mi to OSM way 295951390 'Evergreen Branch', straight 0.40 mi to South Side Crossing (Varick Ave x the Bushwick Branch). South Side Crossing - Greenpoint 2.13 mi: APPROXIMATED straight 0.82 mi via the Grand/Metropolitan Ave crossings to Morgan Ave & Frost St, then OpenHistoricalMap way 199298351 (NY&MB track between Richardson & Frost Sts, from the 1888 Sanborn, 0.31 mi), then APPROXIMATED straight 0.93 mi via N 15th St (Driggs Ave, Kent Ave) to the terminal at Quay & West Sts. Street-by-street route from Chiasson, ERA Bulletin May 2016. Total 5.16 mi; Cooper Ave - East River draws 4.18 mi against '~3 mi' in the LIRR research file (Emery). That figure cannot be right for Cooper Ave: the straight-line distance Cooper Ave Jct - Quay St alone is c.3.8 mi, so the conflict is recorded rather than the line shortened. LATER ALIGNMENT: at East New York the drawn line is the Nov 1915 East New York Tunnel alignment; 1877-1915 trains ran at street level on Van Sinderen (Vesta) Ave, within c.100 m of the drawn line in plan (Chiasson ERA May 2017). The whole Manhattan Beach Jct - Fresh Pond trunk was also regraded (depressed/elevated) in the 1905-1918 Bay Ridge Improvements; the plan alignment is substantially the original.",
+    "segments": [
+     {
+      "start": 1878,
+      "end": 1882,
+      "headway_min": 60,
+      "note": "Greenpoint extension opened 16 May 1878 (Chiasson, ERA Bulletin May 2016; Wikipedia; Emery says 1879 - conflict, Chiasson/Wikipedia preferred), 3-ft gauge steam, double track, summer seasons; through Greenpoint - Manhattan Beach trains ran until the end of the narrow-gauge era in Oct 1882 (Chiasson May 2016; Emery). Built by the Glendale & East River (East River - Jefferson St) and NY&MB (Jefferson St - Cooper Ave). Stations: Myrtle Ave, DeKalb Ave (from 14 Jul 1878), South Side Crossing ('Evergreen'), Grand St, Humboldt St, 5th St (Driggs Ave, from 14 Jul 1878), Greenpoint. The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016, and Wikipedia; no frequency source.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch",
+       "http://www.trainsarefun.com/lirr/branchnotes.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.9044751,
+      40.6780038
+     ],
+     [
+      -73.9057343,
+      40.6827808
+     ],
+     [
+      -73.905962,
+      40.6842063
+     ],
+     [
+      -73.9059212,
+      40.685652
+     ],
+     [
+      -73.9054191,
+      40.6871609
+     ],
+     [
+      -73.904667,
+      40.6884785
+     ],
+     [
+      -73.9020384,
+      40.69129
+     ],
+     [
+      -73.9024356,
+      40.6908702
+     ],
+     [
+      -73.9023792,
+      40.6910639
+     ],
+     [
+      -73.9021453,
+      40.6913492
+     ],
+     [
+      -73.9019924,
+      40.6916218
+     ],
+     [
+      -73.9018931,
+      40.6918536
+     ],
+     [
+      -73.9018293,
+      40.6920198
+     ],
+     [
+      -73.9018073,
+      40.6922115
+     ],
+     [
+      -73.9018341,
+      40.6924007
+     ],
+     [
+      -73.9019098,
+      40.6925973
+     ],
+     [
+      -73.9020251,
+      40.6927539
+     ],
+     [
+      -73.9021434,
+      40.6929171
+     ],
+     [
+      -73.9021962,
+      40.6929721
+     ],
+     [
+      -73.9022686,
+      40.6930453
+     ],
+     [
+      -73.902494,
+      40.6932141
+     ],
+     [
+      -73.9027809,
+      40.6934256
+     ],
+     [
+      -73.9031726,
+      40.6937388
+     ],
+     [
+      -73.9034247,
+      40.6939178
+     ],
+     [
+      -73.9036366,
+      40.6940724
+     ],
+     [
+      -73.9039858,
+      40.6943381
+     ],
+     [
+      -73.9042421,
+      40.6945351
+     ],
+     [
+      -73.9044498,
+      40.6947245
+     ],
+     [
+      -73.9047811,
+      40.6949533
+     ],
+     [
+      -73.9048737,
+      40.6950336
+     ],
+     [
+      -73.9051472,
+      40.6952411
+     ],
+     [
+      -73.9055638,
+      40.695571
+     ],
+     [
+      -73.9058768,
+      40.6958146
+     ],
+     [
+      -73.9061182,
+      40.6959772
+     ],
+     [
+      -73.9061998,
+      40.6960325
+     ],
+     [
+      -73.9063703,
+      40.6961481
+     ],
+     [
+      -73.907411,
+      40.6967215
+     ],
+     [
+      -73.9091705,
+      40.6977546
+     ],
+     [
+      -73.9189045,
+      40.7033255
+     ],
+     [
+      -73.9188658,
+      40.7032823
+     ],
+     [
+      -73.9188325,
+      40.703248
+     ],
+     [
+      -73.9235203,
+      40.7059143
+     ],
+     [
+      -73.9233239,
+      40.7058043
+     ],
+     [
+      -73.929,
+      40.7097
+     ],
+     [
+      -73.933,
+      40.716
+     ],
+     [
+      -73.93753,
+      40.71946
+     ],
+     [
+      -73.9387829,
+      40.7189045
+     ],
+     [
+      -73.9390749,
+      40.7189379
+     ],
+     [
+      -73.9393249,
+      40.7189591
+     ],
+     [
+      -73.939591,
+      40.7189591
+     ],
+     [
+      -73.939985,
+      40.7189227
+     ],
+     [
+      -73.940429,
+      40.7188848
+     ],
+     [
+      -73.940821,
+      40.7188469
+     ],
+     [
+      -73.9445773,
+      40.7185088
+     ],
+     [
+      -73.95359,
+      40.72186
+     ],
+     [
+      -73.95756,
+      40.72466
+     ],
+     [
+      -73.95865,
+      40.72619
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Manhattan Beach Branch",
+    "id": "lirr-manhattan-beach-branch-1883",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail (Bay Ridge Branch, Fremont Industrial Track) via opstrace.py; OSM razed way 601392952; hand-placed straight legs south of Ave I",
+    "geometry_quality": "Fresh Pond Jct - Cooper Ave Jct - East New York - Manhattan Beach Jct (1.36 + 0.98 + 5.21 mi) traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg): the present freight-only Bay Ridge Branch (New York & Atlantic) and, north of Myrtle Ave, the Fremont Industrial Track to Fresh Pond Jct. MB Jct (Ocean Ave/Ave I) follows OSM razed way 601392952 'Manhattan Beach Branch' for 0.13 mi; south of it the branch was lifted 1938-41 and neither OSM nor OpenHistoricalMap has it, so it is APPROXIMATED by hand-placed straight legs a few dozen metres east of the BMT Brighton Line (deliberately NOT snapped to the Brighton subway tracks, which are another company's): Ave I/E 16th St - South Greenfield (Ave M) 0.72 mi, South Greenfield - Kings Highway 0.64 mi, Kings Highway - Neck Road 0.93 mi, Neck Road - Sheepshead Bay 0.60 mi, Sheepshead Bay - Sheepshead Bay inlet (E 16th St/Emmons Ave) 0.24 mi, inlet - West End Ave & Oriental Blvd 0.44 mi, West End Ave & Oriental Blvd - Manhattan Beach Hotel (approx. site) 0.40 mi, Manhattan Beach Hotel - Oriental Hotel (approx. site) 0.46 mi. Total 12.1 mi, of which 4.42 mi approximated. Fit: South Greenfield - Manhattan Beach Hotel draws 3.25 mi against 3.23 mi documented (Wikipedia station table from the 16 Jun 1908 employee timetable: South Greenfield MP 12.87, Manhattan Beach MP 16.10). Fit: Fresh Pond Jct - Manhattan Beach Hotel site draws 11.64 mi; documented Long Island City - Manhattan Beach is 16.10 mi (Wikipedia, 1908 employee timetable), which implies c.4.5 mi for the Long Island City - Fresh Pond leg over the LIRR Montauk Division (not drawn here or in lirr.geojson; that figure is not checked). Connection Cooper Ave - Fresh Pond draws 1.36 mi against ~1.5 mi (map estimate). This 1883-1908 feature draws the original terminal approach to the Oriental Hotel; the 1909-1924 era is a separate feature ending at West End & Oriental Aves. LATER ALIGNMENT: at East New York the drawn line is the Nov 1915 East New York Tunnel alignment; 1877-1915 trains ran at street level on Van Sinderen (Vesta) Ave, within c.100 m of the drawn line in plan (Chiasson ERA May 2017). The whole Manhattan Beach Jct - Fresh Pond trunk was also regraded (depressed/elevated) in the 1905-1918 Bay Ridge Improvements; the plan alignment is substantially the original. The 1907-09 relocation onto an embankment on the east side of the Brighton Line moved the branch north of Sheepshead Bay by about a block at most; at this approximation the pre- and post-1909 lines are not distinguishable.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1897,
+      "headway_min": 30,
+      "note": "Standard-gauged and double-tracked for the 1883 season; first LIRR-run season. Trains from Long Island City via the Montauk Division and Fresh Pond Jct began 2 Jun 1883 (Wikipedia; Chiasson, ERA Bulletin May 2016); Flatbush Ave - Manhattan Beach trains via the Atlantic Division ran 30 May 1883 - Oct 1899 and join this line at East New York (their western leg is the LIRR Atlantic Branch, drawn elsewhere). Year-round service from Sept 1883. Peak about 1897: 67 trains a day across the whole division in summer (Chiasson Jul 2016). The headway is an ESTIMATE (Rule 3), not timetable-derived, derived from the 1897 division-wide summer count.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016 and Jul 2016, and Wikipedia; frequency only as a division-wide count.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch",
+       "https://en.wikipedia.org/wiki/Bay_Ridge_Branch"
+      ]
+     },
+     {
+      "start": 1898,
+      "end": 1908,
+      "headway_min": 60,
+      "note": "Bay Ridge passenger service gone after 1897 (see the Bay Ridge feature); this trunk kept the LIC and Flatbush Ave trains. BRT electric trains also used the south end of this line (Sheepshead Bay - Manhattan Beach shuttle 1899-1903; Brighton Line diversion 5 Mar 1906 - 30 May 1908) - those are Brooklyn Rapid Transit services over LIRR track and are NOT drawn here (Chiasson Jul 2016, Jan 2017). Original grade-level terminal approach to the Oriental Hotel used through 1908; LIRR track east of Oriental Blvd abandoned c.1908 (Emery). The headway is an ESTIMATE (Rule 3), not timetable-derived; no count found for these years.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin Jul 2016, Jan 2017, Feb 2017; frequency not sourced.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-01-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-02-bulletin.pdf",
+       "http://www.trainsarefun.com/lirr/branchnotes.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.8901367,
+      40.7085006
+     ],
+     [
+      -73.8907987,
+      40.705739
+     ],
+     [
+      -73.8916446,
+      40.7039539
+     ],
+     [
+      -73.8935106,
+      40.7015897
+     ],
+     [
+      -73.897769,
+      40.6974068
+     ],
+     [
+      -73.8987314,
+      40.6962139
+     ],
+     [
+      -73.9012792,
+      40.692102
+     ],
+     [
+      -73.9020384,
+      40.69129
+     ],
+     [
+      -73.904667,
+      40.6884785
+     ],
+     [
+      -73.9054191,
+      40.6871609
+     ],
+     [
+      -73.9059212,
+      40.685652
+     ],
+     [
+      -73.905962,
+      40.6842063
+     ],
+     [
+      -73.9057343,
+      40.6827808
+     ],
+     [
+      -73.9044751,
+      40.6780038
+     ],
+     [
+      -73.8998703,
+      40.6605345
+     ],
+     [
+      -73.8996303,
+      40.6584371
+     ],
+     [
+      -73.9002094,
+      40.6566302
+     ],
+     [
+      -73.9010098,
+      40.6556434
+     ],
+     [
+      -73.9023241,
+      40.6546128
+     ],
+     [
+      -73.9162275,
+      40.645553
+     ],
+     [
+      -73.9240452,
+      40.6394082
+     ],
+     [
+      -73.9263567,
+      40.6380329
+     ],
+     [
+      -73.9364449,
+      40.6327816
+     ],
+     [
+      -73.9388911,
+      40.6318142
+     ],
+     [
+      -73.941783,
+      40.6312027
+     ],
+     [
+      -73.9582854,
+      40.6294493
+     ],
+     [
+      -73.9582788,
+      40.6294172
+     ],
+     [
+      -73.9584644,
+      40.6293425
+     ],
+     [
+      -73.9588452,
+      40.6292447
+     ],
+     [
+      -73.95921,
+      40.6290778
+     ],
+     [
+      -73.9593602,
+      40.6289475
+     ],
+     [
+      -73.9595748,
+      40.6287124
+     ],
+     [
+      -73.959666,
+      40.6285457
+     ],
+     [
+      -73.9597347,
+      40.6283708
+     ],
+     [
+      -73.959843,
+      40.6281181
+     ],
+     [
+      -73.9587,
+      40.6178
+     ],
+     [
+      -73.9569,
+      40.6087
+     ],
+     [
+      -73.9546,
+      40.5953
+     ],
+     [
+      -73.9535,
+      40.5866
+     ],
+     [
+      -73.9527,
+      40.5832
+     ],
+     [
+      -73.95289,
+      40.57688
+     ],
+     [
+      -73.9455,
+      40.5757
+     ],
+     [
+      -73.937,
+      40.5772
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Manhattan Beach Branch",
+    "id": "lirr-manhattan-beach-branch-1909",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail (Bay Ridge Branch, Fremont Industrial Track) via opstrace.py; OSM razed way 601392952; hand-placed straight legs south of Ave I",
+    "geometry_quality": "Fresh Pond Jct - Cooper Ave Jct - East New York - Manhattan Beach Jct (1.36 + 0.98 + 5.21 mi) traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg): the present freight-only Bay Ridge Branch (New York & Atlantic) and, north of Myrtle Ave, the Fremont Industrial Track to Fresh Pond Jct. MB Jct (Ocean Ave/Ave I) follows OSM razed way 601392952 'Manhattan Beach Branch' for 0.13 mi; south of it the branch was lifted 1938-41 and neither OSM nor OpenHistoricalMap has it, so it is APPROXIMATED by hand-placed straight legs a few dozen metres east of the BMT Brighton Line (deliberately NOT snapped to the Brighton subway tracks, which are another company's): Ave I/E 16th St - South Greenfield (Ave M) 0.72 mi, South Greenfield - Kings Highway 0.64 mi, Kings Highway - Neck Road 0.93 mi, Neck Road - Sheepshead Bay 0.60 mi, Sheepshead Bay - Sheepshead Bay inlet (E 16th St/Emmons Ave) 0.24 mi, inlet - West End Ave & Oriental Blvd 0.44 mi. Total 11.24 mi, of which 3.56 mi approximated. Fit: South Greenfield - Manhattan Beach Hotel (the pre-1909 station, 0.40 mi past this feature's end) draws 3.25 mi against 3.23 mi documented (Wikipedia station table from the 16 Jun 1908 employee timetable: South Greenfield MP 12.87, Manhattan Beach MP 16.10). Fit: Fresh Pond Jct - Manhattan Beach Hotel site draws 11.64 mi; documented Long Island City - Manhattan Beach is 16.10 mi (Wikipedia, 1908 employee timetable), which implies c.4.5 mi for the Long Island City - Fresh Pond leg over the LIRR Montauk Division (not drawn here or in lirr.geojson; that figure is not checked). Connection Cooper Ave - Fresh Pond draws 1.36 mi against ~1.5 mi (map estimate). Ends at the 1909 West End & Oriental Aves terminal (OSM street intersection). Same geometry as the 1883-1908 feature apart from that end. LATER ALIGNMENT: at East New York the drawn line is the Nov 1915 East New York Tunnel alignment; 1877-1915 trains ran at street level on Van Sinderen (Vesta) Ave, within c.100 m of the drawn line in plan (Chiasson ERA May 2017). The whole Manhattan Beach Jct - Fresh Pond trunk was also regraded (depressed/elevated) in the 1905-1918 Bay Ridge Improvements; the plan alignment is substantially the original. The 1907-09 relocation onto an embankment on the east side of the Brighton Line moved the branch north of Sheepshead Bay by about a block at most; at this approximation the pre- and post-1909 lines are not distinguishable.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1912,
+      "headway_min": 120,
+      "note": "Relocated onto the embankment beside the Brighton Line, new terminal at West End & Oriental Aves (opened 19 Jun 1909 per Chiasson, ERA Bulletin Feb 2017; 29 Jul 1909 per his Oct 2017 installment - he gives both). 1910 Official Guide (Brennan's reprint): 'Trains leave foot East 34th Street, New York, for Sheepshead Bay and Manhattan Beach, week-days only', 4 trips each way; Chiasson gives 8 a day in 1910. The headway is an ESTIMATE (Rule 3), not timetable-derived from the 1910 counts.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin Feb 2017 and Oct 2017; 1910 frequency from the Official Guide reprinted by Brennan.",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-02-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-10-bulletin.pdf",
+       "https://www1.columbia.edu/~brennan/abandoned/eny.html"
+      ]
+     },
+     {
+      "start": 1913,
+      "end": 1917,
+      "headway_min": 240,
+      "note": "4 trains a day in 1913 (Chiasson). East New York Tunnel opened 6/24 Nov 1915 and the East New York station moved to Fulton St; branch single-tracked late 1915 (Chiasson, ERA Bulletin May 2017 and Oct 2017). The headway is an ESTIMATE (Rule 3), not timetable-derived from the 1913 count.",
+      "sources": [
+       "Segment-level: dates and the 1913 count from Chiasson, ERA NY Division Bulletin May 2017 and Oct 2017.",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-05-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-10-bulletin.pdf",
+       "https://www1.columbia.edu/~brennan/abandoned/eny.html"
+      ]
+     },
+     {
+      "start": 1918,
+      "end": 1924,
+      "headway_min": 360,
+      "note": "3 trains a day in 1918; 2 round trips 1921-24; last passenger train 13 May 1924, stations closed 14 May 1924 (Chiasson, ERA Bulletin Oct 2017; Emery: 'Last passenger train from Long Island City to Manhattan Beach shown in timetable effective October, 1923 and lasting until May, 1924'; Wikipedia). Freight continued on the branch to July 1935 and on the trunk to the present; neither is drawn (Rule 1). The headway is an ESTIMATE (Rule 3), not timetable-derived from the 1918-24 counts.",
+      "sources": [
+       "Segment-level: end date from Chiasson, ERA NY Division Bulletin Oct 2017, Emery's LIRR branch notes and Wikipedia; counts from Chiasson.",
+       "https://erausa.org/pdf/bulletin/2010s/2017/2017-10-bulletin.pdf",
+       "http://www.trainsarefun.com/lirr/branchnotes.htm",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch",
+       "https://en.wikipedia.org/wiki/Bay_Ridge_Branch"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.8901367,
+      40.7085006
+     ],
+     [
+      -73.8907987,
+      40.705739
+     ],
+     [
+      -73.8916446,
+      40.7039539
+     ],
+     [
+      -73.8935106,
+      40.7015897
+     ],
+     [
+      -73.897769,
+      40.6974068
+     ],
+     [
+      -73.8987314,
+      40.6962139
+     ],
+     [
+      -73.9012792,
+      40.692102
+     ],
+     [
+      -73.9020384,
+      40.69129
+     ],
+     [
+      -73.904667,
+      40.6884785
+     ],
+     [
+      -73.9054191,
+      40.6871609
+     ],
+     [
+      -73.9059212,
+      40.685652
+     ],
+     [
+      -73.905962,
+      40.6842063
+     ],
+     [
+      -73.9057343,
+      40.6827808
+     ],
+     [
+      -73.9044751,
+      40.6780038
+     ],
+     [
+      -73.8998703,
+      40.6605345
+     ],
+     [
+      -73.8996303,
+      40.6584371
+     ],
+     [
+      -73.9002094,
+      40.6566302
+     ],
+     [
+      -73.9010098,
+      40.6556434
+     ],
+     [
+      -73.9023241,
+      40.6546128
+     ],
+     [
+      -73.9162275,
+      40.645553
+     ],
+     [
+      -73.9240452,
+      40.6394082
+     ],
+     [
+      -73.9263567,
+      40.6380329
+     ],
+     [
+      -73.9364449,
+      40.6327816
+     ],
+     [
+      -73.9388911,
+      40.6318142
+     ],
+     [
+      -73.941783,
+      40.6312027
+     ],
+     [
+      -73.9582854,
+      40.6294493
+     ],
+     [
+      -73.9582788,
+      40.6294172
+     ],
+     [
+      -73.9584644,
+      40.6293425
+     ],
+     [
+      -73.9588452,
+      40.6292447
+     ],
+     [
+      -73.95921,
+      40.6290778
+     ],
+     [
+      -73.9593602,
+      40.6289475
+     ],
+     [
+      -73.9595748,
+      40.6287124
+     ],
+     [
+      -73.959666,
+      40.6285457
+     ],
+     [
+      -73.9597347,
+      40.6283708
+     ],
+     [
+      -73.959843,
+      40.6281181
+     ],
+     [
+      -73.9587,
+      40.6178
+     ],
+     [
+      -73.9569,
+      40.6087
+     ],
+     [
+      -73.9546,
+      40.5953
+     ],
+     [
+      -73.9535,
+      40.5866
+     ],
+     [
+      -73.9527,
+      40.5832
+     ],
+     [
+      -73.95289,
+      40.57688
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Bay Ridge – Parkville Junction",
+    "id": "lirr-bay-ridge-parkville",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail (Bay Ridge Branch) via opstrace.py",
+    "geometry_quality": "traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg): the present freight-only Bay Ridge Branch (New York & Atlantic) and, north of Myrtle Ave, the Fremont Industrial Track to Fresh Pond Jct. Drawn 2.92 mi against ~3 mi (the research report's map estimate; not published). No straight-line leg. The Bay Ridge end is the OSM end of track inside today's 65th Street Yard, c.0.3 mi short of the old ferry slip. Trains continued east over 'Parkville Jct – Manhattan Beach Jct' and the Manhattan Beach trunk, drawn on their own features. The line was regraded into an open cut / onto embankment in the 1905-1918 Bay Ridge Improvements; the drawn plan alignment is today's, substantially the original.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1897,
+      "headway_min": 60,
+      "note": "Standard gauge from 1883: Bay Ridge (65th St ferry) - Manhattan Beach boat trains. Winter service tried Oct 1889 - Sept 1893, then dropped (Chiasson, ERA Bulletin May 2016). Culver (Prospect Park & Coney Island) trains also ran into Bay Ridge 1885-87 - another company's trains, not drawn. END 1897 per Chiasson (Jul 2016): 'no passenger service at all on the Bay Ridge Branch after that same season', beach trains moving to the 39th St Ferry from May 1898; Minn has the Bay Ridge ferry ending 1898. CONFLICT: Wikipedia's Bay Ridge Branch station table closes Bay Ridge and Third Ave on 14 May 1924, and Emery has a 'last passenger train from Bay Ridge to Manhattan Beach: 5/13/1924' (but a blank for Bay Ridge - Ocean Ave). The 1910 Official Guide and Chiasson's 1915 station list show no Bay Ridge service. Drawn to 1897, the shorter confirmed span; 1898-1924 is NOT claimed. Do not extend without a c.1898-1923 timetable showing Bay Ridge trains. Freight continues to the present (Rule 1: not drawn). The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: end year from Chiasson, ERA NY Division Bulletin Jul 2016 (with Minn's 1898 ferry end); conflicting 1924 dates from Wikipedia and Emery recorded in the note.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf",
+       "https://michaelminn.net/newyork/areas/sunset-park-waterfront/65th-street-railyard/index.html",
+       "https://en.wikipedia.org/wiki/Bay_Ridge_Branch",
+       "http://www.trainsarefun.com/lirr/branchnotes.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.0258683,
+      40.6401617
+     ],
+     [
+      -74.0224643,
+      40.6380851
+     ],
+     [
+      -74.021557,
+      40.6376485
+     ],
+     [
+      -74.0101986,
+      40.6344653
+     ],
+     [
+      -73.9964268,
+      40.6262798
+     ],
+     [
+      -73.9950024,
+      40.625688
+     ],
+     [
+      -73.9931806,
+      40.6253537
+     ],
+     [
+      -73.9916016,
+      40.6253629
+     ],
+     [
+      -73.9842922,
+      40.6260684
+     ],
+     [
+      -73.9762142,
+      40.6273516
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Parkville Junction – Manhattan Beach Junction",
+    "id": "lirr-parkville-manhattan-beach-jct",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM live rail (Bay Ridge Branch) via opstrace.py",
+    "geometry_quality": "traced from live OSM track (opstrace.py over OSM rail; every waypoint 0.0 km from the drawn line, no straight-line leg): the present freight-only Bay Ridge Branch (New York & Atlantic) and, north of Myrtle Ave, the Fremont Industrial Track to Fresh Pond Jct. Drawn 0.95 mi between McDonald Ave and Ocean Ave against ~2 mi (the research report's map estimate; the real street distance is c.1 mi). No straight-line leg. The line was regraded into an open cut / onto embankment in the 1905-1918 Bay Ridge Improvements; the drawn plan alignment is today's, substantially the original.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1897,
+      "headway_min": 60,
+      "note": "Carried the Bay Ridge - Manhattan Beach boat trains (see the Bay Ridge feature) from the 1883 standard-gauge season to the end of the 1897 season (Chiasson, ERA Bulletin May 2016, Jul 2016). Brooklyn Elevated RR joint excursions used it 5 Aug - 30 Oct 1895 - another company's trains, not drawn. The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016 and Jul 2016.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf"
+      ]
+     },
+     {
+      "start": 1898,
+      "end": 1902,
+      "headway_min": 120,
+      "note": "Summer only: LIRR trains from the 39th Street Ferry over the Culver Line to Parkville Jct and east over this piece to Manhattan Beach, 16 Jun 1898 - 6 Oct 1902 (Chiasson, ERA Bulletin Jul 2016: both this and the BRT Park Row excursions 'were discontinued following their annual conclusions on October 6, 1902'). The BRT steam excursions over it 1899-1902 are Brooklyn Rapid Transit trains and are not drawn. After 1902 no passenger train over this piece is named; the '4 trains a day from 65th St Ferry' cited for 1904 are doubted by Chiasson and not drawn. Medium confidence: single source. The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin Jul 2016 (single source).",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-07-bulletin.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.9762142,
+      40.6273516
+     ],
+     [
+      -73.9725501,
+      40.6279337
+     ],
+     [
+      -73.9582854,
+      40.6294493
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Greenpoint Shuttle",
+    "id": "lirr-greenpoint-shuttle",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OHM way 199298351; hand-placed straight legs",
+    "geometry_quality": "South Side Crossing - Greenpoint (Quay & West Sts) 2.13 mi: APPROXIMATED straight 0.82 mi via the Grand/Metropolitan Ave crossings to Morgan Ave & Frost St, then OpenHistoricalMap way 199298351 (NY&MB track between Richardson & Frost Sts, 1888 Sanborn, 0.31 mi), then APPROXIMATED straight 0.93 mi via N 15th St (Driggs Ave, Kent Ave) to Quay & West Sts. Route from Chiasson, ERA Bulletin May 2016. No documented mileage for this piece; see the Greenpoint Division feature for the Cooper Ave - East River mileage conflict.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1885,
+      "headway_min": 60,
+      "note": "After the through Greenpoint - Manhattan Beach trains ended in 1882: a narrow-gauge shuttle to Cooper Ave in 1883, standard-gauge single track from May 1884 (Chiasson, ERA Bulletin May 2016). Service beyond South Side Crossing discontinued after 28 Sep 1885 (Chiasson; Wikipedia: '1885 was the last year that trains ran to Greenpoint'). CONFLICT: Emery has the East River - South Side Crossing shuttle running '1883 to 5/8/1886 only'; 1886 is unproven by a second source and not drawn. Freight to c.1890, abandoned Oct 1896 - not drawn (Rule 1). The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016, and Wikipedia; Emery's 1886 end recorded as a conflict.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch",
+       "http://www.trainsarefun.com/lirr/branchnotes.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.929,
+      40.7097
+     ],
+     [
+      -73.933,
+      40.716
+     ],
+     [
+      -73.93753,
+      40.71946
+     ],
+     [
+      -73.9387829,
+      40.7189045
+     ],
+     [
+      -73.9390749,
+      40.7189379
+     ],
+     [
+      -73.9393249,
+      40.7189591
+     ],
+     [
+      -73.939591,
+      40.7189591
+     ],
+     [
+      -73.939985,
+      40.7189227
+     ],
+     [
+      -73.940429,
+      40.7188848
+     ],
+     [
+      -73.940821,
+      40.7188469
+     ],
+     [
+      -73.9445773,
+      40.7185088
+     ],
+     [
+      -73.95359,
+      40.72186
+     ],
+     [
+      -73.95756,
+      40.72466
+     ],
+     [
+      -73.95865,
+      40.72619
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Long Island Rail Road",
+    "line": "Long Island Rail Road: Evergreen Branch",
+    "id": "lirr-evergreen-branch",
+    "color": "#0072CE",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short-haul steam resort/commuter service in Brooklyn with frequent stops; no running times checked (Rule 3)",
+    "geometry_source": "OSM abandoned ways 601377483, 295951391, 295951390; hand-placed straight legs",
+    "geometry_quality": "Cooper Ave Jct - South Side Crossing 2.05 mi: OSM abandoned way 601377483 (0.65 mi), then APPROXIMATED straight 0.64 mi to OSM spur 295951391 (DeKalb & Wyckoff), straight 0.31 mi to OSM way 295951390 'Evergreen Branch', straight 0.40 mi to South Side Crossing (Varick Ave x the Bushwick Branch). Drawn 2.05 mi against ~1.5 mi (the research report's map estimate). The Bushwick Branch beyond South Side Crossing (to Bushwick Terminal) is LIRR South Side RR track not drawn in data/ and not drawn here.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1885,
+      "headway_min": 60,
+      "note": "Former NY&MB Greenpoint line, standard gauge from May 1884: the Greenpoint shuttle (narrow gauge to Cooper Ave 1883, standard gauge 1884-85) ran over this piece until 28 Sep 1885 (Chiasson, ERA Bulletin May 2016). The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch"
+      ]
+     },
+     {
+      "start": 1886,
+      "end": 1889,
+      "headway_min": 60,
+      "note": "Summer through service Manhattan Beach - Bushwick Terminal from June 1886, joining the Bushwick Branch at South Side Crossing (Chiasson, ERA Bulletin May 2016). The headway is an ESTIMATE (Rule 3), not timetable-derived.",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch"
+      ]
+     },
+     {
+      "start": 1890,
+      "end": 1894,
+      "headway_min": 120,
+      "note": "Frequencies halved from 1890 and South Side Crossing station closed again; passenger operations 'discontinued completely at the close of the season in September, 1894' (Chiasson, ERA Bulletin May 2016; Wikipedia agrees on 1894). Freight-only afterwards - not drawn (Rule 1). The headway is an ESTIMATE (Rule 3), not timetable-derived (half the 1886-89 estimate, per Chiasson's 'halved').",
+      "sources": [
+       "Segment-level: dates from Chiasson, ERA NY Division Bulletin May 2016, and Wikipedia.",
+       "https://erausa.org/pdf/bulletin/2010s/2016/2016-05-bulletin.pdf",
+       "https://en.wikipedia.org/wiki/Manhattan_Beach_Branch"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.9020384,
+      40.69129
+     ],
+     [
+      -73.9024356,
+      40.6908702
+     ],
+     [
+      -73.9023792,
+      40.6910639
+     ],
+     [
+      -73.9021453,
+      40.6913492
+     ],
+     [
+      -73.9019924,
+      40.6916218
+     ],
+     [
+      -73.9018931,
+      40.6918536
+     ],
+     [
+      -73.9018293,
+      40.6920198
+     ],
+     [
+      -73.9018073,
+      40.6922115
+     ],
+     [
+      -73.9018341,
+      40.6924007
+     ],
+     [
+      -73.9019098,
+      40.6925973
+     ],
+     [
+      -73.9020251,
+      40.6927539
+     ],
+     [
+      -73.9021434,
+      40.6929171
+     ],
+     [
+      -73.9021962,
+      40.6929721
+     ],
+     [
+      -73.9022686,
+      40.6930453
+     ],
+     [
+      -73.902494,
+      40.6932141
+     ],
+     [
+      -73.9027809,
+      40.6934256
+     ],
+     [
+      -73.9031726,
+      40.6937388
+     ],
+     [
+      -73.9034247,
+      40.6939178
+     ],
+     [
+      -73.9036366,
+      40.6940724
+     ],
+     [
+      -73.9039858,
+      40.6943381
+     ],
+     [
+      -73.9042421,
+      40.6945351
+     ],
+     [
+      -73.9044498,
+      40.6947245
+     ],
+     [
+      -73.9047811,
+      40.6949533
+     ],
+     [
+      -73.9048737,
+      40.6950336
+     ],
+     [
+      -73.9051472,
+      40.6952411
+     ],
+     [
+      -73.9055638,
+      40.695571
+     ],
+     [
+      -73.9058768,
+      40.6958146
+     ],
+     [
+      -73.9061182,
+      40.6959772
+     ],
+     [
+      -73.9061998,
+      40.6960325
+     ],
+     [
+      -73.9063703,
+      40.6961481
+     ],
+     [
+      -73.907411,
+      40.6967215
+     ],
+     [
+      -73.9091705,
+      40.6977546
+     ],
+     [
+      -73.9189045,
+      40.7033255
+     ],
+     [
+      -73.9188658,
+      40.7032823
+     ],
+     [
+      -73.9188325,
+      40.703248
+     ],
+     [
+      -73.9235203,
+      40.7059143
+     ],
+     [
+      -73.9233239,
+      40.7058043
+     ],
+     [
+      -73.929,
+      40.7097
+     ]
+    ]
+   }
+  }
+ ]
+}
