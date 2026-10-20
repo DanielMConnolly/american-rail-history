@@ -1,0 +1,1962 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Morris and Essex Railroad (New Jersey; chartered 29 Jan 1835) as an operating railroad under its own name, 1837-1868: the main line as it grew west in stages (Newark - Orange - Madison 1837, Morristown 1838, Dover 1848, Hackettstown 1854, Phillipsburg 1866), its 1854 Newark - East Newark Junction alignment, its 1863-1868 Newark - Hoboken route through the Erie's Long Dock Tunnel, the Newark and Bloomfield branch (1856) and the Denville - Boonton spur (1867, medium confidence). One feature per staged opening, so each era draws only the track open in it. Everything from 1 Jan 1869 (DL&W lease) is drawn under the DL&W and its successors in scranton_railroads.geojson and nj_transit_rail.geojson. Research report: research/branches/morris_and_essex_railroad.txt.",
+  "sources": [
+   "https://knowingnewark.npl.org/broad-street-station-tracks-glory-of-early-transportation-era/ -- Newark Public Library, quoting the 1835/36 company broadside: horse power Newark - Orange 19 Nov 1836, steam to Madison 2 Oct 1837, Morristown 1 Jan 1838",
+   "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad -- Wikipedia, Morris and Essex Railroad",
+   "https://en.wikipedia.org/wiki/Morristown_Line -- Wikipedia, Morristown Line (station table and opening dates)",
+   "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf -- Bowe, \"The Story of the Morris & Essex Railroad\", NJ Postal History 45/3 (Aug 2017), timeline",
+   "https://www.loc.gov/resource/sn83030213/1866-02-14/ed-1/?sp=7 -- New-York Daily Tribune 14 Feb 1866 p.7, M&E advertisement (primary)",
+   "https://www.loc.gov/resource/sn83032312/1864-05-19/ed-1/?sp=1 -- Monmouth Herald 19 May 1864 (Phillipsburg extension and Boonton spur work beginning)",
+   "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm -- Urquhart, A History of the City of Newark (1913) vol I pp.581-583",
+   "https://ldsgenealogy.com/NJ/books/History-of-Essex-and-Hudson-counties-New-Jersey-Vol-II-part-44.htm -- Shaw, History of Essex and Hudson Counties (1884) vol II: Newark and Bloomfield",
+   "https://en.wikipedia.org/wiki/Washington_Secondary ; https://en.wikipedia.org/wiki/Washington_station_(New_Jersey) ; https://en.wikipedia.org/wiki/Hackettstown_station ; https://en.wikipedia.org/wiki/Denville_station ; https://en.wikipedia.org/wiki/Boonton_station ; https://en.wikipedia.org/wiki/Montclair-Boonton_Line"
+  ],
+  "operator_split": "1 Jan 1869 (lease to the Delaware, Lackawanna and Western signed 10 Dec 1868, effective 1 Jan 1869; jcrhs.org and the Morristown Line article give 31 Dec 1868): every M&E feature ends 1868 and the corridors continue as DL&W in other layers. NOT a split: the Atlantic & Great Western lease of 1 Nov 1865 (cancelled after the A&GW's 1867 bankruptcy) - the Feb 1866 Tribune ad shows trains still advertised by the Morris and Essex Railroad Company. NOT a split: the M&E's 1 Apr 1868 lease/purchase of the Newark and Bloomfield, drawn as Morris and Essex from 1856 (see that feature's note).",
+  "horsecar_audit": "Rule 5 applied at creation (2026-10-20): Newark - Orange is drawn from 1837, not its 19 Nov 1836 horse-drawn opening; the horse-hauled Newark street link (Broad and Centre Streets, M&E cars drawn by horses to the NJRR, to Aug 1854) is not drawn at all.",
+  "not_yet_sourced": [
+   "Newark - East Newark Junction (1854 alignment): end year 1863 is [OPEN] - last confirmed year, not a known end; whether the 1863-68 Hoboken trains reused this Passaic bridge is unresolved. The exact 1854 route and junction site are unresolved.",
+   "Hackettstown - Phillipsburg opening: 1865 (Bowe; 'November 1865') vs 1866 (Wikipedia, Lackawanna Coalition) vs a lone 'Washington 1864'; drawn 1866. A Warren County / Easton newspaper opening notice would settle it.",
+   "Denville - Boonton 1867: passenger (Lyon 1873) vs 'then-freight-only' (Denville station article); Urquhart's 'Boonton branch put in commission May 12, 1877' is unexplained.",
+   "Newark and Bloomfield operator 1856-1868: M&E motive power from 1856 (Shaw, Urquhart) vs formal M&E lease/purchase 1 Apr 1868 (Wikipedia, Bowe).",
+   "Route of the Hoboken Land and Improvement Co. line between Harrison and the Long Dock Tunnel, and between the tunnel and Hoboken (drawn partly on later DL&W track and with one labelled straight link).",
+   "Every mileage in the research report is a map estimate; Dover - Hackettstown's approx 15 mi is likely low (traced 19.4 mi on OHM's dated way).",
+   "All headway_min and avg_speed_kmh values are estimates; the only service evidence is the 14 Feb 1866 Tribune advertisement and Shaw's 'six trips' on the Newark and Bloomfield."
+  ],
+  "omitted": "Not drawn as Morris and Essex (research report drawable NONE): the horse-hauled Newark street link 1836-1854 (Rule 5); the New Jersey Rail Road's Newark - Jersey City track 1836-1863 (NJRR's track and, at least to 1854, NJRR's engines); the Boonton - Paterson - Hoboken Boonton Branch (DL&W, passengers from 14 Dec 1870); the Chester Branch (first train 2 Jan 1869, the day after the DL&W lease took effect); the Warren Railroad (DL&W-leased from 1857); the New Jersey West Line / Gladstone Branch (1872)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Newark – Orange",
+    "id": "morris-and-essex-newark-orange",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "3.7 mi traced against approx 4-5 mi in the research report (a map estimate, NOT SOURCED; no documented mileage found). Real-traced throughout on OSM track tagged old_railway_operator=DL&W (Morristown Line); no approximated (straight-line) legs. Cross-checked against an OpenHistoricalMap way over the same corridor: median offset 5 m, max 12 m. LATER ALIGNMENT: drawn on today's NJ Transit Morristown Line track, which through Newark and the Oranges is the DL&W's 1920s grade-separated (elevated / depressed) rebuild of the original corridor and through Summit includes the DL&W's c.1900-1915 grade-crossing eliminations and realignments; the 1837 at-grade alignment is not mapped in OSM or OHM and was not traced, and the lateral offset has not been measured (believed small - same right of way - but unverified). The Newark end is drawn at today's Newark Broad Street station; the 1830s M&E depot \"east of Broad St\" is not separately located.",
+    "segments": [
+     {
+      "start": 1837,
+      "end": 1868,
+      "headway_min": 240,
+      "note": "The Morris and Essex's first section, Newark (Broad Street) - Orange, via East Orange and Brick Church. Opened 19 Nov 1836 under HORSE power - \"commenced running their cars by horse power, from Newark to Orange November 19, 1836\" - with regular steam from Monday 2 Oct 1837 (\"from Newark to Madison, by steam power\"), both per the 1835/36 company broadside quoted by the Newark Public Library; the horse months Nov 1836 - Oct 1837 are not drawn (CLAUDE.md Rule 5). Seth Boyden's locomotive Orange made trial runs over the Orange hills in July 1837. East of Broad Street the M&E cars were hauled by horses down Broad and Centre Streets to the New Jersey Rail Road until 1854 (not drawn); from 5 Aug 1854 see the Newark - East Newark Junction feature, and from 14 Oct 1863 the Newark - Hoboken feature. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://knowingnewark.npl.org/broad-street-station-tracks-glory-of-early-transportation-era/",
+       "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad",
+       "https://en.wikipedia.org/wiki/Morristown_Line",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.171806,
+      40.747579
+     ],
+     [
+      -74.179509,
+      40.749248
+     ],
+     [
+      -74.183575,
+      40.750471
+     ],
+     [
+      -74.187152,
+      40.752157
+     ],
+     [
+      -74.190463,
+      40.754377
+     ],
+     [
+      -74.191949,
+      40.755123
+     ],
+     [
+      -74.20763,
+      40.759702
+     ],
+     [
+      -74.209247,
+      40.760263
+     ],
+     [
+      -74.211567,
+      40.761362
+     ],
+     [
+      -74.228378,
+      40.770359
+     ],
+     [
+      -74.231069,
+      40.771416
+     ],
+     [
+      -74.23315,
+      40.77185
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Orange – Madison",
+    "id": "morris-and-essex-orange-madison",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "14.1 mi traced against approx 12 mi in the research report (a map estimate, NOT SOURCED; no documented mileage found - the trace is the better figure). Real-traced on OSM track tagged old_railway_operator=DL&W and on an OpenHistoricalMap way over the same corridor (OHM vertices median 3 m, 90th percentile 7 m, max 13 m from the drawn line); no approximated (straight-line) legs. LATER ALIGNMENT: drawn on today's NJ Transit Morristown Line track, which through Newark and the Oranges is the DL&W's 1920s grade-separated (elevated / depressed) rebuild of the original corridor and through Summit includes the DL&W's c.1900-1915 grade-crossing eliminations and realignments; the 1837 at-grade alignment is not mapped in OSM or OHM and was not traced, and the lateral offset has not been measured (believed small - same right of way - but unverified).",
+    "segments": [
+     {
+      "start": 1837,
+      "end": 1868,
+      "headway_min": 240,
+      "note": "Main line west of Orange via South Orange, Middleville (Maplewood), Millburn, Summit and Chatham to Madison. Opened 1837: the Morristown Line station table dates South Orange - Madison stations to 17 Sep 1837, another secondary gives 28 Sep 1837, and the company broadside (quoted by the Newark Public Library) gives steam service Newark - Madison from 2 Oct 1837 - the year is firm on all three. Whether the September 1837 opening was horse- or steam-worked is not established; steam was regular from 2 Oct 1837, the same year. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://knowingnewark.npl.org/broad-street-station-tracks-glory-of-early-transportation-era/",
+       "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad",
+       "https://en.wikipedia.org/wiki/Morristown_Line",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.23315,
+      40.77185
+     ],
+     [
+      -74.235545,
+      40.771934
+     ],
+     [
+      -74.237902,
+      40.77158
+     ],
+     [
+      -74.239481,
+      40.770936
+     ],
+     [
+      -74.240875,
+      40.769953
+     ],
+     [
+      -74.244763,
+      40.765658
+     ],
+     [
+      -74.26447,
+      40.741073
+     ],
+     [
+      -74.273296,
+      40.732514
+     ],
+     [
+      -74.274338,
+      40.731715
+     ],
+     [
+      -74.275637,
+      40.730981
+     ],
+     [
+      -74.291236,
+      40.724848
+     ],
+     [
+      -74.292732,
+      40.724394
+     ],
+     [
+      -74.294605,
+      40.724125
+     ],
+     [
+      -74.295733,
+      40.72411
+     ],
+     [
+      -74.2973,
+      40.724265
+     ],
+     [
+      -74.304694,
+      40.725833
+     ],
+     [
+      -74.305916,
+      40.726004
+     ],
+     [
+      -74.307719,
+      40.725872
+     ],
+     [
+      -74.311577,
+      40.724654
+     ],
+     [
+      -74.313878,
+      40.724418
+     ],
+     [
+      -74.319579,
+      40.724595
+     ],
+     [
+      -74.321621,
+      40.724773
+     ],
+     [
+      -74.328072,
+      40.726485
+     ],
+     [
+      -74.329537,
+      40.726756
+     ],
+     [
+      -74.331356,
+      40.726809
+     ],
+     [
+      -74.33308,
+      40.726574
+     ],
+     [
+      -74.335323,
+      40.725847
+     ],
+     [
+      -74.336594,
+      40.725244
+     ],
+     [
+      -74.337594,
+      40.724582
+     ],
+     [
+      -74.338331,
+      40.723889
+     ],
+     [
+      -74.338867,
+      40.723164
+     ],
+     [
+      -74.34003,
+      40.720007
+     ],
+     [
+      -74.340385,
+      40.719392
+     ],
+     [
+      -74.341093,
+      40.718601
+     ],
+     [
+      -74.346217,
+      40.714812
+     ],
+     [
+      -74.347085,
+      40.714417
+     ],
+     [
+      -74.348465,
+      40.714152
+     ],
+     [
+      -74.349467,
+      40.714193
+     ],
+     [
+      -74.350237,
+      40.714354
+     ],
+     [
+      -74.353469,
+      40.715632
+     ],
+     [
+      -74.365907,
+      40.718392
+     ],
+     [
+      -74.374399,
+      40.718384
+     ],
+     [
+      -74.381508,
+      40.716967
+     ],
+     [
+      -74.382866,
+      40.716819
+     ],
+     [
+      -74.385123,
+      40.717096
+     ],
+     [
+      -74.386163,
+      40.717453
+     ],
+     [
+      -74.387237,
+      40.71804
+     ],
+     [
+      -74.388355,
+      40.719027
+     ],
+     [
+      -74.389063,
+      40.720136
+     ],
+     [
+      -74.389375,
+      40.721368
+     ],
+     [
+      -74.389244,
+      40.722666
+     ],
+     [
+      -74.388807,
+      40.723646
+     ],
+     [
+      -74.388328,
+      40.724309
+     ],
+     [
+      -74.384049,
+      40.728397
+     ],
+     [
+      -74.383066,
+      40.729545
+     ],
+     [
+      -74.382523,
+      40.730406
+     ],
+     [
+      -74.380528,
+      40.734185
+     ],
+     [
+      -74.380145,
+      40.73516
+     ],
+     [
+      -74.38015,
+      40.736627
+     ],
+     [
+      -74.38078,
+      40.737919
+     ],
+     [
+      -74.381636,
+      40.738767
+     ],
+     [
+      -74.383097,
+      40.73953
+     ],
+     [
+      -74.386824,
+      40.740826
+     ],
+     [
+      -74.391624,
+      40.74196
+     ],
+     [
+      -74.394288,
+      40.742749
+     ],
+     [
+      -74.397779,
+      40.744104
+     ],
+     [
+      -74.400621,
+      40.745512
+     ],
+     [
+      -74.40329,
+      40.747124
+     ],
+     [
+      -74.40496,
+      40.748305
+     ],
+     [
+      -74.413467,
+      40.75546
+     ],
+     [
+      -74.415217,
+      40.757132
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Madison – Morristown",
+    "id": "morris-and-essex-madison-morristown",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "4.2 mi traced against approx 4 mi in the research report (map estimate, NOT SOURCED). Real-traced on OSM track tagged old_railway_operator=DL&W (Morristown Line); no approximated (straight-line) legs; no OHM way covers this stretch. LATER ALIGNMENT: today's track, including the DL&W's c.1900-1915 realignments (research report GEOMETRY (d)); the 1838 alignment was not separately traced and its offset is unmeasured. Convent Station, on this stretch, dates from 1867.",
+    "segments": [
+     {
+      "start": 1838,
+      "end": 1868,
+      "headway_min": 240,
+      "note": "Extension from Madison to Morristown, opened 1 Jan 1838 per the company broadside (\"from Newark to Morristown, on the first day of January 1838\") quoted by the Newark Public Library. Source conflict recorded: the same library article's own prose says \"extended to Morristown by 1839\"; the primary broadside is preferred. Bowe (NJ Postal History 2017): \"In 1840, a person could board the train in Morristown, and be in New York three hours later\"; first mail contract Newark - Morristown 1840. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://knowingnewark.npl.org/broad-street-station-tracks-glory-of-early-transportation-era/",
+       "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad",
+       "https://en.wikipedia.org/wiki/Morristown_Line",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.415217,
+      40.757132
+     ],
+     [
+      -74.417016,
+      40.759346
+     ],
+     [
+      -74.419687,
+      40.763079
+     ],
+     [
+      -74.423424,
+      40.767153
+     ],
+     [
+      -74.427451,
+      40.769426
+     ],
+     [
+      -74.430357,
+      40.77169
+     ],
+     [
+      -74.438011,
+      40.775583
+     ],
+     [
+      -74.446056,
+      40.780721
+     ],
+     [
+      -74.447271,
+      40.781634
+     ],
+     [
+      -74.454865,
+      40.7886
+     ],
+     [
+      -74.456768,
+      40.789598
+     ],
+     [
+      -74.471527,
+      40.794854
+     ],
+     [
+      -74.472838,
+      40.795664
+     ],
+     [
+      -74.474246,
+      40.797269
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Morristown – Dover",
+    "id": "morris-and-essex-morristown-dover",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "10.7 mi traced against approx 11 mi in the research report (map estimate, NOT SOURCED). Real-traced on OSM track tagged old_railway_operator=DL&W (Morristown Line) Morristown - Denville and on the OpenHistoricalMap way dated 1848-07-31 (operator \"DL&W, EL\") Denville - Dover (OHM vertices median 9 m, max 13 m from the drawn line); no approximated (straight-line) legs. Morristown - Denville is today's track; no realignment there is known to the research, but the 1848 alignment was not separately verified.",
+    "segments": [
+     {
+      "start": 1848,
+      "end": 1868,
+      "headway_min": 360,
+      "note": "Extension west via Morris Plains, Denville and Rockaway: Morristown - Rockaway opened 4 Jul 1848, Rockaway - Dover 31 Jul 1848 (Morristown Line station table and history; Bowe 2017 timeline \"Jul 1848 Completed to Dover\"). Built to compete with the Morris Canal for anthracite traffic (Bowe). Denville later became the junction for the Boonton spur. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://en.wikipedia.org/wiki/Morristown_Line",
+       "https://en.wikipedia.org/wiki/Denville_station",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.474246,
+      40.797269
+     ],
+     [
+      -74.47778,
+      40.80322
+     ],
+     [
+      -74.478401,
+      40.805175
+     ],
+     [
+      -74.478395,
+      40.807088
+     ],
+     [
+      -74.477709,
+      40.810331
+     ],
+     [
+      -74.477753,
+      40.813833
+     ],
+     [
+      -74.477133,
+      40.816703
+     ],
+     [
+      -74.477082,
+      40.817699
+     ],
+     [
+      -74.478886,
+      40.834822
+     ],
+     [
+      -74.478755,
+      40.839231
+     ],
+     [
+      -74.480139,
+      40.845855
+     ],
+     [
+      -74.480224,
+      40.846861
+     ],
+     [
+      -74.480052,
+      40.847883
+     ],
+     [
+      -74.479505,
+      40.849041
+     ],
+     [
+      -74.47893,
+      40.849777
+     ],
+     [
+      -74.477154,
+      40.851301
+     ],
+     [
+      -74.476504,
+      40.8521
+     ],
+     [
+      -74.47215,
+      40.862242
+     ],
+     [
+      -74.471968,
+      40.863124
+     ],
+     [
+      -74.472304,
+      40.864148
+     ],
+     [
+      -74.473289,
+      40.865082
+     ],
+     [
+      -74.481323,
+      40.868142
+     ],
+     [
+      -74.482564,
+      40.869034
+     ],
+     [
+      -74.483244,
+      40.870049
+     ],
+     [
+      -74.483471,
+      40.871082
+     ],
+     [
+      -74.48326,
+      40.872712
+     ],
+     [
+      -74.480079,
+      40.880547
+     ],
+     [
+      -74.479992,
+      40.881614
+     ],
+     [
+      -74.480475,
+      40.88264
+     ],
+     [
+      -74.480976,
+      40.883088
+     ],
+     [
+      -74.481624,
+      40.883438
+     ],
+     [
+      -74.482996,
+      40.883729
+     ],
+     [
+      -74.491487,
+      40.883536
+     ],
+     [
+      -74.495763,
+      40.883178
+     ],
+     [
+      -74.497503,
+      40.882733
+     ],
+     [
+      -74.499312,
+      40.881953
+     ],
+     [
+      -74.505926,
+      40.877815
+     ],
+     [
+      -74.507132,
+      40.877444
+     ],
+     [
+      -74.508429,
+      40.877301
+     ],
+     [
+      -74.50961,
+      40.877385
+     ],
+     [
+      -74.511075,
+      40.877807
+     ],
+     [
+      -74.511899,
+      40.878235
+     ],
+     [
+      -74.513331,
+      40.879339
+     ],
+     [
+      -74.514604,
+      40.880068
+     ],
+     [
+      -74.515874,
+      40.880533
+     ],
+     [
+      -74.517222,
+      40.880748
+     ],
+     [
+      -74.519308,
+      40.880696
+     ],
+     [
+      -74.52787,
+      40.879037
+     ],
+     [
+      -74.529347,
+      40.878958
+     ],
+     [
+      -74.531172,
+      40.879168
+     ],
+     [
+      -74.533015,
+      40.879812
+     ],
+     [
+      -74.540952,
+      40.883882
+     ],
+     [
+      -74.542275,
+      40.884337
+     ],
+     [
+      -74.543242,
+      40.884526
+     ],
+     [
+      -74.545784,
+      40.884559
+     ],
+     [
+      -74.555423,
+      40.883525
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Dover – Hackettstown",
+    "id": "morris-and-essex-dover-hackettstown",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "19.4 mi traced against approx 15 mi in the research report - a map estimate, NOT SOURCED, and almost certainly low: the drawn line follows OpenHistoricalMap's way dated 1854-01 (operator \"DL&W, EL\") throughout (OHM vertices median 3 m, 90th percentile 9 m, max 71 m from the drawn line), so the 15 mi figure rather than the trace is suspect; no documented mileage was found to settle it. Real-traced on that OHM way and on OSM track tagged old_railway_operator=DL&W (Morristown Line / Old Road) via Port Morris and Netcong; no approximated (straight-line) legs. Era: this is the pre-1911 \"Old Road\" main line, NOT the 1911 Lackawanna Cut-Off that leaves it at Port Morris.",
+    "segments": [
+     {
+      "start": 1854,
+      "end": 1868,
+      "headway_min": 480,
+      "note": "Extension west from Dover via Port Morris / Stanhope (Netcong) to Hackettstown, opened 16 Jan 1854 (Wikipedia Morristown Line and Hackettstown station; Bowe 2017 timeline \"Jan 1854 Completed to Hackettstown\"). Source conflict recorded: the Newark Public Library prose says \"Hackettstown by 1864\", almost certainly a typo for 1854. PRIMARY confirmation of service in the period: New-York Daily Tribune, 14 Feb 1866, p.7 - \"MORRIS AND ESSEX RAILROAD COMPANY - Foot of Barclay-st. - On and after Nov. 27, Morning mail trains for Hackettstown and intermediate stations, will leave at 8:30 a.m.\" (Chronicling America OCR). Under the DL&W this became part of the Old Road main line until the 1911 Cut-Off. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://en.wikipedia.org/wiki/Morristown_Line",
+       "https://en.wikipedia.org/wiki/Hackettstown_station",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf",
+       "https://www.loc.gov/resource/sn83030213/1866-02-14/ed-1/?sp=7"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.555423,
+      40.883525
+     ],
+     [
+      -74.559394,
+      40.883071
+     ],
+     [
+      -74.560259,
+      40.883066
+     ],
+     [
+      -74.562051,
+      40.883391
+     ],
+     [
+      -74.563398,
+      40.884031
+     ],
+     [
+      -74.565996,
+      40.886068
+     ],
+     [
+      -74.566898,
+      40.887311
+     ],
+     [
+      -74.56725,
+      40.88812
+     ],
+     [
+      -74.56876,
+      40.895209
+     ],
+     [
+      -74.569375,
+      40.896352
+     ],
+     [
+      -74.570544,
+      40.89751
+     ],
+     [
+      -74.571693,
+      40.898193
+     ],
+     [
+      -74.587545,
+      40.905002
+     ],
+     [
+      -74.589681,
+      40.905571
+     ],
+     [
+      -74.590809,
+      40.905644
+     ],
+     [
+      -74.598013,
+      40.905463
+     ],
+     [
+      -74.605365,
+      40.904294
+     ],
+     [
+      -74.608244,
+      40.903576
+     ],
+     [
+      -74.646558,
+      40.89268
+     ],
+     [
+      -74.649134,
+      40.892143
+     ],
+     [
+      -74.651274,
+      40.891857
+     ],
+     [
+      -74.653438,
+      40.891688
+     ],
+     [
+      -74.656232,
+      40.891673
+     ],
+     [
+      -74.658828,
+      40.891916
+     ],
+     [
+      -74.659768,
+      40.892122
+     ],
+     [
+      -74.660768,
+      40.892512
+     ],
+     [
+      -74.662295,
+      40.893482
+     ],
+     [
+      -74.663336,
+      40.894622
+     ],
+     [
+      -74.664103,
+      40.895913
+     ],
+     [
+      -74.664658,
+      40.897425
+     ],
+     [
+      -74.665649,
+      40.903986
+     ],
+     [
+      -74.666117,
+      40.905097
+     ],
+     [
+      -74.666896,
+      40.906115
+     ],
+     [
+      -74.668093,
+      40.907007
+     ],
+     [
+      -74.669534,
+      40.907604
+     ],
+     [
+      -74.67113,
+      40.907883
+     ],
+     [
+      -74.67336,
+      40.90785
+     ],
+     [
+      -74.675505,
+      40.907504
+     ],
+     [
+      -74.677031,
+      40.907023
+     ],
+     [
+      -74.679824,
+      40.905688
+     ],
+     [
+      -74.682361,
+      40.903875
+     ],
+     [
+      -74.683931,
+      40.902984
+     ],
+     [
+      -74.690029,
+      40.900563
+     ],
+     [
+      -74.697388,
+      40.898086
+     ],
+     [
+      -74.700011,
+      40.897596
+     ],
+     [
+      -74.705627,
+      40.897694
+     ],
+     [
+      -74.707811,
+      40.897496
+     ],
+     [
+      -74.709676,
+      40.896865
+     ],
+     [
+      -74.715676,
+      40.893582
+     ],
+     [
+      -74.717052,
+      40.892956
+     ],
+     [
+      -74.719146,
+      40.892519
+     ],
+     [
+      -74.7231,
+      40.892329
+     ],
+     [
+      -74.724503,
+      40.892584
+     ],
+     [
+      -74.725505,
+      40.89302
+     ],
+     [
+      -74.726347,
+      40.893641
+     ],
+     [
+      -74.726997,
+      40.894478
+     ],
+     [
+      -74.727302,
+      40.895333
+     ],
+     [
+      -74.727311,
+      40.896211
+     ],
+     [
+      -74.725949,
+      40.89945
+     ],
+     [
+      -74.725977,
+      40.900965
+     ],
+     [
+      -74.726414,
+      40.901913
+     ],
+     [
+      -74.729403,
+      40.906204
+     ],
+     [
+      -74.730552,
+      40.907344
+     ],
+     [
+      -74.732003,
+      40.908158
+     ],
+     [
+      -74.733413,
+      40.908608
+     ],
+     [
+      -74.742646,
+      40.909534
+     ],
+     [
+      -74.743947,
+      40.909837
+     ],
+     [
+      -74.747926,
+      40.911279
+     ],
+     [
+      -74.749119,
+      40.911427
+     ],
+     [
+      -74.750238,
+      40.911393
+     ],
+     [
+      -74.752118,
+      40.910917
+     ],
+     [
+      -74.757704,
+      40.908095
+     ],
+     [
+      -74.760857,
+      40.905613
+     ],
+     [
+      -74.761885,
+      40.904956
+     ],
+     [
+      -74.784691,
+      40.894193
+     ],
+     [
+      -74.786002,
+      40.893247
+     ],
+     [
+      -74.788469,
+      40.890605
+     ],
+     [
+      -74.790071,
+      40.889555
+     ],
+     [
+      -74.79157,
+      40.889006
+     ],
+     [
+      -74.798131,
+      40.887449
+     ],
+     [
+      -74.80006,
+      40.886779
+     ],
+     [
+      -74.80303,
+      40.885281
+     ],
+     [
+      -74.807695,
+      40.882247
+     ],
+     [
+      -74.809612,
+      40.88058
+     ],
+     [
+      -74.811045,
+      40.878656
+     ],
+     [
+      -74.816626,
+      40.866754
+     ],
+     [
+      -74.817702,
+      40.865095
+     ],
+     [
+      -74.818585,
+      40.864256
+     ],
+     [
+      -74.819404,
+      40.863714
+     ],
+     [
+      -74.824115,
+      40.861664
+     ],
+     [
+      -74.826811,
+      40.85996
+     ],
+     [
+      -74.828127,
+      40.858794
+     ],
+     [
+      -74.834962,
+      40.851788
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Hackettstown – Phillipsburg",
+    "id": "morris-and-essex-hackettstown-phillipsburg",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "23.1 mi traced against approx 23 mi in the research report (map estimate, NOT SOURCED). Real-traced on the OpenHistoricalMap way dated 1866 (operator \"DL&W, EL\") Hackettstown - Washington (OHM vertices median 3 m, 90th percentile 8 m, max 27 m from the drawn line) and on OSM track tagged old_railway_operator=DL&W (Washington Secondary, Norfolk Southern) Washington - Phillipsburg via Stewartsville; no approximated (straight-line) legs. Washington - Phillipsburg has no OHM way to check against and is drawn on today's freight track, assumed to be the 1866 alignment (not verified). The Phillipsburg end is drawn where the track reaches the Delaware riverfront; the 1866 station site is not separately located.",
+    "segments": [
+     {
+      "start": 1866,
+      "end": 1868,
+      "headway_min": 480,
+      "note": "Extension from Hackettstown via Port Murray, Washington (crossing of the DL&W-leased Warren Railroad) and Stewartsville to Phillipsburg on the Delaware. Opening is a recorded SOURCE CONFLICT: Bowe (NJ Postal History 2017) and another secondary give 1865 (one says November 1865); Wikipedia (Morris and Essex; Washington Secondary) and the Lackawanna Coalition give 1866; the Washington station article alone says M&E service \"joined in 1864\", which the Monmouth Herald of 19 May 1864 (work only just \"commenced upon the extension ... at Phillipsburg\") makes doubtful. The 14 Feb 1866 Tribune ad still lists mail trains only \"for Hackettstown and intermediate stations\" (absence, not proof). Collapsed to the later year, 1866: no positive primary evidence of a train west of Hackettstown has been found. This extension, meeting the DL&W's Warren Railroad at Washington, is what drove the 1868 lease. Context only: under the DL&W, Washington - Phillipsburg became the Phillipsburg Branch (passengers to Phillipsburg ended 20 Jun 1943). headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://en.wikipedia.org/wiki/Washington_Secondary",
+       "https://en.wikipedia.org/wiki/Washington_station_(New_Jersey)",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf",
+       "https://www.loc.gov/resource/sn83032312/1864-05-19/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.834962,
+      40.851788
+     ],
+     [
+      -74.847324,
+      40.839099
+     ],
+     [
+      -74.848506,
+      40.838065
+     ],
+     [
+      -74.895132,
+      40.807158
+     ],
+     [
+      -74.898143,
+      40.805019
+     ],
+     [
+      -74.899272,
+      40.803991
+     ],
+     [
+      -74.915368,
+      40.786593
+     ],
+     [
+      -74.916066,
+      40.785544
+     ],
+     [
+      -74.91973,
+      40.781755
+     ],
+     [
+      -74.922688,
+      40.778289
+     ],
+     [
+      -74.924092,
+      40.776888
+     ],
+     [
+      -74.925859,
+      40.775569
+     ],
+     [
+      -74.928271,
+      40.774304
+     ],
+     [
+      -74.931318,
+      40.773032
+     ],
+     [
+      -74.954386,
+      40.763557
+     ],
+     [
+      -74.96681,
+      40.75874
+     ],
+     [
+      -74.970658,
+      40.756956
+     ],
+     [
+      -74.975806,
+      40.75483
+     ],
+     [
+      -74.978326,
+      40.754151
+     ],
+     [
+      -74.989936,
+      40.751984
+     ],
+     [
+      -74.99225,
+      40.751368
+     ],
+     [
+      -75.011431,
+      40.742774
+     ],
+     [
+      -75.013205,
+      40.741789
+     ],
+     [
+      -75.018967,
+      40.738056
+     ],
+     [
+      -75.020143,
+      40.737421
+     ],
+     [
+      -75.021126,
+      40.736965
+     ],
+     [
+      -75.024871,
+      40.735622
+     ],
+     [
+      -75.027216,
+      40.734461
+     ],
+     [
+      -75.06855,
+      40.709581
+     ],
+     [
+      -75.07215,
+      40.707713
+     ],
+     [
+      -75.075764,
+      40.706313
+     ],
+     [
+      -75.078807,
+      40.705659
+     ],
+     [
+      -75.080983,
+      40.705539
+     ],
+     [
+      -75.091279,
+      40.705545
+     ],
+     [
+      -75.093226,
+      40.705425
+     ],
+     [
+      -75.116198,
+      40.701467
+     ],
+     [
+      -75.122849,
+      40.700431
+     ],
+     [
+      -75.125639,
+      40.700187
+     ],
+     [
+      -75.127257,
+      40.700164
+     ],
+     [
+      -75.148857,
+      40.700628
+     ],
+     [
+      -75.150735,
+      40.700493
+     ],
+     [
+      -75.167426,
+      40.698376
+     ],
+     [
+      -75.170898,
+      40.698027
+     ],
+     [
+      -75.17241,
+      40.697641
+     ],
+     [
+      -75.173661,
+      40.696864
+     ],
+     [
+      -75.174283,
+      40.696214
+     ],
+     [
+      -75.175617,
+      40.692742
+     ],
+     [
+      -75.17663,
+      40.691289
+     ],
+     [
+      -75.178953,
+      40.689559
+     ],
+     [
+      -75.181695,
+      40.688264
+     ],
+     [
+      -75.18406,
+      40.687587
+     ],
+     [
+      -75.18582,
+      40.687351
+     ],
+     [
+      -75.187731,
+      40.687274
+     ],
+     [
+      -75.190322,
+      40.687503
+     ],
+     [
+      -75.194002,
+      40.688391
+     ],
+     [
+      -75.195509,
+      40.688608
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Newark – East Newark Junction (1854 alignment)",
+    "id": "morris-and-essex-newark-east-newark",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Old Road, Washington Secondary). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways with operator \"DL&W, EL\" dated 1848-07-31 (Denville - Dover), 1854-01 (Dover - Hackettstown), 1866 (Hackettstown - Washington), and an M&E-corridor way Chatham - Newark carrying an unsourced start_date of 1856. Routed with opstrace.py (own-company ways preferred), Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "1.1 mi drawn; no documented mileage (the research report gives approx 1 mi for the street link this replaced). Real-traced on OSM track tagged old_railway_operator=DL&W (Morristown Line) from Newark Broad Street across the Passaic into Harrison, ending where that track comes within 35 m of OpenHistoricalMap's way for the 1834 New Jersey Rail Road alignment through Harrison (dated 1834-09-15, sourced in OHM to Coverdale & Colpitts); no approximated (straight-line) legs. APPROXIMATION OF ROUTE AND JUNCTION: the exact 1854 alignment and the site of the junction with the NJRR are UNRESOLVED in the research (report item 5); this is today's track on the same Passaic crossing corridor, a later rebuild of uncertain relation to the 1854 bridge, and the junction point is placed where the modern track meets the dated NJRR alignment, not where a source puts it. The NJRR track on to Jersey City is NJRR's and is not part of this feature.",
+    "segments": [
+     {
+      "start": 1854,
+      "end": 1863,
+      "headway_min": 240,
+      "note": "From 5 Aug 1854 a new Morris and Essex alignment with its own Passaic River bridge ran from Newark to a junction with the New Jersey Rail Road at East Newark (Harrison), replacing the horse-hauled street link down Broad and Centre Streets (Bowe: the \"new alignment of tracks in Newark eliminated horse-pulled trains through Newark\"; Wikipedia Morris and Essex). M&E trains / cars ran on over NJRR track to Jersey City (Paulus Hook ferry) - NJRR track, not drawn here - until the NJRR contract expired on 13 Oct 1863. END YEAR IS [OPEN]: 1863 is the last CONFIRMED year of this feature's own use, NOT a known end - the line may well have carried the M&E's Hoboken trains from 14 Oct 1863 (whether the Hoboken route reused this bridge is not established). Do not extend without evidence. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf",
+       "https://knowingnewark.npl.org/broad-street-station-tracks-glory-of-early-transportation-era/",
+       "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.171806,
+      40.747579
+     ],
+     [
+      -74.169955,
+      40.74735
+     ],
+     [
+      -74.167312,
+      40.747475
+     ],
+     [
+      -74.164916,
+      40.747409
+     ],
+     [
+      -74.163462,
+      40.747165
+     ],
+     [
+      -74.162165,
+      40.746567
+     ],
+     [
+      -74.157271,
+      40.743088
+     ],
+     [
+      -74.155661,
+      40.742436
+     ],
+     [
+      -74.153861,
+      40.74209
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Newark – Hoboken (via Long Dock Tunnel)",
+    "id": "morris-and-essex-newark-hoboken",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Morristown Line, Main Line, Hoboken terminal tracks). OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): way -200508130 (start_date 1861, the Erie Long Dock Tunnel line). Routed with opstrace.py, Douglas-Peucker 8 m + trim_reversals; OHM tunnel way and the one labelled straight link joined by hand.",
+    "geometry_quality": "8.1 mi drawn against approx 9 mi in the research report (map estimate, NOT SOURCED). Newark Broad Street - Harrison - Kearny meadows - west foot of Bergen Hill: real-traced on OSM track tagged old_railway_operator=DL&W (Morristown Line / Main Line) to the west portal of the DL&W Bergen Tunnel, 5.9 mi. Through Bergen Hill: OpenHistoricalMap's way dated 1861 for the Erie's Long Dock Tunnel line, joined 36 m from the DL&W portal and followed 0.6 mi to the tunnel's east end. APPROXIMATED: one straight line of 0.5 mi (755 m) from the east end of the Long Dock Tunnel to the DL&W Hoboken yard approach - the Hoboken Land and Improvement Co. line between the tunnel and Hoboken is not mapped in OSM or OHM. Then 1.0 mi of OSM DL&W track into Hoboken Terminal. LATER ALIGNMENTS: (1) the meadows section and the Passaic crossing are drawn on the DL&W's later track, assumed but not verified to follow the 1862 Hoboken Land and Improvement Co. line (its exact route between Harrison and the tunnel is unresolved, report item 5); (2) the last mile is the DL&W's Hoboken terminal approach (terminal of 1907), not the 1860s HL&I station by the ferry. The line is deliberately NOT drawn through the DL&W's own Bergen Tunnel (opened 1876/77) or the 1908 Bergen cut, and NOT on the 1996 Kearny Connection to New York Penn Station: every M&E-era train used the Erie's tunnel.",
+    "segments": [
+     {
+      "start": 1863,
+      "end": 1868,
+      "headway_min": 240,
+      "note": "Eastern terminal moved to Hoboken (ferries to Barclay St and Christopher St) on 14 Oct 1863, the day after the M&E's contract with the New Jersey Rail Road expired. Trains were the Morris and Essex's; the track was the Hoboken Land and Improvement Co.'s Newark - Hoboken railroad (charter 1860; \"completed on November 19, 1862\" - Urquhart 1913) plus the Erie's Long Dock (Bergen Hill) Tunnel of 1861 under an 1860 charter supplement. A first excursion ran 14 Nov 1862 (Wikipedia); that does not establish public service, so the line is drawn from 1863 (Bowe 2017 timeline: \"1863 New alignment - began using Long Dock Tunnel\"). Confirmed in use by the 14 Feb 1866 New-York Daily Tribune advertisement \"Foot of Barclay-st.\" The DL&W's own Bergen Tunnel did not open until 1876/77. headway_min is an ESTIMATE, not sourced: the only service evidence found for the era is the New-York Daily Tribune advertisement of 14 Feb 1866 (three legible departures from Barclay St: 8:30 a.m. mail for Hackettstown, 4:10 p.m. mail express, a Morristown express), i.e. a handful of trains a day. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad",
+       "https://en.wikipedia.org/wiki/Morristown_Line",
+       "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm",
+       "https://njpostalhistory.org/wp-content/uploads/2022/04/207-2017AugFA.pdf",
+       "https://www.loc.gov/resource/sn83030213/1866-02-14/ed-1/?sp=7"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.171806,
+      40.747579
+     ],
+     [
+      -74.169816,
+      40.747343
+     ],
+     [
+      -74.167073,
+      40.747442
+     ],
+     [
+      -74.164802,
+      40.747368
+     ],
+     [
+      -74.163421,
+      40.747113
+     ],
+     [
+      -74.162137,
+      40.746499
+     ],
+     [
+      -74.157332,
+      40.743023
+     ],
+     [
+      -74.155496,
+      40.742303
+     ],
+     [
+      -74.153618,
+      40.741984
+     ],
+     [
+      -74.146894,
+      40.742204
+     ],
+     [
+      -74.127634,
+      40.743703
+     ],
+     [
+      -74.116346,
+      40.743945
+     ],
+     [
+      -74.095899,
+      40.745358
+     ],
+     [
+      -74.090118,
+      40.745584
+     ],
+     [
+      -74.088663,
+      40.745506
+     ],
+     [
+      -74.086896,
+      40.745245
+     ],
+     [
+      -74.075548,
+      40.742842
+     ],
+     [
+      -74.070453,
+      40.741923
+     ],
+     [
+      -74.064176,
+      40.7406
+     ],
+     [
+      -74.062407,
+      40.740105
+     ],
+     [
+      -74.062334,
+      40.739787
+     ],
+     [
+      -74.054657,
+      40.733024
+     ],
+     [
+      -74.047493,
+      40.737108
+     ],
+     [
+      -74.036445,
+      40.734837
+     ],
+     [
+      -74.032381,
+      40.734882
+     ],
+     [
+      -74.030563,
+      40.735094
+     ],
+     [
+      -74.027979,
+      40.735125
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Newark – West Bloomfield (Newark and Bloomfield)",
+    "id": "morris-and-essex-newark-west-bloomfield",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): way -200547178 (operator \"Newark and Bloomfield Railroad\", start_date 1856), used as drawn; joined to the traced M&E main line. Checked against OpenStreetMap (ODbL) ways tagged old_railway_operator=DL&W (Montclair Line).",
+    "geometry_quality": "4.0 mi drawn against approx 4-5 mi in the research report (map estimate, NOT SOURCED). Drawn on OpenHistoricalMap way -200547178 (operator \"Newark and Bloomfield Railroad\", start_date 1856) from the Roseville junction with the M&E main line to Bay Street, Montclair; checked against OSM's DL&W-tagged Montclair Line track, which it follows within 4 m (median) wherever both exist. APPROXIMATED: a 66 m link joining the OHM way's south end to the M&E main line. The West Bloomfield terminus is drawn at the end of the OHM way at Bay Street; the 1856 station site north of it (towards Bloomfield Avenue, where the DL&W later built its 1913 terminal) is not mapped and is not drawn - up to about 0.3 mi may be missing at the north end.",
+    "segments": [
+     {
+      "start": 1856,
+      "end": 1868,
+      "headway_min": 180,
+      "note": "The Newark and Bloomfield Railroad (chartered 1852), Newark (junction with the M&E at Roseville Avenue) - Watsessing - Bloomfield - West Bloomfield (renamed Montclair after 1868). Opening is a bracket: Shaw (History of Essex and Hudson Counties, 1884) says \"opened for passenger trains to Bloomfield on Dec. 20, 1855\" with West Bloomfield \"some six months later\"; Urquhart (1913) gives opening to Montclair 1 Jul 1856; Wikipedia (Montclair-Boonton Line) gives trains Newark - Bloomfield - West Bloomfield from June 1856. Drawn from 1856, when all three agree; the Bloomfield-only weeks of Dec 1855 are not drawn. OPERATOR CONFLICT recorded: Shaw says the one car ran \"with an engine furnished by the Morris and Essex Company\", with through trains to New York \"from about 1865, under the Morris and Essex Company, which controlled the branch road\"; Urquhart says it \"was at once leased to the Morris and Essex\" (1856); Wikipedia and Bowe date the M&E's lease / purchase to 1 Apr 1868. Drawn as Morris and Essex throughout on the weight of the near-contemporary local histories (M&E motive power from 1856). headway_min 180 is an ESTIMATE from Shaw's \"six trips demanded by the time-table\", not a counted timetable. Eastern end: trains ran into Newark over the M&E main line; to New York (via Hoboken) only from about 1865. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://ldsgenealogy.com/NJ/books/History-of-Essex-and-Hudson-counties-New-Jersey-Vol-II-part-44.htm",
+       "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm",
+       "https://en.wikipedia.org/wiki/Montclair-Boonton_Line",
+       "https://en.wikipedia.org/wiki/Morris_and_Essex_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.190463,
+      40.754377
+     ],
+     [
+      -74.191029,
+      40.754785
+     ],
+     [
+      -74.191368,
+      40.755013
+     ],
+     [
+      -74.19172,
+      40.755507
+     ],
+     [
+      -74.191948,
+      40.755991
+     ],
+     [
+      -74.192482,
+      40.75806
+     ],
+     [
+      -74.193385,
+      40.76211
+     ],
+     [
+      -74.194763,
+      40.767712
+     ],
+     [
+      -74.196015,
+      40.77269
+     ],
+     [
+      -74.196761,
+      40.775633
+     ],
+     [
+      -74.197615,
+      40.779175
+     ],
+     [
+      -74.19814,
+      40.781346
+     ],
+     [
+      -74.198725,
+      40.783787
+     ],
+     [
+      -74.199148,
+      40.785551
+     ],
+     [
+      -74.199262,
+      40.78613
+     ],
+     [
+      -74.199359,
+      40.789411
+     ],
+     [
+      -74.199477,
+      40.790507
+     ],
+     [
+      -74.199697,
+      40.791498
+     ],
+     [
+      -74.199924,
+      40.792265
+     ],
+     [
+      -74.200339,
+      40.793305
+     ],
+     [
+      -74.201059,
+      40.794674
+     ],
+     [
+      -74.203022,
+      40.798285
+     ],
+     [
+      -74.203616,
+      40.7993
+     ],
+     [
+      -74.204133,
+      40.799982
+     ],
+     [
+      -74.205027,
+      40.800881
+     ],
+     [
+      -74.207684,
+      40.803158
+     ],
+     [
+      -74.208237,
+      40.803775
+     ],
+     [
+      -74.208693,
+      40.804583
+     ],
+     [
+      -74.208812,
+      40.804905
+     ],
+     [
+      -74.208863,
+      40.805061
+     ],
+     [
+      -74.208909,
+      40.805219
+     ],
+     [
+      -74.208938,
+      40.805327
+     ],
+     [
+      -74.208961,
+      40.805432
+     ],
+     [
+      -74.209002,
+      40.805643
+     ],
+     [
+      -74.209137,
+      40.806726
+     ],
+     [
+      -74.209132,
+      40.807
+     ],
+     [
+      -74.209029,
+      40.807343
+     ],
+     [
+      -74.208979,
+      40.807465
+     ],
+     [
+      -74.208928,
+      40.807582
+     ],
+     [
+      -74.208315,
+      40.808968
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morris and Essex Railroad",
+    "line": "Morris and Essex: Denville – Boonton",
+    "id": "morris-and-essex-denville-boonton",
+    "color": "#6D2E8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no M&E running time was checked; a figure typical of an 1840s-1860s American steam passenger train on a graded line with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=DL&W (Montclair Line). Checked against OpenHistoricalMap (ODbL) way -200508122 (operator \"DL&W, EL\", start_date 1870-09-12). Routed with opstrace.py, Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "4.4 mi traced against approx 4 mi in the research report (map estimate, NOT SOURCED). Real-traced on OSM track tagged old_railway_operator=DL&W (Montclair Line, the later Boonton Branch) via Mountain Lakes; cross-checked against OpenHistoricalMap's DL&W Boonton Branch way (dated 1870-09-12): median offset 9 m, 90th percentile 18 m, max 271 m (in Boonton, where the OHM way runs on the old through-town alignment). No approximated (straight-line) legs. LATER ALIGNMENT: drawn on the DL&W's 1870 Boonton Branch, into which this spur was absorbed; that the 1867 spur used the same alignment is assumed, not verified, and the 1867 Boonton terminus is not located - the line stops where today's track reaches the town.",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1868,
+      "headway_min": 720,
+      "note": "MEDIUM CONFIDENCE - SOURCE CONFLICT. Spur from Denville (Ketcham's Switch) to the Boonton ironworks. Boonton station article, citing Lyon (1873) p.55: \"The very first passenger train to Boonton came on September 5, 1867, going to New York City at 6:45 a.m.\", first freight two weeks later; groundbreaking 22 Feb 1866 (the Monmouth Herald of 19 May 1864 already expected work \"on the spur from Denville to Boonton\"). AGAINST: the Denville station article says the DL&W \"opened its then-freight-only Boonton Branch on September 5, 1867\" - but the DL&W had no control of the M&E in 1867, so that sentence appears to conflate this spur with the 1870 DL&W line, and it is treated as the weaker source. Operator inferred: an M&E spur built before the lease (promoter J.C. Lord was an M&E director); no source names the 1867 operator explicitly. headway_min 720 is an ESTIMATE (one or two trains a day), not sourced. The DL&W later extended the line Boonton - Paterson - Hoboken (passengers from 14 Dec 1870) - DL&W era, not drawn here. Ends 1868: the M&E was leased in perpetuity to the Delaware, Lackawanna and Western (lease signed 10 Dec 1868, effective 1 Jan 1869; one source says 31 Dec 1868), and from 1869 these trains were the DL&W's Morris & Essex Division - drawn under the DL&W / NJ Transit layers, not here.",
+      "sources": [
+       "Segment-level: this segment's own note names the source for its start and end years (research/branches/morris_and_essex_railroad.txt). headway_min is an estimate and is NOT sourced. References checked by the research report for these dates:",
+       "https://en.wikipedia.org/wiki/Boonton_station",
+       "https://en.wikipedia.org/wiki/Denville_station",
+       "https://www.loc.gov/resource/sn83032312/1864-05-19/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.48088,
+      40.884025
+     ],
+     [
+      -74.477228,
+      40.884472
+     ],
+     [
+      -74.47415,
+      40.884691
+     ],
+     [
+      -74.470518,
+      40.885514
+     ],
+     [
+      -74.468249,
+      40.885636
+     ],
+     [
+      -74.46608,
+      40.885187
+     ],
+     [
+      -74.454174,
+      40.880764
+     ],
+     [
+      -74.451947,
+      40.880122
+     ],
+     [
+      -74.44982,
+      40.87981
+     ],
+     [
+      -74.44769,
+      40.879742
+     ],
+     [
+      -74.445663,
+      40.879913
+     ],
+     [
+      -74.443699,
+      40.880309
+     ],
+     [
+      -74.441374,
+      40.881139
+     ],
+     [
+      -74.439083,
+      40.882356
+     ],
+     [
+      -74.418064,
+      40.896365
+     ],
+     [
+      -74.416378,
+      40.897833
+     ],
+     [
+      -74.413806,
+      40.900972
+     ],
+     [
+      -74.412361,
+      40.902012
+     ],
+     [
+      -74.4101,
+      40.9027
+     ],
+     [
+      -74.4096,
+      40.9029
+     ]
+    ]
+   }
+  }
+ ]
+}
