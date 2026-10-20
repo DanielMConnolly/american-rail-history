@@ -1,0 +1,741 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Camden and Atlantic Railroad, New Jersey: the first railroad to Atlantic City (1854), Camden - Haddonfield - Kirkwood - Atco - Hammonton - Egg Harbor City - Absecon - Atlantic City, with its Atlantic Avenue beach branch to South Atlantic City (1881) and Longport, and the Medford Branch it operated from 1885 (plus the Philadelphia, Marlton and Medford's own-name years 1881-1884). Drawn only for the C&A's own operating years, to 1895; it was consolidated into the West Jersey and Seashore on 4 May 1896. Research report: research/branches/camden_and_atlantic_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Camden_and_Atlantic_Railroad -- Wikipedia, Camden and Atlantic Railroad",
+   "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad -- Wikipedia, West Jersey and Seashore Railroad",
+   "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf -- Fowler, New Jersey railroads, lines 70, 71/71A, 73, 121",
+   "https://chroniclingamerica.loc.gov/ -- Chronicling America newspapers 1881-1895 (dated finds listed in each segment's sources)",
+   "http://www.westjersey.org/ -- South Jersey Rails year maps (West Jersey Chapter NRHS)"
+  ],
+  "operator_split": "1 Jan 1883 PRR stock control is NOT a split (the C&A kept running its own trains). Medford line split Jan 1885: Philadelphia, Marlton and Medford 1881-1884 -> Camden and Atlantic 1885-1895. Every C&A feature ends 1895 at the 4 May 1896 consolidation into the West Jersey and Seashore.",
+  "not_yet_sourced": [
+   "Longport Extension START is [OPEN]: drawn from 1888, the earliest confirmed year; it may have opened 1884-1887.",
+   "Operator 1883-1895 is an inference from C&A officers, accounts and crews persisting under PRR control; no source says outright that the C&A ran its own trains to 1896. Joint PRR management is visible by 1889-1895.",
+   "Every headway before 1895 and every avg_speed_kmh is an estimate.",
+   "Whether the 1854-1876 Atlantic Avenue street trackage to the first Atlantic City station was ever horse-worked (Rule 5): no source either way; steam assumed. That trackage is not drawn.",
+   "Not drawn (no confirmable passenger year): the Chelsea Branch Railroad and the Absecon Inlet end of the Atlantic Avenue line.",
+   "Whether PM&M trains 1881-1884 were worked by C&A crews."
+  ],
+  "source_conflicts": [
+   "Consolidation date: Wikipedia C&A 8 Feb 1896 vs Wikipedia WJ&S agreed 2 May, effective 4 May 1896 - same year, split unaffected.",
+   "Beach branch ownership: 1881-1884 newspapers and Wikipedia say C&A; Fowler line 121 says 'ex South Atlantic City Branch of West Jersey RR'. Newspapers followed.",
+   "Camden terminal: Wikipedia says C&A service moved to Federal Street in 1890; Fowler line 70 marks the former route '1854 to 1901'."
+  ],
+  "omitted": "Atsion Branch (Raritan and Delaware Bay, never C&A-operated), Williamstown RR, Pleasantville - Somers Point, Ocean City, Brigantine: not C&A lines (report blocks 8-12). Chelsea Branch and Absecon Inlet extension: drawable NONE (blocks 6-7).",
+  "freight_only_audit": "No freight-only C&A line found during the C&A's life; nothing removed. Medford Branch freight 1927-1931 is WJ&S-era context only.",
+  "horsecar_audit": "No horse-worked C&A operation found; nothing removed (see not_yet_sourced on the 1854-1876 Atlantic Avenue trackage).",
+  "overlap_trims": "Added with this layer: pennsylvania_railroad_system.geojson prr-prsl-atlantic-city now starts 1896, and nj_transit_rail.geojson njt-1 lost its 1854-1883 segment and starts 1896, so 1854-1895 is drawn once, here."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Camden and Atlantic Railroad",
+    "line": "Camden and Atlantic: Camden \u2013 Atlantic City",
+    "id": "camden-atlantic-main",
+    "color": "#1b7f5a",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "estimated: the Mar 1895 timetable's express running times were not transcribed into the research report; ~45 km/h is a guess for a steam main line with accommodation stops, blended 1854-1895 - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL) via Overpass (maps.mail.ru mirror) with OpenHistoricalMap gap fetches, routed by opstrace.py (old_railway_operator probe: 'PRSL (PRR)' is the tag on ex-C&A track; no way is tagged Camden and Atlantic, West Jersey or Seashore; 'PRR' ways in the area are the Delair/Bridge Line and NEC and were not preferred). Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Traced 58.25 mi against 59.79 mi documented for the 1854 line (Wikipedia, Camden and Atlantic Railroad) and 59.0 mi from the later Camden terminal (Fowler, branchline.uk newjerseyrrs.pdf line 70) - -2.6% vs the 1854 figure. APPROXIMATED LEG: Camden, Cooper's Point terminal (hand-pinned, approximate) to the first surviving OSM way tagged old_railway_operator='PRSL (PRR)' near the Camden Running Track - a 1.24 mi straight line over a lifted stretch with no OSM or OpenHistoricalMap geometry. Everything else is OSM-traced: 54.6 mi on ways tagged old_railway_operator='PRSL (PRR)', 3.0 mi on untagged OSM rail and 0.1 mi of graph connectors. No straight-line leg other than the Camden one. Waypoints all within 0.8 km of the drawn line (Haddonfield 0.1, Kirkwood 0.4, Berlin 0.5, Atco 0.0, Waterford 0.4, Hammonton 0.3, Elwood 0.5, Egg Harbor City 0.4, Pomona 0.8, Absecon 0.3, Atlantic City terminal 0.2 km). LATER-ALIGNMENT FLAGS (Rule 2): (a) Camden - Haddonfield - Lindenwold is drawn on the ways that PATCO's 1969 High Speed Line now occupies (OSM tags them old_railway_operator='PRSL (PRR)', i.e. the ex-C&A corridor), so the line follows PATCO's rebuilt grade, not necessarily the 1854 track; (b) Lindenwold - Absecon follows the present NJ Transit Atlantic City Line track on the same corridor; (c) the Atlantic City end follows the later PRSL/NJT approach across the meadows to the post-1876 South Carolina Avenue terminal area - the 1854-1876 run along Atlantic Avenue to the original Atlantic Avenue station, and the original thoroughfare drawbridge alignment, are not drawn; (d) the Camden end is drawn to Cooper's Point for the whole span although C&A trains used the PRR Federal Street terminal from 1890. This feature does NOT use the 1897 Delair Bridge / Bridge Line that the NJ Transit line uses west of Lindenwold.",
+    "segments": [
+     {
+      "start": 1854,
+      "end": 1894,
+      "headway_min": 240,
+      "note": "Camden and Atlantic Railroad, Camden (Cooper's Point ferry terminal; PRR Federal Street terminal from 1890) - Haddonfield - Kirkwood (White Horse until 1874) - Berlin - Atco - Waterford - Winslow - Hammonton - Elwood - Egg Harbor City - Pomona - Absecon - Atlantic City (Atlantic Avenue station 1854-1876, South Carolina Avenue from 1876). First public train 1 Jul 1854, regular service from 4 Jul 1854; early passengers crossed the unfinished thoroughfare drawbridge by boat (a gap in the rail, not animal traction). The PRR took stock control through the West Jersey RR on 1 Jan 1883, but that did NOT change who ran the trains: the C&A kept its own superintendent (1883), accounts (1887), directors and conductors (1888), so 1883 is not a split. headway_min is an ESTIMATE for every year before 1895 (no timetable found for 1854-1894; about 2 trains each way in the early years, more later).",
+      "sources": [
+       "Segment-level: Wikipedia 'Camden and Atlantic Railroad' (charter 1852, regular service 4 Jul 1854, 59.79 mi, PRR control 1883, Federal Street 1890, 1896 merger); Wikipedia 'West Jersey and Seashore Railroad' (PRR control 1 Jan 1883 not a change of operator; consolidation 4 May 1896); branchline.uk newjerseyrrs.pdf lines 70-71; Chronicling America: Jamesburg Record 10 Mar 1883 (C&A superintendent), Evening Telegram 16 Jun 1887 and 20 Sep 1888, Bridgeton Pioneer 2 Aug 1888 (C&A still its own operator).",
+       "https://en.wikipedia.org/wiki/Camden_and_Atlantic_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf",
+       "https://chroniclingamerica.loc.gov/"
+      ]
+     },
+     {
+      "start": 1895,
+      "end": 1895,
+      "headway_min": 105,
+      "note": "Mar 1895 joint PRR / West Jersey - Camden & Atlantic timetable: about 6-7 express and 2 accommodation trains each way per weekday (accommodation trains 'Via Camden & Atlantic Railroad'), a 9:00 am express with through Pullman to New York. headway_min 105 is that count spread over the service day - an estimate derived from the 1895 count. The C&A was consolidated into the West Jersey and Seashore on 4 May 1896 (Wikipedia WJ&S; Wikipedia C&A says 8 Feb 1896 - conflict recorded, same year), so the C&A era is drawn to 1895; WJ&S, PRR and PRSL years from 1896 belong to other features. 1896 itself is left to the successor feature.",
+      "sources": [
+       "Segment-level: Pleasantville Weekly Press 24 Apr 1895 p4 - joint 'Pennsylvania Railroad. West Jersey - Camden & Atlantic' timetable in effect 30 Mar 1895, trains 'Via Camden & Atlantic Railroad'; consolidation 4 May 1896 per Wikipedia 'West Jersey and Seashore Railroad'.",
+       "https://chroniclingamerica.loc.gov/",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.129,
+      39.9545
+     ],
+     [
+      -75.112849,
+      39.941471
+     ],
+     [
+      -75.110979,
+      39.935428
+     ],
+     [
+      -75.110417,
+      39.934457
+     ],
+     [
+      -75.109241,
+      39.933166
+     ],
+     [
+      -75.107672,
+      39.932041
+     ],
+     [
+      -75.100976,
+      39.928527
+     ],
+     [
+      -75.091835,
+      39.922689
+     ],
+     [
+      -75.088706,
+      39.921282
+     ],
+     [
+      -75.086804,
+      39.920626
+     ],
+     [
+      -75.054494,
+      39.91043
+     ],
+     [
+      -75.051113,
+      39.909236
+     ],
+     [
+      -75.048458,
+      39.908045
+     ],
+     [
+      -75.044957,
+      39.906092
+     ],
+     [
+      -75.042407,
+      39.904313
+     ],
+     [
+      -75.040031,
+      39.902252
+     ],
+     [
+      -75.03872,
+      39.900602
+     ],
+     [
+      -75.037107,
+      39.897705
+     ],
+     [
+      -75.034834,
+      39.89418
+     ],
+     [
+      -75.032143,
+      39.887674
+     ],
+     [
+      -75.031291,
+      39.886202
+     ],
+     [
+      -75.030538,
+      39.88531
+     ],
+     [
+      -75.026591,
+      39.881853
+     ],
+     [
+      -75.0241,
+      39.880043
+     ],
+     [
+      -75.017779,
+      39.876585
+     ],
+     [
+      -75.015288,
+      39.87487
+     ],
+     [
+      -75.013781,
+      39.873525
+     ],
+     [
+      -75.012467,
+      39.872005
+     ],
+     [
+      -75.011888,
+      39.871127
+     ],
+     [
+      -75.010428,
+      39.868504
+     ],
+     [
+      -75.00953,
+      39.865608
+     ],
+     [
+      -75.009356,
+      39.86347
+     ],
+     [
+      -75.009135,
+      39.854834
+     ],
+     [
+      -75.008553,
+      39.852032
+     ],
+     [
+      -75.001379,
+      39.835551
+     ],
+     [
+      -75.000452,
+      39.834053
+     ],
+     [
+      -74.99965,
+      39.833085
+     ],
+     [
+      -74.99839,
+      39.8319
+     ],
+     [
+      -74.996589,
+      39.830586
+     ],
+     [
+      -74.977813,
+      39.820631
+     ],
+     [
+      -74.965022,
+      39.812118
+     ],
+     [
+      -74.963384,
+      39.811281
+     ],
+     [
+      -74.961504,
+      39.810522
+     ],
+     [
+      -74.947092,
+      39.806206
+     ],
+     [
+      -74.944223,
+      39.805012
+     ],
+     [
+      -74.894201,
+      39.775692
+     ],
+     [
+      -74.891737,
+      39.773987
+     ],
+     [
+      -74.890292,
+      39.77267
+     ],
+     [
+      -74.889237,
+      39.77148
+     ],
+     [
+      -74.888046,
+      39.769742
+     ],
+     [
+      -74.877937,
+      39.752812
+     ],
+     [
+      -74.8468,
+      39.711607
+     ],
+     [
+      -74.845124,
+      39.708747
+     ],
+     [
+      -74.844575,
+      39.707181
+     ],
+     [
+      -74.842981,
+      39.70031
+     ],
+     [
+      -74.842781,
+      39.697551
+     ],
+     [
+      -74.843116,
+      39.695107
+     ],
+     [
+      -74.843816,
+      39.692988
+     ],
+     [
+      -74.844859,
+      39.691074
+     ],
+     [
+      -74.853011,
+      39.679206
+     ],
+     [
+      -74.853915,
+      39.677273
+     ],
+     [
+      -74.854315,
+      39.675491
+     ],
+     [
+      -74.854272,
+      39.673195
+     ],
+     [
+      -74.853668,
+      39.671087
+     ],
+     [
+      -74.852798,
+      39.669467
+     ],
+     [
+      -74.851148,
+      39.667545
+     ],
+     [
+      -74.600931,
+      39.493587
+     ],
+     [
+      -74.526715,
+      39.441883
+     ],
+     [
+      -74.50284,
+      39.424912
+     ],
+     [
+      -74.50086,
+      39.423154
+     ],
+     [
+      -74.499415,
+      39.421466
+     ],
+     [
+      -74.498279,
+      39.419623
+     ],
+     [
+      -74.497351,
+      39.417412
+     ],
+     [
+      -74.496843,
+      39.414736
+     ],
+     [
+      -74.497033,
+      39.400047
+     ],
+     [
+      -74.496667,
+      39.396363
+     ],
+     [
+      -74.495831,
+      39.393814
+     ],
+     [
+      -74.494973,
+      39.392113
+     ],
+     [
+      -74.493599,
+      39.390291
+     ],
+     [
+      -74.492184,
+      39.388821
+     ],
+     [
+      -74.490944,
+      39.387772
+     ],
+     [
+      -74.467168,
+      39.371597
+     ],
+     [
+      -74.464056,
+      39.369343
+     ],
+     [
+      -74.462347,
+      39.368393
+     ],
+     [
+      -74.46092,
+      39.36796
+     ],
+     [
+      -74.455296,
+      39.366938
+     ],
+     [
+      -74.448926,
+      39.365232
+     ],
+     [
+      -74.446389,
+      39.36473
+     ],
+     [
+      -74.444596,
+      39.364225
+     ],
+     [
+      -74.443838,
+      39.36544
+     ],
+     [
+      -74.433595,
+      39.363508
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Camden and Atlantic Railroad",
+    "line": "Camden and Atlantic: South Atlantic City Branch",
+    "id": "camden-atlantic-south-atlantic-city",
+    "color": "#1b7f5a",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: a beach branch running mostly in Atlantic Avenue with frequent stops ('motor cars' by 1889); no running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL) via Overpass: highway ways named 'Atlantic Avenue' on Absecon Island, shortest path between hand-pinned endpoints (opstrace Graph.dijkstra). Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "4.58 mi drawn Atlantic City (C&A station area) - South Atlantic City (Margate) against about 5.5 mi documented (Rock Island Argus 31 Aug 1883: stranded passengers 'walk five and a half miles'; that figure may be measured from a different Atlantic City point). Drawn on the OSM centreline of Atlantic Avenue (highway ways, not track): Wikipedia says the Longport - Absecon Inlet branch ran 'mostly on Atlantic Avenue', and no OSM, old_railway_operator or OpenHistoricalMap geometry survives for it south-west of central Atlantic City. So this is a street-centreline PROXY, not a traced track: any private right-of-way stretches are not resolved. Endpoints are hand-pinned and approximate (the South Atlantic City station site in Margate is not located by any source used). No straight-line legs.",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1894,
+      "headway_min": 120,
+      "note": "Camden and Atlantic beach branch from its Atlantic City station along Atlantic Avenue and the beach front through Chelsea and Ventnor to South Atlantic City (today's Margate). First train 16 Sep 1881, an excursion of over a thousand for a lot sale (a genuine passenger special - counts under Rule 1); regular trains confirmed 1883. Steam trains from the first day, 'motor cars' by 1889 - not animal power. SOURCE CONFLICT on ownership: the 1881-1884 newspapers and Wikipedia call it the C&A's branch; Fowler line 121 heads it 'ex South Atlantic City Branch of West Jersey RR' - the newspapers are followed. headway_min is an ESTIMATE (no timetable before 1895).",
+      "sources": [
+       "Segment-level: Daily Gazette (Wilmington) 17 Sep 1881 p2 (first train to South Atlantic City); Rock Island Argus 31 Aug 1883 p2 (regular 'late train', 5.5 mi walk); New-York Tribune 13 Jun 1884 p2; Wikipedia 'Camden and Atlantic Railroad' (branch built 1881-1891); branchline.uk line 121.",
+       "https://chroniclingamerica.loc.gov/",
+       "https://en.wikipedia.org/wiki/Camden_and_Atlantic_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     },
+     {
+      "start": 1895,
+      "end": 1895,
+      "headway_min": 50,
+      "note": "1895: the Longport trains (about 20 each way in the Mar 1895 timetable, from Atlantic City Tennessee Avenue) ran over this branch. headway_min 50 is derived from that count - an estimate. C&A era ends with the 4 May 1896 consolidation into the West Jersey and Seashore (later electrified, run from 1907 by the Atlantic City & Shore); those years belong to other features.",
+      "sources": [
+       "Segment-level: Pleasantville Weekly Press 24 Apr 1895 p4 - joint 'Pennsylvania Railroad. West Jersey - Camden & Atlantic' timetable in effect 30 Mar 1895, trains 'Via Camden & Atlantic Railroad'; consolidation 4 May 1896 per Wikipedia 'West Jersey and Seashore Railroad'.",
+       "https://chroniclingamerica.loc.gov/",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.430207,
+      39.361276
+     ],
+     [
+      -74.451193,
+      39.352789
+     ],
+     [
+      -74.451549,
+      39.352586
+     ],
+     [
+      -74.454049,
+      39.349969
+     ],
+     [
+      -74.502679,
+      39.326403
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Camden and Atlantic Railroad",
+    "line": "Camden and Atlantic: Longport Extension",
+    "id": "camden-atlantic-longport",
+    "color": "#1b7f5a",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: as the South Atlantic City Branch - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL) via Overpass: highway ways named 'Atlantic Avenue' in Margate and Longport, shortest path between hand-pinned endpoints. Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "2.04 mi drawn South Atlantic City (Margate) - Longport against about 1.5-2 mi documented (Fowler line 121: Longport 7 mi from Atlantic City vs ~5.5 to South Atlantic City - approximate). Drawn on the OSM centreline of Atlantic Avenue (highway ways, not track): Wikipedia says the Longport - Absecon Inlet branch ran 'mostly on Atlantic Avenue', and no OSM, old_railway_operator or OpenHistoricalMap geometry survives for it south-west of central Atlantic City. So this is a street-centreline PROXY, not a traced track: any private right-of-way stretches are not resolved. Endpoints are hand-pinned and approximate (the South Atlantic City station site in Margate is not located by any source used). No straight-line legs.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1894,
+      "headway_min": 120,
+      "note": "Extension of the beach branch from South Atlantic City to Longport (steamer pier for Ocean City and Somers Point - the steamers are not rail and are not drawn). START YEAR IS OPEN: 1888 is the earliest CONFIRMED year (Bridgeton Pioneer 5 Jul 1888, 'the cars may be taken' from Longport to Atlantic City), NOT a known opening - the extension was announced in June 1884 and may have opened as early as 1884-85, but no source dates it. Do not move the start earlier without evidence. Track largely destroyed in the 11 Sep 1889 hurricane and restored. headway_min is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Bridgeton Pioneer 5 Jul 1888 p8 (cars taken from Longport to Atlantic City - earliest confirmed year); Evening Capital 29 Jun 1889; New-York Tribune 13 & 21 Jun 1884 (extension announced, not opened); Pleasantville Weekly Press 24 Apr 1895 p4 (Longport timetable).",
+       "https://chroniclingamerica.loc.gov/"
+      ]
+     },
+     {
+      "start": 1895,
+      "end": 1895,
+      "headway_min": 50,
+      "note": "Mar 1895 timetable: about 20 trains each way Atlantic City (Tennessee Avenue) - Longport. headway_min 50 is derived from that count - an estimate. C&A era ends with the 4 May 1896 consolidation into the West Jersey and Seashore.",
+      "sources": [
+       "Segment-level: Pleasantville Weekly Press 24 Apr 1895 p4 - joint 'Pennsylvania Railroad. West Jersey - Camden & Atlantic' timetable in effect 30 Mar 1895, trains 'Via Camden & Atlantic Railroad'; consolidation 4 May 1896 per Wikipedia 'West Jersey and Seashore Railroad'.",
+       "https://chroniclingamerica.loc.gov/",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.502679,
+      39.326403
+     ],
+     [
+      -74.50557,
+      39.324983
+     ],
+     [
+      -74.527818,
+      39.311415
+     ],
+     [
+      -74.530267,
+      39.309871
+     ],
+     [
+      -74.532149,
+      39.30846
+     ],
+     [
+      -74.532247,
+      39.307954
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Camden and Atlantic Railroad",
+    "line": "Camden and Atlantic: Medford Branch",
+    "id": "camden-atlantic-medford",
+    "color": "#1b7f5a",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: an 11.7-mile steam branch with six intermediate stops; no running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL) via Overpass: 54 ways tagged old_railway_operator='PRSL (PRR)', railway=abandoned between Haddonfield and Medford (fetch_gap 'medford'), chained west to east, joined to the main-line trace at Haddonfield; OpenHistoricalMap had nothing on the branch. Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "11.62 mi drawn (Haddonfield station to the east end of the surviving grade at Medford) against 11.7 mi documented (Fowler line 73: Haddonfield 7.5, Medford 19.2; ICC abandonment 11 mi) - -0.7%. Haddonfield station to the branch junction (0.74 mi) is the main-line trace; from the junction the geometry is 6.79 mi of 54 OSM ways tagged old_railway_operator='PRSL (PRR)', railway=abandoned (east of Marlton most of them are NJ Route 70 / Marlton Pike, which now occupies the grade), chained west to east. APPROXIMATED LEGS (straight lines over gaps in the tagged chain): lon -75.0268 to -74.9984, 1.53 mi; lon -74.972 to -74.9256, 2.46 mi (the first between the Haddonfield junction and the Springdale/Cherry Hill area, the second through Cropwell to Marlton), plus 0.14 mi of sub-0.2-mile joins between pieces. The east end stops at the last tagged way, about 0.3 mi short of Medford village centre. opstrace.trace() over the same graph snapped off the branch onto the main line, so the tagged chain was used directly. LATER-ALIGNMENT FLAG: where the grade is under Route 70 the road's curve is drawn, not the track's.",
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1895,
+      "headway_min": 360,
+      "note": "Haddonfield - Orchard - Springdale - Cropwell - Marlton - Elmwood Road - Melrose - Medford, built by the Philadelphia, Marlton and Medford (1881). The Camden and Atlantic operated it from January 1885 (Wikipedia WJ&S; Wikipedia C&A says it leased the PM&M in 1885) until the 4 May 1896 consolidation into the West Jersey and Seashore. The WJ&S afterlife (passenger to 24 Sep 1927, freight to 2 Nov 1931) belongs to another feature. headway_min is an ESTIMATE: carried over from the 2-3 trains each way of the PM&M's 1881 timetable; no C&A-era timetable found.",
+      "sources": [
+       "Segment-level: Wikipedia 'West Jersey and Seashore Railroad' (C&A operated the Medford line from Jan 1885; WJ&S from 4 May 1896); Wikipedia 'Camden and Atlantic Railroad' (1885 lease of the PM&M); branchline.uk line 73.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://en.wikipedia.org/wiki/Camden_and_Atlantic_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.037107,
+      39.897705
+     ],
+     [
+      -75.034834,
+      39.89418
+     ],
+     [
+      -75.032143,
+      39.887674
+     ],
+     [
+      -75.031692,
+      39.888501
+     ],
+     [
+      -75.029348,
+      39.887528
+     ],
+     [
+      -75.027569,
+      39.887178
+     ],
+     [
+      -74.986968,
+      39.892838
+     ],
+     [
+      -74.972023,
+      39.893641
+     ],
+     [
+      -74.921601,
+      39.893776
+     ],
+     [
+      -74.883871,
+      39.8941
+     ],
+     [
+      -74.880014,
+      39.894532
+     ],
+     [
+      -74.852557,
+      39.898993
+     ],
+     [
+      -74.829836,
+      39.902129
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Philadelphia, Marlton and Medford Railroad",
+    "line": "Philadelphia, Marlton and Medford: Haddonfield \u2013 Medford",
+    "id": "philadelphia-marlton-medford-haddonfield-medford",
+    "color": "#7d4e9c",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: as the Camden and Atlantic Medford Branch feature - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL) via Overpass: 54 ways tagged old_railway_operator='PRSL (PRR)', railway=abandoned between Haddonfield and Medford (fetch_gap 'medford'), chained west to east, joined to the main-line trace at Haddonfield; OpenHistoricalMap had nothing on the branch. Douglas-Peucker 8 m + trim_reversals. Same geometry as camden-atlantic-medford.",
+    "geometry_quality": "11.62 mi drawn (Haddonfield station to the east end of the surviving grade at Medford) against 11.7 mi documented (Fowler line 73: Haddonfield 7.5, Medford 19.2; ICC abandonment 11 mi) - -0.7%. Haddonfield station to the branch junction (0.74 mi) is the main-line trace; from the junction the geometry is 6.79 mi of 54 OSM ways tagged old_railway_operator='PRSL (PRR)', railway=abandoned (east of Marlton most of them are NJ Route 70 / Marlton Pike, which now occupies the grade), chained west to east. APPROXIMATED LEGS (straight lines over gaps in the tagged chain): lon -75.0268 to -74.9984, 1.53 mi; lon -74.972 to -74.9256, 2.46 mi (the first between the Haddonfield junction and the Springdale/Cherry Hill area, the second through Cropwell to Marlton), plus 0.14 mi of sub-0.2-mile joins between pieces. The east end stops at the last tagged way, about 0.3 mi short of Medford village centre. opstrace.trace() over the same graph snapped off the branch onto the main line, so the tagged chain was used directly. LATER-ALIGNMENT FLAG: where the grade is under Route 70 the road's curve is drawn, not the track's.",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1884,
+      "headway_min": 360,
+      "note": "Philadelphia, Marlton and Medford Railroad, operating in its own name: Haddonfield - Marlton (6.5 mi) formally opened on a Friday in mid-July 1881, a seven-car train from Cooper's Point over the Camden and Atlantic; Marlton - Medford from 11 Oct 1881 (a Camden paper gives 17 Oct). Own-name timetable from 28 Jul 1881: Philadelphia - Marlton, 2-3 trains each way daily, so headway_min 360 is an estimate from that count. Shared president with the C&A (Charles D. Freeman); whether C&A crews physically ran PM&M trains is not established. Operator changes to the Camden and Atlantic in January 1885 (lease) - drawn as a separate feature, Rule 4.",
+      "sources": [
+       "Segment-level: Semi-Weekly News (Mount Holly) 18 Jul 1881 p3 (formal opening to Marlton) and PM&M own-name timetable adverts 28 Jul - 12 Sep 1881 p3 (2-3 trains each way daily); Wikipedia 'West Jersey and Seashore Railroad' (service to Medford 11 Oct 1881; C&A operation from Jan 1885).",
+       "https://chroniclingamerica.loc.gov/",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.037107,
+      39.897705
+     ],
+     [
+      -75.034834,
+      39.89418
+     ],
+     [
+      -75.032143,
+      39.887674
+     ],
+     [
+      -75.031692,
+      39.888501
+     ],
+     [
+      -75.029348,
+      39.887528
+     ],
+     [
+      -75.027569,
+      39.887178
+     ],
+     [
+      -74.986968,
+      39.892838
+     ],
+     [
+      -74.972023,
+      39.893641
+     ],
+     [
+      -74.921601,
+      39.893776
+     ],
+     [
+      -74.883871,
+      39.8941
+     ],
+     [
+      -74.880014,
+      39.894532
+     ],
+     [
+      -74.852557,
+      39.898993
+     ],
+     [
+      -74.829836,
+      39.902129
+     ]
+    ]
+   }
+  }
+ ]
+}
