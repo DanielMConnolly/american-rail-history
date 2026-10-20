@@ -1,0 +1,1439 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Rail routes into Ocean City, NJ, and the PRR beach lines of Cape May County, built from research/branches/ocean_city_railroad.txt (researched 2026-10-20), drawing only its drawable: spans. Two unrelated companies were called 'Ocean City Railroad' - the 1884 West Jersey construction subsidiary (Sea Isle City - Ocean City, consolidated into the West Jersey 1 Sep 1885) and the c.1896 Reading-side company (Petersburg - Ocean City, merged into the Atlantic City RR 14 Jun 1901). Neither is known to have run trains in its own name, so no feature carries that company. Rule 4 splits: West Jersey / West Jersey and Atlantic -> West Jersey and Seashore at the 4 May 1896 consolidation (identical geometry); Atlantic City RR -> Pennsylvania-Reading Seashore Lines 15 Jul 1933 (the ACRR years stay in atlantic_city_railroad.geojson, acrr-ocean-city-branch); PRSL -> Conrail 1 Apr 1976. The Atlantic City and Shore (Shore Fast Line) is its own company despite PRR stock control - it ran its own cars. The Shore Fast Line is two features because its two sections have different drawn end years (1946 / 1947).",
+  "color_note": "New colours chosen 2026-10-20 and checked against every colour in data/: West Jersey Railroad #BF2687, West Jersey and Seashore Railroad #A5BF26, West Jersey and Atlantic Railroad #723333, Atlantic City and Shore Railroad #26BABF. Pulled programmatically: Pennsylvania-Reading Seashore Lines #2A6F97 from pennsylvania_railroad_system.geojson (note: the same hex is the Reading's, flagged in atlantic_city_railroad.geojson's color_note); Conrail #3E6FD0 from metro_north.geojson. The West Jersey and Atlantic is treated as its own company (a separate PRR-controlled corporation, Newfield - Atlantic City, named as the operator in the research report). If a source shows its trains were worked by the West Jersey Railroad, recolour wja-somers-point-branch to the West Jersey colour.",
+  "not_drawn": [
+   "West Jersey and Seashore / PRSL on the beach lines after 15 Jul 1933 (sjrail '1934'): single ambiguous source; no PRSL passenger year confirmed.",
+   "West Jersey beach line Sea Isle City - Ocean City 1884-1888: opening conflict (Dec 1884 vs 1890); no timetable before 1889 found.",
+   "West Jersey and Atlantic Somers Point Branch 1882-1892 and WJ&S steam 1898-1906: unconfirmed by any timetable.",
+   "Pleasantville & Ocean City / Philadelphia & Atlantic City, Pleasantville - Somers Point 1880-1882: already drawn as pac-pleasantville-somers-point in atlantic_city_railroad.geojson (untouched).",
+   "Sea Isle City Motor Line (steam dummy, Railroad Ave, 1897t): drawable NONE - not established as a separate service.",
+   "South Jersey Railroad, Tuckahoe - Sea Isle City 1893 [ANCHOR]: single-year anchor block, not drawn per instructions; route (via Petersburg or via Sea Isle Junction) also unresolved.",
+   "Ocean City RR / South Jersey RR, Ocean City Junction - Ocean City 1897 [ANCHOR]: operator not established; not drawn.",
+   "Atlantic City RR Ocean City Branch 1901-1933: already drawn as acrr-ocean-city-branch in atlantic_city_railroad.geojson (checked, agrees with the report).",
+   "Atlantic City RR / PRSL Sea Isle City Branch (Ocean City Jct - Sea Isle City): drawable NONE - no confirmed passenger year.",
+   "PRSL Ocean City 10th St - 4th St / Ocean City Gardens: no confirmed PRSL passenger year; track abandoned 11 Sep 1958.",
+   "'Ocean City Electric Railway' (in-town trolley): no evidence it existed.",
+   "Ocean City Branch Oct 1981 - Oct 1982: no passenger trains after 15 Oct 1981 (Rule 1)."
+  ],
+  "not_yet_sourced": [
+   "West Jersey beach line Sea Isle City - Ocean City START [OPEN]: 1889 is the first confirmed year (Fowler 1889t). Wikipedia/ocnjmagazine say Dec 1884, westjersey.org says 1890 - unresolved; Bridgeton Pioneer Dec 1884 / 1885 pages (Chronicling America) are the obvious next check.",
+   "West Jersey Stone Harbor Branch START [OPEN] 1893 (first confirmed, Fowler z) and WJ&S END [OPEN] 1897 (last confirmed, Fowler 1897t); real dates unknown.",
+   "West Jersey and Atlantic Somers Point Branch START [OPEN] 1893 (first confirmed) and WJ&S END [OPEN] 1897 (last confirmed).",
+   "Shore Fast Line Atlantic City - Somers Point END [OPEN] 1947: closure 18 Jan 1948 vs Feb 1948, both second-hand.",
+   "Shore Fast Line Somers Point - Ocean City END: 1946 (storm/fire, second-hand) vs 1948 (Wikipedia) - drawn to 1946.",
+   "PRR beach lines END: 1933 (Wikipedia; fall-1933 bridge rebuild) vs 1934 (sjrail).",
+   "PRR lease of the West Jersey and Seashore from 1 Jul 1930: whether the PRR rather than the WJ&S ran the trains 1930-33 (a possible Rule 4 split for the Sea Isle City and Ocean City features) should be decided once for the whole WJ&S system.",
+   "Sea Isle City station site, the island right of way through Ludlam Island, Strathmere, Avalon and Stone Harbor, and the Great Egg Harbor Bay trestle are not located; drawn as labelled straight legs.",
+   "All headway_min and avg_speed_kmh values are estimates."
+  ],
+  "freight_only_audit": "Checked at creation (2026-10-20): no freight-only years drawn. Ocean City Branch ends 1981 (last passenger train 15 Oct 1981), not 1982 (abandonment notices).",
+  "horsecar_audit": "Checked at creation (2026-10-20): no animal-powered service found on any of these lines; the 1897 'motor trains' were mechanical.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ocean_City_Railroad_(1884)",
+   "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+   "https://en.wikipedia.org/wiki/Atlantic_City_and_Shore_Railroad",
+   "https://en.wikipedia.org/wiki/Atlantic_City_Railroad",
+   "https://en.wikipedia.org/wiki/Pleasantville_and_Ocean_City_Railroad",
+   "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+   "https://ocnjmagazine.com/?p=11254",
+   "https://www.american-rails.com/prsl.html",
+   "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25)",
+   "westjersey.org \"South Jersey Rails\" year map wjt1890.htm",
+   "westjersey.org wjt1893.htm, wjt1897.htm",
+   "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt), PRR New York - Ocean City table",
+   "research/branches/ocean_city_railroad.txt"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Sea Isle City Branch",
+    "id": "wj-sea-isle-branch",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: short seasonal resort branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "4.71 mi drawn against 4.5 mi documented (Fowler line 84, Sea Isle Junction mp 62.1 - Sea Isle City 66.6; Wikipedia 4.8 mi). Real-traced for 2.94 mi on OpenStreetMap ways named 'Ocean City Branch' and tagged old_railway_operator='PRSL (PRR)' (the grade's LATER owner's tag; same grade), from the junction with the Cape May main line near South Seaville, east past Ocean View and along the north side of Sea Isle Boulevard. Approximated with straight lines, 1.77 mi in all: Ocean View gap (marsh, 0.6 km) 0.35 mi; Ocean View - Sea Isle Blvd gap 0.65 mi; join 0.02 mi; Sea Isle Blvd causeway end - Sea Isle City station (unmapped approach) 0.75 mi. The Sea Isle City station end is placed at the north end of the PRR-tagged Pleasure Avenue grade (JFK Blvd); the exact station site is not located.",
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1896,
+      "headway_min": 120,
+      "note": "West Jersey Railroad branch from Sea Isle Junction (Cape May line, near South Seaville) across the marshes to Sea Isle City. Opened 26 June 1882 (Wikipedia 'Ocean City Railroad (1884)'; builder credit conflicts: Coverdale & Colpitts credit the Ocean City RR, the ICC valuation report the West Jersey). 1893 is a confirmed Official Guide year (Fowler 'z'). Ends 1896: on 4 May 1896 the West Jersey was consolidated into the West Jersey and Seashore. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Ocean City Railroad (1884)\" (opened 26 Jun 1882); branchline.uk Fowler line 84 ('z' = 1893 Official Guide); 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Ocean_City_Railroad_(1884)",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 84"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.760122,
+      39.195153
+     ],
+     [
+      -74.759463,
+      39.193933
+     ],
+     [
+      -74.758791,
+      39.193107
+     ],
+     [
+      -74.758271,
+      39.192615
+     ],
+     [
+      -74.757437,
+      39.192108
+     ],
+     [
+      -74.756894,
+      39.19187
+     ],
+     [
+      -74.756742,
+      39.191803
+     ],
+     [
+      -74.756392,
+      39.191649
+     ],
+     [
+      -74.750064,
+      39.189263
+     ],
+     [
+      -74.744141,
+      39.187036
+     ],
+     [
+      -74.740868,
+      39.185819
+     ],
+     [
+      -74.738508,
+      39.185115
+     ],
+     [
+      -74.728318,
+      39.179884
+     ],
+     [
+      -74.726216,
+      39.178298
+     ],
+     [
+      -74.725894,
+      39.178055
+     ],
+     [
+      -74.725189,
+      39.177523
+     ],
+     [
+      -74.724945,
+      39.177339
+     ],
+     [
+      -74.723037,
+      39.175899
+     ],
+     [
+      -74.711457,
+      39.166909
+     ],
+     [
+      -74.708788,
+      39.164764
+     ],
+     [
+      -74.707408,
+      39.163814
+     ],
+     [
+      -74.706759,
+      39.163367
+     ],
+     [
+      -74.706263,
+      39.163073
+     ],
+     [
+      -74.702241,
+      39.160976
+     ],
+     [
+      -74.691225,
+      39.154192
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Sea Isle City Branch",
+    "id": "wjs-sea-isle-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: short seasonal resort branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "4.71 mi drawn against 4.5 mi documented (Fowler line 84, Sea Isle Junction mp 62.1 - Sea Isle City 66.6; Wikipedia 4.8 mi). Real-traced for 2.94 mi on OpenStreetMap ways named 'Ocean City Branch' and tagged old_railway_operator='PRSL (PRR)' (the grade's LATER owner's tag; same grade), from the junction with the Cape May main line near South Seaville, east past Ocean View and along the north side of Sea Isle Boulevard. Approximated with straight lines, 1.77 mi in all: Ocean View gap (marsh, 0.6 km) 0.35 mi; Ocean View - Sea Isle Blvd gap 0.65 mi; join 0.02 mi; Sea Isle Blvd causeway end - Sea Isle City station (unmapped approach) 0.75 mi. The Sea Isle City station end is placed at the north end of the PRR-tagged Pleasure Avenue grade (JFK Blvd); the exact station site is not located.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1933,
+      "headway_min": 120,
+      "note": "West Jersey and Seashore (PRR system) from the 4 May 1896 consolidation. Confirmed by an 1897 company timetable (Fowler '1897t'). Ends 1933: Wikipedia says the Sea Isle City - Ocean City line was abandoned after the Pennsylvania-Reading Seashore Lines formed on 15 July 1933; sjrail gives 1934 for the end of 'service to Sea Isle City and Ocean City via Sea Isle Junction (Petersburg)'. No PRSL passenger year after 15 July 1933 is confirmed, so none is drawn. The PRR leased the WJ&S from 1 July 1930; whether the PRR rather than the WJ&S ran the trains 1930-33 (which would need a Rule 4 split) is unresolved. By Feb 1952 Sea Isle City was reached only by bus. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"); branchline.uk Fowler line 84 (1897 timetable); Wikipedia \"Ocean City Railroad (1884)\" (abandoned after the 1933 PRSL creation); sjrail.com timeline ('1934' - conflict recorded). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Ocean_City_Railroad_(1884)",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 84",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.760122,
+      39.195153
+     ],
+     [
+      -74.759463,
+      39.193933
+     ],
+     [
+      -74.758791,
+      39.193107
+     ],
+     [
+      -74.758271,
+      39.192615
+     ],
+     [
+      -74.757437,
+      39.192108
+     ],
+     [
+      -74.756894,
+      39.19187
+     ],
+     [
+      -74.756742,
+      39.191803
+     ],
+     [
+      -74.756392,
+      39.191649
+     ],
+     [
+      -74.750064,
+      39.189263
+     ],
+     [
+      -74.744141,
+      39.187036
+     ],
+     [
+      -74.740868,
+      39.185819
+     ],
+     [
+      -74.738508,
+      39.185115
+     ],
+     [
+      -74.728318,
+      39.179884
+     ],
+     [
+      -74.726216,
+      39.178298
+     ],
+     [
+      -74.725894,
+      39.178055
+     ],
+     [
+      -74.725189,
+      39.177523
+     ],
+     [
+      -74.724945,
+      39.177339
+     ],
+     [
+      -74.723037,
+      39.175899
+     ],
+     [
+      -74.711457,
+      39.166909
+     ],
+     [
+      -74.708788,
+      39.164764
+     ],
+     [
+      -74.707408,
+      39.163814
+     ],
+     [
+      -74.706759,
+      39.163367
+     ],
+     [
+      -74.706263,
+      39.163073
+     ],
+     [
+      -74.702241,
+      39.160976
+     ],
+     [
+      -74.691225,
+      39.154192
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Ocean City Branch (beach line)",
+    "id": "wj-ocean-city-beach-line",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: island line with street-level running through Ocean City.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "11.46 mi drawn against 11.6 mi documented (Fowler line 85, Sea Isle City mp 66.6 - Ocean City Pier, Second Street 78.2; Wikipedia 11.25 mi). Real-traced for 6.4 mi on PRR-tagged OpenStreetMap ways (old_railway_operator='PRSL (PRR)'): a short piece on Bay Avenue, Strathmere; 'Ocean City Branch' and '59th Street' at the south end of Ocean City; then West Avenue through Ocean City to 2nd Street - West Avenue was built on the right of way, so through Ocean City the line is drawn on the street that replaced it. Approximated with straight lines, 5.06 mi in all: Sea Isle City - Whale Beach 2.84 mi; Whale Beach - Strathmere (Bay Ave) 0.87 mi; Strathmere - Corson's Inlet - Ocean City south end 1.2 mi; Ocean City south end join (0.24 km) 0.15 mi. On Ludlam Island and across Corson's Inlet the right of way became roadway (Landis Avenue / Ocean Drive area) and is not mapped as railway; the straight legs run up the island centre-line and their exact street is not established.",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1896,
+      "headway_min": 120,
+      "note": "West Jersey Railroad beach line from Sea Isle City up Ludlam Island and Strathmere, over Corson's Inlet and through Ocean City at street level to a pier at 2nd Street (Whale Beach, Corson's Inlet, Middle Thoroughfare, Peck's Beach / 55th St, 34th St, 14th St, 8th St). Built by the Ocean City Railroad (1884), a West Jersey construction subsidiary consolidated into the West Jersey 1 Sep 1885; no evidence it ran trains in its own name, so it is not a separate company here. OPENING CONFLICT: Wikipedia says the 11.25-mile extension opened December 1884 and ocnjmagazine dates the West Jersey's Corson's Inlet bridge to 1884; westjersey.org's year maps put the line under 1890; the earliest timetable found is 1889 (Fowler: 'Ocean City 1889t', 'Central Avenue 1889t', 'Middle Thoroughfare 1889t'). 1889 is drawn as the FIRST CONFIRMED year, NOT the opening - service very probably began 1884/1885, but no timetable or newspaper before 1889 has been found. Do not move the start earlier without such evidence. Ends 1896 at the 4 May 1896 West Jersey and Seashore consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: branchline.uk Fowler line 85 (1889 and 1891 company timetables - first confirmed year); Wikipedia \"Ocean City Railroad (1884)\" (Dec 1884 opening; 1 Sep 1885 consolidation); ocnjmagazine.com/?p=11254 (1884 Corson's Inlet bridge); westjersey.org wjt1890.htm (1890 - conflict recorded); 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"). Headway not sourced.",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 85",
+       "https://en.wikipedia.org/wiki/Ocean_City_Railroad_(1884)",
+       "https://ocnjmagazine.com/?p=11254",
+       "westjersey.org \"South Jersey Rails\" year map wjt1890.htm",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.691225,
+      39.154192
+     ],
+     [
+      -74.661826,
+      39.188448
+     ],
+     [
+      -74.654771,
+      39.199764
+     ],
+     [
+      -74.654731,
+      39.200006
+     ],
+     [
+      -74.654702,
+      39.200299
+     ],
+     [
+      -74.654701,
+      39.200313
+     ],
+     [
+      -74.654692,
+      39.200461
+     ],
+     [
+      -74.654685,
+      39.200573
+     ],
+     [
+      -74.654697,
+      39.200775
+     ],
+     [
+      -74.654785,
+      39.201077
+     ],
+     [
+      -74.654818,
+      39.201172
+     ],
+     [
+      -74.654909,
+      39.201356
+     ],
+     [
+      -74.646079,
+      39.21737
+     ],
+     [
+      -74.645654,
+      39.217647
+     ],
+     [
+      -74.64016,
+      39.220938
+     ],
+     [
+      -74.640086,
+      39.220979
+     ],
+     [
+      -74.638154,
+      39.222593
+     ],
+     [
+      -74.630074,
+      39.232246
+     ],
+     [
+      -74.613756,
+      39.249917
+     ],
+     [
+      -74.60108,
+      39.261734
+     ],
+     [
+      -74.57763,
+      39.278894
+     ],
+     [
+      -74.567264,
+      39.287084
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Ocean City Branch (beach line)",
+    "id": "wjs-ocean-city-beach-line",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: island line with street-level running through Ocean City.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "11.46 mi drawn against 11.6 mi documented (Fowler line 85, Sea Isle City mp 66.6 - Ocean City Pier, Second Street 78.2; Wikipedia 11.25 mi). Real-traced for 6.4 mi on PRR-tagged OpenStreetMap ways (old_railway_operator='PRSL (PRR)'): a short piece on Bay Avenue, Strathmere; 'Ocean City Branch' and '59th Street' at the south end of Ocean City; then West Avenue through Ocean City to 2nd Street - West Avenue was built on the right of way, so through Ocean City the line is drawn on the street that replaced it. Approximated with straight lines, 5.06 mi in all: Sea Isle City - Whale Beach 2.84 mi; Whale Beach - Strathmere (Bay Ave) 0.87 mi; Strathmere - Corson's Inlet - Ocean City south end 1.2 mi; Ocean City south end join (0.24 km) 0.15 mi. On Ludlam Island and across Corson's Inlet the right of way became roadway (Landis Avenue / Ocean Drive area) and is not mapped as railway; the straight legs run up the island centre-line and their exact street is not established.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1933,
+      "headway_min": 120,
+      "note": "West Jersey and Seashore from 4 May 1896. Confirmed by 1897t (Fowler line 84/85) and 1907 timetable stop names (Fowler 'Eleventh Street 1907t', 'Fourth Street 1907t'). Ends 1933: Wikipedia - after the 15 July 1933 creation of the Pennsylvania-Reading Seashore Lines 'the line between Sea Isle City and Ocean City was abandoned in favor of the former [Reading] route'; ocnjmagazine says the Corson's Inlet and Middle Thoroughfare bridges were rebuilt in fall 1933 (apparently for the road). sjrail gives 1934 - conflict recorded; no PRSL passenger year is drawn. PRR 1 July 1930 lease of the WJ&S: operator 1930-33 unresolved. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"); branchline.uk Fowler line 85 (1907 timetable); Wikipedia \"Ocean City Railroad (1884)\" (abandoned after the 1933 PRSL creation); ocnjmagazine.com/?p=11254 (fall 1933 bridge rebuild); sjrail.com timeline ('1934' - conflict recorded). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 85",
+       "https://en.wikipedia.org/wiki/Ocean_City_Railroad_(1884)",
+       "https://ocnjmagazine.com/?p=11254",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.691225,
+      39.154192
+     ],
+     [
+      -74.661826,
+      39.188448
+     ],
+     [
+      -74.654771,
+      39.199764
+     ],
+     [
+      -74.654731,
+      39.200006
+     ],
+     [
+      -74.654702,
+      39.200299
+     ],
+     [
+      -74.654701,
+      39.200313
+     ],
+     [
+      -74.654692,
+      39.200461
+     ],
+     [
+      -74.654685,
+      39.200573
+     ],
+     [
+      -74.654697,
+      39.200775
+     ],
+     [
+      -74.654785,
+      39.201077
+     ],
+     [
+      -74.654818,
+      39.201172
+     ],
+     [
+      -74.654909,
+      39.201356
+     ],
+     [
+      -74.646079,
+      39.21737
+     ],
+     [
+      -74.645654,
+      39.217647
+     ],
+     [
+      -74.64016,
+      39.220938
+     ],
+     [
+      -74.640086,
+      39.220979
+     ],
+     [
+      -74.638154,
+      39.222593
+     ],
+     [
+      -74.630074,
+      39.232246
+     ],
+     [
+      -74.613756,
+      39.249917
+     ],
+     [
+      -74.60108,
+      39.261734
+     ],
+     [
+      -74.57763,
+      39.278894
+     ],
+     [
+      -74.567264,
+      39.287084
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Stone Harbor Branch",
+    "id": "wj-stone-harbor-branch",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: island line with street-crossing stops.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "7.91 mi drawn against 8.4 mi documented (Fowler line 84, Sea Isle City mp 66.6 - Stone Harbor 96th St 75.0). Real-traced for 1.9 mi on PRR-tagged OpenStreetMap ways (Pleasure Avenue and 'Stone Harbor Branch', old_railway_operator='PRSL (PRR)') down the bay side of Sea Isle City. Approximated with straight lines, 6.01 mi in all: Sea Isle south end - Townsends Inlet (north shore) 0.67 mi; Townsends Inlet crossing 0.28 mi; Avalon (north) 1.27 mi; Avalon - Peermont 0.82 mi; Peermont - Avalon south 0.83 mi; Avalon south - Stone Harbor line 0.82 mi; to Stone Harbor 87th St 0.85 mi; Stone Harbor 87th St - 96th St 0.47 mi. South of Sea Isle City nothing of the grade is mapped; the straight legs follow the island centre-line between the present Ocean Drive and Dune Drive through Avalon and end on 2nd Avenue at 87th and 96th Streets, Stone Harbor. The actual street or right of way the line used there is not established.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1896,
+      "headway_min": 180,
+      "note": "West Jersey Railroad extension south from Sea Isle City over Townsend's Inlet to Avalon, Peermont and Stone Harbor (87th St / 96th St). westjersey.org's 1890 map shows it ('Ocean City RR/Stone Harbor RR'); 1893 is the FIRST CONFIRMED passenger year (Fowler 'z' = 1893 Official Guide at Townsend Inlet, Leaming, Avalon, Peermont, Stone Harbor) - a withheld unknown, not an opening date. Whether a separate 'Stone Harbor RR' ran its own trains is not established; treated as West Jersey-operated. Not the Reading's Stone Harbor Branch from Cape May Court House. Ends 1896 at the West Jersey and Seashore consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: branchline.uk Fowler line 84 ('z' = 1893 Official Guide, first confirmed year); westjersey.org wjt1890.htm (line shown 1890); 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"). Headway not sourced.",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 84",
+       "westjersey.org \"South Jersey Rails\" year map wjt1890.htm",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.691225,
+      39.154192
+     ],
+     [
+      -74.698024,
+      39.145927
+     ],
+     [
+      -74.704554,
+      39.136822
+     ],
+     [
+      -74.708015,
+      39.130017
+     ],
+     [
+      -74.71496,
+      39.12197
+     ],
+     [
+      -74.71625,
+      39.11798
+     ],
+     [
+      -74.72098,
+      39.0999
+     ],
+     [
+      -74.7293,
+      39.09
+     ],
+     [
+      -74.7378,
+      39.08
+     ],
+     [
+      -74.7461,
+      39.07
+     ],
+     [
+      -74.7538,
+      39.0593
+     ],
+     [
+      -74.7586,
+      39.0536
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Stone Harbor Branch",
+    "id": "wjs-stone-harbor-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: island line with street-crossing stops.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "7.91 mi drawn against 8.4 mi documented (Fowler line 84, Sea Isle City mp 66.6 - Stone Harbor 96th St 75.0). Real-traced for 1.9 mi on PRR-tagged OpenStreetMap ways (Pleasure Avenue and 'Stone Harbor Branch', old_railway_operator='PRSL (PRR)') down the bay side of Sea Isle City. Approximated with straight lines, 6.01 mi in all: Sea Isle south end - Townsends Inlet (north shore) 0.67 mi; Townsends Inlet crossing 0.28 mi; Avalon (north) 1.27 mi; Avalon - Peermont 0.82 mi; Peermont - Avalon south 0.83 mi; Avalon south - Stone Harbor line 0.82 mi; to Stone Harbor 87th St 0.85 mi; Stone Harbor 87th St - 96th St 0.47 mi. South of Sea Isle City nothing of the grade is mapped; the straight legs follow the island centre-line between the present Ocean Drive and Dune Drive through Avalon and end on 2nd Avenue at 87th and 96th Streets, Stone Harbor. The actual street or right of way the line used there is not established.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1897,
+      "headway_min": 180,
+      "note": "West Jersey and Seashore from 4 May 1896. Passenger service confirmed to 1897 by a company timetable (Fowler '1897t': 'on request motor trains will stop at all street crossings' - mechanical motor cars, not animal power). 1897 is the LAST CONFIRMED year, NOT a known end - no source dates when rail passenger service to Stone Harbor stopped. Do not extend without evidence. (The Feb 1952 Guide's bus from Cape May Court House to Stone Harbor proves nothing about when the rail line closed.) Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"); branchline.uk Fowler line 84 (1897 company timetable). End NOT SOURCED - 1897 is the last confirmed year. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 84"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.691225,
+      39.154192
+     ],
+     [
+      -74.698024,
+      39.145927
+     ],
+     [
+      -74.704554,
+      39.136822
+     ],
+     [
+      -74.708015,
+      39.130017
+     ],
+     [
+      -74.71496,
+      39.12197
+     ],
+     [
+      -74.71625,
+      39.11798
+     ],
+     [
+      -74.72098,
+      39.0999
+     ],
+     [
+      -74.7293,
+      39.09
+     ],
+     [
+      -74.7378,
+      39.08
+     ],
+     [
+      -74.7461,
+      39.07
+     ],
+     [
+      -74.7538,
+      39.0593
+     ],
+     [
+      -74.7586,
+      39.0536
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Atlantic Railroad",
+    "line": "West Jersey and Atlantic: Somers Point Branch",
+    "id": "wja-somers-point-branch",
+    "color": "#723333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: short steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "6.63 mi drawn against 7.0 mi documented (Fowler line 81, Pleasantville 0.0 - Somers Point 7.0). No straight-line leg. Real-traced from OpenStreetMap along the Pleasantville to Somers Point Bike Path / George K. Francis Bikeway, tagged old_railway_operator='PRSL (PRR)' (the grade's later owner; same grade), from its junction with the Newfield Branch grade at Pleasantville to the path's south end at Somers Point. Drawn on the standard-gauge grade as rebuilt from June 1882 (the era drawn here). The existing feature pac-pleasantville-somers-point (atlantic_city_railroad.geojson, 1880-1882) uses the same bike path but stops short at both ends (5.0 mi, ending about 1.3 mi north of the path's Somers Point end), so it was not reused; that feature was not changed. The 1907-1948 electrified Shore Fast Line used this same grade (features acs-*).",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1896,
+      "headway_min": 180,
+      "note": "West Jersey and Atlantic Railroad (PRR system) branch, Pleasantville - Smith's Landing - Northfield - Linwood - Sea View - Maltby - Somers Point, with a steamboat on to Ocean City (the boat is not drawn). The WJ&A leased the Pleasantville & Ocean City RR on 1 June 1882 and regauged it from 4 June 1882 (Wikipedia, via atlantic_city_railroad.txt); 1882-1892 is probable but rests on corporate continuity, not a timetable. 1893 is the FIRST CONFIRMED year (Fowler 'z' = 1893 Official Guide at every station), not the start of WJ&A service; do not move it earlier without a timetable. A March 1895 joint timetable runs Somers Point trains out of Atlantic City via Pleasantville. Ends 1896 at the 4 May 1896 consolidation into the West Jersey and Seashore. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: branchline.uk Fowler line 81 ('z' = 1893 Official Guide, first confirmed year); Wikipedia \"Pleasantville and Ocean City Railroad\" (1 Jun 1882 lease) as read in research/branches/atlantic_city_railroad.txt; 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"). Headway not sourced.",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 81",
+       "https://en.wikipedia.org/wiki/Pleasantville_and_Ocean_City_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.526429,
+      39.391423
+     ],
+     [
+      -74.52744,
+      39.390942
+     ],
+     [
+      -74.528443,
+      39.390068
+     ],
+     [
+      -74.564203,
+      39.357788
+     ],
+     [
+      -74.566932,
+      39.354603
+     ],
+     [
+      -74.574852,
+      39.344607
+     ],
+     [
+      -74.575871,
+      39.343507
+     ],
+     [
+      -74.587313,
+      39.329284
+     ],
+     [
+      -74.593974,
+      39.318639
+     ],
+     [
+      -74.59411,
+      39.31854
+     ],
+     [
+      -74.59525,
+      39.31668
+     ],
+     [
+      -74.59604,
+      39.31542
+     ],
+     [
+      -74.59716,
+      39.31365
+     ],
+     [
+      -74.59737,
+      39.3133
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Somers Point Branch",
+    "id": "wjs-somers-point-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: short steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "6.63 mi drawn against 7.0 mi documented (Fowler line 81, Pleasantville 0.0 - Somers Point 7.0). No straight-line leg. Real-traced from OpenStreetMap along the Pleasantville to Somers Point Bike Path / George K. Francis Bikeway, tagged old_railway_operator='PRSL (PRR)' (the grade's later owner; same grade), from its junction with the Newfield Branch grade at Pleasantville to the path's south end at Somers Point. Drawn on the standard-gauge grade as rebuilt from June 1882 (the era drawn here). The existing feature pac-pleasantville-somers-point (atlantic_city_railroad.geojson, 1880-1882) uses the same bike path but stops short at both ends (5.0 mi, ending about 1.3 mi north of the path's Somers Point end), so it was not reused; that feature was not changed. The 1907-1948 electrified Shore Fast Line used this same grade (features acs-*).",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1897,
+      "headway_min": 180,
+      "note": "West Jersey and Seashore steam service from 4 May 1896, confirmed by an 1897 company timetable (Fowler 'z: 1897t'). 1897 is the LAST CONFIRMED year, NOT a known end: steam passenger trains probably ran until the Atlantic City and Shore electrified the line (in service to Ocean City by 1 July 1907), but 1898-1906 is unconfirmed and not drawn. Do not extend without evidence. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: 4 May 1896 consolidation into the West Jersey and Seashore (Wikipedia \"West Jersey and Seashore Railroad\"); branchline.uk Fowler line 81 (1897 company timetable). End NOT SOURCED - 1897 is the last confirmed year. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 81"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.526429,
+      39.391423
+     ],
+     [
+      -74.52744,
+      39.390942
+     ],
+     [
+      -74.528443,
+      39.390068
+     ],
+     [
+      -74.564203,
+      39.357788
+     ],
+     [
+      -74.566932,
+      39.354603
+     ],
+     [
+      -74.574852,
+      39.344607
+     ],
+     [
+      -74.575871,
+      39.343507
+     ],
+     [
+      -74.587313,
+      39.329284
+     ],
+     [
+      -74.593974,
+      39.318639
+     ],
+     [
+      -74.59411,
+      39.31854
+     ],
+     [
+      -74.59525,
+      39.31668
+     ],
+     [
+      -74.59604,
+      39.31542
+     ],
+     [
+      -74.59716,
+      39.31365
+     ],
+     [
+      -74.59737,
+      39.3133
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic City and Shore Railroad",
+    "line": "Atlantic City and Shore: Shore Fast Line (Atlantic City – Somers Point)",
+    "id": "acs-atlantic-city-somers-point",
+    "color": "#26BABF",
+    "mode": "interurban",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: electric interurban partly over steam-road track.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "12.72 mi drawn (Atlantic City - Pleasantville 6.09 mi + Pleasantville - Somers Point 6.63 mi). Documented: Wikipedia 'about 11 miles' for the ACS's own line; a second-hand summary gives 'roughly 18 mile' for the whole Atlantic City - Ocean City run (this feature plus acs-somers-point-ocean-city draws 15.74 mi). Real-traced: in Atlantic City on the PRR-tagged Atlantic Avenue (street trackage) from Virginia Avenue and on the PRR-tagged Bacharach Boulevard approach (0.56 mi); about 1.2 mi on the present NJ Transit Atlantic City Line track (untagged) between the Atlantic City terminal area and the Newfield Branch grade - a LATER alignment may be drawn there, the 1907 WJ&S approach is not separately mapped; then the PRR-tagged Newfield Branch grade (the West Jersey and Seashore's electrified Newfield - Atlantic City line, over which the ACS cars ran) to Pleasantville; then the Pleasantville to Somers Point Bike Path (old_railway_operator='PRSL (PRR)'). Approximated with straight lines: Atlantic Ave (Ohio Ave) - Bacharach Blvd gap 0.46 mi; connector, present Atlantic City Line - Newfield Branch grade 0.11 mi; connector, Newfield Branch fragments 0.04 mi; connector at Pleasantville junction 0.16 mi (total 0.77 mi). The Virginia Avenue terminal is placed where Virginia Avenue crosses the tagged Atlantic Avenue track; whether cars ran on to the Boardwalk is not established.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1947,
+      "headway_min": 30,
+      "note": "Atlantic City and Shore Railroad (the Shore Fast Line), electric interurban: Atlantic City (Virginia Ave) over the West Jersey and Seashore's electrified line to Pleasantville, then its own line over the former Somers Point Branch via Northfield and Linwood to Somers Point (Country Club). PRR/WJ&S stock control is NOT a Rule 4 split - the ACS ran its own cars. Starts 1907, the first dated year (ocnjmagazine: first car into Ocean City 1 July 1907; Wikipedia 'ran from 1907'); a 1906 start on this section is unverified and not drawn. From 1931/32 cars ran from the WJ&S Tennessee Ave station during repairs to a fire-damaged trestle (Fowler line 120). END: the line was replaced by buses in January/February 1948 (one summary gives 18 January 1948, another February 1948; Wikipedia 'until 1948'). Drawn to 1947, the LAST CONFIRMED full year - service ran into January 1948, but the closing date is second-hand. Do not extend to 1948 without a primary source. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: ocnjmagazine.com/?p=11254 (1 Jul 1907); Wikipedia \"Atlantic City and Shore Railroad\" (1907-1948); branchline.uk Fowler line 120 (stops, 1931/32 Tennessee Ave). 1947/1948 end second-hand (search-engine summaries only). Headway not sourced.",
+       "https://ocnjmagazine.com/?p=11254",
+       "https://en.wikipedia.org/wiki/Atlantic_City_and_Shore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 120"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.42307,
+      39.36414
+     ],
+     [
+      -74.42331,
+      39.36404
+     ],
+     [
+      -74.42366,
+      39.36389
+     ],
+     [
+      -74.42383,
+      39.36383
+     ],
+     [
+      -74.42395,
+      39.36378
+     ],
+     [
+      -74.42432,
+      39.36364
+     ],
+     [
+      -74.42466,
+      39.36349
+     ],
+     [
+      -74.42508,
+      39.36332
+     ],
+     [
+      -74.433595,
+      39.363508
+     ],
+     [
+      -74.443838,
+      39.36544
+     ],
+     [
+      -74.444596,
+      39.364225
+     ],
+     [
+      -74.446389,
+      39.36473
+     ],
+     [
+      -74.448926,
+      39.365232
+     ],
+     [
+      -74.455296,
+      39.366938
+     ],
+     [
+      -74.461664,
+      39.368143
+     ],
+     [
+      -74.463732,
+      39.369128
+     ],
+     [
+      -74.465856,
+      39.369401
+     ],
+     [
+      -74.469788,
+      39.370998
+     ],
+     [
+      -74.479315,
+      39.374983
+     ],
+     [
+      -74.484811,
+      39.377282
+     ],
+     [
+      -74.484189,
+      39.37707
+     ],
+     [
+      -74.49138,
+      39.379873
+     ],
+     [
+      -74.504118,
+      39.385067
+     ],
+     [
+      -74.523383,
+      39.391065
+     ],
+     [
+      -74.526429,
+      39.391423
+     ],
+     [
+      -74.52744,
+      39.390942
+     ],
+     [
+      -74.528443,
+      39.390068
+     ],
+     [
+      -74.564203,
+      39.357788
+     ],
+     [
+      -74.566932,
+      39.354603
+     ],
+     [
+      -74.574852,
+      39.344607
+     ],
+     [
+      -74.575871,
+      39.343507
+     ],
+     [
+      -74.587313,
+      39.329284
+     ],
+     [
+      -74.593974,
+      39.318639
+     ],
+     [
+      -74.59411,
+      39.31854
+     ],
+     [
+      -74.59525,
+      39.31668
+     ],
+     [
+      -74.59604,
+      39.31542
+     ],
+     [
+      -74.59716,
+      39.31365
+     ],
+     [
+      -74.59737,
+      39.3133
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic City and Shore Railroad",
+    "line": "Atlantic City and Shore: Shore Fast Line (Somers Point – Ocean City)",
+    "id": "acs-somers-point-ocean-city",
+    "color": "#26BABF",
+    "mode": "interurban",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: bay trestle and street running in Ocean City.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "3.02 mi drawn; no separate documented figure for this section. Approximated with a straight line, 2.3 mi: Great Egg Harbor Bay trestle, Somers Point - Ocean City 8th St 2.3 mi - the trestle is not mapped in OpenStreetMap or OpenHistoricalMap; it starts at the south end of the PRR-tagged Somers Point bike path and lands at the bay end of 8th Street, Ocean City (ocnjmagazine: the first car 'came over a trestle bridge from Somers Point entering Ocean City at 8th Street'). Then 0.72 mi along present 8th Street (East/West 8th Street in OSM) past West Avenue (the PRR station) to the Boardwalk - a street-following leg, drawn on the street the cars used per Fowler line 120 ('Ocean City, Boardwalk at 8th Street'), but the track position in the street is not mapped.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1946,
+      "headway_min": 30,
+      "note": "Atlantic City and Shore Railroad (Shore Fast Line) Ocean City leg: Somers Point over the Great Egg Harbor Bay trestle to Ocean City at 8th Street, Bay Street, the PRR station and the Boardwalk at 8th Street. Opened 1 July 1907 (ocnjmagazine). END CONFLICT: a railfan source (search summary only) says the Ocean City leg was 'cut in 1946 because of storm damage to the Somers Point causeway' and another that the bay bridge 'burned in 1946'; Wikipedia says the whole line ran 'until 1948, when a hurricane damaged the viaduct'. Drawn to 1946, the earlier end of the conflict; 1947-1948 is not drawn. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: ocnjmagazine.com/?p=11254 (1 Jul 1907, 8th Street); Wikipedia \"Atlantic City and Shore Railroad\" (1948 - conflict recorded); branchline.uk Fowler line 120 (stops). 1946 end second-hand (search-engine summaries only). Headway not sourced.",
+       "https://ocnjmagazine.com/?p=11254",
+       "https://en.wikipedia.org/wiki/Atlantic_City_and_Shore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 120"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.59737,
+      39.3133
+     ],
+     [
+      -74.579136,
+      39.283199
+     ],
+     [
+      -74.578875,
+      39.282999
+     ],
+     [
+      -74.578034,
+      39.282353
+     ],
+     [
+      -74.577966,
+      39.282302
+     ],
+     [
+      -74.577895,
+      39.282248
+     ],
+     [
+      -74.577527,
+      39.28197
+     ],
+     [
+      -74.577475,
+      39.281932
+     ],
+     [
+      -74.577129,
+      39.281664
+     ],
+     [
+      -74.577024,
+      39.281587
+     ],
+     [
+      -74.576777,
+      39.281396
+     ],
+     [
+      -74.576714,
+      39.281349
+     ],
+     [
+      -74.576391,
+      39.281098
+     ],
+     [
+      -74.575996,
+      39.280803
+     ],
+     [
+      -74.575605,
+      39.2805
+     ],
+     [
+      -74.57522,
+      39.280223
+     ],
+     [
+      -74.574863,
+      39.279958
+     ],
+     [
+      -74.5745,
+      39.27969
+     ],
+     [
+      -74.574147,
+      39.279415
+     ],
+     [
+      -74.573787,
+      39.27914
+     ],
+     [
+      -74.573369,
+      39.278817
+     ],
+     [
+      -74.572979,
+      39.278521
+     ],
+     [
+      -74.572535,
+      39.278182
+     ],
+     [
+      -74.571663,
+      39.27751
+     ],
+     [
+      -74.570986,
+      39.277001
+     ],
+     [
+      -74.570876,
+      39.276919
+     ],
+     [
+      -74.569493,
+      39.27588
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania-Reading Seashore Lines",
+    "line": "Pennsylvania-Reading Seashore Lines: Ocean City Branch",
+    "id": "prsl-ocean-city-branch",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate, unsourced: seashore branch with street-level running in Ocean City.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "12.58 mi drawn against 13.1 mi documented (Fowler line 94, Tuckahoe 0.0 - Ocean City 10th St 13.1). No straight-line leg. Same geometry as acrr-ocean-city-branch (atlantic_city_railroad.geojson; real-traced on Reading-tagged OpenStreetMap track, old_railway_operator='PRSL (Reading)', Tuckahoe - Petersburg - Palermo - Crook Horn - Haven Avenue, Ocean City), copied and cut at 10th Street, the PRSL terminal in the Feb 1952 Guide. North of 10th Street (to 4th St / Ocean City Gardens) is not drawn for these companies: no PRSL passenger year there is confirmed and the track was abandoned 11 Sep 1958.",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1976,
+      "headway_min": 240,
+      "note": "Pennsylvania-Reading Seashore Lines, formed 15 July 1933 when the Atlantic City Railroad (Reading) leased the West Jersey and Seashore. The ex-Reading line Tuckahoe - Petersburg - Palermo - Crook Horn - Ocean City became the only rail route to Ocean City once the ex-PRR beach line closed (1933/34). Through PRR New York - Ocean City trains ran over it: the Feb 1952 Official Guide shows arrivals at 'Ocean City (10th St.)' with legible times, confirming service in 1951-52. The ACRR -> PRSL change is a real Rule 4 split even though the ACRR corporation became the PRSL. Ends 1976: Conrail took over PRSL operations on 1 April 1976. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Atlantic City Railroad\" (15 Jul 1933 PRSL); Official Guide Feb 1952 PRR New York - Ocean City table (~line 64231, 'arr. Ocean City (10th St.)' with legible times); sjrail.com timeline (context). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Atlantic_City_Railroad",
+       "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt), PRR New York - Ocean City table",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 94"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.756799,
+      39.286171
+     ],
+     [
+      -74.743589,
+      39.267226
+     ],
+     [
+      -74.74162,
+      39.264962
+     ],
+     [
+      -74.739092,
+      39.262957
+     ],
+     [
+      -74.720816,
+      39.251587
+     ],
+     [
+      -74.720134,
+      39.250977
+     ],
+     [
+      -74.715352,
+      39.24566
+     ],
+     [
+      -74.714266,
+      39.244749
+     ],
+     [
+      -74.713141,
+      39.244132
+     ],
+     [
+      -74.711866,
+      39.243694
+     ],
+     [
+      -74.708946,
+      39.24317
+     ],
+     [
+      -74.635297,
+      39.230639
+     ],
+     [
+      -74.633745,
+      39.230854
+     ],
+     [
+      -74.631797,
+      39.231902
+     ],
+     [
+      -74.614509,
+      39.250496
+     ],
+     [
+      -74.601665,
+      39.262525
+     ],
+     [
+      -74.58335,
+      39.27587
+     ],
+     [
+      -74.579194,
+      39.278941
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Conrail",
+    "line": "Conrail: Ocean City Branch",
+    "id": "conrail-ocean-city-branch",
+    "color": "#3E6FD0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate, unsourced: seashore branch with street-level running in Ocean City.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), old_railway_operator-tagged ways (PRSL (PRR) / PRSL (Reading)) plus labelled straight legs, assembled with opstrace.py on 2026-10-20; OpenHistoricalMap queried and has no railway in this area",
+    "geometry_quality": "12.58 mi drawn against 13.1 mi documented (Fowler line 94, Tuckahoe 0.0 - Ocean City 10th St 13.1). No straight-line leg. Same geometry as acrr-ocean-city-branch (atlantic_city_railroad.geojson; real-traced on Reading-tagged OpenStreetMap track, old_railway_operator='PRSL (Reading)', Tuckahoe - Petersburg - Palermo - Crook Horn - Haven Avenue, Ocean City), copied and cut at 10th Street, the PRSL terminal in the Feb 1952 Guide. North of 10th Street (to 4th St / Ocean City Gardens) is not drawn for these companies: no PRSL passenger year there is confirmed and the track was abandoned 11 Sep 1958.",
+    "segments": [
+     {
+      "start": 1976,
+      "end": 1981,
+      "headway_min": 240,
+      "note": "Conrail operated the remaining PRSL passenger service from 1 April 1976 under New Jersey DOT subsidy (NJ Transit did not take over Conrail's commuter operations until 1983, after this line had closed). Last train 15 October 1981, ending service when a ring gear failed on the Crook Horn drawbridge (sjrail); 34th Street station last served 13 August 1981 (Wikipedia). Abandonment notices were posted at the 51st, 24th and 10th St stations in October 1982 - an abandonment year, not a passenger year, so 1982 is not drawn. The Crook Horn bridge was removed November 1992. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: sjrail.com timeline (15 Oct 1981 last train; Oct 1982 abandonment notices); Wikipedia \"Ocean City 34th Street Station\" (13 Aug 1981); american-rails.com/prsl.html (Ocean City passenger service ended October 1981, as read in research/branches/atlantic_city_railroad.txt). Headway not sourced.",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "Wikipedia \"Ocean City 34th Street Station\"",
+       "https://www.american-rails.com/prsl.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.756799,
+      39.286171
+     ],
+     [
+      -74.743589,
+      39.267226
+     ],
+     [
+      -74.74162,
+      39.264962
+     ],
+     [
+      -74.739092,
+      39.262957
+     ],
+     [
+      -74.720816,
+      39.251587
+     ],
+     [
+      -74.720134,
+      39.250977
+     ],
+     [
+      -74.715352,
+      39.24566
+     ],
+     [
+      -74.714266,
+      39.244749
+     ],
+     [
+      -74.713141,
+      39.244132
+     ],
+     [
+      -74.711866,
+      39.243694
+     ],
+     [
+      -74.708946,
+      39.24317
+     ],
+     [
+      -74.635297,
+      39.230639
+     ],
+     [
+      -74.633745,
+      39.230854
+     ],
+     [
+      -74.631797,
+      39.231902
+     ],
+     [
+      -74.614509,
+      39.250496
+     ],
+     [
+      -74.601665,
+      39.262525
+     ],
+     [
+      -74.58335,
+      39.27587
+     ],
+     [
+      -74.579194,
+      39.278941
+     ]
+    ]
+   }
+  }
+ ]
+}
