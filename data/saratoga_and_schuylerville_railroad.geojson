@@ -1,0 +1,777 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Saratoga and Schuylerville branches of the Boston, Hoosac Tunnel and Western / Fitchburg / Boston and Maine: this file adds the Schuylerville Branch (Schuyler Junction - Schuylerville, 7.9 mi, Saratoga County NY) in its BHT&W (1882-1887) and B&M (1904-1930 [OPEN]) eras, and the single 12 Oct 1947 passenger fan trip over the freight-only Saratoga & Schuylerville Railroad (Pinsly, 1946-1956). The Mechanicville - Saratoga Springs branch itself is drawn in boston_hoosac_tunnel_and_western_railway.geojson (bhtw-, fitchburg- and bm-saratoga-springs-branch), whose B&M feature this work extended from 1901 to 1901-1930. Built from research/branches/saratoga_and_schuylerville_railroad.txt (researched 2026-10-20). The queue entry's '(>D&H)' is wrong: no D&H passenger train on this track was found (report block [9]).",
+  "colour_note": "'Boston, Hoosac Tunnel and Western Railway' (#8E2C48) and 'Boston and Maine Railroad' (#1D3557) colours pulled programmatically from the existing features with those exact company strings in data/. 'Saratoga and Schuylerville Railroad' had no feature in data/; its new colour #D98E04 (amber, visibly distinct from the B&M navy, BHT&W maroon and Fitchburg plum on the same track) was checked programmatically to be unused by any other company.",
+  "omitted": [
+   "Report block [1], Saratoga Lake Railway (own operation, Saratoga Springs - Saratoga Lake, 1881-82): held under Rule 5 -- motive power not established. Not drawn here or in the BHT&W file.",
+   "Report block [5], Fitchburg: Schuylerville Branch (1887-1900): drawable NONE -- no confirmed passenger year in the Fitchburg era (TT-F38 is undated and may be B&M).",
+   "Report block [9], Delaware and Hudson: Saratoga Springs - Schuylerville (reported 1907 lease, New-York Tribune 3 Sep 1907): drawable NONE -- a forecast of trains, never confirmed; every later source keeps the branch B&M. Not a Rule 4 split.",
+   "Report blocks [2], [4], [6] (the Mechanicville - Saratoga Springs branch) are drawn in boston_hoosac_tunnel_and_western_railway.geojson, not duplicated here.",
+   "The Schuylerville - Thomson - Greenwich Battenkill extension (1903) belongs to the Greenwich and Johnsonville, a different company, with no confirmed passenger year."
+  ],
+  "freight_only_audit": "Built to Rule 1: the B&M Schuylerville Branch ends at 1930, the last confirmed passenger year (TT-BM12); B&M freight to 1945 and the freight-only Saratoga & Schuylerville 1946-1956 (Official Guide Sept 1951: 'Freight Service only') are mentioned in notes only, apart from the one 1947 passenger fan trip, drawn as tourist_rail.",
+  "horsecar_audit": "Built to Rule 5: nothing here was animal-powered; the BHT&W branch was a steam railroad. The Saratoga Lake Railway 1881-82, whose motive power is unconfirmed, is held back (see omitted).",
+  "not_yet_sourced": [
+   "[OPEN] END: Boston and Maine Schuylerville Branch (bm-schuylerville-branch) drawn to 1930, the earliest year B&M employee timetable No. 12 can bear; service continued past it by an unknown amount and had stopped by No. 17 (before 27 Apr 1941). The effective dates of TT Nos. 12 and 17 (B&M historical society), a PSC/ICC discontinuance record or a Saratogian 'last train' story would settle the end.",
+   "[OPEN] START: bm-schuylerville-branch starts at 1904 (first dated B&M-era evidence), not the 1900 B&M lease.",
+   "BHT&W Schuylerville Branch 1882-1887 rests on Fowler's 1882 Appleton's station names and an 1885 'trains running' report that does not mention passengers -- low-medium confidence (report UNRESOLVED 7).",
+   "[ANCHOR] 1947 fan trip: locomotive 'Mogul #7' unidentified; how far the trip ran south of Schuyler Junction toward Wayville unknown (report UNRESOLVED 8).",
+   "TT-F38 (first-class trains on both branches) is undated -- Fitchburg Railroad or B&M; if pre-1900 it would give the Fitchburg era its first Schuylerville year (report UNRESOLVED 2).",
+   "About 1.0 mi through Victory Mills is drawn along Gates Avenue, not a tagged grade (see geometry_quality).",
+   "All headway_min and avg_speed_kmh values are estimates."
+  ],
+  "sources": [
+   "https://www.loc.gov/resource/sn83030214/1881-08-02/ed-1/?sp=5",
+   "https://www.loc.gov/resource/sn83030214/1882-04-22/ed-1/?sp=5",
+   "https://www.loc.gov/resource/sn82015137/1885-02-27/ed-1/?sp=1",
+   "https://www.loc.gov/resource/sn83020847/1887-06-03/ed-1/?sp=8",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs1.pdf",
+   "https://www.loc.gov/resource/sn95066012/1904-10-28/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn95066012/1905-10-26/ed-1/?sp=4",
+   "https://www.loc.gov/resource/sn95066012/1906-10-10/ed-1/?sp=3",
+   "http://ginosrailpage.org/SANDS/SANDS8.html",
+   "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/fitchburg-division-saratoga-and-schuylerville-branches/",
+   "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/first-operating-district-berkshire-division-saratoga-and-schuylerville-branches/",
+   "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/fitchburg-division-schuylerville-branch/",
+   "http://ginosrailpage.org/SANDS/SANDS6.html",
+   "https://www.ginosrailpage.org/Saratoga_And_Schuylerville_Railroad/SANDS1.html"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston, Hoosac Tunnel and Western Railway",
+    "line": "Boston, Hoosac Tunnel and Western: Schuylerville Branch",
+    "id": "bhtw-schuylerville-branch",
+    "color": "#8E2C48",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no BHT&W-era timetable was read. Unsourced; 35 km/h is a guess for a short 1880s steam branch.",
+    "geometry_source": [
+     "OpenStreetMap: abandoned/razed ways tagged old_railway_operator=B&M or 'Boston & Maine' ('former B&M', 'former B&M Schuylerville Branch', Brown's Point Lane, Gates Avenue Extension, Green Street) and, as a labelled proxy, Gates Avenue in Victory Mills",
+     "OpenStreetMap Overpass extracts (maps.mail.ru mirror), pulled 2026-10-16 to 2026-10-20; OpenHistoricalMap queried 2026-10-20 (no ways in this area)"
+    ],
+    "geometry_quality": "Real-traced from OpenStreetMap with opstrace.py (Overpass via maps.mail.ru: railtrace degree tiles plus fetch_gap and a direct way[railway~abandoned|demolished|razed] / name-tagged pull over the corridor, 2026-10-20), Douglas-Peucker 8 m, trim_reversals. Leaves the existing Mechanicville - Saratoga Springs branch geometry (boston_hoosac_tunnel_and_western_railway.geojson) at Schuyler Junction (43.07979 N, 73.70459 W, 6 m off the OSM junction node, about 3.9 mi east of that layer's Saratoga Springs end) and runs east via Burgoyne, Gates, Cramers Bridge and Victory Mills to Schuylerville. 6.7 mi on ways tagged old_railway_operator=B&M / 'Boston & Maine' (railway=abandoned or razed; names 'former B&M', 'former B&M Schuylerville Branch', Brown's Point Lane, Gates Avenue Extension, Green Street); 0.2 mi of opstrace's short connectors across untagged breaks of under 300 m between those ways. APPROXIMATED: about 1.0 mi through Victory Mills (from the east end of the tagged 'former B&M' grade at NY 32 to the start of the tagged Gates Avenue Extension) is drawn along Gates Avenue, a road whose two ends meet the tagged grade but which is NOT itself tagged as former railway -- OSM, OpenHistoricalMap (no ways in this area) and rail-trails gave nothing there; treat that mile as a road-following approximation of the grade, not a trace. No straight-line legs. Traced 7.87 mi against 7.92 mi documented (B&M employee timetables TT-F61 / TT-BM12, 'miles from Schuylerville' at Schuyler Jct; Fowler 7.9). Ends at the north end of Green Street, 25 m from the OSM historic 'Boston & Maine' station node (43.1047 N, 73.5836 W), taken as the Schuylerville depot; the tagged grade beyond it north to the Greenwich and Johnsonville connection is not drawn (no passenger evidence beyond Schuylerville). Waypoints Burgoyne and Gates (Nominatim hamlets) lie on the line, Victory Mills (village) 0.1 km off it. CAVEAT (Rule 2): the grade OSM preserves is the branch as lifted in 1956-57; no earlier realignment has been checked, so 1880s-1930s eras are drawn on the alignment at abandonment.",
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1887,
+      "headway_min": 480,
+      "note": "Report block [3] (research/branches/saratoga_and_schuylerville_railroad.txt). Schuyler Junction - Burgoyne (Bryant's Bridge) - Gates (Grangerville) - Victory Mills - Schuylerville, 7.9 mi, the Saratoga Lake Railway's 'Schuylerville Branch', worked by the BHT&W as lessee from July 1882. LOW-MEDIUM CONFIDENCE: under construction Aug 1881 and to be 'completed before 1882' (New-York Tribune 2 Aug 1881); Gen. Burt 'the builder of the road from Saratoga to Schuylerville' (New-York Tribune 22 Apr 1882); four of its stations named in the 1882 Appleton's passenger guide, seen only through Fowler's bracketed names ('Bryant's Bridge 1882AG', 'Grangerville 1882AG', 'Schuylerville Junction 1882AG'); a train snowbound on 'the Schuylerville Branch of the Boston, Hoosac Tunnel and Western' 16-25 Feb 1885, 'trains are now running' (Savannah Morning News 27 Feb 1885) -- which proves scheduled trains in 1885 but does not say they carried passengers. Together fair evidence, not proof; a stricter reading would draw 1885-1887 or hold until an 1880s public timetable is seen. Ends with Fitchburg possession on Wed 1 Jun 1887 ('19 miles of branches including the Saratoga and Schuylerville branch', Springfield Weekly Republican 3 Jun 1887) -- an operator change. The Fitchburg era 1887-1900 is NOT drawn (report block [5]: no confirmed passenger year). headway_min is an ESTIMATE (no timetable read).",
+      "sources": [
+       "Segment-level: report block [3] -- NYT81 and NYT82 (construction, primary), JF-NY1 line 25 (1882 Appleton's station names via Fowler), SMN85 (trains running 1885, primary), SWR87b (1 Jun 1887 Fitchburg possession, primary). Low-medium confidence; headway not sourced. Compiled in research/branches/saratoga_and_schuylerville_railroad.txt (researched 2026-10-20)",
+       "https://www.loc.gov/resource/sn83030214/1881-08-02/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn83030214/1882-04-22/ed-1/?sp=5",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs1.pdf",
+       "https://www.loc.gov/resource/sn82015137/1885-02-27/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn83020847/1887-06-03/ed-1/?sp=8"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.70459,
+      43.079791
+     ],
+     [
+      -73.704535,
+      43.079828
+     ],
+     [
+      -73.701786,
+      43.078558
+     ],
+     [
+      -73.699303,
+      43.077861
+     ],
+     [
+      -73.696703,
+      43.077783
+     ],
+     [
+      -73.695415,
+      43.077854
+     ],
+     [
+      -73.692916,
+      43.078813
+     ],
+     [
+      -73.687581,
+      43.082287
+     ],
+     [
+      -73.679002,
+      43.086767
+     ],
+     [
+      -73.676608,
+      43.087426
+     ],
+     [
+      -73.664327,
+      43.089575
+     ],
+     [
+      -73.663075,
+      43.089902
+     ],
+     [
+      -73.662449,
+      43.090161
+     ],
+     [
+      -73.661185,
+      43.091046
+     ],
+     [
+      -73.660027,
+      43.092226
+     ],
+     [
+      -73.658054,
+      43.093765
+     ],
+     [
+      -73.65736,
+      43.094035
+     ],
+     [
+      -73.654707,
+      43.09423
+     ],
+     [
+      -73.650224,
+      43.094795
+     ],
+     [
+      -73.646338,
+      43.095048
+     ],
+     [
+      -73.64477,
+      43.094783
+     ],
+     [
+      -73.643079,
+      43.094066
+     ],
+     [
+      -73.640284,
+      43.092267
+     ],
+     [
+      -73.637621,
+      43.090935
+     ],
+     [
+      -73.636268,
+      43.090664
+     ],
+     [
+      -73.632964,
+      43.090375
+     ],
+     [
+      -73.627388,
+      43.090165
+     ],
+     [
+      -73.625635,
+      43.089421
+     ],
+     [
+      -73.624115,
+      43.087858
+     ],
+     [
+      -73.622808,
+      43.084599
+     ],
+     [
+      -73.622054,
+      43.083684
+     ],
+     [
+      -73.62108,
+      43.082805
+     ],
+     [
+      -73.61993,
+      43.0821
+     ],
+     [
+      -73.618484,
+      43.081555
+     ],
+     [
+      -73.616782,
+      43.081204
+     ],
+     [
+      -73.613702,
+      43.081066
+     ],
+     [
+      -73.606502,
+      43.081313
+     ],
+     [
+      -73.603143,
+      43.08194
+     ],
+     [
+      -73.600907,
+      43.083047
+     ],
+     [
+      -73.600403,
+      43.08387
+     ],
+     [
+      -73.596607,
+      43.085535
+     ],
+     [
+      -73.593892,
+      43.087633
+     ],
+     [
+      -73.590009,
+      43.092544
+     ],
+     [
+      -73.587551,
+      43.094485
+     ],
+     [
+      -73.583425,
+      43.104519
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Maine Railroad",
+    "line": "Boston and Maine: Schuylerville Branch",
+    "id": "bm-schuylerville-branch",
+    "color": "#1D3557",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate from the B&M employee timetables in the report (GINO-TT): TT-F38 No. 903 Schuylerville 7.50 - Saratoga Springs 8.22 a.m. (12.2 mi in 32 min, about 37 km/h, first-class) and TT-BM12 No. 5902 Saratoga Springs 11.05 - Schuylerville 12.20 (75 min, about 16 km/h, mixed). 30 km/h is a rounded figure between them, not a measured average.",
+    "geometry_source": [
+     "OpenStreetMap: abandoned/razed ways tagged old_railway_operator=B&M or 'Boston & Maine' ('former B&M', 'former B&M Schuylerville Branch', Brown's Point Lane, Gates Avenue Extension, Green Street) and, as a labelled proxy, Gates Avenue in Victory Mills",
+     "OpenStreetMap Overpass extracts (maps.mail.ru mirror), pulled 2026-10-16 to 2026-10-20; OpenHistoricalMap queried 2026-10-20 (no ways in this area)"
+    ],
+    "geometry_quality": "Real-traced from OpenStreetMap with opstrace.py (Overpass via maps.mail.ru: railtrace degree tiles plus fetch_gap and a direct way[railway~abandoned|demolished|razed] / name-tagged pull over the corridor, 2026-10-20), Douglas-Peucker 8 m, trim_reversals. Leaves the existing Mechanicville - Saratoga Springs branch geometry (boston_hoosac_tunnel_and_western_railway.geojson) at Schuyler Junction (43.07979 N, 73.70459 W, 6 m off the OSM junction node, about 3.9 mi east of that layer's Saratoga Springs end) and runs east via Burgoyne, Gates, Cramers Bridge and Victory Mills to Schuylerville. 6.7 mi on ways tagged old_railway_operator=B&M / 'Boston & Maine' (railway=abandoned or razed; names 'former B&M', 'former B&M Schuylerville Branch', Brown's Point Lane, Gates Avenue Extension, Green Street); 0.2 mi of opstrace's short connectors across untagged breaks of under 300 m between those ways. APPROXIMATED: about 1.0 mi through Victory Mills (from the east end of the tagged 'former B&M' grade at NY 32 to the start of the tagged Gates Avenue Extension) is drawn along Gates Avenue, a road whose two ends meet the tagged grade but which is NOT itself tagged as former railway -- OSM, OpenHistoricalMap (no ways in this area) and rail-trails gave nothing there; treat that mile as a road-following approximation of the grade, not a trace. No straight-line legs. Traced 7.87 mi against 7.92 mi documented (B&M employee timetables TT-F61 / TT-BM12, 'miles from Schuylerville' at Schuyler Jct; Fowler 7.9). Ends at the north end of Green Street, 25 m from the OSM historic 'Boston & Maine' station node (43.1047 N, 73.5836 W), taken as the Schuylerville depot; the tagged grade beyond it north to the Greenwich and Johnsonville connection is not drawn (no passenger evidence beyond Schuylerville). Waypoints Burgoyne and Gates (Nominatim hamlets) lie on the line, Victory Mills (village) 0.1 km off it. CAVEAT (Rule 2): the grade OSM preserves is the branch as lifted in 1956-57; no earlier realignment has been checked, so 1880s-1930s eras are drawn on the alignment at abandonment.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1930,
+      "headway_min": 360,
+      "note": "Report block [7]. [OPEN] at both ends -- 1904 is the first confirmed and 1930 the last confirmed year, not the start and end of service. B&M leased the Fitchburg in 1900, but the first dated B&M-era evidence is Oct 1904: excursion tickets 'on B & M Stations Greenfield and west including Saratoga and Schuyler-ville' (Bennington Evening Banner 28 Oct 1904); again Oct 1905 (BEB05) and Oct 1906, 'all B. & M. stations Greenfield and west including Saratoga and Schuylerville branches' (BEB06). B&M employee timetables (GINO-TT, primary, undated): TT-F38 shows about four first-class trains plus a mixed each way Schuylerville - Saratoga Springs (e.g. No. 903 Schuylerville 7.50 - Victory Mills - Schuyler Jct 8.12 - Saratoga Springs 8.22); TT-F61 and TT-B56A (Berkshire Division, so after 1914 and before Sept 1930, c.1918-23 on nashuacitystation's division lists) show MIXED trains only; TT-BM12, later than system timetable No. 7 of 28 Sep 1930, still runs Mixed 5902 Saratoga Springs 11.05 - Schuylerville 12.20 and 5903 Schuylerville 12.40 - Saratoga Springs 1.50, flag stops at Burgoyne, Gates and Cramers Bridge. Mixed trains carry passengers (Rule 1). TT-BM17, earlier than No. 31 of 27 Apr 1941, schedules NO trains on the branch. So the passenger end falls between the issue of No. 12 and No. 17 -- c.1932-35 by an estimate of the issue rate, NOT a sourced year. 1930 is the earliest year TT-BM12 can bear: do not extend until TT Nos. 12 and 17 are dated, and never to 1941, 1945/46 (sale to the freight-only Saratoga & Schuylerville) or 1956 (last freight). Trains ran Schuylerville - Saratoga Springs, reversing at Schuyler Junction. The evidence is employee, not public, timetables (report UNRESOLVED 4). Freight continued under the B&M and then Pinsly's Saratoga & Schuylerville to 18 Sep 1956. headway_min is an ESTIMATE between TT-F38's ~4-5 trains and TT-BM12's one each way.",
+      "sources": [
+       "Segment-level: report block [7] -- BEB04, BEB05, BEB06 (1904-06 ticket notices, primary) for the start; GINO-TT employee timetable pages TT-F38, TT-F61, TT-B56A, TT-BM12, TT-BM17 (primary scans, undated) for service and the 1930-41 end bracket; nashuacitystation TT-number and division dating (TT No. 7 = 28 Sep 1930, No. 31 = 27 Apr 1941). End 1930 [OPEN]; headway estimated. Compiled in research/branches/saratoga_and_schuylerville_railroad.txt (researched 2026-10-20)",
+       "https://www.loc.gov/resource/sn95066012/1904-10-28/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn95066012/1905-10-26/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn95066012/1906-10-10/ed-1/?sp=3",
+       "http://ginosrailpage.org/SANDS/SANDS8.html",
+       "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/fitchburg-division-saratoga-and-schuylerville-branches/",
+       "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/first-operating-district-berkshire-division-saratoga-and-schuylerville-branches/",
+       "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/fitchburg-division-schuylerville-branch/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.70459,
+      43.079791
+     ],
+     [
+      -73.704535,
+      43.079828
+     ],
+     [
+      -73.701786,
+      43.078558
+     ],
+     [
+      -73.699303,
+      43.077861
+     ],
+     [
+      -73.696703,
+      43.077783
+     ],
+     [
+      -73.695415,
+      43.077854
+     ],
+     [
+      -73.692916,
+      43.078813
+     ],
+     [
+      -73.687581,
+      43.082287
+     ],
+     [
+      -73.679002,
+      43.086767
+     ],
+     [
+      -73.676608,
+      43.087426
+     ],
+     [
+      -73.664327,
+      43.089575
+     ],
+     [
+      -73.663075,
+      43.089902
+     ],
+     [
+      -73.662449,
+      43.090161
+     ],
+     [
+      -73.661185,
+      43.091046
+     ],
+     [
+      -73.660027,
+      43.092226
+     ],
+     [
+      -73.658054,
+      43.093765
+     ],
+     [
+      -73.65736,
+      43.094035
+     ],
+     [
+      -73.654707,
+      43.09423
+     ],
+     [
+      -73.650224,
+      43.094795
+     ],
+     [
+      -73.646338,
+      43.095048
+     ],
+     [
+      -73.64477,
+      43.094783
+     ],
+     [
+      -73.643079,
+      43.094066
+     ],
+     [
+      -73.640284,
+      43.092267
+     ],
+     [
+      -73.637621,
+      43.090935
+     ],
+     [
+      -73.636268,
+      43.090664
+     ],
+     [
+      -73.632964,
+      43.090375
+     ],
+     [
+      -73.627388,
+      43.090165
+     ],
+     [
+      -73.625635,
+      43.089421
+     ],
+     [
+      -73.624115,
+      43.087858
+     ],
+     [
+      -73.622808,
+      43.084599
+     ],
+     [
+      -73.622054,
+      43.083684
+     ],
+     [
+      -73.62108,
+      43.082805
+     ],
+     [
+      -73.61993,
+      43.0821
+     ],
+     [
+      -73.618484,
+      43.081555
+     ],
+     [
+      -73.616782,
+      43.081204
+     ],
+     [
+      -73.613702,
+      43.081066
+     ],
+     [
+      -73.606502,
+      43.081313
+     ],
+     [
+      -73.603143,
+      43.08194
+     ],
+     [
+      -73.600907,
+      43.083047
+     ],
+     [
+      -73.600403,
+      43.08387
+     ],
+     [
+      -73.596607,
+      43.085535
+     ],
+     [
+      -73.593892,
+      43.087633
+     ],
+     [
+      -73.590009,
+      43.092544
+     ],
+     [
+      -73.587551,
+      43.094485
+     ],
+     [
+      -73.583425,
+      43.104519
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Saratoga and Schuylerville Railroad",
+    "line": "Saratoga and Schuylerville: Saratoga Springs – Schuylerville (1947 fan trip)",
+    "id": "saratoga-schuylerville-1947-fan-trip",
+    "color": "#D98E04",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: no timetable for the 12 Oct 1947 fan trip was seen. 20 km/h is a guess for a photo-stop excursion with a water stop.",
+    "geometry_source": [
+     "Saratoga Springs - Schuyler Junction: the existing Saratoga Springs branch geometry in boston_hoosac_tunnel_and_western_railway.geojson (OSM, traced 2026-10-16)",
+     "OpenStreetMap: abandoned/razed ways tagged old_railway_operator=B&M or 'Boston & Maine' ('former B&M', 'former B&M Schuylerville Branch', Brown's Point Lane, Gates Avenue Extension, Green Street) and, as a labelled proxy, Gates Avenue in Victory Mills",
+     "OpenStreetMap Overpass extracts (maps.mail.ru mirror), pulled 2026-10-16 to 2026-10-20; OpenHistoricalMap queried 2026-10-20 (no ways in this area)"
+    ],
+    "geometry_quality": "Two pieces. Saratoga Springs - Schuyler Junction (3.90 mi) is the existing real-traced Saratoga Springs branch geometry from boston_hoosac_tunnel_and_western_railway.geojson (bhtw/fitchburg/bm-saratoga-springs-branch; OSM ways tagged old_railway_operator=B&M, Spring Run Trail and Bog Meadow Brook Trail; no straight legs), reused vertex for vertex, which stops at the west end of the mapped grade near the Spring Run Trail (43.0878 N, 73.7778 W) rather than at the Saratoga Springs depot, so the last few hundred metres into Saratoga are not drawn. Schuyler Junction - Schuylerville (7.87 mi) is this file's trace (see bhtw-schuylerville-branch): 6.7 mi on tagged B&M ways, 0.2 mi of short connectors, and an APPROXIMATED 1.0 mi through Victory Mills drawn along Gates Avenue (a road, not a tagged grade). No straight-line legs. Traced 11.77 mi against 12.2 mi documented Saratoga Springs - Schuylerville (4.29 + 7.92, B&M employee timetables); the shortfall is the undrawn Saratoga Springs end. The alignment is the one lifted in 1956-57, which is the right era for a 1947 trip.",
+    "segments": [
+     {
+      "start": 1947,
+      "end": 1947,
+      "headway_min": 1440,
+      "note": "Report block [8]. [ANCHOR] -- a single railfan excursion, 12 Oct 1947, so one year by design rather than a gap in the evidence. Saratoga Springs - Schuyler Junction - Schuylerville, 12.2 mi, over the Saratoga & Schuylerville Railroad Corporation (Samuel Pinsly; incorporated May 1945, took over the former B&M branches 1 Jan 1946), sponsored by the Capital District Railroad Club: a ticket bought by historian David Nestle, the CDRC sign on Mogul #7 and the CDRC caboose, and photos at the Saratoga Springs engine house, along Fish Creek near Schuyler Junction, on the Saratoga Lake trestle (a water stop, so the train also ran some way south of Schuyler Junction toward Wayville -- how far is unknown and not drawn) and 'Pulling into Schuylerville Depot' (ginosrailpage SANDS6). Whose locomotive Mogul #7 was is not established. Otherwise the S&S (1946-56) was FREIGHT ONLY: the Sept 1951 Official Guide (as reprinted 1952) heads its table 'Freight Service only' and daggers Schuyler Junction and Schuylerville as freight-only, and GINO gives traffic in carloads only; freight ended 18 Sep 1956 and the track was lifted by mid-1957. Those years are not drawn (Rule 1). headway_min is a placeholder for a one-off trip, not a frequency.",
+      "sources": [
+       "Segment-level: report block [8] -- GINO-FT (ginosrailpage SANDS6: the 12 Oct 1947 ticket and photos, primary via a secondary page); freight-only status from OG52 (research/sources/official_guide_1952.txt, Sept 1951 table and Index of Stations) and GINO (Pinsly-era history, secondary). Headway not sourced. Compiled in research/branches/saratoga_and_schuylerville_railroad.txt (researched 2026-10-20)",
+       "http://ginosrailpage.org/SANDS/SANDS6.html",
+       "https://www.ginosrailpage.org/Saratoga_And_Schuylerville_Railroad/SANDS1.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.777776,
+      43.087792
+     ],
+     [
+      -73.776143,
+      43.08847
+     ],
+     [
+      -73.775062,
+      43.088779
+     ],
+     [
+      -73.772786,
+      43.089363
+     ],
+     [
+      -73.771011,
+      43.089608
+     ],
+     [
+      -73.770619,
+      43.089634
+     ],
+     [
+      -73.766689,
+      43.08899
+     ],
+     [
+      -73.765966,
+      43.08901
+     ],
+     [
+      -73.754787,
+      43.090747
+     ],
+     [
+      -73.752883,
+      43.090901
+     ],
+     [
+      -73.75166,
+      43.090784
+     ],
+     [
+      -73.749532,
+      43.090144
+     ],
+     [
+      -73.746412,
+      43.088885
+     ],
+     [
+      -73.741807,
+      43.086997
+     ],
+     [
+      -73.738936,
+      43.085615
+     ],
+     [
+      -73.735833,
+      43.084735
+     ],
+     [
+      -73.709237,
+      43.081754
+     ],
+     [
+      -73.707843,
+      43.081432
+     ],
+     [
+      -73.706551,
+      43.080967
+     ],
+     [
+      -73.705505,
+      43.080433
+     ],
+     [
+      -73.70459,
+      43.079791
+     ],
+     [
+      -73.704535,
+      43.079828
+     ],
+     [
+      -73.701786,
+      43.078558
+     ],
+     [
+      -73.699303,
+      43.077861
+     ],
+     [
+      -73.696703,
+      43.077783
+     ],
+     [
+      -73.695415,
+      43.077854
+     ],
+     [
+      -73.692916,
+      43.078813
+     ],
+     [
+      -73.687581,
+      43.082287
+     ],
+     [
+      -73.679002,
+      43.086767
+     ],
+     [
+      -73.676608,
+      43.087426
+     ],
+     [
+      -73.664327,
+      43.089575
+     ],
+     [
+      -73.663075,
+      43.089902
+     ],
+     [
+      -73.662449,
+      43.090161
+     ],
+     [
+      -73.661185,
+      43.091046
+     ],
+     [
+      -73.660027,
+      43.092226
+     ],
+     [
+      -73.658054,
+      43.093765
+     ],
+     [
+      -73.65736,
+      43.094035
+     ],
+     [
+      -73.654707,
+      43.09423
+     ],
+     [
+      -73.650224,
+      43.094795
+     ],
+     [
+      -73.646338,
+      43.095048
+     ],
+     [
+      -73.64477,
+      43.094783
+     ],
+     [
+      -73.643079,
+      43.094066
+     ],
+     [
+      -73.640284,
+      43.092267
+     ],
+     [
+      -73.637621,
+      43.090935
+     ],
+     [
+      -73.636268,
+      43.090664
+     ],
+     [
+      -73.632964,
+      43.090375
+     ],
+     [
+      -73.627388,
+      43.090165
+     ],
+     [
+      -73.625635,
+      43.089421
+     ],
+     [
+      -73.624115,
+      43.087858
+     ],
+     [
+      -73.622808,
+      43.084599
+     ],
+     [
+      -73.622054,
+      43.083684
+     ],
+     [
+      -73.62108,
+      43.082805
+     ],
+     [
+      -73.61993,
+      43.0821
+     ],
+     [
+      -73.618484,
+      43.081555
+     ],
+     [
+      -73.616782,
+      43.081204
+     ],
+     [
+      -73.613702,
+      43.081066
+     ],
+     [
+      -73.606502,
+      43.081313
+     ],
+     [
+      -73.603143,
+      43.08194
+     ],
+     [
+      -73.600907,
+      43.083047
+     ],
+     [
+      -73.600403,
+      43.08387
+     ],
+     [
+      -73.596607,
+      43.085535
+     ],
+     [
+      -73.593892,
+      43.087633
+     ],
+     [
+      -73.590009,
+      43.092544
+     ],
+     [
+      -73.587551,
+      43.094485
+     ],
+     [
+      -73.583425,
+      43.104519
+     ]
+    ]
+   }
+  }
+ ]
+}
