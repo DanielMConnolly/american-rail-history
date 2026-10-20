@@ -1,0 +1,438 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Unadilla Valley Railway, Bridgewater - New Berlin, New York (19.09 mi). Opened 1895; passenger service (steam, then a Brill gas car from 1924, plus a mixed milk train) confirmed to 25 Jun 1934, end date unknown; freight-only by Sept 1951; abandoned 1960. One feature: the operator never changed (the 1904 reorganisation and the 1936/37 H. E. Salzberg stock purchase did not change who ran the trains). Research report: research/branches/unadilla_valley_railway.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Unadilla_Valley_Railway",
+   "https://www.loc.gov/resource/sn94053256/1895-07-26/ed-1/?sp=1",
+   "https://rosap.ntl.bts.gov/view/dot/48499/dot_48499_DS1.pdf",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+   "research/sources/official_guide_1952.txt (Feb 1952 Official Guide: UV table with no times; every UV station daggered 'For freight only')",
+   "https://mtuptoncentral.wordpress.com/unadilla-valley-railroad/",
+   "https://en.wikipedia.org/wiki/Unadilla_Valley_Railway",
+   "https://wgpfoundation.org/historic-markers/bridgewater-depot",
+   "https://grokipedia.com/page/unadilla_valley_railway (tertiary; used only for the c.1940 lead and the early train count, flagged)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-20): railway=abandoned ways named 'Unadilla Valley Railway' 669037067, 669037066, 935648931, 935648930, 94967375"
+  ],
+  "operator_split": "None. Unadilla Valley Railway throughout its drawn years (1895 corporation, reorganised 1904 as a new corporation of the same name).",
+  "omitted": "Report block [2]: the ex-NYO&W New Berlin Branch (New Berlin Junction - New Berlin - Edmeston) under UV ownership, Oct 1941 - 1960 - no UV passenger or mixed working found, daggered freight-only in 1951; drawable NONE. Block [3]: the O&W-era New Berlin Branch belongs to nyo_and_w_railway.geojson and was not edited. Freight-only UV main-line years (unknown passenger end to 1960) excluded under Rule 1.",
+  "existing_layer_note": "No existing feature had company Unadilla Valley (checked programmatically across data/). The report flags two O&W questions for that layer's own pass, not acted on here: nyow-new-berlin-branch drawn to 1941 (an ownership end, last confirmed O&W passenger year found 1910), and nyom-new-berlin-branch labelled NY&OM for 1880-1895.",
+  "not_yet_sourced": [
+   "Main line [OPEN] end: passenger service is confirmed only to 25 Jun 1934 (ICC accident report) and had ended before 30 Sep 1951 (Official Guide daggers). No source dates the last passenger train.",
+   "Lead, unverified: Grokipedia (tertiary, citing an nyheritage.contentdm item not seen) says passenger service was 'limited to the gas car, which was retired around 1940'. Not drawn. Likely settlers: Fred Pugh, 'Days Along the Buckwheat and Dandelion' (1997); UVRS history pages; Brookfield Courier / Otsego Farmer / Oneonta Star / Norwich Sun 1935-1941; an ICC or NY PSC discontinuance filing.",
+   "Whether the mixed (milk) train with its combine outlasted the gas car.",
+   "Headways in both segments are estimates; no timetable times were read.",
+   "Brill car chronology: mtuptoncentral's fatal collision 'weeks after it began operation' (1924/25) may be the 25 Jun 1934 accident mis-dated. Does not affect drawn years.",
+   "Salzberg acquisition 1936 vs 1937 (sources disagree); not an operator change either way."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Unadilla Valley Railway",
+    "line": "Unadilla Valley: New Berlin – Bridgewater",
+    "id": "uv-new-berlin-bridgewater",
+    "color": "#3B7A57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 19-mile single-track rural steam short line with a gas motor car from 1924; no running times were read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-20). No old_railway_operator tag for the UV exists in the corridor (probed with opstrace fetch_operator_ways, regex 'Unadilla': 0 ways). Drawn on the five railway=abandoned ways named 'Unadilla Valley Railway', chained end-to-end by shared node ids: 669037067 (New Berlin - South Edmeston bridge), 669037066 (bridge), 935648931, 935648930 (bridge), 94967375 (to Bridgewater). Simplified with opstrace.douglas_peucker (8 m) then trim_reversals. The unnamed abandoned ways near New Berlin (175769700-175769702) and Bridgewater (609834335-609834336) are yard/connecting tracks off the main line and were not needed. No OpenHistoricalMap fill was needed because the OSM chain has no gaps.",
+    "geometry_quality": "Traced 19.13 mi against 19.09 mi documented (ICC valuation abstract, 19.088 mi; ICC 1934 accident report 19.13 mi; Fowler 19.0 mi). Continuous OSM abandoned-grade trace, no straight-line legs. South end at node 602323527, the junction with the NYO&W New Berlin Branch at New Berlin, 80 m from the surviving New Berlin depot (Unadilla Valley Railroad Museum); the line does not continue onto the O&W. North end at Bridgewater, 20 m from the surviving Bridgewater union depot (Bridgewater Historical Society), stopping short of the DL&W Utica / Richfield Springs branch track. Station checks against OSM places: Five Corners 0.06 km, West Edmeston 0.13 km, Leonardsville 0.21 km, South Edmeston 0.54 km, Unadilla Forks (River Forks area, location of the River Forks station not confirmed) 0.59 km off the line. The OSM grade is the alignment as abandoned in 1960; no realignment of the line is known, but the 1895 alignment was not separately checked.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1924,
+      "headway_min": 300,
+      "note": "Steam-operated short line from its opening: the Unadilla Valley Railway was formally opened c.25 Jul 1895 (Waterbury Evening Democrat 26 Jul 1895, 'Telegraphic Briefs'), completing a line partly built by the Utica and Unadilla Valley Railroad. Bridgewater (DL&W Utica Branch; union depot with the DL&W from 1901) south via River Forks, Leonardsville, West Edmeston, South Edmeston and Columbus Five Corners to New Berlin, where it met the NYO&W New Berlin Branch. The 1904 foreclosure and re-incorporation did not change who ran the trains. Informal excursions before the formal opening are reported (Grokipedia) but unverified and not drawn. Split at 1924 only because a Brill gas car (M-1) was bought that year to cut passenger costs. HEADWAY IS AN ESTIMATE: a UVRS newsletter (via tertiary Grokipedia) says the line once ran four weekday trains each way, three passenger and one milk train; 300 min is that read over a working day, not a timetable figure.",
+      "sources": [
+       "Segment-level: research report research/branches/unadilla_valley_railway.txt block [1] - start year from the Waterbury Evening Democrat 26 Jul 1895 (formal opening); line and mileage from the ICC valuation abstract. End year 1924 is a split point, not a service change. Headway NOT sourced (estimate from a tertiary Grokipedia claim citing a UVRS newsletter).",
+       "https://www.loc.gov/resource/sn94053256/1895-07-26/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Unadilla_Valley_Railway",
+       "https://grokipedia.com/page/unadilla_valley_railway"
+      ]
+     },
+     {
+      "start": 1924,
+      "end": 1934,
+      "headway_min": 420,
+      "note": "Gas motor-car era: Brill car M-1 (26 seats) bought 1924; Fowler's NY State Railroads list 119 has every UV station from the company's 1924 public timetable. Confirmed running 25 Jun 1934 by the ICC Bureau of Safety report on the fatal head-on collision a quarter-mile south of Bridgewater between scheduled passenger train No. 2 (motor car M-1) and northbound mixed No. 15 (milk and freight cars with a combination baggage-passenger car); one passenger and one employee killed. A plan to drop passenger service entirely was reversed after public outcry (undated, mtuptoncentral). END IS [OPEN]: 1934 is the last CONFIRMED passenger year, NOT a known end. Service certainly ran past 25 Jun 1934 by an unknown amount - Grokipedia (tertiary, citing an nyheritage item not seen) says the gas car was retired around 1940 - and every UV station is daggered freight-only in the Feb 1952 Official Guide (schedules eff. 30 Sep 1951). No source dates the last passenger train. Do not extend without evidence, and never to 1951 or 1960 (abandonment, ICC April 1960): the freight-only years are excluded under Rule 1. HEADWAY IS AN ESTIMATE: the 1934 report implies at least two scheduled workings each way (motor car Nos. 2/3 plus the mixed); 420 min is that read over a working day.",
+      "sources": [
+       "Segment-level: research report research/branches/unadilla_valley_railway.txt block [1] - 1924 from Fowler list 119 (letter b = 1924 company timetable) and the Brill car purchase (mtuptoncentral); 1934 from the ICC Bureau of Safety accident report of 25 Jun 1934 (passenger No. 2 and mixed No. 15). 1934 is the last confirmed year, not an end. Headway NOT sourced (estimate from the trains named in the 1934 report).",
+       "https://rosap.ntl.bts.gov/view/dot/48499/dot_48499_DS1.pdf",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs2.pdf",
+       "https://mtuptoncentral.wordpress.com/unadilla-valley-railroad/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.327668,
+      42.624558
+     ],
+     [
+      -75.327612,
+      42.625258
+     ],
+     [
+      -75.328356,
+      42.625985
+     ],
+     [
+      -75.328826,
+      42.626728
+     ],
+     [
+      -75.330085,
+      42.630031
+     ],
+     [
+      -75.330775,
+      42.632564
+     ],
+     [
+      -75.330959,
+      42.633811
+     ],
+     [
+      -75.330957,
+      42.63503
+     ],
+     [
+      -75.32946,
+      42.642366
+     ],
+     [
+      -75.328838,
+      42.644619
+     ],
+     [
+      -75.32877,
+      42.645664
+     ],
+     [
+      -75.329403,
+      42.649913
+     ],
+     [
+      -75.33023,
+      42.654107
+     ],
+     [
+      -75.330461,
+      42.656286
+     ],
+     [
+      -75.331361,
+      42.660408
+     ],
+     [
+      -75.33158,
+      42.66473
+     ],
+     [
+      -75.331573,
+      42.66799
+     ],
+     [
+      -75.330776,
+      42.674332
+     ],
+     [
+      -75.32981,
+      42.676226
+     ],
+     [
+      -75.328427,
+      42.677833
+     ],
+     [
+      -75.327803,
+      42.679762
+     ],
+     [
+      -75.325547,
+      42.682578
+     ],
+     [
+      -75.32215,
+      42.689254
+     ],
+     [
+      -75.32144,
+      42.690042
+     ],
+     [
+      -75.312555,
+      42.696231
+     ],
+     [
+      -75.311049,
+      42.697748
+     ],
+     [
+      -75.310054,
+      42.699083
+     ],
+     [
+      -75.306214,
+      42.707775
+     ],
+     [
+      -75.305325,
+      42.710731
+     ],
+     [
+      -75.304142,
+      42.718479
+     ],
+     [
+      -75.304064,
+      42.719903
+     ],
+     [
+      -75.304145,
+      42.72159
+     ],
+     [
+      -75.304413,
+      42.72291
+     ],
+     [
+      -75.306018,
+      42.72748
+     ],
+     [
+      -75.306318,
+      42.728902
+     ],
+     [
+      -75.306457,
+      42.729842
+     ],
+     [
+      -75.306371,
+      42.730992
+     ],
+     [
+      -75.306097,
+      42.731895
+     ],
+     [
+      -75.304863,
+      42.73392
+     ],
+     [
+      -75.303807,
+      42.735126
+     ],
+     [
+      -75.301791,
+      42.737343
+     ],
+     [
+      -75.297122,
+      42.741984
+     ],
+     [
+      -75.29232,
+      42.749741
+     ],
+     [
+      -75.290814,
+      42.751798
+     ],
+     [
+      -75.289328,
+      42.752648
+     ],
+     [
+      -75.283378,
+      42.755545
+     ],
+     [
+      -75.282232,
+      42.756214
+     ],
+     [
+      -75.281429,
+      42.757027
+     ],
+     [
+      -75.279462,
+      42.759787
+     ],
+     [
+      -75.279148,
+      42.760707
+     ],
+     [
+      -75.279128,
+      42.761589
+     ],
+     [
+      -75.279968,
+      42.763766
+     ],
+     [
+      -75.280045,
+      42.764595
+     ],
+     [
+      -75.279878,
+      42.765424
+     ],
+     [
+      -75.277983,
+      42.767472
+     ],
+     [
+      -75.276501,
+      42.770025
+     ],
+     [
+      -75.275431,
+      42.771342
+     ],
+     [
+      -75.274116,
+      42.772588
+     ],
+     [
+      -75.259867,
+      42.784134
+     ],
+     [
+      -75.258645,
+      42.78534
+     ],
+     [
+      -75.257599,
+      42.786657
+     ],
+     [
+      -75.256896,
+      42.788063
+     ],
+     [
+      -75.253901,
+      42.796916
+     ],
+     [
+      -75.250264,
+      42.804918
+     ],
+     [
+      -75.249975,
+      42.806215
+     ],
+     [
+      -75.249907,
+      42.80753
+     ],
+     [
+      -75.250811,
+      42.813148
+     ],
+     [
+      -75.251423,
+      42.822976
+     ],
+     [
+      -75.25138,
+      42.824365
+     ],
+     [
+      -75.250994,
+      42.82566
+     ],
+     [
+      -75.250221,
+      42.82699
+     ],
+     [
+      -75.247919,
+      42.830246
+     ],
+     [
+      -75.247336,
+      42.831382
+     ],
+     [
+      -75.246925,
+      42.832608
+     ],
+     [
+      -75.246734,
+      42.833833
+     ],
+     [
+      -75.246714,
+      42.835022
+     ],
+     [
+      -75.247411,
+      42.842178
+     ],
+     [
+      -75.247588,
+      42.843142
+     ],
+     [
+      -75.248272,
+      42.845068
+     ],
+     [
+      -75.248446,
+      42.846111
+     ],
+     [
+      -75.247708,
+      42.857082
+     ],
+     [
+      -75.247828,
+      42.862557
+     ],
+     [
+      -75.248526,
+      42.872005
+     ],
+     [
+      -75.24836,
+      42.872933
+     ],
+     [
+      -75.247904,
+      42.874034
+     ],
+     [
+      -75.246351,
+      42.876583
+     ],
+     [
+      -75.245927,
+      42.877601
+     ],
+     [
+      -75.246091,
+      42.87848
+     ],
+     [
+      -75.24645,
+      42.879074
+     ],
+     [
+      -75.247314,
+      42.879947
+     ]
+    ]
+   }
+  }
+ ]
+}
