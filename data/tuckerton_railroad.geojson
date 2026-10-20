@@ -1,0 +1,823 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Tuckerton Railroad, Ocean County, New Jersey: a steam short line from the Pennsylvania Railroad and CNJ at Whitings to Barnegat, Manahawkin and Tuckerton (1872 - 31 Jan 1936), and the Long Beach Island lines from Manahawkin across Manahawkin Bay to Beach Haven (1886-1935) and Barnegat City (1886-1923). Drawn per Rule 4 as three companies: the Tuckerton Railroad (main line, Edge Cove extension, Beach Haven line, Barnegat City branch 1886-1892 and 1908-1923); the Manahawkin and Long Beach Transportation Co. (Barnegat City branch, confirmed 1906-1907 [OPEN]); and the Southern New Jersey Railroad (a single 1939 fan trip, Barnegat - Tuckerton). All other post-1936 working was freight (Rule 1). Research report: research/branches/tuckerton_railroad.txt.",
+  "sources": [
+   "https://www.loc.gov/resource/sn84020594/1872-06-08/ed-1/?sp=3 -- Wilmington Daily Commercial 8 Jun 1872 p.3, PRR timetable ad (Tuckerton RR connections)",
+   "https://www.loc.gov/resource/sn85035801/1907-07-09/ed-1/?sp=1 -- Mount Holly News 9 Jul 1907 p.1, TRR/PRR schedule of 27 May 1906 (Tuckerton, Beach Haven, Barnegat City)",
+   "https://www.loc.gov/resource/sn83030214/1886-07-18/ed-1/?sp=9 -- New-York Tribune 18 Jul 1886 p.9 (rail to Harvey Cedars, Barnegat City and Beach Haven)",
+   "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf -- PRRTHS, PRR Discontinuance/Last Runs of Passenger Service, 2003 ed., New Jersey list",
+   "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf -- John Fowler, New Jersey station list, sections 101, 107, 113 (mileposts and timetable letters)",
+   "https://tile.loc.gov/storage-services/master/pnp/habshaer/nj/nj1500/nj1560/data/nj1560data.pdf -- HABS NJ-1014, Long Beach Island Region (railroad arrival June 1886)",
+   "https://echoesoflbi.com/the-last-train/ -- Echoes of LBI, 'The Last Train' (1935 trestle loss; last crossing a freight)",
+   "https://en.wikipedia.org/wiki/Tuckerton_Railroad -- Wikipedia, Tuckerton Railroad (after Brinckmann, The Tuckerton Railroad, 2nd ed. 1992)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror, 2026-10-20 - Tuckerton Railroad grade (old_railway_operator='Tuckerton Railroad' and untagged abandoned/razed ways), Edge Cove Spur",
+   "OpenHistoricalMap (CC0), 2026-10-20 - Manahawkin - West Creek, the Manahawkin Bay trestle and all Long Beach Island track; OHM date tags were not used"
+  ],
+  "mode_note": "intercity_rail for all TRR and M&LBT features: a steam short line feeding PRR/CNJ through traffic, never electrified, so not interurban. tourist_rail for the 1939 charter only.",
+  "omitted": [
+   "Block [7], PRR through service Camden/Philadelphia - Whitings - Beach Haven (1900-1935): drawable NONE as a separate feature per the report - PRR through cars over TRR-worked trains, covered by the main line and Beach Haven features. Becomes a PRR-coloured Beach Haven feature only if the PRR is shown to have run the trains.",
+   "Block [8], TRR through trains Tuckerton - Toms River over the Toms River and Waretown, 1872-1874: drawable NONE - single secondary source (Wikipedia), no timetable; the track is the CNJ Toms River and Barnegat branch, researched separately.",
+   "Freight-only working, not drawn (Rule 1): Southern New Jersey RR Barnegat - Tuckerton 1937 - Aug 1940 (except the 16 Apr 1939 charter); Beach Haven line 23 Sep - 16 Nov 1935; the CNJ's Barnegat siding of ex-TRR track (lifted 1973).",
+   "Adjacent gaps found by the report, other companies, not drawn here: the PRR's Pemberton - Whitings - Toms River - Bay Head line and the CNJ Southern Division through Whitings - so the TRR is drawn without its mainland connection for now."
+  ],
+  "not_yet_sourced": [
+   "WHO RAN THE BEACH HAVEN TRAINS (Rule 4). Drawn as Tuckerton Railroad. For the TRR: TRR scheduled Whiting - Beach Haven trains in 1913 (three round trips); TRR-borrowed PRR combine carried island passengers in 1929; the 1931 TRR company timetable (Fowler c) lists every island station; the PRR charged the TRR for use of its tracks (Echoes of LBI). For the PRR: the island track (Long Beach RR 1886-94, Philadelphia and Beach Haven RR 1894-1935) was PRR-leased throughout; PRRTHS lists 'Whiting-Manahawken-Beach Haven 9/22/1935' as a PRR passenger service WITHOUT the '(Tuckerton RR)' tag it gives the Tuckerton run; Fowler's z is an 1898 PRR timetable; the PRR established through Camden - Beach Haven service in 1900. Brinckmann, The Tuckerton Railroad (1992) would settle it. The same question applies to the Barnegat City branch 1886-1892.",
+   "Manahawkin and Long Beach Transportation Co. status: who it was (a PRR creature or a local company) and whether it ran its own locomotives - Wikipedia says the PRR owned the rolling stock. If it was a PRR paper company, its feature should take the PRR colour (#7B241C). Its era is said to be 1894-1908; only 1906-1907 is confirmed, both ends [OPEN].",
+   "Barnegat City branch 1886-1892: 1886 confirmed (NY Tribune); no timetable or Guide letter seen for 1887-1893, and the 1893-94 suspension is single-sourced (Wikipedia). 1908-1922: no timetable seen.",
+   "Main line opening year: 1871 (Wikipedia infobox, hmdb-style summaries) vs 1872; first-hand evidence starts June 1872, drawn from 1872.",
+   "Edge Cove extension: passenger dates beyond the 1884 Guide anchor unknown.",
+   "Mainland mileage 29.5 (Fowler) vs 28.9 (hmdb/Wikipedia). Edge Cove traced 1.6 mi vs Fowler's 2.0.",
+   "All headway_min and avg_speed_kmh values are estimates.",
+   "Southern New Jersey 1939 charter single-sourced (Wikipedia after Brinckmann)."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tuckerton Railroad",
+    "line": "Tuckerton Railroad: Whitings – Tuckerton",
+    "id": "tuckerton-railroad-whitings-tuckerton",
+    "color": "#1565C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE, unsourced: a 29-mile steam short line with seven or more stops; no running time was found in the report.",
+    "geometry_source": "OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror, fetched 2026-10-20 in 0.15-degree boxes (railway=*, abandoned/historic railway tags, old_railway_operator=*, named rail-trails), and OpenHistoricalMap (CC0) railway ways over the same box. Sections traced separately and joined where the grade is unmapped (see geometry_quality). Routed with opstrace.py (Operator want=['tuckerton']), Douglas-Peucker 8 m, trim_reversals; ot.spurs() empty.",
+    "geometry_quality": "Traced 28.7 mi Whitings - Tuckerton station against a documented 29.5 mi (Fowler/branchline.uk section 113; 28.9 mi in Wikipedia/hmdb), 97%. Milepost checks: Barnegat at traced 16.99 mi vs Fowler 17.0; the Beach Haven junction below Manahawkin at 21.76 mi vs Manahawken 21.5. The shortfall is all south of Manahawkin, in the straight leg to Tuckerton. SOURCES ALONG THE LINE: 7.4 mi on OSM ways tagged old_railway_operator='Tuckerton Railroad' (Bamber - Lacey - Waretown Junction, incl. ways 600649805, 1339579684, 1339581650, 1122173784); about 7.4 mi on untagged OSM railway=abandoned/razed ways on the line (1334140990 south of Bamber, 1334140992/1338744690/1338744695 Waretown Jct - Barnegat, 1138336244 'Tuckerton Railroad' Barnegat - Manahawkin, 1334141002 into Tuckerton); 4.5 mi on OpenHistoricalMap way 198813696 (Manahawkin - West Creek; OHM dates it 1885-1936, which is wrong for a line open since 1872 - the dates were not used); 1.8 mi between Waretown Junction and Barnegat on OHM way 202449175, which is the CNJ Toms River and Barnegat branch grade (OHM 1872-1973; it shared the approach to Barnegat and later carried the CNJ's Barnegat siding of ex-TRR track) - the TRR's own track ran alongside, so this stretch is a parallel stand-in, within about 100 m. STRAIGHT-LINE (APPROXIMATED) LEGS, 6.2 mi in all: Whitings - Bamber (Cedar Crest) 3.3 mi (no grade in OSM or OHM); a 0.35 mi gap south of Bamber near 39.892 N; Barnegat - south of Barnegat 0.81 mi through the town; West Creek - Parkertown - Tuckerton 1.75 mi (no grade mapped south of the OHM West Creek end). Plus joins of about 35 m between traced sections. ALIGNMENT ERA: the OSM grade is the line as abandoned in 1937 (Whitings - Barnegat) and 1940 (Barnegat - Tuckerton). No realignment is recorded in the report, so it is taken to be the 1872 route, but that is not verified.",
+    "segments": [
+     {
+      "start": 1872,
+      "end": 1936,
+      "headway_min": 360,
+      "note": "Tuckerton Railroad steam trains Whitings (connection with the Pennsylvania Railroad's Pemberton line and the CNJ) - Bamber (Cedar Crest) - Lacey - Waretown Junction - Barnegat - Manahawkin - West Creek - Parkertown - Tuckerton, worked by the TRR throughout; steam from opening (two 4-4-0 wood burners), so no animal-power years. START 1872: trains were running by June 1872 - the PRR's Philadelphia timetable advertisement in the Wilmington Daily Commercial, 8 June 1872 p.3, lists 'Way Train for Pemberton & Tuckerton R. R.' and Tuckerton Railroad connections. An 1871 opening (Wikipedia infobox) is NOT confirmed and is not drawn. END 1936: last train 31 January 1936 (PRRTHS 'Discontinuance/Last Runs of Passenger Service', 2003 ed., New Jersey list: '*Whiting-Manahakwen-Tuckerton (Tuckerton RR) - 1/31/1936', asterisked 'believed correct'; Wikipedia independently). Passenger traffic fell sharply after 1926; Manahawkin - Beach Haven bus coordination began 1931 (bus, not drawn). After 1936 the Southern New Jersey Railroad ran FREIGHT on Barnegat - Tuckerton 1937-1940 and Whitings - Barnegat was abandoned 1937 - not drawn (Rule 1), except the 1939 fan trip (separate feature). Headway 360 min is an ESTIMATE (two to three trains each way a day); the only count in the report is three Whiting - Beach Haven round trips in 1913 (Wikipedia, after Brinckmann). The 1872-74 TRR through trains to Toms River over the Toms River and Waretown are single-sourced and not drawn.",
+      "sources": [
+       "Segment-level: start from the PRR timetable advertisement in the Wilmington Daily Commercial, 8 Jun 1872 p.3 (first-hand, as read in research/branches/tuckerton_railroad.txt block [1]); end from the PRRTHS discontinuance list (31 Jan 1936) and Wikipedia. Fowler's 1875 Official Guide (y) and 1931 TRR timetable (c) letters confirm the stations in between. Headway is an estimate.",
+       "https://www.loc.gov/resource/sn84020594/1872-06-08/ed-1/?sp=3",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf",
+       "https://www.loc.gov/resource/sn85035801/1907-07-09/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.38,
+      39.953
+     ],
+     [
+      -74.339163,
+      39.917288
+     ],
+     [
+      -74.339253,
+      39.917261
+     ],
+     [
+      -74.313327,
+      39.894419
+     ],
+     [
+      -74.31,
+      39.89
+     ],
+     [
+      -74.309574,
+      39.889989
+     ],
+     [
+      -74.298735,
+      39.87657
+     ],
+     [
+      -74.295405,
+      39.872695
+     ],
+     [
+      -74.27364,
+      39.849429
+     ],
+     [
+      -74.225851,
+      39.797858
+     ],
+     [
+      -74.221757,
+      39.793296
+     ],
+     [
+      -74.211924,
+      39.782823
+     ],
+     [
+      -74.210884,
+      39.78138
+     ],
+     [
+      -74.21054,
+      39.780276
+     ],
+     [
+      -74.21053,
+      39.778965
+     ],
+     [
+      -74.210827,
+      39.777818
+     ],
+     [
+      -74.210624,
+      39.777705
+     ],
+     [
+      -74.221657,
+      39.75982
+     ],
+     [
+      -74.222721,
+      39.756996
+     ],
+     [
+      -74.223751,
+      39.753491
+     ],
+     [
+      -74.2321,
+      39.7436
+     ],
+     [
+      -74.232231,
+      39.73954
+     ],
+     [
+      -74.232963,
+      39.737624
+     ],
+     [
+      -74.246764,
+      39.715803
+     ],
+     [
+      -74.251688,
+      39.703864
+     ],
+     [
+      -74.25254,
+      39.702277
+     ],
+     [
+      -74.253985,
+      39.69841
+     ],
+     [
+      -74.254589,
+      39.695964
+     ],
+     [
+      -74.255853,
+      39.693608
+     ],
+     [
+      -74.258477,
+      39.690589
+     ],
+     [
+      -74.287874,
+      39.656767
+     ],
+     [
+      -74.289354,
+      39.65524
+     ],
+     [
+      -74.291305,
+      39.653975
+     ],
+     [
+      -74.294525,
+      39.652197
+     ],
+     [
+      -74.296233,
+      39.650996
+     ],
+     [
+      -74.298721,
+      39.648604
+     ],
+     [
+      -74.3334,
+      39.6171
+     ],
+     [
+      -74.337019,
+      39.613605
+     ],
+     [
+      -74.338289,
+      39.611406
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tuckerton Railroad",
+    "line": "Tuckerton Railroad: Edge Cove Wharf Extension",
+    "id": "tuckerton-railroad-edge-cove",
+    "color": "#1565C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 15,
+    "speed_source": "ESTIMATE, unsourced: a 2-mile waterfront extension to the steamboat wharf.",
+    "geometry_source": "OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror, fetched 2026-10-20 in 0.15-degree boxes (railway=*, abandoned/historic railway tags, old_railway_operator=*, named rail-trails), and OpenHistoricalMap (CC0) railway ways over the same box. Assembled directly from the OSM 'Edge Cove Spur' ways (no routing needed).",
+    "geometry_quality": "1.6 mi Tuckerton station - Edge Cove against a documented 2.0 mi (Tuckerton 29.5 - Edge Cove 31.5, branchline.uk section 113), 81%; the shortfall may be where Fowler puts the Tuckerton milepost rather than a different route - not resolved. Geometry: OSM railway=razed ways named 'Edge Cove Spur' (1338744706, 1338744707, 1334141004), joined by three short straight connections of 0.01, 0.09 and 0.16 mi where OSM has gaps. The OSM spur is the alignment as razed; its 1884 course is not verified.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1884,
+      "headway_min": 720,
+      "note": "[ANCHOR] Extension of the main line past Tuckerton station to the Edge Cove waterfront, connecting with summer steamers to Long Beach Island (Wikipedia). The ONLY confirmed year is 1884: Edge Cove carries Fowler's letter q (1884 Official Guide) and no other. Service certainly ran wider than this both ways - probably from the 1870s until the 1886 Manahawkin Bay trestle made the steamers pointless - but no other year is confirmed, so only 1884 is drawn. Do not widen without evidence. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: 1884 from Fowler's q (1884 Official Guide) at Edge Cove, branchline.uk New Jersey section 113, as read in research/branches/tuckerton_railroad.txt block [2]; the spur's purpose from Wikipedia. All other dates NOT SOURCED.",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.338289,
+      39.611406
+     ],
+     [
+      -74.338515,
+      39.611317
+     ],
+     [
+      -74.338489,
+      39.611167
+     ],
+     [
+      -74.338457,
+      39.610791
+     ],
+     [
+      -74.338398,
+      39.610394
+     ],
+     [
+      -74.338328,
+      39.610134
+     ],
+     [
+      -74.338178,
+      39.609696
+     ],
+     [
+      -74.337985,
+      39.609435
+     ],
+     [
+      -74.33732,
+      39.608475
+     ],
+     [
+      -74.336504,
+      39.607313
+     ],
+     [
+      -74.334611,
+      39.604569
+     ],
+     [
+      -74.332905,
+      39.602695
+     ],
+     [
+      -74.33268,
+      39.602596
+     ],
+     [
+      -74.332095,
+      39.602347
+     ],
+     [
+      -74.330475,
+      39.601859
+     ],
+     [
+      -74.330083,
+      39.601764
+     ],
+     [
+      -74.329692,
+      39.601698
+     ],
+     [
+      -74.329241,
+      39.601657
+     ],
+     [
+      -74.328911,
+      39.601605
+     ],
+     [
+      -74.328603,
+      39.60152
+     ],
+     [
+      -74.317724,
+      39.598503
+     ],
+     [
+      -74.317552,
+      39.598425
+     ],
+     [
+      -74.317407,
+      39.598317
+     ],
+     [
+      -74.317246,
+      39.598152
+     ],
+     [
+      -74.316994,
+      39.597602
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tuckerton Railroad",
+    "line": "Tuckerton Railroad: Manahawkin – Beach Haven",
+    "id": "tuckerton-railroad-beach-haven",
+    "color": "#1565C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, unsourced: steam over a long bay trestle and down the island with frequent stops.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways, fetched 2026-10-20 from overpass-api.openhistoricalmap.org; routed with opstrace.py over OHM ways, Douglas-Peucker 8 m, trim_reversals; ot.spurs() empty.",
+    "geometry_quality": "Traced 12.0 mi Manahawkin (Hilliard junction) - Beach Haven against a documented 12.1 mi (branchline.uk section 107), 99%. Geometry is OpenHistoricalMap (CC0) throughout - ways 198813697/198813698 at Hilliard, 198813695 and 198813682-198813689 for the Manahawkin Bay trestle, Cedar Bonnet Island and the island approach (bridge=yes pieces mapped), 198813694 at Barnegat City Junction and 198813693 down the island to Beach Haven (OHM 1885/1886 - 1935/1936) - so the bay trestle is NOT a straight leg. One straight join of 0.16 mi (261 m) from the OHM line's start at Hilliard to the main line. OSM has no railway geometry on Long Beach Island (the grade became streets); OHM's date tags were not used. Barnegat City Junction is the west leg of the OHM wye; the 0.5 mi east leg 198813692 is not drawn on this feature.",
+    "ownership_note": "Track: Long Beach Railroad 1886-1894, then the Philadelphia and Beach Haven Railroad 1894-1935, both leased to the Pennsylvania Railroad. Trains are drawn as the Tuckerton Railroad's on the report's best reading - see not_yet_sourced for the conflict. The 1894 change of track owner did not, on present evidence, change who ran the trains, so this feature is not split there.",
+    "segments": [
+     {
+      "start": 1886,
+      "end": 1935,
+      "headway_min": 480,
+      "note": "Manahawkin (Hilliard) - Manahawkin Bay trestle - Barnegat City Junction - Ship Bottom - Brant Beach - Peahala - Spray Beach - North Beach Haven - Beach Haven, the Long Beach Island resort line. START 1886: the New-York Tribune of 18 July 1886 p.9 has passengers 'taken by rail direct to ... Beach Haven'; HABS NJ-1014 (citing the New Jersey Courier) dates the railroad's arrival 18 June 1886. END 1935: PRRTHS discontinuance list '*Whiting-Manahawken-Beach Haven - 9/22/1935'. Weekday service had been cut in 1933, weekends continuing (Wikipedia/Brinckmann). Passengers stopped on 22 Sept 1935; FREIGHT ran on to Beach Haven until the 16-17 Nov 1935 nor'easter wrecked the trestle (last crossing a freight, per Echoes of LBI) - those weeks are not drawn. OPERATOR: drawn as Tuckerton Railroad trains over PRR-leased track (TRR scheduled Whiting - Beach Haven trains in 1913; the 1931 TRR company timetable lists every island station), with PRR through cars from Camden from 1900. This is CONTESTED - see metadata.not_yet_sourced. Headway 480 min is an ESTIMATE (three round trips in 1913, Wikipedia; summer-heavy).",
+      "sources": [
+       "Segment-level: start from the New-York Tribune 18 Jul 1886 p.9 and HABS NJ-1014 p.3; end from the PRRTHS discontinuance list (22 Sep 1935); operator from Wikipedia (after Brinckmann) and Fowler's c (1931 TRR timetable) - all as read in research/branches/tuckerton_railroad.txt block [3]. Operator conflict unresolved; headway is an estimate.",
+       "https://www.loc.gov/resource/sn83030214/1886-07-18/ed-1/?sp=9",
+       "https://tile.loc.gov/storage-services/master/pnp/habshaer/nj/nj1500/nj1560/data/nj1560data.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf",
+       "https://echoesoflbi.com/the-last-train/",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.258477,
+      39.690589
+     ],
+     [
+      -74.255939,
+      39.689282
+     ],
+     [
+      -74.254555,
+      39.688769
+     ],
+     [
+      -74.227308,
+      39.674625
+     ],
+     [
+      -74.215159,
+      39.668579
+     ],
+     [
+      -74.191286,
+      39.658151
+     ],
+     [
+      -74.17991,
+      39.652851
+     ],
+     [
+      -74.178476,
+      39.651459
+     ],
+     [
+      -74.17757,
+      39.65014
+     ],
+     [
+      -74.177639,
+      39.647485
+     ],
+     [
+      -74.180642,
+      39.64379
+     ],
+     [
+      -74.190324,
+      39.631034
+     ],
+     [
+      -74.196654,
+      39.62206
+     ],
+     [
+      -74.20425,
+      39.61163
+     ],
+     [
+      -74.22648,
+      39.582844
+     ],
+     [
+      -74.234655,
+      39.572077
+     ],
+     [
+      -74.240127,
+      39.564435
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tuckerton Railroad",
+    "line": "Tuckerton Railroad: Barnegat City Branch",
+    "id": "tuckerton-railroad-barnegat-city-1886",
+    "color": "#1565C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) ways 198813691 and 198813690, fetched 2026-10-20; concatenated directly, Douglas-Peucker 8 m.",
+    "geometry_quality": "Traced 8.5 mi Barnegat City Junction (west leg of the wye) - Barnegat City against a documented 8.7 mi (branchline.uk section 101), 97%. Geometry is OpenHistoricalMap (CC0): wye leg 198813691 (0.5 mi) then way 198813690 (operator='Barnegat Railroad', 7.9 mi) to its end at Barnegat City (now Barnegat Light). No straight-line legs. OSM has no railway geometry on the island. OHM's 1886-1936 dates on 198813690 were not used (the line was abandoned 1923). Whether the 1886 Long Beach RR alignment equals the one OHM draws is not established.",
+    "ownership_note": "Long Beach Railroad track leased to the PRR; trains apparently the Tuckerton Railroad's ('the PRR (and thus TRR) would not run trains to Barnegat City anymore', Wikipedia on 1894). Same operator uncertainty as the Beach Haven line. The branch then had no trains 1893-1894 and was worked by the Manahawkin and Long Beach Transportation Co. from 1894 (separate feature) and by the TRR again from 1908 (separate feature).",
+    "segments": [
+     {
+      "start": 1886,
+      "end": 1892,
+      "headway_min": 720,
+      "note": "Barnegat City Junction - Surf City (Long Beach City) - Harvey Cedars - High Point - Long Beach Club House - Barnegat City (now Barnegat Light). Built with the Long Beach Railroad 1885-86. START 1886: New-York Tribune, 18 July 1886 p.9 - passengers 'taken by rail direct to Harvey Cedars, Barnegat City and Beach Haven'. END: Wikipedia (after Brinckmann) has the PRR foreclose the branch in 1893 and all train service end; the report pulls the drawn end back to 1892 because that 1893 suspension is single-sourced and no timetable or Guide letter has been seen for 1887-1893 (Fowler's section 101 is entirely unlettered). Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: start from the New-York Tribune 18 Jul 1886 p.9 (first-hand, as read in research/branches/tuckerton_railroad.txt block [4]); end from Wikipedia (1893 foreclosure), pulled back one year by the report. 1887-1892 not confirmed by any timetable.",
+       "https://www.loc.gov/resource/sn83030214/1886-07-18/ed-1/?sp=9",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad",
+       "https://tile.loc.gov/storage-services/master/pnp/habshaer/nj/nj1500/nj1560/data/nj1560data.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.17991,
+      39.652851
+     ],
+     [
+      -74.17778,
+      39.652067
+     ],
+     [
+      -74.176577,
+      39.651992
+     ],
+     [
+      -74.174349,
+      39.652593
+     ],
+     [
+      -74.171607,
+      39.654929
+     ],
+     [
+      -74.148814,
+      39.683054
+     ],
+     [
+      -74.137121,
+      39.700996
+     ],
+     [
+      -74.12237,
+      39.731487
+     ],
+     [
+      -74.11631,
+      39.742406
+     ],
+     [
+      -74.110025,
+      39.752888
+     ],
+     [
+      -74.107958,
+      39.756654
+     ],
+     [
+      -74.106486,
+      39.75759
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Manahawkin and Long Beach Transportation Company",
+    "line": "Manahawkin and Long Beach Transportation: Barnegat City Branch",
+    "id": "manahawkin-long-beach-transportation-barnegat-city",
+    "color": "#E07B00",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) ways 198813691 and 198813690, fetched 2026-10-20; identical to the Tuckerton Railroad Barnegat City Branch features.",
+    "geometry_quality": "Traced 8.5 mi Barnegat City Junction (west leg of the wye) - Barnegat City against a documented 8.7 mi (branchline.uk section 101), 97%. Geometry is OpenHistoricalMap (CC0): wye leg 198813691 (0.5 mi) then way 198813690 (operator='Barnegat Railroad', 7.9 mi) to its end at Barnegat City (now Barnegat Light). No straight-line legs. OSM has no railway geometry on the island. OHM's 1886-1936 dates on 198813690 were not used (the line was abandoned 1923). Whether the 1886 Long Beach RR alignment equals the one OHM draws is not established.",
+    "ownership_note": "Barnegat Railroad track (reorganised from the Long Beach RR in 1894), worked from 1894 by the Manahawkin and Long Beach Transportation Co., with PRR-owned rolling stock (Wikipedia). The PRR cancelled its lease in 1908 and the Tuckerton Railroad took over. Split from the TRR features at both changes (Rule 4). Whether the M&LBT was a PRR paper company is unresolved - if so this feature takes the PRR colour.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1907,
+      "headway_min": 720,
+      "note": "Barnegat City Junction - Surf City (Long Beach City) - Harvey Cedars - High Point - Long Beach Club House - Barnegat City (now Barnegat Light). [OPEN] at BOTH ends. The only years confirmed first-hand are 1906-1907: the 27 May 1906 'Tuckerton Railroad via Pennsylvania Railroad' schedule printed in the Mount Holly News of 9 July 1907 carries Barnegat City as the end of a column from Philadelphia, with times. The M&LBT era is said to run 1894-1908 (Wikipedia, after Brinckmann), but those bounds are narrative only, so 1894-1905 and the 1908 end are withheld unknowns, NOT known limits. Do not extend without evidence. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: 1906-1907 from the May 27 1906 schedule in the Mount Holly News, 9 Jul 1907 p.1 (first-hand, as read in research/branches/tuckerton_railroad.txt block [5]). The 1894-1908 operator era is from Wikipedia only.",
+       "https://www.loc.gov/resource/sn85035801/1907-07-09/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.17991,
+      39.652851
+     ],
+     [
+      -74.17778,
+      39.652067
+     ],
+     [
+      -74.176577,
+      39.651992
+     ],
+     [
+      -74.174349,
+      39.652593
+     ],
+     [
+      -74.171607,
+      39.654929
+     ],
+     [
+      -74.148814,
+      39.683054
+     ],
+     [
+      -74.137121,
+      39.700996
+     ],
+     [
+      -74.12237,
+      39.731487
+     ],
+     [
+      -74.11631,
+      39.742406
+     ],
+     [
+      -74.110025,
+      39.752888
+     ],
+     [
+      -74.107958,
+      39.756654
+     ],
+     [
+      -74.106486,
+      39.75759
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tuckerton Railroad",
+    "line": "Tuckerton Railroad: Barnegat City Branch",
+    "id": "tuckerton-railroad-barnegat-city-1908",
+    "color": "#1565C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) ways 198813691 and 198813690, fetched 2026-10-20; identical to the other Barnegat City Branch features.",
+    "geometry_quality": "Traced 8.5 mi Barnegat City Junction (west leg of the wye) - Barnegat City against a documented 8.7 mi (branchline.uk section 101), 97%. Geometry is OpenHistoricalMap (CC0): wye leg 198813691 (0.5 mi) then way 198813690 (operator='Barnegat Railroad', 7.9 mi) to its end at Barnegat City (now Barnegat Light). No straight-line legs. OSM has no railway geometry on the island. OHM's 1886-1936 dates on 198813690 were not used (the line was abandoned 1923). Whether the 1886 Long Beach RR alignment equals the one OHM draws is not established.",
+    "ownership_note": "Barnegat Railroad track worked by the Tuckerton Railroad from 1908, when the PRR cancelled the Manahawkin and Long Beach Transportation Co.'s lease 'due to track conditions' (Wikipedia). Split from the M&LBT feature at that change (Rule 4).",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1923,
+      "headway_min": 720,
+      "note": "Barnegat City Junction - Surf City (Long Beach City) - Harvey Cedars - High Point - Long Beach Club House - Barnegat City (now Barnegat Light). START 1908: the TRR took over operation on cancellation of the M&LBT lease (Wikipedia, after Brinckmann) - narrative-sourced; no timetable has been seen for 1908-1922. END 1923: PRRTHS discontinuance list '*Surf City-Barnegat City - 6/6/1923' (in the rail list, above the separate Steamboats heading); Wikipedia independently has the Barnegat Railroad abandoned in 1923 and its tracks quickly removed - here the last passenger run and the abandonment coincide. Surf City is 0.9 mi from Barnegat City Junction; the junction - Surf City piece is presumed to have gone with it. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: start from Wikipedia (1908 lease cancellation); end from the PRRTHS discontinuance list (6 Jun 1923) and Wikipedia - as read in research/branches/tuckerton_railroad.txt block [6].",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.17991,
+      39.652851
+     ],
+     [
+      -74.17778,
+      39.652067
+     ],
+     [
+      -74.176577,
+      39.651992
+     ],
+     [
+      -74.174349,
+      39.652593
+     ],
+     [
+      -74.171607,
+      39.654929
+     ],
+     [
+      -74.148814,
+      39.683054
+     ],
+     [
+      -74.137121,
+      39.700996
+     ],
+     [
+      -74.12237,
+      39.731487
+     ],
+     [
+      -74.11631,
+      39.742406
+     ],
+     [
+      -74.110025,
+      39.752888
+     ],
+     [
+      -74.107958,
+      39.756654
+     ],
+     [
+      -74.106486,
+      39.75759
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern New Jersey Railroad",
+    "line": "Southern New Jersey Railroad: Barnegat – Tuckerton (1939 fan trip)",
+    "id": "southern-new-jersey-railroad-1939-fan-trip",
+    "color": "#A23B9A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE, unsourced.",
+    "geometry_source": "Subset of the Tuckerton Railroad main-line trace (feature tuckerton-railroad-whitings-tuckerton), Barnegat to Tuckerton.",
+    "geometry_quality": "Same geometry as the Tuckerton Railroad main line from Barnegat to Tuckerton (cut at the Barnegat vertex, traced milepost 16.99): 11.7 mi against a documented 12.5 mi (Barnegat 17.0 - Tuckerton 29.5, branchline.uk section 113), 94%. Straight-line legs within it: Barnegat - south of Barnegat 0.81 mi and West Creek - Tuckerton 1.75 mi. See the main-line feature's geometry_quality for the OSM/OHM sources.",
+    "ownership_note": "Southern New Jersey Railroad Company, Inc. (1937-1940), freight successor on Barnegat - Tuckerton only; a different company from the Tuckerton Railroad, so its own feature and colour (Rule 4).",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1939,
+      "headway_min": 1440,
+      "note": "[ANCHOR] A single NRHS railfan charter on 16 April 1939: CNJ Blue Comet coaches came to Barnegat and SNJ engines Nos. 5 and 6 took them to Tuckerton (Wikipedia, after Brinckmann). CLAUDE.md counts one-off passenger specials as passenger service; everything else the SNJ ran (1937 - 20 Aug 1940, scrap trains to Jan 1941) was FREIGHT and is not drawn. One trip, so 1939 is the only year; single-sourced and not independently confirmed. headway_min 1440 is a placeholder for a one-off train, not a service frequency.",
+      "sources": [
+       "Segment-level: 16 Apr 1939 fan trip from Wikipedia (after Brinckmann), as read in research/branches/tuckerton_railroad.txt block [9]. Not independently confirmed.",
+       "https://en.wikipedia.org/wiki/Tuckerton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.223751,
+      39.753491
+     ],
+     [
+      -74.2321,
+      39.7436
+     ],
+     [
+      -74.232231,
+      39.73954
+     ],
+     [
+      -74.232963,
+      39.737624
+     ],
+     [
+      -74.246764,
+      39.715803
+     ],
+     [
+      -74.251688,
+      39.703864
+     ],
+     [
+      -74.25254,
+      39.702277
+     ],
+     [
+      -74.253985,
+      39.69841
+     ],
+     [
+      -74.254589,
+      39.695964
+     ],
+     [
+      -74.255853,
+      39.693608
+     ],
+     [
+      -74.258477,
+      39.690589
+     ],
+     [
+      -74.287874,
+      39.656767
+     ],
+     [
+      -74.289354,
+      39.65524
+     ],
+     [
+      -74.291305,
+      39.653975
+     ],
+     [
+      -74.294525,
+      39.652197
+     ],
+     [
+      -74.296233,
+      39.650996
+     ],
+     [
+      -74.298721,
+      39.648604
+     ],
+     [
+      -74.3334,
+      39.6171
+     ],
+     [
+      -74.337019,
+      39.613605
+     ],
+     [
+      -74.338289,
+      39.611406
+     ]
+    ]
+   }
+  }
+ ]
+}
