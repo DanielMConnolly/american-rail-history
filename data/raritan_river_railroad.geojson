@@ -1,0 +1,470 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Raritan River Rail Road (incorporated New Brunswick, N.J., 21 Apr 1888; never renamed; merged into Conrail 24 Apr 1980), a 12-mile Middlesex County steam short line from South Amboy to New Brunswick. Passenger service 1889-1938 only. Two features share company and colour: South Amboy - South River 1889-1892 (the only section with a dated passenger opening before 1893) and the full line 1893-1938. Built from research/branches/raritan_river_railroad.txt blocks [1]-[3].",
+  "sources": [
+   "https://www.loc.gov/resource/sn85035661/1889-07-20/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn91064026/1890-01-09/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn85035661/1891-02-07/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn87068097/1891-07-09/ed-1/?sp=1",
+   "https://en.wikipedia.org/wiki/Raritan_River_Railroad",
+   "https://en.wikipedia.org/wiki/Raritan_River_Freight_Station",
+   "https://www.jcrhs.org/raritanriver.html",
+   "https://preservationnj.org/items/raritan-river-railroad%E2%80%AFfreight-station",
+   "Fowler, New Jersey Railroads, section 112 - https://www.branchline.uk/jfpdf/newjerseyrrs.pdf (undated station list)",
+   "Official Guide Feb 1952, Raritan River R.R. entry (research/sources/official_guide_1952.txt): \"OPERATED FOR FREIGHT SERVICE ONLY.\""
+  ],
+  "operator_split": "None. The Raritan River ran its own passenger trains with its own locomotives and cars for the whole 1889-1938 span. CNJ/PRR stock ownership (60/40 per Wikipedia, undated; \"1929 ... 30 percent\" per Locomotive Wiki; 1928 per the dispatch brief - in conflict) was control, not operation, so no split. 1889-1891 operation by the construction contractor under the company name is likewise not a split. Own colour, not CNJ's or PRR's.",
+  "freight_only_audit": "Built 2026-10-20 to Rule 1. Not drawn: the whole road 1938-1980 (freight only) and Conrail/CSAO freight 1980-present; the 1888 sand/clay gondola trains before passenger service; freight branches with no passenger year - Sayreville Branch (Sayreville Jct - Sayreville, 2 mi; Fowler and the 1893 table list it but no train or time is shown), South River Branch to Wright's (1905), Gillespie Branch / Running Track (1917), Milltown (Fresh Ponds) Spur (1925), Phoenix Spur, and the Such's siding PRR connection (1888-1901). The 1969 Metroliner display move to Milltown was not a passenger trip.",
+  "horsecar_audit": "Nothing trimmed: steam from the first train (two 4-4-0s, 1888).",
+  "omitted": "Serviss Branch (later East Brunswick Branch): its only passenger movement was the NRHS North Jersey Chapter farewell charter of 28 May 1938, Serviss Junction - Henderson's Siding (Route 18). The report marks it drawable 1938-1938 [ANCHOR] but low-value; omitted here per the dispatch. Wikipedia: \"the Serviss Branch never had regularly scheduled passenger service.\" If added later: a one-year 1938 tourist_rail feature, Serviss Jct - Henderson's Siding only.",
+  "not_yet_sourced": "(1) OPEN START: passenger opening to Milltown and New Brunswick. Drawn from 1893 (June 1893 Official Guide via Wikipedia - the Guide page itself not seen) but sources conflict: trains Milltown - South Amboy from 6 Jan 1890 (The Advance, 9 Jan 1890, kind not stated) and first train from Milltown \"by July 4, 1891\" (Wikipedia). A New Brunswick Daily Times / Fredonian notice of first passenger trains (1890-91) would settle it. (2) Exact 1889 opening day (17 Jul inferred from \"Wednesday\"). (3) Sayreville Branch passenger service: listed, never shown with a train. (4) When regular service to South Amboy proper (vs Stevens Avenue) ended. (5) Whether RRRR trains used the NY&LB South Amboy station or their own stop; the last ~0.3 mi to the NY&LB is not drawn. (6) Exact New Brunswick (Sandford Street) terminal location and the 11.9 mi (1893) vs 12.3 mi (1936) difference. (7) Mode: intercity_rail chosen; commuter_rail is defensible for the 1910s-30s worker trains. (8) CNJ/PRR control date and shares. (9) Every headway_min and avg_speed_kmh is an estimate."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Raritan River",
+    "line": "Raritan River: South Amboy – South River",
+    "id": "raritan-river-south-amboy-south-river",
+    "color": "#4C4C00",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. No source gives a running speed. Derived from the Aug 1936 Official Guide schedule as transcribed by Wikipedia: Stevens Avenue 5:45am - New Brunswick 6:24am, 39 min for about 12 mi (~18.5 mph / 30 km/h including stops). Applied to every era; earlier speeds are not known.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator=RR - the members of OSM route relation 1385447 \"Main Line (Raritan River Railroad)\" (source:name 1920 NJ State Board of Taxes and Assessment report): the live Conrail Shared Assets \"Sayreville Running Track\" from Sayreville Junction through Parlin, South River and Milltown, plus abandoned RR-tagged grade at both ends (South Amboy - Sayreville Jct, and 0.3 mi NW of the end of live track beyond Milltown). Routed with opstrace.py (own-operator ways only - 100% of the routed mileage is RR-tagged; no PRR/NJCL/Camden & Amboy track used), Douglas-Peucker 8 m, trim_reversals. OpenHistoricalMap has no Raritan River ways in this area (checked: only the 1832 C&A, 1839 NEC, 1854 Millstone and 1875 NY&LB ways).",
+    "geometry_quality": "South Amboy (Stevens Avenue) - South River: 6.09 mi drawn against 6.1 mi documented (Guide: Stevens Ave 0.3 -> South River 6.4). Approximated (straight-line) legs: Stevens Avenue - east end of the RR-tagged grade in South Amboy, 0.63 mi (no surviving grade in OSM or OHM); a 210 m join between two RR-tagged way pieces west of Bergen Hill. Everything else real-traced on RR-tagged ways. The line stops at Stevens Avenue: the last ~0.3 mi to the New York & Long Branch connection at South Amboy (Guide mile 0.0) is NOT drawn because its alignment is unknown. Hand-pinned points: South River station is placed by mileage (Official Guide 6.4 mi South Amboy datum -> Milltown 9.9 mi, i.e. 3.5 mi east of the Milltown depot along the trace), which lands just west of the South River swing bridge; the Milltown depot at its Wikipedia coordinates (40.45306, -74.43333). ALIGNMENT ERA: the drawn line is the alignment of the 1920 tax-report relation and of today's Conrail track; no realignment of the main line between 1889 and 1938 is documented, but none has been ruled out either. The 1889-1901 freight connection to the PRR over Such's siding is not drawn (freight only).",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1892,
+      "headway_min": 180,
+      "note": "Passenger service South Amboy - South River, opened (by inference) Wednesday 17 July 1889, connecting at South Amboy with New York & Long Branch trains for New York and the shore (connection, not through running - no through cars found). Steam from the first train (two 4-4-0s, 1888); the 1888 trains were sand/clay gondola trains, not passenger trains (Rule 1). Operated 1889-1891 by the construction contractor (Gen. E. H. Ripley) under the company's name (Jersey City News, 9 Jul 1891) - same road, not an operator split. This short feature ENDS IN 1892 ONLY BECAUSE the line beyond South River is first CONFIRMED carrying passengers in the June 1893 Official Guide; from 1893 the full South Amboy - New Brunswick feature takes over on the same track. Trains ran to Milltown from 6 Jan 1890 (The Advance, 9 Jan 1890, kind of train not stated) and Wikipedia has the first train leaving Milltown \"by July 4, 1891\" - passenger service beyond South River may well have begun in 1890 or 1891, but no source confirms it. headway_min is an ESTIMATE - no 1889-1892 timetable frequency has been found.",
+      "sources": [
+       "Segment-level: start 1889 from the Jamesburg Record, 20 Jul 1889, p.2 (\"The Raritan River railroad was opened Wednesday for passenger travel between South River and New York ... and to Sea Girt\") - year firm, day (17 Jul) inferred. End 1892 is NOT an end of service: it is the year before the line is first confirmed (June 1893 Guide) through to Milltown/New Brunswick.",
+       "https://www.loc.gov/resource/sn85035661/1889-07-20/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn91064026/1890-01-09/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn87068097/1891-07-09/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Raritan_River_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2786,
+      40.476
+     ],
+     [
+      -74.290157,
+      40.478436
+     ],
+     [
+      -74.29169,
+      40.479248
+     ],
+     [
+      -74.293206,
+      40.480817
+     ],
+     [
+      -74.294907,
+      40.481696
+     ],
+     [
+      -74.296568,
+      40.481767
+     ],
+     [
+      -74.298045,
+      40.481497
+     ],
+     [
+      -74.300039,
+      40.481387
+     ],
+     [
+      -74.304937,
+      40.481621
+     ],
+     [
+      -74.307678,
+      40.481631
+     ],
+     [
+      -74.308547,
+      40.481316
+     ],
+     [
+      -74.30949,
+      40.480643
+     ],
+     [
+      -74.316633,
+      40.472505
+     ],
+     [
+      -74.319017,
+      40.470402
+     ],
+     [
+      -74.320502,
+      40.469411
+     ],
+     [
+      -74.322577,
+      40.468298
+     ],
+     [
+      -74.324056,
+      40.467658
+     ],
+     [
+      -74.329799,
+      40.465739
+     ],
+     [
+      -74.330941,
+      40.46513
+     ],
+     [
+      -74.331723,
+      40.464157
+     ],
+     [
+      -74.332443,
+      40.461047
+     ],
+     [
+      -74.332709,
+      40.460419
+     ],
+     [
+      -74.333521,
+      40.459412
+     ],
+     [
+      -74.334616,
+      40.458676
+     ],
+     [
+      -74.350207,
+      40.453304
+     ],
+     [
+      -74.353271,
+      40.452641
+     ],
+     [
+      -74.362909,
+      40.451072
+     ],
+     [
+      -74.36395,
+      40.450794
+     ],
+     [
+      -74.37391,
+      40.446915
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Raritan River",
+    "line": "Raritan River: South Amboy – New Brunswick",
+    "id": "raritan-river-south-amboy-new-brunswick",
+    "color": "#4C4C00",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE. No source gives a running speed. Derived from the Aug 1936 Official Guide schedule as transcribed by Wikipedia: Stevens Avenue 5:45am - New Brunswick 6:24am, 39 min for about 12 mi (~18.5 mph / 30 km/h including stops). Applied to every era; earlier speeds are not known.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator=RR - the members of OSM route relation 1385447 \"Main Line (Raritan River Railroad)\" (source:name 1920 NJ State Board of Taxes and Assessment report): the live Conrail Shared Assets \"Sayreville Running Track\" from Sayreville Junction through Parlin, South River and Milltown, plus abandoned RR-tagged grade at both ends (South Amboy - Sayreville Jct, and 0.3 mi NW of the end of live track beyond Milltown). Routed with opstrace.py (own-operator ways only - 100% of the routed mileage is RR-tagged; no PRR/NJCL/Camden & Amboy track used), Douglas-Peucker 8 m, trim_reversals. OpenHistoricalMap has no Raritan River ways in this area (checked: only the 1832 C&A, 1839 NEC, 1854 Millstone and 1875 NY&LB ways).",
+    "geometry_quality": "South Amboy (Stevens Avenue) - New Brunswick: 11.62 mi drawn against 12.0 mi documented (1936 Guide 12.3 mi from South Amboy, less 0.3 mi to Stevens Avenue; 11.9 mi in the 1893 Guide). By section: Stevens Ave - South River 6.09 mi vs 6.1; South River - Milltown 3.52 mi vs 3.5 (equal by construction, see below); Milltown - New Brunswick 2.01 mi vs 2.0 (1893) / 2.4 (1936). Approximated (straight-line) legs: Stevens Avenue - east end of the RR-tagged grade in South Amboy, 0.63 mi; a 210 m join west of Bergen Hill; a 150 m join between the end of live track and the abandoned RR-tagged grade NW of Milltown; and the New Brunswick approach, 0.68 mi straight from the end of that grade to the SE end of Sandford Street (Wikipedia: \"the current Sanford Street terminus in New Brunswick\"; the station site, wye and grade there were redeveloped and nothing survives in OSM or OHM, so the terminal point is approximate to a few hundred metres). The last ~0.3 mi to the NY&LB connection at South Amboy is NOT drawn. Hand-pinned points: South River station is placed by mileage (Official Guide 6.4 mi South Amboy datum -> Milltown 9.9 mi, i.e. 3.5 mi east of the Milltown depot along the trace), which lands just west of the South River swing bridge; the Milltown depot at its Wikipedia coordinates (40.45306, -74.43333). ALIGNMENT ERA: the drawn line is the alignment of the 1920 tax-report relation and of today's Conrail track; no realignment of the main line between 1889 and 1938 is documented, but none has been ruled out either. The 1889-1901 freight connection to the PRR over Such's siding is not drawn (freight only).",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1914,
+      "headway_min": 120,
+      "note": "Full main line South Amboy - Bergen Hill - Melfort/Phoenix - Sayreville Junction - Parlin - Edgars/Gillespie - Vandeventers - South River - Serviss Junction - Milltown - New Brunswick (Sandford Street). START 1893 IS THE FIRST CONFIRMED YEAR, NOT A KNOWN OPENING: the June 1893 Official Guide (via Wikipedia) is the earliest source placing Milltown and New Brunswick in a passenger table. Conflicting earlier dates - trains Milltown - South Amboy from 6 Jan 1890 (The Advance, 9 Jan 1890, kind not stated) and first train from Milltown \"by July 4, 1891\", New Brunswick \"shortly thereafter\" (Wikipedia) - are unconfirmed for passengers; move the start back only on a source that names passenger trains. Six passenger cars served the line 1888-1910. headway_min is an ESTIMATE - no timetable frequency was counted for this span.",
+      "sources": [
+       "Segment-level: start 1893 is the June 1893 Official Guide table (Milltown 9.9 mi, New Brunswick 11.9 mi) as transcribed by Wikipedia - the Guide page itself was not seen. It is the earliest CONFIRMED year, not a known opening (see note).",
+       "https://en.wikipedia.org/wiki/Raritan_River_Railroad",
+       "https://www.loc.gov/resource/sn91064026/1890-01-09/ed-1/?sp=2"
+      ]
+     },
+     {
+      "start": 1915,
+      "end": 1929,
+      "headway_min": 60,
+      "note": "Expansion and peak: 12 coaches and 2 combines bought second-hand from the DL&W in 1915, 2 more in 1917. Peak in 1918 (WWI munitions; worker traffic to Parlin, Gillespie and Milltown): 22 daily passenger trains plus 7 extra on Sundays, \"9,000 passengers per day\" (Wikipedia). Milltown, with the Michelin tire plant (closed early 1930), was the busiest intermediate station. headway_min 60 is an ESTIMATE from the 1918 figure of 22 daily trains; the 1915 and 1929 boundaries are this layer's era breaks (coach purchase; Michelin closure), not service changes.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1918 train count is from Wikipedia (not footnoted to a timetable); the 1915 and 1929 boundaries are era breaks chosen for this layer, and nobody has checked a timetable for this span's headway.",
+       "https://en.wikipedia.org/wiki/Raritan_River_Railroad"
+      ]
+     },
+     {
+      "start": 1930,
+      "end": 1938,
+      "headway_min": 360,
+      "note": "Decline: down to 4 daily trains by 1930 (Wikipedia). Aug 1936 Official Guide (via Wikipedia): weekdays-only #1 Stevens Avenue 5:45am - Bergen Hill - Parlin - South River - Milltown - New Brunswick 6:24am, plus a daily-except-Sunday round trip #2/#7 New Brunswick - Milltown - South River - Parlin; so by 1936 the South Amboy end (Stevens Ave - Parlin) had only the one weekday westbound trip. When regular service to South Amboy proper ended is not established. Last combine scrapped 1937, leaving coach No. 27. The last regular passenger train left New Brunswick on 17 April 1938; an NRHS North Jersey Chapter farewell special ran New Brunswick - South Amboy on 28 May 1938 (also 1938). Freight continued - the Raritan River was freight-only 1938-1980 (\"OPERATED FOR FREIGHT SERVICE ONLY\", Feb 1952 Official Guide), merged into Conrail 24 Apr 1980, and the track is still a Conrail Shared Assets freight line - none of that is drawn (Rule 1). headway_min 360 is an ESTIMATE from the 1930 and 1936 train counts.",
+      "sources": [
+       "Segment-level: end 1938 from Wikipedia (last regular passenger train 17 Apr 1938; NRHS special 28 May 1938), JCRHS (\"Passenger service was terminated in 1938\") and Preservation NJ (\"After passenger service ended in Milltown in 1938\"); 1930 and 1936 service from Wikipedia's account of the Aug 1936 Official Guide. The 1930 start of this span is an era break, not a sourced service change.",
+       "https://en.wikipedia.org/wiki/Raritan_River_Railroad",
+       "https://www.jcrhs.org/raritanriver.html",
+       "https://preservationnj.org/items/raritan-river-railroad%E2%80%AFfreight-station",
+       "research/sources/official_guide_1952.txt (Feb 1952 Official Guide, Raritan River R.R. entry: freight only)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2786,
+      40.476
+     ],
+     [
+      -74.290157,
+      40.478436
+     ],
+     [
+      -74.29169,
+      40.479248
+     ],
+     [
+      -74.293206,
+      40.480817
+     ],
+     [
+      -74.294907,
+      40.481696
+     ],
+     [
+      -74.296568,
+      40.481767
+     ],
+     [
+      -74.298045,
+      40.481497
+     ],
+     [
+      -74.300039,
+      40.481387
+     ],
+     [
+      -74.304937,
+      40.481621
+     ],
+     [
+      -74.307678,
+      40.481631
+     ],
+     [
+      -74.308547,
+      40.481316
+     ],
+     [
+      -74.30949,
+      40.480643
+     ],
+     [
+      -74.316633,
+      40.472505
+     ],
+     [
+      -74.319017,
+      40.470402
+     ],
+     [
+      -74.320502,
+      40.469411
+     ],
+     [
+      -74.322577,
+      40.468298
+     ],
+     [
+      -74.324056,
+      40.467658
+     ],
+     [
+      -74.329799,
+      40.465739
+     ],
+     [
+      -74.330941,
+      40.46513
+     ],
+     [
+      -74.331723,
+      40.464157
+     ],
+     [
+      -74.332443,
+      40.461047
+     ],
+     [
+      -74.332709,
+      40.460419
+     ],
+     [
+      -74.333521,
+      40.459412
+     ],
+     [
+      -74.334616,
+      40.458676
+     ],
+     [
+      -74.350207,
+      40.453304
+     ],
+     [
+      -74.353271,
+      40.452641
+     ],
+     [
+      -74.362909,
+      40.451072
+     ],
+     [
+      -74.36395,
+      40.450794
+     ],
+     [
+      -74.37391,
+      40.446915
+     ],
+     [
+      -74.376169,
+      40.445241
+     ],
+     [
+      -74.377206,
+      40.444799
+     ],
+     [
+      -74.378287,
+      40.444593
+     ],
+     [
+      -74.38037,
+      40.444622
+     ],
+     [
+      -74.381077,
+      40.44453
+     ],
+     [
+      -74.385113,
+      40.443028
+     ],
+     [
+      -74.386318,
+      40.442788
+     ],
+     [
+      -74.387853,
+      40.442682
+     ],
+     [
+      -74.388804,
+      40.442785
+     ],
+     [
+      -74.39398,
+      40.443955
+     ],
+     [
+      -74.39496,
+      40.444083
+     ],
+     [
+      -74.402073,
+      40.443608
+     ],
+     [
+      -74.408439,
+      40.443519
+     ],
+     [
+      -74.409538,
+      40.443593
+     ],
+     [
+      -74.415204,
+      40.444365
+     ],
+     [
+      -74.421028,
+      40.44535
+     ],
+     [
+      -74.42286,
+      40.445953
+     ],
+     [
+      -74.424808,
+      40.447033
+     ],
+     [
+      -74.434597,
+      40.453983
+     ],
+     [
+      -74.435367,
+      40.454649
+     ],
+     [
+      -74.435874,
+      40.455327
+     ],
+     [
+      -74.436634,
+      40.457554
+     ],
+     [
+      -74.436724,
+      40.458263
+     ],
+     [
+      -74.436583,
+      40.459142
+     ],
+     [
+      -74.435455,
+      40.462387
+     ],
+     [
+      -74.435424,
+      40.463375
+     ],
+     [
+      -74.435569,
+      40.46416
+     ],
+     [
+      -74.436059,
+      40.465247
+     ],
+     [
+      -74.436768,
+      40.466167
+     ],
+     [
+      -74.442174,
+      40.470971
+     ],
+     [
+      -74.4444,
+      40.4806
+     ]
+    ]
+   }
+  }
+ ]
+}
