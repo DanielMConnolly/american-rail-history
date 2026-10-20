@@ -1,0 +1,763 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Freehold and Jamesburg Agricultural Rail Road (NJ, chartered 1851, opened 1853) and its extensions - the Squankum & Freehold Marl Co. road Freehold - Farmingdale (1868) and the Farmingdale & Squan Village Farmingdale - Sea Girt extension (1872) - plus the C&A-built Monmouth Junction - Jamesburg connection (1866/67), and the same track as the Pennsylvania Railroad's Jamesburg Branch to the last passenger train on May 29 1962. One feature per drawable span x operator; Rule 4 splits share identical geometry. Research report: research/branches/freehold_and_jamesburg_agricultural_railroad.txt.",
+  "sources": [
+   "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_<YEAR>.pdf -- PRR General Chronology (Christopher T. Baer, PRRT&HS / Hagley), years 1851-1865 and 1874-1885",
+   "http://www.prrths.com/newprr_files/Hagley/PRR<YEAR>.pdf -- same chronology, years 1866-1873, 1901, 1962",
+   "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952, Pennsylvania table 39) -- Trenton - Monmouth Junc. - Freehold - Sea Girt - Red Bank train, times legible",
+   "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf -- John Fowler, New Jersey Railroads SL214 (10.06.25), line 65 'Jamesburg Branch (PRR) ex Freehold & Jamesburg RR': mileposts and 1875 timetable letter y",
+   "https://en.wikipedia.org/wiki/Freehold_Secondary -- Wikipedia (pointer only): June 1 1879 PRR operation citing the 1886 NJ Acts pp. 350-351; 1962 end; 1964 track removal",
+   "https://en.wikipedia.org/wiki/Freehold_and_Jamesburg_Agricultural_Railroad",
+   "https://en.wikipedia.org/wiki/Farmingdale_and_Squan_Village_Railroad"
+  ],
+  "operator_split": "Monmouth Jct - Jamesburg: Camden and Amboy June 1867 - Nov 30 1871, PRR from Dec 1 1871 (split at 1871). Jamesburg - Freehold (1853), Freehold - Farmingdale (1868) and Farmingdale - Sea Girt (1872): Freehold and Jamesburg to May 31 1879, PRR from June 1 1879 (split at 1879). The F&J was NOT part of the Dec 1871 PRR lease (United Companies declined to lease it in Dec 1870). Not treated as splits: C&A stock control and C&A-supplied rolling stock 1853-1855; the 1879 reorganization; Penn Central 1968 (freight only by then).",
+  "freight_only_audit": "Nothing freight-only drawn (Rule 1). Excluded: Monmouth Jct - Jamesburg early 1866 - June 2 1867 ('freight service only until 1867'); everything after May 29 1962 (Penn Central / Conrail / Delaware & Raritan River freight on Monmouth Jct - Jamesburg - Freehold - Farmingdale); the Freehold Marl Company sidings at Farmingdale - Squankum (no passenger evidence).",
+  "horsecar_audit": "Nothing trimmed (Rule 5): locomotive-worked from the first train (June 1853); the 1867 Monmouth Jct shuttle used a Grice & Long steam car.",
+  "omitted": [
+   "[8] C&A (1867-1871) and PRR (1872-1879) through trains over the F&J track (Monmouth Jct - Freehold, Camden / West Philadelphia - Long Branch summer service): drawable NONE as a separate feature; the years are covered by the F&J features.",
+   "[9] Sea Girt - Long Branch over the New York & Long Branch, PRR trains from Oct 1875: another company's track, belongs to the NY&LB / North Jersey Coast Line layer; not drawn here.",
+   "Chartered but never built: F&J extension to Toms River (1852), Deans Pond - Six Mile Run (1853), PRR Manasquan - Long Branch (surveyed 1879)."
+  ],
+  "not_yet_sourced": [
+   "Operator 1853-1879 (the Rule 4 question): the F&J itself per the Dec 1870 no-lease decision, the 1872 'operated by' entry and the 1874 F&J running request; but the 1853 opening entry says 'controlled by the Camden & Amboy' with C&A rolling stock, and no primary statement of who ran the LOCAL trains 1872-1879 was found. If the F&J was PRR-run after the Dec 1871 lease, the 1879 splits would move to 1871.",
+   "June 1 1879 PRR operation rests on the 1886 NJ Acts, read only via Wikipedia. 1879 consolidation date May 21 vs May 24 (two Wikipedia articles) - does not affect drawn years.",
+   "Freehold - Farmingdale operator 1868-1872 is inferred (Apr 1 1868 running-rights act; Wikipedia 'leased to the F&J'), not stated. Opening Dec 28 1868 (Chronology compiler) vs Dec 19 (Valuation).",
+   "Farmingdale & Squan Village: Wikipedia says leased to the F&J in 1874; the Chronology has it operated by the F&J from its July 1872 opening. Drawn from 1872.",
+   "Year-round service 1869-1879 implied by the 1874 mail route and Fowler's 1875 timetable letter, not proven for every year (several entries concern summer through trains). Not used to trim.",
+   "headway_min everywhere and avg_speed_kmh before 1951 are estimates; only the Feb 1952 Guide was read for running times."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Freehold and Jamesburg",
+    "line": "Freehold and Jamesburg: Jamesburg – Freehold",
+    "id": "freehold-and-jamesburg-jamesburg-freehold",
+    "color": "#8E6C1F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no running time was checked for any year before 1879; a figure typical of a mid-19th-century local passenger train in flat country",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201886202 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Jamesburg - Freehold: 11.82 mi traced against 11.5 mi documented (Fowler NJ line 65, Jamesburg 5.6 - Freehold 17.1; 1952 Guide 54.6 - 66.1), +3%: the drawn line starts on the C&A main line at Jamesburg, a few hundred metres short of Fowler's Jamesburg station datum. Real-traced on OpenHistoricalMap way 201886202 (start_date 1853-10); no approximated (straight-line) legs. Checked against today's OSM track tagged old_railway_operator=PRR (Freehold Secondary / Jamesburg Wye, active freight): every 200 m sample of the drawn line lies within 100 m of it, median 1 m, so the surviving track is taken to be the 1853 alignment. Era: no later relocation is known; the Freehold station area was not checked for one.",
+    "segments": [
+     {
+      "start": 1853,
+      "end": 1879,
+      "headway_min": 360,
+      "note": "The Freehold and Jamesburg Agricultural Rail Road, Jamesburg - Lower Jamesburg - Tracey - Englishtown - Manalapan (Tennent from 1879) - Battle Ground - Freehold, connecting at Jamesburg with the Camden and Amboy for South Amboy (boat to New York) and Bordentown. First locomotive June 16 1853; formal opening July 14 1853 and revenue passenger service from July 18 1853 (PRR Chronology, citing Ellis 1885) - steam from the first train, so Rule 5 trims nothing. The C&A supplied the rolling stock until Feb 1855 and held a large stock interest, but the F&J ran its own trains (own superintendent from 1854); in Dec 1870 the United Companies declined to lease it ('more remunerative ... under own management'), so it was not in the PRR's Dec 1 1871 lease. Ends 1879: the Pennsylvania Railroad operated the line from June 1 1879 (1886 NJ Acts, read only via Wikipedia) and the PRR feature on identical geometry begins there. Operator for 1853-1879 is medium confidence - see metadata.not_yet_sourced. headway_min is an ESTIMATE (the report's 2-4 trains each way a day is NOT SOURCED; no timetable frequency was counted).",
+      "sources": [
+       "Segment-level: opening June 16 / July 14 / July 18 1853, C&A rolling stock to Feb 1855 and the Dec 1870 decision not to lease from the PRR General Chronology (Baer, PRRT&HS/Hagley) 1853, 1855 and 1870 entries; June 1 1879 PRR operation from Wikipedia Freehold Secondary citing the 1886 NJ Acts (Acts not read). Headway not sourced.",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1853.pdf",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1855.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1870.pdf",
+       "https://en.wikipedia.org/wiki/Freehold_Secondary",
+       "https://en.wikipedia.org/wiki/Freehold_and_Jamesburg_Agricultural_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.4472763,
+      40.3528102
+     ],
+     [
+      -74.4462027,
+      40.353466
+     ],
+     [
+      -74.4454022,
+      40.3536699
+     ],
+     [
+      -74.4443855,
+      40.3537587
+     ],
+     [
+      -74.4424929,
+      40.3534448
+     ],
+     [
+      -74.4407742,
+      40.3526958
+     ],
+     [
+      -74.4396176,
+      40.3518359
+     ],
+     [
+      -74.4268731,
+      40.3401584
+     ],
+     [
+      -74.4256157,
+      40.3385857
+     ],
+     [
+      -74.4248475,
+      40.3371301
+     ],
+     [
+      -74.4243702,
+      40.3356121
+     ],
+     [
+      -74.4231815,
+      40.3304544
+     ],
+     [
+      -74.4207208,
+      40.3240536
+     ],
+     [
+      -74.4195578,
+      40.3224081
+     ],
+     [
+      -74.4186995,
+      40.3216424
+     ],
+     [
+      -74.4171848,
+      40.3206928
+     ],
+     [
+      -74.3786006,
+      40.3001776
+     ],
+     [
+      -74.3247483,
+      40.2747089
+     ],
+     [
+      -74.3219409,
+      40.2736415
+     ],
+     [
+      -74.3196235,
+      40.2729833
+     ],
+     [
+      -74.2982982,
+      40.2681699
+     ],
+     [
+      -74.2836461,
+      40.2639636
+     ],
+     [
+      -74.2815696,
+      40.2628952
+     ],
+     [
+      -74.2783158,
+      40.260439
+     ],
+     [
+      -74.2772022,
+      40.2597578
+     ],
+     [
+      -74.2744437,
+      40.2586485
+     ],
+     [
+      -74.2723601,
+      40.2583193
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Camden and Amboy",
+    "line": "Camden and Amboy: Monmouth Junction – Jamesburg",
+    "id": "camden-and-amboy-monmouth-junction-jamesburg",
+    "color": "#3C00BA",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no running time was checked for any year before 1879; a figure typical of a mid-19th-century local passenger train in flat country",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201858895 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Monmouth Junction - Jamesburg: 5.56 mi traced against 5.6 mi documented (Fowler NJ line 65, Monmouth Jct 0.0 - Jamesburg 5.6; 1952 Official Guide 49.0 - 54.6). Real-traced on OpenHistoricalMap way 201858895 (start_date 1866); no approximated (straight-line) legs. The track is lifted and OSM has no rail, abandoned-railway, trail or PRR-tagged way on this grade, so the hand-drawn OHM way could NOT be checked against surveyed track - positional accuracy is OHM's alone. Ends: the Northeast Corridor at Monmouth Junction (4 m from the NEC as drawn in pennsylvania_railroad.geojson) and the C&A main line at Jamesburg (2 m from camden_and_amboy_rail_road.geojson). Era: the 1866 alignment; no later relocation is known.",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1871,
+      "headway_min": 360,
+      "note": "Monmouth Junction (Deans Pond) - Dayton - Jamesburg, built by the Camden and Amboy under the F&J's charter and operated by the C&A under the Joint Companies' lease of Sep 15 1865. Opened early 1866 but 'used for freight service only until 1867', so 1866 is not drawn (Rule 1). C&A revenue passenger service began June 3 1867 with a Grice & Long steam car (mechanical, not Rule 5), and from Oct 1 1867 trains ran through from Monmouth Jct to Freehold. Ends 1871: the PRR took over all C&A operation on Dec 1 1871; the PRR feature on identical geometry begins there. Deeded to the United New Jersey RR & Canal Co. July 29 1874. headway_min is an ESTIMATE (the report's 2-4 trains each way a day is NOT SOURCED; no timetable frequency was counted).",
+      "sources": [
+       "Segment-level: freight-only 1866, June 3 1867 passenger start and Oct 1 1867 through trains from the PRR General Chronology 1866 and 1867 entries (citing the Monmouth Democrat); Dec 1 1871 PRR operation from the Chronology 1871 entry. Headway not sourced.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1866.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1867.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.5452988,
+      40.3780023
+     ],
+     [
+      -74.5443804,
+      40.3785957
+     ],
+     [
+      -74.5432179,
+      40.3790109
+     ],
+     [
+      -74.5417522,
+      40.3791188
+     ],
+     [
+      -74.5405585,
+      40.3789275
+     ],
+     [
+      -74.4525206,
+      40.3513893
+     ],
+     [
+      -74.4512991,
+      40.3512241
+     ],
+     [
+      -74.4499279,
+      40.3513468
+     ],
+     [
+      -74.4486938,
+      40.3517736
+     ],
+     [
+      -74.4477073,
+      40.3524106
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Freehold and Jamesburg",
+    "line": "Freehold and Jamesburg: Freehold – Farmingdale",
+    "id": "freehold-and-jamesburg-freehold-farmingdale",
+    "color": "#8E6C1F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no running time was checked for any year before 1879; a figure typical of a mid-19th-century local passenger train in flat country",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201886269 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Freehold - Farmingdale: 7.03 mi traced against 7.6 mi documented (Fowler NJ line 65, Freehold 17.1 - Farmingdale 24.7), -7%: the drawn section ends at OHM's way break west of Farmingdale (the start of the 1872 Farmingdale & Squan Village line), which is not Fowler's Farmingdale station datum. Real-traced on OpenHistoricalMap way 201886269 (start_date 1868-12-28); no approximated legs. Checked against OSM's Freehold Secondary (old_railway_operator=PRR, freight track reactivated 2023): every 200 m sample within 100 m, median 2 m. Era: no later relocation is known.",
+    "segments": [
+     {
+      "start": 1868,
+      "end": 1879,
+      "headway_min": 360,
+      "note": "Freehold - Howell - Fairfield - Yellow Brook - Farmingdale, the railroad of the Squankum & Freehold Marl Company, opened Dec 28 1868 (first day of revenue service per the PRR Chronology compiler; the Valuation says Dec 19, opening excursion Dec 26), connecting at Farmingdale with the Raritan & Delaware Bay for Long Branch. An NJ act of Apr 1 1868 let the F&J run over it, and Wikipedia says it was leased to the F&J that year; the F&J as operator is INFERRED from that act and the 1872 'operated by' entry for the next section, not stated outright for 1868-1872 (medium confidence). C&A summer through trains Camden - Long Branch ran over it from June 17 1869 and PRR ones from 1872; those are not drawn separately. Ends 1879 with PRR operation from June 1 1879 (1886 NJ Acts via Wikipedia). headway_min is an ESTIMATE (the report's 2-4 trains each way a day is NOT SOURCED; no timetable frequency was counted).",
+      "sources": [
+       "Segment-level: Apr 1 1868 running-rights act, Dec 28 1868 opening and June 17 1869 through trains from the PRR General Chronology 1868 and 1869 entries (citing the Valuation, State Gazette, PL); 1868 lease and June 1 1879 PRR operation from Wikipedia Freehold Secondary. Operator for 1868-1872 inferred, not stated. Headway not sourced.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1868.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1869.pdf",
+       "https://en.wikipedia.org/wiki/Freehold_Secondary"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2723601,
+      40.2583193
+     ],
+     [
+      -74.271293,
+      40.2579475
+     ],
+     [
+      -74.2705978,
+      40.2575545
+     ],
+     [
+      -74.2270748,
+      40.227741
+     ],
+     [
+      -74.2252989,
+      40.2267876
+     ],
+     [
+      -74.1874776,
+      40.2087317
+     ],
+     [
+      -74.1865034,
+      40.2080205
+     ],
+     [
+      -74.1853,
+      40.20686
+     ],
+     [
+      -74.1715429,
+      40.1930186
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Freehold and Jamesburg",
+    "line": "Freehold and Jamesburg: Farmingdale – Sea Girt",
+    "id": "freehold-and-jamesburg-farmingdale-sea-girt",
+    "color": "#8E6C1F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no running time was checked for any year before 1879; a figure typical of a mid-19th-century local passenger train in flat country",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201886271, 201886270 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Farmingdale - Sea Girt: 8.47 mi traced against 8.4 mi documented (Fowler NJ line 65, Farmingdale 24.7 - Sea Girt 33.1). Real-traced on OpenHistoricalMap ways 201886271 (1868-12-28 to 1964) and 201886270 (start_date 1872-07, end_date 1964); no approximated (straight-line) legs. The track was lifted in 1964. Checked against OSM ways tagged old_railway_operator=PRR (abandoned track at Farmingdale, the Edgar Felix Bikeway Allaire - Manasquan): 39 of 70 200-m samples within 100 m, median 10 m. About 2 mi between Farmingdale and Allaire and the last ~0.5 mi from Manasquan to the Sea Girt junction have no OSM rail or trail, so there the OHM way is unchecked. Ends at OHM's terminus on the New York & Long Branch (16 m from njt-12 in nj_transit_rail.geojson); the Sea Girt - Long Branch running over the NY&LB is not drawn here. Era: the 1872 alignment; the 1881 new Manasquan station is not known to have moved the line.",
+    "segments": [
+     {
+      "start": 1872,
+      "end": 1879,
+      "headway_min": 360,
+      "note": "Farmingdale - Allaire - Allendale (Allenwood) - Squan (Manasquan from 1879) - Sea Girt, the Farmingdale & Squan Village Railroad, opened July 22 1872 and 'operated by Freehold & Jamesburg Agricultural Railroad' (PRR Chronology, citing the Monmouth Democrat and Valuation). From Oct 1875 PRR trains ran on from Sea Girt over the New York & Long Branch to Long Branch (not drawn here - another company's track), except in the 1879 season. A Jamesburg & Squan Village mail route existed from Jan 1874. Ends 1879 with PRR operation from June 1 1879 (1886 NJ Acts via Wikipedia). headway_min is an ESTIMATE (the report's 2-4 trains each way a day is NOT SOURCED; no timetable frequency was counted).",
+      "sources": [
+       "Segment-level: July 22 1872 opening operated by the F&J from the PRR General Chronology 1872 entry; Jan 1874 mail route and F&J operating request from the 1874 entries; Oct 1875 NY&LB connection from the 1875 entry; June 1 1879 PRR operation from Wikipedia Freehold Secondary. Headway not sourced.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1872.pdf",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1874.pdf",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1875.pdf",
+       "https://en.wikipedia.org/wiki/Freehold_Secondary",
+       "https://en.wikipedia.org/wiki/Farmingdale_and_Squan_Village_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.1715429,
+      40.1930186
+     ],
+     [
+      -74.1703408,
+      40.1919109
+     ],
+     [
+      -74.1313388,
+      40.1631439
+     ],
+     [
+      -74.1260001,
+      40.1590606
+     ],
+     [
+      -74.1156747,
+      40.1514903
+     ],
+     [
+      -74.1139066,
+      40.1500274
+     ],
+     [
+      -74.0912044,
+      40.136508
+     ],
+     [
+      -74.0888955,
+      40.1355697
+     ],
+     [
+      -74.0857713,
+      40.1346575
+     ],
+     [
+      -74.0496681,
+      40.1263206
+     ],
+     [
+      -74.048724,
+      40.1261762
+     ],
+     [
+      -74.0476597,
+      40.1262156
+     ],
+     [
+      -74.0469559,
+      40.1262812
+     ],
+     [
+      -74.0460632,
+      40.1266094
+     ],
+     [
+      -74.0441235,
+      40.1278694
+     ],
+     [
+      -74.0435868,
+      40.1285636
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Jamesburg Branch (Monmouth Junction – Jamesburg)",
+    "id": "prr-jamesburg-branch-monmouth-junction-jamesburg",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimate: the Feb 1952 Official Guide example times (Monmouth Jct 5:19 - Freehold 5:56, 2:06 - 2:39, 17.1 mi) give about 45-50 km/h for the 1951 rail motor car; earlier PRR years were not checked, so a lower whole-era figure is used",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201858895 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Monmouth Junction - Jamesburg: 5.56 mi traced against 5.6 mi documented (Fowler NJ line 65, Monmouth Jct 0.0 - Jamesburg 5.6; 1952 Official Guide 49.0 - 54.6). Real-traced on OpenHistoricalMap way 201858895 (start_date 1866); no approximated (straight-line) legs. The track is lifted and OSM has no rail, abandoned-railway, trail or PRR-tagged way on this grade, so the hand-drawn OHM way could NOT be checked against surveyed track - positional accuracy is OHM's alone. Ends: the Northeast Corridor at Monmouth Junction (4 m from the NEC as drawn in pennsylvania_railroad.geojson) and the C&A main line at Jamesburg (2 m from camden_and_amboy_rail_road.geojson). Era: the 1866 alignment; no later relocation is known.",
+    "segments": [
+     {
+      "start": 1871,
+      "end": 1962,
+      "headway_min": 360,
+      "note": "Monmouth Junction - Dayton - Jamesburg under Pennsylvania Railroad operation from Dec 1 1871 (lease of the United Companies; C&A/UNJ track). The usual routing of the Freehold - Sea Girt trains to Trenton (via Princeton Jct) and New York; in Feb 1952 the Trenton - Sea Girt - Red Bank train ran here (Guide table 39, times legible). Last passenger train May 29 1962 (rail motor car No. 4666, mostly students for a Catholic high school in Trenton; 'last PRR railcar service'). Freight continued afterwards; not drawn (Rule 1). headway_min is an ESTIMATE: about 2-3 trains each way on weekdays in 1951 from partly legible Official Guide columns; no other year's frequency was counted.",
+      "sources": [
+       "Segment-level: Dec 1 1871 PRR operation from the PRR General Chronology 1871 entry; May 29 1962 last train from the 1962 entry (citing the timetable and Gallo); 1951 service from the Feb 1952 Official Guide table 39 (Monmouth Junc. 49.0, Jamesburg 54.6, times legible; Jamesburg not daggered in the index).",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1962.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952, Pennsylvania table 39)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.5452988,
+      40.3780023
+     ],
+     [
+      -74.5443804,
+      40.3785957
+     ],
+     [
+      -74.5432179,
+      40.3790109
+     ],
+     [
+      -74.5417522,
+      40.3791188
+     ],
+     [
+      -74.5405585,
+      40.3789275
+     ],
+     [
+      -74.4525206,
+      40.3513893
+     ],
+     [
+      -74.4512991,
+      40.3512241
+     ],
+     [
+      -74.4499279,
+      40.3513468
+     ],
+     [
+      -74.4486938,
+      40.3517736
+     ],
+     [
+      -74.4477073,
+      40.3524106
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Jamesburg Branch (Jamesburg – Freehold)",
+    "id": "prr-jamesburg-branch-jamesburg-freehold",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimate: the Feb 1952 Official Guide example times (Monmouth Jct 5:19 - Freehold 5:56, 2:06 - 2:39, 17.1 mi) give about 45-50 km/h for the 1951 rail motor car; earlier PRR years were not checked, so a lower whole-era figure is used",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201886202 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Jamesburg - Freehold: 11.82 mi traced against 11.5 mi documented (Fowler NJ line 65, Jamesburg 5.6 - Freehold 17.1; 1952 Guide 54.6 - 66.1), +3%: the drawn line starts on the C&A main line at Jamesburg, a few hundred metres short of Fowler's Jamesburg station datum. Real-traced on OpenHistoricalMap way 201886202 (start_date 1853-10); no approximated (straight-line) legs. Checked against today's OSM track tagged old_railway_operator=PRR (Freehold Secondary / Jamesburg Wye, active freight): every 200 m sample of the drawn line lies within 100 m of it, median 1 m, so the surviving track is taken to be the 1853 alignment. Era: no later relocation is known; the Freehold station area was not checked for one.",
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1962,
+      "headway_min": 360,
+      "note": "Jamesburg - Englishtown - Tennent - Battle Ground - Freehold under Pennsylvania Railroad operation from June 1 1879 (1886 NJ Acts, read only via Wikipedia; the Chronology's Oct 1879 renaming entry, Manalapan to Tennent 'on the Amboy Division', supports it). Last passenger train May 29 1962. After 1962 the line carried freight only (Conrail, now Delaware & Raritan River) - context, not drawn (Rule 1). headway_min is an ESTIMATE: about 2-3 trains each way on weekdays in 1951 from partly legible Official Guide columns; no other year's frequency was counted.",
+      "sources": [
+       "Segment-level: June 1 1879 PRR operation from Wikipedia Freehold Secondary (citing the 1886 NJ Acts, not read); Oct 1879 renaming from the PRR General Chronology 1879 entry; May 29 1962 last train from the 1962 entry; 1951 service from the Feb 1952 Official Guide table 39 (Englishtown 61.4 and Freehold 66.1 rows with times; Englishtown 'Penna.,39' not daggered).",
+       "https://en.wikipedia.org/wiki/Freehold_Secondary",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1879.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1962.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952, Pennsylvania table 39)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.4472763,
+      40.3528102
+     ],
+     [
+      -74.4462027,
+      40.353466
+     ],
+     [
+      -74.4454022,
+      40.3536699
+     ],
+     [
+      -74.4443855,
+      40.3537587
+     ],
+     [
+      -74.4424929,
+      40.3534448
+     ],
+     [
+      -74.4407742,
+      40.3526958
+     ],
+     [
+      -74.4396176,
+      40.3518359
+     ],
+     [
+      -74.4268731,
+      40.3401584
+     ],
+     [
+      -74.4256157,
+      40.3385857
+     ],
+     [
+      -74.4248475,
+      40.3371301
+     ],
+     [
+      -74.4243702,
+      40.3356121
+     ],
+     [
+      -74.4231815,
+      40.3304544
+     ],
+     [
+      -74.4207208,
+      40.3240536
+     ],
+     [
+      -74.4195578,
+      40.3224081
+     ],
+     [
+      -74.4186995,
+      40.3216424
+     ],
+     [
+      -74.4171848,
+      40.3206928
+     ],
+     [
+      -74.3786006,
+      40.3001776
+     ],
+     [
+      -74.3247483,
+      40.2747089
+     ],
+     [
+      -74.3219409,
+      40.2736415
+     ],
+     [
+      -74.3196235,
+      40.2729833
+     ],
+     [
+      -74.2982982,
+      40.2681699
+     ],
+     [
+      -74.2836461,
+      40.2639636
+     ],
+     [
+      -74.2815696,
+      40.2628952
+     ],
+     [
+      -74.2783158,
+      40.260439
+     ],
+     [
+      -74.2772022,
+      40.2597578
+     ],
+     [
+      -74.2744437,
+      40.2586485
+     ],
+     [
+      -74.2723601,
+      40.2583193
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Jamesburg Branch (Freehold – Sea Girt)",
+    "id": "prr-jamesburg-branch-freehold-sea-girt",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimate: the Feb 1952 Official Guide example times (Monmouth Jct 5:19 - Freehold 5:56, 2:06 - 2:39, 17.1 mi) give about 45-50 km/h for the 1951 rail motor car; earlier PRR years were not checked, so a lower whole-era figure is used",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201886269, 201886271, 201886270 (dated F&J / C&A ways; start_date sourced to Coverdale & Colpitts). Routed with opstrace.py, OHM ways dated to this road's openings preferred (cost 0.9) over modern track; Douglas-Peucker 8 m + trim_reversals. OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=PRR (Freehold Secondary, Jamesburg Wye, Edgar Felix Bikeway) used as the check on the OHM ways.",
+    "geometry_quality": "Freehold - Sea Girt: 15.50 mi traced against 16.0 mi documented (Fowler 17.1 - 33.1; 1952 Guide 66.1 - 82.1), -3%. Two parts on identical geometry to the F&J features: Freehold - Farmingdale: 7.03 mi traced against 7.6 mi documented (Fowler NJ line 65, Freehold 17.1 - Farmingdale 24.7), -7%: the drawn section ends at OHM's way break west of Farmingdale (the start of the 1872 Farmingdale & Squan Village line), which is not Fowler's Farmingdale station datum. Real-traced on OpenHistoricalMap way 201886269 (start_date 1868-12-28); no approximated legs. Checked against OSM's Freehold Secondary (old_railway_operator=PRR, freight track reactivated 2023): every 200 m sample within 100 m, median 2 m. Era: no later relocation is known. | Farmingdale - Sea Girt: 8.47 mi traced against 8.4 mi documented (Fowler NJ line 65, Farmingdale 24.7 - Sea Girt 33.1). Real-traced on OpenHistoricalMap ways 201886271 (1868-12-28 to 1964) and 201886270 (start_date 1872-07, end_date 1964); no approximated (straight-line) legs. The track was lifted in 1964. Checked against OSM ways tagged old_railway_operator=PRR (abandoned track at Farmingdale, the Edgar Felix Bikeway Allaire - Manasquan): 39 of 70 200-m samples within 100 m, median 10 m. About 2 mi between Farmingdale and Allaire and the last ~0.5 mi from Manasquan to the Sea Girt junction have no OSM rail or trail, so there the OHM way is unchecked. Ends at OHM's terminus on the New York & Long Branch (16 m from njt-12 in nj_transit_rail.geojson); the Sea Girt - Long Branch running over the NY&LB is not drawn here. Era: the 1872 alignment; the 1881 new Manasquan station is not known to have moved the line.",
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1962,
+      "headway_min": 360,
+      "note": "Freehold - Howell - Farmingdale - Allaire - Allenwood - Manasquan - Sea Girt under Pennsylvania Railroad operation from June 1 1879 (1886 NJ Acts via Wikipedia). Oct 1879 Squan renamed Manasquan; a new Manasquan station 1881. In Feb 1952 the trains ran on from Sea Girt over the NY&LB to Red Bank (that track is the North Jersey Coast Line layer's, not drawn here). Last passenger train May 29 1962, 'ending passenger service between Monmouth Jct. and Sea Girt'. Farmingdale - Sea Girt was torn up in 1964 (now partly the Edgar Felix Bikeway); Freehold - Farmingdale was reactivated for freight in 2023 - context, not drawn (Rule 1). headway_min is an ESTIMATE: about 2-3 trains each way on weekdays in 1951 from partly legible Official Guide columns; no other year's frequency was counted.",
+      "sources": [
+       "Segment-level: June 1 1879 PRR operation from Wikipedia Freehold Secondary (citing the 1886 NJ Acts, not read); Oct 1879 renaming and 1881 station from the PRR General Chronology 1879 and 1881 entries; May 29 1962 last train from the 1962 entry; 1951 service from the Feb 1952 Official Guide table 39 (Farmingdale 73.6, Allenwood 78.6, Manasquan 81.5, Sea Girt 82.1 rows with times; Farmingdale and Allenwood not daggered in the index).",
+       "https://en.wikipedia.org/wiki/Freehold_Secondary",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1879.pdf",
+       "https://digital.hagley.org/system/files/2026-03/mss_2915_00_02_prrchronology_1881.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1962.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952, Pennsylvania table 39)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2723601,
+      40.2583193
+     ],
+     [
+      -74.271293,
+      40.2579475
+     ],
+     [
+      -74.2705978,
+      40.2575545
+     ],
+     [
+      -74.2270748,
+      40.227741
+     ],
+     [
+      -74.2252989,
+      40.2267876
+     ],
+     [
+      -74.1874776,
+      40.2087317
+     ],
+     [
+      -74.1865034,
+      40.2080205
+     ],
+     [
+      -74.1853,
+      40.20686
+     ],
+     [
+      -74.1715429,
+      40.1930186
+     ],
+     [
+      -74.1703408,
+      40.1919109
+     ],
+     [
+      -74.1313388,
+      40.1631439
+     ],
+     [
+      -74.1260001,
+      40.1590606
+     ],
+     [
+      -74.1156747,
+      40.1514903
+     ],
+     [
+      -74.1139066,
+      40.1500274
+     ],
+     [
+      -74.0912044,
+      40.136508
+     ],
+     [
+      -74.0888955,
+      40.1355697
+     ],
+     [
+      -74.0857713,
+      40.1346575
+     ],
+     [
+      -74.0496681,
+      40.1263206
+     ],
+     [
+      -74.048724,
+      40.1261762
+     ],
+     [
+      -74.0476597,
+      40.1262156
+     ],
+     [
+      -74.0469559,
+      40.1262812
+     ],
+     [
+      -74.0460632,
+      40.1266094
+     ],
+     [
+      -74.0441235,
+      40.1278694
+     ],
+     [
+      -74.0435868,
+      40.1285636
+     ]
+    ]
+   }
+  }
+ ]
+}
