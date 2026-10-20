@@ -1,0 +1,458 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Rahway Valley Railroad, Union County, New Jersey: a steam (later gasoline railbus) short line from the Central Railroad of New Jersey at Aldene through Kenilworth, Union and Springfield to Baltusrol and Summit, built for the new town of New Orange (Kenilworth) and for Baltusrol Golf Club traffic. Drawn as three companies per Rule 4: the New York and New Orange (Aldene - Kenilworth 1899-1901), the New Orange Four Junction (same 1901-1905) and the Rahway Valley Railroad (Aldene - Springfield 1905-1919, Springfield - Summit 1906-1919). Regular passenger service ended spring 1919; everything later was freight (Rule 1). The legal name is 'Railroad' throughout; 'Rahway Valley Railway' (this file's slug) is a misnomer per the report. Research report: research/branches/rahway_valley_railway.txt.",
+  "sources": [
+   "https://trainweb.us/rahwayvalley/history_chapter1.htm -- Rahway Valley RR Historical Society narrative history ch.1 (NY&NO construction, 12/day shuttle, 1899 accident)",
+   "https://trainweb.us/rahwayvalley/history_chapter2.htm -- ch.2 (1905 Springfield opening, 1 Jan 1906 Baltusrol, 6 Aug 1906 Summit, 'nine round trip runs a week')",
+   "https://trainweb.us/rahwayvalley/history_chapter3.htm -- ch.3 (WWI receipts, arsenal workers' trains)",
+   "https://trainweb.us/rahwayvalley/history_chapter4.htm -- ch.4 (1919 end of daily passenger service; mixed trains/railbus 'possibly until as late as 1925')",
+   "http://www.trainsarefun.com/rvrr/rvrrhistory.htm -- trainsarefun RV history (NOFJ 1902 timetable, 14/day, six a day by 1909, spring 1919 closures, 1980 U.S. Open specials)",
+   "https://en.wikipedia.org/wiki/Rahway_Valley_Railroad -- Wikipedia, Rahway Valley Railroad",
+   "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf -- John Fowler, New Jersey station list, table 110 (RV mileposts from the 1906 timetable)",
+   "https://www.rahwayvalley.com/route/mainline/summit -- RV Historical Society, Summit page (1930 DL&W interchange)",
+   "research/sources/official_guide_1952.txt lines 26462-26494 -- Official Guide, RV entry dated March 1951: freight only"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (ODbL) via the OSM API 0.6, 2026-10-20 - see each feature's geometry_source"
+  ],
+  "mode_note": "mode intercity_rail, matching the other small steam short lines in data/ (e.g. Freehold and Jamesburg, Bath and Hammondsport). The report suggests commuter_rail (a suburban shuttle feeding the CNJ); either draws solid. Not interurban: never electrified.",
+  "omitted": [
+   "Lehigh Valley Branch, Kenilworth - Roselle Park (report block [5]): passenger shuttle dated only 1899-1904 [OPEN] at low confidence; omitted at the caller's decision. The WWI LV workers' trains over it were the Lehigh Valley's, not the RV's.",
+   "Rahway River Branch / NY&NO 20th Street stub and the WWI American Can Co. arsenal workers' trains (block [6]): a single 1899 anchor for the public stop; the 1917-18 workers' trains were run by the CNJ (and LV), so would belong in their colours. Omitted; the track is lifted and absent from OSM.",
+   "1980 U.S. Open specials, Kenilworth - Baltusrol, 9-15 June 1980 (block [7]): one week, which a year slider would draw as all of 1980. Omitted.",
+   "Newark Heights branch ('Rahway Valley Line', Union - Newark Heights/Maplewood, opened 1918): no confirmable passenger year - the only 'workmen's service' described is men riding freight cars. Omitted (Rule 1).",
+   "Summit DL&W interchange (opened 22 Mar 1930): freight only. Omitted (Rule 1).",
+   "All post-1919 freight operation to 1992, Delaware Otsego 1986/87-1992 and Morristown & Erie 2005-2012. Omitted (Rule 1)."
+  ],
+  "not_yet_sourced": [
+   "Residual passenger service after spring 1919: the board 'voted to keep the rail bus and mixed trains in service' (trainsarefun); ended after Louis Keller's death on 16 Feb 1922 (trainsarefun, Wikipedia) or 'possibly until as late as 1925' / 'mid-1920s' (trainweb ch.4; american-rails.com 'early 1920s'). Not drawn: no source dates it firmly. A 1919-1922 low-frequency segment would be supportable by two secondary sources if wanted.",
+   "Opening year of Aldene - Kenilworth: 1898 (trainweb chronology) vs 1899 (Wikipedia). Drawn from 1899.",
+   "Whether the NY&NO ran passenger trains after 1899 at all: trainsarefun says it 'only operated passenger trains for this year [1899]', trainweb ch.1 describes a twelve-a-day shuttle up to 1904. Drawn continuously 1899-1905.",
+   "Summit opening day 2 Aug (Wikipedia) vs 6 Aug 1906 (trainweb). Year firm.",
+   "Headways: 12/day (NY&NO), 14/day (NOFJ 1903-05, RV 1905), six a day by 1909 (trainsarefun) vs nine round trips a week (trainweb ch.2). All headway_min and avg_speed_kmh values are estimates.",
+   "Mileage: Fowler's 8.8 mi Aldene - Summit vs 6.6 mi traced and ~7 mi in the 1951 Official Guide (OCR-damaged).",
+   "Locations of the Michigan Avenue [Faitoute Ave], Kenilworth Central Station, Warren Ave and Baltusrol stations; whether the 1899 NY&NO alignment matches the surviving one.",
+   "Through running from Newark (Broad St) via the CNJ (Fowler): not established.",
+   "Elmer Guy's Kenilworth - Aldene vehicle (trolley or jitney?) - not researched; would be its own layer if rail."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York and New Orange Railroad",
+    "line": "New York and New Orange: Aldene – Kenilworth",
+    "id": "new-york-and-new-orange-aldene-kenilworth",
+    "color": "#2A7F9E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: a 1.3-2.4 mi steam shuttle with intermediate stops; no running time found in the report - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), OSM API 0.6 /map tiles fetched 2026-10-20 (the maps.mail.ru Overpass mirror was timing out; a later Overpass fetch of the same bbox returned the same RV ways): ways 1254936420, 1380462520 (railway=razed), 1380462519, 1254936421, 1380462516, 150725091, 1185883190/91, 150725098, 150725090, 150725087, 287835660/61, 1254936422, 150725085, 150725086, 150725097, 150725102, 150725089, 150725094, 150725092, 150725101, 96045005 (railway=abandoned, old_railway_operator=RV, name 'Rahway Valley Railroad'), plus untagged railway=abandoned ways 1380462517/18 north of Kenilworth. Routed with opstrace.py (Operator want=['rv','rahway valley railroad'], the 'Rahway Valley Line' Newark Heights branch and the 'Lehigh Valley Branch' ways deliberately NOT treated as own track), Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. 1.32 mi traced Aldene (CNJ junction, 40.6642, -74.2715) - Kenilworth (junction with the Rahway River Branch at Kenilworth Blvd, 40.6788, -74.2833) against 2.0 mi to Kenilworth Central Station and 2.4 mi to Warren Ave (Fowler table 110), 2.96 mi for the whole NY&NO including the 20th Street stub (trainweb ch.1) and '4 miles' (american-rails.com) - 34-45% short of Fowler; unresolved. NOT DRAWN: the NY&NO's continuation about 1 mi west from the junction to Kenilworth (20th Street) on what became the Rahway River Branch (lifted 1990, absent from OSM) - the passenger stop there is attested only for 1899. LATER ALIGNMENT: this is the alignment as abandoned in the 1990s (Garden State Parkway underpass included); whether the 1899-1905 NY&NO line followed exactly this path is not established - Fowler's 'Michigan Avenue [Faitoute Ave]' stop lies on Michigan Ave, which this line does not cross (Michigan Ave crosses the OSM 'Lehigh Valley Branch' way instead), so the original stop placement, and possibly the original approach to Aldene, may differ.",
+    "ownership_note": "Operator 1899 - 16 Feb 1901; split from the New Orange Four Junction feature (identical geometry) at the foreclosure sale (Rule 4).",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1901,
+      "headway_min": 80,
+      "note": "New York and New Orange Railroad shuttle from the Central Railroad of New Jersey at Aldene to the new town of New Orange (Borough of Kenilworth from 1907), promoted by the Elmira-backed New Orange Industrial Association. Start 1899: the CNJ worked the line until it was 'formally opened for passenger service, on August 1' (Wikipedia, 1899 by context); first accident 1 Sep 1899 'the train was backing down to Aldene' (1899 Annual Statements of the Railroad and Canal Companies, via trainweb ch.1). trainweb ch.1 implies passenger stops from mid-1898 (leased CNJ 4-4-0 #502); the report collapses the 1898/1899 conflict to the positively attested 1899. End 1901: the NY&NO was sold under foreclosure 16 Feb 1901 and the New Orange Four Junction Railroad (inc. 4 Feb 1901) took over - the trains ran on under the new company (next feature). trainsarefun says the NY&NO 'only operated passenger trains for this year [1899]' as the New Orange factories shut - a conflict with the shuttle continuing to 1901, recorded, not resolved. Headway estimated (~80 min) from 'twelve times a day' (trainweb ch.1, describing the position up to 1904, not dated to these years). Steam throughout; no animal traction.",
+      "sources": [
+       "Segment-level: dates and service from the research report block [1] (research/branches/rahway_valley_railway.txt): opening per Wikipedia (Aug 1 [1899]) and trainweb ch.1 (1 Sep 1899 accident); end at the 16 Feb 1901 foreclosure per the report's company_legal/ownership_split. Headway 12/day per trainweb ch.1 (undated, estimate).",
+       "https://en.wikipedia.org/wiki/Rahway_Valley_Railroad",
+       "https://trainweb.us/rahwayvalley/history_chapter1.htm",
+       "http://www.trainsarefun.com/rvrr/rvrrhistory.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.271517,
+      40.664243
+     ],
+     [
+      -74.271982,
+      40.664067
+     ],
+     [
+      -74.272635,
+      40.664025
+     ],
+     [
+      -74.273049,
+      40.664099
+     ],
+     [
+      -74.27331,
+      40.664298
+     ],
+     [
+      -74.274798,
+      40.667009
+     ],
+     [
+      -74.278824,
+      40.671694
+     ],
+     [
+      -74.283977,
+      40.679943
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orange Four Junction Railroad",
+    "line": "New Orange Four Junction: Aldene – Kenilworth",
+    "id": "new-orange-four-junction-aldene-kenilworth",
+    "color": "#C47A2C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: a 1.3-2.4 mi steam shuttle with intermediate stops; no running time found in the report - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), OSM API 0.6 /map tiles fetched 2026-10-20 (the maps.mail.ru Overpass mirror was timing out; a later Overpass fetch of the same bbox returned the same RV ways): ways 1254936420, 1380462520 (railway=razed), 1380462519, 1254936421, 1380462516, 150725091, 1185883190/91, 150725098, 150725090, 150725087, 287835660/61, 1254936422, 150725085, 150725086, 150725097, 150725102, 150725089, 150725094, 150725092, 150725101, 96045005 (railway=abandoned, old_railway_operator=RV, name 'Rahway Valley Railroad'), plus untagged railway=abandoned ways 1380462517/18 north of Kenilworth. Routed with opstrace.py (Operator want=['rv','rahway valley railroad'], the 'Rahway Valley Line' Newark Heights branch and the 'Lehigh Valley Branch' ways deliberately NOT treated as own track), Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. 1.32 mi traced Aldene (CNJ junction, 40.6642, -74.2715) - Kenilworth (junction with the Rahway River Branch at Kenilworth Blvd, 40.6788, -74.2833) against 2.0 mi to Kenilworth Central Station and 2.4 mi to Warren Ave (Fowler table 110), 2.96 mi for the whole NY&NO including the 20th Street stub (trainweb ch.1) and '4 miles' (american-rails.com) - 34-45% short of Fowler; unresolved. NOT DRAWN: the NY&NO's continuation about 1 mi west from the junction to Kenilworth (20th Street) on what became the Rahway River Branch (lifted 1990, absent from OSM) - the passenger stop there is attested only for 1899. LATER ALIGNMENT: this is the alignment as abandoned in the 1990s (Garden State Parkway underpass included); whether the 1899-1905 NY&NO line followed exactly this path is not established - Fowler's 'Michigan Avenue [Faitoute Ave]' stop lies on Michigan Ave, which this line does not cross (Michigan Ave crosses the OSM 'Lehigh Valley Branch' way instead), so the original stop placement, and possibly the original approach to Aldene, may differ.",
+    "ownership_note": "Operator 16 Feb 1901 - 1 Mar 1905; split from the NY&NO and Rahway Valley features (identical geometry for Aldene - Kenilworth) per Rule 4.",
+    "segments": [
+     {
+      "start": 1901,
+      "end": 1905,
+      "headway_min": 70,
+      "note": "New Orange Four Junction Railroad (inc. 4 Feb 1901; bought the NY&NO at foreclosure 16 Feb 1901) running the Aldene - New Orange shuttle, connecting with the CNJ at Aldene and the Lehigh Valley at Roselle Park. A NOFJ public timetable of 15 Jan 1902 survives (illustrated on trainsarefun); 'the NOFJ schedule of 14 passenger trains a day' by 1903-05 (trainsarefun) - headway ~70 min is an estimate from that figure. End 1905: the NOFJ consolidated with the Rahway Valley Railroad 1 Mar 1905, which then ran the trains (Rahway Valley feature). The LV-connection shuttle over the Lehigh Valley Branch to Roselle Park is not drawn (see metadata).",
+      "sources": [
+       "Segment-level: dates from the research report block [1] and company_legal (NOFJ inc. 4 Feb 1901, foreclosure purchase 16 Feb 1901, consolidation with the Rahway Valley RR 1 Mar 1905); 15 Jan 1902 timetable and 14 trains/day per trainsarefun. Headway is an estimate.",
+       "http://www.trainsarefun.com/rvrr/rvrrhistory.htm",
+       "https://trainweb.us/rahwayvalley/history_chapter1.htm",
+       "https://en.wikipedia.org/wiki/Rahway_Valley_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.271517,
+      40.664243
+     ],
+     [
+      -74.271982,
+      40.664067
+     ],
+     [
+      -74.272635,
+      40.664025
+     ],
+     [
+      -74.273049,
+      40.664099
+     ],
+     [
+      -74.27331,
+      40.664298
+     ],
+     [
+      -74.274798,
+      40.667009
+     ],
+     [
+      -74.278824,
+      40.671694
+     ],
+     [
+      -74.283977,
+      40.679943
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Rahway Valley Railroad",
+    "line": "Rahway Valley: Aldene – Springfield",
+    "id": "rahway-valley-aldene-springfield",
+    "color": "#C25A8F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated: an 8.8 mi (Fowler) / ~7 mi (1951 Official Guide) steam, later gasoline-railbus, short line with seven stops; no running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), OSM API 0.6 /map tiles fetched 2026-10-20 (the maps.mail.ru Overpass mirror was timing out; a later Overpass fetch of the same bbox returned the same RV ways): ways 1254936420, 1380462520 (railway=razed), 1380462519, 1254936421, 1380462516, 150725091, 1185883190/91, 150725098, 150725090, 150725087, 287835660/61, 1254936422, 150725085, 150725086, 150725097, 150725102, 150725089, 150725094, 150725092, 150725101, 96045005 (railway=abandoned, old_railway_operator=RV, name 'Rahway Valley Railroad'), plus untagged railway=abandoned ways 1380462517/18 north of Kenilworth. Routed with opstrace.py (Operator want=['rv','rahway valley railroad'], the 'Rahway Valley Line' Newark Heights branch and the 'Lehigh Valley Branch' ways deliberately NOT treated as own track), Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. 4.03 mi traced Aldene - Springfield (Mountain Avenue crossing, 40.7054, -74.3168): Aldene - Kenilworth junction 1.32 mi (Fowler 2.4 to Warren Ave), Kenilworth - Springfield 2.71 mi (Fowler 3.4) - against Fowler's 5.8 mi Aldene - Springfield, 31% short. all but about 0.25 mi is on OSM ways tagged old_railway_operator=RV; the rest, just north of Kenilworth, is untagged abandoned railway. The Springfield station is placed at Mountain Avenue from the report ('Springfield (Mountain Avenue)'), not from a surveyed site. The whole RV main line traces 6.62 mi Aldene - Summit (Broad Street). Documented mileage conflicts: John Fowler's NJ station list (table 110, from the 1906 public timetable) gives Kenilworth (Warren Ave) 2.4, Springfield 5.8, Baltusrol 6.8, Summit 8.8 mi from Aldene; the March 1951 Official Guide entry (research/sources/official_guide_1952.txt, OCR damaged) appears to read Baltusrol 4.4 and Summit 7.x. The trace is 25% short of Fowler but close to the Official Guide, and every traced mile but about 0.3 is on ways OSM tags as the RV's own, so the shortfall is treated as a Fowler/ trace conflict, not a wrong route; it is unresolved. LATER ALIGNMENT: the alignment as abandoned in the 1990s; no realignment since 1905 is recorded but none was checked for. OpenHistoricalMap was not consulted: no straight-line gap needed filling.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1908,
+      "headway_min": 70,
+      "note": "Rahway Valley Railroad (chartered 18 Jul 1904; consolidated with the New Orange Four Junction 1 Mar 1905) from the CNJ at Aldene through Kenilworth, Union [Doty] and Arion [Katemiller] to Springfield (Mountain Avenue). Aldene - Kenilworth taken over from the NOFJ at the 1 Mar 1905 consolidation; Kenilworth - Springfield formally opened 24 May 1905 (trainsarefun) or 25 May 1905 (Wikipedia; trainweb ch.2 quoting a newspaper: 'formally opened yesterday afternoon ... rode from New Orange to Springfield in a special car') - day conflict only, year firm. Regular public schedule from then is implied (14 trains a day, trainsarefun); the first dated public timetable seen is Fowler's 1906t. Headway ~70 min is an estimate from 14/day. Through running from Newark (Broad St) via the CNJ, which Fowler mentions, is not established. Operated from c.1909 by the Rahway Valley Company as lessee - same name, same trains, not a split.",
+      "sources": [
+       "Segment-level: research report blocks [1]-[2]: consolidation 1 Mar 1905 (company_legal); Kenilworth - Springfield opening 24/25 May 1905 per trainsarefun, Wikipedia and trainweb ch.2; 14 trains/day per trainsarefun (estimate basis).",
+       "http://www.trainsarefun.com/rvrr/rvrrhistory.htm",
+       "https://trainweb.us/rahwayvalley/history_chapter2.htm",
+       "https://en.wikipedia.org/wiki/Rahway_Valley_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     },
+     {
+      "start": 1909,
+      "end": 1919,
+      "headway_min": 160,
+      "note": "'By 1909 passenger trains had dwindled from fourteen a day to just six' (trainsarefun) - headway ~160 min is an estimate from that; trainweb ch.2 instead has 'nine round trip passenger runs ... a week' c.1906-10 (conflict recorded, both secondary). Gasoline railbuses ran most trips from the 1910s. WWI boom: gross passenger receipts $703 in 1915, $10,690 in 1918, $4,920 in 1919 (trainweb ch.3-4). End 1919: regular daily passenger service ended in spring 1919 - 'in 1919; all daily passenger service was terminated' (trainweb ch.4); two of three coaches scrapped, passenger stations closed, Springfield station became a freight office (trainsarefun); 'In the spring of 1919, Keller ditched the three faithful coaches' (Young, via trainweb ch.4). A residual mixed-train / railbus service after 1919 is NOT drawn (see metadata not_yet_sourced). Freight continued until 1992 (Delaware Otsego, last train 21 Apr 1992) and Morristown & Erie on the southern end 2005-2012 - context only.",
+      "sources": [
+       "Segment-level: research report blocks [2] and U1/U6: 1909 six trains/day per trainsarefun; spring 1919 end per trainweb ch.4 and trainsarefun. Headway is an estimate.",
+       "http://www.trainsarefun.com/rvrr/rvrrhistory.htm",
+       "https://trainweb.us/rahwayvalley/history_chapter2.htm",
+       "https://trainweb.us/rahwayvalley/history_chapter3.htm",
+       "https://trainweb.us/rahwayvalley/history_chapter4.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.271517,
+      40.664243
+     ],
+     [
+      -74.271982,
+      40.664067
+     ],
+     [
+      -74.272635,
+      40.664025
+     ],
+     [
+      -74.273049,
+      40.664099
+     ],
+     [
+      -74.27331,
+      40.664298
+     ],
+     [
+      -74.274798,
+      40.667009
+     ],
+     [
+      -74.278824,
+      40.671694
+     ],
+     [
+      -74.283977,
+      40.679943
+     ],
+     [
+      -74.284495,
+      40.680565
+     ],
+     [
+      -74.28533,
+      40.681073
+     ],
+     [
+      -74.28661,
+      40.681514
+     ],
+     [
+      -74.289675,
+      40.682284
+     ],
+     [
+      -74.29045,
+      40.682723
+     ],
+     [
+      -74.291057,
+      40.683336
+     ],
+     [
+      -74.291483,
+      40.684481
+     ],
+     [
+      -74.292949,
+      40.69013
+     ],
+     [
+      -74.293187,
+      40.691613
+     ],
+     [
+      -74.293078,
+      40.692326
+     ],
+     [
+      -74.292477,
+      40.693365
+     ],
+     [
+      -74.293063,
+      40.693852
+     ],
+     [
+      -74.294616,
+      40.693804
+     ],
+     [
+      -74.295619,
+      40.693955
+     ],
+     [
+      -74.296357,
+      40.694231
+     ],
+     [
+      -74.303894,
+      40.698289
+     ],
+     [
+      -74.316771,
+      40.705381
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Rahway Valley Railroad",
+    "line": "Rahway Valley: Springfield – Summit",
+    "id": "rahway-valley-springfield-summit",
+    "color": "#C25A8F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated: an 8.8 mi (Fowler) / ~7 mi (1951 Official Guide) steam, later gasoline-railbus, short line with seven stops; no running time found - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), OSM API 0.6 /map tiles fetched 2026-10-20 (the maps.mail.ru Overpass mirror was timing out; a later Overpass fetch of the same bbox returned the same RV ways): ways 1254936420, 1380462520 (railway=razed), 1380462519, 1254936421, 1380462516, 150725091, 1185883190/91, 150725098, 150725090, 150725087, 287835660/61, 1254936422, 150725085, 150725086, 150725097, 150725102, 150725089, 150725094, 150725092, 150725101, 96045005 (railway=abandoned, old_railway_operator=RV, name 'Rahway Valley Railroad'), plus untagged railway=abandoned ways 1380462517/18 north of Kenilworth. Routed with opstrace.py (Operator want=['rv','rahway valley railroad'], the 'Rahway Valley Line' Newark Heights branch and the 'Lehigh Valley Branch' ways deliberately NOT treated as own track), Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. 2.59 mi traced Springfield (Mountain Avenue) - Baltusrol - Summit, all on OSM ways tagged old_railway_operator=RV (the Summit end is the 'Summit Park Line' trail corridor), against Fowler's 3.0 mi (5.8 -> 8.8) - 14% short. Baltusrol station is not located; Baltusrol Way crossing (0.6 mi past Mountain Ave) and Shunpike Road (1.5 mi) both fit the corridor, so the feature is not split there. The line is cut at the Broad Street crossing in Summit (40.7138, -74.3512), the RV's own terminus 'on Park Avenue, later Broad Street' (report block [4]); the last 0.06 mi of OSM track on into the DL&W/NJ Transit Summit Yard is the 22 Mar 1930 freight-only interchange and is NOT drawn. The whole RV main line traces 6.62 mi Aldene - Summit (Broad Street). Documented mileage conflicts: John Fowler's NJ station list (table 110, from the 1906 public timetable) gives Kenilworth (Warren Ave) 2.4, Springfield 5.8, Baltusrol 6.8, Summit 8.8 mi from Aldene; the March 1951 Official Guide entry (research/sources/official_guide_1952.txt, OCR damaged) appears to read Baltusrol 4.4 and Summit 7.x. The trace is 25% short of Fowler but close to the Official Guide, and every traced mile but about 0.3 is on ways OSM tags as the RV's own, so the shortfall is treated as a Fowler/ trace conflict, not a wrong route; it is unresolved. LATER ALIGNMENT: drawn on the alignment as abandoned (last train to Summit 1976); the 1930 interchange approach was built after the passenger era and is excluded, but whether the 1906 track into the Broad Street terminus was altered when it was built is not established. OpenHistoricalMap was not consulted: no straight-line gap needed filling.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1908,
+      "headway_min": 70,
+      "note": "Rahway Valley extension from Springfield past Baltusrol (station for the Baltusrol Golf Club) to its own Summit terminus on Park Avenue, later Broad Street, at the foot of Overlook Mountain - not the DL&W station. Springfield - Baltusrol: 'On New Year's Day, January 1, 1906, three regular trains travelled to Baltusrol for the first time on record' (trainweb ch.2; Wikipedia agrees). Baltusrol - Summit: regular trains Aldene - Summit from 6 Aug 1906 (trainweb ch.2, quoting a period newspaper) or 2 Aug (Wikipedia) - day conflict only; both opening dates fall in 1906, so one feature covers both stages, and Baltusrol - Summit in fact ran from August only. Louis Keller, founder of the Baltusrol GC, backed the line to bring club members out from New York. East Summit 'never appears in RV timetables'. Headway ~70 min is an estimate carried over from the 14/day figure for the line, not a Summit-specific count.",
+      "sources": [
+       "Segment-level: research report blocks [3]-[4]: 1 Jan 1906 Baltusrol and 2/6 Aug 1906 Summit openings per trainweb ch.2 and Wikipedia. Headway is an estimate.",
+       "https://trainweb.us/rahwayvalley/history_chapter2.htm",
+       "https://en.wikipedia.org/wiki/Rahway_Valley_Railroad",
+       "https://www.rahwayvalley.com/route/mainline/summit"
+      ]
+     },
+     {
+      "start": 1909,
+      "end": 1919,
+      "headway_min": 160,
+      "note": "Six trains a day by 1909 (trainsarefun) - headway ~160 min is an estimate; trainweb ch.2's 'nine round trip passenger runs ... a week' conflicts. End 1919: regular passenger service ended in spring 1919 - Baltusrol depot leased out in 1919 and 'Summit Station was semi-abandoned' (trainsarefun); an HMDB marker at Summit reportedly says June 1919 (search summary only, not read). The occasional mixed train to Summit 'to keep the State Franchise alive' afterwards (McCoy via trainweb ch.4) is NOT drawn (metadata not_yet_sourced). The DL&W interchange at Summit (22 Mar 1930; 1931 per american-rails.com) was freight-only and postdates passenger service; freight to Summit ended 1976 - context only.",
+      "sources": [
+       "Segment-level: research report blocks [3]-[4] and U1: 1909 six trains/day and spring 1919 end per trainsarefun; trainweb ch.4. Headway is an estimate.",
+       "http://www.trainsarefun.com/rvrr/rvrrhistory.htm",
+       "https://trainweb.us/rahwayvalley/history_chapter4.htm",
+       "https://www.rahwayvalley.com/route/mainline/summit"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.316771,
+      40.705381
+     ],
+     [
+      -74.326617,
+      40.7107
+     ],
+     [
+      -74.327697,
+      40.712083
+     ],
+     [
+      -74.328678,
+      40.714426
+     ],
+     [
+      -74.329458,
+      40.715115
+     ],
+     [
+      -74.330009,
+      40.715353
+     ],
+     [
+      -74.33081,
+      40.715549
+     ],
+     [
+      -74.331483,
+      40.715576
+     ],
+     [
+      -74.332291,
+      40.715467
+     ],
+     [
+      -74.333615,
+      40.714963
+     ],
+     [
+      -74.33436,
+      40.71436
+     ],
+     [
+      -74.33517,
+      40.713055
+     ],
+     [
+      -74.336735,
+      40.711118
+     ],
+     [
+      -74.340414,
+      40.708398
+     ],
+     [
+      -74.341054,
+      40.708152
+     ],
+     [
+      -74.34202,
+      40.708009
+     ],
+     [
+      -74.343182,
+      40.708042
+     ],
+     [
+      -74.345153,
+      40.708375
+     ],
+     [
+      -74.350234,
+      40.710648
+     ],
+     [
+      -74.350813,
+      40.711219
+     ],
+     [
+      -74.350963,
+      40.711622
+     ],
+     [
+      -74.351128,
+      40.713641
+     ],
+     [
+      -74.351181,
+      40.713848
+     ]
+    ]
+   }
+  }
+ ]
+}
