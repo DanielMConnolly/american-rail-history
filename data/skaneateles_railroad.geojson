@@ -1,0 +1,167 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Skaneateles Railroad, Onondaga County, New York: an independent 5-mile steam branch from the New York Central's Auburn Road at Skaneateles Junction south along Skaneateles Creek through Skaneateles Falls and Mottville to the lakefront at Skaneateles village. Passenger service drawn 1867-1932 (the second Skaneateles Railroad Company, opened 1 Oct 1867). Research report: research/branches/skaneateles_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Skaneateles_Short_Line_Railroad -- Wikipedia, Skaneateles Short Line Railroad (citing Palmer, 'A short line called Skaneateles', Trains 31(7), May 1971, pp.41-45, and Lewis, American Short Line Railway Guide 1978 p.74): 1840-50 horse road, 1867 opening, 1932 passenger end, 1940 cessation, Short Line 1941-1981",
+   "https://eaglenewsonline.com/new/2021/01/05/historic-moment-a-look-at-the-railroad/ -- Eagle News, 5 Jan 2021: 1 Oct 1867 opening with wood-burning steam locomotives; village station torn down 1947, 'strictly a freight service'",
+   "https://www.cnyhiking.com/CharlieMajorNatureTrail.htm -- cnyhiking.com, Charlie Major Nature Trail: 'ceasing carrying passengers in 1932'; trail on the former right-of-way",
+   "https://skaneateleshistoricalsociety.org/short-line-railroad -- Skaneateles Historical Society: depot at the Sherwood Inn site; 'after WWII' passenger remark (conflict, not adopted); track near Crow Hill Road moved across the creek in the 1930s",
+   "https://www.trainorders.com/discussion/read.php?2,374576 -- trainorders forum: '5 miles long'; locomotive detail (build year doubtful)",
+   "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf -- Fowler, New York State railroads part 4, entries 224 (stations and mileposts, no year letters) and 225 (1840 road, 'Horse traction')",
+   "research/sources/official_guide_1952.txt -- Official Guide Feb 1952: Skaneateles Short Line Railroad, 'Freight service only', Aug 1951; index daggers all four of its stations 'for freight only'"
+  ],
+  "operator_split": "None. The Skaneateles Railroad Company (second, 1866) ran its own trains for the whole drawn span 1867-1932; no lease to or operation by the New York Central was found. The 1940-41 change to the Skaneateles Short Line Railroad and the 1974 Stauffer Chemical purchase fall entirely in freight-only years, so no feature or colour is needed for them.",
+  "horsecar_audit": "Not drawn (Rule 5): the first Skaneateles Railroad (also called the Skaneateles & Jordan Railroad), chartered 1836, opened 30 Sep 1840, sold/bankrupt 24 Aug 1850 - wooden (later iron) rails and horse-drawn cars throughout, no steam found (Palmer via Wikipedia; Fowler entry 225 'Horse traction'). Its northern terminal is itself in conflict (A&S at Hart Lot per most sources, Jordan per Fowler). Nothing is trimmed from 1867-1932: the second company was steam from opening.",
+  "freight_only_audit": "Not drawn (Rule 1): 1932-7 Feb 1940 freight-only years of the Skaneateles Railroad; the Feb 1940-Apr 1941 dormant gap; and the whole life of the Skaneateles Short Line Railroad, 17 Apr 1941-15 Jul 1981 (Official Guide Aug 1951 'Freight service only', all its stations daggered freight-only; dieselised 1950; village end abandoned c.1969-70; owned by Stauffer Chemical from 1974). The 1969-70 and 1981 abandonments are not passenger end years.",
+  "not_yet_sourced": [
+   "Passenger end year 1932 rests on a single published source (Palmer, Trains, May 1971, p.44, seen only via Wikipedia); a 1932 'last passenger train' story in the Skaneateles Free Press or Syracuse papers (fultonhistory.com, nyshistoricnewspapers.org) or a 1931-33 Official Guide would confirm or move it. The Skaneateles Historical Society's 'after WWII' passenger remark conflicts and is unresolved (perhaps 'after WWI'). A queue entry's '1931' and a '1940s mixed train' were found in no source.",
+   "No timetable seen for any year 1867-1932; a 1910s-1920s Official Guide would give a mid-life anchor and a real headway. headway_min and avg_speed_kmh are estimates.",
+   "Whether the 1867-1932 track near Crow Hill Road ran on the other bank of Skaneateles Creek before the 1930s relocation; where exactly that earlier alignment lay.",
+   "Glenside station location (did not geocode); exact mileage beyond 'about 5 mi' (no ICC valuation figure found).",
+   "Locomotive at opening: 'two wood-burning steam engines' (Eagle News) vs a Mason bogie 'built in 1867' (trainorders, doubtful) - steam either way."
+  ],
+  "excluded_not_drawn": "Skaneateles Lake steamboats owned or run by the railroad from 1871 (not rail). The Auburn & Syracuse Electric interurban through Skaneateles village is a separate company with no layer yet and was not researched here."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Skaneateles Railroad",
+    "line": "Skaneateles Railroad: Skaneateles Junction – Skaneateles",
+    "id": "skaneateles-railroad-skaneateles-junction-skaneateles",
+    "color": "#4F7F93",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: a 5-mile steam branch with a handful of intermediate stops and a climb from the Auburn Road up the Skaneateles Creek valley to the lake; no timetable or running time found for any year 1867-1932 - unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): railway=abandoned ways named 'Skaneateles Short Line Railroad' 95046434, 433211647, 433211649, 433211648, 308774003, 308774004 and 95046443, plus the Charlie Major Nature Trail ways (railway=abandoned, highway=path, name:railway='Skaneateles Short Line Railroad') 33110552, 308774000, 308774001, 308773999, 308774002, 206903268, 206903269, chained end to end; the north end joins the NYC Auburn Road (OSM 'Auburn Secondary', old_railway_operator=NYC) at a shared position. Douglas-Peucker 8 m + trim_reversals (opstrace.py). Probed and empty: old_railway_operator ~ 'Skaneateles|SSL|Short Line' in the whole Skaneateles-Elbridge area (no such tag exists for this road), and OpenHistoricalMap railway ways for the corridor. An opstrace.py route over the same graph (Skaneateles Junction - Skaneateles Falls - Mottville - Willow Glen - Skaneateles) ran only on these ways but snapped short at both ends (4.4 mi), so the named chain was used directly.",
+    "geometry_quality": "Real-traced throughout from OpenStreetMap; no approximated (straight-line) legs. 4.99 mi traced (4.99 mi before simplification) against 5.0 mi documented (Fowler, NY State RRs (4), entry 224: Skaneateles 5.0; Wikipedia '5 mi') - within 0.2%. The only break in the OSM chain is a 9 m gap between ways 433211649 and 433211648 (a bridge end), bridged directly. Geocoded stations sit close to the line: Skaneateles Junction hamlet 80 m, Skaneateles Falls 40 m, Mottville 150 m, Willow Glen hamlet centroid 350 m, Sherwood Inn (site of the village depot) 170 m from the south end; Glenside did not geocode (Nominatim returned nothing) and was not used as a waypoint. LATER-ALIGNMENT FLAG: every way traced is mapped in OSM as the Skaneateles SHORT LINE Railroad (the 1941-1981 freight company), i.e. the alignment as it last existed, not necessarily as it stood 1867-1932. The Skaneateles Historical Society says the track near Crow Hill Road was moved to the other side of Skaneateles Creek in the 1930s; the drawn Charlie Major Nature Trail stretch (about 0.8 mi, Old Seneca Turnpike at Mottville south to Crow Hill Road, OSM ways 33110552-206903269) is therefore possibly a post-1932 alignment and the 1867-1932 track there may have lain on the opposite bank, a few tens of metres away. Short unnamed railway=abandoned fragments on the same stretch (ways 776759880, 1088041662, 1088041663) may be remnants of the earlier alignment but are unidentified and were not drawn. The rest of the line has no known relocation. The village end was lifted c.1969-70 and the remainder c.1981; the OSM mapping of the lifted line is not itself dated.",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1932,
+      "headway_min": 360,
+      "note": "Skaneateles Junction (connection with the New York Central Auburn Road; the hamlet earlier Hart Lot, later Skaneateles Falls) 0.0 - Glenside - Skaneateles Falls - Long Bridge - Mottville 2.5 - Willow Glen - Skaneateles 5.0 (station order and mileposts from Fowler, NY State RRs (4), entry 224; Marysville also listed as a possible stop). The village depot stood at the lakefront at the site of today's Sherwood Inn, W Genesee St (Skaneateles Historical Society). Opened 1 Oct 1867 by the second Skaneateles Railroad Company (incorporated 17 Apr 1866; construction from 1866 is not a service year) - Lewis, American Short Line Railway Guide 1978 p.74 via Wikipedia; Eagle News 2021. Steam from opening (Eagle News: two wood-burning steam locomotives), so no horse era needs trimming here. Operated by the company itself throughout; no New York Central lease or operation found, interchange only. Heavy tourist traffic to Skaneateles Lake; from 1871 the railroad had an interest in, and later ran, the lake steamers (boat service is not drawn). Business slumped in the 1920s against the Auburn & Syracuse Electric trolley. END YEAR 1932 IS SINGLE-SOURCE: Palmer, 'A short line called Skaneateles', Trains 31(7), May 1971, p.44, as relayed by Wikipedia ('Passenger service ended altogether in 1932'); cnyhiking.com repeats it and is likely derivative. CONFLICT: the Skaneateles Historical Society says passenger service dwindled 'after WWII' to two daily trips with only the conductor aboard - not adopted, because the company ceased operating 7 Feb 1940, the successor did not start until 17 Apr 1941, Eagle News calls the line 'strictly a freight service' when the village station was razed in 1947, and the Aug 1951 Official Guide prints 'Freight service only'. No source dates an end earlier than 1932, so do not shorten it, and do not extend it without evidence. Freight continued 1932-1940 under this company and 1941-1981 under the Skaneateles Short Line Railroad - context only, not drawn (Rule 1). headway_min 360 is an ESTIMATE: no timetable for any year was seen; 'two daily trips' (Historical Society, undated) is the only frequency figure, and earlier traffic, with lake-steamer connections, was probably heavier.",
+      "sources": [
+       "Segment-level: start 1 Oct 1867 from Lewis 1978 p.74 (via Wikipedia) and Eagle News 2021; end 1932 from Palmer, Trains May 1971 p.44 (via Wikipedia) only - single source, not seen directly; station list from Fowler entry 224 (no year letters); headway not sourced (estimate).",
+       "https://en.wikipedia.org/wiki/Skaneateles_Short_Line_Railroad",
+       "https://eaglenewsonline.com/new/2021/01/05/historic-moment-a-look-at-the-railroad/",
+       "https://www.cnyhiking.com/CharlieMajorNatureTrail.htm",
+       "https://skaneateleshistoricalsociety.org/short-line-railroad",
+       "https://www.branchline.uk/jfpdf/newyorkstaterrs4.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.455121,
+      43.012179
+     ],
+     [
+      -76.456077,
+      43.011605
+     ],
+     [
+      -76.456561,
+      43.010845
+     ],
+     [
+      -76.457765,
+      43.003034
+     ],
+     [
+      -76.457404,
+      42.997052
+     ],
+     [
+      -76.457641,
+      42.995373
+     ],
+     [
+      -76.457477,
+      42.994124
+     ],
+     [
+      -76.457199,
+      42.993597
+     ],
+     [
+      -76.456715,
+      42.993101
+     ],
+     [
+      -76.452177,
+      42.989541
+     ],
+     [
+      -76.45169,
+      42.98796
+     ],
+     [
+      -76.450533,
+      42.986169
+     ],
+     [
+      -76.445384,
+      42.975571
+     ],
+     [
+      -76.444356,
+      42.973591
+     ],
+     [
+      -76.442248,
+      42.970158
+     ],
+     [
+      -76.442019,
+      42.968756
+     ],
+     [
+      -76.44269,
+      42.967073
+     ],
+     [
+      -76.44284,
+      42.966116
+     ],
+     [
+      -76.442387,
+      42.965062
+     ],
+     [
+      -76.442345,
+      42.963939
+     ],
+     [
+      -76.44183,
+      42.963309
+     ],
+     [
+      -76.440351,
+      42.962556
+     ],
+     [
+      -76.439693,
+      42.961772
+     ],
+     [
+      -76.436997,
+      42.954242
+     ],
+     [
+      -76.433081,
+      42.947893
+     ],
+     [
+      -76.429739,
+      42.946587
+     ]
+    ]
+   }
+  }
+ ]
+}
