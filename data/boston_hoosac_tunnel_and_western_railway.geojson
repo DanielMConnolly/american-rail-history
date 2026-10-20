@@ -5,16 +5,16 @@
   "colour_note": "Boston and Maine Railroad colour pulled programmatically from the existing 'Boston and Maine Railroad' features in data/ (#1D3557). 'Fitchburg Railroad' and 'Boston, Hoosac Tunnel and Western Railway' had no features in data/; their new colours (#7A3B69, #8E2C48) were checked programmatically to be unused by any other company. Later Fitchburg-era features elsewhere (Troy & Boston 1887-1900, Cheshire 1890-1900, the Fitchburg main) should reuse #7A3B69.",
   "omitted": [
    "Report block [8], Saratoga Lake Railway (own operation, Saratoga Springs - Saratoga Lake, 1881-1882): HELD under Rule 5. The report could not confirm its motive power -- it was a 'rapid transit road' (New-York Tribune 10 Jul 1881) and steam is likely but not established (report UNRESOLVED 5). Not drawn until steam (or other mechanical traction) is sourced.",
-   "Report block [12], Schuylerville Branch (Schuyler Junction - Schuylerville, 7.9 mi): drawable NONE -- no confirmed passenger year (Fowler's 1882 Appleton's Guide station names are the best lead, report UNRESOLVED 4).",
+   "Report block [12], Schuylerville Branch (Schuyler Junction - Schuylerville, 7.9 mi): drawable NONE in this report, but research/branches/saratoga_and_schuylerville_railroad.txt (2026-10-20) found passenger evidence; it is now drawn in saratoga_and_schuylerville_railroad.geojson (BHT&W 1882-1887, B&M 1904-1930 [OPEN]).",
    "Report block [13], Troy & Greenfield North Adams - State Line: not a BHT&W block (BHT&W trains used it by agreement); belongs to a Troy & Greenfield / Fitchburg file. Nothing here draws east of the MA/VT state line.",
-   "Saratoga & Schuylerville Railroad (1946-1956/57): freight-only short line successor on the Saratoga branch (Rule 1).",
+   "Saratoga & Schuylerville Railroad (1946-1956/57): freight-only short line successor on the Saratoga branch (Rule 1). Its single 12 Oct 1947 passenger fan trip is drawn as tourist_rail in saratoga_and_schuylerville_railroad.geojson.",
    "Johnsonville - Rotterdam Junction after 1906 and the Saratoga branch after 1901: not drawn -- no passenger evidence found either way; the drawn ends are [OPEN]."
   ],
   "freight_only_audit": "Built to Rule 1: every feature ends at its last confirmed passenger year or operator change; the post-1906 B&M freight main west of Johnsonville, post-1958 freight east of it and the freight-only Saratoga & Schuylerville are mentioned in notes only.",
   "horsecar_audit": "Built to Rule 5: the Saratoga Lake Railway (1881-82), whose motive power is unconfirmed, is held back (see omitted). Nothing else in the file was animal-powered.",
   "not_yet_sourced": [
    "[OPEN] END: Boston and Maine Johnsonville - Mechanicville - Rotterdam Junction (bm-johnsonville-rotterdam-junction) drawn to 1906, the last confirmed year (Wabash tourist cars via Rotterdam Junction). No source dates the end of through cars or of any local train at Schaghticoke, Reynolds, Mechanicville, Ushers, Elnora or Scotia. Official Guides c.1910-1930, Chronicling America 1907-1940, BMRRHS discontinuance files are the next sources.",
-   "[OPEN][ANCHOR]: Boston and Maine Saratoga Springs Branch (bm-saratoga-springs-branch) drawn 1901 only, and that anchor rests on a presumed routing of a Worcester - Saratoga excursion.",
+   "[OPEN] END: Boston and Maine Saratoga Springs Branch (bm-saratoga-springs-branch) drawn 1901-1930. 1930 is the earliest year B&M employee timetable No. 12 can bear; mixed trains continued past it by an unknown amount and had stopped by No. 17 (before 27 Apr 1941). The 1901 start rests on a presumed routing; 1904 is the first year that names the branch stations.",
    "[ANCHOR]: Fitchburg Saratoga Springs Branch (fitchburg-saratoga-springs-branch) drawn 1894 only; regular Fitchburg trains 1887-1900 likely but no timetable seen.",
    "[OPEN] START: BHT&W Mechanicville - Rotterdam Junction drawn from 1885 (first confirmed passenger cars), not the 1884 opening; 1884 (Wikipedia, American-Rails) vs 1879 (JBVB, Wikipedia Freight Subdivision) opening conflict unresolved.",
    "Which of the two parallel alignments between the state line and Johnsonville is the BHT&W-built one is inferred, not proven (report UNRESOLVED 2): the existing Troy & Boston layer draws the abandoned grade, so this layer draws the surviving main track. When each stretch of the other alignment lost its trains is not established.",
@@ -41,7 +41,8 @@
    "https://www.branchline.uk/jfpdf/southernnewenglandrrs1.pdf",
    "https://www.faracresfarm.com/jbvb/rr/bmrr/layout.html",
    "https://www.american-rails.com/fitchburg.html"
-  ]
+  ],
+  "saratoga_schuylerville_update": "2026-10-20, from research/branches/saratoga_and_schuylerville_railroad.txt (block [6] and its EXISTING LAYER CHECK): bm-saratoga-springs-branch extended from 1901-1901 [ANCHOR][OPEN] to 1901-1930 [OPEN] on the 1904-06 Bennington Evening Banner ticket notices and the B&M employee timetables TT-B56A and TT-BM12 (ginosrailpage SANDS8); note, sources status line and headway estimate rewritten. It under-claimed, it did not over-claim. Geometry unchanged. The Schuylerville Branch and the 1947 fan trip are drawn in saratoga_and_schuylerville_railroad.geojson, which reuses this branch's geometry from Schuyler Junction to Saratoga Springs."
  },
  "features": [
   {
@@ -3934,12 +3935,19 @@
     "segments": [
      {
       "start": 1901,
-      "end": 1901,
-      "headway_min": 1440,
-      "note": "Report block [11]. [ANCHOR] [OPEN] -- a single proven year, and the last confirmed one. The Boston and Maine ran an excursion from Worcester to Saratoga on Saturday 17 Aug 1901, leaving Worcester 7.10 a.m. and Saratoga 5.30 p.m. (Worcester Spy 14 Aug 1901). That it used this branch rather than the D&H is PRESUMED, not stated. Service certainly ran wider both ways, but no other year is confirmed: B&M station lists of 1906-1941 are not passenger evidence, and the branch's 1955-57 abandonment (after the freight-only Saratoga & Schuylerville of 1946) gives track dates, not passenger dates. Do not extend without evidence. headway_min is a placeholder, not a measured frequency.",
+      "end": 1930,
+      "headway_min": 360,
+      "note": "Report block [11] of research/branches/boston_hoosac_tunnel_and_western_railway.txt, extended by block [6] of research/branches/saratoga_and_schuylerville_railroad.txt. [OPEN] -- 1930 is the last CONFIRMED year, not a known end. Start anchor kept: the Boston and Maine ran an excursion from Worcester to Saratoga on Saturday 17 Aug 1901, leaving Worcester 7.10 a.m. and Saratoga 5.30 p.m. (Worcester Spy 14 Aug 1901); that it used this branch rather than the D&H is PRESUMED, not stated (strictly the span is 1904 [OPEN] - 1930 [OPEN]). 1904-06: B&M excursion tickets on sale at 'Saratoga and Schuyler-ville' stations (Bennington Evening Banner 28 Oct 1904), again Oct 1905, and at 'all B. & M. stations Greenfield and west including Saratoga and Schuylerville branches' (10 Oct 1906). B&M employee timetables (ginosrailpage SANDS8, primary scans, undated): TT-B56A, a Berkshire Division book and so after 1914 and before Sept 1930 (c.1918-23 on nashuacitystation's division lists), runs a Schuylerville - Saratoga Springs train, a Saratoga Springs - Mechanicville 'John'ville' train and mixed trains on this branch; TT-BM12, later than B&M system timetable No. 7 of 28 Sep 1930 by its series and page numbers, still runs Mixed 5901 Mechanicville 9.00 a.m. - Saratoga Springs 10.40 and 5904 Saratoga Springs 2.25 - Mechanicville 3.50 p.m. with flag stops at Stillwater, Stillwater Centre, Maple Shade Farm, Cedar Bluffs, Saratoga Lake, Dyer Switch and Eureka Springs. Mixed trains carry passengers (Rule 1). TT-BM17, earlier than No. 31 of 27 Apr 1941, schedules NO trains on the branch, so passengers ended between the issue of No. 12 and No. 17 -- c.1932-35 by an estimate of the issue rate, NOT a sourced year. 1930 is the earliest year TT-BM12 can bear: do not extend past 1930 until TT Nos. 12 and 17 are dated, and never to 1941, 1945/46 (sale to the freight-only Saratoga & Schuylerville) or 1956 (last freight). B&M station lists 1906-1941 are not passenger evidence. The evidence is employee, not public, timetables. headway_min is an ESTIMATE (two mixed trains each way in TT-BM12; more in earlier books).",
       "sources": [
-       "Segment-level: WS01 (primary), with the routing over this branch presumed. Compiled in research/branches/boston_hoosac_tunnel_and_western_railway.txt (researched 2026-10-16)",
-       "https://www.loc.gov/resource/sn86086481/1901-08-14/ed-1/?sp=8"
+       "Segment-level: WS01 (primary, routing presumed) for 1901; BEB04, BEB05, BEB06 (1904-06 ticket notices, primary); GINO-TT employee timetable pages TT-B56A and TT-BM12 (primary scans, undated) for service into the 1930s and TT-BM17 for the 1930-41 end bracket; nashuacitystation TT-number and division dating (TT No. 7 = 28 Sep 1930, No. 31 = 27 Apr 1941). End 1930 [OPEN]; headway estimated. Compiled in research/branches/saratoga_and_schuylerville_railroad.txt (researched 2026-10-20) and research/branches/boston_hoosac_tunnel_and_western_railway.txt",
+       "https://www.loc.gov/resource/sn86086481/1901-08-14/ed-1/?sp=8",
+       "https://www.loc.gov/resource/sn95066012/1904-10-28/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn95066012/1905-10-26/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn95066012/1906-10-10/ed-1/?sp=3",
+       "http://ginosrailpage.org/SANDS/SANDS8.html",
+       "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/fitchburg-division-saratoga-and-schuylerville-branches/",
+       "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/first-operating-district-berkshire-division-saratoga-and-schuylerville-branches/",
+       "https://nashuacitystation.org/history/boston-and-maine-railroad/routes/fitchburg-division-schuylerville-branch/"
       ]
      }
     ]
