@@ -1,0 +1,486 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Ligonier Valley Rail Road (Mellon family; Latrobe and Ligonier Rail Road until 1871), Westmoreland County, Pennsylvania - Latrobe (Pennsylvania Railroad) - Ligonier along Loyalhanna Creek, 10.3 mi, opened 1 Dec 1877 as 3 ft gauge, standard gauge 1882, gas-electric motor cars from 1928, all service ended 30/31 Aug 1952. Plus the Wilpen (Hannah's Run / Mill Creek) branch, drawn only for its confirmed passenger years 1912-1916. Drawn spans are the research report's drawable: fields exactly. Research report: research/branches/ligonier_valley_railroad.txt.",
+  "sources": [
+   "https://lvrra.org/LVRRA_history.php",
+   "https://lvrra.org/doodlebugs.php",
+   "https://www.lvrra.org/liggies/liggie_dec_2005.pdf",
+   "https://en.wikipedia.org/wiki/Ligonier_Valley_Railroad",
+   "https://theclio.com/entry/97075",
+   "https://www.abandonedrails.com/ligonier-valley-railroad",
+   "https://lvrra.org/1912_wreck.php",
+   "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, LVRR table lines 21456-21480",
+   "Fowler, branchline.uk Pennsylvania Railroads (5), tables 416-417 (station lists only, no year letters)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-21): ways tagged old_railway_operator=\"Ligonier Valley Railroad\" (route relation 11256874) and three Latrobe greenway ways carrying it only in note:old_railway_operator.",
+   "OpenHistoricalMap (2026-10-21): nothing in the corridor."
+  ],
+  "operator_split": "None. The Mellon-controlled Ligonier Valley Rail Road ran the trains 1877-1952; the 1871 rename and the Aug 1877 Mellon purchase both predate the first train. PRR through cars in the 1920s were through running, not a lease. The PRR's 1952 takeover of Latrobe - Kingston came after passenger service ended and is freight only.",
+  "omitted": [
+   "[2] Idlewild Park picnic/excursion trains: same rails, company and years as the main line - recorded in its segment notes, not drawn separately.",
+   "[3] PRR \"Ligonier Express\" summer through service (1920s): through running over the main line - noted, not a separate feature; the PRR portion belongs to the PRR layer.",
+   "[5] Wilpen - Fort Palmer (~1.7 mi): no confirmable passenger year (drawable NONE).",
+   "PRR / Conrail / Norfolk Southern Latrobe - Kingston freight spur after 1 Sep 1952: different operator, freight only (Rule 1).",
+   "Baker's Spur, the Kingston - Long Bridge quarry spur, the Latrobe wye and the coal-mine spurs north of Ligonier: industrial freight spurs (Rule 1).",
+   "Pittsburgh, Westmoreland and Somerset (Ligonier - Somerset, ~1901-1916): a separate company, not researched here; its grade is in OSM as old_railway_operator=\"Pittsburg, Westmoreland and Somerset Railroad\"."
+  ],
+  "existing_layer_note": "No existing layer drew the Ligonier Valley (grep for ligonier|idlewild|wilpen|latrobe|darlington, 2026-10-21: only unrelated Wilpen MN and Latrobe CA hits).",
+  "not_yet_sourced": [
+   "WILPEN BRANCH ENDS ARE OPEN: 1912 is the earliest and 1916 the latest confirmed passenger year. Start bracket 1908-1912 (branch opened ~1908); end bracket 1916-1941 (none in the 1941 timetable). The 1916 year is Wikipedia's reading of the June 1916 Official Guide, not seen directly. A 1923 LVRR timetable (said by Wikipedia to survive) and the ICC report on the 5 Jul 1912 collision would narrow it.",
+   "MAIN LINE CONTINUITY 1882-1927: no timetable from these years was read; service is assumed continuous from the road's unbroken history.",
+   "FREQUENCY: only the 1941 and 1951 counts (five each way) and the 1912 branch schedule were read; all other headway_min values are estimates.",
+   "SPEED: avg_speed_kmh on both features is an estimate; no end-to-end running time was read.",
+   "LAST DAY: 30 Aug 1952 (last regular revenue run, LVRRA newsletter) vs 31 Aug 1952 (cessation of all rail service) - same year, no map impact.",
+   "INCORPORATION: April 1853 (LVRRA, Wikipedia, Clio) vs 1852 (Abandoned Rails) - irrelevant to the drawn years.",
+   "INTERMEDIATE MILEAGES: Fowler table 416 disagrees with Wikipedia and the 1951 Guide (Long Bridge 3.5 vs 6.5/6.6); geometry was checked against the latter."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Ligonier Valley Rail Road",
+    "line": "Ligonier Valley: Latrobe – Ligonier",
+    "id": "lvrr-latrobe-ligonier",
+    "color": "#1F7F1F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE. 25 km/h assumes roughly 40 minutes for 10.3 mi with all stops; no complete end-to-end running time was read (the Feb 1952 Guide OCR preserves only fragments of the LVRR table). Applied to all eras unverified.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=\"Ligonier Valley Railroad\" (railway=abandoned; ~25 ways, members of OSM route relation 11256874 \"Ligonier Valley Railroad\"), including pieces now carrying US 30 (Lincoln Highway), local streets, Idlewild Park paths, the \"Latrobe Industrial Track\" and the Ligonier Valley Trail. In Latrobe the Lincoln Avenue Rails to Trails Greenway (ways 504323429, 1264530884, 56051230) is tagged old_railway_operator=NS with the LVRR only in note:old_railway_operator - opstrace's Operator was extended to count that key as the LVRR's own. Probed spellings: LVRR, Ligonier Valley, Ligonier Valley Rail Road, Ligonier Valley Railroad (old_railway_operator and note:old_railway_operator) - only the full \"Ligonier Valley Railroad\" value exists. OpenHistoricalMap returned no railway ways in the Latrobe - Ligonier - Wilpen corridor (2026-10-21).",
+    "geometry_quality": "Traced end to end on LVRR-tagged OSM ways: 10.1 mi against 10.3 mi documented (LVRRA; Wikipedia station list 10.2, 1941 timetable and Fowler table 416 10.5) - about 2% short. No straight-line (approximated) legs. Traced mileposts from Latrobe vs documented: Kingston 3.3 (2.5-3.2), Darlington station (now the LVRR museum) 7.3 (7.4), Idlewild 7.65 (n/a), Millbank 8.2 (8.2), Ligonier 10.1. LATER/REPLACEMENT GEOMETRY: about 4.4 mi - Kingston to Long Bridge (~2.9 mi) and Millbank to the west edge of Ligonier (~1.5 mi) -, follow OSM ways that are now the US 30 (Lincoln Highway) roadway, tagged with the LVRR as old_railway_operator - the state condemned the gorge right-of-way for the 1950s highway widening, so this is the highway's centreline laid over the grade, not surveyed track; offsets of tens of metres are likely. Shorter pieces through Darlington and Idlewild Park follow streets and park paths built on the grade. Latrobe end: drawn from the west end of the OSM Latrobe Industrial Track by the PRR Latrobe station (40.3188, -79.3841), the post-1900s arrangement after the PRR elevated its tracks; where the 1877-1900s connection lay was not checked. Ligonier end: pinned at 40.2467, -79.2440 on the grade beside Depot Street - the 1909-10 station site as best located, not verified against a survey; the 1877-1909 Ligonier terminal was not separately located. The report documents no realignment of the main line; whether the 1877 3 ft gauge alignment matched the 1882 standard-gauge one everywhere was not checked. Waypoint offsets: Darlington 0.5 km (hamlet geocode, not the station), Millbank 0.2 km, others <= 0.0 km.",
+    "segments": [
+     {
+      "start": 1877,
+      "end": 1881,
+      "headway_min": 360,
+      "note": "Opened 1 December 1877 as a 3 ft narrow-gauge steam railroad, Latrobe (Pennsylvania Railroad) - Oakville - Osborne - Kingston - Long Bridge - Darlington - Idlewild - Millbank - Bell's - Ligonier, built and run by Judge Thomas Mellon's Ligonier Valley Rail Road (renamed in 1871 from the Latrobe and Ligonier Rail Road, which never ran trains). The opening date is agreed by the LVRRA history, Wikipedia and Clio. In 1878 the road was the first to use the Ramsey car-transfer apparatus at Latrobe, and the Mellons opened Idlewild Park beside the line the same year; Sunday picnic and excursion trains to Idlewild (many from Pittsburgh via the PRR) ran for the rest of the road's life and are recorded here rather than as a separate feature. Narrow gauge until the 1882 conversion. headway_min 360 is an ESTIMATE - no timetable from this era was read; Clio's undated \"three to five weekday round trips\" is the only frequency evidence.",
+      "sources": [
+       "Segment-level: LVRRA history, Wikipedia and Clio for the 1 Dec 1877 opening and 3 ft gauge, as read in research/branches/ligonier_valley_railroad.txt block [1]. Headway not sourced (estimate).",
+       "https://lvrra.org/LVRRA_history.php",
+       "https://en.wikipedia.org/wiki/Ligonier_Valley_Railroad",
+       "https://theclio.com/entry/97075"
+      ]
+     },
+     {
+      "start": 1882,
+      "end": 1927,
+      "headway_min": 240,
+      "note": "Standard gauge from 1882; steam passenger trains Latrobe - Ligonier, connecting with the Pennsylvania Railroad at Latrobe (the LVRR used the PRR Latrobe station after the PRR tracks were elevated in the early 1900s). Heavy summer picnic traffic to Idlewild Park. In the 1920s the PRR's summer \"Ligonier Express\" ran PRR equipment through from Pittsburgh to Ligonier over these rails (LVRRA history, no years given) - through running, not a change of operator. The new Ligonier station opened 1909-10. headway_min 240 is an ESTIMATE (Clio's undated three to five weekday round trips); no timetable from this era was counted.",
+      "sources": [
+       "Segment-level: LVRRA history and Wikipedia for the 1882 gauge conversion and the 1920s Ligonier Express, as read in research/branches/ligonier_valley_railroad.txt blocks [1] and [3]. No timetable checked for these years; continuity of service 1882-1927 is assumed from the road's unbroken history. Headway not sourced (estimate).",
+       "https://lvrra.org/LVRRA_history.php",
+       "https://en.wikipedia.org/wiki/Ligonier_Valley_Railroad",
+       "https://theclio.com/entry/97075"
+      ]
+     },
+     {
+      "start": 1928,
+      "end": 1952,
+      "headway_min": 200,
+      "note": "Gas-electric motor cars (\"doodlebugs\") carried the schedule from 1928 (M-10), joined by M-21 (1937) and ex-Boston and Maine 1150/1152 in the mid-1940s (LVRRA doodlebugs page). The 1941 timetable (per Wikipedia) shows five trains each way daily - four all-stations and one Latrobe/Kingston/Darlington/Ligonier only - plus three Sunday-only and one daily-except-Saturday train. The Feb 1952 Official Guide (schedules effective 30 Sep 1951) still prints an LVRR table of five trains each way with times, as rail (the LVRRA independently documents doodlebugs to the end). Last regular passenger run Saturday evening 30 Aug 1952 (M-21, LVRRA \"Liggie\" newsletter Dec 2005); all rail service ceased 31 Aug 1952 - passengers and freight ended together, with the decline of coal, stone and lumber traffic, highway competition and the state's condemnation of the gorge for widening US 30. On 1 Sep 1952 the PRR took Latrobe - Kingston as a freight-only industrial spur (later Conrail / Norfolk Southern, lifted after 2011) - a different operator, freight only, not drawn (Rule 1). headway_min 200 is an ESTIMATE from the 1941 and 1951 counts of five trains each way.",
+      "sources": [
+       "Segment-level: LVRRA doodlebugs page (1928 M-10 start of motor-car service); Wikipedia citing the 1941 timetable (five each way); Feb 1952 Official Guide (1951 service, times present); LVRRA Liggie Dec 2005 (last run 30 Aug 1952) - as read in research/branches/ligonier_valley_railroad.txt block [1]. Headway estimated from the 1941/1951 counts.",
+       "https://lvrra.org/doodlebugs.php",
+       "https://en.wikipedia.org/wiki/Ligonier_Valley_Railroad",
+       "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, LVRR table lines 21456-21480",
+       "https://www.lvrra.org/liggies/liggie_dec_2005.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.3840571,
+      40.3188413
+     ],
+     [
+      -79.3827379,
+      40.319655
+     ],
+     [
+      -79.3818688,
+      40.3199576
+     ],
+     [
+      -79.3808925,
+      40.3199413
+     ],
+     [
+      -79.3798518,
+      40.319385
+     ],
+     [
+      -79.3794085,
+      40.3185875
+     ],
+     [
+      -79.3775025,
+      40.3126552
+     ],
+     [
+      -79.3765044,
+      40.3108035
+     ],
+     [
+      -79.3756783,
+      40.3100017
+     ],
+     [
+      -79.372288,
+      40.3074409
+     ],
+     [
+      -79.3714485,
+      40.3066288
+     ],
+     [
+      -79.3660531,
+      40.2989508
+     ],
+     [
+      -79.3652935,
+      40.2981768
+     ],
+     [
+      -79.3643594,
+      40.2976222
+     ],
+     [
+      -79.3630804,
+      40.2972112
+     ],
+     [
+      -79.3572247,
+      40.2961002
+     ],
+     [
+      -79.3553364,
+      40.2953719
+     ],
+     [
+      -79.3516457,
+      40.293367
+     ],
+     [
+      -79.3503904,
+      40.2929742
+     ],
+     [
+      -79.3490279,
+      40.2927287
+     ],
+     [
+      -79.3412065,
+      40.2923359
+     ],
+     [
+      -79.3374881,
+      40.2919
+     ],
+     [
+      -79.3362681,
+      40.2919182
+     ],
+     [
+      -79.3333201,
+      40.29268
+     ],
+     [
+      -79.3321438,
+      40.292874
+     ],
+     [
+      -79.3310443,
+      40.2928521
+     ],
+     [
+      -79.3300312,
+      40.2926726
+     ],
+     [
+      -79.3282979,
+      40.2918999
+     ],
+     [
+      -79.3225172,
+      40.287864
+     ],
+     [
+      -79.3212064,
+      40.2871425
+     ],
+     [
+      -79.320467,
+      40.2868898
+     ],
+     [
+      -79.319278,
+      40.286689
+     ],
+     [
+      -79.3165948,
+      40.2867444
+     ],
+     [
+      -79.3153572,
+      40.2866105
+     ],
+     [
+      -79.3100603,
+      40.2846311
+     ],
+     [
+      -79.3094265,
+      40.2843051
+     ],
+     [
+      -79.3086439,
+      40.2835946
+     ],
+     [
+      -79.3079189,
+      40.2822833
+     ],
+     [
+      -79.3069945,
+      40.2802198
+     ],
+     [
+      -79.3068488,
+      40.2779071
+     ],
+     [
+      -79.3064086,
+      40.2769109
+     ],
+     [
+      -79.3059219,
+      40.2763104
+     ],
+     [
+      -79.3047501,
+      40.2755032
+     ],
+     [
+      -79.301535,
+      40.2743089
+     ],
+     [
+      -79.297804,
+      40.2723608
+     ],
+     [
+      -79.2966118,
+      40.2713933
+     ],
+     [
+      -79.2960667,
+      40.2706772
+     ],
+     [
+      -79.2955185,
+      40.2694527
+     ],
+     [
+      -79.2946853,
+      40.2681627
+     ],
+     [
+      -79.2940815,
+      40.2675638
+     ],
+     [
+      -79.2931275,
+      40.2669925
+     ],
+     [
+      -79.288575,
+      40.264864
+     ],
+     [
+      -79.2875244,
+      40.2642466
+     ],
+     [
+      -79.2865584,
+      40.2633989
+     ],
+     [
+      -79.2853683,
+      40.2619963
+     ],
+     [
+      -79.2838108,
+      40.2607766
+     ],
+     [
+      -79.2824062,
+      40.260246
+     ],
+     [
+      -79.2807069,
+      40.2600752
+     ],
+     [
+      -79.279229,
+      40.260283
+     ],
+     [
+      -79.2766029,
+      40.2612918
+     ],
+     [
+      -79.2753434,
+      40.2614227
+     ],
+     [
+      -79.2710464,
+      40.2615427
+     ],
+     [
+      -79.2690295,
+      40.2613023
+     ],
+     [
+      -79.2674442,
+      40.2608971
+     ],
+     [
+      -79.2653433,
+      40.2598087
+     ],
+     [
+      -79.2644472,
+      40.2590207
+     ],
+     [
+      -79.2637728,
+      40.2581187
+     ],
+     [
+      -79.2633053,
+      40.2569692
+     ],
+     [
+      -79.2621495,
+      40.2523036
+     ],
+     [
+      -79.261581,
+      40.2514382
+     ],
+     [
+      -79.260424,
+      40.250493
+     ],
+     [
+      -79.2588735,
+      40.2498669
+     ],
+     [
+      -79.2580651,
+      40.2497306
+     ],
+     [
+      -79.2513633,
+      40.2490617
+     ],
+     [
+      -79.2491917,
+      40.2484188
+     ],
+     [
+      -79.2453557,
+      40.2466733
+     ],
+     [
+      -79.2434338,
+      40.2465061
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Ligonier Valley Rail Road",
+    "line": "Ligonier Valley: Wilpen Branch",
+    "id": "lvrr-wilpen-branch",
+    "color": "#1F7F1F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE, not sourced: a single coach propelled by a locomotive over ~4 mi of coal branch; 20 km/h is a guess.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=\"Ligonier Valley Railroad\" (railway=abandoned; ~25 ways, members of OSM route relation 11256874 \"Ligonier Valley Railroad\"), including pieces now carrying US 30 (Lincoln Highway), local streets, Idlewild Park paths, the \"Latrobe Industrial Track\" and the Ligonier Valley Trail. In Latrobe the Lincoln Avenue Rails to Trails Greenway (ways 504323429, 1264530884, 56051230) is tagged old_railway_operator=NS with the LVRR only in note:old_railway_operator - opstrace's Operator was extended to count that key as the LVRR's own. Probed spellings: LVRR, Ligonier Valley, Ligonier Valley Rail Road, Ligonier Valley Railroad (old_railway_operator and note:old_railway_operator) - only the full \"Ligonier Valley Railroad\" value exists. OpenHistoricalMap returned no railway ways in the Latrobe - Ligonier - Wilpen corridor (2026-10-21).",
+    "geometry_quality": "Traced on LVRR-tagged OSM ways: 3.7 mi against ~4 mi documented (LVRRA 1912 wreck page \"about four miles\"; Wikipedia's 5.7 mi covers the whole branch to Fort Palmer). No straight-line (approximated) legs; ~0.1 mi uses the Ligonier Valley Trail (cycleway on the grade) to bridge a mapping gap at the east edge of Ligonier. Starts at the main line's Ligonier end (40.2467, -79.2440) and runs east on the LVRR grade before turning north-east along Mill Creek; ends where the OSM grade (way 435868852, which continues to Fort Palmer) passes nearest the Wilpen hamlet geocode (0.2 km off). The Wilpen station site was not separately pinned. Wilpen - Fort Palmer (~1.7 mi) is deliberately not drawn (no passenger evidence). Whether the branch left the main line at the Ligonier station or at a separate junction east of it was not established; this draws it continuous from the station.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1916,
+      "headway_min": 720,
+      "note": "Branch passenger service Ligonier - North Ligonier - Wilpen Fair Grounds - Hannah's Run - Wilpen (called the Hannah's Run branch by the LVRRA, the Mill Creek Branch by Fowler, the Wilpen branch by Wikipedia and 1912 newspapers), opened about 1908 (Wikipedia) on to Fort Palmer for the Shenango coal mines. BOTH ENDS ARE OPEN. START: 1912 is the EARLIEST CONFIRMED year, not an opening - on 5 July 1912 a passenger train of one wooden combination coach, pushed by an engine and crowded with Fourth of July excursionists returning to Wilpen, was struck by a double-headed coal train at the Wilpen Fair Grounds (21-26 killed); the regular service then was a single coach twice a day from Ligonier, 6:40 am and 3:20 pm (LVRRA wreck page; wire stories of 6 July 1912 call it a passenger train). Passengers may have run from the 1908 opening; not established. END: 1916 is the LAST CONFIRMED year, not a known end - Wikipedia reads the June 1916 Official Guide as showing two trains each way (that Guide was not seen directly). The 1941 timetable shows no Wilpen passenger service, so service stopped somewhere between 1916 and 1941; no source dates it. Do not extend either end without evidence. If the 1916 reading fails verification, fall back to 1912 alone. Wilpen - Fort Palmer is not drawn (no passenger evidence). Coal freight presumably continued to 1952 - context only, not drawn (Rule 1). headway_min 720 from the 1912 two-a-day schedule (and the 1916 two each way), applied across the span as an estimate.",
+      "sources": [
+       "Segment-level: 1912 from the LVRRA 1912 wreck page and Chronicling America wire stories of 6 Jul 1912; 1916 from Wikipedia's reading of the June 1916 Official Guide (not seen directly) - as read in research/branches/ligonier_valley_railroad.txt block [4]. Start and end are earliest/latest confirmed years only. Headway from the 1912 schedule; other years unchecked.",
+       "https://lvrra.org/1912_wreck.php",
+       "https://en.wikipedia.org/wiki/Ligonier_Valley_Railroad",
+       "http://www.loc.gov/resource/sn95066012/1912-07-06/ed-1/?sp=1",
+       "http://www.loc.gov/resource/sn84031081/1912-07-06/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.2434338,
+      40.2465061
+     ],
+     [
+      -79.2414853,
+      40.2468292
+     ],
+     [
+      -79.2318831,
+      40.2502298
+     ],
+     [
+      -79.2259882,
+      40.2526613
+     ],
+     [
+      -79.2128176,
+      40.2585091
+     ],
+     [
+      -79.2122217,
+      40.2588868
+     ],
+     [
+      -79.20306,
+      40.269083
+     ],
+     [
+      -79.2024946,
+      40.2700202
+     ],
+     [
+      -79.2002062,
+      40.2752858
+     ],
+     [
+      -79.1993361,
+      40.2761489
+     ],
+     [
+      -79.1933971,
+      40.2806449
+     ]
+    ]
+   }
+  }
+ ]
+}
