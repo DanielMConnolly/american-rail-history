@@ -1,0 +1,4728 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The West Jersey system of South Jersey - the Millville, Cape May, Newfield - Atlantic City, Bridgeton, Elmer - Salem, Salem, Quinton, Penns Grove, Anglesea/Wildwood, Longport and Medford lines - built from research/branches/west_jersey_and_seashore_railroad.txt (researched 2026-10-20), drawing only its drawable: spans. One feature per drawable span and operator; features for the same corridor share identical geometry. Rule 4 splits: Millville and Glassboro / Cape May and Millville / Salem Railroad -> West Jersey 1868-69; West Jersey and West Jersey and Atlantic -> West Jersey and Seashore at the 4 May 1896 consolidation; Delaware River RR -> WJ&S 30 Apr 1900; Anglesea RR -> West Jersey 23 May 1888; WJ&S -> Pennsylvania-Reading Seashore Lines 15 Jul 1933 on the lines that kept passengers (Millville, Bridgeton, Salem, Penns Grove). NOT split: Swedesboro RR (leased before opening, 1869), Woodstown and Swedesboro (leased on opening, 1883), Alloway and Quinton (West Jersey-worked from opening, 1891), the 1879 Delaware Shore -> Delaware River RR reincorporation (same line, one feature), and the 1 Jul 1930 PRR lease (see not_yet_sourced). Segments end the year before the next operator's first year (the drawable spans), so no corridor is drawn twice in one year. NOT IN THIS LAYER: the Camden - Haddonfield - Atlantic City main line and the Delair Bridge / Bridge Line (report blocks 1-3) - drawn today in pennsylvania_railroad_system.geojson (prr-prsl-atlantic-city) and nj_transit_rail.geojson (njt-1), which open dataset PR #108 edits; drawing them here would double-draw. The Cape May County beach lines and Somers Point branch (block 37) are in ocean_city_railroad.geojson; the Camden and Atlantic / PM&M years of the Longport and Medford lines (block 38) belong to PR #108.",
+  "color_note": "Pulled programmatically, not typed: West Jersey Railroad #BF2687, West Jersey and Seashore Railroad #A5BF26 and West Jersey and Atlantic Railroad #723333 from ocean_city_railroad.geojson; Pennsylvania-Reading Seashore Lines #2A6F97 from ocean_city_railroad.geojson and pennsylvania_railroad_system.geojson (identical in both; the same hex is the Reading's, already flagged upstream). New companies, none previously in data/, given colours that no feature in data/ used when checked on 2026-10-21: Millville and Glassboro Railroad #3C27BB, Cape May and Millville Railroad #40B871, Salem Railroad #B035A1, Delaware River Railroad #41B730, Anglesea Railroad #E06B3A.",
+  "not_drawn": [
+   "Blocks 1-3 - West Jersey and Seashore / PRSL Camden - Haddonfield - Atlantic City and the Delair Bridge Line: drawn elsewhere and edited by open dataset PR #108; excluded from this layer to avoid a double draw.",
+   "Block 12 - PRSL Millville - Woodbine - Cape May after 1933: drawable NONE. The only post-1933 train named is the 26 Feb 1949 'last mail train' (sjrail), not shown to carry passengers; Feb 1952 Table 8 Millville - Woodbine 'Freight Service only'.",
+   "Block 15 - PRSL Newfield - Atlantic City: drawable NONE. Electric service ended 26 Sep 1931, before the PRSL existed; freight only 1933-1966 (Rule 1).",
+   "Block 31 - Maurice River Branch (Manumuskin - Maurice River, 1887): drawable NONE. Fowler lists nine passenger stops but dates none of them; no confirmable passenger year.",
+   "Block 37 - beach lines and Somers Point branch: already drawn in ocean_city_railroad.geojson.",
+   "Block 38 - Camden and Atlantic / Philadelphia, Marlton and Medford years of the Longport and Medford lines: belong to dataset PR #108.",
+   "Elmer (Riddleton) Branch after 1928: status unknown, not drawn (block 21 is [OPEN]).",
+   "Deepwater Point extension beyond Penns Grove (DuPont Chambers Works): freight only, no passenger evidence (Rule 1).",
+   "The earlier Camden and Woodbury RR (1838), whose grade the West Jersey reused in 1857: a separate company, not researched and not drawn."
+  ],
+  "not_yet_sourced": [
+   "THE 1 JULY 1930 PRR LEASE: the PRR formally leased the WJ&S from 1 Jul 1930 (Coverdale & Colpitts 1946 p.187 via Wikipedia). CLAUDE.md Rule 4 counts a lease as an operator change, but no source describes any change in how the trains were run in 1930, and ocean_city_railroad.geojson keeps its WJ&S features through 1933. By decision for this PR the WJ&S features here run through 1932 unsplit; if the project adopts the split, every wjs-* feature still running in 1930 (millville-line, millville-cape-may, newfield-atlantic-city, bridgeton-branch, salem-branch, penns-grove-branch) should split at 1930 into WJ&S 1896-1929 and Pennsylvania Railroad 1930-1932 (1930-1931 for Newfield), together with the wjs-* features in ocean_city_railroad.geojson.",
+   "[OPEN] ends - last CONFIRMED years, not known ends: wjs-elmer-branch 1928 (via the Quinton mixed train); wjs-anglesea-branch and wjs-wildwood-crest-extension 1921 (Five Mile Beach Weekly Journal 3 Jun 1921); wjs-atlantic-city-longport 1897 (Fowler 1897 company timetable). Do not extend without evidence.",
+   "wjs-millville-cape-may end: no dated last WJ&S passenger train. Drawn to 1932 on the Coverdale & Colpitts 'abandoned ... in favor of the former Cape May Railroad route' after the 1933 PRSL consolidation; sjrail's 26 Feb 1949 'last mail train' over the WJ&S line conflicts with a 1933 abandonment.",
+   "Cape May and Millville completion: Aug 1863 (C&M article) vs 1867 (WJ&S article); rail to Cape Island confirmed by 11 Jun 1866. The 1863-1865 railhead is unproven; the whole line is drawn from 1863. Lease 1 Jun 1868 vs 1869.",
+   "Salem Railroad lease: 1 Jan 1868 (Coverdale & Colpitts) vs June 1868 (Wilson 1899).",
+   "West Jersey and Atlantic operator 1880-1895: own board, but 'ultimately leased to the WJ' (date not given) and trains advertised 'Via West Jersey Railroad' in 1895. If the West Jersey worked it, recolour wja-newfield-atlantic-city (and wja-somers-point-branch in ocean_city_railroad.geojson) to the West Jersey.",
+   "Delaware River RR operator 1876-1900: newspaper timetable headings outlived the company by five years and do not prove who crewed the trains.",
+   "Millville and Glassboro operator after the West Jersey reached Glassboro in Apr 1861: not established.",
+   "Anglesea RR own-name operation 1883-1887: implied by incorporation and receivership, not confirmed by a timetable. Wildwood Crest extension opening date not found (drawn from Fowler's 1907t).",
+   "Woodstown and Swedesboro opening: 1883 (W&S article; Fowler) vs 'February 23, 1873' (WJ&S article, treated as an error).",
+   "Millville line last train 5 Feb 1971 vs 5 Mar 1971; end of electric service 24 Sep vs 8 Sep 1949 - same years.",
+   "Headways: none measured except the counts noted per segment; every headway_min is an estimate. avg_speed_kmh is an estimate throughout."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Camden – Woodbury",
+    "id": "wj-camden-woodbury",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: 1850s-90s steam local service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "8.8 mi drawn against 8.2 mi documented (Camden - Woodbury, Wikipedia; Fowler line 74 puts Woodbury at mp 9.8 from Cooper's Point; Feb 1952 Table 9 gives 9.3 from Federal St). Real-traced on OSM rail (Conrail Vineland Secondary, old_railway_operator=\"PRSL (PRR)\") from South Camden through Gloucester City and Westville to Woodbury station. Approximated with a straight line: the last 1.23 mi from the junction of the Vineland Secondary and the Camden Running Track (39.9395 N) to the foot of Federal St, Camden (terminal site approximate; the terminal approach is built over). LATER ALIGNMENT: the Camden end follows today's Vineland Secondary through South Camden; Fowler notes the West Jersey reached its Camden terminal via Kaighn Ave / Haddon Ave until 1907 (\"former route until 1907\"), and the terminal moved (Cooper's Point; Federal St 1881-85; Camden Terminal) - the pre-1907 approach is not drawn separately.",
+    "segments": [
+     {
+      "start": 1857,
+      "end": 1895,
+      "headway_min": 120,
+      "note": "West Jersey Railroad, opened Camden - Woodbury 15 April 1857 (Wilson 1899 p.357, via Wikipedia), largely on the abandoned grade of the earlier Camden and Woodbury RR (a separate company, not drawn). Fowler marks Westville and Woodbury in the 1875 Official Guide. Ends 1895: the West Jersey became part of the West Jersey and Seashore on 4 May 1896. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (West Jersey RR section: 15 Apr 1857 opening; 4 May 1896 consolidation); branchline.uk line 74 (1875 Guide). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.132,
+      39.9465
+     ],
+     [
+      -75.111778,
+      39.937696
+     ],
+     [
+      -75.111162,
+      39.935573
+     ],
+     [
+      -75.110779,
+      39.932519
+     ],
+     [
+      -75.110938,
+      39.931779
+     ],
+     [
+      -75.111687,
+      39.930565
+     ],
+     [
+      -75.116008,
+      39.926436
+     ],
+     [
+      -75.116474,
+      39.925525
+     ],
+     [
+      -75.116718,
+      39.924509
+     ],
+     [
+      -75.119752,
+      39.883919
+     ],
+     [
+      -75.120243,
+      39.88178
+     ],
+     [
+      -75.120764,
+      39.880709
+     ],
+     [
+      -75.121706,
+      39.879355
+     ],
+     [
+      -75.140932,
+      39.854616
+     ],
+     [
+      -75.150674,
+      39.834721
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Woodbury – Glassboro",
+    "id": "wj-woodbury-glassboro",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam local service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "9.8 mi drawn against 9.5 mi documented (Woodbury 9.3 - Glassboro 18.8, Feb 1952 Table 9; Fowler 9.8 - 19.3). Fully real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (Vineland Secondary) via Wenonah, Sewell and Pitman. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1861,
+      "end": 1895,
+      "headway_min": 120,
+      "note": "West Jersey Railroad extension Woodbury - Glassboro, opened 1 April 1861 (Wilson 1899 via Wikipedia). Fowler marks Wenonah, Barnesboro (Sewell), Pitman Grove and Glassboro in the 1875 Guide. Ends 1895 at the 4 May 1896 consolidation into the West Jersey and Seashore. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (1 Apr 1861; 4 May 1896); branchline.uk line 74 (1875 Guide). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.151934,
+      39.831576
+     ],
+     [
+      -75.152414,
+      39.829053
+     ],
+     [
+      -75.152545,
+      39.826614
+     ],
+     [
+      -75.151205,
+      39.806541
+     ],
+     [
+      -75.149797,
+      39.776423
+     ],
+     [
+      -75.14958,
+      39.774983
+     ],
+     [
+      -75.148576,
+      39.772089
+     ],
+     [
+      -75.147596,
+      39.770374
+     ],
+     [
+      -75.135753,
+      39.755631
+     ],
+     [
+      -75.134989,
+      39.754159
+     ],
+     [
+      -75.13332,
+      39.748911
+     ],
+     [
+      -75.131425,
+      39.741208
+     ],
+     [
+      -75.12712,
+      39.724915
+     ],
+     [
+      -75.124316,
+      39.709772
+     ],
+     [
+      -75.123943,
+      39.708482
+     ],
+     [
+      -75.123391,
+      39.707253
+     ],
+     [
+      -75.122727,
+      39.70624
+     ],
+     [
+      -75.115939,
+      39.697944
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Millville and Glassboro Railroad",
+    "line": "Millville and Glassboro: Glassboro – Millville",
+    "id": "mg-glassboro-millville",
+    "color": "#3C27BB",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: 1860s single-track steam road.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "21.7 mi drawn against 22.1 mi documented (Glassboro 19.3 - Millville 41.4, Fowler line 74; 22 mi, New Bloomfield Times 1871). Fully real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (Vineland Secondary) via Clayton, Franklinville, Malaga, Newfield and Vineland. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1860,
+      "end": 1867,
+      "headway_min": 240,
+      "note": "Millville and Glassboro Railroad, opened October 1860 (\"On and after Monday, October 22d, the cars of the Millville and Glassboro' Railroad will leave daily\" - Philadelphia Inquirer 16 Nov 1860, cited by Wikipedia). Merged into the West Jersey 1 April 1868. Who ran the trains after the West Jersey reached Glassboro in April 1861 is not established (through running is likely but undocumented); drawn under the M&G throughout. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Millville and Glassboro Railroad\" (Oct 1860 opening, Inquirer 16 Nov 1860 advertisement; 1 Apr 1868 merger); Wikipedia \"West Jersey and Seashore Railroad\". Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Millville_and_Glassboro_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.114481,
+      39.696027
+     ],
+     [
+      -75.113654,
+      39.694619
+     ],
+     [
+      -75.08817,
+      39.632923
+     ],
+     [
+      -75.084059,
+      39.623431
+     ],
+     [
+      -75.082086,
+      39.618214
+     ],
+     [
+      -75.08052,
+      39.614554
+     ],
+     [
+      -75.078999,
+      39.61218
+     ],
+     [
+      -75.07653,
+      39.609199
+     ],
+     [
+      -75.029208,
+      39.554125
+     ],
+     [
+      -75.027359,
+      39.551674
+     ],
+     [
+      -75.026023,
+      39.549471
+     ],
+     [
+      -75.024808,
+      39.546557
+     ],
+     [
+      -75.022853,
+      39.541171
+     ],
+     [
+      -75.022446,
+      39.539398
+     ],
+     [
+      -75.022219,
+      39.536869
+     ],
+     [
+      -75.022414,
+      39.532927
+     ],
+     [
+      -75.025616,
+      39.490796
+     ],
+     [
+      -75.030332,
+      39.433468
+     ],
+     [
+      -75.031192,
+      39.429973
+     ],
+     [
+      -75.038534,
+      39.404746
+     ],
+     [
+      -75.038664,
+      39.403764
+     ],
+     [
+      -75.038491,
+      39.401948
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Glassboro – Millville",
+    "id": "wj-glassboro-millville",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam local service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "21.7 mi drawn against 22.1 mi documented (Glassboro 19.3 - Millville 41.4, Fowler line 74; 22 mi, New Bloomfield Times 1871). Fully real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (Vineland Secondary) via Clayton, Franklinville, Malaga, Newfield and Vineland. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1868,
+      "end": 1895,
+      "headway_min": 120,
+      "note": "West Jersey Railroad from its acquisition of the Millville and Glassboro on 1 April 1868. Fowler marks Clayton, Franklinville, Iona, Malaga, Newfield, North Vineland, Vineland, South Vineland and Millville in the 1875 Guide. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Millville and Glassboro Railroad\" and \"West Jersey and Seashore Railroad\" (1 Apr 1868; 4 May 1896); branchline.uk line 74 (1875 Guide). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Millville_and_Glassboro_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.114481,
+      39.696027
+     ],
+     [
+      -75.113654,
+      39.694619
+     ],
+     [
+      -75.08817,
+      39.632923
+     ],
+     [
+      -75.084059,
+      39.623431
+     ],
+     [
+      -75.082086,
+      39.618214
+     ],
+     [
+      -75.08052,
+      39.614554
+     ],
+     [
+      -75.078999,
+      39.61218
+     ],
+     [
+      -75.07653,
+      39.609199
+     ],
+     [
+      -75.029208,
+      39.554125
+     ],
+     [
+      -75.027359,
+      39.551674
+     ],
+     [
+      -75.026023,
+      39.549471
+     ],
+     [
+      -75.024808,
+      39.546557
+     ],
+     [
+      -75.022853,
+      39.541171
+     ],
+     [
+      -75.022446,
+      39.539398
+     ],
+     [
+      -75.022219,
+      39.536869
+     ],
+     [
+      -75.022414,
+      39.532927
+     ],
+     [
+      -75.025616,
+      39.490796
+     ],
+     [
+      -75.030332,
+      39.433468
+     ],
+     [
+      -75.031192,
+      39.429973
+     ],
+     [
+      -75.038534,
+      39.404746
+     ],
+     [
+      -75.038664,
+      39.403764
+     ],
+     [
+      -75.038491,
+      39.401948
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Millville Line",
+    "id": "wjs-millville-line",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "Estimate, unsourced: electric MU locals from 1906; no timetable speed measured.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "40.4 mi drawn against 40.9 mi documented (Camden Federal St - Millville, Feb 1952 Table 9; 41.4 from Cooper's Point, Fowler line 74). Real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (the Vineland Secondary) from South Camden to Millville. Approximated with a straight line: the last 1.23 mi from the junction of the Vineland Secondary and the Camden Running Track (39.9395 N) to the foot of Federal St, Camden (terminal site approximate; the terminal approach is built over). LATER ALIGNMENT: the Camden end follows today's Vineland Secondary through South Camden; Fowler notes the West Jersey reached its Camden terminal via Kaighn Ave / Haddon Ave until 1907 (\"former route until 1907\"), and the terminal moved (Cooper's Point; Federal St 1881-85; Camden Terminal) - the pre-1907 approach is not drawn separately.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1932,
+      "headway_min": 60,
+      "note": "West Jersey and Seashore from the 4 May 1896 consolidation, Camden (Federal St) - Woodbury - Glassboro - Newfield - Millville. Electrified 1906 at 600-650 V DC (third rail Camden - Newfield, overhead wire Camden - Gloucester and Newfield - Millville) - still a steam-road main line with electric MU locals, not an interurban (Rule 7). Fowler cites company timetables of 1889 and 1907 on this line. Ends 1932: the Pennsylvania-Reading Seashore Lines took over on 15 July 1933. The PRR formally leased the WJ&S from 1 July 1930 (Coverdale & Colpitts 1946 via Wikipedia); no source describes any change in who ran the trains, so these years stay with the WJ&S to match ocean_city_railroad.geojson (see metadata not_yet_sourced). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (4 May 1896; 1 Jul 1930 lease; 15 Jul 1933 PRSL); Wikipedia \"Railroad electrification in the United States\" (1906 electrification); branchline.uk line 74 (1889t, 1907t). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://en.wikipedia.org/wiki/Railroad_electrification_in_the_United_States",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.132,
+      39.9465
+     ],
+     [
+      -75.111778,
+      39.937696
+     ],
+     [
+      -75.111162,
+      39.935573
+     ],
+     [
+      -75.110779,
+      39.932519
+     ],
+     [
+      -75.110938,
+      39.931779
+     ],
+     [
+      -75.111687,
+      39.930565
+     ],
+     [
+      -75.116008,
+      39.926436
+     ],
+     [
+      -75.116474,
+      39.925525
+     ],
+     [
+      -75.116718,
+      39.924509
+     ],
+     [
+      -75.119752,
+      39.883919
+     ],
+     [
+      -75.120243,
+      39.88178
+     ],
+     [
+      -75.120764,
+      39.880709
+     ],
+     [
+      -75.121706,
+      39.879355
+     ],
+     [
+      -75.140932,
+      39.854616
+     ],
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.151934,
+      39.831576
+     ],
+     [
+      -75.152414,
+      39.829053
+     ],
+     [
+      -75.152545,
+      39.826614
+     ],
+     [
+      -75.151205,
+      39.806541
+     ],
+     [
+      -75.149797,
+      39.776423
+     ],
+     [
+      -75.14958,
+      39.774983
+     ],
+     [
+      -75.148576,
+      39.772089
+     ],
+     [
+      -75.147596,
+      39.770374
+     ],
+     [
+      -75.135753,
+      39.755631
+     ],
+     [
+      -75.134989,
+      39.754159
+     ],
+     [
+      -75.13332,
+      39.748911
+     ],
+     [
+      -75.131425,
+      39.741208
+     ],
+     [
+      -75.12712,
+      39.724915
+     ],
+     [
+      -75.124316,
+      39.709772
+     ],
+     [
+      -75.123943,
+      39.708482
+     ],
+     [
+      -75.123391,
+      39.707253
+     ],
+     [
+      -75.122727,
+      39.70624
+     ],
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.114481,
+      39.696027
+     ],
+     [
+      -75.113654,
+      39.694619
+     ],
+     [
+      -75.08817,
+      39.632923
+     ],
+     [
+      -75.084059,
+      39.623431
+     ],
+     [
+      -75.082086,
+      39.618214
+     ],
+     [
+      -75.08052,
+      39.614554
+     ],
+     [
+      -75.078999,
+      39.61218
+     ],
+     [
+      -75.07653,
+      39.609199
+     ],
+     [
+      -75.029208,
+      39.554125
+     ],
+     [
+      -75.027359,
+      39.551674
+     ],
+     [
+      -75.026023,
+      39.549471
+     ],
+     [
+      -75.024808,
+      39.546557
+     ],
+     [
+      -75.022853,
+      39.541171
+     ],
+     [
+      -75.022446,
+      39.539398
+     ],
+     [
+      -75.022219,
+      39.536869
+     ],
+     [
+      -75.022414,
+      39.532927
+     ],
+     [
+      -75.025616,
+      39.490796
+     ],
+     [
+      -75.030332,
+      39.433468
+     ],
+     [
+      -75.031192,
+      39.429973
+     ],
+     [
+      -75.038534,
+      39.404746
+     ],
+     [
+      -75.038664,
+      39.403764
+     ],
+     [
+      -75.038491,
+      39.401948
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania-Reading Seashore Lines",
+    "line": "Pennsylvania-Reading Seashore Lines: Millville Line",
+    "id": "prsl-millville-line",
+    "color": "#2A6F97",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 55,
+    "speed_source": "Estimate, unsourced: commuter service of 40.9 mi; not computed from the 1951 table.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "40.4 mi drawn against 40.9 mi documented (Camden Federal St - Millville, Feb 1952 Table 9; 41.4 from Cooper's Point, Fowler line 74). Real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (the Vineland Secondary) from South Camden to Millville. Approximated with a straight line: the last 1.23 mi from the junction of the Vineland Secondary and the Camden Running Track (39.9395 N) to the foot of Federal St, Camden (terminal site approximate; the terminal approach is built over). LATER ALIGNMENT: the Camden end follows today's Vineland Secondary through South Camden; Fowler notes the West Jersey reached its Camden terminal via Kaighn Ave / Haddon Ave until 1907 (\"former route until 1907\"), and the terminal moved (Cooper's Point; Federal St 1881-85; Camden Terminal) - the pre-1907 approach is not drawn separately.",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1971,
+      "headway_min": 150,
+      "note": "Pennsylvania-Reading Seashore Lines from 15 July 1933, Camden - Millville commuter service. Feb 1952 Official Guide Table 9 (schedules of 30 Sep 1951) prints legible times Camden (Federal St) - Woodbury 9.3 - Glassboro 18.8 - Newfield 31.0 - Millville 40.9 (Millville arrivals 5:55, 8:39, 2:24, 3:24), confirming 1951. Electric service cut back to Glassboro in 1948-49 and ended 1949 (Glassboro - Millville 20 Jun 1949; Camden - Glassboro 24 Sep 1949 per sjrail, 8 Sep 1949 per Wikipedia - conflict on the day); steam/diesel thereafter. Camden terminal: Federal St to 4 Jan 1953, then Broadway, then a temporary 12th St station from 1 Oct 1969 - not separately drawn. Last train 5 Feb 1971 (sjrail; Wikipedia \"Vineland Secondary\"; Millville Daily 10 Feb 1971) vs 5 Mar 1971 (Wikipedia \"Railroad electrification in the United States\") - same year. Freight continued (Conrail, today the Vineland Secondary) - context only. Headway is an estimate from the 1951 table (about 6-7 trains each way), not measured.",
+      "sources": [
+       "Segment-level: sjrail.com timeline (1949 electric ends; 4 Jan 1953; 5 Feb 1971); Wikipedia \"Vineland Secondary\" and \"Railroad electrification in the United States\" (5 Mar 1971 - conflict recorded); Official Guide Feb 1952 Table 9. Headway estimated from Table 9.",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "https://en.wikipedia.org/wiki/Vineland_Secondary",
+       "https://en.wikipedia.org/wiki/Railroad_electrification_in_the_United_States",
+       "Official Guide of the Railways, Feb 1952 (schedules of 30 Sep 1951), Pennsylvania-Reading Seashore Lines Table 9 (research/sources/official_guide_1952.txt)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.132,
+      39.9465
+     ],
+     [
+      -75.111778,
+      39.937696
+     ],
+     [
+      -75.111162,
+      39.935573
+     ],
+     [
+      -75.110779,
+      39.932519
+     ],
+     [
+      -75.110938,
+      39.931779
+     ],
+     [
+      -75.111687,
+      39.930565
+     ],
+     [
+      -75.116008,
+      39.926436
+     ],
+     [
+      -75.116474,
+      39.925525
+     ],
+     [
+      -75.116718,
+      39.924509
+     ],
+     [
+      -75.119752,
+      39.883919
+     ],
+     [
+      -75.120243,
+      39.88178
+     ],
+     [
+      -75.120764,
+      39.880709
+     ],
+     [
+      -75.121706,
+      39.879355
+     ],
+     [
+      -75.140932,
+      39.854616
+     ],
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.151934,
+      39.831576
+     ],
+     [
+      -75.152414,
+      39.829053
+     ],
+     [
+      -75.152545,
+      39.826614
+     ],
+     [
+      -75.151205,
+      39.806541
+     ],
+     [
+      -75.149797,
+      39.776423
+     ],
+     [
+      -75.14958,
+      39.774983
+     ],
+     [
+      -75.148576,
+      39.772089
+     ],
+     [
+      -75.147596,
+      39.770374
+     ],
+     [
+      -75.135753,
+      39.755631
+     ],
+     [
+      -75.134989,
+      39.754159
+     ],
+     [
+      -75.13332,
+      39.748911
+     ],
+     [
+      -75.131425,
+      39.741208
+     ],
+     [
+      -75.12712,
+      39.724915
+     ],
+     [
+      -75.124316,
+      39.709772
+     ],
+     [
+      -75.123943,
+      39.708482
+     ],
+     [
+      -75.123391,
+      39.707253
+     ],
+     [
+      -75.122727,
+      39.70624
+     ],
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.114481,
+      39.696027
+     ],
+     [
+      -75.113654,
+      39.694619
+     ],
+     [
+      -75.08817,
+      39.632923
+     ],
+     [
+      -75.084059,
+      39.623431
+     ],
+     [
+      -75.082086,
+      39.618214
+     ],
+     [
+      -75.08052,
+      39.614554
+     ],
+     [
+      -75.078999,
+      39.61218
+     ],
+     [
+      -75.07653,
+      39.609199
+     ],
+     [
+      -75.029208,
+      39.554125
+     ],
+     [
+      -75.027359,
+      39.551674
+     ],
+     [
+      -75.026023,
+      39.549471
+     ],
+     [
+      -75.024808,
+      39.546557
+     ],
+     [
+      -75.022853,
+      39.541171
+     ],
+     [
+      -75.022446,
+      39.539398
+     ],
+     [
+      -75.022219,
+      39.536869
+     ],
+     [
+      -75.022414,
+      39.532927
+     ],
+     [
+      -75.025616,
+      39.490796
+     ],
+     [
+      -75.030332,
+      39.433468
+     ],
+     [
+      -75.031192,
+      39.429973
+     ],
+     [
+      -75.038534,
+      39.404746
+     ],
+     [
+      -75.038664,
+      39.403764
+     ],
+     [
+      -75.038491,
+      39.401948
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Cape May and Millville Railroad",
+    "line": "Cape May and Millville: Millville – Cape May",
+    "id": "cmm-millville-cape-may",
+    "color": "#40B871",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: 1860s single-track steam road.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area. Waypoints were placed on the PRR-tagged trail/grade fragments and each pair routed separately (Reading-tagged track forbidden).",
+    "geometry_quality": "40.5 mi drawn against 41.0 mi documented (Millville 41.4 - Cape May 82.4, Fowler line 74; 41 mi, New Bloomfield Times 1871). Real-traced on OSM ways tagged old_railway_operator=\"PRSL (PRR)\": the Manumuskan Industrial Track, the razed \"Main Line (Camden to Cape May)\", the Seashore Line and Woodbine Railroad trails, the Dennis Township, Middle Township and Cold Spring bike paths (rail-trails on the grade). Approximated with straight lines, 5.17 mi in all: Seaville / Sea Isle Junction area (39.18 N) 1.07 mi; north of Cape May Court House, 39.147 N - 39.115 N (no PRR-tagged grade mapped; the parallel ex-Reading Cape May Branch is not used) 2.61 mi; Cold Spring 39.024 N - 39.005 N 1.49 mi. The 1894+ express routing via the Reading to Woodbine Jct is not drawn. The Cape May terminal end follows the PRR-tagged grade to about 38.945 N.",
+    "segments": [
+     {
+      "start": 1863,
+      "end": 1868,
+      "headway_min": 240,
+      "note": "Cape May and Millville Railroad. First trains 23 August 1863 (Wilson 1899 p.358 via Wikipedia). SOURCE CONFLICT on when the line reached Cape May: Wikipedia \"Cape May and Millville Railroad\" (Coverdale & Colpitts) says Millville - Cape May was completed in August 1863; Wikipedia WJ&S says construction was completed in 1867. A Philadelphia Evening Telegraph notice of 11 June 1866 already describes a three-hour rail ride to Cape Island, so the line reached Cape May by 1866 at the latest; the whole line is drawn from 1863 as the report recommends, but the 1863-1865 railhead is unproven. Lease to the West Jersey 1 June 1868 (C&M article) vs 1869 (WJ&S article) - the C&M ran its own trains into 1868 either way. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Cape May and Millville Railroad\" (Aug 1863 completion; 1 Jun 1868 lease); Wikipedia \"West Jersey and Seashore Railroad\" (23 Aug 1863 first trains; 1867 completion; 1869 lease - conflicts recorded); Evening Telegraph (Philadelphia) 11 Jun 1866 p.5 (loc.gov sn83025925). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Cape_May_and_Millville_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.039337,
+      39.402059
+     ],
+     [
+      -75.037246,
+      39.400054
+     ],
+     [
+      -75.034252,
+      39.397479
+     ],
+     [
+      -74.946362,
+      39.322113
+     ],
+     [
+      -74.929415,
+      39.307791
+     ],
+     [
+      -74.922914,
+      39.303263
+     ],
+     [
+      -74.917784,
+      39.300013
+     ],
+     [
+      -74.909594,
+      39.295517
+     ],
+     [
+      -74.85957,
+      39.266851
+     ],
+     [
+      -74.850725,
+      39.261584
+     ],
+     [
+      -74.850573,
+      39.261636
+     ],
+     [
+      -74.841065,
+      39.256264
+     ],
+     [
+      -74.817504,
+      39.242705
+     ],
+     [
+      -74.816931,
+      39.24248
+     ],
+     [
+      -74.816353,
+      39.242017
+     ],
+     [
+      -74.81455,
+      39.24111
+     ],
+     [
+      -74.811014,
+      39.239006
+     ],
+     [
+      -74.810443,
+      39.238782
+     ],
+     [
+      -74.799922,
+      39.232642
+     ],
+     [
+      -74.796818,
+      39.230911
+     ],
+     [
+      -74.796456,
+      39.230813
+     ],
+     [
+      -74.795721,
+      39.230277
+     ],
+     [
+      -74.790148,
+      39.227066
+     ],
+     [
+      -74.788235,
+      39.226011
+     ],
+     [
+      -74.787457,
+      39.225704
+     ],
+     [
+      -74.786808,
+      39.225208
+     ],
+     [
+      -74.784895,
+      39.224207
+     ],
+     [
+      -74.781732,
+      39.222299
+     ],
+     [
+      -74.777431,
+      39.219409
+     ],
+     [
+      -74.773519,
+      39.216451
+     ],
+     [
+      -74.771113,
+      39.214183
+     ],
+     [
+      -74.766503,
+      39.20924
+     ],
+     [
+      -74.764379,
+      39.206236
+     ],
+     [
+      -74.762874,
+      39.203453
+     ],
+     [
+      -74.761637,
+      39.200482
+     ],
+     [
+      -74.760617,
+      39.197568
+     ],
+     [
+      -74.759889,
+      39.193318
+     ],
+     [
+      -74.759695,
+      39.1895
+     ],
+     [
+      -74.759899,
+      39.18529
+     ],
+     [
+      -74.760097,
+      39.183835
+     ],
+     [
+      -74.760861,
+      39.180861
+     ],
+     [
+      -74.7619,
+      39.1776
+     ],
+     [
+      -74.7709,
+      39.1638
+     ],
+     [
+      -74.773376,
+      39.16072
+     ],
+     [
+      -74.773803,
+      39.160534
+     ],
+     [
+      -74.77464,
+      39.159477
+     ],
+     [
+      -74.775077,
+      39.158563
+     ],
+     [
+      -74.775655,
+      39.157811
+     ],
+     [
+      -74.810815,
+      39.113041
+     ],
+     [
+      -74.832416,
+      39.085231
+     ],
+     [
+      -74.835147,
+      39.081204
+     ],
+     [
+      -74.85779,
+      39.049654
+     ],
+     [
+      -74.862199,
+      39.043251
+     ],
+     [
+      -74.86356,
+      39.041518
+     ],
+     [
+      -74.8759,
+      39.0243
+     ],
+     [
+      -74.916753,
+      38.966971
+     ],
+     [
+      -74.918696,
+      38.964189
+     ],
+     [
+      -74.919971,
+      38.962002
+     ],
+     [
+      -74.920239,
+      38.961013
+     ],
+     [
+      -74.920711,
+      38.960136
+     ],
+     [
+      -74.921364,
+      38.958307
+     ],
+     [
+      -74.925824,
+      38.944785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Millville – Cape May",
+    "id": "wj-millville-cape-may",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate, unsourced: steam service to Cape May.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area. Waypoints were placed on the PRR-tagged trail/grade fragments and each pair routed separately (Reading-tagged track forbidden).",
+    "geometry_quality": "40.5 mi drawn against 41.0 mi documented (Millville 41.4 - Cape May 82.4, Fowler line 74; 41 mi, New Bloomfield Times 1871). Real-traced on OSM ways tagged old_railway_operator=\"PRSL (PRR)\": the Manumuskan Industrial Track, the razed \"Main Line (Camden to Cape May)\", the Seashore Line and Woodbine Railroad trails, the Dennis Township, Middle Township and Cold Spring bike paths (rail-trails on the grade). Approximated with straight lines, 5.17 mi in all: Seaville / Sea Isle Junction area (39.18 N) 1.07 mi; north of Cape May Court House, 39.147 N - 39.115 N (no PRR-tagged grade mapped; the parallel ex-Reading Cape May Branch is not used) 2.61 mi; Cold Spring 39.024 N - 39.005 N 1.49 mi. The 1894+ express routing via the Reading to Woodbine Jct is not drawn. The Cape May terminal end follows the PRR-tagged grade to about 38.945 N.",
+    "segments": [
+     {
+      "start": 1869,
+      "end": 1895,
+      "headway_min": 180,
+      "note": "West Jersey Railroad as lessee (1 Jun 1868 or 1869 - drawn from 1869, the first year the West Jersey certainly operated it under either date) and owner from the 1879 merger. Fowler marks Cape May and every intermediate station in the 1875 Guide. From about 1894 some West Jersey express trains ran via Winslow Jct and the Reading's Cape May branch instead (trackage rights to Woodbine Jct) - not drawn here. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Cape May and Millville Railroad\" and \"West Jersey and Seashore Railroad\" (lease and merger dates); branchline.uk line 74 (1875 Guide). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Cape_May_and_Millville_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.039337,
+      39.402059
+     ],
+     [
+      -75.037246,
+      39.400054
+     ],
+     [
+      -75.034252,
+      39.397479
+     ],
+     [
+      -74.946362,
+      39.322113
+     ],
+     [
+      -74.929415,
+      39.307791
+     ],
+     [
+      -74.922914,
+      39.303263
+     ],
+     [
+      -74.917784,
+      39.300013
+     ],
+     [
+      -74.909594,
+      39.295517
+     ],
+     [
+      -74.85957,
+      39.266851
+     ],
+     [
+      -74.850725,
+      39.261584
+     ],
+     [
+      -74.850573,
+      39.261636
+     ],
+     [
+      -74.841065,
+      39.256264
+     ],
+     [
+      -74.817504,
+      39.242705
+     ],
+     [
+      -74.816931,
+      39.24248
+     ],
+     [
+      -74.816353,
+      39.242017
+     ],
+     [
+      -74.81455,
+      39.24111
+     ],
+     [
+      -74.811014,
+      39.239006
+     ],
+     [
+      -74.810443,
+      39.238782
+     ],
+     [
+      -74.799922,
+      39.232642
+     ],
+     [
+      -74.796818,
+      39.230911
+     ],
+     [
+      -74.796456,
+      39.230813
+     ],
+     [
+      -74.795721,
+      39.230277
+     ],
+     [
+      -74.790148,
+      39.227066
+     ],
+     [
+      -74.788235,
+      39.226011
+     ],
+     [
+      -74.787457,
+      39.225704
+     ],
+     [
+      -74.786808,
+      39.225208
+     ],
+     [
+      -74.784895,
+      39.224207
+     ],
+     [
+      -74.781732,
+      39.222299
+     ],
+     [
+      -74.777431,
+      39.219409
+     ],
+     [
+      -74.773519,
+      39.216451
+     ],
+     [
+      -74.771113,
+      39.214183
+     ],
+     [
+      -74.766503,
+      39.20924
+     ],
+     [
+      -74.764379,
+      39.206236
+     ],
+     [
+      -74.762874,
+      39.203453
+     ],
+     [
+      -74.761637,
+      39.200482
+     ],
+     [
+      -74.760617,
+      39.197568
+     ],
+     [
+      -74.759889,
+      39.193318
+     ],
+     [
+      -74.759695,
+      39.1895
+     ],
+     [
+      -74.759899,
+      39.18529
+     ],
+     [
+      -74.760097,
+      39.183835
+     ],
+     [
+      -74.760861,
+      39.180861
+     ],
+     [
+      -74.7619,
+      39.1776
+     ],
+     [
+      -74.7709,
+      39.1638
+     ],
+     [
+      -74.773376,
+      39.16072
+     ],
+     [
+      -74.773803,
+      39.160534
+     ],
+     [
+      -74.77464,
+      39.159477
+     ],
+     [
+      -74.775077,
+      39.158563
+     ],
+     [
+      -74.775655,
+      39.157811
+     ],
+     [
+      -74.810815,
+      39.113041
+     ],
+     [
+      -74.832416,
+      39.085231
+     ],
+     [
+      -74.835147,
+      39.081204
+     ],
+     [
+      -74.85779,
+      39.049654
+     ],
+     [
+      -74.862199,
+      39.043251
+     ],
+     [
+      -74.86356,
+      39.041518
+     ],
+     [
+      -74.8759,
+      39.0243
+     ],
+     [
+      -74.916753,
+      38.966971
+     ],
+     [
+      -74.918696,
+      38.964189
+     ],
+     [
+      -74.919971,
+      38.962002
+     ],
+     [
+      -74.920239,
+      38.961013
+     ],
+     [
+      -74.920711,
+      38.960136
+     ],
+     [
+      -74.921364,
+      38.958307
+     ],
+     [
+      -74.925824,
+      38.944785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Millville – Cape May",
+    "id": "wjs-millville-cape-may",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "Estimate, unsourced: steam expresses and locals.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area. Waypoints were placed on the PRR-tagged trail/grade fragments and each pair routed separately (Reading-tagged track forbidden).",
+    "geometry_quality": "40.5 mi drawn against 41.0 mi documented (Millville 41.4 - Cape May 82.4, Fowler line 74; 41 mi, New Bloomfield Times 1871). Real-traced on OSM ways tagged old_railway_operator=\"PRSL (PRR)\": the Manumuskan Industrial Track, the razed \"Main Line (Camden to Cape May)\", the Seashore Line and Woodbine Railroad trails, the Dennis Township, Middle Township and Cold Spring bike paths (rail-trails on the grade). Approximated with straight lines, 5.17 mi in all: Seaville / Sea Isle Junction area (39.18 N) 1.07 mi; north of Cape May Court House, 39.147 N - 39.115 N (no PRR-tagged grade mapped; the parallel ex-Reading Cape May Branch is not used) 2.61 mi; Cold Spring 39.024 N - 39.005 N 1.49 mi. The 1894+ express routing via the Reading to Woodbine Jct is not drawn. The Cape May terminal end follows the PRR-tagged grade to about 38.945 N.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1932,
+      "headway_min": 180,
+      "note": "West Jersey and Seashore from 4 May 1896. The END is not a dated last train: Wikipedia \"Cape May and Millville Railroad\" (Coverdale & Colpitts) says that \"in the rationalization that followed the creation of the PRSL in 1933\" the line was abandoned between Sea Isle Junction and Cape May in favour of the former Reading route, and Wikipedia \"Pennsylvania-Reading Seashore Lines\" has rival PRR and Reading trains racing in sight of each other between Cape May Court House and Cape May in the 1920s. Drawn to 1932 on that basis, FLAGGED: the 1930-32 years rest on the \"in favour of\" wording (a service transfer at the consolidation) rather than a timetable. SOURCE CONFLICT: sjrail dates the \"last mail train\" Millville - Woodbine - Cape May Court House - Cape May to 26 Feb 1949, so the track south of Sea Isle Junction was not lifted in 1933; no PRSL passenger train on it is confirmed (Feb 1952 Table 8 Millville - Woodbine \"Freight Service only\"), so no PRSL years are drawn. The PRR formally leased the WJ&S from 1 July 1930 (Coverdale & Colpitts 1946 via Wikipedia); no source describes any change in who ran the trains, so these years stay with the WJ&S to match ocean_city_railroad.geojson (see metadata not_yet_sourced). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Cape May and Millville Railroad\" (1933 rationalisation); Wikipedia \"Pennsylvania-Reading Seashore Lines\" (1920s racing); branchline.uk line 74; sjrail.com timeline (26 Feb 1949 mail train - conflict recorded); Official Guide Feb 1952 Table 8. End year not sourced to a dated last train. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Cape_May_and_Millville_Railroad",
+       "https://en.wikipedia.org/wiki/Pennsylvania-Reading_Seashore_Lines",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 74",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.039337,
+      39.402059
+     ],
+     [
+      -75.037246,
+      39.400054
+     ],
+     [
+      -75.034252,
+      39.397479
+     ],
+     [
+      -74.946362,
+      39.322113
+     ],
+     [
+      -74.929415,
+      39.307791
+     ],
+     [
+      -74.922914,
+      39.303263
+     ],
+     [
+      -74.917784,
+      39.300013
+     ],
+     [
+      -74.909594,
+      39.295517
+     ],
+     [
+      -74.85957,
+      39.266851
+     ],
+     [
+      -74.850725,
+      39.261584
+     ],
+     [
+      -74.850573,
+      39.261636
+     ],
+     [
+      -74.841065,
+      39.256264
+     ],
+     [
+      -74.817504,
+      39.242705
+     ],
+     [
+      -74.816931,
+      39.24248
+     ],
+     [
+      -74.816353,
+      39.242017
+     ],
+     [
+      -74.81455,
+      39.24111
+     ],
+     [
+      -74.811014,
+      39.239006
+     ],
+     [
+      -74.810443,
+      39.238782
+     ],
+     [
+      -74.799922,
+      39.232642
+     ],
+     [
+      -74.796818,
+      39.230911
+     ],
+     [
+      -74.796456,
+      39.230813
+     ],
+     [
+      -74.795721,
+      39.230277
+     ],
+     [
+      -74.790148,
+      39.227066
+     ],
+     [
+      -74.788235,
+      39.226011
+     ],
+     [
+      -74.787457,
+      39.225704
+     ],
+     [
+      -74.786808,
+      39.225208
+     ],
+     [
+      -74.784895,
+      39.224207
+     ],
+     [
+      -74.781732,
+      39.222299
+     ],
+     [
+      -74.777431,
+      39.219409
+     ],
+     [
+      -74.773519,
+      39.216451
+     ],
+     [
+      -74.771113,
+      39.214183
+     ],
+     [
+      -74.766503,
+      39.20924
+     ],
+     [
+      -74.764379,
+      39.206236
+     ],
+     [
+      -74.762874,
+      39.203453
+     ],
+     [
+      -74.761637,
+      39.200482
+     ],
+     [
+      -74.760617,
+      39.197568
+     ],
+     [
+      -74.759889,
+      39.193318
+     ],
+     [
+      -74.759695,
+      39.1895
+     ],
+     [
+      -74.759899,
+      39.18529
+     ],
+     [
+      -74.760097,
+      39.183835
+     ],
+     [
+      -74.760861,
+      39.180861
+     ],
+     [
+      -74.7619,
+      39.1776
+     ],
+     [
+      -74.7709,
+      39.1638
+     ],
+     [
+      -74.773376,
+      39.16072
+     ],
+     [
+      -74.773803,
+      39.160534
+     ],
+     [
+      -74.77464,
+      39.159477
+     ],
+     [
+      -74.775077,
+      39.158563
+     ],
+     [
+      -74.775655,
+      39.157811
+     ],
+     [
+      -74.810815,
+      39.113041
+     ],
+     [
+      -74.832416,
+      39.085231
+     ],
+     [
+      -74.835147,
+      39.081204
+     ],
+     [
+      -74.85779,
+      39.049654
+     ],
+     [
+      -74.862199,
+      39.043251
+     ],
+     [
+      -74.86356,
+      39.041518
+     ],
+     [
+      -74.8759,
+      39.0243
+     ],
+     [
+      -74.916753,
+      38.966971
+     ],
+     [
+      -74.918696,
+      38.964189
+     ],
+     [
+      -74.919971,
+      38.962002
+     ],
+     [
+      -74.920239,
+      38.961013
+     ],
+     [
+      -74.920711,
+      38.960136
+     ],
+     [
+      -74.921364,
+      38.958307
+     ],
+     [
+      -74.925824,
+      38.944785
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Atlantic Railroad",
+    "line": "West Jersey and Atlantic: Newfield – Atlantic City",
+    "id": "wja-newfield-atlantic-city",
+    "color": "#723333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate, unsourced: steam service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fragments of the lifted grade tagged old_railway_operator=\"PRSL (PRR)\" chained in order with labelled straight joins (opstrace Graph routing could not join the fragments), 2026-10-21. OpenHistoricalMap has no ways here.",
+    "geometry_quality": "33.8 mi drawn against 34.2 mi documented (Camden Morning Post 1880 via Wikipedia; 34.0 by Fowler line 80 mileposts). Traced from OSM fragments tagged old_railway_operator=\"PRSL (PRR)\": the \"Newfield Branch\" grade (Newfield - Mays Landing), the Atlantic County Bikeway (rail-trail on the grade, Mays Landing - McKee City - Pleasantville) and the Pleasantville Industrial Track. Approximated with straight lines, 5.58 mi in all: 20 short joins between grade fragments, the longest Buena area 1.06 mi, Mays Landing 0.77 mi and near Malaga Rd 0.48 mi (the rest under 0.35 mi each); and the final 1.4 mi from Pleasantville (39.369 N, 74.466 W) across the meadows and the Beach Thorofare drawbridge to the Atlantic City terminal near Georgia Avenue (terminal site approximate; the WJ&A trestle is gone and today's line into Atlantic City is the ex-Reading causeway, so it is not used).",
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1895,
+      "headway_min": 180,
+      "note": "West Jersey and Atlantic Railroad, completed 16 June 1880 (Baltimore Sun 17 Jun 1880 via Wikipedia); Fowler gives its Atlantic City (Georgia Avenue) terminus passenger service 1880-1931. A PRR/West Jersey company with its own board (Bridgeton Pioneer 14 Mar 1895). OPERATOR UNRESOLVED: \"ultimately leased to the WJ\" (date not given) and a March 1895 timetable labels its Atlantic City trains \"Via West Jersey Railroad\", so the West Jersey may have worked it; coloured as the WJ&A to match wja-somers-point-branch in ocean_city_railroad.geojson. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (WJ&A section: 6 Nov 1879; 16 Jun 1880; 34.2 mi); branchline.uk lines 71A, 80; Bridgeton Pioneer 14 Mar 1895 (loc.gov). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 71A",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 80"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.024808,
+      39.546557
+     ],
+     [
+      -75.024596,
+      39.545946
+     ],
+     [
+      -75.023375,
+      39.54473
+     ],
+     [
+      -75.022689,
+      39.544266
+     ],
+     [
+      -75.021148,
+      39.543577
+     ],
+     [
+      -74.983888,
+      39.531977
+     ],
+     [
+      -74.970251,
+      39.527958
+     ],
+     [
+      -74.8842,
+      39.501262
+     ],
+     [
+      -74.852817,
+      39.491687
+     ],
+     [
+      -74.826341,
+      39.483443
+     ],
+     [
+      -74.799647,
+      39.473007
+     ],
+     [
+      -74.744416,
+      39.4517
+     ],
+     [
+      -74.741433,
+      39.451017
+     ],
+     [
+      -74.739572,
+      39.450785
+     ],
+     [
+      -74.728281,
+      39.45052
+     ],
+     [
+      -74.713886,
+      39.449126
+     ],
+     [
+      -74.688999,
+      39.44151
+     ],
+     [
+      -74.685433,
+      39.440578
+     ],
+     [
+      -74.684817,
+      39.440262
+     ],
+     [
+      -74.662425,
+      39.433471
+     ],
+     [
+      -74.661835,
+      39.433183
+     ],
+     [
+      -74.660323,
+      39.43283
+     ],
+     [
+      -74.626847,
+      39.422646
+     ],
+     [
+      -74.618876,
+      39.420201
+     ],
+     [
+      -74.6171,
+      39.419549
+     ],
+     [
+      -74.607401,
+      39.416693
+     ],
+     [
+      -74.587301,
+      39.41056
+     ],
+     [
+      -74.586899,
+      39.410323
+     ],
+     [
+      -74.586624,
+      39.410354
+     ],
+     [
+      -74.505754,
+      39.38563
+     ],
+     [
+      -74.504118,
+      39.385067
+     ],
+     [
+      -74.484811,
+      39.377282
+     ],
+     [
+      -74.465856,
+      39.369401
+     ],
+     [
+      -74.442,
+      39.361
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Newfield – Atlantic City",
+    "id": "wjs-newfield-atlantic-city",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 55,
+    "speed_source": "Estimate, unsourced: electric MU service from 1906.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fragments of the lifted grade tagged old_railway_operator=\"PRSL (PRR)\" chained in order with labelled straight joins (opstrace Graph routing could not join the fragments), 2026-10-21. OpenHistoricalMap has no ways here.",
+    "geometry_quality": "33.8 mi drawn against 34.2 mi documented (Camden Morning Post 1880 via Wikipedia; 34.0 by Fowler line 80 mileposts). Traced from OSM fragments tagged old_railway_operator=\"PRSL (PRR)\": the \"Newfield Branch\" grade (Newfield - Mays Landing), the Atlantic County Bikeway (rail-trail on the grade, Mays Landing - McKee City - Pleasantville) and the Pleasantville Industrial Track. Approximated with straight lines, 5.58 mi in all: 20 short joins between grade fragments, the longest Buena area 1.06 mi, Mays Landing 0.77 mi and near Malaga Rd 0.48 mi (the rest under 0.35 mi each); and the final 1.4 mi from Pleasantville (39.369 N, 74.466 W) across the meadows and the Beach Thorofare drawbridge to the Atlantic City terminal near Georgia Avenue (terminal site approximate; the WJ&A trestle is gone and today's line into Atlantic City is the ex-Reading causeway, so it is not used).",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1931,
+      "headway_min": 60,
+      "note": "West Jersey and Seashore from 4 May 1896; electrified 1906 (third rail, Camden - Newfield - Atlantic City). On 28 Oct 1906 a new electric train fell from the Thoroughfare drawbridge outside Atlantic City (53 killed). Electric service ended 26 September 1931 (sjrail; Wikipedia; Fowler Georgia Ave \"(1880>1931)\", Tennessee Ave \"(1906>1931)\"); no later passenger train found, and Feb 1952 Table 10 reads \"Freight Service only\". Freight ran on to 1958 (Newfield - Mays Landing) and 1966 (to McKee City) - context, not passenger years. The Atlantic City and Shore's Shore Fast Line cars also used Pleasantville - Atlantic City 1907-1948 (drawn separately as that company). The PRR formally leased the WJ&S from 1 July 1930 (Coverdale & Colpitts 1946 via Wikipedia); no source describes any change in who ran the trains, so these years stay with the WJ&S to match ocean_city_railroad.geojson (see metadata not_yet_sourced). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: sjrail.com timeline (26 Sep 1931); Wikipedia \"Railroad electrification in the United States\" (1906; 26 Sep 1931); branchline.uk lines 71A, 80; Official Guide Feb 1952 Table 10. Headway not sourced.",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "https://en.wikipedia.org/wiki/Railroad_electrification_in_the_United_States",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 71A",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 80",
+       "Official Guide of the Railways, Feb 1952 (schedules of 30 Sep 1951), Pennsylvania-Reading Seashore Lines Table 10 (research/sources/official_guide_1952.txt)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.024808,
+      39.546557
+     ],
+     [
+      -75.024596,
+      39.545946
+     ],
+     [
+      -75.023375,
+      39.54473
+     ],
+     [
+      -75.022689,
+      39.544266
+     ],
+     [
+      -75.021148,
+      39.543577
+     ],
+     [
+      -74.983888,
+      39.531977
+     ],
+     [
+      -74.970251,
+      39.527958
+     ],
+     [
+      -74.8842,
+      39.501262
+     ],
+     [
+      -74.852817,
+      39.491687
+     ],
+     [
+      -74.826341,
+      39.483443
+     ],
+     [
+      -74.799647,
+      39.473007
+     ],
+     [
+      -74.744416,
+      39.4517
+     ],
+     [
+      -74.741433,
+      39.451017
+     ],
+     [
+      -74.739572,
+      39.450785
+     ],
+     [
+      -74.728281,
+      39.45052
+     ],
+     [
+      -74.713886,
+      39.449126
+     ],
+     [
+      -74.688999,
+      39.44151
+     ],
+     [
+      -74.685433,
+      39.440578
+     ],
+     [
+      -74.684817,
+      39.440262
+     ],
+     [
+      -74.662425,
+      39.433471
+     ],
+     [
+      -74.661835,
+      39.433183
+     ],
+     [
+      -74.660323,
+      39.43283
+     ],
+     [
+      -74.626847,
+      39.422646
+     ],
+     [
+      -74.618876,
+      39.420201
+     ],
+     [
+      -74.6171,
+      39.419549
+     ],
+     [
+      -74.607401,
+      39.416693
+     ],
+     [
+      -74.587301,
+      39.41056
+     ],
+     [
+      -74.586899,
+      39.410323
+     ],
+     [
+      -74.586624,
+      39.410354
+     ],
+     [
+      -74.505754,
+      39.38563
+     ],
+     [
+      -74.504118,
+      39.385067
+     ],
+     [
+      -74.484811,
+      39.377282
+     ],
+     [
+      -74.465856,
+      39.369401
+     ],
+     [
+      -74.442,
+      39.361
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Bridgeton Branch",
+    "id": "wj-bridgeton-branch",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam branch service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area. Elmer - Bridgeton chained from grade fragments.",
+    "geometry_quality": "20.3 mi drawn against 20.7 mi documented (Glassboro 19.3 - Bridgeton 40.0, Fowler line 78). Real-traced on OSM: untagged rail and PRR-tagged grade Glassboro - Aura - Monroeville - Elmer; south of Elmer the abandoned \"Bridgeton Branch\" grade (old_railway_operator=\"PRSL (PRR)\" and untagged) and the PRR-tagged track into Bridgeton. Approximated with straight lines, 1.24 mi in all: near Aura 0.46 mi; Elmer junction joins 0.17 mi; Rosenhayn Rd area (39.468 - 39.459 N) 0.61 mi. Ends at Commerce Street, Bridgeton (approximate station site). The parallel CNJ Bridgeton line is not used.",
+    "segments": [
+     {
+      "start": 1861,
+      "end": 1895,
+      "headway_min": 180,
+      "note": "West Jersey Railroad, Glassboro - Elmer - Bridgeton, opened to Bridgeton 25 July 1861 (Wilson 1899 via Wikipedia; Wikipedia \"Salem Railroad\"). Fowler marks Union (Aura), Harding, Monroe, Elmer, Palatine, Husted, Finley and Bridgeton in the 1875 Guide. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" and \"Salem Railroad\" (Jul 1861); branchline.uk line 78 (1875 Guide). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://en.wikipedia.org/wiki/Salem_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 78"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.121995,
+      39.702084
+     ],
+     [
+      -75.155559,
+      39.63954
+     ],
+     [
+      -75.15697,
+      39.636573
+     ],
+     [
+      -75.158022,
+      39.633938
+     ],
+     [
+      -75.16429,
+      39.611991
+     ],
+     [
+      -75.165953,
+      39.606613
+     ],
+     [
+      -75.169264,
+      39.594624
+     ],
+     [
+      -75.169609,
+      39.594105
+     ],
+     [
+      -75.170375,
+      39.593707
+     ],
+     [
+      -75.169949,
+      39.592239
+     ],
+     [
+      -75.179706,
+      39.557912
+     ],
+     [
+      -75.180571,
+      39.554489
+     ],
+     [
+      -75.185792,
+      39.536633
+     ],
+     [
+      -75.205344,
+      39.467819
+     ],
+     [
+      -75.208223,
+      39.459306
+     ],
+     [
+      -75.208682,
+      39.458562
+     ],
+     [
+      -75.222443,
+      39.440267
+     ],
+     [
+      -75.222598,
+      39.439688
+     ],
+     [
+      -75.222566,
+      39.438974
+     ],
+     [
+      -75.221887,
+      39.437421
+     ],
+     [
+      -75.220388,
+      39.433095
+     ],
+     [
+      -75.22078,
+      39.429588
+     ],
+     [
+      -75.221471,
+      39.428172
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Bridgeton Branch",
+    "id": "wjs-bridgeton-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: branch service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area. Elmer - Bridgeton chained from grade fragments.",
+    "geometry_quality": "20.3 mi drawn against 20.7 mi documented (Glassboro 19.3 - Bridgeton 40.0, Fowler line 78). Real-traced on OSM: untagged rail and PRR-tagged grade Glassboro - Aura - Monroeville - Elmer; south of Elmer the abandoned \"Bridgeton Branch\" grade (old_railway_operator=\"PRSL (PRR)\" and untagged) and the PRR-tagged track into Bridgeton. Approximated with straight lines, 1.24 mi in all: near Aura 0.46 mi; Elmer junction joins 0.17 mi; Rosenhayn Rd area (39.468 - 39.459 N) 0.61 mi. Ends at Commerce Street, Bridgeton (approximate station site). The parallel CNJ Bridgeton line is not used.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1932,
+      "headway_min": 180,
+      "note": "West Jersey and Seashore from 4 May 1896. In 1927 the Quinton trains also ran Glassboro - Elmer over this branch (Wikipedia \"Alloway and Quinton Railroad\"). Continuous passenger line; ends 1932 because the PRSL took over on 15 July 1933. The PRR formally leased the WJ&S from 1 July 1930 (Coverdale & Colpitts 1946 via Wikipedia); no source describes any change in who ran the trains, so these years stay with the WJ&S to match ocean_city_railroad.geojson (see metadata not_yet_sourced). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (4 May 1896; 15 Jul 1933); Wikipedia \"Alloway and Quinton Railroad\" (1927 schedule at Elmer). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://en.wikipedia.org/wiki/Alloway_and_Quinton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.121995,
+      39.702084
+     ],
+     [
+      -75.155559,
+      39.63954
+     ],
+     [
+      -75.15697,
+      39.636573
+     ],
+     [
+      -75.158022,
+      39.633938
+     ],
+     [
+      -75.16429,
+      39.611991
+     ],
+     [
+      -75.165953,
+      39.606613
+     ],
+     [
+      -75.169264,
+      39.594624
+     ],
+     [
+      -75.169609,
+      39.594105
+     ],
+     [
+      -75.170375,
+      39.593707
+     ],
+     [
+      -75.169949,
+      39.592239
+     ],
+     [
+      -75.179706,
+      39.557912
+     ],
+     [
+      -75.180571,
+      39.554489
+     ],
+     [
+      -75.185792,
+      39.536633
+     ],
+     [
+      -75.205344,
+      39.467819
+     ],
+     [
+      -75.208223,
+      39.459306
+     ],
+     [
+      -75.208682,
+      39.458562
+     ],
+     [
+      -75.222443,
+      39.440267
+     ],
+     [
+      -75.222598,
+      39.439688
+     ],
+     [
+      -75.222566,
+      39.438974
+     ],
+     [
+      -75.221887,
+      39.437421
+     ],
+     [
+      -75.220388,
+      39.433095
+     ],
+     [
+      -75.22078,
+      39.429588
+     ],
+     [
+      -75.221471,
+      39.428172
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania-Reading Seashore Lines",
+    "line": "Pennsylvania-Reading Seashore Lines: Bridgeton Branch",
+    "id": "prsl-bridgeton-branch",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: one daily round trip in 1951.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area. Elmer - Bridgeton chained from grade fragments.",
+    "geometry_quality": "20.3 mi drawn against 20.7 mi documented (Glassboro 19.3 - Bridgeton 40.0, Fowler line 78). Real-traced on OSM: untagged rail and PRR-tagged grade Glassboro - Aura - Monroeville - Elmer; south of Elmer the abandoned \"Bridgeton Branch\" grade (old_railway_operator=\"PRSL (PRR)\" and untagged) and the PRR-tagged track into Bridgeton. Approximated with straight lines, 1.24 mi in all: near Aura 0.46 mi; Elmer junction joins 0.17 mi; Rosenhayn Rd area (39.468 - 39.459 N) 0.61 mi. Ends at Commerce Street, Bridgeton (approximate station site). The parallel CNJ Bridgeton line is not used.",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1952,
+      "headway_min": 720,
+      "note": "Pennsylvania-Reading Seashore Lines from 15 July 1933; trains ran through from Camden (Federal St) over the Millville Line to Glassboro. Feb 1952 Official Guide Table 6 prints legible times (one train each way; Glassboro 6:15 arr / 7:47 lve, Commerce Street, Bridgeton named), and the index lists Bridgeton without the freight-only dagger - rail, confirmed 1951. Last passenger train 12 July 1952 (sjrail). Freight continued (Aura - Bridgeton out of service 27 Feb 1985) - context only. Headway reflects the single 1951 round trip.",
+      "sources": [
+       "Segment-level: sjrail.com timeline (12 Jul 1952); Official Guide Feb 1952 Table 6 and index (one train each way).",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "Official Guide of the Railways, Feb 1952 (schedules of 30 Sep 1951), Pennsylvania-Reading Seashore Lines Table 6 (research/sources/official_guide_1952.txt)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.115939,
+      39.697944
+     ],
+     [
+      -75.121995,
+      39.702084
+     ],
+     [
+      -75.155559,
+      39.63954
+     ],
+     [
+      -75.15697,
+      39.636573
+     ],
+     [
+      -75.158022,
+      39.633938
+     ],
+     [
+      -75.16429,
+      39.611991
+     ],
+     [
+      -75.165953,
+      39.606613
+     ],
+     [
+      -75.169264,
+      39.594624
+     ],
+     [
+      -75.169609,
+      39.594105
+     ],
+     [
+      -75.170375,
+      39.593707
+     ],
+     [
+      -75.169949,
+      39.592239
+     ],
+     [
+      -75.179706,
+      39.557912
+     ],
+     [
+      -75.180571,
+      39.554489
+     ],
+     [
+      -75.185792,
+      39.536633
+     ],
+     [
+      -75.205344,
+      39.467819
+     ],
+     [
+      -75.208223,
+      39.459306
+     ],
+     [
+      -75.208682,
+      39.458562
+     ],
+     [
+      -75.222443,
+      39.440267
+     ],
+     [
+      -75.222598,
+      39.439688
+     ],
+     [
+      -75.222566,
+      39.438974
+     ],
+     [
+      -75.221887,
+      39.437421
+     ],
+     [
+      -75.220388,
+      39.433095
+     ],
+     [
+      -75.22078,
+      39.429588
+     ],
+     [
+      -75.221471,
+      39.428172
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Salem Railroad",
+    "line": "Salem Railroad: Elmer – Salem",
+    "id": "salem-rr-elmer-salem",
+    "color": "#B035A1",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: 1860s steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fragments of the lifted grade tagged old_railway_operator=\"PRSL (PRR)\" chained in order with labelled straight joins (opstrace Graph routing could not join the fragments), 2026-10-21. OpenHistoricalMap has no ways here. Riddleton - Salem routed on OSM rail tagged \"PRSL (PRR)\" (Salem Branch, SMS Rail).",
+    "geometry_quality": "17.0 mi drawn against 17 mi documented (New Bloomfield Times 1871 via Wikipedia; Fowler gives Elmer - Riddleton 10.4 and Riddleton - Salem 6.7). Elmer - Riddleton traced from four fragments of the abandoned \"Salem Branch\" grade tagged old_railway_operator=\"PRSL (PRR)\"; approximated with straight lines, 3.57 mi in all: Elmer - Daretown (39.595 N, 75.180 W - 39.600 N, 75.223 W) 2.31 mi, then joins of 0.23, 0.72 and 0.31 mi near Yorketown. Riddleton - Alloway Junction - Salem real-traced on the OSM Salem Branch track. The Salem end follows the present track to the Salem station area.",
+    "segments": [
+     {
+      "start": 1863,
+      "end": 1867,
+      "headway_min": 240,
+      "note": "Salem Railroad, opened Elmer - Yorketown 14 January 1863 and on to Salem 1 July 1863 (Wikipedia \"Salem Railroad\"). Leased to the West Jersey 1 January 1868 (Wikipedia, Coverdale & Colpitts) vs June 1868 (Wilson 1899) - drawn as the Salem Railroad to 1867. The 1863 Yorketown - Salem half-year is folded into the single feature. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Salem Railroad\" (14 Jan 1863; 1 Jul 1863; 1 Jan 1868 lease); Wikipedia \"West Jersey and Seashore Railroad\" (Wilson: June 1868 - conflict recorded). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Salem_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.169264,
+      39.594624
+     ],
+     [
+      -75.169609,
+      39.594105
+     ],
+     [
+      -75.169925,
+      39.593894
+     ],
+     [
+      -75.170375,
+      39.593707
+     ],
+     [
+      -75.171313,
+      39.593633
+     ],
+     [
+      -75.237876,
+      39.60241
+     ],
+     [
+      -75.247628,
+      39.604193
+     ],
+     [
+      -75.259554,
+      39.606824
+     ],
+     [
+      -75.280356,
+      39.610685
+     ],
+     [
+      -75.295953,
+      39.613202
+     ],
+     [
+      -75.299465,
+      39.613408
+     ],
+     [
+      -75.301081,
+      39.613296
+     ],
+     [
+      -75.304459,
+      39.612721
+     ],
+     [
+      -75.308294,
+      39.611527
+     ],
+     [
+      -75.351035,
+      39.595251
+     ],
+     [
+      -75.35368,
+      39.59383
+     ],
+     [
+      -75.369813,
+      39.581803
+     ],
+     [
+      -75.371747,
+      39.580682
+     ],
+     [
+      -75.374168,
+      39.579898
+     ],
+     [
+      -75.376307,
+      39.579635
+     ],
+     [
+      -75.378346,
+      39.579705
+     ],
+     [
+      -75.428717,
+      39.586322
+     ],
+     [
+      -75.430984,
+      39.586536
+     ],
+     [
+      -75.434376,
+      39.586472
+     ],
+     [
+      -75.436661,
+      39.586188
+     ],
+     [
+      -75.439173,
+      39.585628
+     ],
+     [
+      -75.460299,
+      39.580536
+     ],
+     [
+      -75.461249,
+      39.579998
+     ],
+     [
+      -75.461911,
+      39.579111
+     ],
+     [
+      -75.463033,
+      39.577162
+     ],
+     [
+      -75.463512,
+      39.575258
+     ],
+     [
+      -75.464353,
+      39.573716
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Elmer – Salem",
+    "id": "wj-elmer-salem",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fragments of the lifted grade tagged old_railway_operator=\"PRSL (PRR)\" chained in order with labelled straight joins (opstrace Graph routing could not join the fragments), 2026-10-21. OpenHistoricalMap has no ways here. Riddleton - Salem routed on OSM rail tagged \"PRSL (PRR)\" (Salem Branch, SMS Rail).",
+    "geometry_quality": "17.0 mi drawn against 17 mi documented (New Bloomfield Times 1871 via Wikipedia; Fowler gives Elmer - Riddleton 10.4 and Riddleton - Salem 6.7). Elmer - Riddleton traced from four fragments of the abandoned \"Salem Branch\" grade tagged old_railway_operator=\"PRSL (PRR)\"; approximated with straight lines, 3.57 mi in all: Elmer - Daretown (39.595 N, 75.180 W - 39.600 N, 75.223 W) 2.31 mi, then joins of 0.23, 0.72 and 0.31 mi near Yorketown. Riddleton - Alloway Junction - Salem real-traced on the OSM Salem Branch track. The Salem end follows the present track to the Salem station area.",
+    "segments": [
+     {
+      "start": 1868,
+      "end": 1895,
+      "headway_min": 180,
+      "note": "West Jersey Railroad as lessee from 1868 (either lease date falls in 1868), merged 31 Dec 1887. Fowler marks Newkirk, Daretown, Paulding, Yorketown, Oakland, Alloway, Middletown, Acton and Salem in the 1875 Guide. From February 1883 the Riddleton - Salem end was shared with the Woodbury - Woodstown route. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Salem Railroad\" (1868 lease; 1887 merger); branchline.uk lines 76, 79 (1875 Guide). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Salem_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 76",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 79"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.169264,
+      39.594624
+     ],
+     [
+      -75.169609,
+      39.594105
+     ],
+     [
+      -75.169925,
+      39.593894
+     ],
+     [
+      -75.170375,
+      39.593707
+     ],
+     [
+      -75.171313,
+      39.593633
+     ],
+     [
+      -75.237876,
+      39.60241
+     ],
+     [
+      -75.247628,
+      39.604193
+     ],
+     [
+      -75.259554,
+      39.606824
+     ],
+     [
+      -75.280356,
+      39.610685
+     ],
+     [
+      -75.295953,
+      39.613202
+     ],
+     [
+      -75.299465,
+      39.613408
+     ],
+     [
+      -75.301081,
+      39.613296
+     ],
+     [
+      -75.304459,
+      39.612721
+     ],
+     [
+      -75.308294,
+      39.611527
+     ],
+     [
+      -75.351035,
+      39.595251
+     ],
+     [
+      -75.35368,
+      39.59383
+     ],
+     [
+      -75.369813,
+      39.581803
+     ],
+     [
+      -75.371747,
+      39.580682
+     ],
+     [
+      -75.374168,
+      39.579898
+     ],
+     [
+      -75.376307,
+      39.579635
+     ],
+     [
+      -75.378346,
+      39.579705
+     ],
+     [
+      -75.428717,
+      39.586322
+     ],
+     [
+      -75.430984,
+      39.586536
+     ],
+     [
+      -75.434376,
+      39.586472
+     ],
+     [
+      -75.436661,
+      39.586188
+     ],
+     [
+      -75.439173,
+      39.585628
+     ],
+     [
+      -75.460299,
+      39.580536
+     ],
+     [
+      -75.461249,
+      39.579998
+     ],
+     [
+      -75.461911,
+      39.579111
+     ],
+     [
+      -75.463033,
+      39.577162
+     ],
+     [
+      -75.463512,
+      39.575258
+     ],
+     [
+      -75.464353,
+      39.573716
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Elmer Branch",
+    "id": "wjs-elmer-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: mixed-train branch at the end.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fragments of the lifted grade tagged old_railway_operator=\"PRSL (PRR)\" chained in order with labelled straight joins (opstrace Graph routing could not join the fragments), 2026-10-21. OpenHistoricalMap has no ways here.",
+    "geometry_quality": "10.3 mi drawn against 10.4 mi documented (Elmer 27.4 - Riddleton 37.8, Fowler line 79). Elmer - Riddleton traced from four fragments of the abandoned \"Salem Branch\" grade tagged old_railway_operator=\"PRSL (PRR)\"; approximated with straight lines, 3.57 mi in all: Elmer - Daretown (39.595 N, 75.180 W - 39.600 N, 75.223 W) 2.31 mi, then joins of 0.23, 0.72 and 0.31 mi near Yorketown.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "West Jersey and Seashore, Elmer - Daretown - Yorketown - Riddleton (later the PRSL \"Riddleton Branch\"). The Riddleton - Salem end is drawn with the Salem Branch. END [OPEN]: 1928 is the last CONFIRMED year, not a known end. From 24 April 1927 the two remaining Quinton trains (mixed from 25 Jan 1927) ran from Glassboro via Elmer and this branch to Quinton, until 28 April 1928 (Wikipedia \"Alloway and Quinton Railroad\"). No source dates when passenger service on this branch actually stopped and its abandonment date was not found - do not extend without evidence, and do not read 1928 as an ending. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Alloway and Quinton Railroad\" (1927 schedule via Elmer; 28 Apr 1928); Wikipedia \"Salem Railroad\"; branchline.uk line 79. End NOT SOURCED as a branch end ([OPEN]). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Alloway_and_Quinton_Railroad",
+       "https://en.wikipedia.org/wiki/Salem_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 79"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.169264,
+      39.594624
+     ],
+     [
+      -75.169609,
+      39.594105
+     ],
+     [
+      -75.169925,
+      39.593894
+     ],
+     [
+      -75.170375,
+      39.593707
+     ],
+     [
+      -75.171313,
+      39.593633
+     ],
+     [
+      -75.237876,
+      39.60241
+     ],
+     [
+      -75.247628,
+      39.604193
+     ],
+     [
+      -75.259554,
+      39.606824
+     ],
+     [
+      -75.272675,
+      39.609322
+     ],
+     [
+      -75.280356,
+      39.610685
+     ],
+     [
+      -75.295953,
+      39.613202
+     ],
+     [
+      -75.299465,
+      39.613408
+     ],
+     [
+      -75.301081,
+      39.613296
+     ],
+     [
+      -75.304459,
+      39.612721
+     ],
+     [
+      -75.308294,
+      39.611527
+     ],
+     [
+      -75.349568,
+      39.595867
+     ],
+     [
+      -75.351035,
+      39.595251
+     ],
+     [
+      -75.35368,
+      39.59383
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Woodbury – Swedesboro",
+    "id": "wj-woodbury-swedesboro",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "10.4 mi drawn against 10.7 mi documented (Woodbury 9.8 - Swedesboro 20.5, Fowler line 76; 10.8 Wikipedia). Real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (the Salem Branch, today SMS Rail / Salem County) and short untagged connections. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1869,
+      "end": 1895,
+      "headway_min": 180,
+      "note": "Swedesboro Railroad line, worked by the West Jersey from opening (leased 17 Aug 1869, before it opened, so the Swedesboro RR never ran its own trains). Opened 11 Sep 1869 (Wilson via Wikipedia WJ&S) vs 2 Oct 1869 (Wikipedia \"Swedesboro Railroad\") - same year. Fowler marks Swedesboro as the 1875 terminus. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Swedesboro Railroad\" (17 Aug 1869 lease; 2 Oct 1869); Wikipedia \"West Jersey and Seashore Railroad\" (11 Sep 1869 - conflict recorded); branchline.uk line 76. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Swedesboro_Railroad",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 76"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.15212,
+      39.831354
+     ],
+     [
+      -75.153064,
+      39.830287
+     ],
+     [
+      -75.154029,
+      39.828438
+     ],
+     [
+      -75.154806,
+      39.827644
+     ],
+     [
+      -75.156297,
+      39.826822
+     ],
+     [
+      -75.17548,
+      39.818644
+     ],
+     [
+      -75.177757,
+      39.817824
+     ],
+     [
+      -75.189271,
+      39.814012
+     ],
+     [
+      -75.201354,
+      39.810561
+     ],
+     [
+      -75.211783,
+      39.80674
+     ],
+     [
+      -75.221924,
+      39.804558
+     ],
+     [
+      -75.22371,
+      39.803989
+     ],
+     [
+      -75.250676,
+      39.790421
+     ],
+     [
+      -75.260377,
+      39.784404
+     ],
+     [
+      -75.286432,
+      39.771423
+     ],
+     [
+      -75.299515,
+      39.762296
+     ],
+     [
+      -75.310176,
+      39.752705
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Swedesboro – Riddleton",
+    "id": "wj-swedesboro-riddleton",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "11.3 mi drawn against 11.3 mi documented (Swedesboro 20.5 - Riddleton 31.8, Fowler line 76). Real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (the Salem Branch, today SMS Rail / Salem County) and short untagged connections. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1895,
+      "headway_min": 180,
+      "note": "Woodstown and Swedesboro Railroad line, Swedesboro - Woodstown - Riddleton, opened February 1883 and leased to the West Jersey on opening (no own-name era). Wikipedia WJ&S's \"opened on February 23, 1873\" contradicts the W&S article (no work for over a decade; opened 1883) and Fowler's 1875 data, which stop at Swedesboro - treated as an error. Beyond Riddleton the trains used the Salem Railroad to Salem (drawn as wj-elmer-salem). Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Woodstown and Swedesboro Railroad\" (Feb 1883); branchline.uk line 76. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Woodstown_and_Swedesboro_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 76"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.310176,
+      39.752705
+     ],
+     [
+      -75.318632,
+      39.741993
+     ],
+     [
+      -75.319531,
+      39.740303
+     ],
+     [
+      -75.319843,
+      39.738958
+     ],
+     [
+      -75.319057,
+      39.685516
+     ],
+     [
+      -75.32321,
+      39.660303
+     ],
+     [
+      -75.32519,
+      39.643865
+     ],
+     [
+      -75.325762,
+      39.642497
+     ],
+     [
+      -75.345441,
+      39.608734
+     ],
+     [
+      -75.346149,
+      39.607033
+     ],
+     [
+      -75.348821,
+      39.598877
+     ],
+     [
+      -75.349833,
+      39.597074
+     ],
+     [
+      -75.350998,
+      39.595849
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Salem Branch",
+    "id": "wjs-salem-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: branch service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "28.6 mi drawn against 28.7 mi documented (Woodbury 9.8 - Salem 38.5, Fowler line 76; Wikipedia 30.1 to the Port of Salem). Real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (the Salem Branch, today SMS Rail / Salem County) and short untagged connections. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1932,
+      "headway_min": 180,
+      "note": "West Jersey and Seashore from 4 May 1896, Woodbury - Swedesboro - Woodstown - Riddleton - Salem. Continuous passenger line (the PRSL ran it to 1950); ends 1932 because the PRSL took over on 15 July 1933. The PRR formally leased the WJ&S from 1 July 1930 (Coverdale & Colpitts 1946 via Wikipedia); no source describes any change in who ran the trains, so these years stay with the WJ&S to match ocean_city_railroad.geojson (see metadata not_yet_sourced). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Salem Branch\"; Wikipedia \"West Jersey and Seashore Railroad\" (4 May 1896; 15 Jul 1933). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Salem_Branch",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.15212,
+      39.831354
+     ],
+     [
+      -75.153064,
+      39.830287
+     ],
+     [
+      -75.154029,
+      39.828438
+     ],
+     [
+      -75.154806,
+      39.827644
+     ],
+     [
+      -75.156297,
+      39.826822
+     ],
+     [
+      -75.17548,
+      39.818644
+     ],
+     [
+      -75.177757,
+      39.817824
+     ],
+     [
+      -75.189271,
+      39.814012
+     ],
+     [
+      -75.201354,
+      39.810561
+     ],
+     [
+      -75.211783,
+      39.80674
+     ],
+     [
+      -75.221924,
+      39.804558
+     ],
+     [
+      -75.22371,
+      39.803989
+     ],
+     [
+      -75.250676,
+      39.790421
+     ],
+     [
+      -75.260377,
+      39.784404
+     ],
+     [
+      -75.286432,
+      39.771423
+     ],
+     [
+      -75.299515,
+      39.762296
+     ],
+     [
+      -75.310176,
+      39.752705
+     ],
+     [
+      -75.318632,
+      39.741993
+     ],
+     [
+      -75.319531,
+      39.740303
+     ],
+     [
+      -75.319843,
+      39.738958
+     ],
+     [
+      -75.319057,
+      39.685516
+     ],
+     [
+      -75.32321,
+      39.660303
+     ],
+     [
+      -75.32519,
+      39.643865
+     ],
+     [
+      -75.325762,
+      39.642497
+     ],
+     [
+      -75.345441,
+      39.608734
+     ],
+     [
+      -75.346149,
+      39.607033
+     ],
+     [
+      -75.348821,
+      39.598877
+     ],
+     [
+      -75.349833,
+      39.597074
+     ],
+     [
+      -75.350998,
+      39.595849
+     ],
+     [
+      -75.369813,
+      39.581803
+     ],
+     [
+      -75.371747,
+      39.580682
+     ],
+     [
+      -75.374168,
+      39.579898
+     ],
+     [
+      -75.376307,
+      39.579635
+     ],
+     [
+      -75.378346,
+      39.579705
+     ],
+     [
+      -75.428717,
+      39.586322
+     ],
+     [
+      -75.430984,
+      39.586536
+     ],
+     [
+      -75.434376,
+      39.586472
+     ],
+     [
+      -75.436661,
+      39.586188
+     ],
+     [
+      -75.439173,
+      39.585628
+     ],
+     [
+      -75.460299,
+      39.580536
+     ],
+     [
+      -75.461249,
+      39.579998
+     ],
+     [
+      -75.461911,
+      39.579111
+     ],
+     [
+      -75.463033,
+      39.577162
+     ],
+     [
+      -75.463512,
+      39.575258
+     ],
+     [
+      -75.464353,
+      39.573716
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania-Reading Seashore Lines",
+    "line": "Pennsylvania-Reading Seashore Lines: Salem Branch",
+    "id": "prsl-salem-branch",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: gas-electric motor car at the end.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "28.6 mi drawn against 28.7 mi documented (Woodbury 9.8 - Salem 38.5, Fowler line 76; Wikipedia 30.1 to the Port of Salem). Real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (the Salem Branch, today SMS Rail / Salem County) and short untagged connections. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1950,
+      "headway_min": 360,
+      "note": "Pennsylvania-Reading Seashore Lines from 15 July 1933. Passenger service ended 30 December 1950 (Wikipedia \"Salem Branch\"; sjrail, \"gas powered motor car\"). Feb 1952 Table 7 Woodbury - Salem reads \"Freight Service\", with freight-only daggers at Swedesboro, Alloway Junction and South Woodstown - agrees. Freight continues today (Salem County / SMS Rail) - context only. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Salem Branch\" (30 Dec 1950); sjrail.com timeline; Official Guide Feb 1952 Table 7 and index. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Salem_Branch",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "Official Guide of the Railways, Feb 1952 (schedules of 30 Sep 1951), Pennsylvania-Reading Seashore Lines Table 7 (research/sources/official_guide_1952.txt)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.15212,
+      39.831354
+     ],
+     [
+      -75.153064,
+      39.830287
+     ],
+     [
+      -75.154029,
+      39.828438
+     ],
+     [
+      -75.154806,
+      39.827644
+     ],
+     [
+      -75.156297,
+      39.826822
+     ],
+     [
+      -75.17548,
+      39.818644
+     ],
+     [
+      -75.177757,
+      39.817824
+     ],
+     [
+      -75.189271,
+      39.814012
+     ],
+     [
+      -75.201354,
+      39.810561
+     ],
+     [
+      -75.211783,
+      39.80674
+     ],
+     [
+      -75.221924,
+      39.804558
+     ],
+     [
+      -75.22371,
+      39.803989
+     ],
+     [
+      -75.250676,
+      39.790421
+     ],
+     [
+      -75.260377,
+      39.784404
+     ],
+     [
+      -75.286432,
+      39.771423
+     ],
+     [
+      -75.299515,
+      39.762296
+     ],
+     [
+      -75.310176,
+      39.752705
+     ],
+     [
+      -75.318632,
+      39.741993
+     ],
+     [
+      -75.319531,
+      39.740303
+     ],
+     [
+      -75.319843,
+      39.738958
+     ],
+     [
+      -75.319057,
+      39.685516
+     ],
+     [
+      -75.32321,
+      39.660303
+     ],
+     [
+      -75.32519,
+      39.643865
+     ],
+     [
+      -75.325762,
+      39.642497
+     ],
+     [
+      -75.345441,
+      39.608734
+     ],
+     [
+      -75.346149,
+      39.607033
+     ],
+     [
+      -75.348821,
+      39.598877
+     ],
+     [
+      -75.349833,
+      39.597074
+     ],
+     [
+      -75.350998,
+      39.595849
+     ],
+     [
+      -75.369813,
+      39.581803
+     ],
+     [
+      -75.371747,
+      39.580682
+     ],
+     [
+      -75.374168,
+      39.579898
+     ],
+     [
+      -75.376307,
+      39.579635
+     ],
+     [
+      -75.378346,
+      39.579705
+     ],
+     [
+      -75.428717,
+      39.586322
+     ],
+     [
+      -75.430984,
+      39.586536
+     ],
+     [
+      -75.434376,
+      39.586472
+     ],
+     [
+      -75.436661,
+      39.586188
+     ],
+     [
+      -75.439173,
+      39.585628
+     ],
+     [
+      -75.460299,
+      39.580536
+     ],
+     [
+      -75.461249,
+      39.579998
+     ],
+     [
+      -75.461911,
+      39.579111
+     ],
+     [
+      -75.463033,
+      39.577162
+     ],
+     [
+      -75.463512,
+      39.575258
+     ],
+     [
+      -75.464353,
+      39.573716
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Quinton Branch",
+    "id": "wj-quinton-branch",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: short steam branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "4.3 mi drawn against 4.22 mi documented (Wikipedia; 4.1 by Fowler line 77). Traced from Alloway Junction on the Salem Branch along OSM ways tagged \"Quinton Branch\" / old_railway_operator=\"PRSL (PRR)\" and untagged rail / abandoned ways through Alloway to Quinton (no ways tagged for any other railroad used). Approximated with a straight line: only the join from the Salem Branch track to the start of the mapped Quinton Branch way, 0.05 mi.",
+    "segments": [
+     {
+      "start": 1891,
+      "end": 1895,
+      "headway_min": 120,
+      "note": "Alloway and Quinton Railroad, Alloway Junction - Alloway - Quinton, opened 21 December 1891 with passenger service \"from its opening\", worked by the West Jersey (formal agreement 1 Jan 1892; the A&Q never ran its own trains). Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Alloway and Quinton Railroad\" (21 Dec 1891; 1 Jan 1892). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Alloway_and_Quinton_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.376307,
+      39.579635
+     ],
+     [
+      -75.373388,
+      39.579846
+     ],
+     [
+      -75.372595,
+      39.579565
+     ],
+     [
+      -75.372291,
+      39.579256
+     ],
+     [
+      -75.37174,
+      39.577978
+     ],
+     [
+      -75.368504,
+      39.572562
+     ],
+     [
+      -75.367572,
+      39.571242
+     ],
+     [
+      -75.36568,
+      39.569302
+     ],
+     [
+      -75.364975,
+      39.568225
+     ],
+     [
+      -75.363686,
+      39.56538
+     ],
+     [
+      -75.363635,
+      39.564129
+     ],
+     [
+      -75.364091,
+      39.563385
+     ],
+     [
+      -75.364598,
+      39.563067
+     ],
+     [
+      -75.367223,
+      39.562041
+     ],
+     [
+      -75.372196,
+      39.557907
+     ],
+     [
+      -75.373609,
+      39.557128
+     ],
+     [
+      -75.408111,
+      39.549231
+     ],
+     [
+      -75.41045,
+      39.548938
+     ],
+     [
+      -75.411726,
+      39.548453
+     ],
+     [
+      -75.412747,
+      39.548306
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Quinton Branch",
+    "id": "wjs-quinton-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: short branch, mixed train at the end.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "4.3 mi drawn against 4.22 mi documented (Wikipedia; 4.1 by Fowler line 77). Traced from Alloway Junction on the Salem Branch along OSM ways tagged \"Quinton Branch\" / old_railway_operator=\"PRSL (PRR)\" and untagged rail / abandoned ways through Alloway to Quinton (no ways tagged for any other railroad used). Approximated with a straight line: only the join from the Salem Branch track to the start of the mapped Quinton Branch way, 0.05 mi.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "West Jersey and Seashore from 4 May 1896. Four round trips a day originally, later run Salem - Quinton; mixed train (a coach on a freight) from 25 Jan 1927, cut to two trains in April 1927; 23 passengers in all of February 1928. Last passenger train 28 April 1928 (Wikipedia; sjrail). Freight continued to the ICC abandonment of November 1941 - context only. Headway is an estimate (about two to four trains a day).",
+      "sources": [
+       "Segment-level: Wikipedia \"Alloway and Quinton Railroad\" (BPU orders; 28 Apr 1928); sjrail.com timeline. Headway estimated from the train counts in the Wikipedia article.",
+       "https://en.wikipedia.org/wiki/Alloway_and_Quinton_Railroad",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.376307,
+      39.579635
+     ],
+     [
+      -75.373388,
+      39.579846
+     ],
+     [
+      -75.372595,
+      39.579565
+     ],
+     [
+      -75.372291,
+      39.579256
+     ],
+     [
+      -75.37174,
+      39.577978
+     ],
+     [
+      -75.368504,
+      39.572562
+     ],
+     [
+      -75.367572,
+      39.571242
+     ],
+     [
+      -75.36568,
+      39.569302
+     ],
+     [
+      -75.364975,
+      39.568225
+     ],
+     [
+      -75.363686,
+      39.56538
+     ],
+     [
+      -75.363635,
+      39.564129
+     ],
+     [
+      -75.364091,
+      39.563385
+     ],
+     [
+      -75.364598,
+      39.563067
+     ],
+     [
+      -75.367223,
+      39.562041
+     ],
+     [
+      -75.372196,
+      39.557907
+     ],
+     [
+      -75.373609,
+      39.557128
+     ],
+     [
+      -75.408111,
+      39.549231
+     ],
+     [
+      -75.41045,
+      39.548938
+     ],
+     [
+      -75.411726,
+      39.548453
+     ],
+     [
+      -75.412747,
+      39.548306
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Delaware River Railroad",
+    "line": "Delaware River Railroad: Woodbury – Penns Grove",
+    "id": "drr-penns-grove",
+    "color": "#41B730",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: steam branch, through trains to Philadelphia via Woodbury.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "19.7 mi drawn against 20.3 mi documented (Woodbury - Penns Grove, Feb 1952 Table 5; Fowler 9.8 - 30.1). Fully real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (Conrail Penns Grove Secondary) via Thorofare, Paulsboro, Gibbstown, Bridgeport and Pedricktown. No straight-line leg. Ends at Penns Grove; the freight-only Deepwater extension is not drawn.",
+    "segments": [
+     {
+      "start": 1876,
+      "end": 1899,
+      "headway_min": 150,
+      "note": "Opened July 1876 as the Delaware Shore Railroad (Wikipedia, citing Gladulich); bankrupt January 1879 and reincorporated as the Delaware River Railroad - the same line, drawn as one feature under the later name. Penn's Grove Record timetables headed \"DELAWARE RIVER RAILROAD - Trains Leave Penns Grove, Pedricktown, Bridgeport, Paulsboro, Woodbury ar., Philadelphia ar.\" with legible times 1889-1899, about six trains each way on weekdays and two on Sundays. OPERATOR CAVEAT: the paper kept that heading until at least 1905, five years after the WJ&S takeover, so the heading does not by itself prove who crewed the trains; PRR/West Jersey working is neither shown nor excluded. Ends 1899: acquired by the West Jersey and Seashore 30 April 1900. Headway is an estimate from the six-a-day timetables.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" and \"Penns Grove Secondary\" (Jul 1876; Jan 1879; 30 Apr 1900); Penn's Grove Record timetables 29 Jun 1889 - 3 Nov 1899 (loc.gov Chronicling America, sn85035524); West-Jersey Pioneer 24 Jun 1875. Headway estimated from the timetables.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://en.wikipedia.org/wiki/Penns_Grove_Secondary",
+       "https://www.loc.gov/item/sn85035524/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.151958,
+      39.831679
+     ],
+     [
+      -75.152523,
+      39.83086
+     ],
+     [
+      -75.153627,
+      39.830249
+     ],
+     [
+      -75.154463,
+      39.830107
+     ],
+     [
+      -75.155384,
+      39.830156
+     ],
+     [
+      -75.196603,
+      39.843954
+     ],
+     [
+      -75.197813,
+      39.844232
+     ],
+     [
+      -75.198819,
+      39.844285
+     ],
+     [
+      -75.200535,
+      39.844003
+     ],
+     [
+      -75.232185,
+      39.834728
+     ],
+     [
+      -75.233279,
+      39.834614
+     ],
+     [
+      -75.243977,
+      39.834536
+     ],
+     [
+      -75.24569,
+      39.834364
+     ],
+     [
+      -75.268735,
+      39.828355
+     ],
+     [
+      -75.27058,
+      39.82797
+     ],
+     [
+      -75.292548,
+      39.826738
+     ],
+     [
+      -75.294213,
+      39.826623
+     ],
+     [
+      -75.295173,
+      39.826415
+     ],
+     [
+      -75.296707,
+      39.825701
+     ],
+     [
+      -75.324286,
+      39.803194
+     ],
+     [
+      -75.327076,
+      39.80106
+     ],
+     [
+      -75.328548,
+      39.800422
+     ],
+     [
+      -75.330248,
+      39.800083
+     ],
+     [
+      -75.351885,
+      39.798901
+     ],
+     [
+      -75.353714,
+      39.798495
+     ],
+     [
+      -75.368583,
+      39.794173
+     ],
+     [
+      -75.371257,
+      39.793199
+     ],
+     [
+      -75.382539,
+      39.786316
+     ],
+     [
+      -75.467622,
+      39.73354
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Penns Grove Branch",
+    "id": "wjs-penns-grove-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: branch service.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "19.7 mi drawn against 20.3 mi documented (Woodbury - Penns Grove, Feb 1952 Table 5; Fowler 9.8 - 30.1). Fully real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (Conrail Penns Grove Secondary) via Thorofare, Paulsboro, Gibbstown, Bridgeport and Pedricktown. No straight-line leg. Ends at Penns Grove; the freight-only Deepwater extension is not drawn.",
+    "segments": [
+     {
+      "start": 1900,
+      "end": 1932,
+      "headway_min": 150,
+      "note": "West Jersey and Seashore from its acquisition of the Delaware River Railroad on 30 April 1900. Penn's Grove Record timetables continue 28 Dec 1900 - 8 Sep 1905 (about six trains each way weekdays). Continuous passenger line; ends 1932 because the PRSL took over on 15 July 1933. The PRR formally leased the WJ&S from 1 July 1930 (Coverdale & Colpitts 1946 via Wikipedia); no source describes any change in who ran the trains, so these years stay with the WJ&S to match ocean_city_railroad.geojson (see metadata not_yet_sourced). Headway is an estimate from the 1900-05 timetables.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (30 Apr 1900); Penn's Grove Record 28 Dec 1900 - 8 Sep 1905 (loc.gov sn85035524). Headway estimated from the timetables.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "https://www.loc.gov/item/sn85035524/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.151958,
+      39.831679
+     ],
+     [
+      -75.152523,
+      39.83086
+     ],
+     [
+      -75.153627,
+      39.830249
+     ],
+     [
+      -75.154463,
+      39.830107
+     ],
+     [
+      -75.155384,
+      39.830156
+     ],
+     [
+      -75.196603,
+      39.843954
+     ],
+     [
+      -75.197813,
+      39.844232
+     ],
+     [
+      -75.198819,
+      39.844285
+     ],
+     [
+      -75.200535,
+      39.844003
+     ],
+     [
+      -75.232185,
+      39.834728
+     ],
+     [
+      -75.233279,
+      39.834614
+     ],
+     [
+      -75.243977,
+      39.834536
+     ],
+     [
+      -75.24569,
+      39.834364
+     ],
+     [
+      -75.268735,
+      39.828355
+     ],
+     [
+      -75.27058,
+      39.82797
+     ],
+     [
+      -75.292548,
+      39.826738
+     ],
+     [
+      -75.294213,
+      39.826623
+     ],
+     [
+      -75.295173,
+      39.826415
+     ],
+     [
+      -75.296707,
+      39.825701
+     ],
+     [
+      -75.324286,
+      39.803194
+     ],
+     [
+      -75.327076,
+      39.80106
+     ],
+     [
+      -75.328548,
+      39.800422
+     ],
+     [
+      -75.330248,
+      39.800083
+     ],
+     [
+      -75.351885,
+      39.798901
+     ],
+     [
+      -75.353714,
+      39.798495
+     ],
+     [
+      -75.368583,
+      39.794173
+     ],
+     [
+      -75.371257,
+      39.793199
+     ],
+     [
+      -75.382539,
+      39.786316
+     ],
+     [
+      -75.467622,
+      39.73354
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania-Reading Seashore Lines",
+    "line": "Pennsylvania-Reading Seashore Lines: Penns Grove Branch",
+    "id": "prsl-penns-grove-branch",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, unsourced: gas-electric motor car at the end.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "19.7 mi drawn against 20.3 mi documented (Woodbury - Penns Grove, Feb 1952 Table 5; Fowler 9.8 - 30.1). Fully real-traced on OSM rail tagged old_railway_operator=\"PRSL (PRR)\" (Conrail Penns Grove Secondary) via Thorofare, Paulsboro, Gibbstown, Bridgeport and Pedricktown. No straight-line leg. Ends at Penns Grove; the freight-only Deepwater extension is not drawn.",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1950,
+      "headway_min": 360,
+      "note": "Pennsylvania-Reading Seashore Lines from 15 July 1933. Passenger service ended 8 July 1950 (\"gas powered motor car\" - sjrail; Wikipedia \"Penns Grove Secondary\"). Feb 1952 Table 5 Woodbury - Penns Grove reads \"Freight Service only\", with freight-only daggers at Gibbstown and Paulsboro - agrees. The Deepwater Point extension beyond Penns Grove was freight-only and is not drawn; freight continues today (Penns Grove Secondary) - context only. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: sjrail.com timeline (8 Jul 1950); Wikipedia \"Penns Grove Secondary\"; Official Guide Feb 1952 Table 5 and index. Headway not sourced.",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html",
+       "https://en.wikipedia.org/wiki/Penns_Grove_Secondary",
+       "Official Guide of the Railways, Feb 1952 (schedules of 30 Sep 1951), Pennsylvania-Reading Seashore Lines Table 5 (research/sources/official_guide_1952.txt)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.150674,
+      39.834721
+     ],
+     [
+      -75.151958,
+      39.831679
+     ],
+     [
+      -75.152523,
+      39.83086
+     ],
+     [
+      -75.153627,
+      39.830249
+     ],
+     [
+      -75.154463,
+      39.830107
+     ],
+     [
+      -75.155384,
+      39.830156
+     ],
+     [
+      -75.196603,
+      39.843954
+     ],
+     [
+      -75.197813,
+      39.844232
+     ],
+     [
+      -75.198819,
+      39.844285
+     ],
+     [
+      -75.200535,
+      39.844003
+     ],
+     [
+      -75.232185,
+      39.834728
+     ],
+     [
+      -75.233279,
+      39.834614
+     ],
+     [
+      -75.243977,
+      39.834536
+     ],
+     [
+      -75.24569,
+      39.834364
+     ],
+     [
+      -75.268735,
+      39.828355
+     ],
+     [
+      -75.27058,
+      39.82797
+     ],
+     [
+      -75.292548,
+      39.826738
+     ],
+     [
+      -75.294213,
+      39.826623
+     ],
+     [
+      -75.295173,
+      39.826415
+     ],
+     [
+      -75.296707,
+      39.825701
+     ],
+     [
+      -75.324286,
+      39.803194
+     ],
+     [
+      -75.327076,
+      39.80106
+     ],
+     [
+      -75.328548,
+      39.800422
+     ],
+     [
+      -75.330248,
+      39.800083
+     ],
+     [
+      -75.351885,
+      39.798901
+     ],
+     [
+      -75.353714,
+      39.798495
+     ],
+     [
+      -75.368583,
+      39.794173
+     ],
+     [
+      -75.371257,
+      39.793199
+     ],
+     [
+      -75.382539,
+      39.786316
+     ],
+     [
+      -75.467622,
+      39.73354
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Anglesea Railroad",
+    "line": "Anglesea Railroad: Burleigh – Anglesea",
+    "id": "anglesea-rr-burleigh-anglesea",
+    "color": "#E06B3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: short seasonal steam line.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "4.9 mi drawn against 4.8 mi documented (Wildwood Jct / Burleigh 73.3 - Anglesea 78.1, Fowler line 86; about 4.3 from Burleigh). Real-traced on the OSM \"Wildwood Branch\" grade (old_railway_operator=\"PRSL (PRR)\") and the north end of the New Jersey Avenue grade. Approximated with straight lines: junction with the Cape May line to the start of the mapped grade 0.77 mi; Grassy Sound crossing (39.031 N - 39.002 N) 2.09 mi.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1887,
+      "headway_min": 120,
+      "note": "Anglesea Railroad (the \"Mud Hen\", F. E. Swope's land-company railroad), Burleigh (junction on the West Jersey Cape May line) - Grassy Sound - Anglesea (North Wildwood), opened July 1883 (Wikipedia, citing Coverdale & Colpitts). Receivership 25 Dec 1884; acquired by the West Jersey 23 May 1888. OPERATOR FLAGGED: own-name operation is implied by its separate incorporation and receivership, not confirmed by a timetable. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Anglesea Railroad\" (Jul 1883; 25 Dec 1884; 23 May 1888); branchline.uk line 86. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Anglesea_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 86"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.85779,
+      39.049654
+     ],
+     [
+      -74.844352,
+      39.04587
+     ],
+     [
+      -74.834465,
+      39.041848
+     ],
+     [
+      -74.832783,
+      39.040808
+     ],
+     [
+      -74.828823,
+      39.037568
+     ],
+     [
+      -74.82715,
+      39.036649
+     ],
+     [
+      -74.8119,
+      39.0307
+     ],
+     [
+      -74.8013,
+      39.0016
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Anglesea Railroad",
+    "line": "Anglesea Railroad: Anglesea – Holly Beach",
+    "id": "anglesea-rr-anglesea-holly-beach",
+    "color": "#E06B3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: short seasonal steam line.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "2.3 mi drawn against about 3 mi documented (Anglesea - Holly Beach extension, Wikipedia). Real-traced on the OSM grade along New Jersey Avenue, North Wildwood / Wildwood (old_railway_operator=\"PRSL (PRR)\"). The Holly Beach end is placed at about the Wildwood / Wildwood Crest line (38.979 N) - the station site (Fowler: Andrews Ave) is not located. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1887,
+      "headway_min": 120,
+      "note": "Anglesea Railroad extension Anglesea - Holly Beach (Wildwood), about 3 mi, opened 1885 (Wikipedia \"Anglesea Railroad\"). Operator flagged as for the Burleigh - Anglesea section. Acquired by the West Jersey 23 May 1888. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Anglesea Railroad\" (1885 extension; 23 May 1888). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Anglesea_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.8013,
+      39.0016
+     ],
+     [
+      -74.811052,
+      38.993606
+     ],
+     [
+      -74.814171,
+      38.991781
+     ],
+     [
+      -74.831607,
+      38.979
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey Railroad",
+    "line": "West Jersey: Anglesea Branch",
+    "id": "wj-anglesea-branch",
+    "color": "#BF2687",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: short seasonal branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "7.2 mi drawn against about 7.8 mi documented (Burleigh - Anglesea 4.8 + Holly Beach extension 3, Fowler line 86 / Wikipedia). Real-traced on the OSM \"Wildwood Branch\" and New Jersey Avenue grades (old_railway_operator=\"PRSL (PRR)\"). Approximated with straight lines: junction with the Cape May line 0.77 mi; Grassy Sound crossing (39.031 N - 39.002 N) 2.09 mi. Holly Beach end placed at about 38.979 N (approximate).",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1895,
+      "headway_min": 120,
+      "note": "West Jersey Railroad from its acquisition of the Anglesea Railroad on 23 May 1888, Wildwood Junction (Burleigh) - Anglesea - Holly Beach; Fowler cites an 1889 company timetable at Burleigh. Ends 1895 at the 4 May 1896 consolidation. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"Anglesea Railroad\" (23 May 1888); branchline.uk line 86 (1889t). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Anglesea_Railroad",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 86"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.85779,
+      39.049654
+     ],
+     [
+      -74.844352,
+      39.04587
+     ],
+     [
+      -74.834465,
+      39.041848
+     ],
+     [
+      -74.832783,
+      39.040808
+     ],
+     [
+      -74.828823,
+      39.037568
+     ],
+     [
+      -74.82715,
+      39.036649
+     ],
+     [
+      -74.8119,
+      39.0307
+     ],
+     [
+      -74.8013,
+      39.0016
+     ],
+     [
+      -74.811052,
+      38.993606
+     ],
+     [
+      -74.814171,
+      38.991781
+     ],
+     [
+      -74.831607,
+      38.979
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Anglesea Branch",
+    "id": "wjs-anglesea-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: short seasonal branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "7.2 mi drawn against about 7.8 mi documented (Burleigh - Anglesea 4.8 + Holly Beach extension 3, Fowler line 86 / Wikipedia). Real-traced on the OSM \"Wildwood Branch\" and New Jersey Avenue grades (old_railway_operator=\"PRSL (PRR)\"). Approximated with straight lines: junction with the Cape May line 0.77 mi; Grassy Sound crossing (39.031 N - 39.002 N) 2.09 mi. Holly Beach end placed at about 38.979 N (approximate).",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1921,
+      "headway_min": 90,
+      "note": "West Jersey and Seashore from 4 May 1896, Wildwood Junction - Grassy Sound - Anglesea - Wildwood - Holly Beach. Confirmed by \"West Jersey & Seashore Railroad, Anglesea Branch\" schedules in the Five Mile Beach Journal (Sept 1898 - June 1899 and July 1902 - January 1903: Philadelphia - Holly Beach expresses and Cape May Court House locals, three to four each way) and Fowler's 1907 company timetable (Grassy Sound). END [OPEN]: 1921 is the last CONFIRMED year, not a known end - the Five Mile Beach Weekly Journal of 3 June 1921 (p.6) has a train pulling in \"to the Wildwood station of either the Reading or Pennsylvania railroad\". Wikipedia says the line was abandoned after the PRSL formed in 1933 and ICC Docket 9759 (Dec 1932) concerned its abandonment, but those are abandonment statements, not a dated last train. Service probably lasted longer; do not extend without evidence. Headway is an estimate from the 1898-99 schedules.",
+      "sources": [
+       "Segment-level: Five Mile Beach Journal 30 Sep 1898 - 9 Jun 1899 and Jul 1902 - Jan 1903 (loc.gov sn90063040); Five Mile Beach Weekly Journal 3 Jun 1921 p.6 (loc.gov sn90063041); branchline.uk line 86 (1907t); Wikipedia \"Anglesea Railroad\". End NOT SOURCED ([OPEN]).",
+       "https://www.loc.gov/item/sn90063040/",
+       "https://www.loc.gov/item/sn90063041/",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 86",
+       "https://en.wikipedia.org/wiki/Anglesea_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.85779,
+      39.049654
+     ],
+     [
+      -74.844352,
+      39.04587
+     ],
+     [
+      -74.834465,
+      39.041848
+     ],
+     [
+      -74.832783,
+      39.040808
+     ],
+     [
+      -74.828823,
+      39.037568
+     ],
+     [
+      -74.82715,
+      39.036649
+     ],
+     [
+      -74.8119,
+      39.0307
+     ],
+     [
+      -74.8013,
+      39.0016
+     ],
+     [
+      -74.811052,
+      38.993606
+     ],
+     [
+      -74.814171,
+      38.991781
+     ],
+     [
+      -74.831607,
+      38.979
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Holly Beach – Wildwood Crest",
+    "id": "wjs-wildwood-crest-extension",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate, unsourced: short seasonal extension.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 0.2-degree boxes), routed with opstrace.py on 2026-10-21 preferring ways tagged old_railway_operator=\"PRSL (PRR)\" / \"PRR\" (the grade's later owner's tag - the West Jersey line itself) and untagged rail; ways tagged for the Reading, PRSL (Reading), CNJ or PATCO excluded or penalised. OpenHistoricalMap queried (overpass-api.openhistoricalmap.org): no West Jersey ways in this area.",
+    "geometry_quality": "0.6 mi drawn; Fowler line 86 puts Wildwood Crest at mp 81.3 (Anglesea 78.1). Real-traced on the south end of the New Jersey Avenue grade (old_railway_operator=\"PRSL (PRR)\"), which OSM ends at about 38.973 N; the start at the Wildwood / Wildwood Crest line is approximate. No straight-line leg.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1921,
+      "headway_min": 90,
+      "note": "The West Jersey and Seashore's Anglesea Branch beyond Holly Beach to Wildwood Crest (Fowler line 86, mp 81.3). Drawn from 1907 only, the year of the first dated evidence (Fowler: \"Wildwood Crest 1907t\", a company timetable); the extension's opening date was not found, so earlier years are withheld rather than assumed from the branch's 1896 start. END [OPEN]: 1921 is the last CONFIRMED year, not a known end - the Five Mile Beach Weekly Journal of 3 June 1921 (p.6) has a train pulling in \"to the Wildwood station of either the Reading or Pennsylvania railroad\". Wikipedia says the line was abandoned after the PRSL formed in 1933 and ICC Docket 9759 (Dec 1932) concerned its abandonment, but those are abandonment statements, not a dated last train. Service probably lasted longer; do not extend without evidence. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: branchline.uk line 86 (Wildwood Crest 1907t); Five Mile Beach Weekly Journal 3 Jun 1921 p.6 (loc.gov sn90063041) for the branch. Start is the first confirmed year, not an opening date; end NOT SOURCED ([OPEN]). Headway not sourced.",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 86",
+       "https://www.loc.gov/item/sn90063041/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.831607,
+      38.979
+     ],
+     [
+      -74.839566,
+      38.973166
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Atlantic City – Longport",
+    "id": "wjs-atlantic-city-longport",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate, unsourced: beach line with stops at every avenue.",
+    "geometry_source": "Hand-placed points (no trace possible): Atlantic City (Tennessee Ave, approximate) - Chelsea - Ventnor - Margate - Longport town centres.",
+    "geometry_quality": "5.9 mi drawn against about 7 mi documented (Fowler line 121). ENTIRELY APPROXIMATED with straight lines between approximate points: Atlantic City (Tennessee Ave) - Chelsea 1.5 mi, Chelsea - Ventnor 1.3 mi, Ventnor - Margate 1.6 mi, Margate - Longport 1.5 mi. The beach line is gone and its street alignment (trains \"stopped at all avenues\") is not mapped in OSM or OpenHistoricalMap; the drawn line only indicates the corridor down Absecon Island.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1897,
+      "headway_min": 60,
+      "note": "West Jersey and Seashore from 4 May 1896 on the ex-Camden and Atlantic beach line, Atlantic City (Tennessee Ave) - Chelsea - Ventnor - South Atlantic City (Margate) - Longport. Fowler line 121 (\"ex South Atlantic City Branch of West Jersey RR\") confirms an 1897 company timetable, \"trains stopped at all avenues\". END [OPEN]: 1897 is the last CONFIRMED WJ&S year, not a known end; when the Atlantic City and Shore took the line over and electrified it is not dated in anything researched. Do not extend without evidence. The C&A years (to 1895) belong to camden_and_atlantic_railroad.geojson (dataset PR #108). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: branchline.uk line 121 (1897t; 1900 map); research/branches/camden_and_atlantic_railroad.txt. End NOT SOURCED ([OPEN]). Headway not sourced.",
+       "branchline.uk New Jersey file newjerseyrrs.pdf (SL214, 10.06.25), line 121"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.431,
+      39.36
+     ],
+     [
+      -74.456,
+      39.35
+     ],
+     [
+      -74.4774,
+      39.3405
+     ],
+     [
+      -74.5035,
+      39.3279
+     ],
+     [
+      -74.5249,
+      39.3143
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "West Jersey and Seashore Railroad",
+    "line": "West Jersey and Seashore: Medford Branch",
+    "id": "wjs-medford-branch",
+    "color": "#A5BF26",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, unsourced: rural branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fragments of the lifted grade tagged old_railway_operator=\"PRSL (PRR)\" chained in order with labelled straight joins (opstrace Graph routing could not join the fragments), 2026-10-21. OpenHistoricalMap has no ways here.",
+    "geometry_quality": "11.1 mi drawn against 11.7 mi documented (Haddonfield - Medford, Fowler line 73). Traced from OSM ways tagged old_railway_operator=\"PRSL (PRR)\" near Haddonfield, at Kresson / Marlton, and east of Marlton to Medford - the last section on ways that OSM tags as BOTH the abandoned grade and the Route 70 carriageway (a LATER road built on or beside the grade). Approximated with straight lines, 4.35 mi in all: Haddonfield station to the grade 0.22 mi; Haddonfield - Ellisburg (75.027 W - 74.998 W) 1.53 mi; Kresson - Marlton (74.972 W - 74.926 W) 2.46 mi; joins of 0.04 and 0.1 mi. The Haddonfield start is on the Camden and Atlantic main line (drawn in other layers).",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1927,
+      "headway_min": 180,
+      "note": "West Jersey and Seashore from 4 May 1896, Haddonfield - Marlton - Medford (ex-Philadelphia, Marlton and Medford; leased to the Camden and Atlantic 1885-1895, whose years belong to dataset PR #108). The last passenger train ran 24 September 1927 (Wikipedia WJ&S; sjrail). The line was officially taken out of service 2 November 1931 - freight only in between, not drawn. Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: Wikipedia \"West Jersey and Seashore Railroad\" (PM&M section: 24 Sep 1927; 2 Nov 1931); sjrail.com timeline. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/West_Jersey_and_Seashore_Railroad",
+       "http://www.sjrail.com/PRSL/Timeline/Timeline.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.0341,
+      39.8928
+     ],
+     [
+      -75.03289,
+      39.88978
+     ],
+     [
+      -75.031692,
+      39.888501
+     ],
+     [
+      -75.029348,
+      39.887528
+     ],
+     [
+      -75.02828,
+      39.887262
+     ],
+     [
+      -75.026829,
+      39.887209
+     ],
+     [
+      -74.986968,
+      39.892838
+     ],
+     [
+      -74.972023,
+      39.893641
+     ],
+     [
+      -74.921601,
+      39.893776
+     ],
+     [
+      -74.883871,
+      39.8941
+     ],
+     [
+      -74.880014,
+      39.894532
+     ],
+     [
+      -74.852557,
+      39.898993
+     ],
+     [
+      -74.829836,
+      39.902129
+     ]
+    ]
+   }
+  }
+ ]
+}
