@@ -1,0 +1,1317 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Cornwall and Lebanon Railroad (Lebanon - Conewago, PA, 1883), its Mount Gretna Narrow Gauge (1889) and rifle-range spur, the same main line as the Pennsylvania Railroad's Lebanon Branch from July 1917, and the separate Cornwall Railroad (Lebanon - Cornwall - Mount Hope). One feature per drawable span x operator; the C&L / PRR Rule 4 split shares identical geometry. Research report: research/branches/cornwall_and_lebanon_railroad.txt (researched 2026-10-21).",
+  "sources": [
+   "https://lebtown.com/2022/03/28/how-a-railroad-rivalry-spurred-the-creation-of-penryn-park-cornwalls-answer-to-mount-gretna/",
+   "https://lebtown.com/2023/03/15/once-at-risk-the-cornwall-lebanon-railroad-station-is-a-historic-gem/",
+   "https://lebtown.com/2021/03/04/when-robert-colemans-two-foot-railway-snaked-through-the-hills-of-mount-gretna",
+   "https://lebtown.com/2026/09/09/who-knew-the-cornwall-western-railroad/",
+   "https://michaelfroio.com/blog/2013/05/02/conewago-and-the-lebanon-valley-gateway",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs1prr.pdf",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+   "https://en.wikipedia.org/wiki/Mount_Gretna_Narrow_Gauge_Railway",
+   "https://en.wikipedia.org/wiki/Lebanon_station_(Pennsylvania_Railroad)",
+   "https://en.wikipedia.org/wiki/Cornwall_Railroad",
+   "https://en.wikipedia.org/wiki/Lebanon_Valley_Rail_Trail",
+   "https://en.wikipedia.org/wiki/Mount_Gretna,_Pennsylvania",
+   "https://lebanonrailtrail.com/about/history/",
+   "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952)",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 2 Jan 1914, 'Mileage books good on C. & L. Railroad'",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Mar 1916 (A. D. Smith, president of the Cornwall and Lebanon Railroad Company)",
+   "https://chroniclingamerica.loc.gov/ -- Evening Public Ledger, 30 Jun 1916 (Guard regiments entrain at Colebrook on the Cornwall and Lebanon)",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 24 Mar 1917 (Superintendent A. D. Smith of the Cornwall and Lebanon)",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 10 May 1917 (K. W. Seagrist, auditor of the Cornwall and Lebanon Railroad Company)",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Jul 1917, 'Pennsy announces changes on Cornwall and Lebanon'",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Sep 1919 (passenger train on the Lebanon branch of the Pennsylvania Railroad to Mount Gretna Park)",
+   "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 30 Jul 1919 (D. A. Smith, superintendent of the Lebanon branch of the Philadelphia division)"
+  ],
+  "operator_split": "C&L main line split ONCE, at 1917: Cornwall and Lebanon 1883-1917, Pennsylvania Railroad from July 2 1917 (HT17a, the first source naming the PRR as operator - 'Lebanon Division' with a PRR superintendent), a year before the formal merger of April 15 1918 (MF13). Not splits (the C&L still ran its own trains): Coleman's creditors 1893, Pennsylvania Steel's two-thirds 1901, the PRR's March 12 1913 purchase from Lackawanna Steel / stock buying from 1913. Mount Gretna Narrow Gauge: operated by the C&L company, so C&L company and colour. Cornwall Railroad: no split (Bethlehem Steel 1923 was a stock purchase; the Reading came after passengers ended).",
+  "successor_conflict": "The research queue lists the C&L's successor as '>Reading'. The sources say the PENNSYLVANIA RAILROAD (MF13, LT22, LT23, WPL, WPNG, HT17a, HT19a). The Reading connection belongs to the separate Cornwall Railroad (leased by the Reading 1964, bought 1968 - WPC), not the C&L. No Reading-coloured feature is drawn for either road in any year.",
+  "freight_only_audit": "Nothing freight-only drawn (Rule 1). Excluded: the PRR Lebanon Branch after its (undated) passenger end to Hurricane Agnes 1972 and abandonment 1976/1979 (Feb 1952 Guide daggers every branch station freight-only); the Cornwall Railroad 1929-1964/2000s ('freight service only', Feb 1952 Guide) and its Reading / Conrail / R.J. Corman years; C&L ore spurs into the Cornwall ore banks; the Cornwall & Western (chartered 1901, never built).",
+  "horsecar_audit": "Nothing removed: every line here was steam-worked from opening, including the 2 ft gauge (WPNG).",
+  "omitted": "Report block [4] - Cornwall Railroad through trains Mount Hope - Manheim - Lancaster over Reading track, a single 1927 [ANCHOR] year (Fowler b=1927t) - NOT drawn, as the report recommends; it is a note on the Cornwall Railroad segment. The Colebrook Valley Railroad (1883-86) never ran as a separate operator in any source, so it has no feature.",
+  "not_yet_sourced": [
+   "[OPEN] PRR Lebanon Branch passenger end: drawn to 1919, the last CONFIRMED year (HT19a, Aug 31 1919). Conflict: LVRT says 1928 (in a sentence also wrong about the PRR purchase, and the year the neighbouring Cornwall Railroad's passengers ended - possible conflation); LT23 says 'the 1930s' (no year); the Feb 1952 Official Guide shows every branch station freight-only. Leads: a 1920s-30s Official Guide or PRR public timetable (Fowler's 1931t letter is absent from every branch station - suggestive, not proof), a Lebanon Daily News 'last train' story, PUC/ICC filings, Jack Bitner's Mount Gretna histories. Do not extend without evidence.",
+   "C&L start: did the October 1883 opening carry passengers at once, or from 1884 (Mount Gretna Park)? First dated timetable 1885.",
+   "Mount Gretna Narrow Gauge end: Governor Dick line closed after the 1894 or the 1896 season (LT21 'sources differ'; WPNG 1896); drawn to 1894.",
+   "Rifle-range spur: end 1915 (LT21, WPNG lead) vs summer 1916 (WPNG history); and the drawn geometry's identification as the spur is inferred from its MP 0.75 junction and length, not from any tag or map - the range itself was not located.",
+   "Cornwall Railroad: passengers before 1883? The Cornwall - Mount Hope section is only proven from 1885/1893 but is drawn from 1884 with the rest. Track ownership Mount Hope - Manheim (WPC vs Fowler). The Lebanon - Cornwall alignment (drawn as a chord) and the Reading station site in Lebanon were not located; OpenHistoricalMap ways 205268762/205268763 at Miners Village - Cornwall (1884-05 to 1930/1932, unnamed) may be part of either road and were not used.",
+   "headway_min and avg_speed_kmh on every feature are estimates; no frequency was found for any era, regular or seasonal.",
+   "1913 seller (Lackawanna Steel, MF13) vs Pennsylvania Steel's 1901 two-thirds (LTW); Baer's PRR Chronology (Hagley) would settle 1913/1918."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Cornwall and Lebanon",
+    "line": "Cornwall and Lebanon: Lebanon – Conewago",
+    "id": "cornwall-and-lebanon-lebanon-conewago",
+    "color": "#9880C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no C&L running time was found for any year; a figure typical of a short steam branch with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): the Conewago Industrial Track, Conewago Recreation Trail and Lebanon Valley Rail Trail ways, all tagged old_railway_operator=PRR + note:old_railway_operator='Cornwall and Lebanon' (e.g. ways 11925599, 675179047, 1352801850, 22913008, 422015939, 143308656, 146097376, 1018379541, 145891999), routed with opstrace.py (note:old_railway_operator counted as the operator tag), Douglas-Peucker 8 m + trim_reversals. Lebanon end from OpenHistoricalMap (ODbL) ways 205268758 and 205268760 (railway=rail, start_date 1883-10-01 sourced to Coverdale & Colpitts, end_date 1974-05).",
+    "geometry_quality": "Lebanon - Conewago: 21.84 mi drawn against 21.5 mi documented (Fowler PRR section 22 mileposts, Conewago 0.0 - Lebanon 21.5), +1.6 %. No approximated (straight-line) legs. 20.61 mi real-traced on OSM ways that name the Cornwall and Lebanon in note:old_railway_operator (opstrace mileage by operator: 'C&L' 20.6 mi, nothing else); the OSM trail stops at 40.3297 N in south Lebanon, so the last 1.23 mi into the C&L station at North 8th Street are OpenHistoricalMap ways 205268758/205268760 (joined 57 m from the OSM end). Waypoint fit: Conewago 0.3 km (the drawn line starts on the Conewago Industrial Track 0.3 km east of the PRR Main Line junction), Bellaire 0.2, Lawn 0.1, Colebrook 0.2, Mount Gretna 0.0, Cornwall 0.1, Lebanon station on the line. Era: the drawn line is the abandoned grade, i.e. the last (Penn Central) alignment; no relocation of the C&L is known, but none was checked for, and the PRR's 1917 double-tracking and new sidings (HT17a) are not shown. The SAH Archipedia's 'seventeen-mile' figure (via search summary, report) disagrees with Fowler; the trace supports Fowler's 21.5.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1917,
+      "headway_min": 240,
+      "note": "Cornwall and Lebanon Railroad, Lebanon (8th St station, built 1885) - North Cornwall - Cornwall - Mount Gretna - Colebrook - Lawn - Bellaire - Conewago (PRR Main Line). Opened October 1883 with the associated Colebrook Valley Railroad, merged into the C&L in 1886 (LT22); incorporated 1883 by Robert H. Coleman (LT23); 'Mount Gretna' in print Sept 21 1883 (WPMG). The start year is approximate: no source says the October 1883 opening carried passengers from the first day, and the first DATED public timetable is the C&L's of 1885 (Fowler, 'Miners Village 1885t'). Steam from opening - Rule 5 trims nothing. Regular year-round local trains plus heavy seasonal excursion and troop traffic to Mount Gretna Park (1884), the National Guard encampment (from 1885) and the Chautauqua; from Feb 1 1914 PRR mileage books were honoured on the C&L (HT14); Guard regiments entrained at Colebrook for the Mexican border in June 1916 (EPL16). The C&L ran its own trains throughout - under Coleman, his creditors after the 1893 Panic, Pennsylvania Steel / Lackawanna Steel majority (1901-13) and PRR stock control from 1913 (MF13, LT23, LTW) - with its own president/superintendent A. D. Smith and auditor (HT16, HT17b, HT17c), so none of those is a split. Ends 1917 because the operator changes, not service: HT17a (July 2 1917) places 'the Cornwall and Lebanon branch of the Pennsy' under PRR control as its Lebanon Division; formal merger April 15 1918 (MF13). Service continues as the Pennsylvania Railroad: Lebanon Branch feature. headway_min 240 is an ESTIMATE - no frequency was found for any C&L year, regular or seasonal.",
+      "sources": [
+       "Segment-level: dates from LT22 (Oct 1883 opening), LT23 (1883 incorporation), WPMG, Fowler PRR section 22 (1885 C&L timetable cite), and the operator change from HT17a (July 1917); continued C&L operation 1913-1917 from HT14, HT16, HT17b, HT17c; stock purchases from MF13, LT23, LTW. headway_min is NOT SOURCED (estimate).",
+       "https://lebtown.com/2022/03/28/how-a-railroad-rivalry-spurred-the-creation-of-penryn-park-cornwalls-answer-to-mount-gretna/",
+       "https://lebtown.com/2023/03/15/once-at-risk-the-cornwall-lebanon-railroad-station-is-a-historic-gem/",
+       "https://en.wikipedia.org/wiki/Mount_Gretna,_Pennsylvania",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs1prr.pdf",
+       "https://michaelfroio.com/blog/2013/05/02/conewago-and-the-lebanon-valley-gateway",
+       "https://lebtown.com/2026/09/09/who-knew-the-cornwall-western-railroad/",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 2 Jan 1914, 'Mileage books good on C. & L. Railroad'",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Mar 1916 (A. D. Smith, president of the Cornwall and Lebanon Railroad Company)",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 24 Mar 1917 (Superintendent A. D. Smith of the Cornwall and Lebanon)",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 10 May 1917 (K. W. Seagrist, auditor of the Cornwall and Lebanon Railroad Company)",
+       "https://chroniclingamerica.loc.gov/ -- Evening Public Ledger, 30 Jun 1916 (Guard regiments entrain at Colebrook on the Cornwall and Lebanon)",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Jul 1917, 'Pennsy announces changes on Cornwall and Lebanon'"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.665902,
+      40.159232
+     ],
+     [
+      -76.665192,
+      40.159224
+     ],
+     [
+      -76.664059,
+      40.159004
+     ],
+     [
+      -76.661469,
+      40.157922
+     ],
+     [
+      -76.659771,
+      40.157498
+     ],
+     [
+      -76.657789,
+      40.157436
+     ],
+     [
+      -76.655748,
+      40.157849
+     ],
+     [
+      -76.6468607,
+      40.1618713
+     ],
+     [
+      -76.6435817,
+      40.1632299
+     ],
+     [
+      -76.636259,
+      40.166881
+     ],
+     [
+      -76.633778,
+      40.168695
+     ],
+     [
+      -76.6240071,
+      40.1780532
+     ],
+     [
+      -76.6235131,
+      40.1783557
+     ],
+     [
+      -76.6219248,
+      40.1788578
+     ],
+     [
+      -76.618444,
+      40.178847
+     ],
+     [
+      -76.61693,
+      40.17923
+     ],
+     [
+      -76.604593,
+      40.185782
+     ],
+     [
+      -76.601279,
+      40.18712
+     ],
+     [
+      -76.5989679,
+      40.1877308
+     ],
+     [
+      -76.5968294,
+      40.1881022
+     ],
+     [
+      -76.586792,
+      40.18899
+     ],
+     [
+      -76.585328,
+      40.189265
+     ],
+     [
+      -76.582672,
+      40.190159
+     ],
+     [
+      -76.576871,
+      40.1929067
+     ],
+     [
+      -76.5757367,
+      40.193232
+     ],
+     [
+      -76.569334,
+      40.194569
+     ],
+     [
+      -76.5675536,
+      40.1950792
+     ],
+     [
+      -76.565653,
+      40.195825
+     ],
+     [
+      -76.563427,
+      40.196929
+     ],
+     [
+      -76.5610792,
+      40.1985057
+     ],
+     [
+      -76.559297,
+      40.2001093
+     ],
+     [
+      -76.5369418,
+      40.2241726
+     ],
+     [
+      -76.5357494,
+      40.225731
+     ],
+     [
+      -76.5346029,
+      40.228659
+     ],
+     [
+      -76.5338287,
+      40.2297372
+     ],
+     [
+      -76.5323379,
+      40.230914
+     ],
+     [
+      -76.5272133,
+      40.2335562
+     ],
+     [
+      -76.525594,
+      40.2341835
+     ],
+     [
+      -76.5129849,
+      40.2379456
+     ],
+     [
+      -76.510233,
+      40.2385572
+     ],
+     [
+      -76.5044114,
+      40.2390643
+     ],
+     [
+      -76.5021876,
+      40.2396195
+     ],
+     [
+      -76.5004647,
+      40.2404117
+     ],
+     [
+      -76.4989995,
+      40.2414756
+     ],
+     [
+      -76.4975577,
+      40.243192
+     ],
+     [
+      -76.4958833,
+      40.2467525
+     ],
+     [
+      -76.494587,
+      40.247853
+     ],
+     [
+      -76.493265,
+      40.248406
+     ],
+     [
+      -76.487508,
+      40.249967
+     ],
+     [
+      -76.47644,
+      40.251144
+     ],
+     [
+      -76.474418,
+      40.251557
+     ],
+     [
+      -76.4728063,
+      40.2520644
+     ],
+     [
+      -76.4721155,
+      40.2523717
+     ],
+     [
+      -76.470265,
+      40.2536016
+     ],
+     [
+      -76.466396,
+      40.2576335
+     ],
+     [
+      -76.4645915,
+      40.2587376
+     ],
+     [
+      -76.4629905,
+      40.2592211
+     ],
+     [
+      -76.4604479,
+      40.2594496
+     ],
+     [
+      -76.4562999,
+      40.2590057
+     ],
+     [
+      -76.4537143,
+      40.2589218
+     ],
+     [
+      -76.4495452,
+      40.2597518
+     ],
+     [
+      -76.4456159,
+      40.259927
+     ],
+     [
+      -76.4448299,
+      40.2600834
+     ],
+     [
+      -76.4433603,
+      40.260557
+     ],
+     [
+      -76.4421045,
+      40.2612644
+     ],
+     [
+      -76.4386977,
+      40.2646001
+     ],
+     [
+      -76.4374431,
+      40.265384
+     ],
+     [
+      -76.4364578,
+      40.2656413
+     ],
+     [
+      -76.4333796,
+      40.265752
+     ],
+     [
+      -76.4319954,
+      40.2660398
+     ],
+     [
+      -76.4308238,
+      40.2665633
+     ],
+     [
+      -76.4295145,
+      40.2673861
+     ],
+     [
+      -76.4284738,
+      40.2678241
+     ],
+     [
+      -76.4275056,
+      40.2680221
+     ],
+     [
+      -76.4225529,
+      40.2684371
+     ],
+     [
+      -76.4208054,
+      40.2689451
+     ],
+     [
+      -76.41944,
+      40.2696928
+     ],
+     [
+      -76.41593,
+      40.2722974
+     ],
+     [
+      -76.4141465,
+      40.2740069
+     ],
+     [
+      -76.4120675,
+      40.2762756
+     ],
+     [
+      -76.4092858,
+      40.2788554
+     ],
+     [
+      -76.4080061,
+      40.2813074
+     ],
+     [
+      -76.4074626,
+      40.2832668
+     ],
+     [
+      -76.4086167,
+      40.2927392
+     ],
+     [
+      -76.4089143,
+      40.2966616
+     ],
+     [
+      -76.4096088,
+      40.3016044
+     ],
+     [
+      -76.4106356,
+      40.3066489
+     ],
+     [
+      -76.4110184,
+      40.3075756
+     ],
+     [
+      -76.4118094,
+      40.3110957
+     ],
+     [
+      -76.4166749,
+      40.3243722
+     ],
+     [
+      -76.417172,
+      40.3251178
+     ],
+     [
+      -76.4181992,
+      40.3262228
+     ],
+     [
+      -76.422747,
+      40.329694
+     ],
+     [
+      -76.4245595,
+      40.3312388
+     ],
+     [
+      -76.4282633,
+      40.3338785
+     ],
+     [
+      -76.4301339,
+      40.3356687
+     ],
+     [
+      -76.4305705,
+      40.3366042
+     ],
+     [
+      -76.4308358,
+      40.3383785
+     ],
+     [
+      -76.4303423,
+      40.3397278
+     ],
+     [
+      -76.4289905,
+      40.3412039
+     ],
+     [
+      -76.4281858,
+      40.3415841
+     ],
+     [
+      -76.4262546,
+      40.3429416
+     ],
+     [
+      -76.4257074,
+      40.3432032
+     ],
+     [
+      -76.4251925,
+      40.3432932
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Lebanon Branch",
+    "id": "prr-lebanon-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no PRR Lebanon Branch running time was found",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): the Conewago Industrial Track, Conewago Recreation Trail and Lebanon Valley Rail Trail ways, all tagged old_railway_operator=PRR + note:old_railway_operator='Cornwall and Lebanon' (e.g. ways 11925599, 675179047, 1352801850, 22913008, 422015939, 143308656, 146097376, 1018379541, 145891999), routed with opstrace.py (note:old_railway_operator counted as the operator tag), Douglas-Peucker 8 m + trim_reversals. Lebanon end from OpenHistoricalMap (ODbL) ways 205268758 and 205268760 (railway=rail, start_date 1883-10-01 sourced to Coverdale & Colpitts, end_date 1974-05). Identical geometry to cornwall-and-lebanon-lebanon-conewago (Rule 4 ownership split).",
+    "geometry_quality": "Lebanon - Conewago: 21.84 mi drawn against 21.5 mi documented (Fowler PRR section 22 mileposts, Conewago 0.0 - Lebanon 21.5), +1.6 %. No approximated (straight-line) legs. 20.61 mi real-traced on OSM ways that name the Cornwall and Lebanon in note:old_railway_operator (opstrace mileage by operator: 'C&L' 20.6 mi, nothing else); the OSM trail stops at 40.3297 N in south Lebanon, so the last 1.23 mi into the C&L station at North 8th Street are OpenHistoricalMap ways 205268758/205268760 (joined 57 m from the OSM end). Waypoint fit: Conewago 0.3 km (the drawn line starts on the Conewago Industrial Track 0.3 km east of the PRR Main Line junction), Bellaire 0.2, Lawn 0.1, Colebrook 0.2, Mount Gretna 0.0, Cornwall 0.1, Lebanon station on the line. Era: the drawn line is the abandoned grade, i.e. the last (Penn Central) alignment; no relocation of the C&L is known, but none was checked for, and the PRR's 1917 double-tracking and new sidings (HT17a) are not shown. The SAH Archipedia's 'seventeen-mile' figure (via search summary, report) disagrees with Fowler; the trace supports Fowler's 21.5.",
+    "segments": [
+     {
+      "start": 1917,
+      "end": 1919,
+      "headway_min": 240,
+      "note": "The former Cornwall and Lebanon as the PRR's Lebanon Branch, Lebanon - Cornwall - Edisonville (Midway until 1925) - Mount Gretna - Colebrook - Lawn - Conewago. PRR operating control announced July 2 1917 (HT17a: 'Lebanon Division', PRR superintendent; parts to be double-tracked and sidings added for the Mt. Gretna camp business); formal merger April 15 1918 (MF13); by July 1919 'the Lebanon branch of the Philadelphia division' (HT19b). END IS [OPEN]: passenger service is confirmed to 1919 by HT19a (a passenger train 'on the Lebanon branch of the Pennsylvania Railroad to Mount Gretna Park', Aug 31 1919), the latest contemporary positive evidence found. This is the last CONFIRMED year, not a known end - no source that could be verified dates when passenger service actually stopped. Secondary sources say 1928 (LVRT, a sentence also wrong about the PRR purchase date and coinciding with the neighbouring Cornwall Railroad's Jan 1929 end) or 'the 1930s' (LT23, no year); the Feb 1952 Official Guide daggers every branch station freight-only (G52), so it ended before 1951 at the latest. Do not extend without evidence. Troop trains to Mount Gretna continued into the 1930s (Evening Star 14 Jul 1935) - specials, not public service. Freight continued (PRR, Penn Central 1968) until Hurricane Agnes in 1972; abandoned 1976 (LT22) or 1979 (WPT); now the Lebanon Valley Rail Trail. headway_min 240 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: start from HT17a (PRR control July 1917) and MF13 (merger Apr 15 1918); end = last confirmed passenger year from HT19a (Aug 31 1919) [OPEN]; HT19b for the Philadelphia Division branch; end conflict LVRT (1928) / LT23 (1930s) / G52 (freight-only by Feb 1952) recorded, not resolved. headway_min is NOT SOURCED (estimate).",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Jul 1917, 'Pennsy announces changes on Cornwall and Lebanon'",
+       "https://michaelfroio.com/blog/2013/05/02/conewago-and-the-lebanon-valley-gateway",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 3 Sep 1919 (passenger train on the Lebanon branch of the Pennsylvania Railroad to Mount Gretna Park)",
+       "https://chroniclingamerica.loc.gov/ -- Harrisburg Telegraph, 30 Jul 1919 (D. A. Smith, superintendent of the Lebanon branch of the Philadelphia division)",
+       "https://lebanonrailtrail.com/about/history/",
+       "https://lebtown.com/2023/03/15/once-at-risk-the-cornwall-lebanon-railroad-station-is-a-historic-gem/",
+       "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952) -- station index lines 316974, 266830, 305272, 268121-268123, 276228-276234 (daggered 'for freight only')",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs1prr.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.665902,
+      40.159232
+     ],
+     [
+      -76.665192,
+      40.159224
+     ],
+     [
+      -76.664059,
+      40.159004
+     ],
+     [
+      -76.661469,
+      40.157922
+     ],
+     [
+      -76.659771,
+      40.157498
+     ],
+     [
+      -76.657789,
+      40.157436
+     ],
+     [
+      -76.655748,
+      40.157849
+     ],
+     [
+      -76.6468607,
+      40.1618713
+     ],
+     [
+      -76.6435817,
+      40.1632299
+     ],
+     [
+      -76.636259,
+      40.166881
+     ],
+     [
+      -76.633778,
+      40.168695
+     ],
+     [
+      -76.6240071,
+      40.1780532
+     ],
+     [
+      -76.6235131,
+      40.1783557
+     ],
+     [
+      -76.6219248,
+      40.1788578
+     ],
+     [
+      -76.618444,
+      40.178847
+     ],
+     [
+      -76.61693,
+      40.17923
+     ],
+     [
+      -76.604593,
+      40.185782
+     ],
+     [
+      -76.601279,
+      40.18712
+     ],
+     [
+      -76.5989679,
+      40.1877308
+     ],
+     [
+      -76.5968294,
+      40.1881022
+     ],
+     [
+      -76.586792,
+      40.18899
+     ],
+     [
+      -76.585328,
+      40.189265
+     ],
+     [
+      -76.582672,
+      40.190159
+     ],
+     [
+      -76.576871,
+      40.1929067
+     ],
+     [
+      -76.5757367,
+      40.193232
+     ],
+     [
+      -76.569334,
+      40.194569
+     ],
+     [
+      -76.5675536,
+      40.1950792
+     ],
+     [
+      -76.565653,
+      40.195825
+     ],
+     [
+      -76.563427,
+      40.196929
+     ],
+     [
+      -76.5610792,
+      40.1985057
+     ],
+     [
+      -76.559297,
+      40.2001093
+     ],
+     [
+      -76.5369418,
+      40.2241726
+     ],
+     [
+      -76.5357494,
+      40.225731
+     ],
+     [
+      -76.5346029,
+      40.228659
+     ],
+     [
+      -76.5338287,
+      40.2297372
+     ],
+     [
+      -76.5323379,
+      40.230914
+     ],
+     [
+      -76.5272133,
+      40.2335562
+     ],
+     [
+      -76.525594,
+      40.2341835
+     ],
+     [
+      -76.5129849,
+      40.2379456
+     ],
+     [
+      -76.510233,
+      40.2385572
+     ],
+     [
+      -76.5044114,
+      40.2390643
+     ],
+     [
+      -76.5021876,
+      40.2396195
+     ],
+     [
+      -76.5004647,
+      40.2404117
+     ],
+     [
+      -76.4989995,
+      40.2414756
+     ],
+     [
+      -76.4975577,
+      40.243192
+     ],
+     [
+      -76.4958833,
+      40.2467525
+     ],
+     [
+      -76.494587,
+      40.247853
+     ],
+     [
+      -76.493265,
+      40.248406
+     ],
+     [
+      -76.487508,
+      40.249967
+     ],
+     [
+      -76.47644,
+      40.251144
+     ],
+     [
+      -76.474418,
+      40.251557
+     ],
+     [
+      -76.4728063,
+      40.2520644
+     ],
+     [
+      -76.4721155,
+      40.2523717
+     ],
+     [
+      -76.470265,
+      40.2536016
+     ],
+     [
+      -76.466396,
+      40.2576335
+     ],
+     [
+      -76.4645915,
+      40.2587376
+     ],
+     [
+      -76.4629905,
+      40.2592211
+     ],
+     [
+      -76.4604479,
+      40.2594496
+     ],
+     [
+      -76.4562999,
+      40.2590057
+     ],
+     [
+      -76.4537143,
+      40.2589218
+     ],
+     [
+      -76.4495452,
+      40.2597518
+     ],
+     [
+      -76.4456159,
+      40.259927
+     ],
+     [
+      -76.4448299,
+      40.2600834
+     ],
+     [
+      -76.4433603,
+      40.260557
+     ],
+     [
+      -76.4421045,
+      40.2612644
+     ],
+     [
+      -76.4386977,
+      40.2646001
+     ],
+     [
+      -76.4374431,
+      40.265384
+     ],
+     [
+      -76.4364578,
+      40.2656413
+     ],
+     [
+      -76.4333796,
+      40.265752
+     ],
+     [
+      -76.4319954,
+      40.2660398
+     ],
+     [
+      -76.4308238,
+      40.2665633
+     ],
+     [
+      -76.4295145,
+      40.2673861
+     ],
+     [
+      -76.4284738,
+      40.2678241
+     ],
+     [
+      -76.4275056,
+      40.2680221
+     ],
+     [
+      -76.4225529,
+      40.2684371
+     ],
+     [
+      -76.4208054,
+      40.2689451
+     ],
+     [
+      -76.41944,
+      40.2696928
+     ],
+     [
+      -76.41593,
+      40.2722974
+     ],
+     [
+      -76.4141465,
+      40.2740069
+     ],
+     [
+      -76.4120675,
+      40.2762756
+     ],
+     [
+      -76.4092858,
+      40.2788554
+     ],
+     [
+      -76.4080061,
+      40.2813074
+     ],
+     [
+      -76.4074626,
+      40.2832668
+     ],
+     [
+      -76.4086167,
+      40.2927392
+     ],
+     [
+      -76.4089143,
+      40.2966616
+     ],
+     [
+      -76.4096088,
+      40.3016044
+     ],
+     [
+      -76.4106356,
+      40.3066489
+     ],
+     [
+      -76.4110184,
+      40.3075756
+     ],
+     [
+      -76.4118094,
+      40.3110957
+     ],
+     [
+      -76.4166749,
+      40.3243722
+     ],
+     [
+      -76.417172,
+      40.3251178
+     ],
+     [
+      -76.4181992,
+      40.3262228
+     ],
+     [
+      -76.422747,
+      40.329694
+     ],
+     [
+      -76.4245595,
+      40.3312388
+     ],
+     [
+      -76.4282633,
+      40.3338785
+     ],
+     [
+      -76.4301339,
+      40.3356687
+     ],
+     [
+      -76.4305705,
+      40.3366042
+     ],
+     [
+      -76.4308358,
+      40.3383785
+     ],
+     [
+      -76.4303423,
+      40.3397278
+     ],
+     [
+      -76.4289905,
+      40.3412039
+     ],
+     [
+      -76.4281858,
+      40.3415841
+     ],
+     [
+      -76.4262546,
+      40.3429416
+     ],
+     [
+      -76.4257074,
+      40.3432032
+     ],
+     [
+      -76.4251925,
+      40.3432932
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Cornwall Railroad",
+    "line": "Cornwall Railroad: Lebanon – Mount Hope",
+    "id": "cornwall-railroad-lebanon-mount-hope",
+    "color": "#C8C050",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no Cornwall Railroad running time was found",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways tagged old_railway_operator=Reading + note:old_railway_operator='Cornwall Railroad', chained by hand in Lebanon and routed with opstrace.py south of Cornwall; Reading Harrisburg Line way 145887485 for the Lebanon - Cornwall Junction trackage; three labelled straight-line legs. Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Lebanon - Mount Hope: 9.89 mi drawn against 11.5 mi documented (WPC; Fowler 11.8 Lebanon - Mount Hope; Lebanon - Cornwall 5.9 per the 1952 Guide and Fowler), -14 %: the shortfall is the chords below. APPROXIMATED (straight-line) legs, 6.23 mi in all: south end of the surviving Cornwall Railroad grade in south Lebanon (40.3303 N, 76.4237 W) - Cornwall 3.73 mi; Cornwall - Miners Village 1.04 mi; Miners Village - north end of the surviving grade south of Cornwall (40.2477 N, 76.3870 W) 1.46 mi. Between Lebanon and Cornwall the Cornwall Railroad ran close beside the C&L (the two roads shared station names - Midway/Edisonville, North Cornwall - G52), but OSM tags that corridor's trail as the C&L and no separate Cornwall Railroad grade is mapped, so it is drawn as a chord rather than on the C&L's line; 'Cornwall' and 'Miners Village' are Nominatim place points (borough administrative centroid / hamlet), not station sites. Real-traced: 1.24 mi in Lebanon on OSM ways tagged note:old_railway_operator='Cornwall Railroad' (27567447, 145887525, ... 146113568, 38492358; the last 0.1 mi of these runs along the C&L alignment), and 2.85 mi from the grade south of Cornwall to Mount Hope (OSM ways 868061519, 196813728, 196813739, 96672746, same tag; opstrace: 'Cornwall RR' 2.8 mi). READING TRACK: the first 0.87 mi, Lebanon - Cornwall Junction, are the Reading's Lebanon Valley main line (OSM Harrisburg Line way 145887485, today Norfolk Southern), because Cornwall Railroad passenger trains used the Reading station in Lebanon and reached it over the Reading from Cornwall Junction (Fowler, WPC). The Lebanon end is placed on the Reading main line at North 8th Street, beside the C&L station; the Reading passenger station itself was not located, so the endpoint may be a few hundred metres off. Mount Hope end: where the grade meets the Reading's Mount Hope Branch, 0.2 km from Nominatim's Mount Hope (Lancaster Co.) hamlet. Penryn Park was not located and is not a waypoint. Era: the grades drawn are the last (freight-era) alignments; no relocation was checked for.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1929,
+      "headway_min": 240,
+      "note": "Cornwall Railroad (the North Lebanon Railroad of 1850/1854-55, renamed April 5 1870; acquired the Cornwall & Mount Hope 1886 - WPC), Lebanon (Reading station) - Donaghmore - Midway - North Cornwall - Cornwall - Miners Village - Penryn Park - Mount Hope. A Coleman-family ore road that answered the C&L's Mount Gretna with its own Penryn Park (opened 1885), selling 2,500 round trips one Fourth of July; 'over 5 million passengers ... in 46 years' (LT22). Start 1884 is the earliest dated evidence, Fowler's 1884 Official Guide letter on Shaefferstown Road; LT22's 46-year arithmetic implies 1883, and whether the road carried passengers before 1883 was not established. The Cornwall - Mount Hope part is only proven from 1885 (Penryn Park traffic, LT22) / 1893 (Fowler's 1893 Guide letters), but is drawn with the rest of the line from 1884 - not split, because it is not traced separately. Ends with the last passenger train on January 29 1929 (WPC; LT22 'ended in 1929'); Fowler's 1927 timetable letter on every station confirms 1927. Trains ran over the Reading from Cornwall Junction into Lebanon, and by 1927 ran through beyond Mount Hope over Reading (Reading & Columbia) track to Manheim and Lancaster (Fowler) - that through running is noted here, not drawn (report block [4], a single 1927 [ANCHOR] year, which the report recommends against drawing). Bethlehem Steel's purchase (Dec 1 1923) was a stock purchase; the company kept running its trains - not a split. The Reading lease (1964) and purchase (1968) came after passengers ended and are not drawn. Freight only from 1929 (the Feb 1952 Guide: 'freight service only'); Cornwall - Mount Hope abandoned 1964 (LT22). headway_min 240 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: start from Fowler PA (5) section 384 (1884 Official Guide letter q); end from WPC (Jan 29 1929) and LT22, with Fowler's 1927t letters; freight-only after from G52 company entry (lines 21569-21581). headway_min is NOT SOURCED (estimate).",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Cornwall_Railroad",
+       "https://lebtown.com/2022/03/28/how-a-railroad-rivalry-spurred-the-creation-of-penryn-park-cornwalls-answer-to-mount-gretna/",
+       "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952) -- Cornwall Railroad company entry lines 21569-21581, 'freight service only'"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.4250325,
+      40.3432957
+     ],
+     [
+      -76.4236641,
+      40.3303214
+     ],
+     [
+      -76.4135296,
+      40.2769605
+     ],
+     [
+      -76.3985723,
+      40.2670368
+     ],
+     [
+      -76.3874023,
+      40.2480427
+     ],
+     [
+      -76.3898756,
+      40.2471626
+     ],
+     [
+      -76.418151,
+      40.236194
+     ],
+     [
+      -76.419005,
+      40.235779
+     ],
+     [
+      -76.419666,
+      40.235164
+     ],
+     [
+      -76.420017,
+      40.234549
+     ],
+     [
+      -76.420194,
+      40.232684
+     ],
+     [
+      -76.420552,
+      40.231731
+     ],
+     [
+      -76.42123,
+      40.231076
+     ],
+     [
+      -76.422858,
+      40.230079
+     ],
+     [
+      -76.423438,
+      40.229239
+     ],
+     [
+      -76.423502,
+      40.228719
+     ],
+     [
+      -76.423323,
+      40.228077
+     ],
+     [
+      -76.422326,
+      40.226892
+     ],
+     [
+      -76.42209,
+      40.226202
+     ],
+     [
+      -76.4225381,
+      40.2240191
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Cornwall and Lebanon",
+    "line": "Cornwall and Lebanon: Mount Gretna Narrow Gauge (Governor Dick)",
+    "id": "cornwall-and-lebanon-mount-gretna-narrow-gauge",
+    "color": "#9880C0",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 12,
+    "speed_source": "estimate, not sourced: a 2 ft gauge pleasure line climbing a hill; no running time found",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): ways 170684943, 138478599, 138478587 (railway=abandoned, designation='Mt Gretna Narrow Gauge', note:old_railway_operator='Cornwall and Lebanon'), joined by hand; Douglas-Peucker 8 m + trim_reversals. OpenHistoricalMap has no narrow-gauge ways here.",
+    "geometry_quality": "Mount Gretna - Governor Dick: 2.87 mi drawn against 4 mi documented (WPNG '4-mile'; Fowler PA (5) section 423, Governor Dick 4.), -28 %. APPROXIMATED (straight-line) legs: Mount Gretna C&L station - the rifle-range junction 0.75 mi (no grade mapped; the station end is a hand-placed point on the C&L at Mount Gretna, the C&L point nearest Mount Gretna borough, consistent with Fowler's MP 12.5 but not a located station site), plus a 199 m join across a gap between two OSM ways (40.2439 N, 76.4656 W). The rest is real-traced on OSM ways designated 'Mt Gretna Narrow Gauge' (170684943 east of its reversal, and the Dinkey Track Trail ways 138478599 and 138478587, wikidata Q16982267), including the hairpin below the summit, ending 0.17 km from Nominatim's Governor Dick Hill peak. The 1 mi shortfall suggests windings near the station and the summit loop (removed after 1896, WPNG) are not mapped. Lifted 1916; the trail is the only surviving trace. Not routed with opstrace: the three tagged ways were joined by hand.",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1894,
+      "headway_min": 60,
+      "note": "The Mount Gretna Narrow Gauge Railway, a 2 ft gauge pleasure line built by Robert H. Coleman and operated by the Cornwall and Lebanon Railroad Company (WPNG), from the C&L station at Mount Gretna past Lake Conewago to an observatory on Governor Dick. Built spring 1889, officially opened July 4 1889; 25-cent fare to Governor Dick; reportedly 36,000 visitors the first season (LT21, citing Jack Bitner). Eight Jackson & Sharp coaches (1889) and two observation cars (1890); steam (Forney and 4-4-0) throughout - Rule 5 trims nothing. Ends 1894, the last CONFIRMED year: the Governor Dick line closed at the end of the 1894 or the 1896 season ('sources differ', LT21; WPNG says the summit loop was removed after summer 1896). Drawn to 1894 only; 1895-1896 are possible but unproven. Seasonal (summer) service; headway_min 60 is an ESTIMATE - no frequency was found.",
+      "sources": [
+       "Segment-level: opening July 4 1889 and the 1894/1896 end conflict from LT21 (citing Bitner) and WPNG; operator from WPNG; mileage from Fowler PA (5) section 423. headway_min is NOT SOURCED (estimate).",
+       "https://lebtown.com/2021/03/04/when-robert-colemans-two-foot-railway-snaked-through-the-hills-of-mount-gretna",
+       "https://en.wikipedia.org/wiki/Mount_Gretna_Narrow_Gauge_Railway",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.4721,
+      40.2524
+     ],
+     [
+      -76.4776866,
+      40.2423849
+     ],
+     [
+      -76.4768824,
+      40.2417372
+     ],
+     [
+      -76.4766054,
+      40.2402164
+     ],
+     [
+      -76.4760385,
+      40.2398665
+     ],
+     [
+      -76.4743463,
+      40.2400321
+     ],
+     [
+      -76.4729382,
+      40.2411741
+     ],
+     [
+      -76.4696552,
+      40.242075
+     ],
+     [
+      -76.4656283,
+      40.243864
+     ],
+     [
+      -76.463294,
+      40.2440725
+     ],
+     [
+      -76.4627662,
+      40.2439577
+     ],
+     [
+      -76.4624379,
+      40.2437538
+     ],
+     [
+      -76.4608742,
+      40.2425233
+     ],
+     [
+      -76.46026,
+      40.24039
+     ],
+     [
+      -76.4600025,
+      40.2399211
+     ],
+     [
+      -76.4590918,
+      40.2391614
+     ],
+     [
+      -76.4586477,
+      40.2390977
+     ],
+     [
+      -76.4584068,
+      40.2392791
+     ],
+     [
+      -76.4584121,
+      40.2395448
+     ],
+     [
+      -76.4590604,
+      40.2398636
+     ],
+     [
+      -76.4592439,
+      40.2401308
+     ],
+     [
+      -76.459227,
+      40.2408267
+     ],
+     [
+      -76.45902,
+      40.241337
+     ],
+     [
+      -76.459147,
+      40.242013
+     ],
+     [
+      -76.458992,
+      40.242577
+     ],
+     [
+      -76.458686,
+      40.242893
+     ],
+     [
+      -76.4577774,
+      40.2434343
+     ],
+     [
+      -76.4575072,
+      40.2438076
+     ],
+     [
+      -76.4576122,
+      40.2445051
+     ],
+     [
+      -76.457482,
+      40.2448343
+     ],
+     [
+      -76.4575032,
+      40.245671
+     ],
+     [
+      -76.4573009,
+      40.2462027
+     ],
+     [
+      -76.4563374,
+      40.2472953
+     ],
+     [
+      -76.455796,
+      40.247681
+     ],
+     [
+      -76.4552977,
+      40.2477447
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Cornwall and Lebanon",
+    "line": "Cornwall and Lebanon: Mount Gretna Narrow Gauge (Rifle Range)",
+    "id": "cornwall-and-lebanon-mount-gretna-rifle-range-spur",
+    "color": "#9880C0",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 10,
+    "speed_source": "estimate, not sourced: a 0.6 mi 2 ft gauge spur; no running time found",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): way 170684943, west of its reversal at 40.2424 N 76.4777 W; Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Rifle-range spur: 0.78 mi drawn against 0.6 mi documented (WPNG), +30 % - 0.55 mi from the junction to a turning loop, plus the north half of that loop. Real-traced, no straight-line legs: the western arm of OSM way 170684943 (designation 'Mt Gretna Narrow Gauge'). IDENTIFICATION IS INFERRED, not tagged: OSM does not say this arm is the rifle-range spur. It is taken to be the spur because it leaves the Governor Dick line at a reversal 0.75 mi from Mount Gretna station - the spur's documented junction is at MP 0.75 (WPNG) - and it heads away from both the station and Governor Dick to a turning loop, at roughly the documented length. The range itself was not located.",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1915,
+      "headway_min": 120,
+      "note": "Mount Gretna Narrow Gauge rifle-range branch, operated by the Cornwall and Lebanon Railroad Company: a 0.6 mi spur leaving the Governor Dick line at MP 0.75 (WPNG), built 'the following year' (1890, approximate - LT21) to carry National Guardsmen from Mount Gretna to the encampment's rifle range. Its passengers were soldiers, seasonally during camp weeks, so mode is intercity_rail rather than tourist_rail (report block [6]). Closed after the July 11/12 1915 upset in which guardsmen boarding an observation car tipped it over (LT21; WPNG lead '1889 to 1915'); WPNG's history section says it ran into summer 1916 - conflict, 1915 drawn as the confirmed end. Track scrapped / equipment shipped Sept 14 1916. headway_min 120 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: start (approx.) and 1915 end from LT21 (citing Bitner) and WPNG; 1916 conflict from WPNG history. headway_min is NOT SOURCED (estimate). The identification of the drawn geometry as this spur is an inference - see geometry_quality.",
+       "https://lebtown.com/2021/03/04/when-robert-colemans-two-foot-railway-snaked-through-the-hills-of-mount-gretna",
+       "https://en.wikipedia.org/wiki/Mount_Gretna_Narrow_Gauge_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.4776866,
+      40.2423849
+     ],
+     [
+      -76.4778214,
+      40.2416
+     ],
+     [
+      -76.4781897,
+      40.2410697
+     ],
+     [
+      -76.4811487,
+      40.2396556
+     ],
+     [
+      -76.4815915,
+      40.2391454
+     ],
+     [
+      -76.4820061,
+      40.2389003
+     ],
+     [
+      -76.4856708,
+      40.2382498
+     ],
+     [
+      -76.4884826,
+      40.2387531
+     ],
+     [
+      -76.4895257,
+      40.2384602
+     ],
+     [
+      -76.48963,
+      40.2382368
+     ]
+    ]
+   }
+  }
+ ]
+}
