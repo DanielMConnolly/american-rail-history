@@ -1,0 +1,1466 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Perkiomen Railroad (Reading's Perkiomen Branch) ran 38.1 miles up the Perkiomen Creek valley from Perkiomen Junction on the Reading main line at Oaks, via Collegeville, Schwenksville, Green Lane, Pennsburg and East Greenville, through the Dillinger Tunnel to Emmaus Junction on the Reading's East Penn Branch; from 1875 its trains ran through to Allentown, a second Philadelphia - Allentown route competing with the North Penn. It opened in five stages (1868 Skippack, 1869 Schwenksville, 1871/72 Green Lane, 1873/74 Pennsburg, Sept 1875 Emmaus Junction) and lost passenger service as a whole on July 15 1955, so it is drawn as five features, one per opening stage, each from its first CONFIRMED year to 1955. One operator throughout - the Philadelphia and Reading / Reading Company - so no ownership split (see ownership_split). Emmaus Junction - Allentown is East Penn Branch track and is NOT drawn here. Research report: research/branches/perkiomen_railroad.txt.",
+  "sources": [
+   "P&R annual report, The Evening Telegraph (Philadelphia) 1869-01-12 p3 (Perkiomen 'opened for traffic in August last ... to Skippack, ten miles'): https://www.loc.gov/resource/sn83025925/1869-01-12/ed-1/?sp=3",
+   "Sunbury American 1868-12-12 p4, P&R timetable ad ('Perkiomen Rail Road ... Returning: Leave Skippack at 8.10 A.M. and 1.25 P.M.'): https://www.loc.gov/resource/sn84026403/1868-12-12/ed-1/?sp=4",
+   "P&R timetable ad, Evening Telegraph 1869-04-06 p6 ('Passengers for Skippack take 7:30 A.M. and 4 P.M. trains'): https://www.loc.gov/resource/sn83025925/1869-04-06/ed-1/?sp=6",
+   "Evening Telegraph 1869-09-30 p7 ('Passengers for Skippack take 7:30 A.M., 4:30 and 5:15 P.M. trains'; Skippack still the terminal): https://www.loc.gov/resource/sn83025925/1869-09-30/ed-1/?sp=7",
+   "Evening Telegraph 1869-11-04 p7 ('Passengers for Schwenksville take 7:30 A.M., 12:45, and 4:30 P.M. trains'): https://www.loc.gov/resource/sn83025925/1869-11-04/ed-1/?sp=7",
+   "P&R annual report + timetable ad, Evening Telegraph 1870-01-11 p7 (opened to Schwenksville; Schwenksville - Green Lane under construction; Perkiomen 'leased to and ... now worked by this Company'): https://www.loc.gov/resource/sn83025925/1870-01-11/ed-1/?sp=7",
+   "Evening Telegraph 1871-06-12 p7 ('For Schwenksville and points on Perkiomen Railroad take 7:30 a.m., 12:30 and 4:30 p.m.'): https://www.loc.gov/resource/sn83025925/1871-06-12/ed-1/?sp=7",
+   "The Post (Middleburg, Pa.) 1872-08-15 p4 ('trains leave Perkiomen Junction at 7.35, 8.55 a m, 2.58, and 5.40 p m; returning leave Green Lane ...'): https://www.loc.gov/resource/sn84026106/1872-08-15/ed-1/?sp=4",
+   "The Bloomfield Times 1873-06-17 p8 (returning trains leave Green Lane; Green Lane still the terminal): https://www.loc.gov/resource/sn84026050/1873-06-17/ed-1/?sp=8",
+   "Sunbury American 1874-01-16 p4 ('trains leave Perkiomen Junction at 9.05 a.m., 2.25, 2.55 and 6.00 p.m.; returning, leave Pennsburg ...'): https://www.loc.gov/resource/sn84026403/1874-01-16/ed-1/?sp=4",
+   "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5",
+   "The Carbon Advocate (Lehighton) 1875-12-25 p1, P&R 'Arrangement of Passenger Trains, November 1st, 1875' (Allentown trains 'via Perkiomen Branch'): https://www.loc.gov/resource/sn83032231/1875-12-25/ed-1/?sp=1",
+   "Larry Roeder, 'The Last Ride', Town and Country (Pennsburg) 2025-07-29 (last passenger train July 15 1955, through the Dillinger Tunnel to Emmaus and Allentown): https://upvnews.com/news/article.ashx?article=31690",
+   "Larry Roeder, 'The Perkiomen Line Through the Eyes of a Father and Son', Town and Country 2014-11-05 (passenger service ended July 11 1955): https://upvnews.com/news/article.ashx?article=12803",
+   "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf",
+   "Wikipedia, List of Pennsylvania railroads (Norristown and Allentown 1854-1865; Perkiomen Railroad 1865-1945, to Reading Company): https://en.wikipedia.org/wiki/List_of_Pennsylvania_railroads",
+   "Wikipedia, Perkiomen Trail (abandoned ROW bought by Montgomery County 1978; Oaks - Green Lane trail): https://en.wikipedia.org/wiki/Perkiomen_Trail",
+   "Official Guide of the Railways, Feb 1952 (schedules eff. Sept 30 1951), Table 19 'Perkiomen Junction and Allentown' and index of stations: research/sources/official_guide_1952.txt"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-21)",
+   "OpenHistoricalMap (Overpass, 2026-10-21): untagged railway ways at the lower end"
+  ],
+  "ownership_split": "None. The P&R reported the Perkiomen leased to and worked by it by Nov 1869 (CA-1870), its 1868 trains already appear in the P&R's own timetable ad (CA-1868) and it financed construction (CA-1869a); the 1924 Reading Company reorganisation and the 1945 corporate merger (WP-PA) did not change who ran the trains. If a source shows the Perkiomen company crewed its own trains in 1868-69, split the first feature at the lease date.",
+  "not_yet_sourced": [
+   "Who ran the Aug 1868 - 1869 trains, and the date of the P&R lease (reported done by Nov 1869, CA-1870). Best next source: the full P&R annual report for 1869, or the ICC valuation report for the Perkiomen Railroad.",
+   "Last-train day: July 15 1955 (TC-2025) vs July 11 1955 (TC-2014), same author; year agreed. A PUC order or a Reading notice would settle it.",
+   "Exact opening of Schwenksville - Green Lane (between June 1871 and Aug 1872; drawn from 1872) and of Green Lane - Pennsburg (between June 1873 and Jan 1874; drawn from 1874).",
+   "'Perkiomen and Reading' / 'Perkiomen-Reading Railroad' (TC-2014): no primary source names such a company; probably a reorganisation of the corporate shell, not a change of operator.",
+   "Service level 1876-1955: no 20th-century timetable was read; the 1951/52 Official Guide Table 19 survives in OCR with only one time column, and some of its columns were Schuylkill Valley Transit buses (Norristown - East Greenville). All headways after 1875 are estimates.",
+   "Commuter character of the lower end (Oaks, Collegeville) is unsourced; tagged intercity_rail.",
+   "Skippack station's exact site: the Skippack/Schwenksville cut is at Fowler milepost 10.0 measured along the trace, not at a located station."
+  ],
+  "freight_only_audit": "Nothing freight-only drawn: every section ends with passenger service in 1955. Post-1955 freight (to the mid-1960s on the upper valley, Collegeville - Green Lane abandoned 1973, Pennsburg - Emmaus still East Penn Railroad freight), the Graterford prison spur and the Colebrookdale Branch are not drawn.",
+  "horsecar_audit": "None: steam from the 1868 opening.",
+  "pulled": "20261021"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Philadelphia and Reading Railroad / Reading Company",
+    "line": "Philadelphia and Reading: Perkiomen Branch (Perkiomen Jct \u2013 Skippack)",
+    "id": "perkiomen-branch-perkiomen-jct-skippack",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: steam (later diesel) branch locals and Philadelphia - Allentown through trains on a 38-mile single-track branch; no running times were read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21; quarter-degree rail tiles, because whole-degree tiles 504'd that day) plus OpenHistoricalMap, routed with opstrace.py. OSM ways used: Reading-tagged (old_railway_operator=Reading) railway=abandoned 'Perkiomen Branch' / 'Perkiomen Trail' ways from Collegeville to Pennsburg, and the live East Penn Railroad track (old_railway_operator=Reading) from Pennsburg through the Dillinger Tunnel (way 96666869) to Emmaus Junction; untagged OpenHistoricalMap railway ways -201886172..-201886175 and -201877890 for the lower end Perkiomen Junction - Oaks - Arcola, where OSM has only the modern Perkiomen Trail cycleway and the disused Reading 'Phoenixville Industrial Track'. No OSM way in the corridor carries note:old_railway_operator (probed 2026-10-21), so opstrace needed no change.",
+    "geometry_quality": "Drawn length 10.00 mi equals the documented 10.0 mi BY CONSTRUCTION: one continuous trace of the whole branch was cut at Fowler's (BL) mileposts measured along it, so the fit check for this section is the station projections below, which agree with Fowler to about 0.1 mi. No straight-line legs: every vertex comes from an OSM or OHM way (douglas_peucker 8 m, trim_reversals). Perkiomen Junction is drawn at the junction with the Reading main line (NS Harrisburg Line) near Port Providence, lat 40.1154 lon -75.4722, where the OHM grade and the disused Reading 'Phoenixville Industrial Track' meet the main line; the first ~0.2 mi lies alongside the main line. Perkiomen Junction - Arcola (trace mi 0.0 - ~4.8) follows OpenHistoricalMap's untagged railway way, i.e. OHM's reconstruction of the grade, not an OSM-mapped roadbed; from Arcola north it is the OSM Reading-tagged abandoned grade under the Perkiomen Trail. The Skippack end is cut at Fowler's milepost 10.0 measured along the trace (Skippack station's site was not geocoded: Nominatim's 'Skippack' is the village 3 mi east of the line). Checks along the trace vs Fowler BL 125: Oaks waypoint 0.3 km off the line, Collegeville 6.06 (6.0), Graterford 8.84 (Grater's Ford 8.8). The drawn grade is the line as it last existed; no realignment of this branch was found, so no later-era alignment is known to be drawn, but the alignment was not checked against an 1868-75 map.",
+    "segments": [
+     {
+      "start": 1868,
+      "end": 1869,
+      "headway_min": 360,
+      "note": "First section of the Perkiomen Railroad, Perkiomen Junction (on the Reading main line at Oaks) to Skippack, 10 miles, opened for traffic in August 1868 (CA-1869a, P&R annual report). The Dec 1868 P&R timetable ad shows passenger trains, returning from Skippack at 8.10 a.m. and 1.25 p.m. and connecting with Reading trains (CA-1868); April 1869 ad: Skippack passengers take the 7:30 a.m. and 4 p.m. trains from Philadelphia, with stage lines meeting trains at Collegeville and Skippack (CA-1869b). Skippack was the terminal until Oct/Nov 1869 (CA-1869c). Steam from the start - no animal-power years. Operator: these 1868 trains appear inside the P&R's own timetable advertisement and the P&R financed construction (CA-1869a), and the P&R reported the road leased to and worked by it by Nov 1869 (CA-1870); who crewed the Aug 1868 - 1869 trains is not established (see metadata.not_yet_sourced), so the feature carries the Reading colour throughout. headway_min is an ESTIMATE from 2 round trips a day in the Dec 1868 and April 1869 ads.",
+      "sources": [
+       "Segment-level: 1868 start from CA-1869a (opened August 1868 to Skippack) and CA-1868 (passenger trains in the Dec 1868 P&R timetable ad); service confirmed by CA-1869b and CA-1869c; the 1869 end is the start of the Schwenksville extension (CA-1869d), not a break in service. Headway is an estimate from those ads.",
+       "P&R annual report, The Evening Telegraph (Philadelphia) 1869-01-12 p3 (Perkiomen 'opened for traffic in August last ... to Skippack, ten miles'): https://www.loc.gov/resource/sn83025925/1869-01-12/ed-1/?sp=3",
+       "Sunbury American 1868-12-12 p4, P&R timetable ad ('Perkiomen Rail Road ... Returning: Leave Skippack at 8.10 A.M. and 1.25 P.M.'): https://www.loc.gov/resource/sn84026403/1868-12-12/ed-1/?sp=4",
+       "P&R timetable ad, Evening Telegraph 1869-04-06 p6 ('Passengers for Skippack take 7:30 A.M. and 4 P.M. trains'): https://www.loc.gov/resource/sn83025925/1869-04-06/ed-1/?sp=6",
+       "Evening Telegraph 1869-09-30 p7 ('Passengers for Skippack take 7:30 A.M., 4:30 and 5:15 P.M. trains'; Skippack still the terminal): https://www.loc.gov/resource/sn83025925/1869-09-30/ed-1/?sp=7",
+       "Evening Telegraph 1869-11-04 p7 ('Passengers for Schwenksville take 7:30 A.M., 12:45, and 4:30 P.M. trains'): https://www.loc.gov/resource/sn83025925/1869-11-04/ed-1/?sp=7"
+      ]
+     },
+     {
+      "start": 1869,
+      "end": 1875,
+      "headway_min": 240,
+      "note": "Branch-local service, Perkiomen Junction connecting with Reading main-line trains to and from Philadelphia. Extended to Schwenksville Oct/Nov 1869 (CA-1869d: 3 trains from Philadelphia), Green Lane by Aug 1872 (CA-1872: 4 up, 3 down) and Pennsburg by Jan 1874 (CA-1874: 4 up, 4 down). Worked by the Philadelphia and Reading under lease by Nov 1869 (CA-1870). headway_min is an ESTIMATE from 3-4 trains a day in those ads.",
+      "sources": [
+       "Segment-level: service 1869-1875 confirmed by the P&R timetable ads CA-1869d, CA-1870, CA-1871b, CA-1872 and CA-1874, all naming Perkiomen Junction trains; the 1875 end is the opening of through running (NYT-1875), not a break in service. Headway is an estimate from those ads.",
+       "Evening Telegraph 1869-11-04 p7 ('Passengers for Schwenksville take 7:30 A.M., 12:45, and 4:30 P.M. trains'): https://www.loc.gov/resource/sn83025925/1869-11-04/ed-1/?sp=7",
+       "P&R annual report + timetable ad, Evening Telegraph 1870-01-11 p7 (opened to Schwenksville; Schwenksville - Green Lane under construction; Perkiomen 'leased to and ... now worked by this Company'): https://www.loc.gov/resource/sn83025925/1870-01-11/ed-1/?sp=7",
+       "Evening Telegraph 1871-06-12 p7 ('For Schwenksville and points on Perkiomen Railroad take 7:30 a.m., 12:30 and 4:30 p.m.'): https://www.loc.gov/resource/sn83025925/1871-06-12/ed-1/?sp=7",
+       "The Post (Middleburg, Pa.) 1872-08-15 p4 ('trains leave Perkiomen Junction at 7.35, 8.55 a m, 2.58, and 5.40 p m; returning leave Green Lane ...'): https://www.loc.gov/resource/sn84026106/1872-08-15/ed-1/?sp=4",
+       "Sunbury American 1874-01-16 p4 ('trains leave Perkiomen Junction at 9.05 a.m., 2.25, 2.55 and 6.00 p.m.; returning, leave Pennsburg ...'): https://www.loc.gov/resource/sn84026403/1874-01-16/ed-1/?sp=4",
+       "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5"
+      ]
+     },
+     {
+      "start": 1875,
+      "end": 1955,
+      "headway_min": 240,
+      "note": "From Sept 27 1875 the Perkiomen was a through route: the extension to Emmaus Junction opened that day (NYT-1875) and the Nov 1 1875 timetable runs Philadelphia - Allentown trains 'via Perkiomen Branch', some with through cars to and from Mauch Chunk (CA-1875). Operated by the Philadelphia and Reading (Reading Company from the 1924 reorganisation - same operator); the Perkiomen Railroad Company was leased to and worked by the P&R by Nov 1869 (CA-1870) and merged into the Reading Company in 1945 (WP-PA), a corporate change only. Passenger service ended with the last train on July 15 1955 (TC-2025, which describes crowds riding through the Dillinger Tunnel to Emmaus and on to Allentown, last run behind diesel 616, 'single coach' trains by then); TC-2014, by the same author, says July 11 1955 - day conflict recorded, the year is 1955 either way. The whole line closed to passengers together; there was no cut-back of the upper end. Freight continued after 1955 (context only, not drawn): 'until the mid-1960s' on the upper valley, Collegeville - Green Lane abandoned 1973 (TC-2025), Pennsburg - Emmaus still worked today by the East Penn Railroad as freight. headway_min is an ESTIMATE: the Nov 1 1875 P&R timetable (CA-1875) shows 3 Philadelphia - Allentown through trains each way via the Perkiomen plus a Sunday train; no 20th-century timetable was read (the Feb 1952 Official Guide's Table 19 'Perkiomen Junction and Allentown' survives in OCR with only one time column), so the figure is carried forward unverified to 1955.",
+      "sources": [
+       "Segment-level: 1875 start from NYT-1875 (extension and first through passenger train Sept 27 1875) and CA-1875 (Nov 1 1875 timetable); 1955 end from TC-2025 (last train July 15 1955) with TC-2014 (July 11 1955) as a conflicting day in the same year; Pennsburg, East Greenville and Emmaus listed without a freight-only mark in the 1951/52 Official Guide index (research/sources/official_guide_1952.txt, Table 19). Headway is an estimate from the 1875 timetable only.",
+       "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5",
+       "The Carbon Advocate (Lehighton) 1875-12-25 p1, P&R 'Arrangement of Passenger Trains, November 1st, 1875' (Allentown trains 'via Perkiomen Branch'): https://www.loc.gov/resource/sn83032231/1875-12-25/ed-1/?sp=1",
+       "Larry Roeder, 'The Last Ride', Town and Country (Pennsburg) 2025-07-29 (last passenger train July 15 1955, through the Dillinger Tunnel to Emmaus and Allentown): https://upvnews.com/news/article.ashx?article=31690",
+       "Larry Roeder, 'The Perkiomen Line Through the Eyes of a Father and Son', Town and Country 2014-11-05 (passenger service ended July 11 1955): https://upvnews.com/news/article.ashx?article=12803",
+       "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.4721833,
+      40.1153713
+     ],
+     [
+      -75.4705793,
+      40.118412
+     ],
+     [
+      -75.4683249,
+      40.120834
+     ],
+     [
+      -75.4668183,
+      40.1218074
+     ],
+     [
+      -75.4604675,
+      40.1251248
+     ],
+     [
+      -75.459472,
+      40.1258697
+     ],
+     [
+      -75.4483188,
+      40.1404872
+     ],
+     [
+      -75.4477334,
+      40.141442
+     ],
+     [
+      -75.4475122,
+      40.1420785
+     ],
+     [
+      -75.4473301,
+      40.1444752
+     ],
+     [
+      -75.447278,
+      40.1458177
+     ],
+     [
+      -75.4474211,
+      40.1467227
+     ],
+     [
+      -75.4478375,
+      40.1477469
+     ],
+     [
+      -75.4484099,
+      40.1485325
+     ],
+     [
+      -75.4491904,
+      40.1491391
+     ],
+     [
+      -75.4498409,
+      40.1493977
+     ],
+     [
+      -75.4508557,
+      40.1495965
+     ],
+     [
+      -75.4529502,
+      40.1496761
+     ],
+     [
+      -75.4546284,
+      40.1500241
+     ],
+     [
+      -75.4557863,
+      40.1507799
+     ],
+     [
+      -75.4561765,
+      40.1512572
+     ],
+     [
+      -75.4577507,
+      40.154101
+     ],
+     [
+      -75.4579198,
+      40.1546479
+     ],
+     [
+      -75.4574515,
+      40.1631687
+     ],
+     [
+      -75.4575295,
+      40.1638647
+     ],
+     [
+      -75.4578938,
+      40.164491
+     ],
+     [
+      -75.4586744,
+      40.1652267
+     ],
+     [
+      -75.4593509,
+      40.1655747
+     ],
+     [
+      -75.4618617,
+      40.1660021
+     ],
+     [
+      -75.4625382,
+      40.166201
+     ],
+     [
+      -75.4632147,
+      40.1665788
+     ],
+     [
+      -75.4638131,
+      40.1670858
+     ],
+     [
+      -75.4641904,
+      40.1677021
+     ],
+     [
+      -75.4643985,
+      40.1684477
+     ],
+     [
+      -75.4643075,
+      40.1691038
+     ],
+     [
+      -75.4639953,
+      40.1697699
+     ],
+     [
+      -75.4641498,
+      40.1700465
+     ],
+     [
+      -75.4638947,
+      40.170353
+     ],
+     [
+      -75.4632555,
+      40.1706007
+     ],
+     [
+      -75.4546053,
+      40.1818598
+     ],
+     [
+      -75.4541028,
+      40.1822676
+     ],
+     [
+      -75.4540138,
+      40.1828311
+     ],
+     [
+      -75.4533099,
+      40.1836759
+     ],
+     [
+      -75.4520864,
+      40.1856282
+     ],
+     [
+      -75.4518939,
+      40.1858781
+     ],
+     [
+      -75.4513209,
+      40.1861038
+     ],
+     [
+      -75.4506091,
+      40.1875212
+     ],
+     [
+      -75.45019,
+      40.189331
+     ],
+     [
+      -75.450256,
+      40.191104
+     ],
+     [
+      -75.4512582,
+      40.194422
+     ],
+     [
+      -75.4519773,
+      40.1994244
+     ],
+     [
+      -75.4524462,
+      40.201134
+     ],
+     [
+      -75.4522532,
+      40.2011746
+     ],
+     [
+      -75.4524061,
+      40.2047801
+     ],
+     [
+      -75.452278,
+      40.206615
+     ],
+     [
+      -75.452779,
+      40.208019
+     ],
+     [
+      -75.452626,
+      40.209575
+     ],
+     [
+      -75.4528125,
+      40.2169021
+     ],
+     [
+      -75.4529091,
+      40.2181596
+     ],
+     [
+      -75.454088,
+      40.224958
+     ],
+     [
+      -75.4535034,
+      40.2297902
+     ],
+     [
+      -75.4543403,
+      40.234033
+     ],
+     [
+      -75.4551497,
+      40.2391566
+     ],
+     [
+      -75.4551335,
+      40.2397294
+     ],
+     [
+      -75.4554073,
+      40.2400712
+     ],
+     [
+      -75.4560075,
+      40.2400377
+     ],
+     [
+      -75.4561585,
+      40.2401226
+     ],
+     [
+      -75.4561256,
+      40.2404985
+     ],
+     [
+      -75.45554,
+      40.2406441
+     ],
+     [
+      -75.4556641,
+      40.2412999
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Philadelphia and Reading Railroad / Reading Company",
+    "line": "Philadelphia and Reading: Perkiomen Branch (Skippack \u2013 Schwenksville)",
+    "id": "perkiomen-branch-skippack-schwenksville",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: steam (later diesel) branch locals and Philadelphia - Allentown through trains on a 38-mile single-track branch; no running times were read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21; quarter-degree rail tiles, because whole-degree tiles 504'd that day) plus OpenHistoricalMap, routed with opstrace.py. OSM ways used: Reading-tagged (old_railway_operator=Reading) railway=abandoned 'Perkiomen Branch' / 'Perkiomen Trail' ways from Collegeville to Pennsburg, and the live East Penn Railroad track (old_railway_operator=Reading) from Pennsburg through the Dillinger Tunnel (way 96666869) to Emmaus Junction; untagged OpenHistoricalMap railway ways -201886172..-201886175 and -201877890 for the lower end Perkiomen Junction - Oaks - Arcola, where OSM has only the modern Perkiomen Trail cycleway and the disused Reading 'Phoenixville Industrial Track'. No OSM way in the corridor carries note:old_railway_operator (probed 2026-10-21), so opstrace needed no change.",
+    "geometry_quality": "Drawn length 1.10 mi equals the documented 1.1 mi BY CONSTRUCTION: one continuous trace of the whole branch was cut at Fowler's (BL) mileposts measured along it, so the fit check for this section is the station projections below, which agree with Fowler to about 0.1 mi. No straight-line legs: every vertex comes from an OSM or OHM way (douglas_peucker 8 m, trim_reversals). Both ends are cut at Fowler mileposts (10.0, 11.1) measured along the continuous trace; Schwenksville borough centre projects to trace mi 11.16 (Fowler 11.1), 46 m off the line. Includes ~0.4 mi of the Reading-tagged abandoned 'Perkiomen Branch' way. The drawn grade is the line as it last existed; no realignment of this branch was found, so no later-era alignment is known to be drawn, but the alignment was not checked against an 1868-75 map.",
+    "segments": [
+     {
+      "start": 1869,
+      "end": 1875,
+      "headway_min": 240,
+      "note": "Skippack - Schwenksville, 1.1 mi (BL mileposts 10.0 - 11.1). Opened between the Sept 30 1869 ad, which still names Skippack as the terminal (CA-1869c), and the Nov 4 1869 ad, 'Passengers for Schwenksville take 7:30 A.M., 12:45, and 4:30 P.M. trains from Philadelphia' (CA-1869d); the P&R report of Jan 1870 says the road 'has been opened from Perkiomen Junction to Schwenksville, a distance of eleven miles' and is leased to and worked by the P&R (CA-1870). Schwenksville stayed the terminal until 1871/72 (CA-1871b). headway_min is an ESTIMATE from 3 trains a day in those ads.",
+      "sources": [
+       "Segment-level: 1869 start from CA-1869c (Skippack terminal, Sept 30 1869) and CA-1869d (Schwenksville terminal, Nov 4 1869), with CA-1870; service to 1875 confirmed by CA-1871b, CA-1872 and CA-1874. Headway is an estimate from those ads.",
+       "Evening Telegraph 1869-09-30 p7 ('Passengers for Skippack take 7:30 A.M., 4:30 and 5:15 P.M. trains'; Skippack still the terminal): https://www.loc.gov/resource/sn83025925/1869-09-30/ed-1/?sp=7",
+       "Evening Telegraph 1869-11-04 p7 ('Passengers for Schwenksville take 7:30 A.M., 12:45, and 4:30 P.M. trains'): https://www.loc.gov/resource/sn83025925/1869-11-04/ed-1/?sp=7",
+       "P&R annual report + timetable ad, Evening Telegraph 1870-01-11 p7 (opened to Schwenksville; Schwenksville - Green Lane under construction; Perkiomen 'leased to and ... now worked by this Company'): https://www.loc.gov/resource/sn83025925/1870-01-11/ed-1/?sp=7",
+       "Evening Telegraph 1871-06-12 p7 ('For Schwenksville and points on Perkiomen Railroad take 7:30 a.m., 12:30 and 4:30 p.m.'): https://www.loc.gov/resource/sn83025925/1871-06-12/ed-1/?sp=7",
+       "The Post (Middleburg, Pa.) 1872-08-15 p4 ('trains leave Perkiomen Junction at 7.35, 8.55 a m, 2.58, and 5.40 p m; returning leave Green Lane ...'): https://www.loc.gov/resource/sn84026106/1872-08-15/ed-1/?sp=4",
+       "Sunbury American 1874-01-16 p4 ('trains leave Perkiomen Junction at 9.05 a.m., 2.25, 2.55 and 6.00 p.m.; returning, leave Pennsburg ...'): https://www.loc.gov/resource/sn84026403/1874-01-16/ed-1/?sp=4"
+      ]
+     },
+     {
+      "start": 1875,
+      "end": 1955,
+      "headway_min": 240,
+      "note": "From Sept 27 1875 the Perkiomen was a through route: the extension to Emmaus Junction opened that day (NYT-1875) and the Nov 1 1875 timetable runs Philadelphia - Allentown trains 'via Perkiomen Branch', some with through cars to and from Mauch Chunk (CA-1875). Operated by the Philadelphia and Reading (Reading Company from the 1924 reorganisation - same operator); the Perkiomen Railroad Company was leased to and worked by the P&R by Nov 1869 (CA-1870) and merged into the Reading Company in 1945 (WP-PA), a corporate change only. Passenger service ended with the last train on July 15 1955 (TC-2025, which describes crowds riding through the Dillinger Tunnel to Emmaus and on to Allentown, last run behind diesel 616, 'single coach' trains by then); TC-2014, by the same author, says July 11 1955 - day conflict recorded, the year is 1955 either way. The whole line closed to passengers together; there was no cut-back of the upper end. Freight continued after 1955 (context only, not drawn): 'until the mid-1960s' on the upper valley, Collegeville - Green Lane abandoned 1973 (TC-2025), Pennsburg - Emmaus still worked today by the East Penn Railroad as freight. headway_min is an ESTIMATE: the Nov 1 1875 P&R timetable (CA-1875) shows 3 Philadelphia - Allentown through trains each way via the Perkiomen plus a Sunday train; no 20th-century timetable was read (the Feb 1952 Official Guide's Table 19 'Perkiomen Junction and Allentown' survives in OCR with only one time column), so the figure is carried forward unverified to 1955.",
+      "sources": [
+       "Segment-level: 1875 start from NYT-1875 (extension and first through passenger train Sept 27 1875) and CA-1875 (Nov 1 1875 timetable); 1955 end from TC-2025 (last train July 15 1955) with TC-2014 (July 11 1955) as a conflicting day in the same year; Pennsburg, East Greenville and Emmaus listed without a freight-only mark in the 1951/52 Official Guide index (research/sources/official_guide_1952.txt, Table 19). Headway is an estimate from the 1875 timetable only.",
+       "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5",
+       "The Carbon Advocate (Lehighton) 1875-12-25 p1, P&R 'Arrangement of Passenger Trains, November 1st, 1875' (Allentown trains 'via Perkiomen Branch'): https://www.loc.gov/resource/sn83032231/1875-12-25/ed-1/?sp=1",
+       "Larry Roeder, 'The Last Ride', Town and Country (Pennsburg) 2025-07-29 (last passenger train July 15 1955, through the Dillinger Tunnel to Emmaus and Allentown): https://upvnews.com/news/article.ashx?article=31690",
+       "Larry Roeder, 'The Perkiomen Line Through the Eyes of a Father and Son', Town and Country 2014-11-05 (passenger service ended July 11 1955): https://upvnews.com/news/article.ashx?article=12803",
+       "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.4556641,
+      40.2412999
+     ],
+     [
+      -75.4565429,
+      40.2459435
+     ],
+     [
+      -75.4570623,
+      40.2471081
+     ],
+     [
+      -75.459138,
+      40.2501133
+     ],
+     [
+      -75.460063,
+      40.2508303
+     ],
+     [
+      -75.4617495,
+      40.2516865
+     ],
+     [
+      -75.4627115,
+      40.2525756
+     ],
+     [
+      -75.4629698,
+      40.2530207
+     ],
+     [
+      -75.4633481,
+      40.254172
+     ],
+     [
+      -75.4632832,
+      40.2553933
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Philadelphia and Reading Railroad / Reading Company",
+    "line": "Philadelphia and Reading: Perkiomen Branch (Schwenksville \u2013 Green Lane)",
+    "id": "perkiomen-branch-schwenksville-green-lane",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: steam (later diesel) branch locals and Philadelphia - Allentown through trains on a 38-mile single-track branch; no running times were read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21; quarter-degree rail tiles, because whole-degree tiles 504'd that day) plus OpenHistoricalMap, routed with opstrace.py. OSM ways used: Reading-tagged (old_railway_operator=Reading) railway=abandoned 'Perkiomen Branch' / 'Perkiomen Trail' ways from Collegeville to Pennsburg, and the live East Penn Railroad track (old_railway_operator=Reading) from Pennsburg through the Dillinger Tunnel (way 96666869) to Emmaus Junction; untagged OpenHistoricalMap railway ways -201886172..-201886175 and -201877890 for the lower end Perkiomen Junction - Oaks - Arcola, where OSM has only the modern Perkiomen Trail cycleway and the disused Reading 'Phoenixville Industrial Track'. No OSM way in the corridor carries note:old_railway_operator (probed 2026-10-21), so opstrace needed no change.",
+    "geometry_quality": "Drawn length 7.10 mi equals the documented 7.1 mi BY CONSTRUCTION: one continuous trace of the whole branch was cut at Fowler's (BL) mileposts measured along it, so the fit check for this section is the station projections below, which agree with Fowler to about 0.1 mi. No straight-line legs: every vertex comes from an OSM or OHM way (douglas_peucker 8 m, trim_reversals). Cut at Fowler mileposts 11.1 and 18.2 along the trace. About 0.9 mi just north of Schwenksville (trace mi ~11.1 - 11.9) follows an untagged OSM railway way rather than a Reading-tagged one; the rest is the Reading-tagged abandoned Perkiomen Branch / Perkiomen Trail. Checks: Perkiomenville 16.90 (Fowler 17.0); Green Lane borough centre projects to 18.20 (18.2), 0.5 km off the line. The drawn grade is the line as it last existed; no realignment of this branch was found, so no later-era alignment is known to be drawn, but the alignment was not checked against an 1868-75 map.",
+    "segments": [
+     {
+      "start": 1872,
+      "end": 1875,
+      "headway_min": 240,
+      "note": "Schwenksville - Green Lane, 7.1 mi (BL mileposts 11.1 - 18.2), via Zieglersville, Spring Mount (Frederick), Salford, Hendricks, Kratz and Perkiomenville. 'Seven miles in addition from Schwenksville to Green Lane are now being constructed' in Jan 1870 (CA-1870). Schwenksville was still the terminal on June 12 1871 (CA-1871b); Green Lane was the terminal by Aug 15 1872 (CA-1872: trains leave Perkiomen Junction at 7.35, 8.55 a.m., 2.58 and 5.40 p.m., returning from Green Lane at 6.13 a.m., 12.35 and 4.0 p.m.). The opening falls between June 1871 and Aug 1872; drawn from 1872, the first CONFIRMED year - 1871 is possible but not proven. Green Lane remained the terminal into mid-1873 (CA-1873). headway_min is an ESTIMATE from 3-4 trains a day in CA-1872.",
+      "sources": [
+       "Segment-level: 1872 start from CA-1872 (Green Lane terminal, Aug 15 1872), bracketed by CA-1871b (Schwenksville still the terminal, June 12 1871); service to 1875 confirmed by CA-1873 and CA-1874. Headway is an estimate from CA-1872.",
+       "P&R annual report + timetable ad, Evening Telegraph 1870-01-11 p7 (opened to Schwenksville; Schwenksville - Green Lane under construction; Perkiomen 'leased to and ... now worked by this Company'): https://www.loc.gov/resource/sn83025925/1870-01-11/ed-1/?sp=7",
+       "Evening Telegraph 1871-06-12 p7 ('For Schwenksville and points on Perkiomen Railroad take 7:30 a.m., 12:30 and 4:30 p.m.'): https://www.loc.gov/resource/sn83025925/1871-06-12/ed-1/?sp=7",
+       "The Post (Middleburg, Pa.) 1872-08-15 p4 ('trains leave Perkiomen Junction at 7.35, 8.55 a m, 2.58, and 5.40 p m; returning leave Green Lane ...'): https://www.loc.gov/resource/sn84026106/1872-08-15/ed-1/?sp=4",
+       "The Bloomfield Times 1873-06-17 p8 (returning trains leave Green Lane; Green Lane still the terminal): https://www.loc.gov/resource/sn84026050/1873-06-17/ed-1/?sp=8",
+       "Sunbury American 1874-01-16 p4 ('trains leave Perkiomen Junction at 9.05 a.m., 2.25, 2.55 and 6.00 p.m.; returning, leave Pennsburg ...'): https://www.loc.gov/resource/sn84026403/1874-01-16/ed-1/?sp=4"
+      ]
+     },
+     {
+      "start": 1875,
+      "end": 1955,
+      "headway_min": 240,
+      "note": "From Sept 27 1875 the Perkiomen was a through route: the extension to Emmaus Junction opened that day (NYT-1875) and the Nov 1 1875 timetable runs Philadelphia - Allentown trains 'via Perkiomen Branch', some with through cars to and from Mauch Chunk (CA-1875). Operated by the Philadelphia and Reading (Reading Company from the 1924 reorganisation - same operator); the Perkiomen Railroad Company was leased to and worked by the P&R by Nov 1869 (CA-1870) and merged into the Reading Company in 1945 (WP-PA), a corporate change only. Passenger service ended with the last train on July 15 1955 (TC-2025, which describes crowds riding through the Dillinger Tunnel to Emmaus and on to Allentown, last run behind diesel 616, 'single coach' trains by then); TC-2014, by the same author, says July 11 1955 - day conflict recorded, the year is 1955 either way. The whole line closed to passengers together; there was no cut-back of the upper end. Freight continued after 1955 (context only, not drawn): 'until the mid-1960s' on the upper valley, Collegeville - Green Lane abandoned 1973 (TC-2025), Pennsburg - Emmaus still worked today by the East Penn Railroad as freight. headway_min is an ESTIMATE: the Nov 1 1875 P&R timetable (CA-1875) shows 3 Philadelphia - Allentown through trains each way via the Perkiomen plus a Sunday train; no 20th-century timetable was read (the Feb 1952 Official Guide's Table 19 'Perkiomen Junction and Allentown' survives in OCR with only one time column), so the figure is carried forward unverified to 1955.",
+      "sources": [
+       "Segment-level: 1875 start from NYT-1875 (extension and first through passenger train Sept 27 1875) and CA-1875 (Nov 1 1875 timetable); 1955 end from TC-2025 (last train July 15 1955) with TC-2014 (July 11 1955) as a conflicting day in the same year; Pennsburg, East Greenville and Emmaus listed without a freight-only mark in the 1951/52 Official Guide index (research/sources/official_guide_1952.txt, Table 19). Headway is an estimate from the 1875 timetable only.",
+       "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5",
+       "The Carbon Advocate (Lehighton) 1875-12-25 p1, P&R 'Arrangement of Passenger Trains, November 1st, 1875' (Allentown trains 'via Perkiomen Branch'): https://www.loc.gov/resource/sn83032231/1875-12-25/ed-1/?sp=1",
+       "Larry Roeder, 'The Last Ride', Town and Country (Pennsburg) 2025-07-29 (last passenger train July 15 1955, through the Dillinger Tunnel to Emmaus and Allentown): https://upvnews.com/news/article.ashx?article=31690",
+       "Larry Roeder, 'The Perkiomen Line Through the Eyes of a Father and Son', Town and Country 2014-11-05 (passenger service ended July 11 1955): https://upvnews.com/news/article.ashx?article=12803",
+       "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.4632832,
+      40.2553933
+     ],
+     [
+      -75.4631916,
+      40.2571182
+     ],
+     [
+      -75.4633847,
+      40.2579124
+     ],
+     [
+      -75.4642666,
+      40.2595537
+     ],
+     [
+      -75.4652327,
+      40.2652194
+     ],
+     [
+      -75.4665041,
+      40.2680984
+     ],
+     [
+      -75.4665202,
+      40.2686572
+     ],
+     [
+      -75.4663056,
+      40.2693898
+     ],
+     [
+      -75.4653749,
+      40.2702391
+     ],
+     [
+      -75.4637334,
+      40.2709738
+     ],
+     [
+      -75.4605979,
+      40.2718989
+     ],
+     [
+      -75.4589725,
+      40.2725988
+     ],
+     [
+      -75.4575402,
+      40.2736363
+     ],
+     [
+      -75.4559327,
+      40.2763812
+     ],
+     [
+      -75.4544926,
+      40.2785095
+     ],
+     [
+      -75.4541635,
+      40.2797215
+     ],
+     [
+      -75.4544855,
+      40.283269
+     ],
+     [
+      -75.454431,
+      40.2840851
+     ],
+     [
+      -75.4532759,
+      40.2901032
+     ],
+     [
+      -75.4531957,
+      40.2914911
+     ],
+     [
+      -75.4554618,
+      40.2993387
+     ],
+     [
+      -75.456838,
+      40.3031964
+     ],
+     [
+      -75.4571515,
+      40.303725
+     ],
+     [
+      -75.4581698,
+      40.3045355
+     ],
+     [
+      -75.45972,
+      40.3051172
+     ],
+     [
+      -75.460846,
+      40.3052706
+     ],
+     [
+      -75.4640044,
+      40.3050833
+     ],
+     [
+      -75.4646557,
+      40.3052193
+     ],
+     [
+      -75.4652233,
+      40.3054982
+     ],
+     [
+      -75.4657746,
+      40.3060226
+     ],
+     [
+      -75.4660348,
+      40.3067399
+     ],
+     [
+      -75.4656782,
+      40.3087947
+     ],
+     [
+      -75.4654744,
+      40.311698
+     ],
+     [
+      -75.46554,
+      40.3123944
+     ],
+     [
+      -75.4659695,
+      40.3131844
+     ],
+     [
+      -75.4667478,
+      40.313988
+     ],
+     [
+      -75.4679024,
+      40.3146056
+     ],
+     [
+      -75.4740435,
+      40.3162653
+     ],
+     [
+      -75.4747251,
+      40.3166823
+     ],
+     [
+      -75.4756066,
+      40.317627
+     ],
+     [
+      -75.4761344,
+      40.319252
+     ],
+     [
+      -75.4772919,
+      40.3247072
+     ],
+     [
+      -75.4771993,
+      40.3252125
+     ],
+     [
+      -75.4765873,
+      40.3263674
+     ],
+     [
+      -75.4765049,
+      40.3267218
+     ],
+     [
+      -75.4766246,
+      40.3274089
+     ],
+     [
+      -75.4771776,
+      40.3282032
+     ],
+     [
+      -75.4792703,
+      40.3301616
+     ],
+     [
+      -75.480349,
+      40.332704
+     ],
+     [
+      -75.4805771,
+      40.3335591
+     ],
+     [
+      -75.4803168,
+      40.3344699
+     ],
+     [
+      -75.479832,
+      40.3349911
+     ],
+     [
+      -75.4732182,
+      40.3400067
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Philadelphia and Reading Railroad / Reading Company",
+    "line": "Philadelphia and Reading: Perkiomen Branch (Green Lane \u2013 Pennsburg)",
+    "id": "perkiomen-branch-green-lane-pennsburg",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: steam (later diesel) branch locals and Philadelphia - Allentown through trains on a 38-mile single-track branch; no running times were read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21; quarter-degree rail tiles, because whole-degree tiles 504'd that day) plus OpenHistoricalMap, routed with opstrace.py. OSM ways used: Reading-tagged (old_railway_operator=Reading) railway=abandoned 'Perkiomen Branch' / 'Perkiomen Trail' ways from Collegeville to Pennsburg, and the live East Penn Railroad track (old_railway_operator=Reading) from Pennsburg through the Dillinger Tunnel (way 96666869) to Emmaus Junction; untagged OpenHistoricalMap railway ways -201886172..-201886175 and -201877890 for the lower end Perkiomen Junction - Oaks - Arcola, where OSM has only the modern Perkiomen Trail cycleway and the disused Reading 'Phoenixville Industrial Track'. No OSM way in the corridor carries note:old_railway_operator (probed 2026-10-21), so opstrace needed no change.",
+    "geometry_quality": "Drawn length 4.90 mi equals the documented 4.9 mi BY CONSTRUCTION: one continuous trace of the whole branch was cut at Fowler's (BL) mileposts measured along it, so the fit check for this section is the station projections below, which agree with Fowler to about 0.1 mi. No straight-line legs: every vertex comes from an OSM or OHM way (douglas_peucker 8 m, trim_reversals). Cut at Fowler mileposts 18.2 and 23.1 along the trace; follows the Reading-tagged abandoned 'Perkiomen Branch' ways north of Green Lane (the trail ends at Green Lane) and joins live East Penn Railroad track at the Pennsburg end. Checks: Red Hill 21.52 (Fowler 21.5); Pennsburg borough centre projects to 22.54 (23.1), 0.2 km off the line - the cut uses Fowler's 23.1 because the trace matches Fowler within 0.1 mi at every other well-placed station. The drawn grade is the line as it last existed; no realignment of this branch was found, so no later-era alignment is known to be drawn, but the alignment was not checked against an 1868-75 map.",
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1875,
+      "headway_min": 240,
+      "note": "Green Lane - Pennsburg, 4.9 mi (BL mileposts 18.2 - 23.1), via McLean's, Welker's, Red Hill (Hanover) and Super's. Green Lane was still the terminal in the ad printed June 17 1873 (CA-1873); Pennsburg was the terminal in the ad printed Jan 16 1874 (CA-1874: trains leave Perkiomen Junction at 9.05 a.m., 2.25, 2.55 and 6.00 p.m.; returning, leave Pennsburg at 6.00 and 7.25 a.m., 12.15 and 4.15 p.m.); Fowler has 'Super's 1874t'. A schedule printed in Jan 1874 may have started in late 1873, so 1873 is possible but not proven; drawn from 1874, the first CONFIRMED year. Pennsburg was the terminal until the Sept 1875 extension. headway_min is an ESTIMATE from 4 trains each way in CA-1874.",
+      "sources": [
+       "Segment-level: 1874 start from CA-1874 (Pennsburg terminal, Jan 16 1874), bracketed by CA-1873 (Green Lane still the terminal, June 17 1873) and BL ('Super's 1874t'). Headway is an estimate from CA-1874.",
+       "The Bloomfield Times 1873-06-17 p8 (returning trains leave Green Lane; Green Lane still the terminal): https://www.loc.gov/resource/sn84026050/1873-06-17/ed-1/?sp=8",
+       "Sunbury American 1874-01-16 p4 ('trains leave Perkiomen Junction at 9.05 a.m., 2.25, 2.55 and 6.00 p.m.; returning, leave Pennsburg ...'): https://www.loc.gov/resource/sn84026403/1874-01-16/ed-1/?sp=4",
+       "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf"
+      ]
+     },
+     {
+      "start": 1875,
+      "end": 1955,
+      "headway_min": 240,
+      "note": "From Sept 27 1875 the Perkiomen was a through route: the extension to Emmaus Junction opened that day (NYT-1875) and the Nov 1 1875 timetable runs Philadelphia - Allentown trains 'via Perkiomen Branch', some with through cars to and from Mauch Chunk (CA-1875). Operated by the Philadelphia and Reading (Reading Company from the 1924 reorganisation - same operator); the Perkiomen Railroad Company was leased to and worked by the P&R by Nov 1869 (CA-1870) and merged into the Reading Company in 1945 (WP-PA), a corporate change only. Passenger service ended with the last train on July 15 1955 (TC-2025, which describes crowds riding through the Dillinger Tunnel to Emmaus and on to Allentown, last run behind diesel 616, 'single coach' trains by then); TC-2014, by the same author, says July 11 1955 - day conflict recorded, the year is 1955 either way. The whole line closed to passengers together; there was no cut-back of the upper end. Freight continued after 1955 (context only, not drawn): 'until the mid-1960s' on the upper valley, Collegeville - Green Lane abandoned 1973 (TC-2025), Pennsburg - Emmaus still worked today by the East Penn Railroad as freight. headway_min is an ESTIMATE: the Nov 1 1875 P&R timetable (CA-1875) shows 3 Philadelphia - Allentown through trains each way via the Perkiomen plus a Sunday train; no 20th-century timetable was read (the Feb 1952 Official Guide's Table 19 'Perkiomen Junction and Allentown' survives in OCR with only one time column), so the figure is carried forward unverified to 1955.",
+      "sources": [
+       "Segment-level: 1875 start from NYT-1875 (extension and first through passenger train Sept 27 1875) and CA-1875 (Nov 1 1875 timetable); 1955 end from TC-2025 (last train July 15 1955) with TC-2014 (July 11 1955) as a conflicting day in the same year; Pennsburg, East Greenville and Emmaus listed without a freight-only mark in the 1951/52 Official Guide index (research/sources/official_guide_1952.txt, Table 19). Headway is an estimate from the 1875 timetable only.",
+       "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5",
+       "The Carbon Advocate (Lehighton) 1875-12-25 p1, P&R 'Arrangement of Passenger Trains, November 1st, 1875' (Allentown trains 'via Perkiomen Branch'): https://www.loc.gov/resource/sn83032231/1875-12-25/ed-1/?sp=1",
+       "Larry Roeder, 'The Last Ride', Town and Country (Pennsburg) 2025-07-29 (last passenger train July 15 1955, through the Dillinger Tunnel to Emmaus and Allentown): https://upvnews.com/news/article.ashx?article=31690",
+       "Larry Roeder, 'The Perkiomen Line Through the Eyes of a Father and Son', Town and Country 2014-11-05 (passenger service ended July 11 1955): https://upvnews.com/news/article.ashx?article=12803",
+       "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.4732182,
+      40.3400067
+     ],
+     [
+      -75.472074,
+      40.3408745
+     ],
+     [
+      -75.471485,
+      40.341507
+     ],
+     [
+      -75.4712751,
+      40.3420686
+     ],
+     [
+      -75.4714199,
+      40.3437694
+     ],
+     [
+      -75.4706528,
+      40.3458791
+     ],
+     [
+      -75.4707601,
+      40.3466968
+     ],
+     [
+      -75.4714253,
+      40.3485938
+     ],
+     [
+      -75.4714672,
+      40.3492746
+     ],
+     [
+      -75.471318,
+      40.3498449
+     ],
+     [
+      -75.4709558,
+      40.3503536
+     ],
+     [
+      -75.4661928,
+      40.3552472
+     ],
+     [
+      -75.4654279,
+      40.3573995
+     ],
+     [
+      -75.4641292,
+      40.3588071
+     ],
+     [
+      -75.4624414,
+      40.361291
+     ],
+     [
+      -75.4621517,
+      40.3620199
+     ],
+     [
+      -75.4621252,
+      40.362678
+     ],
+     [
+      -75.4626571,
+      40.3638671
+     ],
+     [
+      -75.4629534,
+      40.3641529
+     ],
+     [
+      -75.4632967,
+      40.3644085
+     ],
+     [
+      -75.4655134,
+      40.3653286
+     ],
+     [
+      -75.4664096,
+      40.3660774
+     ],
+     [
+      -75.4666402,
+      40.3665147
+     ],
+     [
+      -75.467064,
+      40.3684479
+     ],
+     [
+      -75.4675165,
+      40.3694659
+     ],
+     [
+      -75.4703414,
+      40.3739588
+     ],
+     [
+      -75.471898,
+      40.3751
+     ],
+     [
+      -75.4917117,
+      40.3880011
+     ],
+     [
+      -75.4994058,
+      40.3962792
+     ],
+     [
+      -75.4997725,
+      40.3966856
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Philadelphia and Reading Railroad / Reading Company",
+    "line": "Philadelphia and Reading: Perkiomen Branch (Pennsburg \u2013 Emmaus Jct)",
+    "id": "perkiomen-branch-pennsburg-emmaus-jct",
+    "color": "#2A6F97",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: steam (later diesel) branch locals and Philadelphia - Allentown through trains on a 38-mile single-track branch; no running times were read. Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21; quarter-degree rail tiles, because whole-degree tiles 504'd that day) plus OpenHistoricalMap, routed with opstrace.py. OSM ways used: Reading-tagged (old_railway_operator=Reading) railway=abandoned 'Perkiomen Branch' / 'Perkiomen Trail' ways from Collegeville to Pennsburg, and the live East Penn Railroad track (old_railway_operator=Reading) from Pennsburg through the Dillinger Tunnel (way 96666869) to Emmaus Junction; untagged OpenHistoricalMap railway ways -201886172..-201886175 and -201877890 for the lower end Perkiomen Junction - Oaks - Arcola, where OSM has only the modern Perkiomen Trail cycleway and the disused Reading 'Phoenixville Industrial Track'. No OSM way in the corridor carries note:old_railway_operator (probed 2026-10-21), so opstrace needed no change.",
+    "geometry_quality": "Traced 15.52 mi against 15.0 mi documented (BL mileposts 23.1 - 38.1; +3.5%; the whole-line trace runs 38.62 mi vs 38.1, so the excess is all in this section). No straight-line legs: every vertex comes from an OSM or OHM way (douglas_peucker 8 m, trim_reversals). Cut at Fowler milepost 23.1 (Pennsburg) and ends at the north end of the East Penn Railroad's track alongside the NS Reading Line (the old East Penn Branch) at Emmaus Junction, lat 40.5524 lon -75.4889. All on live East Penn Railroad track tagged old_railway_operator=Reading, through the Dillinger Tunnel (OSM way 96666869, 520 m; the trace passes within 4 m of it at trace mi 32.4). Checks: East Greenville 23.72 (Fowler 23.8); Palm 25.93 (25.9); Hosensack 29.10 (28.9; village centre 1.1 km off); Vera Cruz 33.00 (34.3; the geocode is the hamlet centre 0.4 km off, not the station); Emmaus borough centre 36.85 (Emaus 36.8). Total trace from Perkiomen Junction to Emmaus Junction: 38.62 mi vs 38.1 documented (BL), 38 (NYT-1875 to Emaus). The excess is in the last stretch: Emmaus to the drawn end is about 1.8 mi against Fowler's 1.3 (Emaus 36.8 - Emaus Junction 38.1). North of about lat 40.535 the drawn line is the East Penn Railroad's own track running parallel to and about 100-150 m east of the NS Reading Line (the old East Penn Branch) up to its connection at lat 40.5524; whether that parallel track is the P&R-era Perkiomen alignment or a later (Conrail/short-line era) arrangement of the junction was NOT established, so the last ~1.2 mi may draw a later alignment, and the historical Emmaus Junction may lie up to ~0.5 mi south of the drawn end. The drawn grade is the line as it last existed; no realignment of this branch was found, so no later-era alignment is known to be drawn, but the alignment was not checked against an 1868-75 map.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1955,
+      "headway_min": 240,
+      "note": "From Sept 27 1875 the Perkiomen was a through route: the extension to Emmaus Junction opened that day (NYT-1875) and the Nov 1 1875 timetable runs Philadelphia - Allentown trains 'via Perkiomen Branch', some with through cars to and from Mauch Chunk (CA-1875). Operated by the Philadelphia and Reading (Reading Company from the 1924 reorganisation - same operator); the Perkiomen Railroad Company was leased to and worked by the P&R by Nov 1869 (CA-1870) and merged into the Reading Company in 1945 (WP-PA), a corporate change only. Passenger service ended with the last train on July 15 1955 (TC-2025, which describes crowds riding through the Dillinger Tunnel to Emmaus and on to Allentown, last run behind diesel 616, 'single coach' trains by then); TC-2014, by the same author, says July 11 1955 - day conflict recorded, the year is 1955 either way. The whole line closed to passengers together; there was no cut-back of the upper end. Freight continued after 1955 (context only, not drawn): 'until the mid-1960s' on the upper valley, Collegeville - Green Lane abandoned 1973 (TC-2025), Pennsburg - Emmaus still worked today by the East Penn Railroad as freight. headway_min is an ESTIMATE: the Nov 1 1875 P&R timetable (CA-1875) shows 3 Philadelphia - Allentown through trains each way via the Perkiomen plus a Sunday train; no 20th-century timetable was read (the Feb 1952 Official Guide's Table 19 'Perkiomen Junction and Allentown' survives in OCR with only one time column), so the figure is carried forward unverified to 1955.",
+      "sources": [
+       "Segment-level: 1875 start from NYT-1875 (extension and first through passenger train Sept 27 1875) and CA-1875 (Nov 1 1875 timetable); 1955 end from TC-2025 (last train July 15 1955) with TC-2014 (July 11 1955) as a conflicting day in the same year; Pennsburg, East Greenville and Emmaus listed without a freight-only mark in the 1951/52 Official Guide index (research/sources/official_guide_1952.txt, Table 19). Headway is an estimate from the 1875 timetable only.",
+       "New-York Tribune 1875-09-28 p5 (extension of the Perkiomen branch opened to Allentown Sept 27 1875; first passenger train Perkiomen Junction - Emaus, 38 miles): https://www.loc.gov/resource/sn83030214/1875-09-28/ed-1/?sp=5",
+       "The Carbon Advocate (Lehighton) 1875-12-25 p1, P&R 'Arrangement of Passenger Trains, November 1st, 1875' (Allentown trains 'via Perkiomen Branch'): https://www.loc.gov/resource/sn83032231/1875-12-25/ed-1/?sp=1",
+       "Larry Roeder, 'The Last Ride', Town and Country (Pennsburg) 2025-07-29 (last passenger train July 15 1955, through the Dillinger Tunnel to Emmaus and Allentown): https://upvnews.com/news/article.ashx?article=31690",
+       "Larry Roeder, 'The Perkiomen Line Through the Eyes of a Father and Son', Town and Country 2014-11-05 (passenger service ended July 11 1955): https://upvnews.com/news/article.ashx?article=12803",
+       "John Fowler, 'Pennsylvania Railroads (2) - SL 219', Reading section 125 'PERKIOMEN RR (RDG)' (station mileposts; letters y = 1875 Official Guide, q = 1884 Guide): https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.4997725,
+      40.3966856
+     ],
+     [
+      -75.5251326,
+      40.4247971
+     ],
+     [
+      -75.5257553,
+      40.4254115
+     ],
+     [
+      -75.5270409,
+      40.426223
+     ],
+     [
+      -75.5309972,
+      40.4274279
+     ],
+     [
+      -75.5321505,
+      40.4280772
+     ],
+     [
+      -75.5329337,
+      40.4287673
+     ],
+     [
+      -75.5333951,
+      40.4295268
+     ],
+     [
+      -75.5337116,
+      40.430662
+     ],
+     [
+      -75.5330571,
+      40.438081
+     ],
+     [
+      -75.5331054,
+      40.4388119
+     ],
+     [
+      -75.535058,
+      40.4456789
+     ],
+     [
+      -75.5347147,
+      40.446826
+     ],
+     [
+      -75.5339261,
+      40.4476262
+     ],
+     [
+      -75.5332556,
+      40.4479936
+     ],
+     [
+      -75.5324938,
+      40.4482181
+     ],
+     [
+      -75.529778,
+      40.448419
+     ],
+     [
+      -75.528552,
+      40.448848
+     ],
+     [
+      -75.527888,
+      40.449283
+     ],
+     [
+      -75.526762,
+      40.450539
+     ],
+     [
+      -75.526203,
+      40.450961
+     ],
+     [
+      -75.522851,
+      40.452226
+     ],
+     [
+      -75.521131,
+      40.453171
+     ],
+     [
+      -75.519755,
+      40.454292
+     ],
+     [
+      -75.518198,
+      40.455955
+     ],
+     [
+      -75.517562,
+      40.456394
+     ],
+     [
+      -75.516354,
+      40.456829
+     ],
+     [
+      -75.512769,
+      40.457326
+     ],
+     [
+      -75.511638,
+      40.457657
+     ],
+     [
+      -75.510351,
+      40.458305
+     ],
+     [
+      -75.508802,
+      40.459438
+     ],
+     [
+      -75.505925,
+      40.460335
+     ],
+     [
+      -75.504908,
+      40.461084
+     ],
+     [
+      -75.504426,
+      40.462086
+     ],
+     [
+      -75.50457,
+      40.464078
+     ],
+     [
+      -75.504454,
+      40.464675
+     ],
+     [
+      -75.504125,
+      40.465271
+     ],
+     [
+      -75.503053,
+      40.466435
+     ],
+     [
+      -75.502831,
+      40.46689
+     ],
+     [
+      -75.502776,
+      40.468315
+     ],
+     [
+      -75.50251,
+      40.469373
+     ],
+     [
+      -75.502569,
+      40.470019
+     ],
+     [
+      -75.503058,
+      40.470804
+     ],
+     [
+      -75.504298,
+      40.471731
+     ],
+     [
+      -75.505292,
+      40.472239
+     ],
+     [
+      -75.508309,
+      40.473386
+     ],
+     [
+      -75.50913,
+      40.473897
+     ],
+     [
+      -75.509588,
+      40.474427
+     ],
+     [
+      -75.509854,
+      40.47509
+     ],
+     [
+      -75.50987,
+      40.475684
+     ],
+     [
+      -75.509655,
+      40.476401
+     ],
+     [
+      -75.509201,
+      40.476987
+     ],
+     [
+      -75.508475,
+      40.477492
+     ],
+     [
+      -75.505352,
+      40.478351
+     ],
+     [
+      -75.504594,
+      40.478747
+     ],
+     [
+      -75.503916,
+      40.479324
+     ],
+     [
+      -75.503488,
+      40.479922
+     ],
+     [
+      -75.503227,
+      40.480604
+     ],
+     [
+      -75.50323,
+      40.482374
+     ],
+     [
+      -75.503061,
+      40.483216
+     ],
+     [
+      -75.502696,
+      40.483856
+     ],
+     [
+      -75.502033,
+      40.484519
+     ],
+     [
+      -75.501163,
+      40.485022
+     ],
+     [
+      -75.500128,
+      40.485341
+     ],
+     [
+      -75.49929,
+      40.48543
+     ],
+     [
+      -75.496999,
+      40.485372
+     ],
+     [
+      -75.496169,
+      40.485544
+     ],
+     [
+      -75.495527,
+      40.485842
+     ],
+     [
+      -75.494649,
+      40.486599
+     ],
+     [
+      -75.492387,
+      40.489823
+     ],
+     [
+      -75.489497,
+      40.492012
+     ],
+     [
+      -75.488876,
+      40.492691
+     ],
+     [
+      -75.488527,
+      40.493486
+     ],
+     [
+      -75.488511,
+      40.493863
+     ],
+     [
+      -75.4889922,
+      40.4951385
+     ],
+     [
+      -75.493704,
+      40.499753
+     ],
+     [
+      -75.494426,
+      40.500633
+     ],
+     [
+      -75.494628,
+      40.501221
+     ],
+     [
+      -75.494625,
+      40.501748
+     ],
+     [
+      -75.494421,
+      40.502392
+     ],
+     [
+      -75.494058,
+      40.502907
+     ],
+     [
+      -75.493236,
+      40.503525
+     ],
+     [
+      -75.485714,
+      40.507103
+     ],
+     [
+      -75.484232,
+      40.507495
+     ],
+     [
+      -75.481262,
+      40.507819
+     ],
+     [
+      -75.479967,
+      40.508125
+     ],
+     [
+      -75.478968,
+      40.508813
+     ],
+     [
+      -75.478466,
+      40.509617
+     ],
+     [
+      -75.47845,
+      40.510781
+     ],
+     [
+      -75.478922,
+      40.511633
+     ],
+     [
+      -75.480082,
+      40.512506
+     ],
+     [
+      -75.481058,
+      40.512858
+     ],
+     [
+      -75.482589,
+      40.513008
+     ],
+     [
+      -75.486258,
+      40.512484
+     ],
+     [
+      -75.488807,
+      40.512452
+     ],
+     [
+      -75.490715,
+      40.512665
+     ],
+     [
+      -75.494415,
+      40.513405
+     ],
+     [
+      -75.500401,
+      40.513727
+     ],
+     [
+      -75.501332,
+      40.513968
+     ],
+     [
+      -75.502002,
+      40.514342
+     ],
+     [
+      -75.502524,
+      40.51485
+     ],
+     [
+      -75.502893,
+      40.515616
+     ],
+     [
+      -75.502602,
+      40.519807
+     ],
+     [
+      -75.502088,
+      40.520893
+     ],
+     [
+      -75.501035,
+      40.521698
+     ],
+     [
+      -75.4973,
+      40.52311
+     ],
+     [
+      -75.496184,
+      40.523689
+     ],
+     [
+      -75.495396,
+      40.524287
+     ],
+     [
+      -75.494467,
+      40.525552
+     ],
+     [
+      -75.493779,
+      40.528697
+     ],
+     [
+      -75.492921,
+      40.530107
+     ],
+     [
+      -75.492107,
+      40.530826
+     ],
+     [
+      -75.491345,
+      40.531281
+     ],
+     [
+      -75.490292,
+      40.531708
+     ],
+     [
+      -75.48799,
+      40.532356
+     ],
+     [
+      -75.486333,
+      40.533347
+     ],
+     [
+      -75.4849692,
+      40.5349467
+     ],
+     [
+      -75.48361,
+      40.537576
+     ],
+     [
+      -75.481859,
+      40.542488
+     ],
+     [
+      -75.481803,
+      40.543204
+     ],
+     [
+      -75.481974,
+      40.544006
+     ],
+     [
+      -75.48248,
+      40.544876
+     ],
+     [
+      -75.483429,
+      40.545717
+     ],
+     [
+      -75.484254,
+      40.546145
+     ],
+     [
+      -75.486738,
+      40.547043
+     ],
+     [
+      -75.487601,
+      40.547598
+     ],
+     [
+      -75.488306,
+      40.548254
+     ],
+     [
+      -75.48889,
+      40.549112
+     ],
+     [
+      -75.48927,
+      40.55034
+     ],
+     [
+      -75.489211,
+      40.551306
+     ],
+     [
+      -75.488884,
+      40.5523868
+     ]
+    ]
+   }
+  }
+ ]
+}
