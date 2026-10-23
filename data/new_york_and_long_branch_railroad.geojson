@@ -1,0 +1,822 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The New York and Long Branch Railroad (NJ, inc. Apr 8 1868): Perth Amboy (north end of the Raritan River bridge) - South Amboy - Matawan - Red Bank - Long Branch - Asbury Park - Sea Girt - Point Pleasant - Bay Head, the shore line now run by NJ Transit as the North Jersey Coast Line. It has carried passengers every year since July 1 1875. Drawn by operator era on identical traced geometry: Central Railroad of New Jersey (its 'New York and Long Branch Division') 1875-1881, the jointly owned New York and Long Branch Railroad (CNJ and PRR / Penn Central trains) 1882-1975, Conrail 1976-1982; NJ Transit from 1983 is in nj_transit_rail.geojson (njt-11, njt-12). The CNJ era is drawn in two pieces because Sea Girt - Point Pleasant opened in 1880; Point Pleasant - Bay Head first appears in 1882. The parents' approach lines north of Perth Amboy (CNJ via Elizabethport, PRR via Rahway and Woodbridge) are not part of this layer.",
+  "sources": [
+   "https://www.loc.gov/resource/sn83032307/1875-08-26/ed-1/?sp=2 -- Monmouth Inquirer Aug 26 1875 p.2, CNJ timetable commencing Aug 25 1875 (five trains each way to Long Branch; stages beyond)",
+   "https://www.loc.gov/resource/sn83032307/1875-10-28/ed-1/?sp=2 -- Monmouth Inquirer Oct 28 1875 p.2, CNJ timetable commencing Oct 4 1875 (trains to Ocean Grove and Sea Girt)",
+   "https://www.loc.gov/resource/sn83032307/1882-04-20/ed-1/?sp=3 -- Monmouth Inquirer Apr 20 1882 p.3, the NY&LB's own superintendency, Raritan River bridge - Bay Head; PRR/CNJ combination arrangement in effect",
+   "https://www.loc.gov/resource/sn83030214/1879-07-29/ed-1/?sp=3 -- NY Tribune July 29 1879 p.3, CNJ ad, stage to Point Pleasant from Sea Girt",
+   "https://www.loc.gov/resource/sn83030214/1881-06-19/ed-1/?sp=12 -- NY Tribune June 19 1881 p.12, extension to Bay Head under construction",
+   "https://www.loc.gov/resource/sn83030214/1881-08-04/ed-1/?sp=3 -- NY Tribune Aug 4 1881 p.3, CNJ ad, all rail to Point Pleasant",
+   "The Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): PRR Table 38, Jersey Central Table 13 cross-reference, NY&LB pp. 388-391 (OCR unreadable)",
+   "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf -- branchline.uk (John Fowler), New Jersey passenger stations, section 38 (NYLB) mileposts",
+   "https://www.american-rails.com/nylb.html",
+   "https://en.wikipedia.org/wiki/New_York_and_Long_Branch_Railroad",
+   "https://en.wikipedia.org/wiki/Belmar_station",
+   "https://en.wikipedia.org/wiki/Spring_Lake_station",
+   "https://en.wikipedia.org/wiki/Asbury_Park_station",
+   "https://en.wikipedia.org/wiki/Point_Pleasant_Beach_station",
+   "https://en.wikipedia.org/wiki/Bay_Head_station",
+   "research/branches/new_york_and_long_branch_railroad_cnj.txt (research report, 2026-10-20)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): member ways of the NJ Transit North Jersey Coast Line route relation 207401 plus ways tagged old_railway_operator=CNJ;PRR (OSM's tag for the NY&LB itself; CNJ-tagged north of the Raritan, PRR north of Perth Amboy). Graph limited to those ways only, so the router could not reach the CNJ Sea Shore/Freehold branches at Matawan, the PRR Freehold and Jamesburg at Sea Girt, or the Southern Secondary at Bay Head Junction. Routed with opstrace.py through OSM station nodes; Douglas-Peucker 8 m + trim_reversals."
+  ],
+  "operator_split": "Rule 4 splits on identical geometry: Apr 1 1882 (agreement Jan 3 1882; NY&LB superintendency and PRR through trains from April 1882) - Central Railroad of New Jersey features end 1881, the New York and Long Branch feature starts 1882; Apr 1 1976 - Conrail from 1976; Jan 1 1983 - NJ Transit (nj_transit_rail.geojson). Not splits: the 1868-1881 constituent companies (builders only, merged Dec 20 1881), the 1873 CNJ lease, the Reading's 1883-1886 CNJ lease, USRA 1918, the 1967 CNJ bankruptcy/Aldene Plan, and Penn Central taking the PRR's half in 1968 - none changed the joint company. 'New York and Long Branch' is a new company with a new colour (#8E44AD) because two companies' trains shared the line 1882-1975 and the Official Guide indexed the NY&LB as a carrier in its own right.",
+  "freight_only_audit": "Nothing freight-only drawn (Rule 1). The NY&LB carried passengers on every mile in every drawn year; freight spurs at South Amboy (Raritan River RR connection) and Morgan belong to other companies and are not drawn.",
+  "horsecar_audit": "Nothing to trim (Rule 5): the NY&LB and all four constituent companies were steam roads from their first train.",
+  "omitted": [
+   "Monmouth Park race-track spur (Monmouth Park Railroad): race-day specials ran, but no dated opening or closing was found - drawable NONE.",
+   "The CNJ's Perth Amboy and Elizabethport approach, the PRR's Perth Amboy and Woodbridge (from 1864), the PRR Freehold and Jamesburg line to Sea Girt and the PRR Camden - Toms River - Bay Head line: other companies' lines, not this layer's; the PRR ones are not yet drawn anywhere for their pre-1983 years."
+  ],
+  "not_yet_sourced": [
+   "Sea Girt - Point Pleasant start year: 1880 rests on Wikipedia's citation of the Red Bank Register Aug 5 1880 p.1 (not read); directly read evidence brackets it 1880-1881.",
+   "Point Pleasant - Bay Head Junction first passenger year: 1881 (american-rails / Wikipedia 'completed 1881') vs Aug 1 1882 (Wikipedia Bay Head station, House Exec. Docs 1884); drawn from 1882 only. A summer-1882 timetable naming Bay Head would settle it.",
+   "Long Branch - Sea Girt: 'built 1876' (american-rails, Wikipedia corporate list) conflicts with the Oct 4 1875 timetable running trains to Sea Girt; drawn from 1875. Station opening days (Asbury Park Aug 25, Belmar Sept 14, Spring Lake/Sea Girt Oct 11 1875) are unreliable.",
+   "Northern limit of the NY&LB proper: 'the Raritan River bridge, at Perth Amboy' (1882) vs branchline.uk starting at South Amboy Junction (op. 1908); drawn from Perth Amboy station so the River Draw is included (about a mile at stake).",
+   "Whether the NY&LB employed train crews, or only track, station and dispatching staff with all trains crewed by the CNJ and PRR.",
+   "CNJ shore trains after the Aldene Plan (Apr 30 1967): ended or rerouted via Aldene - affects the CNJ approach route, not this layer's years.",
+   "Every headway_min 1875-1982 is an estimate between three anchors: Aug 1875 five trains each way, Oct 1875 three trains to Sea Girt, Jan 1952 about 20 weekday PRR trains each way plus CNJ trains. avg_speed_kmh is estimated throughout.",
+   "Whether the 1875-1907 Raritan River crossing and South Amboy approach followed a different alignment from the 1908 bridge drawn here, and whether NJ Transit's replacement Raritan bridge sits on a new alignment."
+  ],
+  "pulled": "20261020"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Central Railroad of New Jersey",
+    "line": "Central Railroad of New Jersey: New York and Long Branch Division",
+    "id": "nylb-cnj-1",
+    "color": "#2E6F40",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: 1870s steam resort/suburban service with frequent stops; unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): member ways of the NJ Transit North Jersey Coast Line route relation 207401 plus ways tagged old_railway_operator=CNJ;PRR (OSM's tag for the NY&LB itself; CNJ-tagged north of the Raritan, PRR north of Perth Amboy). Graph limited to those ways only, so the router could not reach the CNJ Sea Shore/Freehold branches at Matawan, the PRR Freehold and Jamesburg at Sea Girt, or the Southern Secondary at Bay Head Junction. Routed with opstrace.py through OSM station nodes; Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Drawn on the modern NJ Transit North Jersey Coast Line alignment. The Raritan River crossing and South Amboy Junction are drawn as OSM maps them today: the 1908 two-track swing span ('Raritan Bay Drawbridge') and the junction layout branchline.uk dates 'op. 1908', with the newer high-id approach ways south of the bridge that may belong to NJ Transit's replacement Raritan River bridge work - a LATER alignment than 1875-1907, whose original bridge approach is not recoverable from OSM. Real-traced throughout, no straight-line (approximated) legs. Perth Amboy (CNJ/NJT station, north of the River Draw) - Sea Girt: 34.8 mi traced against about 34.2-34.8 mi documented (Perth Amboy - Long Branch 22.88 mi traced vs 22.44 mi as built per american-rails.com, or 21.8 mi South Amboy Jn - Long Branch plus ~1.2 mi per branchline.uk; Long Branch - Sea Girt 11.9 mi traced vs 11.8 mi, branchline.uk mileposts 45.1-56.9). Sea Girt has no surviving station, so the Sea Girt end is placed on the traced line by interpolating branchline.uk mileposts (Spring Lake 55.5, Sea Girt 56.9, Manasquan 57.6) between the Spring Lake and Manasquan station nodes; it is a split point, not a surveyed station.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1881,
+      "headway_min": 240,
+      "note": "Central Railroad of New Jersey's own trains, sold as its 'New York and Long Branch Division' (CNJ lease of the NY&LB dated Oct 6 1873), from Jersey City via Elizabethport and the CNJ's Perth Amboy line (not drawn here). Ceremonial trains June 25 1875, regular service July 1 1875 to Long Branch; the Aug 25 1875 timetable (Monmouth Inquirer Aug 26 1875) runs five trains each way New York - Matawan - Red Bank - Long Branch, with STAGES onward to Ocean Grove and Asbury Park. Long Branch - Sea Girt (built by the New Egypt and Farmingdale and the Long Branch and Sea Girt companies, which never ran trains in their own names) opened between Aug 25 and Oct 4 1875: the Oct 4 1875 timetable runs three trains a day 'for Sea Girt'. SOURCE CONFLICTS: american-rails.com and Wikipedia say both constituents were 'built 1876', refuted as a passenger opening by the Oct 1875 timetable (1876 is presumably completion or conveyance); Wikipedia's Aug 25 1875 opening for Asbury Park is contradicted by its own cited source, and its Oct 11 1875 Spring Lake/Sea Girt date is later than the Oct 4 timetable. The year 1875 is safe; the days are not. The Pennsylvania Railroad had no trains on the line before April 1882. Ends 1881: from April 1 1882 the line was the jointly owned New York and Long Branch Railroad (Monmouth Inquirer Apr 20 1882). headway_min is an estimate, not a timetable count. Five trains each way (Aug 1875) and three through trains to Sea Girt (Oct 1875) are the only anchors.",
+      "sources": [
+       "Segment-level: Monmouth Inquirer 1875-08-26 p.2 and 1875-10-28 p.2 (CNJ 'New York and Long Branch Division' timetables, read directly by the research report) for the 1875 start and the Aug/Oct 1875 train counts; Monmouth Inquirer 1882-04-20 p.3 (read directly) for the April 1882 operator change that ends this segment. Headway is an estimate.",
+       "https://www.loc.gov/resource/sn83032307/1875-08-26/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn83032307/1875-10-28/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn83032307/1882-04-20/ed-1/?sp=3",
+       "https://www.american-rails.com/nylb.html",
+       "https://en.wikipedia.org/wiki/New_York_and_Long_Branch_Railroad",
+       "https://en.wikipedia.org/wiki/Belmar_station",
+       "https://en.wikipedia.org/wiki/Spring_Lake_station",
+       "https://en.wikipedia.org/wiki/Asbury_Park_station"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2740637,
+      40.5088316
+     ],
+     [
+      -74.2772605,
+      40.5024215
+     ],
+     [
+      -74.2833142,
+      40.4921504
+     ],
+     [
+      -74.2836254,
+      40.4912159
+     ],
+     [
+      -74.2837195,
+      40.490146
+     ],
+     [
+      -74.2835469,
+      40.4890625
+     ],
+     [
+      -74.2831992,
+      40.4882499
+     ],
+     [
+      -74.271821,
+      40.4734786
+     ],
+     [
+      -74.2703671,
+      40.4721826
+     ],
+     [
+      -74.2663897,
+      40.4695325
+     ],
+     [
+      -74.2646697,
+      40.467962
+     ],
+     [
+      -74.2604066,
+      40.4623845
+     ],
+     [
+      -74.2335014,
+      40.4309439
+     ],
+     [
+      -74.2312438,
+      40.427676
+     ],
+     [
+      -74.2301943,
+      40.4264027
+     ],
+     [
+      -74.2263717,
+      40.4219563
+     ],
+     [
+      -74.2253897,
+      40.4210762
+     ],
+     [
+      -74.2237575,
+      40.4201594
+     ],
+     [
+      -74.2228294,
+      40.41982
+     ],
+     [
+      -74.2213694,
+      40.419515
+     ],
+     [
+      -74.1577205,
+      40.4109937
+     ],
+     [
+      -74.154557,
+      40.4104582
+     ],
+     [
+      -74.1524109,
+      40.4096469
+     ],
+     [
+      -74.1220869,
+      40.3944006
+     ],
+     [
+      -74.1201149,
+      40.3932508
+     ],
+     [
+      -74.1173642,
+      40.3910294
+     ],
+     [
+      -74.065651,
+      40.3395156
+     ],
+     [
+      -74.064396,
+      40.3387109
+     ],
+     [
+      -73.9901445,
+      40.3005391
+     ],
+     [
+      -73.9891726,
+      40.2998465
+     ],
+     [
+      -73.9885979,
+      40.2990547
+     ],
+     [
+      -73.9883487,
+      40.2980966
+     ],
+     [
+      -73.9884765,
+      40.2916435
+     ],
+     [
+      -73.989961,
+      40.2821248
+     ],
+     [
+      -73.9982229,
+      40.2639099
+     ],
+     [
+      -73.9991168,
+      40.2627845
+     ],
+     [
+      -74.0017049,
+      40.260809
+     ],
+     [
+      -74.0024702,
+      40.2598179
+     ],
+     [
+      -74.0029251,
+      40.2588212
+     ],
+     [
+      -74.0031382,
+      40.2576843
+     ],
+     [
+      -74.0034935,
+      40.2481162
+     ],
+     [
+      -74.0039334,
+      40.245684
+     ],
+     [
+      -74.0308848,
+      40.1707351
+     ],
+     [
+      -74.0380285,
+      40.1394881
+     ],
+     [
+      -74.0426561,
+      40.1304686
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Central Railroad of New Jersey",
+    "line": "Central Railroad of New Jersey: New York and Long Branch Division",
+    "id": "nylb-cnj-2",
+    "color": "#2E6F40",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: 1880s steam service; unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): member ways of the NJ Transit North Jersey Coast Line route relation 207401 plus ways tagged old_railway_operator=CNJ;PRR (OSM's tag for the NY&LB itself; CNJ-tagged north of the Raritan, PRR north of Perth Amboy). Graph limited to those ways only, so the router could not reach the CNJ Sea Shore/Freehold branches at Matawan, the PRR Freehold and Jamesburg at Sea Girt, or the Southern Secondary at Bay Head Junction. Routed with opstrace.py through OSM station nodes; Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Real-traced on the modern NJ Transit North Jersey Coast Line, no straight-line legs, including the Brielle Draw over the Manasquan River (single-tracked since the mid-1970s). Sea Girt - Point Pleasant Beach station: 2.7 mi traced vs 2.7 mi documented (branchline.uk 56.9-59.6). The Sea Girt end is milepost-interpolated (see the Perth Amboy - Sea Girt feature). Modern alignment; any change since 1880 is not established.",
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1881,
+      "headway_min": 240,
+      "note": "Sea Girt - Manasquan - Brielle - Point Pleasant extension, built by the New York and Long Branch Extension Railroad and worked by the Central Railroad of New Jersey as part of its New York and Long Branch Division. Bracketed by two primary ads: July 1879 still runs stages 'to and from Point Pleasant at Sea Girt' (not yet open), and Aug 1881 sells an 'ALL RAIL LINE for ... Point Pleasant' (open). The 1880 start rests on Wikipedia's July 29 1880 opening for Manasquan and Point Pleasant, citing the Red Bank Register of Aug 5 1880 p.1, which the research did NOT read; on directly-read evidence alone the start would be 1881. Unresolved: branchline.uk lists a 'Squan' terminus in the 1877 Guide, probably the PRR-side Farmingdale and Squan Village stub, not this extension. Ends 1881 at the April 1882 change to the joint NY&LB. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: NY Tribune 1879-07-29 p.3 and 1881-08-04 p.3 (CNJ ads, read directly) bracket the opening 1880-1881; the 1880 year itself is secondary (Wikipedia, Point Pleasant Beach station, citing Red Bank Register 1880-08-05 p.1, not read). Headway is an estimate.",
+       "https://www.loc.gov/resource/sn83030214/1879-07-29/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn83030214/1881-08-04/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Point_Pleasant_Beach_station"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.0426561,
+      40.1304686
+     ],
+     [
+      -74.0490154,
+      40.1180738
+     ],
+     [
+      -74.04981,
+      40.1163957
+     ],
+     [
+      -74.0502654,
+      40.1149866
+     ],
+     [
+      -74.0506148,
+      40.1129333
+     ],
+     [
+      -74.0505802,
+      40.1106524
+     ],
+     [
+      -74.048207,
+      40.0926748
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New York and Long Branch",
+    "line": "New York and Long Branch: Perth Amboy – Bay Head Junction",
+    "id": "nylb-1",
+    "color": "#8E44AD",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "estimated: steam commuter/resort service stopping at most of some 25 stations; not computed from the 1952 Table 38 times; unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): member ways of the NJ Transit North Jersey Coast Line route relation 207401 plus ways tagged old_railway_operator=CNJ;PRR (OSM's tag for the NY&LB itself; CNJ-tagged north of the Raritan, PRR north of Perth Amboy). Graph limited to those ways only, so the router could not reach the CNJ Sea Shore/Freehold branches at Matawan, the PRR Freehold and Jamesburg at Sea Girt, or the Southern Secondary at Bay Head Junction. Routed with opstrace.py through OSM station nodes; Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Drawn on the modern NJ Transit North Jersey Coast Line alignment. The Raritan River crossing and South Amboy Junction are drawn as OSM maps them today: the 1908 two-track swing span ('Raritan Bay Drawbridge') and the junction layout branchline.uk dates 'op. 1908', with the newer high-id approach ways south of the bridge that may belong to NJ Transit's replacement Raritan River bridge work - a LATER alignment than 1875-1907, whose original bridge approach is not recoverable from OSM. Real-traced throughout, no straight-line (approximated) legs. Perth Amboy - Bay Head: 38.4 mi traced vs 38.6 mi documented (Perth Amboy - Long Branch 22.88 vs ~22.4-23.0; Long Branch - Sea Girt 11.9 vs 11.8; Sea Girt - Point Pleasant 2.7 vs 2.7; Point Pleasant - Bay Head 0.9 vs 1.1). The line ends at the Bay Head station node; the Bay Head Junction turning loop is not drawn, which accounts for most of the 0.2 mi short at the south end.",
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1935,
+      "headway_min": 60,
+      "note": "The New York and Long Branch Railroad, owned jointly by the Central Railroad of New Jersey and the Pennsylvania Railroad under the agreement of Jan 3 1882 (further operating agreement Jan 2 1888). From April 1 1882 'the portion of the old Long Branch Division ... between the Raritan River bridge, at Perth Amboy and Bay Head' was the NY&LB with its own superintendent (James F. Randolph, Long Branch) and auditor, and PRR through trains began running over it via Rahway and the Perth Amboy and Woodbridge, alongside the CNJ's trains via Elizabethport. Both parents' trains ran over the line; whether the NY&LB itself employed train crews is not established. Point Pleasant - Bay Head Junction is drawn from 1882: the extension was still being built in June 1881 (NY Tribune June 19 1881), the Aug 1881 CNJ ad does not name Bay Head, and Wikipedia gives Aug 1 1882 for Bay Head station (House Executive Documents 1884); american-rails says 'completed 1881' - a conflict, see metadata. The Reading's 1883-1886 lease of the CNJ and USRA control from 1918 did not change the joint company. 1935 is an internal boundary only (see next segment). headway_min is an estimate, not a timetable count. No timetable between Oct 1875 and Jan 1952 was read.",
+      "sources": [
+       "Segment-level: Monmouth Inquirer 1882-04-20 p.3 (read directly) for the 1882 start of NY&LB operation; Bay Head 1882 per Wikipedia Bay Head station (House Exec. Docs 1884) and NY Tribune 1881-06-19 p.12 (read directly). The 1935 end is an internal era boundary, not a service change. Headway is an estimate with no timetable anchor in these years.",
+       "https://www.loc.gov/resource/sn83032307/1882-04-20/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn83030214/1881-06-19/ed-1/?sp=12",
+       "https://en.wikipedia.org/wiki/Bay_Head_station",
+       "https://www.american-rails.com/nylb.html",
+       "https://en.wikipedia.org/wiki/New_York_and_Long_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     },
+     {
+      "start": 1936,
+      "end": 1975,
+      "headway_min": 45,
+      "note": "New York and Long Branch joint operation continued (the PRR's half passed to Penn Central on Feb 1 1968; the joint company was unchanged). PRR catenary Rahway - South Amboy was completed about 1936, so from then PRR trains changed engines at South Amboy; the NY&LB itself stayed unelectrified (catenary reached Matawan only in 1982 and Long Branch in 1988). Feb 1952 Official Guide: PRR Table 38 New York - Asbury Park - Point Pleasant - Bay Head Junction runs about 20 weekday trains each way, plus CNJ trains whose times are unreadable in the NY&LB's own Guide pages (388-391); a footnote shows a CNJ train between Sea Girt and Bay Head Junction on which PRR tickets were honoured. CNJ bankruptcy (1967) and the Aldene Plan (Apr 30 1967) rerouted CNJ trains north of Perth Amboy, not drawn here; whether CNJ shore trains continued after 1967 is unresolved. Ends 1975: Conrail took over on Apr 1 1976. headway_min is an estimate, not a timetable count. The 45-minute figure is anchored only by the Jan 1952 count of about 20 PRR trains each way plus CNJ trains.",
+      "sources": [
+       "Segment-level: 1936 boundary is the PRR electrification to South Amboy (american-rails.com; Wikipedia NJCL 'about 1936'); headway anchor is Feb 1952 Official Guide PRR Table 38 (cached OCR research/sources/official_guide_1952.txt); the 1975 end is the day before Conrail's Apr 1 1976 takeover (american-rails.com). Headway is an estimate.",
+       "https://www.american-rails.com/nylb.html",
+       "https://en.wikipedia.org/wiki/New_York_and_Long_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2740637,
+      40.5088316
+     ],
+     [
+      -74.2772605,
+      40.5024215
+     ],
+     [
+      -74.2833142,
+      40.4921504
+     ],
+     [
+      -74.2836254,
+      40.4912159
+     ],
+     [
+      -74.2837195,
+      40.490146
+     ],
+     [
+      -74.2835469,
+      40.4890625
+     ],
+     [
+      -74.2831992,
+      40.4882499
+     ],
+     [
+      -74.271821,
+      40.4734786
+     ],
+     [
+      -74.2703671,
+      40.4721826
+     ],
+     [
+      -74.2663897,
+      40.4695325
+     ],
+     [
+      -74.2646697,
+      40.467962
+     ],
+     [
+      -74.2604066,
+      40.4623845
+     ],
+     [
+      -74.2335014,
+      40.4309439
+     ],
+     [
+      -74.2312438,
+      40.427676
+     ],
+     [
+      -74.2301943,
+      40.4264027
+     ],
+     [
+      -74.2263717,
+      40.4219563
+     ],
+     [
+      -74.2253897,
+      40.4210762
+     ],
+     [
+      -74.2237575,
+      40.4201594
+     ],
+     [
+      -74.2228294,
+      40.41982
+     ],
+     [
+      -74.2213694,
+      40.419515
+     ],
+     [
+      -74.1577205,
+      40.4109937
+     ],
+     [
+      -74.154557,
+      40.4104582
+     ],
+     [
+      -74.1524109,
+      40.4096469
+     ],
+     [
+      -74.1220869,
+      40.3944006
+     ],
+     [
+      -74.1201149,
+      40.3932508
+     ],
+     [
+      -74.1173642,
+      40.3910294
+     ],
+     [
+      -74.065651,
+      40.3395156
+     ],
+     [
+      -74.064396,
+      40.3387109
+     ],
+     [
+      -73.9901445,
+      40.3005391
+     ],
+     [
+      -73.9891726,
+      40.2998465
+     ],
+     [
+      -73.9885979,
+      40.2990547
+     ],
+     [
+      -73.9883487,
+      40.2980966
+     ],
+     [
+      -73.9884765,
+      40.2916435
+     ],
+     [
+      -73.989961,
+      40.2821248
+     ],
+     [
+      -73.9982229,
+      40.2639099
+     ],
+     [
+      -73.9991168,
+      40.2627845
+     ],
+     [
+      -74.0017049,
+      40.260809
+     ],
+     [
+      -74.0024702,
+      40.2598179
+     ],
+     [
+      -74.0029251,
+      40.2588212
+     ],
+     [
+      -74.0031382,
+      40.2576843
+     ],
+     [
+      -74.0034935,
+      40.2481162
+     ],
+     [
+      -74.0039334,
+      40.245684
+     ],
+     [
+      -74.0308848,
+      40.1707351
+     ],
+     [
+      -74.0380285,
+      40.1394881
+     ],
+     [
+      -74.0426561,
+      40.1304686
+     ],
+     [
+      -74.0490154,
+      40.1180738
+     ],
+     [
+      -74.04981,
+      40.1163957
+     ],
+     [
+      -74.0502654,
+      40.1149866
+     ],
+     [
+      -74.0506148,
+      40.1129333
+     ],
+     [
+      -74.0505802,
+      40.1106524
+     ],
+     [
+      -74.048207,
+      40.0926748
+     ],
+     [
+      -74.0464885,
+      40.0796566
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Conrail",
+    "line": "Conrail: North Jersey Coast Line",
+    "id": "nylb-cr-1",
+    "color": "#3E6FD0",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "estimated: diesel commuter service south of Perth Amboy; unsourced",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): member ways of the NJ Transit North Jersey Coast Line route relation 207401 plus ways tagged old_railway_operator=CNJ;PRR (OSM's tag for the NY&LB itself; CNJ-tagged north of the Raritan, PRR north of Perth Amboy). Graph limited to those ways only, so the router could not reach the CNJ Sea Shore/Freehold branches at Matawan, the PRR Freehold and Jamesburg at Sea Girt, or the Southern Secondary at Bay Head Junction. Routed with opstrace.py through OSM station nodes; Douglas-Peucker 8 m + trim_reversals.",
+    "geometry_quality": "Drawn on the modern NJ Transit North Jersey Coast Line alignment. The Raritan River crossing and South Amboy Junction are drawn as OSM maps them today: the 1908 two-track swing span ('Raritan Bay Drawbridge') and the junction layout branchline.uk dates 'op. 1908', with the newer high-id approach ways south of the bridge that may belong to NJ Transit's replacement Raritan River bridge work - a LATER alignment than 1875-1907, whose original bridge approach is not recoverable from OSM. Real-traced throughout, no straight-line (approximated) legs. Perth Amboy - Bay Head: 38.4 mi traced vs 38.6 mi documented (Perth Amboy - Long Branch 22.88 vs ~22.4-23.0; Long Branch - Sea Girt 11.9 vs 11.8; Sea Girt - Point Pleasant 2.7 vs 2.7; Point Pleasant - Bay Head 0.9 vs 1.1). The line ends at the Bay Head station node; the Bay Head Junction turning loop is not drawn, which accounts for most of the 0.2 mi short at the south end.",
+    "segments": [
+     {
+      "start": 1976,
+      "end": 1982,
+      "headway_min": 45,
+      "note": "Conrail ran the North Jersey Coast commuter trains from Apr 1 1976 under NJDOT contract, until NJ Transit Rail Operations took over on Jan 1 1983 (njt-11/njt-12 in nj_transit_rail.geojson start 1983). This feature draws only the New York and Long Branch track Perth Amboy - Bay Head; Conrail also ran the trains north of Perth Amboy over the PRR's Perth Amboy and Woodbridge and the Northeast Corridor into New York, which this layer does not draw. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: american-rails.com (Conrail from Apr 1 1976; NJ Transit from Jan 1 1983), as recorded in research/branches/new_york_and_long_branch_railroad_cnj.txt. Headway is an estimate.",
+       "https://www.american-rails.com/nylb.html",
+       "https://en.wikipedia.org/wiki/New_York_and_Long_Branch_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.2740637,
+      40.5088316
+     ],
+     [
+      -74.2772605,
+      40.5024215
+     ],
+     [
+      -74.2833142,
+      40.4921504
+     ],
+     [
+      -74.2836254,
+      40.4912159
+     ],
+     [
+      -74.2837195,
+      40.490146
+     ],
+     [
+      -74.2835469,
+      40.4890625
+     ],
+     [
+      -74.2831992,
+      40.4882499
+     ],
+     [
+      -74.271821,
+      40.4734786
+     ],
+     [
+      -74.2703671,
+      40.4721826
+     ],
+     [
+      -74.2663897,
+      40.4695325
+     ],
+     [
+      -74.2646697,
+      40.467962
+     ],
+     [
+      -74.2604066,
+      40.4623845
+     ],
+     [
+      -74.2335014,
+      40.4309439
+     ],
+     [
+      -74.2312438,
+      40.427676
+     ],
+     [
+      -74.2301943,
+      40.4264027
+     ],
+     [
+      -74.2263717,
+      40.4219563
+     ],
+     [
+      -74.2253897,
+      40.4210762
+     ],
+     [
+      -74.2237575,
+      40.4201594
+     ],
+     [
+      -74.2228294,
+      40.41982
+     ],
+     [
+      -74.2213694,
+      40.419515
+     ],
+     [
+      -74.1577205,
+      40.4109937
+     ],
+     [
+      -74.154557,
+      40.4104582
+     ],
+     [
+      -74.1524109,
+      40.4096469
+     ],
+     [
+      -74.1220869,
+      40.3944006
+     ],
+     [
+      -74.1201149,
+      40.3932508
+     ],
+     [
+      -74.1173642,
+      40.3910294
+     ],
+     [
+      -74.065651,
+      40.3395156
+     ],
+     [
+      -74.064396,
+      40.3387109
+     ],
+     [
+      -73.9901445,
+      40.3005391
+     ],
+     [
+      -73.9891726,
+      40.2998465
+     ],
+     [
+      -73.9885979,
+      40.2990547
+     ],
+     [
+      -73.9883487,
+      40.2980966
+     ],
+     [
+      -73.9884765,
+      40.2916435
+     ],
+     [
+      -73.989961,
+      40.2821248
+     ],
+     [
+      -73.9982229,
+      40.2639099
+     ],
+     [
+      -73.9991168,
+      40.2627845
+     ],
+     [
+      -74.0017049,
+      40.260809
+     ],
+     [
+      -74.0024702,
+      40.2598179
+     ],
+     [
+      -74.0029251,
+      40.2588212
+     ],
+     [
+      -74.0031382,
+      40.2576843
+     ],
+     [
+      -74.0034935,
+      40.2481162
+     ],
+     [
+      -74.0039334,
+      40.245684
+     ],
+     [
+      -74.0308848,
+      40.1707351
+     ],
+     [
+      -74.0380285,
+      40.1394881
+     ],
+     [
+      -74.0426561,
+      40.1304686
+     ],
+     [
+      -74.0490154,
+      40.1180738
+     ],
+     [
+      -74.04981,
+      40.1163957
+     ],
+     [
+      -74.0502654,
+      40.1149866
+     ],
+     [
+      -74.0506148,
+      40.1129333
+     ],
+     [
+      -74.0505802,
+      40.1106524
+     ],
+     [
+      -74.048207,
+      40.0926748
+     ],
+     [
+      -74.0464885,
+      40.0796566
+     ]
+    ]
+   }
+  }
+ ]
+}

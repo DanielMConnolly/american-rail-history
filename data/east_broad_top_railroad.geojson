@@ -1,0 +1,1668 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "East Broad Top Railroad and Coal Company, Huntingdon County, Pennsylvania - 3 ft gauge, Mount Union - Orbisonia (Rockhill Furnace) - Robertsdale (30 mi), common carrier 1873-1954 (last passenger 15 Aug 1954; freight to April 1956, not drawn), with the Shade Gap Branch drawn only for its confirmed passenger years; tourist line Rockhill Furnace - Colgate Grove 1961-2011 and again from 2021, and southbound excursions from 2024. Research report: research/branches/east_broad_top_railroad.txt.",
+  "sources": [
+   "https://oldeastie.com/timeline.html",
+   "https://eastbroadtop.com/about/history/",
+   "https://abandonedonline.net/location/east-broad-top-railroad/",
+   "https://railfan.com/orbisonia-obsession/",
+   "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+   "https://oldeastie.com/Tour/sg.html",
+   "https://oldeastie.com/Tour/sv.html",
+   "https://eastbroadtop.com/ride/northbound-train-ride/",
+   "https://eastbroadtop.com/ride/southbound-train-excursions/",
+   "Official Guide of the Railways, Feb 1952 (cached OCR research/sources/official_guide_1952.txt, lines 21656-21733)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-21): ways tagged old_railway_operator=EBT, gauge=914 (railway=rail/narrow_gauge/disused/abandoned); Rockhill Trolley Museum way 170810528 for the first part of the Shade Gap Branch; abandoned ways named \"Shade Gap Branch (EBT)\" and \"East Broad Top\" for the branch and the Neelyton extension.",
+   "OpenHistoricalMap was queried over the Shade Gap - Neelyton and Woodvale areas (2026-10-21) and returned no railway ways."
+  ],
+  "operator_split": "Company \"East Broad Top\" for the 1873-1954 common carrier, the 1961-2008 tourist line (run by the EBT Railroad and Coal Co. under Kovalchick Salvage, which bought the assets 1 May 1956) and the 2021- tourist line (EBT Foundation, Inc., owner from 14 Feb 2020): all ran under the East Broad Top name, so one colour - a judgment that treats a change of owner without a change of operating name as no Rule 4 split (see not_yet_sourced). The May 2009 - Dec 2011 lease to the East Broad Top Railroad Preservation Association IS split out (feature ebtpa-colgate-grove-excursion, own colour), because a lease counts. The Shade Gap Railroad Co. (1885-1913) is treated as an EBT corporate shell whose trains were the EBT's - not verified.",
+  "omitted": [
+   "[4] Woodvale - Alvan (1916 extension): no confirmable passenger year (drawable NONE).",
+   "[7] Shade Valley Branch, Shade Gap - Goshorn: no confirmable passenger year (drawable NONE).",
+   "[8] Booher Branch: a single 1893 Official Guide listing for Booher Mine, low confidence - omitted by decision.",
+   "[9] 1960 tourist season: the first excursion (13 Aug 1960) ran on about four miles of track to a terminus that is not established, so 1960 is not drawn.",
+   "[10] 2012-2013 FEBT members' trips: route not established; one-day trips would draw as two full years.",
+   "Freight-only branches (Rocky Ridge, Coles Valley, Narco, Clay, Stanton, No. 7 & 8 mine spurs, Wiley's Sawmill), all freight 1954-1956, the Mount Union dual-gauge yard / standard-gauge PRR connection, rail bikes and speeder rides - not passenger train service (Rules 1, 5).",
+   "[14] Rockhill Trolley Museum (Railways to Yesterday, Inc., \"Shade Gap Electric Railway\", Rockhill - Blacklog, 1964- [OPEN], tourist_rail): a separate company - FUTURE SEPARATE ENTRY with its own company and colour, not an EBT feature. Its track is OSM way 170810528."
+  ],
+  "existing_layer_note": "No existing layer for the EBT (or the H&BTM) was found in data/ before this layer was written.",
+  "not_yet_sourced": [
+   "Ownership vs operator: whether Kovalchick's 1956 purchase of the assets and the EBT Foundation's 14 Feb 2020 purchase changed the operating company (which would call for Rule 4 splits) - not established. The Foundation purchase form (stock of the EBT Railroad and Coal Co. vs its assets; \"approximately 27 miles of line\") is unresolved. Drawn as one \"East Broad Top\" colour for 1873-1954, 1961-2008 and 2021-.",
+   "OPEN ends: Shade Gap Branch 1895-1911 (both ends open; bracket 1885-1935); Colgate Grove excursion 2021-2026, Southbound excursion to PA 475 2024-2026 and PA 475 - high school 2026 (still operating; 2025 on the high-school section unconfirmed).",
+   "ANCHORS: Robertsdale - Woodvale 1911 (bracket 1891-1954) and Shade Gap - Neelyton 1911 (bracket 1909-1935) each rest on one 1911 working timetable.",
+   "Extent of the 1954 miners' passenger runs: nobody says where they ran; the strictest reading would end Mount Union - Orbisonia in 1953.",
+   "Exact 1953 date of the end of scheduled mixed/mail service.",
+   "Neelyton opening: 8 Nov 1909 (oldeastie, abandonedonline) vs 1903 (Wikipedia branch table) - conflict.",
+   "Shade Gap Railroad absorption into the EBT: 22 Dec 1913 vs 22 Dec 1943 (both oldeastie).",
+   "Colgate Grove trip length: operator 4.5 mi, Wikipedia 5 mi, Fowler MPs 3 mi, traced 3.4 mi.",
+   "Southbound 2024 section: Wikipedia 1.3 mi vs 0.9 mi traced to the PA 475 crossing.",
+   "Headways and average speeds for every feature are estimates; no timetable with legible times was read. The ICC valuation docket and Chronicling America were not consulted."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Mount Union – Orbisonia",
+    "id": "ebt-mount-union-orbisonia",
+    "color": "#8B2D1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 3 ft gauge mixed trains and (from 1927) gas-electric motorcars over a mountain road with two tunnels; no running times were read (the 1951 Official Guide table is too garbled by OCR to attribute times). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 10.6 mi against 11.0 mi documented (Fowler/branchline.uk MP 0-11; oldeastie \"11 miles\"). All on OSM ways tagged old_railway_operator=EBT, gauge=914: disused/abandoned Mount Union - Aughwick - Colgate Grove (OSM tags the Aughwick - Colgate Grove stretch railway=abandoned; whether rail is actually lifted there was not established) and live track Colgate Grove - Rockhill Furnace. No straight-line legs; every waypoint lies on the drawn line (0.0 km). The north end is the end of the 914 mm track at Mount Union (40.3839, -77.8793, OSM way 822067229); the standard-gauge PRR connection spur beyond it is not drawn, and the site of the EBT Mount Union passenger station was not separately pinned. The south end is OSM node 7745558540 (railway=station), the Rockhill Furnace / Orbisonia station. The 1873 alignment is not known to have been altered, so no later-alignment issue is expected.",
+    "segments": [
+     {
+      "start": 1873,
+      "end": 1954,
+      "headway_min": 1440,
+      "note": "Opened Mount Union - Orbisonia 16 Aug 1873 and to Rockhill Furnace 30 Aug 1873 (oldeastie timeline; abandonedonline; EBT Foundation history: \"1873 ... passenger service begins\"). Mixed trains, and from 6 Jan 1927 gas-electric motorcar M-1 (M-2 1927, M-3 c.1928). The 1952 Official Guide (Sept/Oct 1951 schedules) prints the EBT table from Mount Union, confirming 1951 rail passenger service. Public scheduled mixed/mail service ended in 1953 (EBT Foundation history; Railfan); unadvertised miners' passenger runs lasted to 15 Aug 1954, when passenger service was discontinued (oldeastie; abandonedonline). Where the 1954 miners' runs went is NOT stated - the strictest reading would end this Mount Union end in 1953 (see metadata.not_yet_sourced). Coal and ganister freight continued until 6 Apr 1956 - not drawn (Rule 1). EBT also ran buses 1929-1941; those are not rail and do not affect these years. Headway is an ESTIMATE (roughly one mixed train each way daily in later years, per the research report's reading of the histories) - not from a timetable.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [1] - oldeastie timeline (8/30/1873 opening; 8/15/1954 passenger service discontinued), abandonedonline (16 Aug 1873; 15 Aug 1954), EBT Foundation history (1873; 1953 end of regular service, miners' runs into 1954), Railfan \"Orbisonia Obsession\" (scheduled mixed trains ended before 1954), Wikipedia (Aug 1873), Official Guide Feb 1952 cached OCR lines 21656-21733 (1951 service). Headway not sourced.",
+       "https://oldeastie.com/timeline.html",
+       "https://eastbroadtop.com/about/history/",
+       "https://abandonedonline.net/location/east-broad-top-railroad/",
+       "https://railfan.com/orbisonia-obsession/",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8792796,
+      40.3839181
+     ],
+     [
+      -77.875502,
+      40.3815783
+     ],
+     [
+      -77.8729321,
+      40.3786055
+     ],
+     [
+      -77.863498,
+      40.3631878
+     ],
+     [
+      -77.8612902,
+      40.358975
+     ],
+     [
+      -77.8600547,
+      40.3549943
+     ],
+     [
+      -77.8597823,
+      40.3539258
+     ],
+     [
+      -77.8597284,
+      40.3530256
+     ],
+     [
+      -77.8597968,
+      40.3526645
+     ],
+     [
+      -77.860236,
+      40.3520381
+     ],
+     [
+      -77.862547,
+      40.3503085
+     ],
+     [
+      -77.8630873,
+      40.3495875
+     ],
+     [
+      -77.8633026,
+      40.3487755
+     ],
+     [
+      -77.8634655,
+      40.3462165
+     ],
+     [
+      -77.8631919,
+      40.3453214
+     ],
+     [
+      -77.861439,
+      40.342373
+     ],
+     [
+      -77.8608339,
+      40.3409115
+     ],
+     [
+      -77.8601841,
+      40.3337767
+     ],
+     [
+      -77.8607676,
+      40.3324858
+     ],
+     [
+      -77.863407,
+      40.327835
+     ],
+     [
+      -77.8652972,
+      40.3248817
+     ],
+     [
+      -77.8699667,
+      40.3168084
+     ],
+     [
+      -77.8715162,
+      40.3134898
+     ],
+     [
+      -77.8746036,
+      40.3058067
+     ],
+     [
+      -77.8756214,
+      40.3040164
+     ],
+     [
+      -77.8771926,
+      40.2998976
+     ],
+     [
+      -77.8776095,
+      40.2991573
+     ],
+     [
+      -77.8805688,
+      40.2952448
+     ],
+     [
+      -77.8816094,
+      40.2935079
+     ],
+     [
+      -77.8828452,
+      40.2891509
+     ],
+     [
+      -77.8832747,
+      40.2887432
+     ],
+     [
+      -77.8858178,
+      40.2815962
+     ],
+     [
+      -77.8857947,
+      40.280814
+     ],
+     [
+      -77.8851609,
+      40.279221
+     ],
+     [
+      -77.8852205,
+      40.2781346
+     ],
+     [
+      -77.8876796,
+      40.2739019
+     ],
+     [
+      -77.8912469,
+      40.2640731
+     ],
+     [
+      -77.8932988,
+      40.2603397
+     ],
+     [
+      -77.8950052,
+      40.2543807
+     ],
+     [
+      -77.8956468,
+      40.2492069
+     ],
+     [
+      -77.8989321,
+      40.2413633
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Orbisonia – Robertsdale",
+    "id": "ebt-orbisonia-robertsdale",
+    "color": "#8B2D1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 3 ft gauge mixed trains and (from 1927) gas-electric motorcars over a mountain road with two tunnels; no running times were read (the 1951 Official Guide table is too garbled by OCR to attribute times). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 18.9 mi against 19 mi documented (Fowler MP 11.0 - 30.0; oldeastie 30 mi Mount Union - Robertsdale, which with the 10.6 mi Mount Union - Orbisonia trace gives 29.5 mi). All on OSM ways tagged old_railway_operator=EBT (or named East Broad Top Railroad): live track Rockhill Furnace - PA 475 - Pogue - Saltillo, then disused track through Sideling Hill Tunnel (OSM way 130815174) and Wray's Hill Tunnel (way 865108026) and abandoned/disused track Cooks - Robertsdale. No straight-line legs; waypoints within 0.1 km of the line. Hamlet geocodes for Coles and Cooks were NOT used as waypoints - Coles' Nominatim point lies on the freight-only Coles Valley Branch - the two tunnel ways were used instead. The Robertsdale end is EBT node 105973443, where the live rail-bike track meets the abandoned main beside the hamlet (OSM node 158349501). The 1874 alignment (incl. both 1874 tunnels) is not known to have been altered; no later-alignment issue expected.",
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1954,
+      "headway_min": 1440,
+      "note": "First train Mount Union - Robertsdale 23 Sep 1874; opening celebrations 15-18 Oct 1874; first regular train 4 Nov 1874 (oldeastie timeline; Wikipedia \"to Robertsdale in November, 1874\"). Same trains as Mount Union - Orbisonia. Public scheduled mixed/mail service ended 1953; miners' passenger runs - most likely on this section, since the miners worked the Robertsdale-area mines, though no source says so - lasted to 15 Aug 1954 (oldeastie; abandonedonline; EBT Foundation history). In fall 1954 the coal trains' combine was cut off at Robertsdale (Railfan). Freight to April 1956 is not drawn (Rule 1). Headway is an ESTIMATE (roughly one mixed train each way daily in later years, per the research report's reading of the histories) - not from a timetable.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [2] - oldeastie timeline (9/23/1874 first train, 11/4/1874 first regular train; 8/15/1954), Wikipedia (Nov 1874), abandonedonline and EBT Foundation history (1953/1954 end). Headway not sourced.",
+       "https://oldeastie.com/timeline.html",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company",
+       "https://abandonedonline.net/location/east-broad-top-railroad/",
+       "https://eastbroadtop.com/about/history/",
+       "https://railfan.com/orbisonia-obsession/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8989321,
+      40.2413633
+     ],
+     [
+      -77.8993909,
+      40.2404055
+     ],
+     [
+      -77.9000585,
+      40.2399094
+     ],
+     [
+      -77.9002988,
+      40.2392521
+     ],
+     [
+      -77.9002863,
+      40.2387663
+     ],
+     [
+      -77.8999441,
+      40.2380591
+     ],
+     [
+      -77.8998482,
+      40.2372477
+     ],
+     [
+      -77.8999956,
+      40.2320253
+     ],
+     [
+      -77.9002056,
+      40.2302276
+     ],
+     [
+      -77.9058889,
+      40.2197195
+     ],
+     [
+      -77.9066349,
+      40.2186354
+     ],
+     [
+      -77.9069501,
+      40.2184148
+     ],
+     [
+      -77.9127073,
+      40.2161575
+     ],
+     [
+      -77.9140108,
+      40.2157737
+     ],
+     [
+      -77.9168096,
+      40.2153882
+     ],
+     [
+      -77.919758,
+      40.2155461
+     ],
+     [
+      -77.9208805,
+      40.2154285
+     ],
+     [
+      -77.9218462,
+      40.2150415
+     ],
+     [
+      -77.9296886,
+      40.2109801
+     ],
+     [
+      -77.9305335,
+      40.210739
+     ],
+     [
+      -77.9344645,
+      40.2101755
+     ],
+     [
+      -77.9370933,
+      40.2096376
+     ],
+     [
+      -77.9380186,
+      40.2090702
+     ],
+     [
+      -77.9473832,
+      40.2020043
+     ],
+     [
+      -77.9486731,
+      40.2011026
+     ],
+     [
+      -77.9497832,
+      40.2005075
+     ],
+     [
+      -77.951949,
+      40.1997065
+     ],
+     [
+      -77.953056,
+      40.1995106
+     ],
+     [
+      -77.9576273,
+      40.1992229
+     ],
+     [
+      -77.9589635,
+      40.198928
+     ],
+     [
+      -77.960156,
+      40.1983253
+     ],
+     [
+      -77.9641542,
+      40.1952494
+     ],
+     [
+      -77.9649572,
+      40.1946844
+     ],
+     [
+      -77.9660981,
+      40.1941075
+     ],
+     [
+      -77.9671136,
+      40.1937958
+     ],
+     [
+      -77.9758094,
+      40.1918944
+     ],
+     [
+      -77.9772338,
+      40.191894
+     ],
+     [
+      -77.9783586,
+      40.1920817
+     ],
+     [
+      -77.9833574,
+      40.1933886
+     ],
+     [
+      -77.9840278,
+      40.1937426
+     ],
+     [
+      -77.9856771,
+      40.195329
+     ],
+     [
+      -77.9867833,
+      40.1961637
+     ],
+     [
+      -77.9988918,
+      40.200829
+     ],
+     [
+      -78.0000044,
+      40.2019991
+     ],
+     [
+      -78.0032372,
+      40.2063971
+     ],
+     [
+      -78.0072979,
+      40.2099745
+     ],
+     [
+      -78.0080137,
+      40.2111956
+     ],
+     [
+      -78.0086133,
+      40.2137285
+     ],
+     [
+      -78.0089835,
+      40.2145717
+     ],
+     [
+      -78.0133425,
+      40.2213003
+     ],
+     [
+      -78.014138,
+      40.2217174
+     ],
+     [
+      -78.0162486,
+      40.2222761
+     ],
+     [
+      -78.017755,
+      40.2222562
+     ],
+     [
+      -78.0187737,
+      40.2224129
+     ],
+     [
+      -78.0209344,
+      40.2232073
+     ],
+     [
+      -78.0231538,
+      40.2237934
+     ],
+     [
+      -78.0239981,
+      40.2241915
+     ],
+     [
+      -78.0252448,
+      40.2252054
+     ],
+     [
+      -78.0257192,
+      40.2254045
+     ],
+     [
+      -78.0282111,
+      40.2255316
+     ],
+     [
+      -78.0288588,
+      40.2253693
+     ],
+     [
+      -78.0291284,
+      40.2251273
+     ],
+     [
+      -78.0330125,
+      40.2181973
+     ],
+     [
+      -78.0338963,
+      40.2159404
+     ],
+     [
+      -78.034474,
+      40.2149332
+     ],
+     [
+      -78.0358363,
+      40.2135324
+     ],
+     [
+      -78.0372239,
+      40.2118017
+     ],
+     [
+      -78.0379227,
+      40.211479
+     ],
+     [
+      -78.0418817,
+      40.2102136
+     ],
+     [
+      -78.0428516,
+      40.2096904
+     ],
+     [
+      -78.0447805,
+      40.2073206
+     ],
+     [
+      -78.0467679,
+      40.2059037
+     ],
+     [
+      -78.0478464,
+      40.204517
+     ],
+     [
+      -78.0482262,
+      40.204307
+     ],
+     [
+      -78.0486562,
+      40.2042353
+     ],
+     [
+      -78.0510946,
+      40.2048013
+     ],
+     [
+      -78.0516949,
+      40.2051815
+     ],
+     [
+      -78.0519644,
+      40.2058316
+     ],
+     [
+      -78.0515071,
+      40.2066985
+     ],
+     [
+      -78.050778,
+      40.209319
+     ],
+     [
+      -78.04917,
+      40.218211
+     ],
+     [
+      -78.0471119,
+      40.2241228
+     ],
+     [
+      -78.0467866,
+      40.2248928
+     ],
+     [
+      -78.0455254,
+      40.2269418
+     ],
+     [
+      -78.0454333,
+      40.2275812
+     ],
+     [
+      -78.0455696,
+      40.2294113
+     ],
+     [
+      -78.0458316,
+      40.2298959
+     ],
+     [
+      -78.0466133,
+      40.2303933
+     ],
+     [
+      -78.0470849,
+      40.2305298
+     ],
+     [
+      -78.0481138,
+      40.2304596
+     ],
+     [
+      -78.0486282,
+      40.230271
+     ],
+     [
+      -78.0492989,
+      40.2297003
+     ],
+     [
+      -78.0519913,
+      40.2243027
+     ],
+     [
+      -78.0530868,
+      40.2235828
+     ],
+     [
+      -78.0542228,
+      40.2233662
+     ],
+     [
+      -78.0599479,
+      40.2231558
+     ],
+     [
+      -78.0623174,
+      40.2223498
+     ],
+     [
+      -78.0638598,
+      40.2221843
+     ],
+     [
+      -78.0643366,
+      40.222009
+     ],
+     [
+      -78.0665232,
+      40.2203938
+     ],
+     [
+      -78.0676498,
+      40.2198885
+     ],
+     [
+      -78.0694464,
+      40.2195964
+     ],
+     [
+      -78.0724565,
+      40.2195844
+     ],
+     [
+      -78.0752742,
+      40.2189176
+     ],
+     [
+      -78.0872382,
+      40.2116271
+     ],
+     [
+      -78.0889919,
+      40.2101132
+     ],
+     [
+      -78.093675,
+      40.203831
+     ],
+     [
+      -78.0944592,
+      40.2030554
+     ],
+     [
+      -78.1015909,
+      40.1974859
+     ],
+     [
+      -78.1041476,
+      40.194951
+     ],
+     [
+      -78.1054996,
+      40.1939635
+     ],
+     [
+      -78.1086662,
+      40.1923859
+     ],
+     [
+      -78.1092857,
+      40.1918884
+     ],
+     [
+      -78.1098001,
+      40.1909145
+     ],
+     [
+      -78.1099232,
+      40.1903911
+     ],
+     [
+      -78.11006,
+      40.187917
+     ],
+     [
+      -78.1102051,
+      40.1876048
+     ],
+     [
+      -78.1114946,
+      40.186589
+     ],
+     [
+      -78.1124301,
+      40.1844414
+     ],
+     [
+      -78.112722,
+      40.184078
+     ],
+     [
+      -78.1135915,
+      40.1835614
+     ],
+     [
+      -78.1151865,
+      40.1831077
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Robertsdale – Woodvale",
+    "id": "ebt-robertsdale-woodvale",
+    "color": "#8B2D1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 3 ft gauge mixed trains and (from 1927) gas-electric motorcars over a mountain road with two tunnels; no running times were read (the 1951 Official Guide table is too garbled by OCR to attribute times). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 1.6 mi against ~2 mi documented (Fowler MP 30.0 - 32.0, rounded whole-mile posts). On OSM old_railway_operator=EBT track: live (rail-bike) way 1492631770 out of Robertsdale, then abandoned \"East Broad Top Railroad\" ways. Woodvale has no OSM place node (Nominatim returns Woodvale Dam, node 357324401); the end is hand-pinned at the EBT track point beside the dam (40.1662, -78.1353), and the 0.4 mi shortfall against Fowler's rounded posts may mean Woodvale station sat somewhat further on. No straight-line legs. The 1891 extension's alignment is the one drawn; no realignment known.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1911,
+      "headway_min": 1440,
+      "note": "[ANCHOR] One single proven year. Track reached Woodvale in 1891 (abandonedonline); Woodvale is marked in Fowler's 1911 working-timetable column (legend \"a: 1911w\"), the only confirmed passenger year. Service certainly ran wider both ways - the bracket is 1891-1954 - but no other year is confirmed: Woodvale is printed in the 1951 Official Guide table with no legible times, and in fall 1954 the combine was cut off at Robertsdale. Do NOT widen this anchor without a timetable naming Woodvale. Today's FEBT rail bikes and speeders on this track are not drawn (not a train service). Headway is an ESTIMATE (roughly one mixed train each way daily in later years, per the research report's reading of the histories) - not from a timetable.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [3] - branchline.uk (Fowler) pennsylvaniarrs5.pdf table 393, Woodvale marked \"a\" = 1911 working timetable; abandonedonline for the 1891 extension. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://abandonedonline.net/location/east-broad-top-railroad/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.1151865,
+      40.1831077
+     ],
+     [
+      -78.1176206,
+      40.1823511
+     ],
+     [
+      -78.1180591,
+      40.1820366
+     ],
+     [
+      -78.1189249,
+      40.1806933
+     ],
+     [
+      -78.1194318,
+      40.1802915
+     ],
+     [
+      -78.123168,
+      40.1787364
+     ],
+     [
+      -78.1248421,
+      40.1778984
+     ],
+     [
+      -78.126405,
+      40.1757215
+     ],
+     [
+      -78.1271471,
+      40.1750788
+     ],
+     [
+      -78.1288247,
+      40.1740229
+     ],
+     [
+      -78.1295048,
+      40.1733847
+     ],
+     [
+      -78.1311215,
+      40.1706552
+     ],
+     [
+      -78.1319034,
+      40.1695906
+     ],
+     [
+      -78.1345886,
+      40.1667774
+     ],
+     [
+      -78.1353441,
+      40.1662251
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Shade Gap Branch",
+    "id": "ebt-shade-gap-branch",
+    "color": "#8B2D1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 3 ft gauge mixed trains and (from 1927) gas-electric motorcars over a mountain road with two tunnels; no running times were read (the 1951 Official Guide table is too garbled by OCR to attribute times). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 6.2 mi against ~6 mi documented (Fowler branch MP 0-6; Wikipedia EBT MP 12.5-17.0 for Blacklog - Shade Gap, which excludes the main-line distance to the Rockhill wye). Drawn from Orbisonia / Rockhill Furnace station (OSM node 7745558540) through the Rockhill yard and wye, so its first ~0.4 mi shares the main line's yard trackage. Then: c.1.4 mi on the Rockhill Trolley Museum's track (OSM way 170810528, railway=tram, gauge=1435, old_railway_operator=EBT) - LATER RAILS THAN THE ERA: the museum relaid the branch's right-of-way to standard gauge and electrified it from c.1963-64; the alignment is the branch's, the track drawn is not; then abandoned \"Shade Gap Branch (EBT)\" ways 1034294619 / 1150562959 / 170810529 to Shade Gap station (OSM node 367958278 \"Shade Gap Station\", passed within 0.06 km). APPROXIMATED: one straight-line leg of 0.24 mi (390 m) at the south end of Blacklog Narrows, between OSM ways 1150562959 and 170810529, where OSM has no trace of the grade (the 2001-02 US 522 raise buried/cut it). OpenHistoricalMap returned no railway ways in this area. The Shade Valley Branch (Shade Gap - Goshorn, OSM \"Shade Valley Branch (EBT)\") is not drawn.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1911,
+      "headway_min": 1440,
+      "note": "[OPEN] both ends. The branch (Shade Gap Railroad Co., an EBT affiliate merged into the EBT in 1913 - oldeastie also gives 1943) opened 1 Jan 1885, but no source says its first trains carried passengers. 1895 is the first CONFIRMED passenger year: oldeastie's Shade Valley page says \"passenger service beyond Shade Gap was ended in 1895\", implying passengers to Shade Gap then (a single fan-site sentence). 1911 is the last CONFIRMED year: Fowler marks Blacklog, Cedar Rock, Locke Valley and Shade Gap in the 1911 working timetable. Neither year is a known start or end - the full bracket is 1885-1935 (\"regular train service on Shade Gap Branch discontinued\" mid-1935, oldeastie, which does not say passenger). Do not extend either end without evidence. Trains are assumed to have been the EBT's throughout (not verified). Freight to 1945, not drawn. Headway is an ESTIMATE (roughly one mixed train each way daily in later years, per the research report's reading of the histories) - not from a timetable.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [5] - oldeastie Tour/sv.html (1895 sentence); branchline.uk (Fowler) pennsylvaniarrs5.pdf table 394 (1911 working timetable); oldeastie timeline and Tour/sg.html (1885 opening, mid-1935 end of regular trains); abandonedonline. Headway not sourced.",
+       "https://oldeastie.com/Tour/sv.html",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://oldeastie.com/timeline.html",
+       "https://oldeastie.com/Tour/sg.html",
+       "https://abandonedonline.net/location/east-broad-top-railroad/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8989321,
+      40.2413633
+     ],
+     [
+      -77.898701,
+      40.241232
+     ],
+     [
+      -77.898484,
+      40.2406103
+     ],
+     [
+      -77.8980887,
+      40.2400779
+     ],
+     [
+      -77.8974378,
+      40.2395959
+     ],
+     [
+      -77.8946282,
+      40.2381807
+     ],
+     [
+      -77.8935942,
+      40.2369864
+     ],
+     [
+      -77.8926837,
+      40.23646
+     ],
+     [
+      -77.8897793,
+      40.2357941
+     ],
+     [
+      -77.8854601,
+      40.2344003
+     ],
+     [
+      -77.8811266,
+      40.2333998
+     ],
+     [
+      -77.8771066,
+      40.2321465
+     ],
+     [
+      -77.8729649,
+      40.2317505
+     ],
+     [
+      -77.8726728,
+      40.2316359
+     ],
+     [
+      -77.8722836,
+      40.2312133
+     ],
+     [
+      -77.871706,
+      40.2300458
+     ],
+     [
+      -77.8705286,
+      40.2288672
+     ],
+     [
+      -77.8702586,
+      40.2283962
+     ],
+     [
+      -77.8701447,
+      40.2272605
+     ],
+     [
+      -77.8708408,
+      40.2251904
+     ],
+     [
+      -77.8748386,
+      40.2192159
+     ],
+     [
+      -77.8743868,
+      40.2157261
+     ],
+     [
+      -77.8727067,
+      40.2143794
+     ],
+     [
+      -77.8721301,
+      40.2134126
+     ],
+     [
+      -77.8721161,
+      40.2123308
+     ],
+     [
+      -77.8727986,
+      40.2094812
+     ],
+     [
+      -77.8742018,
+      40.2078785
+     ],
+     [
+      -77.8755199,
+      40.2066481
+     ],
+     [
+      -77.8759733,
+      40.2059212
+     ],
+     [
+      -77.8763211,
+      40.2051681
+     ],
+     [
+      -77.8771457,
+      40.2010996
+     ],
+     [
+      -77.8775412,
+      40.1999921
+     ],
+     [
+      -77.8781856,
+      40.1989853
+     ],
+     [
+      -77.8801495,
+      40.1968501
+     ],
+     [
+      -77.8810856,
+      40.1955619
+     ],
+     [
+      -77.8818619,
+      40.1940516
+     ],
+     [
+      -77.8820377,
+      40.1929328
+     ],
+     [
+      -77.8818473,
+      40.1922055
+     ],
+     [
+      -77.8811589,
+      40.1915566
+     ],
+     [
+      -77.8802654,
+      40.1911314
+     ],
+     [
+      -77.876989,
+      40.1903336
+     ],
+     [
+      -77.8761886,
+      40.1900503
+     ],
+     [
+      -77.8748755,
+      40.1893077
+     ],
+     [
+      -77.874231,
+      40.1891958
+     ],
+     [
+      -77.8728314,
+      40.1892933
+     ],
+     [
+      -77.8720304,
+      40.1890796
+     ],
+     [
+      -77.8697931,
+      40.188021
+     ],
+     [
+      -77.8677426,
+      40.1876182
+     ],
+     [
+      -77.865291,
+      40.1867352
+     ],
+     [
+      -77.8635771,
+      40.1868984
+     ],
+     [
+      -77.8608923,
+      40.1876467
+     ],
+     [
+      -77.8602061,
+      40.1879785
+     ],
+     [
+      -77.8591463,
+      40.1888563
+     ],
+     [
+      -77.858707,
+      40.1890896
+     ],
+     [
+      -77.8580776,
+      40.1892173
+     ],
+     [
+      -77.8573793,
+      40.1892323
+     ],
+     [
+      -77.8568679,
+      40.1891121
+     ],
+     [
+      -77.8553042,
+      40.1883909
+     ],
+     [
+      -77.854783,
+      40.1879776
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Shade Gap Branch (Neelyton extension)",
+    "id": "ebt-shade-gap-neelyton",
+    "color": "#8B2D1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: 3 ft gauge mixed trains and (from 1927) gas-electric motorcars over a mountain road with two tunnels; no running times were read (the 1951 Official Guide table is too garbled by OCR to attribute times). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 3.0 mi against 3.2 mi (Wikipedia branch table MP 17.0 - 20.2) / ~4 mi (Fowler, rounded 6 - 10). Shade Gap station - south end of \"Shade Gap Branch (EBT)\" way 170810529, then abandoned ways named \"East Broad Top\" (1360660813, 1360660812, 1493276853) to Neelyton (hamlet node 158381587, on the line). APPROXIMATED: two straight-line legs where OSM's grade breaks - 0.29 mi (464 m) between ways 1360660813 and 1360660812 and 0.13 mi (209 m) between ways 1360660812 and 1493276853 - 0.42 mi of the 3.0 mi. Track was lifted in 1943; the drawn grade is the 1909 one, no realignment known. The Wiley's Sawmill extension beyond Neelyton and the Stanton spur are not drawn.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1911,
+      "headway_min": 1440,
+      "note": "[ANCHOR] One single proven year. Opened 8 Nov 1909 (oldeastie timeline; abandonedonline - Wikipedia's branch table says 1903, a conflict recorded in metadata). oldeastie says \"passenger service would later run on the yet to be built line to Neelyton\"; Fowler marks Neelyton in the 1911 working timetable, the only confirmed passenger year. Service certainly ran wider both ways - bracket 1909-1935 - but no other year is confirmed. Do NOT widen this anchor without a timetable naming Neelyton. Track abandoned 24 Jan 1943. Headway is an ESTIMATE (roughly one mixed train each way daily in later years, per the research report's reading of the histories) - not from a timetable.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [6] - branchline.uk (Fowler) pennsylvaniarrs5.pdf table 394 (Neelyton, 1911 working timetable); oldeastie timeline, Tour/sg.html and Tour/sv.html (1909 opening, passenger service to Neelyton). Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://oldeastie.com/timeline.html",
+       "https://oldeastie.com/Tour/sg.html",
+       "https://oldeastie.com/Tour/sv.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.854783,
+      40.1879776
+     ],
+     [
+      -77.8536225,
+      40.1867079
+     ],
+     [
+      -77.851803,
+      40.1833494
+     ],
+     [
+      -77.8503475,
+      40.1815236
+     ],
+     [
+      -77.8500524,
+      40.1807121
+     ],
+     [
+      -77.8500623,
+      40.1802162
+     ],
+     [
+      -77.850318,
+      40.179585
+     ],
+     [
+      -77.8522357,
+      40.177699
+     ],
+     [
+      -77.852648,
+      40.1770265
+     ],
+     [
+      -77.8523046,
+      40.1757978
+     ],
+     [
+      -77.8519309,
+      40.1755348
+     ],
+     [
+      -77.8497476,
+      40.1746556
+     ],
+     [
+      -77.8467578,
+      40.1726116
+     ],
+     [
+      -77.846207,
+      40.172048
+     ],
+     [
+      -77.8443876,
+      40.1681101
+     ],
+     [
+      -77.8417814,
+      40.1660735
+     ],
+     [
+      -77.8411421,
+      40.1645779
+     ],
+     [
+      -77.8407301,
+      40.1639513
+     ],
+     [
+      -77.8400013,
+      40.1635257
+     ],
+     [
+      -77.8388703,
+      40.1633528
+     ],
+     [
+      -77.8338054,
+      40.1641044
+     ],
+     [
+      -77.8328416,
+      40.1640969
+     ],
+     [
+      -77.8306402,
+      40.1635276
+     ],
+     [
+      -77.8274718,
+      40.1638113
+     ],
+     [
+      -77.826803,
+      40.1637211
+     ],
+     [
+      -77.825259,
+      40.1631874
+     ],
+     [
+      -77.8244132,
+      40.162744
+     ],
+     [
+      -77.8236067,
+      40.1620976
+     ],
+     [
+      -77.8231612,
+      40.1611288
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Colgate Grove excursion",
+    "id": "ebt-colgate-grove-excursion-1961",
+    "color": "#8B2D1A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 14,
+    "speed_source": "estimated from the operator's description of the Colgate Grove trip as a \"nine-mile, one-hour roundtrip\" (eastbroadtop.com), i.e. about 14 km/h including turning on the wye; not a timed run.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 3.4 mi Rockhill Furnace / Orbisonia station (OSM node 7745558540) - Colgate Grove station (OSM node 10774297365) on live old_railway_operator=EBT track, no straight-line legs. Documented figures disagree: 4.5 mi (operator, \"nine-mile ... roundtrip\"), 5 mi (Wikipedia, \"extended to five miles\"), 3 mi (Fowler's rounded MPs 8 and 11). The trace matches the main line's own mileposts (it is the same track as the ebt-mount-union-orbisonia feature, MP 11 to c.MP 8); the operator's and Wikipedia's figures may count yard trackage and the wye, which is on the former Clay spur and is not drawn. Same 1873 alignment as the common-carrier era - no realignment known.",
+    "segments": [
+     {
+      "start": 1961,
+      "end": 2008,
+      "headway_min": 120,
+      "note": "Steam tourist trains (Mikados 12, 14, 15, 17), summer-autumn season plus holiday trains, run by the East Broad Top Railroad and Coal Co. under Kovalchick Salvage ownership (Wikipedia: \"From 1960 to 2008 the trains were operated by the EBT under Kovalchick Salvage\"). The first excursion ran 13 Aug 1960 on about four miles of track, but the 1960 terminus is not established, so 1960 is NOT drawn. Colgate Grove from 1961, when regular tourist service began and the new wye there was built (oldeastie; abandonedonline). From May 2009 the trains were run by the EBT Preservation Association under lease - see feature ebtpa-colgate-grove-excursion. Headway is an ESTIMATE (a few departures a day on operating days, seasonal) - no timetable frequency was read.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [9] - oldeastie timeline (1961 regular tourist service, Colgate Grove wye), abandonedonline (wye built 1961), Wikipedia (operated by the EBT under Kovalchick 1960-2008). Headway not sourced.",
+       "https://oldeastie.com/timeline.html",
+       "https://abandonedonline.net/location/east-broad-top-railroad/",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8989321,
+      40.2413633
+     ],
+     [
+      -77.8956468,
+      40.2492069
+     ],
+     [
+      -77.8950052,
+      40.2543807
+     ],
+     [
+      -77.8932988,
+      40.2603397
+     ],
+     [
+      -77.8912469,
+      40.2640731
+     ],
+     [
+      -77.8876796,
+      40.2739019
+     ],
+     [
+      -77.8852205,
+      40.2781346
+     ],
+     [
+      -77.8851609,
+      40.279221
+     ],
+     [
+      -77.8857947,
+      40.280814
+     ],
+     [
+      -77.8858178,
+      40.2815962
+     ],
+     [
+      -77.8832747,
+      40.2887432
+     ],
+     [
+      -77.8828452,
+      40.2891509
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "EBT Preservation Association",
+    "line": "EBT Preservation Association: Colgate Grove excursion",
+    "id": "ebtpa-colgate-grove-excursion",
+    "color": "#7B5E1E",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 14,
+    "speed_source": "estimated from the operator's description of the Colgate Grove trip as a \"nine-mile, one-hour roundtrip\" (eastbroadtop.com), i.e. about 14 km/h including turning on the wye; not a timed run.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 3.4 mi Rockhill Furnace / Orbisonia station (OSM node 7745558540) - Colgate Grove station (OSM node 10774297365) on live old_railway_operator=EBT track, no straight-line legs. Documented figures disagree: 4.5 mi (operator, \"nine-mile ... roundtrip\"), 5 mi (Wikipedia, \"extended to five miles\"), 3 mi (Fowler's rounded MPs 8 and 11). The trace matches the main line's own mileposts (it is the same track as the ebt-mount-union-orbisonia feature, MP 11 to c.MP 8); the operator's and Wikipedia's figures may count yard trackage and the wye, which is on the former Clay spur and is not drawn. Same 1873 alignment as the common-carrier era - no realignment known.",
+    "segments": [
+     {
+      "start": 2009,
+      "end": 2011,
+      "headway_min": 120,
+      "note": "From May 2009 until December 2011 the tourist trains were operated under a lease to the East Broad Top Railroad Preservation Association (Wikipedia) - split from the Kovalchick-era feature under Rule 4 (a lease counts). Final train 23 Dec 2011 (EBT Foundation history). No public excursions 2012-2020; the 2012-2013 FEBT members' trips are not drawn (route not established). Headway is an ESTIMATE (a few departures a day on operating days, seasonal) - no timetable frequency was read.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [9] - Wikipedia (lease May 2009 - Dec 2011), EBT Foundation history (final train 12/23/2011). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company",
+       "https://eastbroadtop.com/about/history/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8989321,
+      40.2413633
+     ],
+     [
+      -77.8956468,
+      40.2492069
+     ],
+     [
+      -77.8950052,
+      40.2543807
+     ],
+     [
+      -77.8932988,
+      40.2603397
+     ],
+     [
+      -77.8912469,
+      40.2640731
+     ],
+     [
+      -77.8876796,
+      40.2739019
+     ],
+     [
+      -77.8852205,
+      40.2781346
+     ],
+     [
+      -77.8851609,
+      40.279221
+     ],
+     [
+      -77.8857947,
+      40.280814
+     ],
+     [
+      -77.8858178,
+      40.2815962
+     ],
+     [
+      -77.8832747,
+      40.2887432
+     ],
+     [
+      -77.8828452,
+      40.2891509
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Colgate Grove excursion",
+    "id": "ebt-colgate-grove-excursion-2021",
+    "color": "#8B2D1A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 14,
+    "speed_source": "estimated from the operator's description of the Colgate Grove trip as a \"nine-mile, one-hour roundtrip\" (eastbroadtop.com), i.e. about 14 km/h including turning on the wye; not a timed run.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 3.4 mi Rockhill Furnace / Orbisonia station (OSM node 7745558540) - Colgate Grove station (OSM node 10774297365) on live old_railway_operator=EBT track, no straight-line legs. Documented figures disagree: 4.5 mi (operator, \"nine-mile ... roundtrip\"), 5 mi (Wikipedia, \"extended to five miles\"), 3 mi (Fowler's rounded MPs 8 and 11). The trace matches the main line's own mileposts (it is the same track as the ebt-mount-union-orbisonia feature, MP 11 to c.MP 8); the operator's and Wikipedia's figures may count yard trackage and the wye, which is on the former Clay spur and is not drawn. Same 1873 alignment as the common-carrier era - no realignment known.",
+    "segments": [
+     {
+      "start": 2021,
+      "end": 2026,
+      "headway_min": 120,
+      "note": "[OPEN] end. EBT Foundation, Inc. bought the railroad on 14 Feb 2020 and reopened it for limited operations in May 2021; first full season May 2022 (Wikipedia). Steam (No. 16 back in 2023, No. 14) Fri-Sun and diesel Wed-Thu; new Colgate Grove platform and pavilions 2023. 2026 is the last CONFIRMED year (operator's 2026 timetable), not an ending - the line is still operating. The 2012-2020 gap is deliberate. Headway is an ESTIMATE (a few departures a day on operating days, seasonal) - no timetable frequency was read.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [11] - Wikipedia (Sale and reopening: May 2021), eastbroadtop.com northbound train ride page (2026 operation). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company",
+       "https://eastbroadtop.com/ride/northbound-train-ride/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8989321,
+      40.2413633
+     ],
+     [
+      -77.8956468,
+      40.2492069
+     ],
+     [
+      -77.8950052,
+      40.2543807
+     ],
+     [
+      -77.8932988,
+      40.2603397
+     ],
+     [
+      -77.8912469,
+      40.2640731
+     ],
+     [
+      -77.8876796,
+      40.2739019
+     ],
+     [
+      -77.8852205,
+      40.2781346
+     ],
+     [
+      -77.8851609,
+      40.279221
+     ],
+     [
+      -77.8857947,
+      40.280814
+     ],
+     [
+      -77.8858178,
+      40.2815962
+     ],
+     [
+      -77.8832747,
+      40.2887432
+     ],
+     [
+      -77.8828452,
+      40.2891509
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Southbound excursion (to PA 475)",
+    "id": "ebt-southbound-excursion-pa475",
+    "color": "#8B2D1A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 14,
+    "speed_source": "estimated from the operator's description of the Colgate Grove trip as a \"nine-mile, one-hour roundtrip\" (eastbroadtop.com), i.e. about 14 km/h including turning on the wye; not a timed run.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 0.9 mi against 1.3 mi documented (Wikipedia, \"restored 1.3-mile section\") - 30% short. Drawn from Orbisonia / Rockhill Furnace station (OSM node 7745558540) on live old_railway_operator=EBT track to where PA 475 crosses it (40.2284, -77.9012, computed from OSM PA 475 ways x EBT way 340011892 - the only crossing in the area). The shortfall is unresolved: the 1.3 mi may be measured from the shops/yard, or the turn-back point may lie beyond the crossing. No straight-line legs. Original 1873-74 alignment.",
+    "segments": [
+     {
+      "start": 2024,
+      "end": 2026,
+      "headway_min": 120,
+      "note": "[OPEN] end. \"Heritage service opened on the restored 1.3-mile section in October 2024\" (Wikipedia, citing Trains.com 14 Mar 2024) - the first passenger trains south of Rockhill since 1954. 2026 is the last CONFIRMED year (operator's southbound excursion page), not an ending. Headway is an ESTIMATE (a few departures a day on operating days, seasonal) - no timetable frequency was read.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [12] - Wikipedia (Track rehabilitation section, citing Trains.com 14 Mar 2024), eastbroadtop.com southbound excursions page. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company",
+       "https://eastbroadtop.com/ride/southbound-train-excursions/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.8989321,
+      40.2413633
+     ],
+     [
+      -77.8993909,
+      40.2404055
+     ],
+     [
+      -77.9000585,
+      40.2399094
+     ],
+     [
+      -77.9002988,
+      40.2392521
+     ],
+     [
+      -77.9002863,
+      40.2387663
+     ],
+     [
+      -77.8999441,
+      40.2380591
+     ],
+     [
+      -77.8998482,
+      40.2372477
+     ],
+     [
+      -77.9000633,
+      40.2308517
+     ],
+     [
+      -77.9002723,
+      40.2300576
+     ],
+     [
+      -77.9011693,
+      40.228361
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Broad Top",
+    "line": "East Broad Top: Southbound excursion (PA 475 – high school)",
+    "id": "ebt-southbound-excursion-high-school",
+    "color": "#8B2D1A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 14,
+    "speed_source": "estimated from the operator's description of the Colgate Grove trip as a \"nine-mile, one-hour roundtrip\" (eastbroadtop.com), i.e. about 14 km/h including turning on the wye; not a timed run.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The road is tagged old_railway_operator=EBT (gauge=914) almost throughout: live railway=rail (operator EBT Foundation / Friends of the East Broad Top) Colgate Grove - Rockhill Furnace - Southern Huntingdon County HS - Saltillo and Robertsdale - Woodvale; railway=disused/abandoned elsewhere (named \"East Broad Top Railroad\"). Probed: old_railway_operator ~ EBT|East Broad Top, note:old_railway_operator, name/operator ~ East Broad Top, gauge=914 - only the bare \"EBT\" spelling is used. The standard-gauge H&BTM (old_railway_operator=H&BTM) and PRR main at Mount Union cost 12x in the router and carry no mileage of any EBT feature.",
+    "geometry_quality": "Traced 1.7 mi PA 475 crossing - the EBT track beside Southern Huntingdon County High School (OSM way 814835828, 0.1 km from the line) on live old_railway_operator=EBT track. No documented mileage to check against (report: \"not established\"); the whole southbound run (0.9 + 1.7 = 2.6 mi from Rockhill) fits the operator's 30-45 minute round trip. The exact turn-back point is not established. No straight-line legs. Original 1874 alignment. Pogue itself is NOT reached.",
+    "segments": [
+     {
+      "start": 2026,
+      "end": 2026,
+      "headway_min": 120,
+      "note": "[OPEN] both ends. Track restoration reached Southern Huntingdon County High School by Aug 2025 (Wikipedia, citing FEBT), but passenger trains over it are confirmed only for the 2026 season (operator: \"ride over all of the EBT's active mainline, from Colgate Grove to Southern Huntingdon County High School!\"). 2025 is unconfirmed, not denied; 2026 is the last CONFIRMED year, not an ending. Rebuilding continues toward Saltillo - do not draw further until passengers run there. Headway is an ESTIMATE (a few departures a day on operating days, seasonal) - no timetable frequency was read.",
+      "sources": [
+       "Segment-level: research report research/branches/east_broad_top_railroad.txt block [13] - eastbroadtop.com southbound excursions page (2026 season to the high school), Wikipedia (track reached the school Aug 2025). Headway not sourced.",
+       "https://eastbroadtop.com/ride/southbound-train-excursions/",
+       "https://en.wikipedia.org/wiki/East_Broad_Top_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9011693,
+      40.228361
+     ],
+     [
+      -77.9058889,
+      40.2197195
+     ],
+     [
+      -77.9066349,
+      40.2186354
+     ],
+     [
+      -77.9069501,
+      40.2184148
+     ],
+     [
+      -77.9127073,
+      40.2161575
+     ],
+     [
+      -77.9140108,
+      40.2157737
+     ],
+     [
+      -77.9168096,
+      40.2153882
+     ],
+     [
+      -77.9205577,
+      40.2155013
+     ],
+     [
+      -77.9214325,
+      40.2152366
+     ],
+     [
+      -77.9229298,
+      40.2144845
+     ]
+    ]
+   }
+  }
+ ]
+}

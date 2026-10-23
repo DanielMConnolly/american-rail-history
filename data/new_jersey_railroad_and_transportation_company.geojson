@@ -1,0 +1,1364 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The New Jersey Rail Road and Transportation Company (chartered Mar 7 1832; 'New Jersey Railroad'): the Jersey City - Newark - Elizabeth - Rahway - New Brunswick main line, its Newark crossings of the Passaic (Centre Street, and the 1870 Dock Bridge cutoff), and the Perth Amboy & Woodbridge branch it operated from 1864 - drawn only for the years of mechanically powered passenger trains (from 1836/1838) to Nov 30 1871. The Pennsylvania Railroad took over operation Dec 1 1871: PRR features on identical geometry continue the pieces no other layer already draws (Exchange Place - Newark, the Centre Street Branch, Rahway - Perth Amboy to 1874) plus the Millstone Branch. Research report: research/branches/new_jersey_railroad_and_transportation_company.txt.",
+  "sources": [
+   "http://www.prrths.com/newprr_files/Hagley/PRR<year>.pdf -- Christopher T. Baer, A General Chronology of the Pennsylvania Railroad Company, Its Predecessors and Successors and Its Historical Context (PRRT&HS), read for 1834-1849 and 1855-1873 (1850-1854 files 404); cites the NJRR minute books, Newark Eagle / Newark Daily Advertiser, Coverdale & Colpitts. Principal source for every NJRR date.",
+   "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf -- John Fowler, New Jersey Railroads SL214 (10.06.25), PRR lines 50, 51, 51A, 52, 53: station lists and date letters (x=1851, n=1858, y=1875 ...)",
+   "https://en.wikipedia.org/wiki/New_Jersey_Rail_Road_and_Transportation_Company -- Wikipedia, New Jersey Rail Road and Transportation Company (citing Coverdale & Colpitts 1946, Churella 2013)",
+   "https://en.wikipedia.org/wiki/Perth_Amboy_and_Woodbridge_Railroad ; https://en.wikipedia.org/wiki/Woodbridge_station_(NJ_Transit) ; https://en.wikipedia.org/wiki/Rahway_station",
+   "https://en.wikipedia.org/wiki/Millstone_and_New_Brunswick_Railroad -- Millstone & New Brunswick, 1930 passenger end (Home News Mar 19 1930)",
+   "https://en.wikipedia.org/wiki/Exchange_Place_station_(Pennsylvania_Railroad) -- Exchange Place terminal, Nov 17 1961 last train (citing Baer 1961)",
+   "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm -- A History of the City of Newark (1913), vol. I: horse operation 1834, first engine Dec 1835, Bergen Cut Jan 1838",
+   "https://www.openhistoricalmap.org -- dated railway ways (start_date sourced to Coverdale & Colpitts vol. II) used for geometry"
+  ],
+  "operator_split": "Dec 1 1871: every NJRR line passes to Pennsylvania Railroad operation (lease of the United Companies approved May 1871, signed Oct 19 1871, last signatures Nov 29 1871; 'operations placed under General Superintendent of PRR' Dec 1 1871 - Baer). Every NJRR feature ends 1871 and, where no other layer already draws the track, a PRR feature on identical geometry starts 1871. The lease's financial effective date is variously June 13/20/30 or July 1 1871 in Baer; the PRR did not run the trains until Dec 1. The May 18 1872 consolidation into the United New Jersey Railroad & Canal Co. was not an operator change. The 1867 'United Companies' joint board (NJRR + Camden & Amboy + D&R Canal, agreement Jan 28 / Feb 1 1867) is treated as NOT an operator change, matching camden_and_amboy_rail_road.geojson (see not_yet_sourced). The Perth Amboy & Woodbridge was NJRR-operated from its opening, so there is no split inside the NJRR era.",
+  "horsecar_audit": "Rule 5 trims applied at drawing time: (1) Jersey City - Newark opened Sept 15 1834 with HORSE cars (eight trips each way) - not drawn; (2) Jersey City - Marion over Bergen Hill was horse-worked for every car, including those of the 1836-37 steam trains, until the Bergen Hill cut opened Jan 22 1838 - the temporary route over the hill is not drawn at all, and the Jersey City - East Newark feature starts 1838; (3) Marion - Newark carried steam trains from Jan 11 1836 and all-steam from May 20 1836 - drawn 1836-1837 as the optional feature njrr-marion-newark-steam (collapse to 1837 under a stricter Rule 5 reading); (4) the NJRR's Newark city track along Market and Broad Streets to Chandler's Hotel (horse cars, 1834 - May 20 1836) - not drawn; (5) Newark - Elizabeth opened Dec 21 1835 but steam is proven only from Jan 1 1836 - 1835 withheld. Also not drawn (other companies' horse cars): Morris & Essex cars hauled by horses through Newark streets to the NJRR at Centre Street, and Paterson & Hudson River horse cars over the NJRR to Jersey City from Oct 1834.",
+  "freight_only_audit": "Nothing freight-only drawn (Rule 1). Excluded: the Bonhamtown Branch (Metuchen - Bonhamtown gravel pits, 1860, ballast; no passenger year found); the Harsimus Branch / Harsimus Cove (Jersey City, PRR 1873, freight yard branch); the Centre Street line after 1902 (Conrail Center Street Industrial Track); the Millstone Branch after its 1930 passenger end (freight to the 1972/1980 abandonments); the Jersey City approach after Nov 1961.",
+  "omitted": [
+   "[16] PRR Main Line Newark - Elizabeth - Rahway - New Brunswick, 1871-1968: already drawn by pennsylvania_railroad.geojson prr-mainline-new-york-washington and nj_transit_rail.geojson njt-10; not double-drawn here.",
+   "[9] New Brunswick - 'COUNTY' (Millstone Jct), 1839-1871: NJRR-owned but worked by the Camden & Amboy (Baer, Feb 25 1839 contract) - belongs on a C&A feature, not an NJRR one (Rule 4).",
+   "[11] Millstone & New Brunswick, 1855-1871: operator and passenger carriage both unproven - drawable NONE; the PRR-era branch is drawn only from its first confirmed year, 1875.",
+   "[12] Original temporary route over Bergen Hill (Jersey City - Marion), 1834-1838: horse-worked for its whole life (Rule 5).",
+   "[13] NJRR Newark city track, Market St - Broad St (Chandler's Hotel), 1834-1836: horse cars only (Rule 5).",
+   "[14] Jersey City - New York ferry (Cortlandt St, Desbrosses St): not rail.",
+   "[18] PRR Rahway - Perth Amboy 1875-1968: already drawn (in NJ Transit colour) by nj_transit_rail.geojson njt-11/njt-12 from 1875; the PRR feature here stops at 1874 to avoid double-drawing."
+  ],
+  "not_yet_sourced": [
+   "RULE 4 SPLITS NEEDED IN OTHER LAYERS (not made here; those files were not touched): pennsylvania_railroad.geojson prr-mainline-new-york-washington draws PRR company/colour on NJRR track (Newark - Elizabeth - Rahway - New Brunswick, and Harrison - Newark) for its 1838-1873 segment although the New Jersey Railroad ran those trains until Nov 30 1871; its note describes the C&A Amboy route the geometry never touches; and it draws the post-1910 New York Penn Station / North River tunnel / 1935-37 Newark Penn alignment for the Jersey City era (1838-1910, the 1873-1910 segment's own note says 'Trains still terminated at Jersey City'). nj_transit_rail.geojson njt-10 (Northeast Corridor) draws New Brunswick - Newark - New York in NJ Transit colour for 1839-1871 (NJRR) and 1871-1968 (PRR), also ending at New York Penn Station for pre-1910 segments and crossing the Passaic on the post-1870 Dock Bridge route for 1839-1869 (Centre Street then). When split, the NJRR-era pieces should take this layer's New Jersey Railroad colour and end at Exchange Place. njt-11/njt-12 colour the PRR/NY&LB era of Rahway - Perth Amboy (1875-1968) as NJ Transit.",
+   "The 1867 'United Companies' question: did trains run under the United Companies' name from 1867 (joint board, a single President General & Engineer from Apr 1867, United Companies' uniforms 1869, locomotive purchases and new trains 1870-71) or under the three separate companies (which stayed separate corporations until May 18 1872, and Baer still reports NJRR-named openings in 1870)? Treated as NOT a split, as in camden_and_amboy_rail_road.geojson; should be decided ONCE for both files. If decided the other way, the NJRR and C&A features would both end in 1867 and a single United Companies feature/colour would cover 1867-1871 on both systems. Settling source: an 1868-1870 public timetable or Appleton's/Travelers' Guide.",
+   "Newark realignment (Dock Bridge cutoff): Fowler line 51A '1834>1862' vs Wikipedia '1869' vs Baer 'Feb 22 1870' (dated Newark Daily Advertiser) - Baer used.",
+   "New Brunswick opening: Baer Oct 31 1837 (NJRR AR 1852/53: Oct 28) vs an uncited Wikipedia sentence ('northbound in 1838 and southbound in 1839') - 1837 used.",
+   "Newark - Elizabeth, Dec 21-31 1835: whether the first revenue trains were locomotive-hauled is unknown; drawn from 1836.",
+   "Marion - Newark 1836: drawn from 1836 (steam from Jan 11, horse to May 20); collapse to 1837 under a stricter Rule 5 reading.",
+   "Millstone Branch: START [OPEN] - 1875 is the first confirmed passenger year (Fowler's 1875 Guide letter), not the opening; opening Dec 19 1854 (Wikipedia) vs Jan 1 1855 (Baer); who ran its trains 1855-1871 and whether they carried passengers is unknown (Baer's 1850-1854 files were unavailable). The 1930 end rests on Wikipedia's citation of the Home News (not read directly).",
+   "Centre Street Branch PRR end 1902 rests on Fowler alone; Exchange Place last train Nov 17 1961 on Wikipedia citing Baer 1961 (not read directly); the 1910 era boundary on pennsylvania-railroad-exchange-place-newark is context, not sourced in this research.",
+   "Jersey City terminal history: Baer (Exchange Place terminal June 5 1858; new 12-track station Dec 15 1873) vs Wikipedia (replaced 1876 and 1888-1892) - affects only the terminal, not the drawn years.",
+   "Jersey City - Newark documented mileage: the report's 'about 9-10 mi' mixes Fowler datums; the dated OHM ways trace 7.8-8.2 mi. Not resolved against a single-datum source.",
+   "Intermediate NJRR-era stations are not established beyond Fowler's 1851 'Campbells' (Metuchen), 1858 'Elizabeth City' and the 1834 timetable stops.",
+   "headway_min and avg_speed_kmh on every feature are estimates; the only frequency evidence is Baer's 1859 annual-meeting train counts and the 1836 trip counts.",
+   "Gauge: 4 ft 10 in, converted by the PRR 1872-73 (Baer 1872) - no effect on drawn years."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Jersey City – East Newark (Bergen Hill Cut)",
+    "id": "njrr-jersey-city-east-newark",
+    "color": "#CC18BC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202447880, 202447879, 202447883, 202447884, 202447885, 202447882, 202447881, 202447862, 202447863, 202447861, 202447860, 202447858 (start_date 1834-09-15; ways 202447883 and 202447885 end_date 1881, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Jersey City (Exchange Place, the Paulus Hook ferry waterfront) - East Newark Jct (Harrison): 6.7 mi traced. Documented: about 9-10 mi Jersey City - Newark in the report, an estimate mixing Fowler's line 51 (Jersey City 1.0 - Manhattan Transfer 7) and 51A datums; Fowler's own Jersey City - Manhattan Transfer span is 6 mi and the traced line runs a little past Manhattan Transfer to the junction, so the trace fits Fowler's figures and the report's 9-10 mi looks high (Jersey City - Newark traced in all: 8.2 mi via Centre Street, 7.9 mi via the Dock Bridge). Real-traced throughout on dated OHM ways; no approximated (straight-line) legs. Ends at the Jersey City waterfront (Exchange Place), never at New York Penn Station: the Hudson tunnels and the Harrison - Penn Station route date from 1910 and are not NJRR route. ERA / LATER ALIGNMENT (Rule 2): the OHM ways sit within a few metres of today's OSM rail where track survives (median 1 m, 90th percentile 4 m against OSM rail and old_railway_operator=PRR ways) - i.e. they are drawn on the surviving later alignment: the 1890s-1900s elevated line through Jersey City, the PRR's later meadows embankment and Hackensack crossing. Through Bergen Hill it follows OHM's two short ways that END in 1881 (the S-shaped 1838 cut, replaced by a straight cut in the 1880s - Baer 1838), so the cut itself is the NJRR-era shape (up to 320 m from the later straight cut); everything else is the later alignment. The Jersey City terminal moved (Hudson & York Sts 1834, Montgomery St ferry 1839, Exchange Place 1858); one terminal point is drawn for all years.",
+    "segments": [
+     {
+      "start": 1838,
+      "end": 1858,
+      "headway_min": 60,
+      "note": "Jersey City - Marion - Hackensack River bridge - the meadows - East Newark (Harrison). The line opened Sept 15 1834 with HORSE cars (eight trips each way), and horses hauled every car over Bergen Hill (Jersey City - Marion) until the Bergen Hill cut opened Jan 22 1838, which 'ends use of horse power over hill' (Baer 1838, NJRR minute books; 1913 History of Newark). Drawn from 1838 under Rule 5: no earlier year had a train run Jersey City - Newark without animal haulage. Commutation tickets from 1839 (Jersey City - Newark $100/yr from 1840). Trackage tenants (Paterson & Hudson River / Erie to 1861, Morris & Essex cars to 1863, CNJ 1859-1864) ran their own trains and are not this feature. headway_min is an estimate: no timetable frequency was counted for this span.",
+      "sources": [
+       "Segment-level: Jan 22 1838 start (end of horse haulage over Bergen Hill) from Baer's PRR Chronology 1838 (citing NJRR minute books) and the 1913 History of Newark; 1834 horse opening from Baer 1834; terminal moves from Baer 1839, 1858",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1834.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1838.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1858.pdf",
+       "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm"
+      ]
+     },
+     {
+      "start": 1858,
+      "end": 1871,
+      "headway_min": 30,
+      "note": "New 5-track Jersey City terminal at Exchange Place opened June 5 1858 (Baer). The June 4 1859 annual meeting reported 70 trains between Jersey City and Newark (Baer, from the minute books; whether that is a daily total in both directions is not stated) - headway_min 30 is an estimate derived from that count, not a timetable. The 1867 'United Companies' joint board (NJRR + Camden & Amboy + Delaware & Raritan Canal) is treated as NOT an operator change (see metadata). The Pennsylvania Railroad took over operation on Dec 1 1871, so this NJRR feature ends in 1871 and the PRR feature pennsylvania-railroad-exchange-place-newark continues it.",
+      "sources": [
+       "Segment-level: 1858 terminal and 1859 train count from Baer's PRR Chronology 1858, 1859; Dec 1 1871 PRR operation from Baer 1871",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1858.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1859.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.032444,
+      40.717087
+     ],
+     [
+      -74.035806,
+      40.717371
+     ],
+     [
+      -74.053023,
+      40.722633
+     ],
+     [
+      -74.059224,
+      40.724639
+     ],
+     [
+      -74.05963,
+      40.724888
+     ],
+     [
+      -74.059908,
+      40.725208
+     ],
+     [
+      -74.060197,
+      40.726096
+     ],
+     [
+      -74.060171,
+      40.726497
+     ],
+     [
+      -74.059607,
+      40.727861
+     ],
+     [
+      -74.059537,
+      40.729278
+     ],
+     [
+      -74.059713,
+      40.729798
+     ],
+     [
+      -74.060114,
+      40.730269
+     ],
+     [
+      -74.061222,
+      40.731022
+     ],
+     [
+      -74.062521,
+      40.731426
+     ],
+     [
+      -74.063412,
+      40.731854
+     ],
+     [
+      -74.064381,
+      40.732816
+     ],
+     [
+      -74.065307,
+      40.734381
+     ],
+     [
+      -74.065839,
+      40.734836
+     ],
+     [
+      -74.067807,
+      40.735933
+     ],
+     [
+      -74.069124,
+      40.736426
+     ],
+     [
+      -74.080481,
+      40.73974
+     ],
+     [
+      -74.084423,
+      40.74203
+     ],
+     [
+      -74.085331,
+      40.742334
+     ],
+     [
+      -74.088316,
+      40.742727
+     ],
+     [
+      -74.103494,
+      40.743065
+     ],
+     [
+      -74.116916,
+      40.743547
+     ],
+     [
+      -74.12536,
+      40.743648
+     ],
+     [
+      -74.127666,
+      40.743324
+     ],
+     [
+      -74.145138,
+      40.741959
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Marion – Newark (steam, pre-Bergen Hill Cut)",
+    "id": "njrr-marion-newark-steam",
+    "color": "#CC18BC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202447881, 202447862, 202447863, 202447861, 202447860, 202447858, 202447857 (start_date 1834-09-15, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Marion (west foot of Bergen Hill) - East Newark Jct - Centre Street bridge - Newark (Market Street): 5.4 mi traced against about 7 mi documented (report block [2], 'a subset of [1]', not measured; Fowler line 51 puts Marion at 3.4 from a Jersey City 1.0 datum). The start is the OHM vertex nearest the geocoded Marion (284 m from Nominatim's Marion hamlet point); the traced Jersey City - Marion distance is 2.7 mi against Fowler's 2.4. Real-traced on dated OHM ways; no approximated legs. ERA / LATER ALIGNMENT (Rule 2): the OHM ways sit within a few metres of today's OSM rail where track survives (median 1 m, 90th percentile 4 m against OSM rail and old_railway_operator=PRR ways) - i.e. they are drawn on the surviving later alignment: the 1890s-1900s elevated line through Jersey City, the PRR's later meadows embankment and Hackensack crossing. The Newark end uses OHM's 1834 way over the original Centre Street crossing of the Passaic (the alignment of these years), which survives in OSM as the Conrail Center Street Industrial Track.",
+    "segments": [
+     {
+      "start": 1836,
+      "end": 1837,
+      "headway_min": 240,
+      "note": "Steam working on the meadows section before the Bergen Hill cut. Jan 11 1836: 'through service between Jersey City and Rahway with two round trips by steam and one by horse; first regular use of locomotives east of Newark'; May 20 1836: all three Jersey City - Rahway trips by steam, horse cars abandoned on the Newark city track (Baer 1836, Newark Eagle). Horses still hauled every car over Bergen Hill (Jersey City - Marion) until Jan 22 1838, so ONLY Marion - Newark is drawn here; from 1838 the whole line is the feature njrr-jersey-city-east-newark (and njrr-newark-centre-street). RULE 5 READING: 1836 contains both steam trains (from Jan 11) and horse cars (to May 20) on this stretch; it is drawn as the conversion year because mechanical passenger trains demonstrably ran in it. If the stricter reading ('no drawn year may contain ANY horse working') is preferred, collapse this segment to 1837 only. headway_min is an estimate from the three daily round trips Baer reports.",
+      "sources": [
+       "Segment-level: Jan 11 and May 20 1836 steam/horse changeovers from Baer's PRR Chronology 1836 (citing the Newark Eagle); Jan 22 1838 end of horse haulage over Bergen Hill from Baer 1838",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1835.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1836.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1838.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.071661,
+      40.737202
+     ],
+     [
+      -74.080481,
+      40.73974
+     ],
+     [
+      -74.084723,
+      40.74217
+     ],
+     [
+      -74.085331,
+      40.742334
+     ],
+     [
+      -74.087611,
+      40.742656
+     ],
+     [
+      -74.090419,
+      40.74279
+     ],
+     [
+      -74.103494,
+      40.743065
+     ],
+     [
+      -74.116916,
+      40.743547
+     ],
+     [
+      -74.12536,
+      40.743648
+     ],
+     [
+      -74.127666,
+      40.743324
+     ],
+     [
+      -74.145138,
+      40.741959
+     ],
+     [
+      -74.148038,
+      40.742002
+     ],
+     [
+      -74.155469,
+      40.741755
+     ],
+     [
+      -74.161909,
+      40.741353
+     ],
+     [
+      -74.164806,
+      40.740672
+     ],
+     [
+      -74.165097,
+      40.740395
+     ],
+     [
+      -74.165152,
+      40.738146
+     ],
+     [
+      -74.164431,
+      40.736904
+     ],
+     [
+      -74.164036,
+      40.735694
+     ],
+     [
+      -74.164157,
+      40.734816
+     ],
+     [
+      -74.164461,
+      40.734301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Centre Street Line (East Newark – Newark)",
+    "id": "njrr-newark-centre-street",
+    "color": "#CC18BC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202447857 (start_date 1834-09-15, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "East Newark Jct (Harrison) - Centre Street bridge over the Passaic - River Street - Newark (Market Street): 1.5 mi traced against 1.34 mi documented (Wikipedia, Center Street Branch). Real-traced on the dated OHM way (railway=abandoned); no approximated legs. Where track survives it matches OSM's Conrail Center Street Industrial Track (old_railway_operator=PRR) closely (median 6 m); the River Street approach to Market Street is lifted and is drawn on the OHM way alone. Market Street: the drawn end is OHM's Market Street junction node, close to (not on) the 1935-37 Newark Penn Station site.",
+    "segments": [
+     {
+      "start": 1838,
+      "end": 1869,
+      "headway_min": 30,
+      "note": "The original main line through Newark: over the Passaic by the Centre Street bridge, then down River Street to the Market Street depot (Market St & Railroad Avenue). From Jan 22 1838 every NJRR train between Jersey City and Newark used it (steam trains from Marion used it 1836-1837: feature njrr-marion-newark-steam). The NJRR's earlier horse-car city track along Market and Broad Streets to Chandler's Hotel (1834 - May 20 1836) is NOT drawn (Rule 5). headway_min is an estimate based on the 1859 count of 70 Jersey City - Newark trains (Baer); no timetable was counted.",
+      "sources": [
+       "Segment-level: route via Centre Street to Feb 22 1870 from Baer's PRR Chronology 1870 (Newark Daily Advertiser); 1838 start from Baer 1838; 1859 train count from Baer 1859",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1838.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1859.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1870.pdf"
+      ]
+     },
+     {
+      "start": 1870,
+      "end": 1871,
+      "headway_min": 60,
+      "note": "From Feb 22 1870 the through trains used the new Dock Bridge cutoff (feature njrr-newark-dock-bridge); 'local trains continue to operate via Centre Street', and in May 1870 the 'old line becomes Centre Street Branch, but retains passenger service' (Baer 1870). Local Jersey City - Newark trains only. Ends with NJRR operation on Nov 30 1871; continued by the PRR feature pennsylvania-railroad-centre-street-branch. headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: Feb 22 1870 cutoff opening and May 1870 'retains passenger service' from Baer's PRR Chronology 1870; Dec 1 1871 PRR operation from Baer 1871",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1870.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.145138,
+      40.741959
+     ],
+     [
+      -74.148038,
+      40.742002
+     ],
+     [
+      -74.156178,
+      40.741728
+     ],
+     [
+      -74.157313,
+      40.741588
+     ],
+     [
+      -74.160126,
+      40.741475
+     ],
+     [
+      -74.161909,
+      40.741353
+     ],
+     [
+      -74.164806,
+      40.740672
+     ],
+     [
+      -74.165097,
+      40.740395
+     ],
+     [
+      -74.165152,
+      40.738146
+     ],
+     [
+      -74.164431,
+      40.736904
+     ],
+     [
+      -74.164036,
+      40.735694
+     ],
+     [
+      -74.164157,
+      40.734816
+     ],
+     [
+      -74.164461,
+      40.734301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Dock Bridge Cutoff (East Newark – Newark)",
+    "id": "njrr-newark-dock-bridge",
+    "color": "#CC18BC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 199579643, 199579644, 202447859 (start_date 1870, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "East Newark Jct (Harrison) - Dock Bridge - Newark (Market Street): 1.2 mi traced against about 1 mi documented (report block [3], not measured). Real-traced on dated OHM ways (start_date 1870, named Northeast Corridor); no approximated legs. LATER ALIGNMENT: the OHM ways lie on today's Northeast Corridor (median 1 m from OSM rail), i.e. the 1935 Dock Bridge lift bridge and the 1935-37 Newark Penn Station approach, not the 1870 iron Linville truss draw and the 1870 Market Street station.",
+    "segments": [
+     {
+      "start": 1870,
+      "end": 1871,
+      "headway_min": 60,
+      "note": "Feb 22 1870: 'New Jersey Railroad opens new direct route between East Newark Jct. and Market Street, Newark, including new iron Linville truss draw bridge (\"Dock Bridge\") ... used for through passenger and freight trains' (Baer 1870, citing the Newark Daily Advertiser and Coverdale & Colpitts); new Market Street station May 1870. SOURCE CONFLICT on the date: Fowler line 51A has the former route '1834>1862', Wikipedia says the realignment was 1869, Baer gives the day-dated Feb 22 1870 - Baer is used, the others are recorded in metadata.not_yet_sourced. Through New York - Philadelphia trains. Continued from Dec 1 1871 by the PRR feature pennsylvania-railroad-exchange-place-newark. headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: Feb 22 1870 opening from Baer's PRR Chronology 1870 (Newark Daily Advertiser); conflicting dates from Fowler NJ line 51A and Wikipedia NJRR&T; Dec 1 1871 PRR operation from Baer 1871",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1870.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf",
+       "https://en.wikipedia.org/wiki/New_Jersey_Rail_Road_and_Transportation_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.145138,
+      40.741959
+     ],
+     [
+      -74.151541,
+      40.741328
+     ],
+     [
+      -74.152746,
+      40.74097
+     ],
+     [
+      -74.15406,
+      40.740332
+     ],
+     [
+      -74.162959,
+      40.735347
+     ],
+     [
+      -74.164461,
+      40.734301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Main Line (Newark – East Brunswick)",
+    "id": "njrr-newark-east-brunswick",
+    "color": "#CC18BC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): Northeast Corridor ways tagged old_railway_operator=PRR, routed with opstrace.py (old_railway_operator=PRR track preferred, PRSL/CNJ/Lehigh/Erie/DL&W/PATH/HBLR excluded or penalised); Douglas-Peucker 8 m + 6 m + trim_reversals. Checked against OpenHistoricalMap ways 199579641, 199718635, 199579633 (Northeast Corridor, start_date 1835-09 / 1836 / 1839-01-01).",
+    "geometry_quality": "Newark (Market Street) - Elizabeth - Rahway - Metuchen - East Brunswick (north abutment of the Raritan River bridge): 22.1 mi traced; with the Raritan bridge piece (feature njrr-raritan-bridge-new-brunswick) Newark - New Brunswick is 22.6 mi against 22.7 mi documented (Fowler NJ line 50, Newark Penn 10.0 - New Brunswick 32.7). Real-traced on OSM Northeast Corridor track (old_railway_operator=PRR) throughout; the first 0.15 mi joins OHM's Market Street node to the OSM track; no approximated legs. Dated OHM ways for the same line (start_date 1835-09 / 1836 / 1839) lie a median 9 m (max 280 m, in Newark) from the drawn line. LATER ALIGNMENT: today's Northeast Corridor - the 1890s-1900s track elevations through Elizabeth and Rahway, the 1935-37 Newark Penn Station approach and later straightenings - not the 1836 grade-level line; the 1836 alignment was not separately traced.",
+    "segments": [
+     {
+      "start": 1836,
+      "end": 1858,
+      "headway_min": 180,
+      "note": "Newark (Market St) - Elizabeth opened for revenue Dec 21 1835 ('four round trips for passengers only'), but Baer does not say those December trains were locomotive-hauled; steam is explicit from Jan 1 1836 ('revenue service to Rahway ... with locomotive west of Newark'), so the drawn span starts 1836 (Rule 5; 1835 withheld as not proven steam). Rahway - East Brunswick (north bank of the Raritan, omnibus across to New Brunswick) opened July 11 1836 with three round trips (Baer 1836, Newark Eagle, ARJ); the line reached New Brunswick itself on Oct 31 1837 (feature njrr-raritan-bridge-new-brunswick). From Jan 1 1839 the C&A's Trenton line met it at New Brunswick and through New York - Philadelphia trains ran over it, with New Brunswick the engine and crew change point. Junction at Elizabeth with the Elizabethtown & Somerville (CNJ) from 1839. Bonhamtown gravel branch (1860) was freight-only and is not drawn. headway_min is an estimate (3-5 round trips a day in 1836); no timetable was counted.",
+      "sources": [
+       "Segment-level: Dec 21 1835 / Jan 1 1836 / July 11 1836 openings and steam from Baer's PRR Chronology 1835, 1836 (Newark Eagle); Rahway opening Jan 1 1836 also in Wikipedia Rahway station (citing Baer); 1839 through-train contract from Baer 1839",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1835.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1836.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1839.pdf",
+       "https://en.wikipedia.org/wiki/Rahway_station",
+       "https://ldsgenealogy.com/NJ/books/A-History-of-the-city-of-Newark-New-Jersey-embracing-practically-two-and-a-half-centuries-1666-1913-Volume-I-part-46.htm"
+      ]
+     },
+     {
+      "start": 1858,
+      "end": 1871,
+      "headway_min": 90,
+      "note": "June 4 1859 annual meeting: 32 trains Jersey City - Elizabeth, 24 to Rahway, 18 to New Brunswick (Baer, from the NJRR minute books; whether these are daily totals in both directions is not stated). Junction at Rahway for the Perth Amboy & Woodbridge from Oct 11 1864. CNJ trains ran over the NJRR Elizabeth - Jersey City 1859-1864 (CNJ's trains, not drawn here). The 1867 United Companies joint board is treated as NOT an operator change (see metadata). The Pennsylvania Railroad took over operation Dec 1 1871: the PRR era of this track is already drawn by pennsylvania_railroad.geojson (prr-mainline-new-york-washington) and nj_transit_rail.geojson (njt-10), so no PRR feature is added here. headway_min is an estimate derived from the 1859 counts, not a timetable.",
+      "sources": [
+       "Segment-level: 1859 train counts from Baer's PRR Chronology 1859; 1864 P&AW junction from Baer 1864; Dec 1 1871 PRR operation from Baer 1871",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1859.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1864.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.164461,
+      40.734301
+     ],
+     [
+      -74.166466,
+      40.732622
+     ],
+     [
+      -74.170295,
+      40.728453
+     ],
+     [
+      -74.181121,
+      40.718178
+     ],
+     [
+      -74.183135,
+      40.716116
+     ],
+     [
+      -74.184153,
+      40.714836
+     ],
+     [
+      -74.186043,
+      40.712017
+     ],
+     [
+      -74.193162,
+      40.700071
+     ],
+     [
+      -74.198383,
+      40.690873
+     ],
+     [
+      -74.200375,
+      40.687971
+     ],
+     [
+      -74.215745,
+      40.666988
+     ],
+     [
+      -74.216572,
+      40.665525
+     ],
+     [
+      -74.21744,
+      40.662855
+     ],
+     [
+      -74.218703,
+      40.660979
+     ],
+     [
+      -74.233079,
+      40.647054
+     ],
+     [
+      -74.264157,
+      40.617604
+     ],
+     [
+      -74.271679,
+      40.610855
+     ],
+     [
+      -74.27682,
+      40.606017
+     ],
+     [
+      -74.281406,
+      40.602386
+     ],
+     [
+      -74.290224,
+      40.594537
+     ],
+     [
+      -74.292622,
+      40.59266
+     ],
+     [
+      -74.307579,
+      40.582111
+     ],
+     [
+      -74.311871,
+      40.579384
+     ],
+     [
+      -74.319321,
+      40.574198
+     ],
+     [
+      -74.321784,
+      40.572761
+     ],
+     [
+      -74.327344,
+      40.57007
+     ],
+     [
+      -74.330372,
+      40.568001
+     ],
+     [
+      -74.332631,
+      40.565913
+     ],
+     [
+      -74.336453,
+      40.561512
+     ],
+     [
+      -74.341925,
+      40.557279
+     ],
+     [
+      -74.343277,
+      40.555974
+     ],
+     [
+      -74.344476,
+      40.554221
+     ],
+     [
+      -74.346381,
+      40.549987
+     ],
+     [
+      -74.347635,
+      40.547898
+     ],
+     [
+      -74.349163,
+      40.546204
+     ],
+     [
+      -74.351409,
+      40.544456
+     ],
+     [
+      -74.353181,
+      40.543462
+     ],
+     [
+      -74.355512,
+      40.542497
+     ],
+     [
+      -74.372051,
+      40.537071
+     ],
+     [
+      -74.374396,
+      40.536582
+     ],
+     [
+      -74.379662,
+      40.53606
+     ],
+     [
+      -74.382424,
+      40.53542
+     ],
+     [
+      -74.38422,
+      40.534732
+     ],
+     [
+      -74.390612,
+      40.531718
+     ],
+     [
+      -74.411694,
+      40.518863
+     ],
+     [
+      -74.434296,
+      40.506243
+     ],
+     [
+      -74.437053,
+      40.504307
+     ],
+     [
+      -74.4399,
+      40.502
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Main Line (Raritan Bridge – New Brunswick)",
+    "id": "njrr-raritan-bridge-new-brunswick",
+    "color": "#CC18BC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenStreetMap (ODbL), Overpass (maps.mail.ru mirror): Northeast Corridor ways tagged old_railway_operator=PRR, routed with opstrace.py (old_railway_operator=PRR track preferred, PRSL/CNJ/Lehigh/Erie/DL&W/PATH/HBLR excluded or penalised); Douglas-Peucker 8 m + 6 m + trim_reversals. Checked against OpenHistoricalMap ways 199579641, 199718635, 199579633 (Northeast Corridor, start_date 1835-09 / 1836 / 1839-01-01).",
+    "geometry_quality": "East Brunswick (north abutment) - Raritan River bridge - New Brunswick station: 0.5 mi traced against 'under 1 mi' documented (report block [8]). Real-traced on OSM Northeast Corridor track; no approximated legs; ends at New Brunswick station (the NJRR-owned mile on to 'COUNTY' / Millstone Jct was worked by the Camden & Amboy and is not drawn here). LATER ALIGNMENT: today's (PRR-built) Raritan bridge and New Brunswick station, not the 1837 double-deck bridge.",
+    "segments": [
+     {
+      "start": 1837,
+      "end": 1871,
+      "headway_min": 90,
+      "note": "Oct 31 1837: 'Raritan River bridge completed and New Jersey Railroad opens to New Brunswick' (Baer 1837, citing the New Brunswick Fredonian; the NJRR annual report of 1852/53 says the first train passed Oct 28). SOURCE CONFLICT: an uncited Wikipedia sentence (Millstone & New Brunswick article) says NJRR trains reached New Brunswick 'northbound in 1838 and southbound in 1839'; Baer's day-dated entry is used. From Jan 1 1839 New Brunswick was the engine and crew change point for through New York - Philadelphia trains. PRR operation from Dec 1 1871 (that era is already drawn by prr-mainline-new-york-washington and njt-10). headway_min is an estimate based on the 1859 count of 18 New Brunswick trains (Baer); no timetable was counted.",
+      "sources": [
+       "Segment-level: Oct 31 1837 opening from Baer's PRR Chronology 1837; 1839 crew-change contract from Baer 1839; 1859 count from Baer 1859; Dec 1 1871 PRR operation from Baer 1871",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1837.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1839.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1859.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "https://en.wikipedia.org/wiki/New_Jersey_Rail_Road_and_Transportation_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.4399,
+      40.502
+     ],
+     [
+      -74.44436,
+      40.498543
+     ],
+     [
+      -74.446193,
+      40.496843
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Jersey Railroad",
+    "line": "New Jersey Railroad: Perth Amboy Branch (Rahway – Perth Amboy)",
+    "id": "njrr-perth-amboy-woodbridge",
+    "color": "#CC18BC",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of an 1830s-1860s American steam passenger train with frequent stops",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202448705, 202448712 (start_date 1864-10-11, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Perth Amboy Jct (Rahway, later UNION) - Avenel - Woodbridge - Perth Amboy: 6.4 mi traced against 6.33 mi documented (Wikipedia; Fowler NJ line 52, Perth Amboy Jn 21.4 - Perth Amboy 27.8 = 6.4). Real-traced on OpenHistoricalMap ways 202448705 and 202448712 (start_date 1864-10-11, Coverdale & Colpitts); no approximated legs. The OHM ways lie on today's North Jersey Coast Line (median 1 m, 90th percentile about 100 m from OSM rail), i.e. the double-tracked (1886-87) and electrified (1935) line; the branch begins about 60 m off the main-line trace at the junction. Ends at Perth Amboy, NOT South Amboy: the Raritan crossing came with the New York & Long Branch in 1875 and is not drawn.",
+    "segments": [
+     {
+      "start": 1864,
+      "end": 1871,
+      "headway_min": 120,
+      "note": "Perth Amboy & Woodbridge Railroad, Rahway - Woodbridge - Perth Amboy. Oct 11 1864: 'opens between Rahway and Perth Amboy, N.J.; operated with an enclosed \"dummy\" steamcar and trailer; operated by New Jersey Railroad' (Baer 1864); the NJRR had agreed June 4 1859 to operate it and leased it on completion (Wikipedia). A steam dummy is mechanical traction - in scope under Rule 5, not a horsecar, and not an interurban. Extension 'in Perth Amboy' authorized Oct 9 1871. PRR operation from Dec 1 1871 (feature pennsylvania-railroad-perth-amboy-branch). headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: Oct 11 1864 opening and NJRR operation from Baer's PRR Chronology 1864 and the Wikipedia Perth Amboy & Woodbridge and Woodbridge station articles; Dec 1 1871 PRR operation from Baer 1871",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1859.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1864.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "https://en.wikipedia.org/wiki/Perth_Amboy_and_Woodbridge_Railroad",
+       "https://en.wikipedia.org/wiki/Woodbridge_station_(NJ_Transit)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.284191,
+      40.599603
+     ],
+     [
+      -74.285065,
+      40.59863
+     ],
+     [
+      -74.285393,
+      40.597979
+     ],
+     [
+      -74.285507,
+      40.597142
+     ],
+     [
+      -74.285248,
+      40.596131
+     ],
+     [
+      -74.284592,
+      40.595157
+     ],
+     [
+      -74.278285,
+      40.588347
+     ],
+     [
+      -74.277939,
+      40.587866
+     ],
+     [
+      -74.277396,
+      40.58675
+     ],
+     [
+      -74.277034,
+      40.58536
+     ],
+     [
+      -74.277064,
+      40.582975
+     ],
+     [
+      -74.278323,
+      40.567225
+     ],
+     [
+      -74.277708,
+      40.556229
+     ],
+     [
+      -74.277486,
+      40.554953
+     ],
+     [
+      -74.276701,
+      40.552517
+     ],
+     [
+      -74.276071,
+      40.551054
+     ],
+     [
+      -74.275408,
+      40.549923
+     ],
+     [
+      -74.272397,
+      40.545502
+     ],
+     [
+      -74.271421,
+      40.543585
+     ],
+     [
+      -74.264411,
+      40.52235
+     ],
+     [
+      -74.264359,
+      40.521198
+     ],
+     [
+      -74.264496,
+      40.520539
+     ],
+     [
+      -74.26629,
+      40.514185
+     ],
+     [
+      -74.267904,
+      40.510625
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Exchange Place – Newark",
+    "id": "pennsylvania-railroad-exchange-place-newark",
+    "color": "#7B241C",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of a late-19th / early-20th-century suburban or branch passenger train",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202447880, 200011914 (start_date 1881), 202447881, 202447862, 202447863, 202447861, 202447860, 202447858, 199579643, 199579644, 202447859 (start_date 1834-09-15 / 1870 / 1881, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Jersey City (Exchange Place) - Bergen Hill - Harrison - Dock Bridge - Newark (Market Street): 7.7 mi traced against about 9-10 mi documented (report estimate; Fowler line 51 Jersey City 1.0 - Manhattan Transfer 7, line 51A Manhattan Transfer 8 - Newark Penn 11, different datums). Real-traced on dated OHM ways; no approximated legs. ERA / LATER ALIGNMENT (Rule 2): the OHM ways sit within a few metres of today's OSM rail where track survives (median 1 m, 90th percentile 4 m against OSM rail and old_railway_operator=PRR ways) - i.e. they are drawn on the surviving later alignment: the 1890s-1900s elevated line through Jersey City, the PRR's later meadows embankment and Hackensack crossing. Through Bergen Hill it draws the straight cut (OHM way 200011914, start_date 1881) for every year, including 1871-1880 when the 1838 S-shaped cut was still in use. From Harrison to Newark it shares the Dock Bridge track already drawn (same company and colour) by prr-mainline-new-york-washington. Newark end: the 1935-37 Newark Penn approach, not the 1870 Market Street station. Ends at the Jersey City waterfront, never New York Penn Station.",
+    "segments": [
+     {
+      "start": 1871,
+      "end": 1910,
+      "headway_min": 20,
+      "note": "The PRR took over the New Jersey Railroad's operation on Dec 1 1871 ('operations placed under General Superintendent of PRR (A.J. Cassatt)' - Baer 1871). Until the Hudson tunnels and New York Penn Station opened in 1910 this was the PRR's main line into its Jersey City terminal (ferries to Cortlandt and Desbrosses Streets), carrying the New York - Philadelphia - Washington trains as well as Newark locals. Exchange Place terminal rebuilt: Baer says a new 12-track station opened Dec 15 1873, Wikipedia says replaced 1876 and again 1888-1892 (conflict recorded in metadata). The 1910 era boundary is the opening of the PRR's New York tunnel route (context; that date was not checked against a source in this research). headway_min is an estimate; no timetable frequency was counted for this span.",
+      "sources": [
+       "Segment-level: Dec 1 1871 PRR operation from Baer's PRR Chronology 1871; 1873 terminal from Baer 1873; NOT SOURCED AT SEGMENT LEVEL: the 1910 boundary and the headway",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1873.pdf",
+       "https://en.wikipedia.org/wiki/Exchange_Place_station_(Pennsylvania_Railroad)",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     },
+     {
+      "start": 1910,
+      "end": 1961,
+      "headway_min": 30,
+      "note": "After 1910 the through trains used New York Penn Station via Manhattan Transfer (Harrison, 1910-1937) and the Hudson tunnels; Exchange Place kept commuter and some through trains. 'The last PRR passenger train used the branch on November 17, 1961' (Wikipedia Exchange Place station, citing Baer's chronology for 1961, which was not read directly); Fowler line 51: 'Passenger service from Jersey City: >1961'. From 1911 the Hudson & Manhattan (later PATH) ran Newark - Jersey City over the same corridor - a different company, already drawn in path_hudson_tubes.geojson. The Harsimus Cove freight branch (1873) is freight and not drawn. headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: Nov 17 1961 last train from the Wikipedia Exchange Place station article (citing Baer 1961, not read directly) and Fowler NJ line 51 ('>1961')",
+       "https://en.wikipedia.org/wiki/Exchange_Place_station_(Pennsylvania_Railroad)",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.032444,
+      40.717087
+     ],
+     [
+      -74.035806,
+      40.717371
+     ],
+     [
+      -74.052884,
+      40.722635
+     ],
+     [
+      -74.053808,
+      40.723046
+     ],
+     [
+      -74.05456,
+      40.723831
+     ],
+     [
+      -74.056655,
+      40.726754
+     ],
+     [
+      -74.057505,
+      40.727632
+     ],
+     [
+      -74.059268,
+      40.729276
+     ],
+     [
+      -74.060264,
+      40.730002
+     ],
+     [
+      -74.065839,
+      40.734836
+     ],
+     [
+      -74.067807,
+      40.735933
+     ],
+     [
+      -74.069124,
+      40.736426
+     ],
+     [
+      -74.080481,
+      40.73974
+     ],
+     [
+      -74.084723,
+      40.74217
+     ],
+     [
+      -74.085331,
+      40.742334
+     ],
+     [
+      -74.087611,
+      40.742656
+     ],
+     [
+      -74.090419,
+      40.74279
+     ],
+     [
+      -74.103494,
+      40.743065
+     ],
+     [
+      -74.116916,
+      40.743547
+     ],
+     [
+      -74.12536,
+      40.743648
+     ],
+     [
+      -74.127666,
+      40.743324
+     ],
+     [
+      -74.147661,
+      40.741757
+     ],
+     [
+      -74.151541,
+      40.741328
+     ],
+     [
+      -74.152746,
+      40.74097
+     ],
+     [
+      -74.15406,
+      40.740332
+     ],
+     [
+      -74.162959,
+      40.735347
+     ],
+     [
+      -74.164461,
+      40.734301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Centre Street Branch (Newark)",
+    "id": "pennsylvania-railroad-centre-street-branch",
+    "color": "#7B241C",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of a late-19th / early-20th-century suburban or branch passenger train",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202447857 (start_date 1834-09-15, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Same geometry as njrr-newark-centre-street: 1.5 mi traced against 1.34 mi documented (Wikipedia, Center Street Branch); real-traced on the dated OHM way, matching OSM's Conrail Center Street Industrial Track (old_railway_operator=PRR) where it survives; no approximated legs. Drawn on the NJRR-era (1834) alignment; any later PRR relocation of the River Street approach was not researched.",
+    "segments": [
+     {
+      "start": 1871,
+      "end": 1902,
+      "headway_min": 60,
+      "note": "Centre Street Branch, East Newark Jct - Centre Street bridge - Newark, PRR-operated from Dec 1 1871: local trains between Jersey City and Newark via the original 1834 crossing of the Passaic. Fowler NJ line 51A lists 'Newark, Centre Street' in the 1875 Official Guide (letter y) and gives passenger service on Manhattan Transfer - Newark via Centre Street as '> 1902'. The 1902 end rests on Fowler alone and was not cross-checked; if a second source is wanted and does not agree, collapse this to 1871-1875 (Fowler's 1875 station letter). Freight continued (Conrail's Center Street Industrial Track) - not drawn. headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: Dec 1 1871 start from Baer's PRR Chronology 1871; 1875 station and '>1902' end from Fowler NJ line 51A only",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.145138,
+      40.741959
+     ],
+     [
+      -74.148038,
+      40.742002
+     ],
+     [
+      -74.156178,
+      40.741728
+     ],
+     [
+      -74.157313,
+      40.741588
+     ],
+     [
+      -74.160126,
+      40.741475
+     ],
+     [
+      -74.161909,
+      40.741353
+     ],
+     [
+      -74.164806,
+      40.740672
+     ],
+     [
+      -74.165097,
+      40.740395
+     ],
+     [
+      -74.165152,
+      40.738146
+     ],
+     [
+      -74.164431,
+      40.736904
+     ],
+     [
+      -74.164036,
+      40.735694
+     ],
+     [
+      -74.164157,
+      40.734816
+     ],
+     [
+      -74.164461,
+      40.734301
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Perth Amboy Branch (Rahway – Perth Amboy)",
+    "id": "pennsylvania-railroad-perth-amboy-branch",
+    "color": "#7B241C",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of a late-19th / early-20th-century suburban or branch passenger train",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 202448705, 202448712 (start_date 1864-10-11, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Same geometry as njrr-perth-amboy-woodbridge. Perth Amboy Jct (Rahway, later UNION) - Avenel - Woodbridge - Perth Amboy: 6.4 mi traced against 6.33 mi documented (Wikipedia; Fowler NJ line 52, Perth Amboy Jn 21.4 - Perth Amboy 27.8 = 6.4). Real-traced on OpenHistoricalMap ways 202448705 and 202448712 (start_date 1864-10-11, Coverdale & Colpitts); no approximated legs. The OHM ways lie on today's North Jersey Coast Line (median 1 m, 90th percentile about 100 m from OSM rail), i.e. the double-tracked (1886-87) and electrified (1935) line; the branch begins about 60 m off the main-line trace at the junction. Ends at Perth Amboy, NOT South Amboy: the Raritan crossing came with the New York & Long Branch in 1875 and is not drawn.",
+    "segments": [
+     {
+      "start": 1871,
+      "end": 1874,
+      "headway_min": 120,
+      "note": "Perth Amboy & Woodbridge branch, PRR-operated from Dec 1 1871. Drawn ONLY to 1874 because from 1875 this track is already drawn by nj_transit_rail.geojson njt-11/njt-12 (North Jersey Coast Line, from the New York & Long Branch's opening July 1 1875). 1874 is therefore a drawing boundary, not an end of service: PRR trains continued to use the line (later the PRR/CNJ joint NY&LB service) through 1968 and NJ Transit runs it today. See metadata.not_yet_sourced for the Rule 4 problem with njt-11/njt-12 colouring 1875-1968 as NJ Transit. headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: Dec 1 1871 PRR operation from Baer's PRR Chronology 1871; continuity of service from the Wikipedia Perth Amboy & Woodbridge article",
+       "http://www.prrths.com/newprr_files/Hagley/PRR1871.pdf",
+       "https://en.wikipedia.org/wiki/Perth_Amboy_and_Woodbridge_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.284191,
+      40.599603
+     ],
+     [
+      -74.285065,
+      40.59863
+     ],
+     [
+      -74.285393,
+      40.597979
+     ],
+     [
+      -74.285507,
+      40.597142
+     ],
+     [
+      -74.285248,
+      40.596131
+     ],
+     [
+      -74.284592,
+      40.595157
+     ],
+     [
+      -74.278285,
+      40.588347
+     ],
+     [
+      -74.277939,
+      40.587866
+     ],
+     [
+      -74.277396,
+      40.58675
+     ],
+     [
+      -74.277034,
+      40.58536
+     ],
+     [
+      -74.277064,
+      40.582975
+     ],
+     [
+      -74.278323,
+      40.567225
+     ],
+     [
+      -74.277708,
+      40.556229
+     ],
+     [
+      -74.277486,
+      40.554953
+     ],
+     [
+      -74.276701,
+      40.552517
+     ],
+     [
+      -74.276071,
+      40.551054
+     ],
+     [
+      -74.275408,
+      40.549923
+     ],
+     [
+      -74.272397,
+      40.545502
+     ],
+     [
+      -74.271421,
+      40.543585
+     ],
+     [
+      -74.264411,
+      40.52235
+     ],
+     [
+      -74.264359,
+      40.521198
+     ],
+     [
+      -74.264496,
+      40.520539
+     ],
+     [
+      -74.26629,
+      40.514185
+     ],
+     [
+      -74.267904,
+      40.510625
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Millstone Branch",
+    "id": "pennsylvania-railroad-millstone-branch",
+    "color": "#7B241C",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimate, not sourced: no running time was checked for any year; a figure typical of a late-19th / early-20th-century suburban or branch passenger train",
+    "geometry_source": "OpenHistoricalMap (ODbL), Overpass (overpass-api.openhistoricalmap.org): ways 201858867, 201858863, 201858861 (start_date 1854, sourced in OHM to Coverdale & Colpitts vol. II, digital.hagley.org/PARR_61213_coverdale_vol2). Assembled end to end from the dated ways; Douglas-Peucker 6 m + trim_reversals (opstrace.py).",
+    "geometry_quality": "Millstone Jct (on the main line south of New Brunswick) - Voorhees - Middlebush - East Millstone: 6.5 mi traced against about 6.7 mi documented (Fowler NJ line 53, 34 - 40.7; Wikipedia 'seven-mile'). Real-traced on OpenHistoricalMap ways dated start_date 1854 (Coverdale & Colpitts), which lie a median 3 m (90th percentile 5 m) from OSM rail/abandoned ways; no approximated legs.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1930,
+      "headway_min": 240,
+      "note": "Millstone & New Brunswick Railroad (opened Dec 19 1854 per Wikipedia, Jan 1 1855 per Baer), leased 999 years to the United Companies in 1871 and worked by the PRR. START IS [OPEN]: 1875 is the FIRST CONFIRMED passenger year (Fowler's 1875 Official Guide letter for Voorhees, Middlebush and East Millstone), NOT the opening - passenger trains may well have run from 1855 or 1871, but no source checked proves who ran them or that they carried passengers before 1875. Do not extend earlier without evidence. End: all passenger service ended in 1930 (Central New Jersey Home News Mar 19 1930, 'To Abandon R.R. Branch on April 1', read only via Wikipedia; Fowler line 53 '> 1930'). Freight continued (abandonment west of Clyde Road 1972/1980) - not drawn (Rule 1). headway_min is an estimate; no timetable was counted.",
+      "sources": [
+       "Segment-level: 1875 first confirmed year from Fowler NJ line 53 (letter y); 1930 end from the Wikipedia Millstone and New Brunswick Railroad article (citing the Home News, Mar 19 1930, not read directly) and Fowler '> 1930'",
+       "https://en.wikipedia.org/wiki/Millstone_and_New_Brunswick_Railroad",
+       "https://www.branchline.uk/jfpdf/newjerseyrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.465219,
+      40.478964
+     ],
+     [
+      -74.466026,
+      40.478439
+     ],
+     [
+      -74.467396,
+      40.477868
+     ],
+     [
+      -74.468177,
+      40.477652
+     ],
+     [
+      -74.470452,
+      40.477349
+     ],
+     [
+      -74.472366,
+      40.477463
+     ],
+     [
+      -74.507914,
+      40.485636
+     ],
+     [
+      -74.50957,
+      40.486122
+     ],
+     [
+      -74.51747,
+      40.488921
+     ],
+     [
+      -74.545968,
+      40.499308
+     ],
+     [
+      -74.548731,
+      40.500118
+     ],
+     [
+      -74.562268,
+      40.502976
+     ],
+     [
+      -74.567366,
+      40.503929
+     ],
+     [
+      -74.568499,
+      40.503968
+     ],
+     [
+      -74.570284,
+      40.503811
+     ],
+     [
+      -74.573372,
+      40.503062
+     ],
+     [
+      -74.577249,
+      40.50237
+     ],
+     [
+      -74.582532,
+      40.502137
+     ]
+    ]
+   }
+  }
+ ]
+}

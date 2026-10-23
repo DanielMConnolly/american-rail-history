@@ -1,0 +1,1351 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "name": "Lancaster, Oxford and Southern (ex Peach Bottom Railway Eastern Division)",
+  "note": "3-ft gauge short line, Oxford (Chester Co.) - Peach Bottom on the Susquehanna (Lancaster Co.), PA, c.20 mi, with an 8-mi branch Fairmount - Quarryville (1906-1917). Never entered Maryland and never reached Lancaster. The main line is drawn as three legs because it opened in stages (Oxford - White Rock 1874, to Fulton House 1875, to Peach Bottom drawn from 1879), and each leg is split three ways by operator on identical geometry (Rule 4): Peach Bottom Railway 1874-1881, Peach Bottom Railroad 1882-1889, Lancaster, Oxford and Southern 1890-1918.",
+  "company_names": "'Peach Bottom Railway' and 'Peach Bottom Railroad' are DIFFERENT companies and must not be merged by a name normaliser that strips Railway/Railroad: the Railway (chartered 1868) owned both the Eastern Division drawn here and the Middle Division York - Delta (later York & Peach Bottom, then Ma & Pa); the Railroad was the new company formed after the September 1881 foreclosure sale of the Eastern Division only. The suffix is kept in both company strings and labels for that reason. Lancaster, Oxford & Southern Railroad (1890) vs Railway (1912 reorganisation) is NOT colour-split: same display company, same trains.",
+  "research_report": "research/branches/lancaster_oxford_and_southern_railroad.txt",
+  "colour_choice": "No company in data/ had any of these three names (grepped 2026-10-21); three new colours were picked that no other company uses: Peach Bottom Railway #C04A7A, Peach Bottom Railroad #4F7CAC, Lancaster, Oxford and Southern #3F7F5F.",
+  "not_yet_sourced": [
+   "END YEAR of the main line: 1918 (Wikipedia, Froio) vs 1919 (Moedinger; steamlocomotive.com). Drawn to 1918. Roth & White (2013) or Kline (1985) would settle it.",
+   "Quarryville Branch end is [OPEN] at 1915: passenger service between 1916 and the 14 April 1917 abandonment is unconfirmed.",
+   "Passenger carriage 1915-1918 on the main line is inferred from Moedinger's account of mixed operation, not from a dated timetable.",
+   "Opening: 10 Nov 1873 to Hopewell (Wikipedia/Hilton) vs first scheduled train early summer 1874 (Moedinger). Drawn from 1874.",
+   "Fulton House - Peach Bottom opening staged 1874-1878 per Wikipedia only; drawn from 1879 as an inference.",
+   "Month of the 1890 Peach Bottom Railroad -> LO&S reorganisation not found; 1890 assigned to the LO&S.",
+   "Receivership 1910 (Moedinger) vs 1911 (Wikipedia/PCM); sale to Baltimore interests 1911 (Moedinger) vs 1912 (Wikipedia, ERJ). Not a colour split either way.",
+   "Headway (240 min) and speed (15 mph company figure) are estimates.",
+   "Geometry: Oxford - White Rock and the Peach Bottom end are unmapped in OSM/OHM; the exact Fairmount junction and Oxford / Peach Bottom station sites are not pinned.",
+   "Not read: Kline, 'The Little, Old and Slow' (1985); Roth & White (2013); Hilton, The Ma & Pa, ch. III."
+  ],
+  "omitted": "Nothing in the report's drawable spans was omitted. Not drawn because never built: any line to Lancaster, Oxford - Singerly (1889 survey), Quarryville - Kingsbridge (1887 proposal), a Susquehanna bridge. Not drawn: the July-Oct 1914 mail-only handcar interval (not passenger service; under a year) and the Quarryville branch 1916-1917 (unproven).",
+  "freight_only_audit": "No freight-only content: the road carried passengers on every (mixed) train; nothing drawn after 1918.",
+  "horsecar_audit": "None: steam from opening (2-4-0 'Samuel Dickey', 1874).",
+  "geometry_method": "opstrace probe 2026-10-21: fetch_operator_ways on old_railway_operator ~ Lancaster|Peach Bottom|LO&S|Oxford -> 0 ways; fetch_gap (OSM abandoned/historic/trails + OHM) over the corridor -> only PRR lines in OHM; the road survives in OSM only as ways NAMED 'Lancaster, Oxford & Southern RR' (plus one gauge=914 way, 'Pilgrims Pathway'). opstrace.trace could not join those fragments (gaps of 0.1-1 mi exceed its 300 m connector), so they were chained in order by hand, gaps bridged straight, then douglas_peucker(8 m) + trim_reversals."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peach Bottom Railway",
+    "line": "Peach Bottom Railway: Eastern Division",
+    "id": "peach-bottom-railway-eastern-division-a",
+    "color": "#C04A7A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "APPROXIMATED, all of it: Oxford - White Rock is drawn as straight legs through OSM place nodes because no part of the LO&S grade between Oxford and White Rock is mapped in OSM or OpenHistoricalMap (probed 2026-10-21: old_railway_operator, note:old_railway_operator, name, gauge=914, abandoned/historic railway, rail-trails; OHM has only the PRR Octoraro/P&BC and Quarryville lines here). Straight legs: Oxford (borough centroid; the LO&S used the joint PRR station, exact site not pinned) - Hopewell 2.0 mi, Hopewell - Tweedale 1.3 mi, Tweedale - Spruce Grove 2.2 mi, Spruce Grove - White Rock 2.1 mi (White Rock end = east end of the mapped LO&S grade, OSM way 1461912270, 0.9 km from the White Rock hamlet node). Drawn 7.6 mi vs 8 mi documented (Fowler table 414: White Rock at mi 8). Deliberately NOT routed over the PRR Octoraro Branch through Oxford. Era: no later alignment involved; the line is simply unknown in detail.",
+    "traced_mi": 7.6,
+    "documented_mi": 8,
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1881,
+      "headway_min": 240,
+      "note": "Oxford - White Rock leg of the Peach Bottom Railway's Eastern Division (3-ft gauge, steam from opening; no horse era). Opened to White Rock by June 1874 (Moedinger: 'By June, 1874, both divisions ... were opened to revenue traffic', first scheduled train out of Oxford for White Rock in early summer 1874). Wikipedia (citing Hilton) has Oxford - Hopewell opened 10 Nov 1873; that 1873 date is recorded but not drawn (possibly construction/excursion trains on c.4 mi only). Oxford, Hopewell, Tweedale, Spruce Grove and White Rock all appear in the 1875 Official Guide (Fowler 'y'). The Railway (chartered 1868) also owned the separate Middle Division York - Delta across the river, not drawn here; if it is drawn, its 1874-1881 feature must share this colour. Ends 1881: the Eastern Division was foreclosed early 1881 and sold in September 1881 to C. W. Leavitt et al. (PA1881); 1881 is given to the Railway. Whole-company passengers 51,407 (1878), 54,254 (1880), 45,654 (1881), not split by division. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable. For 1874-1881 no timetable at all was seen; the headway is carried back from 1882.",
+      "sources": [
+       "Segment-level: opening per Moedinger and Wikipedia/Hilton, 1875 Official Guide station letters per Fowler; end per the 1881 PA state report (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://archive.org/details/annualreportsec04affagoog"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.979,
+      39.7852
+     ],
+     [
+      -76.0163,
+      39.7793
+     ],
+     [
+      -76.0288,
+      39.7948
+     ],
+     [
+      -76.0669,
+      39.8068
+     ],
+     [
+      -76.093181,
+      39.829325
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peach Bottom Railway",
+    "line": "Peach Bottom Railway: Eastern Division",
+    "id": "peach-bottom-railway-eastern-division-b",
+    "color": "#C04A7A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Mostly real-traced: OSM ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned / abandoned=railway; ways 1461912270, 1461912269, 1461912268, 1024092960) for 3.2 mi. APPROXIMATED: three straight bridges between mapped pieces, 0.8 mi (west of White Rock), 0.25 mi and 0.2 mi (either side of Fairmount). Drawn 4.5 mi vs 5 mi documented (Fowler mi 8 -> 13). Fulton House is placed at the vertex 50 m from the Robert Fulton Birthplace (OSM way 1352821106); Fowler puts it 1 mi beyond Fairmount, the mapped grade puts it c.2 mi - recorded, not reconciled. The mapped grade is the 3-ft LO&S grade itself; no later alignment.",
+    "traced_mi": 4.5,
+    "documented_mi": 5,
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1881,
+      "headway_min": 240,
+      "note": "White Rock - Fulton House leg of the Peach Bottom Railway's Eastern Division (3-ft gauge, steam from opening; no horse era). Start 1875: Fulton House is the terminus of passenger service in the 1875 Official Guide (Fowler 'y(tm)'); Kingsbridge and Fairmount also 'y'. Wikipedia has the line open to Goshen 25 Nov 1874, so trains may have reached Fulton House late in 1874 - bracket 1874-1875, collapsed to 1875. The Railway (chartered 1868) also owned the separate Middle Division York - Delta across the river, not drawn here; if it is drawn, its 1874-1881 feature must share this colour. Ends 1881: the Eastern Division was foreclosed early 1881 and sold in September 1881 to C. W. Leavitt et al. (PA1881); 1881 is given to the Railway. Whole-company passengers 51,407 (1878), 54,254 (1880), 45,654 (1881), not split by division. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable. For 1874-1881 no timetable at all was seen; the headway is carried back from 1882.",
+      "sources": [
+       "Segment-level: opening per Moedinger and Wikipedia/Hilton, 1875 Official Guide station letters per Fowler; end per the 1881 PA state report (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://archive.org/details/annualreportsec04affagoog"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.093181,
+      39.829325
+     ],
+     [
+      -76.094014,
+      39.829114
+     ],
+     [
+      -76.094272,
+      39.828864
+     ],
+     [
+      -76.094477,
+      39.82748
+     ],
+     [
+      -76.094855,
+      39.8269
+     ],
+     [
+      -76.095756,
+      39.826392
+     ],
+     [
+      -76.097456,
+      39.826023
+     ],
+     [
+      -76.098486,
+      39.826056
+     ],
+     [
+      -76.099516,
+      39.826425
+     ],
+     [
+      -76.099782,
+      39.826643
+     ],
+     [
+      -76.101138,
+      39.830044
+     ],
+     [
+      -76.115562,
+      39.825894
+     ],
+     [
+      -76.118223,
+      39.823883
+     ],
+     [
+      -76.119107,
+      39.823511
+     ],
+     [
+      -76.120973,
+      39.823026
+     ],
+     [
+      -76.127368,
+      39.819707
+     ],
+     [
+      -76.131093,
+      39.818072
+     ],
+     [
+      -76.1352,
+      39.818115
+     ],
+     [
+      -76.13976,
+      39.818589
+     ],
+     [
+      -76.141391,
+      39.818656
+     ],
+     [
+      -76.14315,
+      39.818309
+     ],
+     [
+      -76.144244,
+      39.817666
+     ],
+     [
+      -76.14536,
+      39.816809
+     ],
+     [
+      -76.147142,
+      39.814734
+     ],
+     [
+      -76.14815,
+      39.813826
+     ],
+     [
+      -76.149555,
+      39.811354
+     ],
+     [
+      -76.151197,
+      39.809492
+     ],
+     [
+      -76.151787,
+      39.808148
+     ],
+     [
+      -76.152227,
+      39.807555
+     ],
+     [
+      -76.158966,
+      39.805024
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peach Bottom Railway",
+    "line": "Peach Bottom Railway: Eastern Division",
+    "id": "peach-bottom-railway-eastern-division-c",
+    "color": "#C04A7A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Partly real-traced: OSM ways 1024092960 (west end), 11939503 ('Pilgrims Pathway', railway=abandoned, gauge=914) and 1461913819 ('Lancaster, Oxford & Southern RR') for 3.2 mi, Fulton House - past Eldora to the mapped end near McSparran. APPROXIMATED: straight legs mapped end - Arcadia 1.3 mi and Arcadia - Peach Bottom 1.2 mi (2.6 mi total; the Dorsey's stretch down to the river is unmapped). Peach Bottom = the Peach Bottom hamlet node in Fulton Twp, Lancaster Co., on the EAST bank (not the York Co. village or the nuclear plant across the river); the LO&S station by the PRR Columbia & Port Deposit riverside station was lost to the Conowingo pool (1926-28), so the exact terminal is not pinned. Drawn 5.8 mi vs 7 mi documented (Fowler mi 13 -> 20): 17% short, because the straight tail cuts the real line's descent to the river. No later alignment.",
+    "traced_mi": 5.8,
+    "documented_mi": 7,
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1881,
+      "headway_min": 240,
+      "note": "Fulton House - Peach Bottom leg of the Peach Bottom Railway's Eastern Division (3-ft gauge, steam from opening; no horse era). Start 1879 is an INFERENCE: staged extension (Wikipedia: Goshen Nov 1874, Eldora by end 1875, Dorsey c.1876, the Susquehanna reached 1878); the month the river was reached is unknown, so the first full year after completion is drawn. Eastern-Division passenger receipts (PA1878, PA1880) and four trains a day at White Rock in 1882 (LDI1882) confirm service on the division but are not broken out by leg; the first leg-specific evidence is the 1906 company timetable naming 'Susquehanna (Peach Bottom)' (Fowler '1906t'). The Railway (chartered 1868) also owned the separate Middle Division York - Delta across the river, not drawn here; if it is drawn, its 1874-1881 feature must share this colour. Ends 1881: the Eastern Division was foreclosed early 1881 and sold in September 1881 to C. W. Leavitt et al. (PA1881); 1881 is given to the Railway. Whole-company passengers 51,407 (1878), 54,254 (1880), 45,654 (1881), not split by division. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable. For 1874-1881 no timetable at all was seen; the headway is carried back from 1882.",
+      "sources": [
+       "Segment-level: opening per Moedinger and Wikipedia/Hilton, 1875 Official Guide station letters per Fowler; end per the 1881 PA state report (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://archive.org/details/pt41878annualrep00penn",
+       "https://archive.org/details/pt41880annualrep00penn",
+       "https://archive.org/details/per_lancaster-daily-intelligencer_lancaster-daily-intelligencer_1882-01-02_1",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://archive.org/details/annualreportsec04affagoog"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.158966,
+      39.805024
+     ],
+     [
+      -76.159458,
+      39.804851
+     ],
+     [
+      -76.160252,
+      39.804868
+     ],
+     [
+      -76.167333,
+      39.806236
+     ],
+     [
+      -76.168975,
+      39.806418
+     ],
+     [
+      -76.170047,
+      39.806403
+     ],
+     [
+      -76.170678,
+      39.806243
+     ],
+     [
+      -76.171979,
+      39.805552
+     ],
+     [
+      -76.174274,
+      39.803265
+     ],
+     [
+      -76.175394,
+      39.802402
+     ],
+     [
+      -76.175787,
+      39.801893
+     ],
+     [
+      -76.175833,
+      39.801582
+     ],
+     [
+      -76.191137,
+      39.786172
+     ],
+     [
+      -76.19191,
+      39.784602
+     ],
+     [
+      -76.19342,
+      39.7828
+     ],
+     [
+      -76.19354,
+      39.782392
+     ],
+     [
+      -76.193085,
+      39.780353
+     ],
+     [
+      -76.193554,
+      39.778351
+     ],
+     [
+      -76.193226,
+      39.775086
+     ],
+     [
+      -76.2046,
+      39.7577
+     ],
+     [
+      -76.2258,
+      39.7509
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peach Bottom Railroad",
+    "line": "Peach Bottom Railroad: Oxford – Peach Bottom",
+    "id": "peach-bottom-railroad-oxford-peach-bottom-a",
+    "color": "#4F7CAC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "APPROXIMATED, all of it: Oxford - White Rock is drawn as straight legs through OSM place nodes because no part of the LO&S grade between Oxford and White Rock is mapped in OSM or OpenHistoricalMap (probed 2026-10-21: old_railway_operator, note:old_railway_operator, name, gauge=914, abandoned/historic railway, rail-trails; OHM has only the PRR Octoraro/P&BC and Quarryville lines here). Straight legs: Oxford (borough centroid; the LO&S used the joint PRR station, exact site not pinned) - Hopewell 2.0 mi, Hopewell - Tweedale 1.3 mi, Tweedale - Spruce Grove 2.2 mi, Spruce Grove - White Rock 2.1 mi (White Rock end = east end of the mapped LO&S grade, OSM way 1461912270, 0.9 km from the White Rock hamlet node). Drawn 7.6 mi vs 8 mi documented (Fowler table 414: White Rock at mi 8). Deliberately NOT routed over the PRR Octoraro Branch through Oxford. Era: no later alignment involved; the line is simply unknown in detail.",
+    "traced_mi": 7.6,
+    "documented_mi": 8,
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1889,
+      "headway_min": 240,
+      "note": "Oxford - White Rock leg. The Peach Bottom Railroad Company, a new company formed after the September 1881 foreclosure sale of the Eastern Division to C. W. Leavitt et al. (PA1881); Leavitt is its president in April 1889 (LDI1889). Jan 1882: White Rock station had 'four trains stopping daily' (LDI1882). Renamed/reorganised as the Lancaster, Oxford & Southern in 1890 (month not found); 1890 is given to the LO&S. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: company dates per PA1881 and Moedinger/Wikipedia; service in 1882 per the Lancaster Daily Intelligencer (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/annualreportsec04affagoog",
+       "https://archive.org/details/per_lancaster-daily-intelligencer_lancaster-daily-intelligencer_1882-01-02_1",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.979,
+      39.7852
+     ],
+     [
+      -76.0163,
+      39.7793
+     ],
+     [
+      -76.0288,
+      39.7948
+     ],
+     [
+      -76.0669,
+      39.8068
+     ],
+     [
+      -76.093181,
+      39.829325
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peach Bottom Railroad",
+    "line": "Peach Bottom Railroad: Oxford – Peach Bottom",
+    "id": "peach-bottom-railroad-oxford-peach-bottom-b",
+    "color": "#4F7CAC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Mostly real-traced: OSM ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned / abandoned=railway; ways 1461912270, 1461912269, 1461912268, 1024092960) for 3.2 mi. APPROXIMATED: three straight bridges between mapped pieces, 0.8 mi (west of White Rock), 0.25 mi and 0.2 mi (either side of Fairmount). Drawn 4.5 mi vs 5 mi documented (Fowler mi 8 -> 13). Fulton House is placed at the vertex 50 m from the Robert Fulton Birthplace (OSM way 1352821106); Fowler puts it 1 mi beyond Fairmount, the mapped grade puts it c.2 mi - recorded, not reconciled. The mapped grade is the 3-ft LO&S grade itself; no later alignment.",
+    "traced_mi": 4.5,
+    "documented_mi": 5,
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1889,
+      "headway_min": 240,
+      "note": "White Rock - Fulton House leg. The Peach Bottom Railroad Company, a new company formed after the September 1881 foreclosure sale of the Eastern Division to C. W. Leavitt et al. (PA1881); Leavitt is its president in April 1889 (LDI1889). Jan 1882: White Rock station had 'four trains stopping daily' (LDI1882). Renamed/reorganised as the Lancaster, Oxford & Southern in 1890 (month not found); 1890 is given to the LO&S. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: company dates per PA1881 and Moedinger/Wikipedia; service in 1882 per the Lancaster Daily Intelligencer (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/annualreportsec04affagoog",
+       "https://archive.org/details/per_lancaster-daily-intelligencer_lancaster-daily-intelligencer_1882-01-02_1",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.093181,
+      39.829325
+     ],
+     [
+      -76.094014,
+      39.829114
+     ],
+     [
+      -76.094272,
+      39.828864
+     ],
+     [
+      -76.094477,
+      39.82748
+     ],
+     [
+      -76.094855,
+      39.8269
+     ],
+     [
+      -76.095756,
+      39.826392
+     ],
+     [
+      -76.097456,
+      39.826023
+     ],
+     [
+      -76.098486,
+      39.826056
+     ],
+     [
+      -76.099516,
+      39.826425
+     ],
+     [
+      -76.099782,
+      39.826643
+     ],
+     [
+      -76.101138,
+      39.830044
+     ],
+     [
+      -76.115562,
+      39.825894
+     ],
+     [
+      -76.118223,
+      39.823883
+     ],
+     [
+      -76.119107,
+      39.823511
+     ],
+     [
+      -76.120973,
+      39.823026
+     ],
+     [
+      -76.127368,
+      39.819707
+     ],
+     [
+      -76.131093,
+      39.818072
+     ],
+     [
+      -76.1352,
+      39.818115
+     ],
+     [
+      -76.13976,
+      39.818589
+     ],
+     [
+      -76.141391,
+      39.818656
+     ],
+     [
+      -76.14315,
+      39.818309
+     ],
+     [
+      -76.144244,
+      39.817666
+     ],
+     [
+      -76.14536,
+      39.816809
+     ],
+     [
+      -76.147142,
+      39.814734
+     ],
+     [
+      -76.14815,
+      39.813826
+     ],
+     [
+      -76.149555,
+      39.811354
+     ],
+     [
+      -76.151197,
+      39.809492
+     ],
+     [
+      -76.151787,
+      39.808148
+     ],
+     [
+      -76.152227,
+      39.807555
+     ],
+     [
+      -76.158966,
+      39.805024
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peach Bottom Railroad",
+    "line": "Peach Bottom Railroad: Oxford – Peach Bottom",
+    "id": "peach-bottom-railroad-oxford-peach-bottom-c",
+    "color": "#4F7CAC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Partly real-traced: OSM ways 1024092960 (west end), 11939503 ('Pilgrims Pathway', railway=abandoned, gauge=914) and 1461913819 ('Lancaster, Oxford & Southern RR') for 3.2 mi, Fulton House - past Eldora to the mapped end near McSparran. APPROXIMATED: straight legs mapped end - Arcadia 1.3 mi and Arcadia - Peach Bottom 1.2 mi (2.6 mi total; the Dorsey's stretch down to the river is unmapped). Peach Bottom = the Peach Bottom hamlet node in Fulton Twp, Lancaster Co., on the EAST bank (not the York Co. village or the nuclear plant across the river); the LO&S station by the PRR Columbia & Port Deposit riverside station was lost to the Conowingo pool (1926-28), so the exact terminal is not pinned. Drawn 5.8 mi vs 7 mi documented (Fowler mi 13 -> 20): 17% short, because the straight tail cuts the real line's descent to the river. No later alignment.",
+    "traced_mi": 5.8,
+    "documented_mi": 7,
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1889,
+      "headway_min": 240,
+      "note": "Fulton House - Peach Bottom leg. The Peach Bottom Railroad Company, a new company formed after the September 1881 foreclosure sale of the Eastern Division to C. W. Leavitt et al. (PA1881); Leavitt is its president in April 1889 (LDI1889). Jan 1882: White Rock station had 'four trains stopping daily' (LDI1882). Renamed/reorganised as the Lancaster, Oxford & Southern in 1890 (month not found); 1890 is given to the LO&S. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: company dates per PA1881 and Moedinger/Wikipedia; service in 1882 per the Lancaster Daily Intelligencer (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/annualreportsec04affagoog",
+       "https://archive.org/details/per_lancaster-daily-intelligencer_lancaster-daily-intelligencer_1882-01-02_1",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.158966,
+      39.805024
+     ],
+     [
+      -76.159458,
+      39.804851
+     ],
+     [
+      -76.160252,
+      39.804868
+     ],
+     [
+      -76.167333,
+      39.806236
+     ],
+     [
+      -76.168975,
+      39.806418
+     ],
+     [
+      -76.170047,
+      39.806403
+     ],
+     [
+      -76.170678,
+      39.806243
+     ],
+     [
+      -76.171979,
+      39.805552
+     ],
+     [
+      -76.174274,
+      39.803265
+     ],
+     [
+      -76.175394,
+      39.802402
+     ],
+     [
+      -76.175787,
+      39.801893
+     ],
+     [
+      -76.175833,
+      39.801582
+     ],
+     [
+      -76.191137,
+      39.786172
+     ],
+     [
+      -76.19191,
+      39.784602
+     ],
+     [
+      -76.19342,
+      39.7828
+     ],
+     [
+      -76.19354,
+      39.782392
+     ],
+     [
+      -76.193085,
+      39.780353
+     ],
+     [
+      -76.193554,
+      39.778351
+     ],
+     [
+      -76.193226,
+      39.775086
+     ],
+     [
+      -76.2046,
+      39.7577
+     ],
+     [
+      -76.2258,
+      39.7509
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Lancaster, Oxford and Southern",
+    "line": "Lancaster, Oxford and Southern: Oxford – Peach Bottom",
+    "id": "lancaster-oxford-southern-oxford-peach-bottom-a",
+    "color": "#3F7F5F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "APPROXIMATED, all of it: Oxford - White Rock is drawn as straight legs through OSM place nodes because no part of the LO&S grade between Oxford and White Rock is mapped in OSM or OpenHistoricalMap (probed 2026-10-21: old_railway_operator, note:old_railway_operator, name, gauge=914, abandoned/historic railway, rail-trails; OHM has only the PRR Octoraro/P&BC and Quarryville lines here). Straight legs: Oxford (borough centroid; the LO&S used the joint PRR station, exact site not pinned) - Hopewell 2.0 mi, Hopewell - Tweedale 1.3 mi, Tweedale - Spruce Grove 2.2 mi, Spruce Grove - White Rock 2.1 mi (White Rock end = east end of the mapped LO&S grade, OSM way 1461912270, 0.9 km from the White Rock hamlet node). Drawn 7.6 mi vs 8 mi documented (Fowler table 414: White Rock at mi 8). Deliberately NOT routed over the PRR Octoraro Branch through Oxford. Era: no later alignment involved; the line is simply unknown in detail.",
+    "traced_mi": 7.6,
+    "documented_mi": 8,
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1918,
+      "headway_min": 240,
+      "note": "Oxford - White Rock leg. Lancaster, Oxford & Southern Railroad from 1890 (receivership 1910 per Moedinger / 1911 per Wikipedia), reorganised as the Lancaster, Oxford & Southern RAILWAY after the 1912 sale to Baltimore interests, and sold again to local residents in autumn 1914 - not split: same display company and same trains. The c.1890 standard-gauge conversion of Oxford - Fairmount was begun and abandoned; the road stayed 3-ft. Service c.1906-10 (Moedinger): a Peach Bottom-based train made two round trips Peach Bottom - Oxford daily and a second train two round trips Oxford - Quarryville, meeting at Fairmount, plus a Tuesday/Friday market train; all mixed, so Oxford - Fairmount saw eight trains a day; Sunday trains for a few years; camp-meeting specials to Arcadia. 1907: 36,000 passengers. 1 July 1914 the Baltimore owners stopped all steam operation; only a gasoline handcar ran Oxford - Peach Bottom for an unexpired mail contract (not passenger service) until local residents bought the road c. Aug-Oct 1914 and restored steam trains (a train is running near Tweedale in Dec 1914, CR1914; a gasoline railcar built from a coach entered service June 1915). The gap is under a year and is not cut out of the drawn span. Passenger carriage 1915-1918 is inferred from Moedinger's account (every train mixed), not from a dated timetable. End 1918 is the EARLIER of two conflicting end years: Wikipedia and Froio say the road closed in 1918; Moedinger says operation continued to c. 20 June 1919 and the company 'passed from the picture' 16 Oct 1919, and steamlocomotive.com says passenger service ran 'until its closing in 1919'. Collapsed to 1918 per the report; do not extend to 1919 without a dated source. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: 1890 reorganisation per Moedinger and Wikipedia; c.1906-10 service per Moedinger; Dec 1914 train per the Centre Reporter; end-year conflict per Wikipedia, Froio, Moedinger and steamlocomotive.com (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://archive.org/details/per_the-centre-reporter_1914-12-10_1",
+       "https://www.steamlocomotive.com/locobase.php?country=USA&wheel=4-4-0&railroad=los",
+       "https://michaelfroio.com/blog/2016/7/10/quarryville-small-town-big-ideas"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.979,
+      39.7852
+     ],
+     [
+      -76.0163,
+      39.7793
+     ],
+     [
+      -76.0288,
+      39.7948
+     ],
+     [
+      -76.0669,
+      39.8068
+     ],
+     [
+      -76.093181,
+      39.829325
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Lancaster, Oxford and Southern",
+    "line": "Lancaster, Oxford and Southern: Oxford – Peach Bottom",
+    "id": "lancaster-oxford-southern-oxford-peach-bottom-b",
+    "color": "#3F7F5F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Mostly real-traced: OSM ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned / abandoned=railway; ways 1461912270, 1461912269, 1461912268, 1024092960) for 3.2 mi. APPROXIMATED: three straight bridges between mapped pieces, 0.8 mi (west of White Rock), 0.25 mi and 0.2 mi (either side of Fairmount). Drawn 4.5 mi vs 5 mi documented (Fowler mi 8 -> 13). Fulton House is placed at the vertex 50 m from the Robert Fulton Birthplace (OSM way 1352821106); Fowler puts it 1 mi beyond Fairmount, the mapped grade puts it c.2 mi - recorded, not reconciled. The mapped grade is the 3-ft LO&S grade itself; no later alignment.",
+    "traced_mi": 4.5,
+    "documented_mi": 5,
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1918,
+      "headway_min": 240,
+      "note": "White Rock - Fulton House leg. Lancaster, Oxford & Southern Railroad from 1890 (receivership 1910 per Moedinger / 1911 per Wikipedia), reorganised as the Lancaster, Oxford & Southern RAILWAY after the 1912 sale to Baltimore interests, and sold again to local residents in autumn 1914 - not split: same display company and same trains. The c.1890 standard-gauge conversion of Oxford - Fairmount was begun and abandoned; the road stayed 3-ft. Service c.1906-10 (Moedinger): a Peach Bottom-based train made two round trips Peach Bottom - Oxford daily and a second train two round trips Oxford - Quarryville, meeting at Fairmount, plus a Tuesday/Friday market train; all mixed, so Oxford - Fairmount saw eight trains a day; Sunday trains for a few years; camp-meeting specials to Arcadia. 1907: 36,000 passengers. 1 July 1914 the Baltimore owners stopped all steam operation; only a gasoline handcar ran Oxford - Peach Bottom for an unexpired mail contract (not passenger service) until local residents bought the road c. Aug-Oct 1914 and restored steam trains (a train is running near Tweedale in Dec 1914, CR1914; a gasoline railcar built from a coach entered service June 1915). The gap is under a year and is not cut out of the drawn span. Passenger carriage 1915-1918 is inferred from Moedinger's account (every train mixed), not from a dated timetable. End 1918 is the EARLIER of two conflicting end years: Wikipedia and Froio say the road closed in 1918; Moedinger says operation continued to c. 20 June 1919 and the company 'passed from the picture' 16 Oct 1919, and steamlocomotive.com says passenger service ran 'until its closing in 1919'. Collapsed to 1918 per the report; do not extend to 1919 without a dated source. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: 1890 reorganisation per Moedinger and Wikipedia; c.1906-10 service per Moedinger; Dec 1914 train per the Centre Reporter; end-year conflict per Wikipedia, Froio, Moedinger and steamlocomotive.com (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://archive.org/details/per_the-centre-reporter_1914-12-10_1",
+       "https://www.steamlocomotive.com/locobase.php?country=USA&wheel=4-4-0&railroad=los",
+       "https://michaelfroio.com/blog/2016/7/10/quarryville-small-town-big-ideas"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.093181,
+      39.829325
+     ],
+     [
+      -76.094014,
+      39.829114
+     ],
+     [
+      -76.094272,
+      39.828864
+     ],
+     [
+      -76.094477,
+      39.82748
+     ],
+     [
+      -76.094855,
+      39.8269
+     ],
+     [
+      -76.095756,
+      39.826392
+     ],
+     [
+      -76.097456,
+      39.826023
+     ],
+     [
+      -76.098486,
+      39.826056
+     ],
+     [
+      -76.099516,
+      39.826425
+     ],
+     [
+      -76.099782,
+      39.826643
+     ],
+     [
+      -76.101138,
+      39.830044
+     ],
+     [
+      -76.115562,
+      39.825894
+     ],
+     [
+      -76.118223,
+      39.823883
+     ],
+     [
+      -76.119107,
+      39.823511
+     ],
+     [
+      -76.120973,
+      39.823026
+     ],
+     [
+      -76.127368,
+      39.819707
+     ],
+     [
+      -76.131093,
+      39.818072
+     ],
+     [
+      -76.1352,
+      39.818115
+     ],
+     [
+      -76.13976,
+      39.818589
+     ],
+     [
+      -76.141391,
+      39.818656
+     ],
+     [
+      -76.14315,
+      39.818309
+     ],
+     [
+      -76.144244,
+      39.817666
+     ],
+     [
+      -76.14536,
+      39.816809
+     ],
+     [
+      -76.147142,
+      39.814734
+     ],
+     [
+      -76.14815,
+      39.813826
+     ],
+     [
+      -76.149555,
+      39.811354
+     ],
+     [
+      -76.151197,
+      39.809492
+     ],
+     [
+      -76.151787,
+      39.808148
+     ],
+     [
+      -76.152227,
+      39.807555
+     ],
+     [
+      -76.158966,
+      39.805024
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Lancaster, Oxford and Southern",
+    "line": "Lancaster, Oxford and Southern: Oxford – Peach Bottom",
+    "id": "lancaster-oxford-southern-oxford-peach-bottom-c",
+    "color": "#3F7F5F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Partly real-traced: OSM ways 1024092960 (west end), 11939503 ('Pilgrims Pathway', railway=abandoned, gauge=914) and 1461913819 ('Lancaster, Oxford & Southern RR') for 3.2 mi, Fulton House - past Eldora to the mapped end near McSparran. APPROXIMATED: straight legs mapped end - Arcadia 1.3 mi and Arcadia - Peach Bottom 1.2 mi (2.6 mi total; the Dorsey's stretch down to the river is unmapped). Peach Bottom = the Peach Bottom hamlet node in Fulton Twp, Lancaster Co., on the EAST bank (not the York Co. village or the nuclear plant across the river); the LO&S station by the PRR Columbia & Port Deposit riverside station was lost to the Conowingo pool (1926-28), so the exact terminal is not pinned. Drawn 5.8 mi vs 7 mi documented (Fowler mi 13 -> 20): 17% short, because the straight tail cuts the real line's descent to the river. No later alignment.",
+    "traced_mi": 5.8,
+    "documented_mi": 7,
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1918,
+      "headway_min": 240,
+      "note": "Fulton House - Peach Bottom leg. Lancaster, Oxford & Southern Railroad from 1890 (receivership 1910 per Moedinger / 1911 per Wikipedia), reorganised as the Lancaster, Oxford & Southern RAILWAY after the 1912 sale to Baltimore interests, and sold again to local residents in autumn 1914 - not split: same display company and same trains. The c.1890 standard-gauge conversion of Oxford - Fairmount was begun and abandoned; the road stayed 3-ft. Service c.1906-10 (Moedinger): a Peach Bottom-based train made two round trips Peach Bottom - Oxford daily and a second train two round trips Oxford - Quarryville, meeting at Fairmount, plus a Tuesday/Friday market train; all mixed, so Oxford - Fairmount saw eight trains a day; Sunday trains for a few years; camp-meeting specials to Arcadia. 1907: 36,000 passengers. 1 July 1914 the Baltimore owners stopped all steam operation; only a gasoline handcar ran Oxford - Peach Bottom for an unexpired mail contract (not passenger service) until local residents bought the road c. Aug-Oct 1914 and restored steam trains (a train is running near Tweedale in Dec 1914, CR1914; a gasoline railcar built from a coach entered service June 1915). The gap is under a year and is not cut out of the drawn span. Passenger carriage 1915-1918 is inferred from Moedinger's account (every train mixed), not from a dated timetable. End 1918 is the EARLIER of two conflicting end years: Wikipedia and Froio say the road closed in 1918; Moedinger says operation continued to c. 20 June 1919 and the company 'passed from the picture' 16 Oct 1919, and steamlocomotive.com says passenger service ran 'until its closing in 1919'. Collapsed to 1918 per the report; do not extend to 1919 without a dated source. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: 1890 reorganisation per Moedinger and Wikipedia; c.1906-10 service per Moedinger; Dec 1914 train per the Centre Reporter; end-year conflict per Wikipedia, Froio, Moedinger and steamlocomotive.com (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway",
+       "https://en.wikipedia.org/wiki/Peach_Bottom_Railway",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://archive.org/details/per_the-centre-reporter_1914-12-10_1",
+       "https://www.steamlocomotive.com/locobase.php?country=USA&wheel=4-4-0&railroad=los",
+       "https://michaelfroio.com/blog/2016/7/10/quarryville-small-town-big-ideas"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.158966,
+      39.805024
+     ],
+     [
+      -76.159458,
+      39.804851
+     ],
+     [
+      -76.160252,
+      39.804868
+     ],
+     [
+      -76.167333,
+      39.806236
+     ],
+     [
+      -76.168975,
+      39.806418
+     ],
+     [
+      -76.170047,
+      39.806403
+     ],
+     [
+      -76.170678,
+      39.806243
+     ],
+     [
+      -76.171979,
+      39.805552
+     ],
+     [
+      -76.174274,
+      39.803265
+     ],
+     [
+      -76.175394,
+      39.802402
+     ],
+     [
+      -76.175787,
+      39.801893
+     ],
+     [
+      -76.175833,
+      39.801582
+     ],
+     [
+      -76.191137,
+      39.786172
+     ],
+     [
+      -76.19191,
+      39.784602
+     ],
+     [
+      -76.19342,
+      39.7828
+     ],
+     [
+      -76.19354,
+      39.782392
+     ],
+     [
+      -76.193085,
+      39.780353
+     ],
+     [
+      -76.193554,
+      39.778351
+     ],
+     [
+      -76.193226,
+      39.775086
+     ],
+     [
+      -76.2046,
+      39.7577
+     ],
+     [
+      -76.2258,
+      39.7509
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Lancaster, Oxford and Southern",
+    "line": "Lancaster, Oxford and Southern: Fairmount – Quarryville",
+    "id": "lancaster-oxford-southern-quarryville-branch",
+    "color": "#3F7F5F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "15 mph (24 km/h) average passenger-train speed as reported by the company to the PA Secretary of Internal Affairs (PA1878/PA1880) - a company figure, not computed from a timetable; treat as an estimate",
+    "gauge": "3 ft (914 mm)",
+    "geometry_source": "OpenStreetMap ways named 'Lancaster, Oxford & Southern RR' (railway=abandoned), fetched via Overpass (maps.mail.ru mirror) 2026-10-21, chained by hand in the order of the line (opstrace's graph could not join the fragmented ways); OSM place nodes for stations; straight legs where unmapped",
+    "geometry_quality": "Mostly real-traced: OSM ways named 'Lancaster, Oxford & Southern RR' (1461913820, 1462250362, 1462250363, 1462250364) for 4.5 mi. APPROXIMATED: straight bridges junction - first mapped piece 0.5 mi (the junction is put at the main-line vertex nearest the branch's first mapped vertex, 0.8 km from the Fairmount hamlet node; the real switch is not mapped), 0.3 mi near Mechanic Grove, 1.05 mi north of Mechanic Grove, 0.1 mi, and 0.2 mi into Quarryville (terminus put at the south end of the PRR Quarryville branch, OHM way 205265098, where the LO&S met it). 2.2 mi straight in all. Drawn 6.7 mi vs 8 mi documented (Moedinger 'eight-mile extension'): 16% short, the straight bridges cutting curves. Not routed onto the PRR Quarryville branch or the Enola Low Grade trail. No later alignment.",
+    "traced_mi": 6.7,
+    "documented_mi": 8,
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1915,
+      "headway_min": 240,
+      "note": "Quarryville Branch, Fairmount - Quarryville, 3-ft gauge: contract let 1905, completed early 1906 with three new passenger coaches (Moedinger; Wikipedia 'In 1906 they opened a branch line from Fairmont to Quarryville'). Two round trips a day Oxford - Quarryville in the heyday, all mixed, connecting at Quarryville with PRR trains to Lancaster. END 1915 IS [OPEN]: 1915 is the last CONFIRMED year of trains on the branch (Moedinger: the railcar proved unreliable and 'steam power was restored to the Quarryville Branch'). This is the last confirmed year, not a known end - the branch was abandoned 14 April 1917 (Moedinger; Froio 'scrapped in 1917') but no source dates passenger trains in 1916 or early 1917, and an abandonment year is not a passenger end year. Do not extend without evidence. Fowler table 415 carries no timetable letters for any branch station, so there is no independent timetable confirmation. The LO&S never reached Lancaster; nothing north of Quarryville is this company's. Headway 240 min is an ESTIMATE: two round trips a day per train, from Moedinger's prose (c.1906-10) and the 1882 'four trains stopping daily' at White Rock, not from a printed timetable.",
+      "sources": [
+       "Segment-level: opening per Moedinger and Wikipedia; last confirmed year 1915 and 1917 abandonment per Moedinger, abandonment also per Froio (sources as read and summarised in research/branches/lancaster_oxford_and_southern_railroad.txt; not re-read by the tracer)",
+       "https://archive.org/details/trains-magazine-vol-3-no-12-oct-1943-images",
+       "https://en.wikipedia.org/wiki/Lancaster,_Oxford_and_Southern_Railway",
+       "https://michaelfroio.com/blog/2016/7/10/quarryville-small-town-big-ideas",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.124879,
+      39.820979
+     ],
+     [
+      -76.129425,
+      39.827687
+     ],
+     [
+      -76.128927,
+      39.828973
+     ],
+     [
+      -76.128953,
+      39.829434
+     ],
+     [
+      -76.12933,
+      39.830113
+     ],
+     [
+      -76.129657,
+      39.830376
+     ],
+     [
+      -76.130481,
+      39.830647
+     ],
+     [
+      -76.134214,
+      39.830765
+     ],
+     [
+      -76.135124,
+      39.830976
+     ],
+     [
+      -76.136266,
+      39.832209
+     ],
+     [
+      -76.137201,
+      39.832637
+     ],
+     [
+      -76.137604,
+      39.833105
+     ],
+     [
+      -76.137665,
+      39.834868
+     ],
+     [
+      -76.137261,
+      39.835824
+     ],
+     [
+      -76.137484,
+      39.83649
+     ],
+     [
+      -76.138222,
+      39.836885
+     ],
+     [
+      -76.139467,
+      39.837248
+     ],
+     [
+      -76.140171,
+      39.837999
+     ],
+     [
+      -76.140549,
+      39.838217
+     ],
+     [
+      -76.142583,
+      39.838572
+     ],
+     [
+      -76.145261,
+      39.839996
+     ],
+     [
+      -76.146085,
+      39.840292
+     ],
+     [
+      -76.146437,
+      39.84055
+     ],
+     [
+      -76.146591,
+      39.840846
+     ],
+     [
+      -76.146669,
+      39.841307
+     ],
+     [
+      -76.146428,
+      39.842032
+     ],
+     [
+      -76.146497,
+      39.842316
+     ],
+     [
+      -76.147312,
+      39.842988
+     ],
+     [
+      -76.147939,
+      39.843245
+     ],
+     [
+      -76.153216,
+      39.844474
+     ],
+     [
+      -76.153306,
+      39.845011
+     ],
+     [
+      -76.153177,
+      39.845858
+     ],
+     [
+      -76.153384,
+      39.846349
+     ],
+     [
+      -76.147589,
+      39.860956
+     ],
+     [
+      -76.148065,
+      39.861605
+     ],
+     [
+      -76.148065,
+      39.862126
+     ],
+     [
+      -76.147677,
+      39.862606
+     ],
+     [
+      -76.147387,
+      39.862762
+     ],
+     [
+      -76.145095,
+      39.863702
+     ],
+     [
+      -76.143888,
+      39.864345
+     ],
+     [
+      -76.14239,
+      39.865934
+     ],
+     [
+      -76.142231,
+      39.866387
+     ],
+     [
+      -76.142566,
+      39.867151
+     ],
+     [
+      -76.144311,
+      39.869032
+     ],
+     [
+      -76.145342,
+      39.871297
+     ],
+     [
+      -76.147228,
+      39.872488
+     ],
+     [
+      -76.150127,
+      39.87639
+     ],
+     [
+      -76.150215,
+      39.876843
+     ],
+     [
+      -76.149854,
+      39.877857
+     ],
+     [
+      -76.148241,
+      39.87992
+     ],
+     [
+      -76.1484,
+      39.88061
+     ],
+     [
+      -76.149422,
+      39.881259
+     ],
+     [
+      -76.151149,
+      39.881935
+     ],
+     [
+      -76.151731,
+      39.882686
+     ],
+     [
+      -76.151854,
+      39.883301
+     ],
+     [
+      -76.151775,
+      39.883653
+     ],
+     [
+      -76.150286,
+      39.887247
+     ],
+     [
+      -76.149193,
+      39.888105
+     ],
+     [
+      -76.148189,
+      39.888666
+     ],
+     [
+      -76.147924,
+      39.889485
+     ],
+     [
+      -76.148171,
+      39.889823
+     ],
+     [
+      -76.149043,
+      39.890472
+     ],
+     [
+      -76.149607,
+      39.890796
+     ],
+     [
+      -76.150753,
+      39.891195
+     ],
+     [
+      -76.152313,
+      39.891182
+     ],
+     [
+      -76.153703,
+      39.890981
+     ],
+     [
+      -76.1573,
+      39.8923
+     ]
+    ]
+   }
+  }
+ ]
+}

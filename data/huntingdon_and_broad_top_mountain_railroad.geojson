@@ -1,0 +1,1643 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Huntingdon and Broad Top Mountain Railroad and Coal Company, Huntingdon and Bedford counties, Pennsylvania - standard gauge, Huntingdon (PRR) - Saxton - Hopewell - Mount Dallas, opened in pieces 1855-1863, with its own trains through to Bedford over the Bedford and Bridgeport / PRR by trackage rights; passenger service to Nov 1953 (Wikipedia), bankruptcy 11 Oct 1953, all operations ended 31 Mar 1954. The Shoup's Run Branch Saxton - Dudley carried passengers 1859-1917 (Wikipedia). Drawn spans are the research report's drawable: fields exactly. Research report: research/branches/huntingdon_and_broad_top_mountain_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company",
+   "https://en.wikipedia.org/wiki/Bedford_Branch",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+   "https://www.loc.gov/resource/sn82005159/1856-06-13/ed-1/?sp=4",
+   "Bedford Gazette 23 Nov 1855 p3, 7 Dec 1855 p3, 18 Mar 1864 p4; Bedford Inquirer 23 Nov 1855 p1, 12 Jun 1857 p3; Somerset Herald 26 Jun 1872 p3 (Chronicling America, loc.gov)",
+   "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, H&BT table lines 21656-21740"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-21): ways tagged old_railway_operator=H&BTM (67 ways, railway=abandoned, incl. the Huntingdon and Broad Top Rail Trail); short name=H&BTM ways at Saxton; PRR-tagged Bedford Branch ways for comparison.",
+   "OpenHistoricalMap (overpass-api.openhistoricalmap.org, 2026-10-21): untagged railway=rail ways dated 1855/1898 - 1954-03-31 (H&BT, Saxton area) and 1871-09-23 - 1982 (Bedford and Bridgeport / PRR, Mount Dallas - Bedford). OHM dates were not used for any segment year."
+  ],
+  "operator_split": "None. The H&BT worked its own trains 1856-1953 and was never leased to or operated by the PRR. The Bedford Railroad Co. (Hopewell - Mount Dallas, July 1863 - Aug 1864) falls before the drawn 1864 start. Mount Dallas - Bedford is PRR-owned track but H&BT trains, so H&BT colour. A trustee named in the Sept 1951 Guide is not a change of operator.",
+  "omitted": [
+   "[6] Shoup's Run Branch beyond Dudley to Broad Top City: no confirmable passenger year (drawable NONE).",
+   "[7]-[13] Six Mile Run, Shreeves Run, Sandy Run (incl. Garlick Mine extension), Long's Run, Coalmont - Hickory Hill, Miller's Run and Kimber Run coal branches: no passenger evidence found (negative evidence; drawable NONE) - Rule 1.",
+   "[14] Bedford and Bridgeport south of Bedford: H&BT operated it 1871-72 only and passenger trains then are unproven; a PRR line thereafter.",
+   "[15] Juniata and Southern (Marklesburg - Jacobs): separate company, no passenger evidence (Fowler).",
+   "[16] Everett Railroad, Tatesville - Mount Dallas 1954-1982: freight only (Rule 1).",
+   "[17] No tourist/heritage operation exists on the alignment; the rail-trails are not service.",
+   "1855 (Huntingdon - Saxton), 1856 (to Hopewell), 1863 (to Mount Dallas) and 1871-74 (to Bedford): probable but unconfirmed years, not drawn."
+  ],
+  "existing_layer_note": "No existing layer for the H&BT was found in data/ (company/line/geographic scans) before this layer was written. The East Broad Top (east_broad_top_railroad.geojson) is a different railroad and was not touched.",
+  "not_yet_sourced": [
+   "PASSENGER END: Nov 1953 rests on Wikipedia alone (uncited; american-rails.com copies it). The latest primary confirmation is the Sept 1951 Official Guide. Every main-line feature therefore carries a separate 1952-1953 segment marked Wikipedia-only. The Huntingdon Daily News retrospective pieces probably give the last-run date (fetch failed with HTTP 429).",
+   "SHOUP'S RUN BRANCH 1859-1917: both ends are Wikipedia-only (uncited). Independently confirmed years are 1868 and 1875 only. If the map requires independent confirmation the branch would shrink to 1868-1875.",
+   "FIRST TRAINS: 1855 Huntingdon - Saxton (Nov 1855 stage connection; Hesston article's 13 Aug 1855), 1856 to Hopewell (Wikipedia says 1855; contemporary newspapers contradict it), July 1863 to Mount Dallas and 1871-74 through to Bedford are all unconfirmed.",
+   "CONTINUITY: service between the confirmed years (e.g. 1875-1951 to Bedford) is assumed, not checked year by year.",
+   "FREQUENCY: only the 1856 timetable (two trains each way) was read; all headway_min values are estimates. The 1951 table's direction of each column cannot be reconstructed from the OCR. Late service may have been a motor car (the H&BT owned one at the 1954 liquidation) - rail either way.",
+   "SPEED: avg_speed_kmh 26 is from the 1856 timing only; 20 on the branch is a guess.",
+   "TRUSTEE: the Sept 1951 Guide names a trustee two years before the Oct 1953 bankruptcy - an earlier reorganisation or a bond trustee; does not affect operator or colour.",
+   "DROWNED GRADE: the Raystown Lake section of Huntingdon - Saxton follows OSM ways mapped across the lake basin; not verifiable on the ground."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Huntingdon and Broad Top",
+    "line": "Huntingdon and Broad Top: Huntingdon – Saxton",
+    "id": "hbt-huntingdon-saxton",
+    "color": "#2F6E5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "ESTIMATE. 26 km/h is the 1856 timing - two trains each way, about 1 h 28 min Huntingdon - Stonerstown (Saxton), ~24 mi, per the Bedford Gazette timetable advertisement of 13 Jun 1856 (as read in the research report). No later running time was recovered (the Sept 1951 Official Guide table is too garbled to attribute times to a direction), so the figure is applied to all years unverified.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=H&BTM (railway=abandoned; parts are the Huntingdon and Broad Top Rail Trail, the Mid-State Trail and roads built on the grade); a few short pieces near Saxton carry only name=H&BTM. Probed spellings: old_railway_operator ~ H&BT|Huntingdon.*Broad|Broad Top and note:old_railway_operator - only the bare \"H&BTM\" value is used, and no note:old_railway_operator exists in the area. Where the router preferred it, OpenHistoricalMap (CC0) untagged railway=rail ways dated 1855/1898 - 1954-03-31 (the H&BT) or 1871-09-23 - 1982 (the Bedford and Bridgeport / PRR) were used; they coincide with the OSM grade (see geometry_quality). The East Broad Top (old_railway_operator=EBT, 3 ft) does not enter any of these corridors.",
+    "geometry_quality": "Whole main line Huntingdon - Bedford traced as one route, 51.9 mi against 52.0 mi documented (Fowler table 401 MP 52.0 from Bedford; the Sept 1951 Guide agrees), then cut at Saxton, Hopewell and Mount Dallas so the four pieces join exactly. Traced mileposts from Huntingdon vs documented: Saxton 23.9 (24.1), Hopewell 31.4 (31.5), Tatesville 40.0 (39.9), Everett 42.9 (43.0), Mount Dallas 44.1 (44.0), Lutzville 47.0 (47.3), Bedford 51.9 (52.0). No straight-line legs anywhere on the main line. This piece: 23.9 mi traced against ~24.1 mi documented (Fowler: Saxton MP 27.9 from Bedford; american-rails' \"approximately 28 miles\" conflicts and is not preferred). About 21 mi is on OSM ways tagged old_railway_operator=H&BTM, ~2.4 mi on OpenHistoricalMap H&BT ways (dated 1855-1954) that lie within ~170 m of the OSM grade, ~0.4 mi untagged rail. LATER/RECONSTRUCTED ALIGNMENT: much of the Entriken - Hummel - Saxton stretch along the Raystown Branch of the Juniata was flooded by Raystown Lake (1973); there the line follows OSM abandoned-railway ways mapped across the lake basin - a mapper's reconstruction of a drowned grade that cannot be checked on the ground, and the length of the drowned part was not measured. The north end is the end of the H&BTM-tagged way at the PRR junction in Huntingdon (40.4846, -78.0141); the Huntingdon passenger station site was not separately pinned. Saxton is placed on the main line's bend through town (40.2177, -78.2448); the H&BT Saxton station site was not separately pinned. Waypoints off the line: McConnellstown 0.8 km, Marklesburg 1.3 km (geocodes are village centres), others <= 0.1 km. The report documents no H&BT relocation; whether the mapped grade is the 1856 alignment everywhere was not checked.",
+    "segments": [
+     {
+      "start": 1856,
+      "end": 1951,
+      "headway_min": 720,
+      "note": "The original 1855-56 railroad, Huntingdon (junction with the Pennsylvania Railroad) - McConnellstown - Hesston - Marklesburg - Entriken (Coffee Run) - Hummel (Rough and Ready) - Fisher's Summit - Saxton (Stonerstown). Start: 1856 is the first CONFIRMED year - the Bedford Gazette of 13 Jun 1856 prints the \"Spring Arrangement\" timetable effective 1 Apr 1856, two trains each way daily except Sunday, Huntingdon - Stonerstown, timed to PRR connections. Trains very probably ran from 1855 (a Nov 1855 stage line from Stonerstown to Bedford connecting \"with the Central Rail Road, via Broad Top\"; Wikipedia's Hesston article says 13 Aug 1855) but no 1855 timetable or opening notice was found, so 1855 is not drawn. 1872: a night passenger train reported (Somerset Herald, 26 Jun 1872). 1951 confirmed by the Sept 1951 Official Guide H&BT table (Huntingdon 8 25 / 2 49; flag stops Hesston, Marklesburg, Entriken). Continuity 1856-1951 is assumed, not checked year by year. The H&BT ran its own trains throughout (never leased to the PRR; a trustee is named in 1951 - no change of operator). headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Bedford Gazette 13 Jun 1856 p4 timetable ad (1856 start, two trains each way); Official Guide Feb 1952 (1951 service); both as read in research/branches/huntingdon_and_broad_top_mountain_railroad.txt block [1]. Headway estimated from the 1856 ad only.",
+       "https://www.loc.gov/resource/sn82005159/1856-06-13/ed-1/?sp=4",
+       "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, H&BT table lines 21656-21740"
+      ]
+     },
+     {
+      "start": 1952,
+      "end": 1953,
+      "headway_min": 720,
+      "note": "Huntingdon - Saxton: last two years of passenger service. 1952-1953 rest on Wikipedia alone (\"operated its last passenger train in November 1953\", uncited; american-rails.com copies it and is not independent). The latest primary confirmation is the Sept 1951 Official Guide table. Bankruptcy 11 Oct 1953 and the end of all operations on 31 Mar 1954 (Wikipedia) are not passenger dates: freight Nov 1953 - Mar 1954, the Everett Railroad's 1954-1982 freight on Tatesville - Mount Dallas and the PRR's Huntingdon industrial spur are freight only and are not drawn (Rule 1). headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Wikipedia only (uncited) for the Nov 1953 end; no primary source for 1952-1953 found (see metadata.not_yet_sourced).",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.0141,
+      40.484632
+     ],
+     [
+      -78.01555,
+      40.485128
+     ],
+     [
+      -78.01638,
+      40.485185
+     ],
+     [
+      -78.019002,
+      40.484651
+     ],
+     [
+      -78.020456,
+      40.484239
+     ],
+     [
+      -78.022428,
+      40.483452
+     ],
+     [
+      -78.02535,
+      40.481808
+     ],
+     [
+      -78.034387,
+      40.476134
+     ],
+     [
+      -78.039843,
+      40.47291
+     ],
+     [
+      -78.041755,
+      40.471404
+     ],
+     [
+      -78.043375,
+      40.4704
+     ],
+     [
+      -78.047342,
+      40.466727
+     ],
+     [
+      -78.049061,
+      40.465438
+     ],
+     [
+      -78.053774,
+      40.463397
+     ],
+     [
+      -78.057295,
+      40.461719
+     ],
+     [
+      -78.058012,
+      40.461258
+     ],
+     [
+      -78.059254,
+      40.459935
+     ],
+     [
+      -78.060205,
+      40.458517
+     ],
+     [
+      -78.061542,
+      40.456924
+     ],
+     [
+      -78.062132,
+      40.456421
+     ],
+     [
+      -78.071364,
+      40.45009
+     ],
+     [
+      -78.073401,
+      40.448252
+     ],
+     [
+      -78.075536,
+      40.446644
+     ],
+     [
+      -78.077714,
+      40.445617
+     ],
+     [
+      -78.080253,
+      40.444853
+     ],
+     [
+      -78.082431,
+      40.443971
+     ],
+     [
+      -78.083852,
+      40.443187
+     ],
+     [
+      -78.09718,
+      40.431044
+     ],
+     [
+      -78.108938,
+      40.420091
+     ],
+     [
+      -78.114196,
+      40.415477
+     ],
+     [
+      -78.122795,
+      40.407521
+     ],
+     [
+      -78.143606,
+      40.388661
+     ],
+     [
+      -78.15211,
+      40.3816
+     ],
+     [
+      -78.155025,
+      40.379559
+     ],
+     [
+      -78.161295,
+      40.375906
+     ],
+     [
+      -78.165692,
+      40.372358
+     ],
+     [
+      -78.182817,
+      40.35457
+     ],
+     [
+      -78.197213,
+      40.338739
+     ],
+     [
+      -78.197986,
+      40.33774
+     ],
+     [
+      -78.198769,
+      40.3363
+     ],
+     [
+      -78.199017,
+      40.335659
+     ],
+     [
+      -78.199522,
+      40.332851
+     ],
+     [
+      -78.20013,
+      40.331556
+     ],
+     [
+      -78.206013,
+      40.325418
+     ],
+     [
+      -78.211438,
+      40.319309
+     ],
+     [
+      -78.211925,
+      40.318999
+     ],
+     [
+      -78.213875,
+      40.31617
+     ],
+     [
+      -78.215895,
+      40.312277
+     ],
+     [
+      -78.21963,
+      40.303906
+     ],
+     [
+      -78.220795,
+      40.302854
+     ],
+     [
+      -78.223808,
+      40.301103
+     ],
+     [
+      -78.224295,
+      40.300503
+     ],
+     [
+      -78.225256,
+      40.298289
+     ],
+     [
+      -78.225347,
+      40.296118
+     ],
+     [
+      -78.226169,
+      40.294446
+     ],
+     [
+      -78.234731,
+      40.284536
+     ],
+     [
+      -78.246628,
+      40.268748
+     ],
+     [
+      -78.247722,
+      40.26749
+     ],
+     [
+      -78.256611,
+      40.259277
+     ],
+     [
+      -78.258409,
+      40.257277
+     ],
+     [
+      -78.259152,
+      40.255663
+     ],
+     [
+      -78.259422,
+      40.254688
+     ],
+     [
+      -78.259486,
+      40.253708
+     ],
+     [
+      -78.259338,
+      40.252596
+     ],
+     [
+      -78.258517,
+      40.250497
+     ],
+     [
+      -78.258344,
+      40.248813
+     ],
+     [
+      -78.258677,
+      40.247383
+     ],
+     [
+      -78.263225,
+      40.237336
+     ],
+     [
+      -78.263409,
+      40.236367
+     ],
+     [
+      -78.26336,
+      40.235323
+     ],
+     [
+      -78.263003,
+      40.234392
+     ],
+     [
+      -78.262239,
+      40.23347
+     ],
+     [
+      -78.259195,
+      40.230863
+     ],
+     [
+      -78.258702,
+      40.229847
+     ],
+     [
+      -78.257938,
+      40.227542
+     ],
+     [
+      -78.253547,
+      40.221785
+     ],
+     [
+      -78.252672,
+      40.220273
+     ],
+     [
+      -78.251937,
+      40.219603
+     ],
+     [
+      -78.251227,
+      40.219204
+     ],
+     [
+      -78.247678,
+      40.218219
+     ],
+     [
+      -78.24538,
+      40.217706
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Huntingdon and Broad Top",
+    "line": "Huntingdon and Broad Top: Saxton – Hopewell",
+    "id": "hbt-saxton-hopewell",
+    "color": "#2F6E5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "ESTIMATE. 26 km/h is the 1856 timing - two trains each way, about 1 h 28 min Huntingdon - Stonerstown (Saxton), ~24 mi, per the Bedford Gazette timetable advertisement of 13 Jun 1856 (as read in the research report). No later running time was recovered (the Sept 1951 Official Guide table is too garbled to attribute times to a direction), so the figure is applied to all years unverified.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=H&BTM (railway=abandoned; parts are the Huntingdon and Broad Top Rail Trail, the Mid-State Trail and roads built on the grade); a few short pieces near Saxton carry only name=H&BTM. Probed spellings: old_railway_operator ~ H&BT|Huntingdon.*Broad|Broad Top and note:old_railway_operator - only the bare \"H&BTM\" value is used, and no note:old_railway_operator exists in the area. Where the router preferred it, OpenHistoricalMap (CC0) untagged railway=rail ways dated 1855/1898 - 1954-03-31 (the H&BT) or 1871-09-23 - 1982 (the Bedford and Bridgeport / PRR) were used; they coincide with the OSM grade (see geometry_quality). The East Broad Top (old_railway_operator=EBT, 3 ft) does not enter any of these corridors.",
+    "geometry_quality": "Whole main line Huntingdon - Bedford traced as one route, 51.9 mi against 52.0 mi documented (Fowler table 401 MP 52.0 from Bedford; the Sept 1951 Guide agrees), then cut at Saxton, Hopewell and Mount Dallas so the four pieces join exactly. Traced mileposts from Huntingdon vs documented: Saxton 23.9 (24.1), Hopewell 31.4 (31.5), Tatesville 40.0 (39.9), Everett 42.9 (43.0), Mount Dallas 44.1 (44.0), Lutzville 47.0 (47.3), Bedford 51.9 (52.0). No straight-line legs anywhere on the main line. This piece: 7.5 mi traced against ~7.4 mi documented (Fowler: Saxton 27.9, Hopewell 20.5 from Bedford; Bedford Inquirer 1855: \"eight miles\"). The router took OpenHistoricalMap H&BT ways (untagged railway=rail, dated 1855-1954-03-31) for almost all of it; every vertex lies within ~230 m (median ~20 m) of the OSM H&BTM grade (Warriors Path Park Road, the Huntingdon & Broad Top Trail, Huntingdon and Broad Top Rail Trail), which has breaks the OHM ways do not. No straight-line legs. The report documents no relocation; whether the mapped grade is the 1857 alignment everywhere was not checked.",
+    "segments": [
+     {
+      "start": 1857,
+      "end": 1951,
+      "headway_min": 720,
+      "note": "Saxton - Clark - Riddlesburg (ironworks; junction for the Six Mile Run coal branch, not drawn) - Hopewell (junction for the Sandy Run coal branch, not drawn); Hopewell was the line's southern terminus until 1863/64. Start: 1857 is the first CONFIRMED year - a Bedford Springs advertisement in the Bedford Inquirer of 12 Jun 1857 says the completion of the Broad Top Railroad leaves \"but twenty miles of staging\", which fits a railhead at Hopewell. SOURCE CONFLICT: Wikipedia says Huntingdon - Hopewell was completed in 1855, but the Bedford Inquirer of 23 Nov 1855 says Stonerstown - Hopewell was still about three months from completion and the 1 Apr 1856 timetable still ends at Stonerstown; the contemporary newspapers are preferred, and 1856 trains to Hopewell are possible but unproven, so not drawn. 1951: Riddlesburg and Hopewell are in the Sept 1951 Official Guide table (their own times were lost in the OCR; times survive on both sides). Continuity assumed. headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Bedford Inquirer 12 Jun 1857 p3 and 23 Nov 1855 p1; Bedford Gazette 13 Jun 1856 timetable; Official Guide Feb 1952 - as read in research/branches/huntingdon_and_broad_top_mountain_railroad.txt block [2]. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company",
+       "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, H&BT table lines 21656-21740"
+      ]
+     },
+     {
+      "start": 1952,
+      "end": 1953,
+      "headway_min": 720,
+      "note": "Saxton - Hopewell: last two years of passenger service. 1952-1953 rest on Wikipedia alone (\"operated its last passenger train in November 1953\", uncited; american-rails.com copies it and is not independent). The latest primary confirmation is the Sept 1951 Official Guide table. Bankruptcy 11 Oct 1953 and the end of all operations on 31 Mar 1954 (Wikipedia) are not passenger dates: freight Nov 1953 - Mar 1954, the Everett Railroad's 1954-1982 freight on Tatesville - Mount Dallas and the PRR's Huntingdon industrial spur are freight only and are not drawn (Rule 1). headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Wikipedia only (uncited) for the Nov 1953 end; no primary source for 1952-1953 found (see metadata.not_yet_sourced).",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.24538,
+      40.217706
+     ],
+     [
+      -78.243699,
+      40.217492
+     ],
+     [
+      -78.242504,
+      40.217406
+     ],
+     [
+      -78.241626,
+      40.217549
+     ],
+     [
+      -78.239684,
+      40.218599
+     ],
+     [
+      -78.238777,
+      40.218669
+     ],
+     [
+      -78.238155,
+      40.218591
+     ],
+     [
+      -78.237278,
+      40.218173
+     ],
+     [
+      -78.236913,
+      40.21785
+     ],
+     [
+      -78.236655,
+      40.217479
+     ],
+     [
+      -78.236594,
+      40.216373
+     ],
+     [
+      -78.237575,
+      40.215407
+     ],
+     [
+      -78.239855,
+      40.213746
+     ],
+     [
+      -78.240991,
+      40.213184
+     ],
+     [
+      -78.243758,
+      40.212151
+     ],
+     [
+      -78.244316,
+      40.2117
+     ],
+     [
+      -78.245324,
+      40.21036
+     ],
+     [
+      -78.245903,
+      40.209147
+     ],
+     [
+      -78.246109,
+      40.207492
+     ],
+     [
+      -78.24596,
+      40.206765
+     ],
+     [
+      -78.243176,
+      40.202984
+     ],
+     [
+      -78.242354,
+      40.201058
+     ],
+     [
+      -78.242261,
+      40.200173
+     ],
+     [
+      -78.242373,
+      40.199075
+     ],
+     [
+      -78.242803,
+      40.19682
+     ],
+     [
+      -78.243718,
+      40.194723
+     ],
+     [
+      -78.244372,
+      40.194252
+     ],
+     [
+      -78.245567,
+      40.193667
+     ],
+     [
+      -78.248556,
+      40.193039
+     ],
+     [
+      -78.249229,
+      40.19254
+     ],
+     [
+      -78.249602,
+      40.191955
+     ],
+     [
+      -78.249621,
+      40.191298
+     ],
+     [
+      -78.249434,
+      40.190727
+     ],
+     [
+      -78.248836,
+      40.190199
+     ],
+     [
+      -78.246184,
+      40.188715
+     ],
+     [
+      -78.244577,
+      40.187545
+     ],
+     [
+      -78.242709,
+      40.185447
+     ],
+     [
+      -78.242093,
+      40.183892
+     ],
+     [
+      -78.241999,
+      40.183207
+     ],
+     [
+      -78.24213,
+      40.182522
+     ],
+     [
+      -78.242784,
+      40.18118
+     ],
+     [
+      -78.243681,
+      40.180081
+     ],
+     [
+      -78.244652,
+      40.179197
+     ],
+     [
+      -78.246669,
+      40.177812
+     ],
+     [
+      -78.24723,
+      40.17717
+     ],
+     [
+      -78.247211,
+      40.176371
+     ],
+     [
+      -78.246987,
+      40.175885
+     ],
+     [
+      -78.245418,
+      40.174158
+     ],
+     [
+      -78.244764,
+      40.172431
+     ],
+     [
+      -78.244876,
+      40.170676
+     ],
+     [
+      -78.24596,
+      40.168849
+     ],
+     [
+      -78.247267,
+      40.167692
+     ],
+     [
+      -78.248967,
+      40.166636
+     ],
+     [
+      -78.252311,
+      40.165094
+     ],
+     [
+      -78.253263,
+      40.164423
+     ],
+     [
+      -78.253749,
+      40.163438
+     ],
+     [
+      -78.253936,
+      40.16261
+     ],
+     [
+      -78.253824,
+      40.157828
+     ],
+     [
+      -78.254216,
+      40.155858
+     ],
+     [
+      -78.255953,
+      40.152474
+     ],
+     [
+      -78.256626,
+      40.150561
+     ],
+     [
+      -78.256925,
+      40.149004
+     ],
+     [
+      -78.256962,
+      40.147776
+     ],
+     [
+      -78.256514,
+      40.143093
+     ],
+     [
+      -78.256887,
+      40.141865
+     ],
+     [
+      -78.257653,
+      40.140422
+     ],
+     [
+      -78.259232,
+      40.138402
+     ],
+     [
+      -78.260147,
+      40.137588
+     ],
+     [
+      -78.2611,
+      40.137088
+     ],
+     [
+      -78.262743,
+      40.136831
+     ],
+     [
+      -78.265682,
+      40.136696
+     ],
+     [
+      -78.266927,
+      40.136278
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Huntingdon and Broad Top",
+    "line": "Huntingdon and Broad Top: Hopewell – Mount Dallas",
+    "id": "hbt-hopewell-mount-dallas",
+    "color": "#2F6E5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "ESTIMATE. 26 km/h is the 1856 timing - two trains each way, about 1 h 28 min Huntingdon - Stonerstown (Saxton), ~24 mi, per the Bedford Gazette timetable advertisement of 13 Jun 1856 (as read in the research report). No later running time was recovered (the Sept 1951 Official Guide table is too garbled to attribute times to a direction), so the figure is applied to all years unverified.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=H&BTM (railway=abandoned; parts are the Huntingdon and Broad Top Rail Trail, the Mid-State Trail and roads built on the grade); a few short pieces near Saxton carry only name=H&BTM. Probed spellings: old_railway_operator ~ H&BT|Huntingdon.*Broad|Broad Top and note:old_railway_operator - only the bare \"H&BTM\" value is used, and no note:old_railway_operator exists in the area. Where the router preferred it, OpenHistoricalMap (CC0) untagged railway=rail ways dated 1855/1898 - 1954-03-31 (the H&BT) or 1871-09-23 - 1982 (the Bedford and Bridgeport / PRR) were used; they coincide with the OSM grade (see geometry_quality). The East Broad Top (old_railway_operator=EBT, 3 ft) does not enter any of these corridors.",
+    "geometry_quality": "Whole main line Huntingdon - Bedford traced as one route, 51.9 mi against 52.0 mi documented (Fowler table 401 MP 52.0 from Bedford; the Sept 1951 Guide agrees), then cut at Saxton, Hopewell and Mount Dallas so the four pieces join exactly. Traced mileposts from Huntingdon vs documented: Saxton 23.9 (24.1), Hopewell 31.4 (31.5), Tatesville 40.0 (39.9), Everett 42.9 (43.0), Mount Dallas 44.1 (44.0), Lutzville 47.0 (47.3), Bedford 51.9 (52.0). No straight-line legs anywhere on the main line. This piece: 12.7 mi traced against ~12.5 mi documented (Fowler: Hopewell 20.5, Mount Dallas 8.0 from Bedford). All on OSM ways tagged old_railway_operator=H&BTM (Huntingdon and Broad Top Rail Trail, Meadow Spring Lane, Mid-State Trail and unnamed abandoned grade), with ~0.1 mi of short connectors across breaks in the mapped grade. No straight-line legs. Everett geocode lies 0.4 km from the line. The report documents no relocation; whether the mapped grade is the 1863 alignment everywhere was not checked.",
+    "segments": [
+     {
+      "start": 1864,
+      "end": 1951,
+      "headway_min": 720,
+      "note": "Built by the Bedford Railroad Company (chartered 1859) with PRR money and opened July 1863; merged into the H&BT 17 Aug 1864 (Wikipedia). Via Cypher (Piper's Run), Brallier, Tatesville, Everett (Bloody Run) to Mount Dallas, the H&BT's own southern end on the Lincoln Highway. Start: 1864 is the first CONFIRMED year - a Bedford Gazette advertisement dated Jan 1864 (printed 18 Mar 1864) has coaches from Bedford connecting \"with the trains going East from Mount Dallas and Bloody Run\". July - Dec 1863 trains are probable but not evidenced, and who worked them in the Bedford Railroad year is not established - so 1863 is not drawn and no Bedford Railroad feature is split out. 1951 confirmed with times in the Sept 1951 Official Guide (Tatesville f10 35, Everett 10 48, Mt. Dallas 10 53). Continuity assumed. After 1954 the Everett Railroad ran Tatesville - Mount Dallas as a freight-only short line to 1982 - not drawn (Rule 1). headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Bedford Gazette 18 Mar 1864 p4 (ad dated Jan 1864) for 1864; Official Guide Feb 1952 for 1951 - as read in research/branches/huntingdon_and_broad_top_mountain_railroad.txt block [3]. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company",
+       "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, H&BT table lines 21656-21740"
+      ]
+     },
+     {
+      "start": 1952,
+      "end": 1953,
+      "headway_min": 720,
+      "note": "Hopewell - Mount Dallas: last two years of passenger service. 1952-1953 rest on Wikipedia alone (\"operated its last passenger train in November 1953\", uncited; american-rails.com copies it and is not independent). The latest primary confirmation is the Sept 1951 Official Guide table. Bankruptcy 11 Oct 1953 and the end of all operations on 31 Mar 1954 (Wikipedia) are not passenger dates: freight Nov 1953 - Mar 1954, the Everett Railroad's 1954-1982 freight on Tatesville - Mount Dallas and the PRR's Huntingdon industrial spur are freight only and are not drawn (Rule 1). headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Wikipedia only (uncited) for the Nov 1953 end; no primary source for 1952-1953 found (see metadata.not_yet_sourced).",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.266927,
+      40.136278
+     ],
+     [
+      -78.267549,
+      40.135835
+     ],
+     [
+      -78.268222,
+      40.134263
+     ],
+     [
+      -78.268077,
+      40.133738
+     ],
+     [
+      -78.267264,
+      40.133
+     ],
+     [
+      -78.26577,
+      40.132385
+     ],
+     [
+      -78.266133,
+      40.129459
+     ],
+     [
+      -78.266592,
+      40.127994
+     ],
+     [
+      -78.267542,
+      40.126356
+     ],
+     [
+      -78.268709,
+      40.123736
+     ],
+     [
+      -78.269685,
+      40.122374
+     ],
+     [
+      -78.27125,
+      40.121298
+     ],
+     [
+      -78.274754,
+      40.120325
+     ],
+     [
+      -78.275176,
+      40.120106
+     ],
+     [
+      -78.275445,
+      40.119737
+     ],
+     [
+      -78.275509,
+      40.119258
+     ],
+     [
+      -78.275027,
+      40.11828
+     ],
+     [
+      -78.275069,
+      40.117535
+     ],
+     [
+      -78.274777,
+      40.116535
+     ],
+     [
+      -78.27482,
+      40.115673
+     ],
+     [
+      -78.275237,
+      40.114782
+     ],
+     [
+      -78.276652,
+      40.11304
+     ],
+     [
+      -78.27695,
+      40.112003
+     ],
+     [
+      -78.27667,
+      40.110774
+     ],
+     [
+      -78.275522,
+      40.107554
+     ],
+     [
+      -78.275697,
+      40.106775
+     ],
+     [
+      -78.276147,
+      40.106205
+     ],
+     [
+      -78.276963,
+      40.105725
+     ],
+     [
+      -78.277854,
+      40.105509
+     ],
+     [
+      -78.278807,
+      40.105569
+     ],
+     [
+      -78.280326,
+      40.106036
+     ],
+     [
+      -78.28094,
+      40.106056
+     ],
+     [
+      -78.281606,
+      40.105963
+     ],
+     [
+      -78.282531,
+      40.105581
+     ],
+     [
+      -78.285474,
+      40.102162
+     ],
+     [
+      -78.286492,
+      40.10072
+     ],
+     [
+      -78.287897,
+      40.097705
+     ],
+     [
+      -78.288562,
+      40.096698
+     ],
+     [
+      -78.289295,
+      40.096186
+     ],
+     [
+      -78.290753,
+      40.095697
+     ],
+     [
+      -78.293924,
+      40.09559
+     ],
+     [
+      -78.294995,
+      40.095407
+     ],
+     [
+      -78.296156,
+      40.094524
+     ],
+     [
+      -78.299775,
+      40.0907
+     ],
+     [
+      -78.301031,
+      40.089871
+     ],
+     [
+      -78.302073,
+      40.089586
+     ],
+     [
+      -78.303544,
+      40.089449
+     ],
+     [
+      -78.313515,
+      40.089534
+     ],
+     [
+      -78.3153,
+      40.089338
+     ],
+     [
+      -78.31735,
+      40.088463
+     ],
+     [
+      -78.320858,
+      40.085958
+     ],
+     [
+      -78.323768,
+      40.083257
+     ],
+     [
+      -78.328023,
+      40.078137
+     ],
+     [
+      -78.329166,
+      40.075939
+     ],
+     [
+      -78.330158,
+      40.071633
+     ],
+     [
+      -78.330559,
+      40.071129
+     ],
+     [
+      -78.332224,
+      40.069958
+     ],
+     [
+      -78.332958,
+      40.069273
+     ],
+     [
+      -78.336329,
+      40.064875
+     ],
+     [
+      -78.336962,
+      40.064414
+     ],
+     [
+      -78.338193,
+      40.063876
+     ],
+     [
+      -78.344995,
+      40.062068
+     ],
+     [
+      -78.346276,
+      40.061477
+     ],
+     [
+      -78.347146,
+      40.060791
+     ],
+     [
+      -78.352352,
+      40.055623
+     ],
+     [
+      -78.353757,
+      40.054764
+     ],
+     [
+      -78.357156,
+      40.053515
+     ],
+     [
+      -78.359991,
+      40.050376
+     ],
+     [
+      -78.362442,
+      40.045969
+     ],
+     [
+      -78.363252,
+      40.044963
+     ],
+     [
+      -78.364944,
+      40.043311
+     ],
+     [
+      -78.370542,
+      40.035283
+     ],
+     [
+      -78.375587,
+      40.021402
+     ],
+     [
+      -78.375844,
+      40.020151
+     ],
+     [
+      -78.37603,
+      40.017961
+     ],
+     [
+      -78.377221,
+      40.015119
+     ],
+     [
+      -78.378259,
+      40.014181
+     ],
+     [
+      -78.38159,
+      40.011802
+     ],
+     [
+      -78.382653,
+      40.011062
+     ],
+     [
+      -78.383332,
+      40.010758
+     ],
+     [
+      -78.38448,
+      40.010495
+     ],
+     [
+      -78.385647,
+      40.010533
+     ],
+     [
+      -78.387187,
+      40.010907
+     ],
+     [
+      -78.38762,
+      40.011004
+     ],
+     [
+      -78.390546,
+      40.01189
+     ],
+     [
+      -78.391769,
+      40.012112
+     ],
+     [
+      -78.394553,
+      40.011993
+     ],
+     [
+      -78.396275,
+      40.011591
+     ],
+     [
+      -78.39753,
+      40.011508
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Huntingdon and Broad Top",
+    "line": "Huntingdon and Broad Top: Mount Dallas – Bedford",
+    "id": "hbt-mount-dallas-bedford",
+    "color": "#2F6E5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "ESTIMATE. 26 km/h is the 1856 timing - two trains each way, about 1 h 28 min Huntingdon - Stonerstown (Saxton), ~24 mi, per the Bedford Gazette timetable advertisement of 13 Jun 1856 (as read in the research report). No later running time was recovered (the Sept 1951 Official Guide table is too garbled to attribute times to a direction), so the figure is applied to all years unverified.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=H&BTM (railway=abandoned; parts are the Huntingdon and Broad Top Rail Trail, the Mid-State Trail and roads built on the grade); a few short pieces near Saxton carry only name=H&BTM. Probed spellings: old_railway_operator ~ H&BT|Huntingdon.*Broad|Broad Top and note:old_railway_operator - only the bare \"H&BTM\" value is used, and no note:old_railway_operator exists in the area. Where the router preferred it, OpenHistoricalMap (CC0) untagged railway=rail ways dated 1855/1898 - 1954-03-31 (the H&BT) or 1871-09-23 - 1982 (the Bedford and Bridgeport / PRR) were used; they coincide with the OSM grade (see geometry_quality). The East Broad Top (old_railway_operator=EBT, 3 ft) does not enter any of these corridors.",
+    "geometry_quality": "Whole main line Huntingdon - Bedford traced as one route, 51.9 mi against 52.0 mi documented (Fowler table 401 MP 52.0 from Bedford; the Sept 1951 Guide agrees), then cut at Saxton, Hopewell and Mount Dallas so the four pieces join exactly. Traced mileposts from Huntingdon vs documented: Saxton 23.9 (24.1), Hopewell 31.4 (31.5), Tatesville 40.0 (39.9), Everett 42.9 (43.0), Mount Dallas 44.1 (44.0), Lutzville 47.0 (47.3), Bedford 51.9 (52.0). No straight-line legs anywhere on the main line. This piece: 7.8 mi traced against 8.0 mi documented (Fowler table 401). DRAWN ON ANOTHER COMPANY'S TRACK: this is the Bedford and Bridgeport / PRR Bedford Branch, over which the H&BT ran its own trains by trackage rights; the H&BT never owned it. Geometry is OpenHistoricalMap untagged railway=rail ways dated 1871-09-23 - 1982 (start_date sourced in OHM to the Coverdale & Colpitts PRR history), lying within ~40 m of the OSM grade tagged old_railway_operator=PRR (Mid-State Trail and abandoned \"Pennsylvania Railroad\" ways). No straight-line legs; the 1.4 mi tangent east of Bedford carries the vertices of OSM way 19336554 (abandoned Pennsylvania Railroad). The Bedford end is on the PRR line near Bedford (40.0214, -78.5025); the Bedford station site was not separately pinned.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1951,
+      "headway_min": 720,
+      "note": "H&BT passenger trains over ANOTHER COMPANY'S TRACK: the Bedford and Bridgeport (opened state line - Bedford - Mount Dallas 1871; H&BT lease 1871, PRR operation from 1872; later the PRR Bedford Branch). Wikipedia: the H&BT \"would continue to operate passenger service via trackage rights to Bedford over the B&B until 1953\". Via Ashcom, Lutzville, Hartley, Jameson's, Cliffs and Dunning's Creek Junction. Start: 1875 is the first CONFIRMED year - Fowler's table 401 (\"Bedford-Mount Dallas joint HBTM/PRR\") lists Bedford, Lutzville, Ashcom and Jameson's from the 1875 Official Guide. H&BT trains to Bedford in 1871-74 are probable but unproven, so not drawn. 1951 confirmed: the Sept 1951 H&BT table runs through Lutzville to Bedford (Bedford 12 20, partly garbled), with connections to the PRR. Continuity 1875-1951 is not established (Wikipedia implies it). This feature is H&BT trains only; any PRR passenger trains of its own on this track belong to the PRR's layer, not this one. headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Fowler, Pennsylvania Railroads (5), table 401 (1875 Official Guide letters) for 1875; Official Guide Feb 1952 for 1951; Wikipedia (H&BT, Bedford Branch) for the trackage-rights arrangement - as read in research/branches/huntingdon_and_broad_top_mountain_railroad.txt block [4]. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "Official Guide of the Railways, Feb 1952 (schedules eff. 30 Sep 1951), cached OCR research/sources/official_guide_1952.txt, H&BT table lines 21656-21740",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company",
+       "https://en.wikipedia.org/wiki/Bedford_Branch"
+      ]
+     },
+     {
+      "start": 1952,
+      "end": 1953,
+      "headway_min": 720,
+      "note": "Mount Dallas - Bedford: last two years of passenger service. 1952-1953 rest on Wikipedia alone (\"operated its last passenger train in November 1953\", uncited; american-rails.com copies it and is not independent). The latest primary confirmation is the Sept 1951 Official Guide table. Bankruptcy 11 Oct 1953 and the end of all operations on 31 Mar 1954 (Wikipedia) are not passenger dates: freight Nov 1953 - Mar 1954, the Everett Railroad's 1954-1982 freight on Tatesville - Mount Dallas and the PRR's Huntingdon industrial spur are freight only and are not drawn (Rule 1). headway_min 720 is an ESTIMATE (about two trains each way a day, as in 1856); frequencies after 1856 are not sourced, and the 1951 table suggests one or two trains each way without a recoverable direction.",
+      "sources": [
+       "Segment-level: Wikipedia only (uncited) for the Nov 1953 end; no primary source for 1952-1953 found (see metadata.not_yet_sourced).",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.39753,
+      40.011508
+     ],
+     [
+      -78.398356,
+      40.011697
+     ],
+     [
+      -78.398705,
+      40.01189
+     ],
+     [
+      -78.399257,
+      40.012338
+     ],
+     [
+      -78.39974,
+      40.013041
+     ],
+     [
+      -78.400743,
+      40.013752
+     ],
+     [
+      -78.401355,
+      40.01392
+     ],
+     [
+      -78.404251,
+      40.014049
+     ],
+     [
+      -78.40519,
+      40.013978
+     ],
+     [
+      -78.408007,
+      40.013341
+     ],
+     [
+      -78.409396,
+      40.012503
+     ],
+     [
+      -78.410968,
+      40.010736
+     ],
+     [
+      -78.411274,
+      40.008908
+     ],
+     [
+      -78.411858,
+      40.007756
+     ],
+     [
+      -78.412341,
+      40.007239
+     ],
+     [
+      -78.413838,
+      40.006092
+     ],
+     [
+      -78.414927,
+      40.005538
+     ],
+     [
+      -78.41549,
+      40.005369
+     ],
+     [
+      -78.416697,
+      40.005266
+     ],
+     [
+      -78.41807,
+      40.005529
+     ],
+     [
+      -78.422689,
+      40.007489
+     ],
+     [
+      -78.423268,
+      40.00818
+     ],
+     [
+      -78.425559,
+      40.012999
+     ],
+     [
+      -78.425924,
+      40.013377
+     ],
+     [
+      -78.426568,
+      40.013722
+     ],
+     [
+      -78.427785,
+      40.013878
+     ],
+     [
+      -78.429073,
+      40.013513
+     ],
+     [
+      -78.429738,
+      40.013086
+     ],
+     [
+      -78.430188,
+      40.012679
+     ],
+     [
+      -78.430451,
+      40.012219
+     ],
+     [
+      -78.430846,
+      40.009458
+     ],
+     [
+      -78.430988,
+      40.008997
+     ],
+     [
+      -78.431353,
+      40.008558
+     ],
+     [
+      -78.432012,
+      40.008028
+     ],
+     [
+      -78.432565,
+      40.00783
+     ],
+     [
+      -78.433552,
+      40.007646
+     ],
+     [
+      -78.434319,
+      40.007814
+     ],
+     [
+      -78.438772,
+      40.009729
+     ],
+     [
+      -78.44147,
+      40.011348
+     ],
+     [
+      -78.445507,
+      40.014079
+     ],
+     [
+      -78.447322,
+      40.015099
+     ],
+     [
+      -78.451083,
+      40.018036
+     ],
+     [
+      -78.456436,
+      40.020312
+     ],
+     [
+      -78.457623,
+      40.020463
+     ],
+     [
+      -78.458244,
+      40.02037
+     ],
+     [
+      -78.45885,
+      40.02009
+     ],
+     [
+      -78.459618,
+      40.019515
+     ],
+     [
+      -78.463339,
+      40.014527
+     ],
+     [
+      -78.4651,
+      40.010575
+     ],
+     [
+      -78.46598,
+      40.010049
+     ],
+     [
+      -78.466745,
+      40.00996
+     ],
+     [
+      -78.467911,
+      40.010152
+     ],
+     [
+      -78.468388,
+      40.010399
+     ],
+     [
+      -78.47054,
+      40.011984
+     ],
+     [
+      -78.47701,
+      40.019292
+     ],
+     [
+      -78.478345,
+      40.019923
+     ],
+     [
+      -78.478726,
+      40.02
+     ],
+     [
+      -78.479846,
+      40.020065
+     ],
+     [
+      -78.48421,
+      40.020247
+     ],
+     [
+      -78.505386,
+      40.021623
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Huntingdon and Broad Top",
+    "line": "Huntingdon and Broad Top: Shoup's Run Branch",
+    "id": "hbt-shoups-run-branch",
+    "color": "#2F6E5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "ESTIMATE, unsourced: a steeply graded coal-field branch local; no running time found.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-21), routed with opstrace.py. The grade is tagged old_railway_operator=H&BTM (railway=abandoned; parts are the Huntingdon and Broad Top Rail Trail, the Mid-State Trail and roads built on the grade); a few short pieces near Saxton carry only name=H&BTM. Probed spellings: old_railway_operator ~ H&BT|Huntingdon.*Broad|Broad Top and note:old_railway_operator - only the bare \"H&BTM\" value is used, and no note:old_railway_operator exists in the area. No OpenHistoricalMap ways were used on this branch.",
+    "geometry_quality": "Traced 5.2 mi against 5.3 mi documented (Fowler table 402); Coalmont at traced MP 3.1 (Fowler 3.0). All on OSM ways tagged old_railway_operator=H&BTM (\"H&BTM Shoups Run Branch\", \"Shoups Run Branch\", and the main-line way through Saxton for the first 0.3 mi from the Saxton point to the branch junction). No straight-line legs. The line keeps the real horseshoe north of Dudley (opstrace's despike and trim_reversals were switched off for this feature because they cut it). The Dudley end is the end of the H&BTM-tagged branch way (40.2074, -78.1783), about 0.3 km from the Dudley borough centre. The report documents no relocation; whether the mapped grade is the 1859 alignment was not checked.",
+    "segments": [
+     {
+      "start": 1859,
+      "end": 1917,
+      "headway_min": 1440,
+      "note": "Branch passenger service Saxton - Coalmont - Melrose (Crawford) - Dudley, climbing Shoup's Run into the Broad Top coal field. Both ends rest on ONE uncited secondary source - Wikipedia: \"Passenger service was operated on this branch between 1859 and 1917, from Saxton to Dudley only\" (american-rails.com copies it). Independent confirmation exists only for 1868 (Crawford in the 1868 Official Guide, per Fowler table 402) and 1875 (Dudley in the 1875 Guide, Fowler). No discontinuance notice was found in 1915-1917 newspapers searched; absence proves nothing. Whether the service was a mixed train is not established. Freight continued after 1917 (Coalmont is probably marked freight-only in the 1951 Guide index) - not drawn (Rule 1). Track beyond Dudley to Broad Top City is not drawn: no confirmable passenger year. headway_min 1440 is an ESTIMATE (one train each way a day assumed) - not sourced.",
+      "sources": [
+       "Segment-level: Wikipedia only (uncited) for the 1859 start and 1917 end; Fowler table 402 confirms 1868 and 1875 only - as read in research/branches/huntingdon_and_broad_top_mountain_railroad.txt block [5]. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Huntingdon_and_Broad_Top_Mountain_Railroad_and_Coal_Company",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.24538,
+      40.217706
+     ],
+     [
+      -78.243392,
+      40.217526
+     ],
+     [
+      -78.241545,
+      40.217663
+     ],
+     [
+      -78.239863,
+      40.218453
+     ],
+     [
+      -78.23854,
+      40.218769
+     ],
+     [
+      -78.237354,
+      40.219347
+     ],
+     [
+      -78.236803,
+      40.2198
+     ],
+     [
+      -78.235534,
+      40.221884
+     ],
+     [
+      -78.2349,
+      40.222495
+     ],
+     [
+      -78.233977,
+      40.223116
+     ],
+     [
+      -78.233012,
+      40.223442
+     ],
+     [
+      -78.232281,
+      40.223495
+     ],
+     [
+      -78.229582,
+      40.223335
+     ],
+     [
+      -78.228463,
+      40.223131
+     ],
+     [
+      -78.227405,
+      40.222761
+     ],
+     [
+      -78.22625,
+      40.222108
+     ],
+     [
+      -78.225209,
+      40.220894
+     ],
+     [
+      -78.224432,
+      40.219651
+     ],
+     [
+      -78.223887,
+      40.219167
+     ],
+     [
+      -78.222928,
+      40.218656
+     ],
+     [
+      -78.222279,
+      40.21854
+     ],
+     [
+      -78.22158,
+      40.218536
+     ],
+     [
+      -78.220169,
+      40.218942
+     ],
+     [
+      -78.219426,
+      40.219505
+     ],
+     [
+      -78.218232,
+      40.221172
+     ],
+     [
+      -78.217346,
+      40.221893
+     ],
+     [
+      -78.216048,
+      40.222328
+     ],
+     [
+      -78.214713,
+      40.222356
+     ],
+     [
+      -78.213896,
+      40.222157
+     ],
+     [
+      -78.213157,
+      40.221804
+     ],
+     [
+      -78.202651,
+      40.212496
+     ],
+     [
+      -78.201785,
+      40.212105
+     ],
+     [
+      -78.20051,
+      40.211898
+     ],
+     [
+      -78.199642,
+      40.212007
+     ],
+     [
+      -78.197503,
+      40.212583
+     ],
+     [
+      -78.181668,
+      40.217637
+     ],
+     [
+      -78.180712,
+      40.217786
+     ],
+     [
+      -78.178967,
+      40.217701
+     ],
+     [
+      -78.177685,
+      40.217396
+     ],
+     [
+      -78.177087,
+      40.217123
+     ],
+     [
+      -78.175813,
+      40.215973
+     ],
+     [
+      -78.175458,
+      40.215212
+     ],
+     [
+      -78.17563,
+      40.214331
+     ],
+     [
+      -78.176197,
+      40.213884
+     ],
+     [
+      -78.177175,
+      40.213498
+     ],
+     [
+      -78.178354,
+      40.211863
+     ],
+     [
+      -78.178479,
+      40.210523
+     ],
+     [
+      -78.178262,
+      40.207413
+     ]
+    ]
+   }
+  }
+ ]
+}

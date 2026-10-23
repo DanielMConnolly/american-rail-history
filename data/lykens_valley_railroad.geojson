@@ -1,0 +1,857 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Lykens Valley Rail Road and Coal Company, Millersburg - Lykens - Williamstown, Dauphin County PA. A Pennsylvania Railroad-family branch (Summit Branch RR 1866-1880, Northern Central 1880-1910, PRR lease from 1911), NOT a Reading line: the Reading reached Lykens separately by the Williams Valley RR (1892), which is not drawn here.",
+  "source": "research/branches/lykens_valley_railroad.txt (2026-10-21): ICC valuation; lykensvalley.org reprints of Lykens Standard / Lykens Register / West Schuylkill Herald; branchline.uk PA(1) PRR station list; 1952 Official Guide.",
+  "pulled": "20261021",
+  "rule4_split": "Summit Branch Railroad (1866-1880) and Northern Central/PRR (1880-1937) are separate features sharing identical geometry, split at 1 Jul 1880 when the Northern Central took over operation (ICC valuation).",
+  "freight_only_audit": "Not drawn: Lykens - Williamstown after passenger withdrawal (c.1892-1907) and the whole branch after 30 Oct 1937 (freight until the c.1969-70 Elizabethville - Lykens abandonment); colliery sidings and the Big Lick Mountain spur.",
+  "horsecar_audit": "Not drawn: 1834 - c.1845 horse-drawn coal and 'accommodation car' Wiconisco mines - Millersburg (Rule 5).",
+  "not_yet_sourced": [
+   "Passenger service under steam 1848-1864 (steam attested Apr 1859; first passenger-carrying train found is a mixed of July 1865, under Josiah Caldwell - 1865 not drawn).",
+   "Lykens - Williamstown: drawn as an 1875 [ANCHOR] only; passenger start (1866-1874) and end ('shortly after' 1892, bracketed 1875-1907) unknown.",
+   "Conflict: Lykens Register 20 Mar 1896 (Summit Branch Coal Co. lease c.1893, then PRR/NC control) vs ICC valuation (Northern Central from 1 Jul 1880); ICC followed.",
+   "All headways and speeds are estimates.",
+   "Williamstown station site and which of two OSM grades into Williamstown carried passengers."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.9625,
+      40.5395
+     ],
+     [
+      -76.9476102,
+      40.5331893
+     ],
+     [
+      -76.9444583,
+      40.5331358
+     ],
+     [
+      -76.9393125,
+      40.5323391
+     ],
+     [
+      -76.9376743,
+      40.5323899
+     ],
+     [
+      -76.931909,
+      40.5333296
+     ],
+     [
+      -76.9278797,
+      40.5337154
+     ],
+     [
+      -76.9267587,
+      40.5339685
+     ],
+     [
+      -76.9243431,
+      40.5348191
+     ],
+     [
+      -76.923071,
+      40.5350302
+     ],
+     [
+      -76.9214985,
+      40.5348066
+     ],
+     [
+      -76.9168769,
+      40.5330135
+     ],
+     [
+      -76.9157804,
+      40.5326948
+     ],
+     [
+      -76.9137218,
+      40.5323889
+     ],
+     [
+      -76.9109831,
+      40.5322841
+     ],
+     [
+      -76.9043935,
+      40.5322299
+     ],
+     [
+      -76.8981243,
+      40.532682
+     ],
+     [
+      -76.8966711,
+      40.5333177
+     ],
+     [
+      -76.8955811,
+      40.5345611
+     ],
+     [
+      -76.8948675,
+      40.5351134
+     ],
+     [
+      -76.8937139,
+      40.5355778
+     ],
+     [
+      -76.8929013,
+      40.5356844
+     ],
+     [
+      -76.8920692,
+      40.5356618
+     ],
+     [
+      -76.8852529,
+      40.5344095
+     ],
+     [
+      -76.8798465,
+      40.5338984
+     ],
+     [
+      -76.8737879,
+      40.5340254
+     ],
+     [
+      -76.8726814,
+      40.5342448
+     ],
+     [
+      -76.8708569,
+      40.5350038
+     ],
+     [
+      -76.8678251,
+      40.5359553
+     ],
+     [
+      -76.8661705,
+      40.5368805
+     ],
+     [
+      -76.8647148,
+      40.537438
+     ],
+     [
+      -76.8635053,
+      40.5376229
+     ],
+     [
+      -76.8606946,
+      40.537536
+     ],
+     [
+      -76.8570668,
+      40.538381
+     ],
+     [
+      -76.8517892,
+      40.5389454
+     ],
+     [
+      -76.845165,
+      40.5407653
+     ],
+     [
+      -76.843888,
+      40.541336
+     ],
+     [
+      -76.8419546,
+      40.5424712
+     ],
+     [
+      -76.8410865,
+      40.5427602
+     ],
+     [
+      -76.8399047,
+      40.5428475
+     ],
+     [
+      -76.8373564,
+      40.542432
+     ],
+     [
+      -76.8358842,
+      40.5424748
+     ],
+     [
+      -76.8340699,
+      40.5429504
+     ],
+     [
+      -76.8312557,
+      40.5442327
+     ],
+     [
+      -76.8303377,
+      40.5444495
+     ],
+     [
+      -76.8220192,
+      40.5440339
+     ],
+     [
+      -76.8198178,
+      40.5443094
+     ],
+     [
+      -76.819186,
+      40.5445639
+     ],
+     [
+      -76.814564,
+      40.547175
+     ],
+     [
+      -76.8136279,
+      40.5475779
+     ],
+     [
+      -76.8125311,
+      40.5478358
+     ],
+     [
+      -76.8069505,
+      40.5483683
+     ],
+     [
+      -76.8039163,
+      40.5497664
+     ],
+     [
+      -76.8033549,
+      40.5499479
+     ],
+     [
+      -76.8003462,
+      40.5503981
+     ],
+     [
+      -76.7984672,
+      40.5512783
+     ],
+     [
+      -76.7976823,
+      40.5515038
+     ],
+     [
+      -76.796279,
+      40.5515934
+     ],
+     [
+      -76.7926314,
+      40.5510364
+     ],
+     [
+      -76.7912503,
+      40.5511193
+     ],
+     [
+      -76.7905389,
+      40.5513271
+     ],
+     [
+      -76.7894421,
+      40.55199
+     ],
+     [
+      -76.7876319,
+      40.5540459
+     ],
+     [
+      -76.7861154,
+      40.5547721
+     ],
+     [
+      -76.7807932,
+      40.555451
+     ],
+     [
+      -76.7796946,
+      40.5553914
+     ],
+     [
+      -76.7766076,
+      40.5546279
+     ],
+     [
+      -76.7696925,
+      40.5546749
+     ],
+     [
+      -76.7666849,
+      40.5548993
+     ],
+     [
+      -76.7623185,
+      40.555482
+     ],
+     [
+      -76.757627,
+      40.5563622
+     ],
+     [
+      -76.7518089,
+      40.5583487
+     ],
+     [
+      -76.7463762,
+      40.559483
+     ],
+     [
+      -76.7451695,
+      40.5595623
+     ],
+     [
+      -76.7380474,
+      40.5594329
+     ],
+     [
+      -76.736345,
+      40.5594964
+     ],
+     [
+      -76.7176934,
+      40.5617879
+     ],
+     [
+      -76.7160112,
+      40.5621577
+     ],
+     [
+      -76.7127047,
+      40.5632725
+     ],
+     [
+      -76.705601,
+      40.56478
+     ],
+     [
+      -76.6991928,
+      40.5664025
+     ],
+     [
+      -76.6982776,
+      40.5667322
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Summit Branch Railroad",
+    "line": "Summit Branch: Millersburg – Lykens",
+    "id": "lykens-valley-summit-branch-millersburg-lykens",
+    "color": "#3F6E5A",
+    "mode": "intercity_rail",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), 2026-10-21, opstrace.py; OpenHistoricalMap queried, no ways in corridor",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated; unsourced (steam branch accommodation/mixed train on a 15-mile coal road)",
+    "geometry_quality": "Traced from OSM: the 'Lykens Valley Rail Trail' cycleway (way 1035141804, ~2.0 mi east of Millersburg to Woodside), the untagged railway=abandoned way named 'Lykens Valley Railway' (25896057, ~11.5 mi Woodside - Elizabethville - Loyalton - Lykens) and the old_railway_operator=PRR 'Northern Central (Lykens Valley)' way 1015445632 at Lykens; method opstrace.py (douglas_peucker 8 m, trim_reversals). ONE STRAIGHT-LINE LEG: Millersburg, from the Northern Central (NS Buffalo Line) main at the Millersburg station site to the west end of the rail trail, 0.9 mi - the in-town alignment is not mapped in OSM and is approximated. Traced length 14.7 mi (including that 0.9 mi chord) vs documented 15.1 mi (branchline.uk PA(1) line 32; ICC valuation 14.63 mi of 1834 road), -3%. The grade drawn is the post-1846-49 T-rail reconstruction as it survived to abandonment; no evidence was found of a different alignment in 1866-1937, but later minor relocations cannot be ruled out. No OpenHistoricalMap ways exist in this corridor (queried 2026-10-21).",
+    "segments": [
+     {
+      "start": 1866,
+      "end": 1880,
+      "headway_min": 480,
+      "note": "Lykens Valley Rail Road and Coal Co. line operated by the Summit Branch Railroad Co. from 1 Feb 1866 to 30 Jun 1880 (ICC valuation). Start: engineer Edwin L. Shive ran a MIXED train Lykens - Millersburg by July 1865, under Josiah Caldwell's one-year operation (1 Feb 1865 - 31 Jan 1866), and a 'regular passenger engine on this branch' is dated about Nov 1868 (Lykens Standard 4 Apr 1902). Drawn from 1866, not 1865, following the research report's recommendation: 1865 was Caldwell's year and would need a third one-year company; omitting it understates rather than invents. Earlier years are not drawn: horse-drawn coal and an 'accommodation car' 1834 - c.1845 (Rule 5); steam on the road by Apr 1859 but no source shows passengers carried before 1865. PRR held a majority of Summit Branch stock by 1874 - stock control, not a change of operator. headway_min is an ESTIMATE: no frequency for this branch has been sourced (two trains each way are recorded in 1859, not shown to carry passengers); avg speed likewise estimated.",
+      "sources": [
+       "Segment-level: operator dates from the ICC valuation of the Lykens Valley Railroad and Coal Co.; 1865 mixed train and c.1868 passenger engine from Lykens Standard 4 Apr 1902 (reprinted at lykensvalley.org); headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Lykens_Valley_Railroad_and_Coal_Company",
+       "https://www.lykensvalley.org/some-early-stories-of-the-lykens-valley-railroad-1834-1913/"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.9625,
+      40.5395
+     ],
+     [
+      -76.9476102,
+      40.5331893
+     ],
+     [
+      -76.9444583,
+      40.5331358
+     ],
+     [
+      -76.9393125,
+      40.5323391
+     ],
+     [
+      -76.9376743,
+      40.5323899
+     ],
+     [
+      -76.931909,
+      40.5333296
+     ],
+     [
+      -76.9278797,
+      40.5337154
+     ],
+     [
+      -76.9267587,
+      40.5339685
+     ],
+     [
+      -76.9243431,
+      40.5348191
+     ],
+     [
+      -76.923071,
+      40.5350302
+     ],
+     [
+      -76.9214985,
+      40.5348066
+     ],
+     [
+      -76.9168769,
+      40.5330135
+     ],
+     [
+      -76.9157804,
+      40.5326948
+     ],
+     [
+      -76.9137218,
+      40.5323889
+     ],
+     [
+      -76.9109831,
+      40.5322841
+     ],
+     [
+      -76.9043935,
+      40.5322299
+     ],
+     [
+      -76.8981243,
+      40.532682
+     ],
+     [
+      -76.8966711,
+      40.5333177
+     ],
+     [
+      -76.8955811,
+      40.5345611
+     ],
+     [
+      -76.8948675,
+      40.5351134
+     ],
+     [
+      -76.8937139,
+      40.5355778
+     ],
+     [
+      -76.8929013,
+      40.5356844
+     ],
+     [
+      -76.8920692,
+      40.5356618
+     ],
+     [
+      -76.8852529,
+      40.5344095
+     ],
+     [
+      -76.8798465,
+      40.5338984
+     ],
+     [
+      -76.8737879,
+      40.5340254
+     ],
+     [
+      -76.8726814,
+      40.5342448
+     ],
+     [
+      -76.8708569,
+      40.5350038
+     ],
+     [
+      -76.8678251,
+      40.5359553
+     ],
+     [
+      -76.8661705,
+      40.5368805
+     ],
+     [
+      -76.8647148,
+      40.537438
+     ],
+     [
+      -76.8635053,
+      40.5376229
+     ],
+     [
+      -76.8606946,
+      40.537536
+     ],
+     [
+      -76.8570668,
+      40.538381
+     ],
+     [
+      -76.8517892,
+      40.5389454
+     ],
+     [
+      -76.845165,
+      40.5407653
+     ],
+     [
+      -76.843888,
+      40.541336
+     ],
+     [
+      -76.8419546,
+      40.5424712
+     ],
+     [
+      -76.8410865,
+      40.5427602
+     ],
+     [
+      -76.8399047,
+      40.5428475
+     ],
+     [
+      -76.8373564,
+      40.542432
+     ],
+     [
+      -76.8358842,
+      40.5424748
+     ],
+     [
+      -76.8340699,
+      40.5429504
+     ],
+     [
+      -76.8312557,
+      40.5442327
+     ],
+     [
+      -76.8303377,
+      40.5444495
+     ],
+     [
+      -76.8220192,
+      40.5440339
+     ],
+     [
+      -76.8198178,
+      40.5443094
+     ],
+     [
+      -76.819186,
+      40.5445639
+     ],
+     [
+      -76.814564,
+      40.547175
+     ],
+     [
+      -76.8136279,
+      40.5475779
+     ],
+     [
+      -76.8125311,
+      40.5478358
+     ],
+     [
+      -76.8069505,
+      40.5483683
+     ],
+     [
+      -76.8039163,
+      40.5497664
+     ],
+     [
+      -76.8033549,
+      40.5499479
+     ],
+     [
+      -76.8003462,
+      40.5503981
+     ],
+     [
+      -76.7984672,
+      40.5512783
+     ],
+     [
+      -76.7976823,
+      40.5515038
+     ],
+     [
+      -76.796279,
+      40.5515934
+     ],
+     [
+      -76.7926314,
+      40.5510364
+     ],
+     [
+      -76.7912503,
+      40.5511193
+     ],
+     [
+      -76.7905389,
+      40.5513271
+     ],
+     [
+      -76.7894421,
+      40.55199
+     ],
+     [
+      -76.7876319,
+      40.5540459
+     ],
+     [
+      -76.7861154,
+      40.5547721
+     ],
+     [
+      -76.7807932,
+      40.555451
+     ],
+     [
+      -76.7796946,
+      40.5553914
+     ],
+     [
+      -76.7766076,
+      40.5546279
+     ],
+     [
+      -76.7696925,
+      40.5546749
+     ],
+     [
+      -76.7666849,
+      40.5548993
+     ],
+     [
+      -76.7623185,
+      40.555482
+     ],
+     [
+      -76.757627,
+      40.5563622
+     ],
+     [
+      -76.7518089,
+      40.5583487
+     ],
+     [
+      -76.7463762,
+      40.559483
+     ],
+     [
+      -76.7451695,
+      40.5595623
+     ],
+     [
+      -76.7380474,
+      40.5594329
+     ],
+     [
+      -76.736345,
+      40.5594964
+     ],
+     [
+      -76.7176934,
+      40.5617879
+     ],
+     [
+      -76.7160112,
+      40.5621577
+     ],
+     [
+      -76.7127047,
+      40.5632725
+     ],
+     [
+      -76.705601,
+      40.56478
+     ],
+     [
+      -76.6991928,
+      40.5664025
+     ],
+     [
+      -76.6982776,
+      40.5667322
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Northern Central Railway (Pennsylvania Railroad)",
+    "line": "Northern Central: Lykens Branch",
+    "id": "lykens-valley-northern-central-millersburg-lykens",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), 2026-10-21, opstrace.py; OpenHistoricalMap queried, no ways in corridor",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated; unsourced",
+    "geometry_quality": "Traced from OSM: the 'Lykens Valley Rail Trail' cycleway (way 1035141804, ~2.0 mi east of Millersburg to Woodside), the untagged railway=abandoned way named 'Lykens Valley Railway' (25896057, ~11.5 mi Woodside - Elizabethville - Loyalton - Lykens) and the old_railway_operator=PRR 'Northern Central (Lykens Valley)' way 1015445632 at Lykens; method opstrace.py (douglas_peucker 8 m, trim_reversals). ONE STRAIGHT-LINE LEG: Millersburg, from the Northern Central (NS Buffalo Line) main at the Millersburg station site to the west end of the rail trail, 0.9 mi - the in-town alignment is not mapped in OSM and is approximated. Traced length 14.7 mi (including that 0.9 mi chord) vs documented 15.1 mi (branchline.uk PA(1) line 32; ICC valuation 14.63 mi of 1834 road), -3%. The grade drawn is the post-1846-49 T-rail reconstruction as it survived to abandonment; no evidence was found of a different alignment in 1866-1937, but later minor relocations cannot be ruled out. No OpenHistoricalMap ways exist in this corridor (queried 2026-10-21).",
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1910,
+      "headway_min": 480,
+      "note": "Northern Central Railway (PRR-controlled) operated the Lykens Valley road from 1 Jul 1880 to 31 Dec 1910 (ICC valuation); PRR timetables called it the Lykens Valley Branch / Lykens Branch. Some trains ran through to Harrisburg over the Northern Central main, most terminated at Millersburg (gratzpa.org, undated). Sunday service inaugurated Nov 1910 (Lykens Standard 2 Dec 1910). Conflict recorded, not resolved: Lykens Register 20 Mar 1896 says the road had been leased by the Summit Branch Coal Co. c.1893 and only then passed to the Pennsylvania and Northern Central companies; the ICC valuation's 1880 date is followed. headway_min is an ESTIMATE: no frequency for this branch has been sourced (two trains each way are recorded in 1859, not shown to carry passengers); avg speed likewise estimated.",
+      "sources": [
+       "Segment-level: operator dates from the ICC valuation; Sunday service from Lykens Standard 2 Dec 1910 (lykensvalley.org reprint); headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Lykens_Valley_Railroad_and_Coal_Company",
+       "https://www.lykensvalley.org/some-early-stories-of-the-lykens-valley-railroad-1834-1913/",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs1prr.pdf"
+      ]
+     },
+     {
+      "start": 1911,
+      "end": 1937,
+      "headway_min": 480,
+      "note": "Leased directly to the Pennsylvania Railroad from 1 Jan 1911 (ICC valuation); drawn in the same feature because the map already colours the Northern Central in PRR colour. Last passenger train, the Lykens - Harrisburg accommodation, ran 30 Oct 1937 (Lykens Standard 29 Oct 1937); the schedule passed to buses of the Williams Valley Transportation Co. and Greyhound. Freight continued; Elizabethville - Lykens was proposed for abandonment in Nov 1969 (West Schuylkill Herald 20 Nov 1969). The 1951 Official Guide's PRR Table 110 'Harrisburg and Lykens' is a BUS table and does not extend rail service. headway_min is an ESTIMATE: no frequency for this branch has been sourced (two trains each way are recorded in 1859, not shown to carry passengers); avg speed likewise estimated.",
+      "sources": [
+       "Segment-level: 1911 lease from the ICC valuation; 30 Oct 1937 last train from Lykens Standard 29 Oct 1937 (lykensvalley.org); headway NOT SOURCED.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Lykens_Valley_Railroad_and_Coal_Company",
+       "https://www.lykensvalley.org/?p=41713"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.6982776,
+      40.5667322
+     ],
+     [
+      -76.6974945,
+      40.5671264
+     ],
+     [
+      -76.6960887,
+      40.5682086
+     ],
+     [
+      -76.6943055,
+      40.5709391
+     ],
+     [
+      -76.6815497,
+      40.5743862
+     ],
+     [
+      -76.6778324,
+      40.5761849
+     ],
+     [
+      -76.676653,
+      40.5766149
+     ],
+     [
+      -76.6745585,
+      40.5771595
+     ],
+     [
+      -76.6644633,
+      40.5806135
+     ],
+     [
+      -76.6585606,
+      40.5815172
+     ],
+     [
+      -76.6562048,
+      40.5820144
+     ],
+     [
+      -76.6524456,
+      40.582938
+     ],
+     [
+      -76.6431019,
+      40.5855203
+     ],
+     [
+      -76.6405968,
+      40.5858629
+     ],
+     [
+      -76.6358241,
+      40.5861708
+     ],
+     [
+      -76.62357,
+      40.5865766
+     ],
+     [
+      -76.620511,
+      40.5864787
+     ],
+     [
+      -76.6162175,
+      40.5861008
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Summit Branch Railroad",
+    "line": "Summit Branch: Lykens – Williamstown",
+    "id": "lykens-valley-summit-branch-lykens-williamstown",
+    "color": "#3F6E5A",
+    "mode": "intercity_rail",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), 2026-10-21, opstrace.py; OpenHistoricalMap queried, no ways in corridor",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated; unsourced",
+    "geometry_quality": "Traced from OSM: the old_railway_operator=PRR 'Northern Central (Lykens Valley)' ways 1015445632 (out of Lykens) and 96682633 (east of Lykens toward Williamstown), then the untagged railway=abandoned way 96682632 (~1.4 mi) into Williamstown borough. ONE STRAIGHT-LINE LEG: 0.65 mi just east of Lykens (Wiconisco), between the two PRR-tagged pieces, where OSM maps no grade. The last 1.4 mi is uncertain: the PRR-tagged way continues ~0.5 mi further north-east to the Williamstown Colliery (40.591, -76.610) and either way may be the passenger alignment; the station site was not located. Traced length 4.7 mi vs documented about 5.3 mi (research report; branchline.uk cumulative Lykens 15.1 / Williamstown 21.0 implies 5.9) and ICC valuation 4.70 mi built 1865 - the trace sits nearest the ICC figure. Same 1865 alignment throughout; no later relocation known.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1875,
+      "headway_min": 480,
+      "note": "[ANCHOR] A single proven passenger year: Wiconisco and Williamstown are both lettered 'y' (1875 Official Guide) in branchline.uk's PRR station list. Service certainly ran wider than this one year both ways, but no other year is confirmed: the line was built 1865 by the Summit Branch interests (coal from 1866) with no passenger source for 1866-1874, and passenger trains were withdrawn 'shortly after' the Reading's Williams Valley RR opened on 1 Jul 1892 (Williams Valley history first printed 19 Apr 1907), so the end is bracketed only between 1875 and 1907. Operator in 1875: Summit Branch Railroad (ICC valuation). Do not widen this anchor without a dated source; do not delete it to tidy the map. Freight to the Williamstown Colliery continued after passengers stopped. headway_min is an ESTIMATE: no frequency for this branch has been sourced (two trains each way are recorded in 1859, not shown to carry passengers); avg speed likewise estimated.",
+      "sources": [
+       "Segment-level: 1875 from the Official Guide lettering in branchline.uk PA(1) line 32; end bracket from the 1907 Williams Valley history (lykensvalley.org); headway NOT SOURCED.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs1prr.pdf",
+       "https://www.lykensvalley.org/?p=46241",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Lykens_Valley_Railroad_and_Coal_Company"
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
