@@ -1,0 +1,642 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Chesapeake Beach Railway (Maryland / DC): Otto Mears's steam road built to serve the Chesapeake Beach resort on the Chesapeake Bay. Opened Dec 1898 to Upper Marlboro, to Chesapeake Beach in 1899; last train 15 Apr 1935. The Chesapeake Beach Railway Company ran every passenger train (receiver from Jan 1935 was a receiver of the same company), so there is no Rule 4 ownership split. Until 7 Jul 1913 its trains started at Hyattsville on B&O track; thereafter at District Line, Seat Pleasant, which Washingtonians reached by streetcar. Built from research/branches/chesapeake_beach_railway.txt (researched 2026-10-23).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Chesapeake_Beach_Railway",
+   "https://www.varails.com/non-virginia-railroads/the-chesapeake-beach-railway",
+   "https://www.loc.gov/resource/sn89060124/1899-12-08/ed-1/?sp=4",
+   "https://www.loc.gov/resource/sn89060124/1913-07-11/ed-1/?sp=3"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), fetched 2026-10-23 and routed with opstrace.py: the old_railway_operator='Chesapeake Beach Railway' ways 169999407 and 245138410, untagged railway=abandoned / abandoned:railway=rail grade ways, the Chesapeake Beach Railroad Trail (Upper Marlboro area) and Chesapeake Beach Railway Trail (Fishing Creek), and West/East Chesapeake Beach Road (MD 260) ways that OSM tags railway=abandoned. OpenHistoricalMap was queried over the whole corridor and has no Chesapeake Beach Railway geometry."
+  ],
+  "not_yet_sourced": "(1) Through-line start: primary Sept 1899 timetable vs Wikipedia/hmdb 'regular service June 1900' - drawn from 1899. (2) 1898 on the Hyattsville and Chesapeake Junction legs rests on Wikipedia plus inference; not drawn until a primary Dec 1898 timetable is found. (3) Last train 15 vs 14 Apr 1935; and varails's claim that it ran through to Chesapeake Junction (not drawn - one move is not service). (4) varails's claim of Hyattsville running 'into the 1920s', contradicted by the primary Enquirer 11 Jul 1913 notice. (5) Mileages: Seat Pleasant - Beach 25 vs 26 mi in two 1935 papers; Hyattsville - Chesapeake Junction and District Line - Upper Marlboro mileages NOT SOURCED. (6) All headway_min and avg_speed_kmh values are estimates. (7) Off-season service 1913-1934 not established. (8) Exact sites of the District Line, Upper Marlboro and Hyattsville stations not established.",
+  "omissions": "NOT DRAWN: (a) North Beach Electric Railway (Chesapeake Beach - North Beach, ~1.25 mi, 1914 single proven year [ANCHOR][OPEN]) - a separate company, not the CBR; left for its own research item. (b) East Washington Railway (Chesapeake Junction - Seat Pleasant, 1935/36-1978) - freight only per the Feb 1952 Official Guide ('CARLOAD FREIGHT ONLY HANDLED'), Rule 1. (c) The CBR's own Chesapeake Junction - District Line stub 1913-1935 - freight only, Rule 1. (d) PEPCO Benning spur and Pennsylvania Junction interchange with the PRR - freight only. (e) B&O Washington - Hyattsville connecting trains - B&O trains, already drawn in bo_washington_branch.geojson.",
+  "pulled": "20261023"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chesapeake Beach Railway",
+    "line": "Chesapeake Beach Railway: District Line – Chesapeake Beach",
+    "id": "chesapeake-beach-railway-main",
+    "color": "#a23b72",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: Wikipedia gives c.1899 running times of ~60 min express / ~90 min local over the ~27.6 mi Chesapeake Junction - Chesapeake Beach run (~30-45 km/h); 35 km/h is a midpoint estimate, not a sourced figure",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fetched 2026-10-23 and routed with opstrace.py: the old_railway_operator='Chesapeake Beach Railway' ways 169999407 and 245138410, untagged railway=abandoned / abandoned:railway=rail grade ways, the Chesapeake Beach Railroad Trail (Upper Marlboro area) and Chesapeake Beach Railway Trail (Fishing Creek), and West/East Chesapeake Beach Road (MD 260) ways that OSM tags railway=abandoned. OpenHistoricalMap was queried over the whole corridor and has no Chesapeake Beach Railway geometry.",
+    "geometry_quality": "Traced 26.3 mi District Line (Seat Pleasant, at the DC boundary) to the Chesapeake Beach station (now the Chesapeake Beach Railway Museum), against a documented 25-26 mi (Evening Star 17 Jan 1935: 'Seat Pleasant to Chesapeake Beach, a distance of 26 miles'; Washington Times 15 Mar 1935: 'a little more than 25 miles'). NO straight-line legs: every mile follows an OSM way. About 19.5 mi follows surviving or mapped grade (railway=abandoned ways, 1.3 mi of it tagged old_railway_operator=Chesapeake Beach Railway at Seat Pleasant/Maryland Park, plus the Chesapeake Beach Railroad Trail near Upper Marlboro and the Chesapeake Beach Railway Trail along Fishing Creek). LATER ALIGNMENT STAND-IN: about 5.9 mi from roughly 1.5 mi east of the Patuxent to Mount Harmony (through Owings) is drawn on West and East Chesapeake Beach Road (MD 260) plus a short ramp, and 0.2 mi near Upper Marlboro on Curtis Road, roads built on the abandoned grade after 1935 - OSM tags those road ways railway=abandoned, but the road's curves are not necessarily the railway's. About 0.5 mi near the Patuxent crossing (Mount Calvert / Jug Bay) follows park trails (Beech Trail, Pindell Bluff Trail) that may only approximate the grade, and the river crossing itself is a single OSM edge, not a traced drawbridge. Simplified Douglas-Peucker 8 m. The District Line end point is placed where the CBR-tagged OSM way crosses the DC line near Eastern Ave; the station's exact spot is not established.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1935,
+      "headway_min": 480,
+      "note": "Through service District Line (Seat Pleasant) - Chesapeake Beach, Chesapeake Beach Railway steam trains throughout. Start 1899: the CBR local time table effective 10 Sep 1899 (Prince George's Enquirer 8 Dec 1899) shows regular trains to Chesapeake Beach. CONFLICT recorded, not resolved: Wikipedia gives a first excursion 31 Jul 1899 but 'regular service on the eastern leg began June 9, 1900', and an hmdb historical marker says the first train arrived June 1900; the primary 1899 timetable is followed. 1899-1913 trains also ran west of District Line to Chesapeake Junction and Hyattsville (see the other features); from 7 Jul 1913 District Line was the Washington terminal, confirmed in 1931 (Evening Star 28 May 1931) and Aug 1934 (Evening Star 17 Aug 1934: weekdays 2, Saturdays 2, Sundays 3 trains each way to 'Seaside Park Station'). Receiver appointed Jan 1935 (same company); two trains a week by Jan 1935 (Evening Star 17 Jan 1935); ICC authorized abandonment (Washington Times 15 Mar 1935); last train 15 Apr 1935 per Wikipedia and varails (a varails caption says 14 Apr - the year is firm either way). Rails east of Maryland Park lifted summer 1935. headway_min is an estimate, not a timetable figure: the Sept 1899 timetable shows ~2 weekday locals each way plus Sunday trains, and 1934 shows 2-3 a day; off-season levels 1913-1934 not established.",
+      "sources": [
+       "Segment-level: Prince George's Enquirer 8 Dec 1899 p.4 (CBR time table eff. 10 Sep 1899) for the start; Evening Star 28 May 1931 p.15 and 17 Aug 1934 p.4 for District Line terminal service; Evening Star 17 Jan 1935 p.17 and Washington Times 15 Mar 1935 p.7 for the end and mileage; last-train day from Wikipedia/varails (secondary).",
+       "https://www.loc.gov/resource/sn89060124/1899-12-08/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn83045462/1931-05-28/ed-1/?sp=15",
+       "https://www.loc.gov/resource/sn83045462/1934-08-17/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn83045462/1935-01-17/ed-1/?sp=17",
+       "https://www.loc.gov/resource/sn84026749/1935-03-15/ed-1/?sp=7",
+       "https://en.wikipedia.org/wiki/Chesapeake_Beach_Railway",
+       "https://www.varails.com/non-virginia-railroads/the-chesapeake-beach-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.9111788,
+      38.8944279
+     ],
+     [
+      -76.9102691,
+      38.8942284
+     ],
+     [
+      -76.9070796,
+      38.8923619
+     ],
+     [
+      -76.9019255,
+      38.8879915
+     ],
+     [
+      -76.9007907,
+      38.8875473
+     ],
+     [
+      -76.8990076,
+      38.8871082
+     ],
+     [
+      -76.8908262,
+      38.8868178
+     ],
+     [
+      -76.8857896,
+      38.8868876
+     ],
+     [
+      -76.8826984,
+      38.8867133
+     ],
+     [
+      -76.8767077,
+      38.8858427
+     ],
+     [
+      -76.8688381,
+      38.8842382
+     ],
+     [
+      -76.867438,
+      38.8837005
+     ],
+     [
+      -76.8663315,
+      38.8830971
+     ],
+     [
+      -76.8656261,
+      38.8826117
+     ],
+     [
+      -76.8644205,
+      38.8814915
+     ],
+     [
+      -76.8635058,
+      38.8802544
+     ],
+     [
+      -76.8605223,
+      38.8748968
+     ],
+     [
+      -76.8587628,
+      38.8740616
+     ],
+     [
+      -76.8527546,
+      38.8705534
+     ],
+     [
+      -76.8312362,
+      38.8640999
+     ],
+     [
+      -76.8285432,
+      38.8636038
+     ],
+     [
+      -76.8183053,
+      38.8622923
+     ],
+     [
+      -76.8167174,
+      38.8618422
+     ],
+     [
+      -76.8145019,
+      38.860729
+     ],
+     [
+      -76.8132184,
+      38.8597578
+     ],
+     [
+      -76.7822054,
+      38.8322342
+     ],
+     [
+      -76.761653,
+      38.8157344
+     ],
+     [
+      -76.7357626,
+      38.7952146
+     ],
+     [
+      -76.7198601,
+      38.7823563
+     ],
+     [
+      -76.7190474,
+      38.781842
+     ],
+     [
+      -76.7177613,
+      38.7813485
+     ],
+     [
+      -76.7158113,
+      38.7811279
+     ],
+     [
+      -76.7034205,
+      38.7818477
+     ],
+     [
+      -76.6997407,
+      38.7816543
+     ],
+     [
+      -76.6964056,
+      38.7809962
+     ],
+     [
+      -76.6950122,
+      38.7805655
+     ],
+     [
+      -76.6914985,
+      38.7791374
+     ],
+     [
+      -76.665397,
+      38.7682039
+     ],
+     [
+      -76.661687,
+      38.7664839
+     ],
+     [
+      -76.6554811,
+      38.761573
+     ],
+     [
+      -76.604926,
+      38.7204439
+     ],
+     [
+      -76.584093,
+      38.7033417
+     ],
+     [
+      -76.5604672,
+      38.684219
+     ],
+     [
+      -76.5590724,
+      38.6837919
+     ],
+     [
+      -76.5567604,
+      38.6836223
+     ],
+     [
+      -76.5532574,
+      38.6828758
+     ],
+     [
+      -76.5514,
+      38.6829355
+     ],
+     [
+      -76.5500441,
+      38.6833721
+     ],
+     [
+      -76.5470347,
+      38.6847675
+     ],
+     [
+      -76.542841,
+      38.6871638
+     ],
+     [
+      -76.5375665,
+      38.6897431
+     ],
+     [
+      -76.5371843,
+      38.6898677
+     ],
+     [
+      -76.53546,
+      38.68984
+     ],
+     [
+      -76.53383,
+      38.68995
+     ],
+     [
+      -76.53341,
+      38.69007
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chesapeake Beach Railway",
+    "line": "Chesapeake Beach Railway: District Line – Upper Marlboro (1898)",
+    "id": "chesapeake-beach-railway-upper-marlboro-1898",
+    "color": "#a23b72",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: Wikipedia gives c.1899 running times of ~60 min express / ~90 min local over the ~27.6 mi Chesapeake Junction - Chesapeake Beach run (~30-45 km/h); 35 km/h is a midpoint estimate, not a sourced figure",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fetched 2026-10-23 and routed with opstrace.py: the old_railway_operator='Chesapeake Beach Railway' ways 169999407 and 245138410, untagged railway=abandoned / abandoned:railway=rail grade ways, the Chesapeake Beach Railroad Trail (Upper Marlboro area) and Chesapeake Beach Railway Trail (Fishing Creek), and West/East Chesapeake Beach Road (MD 260) ways that OSM tags railway=abandoned. OpenHistoricalMap was queried over the whole corridor and has no Chesapeake Beach Railway geometry.",
+    "geometry_quality": "Identical geometry to the western 10.2 mi of chesapeake-beach-railway-main (District Line to the grade vertex nearest Upper Marlboro, which passes about 0.9 km west of the town centre; the station's exact spot is not established). All traced from OSM abandoned-grade ways and the Chesapeake Beach Railroad Trail; no straight-line legs, no later-alignment stand-ins. Documented mileage is only an estimate (~12-13 mi from Chesapeake Junction, NOT SOURCED); 10.2 mi here plus 1.9 mi for the DC section = 12.1 mi.",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1898,
+      "headway_min": 480,
+      "note": "Opening section: Wikipedia dates the Hyattsville - Upper Marlboro opening to 5 Dec 1898 (day secondary). Primary: Prince George's Enquirer (Upper Marlboro) 9 Dec 1898 calls attention to the Chesapeake Beach Railroad time-table 'published in another column', and 16 Dec 1898 reports a station agent appointed at Upper Marlboro. This feature covers 1898 only (the map treats segment ends as inclusive) - from 1899 the same track is drawn by chesapeake-beach-railway-main. Only District Line - Upper Marlboro is drawn for 1898: the Chesapeake Junction and Hyattsville legs in 1898 rest on Wikipedia plus inference and are not drawn. headway_min is an estimate, not a timetable figure; the Dec 1898 timetable column was referenced but not located in the OCR.",
+      "sources": [
+       "Segment-level: Prince George's Enquirer 9 Dec 1898 p.3 and 16 Dec 1898 p.3 (time-table notice; Upper Marlboro station agent); 17 Mar 1899 p.3 (travel 'increasing daily'); opening day from Wikipedia (secondary).",
+       "https://www.loc.gov/resource/sn89060124/1898-12-09/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn89060124/1898-12-16/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn89060124/1899-03-17/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Chesapeake_Beach_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.9111788,
+      38.8944279
+     ],
+     [
+      -76.9102691,
+      38.8942284
+     ],
+     [
+      -76.9070796,
+      38.8923619
+     ],
+     [
+      -76.9019255,
+      38.8879915
+     ],
+     [
+      -76.9007907,
+      38.8875473
+     ],
+     [
+      -76.8990076,
+      38.8871082
+     ],
+     [
+      -76.8908262,
+      38.8868178
+     ],
+     [
+      -76.8857896,
+      38.8868876
+     ],
+     [
+      -76.8826984,
+      38.8867133
+     ],
+     [
+      -76.8767077,
+      38.8858427
+     ],
+     [
+      -76.8688381,
+      38.8842382
+     ],
+     [
+      -76.867438,
+      38.8837005
+     ],
+     [
+      -76.8663315,
+      38.8830971
+     ],
+     [
+      -76.8656261,
+      38.8826117
+     ],
+     [
+      -76.8644205,
+      38.8814915
+     ],
+     [
+      -76.8635058,
+      38.8802544
+     ],
+     [
+      -76.8605223,
+      38.8748968
+     ],
+     [
+      -76.8587628,
+      38.8740616
+     ],
+     [
+      -76.8527546,
+      38.8705534
+     ],
+     [
+      -76.8312362,
+      38.8640999
+     ],
+     [
+      -76.8285432,
+      38.8636038
+     ],
+     [
+      -76.8183053,
+      38.8622923
+     ],
+     [
+      -76.8167174,
+      38.8618422
+     ],
+     [
+      -76.8145019,
+      38.860729
+     ],
+     [
+      -76.8132184,
+      38.8597578
+     ],
+     [
+      -76.7822054,
+      38.8322342
+     ],
+     [
+      -76.761653,
+      38.8157344
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chesapeake Beach Railway",
+    "line": "Chesapeake Beach Railway: Chesapeake Junction – District Line",
+    "id": "chesapeake-beach-railway-dc-section",
+    "color": "#a23b72",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: Wikipedia gives c.1899 running times of ~60 min express / ~90 min local over the ~27.6 mi Chesapeake Junction - Chesapeake Beach run (~30-45 km/h); 35 km/h is a midpoint estimate, not a sourced figure",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fetched 2026-10-23 and routed with opstrace.py: the old_railway_operator='Chesapeake Beach Railway' ways 169999407 and 245138410, untagged railway=abandoned / abandoned:railway=rail grade ways, the Chesapeake Beach Railroad Trail (Upper Marlboro area) and Chesapeake Beach Railway Trail (Fishing Creek), and West/East Chesapeake Beach Road (MD 260) ways that OSM tags railway=abandoned. OpenHistoricalMap was queried over the whole corridor and has no Chesapeake Beach Railway geometry.",
+    "geometry_quality": "Traced 1.9 mi entirely on the OSM ways tagged old_railway_operator=Chesapeake Beach Railway (169999407, the former Southern Maryland grade through Deanwood/Benning), from their junction with the B&O Alexandria Branch (CSX) at Deanwood to the DC line at Seat Pleasant. Documented: 'two and a fifth miles' in the District (Evening Star 13 Nov 1905, Supreme Court ruling); East Washington Ry later held 2.631 mi Deanwood - Maryland Park (Wikipedia), which runs further into Maryland. 1.9 mi is ~14% short of 2.2 mi - the District Line end point may sit slightly west of the old station. No straight-line legs. Note the OSM way also drew the post-1913 freight stub; only the passenger years are drawn.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1913,
+      "headway_min": 480,
+      "note": "CBR passenger trains between Chesapeake Junction (Deanwood, DC) and District Line, as part of the through Hyattsville - Chesapeake Beach service. The Sept 1899 timetable lists 'Ches. Junct' and 'Wash'gton (Ches Junct)' ahead of Seat Pleasant. 1898 is very probable (Wikipedia has Dec 1898 trains from Hyattsville, which had to pass here) but no 1898 primary source names it, so it is not drawn. Ends 1913: the CBR discontinued Hyattsville - Chesapeake Junction service on Monday 7 Jul 1913 (Prince George's Enquirer 11 Jul 1913) and thereafter all passenger trains terminated at District Line. Freight continued on this stub (PEPCO Benning coal, B&O interchange) and it became the freight-only East Washington Railway in 1935/36, running to 1978 - not drawn (Rule 1). CONFLICT recorded: varails says the final 15 Apr 1935 train ran through to Chesapeake Junction - most likely an equipment move to the retained stub; one move is not service and is not drawn. The CBR's title to this right-of-way was disputed with the Washington, Potomac & Chesapeake (rent, 1911 lease, 1918 purchase), but the CBR ran the trains throughout. headway_min is an estimate, not a timetable figure.",
+      "sources": [
+       "Segment-level: Prince George's Enquirer 8 Dec 1899 p.4 (timetable naming Chesapeake Junction) for 1899; Prince George's Enquirer 11 Jul 1913 p.3 for the 1913 end; Evening Star 13 Nov 1905 p.2 for the DC mileage.",
+       "https://www.loc.gov/resource/sn89060124/1899-12-08/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn89060124/1913-07-11/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn83045462/1905-11-13/ed-1/?sp=2",
+       "https://en.wikipedia.org/wiki/Chesapeake_Beach_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.9407836,
+      38.9036739
+     ],
+     [
+      -76.9414174,
+      38.9024711
+     ],
+     [
+      -76.9414046,
+      38.9021014
+     ],
+     [
+      -76.9411478,
+      38.9016917
+     ],
+     [
+      -76.9407311,
+      38.9013232
+     ],
+     [
+      -76.9365642,
+      38.8996502
+     ],
+     [
+      -76.935653,
+      38.8994263
+     ],
+     [
+      -76.9345858,
+      38.8993516
+     ],
+     [
+      -76.9319359,
+      38.8995849
+     ],
+     [
+      -76.930037,
+      38.8998987
+     ],
+     [
+      -76.9285408,
+      38.8997766
+     ],
+     [
+      -76.9224417,
+      38.8978094
+     ],
+     [
+      -76.9202457,
+      38.8972084
+     ],
+     [
+      -76.9179412,
+      38.895612
+     ],
+     [
+      -76.9163184,
+      38.8949359
+     ],
+     [
+      -76.9148222,
+      38.8947152
+     ],
+     [
+      -76.9111788,
+      38.8944279
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chesapeake Beach Railway",
+    "line": "Chesapeake Beach Railway: Hyattsville – Chesapeake Junction",
+    "id": "chesapeake-beach-railway-hyattsville",
+    "color": "#a23b72",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: Wikipedia gives c.1899 running times of ~60 min express / ~90 min local over the ~27.6 mi Chesapeake Junction - Chesapeake Beach run (~30-45 km/h); 35 km/h is a midpoint estimate, not a sourced figure",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), fetched 2026-10-23 and routed with opstrace.py over CSX 'Alexandria Extension' and 'Capital Subdivision - Alexandria Branch' ways (incl. 97638092, 50929598); last ~0.3 mi at the Hyattsville end appended by hand from those two OSM ways.",
+    "geometry_quality": "DRAWN ON B&O TRACK: this is the Baltimore and Ohio's Alexandria Branch (today CSX's 'Alexandria Extension' / 'Capital Subdivision - Alexandria Branch' in OSM), over which CBR trains ran by agreement with the B&O; it is coloured CBR because it was the CBR's train. Traced 4.3 mi from the Alexandria Branch track at Hyattsville (about 38.9556 N, where the branch parallels the B&O Washington Branch north of the old Hyattsville station - the station's exact spot is not established) south through Cheverly to Chesapeake Junction at Deanwood, against a documented ~4-5 mi (estimate, NOT SOURCED). All on live OSM rail; no straight-line legs. The drawn track is the modern CSX alignment; any changes to the B&O branch since 1913 are not checked.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1913,
+      "headway_min": 480,
+      "note": "CBR trains on B&O trackage between Hyattsville (B&O Washington Branch station) and Chesapeake Junction. Sept 1899 timetable: '(C. B. Ry.)' trains leave Hyattsville for Chesapeake Junction and the Beach, with separate B&O trains connecting from Washington and Baltimore at Hyattsville - no CBR through running into a Washington station was found. Wikipedia says trains used this route from the Dec 1898 opening (secondary only; 1898 not drawn). Ends 1913: 'The Chesapeake Beach railway discontinued its train service between Chesapeake Junction and Hyattsville, on Monday' = 7 Jul 1913 (Prince George's Enquirer 11 Jul 1913), matching Wikipedia's date for the end of the B&O track agreement. CONFLICT recorded: varails says engine #1 hauled trains from Hyattsville 'into the 1920s' - contradicted by the primary 1913 notice and not followed. headway_min is an estimate, not a timetable figure.",
+      "sources": [
+       "Segment-level: Prince George's Enquirer 8 Dec 1899 p.4 (CBR trains from Hyattsville) for 1899; Prince George's Enquirer 11 Jul 1913 p.3 for the end.",
+       "https://www.loc.gov/resource/sn89060124/1899-12-08/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn89060124/1913-07-11/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Chesapeake_Beach_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.93802,
+      38.95557
+     ],
+     [
+      -76.93933,
+      38.95311
+     ],
+     [
+      -76.93958,
+      38.95237
+     ],
+     [
+      -76.9393034,
+      38.9506701
+     ],
+     [
+      -76.939059,
+      38.9502799
+     ],
+     [
+      -76.9377456,
+      38.9489872
+     ],
+     [
+      -76.9373841,
+      38.9479845
+     ],
+     [
+      -76.9386153,
+      38.9400901
+     ],
+     [
+      -76.9384739,
+      38.9376916
+     ],
+     [
+      -76.9380654,
+      38.9360529
+     ],
+     [
+      -76.9374667,
+      38.9347129
+     ],
+     [
+      -76.9362087,
+      38.9328938
+     ],
+     [
+      -76.9244065,
+      38.9199004
+     ],
+     [
+      -76.9237161,
+      38.91855
+     ],
+     [
+      -76.9235232,
+      38.9170419
+     ],
+     [
+      -76.9244367,
+      38.9137324
+     ],
+     [
+      -76.9247454,
+      38.9131432
+     ],
+     [
+      -76.9252691,
+      38.912636
+     ],
+     [
+      -76.9261344,
+      38.912219
+     ],
+     [
+      -76.9298526,
+      38.9112159
+     ],
+     [
+      -76.932613,
+      38.9099328
+     ],
+     [
+      -76.9407836,
+      38.9036739
+     ]
+    ]
+   }
+  }
+ ]
+}
