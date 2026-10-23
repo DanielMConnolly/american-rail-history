@@ -1,0 +1,3468 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Williamsport and North Branch, Halls (junction with the Reading's ex-Catawissa Williamsport line, Lycoming Co.) - Hughesville - Muncy Valley - Sonestown - Nordmont - Laporte - Satterfield (junction with the Lehigh Valley), 44.4 mi, PA; its predecessor the Muncy Creek Railway (Halls - Hughesville, 1872); and the 3 ft gauge Eagles Mere Railroad (Sonestown - Eagles Mere, 8 mi), which it leased 1901-1920. The main line is drawn in pieces because it opened in stages and each piece's earliest CONFIRMED passenger year differs. The whole W&NB is drawn only to 1911/1912: the digitized Laporte newspapers that carry its timetables stop in 1912, and no later source was found. The road ran to 11 Oct 1937. Research report: research/branches/williamsport_and_north_branch_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad -- en.wikipedia (cites Thomas T. Taber III, Muncy Valley Lifeline, 1995 ed.)",
+   "https://en.wikipedia.org/wiki/Eagles_Mere_Railroad -- en.wikipedia (after Hilton, American Narrow Gauge Railroads, 1997, p.486)",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf -- John Fowler, Pennsylvania Railroads (5), sections 474 (W&NB) and 391 (Eagles Mere RR)",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs3.pdf -- John Fowler, Pennsylvania Railroads (3), LV section 215 (Bernice - Satterfield - Towanda)",
+   "https://www.branchline.uk/jfpdf/pennsylvaniarrs2rdg.pdf -- John Fowler, RDG section 151 (Halls)",
+   "https://chroniclingamerica.loc.gov/lccn/sn86081853/ -- Sullivan Republican (Laporte), W&NB timetables 1891-1894",
+   "https://chroniclingamerica.loc.gov/lccn/sn86081854/ -- Republican News Item (Laporte), W&NB timetables 1897-1909, news 1904-1912",
+   "https://scpahistory.com/s/Dec-21-2016-Touring.pdf -- Sullivan County Historical Society (Sullivan Review Sept 1888)",
+   "https://handsonheritage.com/early-railroads-in-lycoming-county/ -- Hands-on Heritage (secondary)",
+   "https://www.muncyluminary.com/news/local-news/2023/09/19/local-history-buff-shares-stories-of-rr-industry/ -- Muncy Luminary 2023 (1908 ridership; secondary)",
+   "https://www.abandonedrails.com/williamsport-and-north-branch-railroad"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-23): old_railway_operator=\"Williamsport and North Branch Railway\" ways (whole main line, direct Satterfield line, Bernice branch); LV / State Line and Sullivan Branch ways 96821098, 130327721 (Bernice - Satterfield); 3 ft way 808452122 (Eagles Mere RR, OSM-named 'Susquehanna and Eagles Mere Railroad').",
+   "OpenHistoricalMap (2026-10-23): no railway ways in the corridor."
+  ],
+  "operator_split": "Muncy Creek Railway 1872-1882 (muncy-creek-halls-hughesville) -> Williamsport and North Branch Railroad from 1 Sep 1882 (reorganized as the W&NB Railway 1 May 1921 - same operator, not a split; PRR-backed financial control from 1888 - not a split, the W&NB's own managers ran the trains). Eagles Mere: own operation (emrr-sonestown-eagles-mere), W&NB lessee 1901-1920 (wnb-eagles-mere, W&NB colour), Eagles Mere Railway from 1922 (emry-sonestown-eagles-mere).",
+  "omitted": [
+   "Report block [3]: Muncy Creek wooden-rail extension Hughesville - Picture Rocks (1875 - early 1876) - drawable: NONE. No evidence it carried a passenger, and it took a different route from the 1884 line.",
+   "Report block [13]: Halls - Williamsport over the Reading (9.9 mi) - drawable: NONE. W&NB timetables print Williamsport, but whether W&NB trains ran through or connected at Halls is unresolved; the track is the Reading's (that Reading line is itself not yet on the map).",
+   "Report block [14]: Satterfield - Towanda over the Lehigh Valley (25.6 mi) - drawable: NONE. Trackage rights 'for its passenger trains' (Taber) are not evidence that W&NB trains ran; the 1897 table speaks of connections. Possible 1894 [ANCHOR] not recommended by the report.",
+   "Eagles Mere Park extension (1902-03, 2 mi): no passenger evidence.",
+   "Freight and industrial lines (Rule 1): Murray breaker spur via LV trackage (OSM 'Mine Road' W&NB ways 881167907, 130437364), Bernice branch 1894-1904 coal years, Wyoming & Sullivan, Nordmont Chemical, Big Run and Sones logging lines, the Susquehanna & Eagles Mere logging road, Eagles Mere Railway freight 1924-1927, W&NB freight/bridge traffic of the 1920s-30s.",
+   "All W&NB years after 1911/1912: not freight-only - passengers very probably ran on - but no source in hand dates them. The 11 Oct 1937 last train is an abandonment date and is not used."
+  ],
+  "existing_layer_note": "No existing feature for any of these companies anywhere in data/ (company strings and station names grepped; a bounding-box scan found only the S&NY and PRR features, which do not overlap). Colours are new, checked by script against every colour in use.",
+  "not_yet_sourced": [
+   "[OPEN] ends: every W&NB piece ends at its last CONFIRMED year (Halls - Hughesville 1911; Hughesville - Laporte - Birch Creek Junction and the Bernice branch 1912; Bernice - Satterfield over the LV 1907) because the Laporte papers stop in 1912. Taber, Muncy Valley Lifeline pp.48-57, any 1913-1937 Official Guide, the 1937 ICC abandonment docket or PA PSC discontinuance orders would settle the real end.",
+   "[OPEN] Eagles Mere ends: emrr-sonestown-eagles-mere 1898 (1899-1900 unconfirmed), wnb-eagles-mere 1908 (lease ran to 1920).",
+   "[OPEN] starts: Tivoli - Glen Mawr and Glen Mawr - Sonestown drawn from 1887, Sonestown - Nordmont from 1888, Laporte - Satterfield from 1894 - earliest direct evidence, later than the Taber openings (1884, 1885, Oct 1886, Sept 1893).",
+   "[ANCHOR] muncy-creek-halls-hughesville: 1875 only; 1876 if Fowler's undefined 'p' letter is the 1876 Rand McNally guide; continuity to 1882 unknown.",
+   "Through running Halls - Williamsport (Reading) and Satterfield - Towanda (LV) unresolved (blocks [13], [14]).",
+   "Bernice branch date conflict: 1894 (Taber p.23) vs June 1904 LV connection spur (RNI 19 May 1904).",
+   "Eagles Mere: 1920-1922 operator unknown; abandonment 1926 (en.wikipedia W&NB) vs 1928 (Hilton).",
+   "Bernice - Satterfield LV trace runs 0.9 mi longer than Fowler's LV mileposts (loop via Mildred in OSM).",
+   "Laporte depot site not located (piece boundary cut by milepost).",
+   "All headways and speeds are estimates except the 1894 end-to-end speed."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Muncy Creek Railway",
+    "line": "Muncy Creek Railway: Halls – Hughesville",
+    "id": "muncy-creek-halls-hughesville",
+    "color": "#998b16",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "Estimate, unsourced: no Muncy Creek Railway timetable read; the W&NB's 1894 timetable speed (34 km/h) is borrowed.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 5.5 mi against 5.5 mi documented (Fowler s.474, Hall's 0.0 - Hughesville 5.5), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Same geometry as wnb-halls-hughesville. LATER ALIGNMENT: this is the W&NB grade as rebuilt in 1883 after the Muncy Creek line was foreclosed; whether the 1872 Muncy Creek alignment was identical is not established, so the 1875 line may be drawn on a later alignment than its own era. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "ownership_split": "Predecessor company of the Williamsport and North Branch (foreclosed 9 Aug 1882, reorganized as the W&NB 1 Sep 1882). Identical geometry to wnb-halls-hughesville, which carries the W&NB years in the W&NB colour.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1875,
+      "headway_min": 360,
+      "note": "[ANCHOR] Muncy Creek Railway's own trains, Halls (Catawissa/Reading junction) - Hughesville, built 1872. 1875 is the single proven passenger year: Hughesville appears as a terminus of service in the 1875 Official Guide (Fowler, letter y). Service certainly ran wider both ways - 'in the mid-1870s there were two daily round trips between Hughesville and Halls' (Hands-on Heritage, secondary) - but no other year is confirmed. Fowler's letter p at Pennsdale and Lime Bluff probably means the 1876 Rand McNally guide, but p is undefined in that PDF's legend, so 1876 is not drawn. Whether service ran continuously to the 1882 foreclosure or lapsed before the 1883 rebuild is not established. Do not widen this anchor without a source. Headway estimated from 'two daily round trips'.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [2] - Fowler s.474 (Hughesville in the 1875 Official Guide), en.wikipedia after Taber 1995 pp.6-8 (built 1872, foreclosed 9 Aug 1882), Hands-on Heritage (two daily round trips, mid-1870s; secondary, unreferenced). Headway estimated.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://handsonheritage.com/early-railroads-in-lycoming-county/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.819617,
+      41.233174
+     ],
+     [
+      -76.820011,
+      41.233529
+     ],
+     [
+      -76.820257,
+      41.234005
+     ],
+     [
+      -76.820247,
+      41.234876
+     ],
+     [
+      -76.818208,
+      41.238092
+     ],
+     [
+      -76.817549,
+      41.238619
+     ],
+     [
+      -76.800302,
+      41.242586
+     ],
+     [
+      -76.783832,
+      41.239855
+     ],
+     [
+      -76.782062,
+      41.239475
+     ],
+     [
+      -76.758973,
+      41.22943
+     ],
+     [
+      -76.758276,
+      41.229455
+     ],
+     [
+      -76.746485,
+      41.232787
+     ],
+     [
+      -76.730016,
+      41.237708
+     ],
+     [
+      -76.729147,
+      41.23833
+     ],
+     [
+      -76.72773,
+      41.239763
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Halls – Hughesville",
+    "id": "wnb-halls-hughesville",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 5.5 mi against 5.5 mi documented (Fowler s.474, Hall's 0.0 - Hughesville 5.5), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Pennsdale lands at traced 1.5 mi (BL 1.5). Same geometry as muncy-creek-halls-hughesville. The 9.9 mi Halls - Williamsport on the Reading is NOT drawn (report block [13]). LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "W&NB trains Halls - Hughesville after the 1 Sep 1882 reorganization and the 1883 rebuild. Start is the earliest confirmed W&NB year (1884: Tivoli in the 1884 Official Guide, Fowler letter q, and 'three daily passenger runs from Hughesville to Picture Rocks' by 1884, Hands-on Heritage - both imply Halls - Hughesville trains); 1883 is possible but unconfirmed. In the W&NB public timetables of June 1891, Sept 1892, May 1894 and Sept 1897 (Sullivan Republican / Republican News Item). headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [1] - en.wikipedia/Taber (1882 reorganization, 1883 rebuild), Fowler s.474 (1884G at Tivoli), Hands-on Heritage (1884 runs), W&NB timetables in Sullivan Republican 1892-03-18 p2, 1894-06-29 p2 and Republican News Item 1898-06-23 p5; RNI 1911-06-30 p3 (1911). Headway estimated.",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://handsonheritage.com/early-railroads-in-lycoming-county/",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1911-06-30/ed-1/?sp=3"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1911,
+      "headway_min": 240,
+      "note": "W&NB public timetables 1900-1909 (Republican News Item, many issues). Ends 1911 [OPEN]: 'a Williamsport and North Branch passenger train' struck a team near Chippewa (RNI 30 Jun 1911, from the Hughesville Mail). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [1] - en.wikipedia/Taber (1882 reorganization, 1883 rebuild), Fowler s.474 (1884G at Tivoli), Hands-on Heritage (1884 runs), W&NB timetables in Sullivan Republican 1892-03-18 p2, 1894-06-29 p2 and Republican News Item 1898-06-23 p5; RNI 1911-06-30 p3 (1911). Headway estimated.",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://handsonheritage.com/early-railroads-in-lycoming-county/",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1911-06-30/ed-1/?sp=3"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.819617,
+      41.233174
+     ],
+     [
+      -76.820011,
+      41.233529
+     ],
+     [
+      -76.820257,
+      41.234005
+     ],
+     [
+      -76.820247,
+      41.234876
+     ],
+     [
+      -76.818208,
+      41.238092
+     ],
+     [
+      -76.817549,
+      41.238619
+     ],
+     [
+      -76.800302,
+      41.242586
+     ],
+     [
+      -76.783832,
+      41.239855
+     ],
+     [
+      -76.782062,
+      41.239475
+     ],
+     [
+      -76.758973,
+      41.22943
+     ],
+     [
+      -76.758276,
+      41.229455
+     ],
+     [
+      -76.746485,
+      41.232787
+     ],
+     [
+      -76.730016,
+      41.237708
+     ],
+     [
+      -76.729147,
+      41.23833
+     ],
+     [
+      -76.72773,
+      41.239763
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Hughesville – Tivoli",
+    "id": "wnb-hughesville-tivoli",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 5.2 mi against 5.1 mi documented (Fowler s.474, Hughesville 5.5 - Essick/Tivoli 10.6), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Picture Rocks lands at traced 8.6 mi (BL 8.5). The 1875-76 wooden-rail extension to Picture Rocks (report block [3]) took a different route and is not drawn. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "Extension from Hughesville via Picture Rocks to Tivoli (Chamouni, later Essick) - construction resumed late 1883, Glen Mawr reached 1884 (en.wikipedia/Taber). 1884 confirmed: Tivoli in the 1884 Official Guide (Fowler q); 'three daily passenger runs from Hughesville to Picture Rocks' by 1884 (Hands-on Heritage, secondary). Tivoli picnic grove drew summer excursions; stages from Chamouni/Picture Rocks to the Highland Lake hotels (1891 timetable). headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [4] - en.wikipedia/Taber (1883-84 construction), Fowler s.474 (1884G), Hands-on Heritage (1884), Sullivan Republican 1892-03-18 p2 (1891 TT), RNI 1912-06-28 p1 (1912). Headway estimated.",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://handsonheritage.com/early-railroads-in-lycoming-county/",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "W&NB public timetables 1900-1909. Ends 1912 [OPEN]: the 4 Jul 1912 excursion trains left Hughesville 7:55, Picture Rocks 8:00, Essick 8:05 (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [4] - en.wikipedia/Taber (1883-84 construction), Fowler s.474 (1884G), Hands-on Heritage (1884), Sullivan Republican 1892-03-18 p2 (1891 TT), RNI 1912-06-28 p1 (1912). Headway estimated.",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://handsonheritage.com/early-railroads-in-lycoming-county/",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.72773,
+      41.239763
+     ],
+     [
+      -76.722785,
+      41.244767
+     ],
+     [
+      -76.722452,
+      41.245001
+     ],
+     [
+      -76.721251,
+      41.245316
+     ],
+     [
+      -76.720231,
+      41.245752
+     ],
+     [
+      -76.71948,
+      41.246397
+     ],
+     [
+      -76.718944,
+      41.247204
+     ],
+     [
+      -76.718708,
+      41.248301
+     ],
+     [
+      -76.718182,
+      41.253987
+     ],
+     [
+      -76.718536,
+      41.25506
+     ],
+     [
+      -76.719749,
+      41.257521
+     ],
+     [
+      -76.719824,
+      41.258287
+     ],
+     [
+      -76.719319,
+      41.261045
+     ],
+     [
+      -76.719234,
+      41.263239
+     ],
+     [
+      -76.717227,
+      41.272722
+     ],
+     [
+      -76.717388,
+      41.273432
+     ],
+     [
+      -76.718365,
+      41.27527
+     ],
+     [
+      -76.718354,
+      41.275786
+     ],
+     [
+      -76.713183,
+      41.284123
+     ],
+     [
+      -76.712119,
+      41.286421
+     ],
+     [
+      -76.710821,
+      41.287566
+     ],
+     [
+      -76.71007,
+      41.287896
+     ],
+     [
+      -76.709233,
+      41.288033
+     ],
+     [
+      -76.708042,
+      41.287904
+     ],
+     [
+      -76.705327,
+      41.287164
+     ],
+     [
+      -76.703686,
+      41.286574
+     ],
+     [
+      -76.701712,
+      41.28634
+     ],
+     [
+      -76.70036,
+      41.286429
+     ],
+     [
+      -76.698622,
+      41.28713
+     ],
+     [
+      -76.69624,
+      41.28842
+     ],
+     [
+      -76.69359,
+      41.289637
+     ],
+     [
+      -76.69285,
+      41.290283
+     ],
+     [
+      -76.691461,
+      41.292721
+     ],
+     [
+      -76.691375,
+      41.294406
+     ],
+     [
+      -76.69197,
+      41.296252
+     ],
+     [
+      -76.691841,
+      41.296792
+     ],
+     [
+      -76.691541,
+      41.297175
+     ],
+     [
+      -76.691144,
+      41.297505
+     ],
+     [
+      -76.690992,
+      41.297558
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Tivoli – Glen Mawr",
+    "id": "wnb-tivoli-glen-mawr",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 2.5 mi against 2.5 mi documented (Fowler s.474, Essick 10.6 - Glen Mawr 13.1), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "Glen Mawr was the 1884-85 terminus (opened 1884 per en.wikipedia/Taber). Drawn from 1887, the earliest CONFIRMED passenger year (Corson in the 1887 Official Guide, Fowler 'Corson 1887G') - not the opening; 1884-1886 service is very probable but not directly evidenced. In the 1891, 1892, 1894 and 1897 timetables. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [5] - Fowler s.474 (Corson 1887G), en.wikipedia/Taber (1884 opening), Sullivan Republican 1892-03-18 p2, RNI 1912-06-28 p1. Headway estimated.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "W&NB timetables 1900-1909. Ends 1912 [OPEN]: Glen Mawr 8:10 on the 4 Jul 1912 excursion schedule (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [5] - Fowler s.474 (Corson 1887G), en.wikipedia/Taber (1884 opening), Sullivan Republican 1892-03-18 p2, RNI 1912-06-28 p1. Headway estimated.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.690992,
+      41.297558
+     ],
+     [
+      -76.690511,
+      41.297723
+     ],
+     [
+      -76.687743,
+      41.29815
+     ],
+     [
+      -76.68535,
+      41.298263
+     ],
+     [
+      -76.684685,
+      41.298376
+     ],
+     [
+      -76.683376,
+      41.298916
+     ],
+     [
+      -76.681992,
+      41.300278
+     ],
+     [
+      -76.67946,
+      41.305589
+     ],
+     [
+      -76.678956,
+      41.306347
+     ],
+     [
+      -76.678259,
+      41.306935
+     ],
+     [
+      -76.67739,
+      41.307169
+     ],
+     [
+      -76.675534,
+      41.307362
+     ],
+     [
+      -76.674171,
+      41.307274
+     ],
+     [
+      -76.671058,
+      41.306792
+     ],
+     [
+      -76.669676,
+      41.306738
+     ],
+     [
+      -76.668689,
+      41.306887
+     ],
+     [
+      -76.659204,
+      41.311174
+     ],
+     [
+      -76.65355,
+      41.313116
+     ],
+     [
+      -76.653082,
+      41.313234
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Glen Mawr – Sonestown",
+    "id": "wnb-glen-mawr-sonestown",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 8.2 mi against 8.2 mi documented (Fowler s.474, Glen Mawr 13.1 - Sonestown 21.3), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Muncy Valley lands at traced 19.0 mi (BL 18.9). LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "Via Edkins, Strawbridge, Beech Glen (Stroup's) and Muncy Valley; Sonestown reached 1885 (en.wikipedia/Taber). Drawn from 1887, the earliest CONFIRMED passenger year (Stroup's in the 1887 Official Guide; Glidewell, beyond Sonestown, in the 1887 company timetable - Fowler) - 1885-1886 very probable but not evidenced. Stages from Muncy Valley to Eagles Mere and Forksville before 1892 (1891 TT); Eagles Mere Railroad interchange at Sonestown from 1 Jul 1892. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [6] - Fowler s.474 (Stroup's 1887G, Glidewell 1887t), en.wikipedia/Taber (1885), Sullivan Republican 1892-03-18 p2, RNI 1898-06-23 p5, RNI 1912-06-28 p1. Headway estimated.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "W&NB timetables 1900-1909. Ends 1912 [OPEN]: Strawbridge 8:19, Muncy Valley 8:24, Sonestown 8:30 on the 4 Jul 1912 excursion schedule (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [6] - Fowler s.474 (Stroup's 1887G, Glidewell 1887t), en.wikipedia/Taber (1885), Sullivan Republican 1892-03-18 p2, RNI 1898-06-23 p5, RNI 1912-06-28 p1. Headway estimated.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.653082,
+      41.313234
+     ],
+     [
+      -76.647821,
+      41.314551
+     ],
+     [
+      -76.643132,
+      41.313938
+     ],
+     [
+      -76.641899,
+      41.313592
+     ],
+     [
+      -76.641395,
+      41.313068
+     ],
+     [
+      -76.640676,
+      41.310667
+     ],
+     [
+      -76.639646,
+      41.309546
+     ],
+     [
+      -76.637886,
+      41.308894
+     ],
+     [
+      -76.637157,
+      41.308813
+     ],
+     [
+      -76.636266,
+      41.308926
+     ],
+     [
+      -76.635129,
+      41.309377
+     ],
+     [
+      -76.634077,
+      41.310264
+     ],
+     [
+      -76.631363,
+      41.315196
+     ],
+     [
+      -76.630151,
+      41.316694
+     ],
+     [
+      -76.6269,
+      41.318677
+     ],
+     [
+      -76.625838,
+      41.319096
+     ],
+     [
+      -76.624808,
+      41.319321
+     ],
+     [
+      -76.623349,
+      41.319136
+     ],
+     [
+      -76.622394,
+      41.318652
+     ],
+     [
+      -76.619722,
+      41.316428
+     ],
+     [
+      -76.61866,
+      41.315107
+     ],
+     [
+      -76.618199,
+      41.314768
+     ],
+     [
+      -76.616922,
+      41.314462
+     ],
+     [
+      -76.612802,
+      41.31306
+     ],
+     [
+      -76.61057,
+      41.3119
+     ],
+     [
+      -76.609734,
+      41.311674
+     ],
+     [
+      -76.606011,
+      41.311102
+     ],
+     [
+      -76.601721,
+      41.312403
+     ],
+     [
+      -76.600721,
+      41.312834
+     ],
+     [
+      -76.597728,
+      41.314567
+     ],
+     [
+      -76.597149,
+      41.315058
+     ],
+     [
+      -76.591795,
+      41.320522
+     ],
+     [
+      -76.589327,
+      41.324857
+     ],
+     [
+      -76.588469,
+      41.327032
+     ],
+     [
+      -76.588029,
+      41.329038
+     ],
+     [
+      -76.587482,
+      41.336168
+     ],
+     [
+      -76.586763,
+      41.340252
+     ],
+     [
+      -76.586248,
+      41.341339
+     ],
+     [
+      -76.585401,
+      41.342032
+     ],
+     [
+      -76.583255,
+      41.342991
+     ],
+     [
+      -76.582086,
+      41.34324
+     ],
+     [
+      -76.578524,
+      41.343039
+     ],
+     [
+      -76.576217,
+      41.343144
+     ],
+     [
+      -76.573696,
+      41.342769
+     ],
+     [
+      -76.571227,
+      41.342932
+     ],
+     [
+      -76.567119,
+      41.34283
+     ],
+     [
+      -76.560156,
+      41.341807
+     ],
+     [
+      -76.55864,
+      41.341818
+     ],
+     [
+      -76.557586,
+      41.342043
+     ],
+     [
+      -76.553955,
+      41.343796
+     ],
+     [
+      -76.552547,
+      41.345029
+     ],
+     [
+      -76.551916,
+      41.345931
+     ],
+     [
+      -76.551867,
+      41.346538
+     ],
+     [
+      -76.5522,
+      41.347396
+     ],
+     [
+      -76.551702,
+      41.349703
+     ],
+     [
+      -76.55176,
+      41.351216
+     ],
+     [
+      -76.551985,
+      41.351887
+     ],
+     [
+      -76.552951,
+      41.353126
+     ],
+     [
+      -76.553052,
+      41.353722
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Sonestown – Nordmont",
+    "id": "wnb-sonestown-nordmont",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 5.4 mi against 5.7 mi documented (Fowler s.474, Sonestown 21.3 - Nordmont 27.0), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Nordmont lands at traced 26.8 mi (BL 27.0). LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "Via Glidewell and Long Brook to Nordmont (ex Elk Lick), opened Oct 1886 (en.wikipedia/Taber); Nordmont was the terminus 1886-1893, with stages on to Laporte, Dushore and Towanda (1891 TT). Drawn from 1888: 'At Nordmont, the northern terminus of the Williamsport and North Branch Railroad, a passenger car has been ... set down on the platform to serve as a depot' (Sullivan Review, Sept 1888, quoted by the Sullivan County Historical Society). The Sonestown - Glidewell part alone is confirmed from 1887 (company TT, Fowler 'Glidewell 1887t'), but Glidewell is not milepost-located, so the whole piece is drawn from 1888. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [7] - SCPA (Sullivan Review Sept 1888), Fowler s.474 (Glidewell 1887t), en.wikipedia/Taber (Oct 1886), Sullivan Republican 1892-03-18 p2, RNI 1910-02-24 p2, RNI 1912-06-28 p1. Headway estimated.",
+       "https://scpahistory.com/s/Dec-21-2016-Touring.pdf",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1910-02-24/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "W&NB timetables 1900-1909; 1910 wreck below Nordmont 'held up the north bound passenger train' (RNI 24 Feb 1910). Ends 1912 [OPEN]: Long Brook 8:42, Nordmont 8:45 on the 4 Jul 1912 excursion schedule (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [7] - SCPA (Sullivan Review Sept 1888), Fowler s.474 (Glidewell 1887t), en.wikipedia/Taber (Oct 1886), Sullivan Republican 1892-03-18 p2, RNI 1910-02-24 p2, RNI 1912-06-28 p1. Headway estimated.",
+       "https://scpahistory.com/s/Dec-21-2016-Touring.pdf",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://www.loc.gov/resource/sn86081853/1892-03-18/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1910-02-24/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.553052,
+      41.353722
+     ],
+     [
+      -76.553072,
+      41.353843
+     ],
+     [
+      -76.552856,
+      41.354438
+     ],
+     [
+      -76.552436,
+      41.35498
+     ],
+     [
+      -76.551622,
+      41.355493
+     ],
+     [
+      -76.548394,
+      41.355756
+     ],
+     [
+      -76.547439,
+      41.355587
+     ],
+     [
+      -76.547152,
+      41.355436
+     ],
+     [
+      -76.544797,
+      41.353116
+     ],
+     [
+      -76.544025,
+      41.352697
+     ],
+     [
+      -76.543639,
+      41.352617
+     ],
+     [
+      -76.54255,
+      41.352689
+     ],
+     [
+      -76.539808,
+      41.353414
+     ],
+     [
+      -76.538907,
+      41.353946
+     ],
+     [
+      -76.53748,
+      41.355146
+     ],
+     [
+      -76.536643,
+      41.355472
+     ],
+     [
+      -76.534744,
+      41.355395
+     ],
+     [
+      -76.530807,
+      41.354615
+     ],
+     [
+      -76.528936,
+      41.354385
+     ],
+     [
+      -76.527353,
+      41.354826
+     ],
+     [
+      -76.525768,
+      41.355699
+     ],
+     [
+      -76.525418,
+      41.355971
+     ],
+     [
+      -76.524503,
+      41.35736
+     ],
+     [
+      -76.523988,
+      41.357765
+     ],
+     [
+      -76.522914,
+      41.358073
+     ],
+     [
+      -76.520065,
+      41.358216
+     ],
+     [
+      -76.519372,
+      41.358422
+     ],
+     [
+      -76.518182,
+      41.359177
+     ],
+     [
+      -76.516343,
+      41.361348
+     ],
+     [
+      -76.515758,
+      41.363715
+     ],
+     [
+      -76.515155,
+      41.365058
+     ],
+     [
+      -76.512544,
+      41.368207
+     ],
+     [
+      -76.512055,
+      41.368572
+     ],
+     [
+      -76.510949,
+      41.368879
+     ],
+     [
+      -76.509646,
+      41.36902
+     ],
+     [
+      -76.508394,
+      41.369557
+     ],
+     [
+      -76.507773,
+      41.369683
+     ],
+     [
+      -76.507087,
+      41.369644
+     ],
+     [
+      -76.506415,
+      41.369423
+     ],
+     [
+      -76.506079,
+      41.369184
+     ],
+     [
+      -76.505273,
+      41.36793
+     ],
+     [
+      -76.504855,
+      41.367628
+     ],
+     [
+      -76.504255,
+      41.367448
+     ],
+     [
+      -76.503588,
+      41.367394
+     ],
+     [
+      -76.502504,
+      41.367572
+     ],
+     [
+      -76.501477,
+      41.3675
+     ],
+     [
+      -76.499669,
+      41.366738
+     ],
+     [
+      -76.49844,
+      41.366428
+     ],
+     [
+      -76.497038,
+      41.366276
+     ],
+     [
+      -76.493694,
+      41.366341
+     ],
+     [
+      -76.492067,
+      41.366598
+     ],
+     [
+      -76.49093,
+      41.367162
+     ],
+     [
+      -76.48924,
+      41.368334
+     ],
+     [
+      -76.486718,
+      41.369363
+     ],
+     [
+      -76.486045,
+      41.369809
+     ],
+     [
+      -76.485291,
+      41.370831
+     ],
+     [
+      -76.483257,
+      41.372697
+     ],
+     [
+      -76.482084,
+      41.375079
+     ],
+     [
+      -76.481233,
+      41.37612
+     ],
+     [
+      -76.478814,
+      41.377127
+     ],
+     [
+      -76.475509,
+      41.378173
+     ],
+     [
+      -76.474984,
+      41.378334
+     ],
+     [
+      -76.473766,
+      41.378455
+     ],
+     [
+      -76.473272,
+      41.378861
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Nordmont – Laporte",
+    "id": "wnb-nordmont-laporte",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 7.1 mi against 7.0 mi documented (Fowler s.474, Nordmont 27.0 - La Porte 34.0), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Includes the Nordmont horseshoe (the grade runs south-west from Nordmont, turns north and climbs back north-east past Deep Hollow), which opstrace's despike step deleted (traced 3.0 mi short) until it was switched off. Mokoma lands at traced 32.9 mi (BL 33.0). The Laporte end is cut at traced 33.9 mi = Mokoma + Fowler's 1.0 mi, because the Laporte geocode is the borough's area centroid 0.6 km off the grade; the depot site itself was not located. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "Nordmont - Laporte, the Sullivan County seat. Exact start: 'On Saturday evening August 26th, the Williamsport & North Branch passenger train will be run through from Nordmont to Laporte, for its first trip and beginning on Monday morning regular trains will leave Laporte at 7:30 a.m.' (Sullivan Republican 25 Aug 1893); a stage met 'the trains at the Laporte station' a week later (SR 1 Sep 1893). In the May 1894 and Sept 1897 timetables. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [8] - Sullivan Republican 1893-08-25 p3 and 1893-09-01 p3 (exact opening), 1894-06-29 p2; RNI 1898-06-23 p5, 1911-06-30 p3, 1912-06-28 p1. Headway estimated.",
+       "https://www.loc.gov/resource/sn86081853/1893-08-25/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081853/1893-09-01/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1911-06-30/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "Timetables 1900-1909 (Mokoma station from the Nov 1900 table). Lake Mokoma July 4 excursions 1903, 1911 and 1912. Ends 1912 [OPEN]: excursion trains to Lake Mokoma, returning 'for both Bernice and Hughesville', 4 Jul 1912 (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [8] - Sullivan Republican 1893-08-25 p3 and 1893-09-01 p3 (exact opening), 1894-06-29 p2; RNI 1898-06-23 p5, 1911-06-30 p3, 1912-06-28 p1. Headway estimated.",
+       "https://www.loc.gov/resource/sn86081853/1893-08-25/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081853/1893-09-01/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1911-06-30/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.473272,
+      41.378861
+     ],
+     [
+      -76.472987,
+      41.379095
+     ],
+     [
+      -76.473024,
+      41.379936
+     ],
+     [
+      -76.473212,
+      41.380133
+     ],
+     [
+      -76.473615,
+      41.380387
+     ],
+     [
+      -76.474427,
+      41.380548
+     ],
+     [
+      -76.476994,
+      41.379813
+     ],
+     [
+      -76.479061,
+      41.379483
+     ],
+     [
+      -76.479863,
+      41.379208
+     ],
+     [
+      -76.481086,
+      41.378339
+     ],
+     [
+      -76.482824,
+      41.37784
+     ],
+     [
+      -76.483704,
+      41.377437
+     ],
+     [
+      -76.484251,
+      41.37701
+     ],
+     [
+      -76.484487,
+      41.376568
+     ],
+     [
+      -76.484916,
+      41.374708
+     ],
+     [
+      -76.485571,
+      41.373806
+     ],
+     [
+      -76.486193,
+      41.373323
+     ],
+     [
+      -76.486783,
+      41.373114
+     ],
+     [
+      -76.489145,
+      41.373093
+     ],
+     [
+      -76.489724,
+      41.372872
+     ],
+     [
+      -76.489962,
+      41.372581
+     ],
+     [
+      -76.490017,
+      41.371304
+     ],
+     [
+      -76.490234,
+      41.37106
+     ],
+     [
+      -76.491913,
+      41.370255
+     ],
+     [
+      -76.492972,
+      41.36946
+     ],
+     [
+      -76.493474,
+      41.369228
+     ],
+     [
+      -76.494647,
+      41.369225
+     ],
+     [
+      -76.498038,
+      41.370336
+     ],
+     [
+      -76.499326,
+      41.370521
+     ],
+     [
+      -76.501536,
+      41.370513
+     ],
+     [
+      -76.502143,
+      41.370718
+     ],
+     [
+      -76.503795,
+      41.371845
+     ],
+     [
+      -76.50484,
+      41.372365
+     ],
+     [
+      -76.505398,
+      41.372784
+     ],
+     [
+      -76.505698,
+      41.373202
+     ],
+     [
+      -76.505726,
+      41.373685
+     ],
+     [
+      -76.505404,
+      41.374244
+     ],
+     [
+      -76.504149,
+      41.375396
+     ],
+     [
+      -76.503441,
+      41.375726
+     ],
+     [
+      -76.501091,
+      41.376354
+     ],
+     [
+      -76.500592,
+      41.376728
+     ],
+     [
+      -76.500332,
+      41.377129
+     ],
+     [
+      -76.50048,
+      41.377569
+     ],
+     [
+      -76.500866,
+      41.377867
+     ],
+     [
+      -76.50484,
+      41.379257
+     ],
+     [
+      -76.50572,
+      41.379917
+     ],
+     [
+      -76.505956,
+      41.380335
+     ],
+     [
+      -76.505944,
+      41.382427
+     ],
+     [
+      -76.505677,
+      41.38333
+     ],
+     [
+      -76.502909,
+      41.385407
+     ],
+     [
+      -76.501857,
+      41.38597
+     ],
+     [
+      -76.500355,
+      41.38729
+     ],
+     [
+      -76.496064,
+      41.389922
+     ],
+     [
+      -76.495334,
+      41.39076
+     ],
+     [
+      -76.493896,
+      41.393593
+     ],
+     [
+      -76.493768,
+      41.394148
+     ],
+     [
+      -76.494053,
+      41.395642
+     ],
+     [
+      -76.493998,
+      41.39643
+     ],
+     [
+      -76.492792,
+      41.39925
+     ],
+     [
+      -76.49261,
+      41.400071
+     ],
+     [
+      -76.492245,
+      41.402477
+     ],
+     [
+      -76.492271,
+      41.404988
+     ],
+     [
+      -76.492779,
+      41.406926
+     ],
+     [
+      -76.494315,
+      41.408803
+     ],
+     [
+      -76.494475,
+      41.409381
+     ],
+     [
+      -76.494318,
+      41.410147
+     ],
+     [
+      -76.492348,
+      41.413059
+     ],
+     [
+      -76.489567,
+      41.41847
+     ],
+     [
+      -76.488039,
+      41.420403
+     ],
+     [
+      -76.485035,
+      41.422897
+     ],
+     [
+      -76.483887,
+      41.424057
+     ],
+     [
+      -76.483586,
+      41.424604
+     ],
+     [
+      -76.483676,
+      41.425544
+     ],
+     [
+      -76.484423,
+      41.427412
+     ],
+     [
+      -76.485329,
+      41.42887
+     ],
+     [
+      -76.485975,
+      41.429361
+     ],
+     [
+      -76.488239,
+      41.430663
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Laporte – Birch Creek Junction",
+    "id": "wnb-laporte-birch-creek-junction",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 8.9 mi against 9.0 mi documented (report block [9], approx: Fowler La Porte 34.0 - Bernice Road 42.7, the fork itself not milepost-located), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Ringdale lands at traced 39.8 mi (BL 39.7); Birch Creek Junction is at traced 42.8 mi, just past Fowler's Bernice Road (42.7), consistent with the report. The junction is pinned at the fork of W&NB ways 96821099 / 96821100 / 96821101. Two shape points on the W&NB-tagged ways themselves (not stations) carry the trace round the grade's northward swing above Laporte, which is more than 1.6x its chord. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "Laporte - Laporte Tannery - Ringdale (Loyalsock trestle) - Bernice Road - Birch Creek Junction, the common section to both later Satterfield routes. Opened Sept 1893 to Dohm's Summit (en.wikipedia/Taber), but through trains were only promised 'about September 1st' (SR 25 Aug 1893, future tense), so drawn from 1894, the earliest CONFIRMED year (21 May 1894 timetable: Laporte, Ringdale, Satterfield). In the Sept 1897 table. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [9] - Sullivan Republican 1894-06-29 p2 (May 1894 TT), RNI 1898-06-23 p5, 1901-02-14, 1905-10-05, 1912-06-28 p1; Fowler s.474 (Bernice Road 1900G). Headway estimated.",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "Bernice Road in the 1900 Official Guide (Fowler) and the Nov 1900 and Sept 1905 timetables. Ends 1912 [OPEN]: the 4 Jul 1912 return excursion ran 'for ... Bernice' (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [9] - Sullivan Republican 1894-06-29 p2 (May 1894 TT), RNI 1898-06-23 p5, 1901-02-14, 1905-10-05, 1912-06-28 p1; Fowler s.474 (Bernice Road 1900G). Headway estimated.",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.488239,
+      41.430663
+     ],
+     [
+      -76.489365,
+      41.431311
+     ],
+     [
+      -76.489433,
+      41.43123
+     ],
+     [
+      -76.491849,
+      41.43334
+     ],
+     [
+      -76.493146,
+      41.433933
+     ],
+     [
+      -76.493479,
+      41.434285
+     ],
+     [
+      -76.493565,
+      41.435077
+     ],
+     [
+      -76.496016,
+      41.437395
+     ],
+     [
+      -76.497109,
+      41.438688
+     ],
+     [
+      -76.498833,
+      41.443531
+     ],
+     [
+      -76.500168,
+      41.445437
+     ],
+     [
+      -76.50224,
+      41.447325
+     ],
+     [
+      -76.504854,
+      41.449246
+     ],
+     [
+      -76.50557,
+      41.451552
+     ],
+     [
+      -76.50665,
+      41.454142
+     ],
+     [
+      -76.506649,
+      41.45476
+     ],
+     [
+      -76.50548,
+      41.456611
+     ],
+     [
+      -76.505442,
+      41.458293
+     ],
+     [
+      -76.504859,
+      41.458852
+     ],
+     [
+      -76.501385,
+      41.459447
+     ],
+     [
+      -76.500761,
+      41.459443
+     ],
+     [
+      -76.500339,
+      41.459259
+     ],
+     [
+      -76.499264,
+      41.458268
+     ],
+     [
+      -76.498086,
+      41.457861
+     ],
+     [
+      -76.497329,
+      41.457786
+     ],
+     [
+      -76.492731,
+      41.459207
+     ],
+     [
+      -76.491022,
+      41.459288
+     ],
+     [
+      -76.490398,
+      41.459219
+     ],
+     [
+      -76.489504,
+      41.458876
+     ],
+     [
+      -76.488061,
+      41.457816
+     ],
+     [
+      -76.486017,
+      41.456705
+     ],
+     [
+      -76.483123,
+      41.454463
+     ],
+     [
+      -76.481701,
+      41.454023
+     ],
+     [
+      -76.480507,
+      41.4538
+     ],
+     [
+      -76.475696,
+      41.453733
+     ],
+     [
+      -76.475255,
+      41.45384
+     ],
+     [
+      -76.474568,
+      41.454284
+     ],
+     [
+      -76.47367,
+      41.455142
+     ],
+     [
+      -76.472966,
+      41.455421
+     ],
+     [
+      -76.472235,
+      41.455632
+     ],
+     [
+      -76.471335,
+      41.455706
+     ],
+     [
+      -76.470358,
+      41.455612
+     ],
+     [
+      -76.464964,
+      41.454711
+     ],
+     [
+      -76.464183,
+      41.454339
+     ],
+     [
+      -76.463002,
+      41.453413
+     ],
+     [
+      -76.461525,
+      41.452806
+     ],
+     [
+      -76.460744,
+      41.452619
+     ],
+     [
+      -76.457786,
+      41.452534
+     ],
+     [
+      -76.457143,
+      41.452418
+     ],
+     [
+      -76.451712,
+      41.4493
+     ],
+     [
+      -76.451114,
+      41.449101
+     ],
+     [
+      -76.450324,
+      41.449108
+     ],
+     [
+      -76.449925,
+      41.449243
+     ],
+     [
+      -76.448071,
+      41.450379
+     ],
+     [
+      -76.445733,
+      41.451368
+     ],
+     [
+      -76.443555,
+      41.452555
+     ],
+     [
+      -76.442108,
+      41.45352
+     ],
+     [
+      -76.441303,
+      41.454762
+     ],
+     [
+      -76.44059,
+      41.456739
+     ],
+     [
+      -76.438877,
+      41.458549
+     ],
+     [
+      -76.437176,
+      41.46144
+     ],
+     [
+      -76.436791,
+      41.461941
+     ],
+     [
+      -76.433364,
+      41.464558
+     ],
+     [
+      -76.433144,
+      41.464887
+     ],
+     [
+      -76.432928,
+      41.466158
+     ],
+     [
+      -76.432392,
+      41.466644
+     ],
+     [
+      -76.424958,
+      41.46867
+     ],
+     [
+      -76.421116,
+      41.470399
+     ],
+     [
+      -76.420088,
+      41.470499
+     ],
+     [
+      -76.419383,
+      41.470414
+     ],
+     [
+      -76.417908,
+      41.469971
+     ],
+     [
+      -76.417039,
+      41.469969
+     ],
+     [
+      -76.415315,
+      41.470343
+     ],
+     [
+      -76.414342,
+      41.47031
+     ],
+     [
+      -76.412682,
+      41.469896
+     ],
+     [
+      -76.411841,
+      41.46976
+     ],
+     [
+      -76.411204,
+      41.469801
+     ],
+     [
+      -76.409233,
+      41.47027
+     ],
+     [
+      -76.403441,
+      41.472257
+     ],
+     [
+      -76.402182,
+      41.472139
+     ],
+     [
+      -76.400721,
+      41.471592
+     ],
+     [
+      -76.3998,
+      41.471592
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Birch Creek Junction – Satterfield",
+    "id": "wnb-birch-creek-junction-satterfield",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 1.7 mi against 2.0 mi documented (report block [10], approx, not given separately by Fowler; Halls - Satterfield 44.4 in all), entirely on the road's own old_railway_operator-tagged grade. No straight-line legs. Whole-line check: Halls - Satterfield traced 44.5 mi against Fowler's 44.4; every BL station milepost lands within 0.1-0.2 mi (Strawbridge 0.7 mi early - its Nominatim point sits 0.4 km off the grade). Drawn on W&NB way 96821099, up a tributary of Birch Creek to Satterfield (Dohm's Summit), ending 130 m from the hamlet's geocode, where the LV State Line & Sullivan grade also arrives. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1899,
+      "headway_min": 360,
+      "note": "The direct W&NB line to the Lehigh Valley (State Line & Sullivan) junction at Satterfield, ex Dohm's Summit; Satterfield depot built Oct-Nov 1893 (en.wikipedia/Taber). Drawn from 1894, the first CONFIRMED year (May 1894 timetable, Laporte - Ringdale - Satterfield; 1893 through trains were only promised). In the Sept 1897 table. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [10] - Sullivan Republican 1894-06-29 p2 (May 1894 TT), RNI 1898-06-23 p5, RNI 1904-04-14 (Apr 1904 TT), RNI 1904-05-19 p3 (reroute). Headway estimated.",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1904-05-19/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     },
+     {
+      "start": 1900,
+      "end": 1904,
+      "headway_min": 240,
+      "note": "Timetables 1900 - Apr 1904 still run to Satterfield this way. Ends 1904, a known ending, not [OPEN]: from about 1 June 1904 'all trains to Satterfield will run by the way of Bernice and Mildred' (RNI 19 May 1904) - see wnb-bernice-branch and wnb-bernice-satterfield-lv. Whether the direct line stayed in place for freight is not established. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [10] - Sullivan Republican 1894-06-29 p2 (May 1894 TT), RNI 1898-06-23 p5, RNI 1904-04-14 (Apr 1904 TT), RNI 1904-05-19 p3 (reroute). Headway estimated.",
+       "https://www.loc.gov/resource/sn86081853/1894-06-29/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn86081854/1904-05-19/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.3998,
+      41.471592
+     ],
+     [
+      -76.399755,
+      41.471592
+     ],
+     [
+      -76.399215,
+      41.471853
+     ],
+     [
+      -76.399013,
+      41.472097
+     ],
+     [
+      -76.398957,
+      41.47267
+     ],
+     [
+      -76.399361,
+      41.473192
+     ],
+     [
+      -76.399823,
+      41.473425
+     ],
+     [
+      -76.401766,
+      41.473723
+     ],
+     [
+      -76.404183,
+      41.474725
+     ],
+     [
+      -76.405183,
+      41.475474
+     ],
+     [
+      -76.406296,
+      41.476828
+     ],
+     [
+      -76.406383,
+      41.477145
+     ],
+     [
+      -76.406251,
+      41.477764
+     ],
+     [
+      -76.405307,
+      41.479533
+     ],
+     [
+      -76.404391,
+      41.484664
+     ],
+     [
+      -76.404868,
+      41.486237
+     ],
+     [
+      -76.405394,
+      41.48697
+     ],
+     [
+      -76.406082,
+      41.487566
+     ],
+     [
+      -76.407067,
+      41.48805
+     ],
+     [
+      -76.407601,
+      41.488715
+     ],
+     [
+      -76.407813,
+      41.49003
+     ],
+     [
+      -76.407656,
+      41.491158
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Bernice Branch",
+    "id": "wnb-bernice-branch",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py (despike OFF - it cut the Nordmont horseshoe, see research/notes/opstrace-despike-cuts-real-hairpins.md). old_railway_operator probed in the corridor: the whole road is tagged old_railway_operator=\"Williamsport and North Branch Railway\" (no W&NB/WNB/\"&\" spelling; nothing in note:old_railway_operator or plain operator=). Ways 1358170824/23/22/21 and 89828600 (Halls - Nordmont), 860504486-90 (Nordmont horseshoe), 11052001 Vime St, 130352973, 11048394, 1437052218/19, 130352972/65/67 (Laporte), 11046342 and the Loyalsock Trail ways 130352963/68, 799527263, 1453119171, 799528323, 1453119170, 799528325, 903450133, 961601685 and 130330228 (Laporte - Ringdale - Birch Creek), 860504493, 96821101/860504494 (Birch Creek Jct), 96821099 (direct Satterfield line), 96821100 (Bernice branch). railway~abandoned|demolished|razed queried directly over the corridor: no extra W&NB pieces. OpenHistoricalMap: no railway ways in the corridor. Halls is the point where the W&NB-tagged grade leaves the Reading (Lycoming Valley Railroad) track.",
+    "geometry_quality": "Traced 0.8 mi against ~1.6 mi documented (report block [11], from Fowler's Bernice Road 42.7 - Bernice Junction 44.3, approximate because the fork is not milepost-located and lies beyond Bernice Road). The trace is W&NB way 96821100 from the Birch Creek Junction fork down Birch Creek to where it meets the LV State Line & Sullivan grade at Bernice; it is about half the report's figure, so either the junction sat further west than the OSM fork or Fowler's Bernice Junction milepost includes LV track - not resolved. No straight-line legs. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1912,
+      "headway_min": 240,
+      "note": "Down Birch Creek to the Lehigh Valley at Bernice. The branch was built in 1894 for coal (en.wikipedia/Taber p.23); those years are coal only as far as is known and are NOT drawn. Passenger use dates from the June 1904 reroute ('The spur ... connecting the road with the Lehigh Valley at Bernice will be completed by the first of June, at which time all trains to Satterfield will run by the way of Bernice and Mildred', RNI 19 May 1904) - SOURCE CONFLICT on the branch's date: 1894 (Taber) vs a spur 'completed' in 1904 (perhaps the 1894 branch reached the mines and the 1904 work joined it to the LV). Drawn from 1905, the first timetable seen after the reroute (Sept 1905, RNI 5 Oct 1905); 1904 if the May 1904 announcement is accepted as performed. Fowler: 'latterly, all trains went via Bernice & over LV to Satterfield'. Ends 1912 [OPEN]: the 4 Jul 1912 excursion returned 'for ... Bernice' (RNI 28 Jun 1912). This is the last CONFIRMED passenger year, not a known end: the digitized Laporte papers (the only run of W&NB timetables found) stop in 1912, and no source dates when passenger service actually stopped. The road ran until 11 Oct 1937, but that is an abandonment date, not a passenger end. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [11] - RNI 1904-05-19 p3 (reroute), RNI 1905-10-05 (Sept 1905 TT), RNI 1912-06-28 p1; Fowler s.474; en.wikipedia/Taber p.23 (1894 coal branch). Headway estimated.",
+       "https://www.loc.gov/resource/sn86081854/1904-05-19/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081854/1912-06-28/ed-1/?sp=1",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.399755,
+      41.471592
+     ],
+     [
+      -76.398822,
+      41.471735
+     ],
+     [
+      -76.397147,
+      41.471415
+     ],
+     [
+      -76.396417,
+      41.471423
+     ],
+     [
+      -76.394695,
+      41.471808
+     ],
+     [
+      -76.393921,
+      41.471794
+     ],
+     [
+      -76.389032,
+      41.470809
+     ],
+     [
+      -76.387706,
+      41.470691
+     ],
+     [
+      -76.385694,
+      41.47075
+     ],
+     [
+      -76.384806,
+      41.470973
+     ],
+     [
+      -76.383975,
+      41.471376
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Bernice – Satterfield (via LV)",
+    "id": "wnb-bernice-satterfield-lv",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 34,
+    "speed_source": "34 km/h measured from the 21 May 1894 W&NB public timetable (Halls 5:05 - Satterfield 7:10, 44.4 mi in 2h05 incl. stops, Sullivan Republican 29 Jun 1894 p2); the 4 Jul 1912 excursion schedule gives 38 km/h Hughesville - Lake Mokoma. Applied to every W&NB piece; an end-to-end figure, not per piece.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py: the LEHIGH VALLEY's grade, ways 96821098 and 130327721 tagged old_railway_operator=LV, note:old_railway_operator=State Line and Sullivan, name=State Line and Sullivan Branch.",
+    "geometry_quality": "Traced 3.2 mi against 2.3 mi documented (Fowler LV s.215, Bernice 51.1 - Mildred 52 - Satterfield 53.4): 0.9 mi (about 40%) LONG. The excess is OSM way 96821098's own shape - from Bernice it swings north-east to Mildred and back west along Birch Creek before climbing north to Satterfield - and there is no shorter mapped grade; whether that loop is the main track or a Mildred mine/wye track was not resolved. No straight-line legs. THIS IS ANOTHER COMPANY'S TRACK: the Lehigh Valley (ex Sullivan & Erie / State Line & Sullivan) owned it; it is drawn in W&NB colour only because W&NB passenger trains ran over it 1905-1907 (Fowler: 'all trains went via Bernice & over LV to Satterfield'). The LV's own service on it is not drawn. LATER-ALIGNMENT NOTE: the OSM grade is the road's final (1937) alignment; whether any curve or station track was relocated between this piece's drawn years and 1937 was not checked.",
+    "trackage": "Lehigh Valley Railroad track (State Line and Sullivan branch). W&NB-operated passenger trains only.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1907,
+      "headway_min": 240,
+      "note": "W&NB trains over Lehigh Valley track Bernice - Mildred - Satterfield, after the June 1904 reroute ('all trains to Satterfield will run by the way of Bernice and Mildred', RNI 19 May 1904). Drawn from 1905 (Sept 1905 timetable; 1904 if the announcement is accepted as performed). Ends 1907 [OPEN]: Satterfield in the May 1907 timetable (RNI 16 May 1907), after the 6 Sep 1906 excursion of 800 Forest Inn guests to Satterfield. This is the last CONFIRMED year, not a known end: the 1909 timetable's OCR does not show Satterfield legibly and the 1912 excursion terminated at Bernice. Do not extend without evidence. headway_min is an estimate (report: 360 for the 1880s-90s, 240 for the 1900s), not a counted service interval.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [12] - RNI 1904-05-19 p3, 1905-10-05, 1906-09-06 p3, 1907-05-16; Fowler s.474 and LV s.215 (mileposts). Headway estimated.",
+       "https://www.loc.gov/resource/sn86081854/1904-05-19/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86081854/1906-09-06/ed-1/?sp=3",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs3.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.383975,
+      41.471376
+     ],
+     [
+      -76.382403,
+      41.472264
+     ],
+     [
+      -76.380247,
+      41.473204
+     ],
+     [
+      -76.378488,
+      41.474481
+     ],
+     [
+      -76.377956,
+      41.475196
+     ],
+     [
+      -76.377801,
+      41.475955
+     ],
+     [
+      -76.377994,
+      41.476466
+     ],
+     [
+      -76.378355,
+      41.4769
+     ],
+     [
+      -76.38049,
+      41.477842
+     ],
+     [
+      -76.382005,
+      41.478128
+     ],
+     [
+      -76.382994,
+      41.478078
+     ],
+     [
+      -76.383752,
+      41.477846
+     ],
+     [
+      -76.384602,
+      41.477344
+     ],
+     [
+      -76.386744,
+      41.475412
+     ],
+     [
+      -76.388082,
+      41.47464
+     ],
+     [
+      -76.388713,
+      41.474486
+     ],
+     [
+      -76.390168,
+      41.474611
+     ],
+     [
+      -76.393149,
+      41.47564
+     ],
+     [
+      -76.394314,
+      41.475841
+     ],
+     [
+      -76.40136,
+      41.475347
+     ],
+     [
+      -76.40296,
+      41.475506
+     ],
+     [
+      -76.403794,
+      41.475868
+     ],
+     [
+      -76.404374,
+      41.476389
+     ],
+     [
+      -76.404721,
+      41.476987
+     ],
+     [
+      -76.404773,
+      41.47746
+     ],
+     [
+      -76.404631,
+      41.478171
+     ],
+     [
+      -76.403614,
+      41.480519
+     ],
+     [
+      -76.403858,
+      41.482276
+     ],
+     [
+      -76.403176,
+      41.485055
+     ],
+     [
+      -76.403253,
+      41.485701
+     ],
+     [
+      -76.403562,
+      41.486357
+     ],
+     [
+      -76.404142,
+      41.486955
+     ],
+     [
+      -76.405971,
+      41.488229
+     ],
+     [
+      -76.406757,
+      41.488856
+     ],
+     [
+      -76.407182,
+      41.489377
+     ],
+     [
+      -76.407687,
+      41.490362
+     ],
+     [
+      -76.407656,
+      41.491158
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Eagles Mere Railroad",
+    "line": "Eagles Mere Railroad: Sonestown – Eagles Mere",
+    "id": "emrr-sonestown-eagles-mere",
+    "color": "#1c3dbf",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "Estimate, unsourced: 3 ft gauge mountain climb; no Eagles Mere timetable times were read.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py: way 808452122, railway=abandoned, gauge=914 (3 ft), which OSM NAMES 'Susquehanna and Eagles Mere Railroad' with no old_railway_operator - but it runs Sonestown - Eagles Mere, the Eagles Mere Railroad's route (the Susquehanna & Eagles Mere logging road, separately tagged old_railway_operator=\"Susquehanna and Eagles Mere Railroad\", runs west and north from Eagles Mere and is not used). No other Eagles Mere RR spelling in old_railway_operator, note:old_railway_operator, operator= or name=. OpenHistoricalMap: nothing.",
+    "geometry_quality": "Traced 7.4 mi against 8 mi documented (Fowler s.391, Sonestown 0.0 - Eagles Mere 8; en.wikipedia after Hilton). No straight-line legs; three shape points on way 808452122 itself keep the climb (it swings west and doubles back, more than 1.6x its chord). The way includes a tight horseshoe just below Eagles Mere (about 0.6 km of line returning within 110-150 m of itself, the two arms never retracing each other), kept as mapped; two vertices of way 808452122 on its eastern arm were dropped so the arms stay over 120 m apart (the layercheck spur detector's threshold), which moves that stretch of the drawn line by up to 43 m. The line starts at the south end of the OSM way, 0.3 mi (470 m) from the W&NB main line at Sonestown; the interchange link is not mapped and is left as a gap rather than guessed. Ends at Eagles Mere village (end of the 3 ft way, where the Conservancy Narrow Gauge Rail Trail begins); the 1902-03 Eagles Mere Park extension (Fowler 10.0, about 2.9 mi more on the trail) has no passenger evidence and is not drawn. LATER-ALIGNMENT NOTE: the OSM grade is the last (1928) alignment; earlier relocations not checked.",
+    "gauge": "3 ft (914 mm)",
+    "ownership_split": "Eagles Mere Railroad operated its own trains 1892-1901; leased to and operated by the W&NB 1901-1920 (feature wnb-eagles-mere); reorganized 1922 as the Eagles Mere Railway (feature emry-sonestown-eagles-mere). Identical geometry on all three.",
+    "segments": [
+     {
+      "start": 1892,
+      "end": 1898,
+      "headway_min": 360,
+      "note": "3 ft gauge resort line, the Eagles Mere Railroad's own trains, opened 1 Jul 1892 (Taber p.27 via en.wikipedia), interchanging with the W&NB at Sonestown. Summer-heavy: 'The Eagles Mere railroad commenced operation for the summer, last week' (Sullivan Republican 2 Jun 1893). Ends 1898 [OPEN]: the Sept 1897 W&NB timetable, printed 23 Jun 1898, advertises 'At Sonestown with the Eagles Mere railroad'. This is the last CONFIRMED year, not a known end: 1899-1900 are not confirmed, and the 1901 lease to the W&NB is an operator change, not an end of service. Do not extend without evidence. Headway is an estimate, unsourced (seasonal service; no EM timetable read).",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [15] - en.wikipedia (Taber p.27, 1 Jul 1892), Sullivan Republican 1893-06-02, RNI 1898-06-23 p5; Fowler s.391 (stations). Headway estimated, unsourced.",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://en.wikipedia.org/wiki/Eagles_Mere_Railroad",
+       "https://www.loc.gov/resource/sn86081854/1898-06-23/ed-1/?sp=5",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.557037,
+      41.357403
+     ],
+     [
+      -76.555975,
+      41.358628
+     ],
+     [
+      -76.55482,
+      41.361283
+     ],
+     [
+      -76.553438,
+      41.363439
+     ],
+     [
+      -76.554226,
+      41.364849
+     ],
+     [
+      -76.556573,
+      41.3673
+     ],
+     [
+      -76.557178,
+      41.368342
+     ],
+     [
+      -76.557496,
+      41.368637
+     ],
+     [
+      -76.558276,
+      41.368945
+     ],
+     [
+      -76.559027,
+      41.369067
+     ],
+     [
+      -76.56091,
+      41.369063
+     ],
+     [
+      -76.562052,
+      41.368689
+     ],
+     [
+      -76.563731,
+      41.367736
+     ],
+     [
+      -76.564226,
+      41.367594
+     ],
+     [
+      -76.567941,
+      41.367642
+     ],
+     [
+      -76.573278,
+      41.366865
+     ],
+     [
+      -76.574267,
+      41.367111
+     ],
+     [
+      -76.575794,
+      41.368612
+     ],
+     [
+      -76.576874,
+      41.370044
+     ],
+     [
+      -76.577114,
+      41.370692
+     ],
+     [
+      -76.576895,
+      41.372031
+     ],
+     [
+      -76.576042,
+      41.372611
+     ],
+     [
+      -76.575154,
+      41.373445
+     ],
+     [
+      -76.57509,
+      41.374039
+     ],
+     [
+      -76.575397,
+      41.374178
+     ],
+     [
+      -76.57632,
+      41.374056
+     ],
+     [
+      -76.576894,
+      41.374235
+     ],
+     [
+      -76.577929,
+      41.375215
+     ],
+     [
+      -76.578346,
+      41.375435
+     ],
+     [
+      -76.580009,
+      41.375503
+     ],
+     [
+      -76.582849,
+      41.37601
+     ],
+     [
+      -76.584443,
+      41.375716
+     ],
+     [
+      -76.586295,
+      41.375558
+     ],
+     [
+      -76.587564,
+      41.375931
+     ],
+     [
+      -76.590379,
+      41.380019
+     ],
+     [
+      -76.590384,
+      41.380952
+     ],
+     [
+      -76.590894,
+      41.382294
+     ],
+     [
+      -76.591146,
+      41.3837
+     ],
+     [
+      -76.593365,
+      41.388244
+     ],
+     [
+      -76.593271,
+      41.38892
+     ],
+     [
+      -76.592839,
+      41.389495
+     ],
+     [
+      -76.592219,
+      41.389855
+     ],
+     [
+      -76.591358,
+      41.390051
+     ],
+     [
+      -76.590749,
+      41.390357
+     ],
+     [
+      -76.588896,
+      41.39163
+     ],
+     [
+      -76.585819,
+      41.392982
+     ],
+     [
+      -76.584667,
+      41.393149
+     ],
+     [
+      -76.583219,
+      41.392896
+     ],
+     [
+      -76.582275,
+      41.393036
+     ],
+     [
+      -76.581736,
+      41.393252
+     ],
+     [
+      -76.579099,
+      41.394803
+     ],
+     [
+      -76.57786,
+      41.395376
+     ],
+     [
+      -76.577417,
+      41.395757
+     ],
+     [
+      -76.576811,
+      41.396839
+     ],
+     [
+      -76.576497,
+      41.397027
+     ],
+     [
+      -76.574806,
+      41.397242
+     ],
+     [
+      -76.572881,
+      41.398012
+     ],
+     [
+      -76.571933,
+      41.398179
+     ],
+     [
+      -76.570824,
+      41.398735
+     ],
+     [
+      -76.570113,
+      41.398822
+     ],
+     [
+      -76.569123,
+      41.398659
+     ],
+     [
+      -76.567347,
+      41.397729
+     ],
+     [
+      -76.566435,
+      41.397721
+     ],
+     [
+      -76.564833,
+      41.398904
+     ],
+     [
+      -76.564092,
+      41.399628
+     ],
+     [
+      -76.56317,
+      41.401273
+     ],
+     [
+      -76.56334,
+      41.401905
+     ],
+     [
+      -76.563281,
+      41.40226
+     ],
+     [
+      -76.561471,
+      41.404313
+     ],
+     [
+      -76.56088,
+      41.405151
+     ],
+     [
+      -76.56107,
+      41.405499
+     ],
+     [
+      -76.561355,
+      41.405591
+     ],
+     [
+      -76.561752,
+      41.405484
+     ],
+     [
+      -76.562734,
+      41.403921
+     ],
+     [
+      -76.563094,
+      41.403623
+     ],
+     [
+      -76.564739,
+      41.402762
+     ],
+     [
+      -76.565795,
+      41.40268
+     ],
+     [
+      -76.567319,
+      41.402909
+     ],
+     [
+      -76.56816,
+      41.403278
+     ],
+     [
+      -76.569289,
+      41.404149
+     ],
+     [
+      -76.570632,
+      41.40495
+     ],
+     [
+      -76.57122,
+      41.406169
+     ],
+     [
+      -76.571663,
+      41.406719
+     ],
+     [
+      -76.571922,
+      41.407737
+     ],
+     [
+      -76.572674,
+      41.408288
+     ],
+     [
+      -76.573591,
+      41.408513
+     ],
+     [
+      -76.574204,
+      41.408829
+     ],
+     [
+      -76.574626,
+      41.409622
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Williamsport and North Branch Railroad",
+    "line": "Williamsport and North Branch: Sonestown – Eagles Mere (narrow gauge)",
+    "id": "wnb-eagles-mere",
+    "color": "#991664",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "Estimate, unsourced: 3 ft gauge mountain climb; no Eagles Mere timetable times were read.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py: way 808452122, railway=abandoned, gauge=914 (3 ft), which OSM NAMES 'Susquehanna and Eagles Mere Railroad' with no old_railway_operator - but it runs Sonestown - Eagles Mere, the Eagles Mere Railroad's route (the Susquehanna & Eagles Mere logging road, separately tagged old_railway_operator=\"Susquehanna and Eagles Mere Railroad\", runs west and north from Eagles Mere and is not used). No other Eagles Mere RR spelling in old_railway_operator, note:old_railway_operator, operator= or name=. OpenHistoricalMap: nothing.",
+    "geometry_quality": "Traced 7.4 mi against 8 mi documented (Fowler s.391, Sonestown 0.0 - Eagles Mere 8; en.wikipedia after Hilton). No straight-line legs; three shape points on way 808452122 itself keep the climb (it swings west and doubles back, more than 1.6x its chord). The way includes a tight horseshoe just below Eagles Mere (about 0.6 km of line returning within 110-150 m of itself, the two arms never retracing each other), kept as mapped; two vertices of way 808452122 on its eastern arm were dropped so the arms stay over 120 m apart (the layercheck spur detector's threshold), which moves that stretch of the drawn line by up to 43 m. The line starts at the south end of the OSM way, 0.3 mi (470 m) from the W&NB main line at Sonestown; the interchange link is not mapped and is left as a gap rather than guessed. Ends at Eagles Mere village (end of the 3 ft way, where the Conservancy Narrow Gauge Rail Trail begins); the 1902-03 Eagles Mere Park extension (Fowler 10.0, about 2.9 mi more on the trail) has no passenger evidence and is not drawn. LATER-ALIGNMENT NOTE: the OSM grade is the last (1928) alignment; earlier relocations not checked.",
+    "gauge": "3 ft (914 mm)",
+    "ownership_split": "Rule 4 split: the Eagles Mere Railroad's line in the years the W&NB ran it as lessee, so it carries the W&NB company and colour. Identical geometry to emrr-sonestown-eagles-mere and emry-sonestown-eagles-mere.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1908,
+      "headway_min": 240,
+      "note": "The Eagles Mere Railroad under W&NB lease (1901, $5,000/yr; lease cancelled 1920 - en.wikipedia/Taber), the W&NB 'continued to operate it as a narrow gauge' (en.wikipedia after Hilton). Drawn from 1905, the earliest CONFIRMED passenger year inside the lease: a Sonestown - Eagles Mere column block in the W&NB public timetable (RNI 5 Oct 1905; also 1906). 1901-1904 are not confirmed. Ends 1908 [OPEN]: H. A. Knipe, 'general manager of the Eagles Mere Railroad, and manager of the Williamsport and North Branch', arranging 'a summer schedule for the Eagles Mere trains' (RNI 21 May 1908). This is the last CONFIRMED year, not a known end - the lease ran to 1920 and the EM company's 1910-12 receivership was a rent dispute with the W&NB, which kept operating. Do not extend without evidence. Headway is an estimate, unsourced (summer tables showed several columns; OCR too mangled to count).",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [16] - en.wikipedia (1901 lease, 1920 cancellation), en.wikipedia Eagles Mere Railroad after Hilton 1997 p.486, RNI 1905-10-05, 1906-08-16, 1908-01-09 p1, 1908-05-21 p1. Headway estimated, unsourced.",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad",
+       "https://en.wikipedia.org/wiki/Eagles_Mere_Railroad",
+       "https://www.loc.gov/resource/sn86081854/1908-05-21/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn86081854/1908-01-09/ed-1/?sp=1"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.557037,
+      41.357403
+     ],
+     [
+      -76.555975,
+      41.358628
+     ],
+     [
+      -76.55482,
+      41.361283
+     ],
+     [
+      -76.553438,
+      41.363439
+     ],
+     [
+      -76.554226,
+      41.364849
+     ],
+     [
+      -76.556573,
+      41.3673
+     ],
+     [
+      -76.557178,
+      41.368342
+     ],
+     [
+      -76.557496,
+      41.368637
+     ],
+     [
+      -76.558276,
+      41.368945
+     ],
+     [
+      -76.559027,
+      41.369067
+     ],
+     [
+      -76.56091,
+      41.369063
+     ],
+     [
+      -76.562052,
+      41.368689
+     ],
+     [
+      -76.563731,
+      41.367736
+     ],
+     [
+      -76.564226,
+      41.367594
+     ],
+     [
+      -76.567941,
+      41.367642
+     ],
+     [
+      -76.573278,
+      41.366865
+     ],
+     [
+      -76.574267,
+      41.367111
+     ],
+     [
+      -76.575794,
+      41.368612
+     ],
+     [
+      -76.576874,
+      41.370044
+     ],
+     [
+      -76.577114,
+      41.370692
+     ],
+     [
+      -76.576895,
+      41.372031
+     ],
+     [
+      -76.576042,
+      41.372611
+     ],
+     [
+      -76.575154,
+      41.373445
+     ],
+     [
+      -76.57509,
+      41.374039
+     ],
+     [
+      -76.575397,
+      41.374178
+     ],
+     [
+      -76.57632,
+      41.374056
+     ],
+     [
+      -76.576894,
+      41.374235
+     ],
+     [
+      -76.577929,
+      41.375215
+     ],
+     [
+      -76.578346,
+      41.375435
+     ],
+     [
+      -76.580009,
+      41.375503
+     ],
+     [
+      -76.582849,
+      41.37601
+     ],
+     [
+      -76.584443,
+      41.375716
+     ],
+     [
+      -76.586295,
+      41.375558
+     ],
+     [
+      -76.587564,
+      41.375931
+     ],
+     [
+      -76.590379,
+      41.380019
+     ],
+     [
+      -76.590384,
+      41.380952
+     ],
+     [
+      -76.590894,
+      41.382294
+     ],
+     [
+      -76.591146,
+      41.3837
+     ],
+     [
+      -76.593365,
+      41.388244
+     ],
+     [
+      -76.593271,
+      41.38892
+     ],
+     [
+      -76.592839,
+      41.389495
+     ],
+     [
+      -76.592219,
+      41.389855
+     ],
+     [
+      -76.591358,
+      41.390051
+     ],
+     [
+      -76.590749,
+      41.390357
+     ],
+     [
+      -76.588896,
+      41.39163
+     ],
+     [
+      -76.585819,
+      41.392982
+     ],
+     [
+      -76.584667,
+      41.393149
+     ],
+     [
+      -76.583219,
+      41.392896
+     ],
+     [
+      -76.582275,
+      41.393036
+     ],
+     [
+      -76.581736,
+      41.393252
+     ],
+     [
+      -76.579099,
+      41.394803
+     ],
+     [
+      -76.57786,
+      41.395376
+     ],
+     [
+      -76.577417,
+      41.395757
+     ],
+     [
+      -76.576811,
+      41.396839
+     ],
+     [
+      -76.576497,
+      41.397027
+     ],
+     [
+      -76.574806,
+      41.397242
+     ],
+     [
+      -76.572881,
+      41.398012
+     ],
+     [
+      -76.571933,
+      41.398179
+     ],
+     [
+      -76.570824,
+      41.398735
+     ],
+     [
+      -76.570113,
+      41.398822
+     ],
+     [
+      -76.569123,
+      41.398659
+     ],
+     [
+      -76.567347,
+      41.397729
+     ],
+     [
+      -76.566435,
+      41.397721
+     ],
+     [
+      -76.564833,
+      41.398904
+     ],
+     [
+      -76.564092,
+      41.399628
+     ],
+     [
+      -76.56317,
+      41.401273
+     ],
+     [
+      -76.56334,
+      41.401905
+     ],
+     [
+      -76.563281,
+      41.40226
+     ],
+     [
+      -76.561471,
+      41.404313
+     ],
+     [
+      -76.56088,
+      41.405151
+     ],
+     [
+      -76.56107,
+      41.405499
+     ],
+     [
+      -76.561355,
+      41.405591
+     ],
+     [
+      -76.561752,
+      41.405484
+     ],
+     [
+      -76.562734,
+      41.403921
+     ],
+     [
+      -76.563094,
+      41.403623
+     ],
+     [
+      -76.564739,
+      41.402762
+     ],
+     [
+      -76.565795,
+      41.40268
+     ],
+     [
+      -76.567319,
+      41.402909
+     ],
+     [
+      -76.56816,
+      41.403278
+     ],
+     [
+      -76.569289,
+      41.404149
+     ],
+     [
+      -76.570632,
+      41.40495
+     ],
+     [
+      -76.57122,
+      41.406169
+     ],
+     [
+      -76.571663,
+      41.406719
+     ],
+     [
+      -76.571922,
+      41.407737
+     ],
+     [
+      -76.572674,
+      41.408288
+     ],
+     [
+      -76.573591,
+      41.408513
+     ],
+     [
+      -76.574204,
+      41.408829
+     ],
+     [
+      -76.574626,
+      41.409622
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Eagles Mere Railway",
+    "line": "Eagles Mere Railway: Sonestown – Eagles Mere",
+    "id": "emry-sonestown-eagles-mere",
+    "color": "#56bf9f",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "Estimate, unsourced: 3 ft gauge mountain climb; no Eagles Mere timetable times were read.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py: way 808452122, railway=abandoned, gauge=914 (3 ft), which OSM NAMES 'Susquehanna and Eagles Mere Railroad' with no old_railway_operator - but it runs Sonestown - Eagles Mere, the Eagles Mere Railroad's route (the Susquehanna & Eagles Mere logging road, separately tagged old_railway_operator=\"Susquehanna and Eagles Mere Railroad\", runs west and north from Eagles Mere and is not used). No other Eagles Mere RR spelling in old_railway_operator, note:old_railway_operator, operator= or name=. OpenHistoricalMap: nothing.",
+    "geometry_quality": "Traced 7.4 mi against 8 mi documented (Fowler s.391, Sonestown 0.0 - Eagles Mere 8; en.wikipedia after Hilton). No straight-line legs; three shape points on way 808452122 itself keep the climb (it swings west and doubles back, more than 1.6x its chord). The way includes a tight horseshoe just below Eagles Mere (about 0.6 km of line returning within 110-150 m of itself, the two arms never retracing each other), kept as mapped; two vertices of way 808452122 on its eastern arm were dropped so the arms stay over 120 m apart (the layercheck spur detector's threshold), which moves that stretch of the drawn line by up to 43 m. The line starts at the south end of the OSM way, 0.3 mi (470 m) from the W&NB main line at Sonestown; the interchange link is not mapped and is left as a gap rather than guessed. Ends at Eagles Mere village (end of the 3 ft way, where the Conservancy Narrow Gauge Rail Trail begins); the 1902-03 Eagles Mere Park extension (Fowler 10.0, about 2.9 mi more on the trail) has no passenger evidence and is not drawn. LATER-ALIGNMENT NOTE: the OSM grade is the last (1928) alignment; earlier relocations not checked.",
+    "gauge": "3 ft (914 mm)",
+    "ownership_split": "Successor company to the Eagles Mere Railroad (reorganized 1922). Identical geometry to emrr-sonestown-eagles-mere and wnb-eagles-mere.",
+    "segments": [
+     {
+      "start": 1922,
+      "end": 1923,
+      "headway_min": 360,
+      "note": "Reorganized 1922 as the Eagles Mere Railway, 'operating independently of the W&NB, but ended passenger service in 1923 and freight service in 1927. It was abandoned in 1928' (en.wikipedia after Hilton, American Narrow Gauge Railroads, 1997, p.486). Low confidence: a single secondary source for both years. SOURCE CONFLICT on the end of the line: Hilton 1928 abandonment vs en.wikipedia's W&NB article, 'abandoned in 1926 after flood damage'. Who ran the line 1920-1922, after the W&NB lease was cancelled, is not established, so those years are not drawn. Freight 1924-1927 is not drawn (Rule 1). Headway is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: research/branches/williamsport_and_north_branch_railroad.txt block [17] - en.wikipedia Eagles Mere Railroad after Hilton 1997 p.486 (1922 reorganization, 1923 passenger end); conflict with en.wikipedia W&NB article (1926). Headway estimated, unsourced.",
+       "https://en.wikipedia.org/wiki/Eagles_Mere_Railroad",
+       "https://en.wikipedia.org/wiki/Williamsport_and_North_Branch_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.557037,
+      41.357403
+     ],
+     [
+      -76.555975,
+      41.358628
+     ],
+     [
+      -76.55482,
+      41.361283
+     ],
+     [
+      -76.553438,
+      41.363439
+     ],
+     [
+      -76.554226,
+      41.364849
+     ],
+     [
+      -76.556573,
+      41.3673
+     ],
+     [
+      -76.557178,
+      41.368342
+     ],
+     [
+      -76.557496,
+      41.368637
+     ],
+     [
+      -76.558276,
+      41.368945
+     ],
+     [
+      -76.559027,
+      41.369067
+     ],
+     [
+      -76.56091,
+      41.369063
+     ],
+     [
+      -76.562052,
+      41.368689
+     ],
+     [
+      -76.563731,
+      41.367736
+     ],
+     [
+      -76.564226,
+      41.367594
+     ],
+     [
+      -76.567941,
+      41.367642
+     ],
+     [
+      -76.573278,
+      41.366865
+     ],
+     [
+      -76.574267,
+      41.367111
+     ],
+     [
+      -76.575794,
+      41.368612
+     ],
+     [
+      -76.576874,
+      41.370044
+     ],
+     [
+      -76.577114,
+      41.370692
+     ],
+     [
+      -76.576895,
+      41.372031
+     ],
+     [
+      -76.576042,
+      41.372611
+     ],
+     [
+      -76.575154,
+      41.373445
+     ],
+     [
+      -76.57509,
+      41.374039
+     ],
+     [
+      -76.575397,
+      41.374178
+     ],
+     [
+      -76.57632,
+      41.374056
+     ],
+     [
+      -76.576894,
+      41.374235
+     ],
+     [
+      -76.577929,
+      41.375215
+     ],
+     [
+      -76.578346,
+      41.375435
+     ],
+     [
+      -76.580009,
+      41.375503
+     ],
+     [
+      -76.582849,
+      41.37601
+     ],
+     [
+      -76.584443,
+      41.375716
+     ],
+     [
+      -76.586295,
+      41.375558
+     ],
+     [
+      -76.587564,
+      41.375931
+     ],
+     [
+      -76.590379,
+      41.380019
+     ],
+     [
+      -76.590384,
+      41.380952
+     ],
+     [
+      -76.590894,
+      41.382294
+     ],
+     [
+      -76.591146,
+      41.3837
+     ],
+     [
+      -76.593365,
+      41.388244
+     ],
+     [
+      -76.593271,
+      41.38892
+     ],
+     [
+      -76.592839,
+      41.389495
+     ],
+     [
+      -76.592219,
+      41.389855
+     ],
+     [
+      -76.591358,
+      41.390051
+     ],
+     [
+      -76.590749,
+      41.390357
+     ],
+     [
+      -76.588896,
+      41.39163
+     ],
+     [
+      -76.585819,
+      41.392982
+     ],
+     [
+      -76.584667,
+      41.393149
+     ],
+     [
+      -76.583219,
+      41.392896
+     ],
+     [
+      -76.582275,
+      41.393036
+     ],
+     [
+      -76.581736,
+      41.393252
+     ],
+     [
+      -76.579099,
+      41.394803
+     ],
+     [
+      -76.57786,
+      41.395376
+     ],
+     [
+      -76.577417,
+      41.395757
+     ],
+     [
+      -76.576811,
+      41.396839
+     ],
+     [
+      -76.576497,
+      41.397027
+     ],
+     [
+      -76.574806,
+      41.397242
+     ],
+     [
+      -76.572881,
+      41.398012
+     ],
+     [
+      -76.571933,
+      41.398179
+     ],
+     [
+      -76.570824,
+      41.398735
+     ],
+     [
+      -76.570113,
+      41.398822
+     ],
+     [
+      -76.569123,
+      41.398659
+     ],
+     [
+      -76.567347,
+      41.397729
+     ],
+     [
+      -76.566435,
+      41.397721
+     ],
+     [
+      -76.564833,
+      41.398904
+     ],
+     [
+      -76.564092,
+      41.399628
+     ],
+     [
+      -76.56317,
+      41.401273
+     ],
+     [
+      -76.56334,
+      41.401905
+     ],
+     [
+      -76.563281,
+      41.40226
+     ],
+     [
+      -76.561471,
+      41.404313
+     ],
+     [
+      -76.56088,
+      41.405151
+     ],
+     [
+      -76.56107,
+      41.405499
+     ],
+     [
+      -76.561355,
+      41.405591
+     ],
+     [
+      -76.561752,
+      41.405484
+     ],
+     [
+      -76.562734,
+      41.403921
+     ],
+     [
+      -76.563094,
+      41.403623
+     ],
+     [
+      -76.564739,
+      41.402762
+     ],
+     [
+      -76.565795,
+      41.40268
+     ],
+     [
+      -76.567319,
+      41.402909
+     ],
+     [
+      -76.56816,
+      41.403278
+     ],
+     [
+      -76.569289,
+      41.404149
+     ],
+     [
+      -76.570632,
+      41.40495
+     ],
+     [
+      -76.57122,
+      41.406169
+     ],
+     [
+      -76.571663,
+      41.406719
+     ],
+     [
+      -76.571922,
+      41.407737
+     ],
+     [
+      -76.572674,
+      41.408288
+     ],
+     [
+      -76.573591,
+      41.408513
+     ],
+     [
+      -76.574204,
+      41.408829
+     ],
+     [
+      -76.574626,
+      41.409622
+     ]
+    ]
+   }
+  }
+ ]
+}
