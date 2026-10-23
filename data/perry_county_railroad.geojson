@@ -1,0 +1,1253 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Perry County Railroad (Duncannon - New Bloomfield 1889; New Bloomfield - Landisburg with a Loysville branch 1893) and its successor the Susquehanna River and Western (sale to David Gring 14 Sept 1903), Perry County PA. Five features: PCRR Duncannon - New Bloomfield 1889-1903, PCRR New Bloomfield - Landisburg 1893-1903, PCRR Loysville Branch 1893-1903, SR&W Duncannon - New Bloomfield 1903-1928 (same geometry as the first, Rule 4 split at the 1903 sale), and SR&W New Bloomfield - Bloomfield Junction, which joins the SR&W Bloomfield Junction - New Germantown feature already drawn in newport_and_sherman_s_valley_railroad.geojson. Research report: research/branches/perry_county_railroad.txt.",
+  "sources": [
+   "Hain, History of Perry County, Pennsylvania (1922), pp.433-436: https://archive.org/details/historyofperryco00hain",
+   "John Fowler, Pennsylvania Railroads (5), SL222 tables 457 (SR&W) and 458 (PCRR extension); letter z = 1893 Official Guide, t = company timetable: https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+   "Kohler & Weinshencker, 'Narrow Gauge in the Sherman's Valley', as summarised in the chronology at https://pvrr.blogspot.com/2008/07/",
+   "west2k Perry County station list (Duncannon 1889/1912 depots, New Bloomfield 1911 depot, Bernheisel's Mill 1903 timetable): https://www.west2k.com/pastations/perrypa.shtml",
+   "HMdb 'Entering Duncannon' marker (relayed): https://www.hmdb.org/m.asp?m=119908",
+   "HMdb Blain marker 257366 (relayed via search summary; hmdb.org returned 403): https://www.hmdb.org/m.asp?m=257366",
+   "pahistoricpreservation.com, 'From creek came village: Blain' (Gilmore 2017): https://pahistoricpreservation.com/from-creek-came-village-blain/",
+   "Green Park, Pennsylvania (Wikipedia, citing Hilton 1990 p.492): https://en.wikipedia.org/wiki/Green_Park,_Pennsylvania",
+   "SR&W No.5 roster/photo: https://trainwatcher1.rrpicturearchives.net/locThumbs.aspx?id=113067"
+  ],
+  "geometry_sources": [
+   "OpenHistoricalMap (2026-10-21, CC0): unnamed railway=rail ways 205160803, 205198668, 205198670, 205198669, 205160807, 205198672, 205160804, 205160805 - the Perry County RR grades, dated 1889-1939 / 1892-93-1904 / 1893-1895 in OHM (dates not used)",
+   "OpenStreetMap (maps.mail.ru Overpass, 2026-10-21): no ways for this road; old_railway_operator probes for Perry County / PCRR / SR&W / SRW / Susquehanna River returned nothing"
+  ],
+  "ownership_split": "14 Sept 1903: Perry County Railroad -> Susquehanna River and Western (sale to David Gring and renaming). Duncannon - New Bloomfield is split at 1903 into two features with identical geometry. NOT splits: USRA federal control 1917-18; the 1921 Ross & Gring purchase as trustees for the PRR-owned Susquehanna Coal Co. (financial interest, no PRR operation found - not recoloured to PRR); 1903-1920 common Gring control of the SR&W and the separate N&SV.",
+  "omitted": [
+   "SR&W New Bloomfield - New Germantown west of Bloomfield Junction (report block 5): already drawn as 'Susquehanna River and Western: Bloomfield Junction - New Germantown' in newport_and_sherman_s_valley_railroad.geojson; only the New Bloomfield - Bloomfield Junction link is added here.",
+   "PCRR New Bloomfield - Elliottsburg in 1892: likely, but no printed passenger evidence; the extension is drawn from 1893.",
+   "Any SR&W service west of Bloomfield Junction on the standard-gauge extension after Sept 1903: unknown, assumed none (abandoned after the sale).",
+   "Perry County Lumber Co. logging railroad and the Path Valley RR: logging / never operated (Rule 1). Paper roads (Duncannon, Bloomfield & Loysville 1872; Sherman's Valley RR / People's Freight Rwy / Pennsylvania Midland): never built."
+  ],
+  "freight_only_note": "Not drawn (Rule 1): SR&W Duncannon - New Bloomfield 1929 - 17 May 1939 and New Bloomfield - Bloomfield Junction 1929 - 1934/35, freight only after the 31 Dec 1928 passenger end.",
+  "not_yet_sourced": [
+   "SR&W passenger end, 1928: rests on the HMDB Blain marker 257366, read only as a search-engine relay, plus Gilmore 2017 via pahistoricpreservation.com - both about the ex-N&SV west end. No source dates the end of passengers on Duncannon - New Bloomfield; strictly confirmed only to 1912 (depot construction). Worth checking: Kohler & Weinshencker; PA PSC records for 1928; Perry County Times / Newport News, Dec 1928 - Jan 1929.",
+   "N&SV absorption into the SR&W: 31 Mar 1920 (chronology, Green Park article) vs 1921 (Hain 1922, Blain marker). New Bloomfield - Bloomfield Junction drawn from 1920 to meet the existing SR&W feature; the report's drawable start was 1921.",
+   "PCRR 1889 start rests on the opening date and the 1889 Duncannon station, not a printed timetable; the stricter start is 1893.",
+   "Whether the 1903 N&SV spur (dual gauge 1918) New Bloomfield - Bloomfield Junction ran on the 1892 PCRR grade drawn here or on its own alignment.",
+   "Charter date: Hain 3 Feb 1887 vs Duncannon marker 4 Feb 1887 (immaterial to drawing).",
+   "headway_min and avg_speed_kmh on every feature are estimates; no PCRR or SR&W timetable with train counts or running times was read."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Perry County Railroad",
+    "line": "Perry County Railroad: Duncannon – New Bloomfield",
+    "id": "perry-county-rr-duncannon-new-bloomfield",
+    "color": "#7f1fdf",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: standard-gauge steam short line with few trains a day; no timetable with running times was read. Unsourced.",
+    "gauge": "4 ft 8 1/2 in (standard)",
+    "geometry_source": "OpenHistoricalMap (overpass-api.openhistoricalmap.org, fetched 2026-10-21; CC0): unnamed railway=rail ways -205160803 (Duncannon - New Bloomfield), -205198668 / -205198670 (bridge) / -205198669 / -205160807 / -205198672 (bridge) / -205160804 (New Bloomfield - Landisburg) and -205160805 (Loysville branch) - OHM ids without the minus sign. Traced with opstrace.py (Graph over OSM rail + these OHM ways, trace(), douglas_peucker 8 m, trim_reversals). OHM's dates on these ways were used only to pick out the Perry County RR ways from the N&SV ways beside them, never as sources for this layer's years. OSM (maps.mail.ru Overpass mirror) has no old_railway_operator tag and no abandoned-railway or rail-trail way for this road in Perry County; probes for 'Perry County', 'PCRR', 'SR&W', 'SRW' and 'Susquehanna River' returned nothing.",
+    "geometry_quality": "Traced 11.14 mi against 11.1 mi documented (Fowler table 457; Hain 11.1 mi; +0.4%). Fully traced, no straight-line legs: every mile is on OpenHistoricalMap way 205160803, this road's own grade (OHM dates it 1889-1939, i.e. the Perry County RR / SR&W), from its junction with the PRR Main Line just south of the old Duncannon depot (40.3882,-77.0315) up Sherman's Creek to New Bloomfield (40.4173,-77.1854, the shared end of OHM's 1889 main line and 1892 extension; Nominatim's Bloomfield borough centroid is 0.3 km NW). No later alignment is drawn: the line was never rebuilt and was lifted after the 1939 abandonment. Intermediate stations (King's Mill, Sulphur Springs, Montebello Park, Roddy, Hoffman, Mahanoy) were not used as waypoints: Nominatim returned a peak for Mahanoy and a road for Sulphur Springs, and nothing for King's Mill.",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1903,
+      "headway_min": 360,
+      "note": "Duncannon (PRR Main Line connection) - King's Mill - Sulphur Springs - Montebello Park - Roddy - Hoffman - Mahanoy - New Bloomfield, 11.1 mi, standard gauge, steam from the first train (no animal-power period). Built because New Bloomfield feared losing the county seat to Newport, which had the PRR (Hain pp.435-436). Starts 1889: the first locomotive reached New Bloomfield on 12 Sept 1889 and the line opened officially in October 1889 (Hain p.433); a Duncannon passenger station was built in 1889 (west2k, citing the Duncannon Record of 22 Sept 1889). The first PRINTED passenger evidence is the 1893 Official Guide (Fowler's letter z at every station), so a stricter reading would start in 1893. Ends 1903 as an ownership change, not a service end: sold to David Gring on 14 Sept 1903 and renamed the Susquehanna River and Western, which ran the same trains on the same track (separate feature). Charter date conflict, immaterial here: Hain 3 Feb 1887, Duncannon marker (relayed) 4 Feb 1887. headway_min is an ESTIMATE (two or three round trips a day assumed); no timetable with train counts was read.",
+      "sources": [
+       "Segment-level: 1889 start from Hain (1922) p.433 (first locomotive 12 Sept 1889, opened Oct 1889) and the 1889 Duncannon station (west2k, citing the Duncannon Record 22 Sept 1889); Fowler table 457 letter z = 1893 Official Guide is the first printed passenger evidence; 1903 end is the 14 Sept 1903 sale and renaming (Hain; pvrr.blogspot chronology). Headway is an estimate, not sourced.",
+       "https://archive.org/details/historyofperryco00hain",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://www.west2k.com/pastations/perrypa.shtml",
+       "https://www.hmdb.org/m.asp?m=119908"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.031545,
+      40.388202
+     ],
+     [
+      -77.033856,
+      40.392124
+     ],
+     [
+      -77.034555,
+      40.393055
+     ],
+     [
+      -77.036296,
+      40.394425
+     ],
+     [
+      -77.037437,
+      40.395509
+     ],
+     [
+      -77.040952,
+      40.400245
+     ],
+     [
+      -77.041928,
+      40.402725
+     ],
+     [
+      -77.044361,
+      40.405259
+     ],
+     [
+      -77.044843,
+      40.406145
+     ],
+     [
+      -77.045513,
+      40.408061
+     ],
+     [
+      -77.046607,
+      40.409332
+     ],
+     [
+      -77.0483,
+      40.410594
+     ],
+     [
+      -77.04857,
+      40.410997
+     ],
+     [
+      -77.048665,
+      40.411883
+     ],
+     [
+      -77.048557,
+      40.413689
+     ],
+     [
+      -77.04918,
+      40.416523
+     ],
+     [
+      -77.050027,
+      40.418704
+     ],
+     [
+      -77.051179,
+      40.420843
+     ],
+     [
+      -77.051457,
+      40.421113
+     ],
+     [
+      -77.052487,
+      40.421628
+     ],
+     [
+      -77.053271,
+      40.421807
+     ],
+     [
+      -77.0562,
+      40.422101
+     ],
+     [
+      -77.056854,
+      40.422379
+     ],
+     [
+      -77.057798,
+      40.422967
+     ],
+     [
+      -77.059397,
+      40.424592
+     ],
+     [
+      -77.060588,
+      40.425564
+     ],
+     [
+      -77.062004,
+      40.42612
+     ],
+     [
+      -77.062723,
+      40.426218
+     ],
+     [
+      -77.064053,
+      40.426079
+     ],
+     [
+      -77.064648,
+      40.425858
+     ],
+     [
+      -77.065946,
+      40.424862
+     ],
+     [
+      -77.06659,
+      40.424601
+     ],
+     [
+      -77.067984,
+      40.424543
+     ],
+     [
+      -77.069261,
+      40.425066
+     ],
+     [
+      -77.070205,
+      40.426071
+     ],
+     [
+      -77.070935,
+      40.426438
+     ],
+     [
+      -77.07351,
+      40.42701
+     ],
+     [
+      -77.074915,
+      40.427157
+     ],
+     [
+      -77.076675,
+      40.427051
+     ],
+     [
+      -77.077458,
+      40.426855
+     ],
+     [
+      -77.078944,
+      40.426161
+     ],
+     [
+      -77.082055,
+      40.424127
+     ],
+     [
+      -77.083396,
+      40.423384
+     ],
+     [
+      -77.086765,
+      40.422649
+     ],
+     [
+      -77.087463,
+      40.42264
+     ],
+     [
+      -77.088289,
+      40.422779
+     ],
+     [
+      -77.089703,
+      40.423347
+     ],
+     [
+      -77.090443,
+      40.424743
+     ],
+     [
+      -77.090229,
+      40.427214
+     ],
+     [
+      -77.089306,
+      40.429738
+     ],
+     [
+      -77.089285,
+      40.430154
+     ],
+     [
+      -77.089392,
+      40.43053
+     ],
+     [
+      -77.089832,
+      40.430995
+     ],
+     [
+      -77.0904,
+      40.431216
+     ],
+     [
+      -77.090873,
+      40.431355
+     ],
+     [
+      -77.093201,
+      40.430979
+     ],
+     [
+      -77.094638,
+      40.430195
+     ],
+     [
+      -77.095658,
+      40.430015
+     ],
+     [
+      -77.096065,
+      40.430032
+     ],
+     [
+      -77.096795,
+      40.430293
+     ],
+     [
+      -77.098176,
+      40.431118
+     ],
+     [
+      -77.09897,
+      40.43142
+     ],
+     [
+      -77.100386,
+      40.431559
+     ],
+     [
+      -77.10942,
+      40.430228
+     ],
+     [
+      -77.111566,
+      40.429525
+     ],
+     [
+      -77.123761,
+      40.426169
+     ],
+     [
+      -77.132171,
+      40.424372
+     ],
+     [
+      -77.135143,
+      40.423144
+     ],
+     [
+      -77.140205,
+      40.422425
+     ],
+     [
+      -77.142416,
+      40.421625
+     ],
+     [
+      -77.145999,
+      40.41946
+     ],
+     [
+      -77.14689,
+      40.419256
+     ],
+     [
+      -77.154158,
+      40.418382
+     ],
+     [
+      -77.15507,
+      40.418055
+     ],
+     [
+      -77.155864,
+      40.417484
+     ],
+     [
+      -77.157687,
+      40.415754
+     ],
+     [
+      -77.160734,
+      40.413851
+     ],
+     [
+      -77.163145,
+      40.411645
+     ],
+     [
+      -77.163842,
+      40.411172
+     ],
+     [
+      -77.164583,
+      40.410853
+     ],
+     [
+      -77.167635,
+      40.410297
+     ],
+     [
+      -77.170221,
+      40.410428
+     ],
+     [
+      -77.171562,
+      40.410755
+     ],
+     [
+      -77.172131,
+      40.411057
+     ],
+     [
+      -77.176613,
+      40.415514
+     ],
+     [
+      -77.177987,
+      40.41647
+     ],
+     [
+      -77.178855,
+      40.416862
+     ],
+     [
+      -77.18108,
+      40.41745
+     ],
+     [
+      -77.183032,
+      40.417736
+     ],
+     [
+      -77.18374,
+      40.417736
+     ],
+     [
+      -77.185446,
+      40.417316
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Perry County Railroad",
+    "line": "Perry County Railroad: New Bloomfield – Landisburg",
+    "id": "perry-county-rr-new-bloomfield-landisburg",
+    "color": "#7f1fdf",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: standard-gauge steam short line with few trains a day; no timetable with running times was read. Unsourced.",
+    "gauge": "4 ft 8 1/2 in (standard)",
+    "geometry_source": "OpenHistoricalMap (overpass-api.openhistoricalmap.org, fetched 2026-10-21; CC0): unnamed railway=rail ways -205160803 (Duncannon - New Bloomfield), -205198668 / -205198670 (bridge) / -205198669 / -205160807 / -205198672 (bridge) / -205160804 (New Bloomfield - Landisburg) and -205160805 (Loysville branch) - OHM ids without the minus sign. Traced with opstrace.py (Graph over OSM rail + these OHM ways, trace(), douglas_peucker 8 m, trim_reversals). OHM's dates on these ways were used only to pick out the Perry County RR ways from the N&SV ways beside them, never as sources for this layer's years. OSM (maps.mail.ru Overpass mirror) has no old_railway_operator tag and no abandoned-railway or rail-trail way for this road in Perry County; probes for 'Perry County', 'PCRR', 'SR&W', 'SRW' and 'Susquehanna River' returned nothing.",
+    "geometry_quality": "Traced 9.98 mi against about 9.9 mi documented (Fowler table 458: New Bloomfield 11.1 to Landisburg 21.0; +0.8%). Fully traced, no straight-line legs, on OpenHistoricalMap ways 205198668, 205198670 (Tressler's Farm trestle over the N&SV), 205198669, 205160807, 205198672 (Green Park trestle) and 205160804 - the extension's own 1892-93 grade (OHM dates 1892/93-1904). Bloomfield Junction falls 2.66 mi from New Bloomfield along the drawn line (Fowler: 2.5 mi) and is the exact point the Newport and Sherman's Valley layer uses; Montour Junction (hand-pinned where OHM's Loysville branch leaves this line; Nominatim has no Montour Junction) falls at 8.61 mi (Fowler 8.6). Landisburg terminal is the OHM grade's south end (40.3442,-77.3133), 0.5 km W of Nominatim's borough centroid. Waypoint fit: Elliottsburg 0.1 km, Green Park 0.1 km. No later alignment: the extension was lifted after the 1903 sale and never rebuilt.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1903,
+      "headway_min": 360,
+      "note": "New Bloomfield - Tressler - Bloomfield Junction - Neilson - Dunn's - Elliottsburg - Bernheisel's Mill - Green Park - Montour Junction - Landisburg, about 9.9 mi, standard gauge, steam, built by the Perry County Railroad Extension Company (incorporated 27 May 1891, merged into the PCRR 2 June 1892). It crossed the narrow-gauge Newport and Sherman's Valley twice, on trestles at Tressler's Farm (1892) and Green Park (1893), because the N&SV won an injunction against diamond crossings; between them the two gauges ran side by side. Starts 1893: the line reached Elliottsburg in 1892 and Landisburg in 1893 (Kohler & Weinshencker chronology via pvrr.blogspot), and every station from Neilson to Landisburg carries Fowler's letter z (1893 Official Guide / company timetable). 1892 service to Elliottsburg is likely but has no printed passenger evidence, so it is not drawn. Ends 1903: Bernheisel's Mill was in the timetable of 1 Jan 1903 (west2k, citing the Newport News), and after the 14 Sept 1903 sale the standard-gauge line west of Bloomfield Junction was abandoned and lifted (chronology); the Green Park trestle served 'from 1893 to 1903'. Whether the SR&W ran any train here between Sept 1903 and the lifting is unknown (Fowler files the line under the SR&W, but his only date letter is 1893); assumed not, so no SR&W feature is drawn on it. headway_min is an ESTIMATE (two or three round trips a day assumed); no timetable with train counts was read.",
+      "sources": [
+       "Segment-level: 1893 start from Fowler table 458 letter z (1893 Official Guide / company timetable) and the pvrr.blogspot chronology (after Kohler & Weinshencker); 1903 end from the 1 Jan 1903 timetable listing of Bernheisel's Mill (west2k, citing the Newport News), the chronology's post-sale abandonment and the Green Park article's 'from 1893 to 1903'. Headway is an estimate, not sourced.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://pvrr.blogspot.com/2008/07/",
+       "https://archive.org/details/historyofperryco00hain",
+       "https://en.wikipedia.org/wiki/Green_Park,_Pennsylvania",
+       "https://www.west2k.com/pastations/perrypa.shtml"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.185446,
+      40.417316
+     ],
+     [
+      -77.192889,
+      40.41455
+     ],
+     [
+      -77.200828,
+      40.411324
+     ],
+     [
+      -77.213946,
+      40.407164
+     ],
+     [
+      -77.21596,
+      40.406764
+     ],
+     [
+      -77.219576,
+      40.40656
+     ],
+     [
+      -77.221711,
+      40.406527
+     ],
+     [
+      -77.225037,
+      40.406698
+     ],
+     [
+      -77.225938,
+      40.406511
+     ],
+     [
+      -77.231724,
+      40.404595
+     ],
+     [
+      -77.232381,
+      40.404354
+     ],
+     [
+      -77.233809,
+      40.403448
+     ],
+     [
+      -77.235236,
+      40.402827
+     ],
+     [
+      -77.237242,
+      40.402336
+     ],
+     [
+      -77.240177,
+      40.401822
+     ],
+     [
+      -77.242194,
+      40.401593
+     ],
+     [
+      -77.245981,
+      40.401438
+     ],
+     [
+      -77.249876,
+      40.402051
+     ],
+     [
+      -77.250981,
+      40.402116
+     ],
+     [
+      -77.251796,
+      40.401977
+     ],
+     [
+      -77.256514,
+      40.400311
+     ],
+     [
+      -77.265711,
+      40.395841
+     ],
+     [
+      -77.266999,
+      40.395375
+     ],
+     [
+      -77.268801,
+      40.394975
+     ],
+     [
+      -77.270926,
+      40.394918
+     ],
+     [
+      -77.271462,
+      40.394795
+     ],
+     [
+      -77.283419,
+      40.390248
+     ],
+     [
+      -77.28557,
+      40.389533
+     ],
+     [
+      -77.28697,
+      40.389435
+     ],
+     [
+      -77.287963,
+      40.389504
+     ],
+     [
+      -77.290797,
+      40.389992
+     ],
+     [
+      -77.29245,
+      40.390114
+     ],
+     [
+      -77.294327,
+      40.389608
+     ],
+     [
+      -77.302948,
+      40.386421
+     ],
+     [
+      -77.305324,
+      40.385987
+     ],
+     [
+      -77.306505,
+      40.385546
+     ],
+     [
+      -77.307062,
+      40.385039
+     ],
+     [
+      -77.309809,
+      40.381199
+     ],
+     [
+      -77.311107,
+      40.378738
+     ],
+     [
+      -77.311461,
+      40.377725
+     ],
+     [
+      -77.31159,
+      40.376082
+     ],
+     [
+      -77.310929,
+      40.368994
+     ],
+     [
+      -77.311777,
+      40.366223
+     ],
+     [
+      -77.312624,
+      40.365234
+     ],
+     [
+      -77.314041,
+      40.364271
+     ],
+     [
+      -77.314749,
+      40.363609
+     ],
+     [
+      -77.315346,
+      40.362712
+     ],
+     [
+      -77.317766,
+      40.358849
+     ],
+     [
+      -77.318495,
+      40.357353
+     ],
+     [
+      -77.318313,
+      40.35656
+     ],
+     [
+      -77.314183,
+      40.348863
+     ],
+     [
+      -77.313678,
+      40.347432
+     ],
+     [
+      -77.313539,
+      40.346655
+     ],
+     [
+      -77.313678,
+      40.344987
+     ],
+     [
+      -77.313324,
+      40.344199
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Perry County Railroad",
+    "line": "Perry County Railroad: Loysville Branch",
+    "id": "perry-county-rr-loysville-branch",
+    "color": "#7f1fdf",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: standard-gauge steam short line with few trains a day; no timetable with running times was read. Unsourced.",
+    "gauge": "4 ft 8 1/2 in (standard)",
+    "geometry_source": "OpenHistoricalMap (overpass-api.openhistoricalmap.org, fetched 2026-10-21; CC0): unnamed railway=rail ways -205160803 (Duncannon - New Bloomfield), -205198668 / -205198670 (bridge) / -205198669 / -205160807 / -205198672 (bridge) / -205160804 (New Bloomfield - Landisburg) and -205160805 (Loysville branch) - OHM ids without the minus sign. Traced with opstrace.py (Graph over OSM rail + these OHM ways, trace(), douglas_peucker 8 m, trim_reversals). OHM's dates on these ways were used only to pick out the Perry County RR ways from the N&SV ways beside them, never as sources for this layer's years. OSM (maps.mail.ru Overpass mirror) has no old_railway_operator tag and no abandoned-railway or rail-trail way for this road in Perry County; probes for 'Perry County', 'PCRR', 'SR&W', 'SRW' and 'Susquehanna River' returned nothing.",
+    "geometry_quality": "Traced 1.75 mi against about 1.9 mi documented (Fowler table 458: Montour Jn 19.7 to Loysville 21.6; -7.9%). Fully traced, no straight-line legs, on OpenHistoricalMap way 205160805 from Montour Junction (hand-pinned at the OHM junction, 40.3627,-77.3153) to its west end at Loysville (40.3650,-77.3454; Nominatim's Loysville hamlet point is 0.1 km NE). OHM dates this way 1893-1895; that end date is NOT used (the report and Fowler carry the branch to 1903). No later alignment.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1903,
+      "headway_min": 360,
+      "note": "Montour Junction - Loysville, about 1.9 mi; Fowler marks it 'reverse' (trains reversed into Loysville). Built with the Landisburg extension ('completed to Landisburg with a branch to Loysville', Kohler & Weinshencker via pvrr.blogspot; Hain p.434 'to Loysville and Landisburg'); Fowler letter z = 1893. Ends 1903 with the rest of the line west of Bloomfield Junction, abandoned after the Sept 1903 sale. Not to be confused with the N&SV's own Loysville station on the narrow-gauge main line. headway_min is an ESTIMATE (two or three round trips a day assumed); no timetable with train counts was read.",
+      "sources": [
+       "Segment-level: 1893 start from Fowler table 458 letter z (1893 Official Guide) and the pvrr.blogspot chronology; 1903 end from the chronology's post-sale abandonment west of Tressler (the branch is not separately dated). Headway is an estimate, not sourced.",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf",
+       "https://pvrr.blogspot.com/2008/07/",
+       "https://archive.org/details/historyofperryco00hain"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.315346,
+      40.362712
+     ],
+     [
+      -77.316305,
+      40.362023
+     ],
+     [
+      -77.317614,
+      40.361696
+     ],
+     [
+      -77.329766,
+      40.360739
+     ],
+     [
+      -77.330828,
+      40.360682
+     ],
+     [
+      -77.332255,
+      40.36078
+     ],
+     [
+      -77.344305,
+      40.362532
+     ],
+     [
+      -77.344778,
+      40.362769
+     ],
+     [
+      -77.34511,
+      40.363121
+     ],
+     [
+      -77.345292,
+      40.363538
+     ],
+     [
+      -77.345421,
+      40.365017
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Susquehanna River and Western Railroad",
+    "line": "Susquehanna River and Western: Duncannon – New Bloomfield",
+    "id": "susquehanna-river-western-duncannon-new-bloomfield",
+    "color": "#73443f",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: standard-gauge steam short line with few trains a day; no timetable with running times was read. Unsourced.",
+    "gauge": "4 ft 8 1/2 in (standard)",
+    "geometry_source": "OpenHistoricalMap (overpass-api.openhistoricalmap.org, fetched 2026-10-21; CC0): unnamed railway=rail ways -205160803 (Duncannon - New Bloomfield), -205198668 / -205198670 (bridge) / -205198669 / -205160807 / -205198672 (bridge) / -205160804 (New Bloomfield - Landisburg) and -205160805 (Loysville branch) - OHM ids without the minus sign. Traced with opstrace.py (Graph over OSM rail + these OHM ways, trace(), douglas_peucker 8 m, trim_reversals). OHM's dates on these ways were used only to pick out the Perry County RR ways from the N&SV ways beside them, never as sources for this layer's years. OSM (maps.mail.ru Overpass mirror) has no old_railway_operator tag and no abandoned-railway or rail-trail way for this road in Perry County; probes for 'Perry County', 'PCRR', 'SR&W', 'SRW' and 'Susquehanna River' returned nothing.",
+    "geometry_quality": "Traced 11.14 mi against 11.1 mi documented (Fowler table 457; Hain 11.1 mi; +0.4%). Fully traced, no straight-line legs: every mile is on OpenHistoricalMap way 205160803, this road's own grade (OHM dates it 1889-1939, i.e. the Perry County RR / SR&W), from its junction with the PRR Main Line just south of the old Duncannon depot (40.3882,-77.0315) up Sherman's Creek to New Bloomfield (40.4173,-77.1854, the shared end of OHM's 1889 main line and 1892 extension; Nominatim's Bloomfield borough centroid is 0.3 km NW). No later alignment is drawn: the line was never rebuilt and was lifted after the 1939 abandonment. Intermediate stations (King's Mill, Sulphur Springs, Montebello Park, Roddy, Hoffman, Mahanoy) were not used as waypoints: Nominatim returned a peak for Mahanoy and a road for Sulphur Springs, and nothing for King's Mill. Identical geometry to the Perry County Railroad: Duncannon - New Bloomfield feature (Rule 4 ownership split at the 14 Sept 1903 sale).",
+    "segments": [
+     {
+      "start": 1903,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "Duncannon - New Bloomfield, 11.1 mi, the former Perry County Railroad after its sale to David Gring on 14 Sept 1903 and renaming as the Susquehanna River and Western (Gring family: David Gring to 1920, then Rodney Gring and George H. Ross). The SR&W built new passenger depots at New Bloomfield (1911, Perry County Times 1 June 1911) and Duncannon (1912, Newport News), and a 1913 photo shows SR&W 4-4-0 No.5 at Duncannon - positive evidence of passenger business to 1911-13. USRA federal control (28 Dec 1917 - 29 Jun 1918) did not change the operator; the 1921 purchase 'as trustees for the Susquehanna Coal Company' (a PRR subsidiary, Hain) was a financial interest only - the SR&W ran its own trains, so neither is a split. END 1928 IS THIN: it rests on the HMDB Blain marker (257366), read only as a search-engine relay (hmdb.org returned 403), which says the SR&W discontinued passenger operations on the last day of 1928, plus Gilmore 2017 (via pahistoricpreservation.com) giving 1928 for the end of passenger service at Blain. Both are written about the ex-N&SV west end; no source dates the end of passengers on Duncannon - New Bloomfield separately, and none says it outlasted or preceded the west end. The strictly confirmed span is 1903-1912 (the depot construction). Freight continued until abandonment on 17 May 1939 - those years are not drawn (Rule 1); the '1939' and '1935' dates in web summaries are freight/abandonment dates. The Duncannon depot became a residence in 1938. headway_min is an ESTIMATE (two or three round trips a day assumed); no timetable with train counts was read.",
+      "sources": [
+       "Segment-level: 1903 start from the 14 Sept 1903 sale (Hain; pvrr.blogspot chronology); service evidence to 1911-13 from the 1911/1912 depots (west2k) and the 1913 No.5 photo (rrpicturearchives); 1928 end from the HMDB Blain marker 257366 (relayed via search summary only, not read directly) and Gilmore 2017 via pahistoricpreservation.com - both about the ex-N&SV end. Headway is an estimate, not sourced.",
+       "https://archive.org/details/historyofperryco00hain",
+       "https://pvrr.blogspot.com/2008/07/",
+       "https://www.hmdb.org/m.asp?m=257366",
+       "https://pahistoricpreservation.com/from-creek-came-village-blain/",
+       "https://www.west2k.com/pastations/perrypa.shtml",
+       "https://trainwatcher1.rrpicturearchives.net/locThumbs.aspx?id=113067"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.031545,
+      40.388202
+     ],
+     [
+      -77.033856,
+      40.392124
+     ],
+     [
+      -77.034555,
+      40.393055
+     ],
+     [
+      -77.036296,
+      40.394425
+     ],
+     [
+      -77.037437,
+      40.395509
+     ],
+     [
+      -77.040952,
+      40.400245
+     ],
+     [
+      -77.041928,
+      40.402725
+     ],
+     [
+      -77.044361,
+      40.405259
+     ],
+     [
+      -77.044843,
+      40.406145
+     ],
+     [
+      -77.045513,
+      40.408061
+     ],
+     [
+      -77.046607,
+      40.409332
+     ],
+     [
+      -77.0483,
+      40.410594
+     ],
+     [
+      -77.04857,
+      40.410997
+     ],
+     [
+      -77.048665,
+      40.411883
+     ],
+     [
+      -77.048557,
+      40.413689
+     ],
+     [
+      -77.04918,
+      40.416523
+     ],
+     [
+      -77.050027,
+      40.418704
+     ],
+     [
+      -77.051179,
+      40.420843
+     ],
+     [
+      -77.051457,
+      40.421113
+     ],
+     [
+      -77.052487,
+      40.421628
+     ],
+     [
+      -77.053271,
+      40.421807
+     ],
+     [
+      -77.0562,
+      40.422101
+     ],
+     [
+      -77.056854,
+      40.422379
+     ],
+     [
+      -77.057798,
+      40.422967
+     ],
+     [
+      -77.059397,
+      40.424592
+     ],
+     [
+      -77.060588,
+      40.425564
+     ],
+     [
+      -77.062004,
+      40.42612
+     ],
+     [
+      -77.062723,
+      40.426218
+     ],
+     [
+      -77.064053,
+      40.426079
+     ],
+     [
+      -77.064648,
+      40.425858
+     ],
+     [
+      -77.065946,
+      40.424862
+     ],
+     [
+      -77.06659,
+      40.424601
+     ],
+     [
+      -77.067984,
+      40.424543
+     ],
+     [
+      -77.069261,
+      40.425066
+     ],
+     [
+      -77.070205,
+      40.426071
+     ],
+     [
+      -77.070935,
+      40.426438
+     ],
+     [
+      -77.07351,
+      40.42701
+     ],
+     [
+      -77.074915,
+      40.427157
+     ],
+     [
+      -77.076675,
+      40.427051
+     ],
+     [
+      -77.077458,
+      40.426855
+     ],
+     [
+      -77.078944,
+      40.426161
+     ],
+     [
+      -77.082055,
+      40.424127
+     ],
+     [
+      -77.083396,
+      40.423384
+     ],
+     [
+      -77.086765,
+      40.422649
+     ],
+     [
+      -77.087463,
+      40.42264
+     ],
+     [
+      -77.088289,
+      40.422779
+     ],
+     [
+      -77.089703,
+      40.423347
+     ],
+     [
+      -77.090443,
+      40.424743
+     ],
+     [
+      -77.090229,
+      40.427214
+     ],
+     [
+      -77.089306,
+      40.429738
+     ],
+     [
+      -77.089285,
+      40.430154
+     ],
+     [
+      -77.089392,
+      40.43053
+     ],
+     [
+      -77.089832,
+      40.430995
+     ],
+     [
+      -77.0904,
+      40.431216
+     ],
+     [
+      -77.090873,
+      40.431355
+     ],
+     [
+      -77.093201,
+      40.430979
+     ],
+     [
+      -77.094638,
+      40.430195
+     ],
+     [
+      -77.095658,
+      40.430015
+     ],
+     [
+      -77.096065,
+      40.430032
+     ],
+     [
+      -77.096795,
+      40.430293
+     ],
+     [
+      -77.098176,
+      40.431118
+     ],
+     [
+      -77.09897,
+      40.43142
+     ],
+     [
+      -77.100386,
+      40.431559
+     ],
+     [
+      -77.10942,
+      40.430228
+     ],
+     [
+      -77.111566,
+      40.429525
+     ],
+     [
+      -77.123761,
+      40.426169
+     ],
+     [
+      -77.132171,
+      40.424372
+     ],
+     [
+      -77.135143,
+      40.423144
+     ],
+     [
+      -77.140205,
+      40.422425
+     ],
+     [
+      -77.142416,
+      40.421625
+     ],
+     [
+      -77.145999,
+      40.41946
+     ],
+     [
+      -77.14689,
+      40.419256
+     ],
+     [
+      -77.154158,
+      40.418382
+     ],
+     [
+      -77.15507,
+      40.418055
+     ],
+     [
+      -77.155864,
+      40.417484
+     ],
+     [
+      -77.157687,
+      40.415754
+     ],
+     [
+      -77.160734,
+      40.413851
+     ],
+     [
+      -77.163145,
+      40.411645
+     ],
+     [
+      -77.163842,
+      40.411172
+     ],
+     [
+      -77.164583,
+      40.410853
+     ],
+     [
+      -77.167635,
+      40.410297
+     ],
+     [
+      -77.170221,
+      40.410428
+     ],
+     [
+      -77.171562,
+      40.410755
+     ],
+     [
+      -77.172131,
+      40.411057
+     ],
+     [
+      -77.176613,
+      40.415514
+     ],
+     [
+      -77.177987,
+      40.41647
+     ],
+     [
+      -77.178855,
+      40.416862
+     ],
+     [
+      -77.18108,
+      40.41745
+     ],
+     [
+      -77.183032,
+      40.417736
+     ],
+     [
+      -77.18374,
+      40.417736
+     ],
+     [
+      -77.185446,
+      40.417316
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Susquehanna River and Western Railroad",
+    "line": "Susquehanna River and Western: New Bloomfield – Bloomfield Junction",
+    "id": "susquehanna-river-western-new-bloomfield-bloomfield-jct",
+    "color": "#73443f",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: standard-gauge steam short line with few trains a day; no timetable with running times was read. Unsourced.",
+    "gauge": "3 ft spur (1903), dual gauge 3 ft / standard from 1918",
+    "geometry_source": "OpenHistoricalMap (overpass-api.openhistoricalmap.org, fetched 2026-10-21; CC0): unnamed railway=rail ways -205160803 (Duncannon - New Bloomfield), -205198668 / -205198670 (bridge) / -205198669 / -205160807 / -205198672 (bridge) / -205160804 (New Bloomfield - Landisburg) and -205160805 (Loysville branch) - OHM ids without the minus sign. Traced with opstrace.py (Graph over OSM rail + these OHM ways, trace(), douglas_peucker 8 m, trim_reversals). OHM's dates on these ways were used only to pick out the Perry County RR ways from the N&SV ways beside them, never as sources for this layer's years. OSM (maps.mail.ru Overpass mirror) has no old_railway_operator tag and no abandoned-railway or rail-trail way for this road in Perry County; probes for 'Perry County', 'PCRR', 'SR&W', 'SRW' and 'Susquehanna River' returned nothing.",
+    "geometry_quality": "Traced 2.66 mi against 2.5 mi documented (Fowler table 457: New Bloomfield 11.1, Bloomfield Jn 13.6; +6.4%). Fully traced, no straight-line legs: identical to the first 2.66 mi of the Perry County Railroad: New Bloomfield - Landisburg feature, on OpenHistoricalMap way 205198668 (the PCRR's 1892 grade), ending exactly at the Bloomfield Junction point where the Susquehanna River and Western: Bloomfield Junction - New Germantown feature in newport_and_sherman_s_valley_railroad.geojson begins. POSSIBLE LATER/EARLIER-ALIGNMENT CAVEAT: in the SR&W era this link was the spur the N&SV built in 1903 (3 ft) and dual-gauged in 1918; no source says whether that spur reused the 1892 PCRR grade drawn here or ran on its own alignment beside it, and OHM maps only the PCRR grade (dated to 1904). The drawn line is the 1892 grade.",
+    "segments": [
+     {
+      "start": 1920,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "New Bloomfield - Bloomfield Junction, 2.5 mi: the link by which the ex-N&SV narrow gauge (absorbed into the SR&W) reached New Bloomfield, which became the terminus of both systems; the N&SV shops moved there from Newport in 1921. The track was a spur the N&SV built in 1903, dual-gauged in 1918. Completes the SR&W's New Bloomfield - New Germantown line, whose Bloomfield Junction - New Germantown part is drawn in newport_and_sherman_s_valley_railroad.geojson. START YEAR CONFLICT: this report's drawable start is 1921 (Hain 1922: foreclosure sale in 1921; HMDB Blain marker: 1921), but the chronology (pvrr.blogspot, after Kohler & Weinshencker) dates the sale and absorption 31 Mar 1920 and the Newport end lost its trains on 20 Apr 1920, after which New Bloomfield was the narrow gauge's only outlet. Drawn from 1920 to match the existing SR&W Bloomfield Junction - New Germantown feature, so the two meet in every drawn year. Ends 1928 with SR&W passenger service (HMDB Blain marker, relayed; Gilmore 2017 via pahistoricpreservation.com); Loysville - New Bloomfield was lifted 1934-35 - freight-only years not drawn (Rule 1). Whether 1920-28 trains were mixed or separate passenger trains is not known; either counts. headway_min is an ESTIMATE (two or three round trips a day assumed); no timetable with train counts was read.",
+      "sources": [
+       "Segment-level: 1920 start from the 31 Mar 1920 sale in the pvrr.blogspot chronology (Hain and the Blain marker say 1921 - conflict recorded in note); 1928 end from the HMDB Blain marker 257366 (relayed via search summary only) and Gilmore 2017 via pahistoricpreservation.com; route and mileage from Fowler table 457. Headway is an estimate, not sourced.",
+       "https://pvrr.blogspot.com/2008/07/",
+       "https://archive.org/details/historyofperryco00hain",
+       "https://www.hmdb.org/m.asp?m=257366",
+       "https://pahistoricpreservation.com/from-creek-came-village-blain/",
+       "https://www.branchline.uk/jfpdf/pennsylvaniarrs5.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.185446,
+      40.417316
+     ],
+     [
+      -77.192889,
+      40.41455
+     ],
+     [
+      -77.200828,
+      40.411324
+     ],
+     [
+      -77.213946,
+      40.407164
+     ],
+     [
+      -77.21596,
+      40.406764
+     ],
+     [
+      -77.219576,
+      40.40656
+     ],
+     [
+      -77.221711,
+      40.406527
+     ],
+     [
+      -77.225037,
+      40.406698
+     ],
+     [
+      -77.225938,
+      40.406511
+     ],
+     [
+      -77.231724,
+      40.404595
+     ],
+     [
+      -77.232381,
+      40.404354
+     ]
+    ]
+   }
+  }
+ ]
+}
