@@ -1,0 +1,2371 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Baltimore, Chesapeake and Atlantic corridor across Maryland's Eastern Shore, Claiborne (Eastern Bay steamer landing) - St. Michaels - Easton - Hurlock - Vienna - Salisbury - Berlin - Ocean City, 87.6 mi (Fowler line 53). One corridor, four operating companies: the Wicomico and Pocomoke (Salisbury - Berlin 1868, to Ocean City 1876/1881), the Baltimore and Eastern Shore (built Claiborne - Salisbury 1889-90, took in the W&P June 1890, sold 29 Aug 1894), the Baltimore, Chesapeake and Atlantic (30 Aug 1894 - 29 Mar 1928; PRR stock control from 1902/1905, not a split) and the wholly PRR-owned Baltimore and Eastern (1928 - passenger trains ended 1933/34; freight only by 1951). Rail only - the Baltimore - Claiborne steamers and the Annapolis - Claiborne ferries are not drawn. Research report: research/branches/baltimore_chesapeake_and_atlantic_railway.txt.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf -- J. Fowler, Delaware & Maryland Railroads, Passenger Stations & Stops, line 53 (BC&A) and 51 (B&E)",
+   "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway",
+   "https://en.wikipedia.org/wiki/Wicomico_and_Pocomoke_Railroad",
+   "https://en.wikipedia.org/wiki/Claiborne,_Maryland",
+   "https://www.loc.gov/resource/sn84020422/1933-10-25/ed-1/?sp=7 -- Smyrna Times 25 Oct 1933 p.7",
+   "https://www.loc.gov/resource/sn89060127/1934-07-13/ed-1/?sp=13 -- Worcester Democrat 13 Jul 1934 p.13",
+   "https://www.loc.gov/resource/sn89060127/1924-07-26/ed-1/?sp=4 -- Worcester Democrat 26 Jul 1924 p.4",
+   "https://www.loc.gov/resource/sn88065731/1921-09-13/ed-1/?sp=3 -- Daily Banner (Cambridge) 13 Sep 1921 p.3",
+   "https://www.loc.gov/resource/sn88065731/1920-03-06/ed-1/?sp=3 -- Daily Banner 6 Mar 1920 p.3",
+   "https://www.loc.gov/resource/sn84020422/1939-12-07/ed-1/?sp=6 -- Smyrna Times 7 Dec 1939 p.6 (reprint)",
+   "https://eshore.iath.virginia.edu/node/2151",
+   "research/sources/official_guide_1952.txt -- Official Guide 1952, Baltimore and Eastern 'Freight Service only'",
+   "https://www.loc.gov/resource/sn83045462/1928-07-21/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn84026749/1930-07-19/ed-1/?sp=8",
+   "https://www.loc.gov/resource/sn84026749/1930-08-02/ed-1/?sp=14",
+   "https://www.loc.gov/resource/sn83045462/1931-08-02/ed-1/?sp=21",
+   "https://www.loc.gov/resource/sn83045462/1931-08-26/ed-1/?sp=23"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-23): old_railway_operator=PRR abandoned/disused/rail ways (Preston Branch, Saint Michaels Nature Trail, Easton Rail Trail and unnamed pieces), routed with opstrace.py",
+   "OpenHistoricalMap (2026-10-23): untagged railway ways for the Sinepuxent Bay bridge and Ocean City island track (ways 205303801-205303807), and 0.4 mi near Salisbury - geometry only"
+  ],
+  "operator_split": "Salisbury - Ocean City: W&P 1868-1890 (Salisbury - Berlin 1868, Berlin - Hammock Point 1876, the bay bridge 1881) | B&ES 1890-1894 | BC&A 1894-1928 | B&E 1928-1933. Claiborne - Easton: B&ES 1890-1894 | BC&A 1894-1924 [OPEN] | B&E excursion specials 1928 [ANCHOR], 1930-1931 [OPEN]. Easton - Hurlock: B&ES 1890-1894 | BC&A 1894-1928 | B&E 1928-1933 [OPEN]. Hurlock - Salisbury: B&ES 1890-1894 | BC&A 1894-1920 [OPEN] | B&E none confirmed. Splits share identical geometry. Transfer years (1890, 1894, 1928) are drawn under both companies, as the report's spans give them. PRR majority stock control (1902 / June 1905) is not a split. New colours, none used by any company in data/: Wicomico and Pocomoke #117332, Baltimore and Eastern Shore #8C8C15, Baltimore, Chesapeake and Atlantic #1D3DBF, Baltimore and Eastern #74158C. The Baltimore and Eastern gets its own colour, not the PRR's (#7B241C): it ran and advertised its trains under its own name (report ownership_split) - flagged for whoever owns the PRR palette.",
+  "omitted": [
+   "Report block [13], Baltimore and Eastern Hurlock - Salisbury via Vienna: drawable NONE - no B&E passenger year confirmed (Fowler's c.1925 reroute vs en.wikipedia's forum-sourced 1932 trestle closure).",
+   "Report block [14], B&E trains over PRR track (Hurlock - Seaford - Salisbury, Easton - Oxford) and ex-Queen Anne's/MD&V track (Love Point - Queen Anne - Easton, to 1938): not BC&A track; belongs to the PRR and Queen Anne's/MD&V layers.",
+   "Report block [15], the 1977-1988 Berlin - West Ocean City tourist railroad ('Ocean City Western'): drawable NONE - operator name and dates unconfirmed.",
+   "Freight only (Rule 1): the Fulton branch and Salisbury industrial tracks (Willards, Mardela, Mill Street); every BC&A-track year after 1933; the 1951 B&E 'Freight Service only' system.",
+   "Boats: the Baltimore - Claiborne steamers and the Annapolis - Claiborne / Romancoke ferries.",
+   "The 1870 W&P extension to the Wicomico River wharves at Salisbury (freight/steamboat connection)."
+  ],
+  "existing_layer_note": "No existing feature in data/ draws any of this corridor (report EXISTING LAYER CHECK; re-grepped the worktree for Chesapeake and Atlantic, Wicomico, Baltimore and Eastern - no hits). The PRR/NYP&N trunk through Salisbury is delaware_railroad.geojson and is untouched.",
+  "not_yet_sourced": [
+   "bca-claiborne-easton: [OPEN] end - regular trains confirmed to summer 1924; the end (rail car? by 1928?) is undated (report U1).",
+   "bca-hurlock-salisbury: [OPEN] end - last confirmed 1920; Fowler's c.1925 reroute via Seaford vs en.wikipedia's forum-sourced 1932 Nanticoke trestle closure (report U2).",
+   "be-easton-hurlock: [OPEN] end - confirmed to Aug 1933; whether trains ran Aug 1933 - Jul 1934 (PSC withdrawal July 1934) is not established (report U3).",
+   "be-claiborne-easton-excursions: [ANCHOR] 1928 and [OPEN] 1930-1931 - 1929 and 1932-33 seasons not found; specials' Hurlock - Salisbury routing unknown (report U9).",
+   "wp-hammock-point-ocean-city / wp-berlin-hammock-point: Sinepuxent Bay bridge 1876 vs 'not completed until 1881' (report U4).",
+   "W&P sale to the B&ES 1888 vs June 1890; eshore's 1886 B&ES 'new line started' and 1892 receivership vs en.wikipedia's 1889-90 and c.1891 (report U5).",
+   "PRR control date 1902 vs June 1905 (not a split either way) (report U6).",
+   "B&ES 1890 opening day of each section (report U7); Easton - St. Michaels possibly 1889 (Smyrna Times 1939 reprint, year approx).",
+   "Location of the B&E Easton station (Fowler MP 72.5) and of the 1868 W&P Salisbury terminal not pinned; Ocean City station site taken from OpenHistoricalMap, unchecked.",
+   "All headways and speeds: no BC&A timetable was read for any year."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Wicomico and Pocomoke Railroad",
+    "line": "Wicomico and Pocomoke: Salisbury – Berlin",
+    "id": "wp-salisbury-berlin",
+    "color": "#117332",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Salisbury - Berlin: traced 22.63 mi against 23.0 mi documented (Fowler line 53 MP 30.3 -> 7.3). PRR-tagged track and abandoned ways via Parsonsburg, Pittsville, Willards, Whaleyville and St. Martin's, plus 0.4 mi of untagged OpenHistoricalMap railway; ends at the Snow Hill Line junction at Berlin. No straight-line leg over 100 m.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1868,
+      "end": 1890,
+      "headway_min": 720,
+      "note": "Wicomico and Pocomoke Railroad, Salisbury - Berlin, completed May 1868 (en.wikipedia citing Baltimore Sun 22 Apr 1868 - the Sun report was not read). Steam from the first train (eshore: 'first engine was a small wood-burning locomotive'); no animal era. The one primary-derived touchdown is the 1875 Official Guide (Fowler's 'y' letter at Pittsville, Whaleyville, St. Martin's and Berlin). Ends in 1890 only as an operator change: merged into the Baltimore and Eastern Shore in June 1890 (en.wikipedia citing Baltimore Sun 2 Jul 1890; the same article also says 'sold ... 1888' - conflict recorded, 1890 used); service continues as feature bes-salisbury-ocean-city. The 31 Mar 1870 extension to the Wicomico River wharves at Salisbury is freight/steamboat connection track and is not drawn. Headway is an estimate from the eshore article's undated 'two daily trips between Berlin and Salisbury'.",
+      "sources": [
+       "Segment-level: report block [1] - en.wikipedia (citing Baltimore Sun 22 Apr 1868 and 2 Jul 1890, not read) for the dates; Fowler line 53 'y' (1875 Official Guide) for 1875 service. Headway not sourced (undated eshore remark).",
+       "https://en.wikipedia.org/wiki/Wicomico_and_Pocomoke_Railroad",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://eshore.iath.virginia.edu/node/2151"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.59234,
+      38.371671
+     ],
+     [
+      -75.590739,
+      38.372536
+     ],
+     [
+      -75.589607,
+      38.372811
+     ],
+     [
+      -75.537664,
+      38.38068
+     ],
+     [
+      -75.535888,
+      38.380833
+     ],
+     [
+      -75.512951,
+      38.381531
+     ],
+     [
+      -75.511297,
+      38.381717
+     ],
+     [
+      -75.44302,
+      38.391323
+     ],
+     [
+      -75.416046,
+      38.395068
+     ],
+     [
+      -75.413235,
+      38.395356
+     ],
+     [
+      -75.342872,
+      38.395103
+     ],
+     [
+      -75.316129,
+      38.395151
+     ],
+     [
+      -75.302301,
+      38.395034
+     ],
+     [
+      -75.301241,
+      38.394923
+     ],
+     [
+      -75.300148,
+      38.394678
+     ],
+     [
+      -75.298861,
+      38.394177
+     ],
+     [
+      -75.278937,
+      38.38579
+     ],
+     [
+      -75.252563,
+      38.374969
+     ],
+     [
+      -75.249542,
+      38.373575
+     ],
+     [
+      -75.247675,
+      38.372484
+     ],
+     [
+      -75.246436,
+      38.371392
+     ],
+     [
+      -75.245763,
+      38.370576
+     ],
+     [
+      -75.224109,
+      38.329707
+     ],
+     [
+      -75.22362,
+      38.329137
+     ],
+     [
+      -75.222939,
+      38.328654
+     ],
+     [
+      -75.221404,
+      38.328139
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Wicomico and Pocomoke Railroad",
+    "line": "Wicomico and Pocomoke: Berlin – Hammock Point",
+    "id": "wp-berlin-hammock-point",
+    "color": "#117332",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Berlin - Hammock Point (West Ocean City): traced 6.52 mi against 6.8 mi documented (Fowler MP 7.3 -> the mainland shore; the report gives ~6.8 mi (not measured)). PRR-tagged abandoned ways to the west end of the Sinepuxent Bay bridge. No straight-line leg over 100 m.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1876,
+      "end": 1890,
+      "headway_min": 720,
+      "note": "Ocean City extension of the Wicomico and Pocomoke, built for the Atlantic Hotel resort: rails reached Hammock Point (West Ocean City) early 1875 and the hotel opened 4 Jul 1875 (en.wikipedia citing Baltimore Sun 28 Jan and 12 Jun 1875). Drawn from 1876, the year the Ocean City Bridge Co. pivot bridge was built (en.wikipedia citing Md. General Assembly 1876 / Baltimore Sun 16 Aug 1876) - the report's collapse of a 1875-vs-1876 start; whether trains ran to Hammock Point itself in 1875 is not established. Ends 1890 as an operator change (merged into the B&ES, see bes-salisbury-ocean-city). en.wikipedia's lead 'extended to Ocean City in 1870' contradicts its own body (construction began 1874) and is taken as an error. Headway estimated.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: report block [2] - 1876-1880 rests on en.wikipedia's citations (Md. General Assembly 1876, Baltimore Sun 1875-76), none read; no timetable for 1876-1880 checked. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Wicomico_and_Pocomoke_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.221404,
+      38.328139
+     ],
+     [
+      -75.21991,
+      38.328051
+     ],
+     [
+      -75.205814,
+      38.328772
+     ],
+     [
+      -75.203142,
+      38.328806
+     ],
+     [
+      -75.101099,
+      38.328002
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Wicomico and Pocomoke Railroad",
+    "line": "Wicomico and Pocomoke: Hammock Point – Ocean City",
+    "id": "wp-hammock-point-ocean-city",
+    "color": "#117332",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Hammock Point - Ocean City (Sinepuxent Bay bridge): traced 0.74 mi against 0.5 mi documented (report: ~0.5 mi; Fowler MP 0.0 is Ocean City station). OpenHistoricalMap railway ways (bridge=yes over the bay, then the Ocean City island track), joined to OSM at Hammock Point. The bridge was destroyed by the storm of 23 Aug 1933 and never rebuilt, so nothing survives in OSM; OHM's drawing is the only source and its position was not independently checked. No straight-line leg over 100 m.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1890,
+      "headway_min": 720,
+      "note": "The Sinepuxent Bay bridge from Hammock Point into Ocean City. SOURCE CONFLICT: en.wikipedia dates the Ocean City Bridge Co. pivot bridge to 1876 (Md. General Assembly 1876; Baltimore Sun 16 Aug 1876) but also says the bridge into town 'was not completed until 1881'. Collapsed to the later year, 1881, per the report; the 1876-1880 years are deliberately not drawn on this leg. Ends 1890 as an operator change (B&ES). Headway estimated.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: report block [2] - the 1881 completion is en.wikipedia's statement, uncited at that sentence; conflicts with its own 1876 bridge date. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Wicomico_and_Pocomoke_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.101099,
+      38.328002
+     ],
+     [
+      -75.097475,
+      38.328188
+     ],
+     [
+      -75.089471,
+      38.32751
+     ],
+     [
+      -75.08887,
+      38.327619
+     ],
+     [
+      -75.087872,
+      38.328368
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Shore Railroad",
+    "line": "Baltimore and Eastern Shore: Claiborne – Easton",
+    "id": "bes-claiborne-easton",
+    "color": "#8C8C15",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Claiborne - Claiborne Branch Jct (Easton): traced 14.88 mi against 15.4 mi documented (Fowler line 53 MP 87.6 (Claiborne) -> 72.2 (Claiborne Branch Jct, the PRR crossing); 15.1 mi to the B&E Easton station at MP 72.5, which lies ~0.3 mi west of the junction on this line). PRR-tagged abandoned ways, the Saint Michaels Nature Trail and the Easton Rail Trail. The Claiborne end stops at the hamlet's geocode on the grade; the steamer wharf beyond it is not drawn, which is probably most of the shortfall. Approximated (straight-line legs across unmapped stretches of the grade, 1.80 mi in all): 0.16 km (0.10 mi) at 38.7875,-76.2309 - 38.7862,-76.2303; 0.86 km (0.53 mi) at 38.7749,-76.2144 - 38.7698,-76.2071; 0.40 km (0.25 mi) at 38.7537,-76.1767 - 38.7531,-76.1721; 0.79 km (0.49 mi) at 38.7792,-76.1141 - 38.7792,-76.1050; 0.47 km (0.29 mi) at 38.7682,-76.0793 - 38.7669,-76.0741; 0.21 km (0.13 mi) at 38.7666,-76.0711 - 38.7664,-76.0687. The legs, west to east: a 0.16 km join between trail ways near St. Michaels; the unmapped grade east of St. Michaels (0.86 km); a gap near Royal Oak (0.40 km); the gap west of Bloomfield (0.79 km); and two pieces through Easton town, where the grade is built over (0.47 km and 0.21 km, the latter ending at the PRR crossing).  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1894,
+      "headway_min": 480,
+      "note": "Baltimore and Eastern Shore Railroad, west end. Easton - St. Michaels may have opened in late 1889 (Smyrna Times 7 Dec 1939 p.6 reprints a period item: 'completed as far as St. Michaels, regular passenger and freight trains will be run' - year approx, heading illegible), but only 1890 is drawn: a B&ES timetable effective 29 Sep 1890 appeared in the Denton Journal 15 Oct 1890 (via en.wikipedia 'Claiborne, Maryland'). Every station carries Fowler's 'z' (1893 company timetable). Receivership from c.1891 (the receiver ran Baltimore - Claiborne steamers; boats not drawn). Ends 1894 as an operator change: judicial sale 29 Aug 1894, BC&A incorporated 30 Aug 1894 (feature bca-claiborne-easton). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [3] - Denton Journal 15 Oct 1890 timetable (via en.wikipedia Claiborne, Maryland, not read), Fowler line 53 'z' (1893 timetable), en.wikipedia BC&A for the 1894 sale. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Claiborne,_Maryland",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://www.loc.gov/resource/sn84020422/1939-12-07/ed-1/?sp=6"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.277679,
+      38.837564
+     ],
+     [
+      -76.27142,
+      38.82893
+     ],
+     [
+      -76.268533,
+      38.82586
+     ],
+     [
+      -76.240743,
+      38.806065
+     ],
+     [
+      -76.239248,
+      38.804922
+     ],
+     [
+      -76.238308,
+      38.803921
+     ],
+     [
+      -76.237505,
+      38.802545
+     ],
+     [
+      -76.22913,
+      38.78341
+     ],
+     [
+      -76.227866,
+      38.781993
+     ],
+     [
+      -76.22762,
+      38.781971
+     ],
+     [
+      -76.225939,
+      38.781021
+     ],
+     [
+      -76.22558,
+      38.781055
+     ],
+     [
+      -76.225304,
+      38.780613
+     ],
+     [
+      -76.220118,
+      38.777903
+     ],
+     [
+      -76.218268,
+      38.777387
+     ],
+     [
+      -76.21723,
+      38.776875
+     ],
+     [
+      -76.18702,
+      38.755951
+     ],
+     [
+      -76.184928,
+      38.754956
+     ],
+     [
+      -76.183376,
+      38.754564
+     ],
+     [
+      -76.172133,
+      38.753054
+     ],
+     [
+      -76.169929,
+      38.752815
+     ],
+     [
+      -76.168612,
+      38.752808
+     ],
+     [
+      -76.166819,
+      38.752973
+     ],
+     [
+      -76.158239,
+      38.754933
+     ],
+     [
+      -76.155757,
+      38.755715
+     ],
+     [
+      -76.153873,
+      38.756536
+     ],
+     [
+      -76.144882,
+      38.761997
+     ],
+     [
+      -76.139818,
+      38.765376
+     ],
+     [
+      -76.133595,
+      38.769174
+     ],
+     [
+      -76.12705,
+      38.770814
+     ],
+     [
+      -76.125141,
+      38.771483
+     ],
+     [
+      -76.124261,
+      38.771934
+     ],
+     [
+      -76.122973,
+      38.772871
+     ],
+     [
+      -76.118553,
+      38.77692
+     ],
+     [
+      -76.117867,
+      38.777422
+     ],
+     [
+      -76.115807,
+      38.778576
+     ],
+     [
+      -76.114078,
+      38.77916
+     ],
+     [
+      -76.10497,
+      38.77915
+     ],
+     [
+      -76.103404,
+      38.778743
+     ],
+     [
+      -76.100915,
+      38.77789
+     ],
+     [
+      -76.098748,
+      38.776953
+     ],
+     [
+      -76.095036,
+      38.775256
+     ],
+     [
+      -76.094934,
+      38.775115
+     ],
+     [
+      -76.092876,
+      38.774284
+     ],
+     [
+      -76.091726,
+      38.773634
+     ],
+     [
+      -76.090387,
+      38.773155
+     ],
+     [
+      -76.090041,
+      38.772859
+     ],
+     [
+      -76.089613,
+      38.772952
+     ],
+     [
+      -76.087611,
+      38.772102
+     ],
+     [
+      -76.084416,
+      38.770491
+     ],
+     [
+      -76.079307,
+      38.76822
+     ],
+     [
+      -76.074128,
+      38.766934
+     ],
+     [
+      -76.0687,
+      38.766398
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Shore Railroad",
+    "line": "Baltimore and Eastern Shore: Easton – Salisbury (via Hurlock and Vienna)",
+    "id": "bes-easton-salisbury",
+    "color": "#8C8C15",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Traced 42.2 mi against 41.9 mi documented. Claiborne Branch Jct (Easton) - Hurlock: traced 16.09 mi against 15.9 mi documented (Fowler line 53 MP 72.2 -> 56.3). PRR-tagged Preston Branch (rail/disused) and abandoned ways via Bethlehem, Preston, Linchester and Ellwood; split at Hurlock where the PRR Seaford Line crosses. Approximated (straight-line legs across unmapped stretches of the grade, 0.16 mi in all): 0.12 km (0.07 mi) at 38.7664,-76.0687 - 38.7662,-76.0673; 0.14 km (0.09 mi) at 38.7657,-76.0611 - 38.7655,-76.0595. The 0.12 and 0.14 km legs are joins across the PRR crossing at Claiborne Branch Jct.  | Hurlock - Salisbury (via Vienna): traced 26.08 mi against 26.0 mi documented (Fowler line 53 MP 56.3 -> 30.3 (Salisbury Union Station)). PRR-tagged abandoned ways via Rhodesdale, Vienna, Mardela Springs and Hebron, ending at the crossing of the NYP&N (OSM 'Delmarva Secondary') at Salisbury. Approximated (straight-line legs across unmapped stretches of the grade, 0.82 mi in all): 1.21 km (0.75 mi) at 38.4873,-75.8220 - 38.4796,-75.8123; 0.12 km (0.07 mi) at 38.4725,-75.7969 - 38.4721,-75.7956. The 1.21 km leg is the Nanticoke River crossing at Vienna - the trestle is gone and the leg is the chord between the two banks. The 0.12 km leg is a join between ways east of Vienna.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1894,
+      "headway_min": 480,
+      "note": "Baltimore and Eastern Shore main line Easton - Hurlock - Vienna - Salisbury, construction complete 1 Dec 1890 (en.wikipedia BC&A); a B&ES timetable was in effect from 29 Sep 1890, but which sections it covered is not stated, so the opening day of each section is unknown - 1890 is safe for the year either way. Fowler 'z' (1893 timetable) at Easton, Turner's, Hurlock, Ennalls', Rhodesdale, Vienna, Mardela Springs (as Barren Creek), Hebron, Rock-a-Walkin and Salisbury. Ends 1894 as an operator change (BC&A: bca-easton-hurlock, bca-hurlock-salisbury). Headway estimated.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: report block [4] - the 1890 year rests on en.wikipedia BC&A (1 Dec 1890 completion) and the Denton Journal 29 Sep 1890 timetable via en.wikipedia (not read); 1893 service on Fowler line 53 'z'. Exact 1890 opening day of each section not sourced; headway not sourced.",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway",
+       "https://en.wikipedia.org/wiki/Claiborne,_Maryland",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.0687,
+      38.766398
+     ],
+     [
+      -76.058699,
+      38.765393
+     ],
+     [
+      -76.055631,
+      38.764662
+     ],
+     [
+      -76.053639,
+      38.763937
+     ],
+     [
+      -76.040273,
+      38.757329
+     ],
+     [
+      -76.037979,
+      38.756048
+     ],
+     [
+      -76.033063,
+      38.753657
+     ],
+     [
+      -76.026411,
+      38.750114
+     ],
+     [
+      -76.019655,
+      38.746813
+     ],
+     [
+      -76.017526,
+      38.746169
+     ],
+     [
+      -76.016377,
+      38.745984
+     ],
+     [
+      -76.003403,
+      38.745199
+     ],
+     [
+      -76.001846,
+      38.74523
+     ],
+     [
+      -75.999663,
+      38.745568
+     ],
+     [
+      -75.989723,
+      38.747802
+     ],
+     [
+      -75.988808,
+      38.747908
+     ],
+     [
+      -75.966244,
+      38.746891
+     ],
+     [
+      -75.950631,
+      38.74636
+     ],
+     [
+      -75.949411,
+      38.746185
+     ],
+     [
+      -75.948352,
+      38.745759
+     ],
+     [
+      -75.938146,
+      38.740661
+     ],
+     [
+      -75.936285,
+      38.739259
+     ],
+     [
+      -75.934616,
+      38.737557
+     ],
+     [
+      -75.923608,
+      38.71976
+     ],
+     [
+      -75.922697,
+      38.718858
+     ],
+     [
+      -75.89696,
+      38.699086
+     ],
+     [
+      -75.896157,
+      38.698319
+     ],
+     [
+      -75.86757,
+      38.659429
+     ],
+     [
+      -75.866683,
+      38.658036
+     ],
+     [
+      -75.8661,
+      38.656547
+     ],
+     [
+      -75.8619,
+      38.638236
+     ],
+     [
+      -75.861441,
+      38.636075
+     ],
+     [
+      -75.861283,
+      38.635519
+     ],
+     [
+      -75.860527,
+      38.633332
+     ],
+     [
+      -75.835518,
+      38.57393
+     ],
+     [
+      -75.827247,
+      38.544467
+     ],
+     [
+      -75.826903,
+      38.54166
+     ],
+     [
+      -75.827119,
+      38.533867
+     ],
+     [
+      -75.831115,
+      38.519628
+     ],
+     [
+      -75.8314,
+      38.518009
+     ],
+     [
+      -75.83146,
+      38.516275
+     ],
+     [
+      -75.831295,
+      38.514632
+     ],
+     [
+      -75.826116,
+      38.489353
+     ],
+     [
+      -75.82542,
+      38.487725
+     ],
+     [
+      -75.824457,
+      38.486666
+     ],
+     [
+      -75.823901,
+      38.486367
+     ],
+     [
+      -75.823269,
+      38.486372
+     ],
+     [
+      -75.822736,
+      38.486634
+     ],
+     [
+      -75.822018,
+      38.48734
+     ],
+     [
+      -75.812283,
+      38.479616
+     ],
+     [
+      -75.800103,
+      38.473259
+     ],
+     [
+      -75.797255,
+      38.472482
+     ],
+     [
+      -75.758795,
+      38.463231
+     ],
+     [
+      -75.756606,
+      38.462343
+     ],
+     [
+      -75.754469,
+      38.460735
+     ],
+     [
+      -75.747792,
+      38.455188
+     ],
+     [
+      -75.746228,
+      38.454068
+     ],
+     [
+      -75.632001,
+      38.383613
+     ],
+     [
+      -75.630069,
+      38.382041
+     ],
+     [
+      -75.6196,
+      38.371787
+     ],
+     [
+      -75.618798,
+      38.371263
+     ],
+     [
+      -75.617648,
+      38.37079
+     ],
+     [
+      -75.61669,
+      38.370598
+     ],
+     [
+      -75.614553,
+      38.370561
+     ],
+     [
+      -75.598863,
+      38.373272
+     ],
+     [
+      -75.598275,
+      38.373193
+     ],
+     [
+      -75.593634,
+      38.371564
+     ],
+     [
+      -75.592801,
+      38.371511
+     ],
+     [
+      -75.59234,
+      38.371671
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Shore Railroad",
+    "line": "Baltimore and Eastern Shore: Salisbury – Ocean City",
+    "id": "bes-salisbury-ocean-city",
+    "color": "#8C8C15",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Traced 29.9 mi against 30.3 mi documented. Salisbury - Berlin: traced 22.63 mi against 23.0 mi documented (Fowler line 53 MP 30.3 -> 7.3). PRR-tagged track and abandoned ways via Parsonsburg, Pittsville, Willards, Whaleyville and St. Martin's, plus 0.4 mi of untagged OpenHistoricalMap railway; ends at the Snow Hill Line junction at Berlin. No straight-line leg over 100 m.  | Berlin - Hammock Point (West Ocean City): traced 6.52 mi against 6.8 mi documented (Fowler MP 7.3 -> the mainland shore; the report gives ~6.8 mi (not measured)). PRR-tagged abandoned ways to the west end of the Sinepuxent Bay bridge. No straight-line leg over 100 m.  | Hammock Point - Ocean City (Sinepuxent Bay bridge): traced 0.74 mi against 0.5 mi documented (report: ~0.5 mi; Fowler MP 0.0 is Ocean City station). OpenHistoricalMap railway ways (bridge=yes over the bay, then the Ocean City island track), joined to OSM at Hammock Point. The bridge was destroyed by the storm of 23 Aug 1933 and never rebuilt, so nothing survives in OSM; OHM's drawing is the only source and its position was not independently checked. No straight-line leg over 100 m.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1894,
+      "headway_min": 480,
+      "note": "The former Wicomico and Pocomoke, merged into the Baltimore and Eastern Shore in June 1890 (en.wikipedia citing Baltimore Sun 2 Jul 1890; the same article's 'sold ... 1888' conflicts - the later, operating hand-over year is used). Ocean City, Berlin and the intermediate stops carry Fowler's 'z' (1893 timetable). Ends 1894 as an operator change (BC&A: bca-salisbury-ocean-city). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [5] - en.wikipedia W&P (citing Baltimore Sun 2 Jul 1890, not read) for the hand-over; Fowler line 53 'z' (1893 timetable). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Wicomico_and_Pocomoke_Railroad",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.59234,
+      38.371671
+     ],
+     [
+      -75.590739,
+      38.372536
+     ],
+     [
+      -75.589607,
+      38.372811
+     ],
+     [
+      -75.537664,
+      38.38068
+     ],
+     [
+      -75.535888,
+      38.380833
+     ],
+     [
+      -75.512951,
+      38.381531
+     ],
+     [
+      -75.511297,
+      38.381717
+     ],
+     [
+      -75.44302,
+      38.391323
+     ],
+     [
+      -75.416046,
+      38.395068
+     ],
+     [
+      -75.413235,
+      38.395356
+     ],
+     [
+      -75.342872,
+      38.395103
+     ],
+     [
+      -75.316129,
+      38.395151
+     ],
+     [
+      -75.302301,
+      38.395034
+     ],
+     [
+      -75.301241,
+      38.394923
+     ],
+     [
+      -75.300148,
+      38.394678
+     ],
+     [
+      -75.298861,
+      38.394177
+     ],
+     [
+      -75.278937,
+      38.38579
+     ],
+     [
+      -75.252563,
+      38.374969
+     ],
+     [
+      -75.249542,
+      38.373575
+     ],
+     [
+      -75.247675,
+      38.372484
+     ],
+     [
+      -75.246436,
+      38.371392
+     ],
+     [
+      -75.245763,
+      38.370576
+     ],
+     [
+      -75.224109,
+      38.329707
+     ],
+     [
+      -75.22362,
+      38.329137
+     ],
+     [
+      -75.222939,
+      38.328654
+     ],
+     [
+      -75.221404,
+      38.328139
+     ],
+     [
+      -75.21991,
+      38.328051
+     ],
+     [
+      -75.205814,
+      38.328772
+     ],
+     [
+      -75.203142,
+      38.328806
+     ],
+     [
+      -75.101099,
+      38.328002
+     ],
+     [
+      -75.097475,
+      38.328188
+     ],
+     [
+      -75.089471,
+      38.32751
+     ],
+     [
+      -75.08887,
+      38.327619
+     ],
+     [
+      -75.087872,
+      38.328368
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore, Chesapeake and Atlantic Railway",
+    "line": "Baltimore, Chesapeake and Atlantic: Claiborne – Easton",
+    "id": "bca-claiborne-easton",
+    "color": "#1D3DBF",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Claiborne - Claiborne Branch Jct (Easton): traced 14.88 mi against 15.4 mi documented (Fowler line 53 MP 87.6 (Claiborne) -> 72.2 (Claiborne Branch Jct, the PRR crossing); 15.1 mi to the B&E Easton station at MP 72.5, which lies ~0.3 mi west of the junction on this line). PRR-tagged abandoned ways, the Saint Michaels Nature Trail and the Easton Rail Trail. The Claiborne end stops at the hamlet's geocode on the grade; the steamer wharf beyond it is not drawn, which is probably most of the shortfall. Approximated (straight-line legs across unmapped stretches of the grade, 1.80 mi in all): 0.16 km (0.10 mi) at 38.7875,-76.2309 - 38.7862,-76.2303; 0.86 km (0.53 mi) at 38.7749,-76.2144 - 38.7698,-76.2071; 0.40 km (0.25 mi) at 38.7537,-76.1767 - 38.7531,-76.1721; 0.79 km (0.49 mi) at 38.7792,-76.1141 - 38.7792,-76.1050; 0.47 km (0.29 mi) at 38.7682,-76.0793 - 38.7669,-76.0741; 0.21 km (0.13 mi) at 38.7666,-76.0711 - 38.7664,-76.0687. The legs, west to east: a 0.16 km join between trail ways near St. Michaels; the unmapped grade east of St. Michaels (0.86 km); a gap near Royal Oak (0.40 km); the gap west of Bloomfield (0.79 km); and two pieces through Easton town, where the grade is built over (0.47 km and 0.21 km, the latter ending at the PRR crossing).  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1924,
+      "headway_min": 360,
+      "note": "Baltimore, Chesapeake and Atlantic (inc. 30 Aug 1894), west end to the Claiborne steamer landing for the BC&A's own Baltimore boats and, from 1912/1919, the Annapolis - Claiborne auto ferry (boats not drawn). PRR took majority stock in 1902 (qarrs.org: June 1905) - stock control only, the BC&A kept its own organisation and trains, so no split. Regular trains confirmed 1920-21 (Daily Banner, Cambridge: 6 Mar 1920 storm train Claiborne - Easton - Hurlock - Berlin; 13 Sep 1921 'the B. C. & A. train leaves Claiborne at 8.35 A. M.') and in the summer of 1924 (Worcester Democrat, weekly Jul-Sep 1924: Claiborne-Annapolis Ferry schedule in effect 28 Jun 1924, 'Connect with B. C. & A. trains at Claiborne for Easton, Hurlock, Salisbury, Ocean City'). [OPEN] END: 1924 is the last CONFIRMED year, not a known end - en.wikipedia 'Claiborne, Maryland' (secondary, not verified) says the trains became a gasoline rail car after 1924 and the B&E had dropped regular service by 1928, but no source dates the last train. Do not extend without evidence. The 1924 ferry ad also lists buses from Claiborne; that is evidence of neither ending nor continuing. Headway estimated.",
+      "sources": [
+       "Segment-level: report block [6] - Worcester Democrat 26 Jul 1924 p.4 (and weekly to 13 Sep 1924) for 1924; Daily Banner 6 Mar 1920 and 13 Sep 1921 p.3 for 1920-21; en.wikipedia BC&A for the 1894 start. End year is the last confirmed, not an end. Headway not sourced.",
+       "https://www.loc.gov/resource/sn89060127/1924-07-26/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn88065731/1921-09-13/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88065731/1920-03-06/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Claiborne,_Maryland",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.277679,
+      38.837564
+     ],
+     [
+      -76.27142,
+      38.82893
+     ],
+     [
+      -76.268533,
+      38.82586
+     ],
+     [
+      -76.240743,
+      38.806065
+     ],
+     [
+      -76.239248,
+      38.804922
+     ],
+     [
+      -76.238308,
+      38.803921
+     ],
+     [
+      -76.237505,
+      38.802545
+     ],
+     [
+      -76.22913,
+      38.78341
+     ],
+     [
+      -76.227866,
+      38.781993
+     ],
+     [
+      -76.22762,
+      38.781971
+     ],
+     [
+      -76.225939,
+      38.781021
+     ],
+     [
+      -76.22558,
+      38.781055
+     ],
+     [
+      -76.225304,
+      38.780613
+     ],
+     [
+      -76.220118,
+      38.777903
+     ],
+     [
+      -76.218268,
+      38.777387
+     ],
+     [
+      -76.21723,
+      38.776875
+     ],
+     [
+      -76.18702,
+      38.755951
+     ],
+     [
+      -76.184928,
+      38.754956
+     ],
+     [
+      -76.183376,
+      38.754564
+     ],
+     [
+      -76.172133,
+      38.753054
+     ],
+     [
+      -76.169929,
+      38.752815
+     ],
+     [
+      -76.168612,
+      38.752808
+     ],
+     [
+      -76.166819,
+      38.752973
+     ],
+     [
+      -76.158239,
+      38.754933
+     ],
+     [
+      -76.155757,
+      38.755715
+     ],
+     [
+      -76.153873,
+      38.756536
+     ],
+     [
+      -76.144882,
+      38.761997
+     ],
+     [
+      -76.139818,
+      38.765376
+     ],
+     [
+      -76.133595,
+      38.769174
+     ],
+     [
+      -76.12705,
+      38.770814
+     ],
+     [
+      -76.125141,
+      38.771483
+     ],
+     [
+      -76.124261,
+      38.771934
+     ],
+     [
+      -76.122973,
+      38.772871
+     ],
+     [
+      -76.118553,
+      38.77692
+     ],
+     [
+      -76.117867,
+      38.777422
+     ],
+     [
+      -76.115807,
+      38.778576
+     ],
+     [
+      -76.114078,
+      38.77916
+     ],
+     [
+      -76.10497,
+      38.77915
+     ],
+     [
+      -76.103404,
+      38.778743
+     ],
+     [
+      -76.100915,
+      38.77789
+     ],
+     [
+      -76.098748,
+      38.776953
+     ],
+     [
+      -76.095036,
+      38.775256
+     ],
+     [
+      -76.094934,
+      38.775115
+     ],
+     [
+      -76.092876,
+      38.774284
+     ],
+     [
+      -76.091726,
+      38.773634
+     ],
+     [
+      -76.090387,
+      38.773155
+     ],
+     [
+      -76.090041,
+      38.772859
+     ],
+     [
+      -76.089613,
+      38.772952
+     ],
+     [
+      -76.087611,
+      38.772102
+     ],
+     [
+      -76.084416,
+      38.770491
+     ],
+     [
+      -76.079307,
+      38.76822
+     ],
+     [
+      -76.074128,
+      38.766934
+     ],
+     [
+      -76.0687,
+      38.766398
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore, Chesapeake and Atlantic Railway",
+    "line": "Baltimore, Chesapeake and Atlantic: Easton – Hurlock",
+    "id": "bca-easton-hurlock",
+    "color": "#1D3DBF",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Claiborne Branch Jct (Easton) - Hurlock: traced 16.09 mi against 15.9 mi documented (Fowler line 53 MP 72.2 -> 56.3). PRR-tagged Preston Branch (rail/disused) and abandoned ways via Bethlehem, Preston, Linchester and Ellwood; split at Hurlock where the PRR Seaford Line crosses. Approximated (straight-line legs across unmapped stretches of the grade, 0.16 mi in all): 0.12 km (0.07 mi) at 38.7664,-76.0687 - 38.7662,-76.0673; 0.14 km (0.09 mi) at 38.7657,-76.0611 - 38.7655,-76.0595. The 0.12 and 0.14 km legs are joins across the PRR crossing at Claiborne Branch Jct.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "BC&A, Easton (Claiborne Branch Jct, the PRR crossing) - Bethlehem - Preston - Ellwood - Hurlock: the section every through-train pattern used, via Vienna to Salisbury before c.1925 and (Fowler line 51 note) off at Hurlock onto the PRR via Seaford to Salisbury after c.1925 - the PRR track is not drawn here. Trains confirmed 1920 and 1921 (Daily Banner). Ends 1928 as an operator change: the BC&A was sold at foreclosure 29 Mar 1928 to Charles Carter for the PRR and reorganised as the Baltimore and Eastern, which ran on without a break (feature be-easton-hurlock). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [7] - Fowler line 53/51 (stations, c.1925 reroute), Daily Banner 1920-21 trains, en.wikipedia BC&A (1894 incorporation, 29 Mar 1928 sale). Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway",
+       "https://www.loc.gov/resource/sn88065731/1921-09-13/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88065731/1920-03-06/ed-1/?sp=3"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.0687,
+      38.766398
+     ],
+     [
+      -76.058699,
+      38.765393
+     ],
+     [
+      -76.055631,
+      38.764662
+     ],
+     [
+      -76.053639,
+      38.763937
+     ],
+     [
+      -76.040273,
+      38.757329
+     ],
+     [
+      -76.037979,
+      38.756048
+     ],
+     [
+      -76.033063,
+      38.753657
+     ],
+     [
+      -76.026411,
+      38.750114
+     ],
+     [
+      -76.019655,
+      38.746813
+     ],
+     [
+      -76.017526,
+      38.746169
+     ],
+     [
+      -76.016377,
+      38.745984
+     ],
+     [
+      -76.003403,
+      38.745199
+     ],
+     [
+      -76.001846,
+      38.74523
+     ],
+     [
+      -75.999663,
+      38.745568
+     ],
+     [
+      -75.989723,
+      38.747802
+     ],
+     [
+      -75.988808,
+      38.747908
+     ],
+     [
+      -75.966244,
+      38.746891
+     ],
+     [
+      -75.950631,
+      38.74636
+     ],
+     [
+      -75.949411,
+      38.746185
+     ],
+     [
+      -75.948352,
+      38.745759
+     ],
+     [
+      -75.938146,
+      38.740661
+     ],
+     [
+      -75.936285,
+      38.739259
+     ],
+     [
+      -75.934616,
+      38.737557
+     ],
+     [
+      -75.923608,
+      38.71976
+     ],
+     [
+      -75.922697,
+      38.718858
+     ],
+     [
+      -75.89696,
+      38.699086
+     ],
+     [
+      -75.896157,
+      38.698319
+     ],
+     [
+      -75.86757,
+      38.659429
+     ],
+     [
+      -75.866683,
+      38.658036
+     ],
+     [
+      -75.8661,
+      38.656547
+     ],
+     [
+      -75.8619,
+      38.638236
+     ],
+     [
+      -75.861441,
+      38.636075
+     ],
+     [
+      -75.861283,
+      38.635519
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore, Chesapeake and Atlantic Railway",
+    "line": "Baltimore, Chesapeake and Atlantic: Hurlock – Salisbury (via Vienna)",
+    "id": "bca-hurlock-salisbury",
+    "color": "#1D3DBF",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Hurlock - Salisbury (via Vienna): traced 26.08 mi against 26.0 mi documented (Fowler line 53 MP 56.3 -> 30.3 (Salisbury Union Station)). PRR-tagged abandoned ways via Rhodesdale, Vienna, Mardela Springs and Hebron, ending at the crossing of the NYP&N (OSM 'Delmarva Secondary') at Salisbury. Approximated (straight-line legs across unmapped stretches of the grade, 0.82 mi in all): 1.21 km (0.75 mi) at 38.4873,-75.8220 - 38.4796,-75.8123; 0.12 km (0.07 mi) at 38.4725,-75.7969 - 38.4721,-75.7956. The 1.21 km leg is the Nanticoke River crossing at Vienna - the trestle is gone and the leg is the chord between the two banks. The 0.12 km leg is a join between ways east of Vienna.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1920,
+      "headway_min": 360,
+      "note": "BC&A, Hurlock - Rhodesdale - Vienna (Nanticoke River bridge) - Mardela Springs - Hebron - Salisbury. [OPEN] END: 1920 is the last CONFIRMED year (Daily Banner 6 Mar 1920: a storm-delayed BC&A train ran Claiborne - Hurlock - Berlin, which must have used this line since the Seaford routing came later), not a known end. Fowler line 51: 'Former route until c.1925' (through trains rerouted via the PRR at Seaford, approx); en.wikipedia BC&A: 'In 1932 cross peninsula travel was stopped when the Nanticoke trestle at Vienna was closed' - cited only to a railroad.net forum thread. SOURCE CONFLICT recorded, neither drawn. By Oct 1933 the B&E routed via Hurlock-Seaford-Salisbury (Smyrna Times 25 Oct 1933). Do not extend without evidence. No B&E-era passenger year is confirmed on this section, so it has no 1928+ feature. Freight continued: the 1952 Official Guide lists Preston - Vienna and West Ocean City - Hebron freight only, so Vienna - Hebron was gone by 1951. Headway estimated.",
+      "sources": [
+       "Segment-level: report block [8] - Daily Banner 6 Mar 1920 p.3 for the last confirmed year; Fowler line 53 'z' (1893) and line 51 note; en.wikipedia BC&A (forum-sourced 1932); Smyrna Times 25 Oct 1933 p.7. End year is the last confirmed, not an end. Headway not sourced.",
+       "https://www.loc.gov/resource/sn88065731/1920-03-06/ed-1/?sp=3",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway",
+       "https://www.loc.gov/resource/sn84020422/1933-10-25/ed-1/?sp=7"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.861283,
+      38.635519
+     ],
+     [
+      -75.860527,
+      38.633332
+     ],
+     [
+      -75.835518,
+      38.57393
+     ],
+     [
+      -75.827247,
+      38.544467
+     ],
+     [
+      -75.826903,
+      38.54166
+     ],
+     [
+      -75.827119,
+      38.533867
+     ],
+     [
+      -75.831115,
+      38.519628
+     ],
+     [
+      -75.8314,
+      38.518009
+     ],
+     [
+      -75.83146,
+      38.516275
+     ],
+     [
+      -75.831295,
+      38.514632
+     ],
+     [
+      -75.826116,
+      38.489353
+     ],
+     [
+      -75.82542,
+      38.487725
+     ],
+     [
+      -75.824457,
+      38.486666
+     ],
+     [
+      -75.823901,
+      38.486367
+     ],
+     [
+      -75.823269,
+      38.486372
+     ],
+     [
+      -75.822736,
+      38.486634
+     ],
+     [
+      -75.822018,
+      38.48734
+     ],
+     [
+      -75.812283,
+      38.479616
+     ],
+     [
+      -75.800103,
+      38.473259
+     ],
+     [
+      -75.797255,
+      38.472482
+     ],
+     [
+      -75.758795,
+      38.463231
+     ],
+     [
+      -75.756606,
+      38.462343
+     ],
+     [
+      -75.754469,
+      38.460735
+     ],
+     [
+      -75.747792,
+      38.455188
+     ],
+     [
+      -75.746228,
+      38.454068
+     ],
+     [
+      -75.632001,
+      38.383613
+     ],
+     [
+      -75.630069,
+      38.382041
+     ],
+     [
+      -75.6196,
+      38.371787
+     ],
+     [
+      -75.618798,
+      38.371263
+     ],
+     [
+      -75.617648,
+      38.37079
+     ],
+     [
+      -75.61669,
+      38.370598
+     ],
+     [
+      -75.614553,
+      38.370561
+     ],
+     [
+      -75.598863,
+      38.373272
+     ],
+     [
+      -75.598275,
+      38.373193
+     ],
+     [
+      -75.593634,
+      38.371564
+     ],
+     [
+      -75.592801,
+      38.371511
+     ],
+     [
+      -75.59234,
+      38.371671
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore, Chesapeake and Atlantic Railway",
+    "line": "Baltimore, Chesapeake and Atlantic: Salisbury – Ocean City",
+    "id": "bca-salisbury-ocean-city",
+    "color": "#1D3DBF",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Traced 29.9 mi against 30.3 mi documented. Salisbury - Berlin: traced 22.63 mi against 23.0 mi documented (Fowler line 53 MP 30.3 -> 7.3). PRR-tagged track and abandoned ways via Parsonsburg, Pittsville, Willards, Whaleyville and St. Martin's, plus 0.4 mi of untagged OpenHistoricalMap railway; ends at the Snow Hill Line junction at Berlin. No straight-line leg over 100 m.  | Berlin - Hammock Point (West Ocean City): traced 6.52 mi against 6.8 mi documented (Fowler MP 7.3 -> the mainland shore; the report gives ~6.8 mi (not measured)). PRR-tagged abandoned ways to the west end of the Sinepuxent Bay bridge. No straight-line leg over 100 m.  | Hammock Point - Ocean City (Sinepuxent Bay bridge): traced 0.74 mi against 0.5 mi documented (report: ~0.5 mi; Fowler MP 0.0 is Ocean City station). OpenHistoricalMap railway ways (bridge=yes over the bay, then the Ocean City island track), joined to OSM at Hammock Point. The bridge was destroyed by the storm of 23 Aug 1933 and never rebuilt, so nothing survives in OSM; OHM's drawing is the only source and its position was not independently checked. No straight-line leg over 100 m.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1894,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "BC&A, Salisbury - Parsonsburg - Pittsville - Willards - Whaleyville - St. Martin's - Berlin - Sinepuxent Bay bridge - Ocean City: the road's money-maker, summer through traffic Baltimore (steamer) - Claiborne - Ocean City. PRR through cars reached Salisbury over the NYP&N; those were not BC&A trains. Trains confirmed 1920 (Daily Banner, to Berlin) and 1924 (Worcester Democrat ferry ads 'for ... Ocean City'). Ends 1928 as an operator change (Baltimore and Eastern, be-salisbury-ocean-city). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [9] - Fowler line 53, en.wikipedia BC&A (1894, 1928), Daily Banner 6 Mar 1920, Worcester Democrat summer 1924. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway",
+       "https://www.loc.gov/resource/sn88065731/1920-03-06/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn89060127/1924-07-26/ed-1/?sp=4"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.59234,
+      38.371671
+     ],
+     [
+      -75.590739,
+      38.372536
+     ],
+     [
+      -75.589607,
+      38.372811
+     ],
+     [
+      -75.537664,
+      38.38068
+     ],
+     [
+      -75.535888,
+      38.380833
+     ],
+     [
+      -75.512951,
+      38.381531
+     ],
+     [
+      -75.511297,
+      38.381717
+     ],
+     [
+      -75.44302,
+      38.391323
+     ],
+     [
+      -75.416046,
+      38.395068
+     ],
+     [
+      -75.413235,
+      38.395356
+     ],
+     [
+      -75.342872,
+      38.395103
+     ],
+     [
+      -75.316129,
+      38.395151
+     ],
+     [
+      -75.302301,
+      38.395034
+     ],
+     [
+      -75.301241,
+      38.394923
+     ],
+     [
+      -75.300148,
+      38.394678
+     ],
+     [
+      -75.298861,
+      38.394177
+     ],
+     [
+      -75.278937,
+      38.38579
+     ],
+     [
+      -75.252563,
+      38.374969
+     ],
+     [
+      -75.249542,
+      38.373575
+     ],
+     [
+      -75.247675,
+      38.372484
+     ],
+     [
+      -75.246436,
+      38.371392
+     ],
+     [
+      -75.245763,
+      38.370576
+     ],
+     [
+      -75.224109,
+      38.329707
+     ],
+     [
+      -75.22362,
+      38.329137
+     ],
+     [
+      -75.222939,
+      38.328654
+     ],
+     [
+      -75.221404,
+      38.328139
+     ],
+     [
+      -75.21991,
+      38.328051
+     ],
+     [
+      -75.205814,
+      38.328772
+     ],
+     [
+      -75.203142,
+      38.328806
+     ],
+     [
+      -75.101099,
+      38.328002
+     ],
+     [
+      -75.097475,
+      38.328188
+     ],
+     [
+      -75.089471,
+      38.32751
+     ],
+     [
+      -75.08887,
+      38.327619
+     ],
+     [
+      -75.087872,
+      38.328368
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Railroad",
+    "line": "Baltimore and Eastern: Easton – Hurlock",
+    "id": "be-easton-hurlock",
+    "color": "#74158C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Claiborne Branch Jct (Easton) - Hurlock: traced 16.09 mi against 15.9 mi documented (Fowler line 53 MP 72.2 -> 56.3). PRR-tagged Preston Branch (rail/disused) and abandoned ways via Bethlehem, Preston, Linchester and Ellwood; split at Hurlock where the PRR Seaford Line crosses. Approximated (straight-line legs across unmapped stretches of the grade, 0.16 mi in all): 0.12 km (0.07 mi) at 38.7664,-76.0687 - 38.7662,-76.0673; 0.14 km (0.09 mi) at 38.7657,-76.0611 - 38.7655,-76.0595. The 0.12 and 0.14 km legs are joins across the PRR crossing at Claiborne Branch Jct.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1928,
+      "end": 1933,
+      "headway_min": 360,
+      "note": "Baltimore and Eastern Railroad (1928, wholly PRR-owned, run and advertised under its own name). 1928-33 B&E trains ran Love Point (Baltimore ferry) - Queen Anne - (PRR) Easton - here - Hurlock - (PRR) Seaford - Salisbury - Ocean City (Smyrna Times 25 Oct 1933); only this section is BC&A track - the Love Point line and the PRR pieces are not drawn in this layer. [OPEN] END: service is certain to Aug 1933; after the 23 Aug 1933 storm nothing ran to Ocean City, and the Md. PSC allowed withdrawal of Easton - Ocean City passenger service in July 1934 (Worcester Democrat 13 Jul 1934; replacement Love Point - Easton - Oxford service from 15 Jul 1934 does not use this section). Whether trains actually ran here Aug 1933 - Jul 1934 is only implied by the PSC case, so 1933 is the last CONFIRMED year, not a known end. Do not extend to 1934 without a 1934 timetable or report. Freight continued (1952 Official Guide: Preston - Vienna freight only; Hurlock - Preston later Maryland & Delaware RR). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [10] - Smyrna Times 25 Oct 1933 p.7 (route and Aug 1933 storm), Worcester Democrat 13 Jul 1934 p.13 (PSC withdrawal), en.wikipedia BC&A (1928 sale). End year is the last confirmed, not an end. Headway not sourced.",
+       "https://www.loc.gov/resource/sn84020422/1933-10-25/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn89060127/1934-07-13/ed-1/?sp=13",
+       "https://en.wikipedia.org/wiki/Baltimore,_Chesapeake_and_Atlantic_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.0687,
+      38.766398
+     ],
+     [
+      -76.058699,
+      38.765393
+     ],
+     [
+      -76.055631,
+      38.764662
+     ],
+     [
+      -76.053639,
+      38.763937
+     ],
+     [
+      -76.040273,
+      38.757329
+     ],
+     [
+      -76.037979,
+      38.756048
+     ],
+     [
+      -76.033063,
+      38.753657
+     ],
+     [
+      -76.026411,
+      38.750114
+     ],
+     [
+      -76.019655,
+      38.746813
+     ],
+     [
+      -76.017526,
+      38.746169
+     ],
+     [
+      -76.016377,
+      38.745984
+     ],
+     [
+      -76.003403,
+      38.745199
+     ],
+     [
+      -76.001846,
+      38.74523
+     ],
+     [
+      -75.999663,
+      38.745568
+     ],
+     [
+      -75.989723,
+      38.747802
+     ],
+     [
+      -75.988808,
+      38.747908
+     ],
+     [
+      -75.966244,
+      38.746891
+     ],
+     [
+      -75.950631,
+      38.74636
+     ],
+     [
+      -75.949411,
+      38.746185
+     ],
+     [
+      -75.948352,
+      38.745759
+     ],
+     [
+      -75.938146,
+      38.740661
+     ],
+     [
+      -75.936285,
+      38.739259
+     ],
+     [
+      -75.934616,
+      38.737557
+     ],
+     [
+      -75.923608,
+      38.71976
+     ],
+     [
+      -75.922697,
+      38.718858
+     ],
+     [
+      -75.89696,
+      38.699086
+     ],
+     [
+      -75.896157,
+      38.698319
+     ],
+     [
+      -75.86757,
+      38.659429
+     ],
+     [
+      -75.866683,
+      38.658036
+     ],
+     [
+      -75.8661,
+      38.656547
+     ],
+     [
+      -75.8619,
+      38.638236
+     ],
+     [
+      -75.861441,
+      38.636075
+     ],
+     [
+      -75.861283,
+      38.635519
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Railroad",
+    "line": "Baltimore and Eastern: Salisbury – Ocean City",
+    "id": "be-salisbury-ocean-city",
+    "color": "#74158C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Traced 29.9 mi against 30.3 mi documented. Salisbury - Berlin: traced 22.63 mi against 23.0 mi documented (Fowler line 53 MP 30.3 -> 7.3). PRR-tagged track and abandoned ways via Parsonsburg, Pittsville, Willards, Whaleyville and St. Martin's, plus 0.4 mi of untagged OpenHistoricalMap railway; ends at the Snow Hill Line junction at Berlin. No straight-line leg over 100 m.  | Berlin - Hammock Point (West Ocean City): traced 6.52 mi against 6.8 mi documented (Fowler MP 7.3 -> the mainland shore; the report gives ~6.8 mi (not measured)). PRR-tagged abandoned ways to the west end of the Sinepuxent Bay bridge. No straight-line leg over 100 m.  | Hammock Point - Ocean City (Sinepuxent Bay bridge): traced 0.74 mi against 0.5 mi documented (report: ~0.5 mi; Fowler MP 0.0 is Ocean City station). OpenHistoricalMap railway ways (bridge=yes over the bay, then the Ocean City island track), joined to OSM at Hammock Point. The bridge was destroyed by the storm of 23 Aug 1933 and never rebuilt, so nothing survives in OSM; OHM's drawing is the only source and its position was not independently checked. No straight-line leg over 100 m.  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1928,
+      "end": 1933,
+      "headway_min": 360,
+      "note": "Baltimore and Eastern, Salisbury - Berlin - Ocean City, reached from Hurlock over the PRR via Seaford. Ends 1933: the storm of 23 Aug 1933 washed away the Sinepuxent Bay bridge and 'the railroad company has completely abandoned passenger train service to Ocean City' (Smyrna Times 25 Oct 1933); the PSC formally allowed withdrawal in July 1934 (Worcester Democrat 13 Jul 1934). Whether any passenger train ran Salisbury - Berlin after the storm is unknown and none is drawn. The bridge was never rebuilt; a freight station was set up at West Ocean City, and the 1952 Official Guide lists West Ocean City - Hebron freight only. Also carried WB&A-connecting Sunday excursion specials from Claiborne in 1928-31 (see be-claiborne-easton-excursions). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [11] - Smyrna Times 25 Oct 1933 p.7, Worcester Democrat 13 Jul 1934 p.13, Evening Star 2 Aug 1931 p.21 (1931 special). Headway not sourced.",
+       "https://www.loc.gov/resource/sn84020422/1933-10-25/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn89060127/1934-07-13/ed-1/?sp=13",
+       "https://www.loc.gov/resource/sn83045462/1931-08-02/ed-1/?sp=21"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.59234,
+      38.371671
+     ],
+     [
+      -75.590739,
+      38.372536
+     ],
+     [
+      -75.589607,
+      38.372811
+     ],
+     [
+      -75.537664,
+      38.38068
+     ],
+     [
+      -75.535888,
+      38.380833
+     ],
+     [
+      -75.512951,
+      38.381531
+     ],
+     [
+      -75.511297,
+      38.381717
+     ],
+     [
+      -75.44302,
+      38.391323
+     ],
+     [
+      -75.416046,
+      38.395068
+     ],
+     [
+      -75.413235,
+      38.395356
+     ],
+     [
+      -75.342872,
+      38.395103
+     ],
+     [
+      -75.316129,
+      38.395151
+     ],
+     [
+      -75.302301,
+      38.395034
+     ],
+     [
+      -75.301241,
+      38.394923
+     ],
+     [
+      -75.300148,
+      38.394678
+     ],
+     [
+      -75.298861,
+      38.394177
+     ],
+     [
+      -75.278937,
+      38.38579
+     ],
+     [
+      -75.252563,
+      38.374969
+     ],
+     [
+      -75.249542,
+      38.373575
+     ],
+     [
+      -75.247675,
+      38.372484
+     ],
+     [
+      -75.246436,
+      38.371392
+     ],
+     [
+      -75.245763,
+      38.370576
+     ],
+     [
+      -75.224109,
+      38.329707
+     ],
+     [
+      -75.22362,
+      38.329137
+     ],
+     [
+      -75.222939,
+      38.328654
+     ],
+     [
+      -75.221404,
+      38.328139
+     ],
+     [
+      -75.21991,
+      38.328051
+     ],
+     [
+      -75.205814,
+      38.328772
+     ],
+     [
+      -75.203142,
+      38.328806
+     ],
+     [
+      -75.101099,
+      38.328002
+     ],
+     [
+      -75.097475,
+      38.328188
+     ],
+     [
+      -75.089471,
+      38.32751
+     ],
+     [
+      -75.08887,
+      38.327619
+     ],
+     [
+      -75.087872,
+      38.328368
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Railroad",
+    "line": "Baltimore and Eastern: Claiborne – Easton (summer excursions)",
+    "id": "be-claiborne-easton-excursions",
+    "color": "#74158C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country; no running times were read (report gives none). Unsourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-23), routed with opstrace.py. old_railway_operator probed over the whole corridor for BC&A / Chesapeake & Atlantic / Wicomico / B&E / B&ES spellings: none - every surviving piece of this grade is tagged old_railway_operator=PRR (as is the competing PRR Delmarva Secondary, Seaford Line and Snow Hill Line, which the waypoint corridors keep the trace off). Abandoned/disused/razed ways queried directly (railway~abandoned|demolished|razed|disused) as well as through fetch_gap; OpenHistoricalMap (CC0) queried over the same boxes, geometry only - its way start/end dates are not used.",
+    "geometry_quality": "Claiborne - Claiborne Branch Jct (Easton): traced 14.88 mi against 15.4 mi documented (Fowler line 53 MP 87.6 (Claiborne) -> 72.2 (Claiborne Branch Jct, the PRR crossing); 15.1 mi to the B&E Easton station at MP 72.5, which lies ~0.3 mi west of the junction on this line). PRR-tagged abandoned ways, the Saint Michaels Nature Trail and the Easton Rail Trail. The Claiborne end stops at the hamlet's geocode on the grade; the steamer wharf beyond it is not drawn, which is probably most of the shortfall. Approximated (straight-line legs across unmapped stretches of the grade, 1.80 mi in all): 0.16 km (0.10 mi) at 38.7875,-76.2309 - 38.7862,-76.2303; 0.86 km (0.53 mi) at 38.7749,-76.2144 - 38.7698,-76.2071; 0.40 km (0.25 mi) at 38.7537,-76.1767 - 38.7531,-76.1721; 0.79 km (0.49 mi) at 38.7792,-76.1141 - 38.7792,-76.1050; 0.47 km (0.29 mi) at 38.7682,-76.0793 - 38.7669,-76.0741; 0.21 km (0.13 mi) at 38.7666,-76.0711 - 38.7664,-76.0687. The legs, west to east: a 0.16 km join between trail ways near St. Michaels; the unmapped grade east of St. Michaels (0.86 km); a gap near Royal Oak (0.40 km); the gap west of Bloomfield (0.79 km); and two pieces through Easton town, where the grade is built over (0.47 km and 0.21 km, the latter ending at the PRR crossing).  LATER-ALIGNMENT NOTE: the drawn line is the grade as it survives (abandoned ways and rail-trails mapped from the last, PRR-era alignment); no earlier realignment of the 1868-1890 line is known, but none was checked. Salisbury: the 1868 W&P terminal and the 1870 extension to the Wicomico River wharves are not separately drawn. ",
+    "segments": [
+     {
+      "start": 1928,
+      "end": 1928,
+      "headway_min": 1440,
+      "note": "[ANCHOR] 1928: the one proven season of the first B&E summer, Evening Star 21 Jul 1928 p.3 - WB&A special for Sunday 22 Jul 1928 'connecting with non-stop train at Claiborne for Ocean City (Arriving Ocean City 12:30 noon)'. Service certainly ran wider than one year both ways (1929 not found, not searched exhaustively), but no other year is confirmed; do not close the 1929 gap without a 1929 ad. Summer Sunday excursion specials only - the WB&A ran a special Washington - Annapolis ferry wharf, the ferry crossed to Claiborne, and a B&E 'non-stop train at Claiborne for Ocean City' ran out about 12:30 noon and back from Ocean City at 4:15 P.M. Counts under Rule 1 as one-off passenger specials. Regular B&E service on Claiborne - Easton after 1928 is NOT established (en.wikipedia 'Claiborne, Maryland' says the B&E had dropped it by 1928), so only the advertised seasons are drawn. The specials' route between Hurlock and Salisbury (Vienna or Seaford) is not stated. Headway is a placeholder for one train each way on a handful of Sundays.",
+      "sources": [
+       "Segment-level: report block [12] - Evening Star 21 Jul 1928 p.3. Headway not sourced (placeholder).",
+       "https://www.loc.gov/resource/sn83045462/1928-07-21/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Claiborne,_Maryland"
+      ]
+     },
+     {
+      "start": 1930,
+      "end": 1931,
+      "headway_min": 1440,
+      "note": "[OPEN] 1930-1931: Washington Times 19 Jul and 2 Aug 1930 (Sundays 20 Jul and 3 Aug 1930); Evening Star 2 Aug and 26 Aug 1931 (Sundays 9 and 30 Aug 1931). 1931 is the last CONFIRMED year, not a known end - nothing was found for 1932-33. Do not extend without evidence. Summer Sunday excursion specials only - the WB&A ran a special Washington - Annapolis ferry wharf, the ferry crossed to Claiborne, and a B&E 'non-stop train at Claiborne for Ocean City' ran out about 12:30 noon and back from Ocean City at 4:15 P.M. Counts under Rule 1 as one-off passenger specials. Regular B&E service on Claiborne - Easton after 1928 is NOT established (en.wikipedia 'Claiborne, Maryland' says the B&E had dropped it by 1928), so only the advertised seasons are drawn. The specials' route between Hurlock and Salisbury (Vienna or Seaford) is not stated. Headway is a placeholder for one train each way on a handful of Sundays.",
+      "sources": [
+       "Segment-level: report block [12] - Washington Times 19 Jul & 2 Aug 1930, Evening Star 2 Aug & 26 Aug 1931. End year is the last confirmed, not an end. Headway not sourced (placeholder).",
+       "https://www.loc.gov/resource/sn84026749/1930-07-19/ed-1/?sp=8",
+       "https://www.loc.gov/resource/sn84026749/1930-08-02/ed-1/?sp=14",
+       "https://www.loc.gov/resource/sn83045462/1931-08-02/ed-1/?sp=21",
+       "https://www.loc.gov/resource/sn83045462/1931-08-26/ed-1/?sp=23"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.277679,
+      38.837564
+     ],
+     [
+      -76.27142,
+      38.82893
+     ],
+     [
+      -76.268533,
+      38.82586
+     ],
+     [
+      -76.240743,
+      38.806065
+     ],
+     [
+      -76.239248,
+      38.804922
+     ],
+     [
+      -76.238308,
+      38.803921
+     ],
+     [
+      -76.237505,
+      38.802545
+     ],
+     [
+      -76.22913,
+      38.78341
+     ],
+     [
+      -76.227866,
+      38.781993
+     ],
+     [
+      -76.22762,
+      38.781971
+     ],
+     [
+      -76.225939,
+      38.781021
+     ],
+     [
+      -76.22558,
+      38.781055
+     ],
+     [
+      -76.225304,
+      38.780613
+     ],
+     [
+      -76.220118,
+      38.777903
+     ],
+     [
+      -76.218268,
+      38.777387
+     ],
+     [
+      -76.21723,
+      38.776875
+     ],
+     [
+      -76.18702,
+      38.755951
+     ],
+     [
+      -76.184928,
+      38.754956
+     ],
+     [
+      -76.183376,
+      38.754564
+     ],
+     [
+      -76.172133,
+      38.753054
+     ],
+     [
+      -76.169929,
+      38.752815
+     ],
+     [
+      -76.168612,
+      38.752808
+     ],
+     [
+      -76.166819,
+      38.752973
+     ],
+     [
+      -76.158239,
+      38.754933
+     ],
+     [
+      -76.155757,
+      38.755715
+     ],
+     [
+      -76.153873,
+      38.756536
+     ],
+     [
+      -76.144882,
+      38.761997
+     ],
+     [
+      -76.139818,
+      38.765376
+     ],
+     [
+      -76.133595,
+      38.769174
+     ],
+     [
+      -76.12705,
+      38.770814
+     ],
+     [
+      -76.125141,
+      38.771483
+     ],
+     [
+      -76.124261,
+      38.771934
+     ],
+     [
+      -76.122973,
+      38.772871
+     ],
+     [
+      -76.118553,
+      38.77692
+     ],
+     [
+      -76.117867,
+      38.777422
+     ],
+     [
+      -76.115807,
+      38.778576
+     ],
+     [
+      -76.114078,
+      38.77916
+     ],
+     [
+      -76.10497,
+      38.77915
+     ],
+     [
+      -76.103404,
+      38.778743
+     ],
+     [
+      -76.100915,
+      38.77789
+     ],
+     [
+      -76.098748,
+      38.776953
+     ],
+     [
+      -76.095036,
+      38.775256
+     ],
+     [
+      -76.094934,
+      38.775115
+     ],
+     [
+      -76.092876,
+      38.774284
+     ],
+     [
+      -76.091726,
+      38.773634
+     ],
+     [
+      -76.090387,
+      38.773155
+     ],
+     [
+      -76.090041,
+      38.772859
+     ],
+     [
+      -76.089613,
+      38.772952
+     ],
+     [
+      -76.087611,
+      38.772102
+     ],
+     [
+      -76.084416,
+      38.770491
+     ],
+     [
+      -76.079307,
+      38.76822
+     ],
+     [
+      -76.074128,
+      38.766934
+     ],
+     [
+      -76.0687,
+      38.766398
+     ]
+    ]
+   }
+  }
+ ]
+}
