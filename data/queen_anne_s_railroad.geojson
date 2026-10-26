@@ -1,0 +1,1971 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Queen Anne's Railroad corridor across Maryland's upper Eastern Shore and southern Delaware: Love Point (Kent Island, Baltimore steamer pier) - Queenstown - Wye Mills - Queen Anne - Denton - Greenwood - Ellendale - Milton - Lewes, ~72 mi, with the 6.1 mi Queenstown - Centreville branch (J. Fowler, Delaware & Maryland Railroads, lines 51, 52 and 58). One corridor, four operating companies, each its own feature on shared geometry (Rule 4): the Queen Anne's Railroad (1897-1904, bankrupt 1904), the PRR's Maryland, Delaware and Virginia Railway (1905-1923), and after the 1923 sale to the E. B. Leaf Co. a split at West Denton - the Baltimore and Eastern Railroad (PRR family) west, the Maryland and Delaware Coast Railway east (from 28 Jun 1924). Rail only: the Baltimore - Queenstown / Love Point steamers, the Lewes - Cape May steamer Queen Caroline and the 1923 ferry are boats and are not drawn; through running Lewes - Rehoboth Beach and Queen Anne - Easton - Oxford was over PRR track and is not drawn here. Research report: research/branches/queen_anne_s_railroad.txt.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf -- J. Fowler, Delaware & Maryland Railroads, Passenger Stations & Stops, lines 51, 52, 58",
+   "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad",
+   "https://en.wikipedia.org/wiki/Delaware_Coast_Line_Railroad",
+   "research/sources/official_guide_1952.txt -- Official Guide Feb 1952, Baltimore and Eastern: 'Freight Service only. Love Point to Denton (34 miles)'",
+   "Chronicling America (loc.gov) newspapers as cited in each segment"
+  ],
+  "geometry_sources": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+  "operator_split": "1905 (Jan-Feb): Queen Anne's -> Maryland, Delaware and Virginia on the whole line (qa-* -> mdv-*). 1923-24: MD&V sold to E. B. Leaf Co. (May 1923); west end Love Point - West Denton (+ Centreville) to the Baltimore and Eastern 1924 (be-love-point-queen-anne), east end West Denton - Lewes to the Maryland and Delaware Coast (mdc-denton-lewes, from 28 Jun 1924). 1928: BC&A merged into the B&E - no change on this line. 1932: M&DC renamed Maryland and Delaware Railroad after its passenger end - no feature. B&E colour pulled programmatically from the Baltimore and Eastern Railroad features in baltimore_chesapeake_and_atlantic_railway.geojson; QA, MD&V and M&DC colours are new, checked unused by any other company.",
+  "omitted": [
+   "Report block [11] Baltimore and Eastern: Queen Anne - Denton (drawable NONE): no B&E passenger year confirmed; en.wikipedia's '1931 ... replaced by bus' may belong here. Track existed (freight to 1983) but is not drawn for the B&E.",
+   "Report block [12] Baltimore and Eastern: Queenstown - Centreville (drawable NONE): no B&E passenger year confirmed.",
+   "1896 on Queenstown - Denton (construction/'ready in two weeks' only), 1897 on Greenwood - Milton (mail route and secondary only), 1902 on Love Point - Queenstown and 1901 on the Centreville branch: not confirmed, not drawn.",
+   "MD&V/Leaf west of Greenwood after 1923 and B&E 1924-1932 west of Queen Anne: not confirmed, not drawn (gap 1924-1932 on Love Point - Queen Anne).",
+   "M&DC 1930-1931: bracketed (en.wikipedia 1931) but no dated passenger source; not drawn.",
+   "Freight only (Rule 1): B&E Love Point - Denton after 1938; PRR/Conrail/DelDOT Ellendale - Milton (Milton Industrial Track) from 1934; Conrail / Maryland & Delaware RR Queen Anne - Denton to 1983; Chesapeake Railroad 1995-98 'freight and excursion' (track and dates unestablished).",
+   "Queen Anne's Royal Zephyr dinner train (1990s): ran on the PRR Junction & Breakwater Georgetown - Lewes line, not QA track.",
+   "Queenstown steamer-wharf stub (1.1 mi, wharf - junction): drawn only in the QA era (qa-queenstown-denton); after Love Point opened, trains ran through the junction and the stub's later use is not established."
+  ],
+  "existing_layer_note": "No existing layer drew any QA / MD&V / M&DC track. The B&E features in baltimore_chesapeake_and_atlantic_railway.geojson draw only BC&A track (Claiborne - Easton - Hurlock, Salisbury - Ocean City); none covers Love Point - Queen Anne, so nothing here double-draws a B&E segment. delaware_railroad.geojson (PRR) is crossed at Greenwood, not drawn on.",
+  "not_yet_sourced": [
+   "mdv-love-point-denton / mdv-denton-greenwood: [OPEN] end 1923 - last MD&V/Leaf train west of Greenwood in 1923-24 not dated (report U8).",
+   "mdv-queenstown-centreville: [ANCHOR] 1905 only (Fowler 1905G name form); no MD&V or B&E timetable naming the branch found; when branch passenger service ended is unknown (report U4).",
+   "be-love-point-queen-anne: [OPEN] start 1933 - B&E passenger trains 1924-1932 not confirmed (report U5); en.wikipedia's 1931 B&E passenger end conflicts with 1933-38 primary evidence (report U6).",
+   "mdc-denton-lewes: [OPEN] end 1929 - real end 1929-1931 (en.wikipedia: 1931, gas car destroyed; Evening Star Jul 1931: 'freight line') (report U7).",
+   "QA opening: any public train in 1896? (report U1); Greenwood - Milton passengers in 1897? (U2); Love Point opening 1902 vs 1903 (U3).",
+   "Lewes (QA) station site and Queenstown station site not pinned; Centreville terminus may lie east of the drawn end.",
+   "All headways and speeds: estimates; no train counts were taken from the 1902/1903 timetables."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Queen Anne's Railroad",
+    "line": "Queen Anne's: Queenstown – Denton",
+    "id": "qa-queenstown-denton",
+    "color": "#B5462F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Queenstown - Denton: traced 20.26 mi against 20.2 mi documented (J. Fowler mileposts; +0%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Drawn from the Queenstown steamer-wharf terminus (OHM way end, 38.9960,-76.1571) east through the junction later made with the Love Point extension (38.9915,-76.1392), Wye Mills and Denton Branch Jn, across the PRR Oxford Branch at Queen Anne, then Hillsboro (the QA's own 'Queen Anne' station), Downes and the Choptank bridge to Denton (east bank, 38.8873,-75.8247). Queenstown station site is not separately pinned. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1897,
+      "end": 1904,
+      "headway_min": 480,
+      "note": "Queen Anne's Railroad (inc. Md. 1894), first section of its Baltimore (steamer to Queenstown) - Lewes through route. Construction trains in Caroline Co. Aug-Sep 1896; Queenstown - Hillsboro was to be 'ready for the running of trains in about two weeks' (Smyrna Times 22 Jul 1896) and operation 'expected ... by Christmas' (Evening Journal 13 Nov 1896), but no public train is confirmed in 1896, so the line is drawn from 1897 (special train Denton - Greenwood 1 Jan 1897, Evening Journal 2 Jan 1897; en.wikipedia's 15 Jul 1896 date not confirmed). Through timetables of 8 Jan 1902 (Democratic Messenger 15 Feb 1902) and 9 Nov 1903 (Democratic Messenger 14 Nov 1903). Ends as an operator: the QA was bankrupt in 1904 and passed to the PRR's Maryland, Delaware and Virginia Railway in Jan-Feb 1905 (see mdv-love-point-denton). Headway estimated (one or two through trains each way daily ex. Sunday in the 1902-03 timetables read by the report; not counted).",
+      "sources": [
+       "Segment-level: report block [1] - Smyrna Times 22 Jul 1896 p.3, Evening Journal 13 Nov 1896 p.1 and 2 Jan 1897 p.4 (opening, start collapsed to 1897), Democratic Messenger 15 Feb 1902 p.1 and 14 Nov 1903 p.8 (timetables); end is the 1904-05 change of operator. Headway not sourced.",
+       "https://www.loc.gov/resource/sn84020422/1896-07-22/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn85042354/1896-11-13/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn85042354/1897-01-02/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn84026758/1902-02-15/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84026758/1903-11-14/ed-1/?sp=8",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.157078,
+      38.996023
+     ],
+     [
+      -76.155007,
+      38.997179
+     ],
+     [
+      -76.153937,
+      38.997525
+     ],
+     [
+      -76.152978,
+      38.997579
+     ],
+     [
+      -76.151671,
+      38.997439
+     ],
+     [
+      -76.139199,
+      38.991478
+     ],
+     [
+      -76.128848,
+      38.988636
+     ],
+     [
+      -76.121965,
+      38.985033
+     ],
+     [
+      -76.092868,
+      38.971408
+     ],
+     [
+      -76.085572,
+      38.968125
+     ],
+     [
+      -76.075754,
+      38.963142
+     ],
+     [
+      -76.060362,
+      38.953658
+     ],
+     [
+      -76.04083,
+      38.941907
+     ],
+     [
+      -76.03896,
+      38.940636
+     ],
+     [
+      -76.035254,
+      38.93854
+     ],
+     [
+      -76.034219,
+      38.938119
+     ],
+     [
+      -76.032195,
+      38.937607
+     ],
+     [
+      -76.020313,
+      38.935108
+     ],
+     [
+      -76.018666,
+      38.934852
+     ],
+     [
+      -75.992554,
+      38.932354
+     ],
+     [
+      -75.989684,
+      38.931823
+     ],
+     [
+      -75.979726,
+      38.928944
+     ],
+     [
+      -75.977863,
+      38.928291
+     ],
+     [
+      -75.976286,
+      38.927181
+     ],
+     [
+      -75.973373,
+      38.924213
+     ],
+     [
+      -75.965863,
+      38.919886
+     ],
+     [
+      -75.962257,
+      38.918788
+     ],
+     [
+      -75.956976,
+      38.917178
+     ],
+     [
+      -75.955634,
+      38.91696
+     ],
+     [
+      -75.954738,
+      38.916969
+     ],
+     [
+      -75.953339,
+      38.91716
+     ],
+     [
+      -75.952589,
+      38.917439
+     ],
+     [
+      -75.948075,
+      38.919912
+     ],
+     [
+      -75.946911,
+      38.920145
+     ],
+     [
+      -75.902141,
+      38.921939
+     ],
+     [
+      -75.893322,
+      38.92129
+     ],
+     [
+      -75.892241,
+      38.92109
+     ],
+     [
+      -75.889697,
+      38.920305
+     ],
+     [
+      -75.886443,
+      38.91875
+     ],
+     [
+      -75.830545,
+      38.890443
+     ],
+     [
+      -75.825416,
+      38.887815
+     ],
+     [
+      -75.824659,
+      38.887279
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Queen Anne's Railroad",
+    "line": "Queen Anne's: Denton – Greenwood",
+    "id": "qa-denton-greenwood",
+    "color": "#B5462F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Denton - Greenwood: traced 13.86 mi against 13.8 mi documented (J. Fowler mileposts; +0%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Denton (east bank of the Choptank) via Hobbs, the state line, Hickman and Adamsville to the crossing of the PRR Delaware RR at Greenwood (38.8090,-75.5925); OHM way fitted to the 1918 USGS Harrington quadrangle. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1897,
+      "end": 1904,
+      "headway_min": 480,
+      "note": "Queen Anne's Railroad. Special train Denton - Greenwood 1 Jan 1897 (Evening Journal 2 Jan 1897); en.wikipedia: extended to Greenwood 1 Jan 1897, regular service announced Apr 1897. For the first months Greenwood was the eastern terminus, connecting with the Delaware RR (PRR) north. In both through timetables of 1902 and 1903. Operator end 1904 (to the MD&V 1905). Headway estimated (one or two through trains each way daily ex. Sunday in the 1902-03 timetables read by the report; not counted).",
+      "sources": [
+       "Segment-level: report block [2] - Evening Journal 2 Jan 1897 p.4 (special train), Evening Journal 13 Nov 1896 p.1, Democratic Messenger 15 Feb 1902 and 14 Nov 1903 (timetables); end is the 1904-05 change of operator. Headway not sourced.",
+       "https://www.loc.gov/resource/sn85042354/1897-01-02/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn85042354/1896-11-13/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84026758/1902-02-15/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84026758/1903-11-14/ed-1/?sp=8",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.824659,
+      38.887279
+     ],
+     [
+      -75.792484,
+      38.864576
+     ],
+     [
+      -75.789927,
+      38.862652
+     ],
+     [
+      -75.787335,
+      38.861128
+     ],
+     [
+      -75.783418,
+      38.859323
+     ],
+     [
+      -75.769962,
+      38.854417
+     ],
+     [
+      -75.739021,
+      38.84287
+     ],
+     [
+      -75.72393,
+      38.837411
+     ],
+     [
+      -75.718642,
+      38.83528
+     ],
+     [
+      -75.701084,
+      38.828768
+     ],
+     [
+      -75.697466,
+      38.827759
+     ],
+     [
+      -75.592496,
+      38.80895
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Queen Anne's Railroad",
+    "line": "Queen Anne's: Greenwood – Lewes",
+    "id": "qa-greenwood-lewes",
+    "color": "#B5462F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Greenwood - Lewes: traced 25.8 mi against 25.0 mi documented (J. Fowler mileposts; +3%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Greenwood - Milton 15.89 mi vs 15.8 documented, over the OHM QA way (1918 USGS) and the surviving Milton Industrial Track (OSM, old_railway_operator=PRR); the trace starts exactly at the Delaware RR crossing at Greenwood and does not run on the Delmarva Secondary. Milton - Lewes 9.91 mi vs 9.2 documented (+8%): drawn along the QA's own grade via Overbrook and round the north side of Lewes to its end at the PRR by the canal swing bridge (38.7743,-75.1330), NOT on the PRR/Junction & Breakwater Georgetown - Lewes line; the QA's Lewes station and its pier spur (OHM, to 38.7837,-75.1290) are not drawn separately, so the overrun is probably the loop round the town rather than a wrong route. The Lewes - Rehoboth through running was over PRR track and is not drawn. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1904,
+      "headway_min": 480,
+      "note": "Queen Anne's Railroad, Greenwood - Ellendale (crossing the PRR Junction & Breakwater) - Milton - Lewes (its own Lewes terminal and pier). Railway mail to Ellendale from 9 Aug 1897 and trains to Milton by 29 Aug 1897 (en.wikipedia), but no 1897 passenger timetable was found, so the whole block is drawn from 1898: Milton - Lewes opened 1 Mar 1898 (en.wikipedia) and from 4 Apr 1898 the QA carried mail 'on its entire line from Baltimore to Lewes' (Evening Journal 10 Mar 1898). Timetables of Jan 1902 and Nov 1903; 1903 summer expresses with club and chair cars ran Love Point - Lewes and on to Rehoboth Beach over PRR track (Evening Star 13 Jun 1903), connecting at Lewes with the QA steamer Queen Caroline to Cape May (neither the Rehoboth leg nor the boat is drawn). Operator end 1904 (to the MD&V 1905). Headway estimated (one or two through trains each way daily ex. Sunday in the 1902-03 timetables read by the report; not counted).",
+      "sources": [
+       "Segment-level: report block [3] - Evening Journal 17 Jul 1897 p.6 and Middletown Transcript 24 Jul 1897 p.3 (mail to Ellendale, track near Milton), Evening Journal 10 Mar 1898 p.3 (mail to Lewes; start 1898), Democratic Messenger 15 Feb 1902 and 14 Nov 1903, Evening Star 13 Jun 1903 p.32 (timetables). Greenwood - Milton 1897 not drawn (no passenger confirmation). Headway not sourced.",
+       "https://www.loc.gov/resource/sn85042354/1897-07-17/ed-1/?sp=6",
+       "https://www.loc.gov/resource/sn84026820/1897-07-24/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn85042354/1898-03-10/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84026758/1902-02-15/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84026758/1903-11-14/ed-1/?sp=8",
+       "https://www.loc.gov/resource/sn83045462/1903-06-13/ed-1/?sp=32",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.592496,
+      38.80895
+     ],
+     [
+      -75.569709,
+      38.80492
+     ],
+     [
+      -75.566341,
+      38.804508
+     ],
+     [
+      -75.562941,
+      38.804314
+     ],
+     [
+      -75.53163,
+      38.804239
+     ],
+     [
+      -75.422796,
+      38.805666
+     ],
+     [
+      -75.42255,
+      38.805386
+     ],
+     [
+      -75.421943,
+      38.804994
+     ],
+     [
+      -75.421402,
+      38.804855
+     ],
+     [
+      -75.412526,
+      38.80486
+     ],
+     [
+      -75.409755,
+      38.80463
+     ],
+     [
+      -75.40647,
+      38.803965
+     ],
+     [
+      -75.404238,
+      38.8032
+     ],
+     [
+      -75.325235,
+      38.77131
+     ],
+     [
+      -75.323693,
+      38.770819
+     ],
+     [
+      -75.320454,
+      38.770111
+     ],
+     [
+      -75.317948,
+      38.769926
+     ],
+     [
+      -75.308932,
+      38.769855
+     ],
+     [
+      -75.17153,
+      38.768602
+     ],
+     [
+      -75.169115,
+      38.768866
+     ],
+     [
+      -75.167469,
+      38.769172
+     ],
+     [
+      -75.165685,
+      38.76973
+     ],
+     [
+      -75.149534,
+      38.776173
+     ],
+     [
+      -75.144384,
+      38.77849
+     ],
+     [
+      -75.143337,
+      38.778815
+     ],
+     [
+      -75.141106,
+      38.779253
+     ],
+     [
+      -75.138539,
+      38.779195
+     ],
+     [
+      -75.135312,
+      38.778896
+     ],
+     [
+      -75.133955,
+      38.77824
+     ],
+     [
+      -75.133093,
+      38.777311
+     ],
+     [
+      -75.132587,
+      38.7761
+     ],
+     [
+      -75.132584,
+      38.775028
+     ],
+     [
+      -75.133031,
+      38.774307
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Queen Anne's Railroad",
+    "line": "Queen Anne's: Love Point – Queenstown (Kent Island)",
+    "id": "qa-love-point-queenstown",
+    "color": "#B5462F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Love Point - Queenstown: traced 13.72 mi against 13.1 mi documented (J. Fowler mileposts; +5%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Love Point pier (39.0318,-76.3020) south down Kent Island past Stevensville, east through Chester, across Kent Narrows and Grasonville to the junction with the 1896 line east of Queenstown (38.9915,-76.1392); documented 13.1 mi is to Queenstown station (Fowler MP 40.1), the junction is near Centerville Jn MP 40.5, so ~13.5 mi is the fair comparison. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1903,
+      "end": 1904,
+      "headway_min": 480,
+      "note": "Queen Anne's Railroad Kent Island extension, built to cut the Baltimore steamer leg to Love Point (~20 mi). Under construction Mar 1901 (The Times, Washington, 29 Mar 1901); the 8 Jan 1902 schedule still ran the boat to Queenstown, and a Feb 1902 article speaks of Love Point as the terminus only in the future tense (Peninsula Enterprise 1 Feb 1902). First CONFIRMED year 1903: Love Point is 'the western terminus of the rail division' in the summer 1903 schedule (Evening Star 13 Jun 1903) and the 9 Nov 1903 timetable (Democratic Messenger 14 Nov 1903). Opening 1902 is probable (en.wikipedia 1901-02, Fowler 'Kent Island 1902t?') but not confirmed, so 1902 is not drawn. Operator end 1904 (to the MD&V 1905). Headway estimated (one or two through trains each way daily ex. Sunday in the 1902-03 timetables read by the report; not counted).",
+      "sources": [
+       "Segment-level: report block [4] - The Times 29 Mar 1901 p.6 (building), Democratic Messenger 15 Feb 1902 (boat still to Queenstown), Peninsula Enterprise 1 Feb 1902 p.3, Evening Star 13 Jun 1903 p.32 and Democratic Messenger 14 Nov 1903 p.8 (first confirmed 1903). Headway not sourced.",
+       "https://www.loc.gov/resource/sn85054468/1901-03-29/ed-1/?sp=6",
+       "https://www.loc.gov/resource/sn84026758/1902-02-15/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn94060041/1902-02-01/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn83045462/1903-06-13/ed-1/?sp=32",
+       "https://www.loc.gov/resource/sn84026758/1903-11-14/ed-1/?sp=8",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad",
+       "https://en.wikipedia.org/wiki/Delaware_Coast_Line_Railroad",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.301951,
+      39.031848
+     ],
+     [
+      -76.306517,
+      39.032688
+     ],
+     [
+      -76.307753,
+      39.032755
+     ],
+     [
+      -76.308834,
+      39.032635
+     ],
+     [
+      -76.309692,
+      39.032221
+     ],
+     [
+      -76.310826,
+      39.030821
+     ],
+     [
+      -76.311718,
+      38.9927
+     ],
+     [
+      -76.311547,
+      38.990018
+     ],
+     [
+      -76.311186,
+      38.98903
+     ],
+     [
+      -76.30995,
+      38.986735
+     ],
+     [
+      -76.309418,
+      38.986188
+     ],
+     [
+      -76.300114,
+      38.983093
+     ],
+     [
+      -76.287241,
+      38.979241
+     ],
+     [
+      -76.28113,
+      38.977092
+     ],
+     [
+      -76.274298,
+      38.97489
+     ],
+     [
+      -76.271294,
+      38.974597
+     ],
+     [
+      -76.257007,
+      38.972381
+     ],
+     [
+      -76.252752,
+      38.971947
+     ],
+     [
+      -76.242333,
+      38.969719
+     ],
+     [
+      -76.238865,
+      38.968771
+     ],
+     [
+      -76.227397,
+      38.965995
+     ],
+     [
+      -76.208119,
+      38.961764
+     ],
+     [
+      -76.206489,
+      38.961483
+     ],
+     [
+      -76.205355,
+      38.961444
+     ],
+     [
+      -76.203999,
+      38.961564
+     ],
+     [
+      -76.202283,
+      38.96179
+     ],
+     [
+      -76.200326,
+      38.962458
+     ],
+     [
+      -76.187282,
+      38.967023
+     ],
+     [
+      -76.18021,
+      38.969811
+     ],
+     [
+      -76.178339,
+      38.970932
+     ],
+     [
+      -76.164925,
+      38.981865
+     ],
+     [
+      -76.162985,
+      38.983195
+     ],
+     [
+      -76.16132,
+      38.984129
+     ],
+     [
+      -76.155798,
+      38.986154
+     ],
+     [
+      -76.141294,
+      38.991104
+     ],
+     [
+      -76.140247,
+      38.991438
+     ],
+     [
+      -76.139199,
+      38.991478
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Queen Anne's Railroad",
+    "line": "Queen Anne's: Centreville Branch",
+    "id": "qa-queenstown-centreville",
+    "color": "#B5462F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Queenstown (Centerville Jn) - Centreville: traced 5.42 mi against 6.1 mi documented (J. Fowler mileposts; -11%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). From the junction east of Queenstown (Centerville Jn) to the end of the OHM way on the west edge of Centreville (39.0405,-76.0722); -11% against Fowler's 6.1 mi (which may count from Queenstown station). Whether the QA's Centreville station lay further into town is not checked. Distinct from the PRR Queen Anne's & Kent line via Massey (OSM 'Centreville Line'), which is not used. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1904,
+      "headway_min": 720,
+      "note": "Queen Anne's Railroad Centreville Branch. First confirmed 1902: 'CENTREVILLE BRANCH. Trains leave Queenstown for Centreville daily except Saturday and Sunday ...' in the schedule effective 8 Jan 1902 (Democratic Messenger 15 Feb 1902); Centreville also in the 9 Nov 1903 through timetable. Opening date not found (en.wikipedia 1901-02); 1901 not drawn. Not the PRR's Queen Anne's & Kent line from Massey, which reached Centreville from the north. Operator end 1904 (to the MD&V 1905). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [5] - Democratic Messenger 15 Feb 1902 p.1 (branch schedule, Jan 1902) and 14 Nov 1903 p.8; Fowler line 52 (6.1 mi). Headway not sourced.",
+       "https://www.loc.gov/resource/sn84026758/1902-02-15/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84026758/1903-11-14/ed-1/?sp=8",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.139199,
+      38.991478
+     ],
+     [
+      -76.137452,
+      38.991191
+     ],
+     [
+      -76.136758,
+      38.991191
+     ],
+     [
+      -76.135531,
+      38.991674
+     ],
+     [
+      -76.134999,
+      38.992225
+     ],
+     [
+      -76.131956,
+      38.996278
+     ],
+     [
+      -76.123593,
+      39.006147
+     ],
+     [
+      -76.120842,
+      39.01065
+     ],
+     [
+      -76.119691,
+      39.012291
+     ],
+     [
+      -76.118867,
+      39.013198
+     ],
+     [
+      -76.109304,
+      39.020753
+     ],
+     [
+      -76.092922,
+      39.033282
+     ],
+     [
+      -76.081248,
+      39.042397
+     ],
+     [
+      -76.079739,
+      39.043364
+     ],
+     [
+      -76.078605,
+      39.043726
+     ],
+     [
+      -76.077907,
+      39.04386
+     ],
+     [
+      -76.076287,
+      39.043757
+     ],
+     [
+      -76.075062,
+      39.043356
+     ],
+     [
+      -76.073907,
+      39.042633
+     ],
+     [
+      -76.072247,
+      39.040478
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maryland, Delaware and Virginia Railway",
+    "line": "Maryland, Delaware and Virginia: Love Point – Denton",
+    "id": "mdv-love-point-denton",
+    "color": "#3C8D2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Love Point - Queenstown Jn - Denton Branch Jn - Denton: traced 32.86 mi against 33.3 mi documented (J. Fowler mileposts; -1%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Shares geometry with qa-love-point-queenstown and the Queenstown Jn - Denton part of qa-queenstown-denton (the 1.1 mi Queenstown wharf stub is not drawn for this era). Documented 33.3 mi (Fowler; Official Guide 1952 'Love Point to Denton (34 miles)'). ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1923,
+      "headway_min": 480,
+      "note": "Maryland, Delaware and Virginia Railway, the PRR subsidiary formed Jan 1905 to take over the bankrupt QA (mortgage recorded at Dover, 'follows the passing of the Queen Anne's Railroad into the hands of the Pennsylvania Railroad Company', Evening Journal 9 Feb 1905); jointly managed with the BC&A (Capt. Willard Thomson, Evening Journal 17 Aug 1910, which also reports a rearranged MD&V schedule from 29 Aug 1910) but advertised under its own name. Baltimore - Love Point steamer connection. [OPEN] END: 1923 is the last CONFIRMED year, not a known end - when the Greenwood - Lewes service was cut in June 1923 'regular service will be continued as heretofore on the remainder of the line' (Milford Chronicle 22 Jun 1923); the PRR sold the MD&V to the E. B. Leaf Co. in May 1923 (en.wikipedia) and the Baltimore and Eastern took Love Point - West Denton in 1924, but no source dates the last MD&V/Leaf train in 1923-24. Do not extend without evidence. Headway estimated.",
+      "sources": [
+       "Segment-level: report block [6] - Evening Journal 9 Feb 1905 p.1 (1905 takeover), Evening Journal 17 Aug 1910 p.7 (mid-era schedule), Milford Chronicle 22 Jun 1923 p.1 and Smyrna Times 18 Jul 1923 p.3 and 26 Sep 1923 p.2 (1923 service, last confirmed year). End is [OPEN]. Headway not sourced.",
+       "https://www.loc.gov/resource/sn85042354/1905-02-09/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn85042354/1910-08-17/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn87062224/1923-06-22/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84020422/1923-07-18/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84020422/1923-09-26/ed-1/?sp=2",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.301951,
+      39.031848
+     ],
+     [
+      -76.306517,
+      39.032688
+     ],
+     [
+      -76.307753,
+      39.032755
+     ],
+     [
+      -76.308834,
+      39.032635
+     ],
+     [
+      -76.309692,
+      39.032221
+     ],
+     [
+      -76.310826,
+      39.030821
+     ],
+     [
+      -76.311718,
+      38.9927
+     ],
+     [
+      -76.311547,
+      38.990018
+     ],
+     [
+      -76.311186,
+      38.98903
+     ],
+     [
+      -76.30995,
+      38.986735
+     ],
+     [
+      -76.309418,
+      38.986188
+     ],
+     [
+      -76.300114,
+      38.983093
+     ],
+     [
+      -76.287241,
+      38.979241
+     ],
+     [
+      -76.28113,
+      38.977092
+     ],
+     [
+      -76.274298,
+      38.97489
+     ],
+     [
+      -76.271294,
+      38.974597
+     ],
+     [
+      -76.257007,
+      38.972381
+     ],
+     [
+      -76.252752,
+      38.971947
+     ],
+     [
+      -76.242333,
+      38.969719
+     ],
+     [
+      -76.238865,
+      38.968771
+     ],
+     [
+      -76.227397,
+      38.965995
+     ],
+     [
+      -76.208119,
+      38.961764
+     ],
+     [
+      -76.206489,
+      38.961483
+     ],
+     [
+      -76.205355,
+      38.961444
+     ],
+     [
+      -76.203999,
+      38.961564
+     ],
+     [
+      -76.202283,
+      38.96179
+     ],
+     [
+      -76.200326,
+      38.962458
+     ],
+     [
+      -76.187282,
+      38.967023
+     ],
+     [
+      -76.18021,
+      38.969811
+     ],
+     [
+      -76.178339,
+      38.970932
+     ],
+     [
+      -76.164925,
+      38.981865
+     ],
+     [
+      -76.162985,
+      38.983195
+     ],
+     [
+      -76.16132,
+      38.984129
+     ],
+     [
+      -76.155798,
+      38.986154
+     ],
+     [
+      -76.141294,
+      38.991104
+     ],
+     [
+      -76.140247,
+      38.991438
+     ],
+     [
+      -76.139199,
+      38.991478
+     ],
+     [
+      -76.128848,
+      38.988636
+     ],
+     [
+      -76.121965,
+      38.985033
+     ],
+     [
+      -76.092868,
+      38.971408
+     ],
+     [
+      -76.085572,
+      38.968125
+     ],
+     [
+      -76.075754,
+      38.963142
+     ],
+     [
+      -76.060362,
+      38.953658
+     ],
+     [
+      -76.04083,
+      38.941907
+     ],
+     [
+      -76.03896,
+      38.940636
+     ],
+     [
+      -76.035254,
+      38.93854
+     ],
+     [
+      -76.034219,
+      38.938119
+     ],
+     [
+      -76.032195,
+      38.937607
+     ],
+     [
+      -76.020313,
+      38.935108
+     ],
+     [
+      -76.018666,
+      38.934852
+     ],
+     [
+      -75.992554,
+      38.932354
+     ],
+     [
+      -75.989684,
+      38.931823
+     ],
+     [
+      -75.979726,
+      38.928944
+     ],
+     [
+      -75.977863,
+      38.928291
+     ],
+     [
+      -75.976286,
+      38.927181
+     ],
+     [
+      -75.973373,
+      38.924213
+     ],
+     [
+      -75.965863,
+      38.919886
+     ],
+     [
+      -75.962257,
+      38.918788
+     ],
+     [
+      -75.956976,
+      38.917178
+     ],
+     [
+      -75.955634,
+      38.91696
+     ],
+     [
+      -75.954738,
+      38.916969
+     ],
+     [
+      -75.953339,
+      38.91716
+     ],
+     [
+      -75.952589,
+      38.917439
+     ],
+     [
+      -75.948075,
+      38.919912
+     ],
+     [
+      -75.946911,
+      38.920145
+     ],
+     [
+      -75.902141,
+      38.921939
+     ],
+     [
+      -75.893322,
+      38.92129
+     ],
+     [
+      -75.892241,
+      38.92109
+     ],
+     [
+      -75.889697,
+      38.920305
+     ],
+     [
+      -75.886443,
+      38.91875
+     ],
+     [
+      -75.830545,
+      38.890443
+     ],
+     [
+      -75.825416,
+      38.887815
+     ],
+     [
+      -75.824659,
+      38.887279
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maryland, Delaware and Virginia Railway",
+    "line": "Maryland, Delaware and Virginia: Denton – Greenwood",
+    "id": "mdv-denton-greenwood",
+    "color": "#3C8D2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Denton - Greenwood: traced 13.86 mi against 13.8 mi documented (J. Fowler mileposts; +0%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Shares geometry with qa-denton-greenwood. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1923,
+      "headway_min": 480,
+      "note": "Maryland, Delaware and Virginia Railway (PRR), from the Jan-Feb 1905 takeover (Evening Journal 9 Feb 1905). [OPEN] END: 1923 is the last CONFIRMED year, not a known end. After the June 1923 Greenwood - Lewes cut, regular service west of Greenwood was to continue (Milford Chronicle 22 Jun 1923); in July 1923 a 'total discontinuance of service from West Denton to Lewes' was 'anticipated by the present plans of the Pennsylvania' (Smyrna Times 18 Jul 1923) and in Aug 1923 the Maryland commission urged the PRR not to abandon 'Queenstown to Denton and to Hickman, Del.' (Smyrna Times 29 Aug 1923). The last MD&V train here is not dated. Do not extend without evidence. Restarted by the Maryland and Delaware Coast Railway 28 Jun 1924 (mdc-denton-lewes). Headway estimated.",
+      "sources": [
+       "Segment-level: report block [7] - Evening Journal 9 Feb 1905 p.1, Milford Chronicle 22 Jun 1923 p.1, Smyrna Times 18 Jul 1923 p.3 and 29 Aug 1923 p.3. End is [OPEN]. Headway not sourced.",
+       "https://www.loc.gov/resource/sn85042354/1905-02-09/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn87062224/1923-06-22/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84020422/1923-07-18/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84020422/1923-08-29/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.824659,
+      38.887279
+     ],
+     [
+      -75.792484,
+      38.864576
+     ],
+     [
+      -75.789927,
+      38.862652
+     ],
+     [
+      -75.787335,
+      38.861128
+     ],
+     [
+      -75.783418,
+      38.859323
+     ],
+     [
+      -75.769962,
+      38.854417
+     ],
+     [
+      -75.739021,
+      38.84287
+     ],
+     [
+      -75.72393,
+      38.837411
+     ],
+     [
+      -75.718642,
+      38.83528
+     ],
+     [
+      -75.701084,
+      38.828768
+     ],
+     [
+      -75.697466,
+      38.827759
+     ],
+     [
+      -75.592496,
+      38.80895
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maryland, Delaware and Virginia Railway",
+    "line": "Maryland, Delaware and Virginia: Greenwood – Lewes",
+    "id": "mdv-greenwood-lewes",
+    "color": "#3C8D2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Greenwood - Lewes: traced 25.8 mi against 25.0 mi documented (J. Fowler mileposts; +3%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Shares geometry with qa-greenwood-lewes. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1923,
+      "headway_min": 480,
+      "note": "Maryland, Delaware and Virginia Railway (PRR), from 1905 (Evening Journal 9 Feb 1905). End 1923 is exact: regular passenger service abandoned between Greenwood and Lewes after 24 Jun 1923, then a mixed passenger and freight train three times a week until 14 Jul 1923, 'after July 14 all service will be discontinued' (Milford Chronicle 22 Jun 1923); 'already sharply curtailed to three mixed trains each way weekly, will be entirely discontinued at the end of the present week' (Smyrna Times 18 Jul 1923). The mixed train counts as passenger service and is inside 1923. Nothing ran here Jul 1923 - Jun 1924. Headway estimated (1923 tail: three mixed trains a week).",
+      "sources": [
+       "Segment-level: report block [8] - Evening Journal 9 Feb 1905 p.1 (start), Milford Chronicle 22 Jun 1923 p.1 and Smyrna Times 18 Jul 1923 p.3 (end, exact). Headway not sourced.",
+       "https://www.loc.gov/resource/sn85042354/1905-02-09/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn87062224/1923-06-22/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn84020422/1923-07-18/ed-1/?sp=3"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.592496,
+      38.80895
+     ],
+     [
+      -75.569709,
+      38.80492
+     ],
+     [
+      -75.566341,
+      38.804508
+     ],
+     [
+      -75.562941,
+      38.804314
+     ],
+     [
+      -75.53163,
+      38.804239
+     ],
+     [
+      -75.422796,
+      38.805666
+     ],
+     [
+      -75.42255,
+      38.805386
+     ],
+     [
+      -75.421943,
+      38.804994
+     ],
+     [
+      -75.421402,
+      38.804855
+     ],
+     [
+      -75.412526,
+      38.80486
+     ],
+     [
+      -75.409755,
+      38.80463
+     ],
+     [
+      -75.40647,
+      38.803965
+     ],
+     [
+      -75.404238,
+      38.8032
+     ],
+     [
+      -75.325235,
+      38.77131
+     ],
+     [
+      -75.323693,
+      38.770819
+     ],
+     [
+      -75.320454,
+      38.770111
+     ],
+     [
+      -75.317948,
+      38.769926
+     ],
+     [
+      -75.308932,
+      38.769855
+     ],
+     [
+      -75.17153,
+      38.768602
+     ],
+     [
+      -75.169115,
+      38.768866
+     ],
+     [
+      -75.167469,
+      38.769172
+     ],
+     [
+      -75.165685,
+      38.76973
+     ],
+     [
+      -75.149534,
+      38.776173
+     ],
+     [
+      -75.144384,
+      38.77849
+     ],
+     [
+      -75.143337,
+      38.778815
+     ],
+     [
+      -75.141106,
+      38.779253
+     ],
+     [
+      -75.138539,
+      38.779195
+     ],
+     [
+      -75.135312,
+      38.778896
+     ],
+     [
+      -75.133955,
+      38.77824
+     ],
+     [
+      -75.133093,
+      38.777311
+     ],
+     [
+      -75.132587,
+      38.7761
+     ],
+     [
+      -75.132584,
+      38.775028
+     ],
+     [
+      -75.133031,
+      38.774307
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maryland, Delaware and Virginia Railway",
+    "line": "Maryland, Delaware and Virginia: Centreville Branch",
+    "id": "mdv-queenstown-centreville",
+    "color": "#3C8D2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Queenstown (Centerville Jn) - Centreville: traced 5.42 mi against 6.1 mi documented (J. Fowler mileposts; -11%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Shares geometry with qa-queenstown-centreville. From the junction east of Queenstown (Centerville Jn) to the end of the OHM way on the west edge of Centreville (39.0405,-76.0722); -11% against Fowler's 6.1 mi (which may count from Queenstown station). Whether the QA's Centreville station lay further into town is not checked. Distinct from the PRR Queen Anne's & Kent line via Massey (OSM 'Centreville Line'), which is not used. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1905,
+      "headway_min": 720,
+      "note": "Maryland, Delaware and Virginia Railway Centreville Branch. [ANCHOR] 1905: the only MD&V-era year with any passenger evidence - Fowler lists the station as 'Centerville 1905G', a name form from the 1905 Official Guide passenger listings. Service certainly ran wider than this one year (the QA ran the branch in 1902-04, and in Aug-Sep 1923 the 6.1 mi branch still existed as a railroad: Smyrna Times 29 Aug and 26 Sep 1923), but no other MD&V year is confirmed for passengers and no MD&V timetable naming the branch was found. Do not widen or delete this anchor without evidence. Headway estimated.",
+      "sources": [
+       "Segment-level: report block [9] - Fowler line 52 ('Centerville 1905G'); Smyrna Times 29 Aug and 26 Sep 1923 (branch still a railroad, passenger service not stated). [ANCHOR] year only. NOT SOURCED AT SEGMENT LEVEL for any year after 1905. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/delawareandmarylandrrs.pdf",
+       "https://www.loc.gov/resource/sn84020422/1923-08-29/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84020422/1923-09-26/ed-1/?sp=2"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.139199,
+      38.991478
+     ],
+     [
+      -76.137452,
+      38.991191
+     ],
+     [
+      -76.136758,
+      38.991191
+     ],
+     [
+      -76.135531,
+      38.991674
+     ],
+     [
+      -76.134999,
+      38.992225
+     ],
+     [
+      -76.131956,
+      38.996278
+     ],
+     [
+      -76.123593,
+      39.006147
+     ],
+     [
+      -76.120842,
+      39.01065
+     ],
+     [
+      -76.119691,
+      39.012291
+     ],
+     [
+      -76.118867,
+      39.013198
+     ],
+     [
+      -76.109304,
+      39.020753
+     ],
+     [
+      -76.092922,
+      39.033282
+     ],
+     [
+      -76.081248,
+      39.042397
+     ],
+     [
+      -76.079739,
+      39.043364
+     ],
+     [
+      -76.078605,
+      39.043726
+     ],
+     [
+      -76.077907,
+      39.04386
+     ],
+     [
+      -76.076287,
+      39.043757
+     ],
+     [
+      -76.075062,
+      39.043356
+     ],
+     [
+      -76.073907,
+      39.042633
+     ],
+     [
+      -76.072247,
+      39.040478
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Baltimore and Eastern Railroad",
+    "line": "Baltimore and Eastern: Love Point – Queen Anne",
+    "id": "be-love-point-queen-anne",
+    "color": "#74158C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Love Point - Queen Anne (PRR): traced 24.99 mi against 25.0 mi documented (J. Fowler mileposts; +0%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Love Point - Queenstown Jn - Wye Mills - Denton Branch Jn (Fowler MP 51.7, 38.9188,-75.9623) and the 0.31 mi 1924 connection (OHM, start_date 1924) to the PRR Oxford Branch at Queen Anne (Fowler 'Queen Anne (PRR)' MP 52, 38.9176,-75.9572). Fowler 27.0 -> 52.0 = 25.0 mi. B&E trains ran on over PRR Queen Anne - Cordova - Easton (and 1934-38 to Oxford); that PRR track is not this road's and is not drawn here. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1938,
+      "headway_min": 480,
+      "note": "Baltimore and Eastern Railroad (inc. Md. 13 Jun 1923, PRR family; took Love Point - West Denton 1924 and absorbed the BC&A 1928). Trains connected with the Baltimore - Love Point boat and ran Love Point - Queen Anne and on over PRR track to Easton. [OPEN] START: 1933 is the earliest CONFIRMED B&E passenger year here (Smyrna Times 25 Oct 1933: the B&E 'extends from boat to Love Point, Md., and thence by rail to Hurlock-Seaford-Salisbury and Ocean City'), not a known opening - the B&E operated from 1924 but 1924-32 passenger trains on this section are not confirmed, so they are not drawn. Do not extend earlier without a 1924-32 timetable. From 15 Jul 1934 a service 'between Oxford, Easton and intermediate points by the way of Love Point and Baltimore' (Worcester Democrat 13 Jul 1934). End 1938 exact: 'two round trips daily between Easton and Love Point' (Worcester Democrat 11 Feb 1938); the Md. PSC authorised discontinuance 'from Easton to Love Point', last passenger car expected 29 Mar 1938 (Worcester Democrat 11 Mar 1938). SOURCE CONFLICT: en.wikipedia (QA and Delaware Coast Line articles) says B&E passenger service ended (Oct) 1931, 'replaced by bus'; the primary sources above contradict that for this section - unresolved which section, if any, lost trains in 1931. Freight only afterwards (Official Guide 1952: 'Freight Service only. Love Point to Denton'). Headway estimated from 'two round trips daily' (1938).",
+      "sources": [
+       "Segment-level: report block [10] - Smyrna Times 25 Oct 1933 p.7 (first confirmed year), Worcester Democrat 13 Jul 1934 p.13, 11 Feb 1938 p.2 and 11 Mar 1938 p.4 (end 1938, exact); Official Guide 1952 (freight only). Start is [OPEN] (earliest confirmed). Source conflict with en.wikipedia's 1931 end recorded in note. Headway estimated from 1938 'two round trips daily'.",
+       "https://www.loc.gov/resource/sn84020422/1933-10-25/ed-1/?sp=7",
+       "https://www.loc.gov/resource/sn89060127/1934-07-13/ed-1/?sp=13",
+       "https://www.loc.gov/resource/sn89060127/1938-02-11/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn89060127/1938-03-11/ed-1/?sp=4",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad",
+       "https://en.wikipedia.org/wiki/Delaware_Coast_Line_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.301951,
+      39.031848
+     ],
+     [
+      -76.306517,
+      39.032688
+     ],
+     [
+      -76.307753,
+      39.032755
+     ],
+     [
+      -76.308834,
+      39.032635
+     ],
+     [
+      -76.309692,
+      39.032221
+     ],
+     [
+      -76.310826,
+      39.030821
+     ],
+     [
+      -76.311718,
+      38.9927
+     ],
+     [
+      -76.311547,
+      38.990018
+     ],
+     [
+      -76.311186,
+      38.98903
+     ],
+     [
+      -76.30995,
+      38.986735
+     ],
+     [
+      -76.309418,
+      38.986188
+     ],
+     [
+      -76.300114,
+      38.983093
+     ],
+     [
+      -76.287241,
+      38.979241
+     ],
+     [
+      -76.28113,
+      38.977092
+     ],
+     [
+      -76.274298,
+      38.97489
+     ],
+     [
+      -76.271294,
+      38.974597
+     ],
+     [
+      -76.257007,
+      38.972381
+     ],
+     [
+      -76.252752,
+      38.971947
+     ],
+     [
+      -76.242333,
+      38.969719
+     ],
+     [
+      -76.238865,
+      38.968771
+     ],
+     [
+      -76.227397,
+      38.965995
+     ],
+     [
+      -76.208119,
+      38.961764
+     ],
+     [
+      -76.206489,
+      38.961483
+     ],
+     [
+      -76.205355,
+      38.961444
+     ],
+     [
+      -76.203999,
+      38.961564
+     ],
+     [
+      -76.202283,
+      38.96179
+     ],
+     [
+      -76.200326,
+      38.962458
+     ],
+     [
+      -76.187282,
+      38.967023
+     ],
+     [
+      -76.18021,
+      38.969811
+     ],
+     [
+      -76.178339,
+      38.970932
+     ],
+     [
+      -76.164925,
+      38.981865
+     ],
+     [
+      -76.162985,
+      38.983195
+     ],
+     [
+      -76.16132,
+      38.984129
+     ],
+     [
+      -76.155798,
+      38.986154
+     ],
+     [
+      -76.141294,
+      38.991104
+     ],
+     [
+      -76.140247,
+      38.991438
+     ],
+     [
+      -76.139199,
+      38.991478
+     ],
+     [
+      -76.128848,
+      38.988636
+     ],
+     [
+      -76.121965,
+      38.985033
+     ],
+     [
+      -76.092868,
+      38.971408
+     ],
+     [
+      -76.085572,
+      38.968125
+     ],
+     [
+      -76.075754,
+      38.963142
+     ],
+     [
+      -76.060362,
+      38.953658
+     ],
+     [
+      -76.04083,
+      38.941907
+     ],
+     [
+      -76.03896,
+      38.940636
+     ],
+     [
+      -76.035254,
+      38.93854
+     ],
+     [
+      -76.034219,
+      38.938119
+     ],
+     [
+      -76.032195,
+      38.937607
+     ],
+     [
+      -76.020313,
+      38.935108
+     ],
+     [
+      -76.018666,
+      38.934852
+     ],
+     [
+      -75.992554,
+      38.932354
+     ],
+     [
+      -75.989684,
+      38.931823
+     ],
+     [
+      -75.979726,
+      38.928944
+     ],
+     [
+      -75.977863,
+      38.928291
+     ],
+     [
+      -75.976286,
+      38.927181
+     ],
+     [
+      -75.973373,
+      38.924213
+     ],
+     [
+      -75.965863,
+      38.919886
+     ],
+     [
+      -75.962257,
+      38.918788
+     ],
+     [
+      -75.957341,
+      38.917285
+     ],
+     [
+      -75.957195,
+      38.91757
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Maryland and Delaware Coast Railway",
+    "line": "Maryland and Delaware Coast: Denton – Lewes",
+    "id": "mdc-denton-lewes",
+    "color": "#C9871F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: single-track Eastern Shore steam road on flat country (gasoline railcar on the M&DC); no running times were computed from the timetables read. Unsourced.",
+    "geometry_source": "OpenHistoricalMap (CC0) railway ways for the Queen Anne's Railroad grade, fetched 2026-10-25 via opstrace.fetch_gap, plus OpenStreetMap (Overpass, maps.mail.ru mirror) where track survives (Milton Industrial Track, Ellendale - Milton, old_railway_operator=PRR); routed with opstrace.py (douglas_peucker 8 m, trim_reversals). old_railway_operator probed over 38.65,-76.36,39.06,-75.10: the only value is PRR, shared with the Delmarva Secondary, Seaford Line, Indian River Secondary, Preston Branch and Georgetown/Lewes trails - waypoints were snapped to vertices of the QA-grade OHM ways so the route stays off those decoys. The OHM Denton - Greenwood - Milton - Lewes ways are fitted to 1917-18 USGS 15-minute quadrangles; the Love Point, Queenstown - Queen Anne - Denton and Centreville ways carry no source tag. OHM start/end dates are not used.",
+    "geometry_quality": "Denton - Greenwood - Lewes: traced 39.66 mi against 38.8 mi documented (J. Fowler mileposts; +2%). No straight-line legs: every leg routes over mapped QA-grade ways (0.0 mi approximated). Shares geometry with qa-denton-greenwood + qa-greenwood-lewes. Drawn from Denton (east bank); the M&DC's title ran from West Denton (Milford Chronicle 12 Sep 1924) but its trains are reported 'from Denton to Lewes', so the ~0.5 mi West Denton - Denton Choptank crossing is not drawn for this company. Greenwood - Milton 15.89 mi vs 15.8 documented, over the OHM QA way (1918 USGS) and the surviving Milton Industrial Track (OSM, old_railway_operator=PRR); the trace starts exactly at the Delaware RR crossing at Greenwood and does not run on the Delmarva Secondary. Milton - Lewes 9.91 mi vs 9.2 documented (+8%): drawn along the QA's own grade via Overbrook and round the north side of Lewes to its end at the PRR by the canal swing bridge (38.7743,-75.1330), NOT on the PRR/Junction & Breakwater Georgetown - Lewes line; the QA's Lewes station and its pier spur (OHM, to 38.7837,-75.1290) are not drawn separately, so the overrun is probably the loop round the town rather than a wrong route. The Lewes - Rehoboth through running was over PRR track and is not drawn. ERA: the drawn line is the grade as mapped on the 1917-18 USGS quadrangles (Denton - Lewes) or as OHM records it (west of Denton) - the QA/MD&V-era alignment, not a later one; no realignment of this road is known, but none was checked. ",
+    "segments": [
+     {
+      "start": 1924,
+      "end": 1929,
+      "headway_min": 720,
+      "note": "Maryland and Delaware Coast Railway (formed 16 Apr 1924, Col. Jesse Rosenfeld, Baltimore; HQ Denton), which bought West Denton - Lewes from the E. B. Leaf Co. after the ICC and Md. PSC stopped it being junked (Milford Chronicle 12 Sep 1924). Start 1924 exact: first gasoline train Saturday 28 Jun 1924, 'The trains will run from Denton to Lewes' (Smyrna Times 2 Jul 1924); summer Rehoboth runs over PRR track were announced (not drawn). Gasoline railcar for passengers, steam for freight. [OPEN] END: 1929 is the last CONFIRMED passenger year, not a known end - 'There is a gasoline operated train for passengers and a steam train for freight' (Smyrna Times 13 Mar 1929). The real end lies in 1929-1931: en.wikipedia says passenger service ended 1931 when the gasoline car was destroyed, while the Evening Star of 25 Jul 1931 already calls the road 'a single track freight line' - unresolved. Do not extend to 1930-31 without a dated passenger source. Receivership 1931, renamed Maryland and Delaware Railroad Oct 1932 (Smyrna Times 26 Oct 1932); abandonment filed 1934, when the PRR took Ellendale - Milton for freight (later the Milton Industrial Track) and the rest was abandoned. Headway estimated.",
+      "sources": [
+       "Segment-level: report block [13] - Smyrna Times 2 Jul 1924 p.1 (first train, start exact), Milford Chronicle 12 Sep 1924 p.3 (title West Denton - Lewes), Smyrna Times 13 Mar 1929 p.2 (last confirmed passenger year), Evening Star 25 Jul 1931 p.10 and Smyrna Times 26 Oct 1932 p.2 (freight line; rename). End is [OPEN]. Headway not sourced.",
+       "https://www.loc.gov/resource/sn84020422/1924-07-02/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn87062224/1924-09-12/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84020422/1929-03-13/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn83045462/1931-07-25/ed-1/?sp=10",
+       "https://www.loc.gov/resource/sn84020422/1932-10-26/ed-1/?sp=2",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_Railroad",
+       "https://en.wikipedia.org/wiki/Delaware_Coast_Line_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.824659,
+      38.887279
+     ],
+     [
+      -75.792484,
+      38.864576
+     ],
+     [
+      -75.789927,
+      38.862652
+     ],
+     [
+      -75.787335,
+      38.861128
+     ],
+     [
+      -75.783418,
+      38.859323
+     ],
+     [
+      -75.769962,
+      38.854417
+     ],
+     [
+      -75.739021,
+      38.84287
+     ],
+     [
+      -75.72393,
+      38.837411
+     ],
+     [
+      -75.718642,
+      38.83528
+     ],
+     [
+      -75.701084,
+      38.828768
+     ],
+     [
+      -75.697466,
+      38.827759
+     ],
+     [
+      -75.592496,
+      38.80895
+     ],
+     [
+      -75.569709,
+      38.80492
+     ],
+     [
+      -75.566341,
+      38.804508
+     ],
+     [
+      -75.562941,
+      38.804314
+     ],
+     [
+      -75.53163,
+      38.804239
+     ],
+     [
+      -75.422796,
+      38.805666
+     ],
+     [
+      -75.42255,
+      38.805386
+     ],
+     [
+      -75.421943,
+      38.804994
+     ],
+     [
+      -75.421402,
+      38.804855
+     ],
+     [
+      -75.412526,
+      38.80486
+     ],
+     [
+      -75.409755,
+      38.80463
+     ],
+     [
+      -75.40647,
+      38.803965
+     ],
+     [
+      -75.404238,
+      38.8032
+     ],
+     [
+      -75.325235,
+      38.77131
+     ],
+     [
+      -75.323693,
+      38.770819
+     ],
+     [
+      -75.320454,
+      38.770111
+     ],
+     [
+      -75.317948,
+      38.769926
+     ],
+     [
+      -75.308932,
+      38.769855
+     ],
+     [
+      -75.17153,
+      38.768602
+     ],
+     [
+      -75.169115,
+      38.768866
+     ],
+     [
+      -75.167469,
+      38.769172
+     ],
+     [
+      -75.165685,
+      38.76973
+     ],
+     [
+      -75.149534,
+      38.776173
+     ],
+     [
+      -75.144384,
+      38.77849
+     ],
+     [
+      -75.143337,
+      38.778815
+     ],
+     [
+      -75.141106,
+      38.779253
+     ],
+     [
+      -75.138539,
+      38.779195
+     ],
+     [
+      -75.135312,
+      38.778896
+     ],
+     [
+      -75.133955,
+      38.77824
+     ],
+     [
+      -75.133093,
+      38.777311
+     ],
+     [
+      -75.132587,
+      38.7761
+     ],
+     [
+      -75.132584,
+      38.775028
+     ],
+     [
+      -75.133031,
+      38.774307
+     ]
+    ]
+   }
+  }
+ ]
+}
