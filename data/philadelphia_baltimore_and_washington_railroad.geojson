@@ -1,0 +1,4823 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "name": "Philadelphia, Baltimore and Washington Railroad (PRR subsidiary) - branch lines",
+  "note": "The PB&W was formed 1 Nov 1902 by merging the PRR-controlled Philadelphia, Wilmington & Baltimore and Baltimore & Potomac; it operated the PRR's lines south of Philadelphia until Penn Central (1 Feb 1968). Its main lines are already drawn (pennsylvania_railroad.geojson, prr-mainline-new-york-washington; delaware_railroad.geojson). This layer adds the PB&W-era branches that were missing from the map: the West Chester outer end, Chester Creek, Octoraro, Columbia & Port Deposit (Port Road), Newark - Delaware City, Sparrows Point, Pope's Creek, and the Delaware Division (Delmarva) branches including the DM&V. Each feature is drawn only for the drawable span in the research report.",
+  "company_names": "All features use company 'Pennsylvania Railroad' (the report's recommendation): after 1902 the PB&W had no passenger identity of its own - every branch here is a PRR table in the Feb 1952 Official Guide - and the camden_and_amboy and NJRR&T layers set the precedent. The DM&V lines (Harrington - Franklin City, Lewes - Rehoboth) are drawn as Pennsylvania Railroad too: PW&B control from 1891, PRR timetables, and the report's ownership_split finds no operator change inside 1902-1949. The 1916 PB&W purchases (P&BC, C&PD, Chester Creek) and the 1918 PRR takeover of the Delaware Division lease are not operator changes under this display name, so no feature is split.",
+  "colour_choice": "Colour pulled programmatically from prr-mainline-new-york-washington in pennsylvania_railroad.geojson (Rule 4).",
+  "research_report": "research/branches/philadelphia_baltimore_and_washington_railroad.txt",
+  "start_years": "Every 1902 start is the PB&W formation date, a corporate date, NOT a dated timetable. These lines all carried passengers before 1902 under predecessors (those years belong to the PW&B queue item or, for the B&P, to no queue item yet). Continuity from 1902 to each last run is inferred; the segment sources say so.",
+  "not_yet_sourced": [
+   "All 1902 start years: corporate (PB&W formation), not evidenced year by year. Smyrna, Townsend, Chestertown, Centreville, Oxford (MD) and Cambridge lines have no mid-span corroboration at all.",
+   "End dates come from the PRRTHS 'Discontinuance/Last Runs' list (2003 edition), a secondary compilation; only starred ('believed correct') entries were used. Small conflicts recorded in segment notes: Delaware City 24 vs 25 Sep 1927; Oxford (MD) 6 vs 8 Aug 1949.",
+   "Lewes - Rehoboth: PRRTHS ends 1938 (tt.) but WIKI-DM&V says service across the Lewes & Rehoboth Canal ended 'in the 1940s'; a seasonal Rehoboth extension after 1938 is possible and unproven. Drawn to 1938.",
+   "Sparrows Point 1889-1912: operator of the passenger trains (B&SP or PW&B/PB&W) not established; drawn from 1913 only. The branch's exact alignment through Highlandtown is not identified in OSM/OHM (see the feature's geometry_quality).",
+   "West Chester Branch 1968-1986 (Penn Central, then Conrail/SEPTA) is real passenger service but needs Penn Central and SEPTA features; not drawn here.",
+   "Pope's Creek service-level change (four trains a day 1921, one a day from 1937) is from Wikipedia, not a timetable read here.",
+   "Every headway_min and avg_speed_kmh in this layer is an estimate."
+  ],
+  "omitted": [
+   "[1][2] PB&W main lines, [5] Philadelphia - Wawa, [24] Delaware RR main line: ALREADY DRAWN in other layers.",
+   "[3] Landover - Washington 6th Street (1902-1907, + B&P 1873-1902): outside this pass's B-F scope; the report recommends switching the existing NEC feature's pre-1907 segments to this geometry rather than adding a parallel feature - a change to pennsylvania_railroad.geojson, left to the maintainers.",
+   "[4] Elkton pre-1934 main-line alignment: the report gives it only as an optional NEC alignment variant ('if the maintainers choose to model it'), not a standalone drawable line; a parallel feature would double-draw the NEC. Recorded for the NEC feature's geometry_quality instead.",
+   "[10] Octoraro NRHS excursion 1957: drawable NONE (route unknown).",
+   "[13] Port Road Amtrak 1971-1978: not PB&W; belongs to the Amtrak National Limited layer.",
+   "[15] Newark - Newark Center shuttle 1916-17: unstarred PRRTHS entry, sub-mile; the report says omit unless wanted. Omitted.",
+   "[16] Stanton - Delaware Park race specials 1965 [ANCHOR]: unstarred PRRTHS, single Fowler timetable letter; low confidence. Omitted.",
+   "[18] Catonsville Branch: drawable NONE under PB&W (passengers ended 1898).",
+   "[20] Pope's Creek 1955 excursion [ANCHOR] and [21] 1966 campaign charter [ANCHOR]: each a single uncited/unsourced Wikipedia sentence. Omitted rather than assert them.",
+   "[22] Bowie Race Track specials: drawable NONE.",
+   "[23] Washington Southern: not PB&W, drawn under RF&P.",
+   "[28] Clayton - Massey 1902 [ANCHOR]: the report recommends the PW&B queue item carry it as 1875-1902 rather than a separate four-week PB&W feature. Not drawn here.",
+   "[34] NYP&N Crisfield and Kiptopeke branches: refer to an NYP&N queue item."
+  ],
+  "freight_only_audit": "Built to Rule 1 from the start: every feature ends at its last passenger run. Not drawn: Port Road 1935-1971 freight (electrified 1938); Octoraro after 1948/1940; Chester Creek 1929-1972; Reybold Industrial Track after 1927; Sparrows Point after 1937; Pope's Creek after 1949; all Delmarva branches after their last runs (incl. the 1957 Oxford - Easton freight end); the Catonsville Branch; the South Chester RR and Patapsco & Back Rivers.",
+  "horsecar_audit": "None: every line here was steam-built (West Chester electrified 1928). Nothing trimmed.",
+  "geometry_method": "opstrace.py: old_railway_operator probed first (on this ground every PRR-family way is tagged 'PRR'), fetch_operator_ways for rail-trails, fetch_gap/OHM over lifted stretches, trace -> douglas_peucker(8 m) -> trim_reversals. Junction points shared between features (Octoraro Jct, Massey) are joined explicitly; those short links are listed as straight legs."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: West Chester Branch (Wawa – West Chester)",
+    "id": "prr-west-chester-branch-wawa-west-chester",
+    "color": "#7B241C",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 9.2 mi on OSM ways tagged old_railway_operator=PRR. No straight-line leg. Traced length 9.1 mi vs documented 9.4 mi (9.4 mi, FOWLER-PA table 19 (Wawa 18.1 -> West Chester 27.5)). Waypoints are town points, the farthest 0.5 km from the line (West Chester). Follows the surviving West Chester Line track (OSM, old_railway_operator=PRR; today the West Chester Railroad heritage line), the same alignment the PRR used; no realignment inside 1902-1968 is known. Ends at the West Chester (Market Street) end of the OSM track.",
+    "traced_mi": 9.1,
+    "documented_mi": 9.4,
+    "research_block": 6,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1968,
+      "headway_min": 60,
+      "note": "Outer end of the PRR's West Chester Branch (ex West Chester & Philadelphia, completed to West Chester Nov 1858), Wawa - Glen Mills - Cheyney - Westtown - West Chester; through trains from Philadelphia (the Philadelphia - Wawa part is drawn in septa.geojson / penn_central.geojson). Electrified 2 Dec 1928 (WIKI-Lenni station). Drawn from 1902, the formation of the Philadelphia, Baltimore and Washington (PRR subsidiary) - the 1858-1902 WC&P / PW&B years belong to the PW&B layer. Ends 1968 only because operation passed to Penn Central on 1 Feb 1968: passenger service itself continued (Penn Central 1968-1976, Conrail/SEPTA to the last run Elwyn - West Chester 19 Sep 1986, PRRTHS starred) and needs its own Penn Central and SEPTA features, NOT drawn here. headway_min is an ESTIMATE, not read from a timetable (hourly-ish MU commuter service assumed; steam locals before 1928 were less frequent); avg_speed_kmh likewise an estimate.",
+      "sources": [
+       "Segment-level: END year - 1968 is the PRR -> Penn Central operator change (1 Feb 1968), a corporate date; service continued to 19 Sep 1986 per PRRTHS 'GREATER PHILADELPHIA' (starred). START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 217 'Pennsylvania Railroads (1) PRR' (Fowler, 22.08.22) table 19",
+       "https://en.wikipedia.org/wiki/West_Chester_and_Philadelphia_Railroad",
+       "https://en.wikipedia.org/wiki/Lenni_station"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.459385,
+      39.901052
+     ],
+     [
+      -75.462829,
+      39.902406
+     ],
+     [
+      -75.468337,
+      39.903664
+     ],
+     [
+      -75.469774,
+      39.904111
+     ],
+     [
+      -75.47162,
+      39.905007
+     ],
+     [
+      -75.475463,
+      39.90724
+     ],
+     [
+      -75.479551,
+      39.911117
+     ],
+     [
+      -75.480801,
+      39.91385
+     ],
+     [
+      -75.481669,
+      39.91493
+     ],
+     [
+      -75.482384,
+      39.915477
+     ],
+     [
+      -75.483409,
+      39.916025
+     ],
+     [
+      -75.48623,
+      39.91672
+     ],
+     [
+      -75.487477,
+      39.917262
+     ],
+     [
+      -75.488159,
+      39.917761
+     ],
+     [
+      -75.491154,
+      39.920743
+     ],
+     [
+      -75.49227,
+      39.922232
+     ],
+     [
+      -75.493095,
+      39.924481
+     ],
+     [
+      -75.493711,
+      39.925645
+     ],
+     [
+      -75.495914,
+      39.928297
+     ],
+     [
+      -75.497298,
+      39.929246
+     ],
+     [
+      -75.498661,
+      39.929688
+     ],
+     [
+      -75.500234,
+      39.929914
+     ],
+     [
+      -75.512131,
+      39.931418
+     ],
+     [
+      -75.513764,
+      39.93157
+     ],
+     [
+      -75.51524,
+      39.931556
+     ],
+     [
+      -75.516669,
+      39.931349
+     ],
+     [
+      -75.518644,
+      39.930773
+     ],
+     [
+      -75.522818,
+      39.928873
+     ],
+     [
+      -75.524785,
+      39.928242
+     ],
+     [
+      -75.526692,
+      39.927913
+     ],
+     [
+      -75.528862,
+      39.927852
+     ],
+     [
+      -75.530649,
+      39.928028
+     ],
+     [
+      -75.532345,
+      39.928399
+     ],
+     [
+      -75.535985,
+      39.929831
+     ],
+     [
+      -75.537843,
+      39.930299
+     ],
+     [
+      -75.539301,
+      39.930488
+     ],
+     [
+      -75.544904,
+      39.930746
+     ],
+     [
+      -75.547185,
+      39.931182
+     ],
+     [
+      -75.548136,
+      39.931506
+     ],
+     [
+      -75.55005,
+      39.932464
+     ],
+     [
+      -75.555809,
+      39.936969
+     ],
+     [
+      -75.55911,
+      39.938807
+     ],
+     [
+      -75.562927,
+      39.940162
+     ],
+     [
+      -75.565638,
+      39.940765
+     ],
+     [
+      -75.570217,
+      39.9414
+     ],
+     [
+      -75.571818,
+      39.941896
+     ],
+     [
+      -75.573152,
+      39.942496
+     ],
+     [
+      -75.575063,
+      39.943817
+     ],
+     [
+      -75.57921,
+      39.948853
+     ],
+     [
+      -75.580764,
+      39.950319
+     ],
+     [
+      -75.582527,
+      39.951624
+     ],
+     [
+      -75.585054,
+      39.953034
+     ],
+     [
+      -75.598075,
+      39.958752
+     ],
+     [
+      -75.599021,
+      39.959357
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Chester Creek Branch",
+    "id": "prr-chester-creek-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 6.5 mi on OSM ways tagged old_railway_operator=PRR. No straight-line leg. Traced length 6.5 mi vs documented 7.25 mi (7.25 mi (WIKI-Chester_Creek_Railroad); 6.6 mi Lamokin 14.3 -> Lenni 20.9 (FOWLER-PA table 6)). Waypoints are town points, the farthest 0.4 km from the line (Upland). South end on the OSM Chester Creek Branch track, north end on the Chester Creek Trail (the lifted 1869 grade, tagged old_railway_operator=PRR) to the West Chester Branch at Lenni. Fowler's 6.6 mi is matched; WIKI's 7.25 mi probably counts to a different junction point.",
+    "traced_mi": 6.5,
+    "documented_mi": 7.25,
+    "research_block": 7,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1929,
+      "headway_min": 240,
+      "note": "Chester Creek Branch, Lamokin (main-line junction at Chester) - Upland - Bridgewater - Rockdale - Lenni (junction with the West Chester Branch). Opened 1869 by the Chester Creek RR; the 1869-1902 years belong to the PW&B layer. Last passenger run 28 Sep 1929 (PRRTHS starred '*Lamokin-Lenni - 9/28/1929'). Freight continued until the 1971 flood and Hurricane Agnes (1972); abandoned 1972, now the Chester Creek Trail. WIKI's 1941 station list is NOT evidence of 1941 passenger service. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'GREATER PHILADELPHIA', starred '*Lamokin-Lenni - 9/28/1929'. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 217 'Pennsylvania Railroads (1) PRR' (Fowler, 22.08.22) table 6",
+       "https://en.wikipedia.org/wiki/Chester_Creek_Railroad",
+       "https://en.wikipedia.org/wiki/Chester_Creek_Branch"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.378552,
+      39.840681
+     ],
+     [
+      -75.377901,
+      39.841026
+     ],
+     [
+      -75.377577,
+      39.84138
+     ],
+     [
+      -75.377431,
+      39.841711
+     ],
+     [
+      -75.377487,
+      39.842534
+     ],
+     [
+      -75.382179,
+      39.848447
+     ],
+     [
+      -75.383081,
+      39.849203
+     ],
+     [
+      -75.383799,
+      39.849511
+     ],
+     [
+      -75.384759,
+      39.849687
+     ],
+     [
+      -75.388047,
+      39.849622
+     ],
+     [
+      -75.391962,
+      39.850143
+     ],
+     [
+      -75.394959,
+      39.850238
+     ],
+     [
+      -75.396436,
+      39.8507
+     ],
+     [
+      -75.397405,
+      39.851475
+     ],
+     [
+      -75.397736,
+      39.851888
+     ],
+     [
+      -75.398009,
+      39.852761
+     ],
+     [
+      -75.397724,
+      39.855021
+     ],
+     [
+      -75.395566,
+      39.859623
+     ],
+     [
+      -75.395374,
+      39.860473
+     ],
+     [
+      -75.395456,
+      39.862192
+     ],
+     [
+      -75.396073,
+      39.863093
+     ],
+     [
+      -75.397537,
+      39.864312
+     ],
+     [
+      -75.39918,
+      39.86518
+     ],
+     [
+      -75.400165,
+      39.86536
+     ],
+     [
+      -75.401909,
+      39.865355
+     ],
+     [
+      -75.404465,
+      39.865562
+     ],
+     [
+      -75.405889,
+      39.865518
+     ],
+     [
+      -75.406773,
+      39.865768
+     ],
+     [
+      -75.407365,
+      39.866091
+     ],
+     [
+      -75.407917,
+      39.86665
+     ],
+     [
+      -75.408947,
+      39.868856
+     ],
+     [
+      -75.409424,
+      39.869163
+     ],
+     [
+      -75.412332,
+      39.870225
+     ],
+     [
+      -75.413508,
+      39.87124
+     ],
+     [
+      -75.413865,
+      39.872125
+     ],
+     [
+      -75.416286,
+      39.876341
+     ],
+     [
+      -75.416528,
+      39.877708
+     ],
+     [
+      -75.417134,
+      39.879075
+     ],
+     [
+      -75.417887,
+      39.879868
+     ],
+     [
+      -75.418575,
+      39.880158
+     ],
+     [
+      -75.420001,
+      39.880305
+     ],
+     [
+      -75.421129,
+      39.880131
+     ],
+     [
+      -75.423252,
+      39.879411
+     ],
+     [
+      -75.423878,
+      39.87934
+     ],
+     [
+      -75.425081,
+      39.879547
+     ],
+     [
+      -75.425739,
+      39.879926
+     ],
+     [
+      -75.426409,
+      39.880741
+     ],
+     [
+      -75.426749,
+      39.881403
+     ],
+     [
+      -75.426718,
+      39.881609
+     ],
+     [
+      -75.426959,
+      39.881709
+     ],
+     [
+      -75.428949,
+      39.885596
+     ],
+     [
+      -75.429616,
+      39.89048
+     ],
+     [
+      -75.429824,
+      39.891147
+     ],
+     [
+      -75.430404,
+      39.891749
+     ],
+     [
+      -75.431431,
+      39.892224
+     ],
+     [
+      -75.432856,
+      39.89243
+     ],
+     [
+      -75.43309,
+      39.892226
+     ],
+     [
+      -75.433278,
+      39.892267
+     ],
+     [
+      -75.435267,
+      39.891607
+     ],
+     [
+      -75.436477,
+      39.891564
+     ],
+     [
+      -75.436764,
+      39.891611
+     ],
+     [
+      -75.437471,
+      39.892023
+     ],
+     [
+      -75.438705,
+      39.893336
+     ],
+     [
+      -75.439691,
+      39.893688
+     ],
+     [
+      -75.441012,
+      39.893748
+     ],
+     [
+      -75.442732,
+      39.893444
+     ],
+     [
+      -75.443553,
+      39.893524
+     ],
+     [
+      -75.443636,
+      39.893452
+     ],
+     [
+      -75.448259,
+      39.893825
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Octoraro Branch (Wawa – Oxford)",
+    "id": "prr-octoraro-branch-wawa-oxford",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 28.3 mi on OSM ways tagged old_railway_operator=PRR, 2.5 mi on untagged OSM rail, 0.2 mi on OpenHistoricalMap ways. No straight-line leg. Traced length 30.7 mi vs documented 31.0 mi (31.0 mi, FOWLER-PA table 17 (Wawa 18.1 -> Oxford 49.1)). Waypoints are town points, the farthest 0.9 km from the line (Lincoln University). East Penn 'Octoraro Line' track (OSM, old_railway_operator=PRR) from Chadds Ford Jct to Nottingham, plus untagged OSM rail and a short OpenHistoricalMap (OHM) piece between Wawa and Chadds Ford Jct.",
+    "traced_mi": 30.7,
+    "documented_mi": 31.0,
+    "research_block": 8,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1948,
+      "headway_min": 240,
+      "note": "Octoraro Branch (ex Philadelphia & Baltimore Central; named the Octoraro Branch from 1916), Wawa - Chester Heights - Concordville - Chadds Ford Jct - Kennett Square - Avondale - West Grove - Lincoln University - Oxford. Opened 1859-1860; 1860-1902 belongs to the PW&B layer. The P&BC was PW&B-controlled from 1881 and formally merged into the PB&W in 1916 (no change of operator). Last passenger run 30 Apr 1948 (PRRTHS starred '*Wawa-Oxford - 4/30/1948'; WIKI-P&BC agrees). The Feb 1952 Official Guide prints Table 70 'Wawa-Rock (Perryville)' as 'Freight Service only'. Freight afterlife (Octoraro Ry 1977-94, now East Penn RR) is NOT drawn. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'PHILADELPHIA DIVISION', starred '*Wawa-Oxford - 4/30/1948'; WIKI-P&BC agrees; OG1952 Table 70 'Freight Service only' corroborates passengers gone by 1951. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 70 + index",
+       "branchline.uk SL 217 'Pennsylvania Railroads (1) PRR' (Fowler, 22.08.22) table 17",
+       "https://en.wikipedia.org/wiki/Philadelphia_and_Baltimore_Central_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.461113,
+      39.899166
+     ],
+     [
+      -75.461161,
+      39.899134
+     ],
+     [
+      -75.462235,
+      39.897561
+     ],
+     [
+      -75.46441,
+      39.895601
+     ],
+     [
+      -75.466162,
+      39.891676
+     ],
+     [
+      -75.467401,
+      39.88996
+     ],
+     [
+      -75.473689,
+      39.883968
+     ],
+     [
+      -75.474638,
+      39.883315
+     ],
+     [
+      -75.476234,
+      39.882746
+     ],
+     [
+      -75.477856,
+      39.88262
+     ],
+     [
+      -75.479077,
+      39.882809
+     ],
+     [
+      -75.485724,
+      39.884941
+     ],
+     [
+      -75.491755,
+      39.888017
+     ],
+     [
+      -75.493738,
+      39.88839
+     ],
+     [
+      -75.499521,
+      39.888716
+     ],
+     [
+      -75.500209,
+      39.888927
+     ],
+     [
+      -75.502941,
+      39.890454
+     ],
+     [
+      -75.504113,
+      39.89069
+     ],
+     [
+      -75.505201,
+      39.890639
+     ],
+     [
+      -75.506185,
+      39.890258
+     ],
+     [
+      -75.507259,
+      39.889478
+     ],
+     [
+      -75.510024,
+      39.887079
+     ],
+     [
+      -75.51158,
+      39.885511
+     ],
+     [
+      -75.512371,
+      39.88379
+     ],
+     [
+      -75.513444,
+      39.877821
+     ],
+     [
+      -75.513771,
+      39.87721
+     ],
+     [
+      -75.514329,
+      39.876688
+     ],
+     [
+      -75.515215,
+      39.876173
+     ],
+     [
+      -75.524765,
+      39.87335
+     ],
+     [
+      -75.526041,
+      39.873205
+     ],
+     [
+      -75.527145,
+      39.873256
+     ],
+     [
+      -75.535853,
+      39.874027
+     ],
+     [
+      -75.537104,
+      39.874012
+     ],
+     [
+      -75.541059,
+      39.873652
+     ],
+     [
+      -75.544319,
+      39.873873
+     ],
+     [
+      -75.551066,
+      39.874566
+     ],
+     [
+      -75.553095,
+      39.874632
+     ],
+     [
+      -75.555489,
+      39.874367
+     ],
+     [
+      -75.562099,
+      39.87322
+     ],
+     [
+      -75.564054,
+      39.872456
+     ],
+     [
+      -75.568555,
+      39.869966
+     ],
+     [
+      -75.569885,
+      39.869628
+     ],
+     [
+      -75.571113,
+      39.869696
+     ],
+     [
+      -75.578495,
+      39.870953
+     ],
+     [
+      -75.579964,
+      39.870998
+     ],
+     [
+      -75.581526,
+      39.870757
+     ],
+     [
+      -75.584429,
+      39.869926
+     ],
+     [
+      -75.58543,
+      39.869796
+     ],
+     [
+      -75.589971,
+      39.870026
+     ],
+     [
+      -75.593006,
+      39.869532
+     ],
+     [
+      -75.599356,
+      39.868061
+     ],
+     [
+      -75.602006,
+      39.867102
+     ],
+     [
+      -75.607259,
+      39.864353
+     ],
+     [
+      -75.620461,
+      39.860426
+     ],
+     [
+      -75.622751,
+      39.859861
+     ],
+     [
+      -75.627546,
+      39.85932
+     ],
+     [
+      -75.628797,
+      39.858995
+     ],
+     [
+      -75.632371,
+      39.857127
+     ],
+     [
+      -75.635937,
+      39.856121
+     ],
+     [
+      -75.640239,
+      39.854396
+     ],
+     [
+      -75.641753,
+      39.853426
+     ],
+     [
+      -75.644021,
+      39.851356
+     ],
+     [
+      -75.645594,
+      39.850651
+     ],
+     [
+      -75.684084,
+      39.843849
+     ],
+     [
+      -75.685396,
+      39.843886
+     ],
+     [
+      -75.686362,
+      39.844195
+     ],
+     [
+      -75.68874,
+      39.845745
+     ],
+     [
+      -75.689975,
+      39.846337
+     ],
+     [
+      -75.691497,
+      39.846651
+     ],
+     [
+      -75.692918,
+      39.846607
+     ],
+     [
+      -75.710129,
+      39.84211
+     ],
+     [
+      -75.738053,
+      39.837631
+     ],
+     [
+      -75.740178,
+      39.837063
+     ],
+     [
+      -75.74341,
+      39.835878
+     ],
+     [
+      -75.769786,
+      39.825963
+     ],
+     [
+      -75.776221,
+      39.823148
+     ],
+     [
+      -75.777923,
+      39.822684
+     ],
+     [
+      -75.77933,
+      39.822584
+     ],
+     [
+      -75.780585,
+      39.822677
+     ],
+     [
+      -75.782367,
+      39.823124
+     ],
+     [
+      -75.783214,
+      39.823526
+     ],
+     [
+      -75.784605,
+      39.824527
+     ],
+     [
+      -75.786842,
+      39.827336
+     ],
+     [
+      -75.78872,
+      39.829157
+     ],
+     [
+      -75.789957,
+      39.8299
+     ],
+     [
+      -75.791899,
+      39.830494
+     ],
+     [
+      -75.795856,
+      39.831301
+     ],
+     [
+      -75.798247,
+      39.831482
+     ],
+     [
+      -75.801389,
+      39.831325
+     ],
+     [
+      -75.808615,
+      39.830574
+     ],
+     [
+      -75.809842,
+      39.830243
+     ],
+     [
+      -75.811337,
+      39.829547
+     ],
+     [
+      -75.81627,
+      39.825849
+     ],
+     [
+      -75.817691,
+      39.825055
+     ],
+     [
+      -75.819121,
+      39.824507
+     ],
+     [
+      -75.826348,
+      39.822381
+     ],
+     [
+      -75.848021,
+      39.816854
+     ],
+     [
+      -75.865032,
+      39.812664
+     ],
+     [
+      -75.866749,
+      39.812138
+     ],
+     [
+      -75.874089,
+      39.809466
+     ],
+     [
+      -75.875269,
+      39.80925
+     ],
+     [
+      -75.877524,
+      39.809123
+     ],
+     [
+      -75.886361,
+      39.810002
+     ],
+     [
+      -75.888746,
+      39.809991
+     ],
+     [
+      -75.890783,
+      39.809635
+     ],
+     [
+      -75.894322,
+      39.808428
+     ],
+     [
+      -75.895507,
+      39.808143
+     ],
+     [
+      -75.913371,
+      39.805434
+     ],
+     [
+      -75.914574,
+      39.805032
+     ],
+     [
+      -75.915771,
+      39.804432
+     ],
+     [
+      -75.924067,
+      39.798515
+     ],
+     [
+      -75.925227,
+      39.797849
+     ],
+     [
+      -75.926245,
+      39.79745
+     ],
+     [
+      -75.92755,
+      39.797125
+     ],
+     [
+      -75.928558,
+      39.797007
+     ],
+     [
+      -75.931871,
+      39.797051
+     ],
+     [
+      -75.93534,
+      39.797362
+     ],
+     [
+      -75.94007,
+      39.798244
+     ],
+     [
+      -75.941082,
+      39.798285
+     ],
+     [
+      -75.942173,
+      39.798144
+     ],
+     [
+      -75.943677,
+      39.797579
+     ],
+     [
+      -75.947761,
+      39.795441
+     ],
+     [
+      -75.949426,
+      39.794834
+     ],
+     [
+      -75.959343,
+      39.793455
+     ],
+     [
+      -75.961538,
+      39.79292
+     ],
+     [
+      -75.969633,
+      39.789364
+     ],
+     [
+      -75.975184,
+      39.786121
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Octoraro Branch (Oxford – Octoraro Jct)",
+    "id": "prr-octoraro-branch-oxford-octoraro",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 11.0 mi on OpenHistoricalMap ways, 3.2 mi on OSM ways tagged old_railway_operator=PRR, 0.1 mi on untagged OSM rail. No straight-line leg. Traced length 14.3 mi vs documented 14.7 mi (14.7 mi, FOWLER-PA table 17 (Oxford 49.1 -> Octoraro 63.8)). Waypoints are town points, the farthest 0.6 km from the line (Oxford). Oxford - Nottingham on the OSM Octoraro Line; south of Nottingham the line was lifted (south of Colora 1961, the rest 1972) and is drawn on OHM ways dated 1865-12/1866/1867 (sourced by OHM to Coverdale & Colpitts), ending at the OHM junction with the Columbia & Port Deposit at Octoraro.",
+    "traced_mi": 14.3,
+    "documented_mi": 14.7,
+    "research_block": 9,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1935,
+      "headway_min": 360,
+      "note": "Octoraro Branch south of Oxford: Oxford - Nottingham - Sylmar - Rising Sun - Colora - Rowlandville - Octoraro Jct (junction with the Columbia & Port Deposit, over which the trains ran on to Perryville; see the Port Road features). Opened 1865-1868; the pre-1902 years belong to the PW&B layer. Weekday passenger service ended 13 Apr 1935 (PRRTHS starred '*Oxford-Octoraro - 4/13/1935 (weekday)'; Cecil Whig 'Ask the Historical Society' column: 'Regular passenger service stopped on this line on April 13, 1935'). headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'PHILADELPHIA DIVISION', starred '*Oxford-Octoraro - 4/13/1935 (weekday)'; Cecil Whig column agrees on 13 Apr 1935. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "https://www.cecildaily.com/our_cecil/ask-the-historical-society-last-octoraro-train/article_fe0c6fa5-b593-5383-a322-bd7a48e24d62.html",
+       "https://en.wikipedia.org/wiki/Philadelphia_and_Baltimore_Central_Railroad"
+      ]
+     },
+     {
+      "start": 1936,
+      "end": 1940,
+      "headway_min": 10080,
+      "note": "SUNDAY-ONLY service: after weekday trains stopped on 13 Apr 1935 a Sunday-only train ran until 21 Apr 1940 (PRRTHS starred '... 4/21/1940 (Sun.)'). Sunday-only service is real passenger service (Rule 1), so the line is drawn to 1940; drawn from 1936 because the 1935 year is already covered by the weekday segment. headway_min 10080 = one round trip a week, an ESTIMATE from 'Sunday only'. The 26 May 1957 NRHS excursion (route unknown) is NOT drawn. South of Colora the line was abandoned in 1961; freight afterlife not drawn.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'PHILADELPHIA DIVISION', starred '*Oxford-Octoraro - ... 4/21/1940 (Sun.)'. START year: the Sunday-only era began 14 Apr 1935 per the same PRRTHS entry; 1936 is used only so the segment does not overlap the weekday segment's 1935.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "https://www.cecildaily.com/our_cecil/ask-the-historical-society-last-octoraro-train/article_fe0c6fa5-b593-5383-a322-bd7a48e24d62.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.979862,
+      39.779796
+     ],
+     [
+      -75.98192,
+      39.774764
+     ],
+     [
+      -75.982851,
+      39.772996
+     ],
+     [
+      -75.984358,
+      39.770655
+     ],
+     [
+      -75.986378,
+      39.768242
+     ],
+     [
+      -75.990684,
+      39.764356
+     ],
+     [
+      -75.992608,
+      39.762944
+     ],
+     [
+      -75.995304,
+      39.761495
+     ],
+     [
+      -76.005316,
+      39.757851
+     ],
+     [
+      -76.008196,
+      39.756492
+     ],
+     [
+      -76.009898,
+      39.755408
+     ],
+     [
+      -76.011479,
+      39.754155
+     ],
+     [
+      -76.015591,
+      39.749915
+     ],
+     [
+      -76.016682,
+      39.748418
+     ],
+     [
+      -76.018068,
+      39.745706
+     ],
+     [
+      -76.01904,
+      39.742356
+     ],
+     [
+      -76.019476,
+      39.74142
+     ],
+     [
+      -76.0233,
+      39.736284
+     ],
+     [
+      -76.02378,
+      39.735043
+     ],
+     [
+      -76.024819,
+      39.730528
+     ],
+     [
+      -76.025359,
+      39.728911
+     ],
+     [
+      -76.02857,
+      39.721891
+     ],
+     [
+      -76.029825,
+      39.720016
+     ],
+     [
+      -76.030915,
+      39.718696
+     ],
+     [
+      -76.033404,
+      39.716636
+     ],
+     [
+      -76.052637,
+      39.70305
+     ],
+     [
+      -76.05954,
+      39.69675
+     ],
+     [
+      -76.069084,
+      39.687531
+     ],
+     [
+      -76.070252,
+      39.686646
+     ],
+     [
+      -76.072578,
+      39.685867
+     ],
+     [
+      -76.077556,
+      39.684533
+     ],
+     [
+      -76.083916,
+      39.683251
+     ],
+     [
+      -76.085409,
+      39.682802
+     ],
+     [
+      -76.087512,
+      39.681851
+     ],
+     [
+      -76.094477,
+      39.678131
+     ],
+     [
+      -76.095979,
+      39.67718
+     ],
+     [
+      -76.096786,
+      39.676486
+     ],
+     [
+      -76.09816,
+      39.674808
+     ],
+     [
+      -76.105079,
+      39.664454
+     ],
+     [
+      -76.10586,
+      39.662841
+     ],
+     [
+      -76.107121,
+      39.65817
+     ],
+     [
+      -76.107714,
+      39.657212
+     ],
+     [
+      -76.108675,
+      39.656293
+     ],
+     [
+      -76.110606,
+      39.655236
+     ],
+     [
+      -76.112443,
+      39.654925
+     ],
+     [
+      -76.12312,
+      39.656405
+     ],
+     [
+      -76.124494,
+      39.656505
+     ],
+     [
+      -76.126408,
+      39.656273
+     ],
+     [
+      -76.127386,
+      39.655956
+     ],
+     [
+      -76.128742,
+      39.655315
+     ],
+     [
+      -76.13009,
+      39.655051
+     ],
+     [
+      -76.13124,
+      39.655117
+     ],
+     [
+      -76.131669,
+      39.655256
+     ],
+     [
+      -76.133446,
+      39.656359
+     ],
+     [
+      -76.134381,
+      39.656597
+     ],
+     [
+      -76.135592,
+      39.656425
+     ],
+     [
+      -76.137068,
+      39.655897
+     ],
+     [
+      -76.138999,
+      39.655883
+     ],
+     [
+      -76.140424,
+      39.656214
+     ],
+     [
+      -76.143849,
+      39.657767
+     ],
+     [
+      -76.144295,
+      39.658223
+     ],
+     [
+      -76.145162,
+      39.659571
+     ],
+     [
+      -76.14584,
+      39.660126
+     ],
+     [
+      -76.147033,
+      39.660509
+     ],
+     [
+      -76.149737,
+      39.660767
+     ],
+     [
+      -76.151342,
+      39.66072
+     ],
+     [
+      -76.152054,
+      39.660522
+     ],
+     [
+      -76.153908,
+      39.659359
+     ],
+     [
+      -76.154492,
+      39.658441
+     ],
+     [
+      -76.154629,
+      39.657793
+     ],
+     [
+      -76.154457,
+      39.656894
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Port Road (Perryville – Octoraro Jct)",
+    "id": "prr-port-road-perryville-octoraro",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 7.9 mi on OSM ways tagged old_railway_operator=PRR. APPROXIMATED legs (straight lines): Octoraro Junction - Octoraro Jct 0.22 mi. Traced length 8.1 mi vs documented 8.5 mi (8.5 mi, FOWLER-MD table 2 (Perryville 0.0 -> Octoraro 8.5)). Waypoints are town points, the farthest 0.4 km from the line (Octoraro Junction). OSM Port Road Branch track (old_railway_operator=PRR). OHM carries a C&PD way dated 1877-1961 for Rock Run - Octoraro that runs within about 0.1 km of the drawn track, so the alignment is era-appropriate. The last 0.22 mi is a straight junction link from the OSM track to the OHM Octoraro Jct point shared with the Octoraro Branch feature.",
+    "traced_mi": 8.1,
+    "documented_mi": 8.5,
+    "research_block": 11,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1935,
+      "headway_min": 240,
+      "note": "Lower Columbia & Port Deposit: Perryville - Frenchtown - Tome Institute - Port Deposit - Rock Run - Rock - Octoraro Jct, carrying both the C&PD's own Columbia locals and the Octoraro Branch trains to the main line at Perryville. PW&B lessee from 1877, PB&W lessee 1902, merged into the PB&W 1916 (no change of operator). The C&PD locals ended 14 Apr 1935 (PRRTHS starred '*Columbia-Perryville - 4/14/1935') and Octoraro weekday trains 13 Apr 1935. headway_min is an ESTIMATE, not read from a timetable (two services shared this leg); avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'PHILADELPHIA DIVISION', starred '*Columbia-Perryville - 4/14/1935' and '*Oxford-Octoraro - 4/13/1935 (weekday)'. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 2",
+       "https://en.wikipedia.org/wiki/Columbia_and_Port_Deposit_Railroad"
+      ]
+     },
+     {
+      "start": 1936,
+      "end": 1940,
+      "headway_min": 10080,
+      "note": "SUNDAY-ONLY: from Apr 1935 to 21 Apr 1940 only the Sunday Octoraro train ran over this leg (PRRTHS starred '*Octoraro-Perryville (Sunday only) - 4/21/1940'). Drawn from 1936 so as not to overlap the 1935 weekday year. headway_min 10080 (one round trip a week) is an ESTIMATE from 'Sunday only'. The line was electrified in 1938 for freight; the Feb 1952 Official Guide prints Table 70 (Port Deposit, Perryville) as 'Freight Service only'. Nothing after 1940 is drawn.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'PHILADELPHIA DIVISION', starred '*Octoraro-Perryville (Sunday only) - 4/21/1940'; OG1952 Table 70 'Freight Service only'. START year: the Sunday-only era began Apr 1935 per PRRTHS; 1936 is used only so the segment does not overlap the weekday segment's 1935.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 70"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.074594,
+      39.561553
+     ],
+     [
+      -76.077222,
+      39.568116
+     ],
+     [
+      -76.077984,
+      39.569664
+     ],
+     [
+      -76.080181,
+      39.573391
+     ],
+     [
+      -76.083894,
+      39.577875
+     ],
+     [
+      -76.085598,
+      39.57927
+     ],
+     [
+      -76.08792,
+      39.58058
+     ],
+     [
+      -76.093146,
+      39.582473
+     ],
+     [
+      -76.096115,
+      39.583332
+     ],
+     [
+      -76.097098,
+      39.583808
+     ],
+     [
+      -76.098025,
+      39.584467
+     ],
+     [
+      -76.099843,
+      39.586781
+     ],
+     [
+      -76.101869,
+      39.588414
+     ],
+     [
+      -76.103661,
+      39.59046
+     ],
+     [
+      -76.10415,
+      39.591295
+     ],
+     [
+      -76.105415,
+      39.594301
+     ],
+     [
+      -76.106963,
+      39.596525
+     ],
+     [
+      -76.108013,
+      39.597686
+     ],
+     [
+      -76.118072,
+      39.606422
+     ],
+     [
+      -76.122094,
+      39.610502
+     ],
+     [
+      -76.128705,
+      39.615739
+     ],
+     [
+      -76.134891,
+      39.620265
+     ],
+     [
+      -76.137175,
+      39.622212
+     ],
+     [
+      -76.140311,
+      39.62571
+     ],
+     [
+      -76.143472,
+      39.628611
+     ],
+     [
+      -76.144631,
+      39.630102
+     ],
+     [
+      -76.145374,
+      39.631408
+     ],
+     [
+      -76.147791,
+      39.635906
+     ],
+     [
+      -76.148492,
+      39.637532
+     ],
+     [
+      -76.153497,
+      39.653824
+     ],
+     [
+      -76.1545,
+      39.6569
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Port Road (Octoraro Jct – Columbia)",
+    "id": "prr-port-road-octoraro-columbia",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 34.9 mi on OSM ways tagged old_railway_operator=PRR. APPROXIMATED legs (straight lines): Octoraro Jct (junction link) - Octoraro Junction 0.33 mi. Traced length 35.2 mi vs documented 35.1 mi (35.1 mi (FOWLER-PA table 23: Columbia 43.6 mi from Perryville, less 8.5 mi Perryville-Octoraro)). Waypoints are town points, the farthest 0.7 km from the line (Safe Harbor). LATER ALIGNMENT THAN ITS ERA for 1902-1927: the whole span is drawn on the surviving Port Road, which north of Octoraro is the relocation onto higher ground opened 8 Oct 1927 for Conowingo Dam. The original 1877 C&PD grade between about Octoraro and the Pennsylvania line (through Conowingo, Cromley's Mountain and Pilot; about 6.2 mi measured on the drawn line from the dam to the state line) lies under the reservoir; OHM holds only a 1.1 mi fragment of it (dated 1877-1928, just above the dam), too little to draw the pre-dam line, so it is not used. Expect the drawn line to sit up to several hundred metres inland of the drowned grade there. North of the reservoir the Port Road follows the 1877 riverbank alignment. The first 0.33 mi is a straight junction link from the OHM Octoraro Jct point to the OSM track. Ends at Columbia on the Port Road track; the exact PRR Columbia station site is not pinned.",
+    "traced_mi": 35.2,
+    "documented_mi": 35.1,
+    "research_block": 12,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1935,
+      "headway_min": 480,
+      "note": "Columbia & Port Deposit 'Port Road' local trains along the east bank of the Susquehanna: Octoraro Jct - Conowingo - Pilot - Bald Friar - Peach Bottom - Fishing Creek - Holtwood - Pequea - Safe Harbor - Washington Boro - Columbia. Completed 1877; the 1877-1902 PW&B-lessee years belong to the PW&B layer. PB&W lessee 1902-1916, owner from 1916. 'In 1916, four passenger trains a day stopped if flagged' at Bald Friar (Cecil County history blog), the basis of the headway (4 trains/day = 2 each way, ~480 min) - still an ESTIMATE. Last local run 14 Apr 1935 (PRRTHS starred '*Columbia-Perryville - 4/14/1935'). The Feb 1952 Official Guide prints Table 67 'Columbia-Perryville' as 'Freight Service only'. Freight-only 1935-1971 (electrified 1938) is NOT drawn; Amtrak's 1971-1978 National Limited routing over the line belongs to the Amtrak layer. GEOMETRY: drawn on the post-1927 relocation for the whole span - see geometry_quality.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'PHILADELPHIA DIVISION', starred '*Columbia-Perryville - 4/14/1935'; OG1952 Table 67 'Freight Service only'. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 67 + index",
+       "branchline.uk SL 217 'Pennsylvania Railroads (1) PRR' (Fowler, 22.08.22) table 23",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 2",
+       "https://en.wikipedia.org/wiki/Columbia_and_Port_Deposit_Railroad",
+       "https://cecilcountyhistory.com/?p=10435",
+       "https://cecilcountyhistory.com/?p=10429"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.1545,
+      39.6569
+     ],
+     [
+      -76.154525,
+      39.66161
+     ],
+     [
+      -76.155268,
+      39.662215
+     ],
+     [
+      -76.156453,
+      39.662786
+     ],
+     [
+      -76.160562,
+      39.663667
+     ],
+     [
+      -76.161801,
+      39.664102
+     ],
+     [
+      -76.176152,
+      39.670758
+     ],
+     [
+      -76.177513,
+      39.671154
+     ],
+     [
+      -76.180545,
+      39.67167
+     ],
+     [
+      -76.182181,
+      39.672287
+     ],
+     [
+      -76.185541,
+      39.674352
+     ],
+     [
+      -76.188692,
+      39.676012
+     ],
+     [
+      -76.193688,
+      39.67928
+     ],
+     [
+      -76.196473,
+      39.682223
+     ],
+     [
+      -76.196705,
+      39.682443
+     ],
+     [
+      -76.204041,
+      39.68894
+     ],
+     [
+      -76.204548,
+      39.689758
+     ],
+     [
+      -76.207561,
+      39.696894
+     ],
+     [
+      -76.208138,
+      39.697951
+     ],
+     [
+      -76.209169,
+      39.699117
+     ],
+     [
+      -76.211035,
+      39.700796
+     ],
+     [
+      -76.212122,
+      39.701333
+     ],
+     [
+      -76.214244,
+      39.702005
+     ],
+     [
+      -76.214882,
+      39.7024
+     ],
+     [
+      -76.215352,
+      39.702874
+     ],
+     [
+      -76.215665,
+      39.703396
+     ],
+     [
+      -76.21622,
+      39.705227
+     ],
+     [
+      -76.216646,
+      39.706078
+     ],
+     [
+      -76.21908,
+      39.709439
+     ],
+     [
+      -76.220859,
+      39.711213
+     ],
+     [
+      -76.222475,
+      39.713979
+     ],
+     [
+      -76.223783,
+      39.715833
+     ],
+     [
+      -76.224753,
+      39.718095
+     ],
+     [
+      -76.224913,
+      39.719118
+     ],
+     [
+      -76.224112,
+      39.72116
+     ],
+     [
+      -76.22307,
+      39.727838
+     ],
+     [
+      -76.223612,
+      39.730493
+     ],
+     [
+      -76.224431,
+      39.733139
+     ],
+     [
+      -76.224863,
+      39.733873
+     ],
+     [
+      -76.226488,
+      39.735715
+     ],
+     [
+      -76.226848,
+      39.736623
+     ],
+     [
+      -76.226827,
+      39.737309
+     ],
+     [
+      -76.225902,
+      39.739168
+     ],
+     [
+      -76.225973,
+      39.741279
+     ],
+     [
+      -76.22563,
+      39.743823
+     ],
+     [
+      -76.226282,
+      39.748881
+     ],
+     [
+      -76.226604,
+      39.749998
+     ],
+     [
+      -76.227089,
+      39.750983
+     ],
+     [
+      -76.227852,
+      39.75206
+     ],
+     [
+      -76.228918,
+      39.753106
+     ],
+     [
+      -76.234941,
+      39.757193
+     ],
+     [
+      -76.23757,
+      39.759495
+     ],
+     [
+      -76.239465,
+      39.760778
+     ],
+     [
+      -76.240039,
+      39.761302
+     ],
+     [
+      -76.2405,
+      39.762101
+     ],
+     [
+      -76.241233,
+      39.765726
+     ],
+     [
+      -76.242205,
+      39.767501
+     ],
+     [
+      -76.243124,
+      39.768461
+     ],
+     [
+      -76.250074,
+      39.774383
+     ],
+     [
+      -76.252542,
+      39.778218
+     ],
+     [
+      -76.254003,
+      39.78106
+     ],
+     [
+      -76.254904,
+      39.78229
+     ],
+     [
+      -76.256661,
+      39.783908
+     ],
+     [
+      -76.260818,
+      39.78692
+     ],
+     [
+      -76.262414,
+      39.789415
+     ],
+     [
+      -76.264843,
+      39.791399
+     ],
+     [
+      -76.265732,
+      39.791967
+     ],
+     [
+      -76.274278,
+      39.79618
+     ],
+     [
+      -76.278943,
+      39.797355
+     ],
+     [
+      -76.286727,
+      39.799981
+     ],
+     [
+      -76.289712,
+      39.800402
+     ],
+     [
+      -76.290694,
+      39.80078
+     ],
+     [
+      -76.291261,
+      39.801252
+     ],
+     [
+      -76.292629,
+      39.802917
+     ],
+     [
+      -76.293668,
+      39.804718
+     ],
+     [
+      -76.294346,
+      39.805366
+     ],
+     [
+      -76.297754,
+      39.807009
+     ],
+     [
+      -76.299603,
+      39.808287
+     ],
+     [
+      -76.301263,
+      39.809017
+     ],
+     [
+      -76.303015,
+      39.810532
+     ],
+     [
+      -76.303756,
+      39.811
+     ],
+     [
+      -76.308308,
+      39.812724
+     ],
+     [
+      -76.311325,
+      39.814225
+     ],
+     [
+      -76.314297,
+      39.816401
+     ],
+     [
+      -76.315547,
+      39.818238
+     ],
+     [
+      -76.316231,
+      39.818896
+     ],
+     [
+      -76.318929,
+      39.820623
+     ],
+     [
+      -76.320943,
+      39.8214
+     ],
+     [
+      -76.324042,
+      39.821936
+     ],
+     [
+      -76.325334,
+      39.822564
+     ],
+     [
+      -76.329538,
+      39.827066
+     ],
+     [
+      -76.330111,
+      39.828093
+     ],
+     [
+      -76.330737,
+      39.83005
+     ],
+     [
+      -76.33149,
+      39.830998
+     ],
+     [
+      -76.332222,
+      39.831492
+     ],
+     [
+      -76.335082,
+      39.832854
+     ],
+     [
+      -76.339003,
+      39.835726
+     ],
+     [
+      -76.343169,
+      39.837966
+     ],
+     [
+      -76.344411,
+      39.839087
+     ],
+     [
+      -76.346517,
+      39.841659
+     ],
+     [
+      -76.346872,
+      39.842398
+     ],
+     [
+      -76.347076,
+      39.84333
+     ],
+     [
+      -76.347017,
+      39.844411
+     ],
+     [
+      -76.346543,
+      39.84639
+     ],
+     [
+      -76.345122,
+      39.850534
+     ],
+     [
+      -76.345024,
+      39.851427
+     ],
+     [
+      -76.345129,
+      39.8522
+     ],
+     [
+      -76.345718,
+      39.853456
+     ],
+     [
+      -76.349175,
+      39.85797
+     ],
+     [
+      -76.350211,
+      39.858932
+     ],
+     [
+      -76.352433,
+      39.860073
+     ],
+     [
+      -76.355807,
+      39.862244
+     ],
+     [
+      -76.358096,
+      39.864939
+     ],
+     [
+      -76.361995,
+      39.867003
+     ],
+     [
+      -76.363765,
+      39.868712
+     ],
+     [
+      -76.364992,
+      39.869303
+     ],
+     [
+      -76.368662,
+      39.870229
+     ],
+     [
+      -76.370204,
+      39.87098
+     ],
+     [
+      -76.371436,
+      39.872119
+     ],
+     [
+      -76.372485,
+      39.874058
+     ],
+     [
+      -76.372731,
+      39.875
+     ],
+     [
+      -76.372504,
+      39.876006
+     ],
+     [
+      -76.371199,
+      39.877488
+     ],
+     [
+      -76.370846,
+      39.878265
+     ],
+     [
+      -76.370946,
+      39.880028
+     ],
+     [
+      -76.370372,
+      39.882706
+     ],
+     [
+      -76.368173,
+      39.886431
+     ],
+     [
+      -76.36688,
+      39.888321
+     ],
+     [
+      -76.366446,
+      39.889233
+     ],
+     [
+      -76.366218,
+      39.890188
+     ],
+     [
+      -76.365598,
+      39.893966
+     ],
+     [
+      -76.366346,
+      39.896003
+     ],
+     [
+      -76.366901,
+      39.898715
+     ],
+     [
+      -76.366804,
+      39.900967
+     ],
+     [
+      -76.366921,
+      39.901947
+     ],
+     [
+      -76.367298,
+      39.903225
+     ],
+     [
+      -76.368056,
+      39.904639
+     ],
+     [
+      -76.37283,
+      39.910845
+     ],
+     [
+      -76.374659,
+      39.913472
+     ],
+     [
+      -76.376379,
+      39.915412
+     ],
+     [
+      -76.378475,
+      39.918512
+     ],
+     [
+      -76.379664,
+      39.920788
+     ],
+     [
+      -76.382221,
+      39.924197
+     ],
+     [
+      -76.382938,
+      39.924719
+     ],
+     [
+      -76.383952,
+      39.925093
+     ],
+     [
+      -76.395238,
+      39.927426
+     ],
+     [
+      -76.400582,
+      39.929015
+     ],
+     [
+      -76.408504,
+      39.931683
+     ],
+     [
+      -76.409745,
+      39.931885
+     ],
+     [
+      -76.41314,
+      39.931985
+     ],
+     [
+      -76.414541,
+      39.932251
+     ],
+     [
+      -76.415974,
+      39.932835
+     ],
+     [
+      -76.418394,
+      39.93453
+     ],
+     [
+      -76.419298,
+      39.93502
+     ],
+     [
+      -76.425162,
+      39.937086
+     ],
+     [
+      -76.425962,
+      39.937278
+     ],
+     [
+      -76.432273,
+      39.938121
+     ],
+     [
+      -76.433912,
+      39.938606
+     ],
+     [
+      -76.434814,
+      39.939109
+     ],
+     [
+      -76.437295,
+      39.941574
+     ],
+     [
+      -76.440656,
+      39.943267
+     ],
+     [
+      -76.443451,
+      39.945562
+     ],
+     [
+      -76.444403,
+      39.946186
+     ],
+     [
+      -76.44819,
+      39.94795
+     ],
+     [
+      -76.452425,
+      39.95023
+     ],
+     [
+      -76.453684,
+      39.950656
+     ],
+     [
+      -76.457997,
+      39.951617
+     ],
+     [
+      -76.459014,
+      39.952112
+     ],
+     [
+      -76.45988,
+      39.952839
+     ],
+     [
+      -76.460684,
+      39.953854
+     ],
+     [
+      -76.461041,
+      39.954706
+     ],
+     [
+      -76.46116,
+      39.955937
+     ],
+     [
+      -76.460963,
+      39.956936
+     ],
+     [
+      -76.459843,
+      39.958744
+     ],
+     [
+      -76.456871,
+      39.962017
+     ],
+     [
+      -76.45646,
+      39.962799
+     ],
+     [
+      -76.456331,
+      39.963378
+     ],
+     [
+      -76.456392,
+      39.964221
+     ],
+     [
+      -76.457455,
+      39.967562
+     ],
+     [
+      -76.457392,
+      39.969352
+     ],
+     [
+      -76.457506,
+      39.969996
+     ],
+     [
+      -76.459871,
+      39.974904
+     ],
+     [
+      -76.463306,
+      39.980088
+     ],
+     [
+      -76.468434,
+      39.989155
+     ],
+     [
+      -76.47055,
+      39.992103
+     ],
+     [
+      -76.474765,
+      40.000589
+     ],
+     [
+      -76.476985,
+      40.003859
+     ],
+     [
+      -76.489947,
+      40.019213
+     ],
+     [
+      -76.491925,
+      40.022159
+     ],
+     [
+      -76.492634,
+      40.022901
+     ],
+     [
+      -76.494435,
+      40.024132
+     ],
+     [
+      -76.502044,
+      40.027554
+     ],
+     [
+      -76.505558,
+      40.02961
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Newark – Delaware City",
+    "id": "prr-newark-delaware-city",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 10.2 mi on OSM ways tagged old_railway_operator=PRR, 2.5 mi on untagged OSM rail. No straight-line leg. Traced length 12.4 mi vs documented 12.3 mi (12.3 mi, FOWLER-MD table 4). Waypoints are town points, the farthest 2.6 km from the line (Glasgow). OSM Reybold Branch / Reybold Industrial Track (old_railway_operator=PRR) plus untagged OSM rail and abandoned ways between Newark and Porter. The Newark end is the junction east of the main-line station, not the station itself.",
+    "traced_mi": 12.4,
+    "documented_mi": 12.3,
+    "research_block": 14,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1927,
+      "headway_min": 360,
+      "note": "Newark and Delaware City Branch: Newark (main-line junction) - Wilson - Cooch - Glasgow - Porter (Delaware RR crossing) - Corbit - Reybold - Delaware City. Opened 1872-73 as the Delaware & Pennsylvania RR; sold to the PW&B 1881; the pre-1902 years belong to the PW&B layer. Last passenger train 24 Sep 1927 (PRRTHS starred '*Newark-Porter-Delaware City - 9/24/1927 (tt.)'); WIKI-Reybold gives 25 Sep 1927 citing the Smyrna Times - a one-day conflict, same year. Abandoned Rails' 'up until 1901' conflicts with both and is not used. Freight survives as the Reybold Industrial Track; not drawn. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Newark-Porter-Delaware City - 9/24/1927 (tt.)'; WIKI-Reybold_Industrial_Track 25 Sep 1927 (recorded conflict of one day). START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 4",
+       "https://en.wikipedia.org/wiki/Reybold_Industrial_Track",
+       "https://www.abandonedrails.com/delaware-line"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.743306,
+      39.679956
+     ],
+     [
+      -75.742925,
+      39.678688
+     ],
+     [
+      -75.742886,
+      39.678001
+     ],
+     [
+      -75.742604,
+      39.677596
+     ],
+     [
+      -75.741806,
+      39.674563
+     ],
+     [
+      -75.735517,
+      39.649955
+     ],
+     [
+      -75.734799,
+      39.647855
+     ],
+     [
+      -75.731033,
+      39.640435
+     ],
+     [
+      -75.720246,
+      39.61956
+     ],
+     [
+      -75.71889,
+      39.617615
+     ],
+     [
+      -75.717734,
+      39.61648
+     ],
+     [
+      -75.716556,
+      39.61559
+     ],
+     [
+      -75.690587,
+      39.599351
+     ],
+     [
+      -75.690309,
+      39.599592
+     ],
+     [
+      -75.690071,
+      39.599159
+     ],
+     [
+      -75.689414,
+      39.598614
+     ],
+     [
+      -75.681257,
+      39.593577
+     ],
+     [
+      -75.679142,
+      39.592561
+     ],
+     [
+      -75.677063,
+      39.591834
+     ],
+     [
+      -75.672133,
+      39.590649
+     ],
+     [
+      -75.668343,
+      39.590099
+     ],
+     [
+      -75.664691,
+      39.589841
+     ],
+     [
+      -75.660334,
+      39.589811
+     ],
+     [
+      -75.65276,
+      39.590223
+     ],
+     [
+      -75.62991,
+      39.592481
+     ],
+     [
+      -75.626433,
+      39.592678
+     ],
+     [
+      -75.620655,
+      39.592745
+     ],
+     [
+      -75.61854,
+      39.592385
+     ],
+     [
+      -75.615534,
+      39.591455
+     ],
+     [
+      -75.613545,
+      39.59056
+     ],
+     [
+      -75.606975,
+      39.587119
+     ],
+     [
+      -75.597127,
+      39.581631
+     ],
+     [
+      -75.594745,
+      39.58008
+     ],
+     [
+      -75.59199,
+      39.579437
+     ],
+     [
+      -75.590208,
+      39.57935
+     ],
+     [
+      -75.589742,
+      39.579424
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Sparrows Point Branch",
+    "id": "prr-sparrows-point-branch",
+    "color": "#7B241C",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 5.8 mi on OSM ways tagged old_railway_operator=PRR or B&O, 4.2 mi on untagged OSM rail. APPROXIMATED legs (straight lines): Bay View (main line) (junction link) - Bay View junction 0.44 mi. Traced length 10.4 mi vs documented 11.1 mi (11.1 mi from Baltimore Penn Station (FOWLER-MD table 19); the drawn line starts at the Bay View junction, about 2.5 mi out). Waypoints are town points, the farthest 0.6 km from the line (Bay View junction). LOW CONFIDENCE ON ALIGNMENT. No way in OSM or OHM is identified as the PRR Sparrows Point Branch. The drawn line starts with a 0.44 mi straight junction link south from the main line at Bay View, runs down through Highlandtown on untagged/Norfolk Southern track, then east along the ways OSM names 'Sparrows Point Industrial Track' (operated by CSX, and tagged old_railway_operator=B&O in OSM) through Point Breeze - where the report's 1931 working-timetable stop 'Western Electric Plant' was - and St. Helena to Sparrows Point. The B&O tag is NOT reconciled with the report (which knows only the PRR and the Patapsco & Back Rivers at Sparrows Point); the router was told to accept B&O-tagged ways for this feature only. The Sparrows Point end is the neighbourhood point, not the station site. Treat this geometry as an approximation of the corridor.",
+    "traced_mi": 10.4,
+    "documented_mi": 11.1,
+    "research_block": 17,
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1937,
+      "headway_min": 60,
+      "note": "Sparrows Point Branch: Bay View (main-line junction; trains from Baltimore Penn Station) - Biddle Street - Orangeville - Highlandtown - Point Breeze - St. Helena - Dundalk - Sollers - Sparrows Point, serving the Maryland Steel / Bethlehem Steel mill and company town. Drawn from 1913, when the PB&W absorbed the Baltimore & Sparrows Point RR; passenger trains ran from 11 Feb 1889, but who operated them before 1913 is NOT established, so 1889-1912 is not drawn. Fowler lists working-timetable stops dated 1931w (Western Electric Plant, Tin Plate Jct, Mill Station) - workers' trains still stopping in 1931. Last run 22 May 1937 (PRRTHS starred '*Bay View-Sparrow's Point - 5/22/1937'). The Feb 1952 Official Guide index daggers Sparrows Point as freight only. United Railways streetcars (No. 26) to the Point are a different line. headway_min is an ESTIMATE, not read from a timetable (workers' and suburban trains); avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'MARYLAND DIVISION (PB&W)', starred '*Bay View-Sparrow's Point - 5/22/1937'; OG1952 index dagger. START year NOT SOURCED AT SEGMENT LEVEL: 1913 is the PB&W's acquisition of the Baltimore & Sparrows Point RR, a corporate date; continuity 1913-1937 is inferred, with the 1931 working-timetable stops as mid-span evidence.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 19",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) index + Table 74 header",
+       "https://mdhistory.msa.maryland.gov/msa_sc3410/msa_sc3410_1_81/html/mdsa_sc3410_1_81-0030.html",
+       "https://en.wikipedia.org/wiki/Patapsco_and_Back_Rivers_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.5588,
+      39.2982
+     ],
+     [
+      -76.558905,
+      39.291835
+     ],
+     [
+      -76.55807,
+      39.278561
+     ],
+     [
+      -76.558277,
+      39.2779
+     ],
+     [
+      -76.559305,
+      39.277074
+     ],
+     [
+      -76.559597,
+      39.276659
+     ],
+     [
+      -76.559444,
+      39.27476
+     ],
+     [
+      -76.559121,
+      39.274299
+     ],
+     [
+      -76.557485,
+      39.273209
+     ],
+     [
+      -76.556829,
+      39.273082
+     ],
+     [
+      -76.554823,
+      39.273079
+     ],
+     [
+      -76.554002,
+      39.272875
+     ],
+     [
+      -76.55355,
+      39.272602
+     ],
+     [
+      -76.552925,
+      39.271836
+     ],
+     [
+      -76.552502,
+      39.269901
+     ],
+     [
+      -76.55218,
+      39.269511
+     ],
+     [
+      -76.551708,
+      39.269213
+     ],
+     [
+      -76.550946,
+      39.269005
+     ],
+     [
+      -76.550193,
+      39.268979
+     ],
+     [
+      -76.528395,
+      39.269753
+     ],
+     [
+      -76.526988,
+      39.269645
+     ],
+     [
+      -76.525665,
+      39.269354
+     ],
+     [
+      -76.524246,
+      39.26882
+     ],
+     [
+      -76.52302,
+      39.268095
+     ],
+     [
+      -76.518273,
+      39.263694
+     ],
+     [
+      -76.512843,
+      39.26004
+     ],
+     [
+      -76.511825,
+      39.259551
+     ],
+     [
+      -76.491559,
+      39.25207
+     ],
+     [
+      -76.490464,
+      39.251308
+     ],
+     [
+      -76.487836,
+      39.248244
+     ],
+     [
+      -76.487028,
+      39.24764
+     ],
+     [
+      -76.462147,
+      39.243296
+     ],
+     [
+      -76.460271,
+      39.242774
+     ],
+     [
+      -76.459259,
+      39.242133
+     ],
+     [
+      -76.458641,
+      39.241305
+     ],
+     [
+      -76.458423,
+      39.240515
+     ],
+     [
+      -76.458552,
+      39.239581
+     ],
+     [
+      -76.45909,
+      39.238728
+     ],
+     [
+      -76.459601,
+      39.238287
+     ],
+     [
+      -76.463167,
+      39.236274
+     ],
+     [
+      -76.465142,
+      39.235486
+     ],
+     [
+      -76.465592,
+      39.234836
+     ],
+     [
+      -76.465639,
+      39.234194
+     ],
+     [
+      -76.464807,
+      39.22813
+     ],
+     [
+      -76.464345,
+      39.226435
+     ],
+     [
+      -76.463554,
+      39.220601
+     ],
+     [
+      -76.463604,
+      39.219951
+     ],
+     [
+      -76.463137,
+      39.21642
+     ],
+     [
+      -76.463214,
+      39.215859
+     ],
+     [
+      -76.463556,
+      39.21544
+     ],
+     [
+      -76.464164,
+      39.21516
+     ],
+     [
+      -76.470161,
+      39.214662
+     ],
+     [
+      -76.472754,
+      39.215184
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Pope's Creek Branch",
+    "id": "prr-popes-creek-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 44.6 mi on OSM ways tagged old_railway_operator=PRR, 3.4 mi on OpenHistoricalMap ways. No straight-line leg. Traced length 48.0 mi vs documented 48.7 mi (48.7 mi, FOWLER-MD table 25). Waypoints are town points, the farthest 2.7 km from the line (Brandywine). CSX Pope's Creek Subdivision track (OSM, old_railway_operator=PRR) from the main-line junction at Bowie, with OHM (dated 1872/1873) and abandoned PRR-tagged ways for the lifted end to Pope's Creek.",
+    "traced_mi": 48.0,
+    "documented_mi": 48.7,
+    "research_block": 19,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1936,
+      "headway_min": 480,
+      "note": "Pope's Creek Branch (the original Baltimore & Potomac main line toward the Potomac): Bowie - Collington - Marlboro - Brandywine - Waldorf - La Plata - Port Tobacco - Pope's Creek. Opened 1 Jan 1873; the B&P years 1873-1902 have no queue item and are not drawn here (the report recommends a B&P predecessor feature). 'Four a day in 1921' (WIKI-Pope's Creek Subdivision) - read as two each way, so ~480 min; an ESTIMATE.",
+      "sources": [
+       "Segment-level: END year - this segment ends at 1936 only because WIKI-Pope's_Creek_Subdivision says service was one train a day from 1937; that service-level change is the article's, not a timetable read here. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "https://en.wikipedia.org/wiki/Pope%27s_Creek_Subdivision",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 25"
+      ]
+     },
+     {
+      "start": 1937,
+      "end": 1949,
+      "headway_min": 1440,
+      "note": "One train a day from 1937 (WIKI-Pope's Creek Subdivision). Last passenger run 29 Oct 1949 (PRRTHS starred '*Bowie-Popes Creek - 10/29/1949'; WIKI agrees). The Feb 1952 Official Guide prints Table 68 'Bowie-Popes Creek' as 'Freight Service only' and daggers La Plata and Waldorf. headway_min 1440 = one train a day, an ESTIMATE from that sentence. The 1955 excursion and 1966 campaign charter (single uncited/unsourced Wikipedia sentences) are NOT drawn; the CSX freight line is NOT drawn.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'MARYLAND DIVISION (PB&W)', starred '*Bowie-Popes Creek - 10/29/1949'; WIKI-Pope's_Creek_Subdivision agrees; OG1952 Table 68 'Freight Service only'. START year 1937 = 'one a day from 1937' per WIKI-Pope's_Creek_Subdivision.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 68 + index",
+       "https://en.wikipedia.org/wiki/Pope%27s_Creek_Subdivision"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.780021,
+      38.998988
+     ],
+     [
+      -76.779875,
+      38.998123
+     ],
+     [
+      -76.77927,
+      38.997205
+     ],
+     [
+      -76.778521,
+      38.996683
+     ],
+     [
+      -76.775984,
+      38.995358
+     ],
+     [
+      -76.775139,
+      38.994646
+     ],
+     [
+      -76.771929,
+      38.988931
+     ],
+     [
+      -76.763395,
+      38.979711
+     ],
+     [
+      -76.759814,
+      38.973738
+     ],
+     [
+      -76.751908,
+      38.955784
+     ],
+     [
+      -76.750886,
+      38.951806
+     ],
+     [
+      -76.750598,
+      38.945203
+     ],
+     [
+      -76.748519,
+      38.936418
+     ],
+     [
+      -76.74243,
+      38.924072
+     ],
+     [
+      -76.735675,
+      38.90294
+     ],
+     [
+      -76.735663,
+      38.902159
+     ],
+     [
+      -76.735845,
+      38.901405
+     ],
+     [
+      -76.741,
+      38.886266
+     ],
+     [
+      -76.741536,
+      38.885228
+     ],
+     [
+      -76.746012,
+      38.87876
+     ],
+     [
+      -76.746366,
+      38.878005
+     ],
+     [
+      -76.752428,
+      38.852766
+     ],
+     [
+      -76.752348,
+      38.851759
+     ],
+     [
+      -76.751888,
+      38.850838
+     ],
+     [
+      -76.746662,
+      38.845117
+     ],
+     [
+      -76.746049,
+      38.843955
+     ],
+     [
+      -76.746048,
+      38.84283
+     ],
+     [
+      -76.748093,
+      38.836455
+     ],
+     [
+      -76.748199,
+      38.835489
+     ],
+     [
+      -76.747799,
+      38.83439
+     ],
+     [
+      -76.745154,
+      38.831357
+     ],
+     [
+      -76.744803,
+      38.830647
+     ],
+     [
+      -76.744679,
+      38.829911
+     ],
+     [
+      -76.744495,
+      38.822437
+     ],
+     [
+      -76.741932,
+      38.814951
+     ],
+     [
+      -76.742,
+      38.814068
+     ],
+     [
+      -76.744698,
+      38.805328
+     ],
+     [
+      -76.744659,
+      38.804295
+     ],
+     [
+      -76.743285,
+      38.798247
+     ],
+     [
+      -76.743206,
+      38.797219
+     ],
+     [
+      -76.743403,
+      38.796138
+     ],
+     [
+      -76.745407,
+      38.789288
+     ],
+     [
+      -76.746125,
+      38.788076
+     ],
+     [
+      -76.747388,
+      38.787217
+     ],
+     [
+      -76.757057,
+      38.784159
+     ],
+     [
+      -76.758103,
+      38.783606
+     ],
+     [
+      -76.762374,
+      38.780302
+     ],
+     [
+      -76.763501,
+      38.779862
+     ],
+     [
+      -76.767236,
+      38.778908
+     ],
+     [
+      -76.768056,
+      38.778552
+     ],
+     [
+      -76.768995,
+      38.77789
+     ],
+     [
+      -76.775393,
+      38.772503
+     ],
+     [
+      -76.775929,
+      38.771578
+     ],
+     [
+      -76.776998,
+      38.767271
+     ],
+     [
+      -76.776608,
+      38.763368
+     ],
+     [
+      -76.776776,
+      38.762354
+     ],
+     [
+      -76.778482,
+      38.758198
+     ],
+     [
+      -76.779912,
+      38.756346
+     ],
+     [
+      -76.780719,
+      38.755601
+     ],
+     [
+      -76.781424,
+      38.755166
+     ],
+     [
+      -76.782498,
+      38.754764
+     ],
+     [
+      -76.786491,
+      38.754123
+     ],
+     [
+      -76.787463,
+      38.753843
+     ],
+     [
+      -76.78828,
+      38.753361
+     ],
+     [
+      -76.790336,
+      38.751697
+     ],
+     [
+      -76.791429,
+      38.751068
+     ],
+     [
+      -76.796079,
+      38.74964
+     ],
+     [
+      -76.798262,
+      38.748385
+     ],
+     [
+      -76.809633,
+      38.744055
+     ],
+     [
+      -76.81068,
+      38.743423
+     ],
+     [
+      -76.817365,
+      38.738506
+     ],
+     [
+      -76.822209,
+      38.736221
+     ],
+     [
+      -76.823675,
+      38.735121
+     ],
+     [
+      -76.824478,
+      38.734087
+     ],
+     [
+      -76.871952,
+      38.65817
+     ],
+     [
+      -76.873074,
+      38.656647
+     ],
+     [
+      -76.972702,
+      38.558481
+     ],
+     [
+      -76.974254,
+      38.556798
+     ],
+     [
+      -76.975367,
+      38.555232
+     ],
+     [
+      -76.976043,
+      38.554017
+     ],
+     [
+      -76.976762,
+      38.552273
+     ],
+     [
+      -76.977029,
+      38.550552
+     ],
+     [
+      -76.974981,
+      38.52023
+     ],
+     [
+      -76.975192,
+      38.51922
+     ],
+     [
+      -76.978996,
+      38.508498
+     ],
+     [
+      -76.984342,
+      38.498676
+     ],
+     [
+      -76.984827,
+      38.497147
+     ],
+     [
+      -76.984785,
+      38.495841
+     ],
+     [
+      -76.983338,
+      38.486521
+     ],
+     [
+      -76.984996,
+      38.470174
+     ],
+     [
+      -76.985632,
+      38.452172
+     ],
+     [
+      -76.985457,
+      38.450546
+     ],
+     [
+      -76.984964,
+      38.448596
+     ],
+     [
+      -76.984128,
+      38.446653
+     ],
+     [
+      -76.98312,
+      38.445002
+     ],
+     [
+      -76.97687,
+      38.437136
+     ],
+     [
+      -76.972458,
+      38.433385
+     ],
+     [
+      -76.972141,
+      38.43286
+     ],
+     [
+      -76.971857,
+      38.43206
+     ],
+     [
+      -76.971986,
+      38.427596
+     ],
+     [
+      -76.97354,
+      38.423312
+     ],
+     [
+      -76.974106,
+      38.421228
+     ],
+     [
+      -76.974964,
+      38.41911
+     ],
+     [
+      -76.975308,
+      38.417059
+     ],
+     [
+      -76.975728,
+      38.416285
+     ],
+     [
+      -76.976518,
+      38.415391
+     ],
+     [
+      -76.976844,
+      38.414442
+     ],
+     [
+      -76.976767,
+      38.413467
+     ],
+     [
+      -76.975531,
+      38.410091
+     ],
+     [
+      -76.974733,
+      38.407226
+     ],
+     [
+      -76.974664,
+      38.406251
+     ],
+     [
+      -76.974887,
+      38.405511
+     ],
+     [
+      -76.975634,
+      38.404674
+     ],
+     [
+      -76.977754,
+      38.403369
+     ],
+     [
+      -76.979067,
+      38.40273
+     ],
+     [
+      -76.988551,
+      38.40016
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Townsend Branch (Townsend – Massey)",
+    "id": "prr-townsend-branch-townsend-massey",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 9.3 mi on OSM ways tagged old_railway_operator=PRR. No straight-line leg. Traced length 9.2 mi vs documented 9.2 mi (9.2 mi, FOWLER-MD table 5). Waypoints are town points, the farthest 0.3 km from the line (Townsend). Maryland & Delaware track (OSM, old_railway_operator=PRR).",
+    "traced_mi": 9.2,
+    "documented_mi": 9.2,
+    "research_block": 25,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1949,
+      "headway_min": 360,
+      "note": "Townsend - Vandyke - Golt - Massey, the common stem of the Chestertown and Centreville lines, run as part of the PB&W's Delaware Division (Delaware Railroad lease) from 1902 and by the PRR from 1918 (WIKI-QA&K). Kent County RR trains from Apr 1870; the pre-1902 years belong to the PW&B layer. Last run 30 Jul 1949 (PRRTHS starred '*Townsend-Massey - 7/30/1949'). Feb 1952 Official Guide Table 84 'Townsend-Chestertown' printed 'Freight Service only'. Two branches' trains used this stem; headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Townsend-Massey - 7/30/1949'; OG1952 Table 84. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 84",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 5",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_and_Kent_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.692861,
+      39.391903
+     ],
+     [
+      -75.69356,
+      39.391686
+     ],
+     [
+      -75.694185,
+      39.390774
+     ],
+     [
+      -75.694628,
+      39.390433
+     ],
+     [
+      -75.755433,
+      39.350442
+     ],
+     [
+      -75.801542,
+      39.31919
+     ],
+     [
+      -75.819729,
+      39.309709
+     ],
+     [
+      -75.820974,
+      39.309393
+     ],
+     [
+      -75.822089,
+      39.309325
+     ],
+     [
+      -75.823343,
+      39.309488
+     ],
+     [
+      -75.82506,
+      39.309962
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Chestertown Branch",
+    "id": "prr-chestertown-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 19.9 mi on OSM ways tagged old_railway_operator=PRR. No straight-line leg. Traced length 19.9 mi vs documented 20.2 mi (20.2 mi, FOWLER-MD table 6). Waypoints are town points, the farthest 0.5 km from the line (Kennedyville). OSM PRR-tagged track and abandoned ways (old_railway_operator=PRR) Massey - Chestertown.",
+    "traced_mi": 19.9,
+    "documented_mi": 20.2,
+    "research_block": 26,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1949,
+      "headway_min": 480,
+      "note": "Massey - Lambson - Black - Kennedyville - Still Pond - Lynch - Worton - Chestertown (Kent County RR, opened to Chestertown 20 Feb 1872; the pre-1902 years belong to the PW&B layer). PB&W Delaware Division from 1902, PRR lease 1918. Last run 30 Jul 1949 (PRRTHS starred '*Massey-Chestertown - 7/30/1949' - listed as a rail segment under DELMARVA LINES, though one secondary search result attributed the date to a steamboat). Fowler's Vicker's and Parson's beyond Chestertown are 'pass?' and are not drawn. OG1952 Table 84 freight only. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Massey-Chestertown - 7/30/1949'; OG1952 Table 84. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 84",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) tables 6, 50",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_and_Kent_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.82506,
+      39.309962
+     ],
+     [
+      -75.832339,
+      39.311984
+     ],
+     [
+      -75.833842,
+      39.31222
+     ],
+     [
+      -75.835356,
+      39.312275
+     ],
+     [
+      -76.04325,
+      39.304684
+     ],
+     [
+      -76.045215,
+      39.304457
+     ],
+     [
+      -76.047369,
+      39.303821
+     ],
+     [
+      -76.048952,
+      39.303035
+     ],
+     [
+      -76.09313,
+      39.274024
+     ],
+     [
+      -76.093634,
+      39.273599
+     ],
+     [
+      -76.093992,
+      39.272986
+     ],
+     [
+      -76.094054,
+      39.272351
+     ],
+     [
+      -76.093895,
+      39.271785
+     ],
+     [
+      -76.079277,
+      39.234001
+     ],
+     [
+      -76.077072,
+      39.228885
+     ],
+     [
+      -76.071171,
+      39.217602
+     ],
+     [
+      -76.071148,
+      39.2168
+     ],
+     [
+      -76.071381,
+      39.216251
+     ],
+     [
+      -76.073913,
+      39.213987
+     ],
+     [
+      -76.074238,
+      39.213459
+     ],
+     [
+      -76.074315,
+      39.212779
+     ],
+     [
+      -76.074095,
+      39.212116
+     ],
+     [
+      -76.073758,
+      39.211689
+     ],
+     [
+      -76.071152,
+      39.209793
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Centreville Branch",
+    "id": "prr-centreville-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 25.7 mi on OSM ways tagged old_railway_operator=PRR. APPROXIMATED legs (straight lines): Massey (junction link) - Massey 0.16 mi. Traced length 25.8 mi vs documented 25.7 mi (25.7 mi, FOWLER-MD table 5 (Massey 9.2 -> Centreville 34.9)). Waypoints are town points, the farthest 0.3 km from the line (Centreville). OSM 'Centreville Line' (old_railway_operator=PRR). Starts at the Massey point shared with the Townsend and Chestertown features.",
+    "traced_mi": 25.8,
+    "documented_mi": 25.7,
+    "research_block": 27,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1939,
+      "headway_min": 480,
+      "note": "Massey - Millington - Sudlersville - Barclay - Roberts - Price - Hayden - Carville - Centreville (ex Queen Anne's & Kent, Centreville reached 1 Aug 1871; merged into the Delaware RR 1899; the pre-1902 years belong to the PW&B layer). PB&W Delaware Division from 1902, PRR lease 1918. Last run 31 May 1939 (PRRTHS starred '*Massey-Centreville - 5/31/1939'). OG1952 Massey-Centreville table (fragment after Table 85) 'Freight Service only'. NOT the Queen Anne's Railroad's 1924 Queenstown - Centreville service (separate queue item). headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Massey-Centreville - 5/31/1939'. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) (fragment after Table 85)",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 5",
+       "https://en.wikipedia.org/wiki/Queen_Anne%27s_and_Kent_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.82506,
+      39.309962
+     ],
+     [
+      -75.82547,
+      39.307617
+     ],
+     [
+      -75.824366,
+      39.297217
+     ],
+     [
+      -75.824568,
+      39.295272
+     ],
+     [
+      -75.836029,
+      39.258663
+     ],
+     [
+      -75.836692,
+      39.257408
+     ],
+     [
+      -75.84421,
+      39.246224
+     ],
+     [
+      -75.845073,
+      39.244284
+     ],
+     [
+      -75.847872,
+      39.214169
+     ],
+     [
+      -75.848317,
+      39.212561
+     ],
+     [
+      -75.855782,
+      39.19178
+     ],
+     [
+      -75.856136,
+      39.189738
+     ],
+     [
+      -75.856799,
+      39.180364
+     ],
+     [
+      -75.862021,
+      39.161986
+     ],
+     [
+      -75.863379,
+      39.147716
+     ],
+     [
+      -75.864078,
+      39.145934
+     ],
+     [
+      -75.865139,
+      39.144485
+     ],
+     [
+      -75.86644,
+      39.143343
+     ],
+     [
+      -75.867772,
+      39.142527
+     ],
+     [
+      -75.909767,
+      39.121025
+     ],
+     [
+      -75.958911,
+      39.097603
+     ],
+     [
+      -75.959778,
+      39.096844
+     ],
+     [
+      -76.001028,
+      39.053474
+     ],
+     [
+      -76.002091,
+      39.052024
+     ],
+     [
+      -76.006102,
+      39.044495
+     ],
+     [
+      -76.007014,
+      39.043359
+     ],
+     [
+      -76.00829,
+      39.04243
+     ],
+     [
+      -76.024962,
+      39.033518
+     ],
+     [
+      -76.026293,
+      39.033122
+     ],
+     [
+      -76.027384,
+      39.032944
+     ],
+     [
+      -76.028527,
+      39.032913
+     ],
+     [
+      -76.029854,
+      39.033071
+     ],
+     [
+      -76.046595,
+      39.037932
+     ],
+     [
+      -76.048961,
+      39.039014
+     ],
+     [
+      -76.053254,
+      39.042186
+     ],
+     [
+      -76.053989,
+      39.042525
+     ],
+     [
+      -76.055317,
+      39.042895
+     ],
+     [
+      -76.059712,
+      39.043694
+     ],
+     [
+      -76.060948,
+      39.043658
+     ],
+     [
+      -76.061717,
+      39.043438
+     ],
+     [
+      -76.062513,
+      39.043013
+     ],
+     [
+      -76.064355,
+      39.041347
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Smyrna Branch",
+    "id": "prr-smyrna-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 1.1 mi on OpenHistoricalMap ways. No straight-line leg. Traced length 1.1 mi vs documented 1.2 mi (1.2 mi FOWLER-MD table 3 (Clayton 36.8, Smyrna 38.0); 1.27 mi in the 1910 lease list (WIKI-Delaware_Railroad)). Waypoints are town points, the farthest 1.1 km from the line (Smyrna). Drawn entirely on an OHM way; the OSM has no trace of this spur. Ends about 1 km from the Smyrna town centroid; the exact Smyrna station site is not pinned.",
+    "traced_mi": 1.1,
+    "documented_mi": 1.2,
+    "research_block": 29,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1926,
+      "headway_min": 120,
+      "note": "Short shuttle connecting Smyrna town with the Delaware Railroad main line at Clayton (Delaware RR Smyrna Branch; PB&W Delaware Division from 1902, PRR lease 1918). Opened c.1866 (uncited list); the pre-1902 years belong to the PW&B layer. Last run 30 Jun 1926 (PRRTHS starred '*Clayton-Smyrna - 6/30/1926'). headway_min is an ESTIMATE, not read from a timetable (a connecting shuttle meeting main-line trains); avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Clayton-Smyrna - 6/30/1926'. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 3",
+       "https://en.wikipedia.org/wiki/Delaware_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.633063,
+      39.291184
+     ],
+     [
+      -75.632543,
+      39.290317
+     ],
+     [
+      -75.631168,
+      39.291311
+     ],
+     [
+      -75.629734,
+      39.292128
+     ],
+     [
+      -75.622129,
+      39.294064
+     ],
+     [
+      -75.619658,
+      39.295844
+     ],
+     [
+      -75.617169,
+      39.297883
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Oxford Branch (Clayton – Oxford, MD)",
+    "id": "prr-oxford-branch-clayton-oxford",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 41.3 mi on OpenHistoricalMap ways, 12.5 mi on OSM ways tagged old_railway_operator=PRR, 0.1 mi of router connectors (<300 m joins between mapped ways). No straight-line leg. Traced length 53.7 mi vs documented 54.2 mi (54.2 mi, FOWLER-MD table 7). Waypoints are town points, the farthest 1.0 km from the line (Greensboro). OSM PRR-tagged track at the Clayton end; the lifted remainder (most of it) on OHM ways dated 1868-1871 (Maryland & Delaware construction). 'Trappe' in the report's via list was NOT used as a waypoint: Trappe town is 5.5 km from the line, so the station of that name was evidently elsewhere (not pinned).",
+    "traced_mi": 53.7,
+    "documented_mi": 54.2,
+    "research_block": 30,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1949,
+      "headway_min": 480,
+      "note": "Oxford Branch (ex Maryland & Delaware / Delaware & Chesapeake): Clayton - Kenton - Marydel - Goldsboro - Greensboro - Ridgely - Queen Anne - Cordova - Easton - Trappe - Oxford on the Tred Avon. PW&B-operated from c.1871, merged into the Delaware RR 1899; the pre-1902 years belong to the PW&B layer. PB&W Delaware Division from 1902, PRR lease 1918. Last run 6 Aug 1949 (PRRTHS starred '*Clayton-Oxford - 8/6/1949'); WIKI-Delaware_Railroad gives 8 Aug 1949 - a two-day conflict, same year. OG1952 Table 83 'Clayton - Oxford' printed 'Freight Service only'. WIKI-D&C's 'Service between Oxford and Easton ended 1957' is a FREIGHT end and is not drawn. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Clayton-Oxford - 8/6/1949'; WIKI-Delaware_Railroad 8 Aug 1949 (recorded conflict of two days); OG1952 Table 83. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 83",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 7",
+       "https://en.wikipedia.org/wiki/Delaware_and_Chesapeake_Railroad",
+       "https://en.wikipedia.org/wiki/Delaware_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.633008,
+      39.286155
+     ],
+     [
+      -75.662327,
+      39.237543
+     ],
+     [
+      -75.666773,
+      39.230497
+     ],
+     [
+      -75.717364,
+      39.15624
+     ],
+     [
+      -75.744005,
+      39.116839
+     ],
+     [
+      -75.754835,
+      39.095627
+     ],
+     [
+      -75.764019,
+      39.078074
+     ],
+     [
+      -75.776276,
+      39.053835
+     ],
+     [
+      -75.786661,
+      39.033729
+     ],
+     [
+      -75.794884,
+      39.017412
+     ],
+     [
+      -75.797613,
+      39.012318
+     ],
+     [
+      -75.800154,
+      39.007049
+     ],
+     [
+      -75.802059,
+      39.003547
+     ],
+     [
+      -75.810554,
+      38.986809
+     ],
+     [
+      -75.813029,
+      38.982243
+     ],
+     [
+      -75.815023,
+      38.979382
+     ],
+     [
+      -75.816355,
+      38.977792
+     ],
+     [
+      -75.818463,
+      38.975874
+     ],
+     [
+      -75.822977,
+      38.972338
+     ],
+     [
+      -75.826754,
+      38.970096
+     ],
+     [
+      -75.830891,
+      38.968227
+     ],
+     [
+      -75.879899,
+      38.949522
+     ],
+     [
+      -75.898138,
+      38.9427
+     ],
+     [
+      -75.951706,
+      38.923463
+     ],
+     [
+      -75.953971,
+      38.922248
+     ],
+     [
+      -75.954898,
+      38.921473
+     ],
+     [
+      -75.955705,
+      38.920498
+     ],
+     [
+      -75.957266,
+      38.918279
+     ],
+     [
+      -75.957195,
+      38.91757
+     ],
+     [
+      -75.958864,
+      38.914105
+     ],
+     [
+      -75.961061,
+      38.910485
+     ],
+     [
+      -75.962434,
+      38.909056
+     ],
+     [
+      -75.979831,
+      38.893732
+     ],
+     [
+      -75.982236,
+      38.891437
+     ],
+     [
+      -76.063227,
+      38.794752
+     ],
+     [
+      -76.063975,
+      38.793222
+     ],
+     [
+      -76.068538,
+      38.777606
+     ],
+     [
+      -76.068175,
+      38.7716
+     ],
+     [
+      -76.068206,
+      38.770223
+     ],
+     [
+      -76.069878,
+      38.756505
+     ],
+     [
+      -76.070259,
+      38.750026
+     ],
+     [
+      -76.071319,
+      38.740192
+     ],
+     [
+      -76.071144,
+      38.737029
+     ],
+     [
+      -76.071269,
+      38.733723
+     ],
+     [
+      -76.071494,
+      38.733354
+     ],
+     [
+      -76.082996,
+      38.719159
+     ],
+     [
+      -76.087373,
+      38.714049
+     ],
+     [
+      -76.092248,
+      38.707968
+     ],
+     [
+      -76.097844,
+      38.701336
+     ],
+     [
+      -76.107234,
+      38.689845
+     ],
+     [
+      -76.108281,
+      38.688814
+     ],
+     [
+      -76.10962,
+      38.68809
+     ],
+     [
+      -76.111131,
+      38.687568
+     ],
+     [
+      -76.129308,
+      38.684352
+     ],
+     [
+      -76.168108,
+      38.682375
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Harrington – Franklin City",
+    "id": "prr-harrington-franklin-city",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 78.0 mi on OSM ways tagged old_railway_operator=PRR. No straight-line leg. Traced length 78.0 mi vs documented 78.2 mi (78.2 mi, FOWLER-MD table 8). Waypoints are town points, the farthest 0.6 km from the line (Selbyville). OSM Indian River Secondary / Snow Hill Line track and abandoned ways (all old_railway_operator=PRR) to Franklin City.",
+    "traced_mi": 78.0,
+    "documented_mi": 78.2,
+    "research_block": 31,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1949,
+      "headway_min": 480,
+      "note": "Delaware, Maryland & Virginia main line (ex Junction & Breakwater, Breakwater & Frankford and Worcester RR): Harrington - Milford - Ellendale - Georgetown - Millsboro - Frankford - Selbyville - Berlin - Snow Hill - Girdletree - Franklin City, VA (Chincoteague boat landing). The DM&V kept its corporate identity (PRR bought out the minority 1919; merged into the PW&B 1955), but the PW&B controlled it from March 1891 and its trains ran in PRR timetables, so it is drawn as Pennsylvania Railroad (report's ownership_split: no split inside 1902-1949). The pre-1902 years belong to the PW&B layer. Three trains each way in the early 1910s, one each way by 1941 (WIKI-DM&V); headway 480 is an ESTIMATE between those. Last run 18 Jun 1949 (PRRTHS starred '*Harrington-Georgetown-Franklin City - 6/18/1949'; WIKI-DM&V 'eliminated by 1949'). OG1952 Milford-Frankford table 'Freight Service only'. The Franklin City - Chincoteague steamer (to 1910) is not a rail line and not drawn. avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Harrington-Georgetown-Franklin City - 6/18/1949'; WIKI-DM&V agrees on 1949. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) (Milford-Frankford table)",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 8",
+       "https://en.wikipedia.org/wiki/Delaware,_Maryland_and_Virginia_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.577149,
+      38.921191
+     ],
+     [
+      -75.576624,
+      38.919788
+     ],
+     [
+      -75.575778,
+      38.918468
+     ],
+     [
+      -75.574912,
+      38.917549
+     ],
+     [
+      -75.573678,
+      38.916588
+     ],
+     [
+      -75.57223,
+      38.915804
+     ],
+     [
+      -75.57051,
+      38.915194
+     ],
+     [
+      -75.569296,
+      38.914932
+     ],
+     [
+      -75.567672,
+      38.914769
+     ],
+     [
+      -75.463483,
+      38.918981
+     ],
+     [
+      -75.455751,
+      38.919198
+     ],
+     [
+      -75.454082,
+      38.918946
+     ],
+     [
+      -75.453011,
+      38.91865
+     ],
+     [
+      -75.437982,
+      38.913173
+     ],
+     [
+      -75.434157,
+      38.91197
+     ],
+     [
+      -75.432513,
+      38.910966
+     ],
+     [
+      -75.428984,
+      38.907988
+     ],
+     [
+      -75.4283,
+      38.906959
+     ],
+     [
+      -75.427887,
+      38.905926
+     ],
+     [
+      -75.424434,
+      38.892923
+     ],
+     [
+      -75.423836,
+      38.889203
+     ],
+     [
+      -75.423928,
+      38.842418
+     ],
+     [
+      -75.421401,
+      38.748787
+     ],
+     [
+      -75.421175,
+      38.747103
+     ],
+     [
+      -75.420612,
+      38.745745
+     ],
+     [
+      -75.388964,
+      38.696072
+     ],
+     [
+      -75.387973,
+      38.695075
+     ],
+     [
+      -75.383895,
+      38.692035
+     ],
+     [
+      -75.38268,
+      38.691537
+     ],
+     [
+      -75.380431,
+      38.691162
+     ],
+     [
+      -75.379956,
+      38.690946
+     ],
+     [
+      -75.379417,
+      38.69048
+     ],
+     [
+      -75.328528,
+      38.626146
+     ],
+     [
+      -75.303122,
+      38.596435
+     ],
+     [
+      -75.302114,
+      38.595493
+     ],
+     [
+      -75.25589,
+      38.561329
+     ],
+     [
+      -75.25433,
+      38.55987
+     ],
+     [
+      -75.253628,
+      38.558727
+     ],
+     [
+      -75.239507,
+      38.523599
+     ],
+     [
+      -75.236955,
+      38.518869
+     ],
+     [
+      -75.234426,
+      38.514613
+     ],
+     [
+      -75.233793,
+      38.512765
+     ],
+     [
+      -75.227238,
+      38.451213
+     ],
+     [
+      -75.216642,
+      38.408342
+     ],
+     [
+      -75.212424,
+      38.372723
+     ],
+     [
+      -75.21246,
+      38.370919
+     ],
+     [
+      -75.216703,
+      38.33981
+     ],
+     [
+      -75.222143,
+      38.326311
+     ],
+     [
+      -75.222678,
+      38.325344
+     ],
+     [
+      -75.241448,
+      38.304468
+     ],
+     [
+      -75.288194,
+      38.255103
+     ],
+     [
+      -75.302021,
+      38.243243
+     ],
+     [
+      -75.382163,
+      38.180851
+     ],
+     [
+      -75.383412,
+      38.179535
+     ],
+     [
+      -75.386997,
+      38.174061
+     ],
+     [
+      -75.387353,
+      38.17289
+     ],
+     [
+      -75.400946,
+      38.102086
+     ],
+     [
+      -75.405834,
+      38.077316
+     ],
+     [
+      -75.409349,
+      38.058409
+     ],
+     [
+      -75.410181,
+      38.056267
+     ],
+     [
+      -75.413312,
+      38.050456
+     ],
+     [
+      -75.413637,
+      38.048836
+     ],
+     [
+      -75.413526,
+      38.047828
+     ],
+     [
+      -75.413263,
+      38.047015
+     ],
+     [
+      -75.412586,
+      38.045798
+     ],
+     [
+      -75.399693,
+      38.024894
+     ],
+     [
+      -75.398277,
+      38.023441
+     ],
+     [
+      -75.39115,
+      38.017243
+     ],
+     [
+      -75.388925,
+      38.014728
+     ],
+     [
+      -75.382405,
+      38.006544
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Lewes and Rehoboth Branch",
+    "id": "prr-lewes-rehoboth-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 12.5 mi on OSM ways tagged old_railway_operator=PRR, 5.0 mi on OpenHistoricalMap ways, 1.9 mi on the Georgetown/Lewes Trail (rail-trail). No straight-line leg. Traced length 19.0 mi vs documented 19.7 mi (19.7 mi, FOWLER-MD table 9 (Georgetown 23.9 -> Rehoboth 43.6)). Waypoints are town points, the farthest 0.7 km from the line (Georgetown). OSM PRR-tagged track and the Georgetown/Lewes Trail (old_railway_operator=PRR) to Lewes, then OHM ways (dated 1897/1900) for the lifted Lewes - Rehoboth end, finishing at the OHM line's Rehoboth terminus. Drawn through Lewes as one continuous line (the trains reversed there).",
+    "traced_mi": 19.0,
+    "documented_mi": 19.7,
+    "research_block": 32,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1938,
+      "headway_min": 480,
+      "note": "DM&V (ex Junction & Breakwater) Georgetown - Messick - Harbeson - Cool Spring - Nassau - Lewes (reverse) - Rehoboth Beach; seasonal resort traffic to Rehoboth. PW&B-controlled from 1891, PRR timetables; drawn as Pennsylvania Railroad as for the Harrington - Franklin City line. Lewes 1869, Rehoboth 1878; the pre-1902 years belong to the PW&B layer. Last run 27 Apr 1938 (PRRTHS starred '*Georgetown-Lewes-Rehoboth - 4/27/1938 (tt.)'). CONFLICT recorded: WIKI-DM&V says service across the Lewes & Rehoboth Canal ended 'in the 1940s'; the shorter, dated PRRTHS span is drawn. The 2007 dinner train is out of scope. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Georgetown-Lewes-Rehoboth - 4/27/1938 (tt.)'; conflicts with WIKI-DM&V ('1940s', undated). START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 9",
+       "https://en.wikipedia.org/wiki/Delaware,_Maryland_and_Virginia_Railroad",
+       "https://en.wikipedia.org/wiki/Delmarva_Division"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.378384,
+      38.68981
+     ],
+     [
+      -75.377979,
+      38.690655
+     ],
+     [
+      -75.377225,
+      38.691149
+     ],
+     [
+      -75.260774,
+      38.729242
+     ],
+     [
+      -75.261306,
+      38.729854
+     ],
+     [
+      -75.247317,
+      38.732622
+     ],
+     [
+      -75.190415,
+      38.750735
+     ],
+     [
+      -75.189768,
+      38.750504
+     ],
+     [
+      -75.189563,
+      38.750915
+     ],
+     [
+      -75.188321,
+      38.751432
+     ],
+     [
+      -75.151053,
+      38.763268
+     ],
+     [
+      -75.15051,
+      38.763747
+     ],
+     [
+      -75.150158,
+      38.763597
+     ],
+     [
+      -75.145037,
+      38.765237
+     ],
+     [
+      -75.143232,
+      38.766043
+     ],
+     [
+      -75.142172,
+      38.76683
+     ],
+     [
+      -75.141872,
+      38.766825
+     ],
+     [
+      -75.141424,
+      38.767299
+     ],
+     [
+      -75.140613,
+      38.767628
+     ],
+     [
+      -75.139165,
+      38.767695
+     ],
+     [
+      -75.138269,
+      38.767394
+     ],
+     [
+      -75.137947,
+      38.767085
+     ],
+     [
+      -75.119968,
+      38.744032
+     ],
+     [
+      -75.097979,
+      38.716365
+     ],
+     [
+      -75.096562,
+      38.715341
+     ],
+     [
+      -75.095767,
+      38.714985
+     ],
+     [
+      -75.095009,
+      38.714898
+     ],
+     [
+      -75.092397,
+      38.714932
+     ],
+     [
+      -75.085748,
+      38.715639
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pennsylvania Railroad",
+    "line": "Pennsylvania Railroad: Cambridge Branch",
+    "id": "prr-cambridge-branch",
+    "color": "#7B241C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE - no timetable speed was read for this line; a typical figure for a PRR branch local of the period (Rule 3).",
+    "geometry_source": "OpenStreetMap (Overpass, maps.mail.ru mirror) ways tagged old_railway_operator=PRR and rail tiles, plus OpenHistoricalMap railway ways, routed by opstrace.py with town waypoints (Nominatim, types checked; bad ones hand-pinned); Douglas-Peucker 8 m, reversals trimmed. Fetched 2026-10-24.",
+    "geometry_quality": "Traced by opstrace from OSM + OHM (2026-10-24): 32.6 mi on OSM ways tagged old_railway_operator=PRR. No straight-line leg. Traced length 32.6 mi vs documented 32.8 mi (32.8 mi, FOWLER-MD table 10). Waypoints are town points, the farthest 0.9 km from the line (Cambridge). OSM 'Seaford Line' track (old_railway_operator=PRR) Seaford - Cambridge.",
+    "traced_mi": 32.6,
+    "documented_mi": 32.8,
+    "research_block": 33,
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1949,
+      "headway_min": 480,
+      "note": "Cambridge Branch (ex Dorchester & Delaware / Cambridge & Seaford): Seaford - Oak Grove - Federalsburg - Williamsburg - Hurlock - East New Market - Linkwood - Cambridge. Full service from 8 Nov 1869; PW&B agent from 1883; merged into the Delaware RR 1899; the pre-1902 years belong to the PW&B layer. PB&W Delaware Division 1902, PRR lease 1918. Last run 23 Apr 1949 (PRRTHS starred '*Seaford-Cambridge - 4/23/1949'). OG1952 Table 85 'Seaford-Cambridge' printed 'Freight Service only'. Freight under Penn Central, Conrail and the Maryland & Delaware RR is NOT drawn. headway_min is an ESTIMATE, not read from a timetable; avg_speed_kmh an estimate.",
+      "sources": [
+       "Segment-level: END year - PRRTHS 'DELMARVA LINES', starred '*Seaford-Cambridge - 4/23/1949'; OG1952 Table 85. START year NOT SOURCED AT SEGMENT LEVEL: 1902 is the date the PB&W was formed (1 Nov 1902), not a dated timetable; the line carried passengers before 1902 under a predecessor (Fowler's station letters reach only 1875/1893), and continuity from 1902 to the last run is inferred, not proven year by year.",
+       "http://www.prrths.com/newprr_files/Hagley/PRR%20PASS%20Jun%2005.pdf",
+       "research/sources/official_guide_1952.txt (Official Guide, Feb 1952; schedules of 30 Sep 1951) Table 85",
+       "branchline.uk SL 216 'Delaware & Maryland Railroads' (Fowler, 25.04.23) table 10",
+       "https://en.wikipedia.org/wiki/Dorchester_and_Delaware_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.615168,
+      38.640162
+     ],
+     [
+      -75.614729,
+      38.639234
+     ],
+     [
+      -75.614602,
+      38.638575
+     ],
+     [
+      -75.614803,
+      38.638007
+     ],
+     [
+      -75.615472,
+      38.637324
+     ],
+     [
+      -75.622645,
+      38.634302
+     ],
+     [
+      -75.624285,
+      38.634028
+     ],
+     [
+      -75.625777,
+      38.634167
+     ],
+     [
+      -75.70321,
+      38.659827
+     ],
+     [
+      -75.706456,
+      38.661195
+     ],
+     [
+      -75.7614,
+      38.691063
+     ],
+     [
+      -75.762419,
+      38.691498
+     ],
+     [
+      -75.763653,
+      38.691803
+     ],
+     [
+      -75.76512,
+      38.691914
+     ],
+     [
+      -75.7665,
+      38.691788
+     ],
+     [
+      -75.787802,
+      38.685731
+     ],
+     [
+      -75.790631,
+      38.684601
+     ],
+     [
+      -75.792819,
+      38.6834
+     ],
+     [
+      -75.894529,
+      38.612201
+     ],
+     [
+      -75.920398,
+      38.594636
+     ],
+     [
+      -75.922357,
+      38.593153
+     ],
+     [
+      -75.923713,
+      38.591857
+     ],
+     [
+      -75.924995,
+      38.590298
+     ],
+     [
+      -75.926089,
+      38.588537
+     ],
+     [
+      -75.926803,
+      38.586948
+     ],
+     [
+      -75.938691,
+      38.545644
+     ],
+     [
+      -75.939356,
+      38.544375
+     ],
+     [
+      -75.940403,
+      38.543083
+     ],
+     [
+      -75.942026,
+      38.541798
+     ],
+     [
+      -75.943422,
+      38.541066
+     ],
+     [
+      -75.996816,
+      38.521619
+     ],
+     [
+      -75.998185,
+      38.521265
+     ],
+     [
+      -75.999922,
+      38.521047
+     ],
+     [
+      -76.001552,
+      38.521057
+     ],
+     [
+      -76.002897,
+      38.521223
+     ],
+     [
+      -76.004738,
+      38.521704
+     ],
+     [
+      -76.006254,
+      38.522359
+     ],
+     [
+      -76.062561,
+      38.553286
+     ],
+     [
+      -76.06402,
+      38.554394
+     ],
+     [
+      -76.06539,
+      38.556031
+     ],
+     [
+      -76.069463,
+      38.564633
+     ],
+     [
+      -76.070165,
+      38.564714
+     ]
+    ]
+   }
+  }
+ ]
+}
