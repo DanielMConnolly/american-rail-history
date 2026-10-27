@@ -1,0 +1,2419 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Portsmouth - Weldon corridor of the Portsmouth and Roanoke Rail Road (1834-1844), the Seaboard and Roanoke Railroad (1846-1900), the Seaboard Air Line (1900-1967, Portsmouth Subdivision) and the Seaboard Coast Line (1967-1968), plus the S&R/SAL Boykins - Lewiston branch (Roanoke and Tar River RR) and the short-lived Pendleton - Murfreesboro branch. Drawn from research/branches/seaboard_and_roanoke_railroad.txt in the site repo (DanielMConnolly/historical-trains), researched 2026-10-27. Only the report's drawable spans are drawn. Before this layer the map drew no part of this railroad. Features are split per span x operator x geometry piece (Rule 4): pieces sharing an operator share one colour and a label 'Company: Portsmouth – Weldon (piece)'. Gaps deliberately left: 1845 (whole line; operation mentioned undated), 1847-1850 (VA section unproven; NC section torn up 1845-1850), 1862-1865 (Civil War: military trains only), Garysburg - Weldon after 1967 (SCL bridge cut).",
+  "sources": [
+   "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_portsmouth_roanoke.html (carolana.com, Portsmouth & Roanoke Railroad)",
+   "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+   "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+   "https://virginiaplaces.org/rail/roanoketar.html (virginiaplaces.org, Roanoke & Tar River Railroad)",
+   "https://en.wikipedia.org/wiki/Roanoke_and_Tar_River_Railroad",
+   "https://en.wikipedia.org/wiki/Seaboard_and_Roanoke_Railroad",
+   "https://en.wikipedia.org/wiki/Portsmouth_Subdivision",
+   "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_S_and_R_2-1-61_P.htm (S&R annual report, 1 Feb 1861: passenger earnings $94,505.17 for the year to 31 Jan 1861)",
+   "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_P_1-1-66_P.htm (Petersburg RR annual report, 1 Jan 1866: S&R rebuilding the Weldon bridge, expected April)",
+   "https://csa-railroads.com/Seaboard_and_Roanoke.htm",
+   "https://www.loc.gov/resource/sn85025697/1865-11-27/ed-1/?sp=3 (Norfolk Day Book 27 Nov 1865: passengers leave Portsmouth Tue/Thu/Sat by the S&R for the steamer Ella at Franklin)",
+   "https://www.loc.gov/resource/sn85025697/1865-12-30/ed-1/?sp=3 (Norfolk Day Book 30 Dec 1865: 'Every evening, the train on the Seaboard and Roanoke Railroad brings ...')",
+   "https://www.loc.gov/resource/sn85025697/1866-03-19/ed-1/?sp=2 (Norfolk Day Book 19 Mar 1866: S&R passenger trains Portsmouth - Weldon daily except Sunday from Mon 19 Feb 1866)",
+   "https://www.loc.gov/resource/sn85025697/1866-04-12/ed-1/?sp=2 (Norfolk Day Book 12 Apr 1866: schedule from 15 Apr 1866, connecting daily at Weldon)",
+   "https://www.loc.gov/resource/sn85025715/1896-05-31/ed-1/?sp=7 (Norfolk Virginian 31 May 1896, SAL ad: No. 41 leaves Portsmouth daily ... for Pendleton, Murfreesboro, Lewiston)",
+   "https://www.loc.gov/resource/sn86071779/1899-01-26/ed-1/?sp=8 (Virginian-Pilot 26 Jan 1899, SAL timetable in effect 11 Dec 1898: Portsmouth / Suffolk / Lewiston N.C. / Weldon)",
+   "https://www.loc.gov/resource/sn83045830/1906-03-10/ed-1/?sp=5 (Daily Press 10 Mar 1906, SAL schedule in effect 2 Jul 1905: Lv Portsmouth 9:25 am ... Ar Lewiston N.C. 1:00 pm, Lv Weldon 11:55 am)",
+   "https://www.loc.gov/resource/sn85034438/1891-02-10/ed-1/?sp=2 (Richmond Times 10 Feb 1891: Murfreesboro - Pendleton under construction; R&TR 'runs from Boykin, Va., to Lewiston')",
+   "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)",
+   "Official Guide of the Railways, Feb 1952 (SAL schedules eff. 13 Dec 1951): Portsmouth Sub-Division table with times at Boykins, Branchville, Margarettsville, Seaboard, Gumberry, Garysburg, Weldon; through coach Portsmouth - Norlina on Nos. 7/8 - https://archive.org/details/the-official-guide-of-the-railways-images",
+   "https://www.american-rails.com/tidewater.html (Tidewater Nos. 17/18 named 1 Nov 1953; last run Feb 1968)",
+   "https://en.wikipedia.org/wiki/Seaboard_Coastline_Building (Portsmouth station 1894-95; last Silver Comet into the station 1968)"
+  ],
+  "not_yet_sourced": [
+   "[OPEN] Portsmouth and Roanoke, all three pieces: end 1844 is the last confirmed year (Jan 1844); 1845-46 operation mentioned by carolana is undated and its operator unclear.",
+   "[ANCHOR] Seaboard and Roanoke 1846 Portsmouth - Boykins: the only proven year before 1851; 1847-1850 unproven.",
+   "[OPEN] Seaboard and Roanoke 1851-1861: end is the last confirmed year (annual report to 31 Jan 1861); whether civilian trains ran in early 1862 is unknown.",
+   "[OPEN] Seaboard Air Line Boykins - Lewiston 1900-1905: confirmed only to July 1905; freight-only by 1951; passenger end somewhere 1906-1950. Its passenger start is confirmed only from 1896 (1888 likely).",
+   "Pendleton - Murfreesboro 1892-1895: whether passengers rode, and who ran trains, not established.",
+   "Postwar restart month (Nov 1865 is a floor) and whether Feb-Apr 1866 Weldon trains crossed the river or met a ferry.",
+   "Date of SCL's Roanoke River bridge cut at Weldon, and how the 1967-68 Tidewater reached Weldon.",
+   "S&R's legal birth date given three ways (4 Sep 1846; 5 Jul 1847; the Feb 1846 act's 'Seaboard and Portsmouth Railroad'); the label is unaffected.",
+   "P&R completion into Weldon: June 1837 (carolana) vs 'by late 1836' (marker text); June 1837 used.",
+   "Exact SAL consolidation month in 1900 not verified.",
+   "headway_min and avg_speed_kmh throughout are estimates from a handful of advertisements, except the 1834 running time and the one 1951 SAL timing."
+  ],
+  "branches_deliberately_omitted": [
+   "Weldon - Roanoke Rapids - Norlina: Raleigh & Gaston property, not S&R (separate report).",
+   "Georgia, Carolina & Northern: separate SAL-system company, out of scope.",
+   "Franklin & Carolina RR: freight only, not S&R.",
+   "Union military operation Portsmouth - Suffolk - Blackwater 1862-1865: military supply trains, not public passenger service.",
+   "Boykins - Lewiston after 1905 and all post-passenger freight years (NC&V, CSX)."
+  ],
+  "rule4_note": "Seaboard Air Line colour #BE3455 and Seaboard Coast Line colour #2D3142 pulled programmatically from southwest_florida_railroads.geojson with the same company strings. New colours #C17817 (Portsmouth and Roanoke) and #3E7C17 (Seaboard and Roanoke) checked unused by any company in data/. Known pre-existing mismatch NOT fixed here: SAL features in wilmington_network.geojson (#2f5c4a) and louisville_and_nashville_gulf_wind.geojson (#7A4419)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Portsmouth and Roanoke: Portsmouth – Weldon (Portsmouth – Suffolk)",
+    "id": "portsmouth-roanoke-portsmouth-suffolk",
+    "company": "Portsmouth and Roanoke Rail Road",
+    "color": "#C17817",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 21,
+    "speed_source": "Segment-level for 1834 only: 1 h 20 min for 17 mi Portsmouth - Suffolk (~13 mph, ~21 km/h) per carolana.com; applied to the whole road as an ESTIMATE.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Portsmouth - Suffolk 17.6 mi against the documented 17 mi (carolana) / SAL MP 17.5. Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped.",
+    "segments": [
+     {
+      "start": 1834,
+      "end": 1844,
+      "headway_min": 360,
+      "note": "Portsmouth and Roanoke first section. Horse-drawn cars from July 1834 (not drawn as a separate era, Rule 5); the first locomotive, the John Barnett, arrived 4 Sep 1834 and 'began making two roundtrips a day' (carolana) - steam falls in the same calendar year, so the drawn start stays 1834. The Portsmouth depot (High & Chestnut Sts) was extended to the Elizabeth River wharf in 1838 (virginiaplaces); the geometry ends at the waterfront throughout. Aug 11 1837 head-on collision near Suffolk involved a 'morning passenger train' (Wikipedia). Headway 360 from the two round trips a day of 1834 (carolana); later frequency not sourced. End 1844: the company was sold at foreclosure 7 Oct 1843, but trains were still running in Jan 1844 (carolana: on the night of 6 Jan 1844 Rives, agent of the rival Petersburg RR, tore up track below Margarettsville; 'trains again operated temporarily'). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. Carolana also says the road was 'soon ... back in operations' after spring 1845, undated and without an operator - not drawn.",
+      "sources": [
+       "Segment-level: start 1834 (steam from 4 Sep 1834), two round trips a day and the Jan 1844 last confirmed operation from carolana (Portsmouth & Roanoke); 1838 wharf extension from virginiaplaces; 1837 passenger train from Wikipedia. Headway is the 1834 figure only; avg_speed_kmh from the 1834 running time.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_portsmouth_roanoke.html (carolana.com, Portsmouth & Roanoke Railroad)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+       "https://en.wikipedia.org/wiki/Seaboard_and_Roanoke_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.2963,
+      36.8357
+     ],
+     [
+      -76.298892,
+      36.830778
+     ],
+     [
+      -76.302689,
+      36.829444
+     ],
+     [
+      -76.303816,
+      36.829252
+     ],
+     [
+      -76.307547,
+      36.829164
+     ],
+     [
+      -76.309023,
+      36.829262
+     ],
+     [
+      -76.314587,
+      36.830529
+     ],
+     [
+      -76.315673,
+      36.83065
+     ],
+     [
+      -76.320623,
+      36.830461
+     ],
+     [
+      -76.321981,
+      36.830149
+     ],
+     [
+      -76.327591,
+      36.828122
+     ],
+     [
+      -76.4105,
+      36.786921
+     ],
+     [
+      -76.414019,
+      36.785431
+     ],
+     [
+      -76.521607,
+      36.75155
+     ],
+     [
+      -76.573956,
+      36.734912
+     ],
+     [
+      -76.577317,
+      36.73396
+     ],
+     [
+      -76.580034,
+      36.73353
+     ],
+     [
+      -76.582072,
+      36.733429
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Portsmouth and Roanoke: Portsmouth – Weldon (Suffolk – Garysburg)",
+    "id": "portsmouth-roanoke-suffolk-garysburg",
+    "company": "Portsmouth and Roanoke Rail Road",
+    "color": "#C17817",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 21,
+    "speed_source": "Segment-level for 1834 only: 1 h 20 min for 17 mi Portsmouth - Suffolk (~13 mph, ~21 km/h) per carolana.com; applied to the whole road as an ESTIMATE.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Suffolk - Garysburg (Blakely's Depot) 58.8 mi against ~45 mi Suffolk - Margarettsville (SAL MP 17.5 -> 63.2) plus Margarettsville - Garysburg (Garysburg milepost not given in the sources; the trace puts it at 76.5 mi from Portsmouth). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped.",
+    "segments": [
+     {
+      "start": 1836,
+      "end": 1844,
+      "headway_min": 1440,
+      "note": "Portsmouth and Roanoke staged extension Suffolk - Blackwater (Franklin) - Nottoway - Meherrin - Margarettsville - Blakely's Depot (later Garysburg, where the P&R crossed the Petersburg RR on an overhead bridge). The Nottoway was 'spanned' by July 1835 and the Meherrin bridged 1835, but those dates say the rivers were bridged, not that trains ran; the first confirmed passenger service is April 1836 to Margarettsville and Aug 1836 to Blakely (carolana), so the whole piece is drawn from 1836. 'Trains left each terminal in the morning, arriving at the opposite end in the afternoon' (carolana) = one round trip a day, headway 1440 (estimate). Dec 12 1837 derailment near the Nottoway killed two passengers (Wikipedia). The NC miles (state line - Weldon) were torn up after Rives won title to them in spring 1845 and not rebuilt until 1851. End 1844: the company was sold at foreclosure 7 Oct 1843, but trains were still running in Jan 1844 (carolana: on the night of 6 Jan 1844 Rives, agent of the rival Petersburg RR, tore up track below Margarettsville; 'trains again operated temporarily'). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. Carolana also says the road was 'soon ... back in operations' after spring 1845, undated and without an operator - not drawn.",
+      "sources": [
+       "Segment-level: start 1836 from carolana (service to Margarettsville April 1836, to Blakely Aug 1836); end = last confirmed operation Jan 1844 (carolana). Headway inferred from carolana's description of one train each way a day; headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_portsmouth_roanoke.html (carolana.com, Portsmouth & Roanoke Railroad)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+       "https://en.wikipedia.org/wiki/Seaboard_and_Roanoke_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.582072,
+      36.733429
+     ],
+     [
+      -76.592693,
+      36.733757
+     ],
+     [
+      -76.596725,
+      36.733727
+     ],
+     [
+      -76.602213,
+      36.733143
+     ],
+     [
+      -76.608161,
+      36.731849
+     ],
+     [
+      -76.611014,
+      36.731506
+     ],
+     [
+      -76.677436,
+      36.7273
+     ],
+     [
+      -76.790287,
+      36.719707
+     ],
+     [
+      -76.796704,
+      36.719099
+     ],
+     [
+      -76.799744,
+      36.718677
+     ],
+     [
+      -76.808322,
+      36.717141
+     ],
+     [
+      -76.812515,
+      36.716204
+     ],
+     [
+      -76.818832,
+      36.714509
+     ],
+     [
+      -76.885227,
+      36.695524
+     ],
+     [
+      -76.891096,
+      36.693676
+     ],
+     [
+      -76.894631,
+      36.69235
+     ],
+     [
+      -76.899167,
+      36.69039
+     ],
+     [
+      -76.903846,
+      36.688017
+     ],
+     [
+      -76.907789,
+      36.685744
+     ],
+     [
+      -76.921619,
+      36.676635
+     ],
+     [
+      -76.924992,
+      36.674792
+     ],
+     [
+      -76.927393,
+      36.673711
+     ],
+     [
+      -76.947627,
+      36.666635
+     ],
+     [
+      -76.984951,
+      36.653963
+     ],
+     [
+      -77.019189,
+      36.643765
+     ],
+     [
+      -77.022568,
+      36.643009
+     ],
+     [
+      -77.025413,
+      36.642712
+     ],
+     [
+      -77.054294,
+      36.641292
+     ],
+     [
+      -77.057688,
+      36.640874
+     ],
+     [
+      -77.119732,
+      36.626385
+     ],
+     [
+      -77.124713,
+      36.625024
+     ],
+     [
+      -77.126626,
+      36.624346
+     ],
+     [
+      -77.129147,
+      36.623266
+     ],
+     [
+      -77.131647,
+      36.622015
+     ],
+     [
+      -77.166435,
+      36.601968
+     ],
+     [
+      -77.1693,
+      36.600681
+     ],
+     [
+      -77.181657,
+      36.596418
+     ],
+     [
+      -77.183446,
+      36.59564
+     ],
+     [
+      -77.184724,
+      36.594954
+     ],
+     [
+      -77.197347,
+      36.586119
+     ],
+     [
+      -77.200459,
+      36.584379
+     ],
+     [
+      -77.203711,
+      36.583218
+     ],
+     [
+      -77.237564,
+      36.574981
+     ],
+     [
+      -77.240426,
+      36.57418
+     ],
+     [
+      -77.256391,
+      36.567067
+     ],
+     [
+      -77.304819,
+      36.545043
+     ],
+     [
+      -77.307432,
+      36.54396
+     ],
+     [
+      -77.310069,
+      36.5431
+     ],
+     [
+      -77.340581,
+      36.534435
+     ],
+     [
+      -77.344496,
+      36.533095
+     ],
+     [
+      -77.349479,
+      36.531179
+     ],
+     [
+      -77.368729,
+      36.52527
+     ],
+     [
+      -77.371865,
+      36.523794
+     ],
+     [
+      -77.374139,
+      36.52239
+     ],
+     [
+      -77.376255,
+      36.520636
+     ],
+     [
+      -77.377519,
+      36.519394
+     ],
+     [
+      -77.380352,
+      36.516199
+     ],
+     [
+      -77.381518,
+      36.515128
+     ],
+     [
+      -77.383012,
+      36.513991
+     ],
+     [
+      -77.384485,
+      36.513076
+     ],
+     [
+      -77.386584,
+      36.512004
+     ],
+     [
+      -77.398457,
+      36.507244
+     ],
+     [
+      -77.404852,
+      36.505125
+     ],
+     [
+      -77.416098,
+      36.499914
+     ],
+     [
+      -77.432517,
+      36.495256
+     ],
+     [
+      -77.43502,
+      36.494319
+     ],
+     [
+      -77.436723,
+      36.493521
+     ],
+     [
+      -77.447691,
+      36.486956
+     ],
+     [
+      -77.449129,
+      36.486212
+     ],
+     [
+      -77.463243,
+      36.480231
+     ],
+     [
+      -77.478875,
+      36.473781
+     ],
+     [
+      -77.526272,
+      36.460944
+     ],
+     [
+      -77.528889,
+      36.46019
+     ],
+     [
+      -77.532201,
+      36.458973
+     ],
+     [
+      -77.543183,
+      36.453768
+     ],
+     [
+      -77.560524,
+      36.446019
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Portsmouth and Roanoke: Portsmouth – Weldon (Garysburg – Weldon)",
+    "id": "portsmouth-roanoke-garysburg-weldon",
+    "company": "Portsmouth and Roanoke Rail Road",
+    "color": "#C17817",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 21,
+    "speed_source": "Segment-level for 1834 only: 1 h 20 min for 17 mi Portsmouth - Suffolk (~13 mph, ~21 km/h) per carolana.com; applied to the whole road as an ESTIMATE.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Garysburg - Weldon 2.2 mi against no documented figure for this piece (the sources give no Garysburg milepost; traced Garysburg is 76.5 mi from Portsmouth against Weldon MP 78.8, i.e. ~2.3 mi). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped. This piece includes the Roanoke River crossing, drawn on the later (SAL) bridge site from OSM's abandoned Portsmouth Subdivision ways; the 1837 bridge's exact site is not established.",
+    "segments": [
+     {
+      "start": 1837,
+      "end": 1844,
+      "headway_min": 1440,
+      "note": "Portsmouth and Roanoke completion into Weldon over its Roanoke River bridge, June 1837 (carolana; virginiaplaces says '1837'). A historic-marker text says the full line was complete 'by late 1836' - source conflict recorded; carolana's June 1837 is the more specific and is used. Headway 1440 as on the rest of the line (estimate). End 1844: the company was sold at foreclosure 7 Oct 1843, but trains were still running in Jan 1844 (carolana: on the night of 6 Jan 1844 Rives, agent of the rival Petersburg RR, tore up track below Margarettsville; 'trains again operated temporarily'). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. Carolana also says the road was 'soon ... back in operations' after spring 1845, undated and without an operator - not drawn. After 1845 passengers between Margarettsville and Weldon used stage and wagon until the 1851 rebuild (virginiaplaces).",
+      "sources": [
+       "Segment-level: start 1837 from carolana (Roanoke bridge into Weldon June 1837; conflict with 'by late 1836' marker text recorded); end = last confirmed operation Jan 1844 (carolana). headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_portsmouth_roanoke.html (carolana.com, Portsmouth & Roanoke Railroad)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.560524,
+      36.446019
+     ],
+     [
+      -77.594719,
+      36.429032
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard and Roanoke: Portsmouth – Weldon (Portsmouth – Franklin)",
+    "id": "seaboard-roanoke-portsmouth-franklin",
+    "company": "Seaboard and Roanoke Railroad",
+    "color": "#3E7C17",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not sourced: ~30 km/h assumed for a 19th-century single-track road with a daily local.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Portsmouth - Franklin 37.2 mi against no documented Franklin milepost in the sources (Suffolk MP 17.5 and Boykins MP 54.1 bracket it). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped.",
+    "segments": [
+     {
+      "start": 1846,
+      "end": 1846,
+      "headway_min": 2880,
+      "note": "[ANCHOR] Seaboard and Roanoke restart after the Sept 1846 auction to the Virginia Board of Public Works (leased to the town of Portsmouth 1846-47, then the S&R company - one train operator under the S&R name, not split): 'Trains departed for Boykins on Monday, Wednesday, and Friday, leaving Portsmouth at 8 a.m. The return trip was scheduled on alternate week days' (carolana). 1846 is the only proven year before 1851: service certainly or probably ran wider both ways, but 1847-1850 is unproven (carolana's 'in 1851 ... the railroad again opened for business' may mean a shutdown during relaying). Drawn Portsmouth - Boykins only. Headway 2880 from tri-weekly service (estimate).",
+      "sources": [
+       "Segment-level: 1846 tri-weekly Portsmouth - Boykins service from carolana (Seaboard & Roanoke). Headway inferred from 'Monday, Wednesday, and Friday'; headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)"
+      ]
+     },
+     {
+      "start": 1851,
+      "end": 1861,
+      "headway_min": 720,
+      "note": "Seaboard and Roanoke antebellum service Portsmouth - Weldon after the 17 NC miles were rebuilt (via the NC-chartered Roanoke Railroad, absorbed 22 Feb 1849): 'In 1851, new rolling stock was acquired, and the railroad again opened for business' (carolana); 'full operations resumed' (virginiaplaces). Month not found. Through route Norfolk/Portsmouth (Bay Line steamers) - Weldon - Wilmington & Weldon / Raleigh & Gaston. Mid-span check: Fowler lists Blackwater (Franklin) in the 1858 Dinsmore guide. The S&R annual report of 1 Feb 1861 shows passenger earnings of $94,505 for the year to 31 Jan 1861, so trains ran into Jan 1861; traffic 'fell to almost nothing' under the blockade and Portsmouth was evacuated by the Confederates in May 1862 (csa-railroads). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. Civil War 1862-1865: Union military supply trains Portsmouth - Suffolk (- Blackwater 1863) and a Confederate rump near Weldon were not public passenger service and are not drawn. Headway 720 (estimate, not sourced).",
+      "sources": [
+       "Segment-level: start 1851 from carolana and virginiaplaces (year only); end 1861 = last confirmed year from the S&R annual report of 1 Feb 1861 (passenger earnings); 1858 mid-span positive from Fowler's 1858 Dinsmore letter at Blackwater. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_S_and_R_2-1-61_P.htm (S&R annual report, 1 Feb 1861: passenger earnings $94,505.17 for the year to 31 Jan 1861)",
+       "https://csa-railroads.com/Seaboard_and_Roanoke.htm",
+       "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)"
+      ]
+     },
+     {
+      "start": 1865,
+      "end": 1900,
+      "headway_min": 1440,
+      "note": "Seaboard and Roanoke postwar service, Portsmouth - Franklin from 1865: Norfolk Day Book 27 Nov 1865 advertises passengers leaving Portsmouth Tue/Thu/Sat for the steamer Ella at Franklin, and 30 Dec 1865 'every evening, the train on the Seaboard and Roanoke Railroad brings ...'. Nov 1865 is a floor on the restart, not the restart itself. Through to Weldon from Feb 1866 (see the Franklin - Weldon piece). Mid-span check: Portsmouth, Suffolk, Carrsville and Franklin all carry Fowler's 1875 Official Guide letter. Advertised as the 'Seaboard Air Line' system from 1881 (S&R + Raleigh & Gaston + Raleigh & Augusta Air Line) but the S&R company ran its own trains - a marketing name, not an operator change, so no split; the 1896 and 1898 ads are headed Seaboard Air Line. Portsmouth passenger station (later the Seaboard Coastline Building) built 1894-95. End 1900: consolidated into the Seaboard Air Line Railway (carolana, virginiaplaces); service continued under SAL. Headway 1440 from the one daily-except-Sunday train of 1866; by 1896 at least three trains used Portsmouth (720 or better) - both estimates.",
+      "sources": [
+       "Segment-level: start 1865 from the Norfolk Day Book ads of 27 Nov and 30 Dec 1865; 1875 mid-span positive from Fowler (1875 Official Guide); end 1900 at the SAL consolidation (carolana, virginiaplaces). headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn85025697/1865-11-27/ed-1/?sp=3 (Norfolk Day Book 27 Nov 1865: passengers leave Portsmouth Tue/Thu/Sat by the S&R for the steamer Ella at Franklin)",
+       "https://www.loc.gov/resource/sn85025697/1865-12-30/ed-1/?sp=3 (Norfolk Day Book 30 Dec 1865: 'Every evening, the train on the Seaboard and Roanoke Railroad brings ...')",
+       "https://www.loc.gov/resource/sn85025697/1866-03-19/ed-1/?sp=2 (Norfolk Day Book 19 Mar 1866: S&R passenger trains Portsmouth - Weldon daily except Sunday from Mon 19 Feb 1866)",
+       "https://www.loc.gov/resource/sn85025715/1896-05-31/ed-1/?sp=7 (Norfolk Virginian 31 May 1896, SAL ad: No. 41 leaves Portsmouth daily ... for Pendleton, Murfreesboro, Lewiston)",
+       "https://www.loc.gov/resource/sn86071779/1899-01-26/ed-1/?sp=8 (Virginian-Pilot 26 Jan 1899, SAL timetable in effect 11 Dec 1898: Portsmouth / Suffolk / Lewiston N.C. / Weldon)",
+       "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)",
+       "https://en.wikipedia.org/wiki/Seaboard_Coastline_Building (Portsmouth station 1894-95; last Silver Comet into the station 1968)",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.2963,
+      36.8357
+     ],
+     [
+      -76.298892,
+      36.830778
+     ],
+     [
+      -76.302689,
+      36.829444
+     ],
+     [
+      -76.303816,
+      36.829252
+     ],
+     [
+      -76.307547,
+      36.829164
+     ],
+     [
+      -76.309023,
+      36.829262
+     ],
+     [
+      -76.314587,
+      36.830529
+     ],
+     [
+      -76.315673,
+      36.83065
+     ],
+     [
+      -76.320623,
+      36.830461
+     ],
+     [
+      -76.321981,
+      36.830149
+     ],
+     [
+      -76.327591,
+      36.828122
+     ],
+     [
+      -76.4105,
+      36.786921
+     ],
+     [
+      -76.414019,
+      36.785431
+     ],
+     [
+      -76.521607,
+      36.75155
+     ],
+     [
+      -76.573956,
+      36.734912
+     ],
+     [
+      -76.577317,
+      36.73396
+     ],
+     [
+      -76.580034,
+      36.73353
+     ],
+     [
+      -76.582072,
+      36.733429
+     ],
+     [
+      -76.592693,
+      36.733757
+     ],
+     [
+      -76.596725,
+      36.733727
+     ],
+     [
+      -76.602213,
+      36.733143
+     ],
+     [
+      -76.608161,
+      36.731849
+     ],
+     [
+      -76.611014,
+      36.731506
+     ],
+     [
+      -76.677436,
+      36.7273
+     ],
+     [
+      -76.790287,
+      36.719707
+     ],
+     [
+      -76.796704,
+      36.719099
+     ],
+     [
+      -76.799744,
+      36.718677
+     ],
+     [
+      -76.808322,
+      36.717141
+     ],
+     [
+      -76.812515,
+      36.716204
+     ],
+     [
+      -76.818832,
+      36.714509
+     ],
+     [
+      -76.885227,
+      36.695524
+     ],
+     [
+      -76.891096,
+      36.693676
+     ],
+     [
+      -76.894631,
+      36.69235
+     ],
+     [
+      -76.899167,
+      36.69039
+     ],
+     [
+      -76.903846,
+      36.688017
+     ],
+     [
+      -76.907789,
+      36.685744
+     ],
+     [
+      -76.921619,
+      36.676635
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard and Roanoke: Portsmouth – Weldon (Franklin – Boykins)",
+    "id": "seaboard-roanoke-franklin-boykins",
+    "company": "Seaboard and Roanoke Railroad",
+    "color": "#3E7C17",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not sourced: ~30 km/h assumed for a 19th-century single-track road with a daily local.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Franklin - Boykins 17.0 mi against no documented figure (Franklin milepost not in the sources; Boykins is SAL MP 54.1). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped.",
+    "segments": [
+     {
+      "start": 1846,
+      "end": 1846,
+      "headway_min": 2880,
+      "note": "[ANCHOR] Seaboard and Roanoke restart after the Sept 1846 auction to the Virginia Board of Public Works (leased to the town of Portsmouth 1846-47, then the S&R company - one train operator under the S&R name, not split): 'Trains departed for Boykins on Monday, Wednesday, and Friday, leaving Portsmouth at 8 a.m. The return trip was scheduled on alternate week days' (carolana). 1846 is the only proven year before 1851: service certainly or probably ran wider both ways, but 1847-1850 is unproven (carolana's 'in 1851 ... the railroad again opened for business' may mean a shutdown during relaying). Drawn Portsmouth - Boykins only. Headway 2880 from tri-weekly service (estimate).",
+      "sources": [
+       "Segment-level: 1846 tri-weekly Portsmouth - Boykins service from carolana (Seaboard & Roanoke). Headway inferred from 'Monday, Wednesday, and Friday'; headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)"
+      ]
+     },
+     {
+      "start": 1851,
+      "end": 1861,
+      "headway_min": 720,
+      "note": "Seaboard and Roanoke antebellum service Portsmouth - Weldon after the 17 NC miles were rebuilt (via the NC-chartered Roanoke Railroad, absorbed 22 Feb 1849): 'In 1851, new rolling stock was acquired, and the railroad again opened for business' (carolana); 'full operations resumed' (virginiaplaces). Month not found. Through route Norfolk/Portsmouth (Bay Line steamers) - Weldon - Wilmington & Weldon / Raleigh & Gaston. Mid-span check: Fowler lists Blackwater (Franklin) in the 1858 Dinsmore guide. The S&R annual report of 1 Feb 1861 shows passenger earnings of $94,505 for the year to 31 Jan 1861, so trains ran into Jan 1861; traffic 'fell to almost nothing' under the blockade and Portsmouth was evacuated by the Confederates in May 1862 (csa-railroads). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. Civil War 1862-1865: Union military supply trains Portsmouth - Suffolk (- Blackwater 1863) and a Confederate rump near Weldon were not public passenger service and are not drawn. Headway 720 (estimate, not sourced).",
+      "sources": [
+       "Segment-level: start 1851 from carolana and virginiaplaces (year only); end 1861 = last confirmed year from the S&R annual report of 1 Feb 1861 (passenger earnings); 1858 mid-span positive from Fowler's 1858 Dinsmore letter at Blackwater. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_S_and_R_2-1-61_P.htm (S&R annual report, 1 Feb 1861: passenger earnings $94,505.17 for the year to 31 Jan 1861)",
+       "https://csa-railroads.com/Seaboard_and_Roanoke.htm",
+       "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)"
+      ]
+     },
+     {
+      "start": 1866,
+      "end": 1900,
+      "headway_min": 1440,
+      "note": "Seaboard and Roanoke postwar service Franklin - Weldon from 1866: 'On and after MONDAY, February 19th, Passenger TRAINS leave the foot of High St., Portsmouth at 7 o'clock, A. M., DAILY, except Sundays ... Passenger trains will leave Weldon daily, except Sundays, at 11.46 A. M.' (Norfolk Day Book, ad dated 9 Feb 1866); new schedule from 15 Apr 1866 'connecting daily at Weldon'. The Weldon bridge was still being rebuilt in Jan 1866 (Petersburg RR report, expected April) - Feb-Apr 1866 'Weldon' trains probably met a ferry at the river; a drawing caveat, not a reason to move the year. 1875 flood washed out the Weldon bridge (virginiaplaces) - length of any interruption not found, not treated as a gap. Mid-span check: Newsom's and Boykin's carry Fowler's 1875 Official Guide letter. Advertised as the 'Seaboard Air Line' from 1881 (marketing, not an operator change). End 1900: consolidated into the Seaboard Air Line Railway; service continued under SAL. Headway 1440 from the 1866 ad (one train each way); 1890s likely 720 or better - estimates.",
+      "sources": [
+       "Segment-level: start 1866 from the Norfolk Day Book ads (service from 19 Feb 1866; schedule of 15 Apr 1866); Weldon bridge caveat from the Petersburg RR report of 1 Jan 1866; 1875 mid-span positive from Fowler; end 1900 at the SAL consolidation (carolana, virginiaplaces). headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn85025697/1866-03-19/ed-1/?sp=2 (Norfolk Day Book 19 Mar 1866: S&R passenger trains Portsmouth - Weldon daily except Sunday from Mon 19 Feb 1866)",
+       "https://www.loc.gov/resource/sn85025697/1866-04-12/ed-1/?sp=2 (Norfolk Day Book 12 Apr 1866: schedule from 15 Apr 1866, connecting daily at Weldon)",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_P_1-1-66_P.htm (Petersburg RR annual report, 1 Jan 1866: S&R rebuilding the Weldon bridge, expected April)",
+       "https://www.loc.gov/resource/sn85025715/1896-05-31/ed-1/?sp=7 (Norfolk Virginian 31 May 1896, SAL ad: No. 41 leaves Portsmouth daily ... for Pendleton, Murfreesboro, Lewiston)",
+       "https://www.loc.gov/resource/sn86071779/1899-01-26/ed-1/?sp=8 (Virginian-Pilot 26 Jan 1899, SAL timetable in effect 11 Dec 1898: Portsmouth / Suffolk / Lewiston N.C. / Weldon)",
+       "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.921619,
+      36.676635
+     ],
+     [
+      -76.924992,
+      36.674792
+     ],
+     [
+      -76.927393,
+      36.673711
+     ],
+     [
+      -76.947627,
+      36.666635
+     ],
+     [
+      -76.984951,
+      36.653963
+     ],
+     [
+      -77.019189,
+      36.643765
+     ],
+     [
+      -77.022568,
+      36.643009
+     ],
+     [
+      -77.025413,
+      36.642712
+     ],
+     [
+      -77.054294,
+      36.641292
+     ],
+     [
+      -77.057688,
+      36.640874
+     ],
+     [
+      -77.119732,
+      36.626385
+     ],
+     [
+      -77.124713,
+      36.625024
+     ],
+     [
+      -77.126626,
+      36.624346
+     ],
+     [
+      -77.129147,
+      36.623266
+     ],
+     [
+      -77.131647,
+      36.622015
+     ],
+     [
+      -77.166435,
+      36.601968
+     ],
+     [
+      -77.1693,
+      36.600681
+     ],
+     [
+      -77.181657,
+      36.596418
+     ],
+     [
+      -77.183446,
+      36.59564
+     ],
+     [
+      -77.184724,
+      36.594954
+     ],
+     [
+      -77.197347,
+      36.586119
+     ],
+     [
+      -77.200459,
+      36.584379
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard and Roanoke: Portsmouth – Weldon (Boykins – Weldon)",
+    "id": "seaboard-roanoke-boykins-weldon",
+    "company": "Seaboard and Roanoke Railroad",
+    "color": "#3E7C17",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not sourced: ~30 km/h assumed for a 19th-century single-track road with a daily local.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Boykins - Weldon 24.6 mi against the documented 24.7 mi (SAL MP 54.1 -> 78.8). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped. The Roanoke River crossing (Garysburg - Weldon) is drawn on the later bridge site from OSM's abandoned SAL Portsmouth Subdivision ways.",
+    "segments": [
+     {
+      "start": 1851,
+      "end": 1861,
+      "headway_min": 720,
+      "note": "Seaboard and Roanoke antebellum service Portsmouth - Weldon after the 17 NC miles were rebuilt (via the NC-chartered Roanoke Railroad, absorbed 22 Feb 1849): 'In 1851, new rolling stock was acquired, and the railroad again opened for business' (carolana); 'full operations resumed' (virginiaplaces). Month not found. Through route Norfolk/Portsmouth (Bay Line steamers) - Weldon - Wilmington & Weldon / Raleigh & Gaston. Mid-span check: Fowler lists Blackwater (Franklin) in the 1858 Dinsmore guide. The S&R annual report of 1 Feb 1861 shows passenger earnings of $94,505 for the year to 31 Jan 1861, so trains ran into Jan 1861; traffic 'fell to almost nothing' under the blockade and Portsmouth was evacuated by the Confederates in May 1862 (csa-railroads). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. Civil War 1862-1865: Union military supply trains Portsmouth - Suffolk (- Blackwater 1863) and a Confederate rump near Weldon were not public passenger service and are not drawn. Headway 720 (estimate, not sourced).",
+      "sources": [
+       "Segment-level: start 1851 from carolana and virginiaplaces (year only); end 1861 = last confirmed year from the S&R annual report of 1 Feb 1861 (passenger earnings); 1858 mid-span positive from Fowler's 1858 Dinsmore letter at Blackwater. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_S_and_R_2-1-61_P.htm (S&R annual report, 1 Feb 1861: passenger earnings $94,505.17 for the year to 31 Jan 1861)",
+       "https://csa-railroads.com/Seaboard_and_Roanoke.htm",
+       "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)"
+      ]
+     },
+     {
+      "start": 1866,
+      "end": 1900,
+      "headway_min": 1440,
+      "note": "Seaboard and Roanoke postwar service Franklin - Weldon from 1866: 'On and after MONDAY, February 19th, Passenger TRAINS leave the foot of High St., Portsmouth at 7 o'clock, A. M., DAILY, except Sundays ... Passenger trains will leave Weldon daily, except Sundays, at 11.46 A. M.' (Norfolk Day Book, ad dated 9 Feb 1866); new schedule from 15 Apr 1866 'connecting daily at Weldon'. The Weldon bridge was still being rebuilt in Jan 1866 (Petersburg RR report, expected April) - Feb-Apr 1866 'Weldon' trains probably met a ferry at the river; a drawing caveat, not a reason to move the year. 1875 flood washed out the Weldon bridge (virginiaplaces) - length of any interruption not found, not treated as a gap. Mid-span check: Newsom's and Boykin's carry Fowler's 1875 Official Guide letter. Advertised as the 'Seaboard Air Line' from 1881 (marketing, not an operator change). End 1900: consolidated into the Seaboard Air Line Railway; service continued under SAL. Headway 1440 from the 1866 ad (one train each way); 1890s likely 720 or better - estimates.",
+      "sources": [
+       "Segment-level: start 1866 from the Norfolk Day Book ads (service from 19 Feb 1866; schedule of 15 Apr 1866); Weldon bridge caveat from the Petersburg RR report of 1 Jan 1866; 1875 mid-span positive from Fowler; end 1900 at the SAL consolidation (carolana, virginiaplaces). headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn85025697/1866-03-19/ed-1/?sp=2 (Norfolk Day Book 19 Mar 1866: S&R passenger trains Portsmouth - Weldon daily except Sunday from Mon 19 Feb 1866)",
+       "https://www.loc.gov/resource/sn85025697/1866-04-12/ed-1/?sp=2 (Norfolk Day Book 12 Apr 1866: schedule from 15 Apr 1866, connecting daily at Weldon)",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_P_1-1-66_P.htm (Petersburg RR annual report, 1 Jan 1866: S&R rebuilding the Weldon bridge, expected April)",
+       "https://www.loc.gov/resource/sn85025715/1896-05-31/ed-1/?sp=7 (Norfolk Virginian 31 May 1896, SAL ad: No. 41 leaves Portsmouth daily ... for Pendleton, Murfreesboro, Lewiston)",
+       "https://www.loc.gov/resource/sn86071779/1899-01-26/ed-1/?sp=8 (Virginian-Pilot 26 Jan 1899, SAL timetable in effect 11 Dec 1898: Portsmouth / Suffolk / Lewiston N.C. / Weldon)",
+       "https://www.branchline.uk/jfpdf/virginiarrs.pdf (John Fowler, Virginia passenger stations, Table 38 Portsmouth - Branchville: 1858 Dinsmore at Blackwater/Franklin; 1875 Official Guide at Portsmouth, Suffolk, Carrsville, Franklin, Newsom's, Boykin's)",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.200459,
+      36.584379
+     ],
+     [
+      -77.203711,
+      36.583218
+     ],
+     [
+      -77.237564,
+      36.574981
+     ],
+     [
+      -77.240426,
+      36.57418
+     ],
+     [
+      -77.256391,
+      36.567067
+     ],
+     [
+      -77.304819,
+      36.545043
+     ],
+     [
+      -77.307432,
+      36.54396
+     ],
+     [
+      -77.310069,
+      36.5431
+     ],
+     [
+      -77.340581,
+      36.534435
+     ],
+     [
+      -77.344496,
+      36.533095
+     ],
+     [
+      -77.349479,
+      36.531179
+     ],
+     [
+      -77.368729,
+      36.52527
+     ],
+     [
+      -77.371865,
+      36.523794
+     ],
+     [
+      -77.374139,
+      36.52239
+     ],
+     [
+      -77.376255,
+      36.520636
+     ],
+     [
+      -77.377519,
+      36.519394
+     ],
+     [
+      -77.380352,
+      36.516199
+     ],
+     [
+      -77.381518,
+      36.515128
+     ],
+     [
+      -77.383012,
+      36.513991
+     ],
+     [
+      -77.384485,
+      36.513076
+     ],
+     [
+      -77.386584,
+      36.512004
+     ],
+     [
+      -77.398457,
+      36.507244
+     ],
+     [
+      -77.404852,
+      36.505125
+     ],
+     [
+      -77.416098,
+      36.499914
+     ],
+     [
+      -77.432517,
+      36.495256
+     ],
+     [
+      -77.43502,
+      36.494319
+     ],
+     [
+      -77.436723,
+      36.493521
+     ],
+     [
+      -77.447691,
+      36.486956
+     ],
+     [
+      -77.449129,
+      36.486212
+     ],
+     [
+      -77.463243,
+      36.480231
+     ],
+     [
+      -77.478875,
+      36.473781
+     ],
+     [
+      -77.526272,
+      36.460944
+     ],
+     [
+      -77.528889,
+      36.46019
+     ],
+     [
+      -77.532201,
+      36.458973
+     ],
+     [
+      -77.543183,
+      36.453768
+     ],
+     [
+      -77.560524,
+      36.446019
+     ],
+     [
+      -77.594719,
+      36.429032
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard Air Line: Portsmouth Subdivision",
+    "id": "sal-portsmouth-subdivision",
+    "company": "Seaboard Air Line Railway",
+    "color": "#BE3455",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 57,
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "speed_source": "Derived from one train in the Feb 1952 Official Guide (SAL, eff. 13 Dec 1951): Boykins 5:58 pm - Weldon 6:40 pm, 24.7 mi in 42 min including stops (~57 km/h). One timing applied to the whole 1900-1967 span - an ESTIMATE outside 1951.",
+    "geometry_quality": "Traced from OpenStreetMap: Portsmouth - Weldon 78.7 mi against the documented 78.8 mi (SAL MP Weldon SA 78.8). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped. The Garysburg - Weldon Roanoke River crossing is drawn from OSM's abandoned SAL Portsmouth Subdivision ways (bridge cut by SCL after 1967).",
+    "segments": [
+     {
+      "start": 1900,
+      "end": 1967,
+      "headway_min": 720,
+      "note": "Seaboard Air Line Portsmouth Subdivision, Portsmouth - Weldon (trains continued Weldon - Norlina over the ex-Raleigh & Gaston, not drawn here). Seaboard Air Line Railway from the 1900 consolidation (month not verified); in receivership 1930-1946 and reorganized as the Seaboard Air Line Railroad in 1946 - the same operator throughout, so no split. July 1905 schedule shows Nos. 41 and 31 from Portsmouth (Daily Press, 10 Mar 1906). Feb 1952 Official Guide (eff. 13 Dec 1951): Portsmouth Sub-Division stations with times (southbound PM train Boykins 5:58 ... Weldon 6:40; northbound AM Boykins 10:49), through coach Portsmouth - Norlina and Portsmouth - Tampa / Atlanta sleepers; Norfolk passengers reached Portsmouth by ferry. The local became the Tidewater, Nos. 17/18, on 1 Nov 1953 (american-rails.com). End 1967 = the 1 Jul 1967 merger into Seaboard Coast Line; service continued under SCL. Headway 720 from two trains each way read off fragmentary OCR in the 1951 Guide; one round trip (1440) in the Tidewater years - estimates.",
+      "sources": [
+       "Segment-level: start 1900 at the SAL consolidation (carolana, virginiaplaces); 1905 from the Daily Press SAL schedule; 1951 from the Feb 1952 Official Guide Portsmouth Sub-Division table; 1953 Tidewater from american-rails.com; end at the 1 Jul 1967 SCL merger. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn83045830/1906-03-10/ed-1/?sp=5 (Daily Press 10 Mar 1906, SAL schedule in effect 2 Jul 1905: Lv Portsmouth 9:25 am ... Ar Lewiston N.C. 1:00 pm, Lv Weldon 11:55 am)",
+       "Official Guide of the Railways, Feb 1952 (SAL schedules eff. 13 Dec 1951): Portsmouth Sub-Division table with times at Boykins, Branchville, Margarettsville, Seaboard, Gumberry, Garysburg, Weldon; through coach Portsmouth - Norlina on Nos. 7/8 - https://archive.org/details/the-official-guide-of-the-railways-images",
+       "https://www.american-rails.com/tidewater.html (Tidewater Nos. 17/18 named 1 Nov 1953; last run Feb 1968)",
+       "https://en.wikipedia.org/wiki/Seaboard_Coastline_Building (Portsmouth station 1894-95; last Silver Comet into the station 1968)",
+       "https://en.wikipedia.org/wiki/Portsmouth_Subdivision",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)",
+       "http://www.virginiaplaces.org/rail/portroa.html (virginiaplaces.org, Portsmouth and Roanoke / Seaboard and Roanoke)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.2963,
+      36.8357
+     ],
+     [
+      -76.298892,
+      36.830778
+     ],
+     [
+      -76.302689,
+      36.829444
+     ],
+     [
+      -76.303816,
+      36.829252
+     ],
+     [
+      -76.307547,
+      36.829164
+     ],
+     [
+      -76.309023,
+      36.829262
+     ],
+     [
+      -76.314587,
+      36.830529
+     ],
+     [
+      -76.315673,
+      36.83065
+     ],
+     [
+      -76.320623,
+      36.830461
+     ],
+     [
+      -76.321981,
+      36.830149
+     ],
+     [
+      -76.327591,
+      36.828122
+     ],
+     [
+      -76.4105,
+      36.786921
+     ],
+     [
+      -76.414019,
+      36.785431
+     ],
+     [
+      -76.521607,
+      36.75155
+     ],
+     [
+      -76.573956,
+      36.734912
+     ],
+     [
+      -76.577317,
+      36.73396
+     ],
+     [
+      -76.580034,
+      36.73353
+     ],
+     [
+      -76.582072,
+      36.733429
+     ],
+     [
+      -76.592693,
+      36.733757
+     ],
+     [
+      -76.596725,
+      36.733727
+     ],
+     [
+      -76.602213,
+      36.733143
+     ],
+     [
+      -76.608161,
+      36.731849
+     ],
+     [
+      -76.611014,
+      36.731506
+     ],
+     [
+      -76.677436,
+      36.7273
+     ],
+     [
+      -76.790287,
+      36.719707
+     ],
+     [
+      -76.796704,
+      36.719099
+     ],
+     [
+      -76.799744,
+      36.718677
+     ],
+     [
+      -76.808322,
+      36.717141
+     ],
+     [
+      -76.812515,
+      36.716204
+     ],
+     [
+      -76.818832,
+      36.714509
+     ],
+     [
+      -76.885227,
+      36.695524
+     ],
+     [
+      -76.891096,
+      36.693676
+     ],
+     [
+      -76.894631,
+      36.69235
+     ],
+     [
+      -76.899167,
+      36.69039
+     ],
+     [
+      -76.903846,
+      36.688017
+     ],
+     [
+      -76.907789,
+      36.685744
+     ],
+     [
+      -76.921619,
+      36.676635
+     ],
+     [
+      -76.924992,
+      36.674792
+     ],
+     [
+      -76.927393,
+      36.673711
+     ],
+     [
+      -76.947627,
+      36.666635
+     ],
+     [
+      -76.984951,
+      36.653963
+     ],
+     [
+      -77.019189,
+      36.643765
+     ],
+     [
+      -77.022568,
+      36.643009
+     ],
+     [
+      -77.025413,
+      36.642712
+     ],
+     [
+      -77.054294,
+      36.641292
+     ],
+     [
+      -77.057688,
+      36.640874
+     ],
+     [
+      -77.119732,
+      36.626385
+     ],
+     [
+      -77.124713,
+      36.625024
+     ],
+     [
+      -77.126626,
+      36.624346
+     ],
+     [
+      -77.129147,
+      36.623266
+     ],
+     [
+      -77.131647,
+      36.622015
+     ],
+     [
+      -77.166435,
+      36.601968
+     ],
+     [
+      -77.1693,
+      36.600681
+     ],
+     [
+      -77.181657,
+      36.596418
+     ],
+     [
+      -77.183446,
+      36.59564
+     ],
+     [
+      -77.184724,
+      36.594954
+     ],
+     [
+      -77.197347,
+      36.586119
+     ],
+     [
+      -77.200459,
+      36.584379
+     ],
+     [
+      -77.203711,
+      36.583218
+     ],
+     [
+      -77.237564,
+      36.574981
+     ],
+     [
+      -77.240426,
+      36.57418
+     ],
+     [
+      -77.256391,
+      36.567067
+     ],
+     [
+      -77.304819,
+      36.545043
+     ],
+     [
+      -77.307432,
+      36.54396
+     ],
+     [
+      -77.310069,
+      36.5431
+     ],
+     [
+      -77.340581,
+      36.534435
+     ],
+     [
+      -77.344496,
+      36.533095
+     ],
+     [
+      -77.349479,
+      36.531179
+     ],
+     [
+      -77.368729,
+      36.52527
+     ],
+     [
+      -77.371865,
+      36.523794
+     ],
+     [
+      -77.374139,
+      36.52239
+     ],
+     [
+      -77.376255,
+      36.520636
+     ],
+     [
+      -77.377519,
+      36.519394
+     ],
+     [
+      -77.380352,
+      36.516199
+     ],
+     [
+      -77.381518,
+      36.515128
+     ],
+     [
+      -77.383012,
+      36.513991
+     ],
+     [
+      -77.384485,
+      36.513076
+     ],
+     [
+      -77.386584,
+      36.512004
+     ],
+     [
+      -77.398457,
+      36.507244
+     ],
+     [
+      -77.404852,
+      36.505125
+     ],
+     [
+      -77.416098,
+      36.499914
+     ],
+     [
+      -77.432517,
+      36.495256
+     ],
+     [
+      -77.43502,
+      36.494319
+     ],
+     [
+      -77.436723,
+      36.493521
+     ],
+     [
+      -77.447691,
+      36.486956
+     ],
+     [
+      -77.449129,
+      36.486212
+     ],
+     [
+      -77.463243,
+      36.480231
+     ],
+     [
+      -77.478875,
+      36.473781
+     ],
+     [
+      -77.526272,
+      36.460944
+     ],
+     [
+      -77.528889,
+      36.46019
+     ],
+     [
+      -77.532201,
+      36.458973
+     ],
+     [
+      -77.543183,
+      36.453768
+     ],
+     [
+      -77.560524,
+      36.446019
+     ],
+     [
+      -77.594719,
+      36.429032
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard Coast Line: Portsmouth – Garysburg",
+    "id": "scl-portsmouth-garysburg",
+    "company": "Seaboard Coast Line Railroad",
+    "color": "#2D3142",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 57,
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "speed_source": "ESTIMATE carried over from the 1951 SAL timing (Official Guide, Feb 1952); not sourced for 1967-68.",
+    "geometry_quality": "Traced from OpenStreetMap: Portsmouth - Garysburg 76.5 mi against no documented Garysburg milepost (SAL MP 78.8 at Weldon; traced Garysburg - Weldon 2.2 mi). Whole main line Portsmouth - Weldon traced 78.7 mi against the documented 78.6 mi (NC Railroad Commission 1891 via carolana) / 78.8 mi (SAL milepost Weldon SA 78.8). Main-line trace by operator: 76.8 mi SAL, 1.5 mi (untagged). No router straight-line leg. Cut points are the trace vertices nearest Suffolk (17.6 mi from Portsmouth; SAL MP 17.5), Franklin (37.2 mi), Boykins (54.1 mi; SAL MP 54.1) and Garysburg (76.5 mi). The Portsmouth end is drawn to the waterfront terminal at the foot of High Street (the 1838 wharf extension, and the 1866 ads' 'foot of High St.' / the 1894-95 station), with a 0.59 km (0.37 mi) straight connector from the end of surviving OSM track to that point. LATER ALIGNMENT: the trace follows the track that survives in OSM (CSX Portsmouth Subdivision, built on the S&R grade); any 19th-century line changes, yard rearrangements at Portsmouth, Suffolk and Weldon, and the post-1860s Roanoke River bridge are drawn on their later alignment, which is the only one mapped. Ends at Garysburg: SCL severed the S&R Roanoke River bridge after the merger (date not found), so the river crossing is drawn only on the SAL feature to 1967; how the last trains reached Weldon/Norlina in 1967-68 (perhaps over the ex-ACL from Garysburg) is not established and not drawn.",
+    "segments": [
+     {
+      "start": 1967,
+      "end": 1968,
+      "headway_min": 1440,
+      "note": "Seaboard Coast Line from the 1 Jul 1967 ACL + SAL merger: the Tidewater (Portsmouth - Norlina) 'was gone from the timetable within a year of the merger' and 'made its last run in February 1968' (american-rails.com); the Silver Comet's Portsmouth section 'had its last trip into the station in 1968' (Wikipedia, Seaboard Coastline Building). Two secondary sources agree on 1968; exact day not found. Drawn Portsmouth - Garysburg only because SCL's Roanoke bridge cut is undated. Headway 1440 = one round trip (estimate). Freight continued; today CSX's Portsmouth Subdivision.",
+      "sources": [
+       "Segment-level: start 1 Jul 1967 at the SCL merger; end Feb 1968 from american-rails.com (Tidewater last run) and Wikipedia (Seaboard Coastline Building); bridge cut from Wikipedia (Portsmouth Subdivision), undated. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.american-rails.com/tidewater.html (Tidewater Nos. 17/18 named 1 Nov 1953; last run Feb 1968)",
+       "https://en.wikipedia.org/wiki/Seaboard_Coastline_Building (Portsmouth station 1894-95; last Silver Comet into the station 1968)",
+       "https://en.wikipedia.org/wiki/Portsmouth_Subdivision"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.2963,
+      36.8357
+     ],
+     [
+      -76.298892,
+      36.830778
+     ],
+     [
+      -76.302689,
+      36.829444
+     ],
+     [
+      -76.303816,
+      36.829252
+     ],
+     [
+      -76.307547,
+      36.829164
+     ],
+     [
+      -76.309023,
+      36.829262
+     ],
+     [
+      -76.314587,
+      36.830529
+     ],
+     [
+      -76.315673,
+      36.83065
+     ],
+     [
+      -76.320623,
+      36.830461
+     ],
+     [
+      -76.321981,
+      36.830149
+     ],
+     [
+      -76.327591,
+      36.828122
+     ],
+     [
+      -76.4105,
+      36.786921
+     ],
+     [
+      -76.414019,
+      36.785431
+     ],
+     [
+      -76.521607,
+      36.75155
+     ],
+     [
+      -76.573956,
+      36.734912
+     ],
+     [
+      -76.577317,
+      36.73396
+     ],
+     [
+      -76.580034,
+      36.73353
+     ],
+     [
+      -76.582072,
+      36.733429
+     ],
+     [
+      -76.592693,
+      36.733757
+     ],
+     [
+      -76.596725,
+      36.733727
+     ],
+     [
+      -76.602213,
+      36.733143
+     ],
+     [
+      -76.608161,
+      36.731849
+     ],
+     [
+      -76.611014,
+      36.731506
+     ],
+     [
+      -76.677436,
+      36.7273
+     ],
+     [
+      -76.790287,
+      36.719707
+     ],
+     [
+      -76.796704,
+      36.719099
+     ],
+     [
+      -76.799744,
+      36.718677
+     ],
+     [
+      -76.808322,
+      36.717141
+     ],
+     [
+      -76.812515,
+      36.716204
+     ],
+     [
+      -76.818832,
+      36.714509
+     ],
+     [
+      -76.885227,
+      36.695524
+     ],
+     [
+      -76.891096,
+      36.693676
+     ],
+     [
+      -76.894631,
+      36.69235
+     ],
+     [
+      -76.899167,
+      36.69039
+     ],
+     [
+      -76.903846,
+      36.688017
+     ],
+     [
+      -76.907789,
+      36.685744
+     ],
+     [
+      -76.921619,
+      36.676635
+     ],
+     [
+      -76.924992,
+      36.674792
+     ],
+     [
+      -76.927393,
+      36.673711
+     ],
+     [
+      -76.947627,
+      36.666635
+     ],
+     [
+      -76.984951,
+      36.653963
+     ],
+     [
+      -77.019189,
+      36.643765
+     ],
+     [
+      -77.022568,
+      36.643009
+     ],
+     [
+      -77.025413,
+      36.642712
+     ],
+     [
+      -77.054294,
+      36.641292
+     ],
+     [
+      -77.057688,
+      36.640874
+     ],
+     [
+      -77.119732,
+      36.626385
+     ],
+     [
+      -77.124713,
+      36.625024
+     ],
+     [
+      -77.126626,
+      36.624346
+     ],
+     [
+      -77.129147,
+      36.623266
+     ],
+     [
+      -77.131647,
+      36.622015
+     ],
+     [
+      -77.166435,
+      36.601968
+     ],
+     [
+      -77.1693,
+      36.600681
+     ],
+     [
+      -77.181657,
+      36.596418
+     ],
+     [
+      -77.183446,
+      36.59564
+     ],
+     [
+      -77.184724,
+      36.594954
+     ],
+     [
+      -77.197347,
+      36.586119
+     ],
+     [
+      -77.200459,
+      36.584379
+     ],
+     [
+      -77.203711,
+      36.583218
+     ],
+     [
+      -77.237564,
+      36.574981
+     ],
+     [
+      -77.240426,
+      36.57418
+     ],
+     [
+      -77.256391,
+      36.567067
+     ],
+     [
+      -77.304819,
+      36.545043
+     ],
+     [
+      -77.307432,
+      36.54396
+     ],
+     [
+      -77.310069,
+      36.5431
+     ],
+     [
+      -77.340581,
+      36.534435
+     ],
+     [
+      -77.344496,
+      36.533095
+     ],
+     [
+      -77.349479,
+      36.531179
+     ],
+     [
+      -77.368729,
+      36.52527
+     ],
+     [
+      -77.371865,
+      36.523794
+     ],
+     [
+      -77.374139,
+      36.52239
+     ],
+     [
+      -77.376255,
+      36.520636
+     ],
+     [
+      -77.377519,
+      36.519394
+     ],
+     [
+      -77.380352,
+      36.516199
+     ],
+     [
+      -77.381518,
+      36.515128
+     ],
+     [
+      -77.383012,
+      36.513991
+     ],
+     [
+      -77.384485,
+      36.513076
+     ],
+     [
+      -77.386584,
+      36.512004
+     ],
+     [
+      -77.398457,
+      36.507244
+     ],
+     [
+      -77.404852,
+      36.505125
+     ],
+     [
+      -77.416098,
+      36.499914
+     ],
+     [
+      -77.432517,
+      36.495256
+     ],
+     [
+      -77.43502,
+      36.494319
+     ],
+     [
+      -77.436723,
+      36.493521
+     ],
+     [
+      -77.447691,
+      36.486956
+     ],
+     [
+      -77.449129,
+      36.486212
+     ],
+     [
+      -77.463243,
+      36.480231
+     ],
+     [
+      -77.478875,
+      36.473781
+     ],
+     [
+      -77.526272,
+      36.460944
+     ],
+     [
+      -77.528889,
+      36.46019
+     ],
+     [
+      -77.532201,
+      36.458973
+     ],
+     [
+      -77.543183,
+      36.453768
+     ],
+     [
+      -77.560524,
+      36.446019
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard and Roanoke: Boykins – Lewiston",
+    "id": "seaboard-roanoke-boykins-lewiston",
+    "company": "Seaboard and Roanoke Railroad",
+    "color": "#3E7C17",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not sourced: ~30 km/h assumed for a 19th-century single-track road with a daily local.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Traced from OpenStreetMap: Boykins - Lewiston 35.0 mi against the documented 35.0 mi (NC RR Commission 1891: S&R 2.70 + R&TR 32.30; 1952 Guide table: Lewiston 35.0). By operator: 29.9 mi SAL, 0.3 mi (untagged). No router straight-line leg. Boykins - Kelford (30.1 mi) follows the North Carolina & Virginia Railroad (ex-SAL, freight today, tagged old_railway_operator=SAL). APPROXIMATED LEG: Kelford - Lewiston 4.8 mi is a STRAIGHT LINE from the end of surviving track to the Lewiston Woodville town geocode - that stretch was abandoned after 1986 and is in neither OSM nor OpenHistoricalMap (both checked). Waypoint distances from the drawn line (km): {'Boykins': 0.1, 'Severn': 0.0, 'Pendleton': 0.2, 'Conway': 0.0, 'Potecasi': 0.6, 'Woodland': 1.6, 'Rich Square': 0.8, 'Roxobel': 0.9, 'Kelford': 0.4}. Drawn on the surviving (later) alignment; no earlier line changes are known.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1900,
+      "headway_min": 1440,
+      "note": "Roanoke and Tar River Railroad (built 1887-88), 'leased by the Seaboard & Roanoke Railroad from the beginning' and worked with S&R locomotives (virginiaplaces) - the S&R ran the trains, so the feature is under the S&R. First CONFIRMED passenger year 1896: SAL-system ad of 31 May 1896, Portsmouth train No. 41 'for ... Pendleton, Murfreesboro, Lewiston'. Service from 1888 is probable (Richmond Times Feb 1891 says the road 'runs from Boykin, Va., to Lewiston') but 'runs' is not a passenger timetable - unproven, not drawn. Also in the SAL timetable in effect 11 Dec 1898 (Lewiston N.C. 1:05 pm). End 1900 at the S&R's consolidation into the Seaboard Air Line; service continued under SAL. Headway 1440 (estimate).",
+      "sources": [
+       "Segment-level: start 1896 from the Norfolk Virginian SAL ad of 31 May 1896; 1898 from the Virginian-Pilot timetable of 26 Jan 1899; operator from virginiaplaces (R&TR); end at the 1900 SAL consolidation. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn85025715/1896-05-31/ed-1/?sp=7 (Norfolk Virginian 31 May 1896, SAL ad: No. 41 leaves Portsmouth daily ... for Pendleton, Murfreesboro, Lewiston)",
+       "https://www.loc.gov/resource/sn86071779/1899-01-26/ed-1/?sp=8 (Virginian-Pilot 26 Jan 1899, SAL timetable in effect 11 Dec 1898: Portsmouth / Suffolk / Lewiston N.C. / Weldon)",
+       "https://www.loc.gov/resource/sn85034438/1891-02-10/ed-1/?sp=2 (Richmond Times 10 Feb 1891: Murfreesboro - Pendleton under construction; R&TR 'runs from Boykin, Va., to Lewiston')",
+       "https://virginiaplaces.org/rail/roanoketar.html (virginiaplaces.org, Roanoke & Tar River Railroad)",
+       "https://en.wikipedia.org/wiki/Roanoke_and_Tar_River_Railroad",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_seaboard_roanoke.html (carolana.com, Seaboard & Roanoke Railroad, quoting the NC Railroad Commission's 1st annual report, 1891)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.200447,
+      36.584348
+     ],
+     [
+      -77.202559,
+      36.583455
+     ],
+     [
+      -77.203483,
+      36.58274
+     ],
+     [
+      -77.204199,
+      36.58164
+     ],
+     [
+      -77.204355,
+      36.580792
+     ],
+     [
+      -77.202455,
+      36.568656
+     ],
+     [
+      -77.19674,
+      36.534947
+     ],
+     [
+      -77.196482,
+      36.533897
+     ],
+     [
+      -77.195805,
+      36.532467
+     ],
+     [
+      -77.194749,
+      36.53051
+     ],
+     [
+      -77.193561,
+      36.52898
+     ],
+     [
+      -77.192565,
+      36.526701
+     ],
+     [
+      -77.188351,
+      36.521378
+     ],
+     [
+      -77.187991,
+      36.520462
+     ],
+     [
+      -77.187949,
+      36.519294
+     ],
+     [
+      -77.191622,
+      36.506732
+     ],
+     [
+      -77.19472,
+      36.493389
+     ],
+     [
+      -77.202221,
+      36.468837
+     ],
+     [
+      -77.202818,
+      36.467442
+     ],
+     [
+      -77.211036,
+      36.456093
+     ],
+     [
+      -77.211702,
+      36.455483
+     ],
+     [
+      -77.215938,
+      36.453096
+     ],
+     [
+      -77.225309,
+      36.446525
+     ],
+     [
+      -77.226672,
+      36.445056
+     ],
+     [
+      -77.228467,
+      36.44131
+     ],
+     [
+      -77.228603,
+      36.440362
+     ],
+     [
+      -77.228669,
+      36.437088
+     ],
+     [
+      -77.229792,
+      36.375588
+     ],
+     [
+      -77.232612,
+      36.364081
+     ],
+     [
+      -77.232889,
+      36.362766
+     ],
+     [
+      -77.232926,
+      36.361749
+     ],
+     [
+      -77.23106,
+      36.329673
+     ],
+     [
+      -77.231381,
+      36.32828
+     ],
+     [
+      -77.232636,
+      36.323396
+     ],
+     [
+      -77.232939,
+      36.322485
+     ],
+     [
+      -77.233649,
+      36.321442
+     ],
+     [
+      -77.273907,
+      36.277152
+     ],
+     [
+      -77.274591,
+      36.276262
+     ],
+     [
+      -77.275248,
+      36.274958
+     ],
+     [
+      -77.275552,
+      36.273906
+     ],
+     [
+      -77.275679,
+      36.272807
+     ],
+     [
+      -77.275571,
+      36.271251
+     ],
+     [
+      -77.274977,
+      36.269579
+     ],
+     [
+      -77.233298,
+      36.200887
+     ],
+     [
+      -77.229839,
+      36.19544
+     ],
+     [
+      -77.222858,
+      36.183726
+     ],
+     [
+      -77.222475,
+      36.183273
+     ],
+     [
+      -77.221758,
+      36.182866
+     ],
+     [
+      -77.176629,
+      36.122935
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard Air Line: Boykins – Lewiston",
+    "id": "sal-boykins-lewiston",
+    "company": "Seaboard Air Line Railway",
+    "color": "#BE3455",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "speed_source": "ESTIMATE, not sourced: ~40 km/h assumed for a branch local.",
+    "geometry_quality": "Traced from OpenStreetMap: Boykins - Lewiston 35.0 mi against the documented 35.0 mi (NC RR Commission 1891: S&R 2.70 + R&TR 32.30; 1952 Guide table: Lewiston 35.0). By operator: 29.9 mi SAL, 0.3 mi (untagged). No router straight-line leg. Boykins - Kelford (30.1 mi) follows the North Carolina & Virginia Railroad (ex-SAL, freight today, tagged old_railway_operator=SAL). APPROXIMATED LEG: Kelford - Lewiston 4.8 mi is a STRAIGHT LINE from the end of surviving track to the Lewiston Woodville town geocode - that stretch was abandoned after 1986 and is in neither OSM nor OpenHistoricalMap (both checked). Waypoint distances from the drawn line (km): {'Boykins': 0.1, 'Severn': 0.0, 'Pendleton': 0.2, 'Conway': 0.0, 'Potecasi': 0.6, 'Woodland': 1.6, 'Rich Square': 0.8, 'Roxobel': 0.9, 'Kelford': 0.4}. Drawn on the surviving (later) alignment; no earlier line changes are known.",
+    "segments": [
+     {
+      "start": 1900,
+      "end": 1905,
+      "headway_min": 1440,
+      "note": "Seaboard Air Line Lewiston branch (Roanoke & Tar River, formally merged into SAL only in 1911 - a corporate step that did not change who ran the trains). Confirmed running in the SAL 'Schedule In Effect July 2d, 1905': 'Ar Lewiston N. C. 1:00 pm' (Daily Press, 10 Mar 1906). This is the last CONFIRMED year, not a known end - no source dates when this service actually stopped. Do not extend without evidence. The Feb 1952 Official Guide still prints a Boykins and Lewiston table with no recoverable times and daggers Lewiston and Kelford in its index ('For freight only'), so passenger service ended somewhere 1906-1950. Do not draw the post-passenger freight years (Boykins - Kelford is the North Carolina & Virginia Railroad, freight, from 1987). Headway 1440 (estimate).",
+      "sources": [
+       "Segment-level: start 1900 at the SAL consolidation; end 1905 = last confirmed year from the Daily Press SAL schedule of July 1905; freight-only status by 1951 from the Feb 1952 Official Guide index. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn83045830/1906-03-10/ed-1/?sp=5 (Daily Press 10 Mar 1906, SAL schedule in effect 2 Jul 1905: Lv Portsmouth 9:25 am ... Ar Lewiston N.C. 1:00 pm, Lv Weldon 11:55 am)",
+       "https://virginiaplaces.org/rail/roanoketar.html (virginiaplaces.org, Roanoke & Tar River Railroad)",
+       "https://en.wikipedia.org/wiki/Roanoke_and_Tar_River_Railroad",
+       "Official Guide of the Railways, Feb 1952 (SAL schedules eff. 13 Dec 1951): Portsmouth Sub-Division table with times at Boykins, Branchville, Margarettsville, Seaboard, Gumberry, Garysburg, Weldon; through coach Portsmouth - Norlina on Nos. 7/8 - https://archive.org/details/the-official-guide-of-the-railways-images"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.200447,
+      36.584348
+     ],
+     [
+      -77.202559,
+      36.583455
+     ],
+     [
+      -77.203483,
+      36.58274
+     ],
+     [
+      -77.204199,
+      36.58164
+     ],
+     [
+      -77.204355,
+      36.580792
+     ],
+     [
+      -77.202455,
+      36.568656
+     ],
+     [
+      -77.19674,
+      36.534947
+     ],
+     [
+      -77.196482,
+      36.533897
+     ],
+     [
+      -77.195805,
+      36.532467
+     ],
+     [
+      -77.194749,
+      36.53051
+     ],
+     [
+      -77.193561,
+      36.52898
+     ],
+     [
+      -77.192565,
+      36.526701
+     ],
+     [
+      -77.188351,
+      36.521378
+     ],
+     [
+      -77.187991,
+      36.520462
+     ],
+     [
+      -77.187949,
+      36.519294
+     ],
+     [
+      -77.191622,
+      36.506732
+     ],
+     [
+      -77.19472,
+      36.493389
+     ],
+     [
+      -77.202221,
+      36.468837
+     ],
+     [
+      -77.202818,
+      36.467442
+     ],
+     [
+      -77.211036,
+      36.456093
+     ],
+     [
+      -77.211702,
+      36.455483
+     ],
+     [
+      -77.215938,
+      36.453096
+     ],
+     [
+      -77.225309,
+      36.446525
+     ],
+     [
+      -77.226672,
+      36.445056
+     ],
+     [
+      -77.228467,
+      36.44131
+     ],
+     [
+      -77.228603,
+      36.440362
+     ],
+     [
+      -77.228669,
+      36.437088
+     ],
+     [
+      -77.229792,
+      36.375588
+     ],
+     [
+      -77.232612,
+      36.364081
+     ],
+     [
+      -77.232889,
+      36.362766
+     ],
+     [
+      -77.232926,
+      36.361749
+     ],
+     [
+      -77.23106,
+      36.329673
+     ],
+     [
+      -77.231381,
+      36.32828
+     ],
+     [
+      -77.232636,
+      36.323396
+     ],
+     [
+      -77.232939,
+      36.322485
+     ],
+     [
+      -77.233649,
+      36.321442
+     ],
+     [
+      -77.273907,
+      36.277152
+     ],
+     [
+      -77.274591,
+      36.276262
+     ],
+     [
+      -77.275248,
+      36.274958
+     ],
+     [
+      -77.275552,
+      36.273906
+     ],
+     [
+      -77.275679,
+      36.272807
+     ],
+     [
+      -77.275571,
+      36.271251
+     ],
+     [
+      -77.274977,
+      36.269579
+     ],
+     [
+      -77.233298,
+      36.200887
+     ],
+     [
+      -77.229839,
+      36.19544
+     ],
+     [
+      -77.222858,
+      36.183726
+     ],
+     [
+      -77.222475,
+      36.183273
+     ],
+     [
+      -77.221758,
+      36.182866
+     ],
+     [
+      -77.176629,
+      36.122935
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard and Roanoke: Pendleton – Murfreesboro",
+    "id": "seaboard-roanoke-pendleton-murfreesboro",
+    "company": "Seaboard and Roanoke Railroad",
+    "color": "#3E7C17",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not sourced: ~30 km/h assumed for a 19th-century single-track road with a daily local.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) plus OpenHistoricalMap (CC0) for lifted grades, routed with opstrace.py: OSM ways tagged old_railway_operator=SAL (OpenRailwayMap's mark for the Seaboard Air Line, which absorbed this road) costed 1x, untagged track 1.25x, OHM ways 1.25x, trails 3x, any other named operator 12x (so the ex-ACL, N&W, VGN and Norfolk Southern tracks around Portsmouth, Suffolk and Weldon are avoided); waypoints from the research report's station lists, geocoded with Nominatim and checked by type (Franklin VA returned Franklin County and was hand-pinned; Purvis and Hand returned unrelated places and were dropped), Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "STRAIGHT LINE, not traced: Pendleton (on the Lewiston branch trace) - Murfreesboro 6.0 mi against the documented ~7 mi ('seven-mile long Murfreesboro Railroad', virginiaplaces). The track was lifted in May 1897 and the grade is in neither OSM nor OpenHistoricalMap (both checked over the corridor). The whole feature is an approximation.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1897,
+      "headway_min": 1440,
+      "note": "Murfreesboro Railroad (built 1891-92; acquired by the Roanoke & Tar River 1893), worked as part of the S&R's R&TR operation. First CONFIRMED passenger year 1896: SAL-system ad of 31 May 1896, Portsmouth train No. 41 'for ... Pendleton, Murfreesboro, Lewiston'; 1892-1895 passenger service is unproven and not drawn. End 1897: 'On May 5, 1897, the Seaboard discontinued service on the branch of the Tar River Road into Murfreesboro'; track removed to the town limit 7 May 1897 (virginiaplaces; Wikipedia: tracks removed 'in the dark of the night'). Headway 1440 (estimate).",
+      "sources": [
+       "Segment-level: start 1896 from the Norfolk Virginian SAL ad of 31 May 1896; end 5 May 1897 from virginiaplaces (Roanoke & Tar River) and Wikipedia. headway_min and avg_speed_kmh are estimates, NOT sourced.",
+       "https://www.loc.gov/resource/sn85025715/1896-05-31/ed-1/?sp=7 (Norfolk Virginian 31 May 1896, SAL ad: No. 41 leaves Portsmouth daily ... for Pendleton, Murfreesboro, Lewiston)",
+       "https://www.loc.gov/resource/sn85034438/1891-02-10/ed-1/?sp=2 (Richmond Times 10 Feb 1891: Murfreesboro - Pendleton under construction; R&TR 'runs from Boykin, Va., to Lewiston')",
+       "https://virginiaplaces.org/rail/roanoketar.html (virginiaplaces.org, Roanoke & Tar River Railroad)",
+       "https://en.wikipedia.org/wiki/Roanoke_and_Tar_River_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.202221,
+      36.468837
+     ],
+     [
+      -77.098575,
+      36.442375
+     ]
+    ]
+   }
+  }
+ ]
+}
