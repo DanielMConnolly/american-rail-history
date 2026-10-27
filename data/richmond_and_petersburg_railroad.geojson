@@ -1,0 +1,1815 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Richmond and Petersburg Rail Road, Richmond (Manchester) - Petersburg, VA, ~22 mi, and the corridor's passenger service under its successors to 1971. Chartered 14 Mar 1836, opened 1838, ran its own trains until the March 1898 merger that formed the Atlantic Coast Line Railroad of Virginia (Atlantic Coast Line Railroad from 1900), then the Seaboard Coast Line from 1 Jul 1967 until Amtrak on 1 May 1971. Drawn as seven features, one per drawable span x operator and alignment: R&P original era 1838-1865 (8th St bridge to Pocahontas), R&P postwar 1866-1898 (Connection RR at Richmond, Appomattox link at Petersburg), the Port Walthall Branch 1846-1853 [OPEN], ACL via Byrd Street 1898-1918, ACL via Broad Street through downtown Petersburg 1919-1941, ACL via Broad Street and Ettrick 1942-1967, SCL 1967-1971. Research report: research/branches/richmond_and_petersburg_railroad.txt.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad",
+   "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad_Bridge",
+   "https://civilwarintheeast.com/things/railroads/richmond-petersburg-railroad/",
+   "https://virginiaplaces.org/rail/richmondpetersburg.html",
+   "https://virginiaplaces.org/rail/rfpconnection.html",
+   "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_R_and_P_7-28-65_P.htm",
+   "https://en.wikipedia.org/wiki/Port_Walthall",
+   "https://en.wikipedia.org/wiki/Petersburg_Railroad",
+   "https://en.wikipedia.org/wiki/Petersburg_station",
+   "https://en.wikipedia.org/wiki/CSX_A-Line_Bridge",
+   "https://en.wikipedia.org/wiki/North_End_Subdivision",
+   "Official Guide of the Railways, Feb 1952, ACL Table 2 (research/sources/official_guide_1952.txt)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (Overpass, maps.mail.ru mirror, 2026-10-27): old_railway_operator=ACL ways ('CSX North End Subdivision', 'North End Subdivision (Original Main Line)', 'Clopton Lead', 'Port Walthall Branch'), the abandoned 'Richmond and Petersburg Railroad Bridge' way, untagged abandoned ways in Manchester, RF&P 'Richmond Terminal Subdivision', ACL disused/spur track at Pocahontas.",
+   "OpenHistoricalMap (2026-10-27): 'Connecticut Railroad Company' way (taken as a mislabel of the Richmond and Petersburg Connection RR), 'Petersburg Railroad' through downtown Petersburg; an unnamed 1850 railway matching the CSX main between Swift Creek and Falling Creek (corroborating, not drawn separately)."
+  ],
+  "operator_split": "March 1898 R&P -> Atlantic Coast Line RR of Virginia (split: R&P colour to 1898, ACL colour from 1898). 1900 ACL of Virginia -> Atlantic Coast Line RR: same family, no split. 1 Jul 1967 ACL -> Seaboard Coast Line (split). 1 May 1971 SCL -> Amtrak (amtrak.geojson). NOT splits: the Walters 'Atlantic Coast Line' association (c.1871), the 1889 holding company, the ACL Company's 1893 stock ownership, the Civil War years. The ACL Broad Street era is split at 1942 by alignment (downtown Petersburg vs Ettrick bypass), not by operator.",
+  "omitted": [
+   "Block [2] Petersburg - Manchester postwar stub, 1865-66: drawable NONE (no 1865 passenger train after April confirmed).",
+   "Block [5] Richmond and Petersburg Connection RR as a separate feature: drawn inside the 1866-1898 R&P and 1898-1918 ACL features as their Richmond-end alignment, per the report.",
+   "Block [9] Amtrak 1971-: already drawn in amtrak.geojson.",
+   "Block [10] 1861-65 military link across the Appomattox: military traffic only (Rule 1), not drawn; the permanent link is part of the 1866-1898 and 1898-1918 geometry.",
+   "Block [11] original 1889/1891 Richmond Belt Line: freight bypass (Rule 1), not drawn.",
+   "Clover Hill Railroad (Chester - Clover Hill pits): separate company, out of scope."
+  ],
+  "existing_layer_note": "Not changed here (this pass writes only this layer). The research report's EXISTING LAYER CHECK lists for a later pass: atlantic_coast_line.geojson 'Atlantic Coast Line: Champion' draws its 1967-1971 segment in ACL colour (a missing Rule 4 split to Seaboard Coast Line); 'Atlantic Coast Line: Florida Special' draws 1888-1918 on the post-1919 Belt Line alignment and 1888-1941 on the post-1942 Ettrick alignment without saying so (Rule 2), and its 1888-1898 Richmond - Petersburg leg was R&P-run; petersburg_railroad.geojson ends in 1893 for a stock purchase although the Petersburg RR ran its own trains until the March 1898 merger (an under-claim).",
+  "not_yet_sourced": [
+   "Port Walthall Branch [OPEN] end: 1853 is the last confirmed passenger year; the real end lies between 1853 and May 1862.",
+   "Opening month in 1838, and whether Pocahontas - Manchester ran before the James bridge was completed (Sept 1838).",
+   "Resumption after April 1865: trains to Manchester before the 26 May 1866 bridge reopening probable but unconfirmed.",
+   "1882-83: how trains reached Richmond while the burned bridge was rebuilt.",
+   "Exact succession of Richmond R&P depots (8th & Canal 1838-1867 vs Byrd Street from 1838 or 1887).",
+   "Broad Street Station opening: 1917 (Wikipedia R&P station table) vs 1919 (virginiaplaces) - 1919 drawn.",
+   "Petersburg: the ACL's 1894-95 'belt line' west of downtown vs the 1942 Ettrick bypass; when through trains stopped using downtown Petersburg.",
+   "Which corporation survived the March 1898 merger (R&P renamed vs Petersburg RR renamed).",
+   "Whether the Richmond - Petersburg locals (1951 Guide Table 2) lasted into the SCL era.",
+   "All headway_min values except the 1951 Table 2 count and the 1853 tri-weekly boat train; all avg_speed_kmh values."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Richmond and Petersburg Railroad",
+    "line": "Richmond and Petersburg: Richmond – Petersburg",
+    "id": "richmond-petersburg-original-1838",
+    "color": "#7B3F8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate, not sourced: no antebellum timetable was checked. 25 km/h is a guess for a wood-burning 1840s-1850s road; the only sourced timing on this line (about an hour end to end, 45 min nonstop) is from 1884 and belongs to the postwar feature.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Traced 21.8 mi against ~22 mi documented (virginiaplaces; CSX North End Sub Petersburg = A 22.0). Original-era alignment: from the north end of the 1838 R&P James River bridge (OSM way, the surviving piers; the station at 8th & Canal stood at its north end - the exact depot spot is not drawn) across to Manchester, south through Manchester on OSM abandoned railway ways and the ex-ACL Clopton Lead, then the main line, and at the south end the abandoned ACL 'Original Main Line' through Colonial Heights to Pocahontas on the north bank of the Appomattox, stopping there (no river crossing - none existed for passengers before about 1867). STRAIGHT-LINE LEGS (approximated): Manchester, south end of the bridge approach (footway on the old grade) to the next mapped abandoned grade at about 37.522 N, 0.55 mi; Manchester, abandoned grade to the north end of the Clopton Lead, 0.42 mi; Colonial Heights, gap between two mapped pieces of the abandoned Original Main Line, 0.22 mi. Total 1.2 mi approximated. The Manchester abandoned ways carry no operator tag; they are taken as the R&P grade because they lie on the line between the bridge and the Clopton Lead. Pocahontas terminal point is the end of the mapped abandoned Original Main Line (37.2395 N, -77.4001), within about 0.3 km of the depot; not verified. Middle section (Manchester - Falling Creek - Bellbluff - Centralia - Chester - Walthall - Swift Creek) is drawn on the old R&P main as it survives: OSM 'Clopton Lead' (ex-ACL) from south Richmond to about 37.459 N, then today's CSX North End Subdivision (A-line) to Swift Creek, which OpenHistoricalMap also draws as an 1850 railway on the same alignment. The research report found no main-line relocation between the James and the Appomattox, but says absence of a found relocation is not proof there was none; small curve or station-track changes since the R&P era were NOT checked. LATER ALIGNMENT: the bridge way is the ruin of the 1838/1866/1883/1902 rebuilds; the piers are taken to stand on the 1838 line, not verified.",
+    "segments": [
+     {
+      "start": 1838,
+      "end": 1865,
+      "headway_min": 720,
+      "note": "Richmond and Petersburg Rail Road's own steam passenger trains (wood-burning locomotives; no animal-traction era found, so nothing to trim under Rule 5). The line was completed in 1838: track reached the south bank at Manchester by May 1838 and the James River bridge was completed Sept 1838; the month of the first public passenger train is not established, nor whether Pocahontas - Manchester ran before the bridge. From 1846 it connected with Norfolk steamers via the Port Walthall branch. War: Butler's Army of the James cut the line at Port Walthall Junction on 7 May 1864 and Beauregard reopened it on 16 May 1864 (about nine days, too short to split at year resolution); it was then Lee's supply line through the siege of Petersburg. Service ended with the evacuation of Richmond on 2-3 Apr 1865, when the bridge, depot and shops burned (R&P annual report, 28 Jul 1865). Wartime operation was by the company, not a Confederate government takeover, so no split. No passenger train after April 1865 is confirmed until the bridge reopened in May 1866, so 1865 is drawn here only through April and the postwar feature starts in 1866. headway_min 720 (two trains each way a day) is an ESTIMATE - no antebellum timetable frequency was checked.",
+      "sources": [
+       "Segment-level: start 1838 from Wikipedia (Richmond and Petersburg Railroad: completed 1838; Richmond and Petersburg Railroad Bridge: completed Sept 1838) and civilwarintheeast.com; end 1865 from the R&P annual report of 28 Jul 1865 (csa-railroads.com). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad",
+       "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad_Bridge",
+       "https://civilwarintheeast.com/things/railroads/richmond-petersburg-railroad/",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_R_and_P_7-28-65_P.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.44149,
+      37.534263
+     ],
+     [
+      -77.446845,
+      37.528611
+     ],
+     [
+      -77.452294,
+      37.521862
+     ],
+     [
+      -77.452548,
+      37.520525
+     ],
+     [
+      -77.451463,
+      37.51371
+     ],
+     [
+      -77.448985,
+      37.500047
+     ],
+     [
+      -77.448747,
+      37.498101
+     ],
+     [
+      -77.448541,
+      37.472566
+     ],
+     [
+      -77.448743,
+      37.469437
+     ],
+     [
+      -77.452972,
+      37.44433
+     ],
+     [
+      -77.453331,
+      37.440871
+     ],
+     [
+      -77.454336,
+      37.376865
+     ],
+     [
+      -77.454213,
+      37.375126
+     ],
+     [
+      -77.453514,
+      37.372345
+     ],
+     [
+      -77.452522,
+      37.370264
+     ],
+     [
+      -77.443513,
+      37.357356
+     ],
+     [
+      -77.441962,
+      37.355701
+     ],
+     [
+      -77.439915,
+      37.353954
+     ],
+     [
+      -77.426093,
+      37.344219
+     ],
+     [
+      -77.42523,
+      37.343595
+     ],
+     [
+      -77.42417,
+      37.342579
+     ],
+     [
+      -77.406982,
+      37.318782
+     ],
+     [
+      -77.403866,
+      37.314123
+     ],
+     [
+      -77.402978,
+      37.31243
+     ],
+     [
+      -77.402521,
+      37.310737
+     ],
+     [
+      -77.402496,
+      37.308644
+     ],
+     [
+      -77.405856,
+      37.278156
+     ],
+     [
+      -77.405992,
+      37.275622
+     ],
+     [
+      -77.406639,
+      37.270296
+     ],
+     [
+      -77.406735,
+      37.268096
+     ],
+     [
+      -77.406453,
+      37.266233
+     ],
+     [
+      -77.40606,
+      37.264944
+     ],
+     [
+      -77.405037,
+      37.262568
+     ],
+     [
+      -77.396972,
+      37.249342
+     ],
+     [
+      -77.39617,
+      37.24827
+     ],
+     [
+      -77.395054,
+      37.246254
+     ],
+     [
+      -77.394904,
+      37.245417
+     ],
+     [
+      -77.394968,
+      37.244504
+     ],
+     [
+      -77.395173,
+      37.243078
+     ],
+     [
+      -77.395472,
+      37.242522
+     ],
+     [
+      -77.396841,
+      37.240961
+     ],
+     [
+      -77.397489,
+      37.240515
+     ],
+     [
+      -77.400104,
+      37.239465
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Richmond and Petersburg Railroad",
+    "line": "Richmond and Petersburg: Richmond – Petersburg",
+    "id": "richmond-petersburg-postwar-1866",
+    "color": "#7B3F8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimate, not sourced: derived from the research report's 1884 note of 'about an hour end to end, 45 min nonstop' over ~22 mi (about 35 km/h with stops); applied to every postwar year, so it is not sourced outside 1884.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Traced 24.8 mi: Broad & Pine (Elba depot, RF&P connection) - Richmond and Petersburg Connection RR down to the foot of 8th St (1.3 mi) - R&P bridge - Manchester - main line (as the original-era feature) - Pocahontas - across the Appomattox - Petersburg RR into downtown Petersburg near Washington Street (against ~22 mi documented for the R&P proper; the extra is the Connection RR and the Petersburg link). The Connection RR is OpenHistoricalMap's way labelled 'Connecticut Railroad Company' (end_date 1877), which runs exactly where virginiaplaces puts the Connection (8th St, under 3rd-4th Sts, Belvidere to Broad & Pine) - taken as an OHM mislabel; its 1877 end date conflicts with the 1919 end documented by virginiaplaces and is not followed. The Petersburg link is OSM ACL disused/spur track from Pocahontas plus OHM 'Petersburg Railroad' through downtown; the downtown end point (37.2236 N, -77.4097, near Washington St) is approximate - the Washington Street station's exact site is not drawn. STRAIGHT-LINE LEGS (approximated): Manchester 0.55 mi and 0.42 mi; Colonial Heights 0.22 mi (all as the original-era feature); Pocahontas spur end to the OHM Petersburg RR, 0.17 mi. Total 1.4 mi approximated. Middle section (Manchester - Falling Creek - Bellbluff - Centralia - Chester - Walthall - Swift Creek) is drawn on the old R&P main as it survives: OSM 'Clopton Lead' (ex-ACL) from south Richmond to about 37.459 N, then today's CSX North End Subdivision (A-line) to Swift Creek, which OpenHistoricalMap also draws as an 1850 railway on the same alignment. The research report found no main-line relocation between the James and the Appomattox, but says absence of a found relocation is not proof there was none; small curve or station-track changes since the R&P era were NOT checked. LATER ALIGNMENT within this feature's own years: the whole drawn line is the 1867 arrangement. In 1866 (bridge reopened 26 May 1866) neither the Connection RR (opened 1867) nor the permanent Appomattox link (about 1867) existed, so the 1866 segment over-draws about 1.3 mi at Richmond and 1.9 mi at Petersburg. 1882-83: the James bridge burned 26 Mar 1882 and was rebuilt the next year; how trains reached Richmond meanwhile is not established, and the bridge is drawn throughout.",
+    "segments": [
+     {
+      "start": 1866,
+      "end": 1866,
+      "headway_min": 240,
+      "note": "R&P trains resumed through to Richmond when the rebuilt James River bridge reopened on 26 May 1866. Trains to Manchester before that are probable but unconfirmed (the July 1865 annual report does not date a resumption; a Chronicling America search of Apr-Aug 1865 Richmond Whig pages found no notice - a search miss, not evidence of no service), so 1865 after April is not drawn. In 1866 the Connection RR and the Appomattox link were not yet open; this segment is drawn on the 1867 alignment - see geometry_quality. headway_min 240 is an ESTIMATE, not sourced.",
+      "sources": [
+       "Segment-level: 1866 reopening from Wikipedia (Richmond and Petersburg Railroad Bridge: rebuilt and reopened 26 May 1866) and civilwarintheeast.com (1866 rebuild). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad_Bridge",
+       "https://civilwarintheeast.com/things/railroads/richmond-petersburg-railroad/"
+      ]
+     },
+     {
+      "start": 1867,
+      "end": 1898,
+      "headway_min": 240,
+      "note": "From 1867 the Richmond and Petersburg Connection Railroad (chartered 1866, owned and leased jointly by the R&P and RF&P) linked the R&P with the RF&P at Broad & Pine (Elba), and a permanent connection with the Petersburg Railroad across the Appomattox opened about 1867 (through passenger trains are confirmed by 1888, when the Florida Special ran Richmond - Weldon). The R&P was the through link between the RF&P and the Petersburg / Wilmington & Weldon chain: through sleepers Boston - Washington - South by 1882; about an hour end to end, 45 min nonstop in 1884; gauge changed May 1886; the Florida Special ran over it each winter from 1888. The Walters 'Atlantic Coast Line' association, the 1889 holding company and the Atlantic Coast Line Company's 1893 stock ownership did not change who ran the trains - the R&P operated in its own name until the March 1898 merger that formed the Atlantic Coast Line Railroad of Virginia (sources conflict on which corporation survived; Wikipedia says the Petersburg RR merged into the renamed R&P). The James bridge burned 26 Mar 1882 and was rebuilt the next year; how trains reached Richmond in 1882-83 is not established. headway_min 240 is an ESTIMATE, not sourced.",
+      "sources": [
+       "Segment-level: 1867 Connection RR opening from virginiaplaces (rfpconnection) and Wikipedia (Richmond and Petersburg Railroad, 1867); end March 1898 merger from Wikipedia (Petersburg Railroad); 1882 and 1884 service notes and the 1888 Florida Special as summarised in the research report from Wikipedia. Headway not sourced.",
+       "https://virginiaplaces.org/rail/rfpconnection.html",
+       "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad",
+       "https://en.wikipedia.org/wiki/Petersburg_Railroad",
+       "https://virginiaplaces.org/rail/richmondpetersburg.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.448283,
+      37.549449
+     ],
+     [
+      -77.447991,
+      37.54818
+     ],
+     [
+      -77.448875,
+      37.546859
+     ],
+     [
+      -77.449045,
+      37.545952
+     ],
+     [
+      -77.449054,
+      37.543434
+     ],
+     [
+      -77.448917,
+      37.542974
+     ],
+     [
+      -77.446857,
+      37.540516
+     ],
+     [
+      -77.440561,
+      37.53657
+     ],
+     [
+      -77.440227,
+      37.536005
+     ],
+     [
+      -77.440181,
+      37.53562
+     ],
+     [
+      -77.440348,
+      37.535126
+     ],
+     [
+      -77.44149,
+      37.534263
+     ],
+     [
+      -77.446845,
+      37.528611
+     ],
+     [
+      -77.452294,
+      37.521862
+     ],
+     [
+      -77.452548,
+      37.520525
+     ],
+     [
+      -77.451463,
+      37.51371
+     ],
+     [
+      -77.448985,
+      37.500047
+     ],
+     [
+      -77.448747,
+      37.498101
+     ],
+     [
+      -77.448541,
+      37.472566
+     ],
+     [
+      -77.448743,
+      37.469437
+     ],
+     [
+      -77.452972,
+      37.44433
+     ],
+     [
+      -77.453331,
+      37.440871
+     ],
+     [
+      -77.454336,
+      37.376865
+     ],
+     [
+      -77.454213,
+      37.375126
+     ],
+     [
+      -77.453514,
+      37.372345
+     ],
+     [
+      -77.452522,
+      37.370264
+     ],
+     [
+      -77.443513,
+      37.357356
+     ],
+     [
+      -77.441962,
+      37.355701
+     ],
+     [
+      -77.439915,
+      37.353954
+     ],
+     [
+      -77.426093,
+      37.344219
+     ],
+     [
+      -77.42523,
+      37.343595
+     ],
+     [
+      -77.42417,
+      37.342579
+     ],
+     [
+      -77.406982,
+      37.318782
+     ],
+     [
+      -77.403582,
+      37.313664
+     ],
+     [
+      -77.402745,
+      37.311751
+     ],
+     [
+      -77.402444,
+      37.309894
+     ],
+     [
+      -77.402496,
+      37.308644
+     ],
+     [
+      -77.405856,
+      37.278156
+     ],
+     [
+      -77.405992,
+      37.275622
+     ],
+     [
+      -77.406639,
+      37.270296
+     ],
+     [
+      -77.406735,
+      37.268096
+     ],
+     [
+      -77.406453,
+      37.266233
+     ],
+     [
+      -77.40606,
+      37.264944
+     ],
+     [
+      -77.405037,
+      37.262568
+     ],
+     [
+      -77.396972,
+      37.249342
+     ],
+     [
+      -77.395558,
+      37.247254
+     ],
+     [
+      -77.395054,
+      37.246254
+     ],
+     [
+      -77.394914,
+      37.244982
+     ],
+     [
+      -77.395173,
+      37.243078
+     ],
+     [
+      -77.395472,
+      37.242522
+     ],
+     [
+      -77.396374,
+      37.241429
+     ],
+     [
+      -77.397489,
+      37.240515
+     ],
+     [
+      -77.401063,
+      37.239011
+     ],
+     [
+      -77.402491,
+      37.237471
+     ],
+     [
+      -77.402962,
+      37.236609
+     ],
+     [
+      -77.402164,
+      37.234299
+     ],
+     [
+      -77.399547,
+      37.233288
+     ],
+     [
+      -77.399011,
+      37.232991
+     ],
+     [
+      -77.398132,
+      37.232192
+     ],
+     [
+      -77.39771,
+      37.231489
+     ],
+     [
+      -77.397612,
+      37.231035
+     ],
+     [
+      -77.397921,
+      37.229831
+     ],
+     [
+      -77.398295,
+      37.229326
+     ],
+     [
+      -77.398767,
+      37.228964
+     ],
+     [
+      -77.399515,
+      37.228653
+     ],
+     [
+      -77.406019,
+      37.22754
+     ],
+     [
+      -77.407077,
+      37.227099
+     ],
+     [
+      -77.408036,
+      37.226206
+     ],
+     [
+      -77.409655,
+      37.223552
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Richmond and Petersburg Railroad",
+    "line": "Richmond and Petersburg: Port Walthall Branch",
+    "id": "richmond-petersburg-port-walthall-branch",
+    "color": "#7B3F8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "Estimate, not sourced: no timing for the branch was found.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Traced 2.5 mi against ~2-3 mi (the report's unsourced map estimate; no documented figure). East end on five OSM ways named 'Port Walthall Branch' (railway=razed, old_railway_operator=ACL) to the Appomattox wharf at Port Walthall, 1.1 mi. STRAIGHT-LINE LEG (approximated): Port Walthall Junction on the main line to the west end of the mapped razed grade, 1.39 mi - the junction point is a node on today's main line about 0.4 km south of the Walthall geocode, so the branch's exact divergence is not drawn.",
+    "segments": [
+     {
+      "start": 1846,
+      "end": 1853,
+      "headway_min": 3360,
+      "note": "Boat-train branch from Port Walthall Junction to the Port Walthall wharf on the Appomattox, built mainly to bring Clover Hill coal to tidewater; the passenger role was the steamer connection to Norfolk, Baltimore and the North. Start 1846: 'Passengers began using it in 1846' (Wikipedia, Richmond and Petersburg Railroad); Wikipedia (Port Walthall) puts the spur in use 'from 1846'; the Port Walthall Steamship Co. was founded 22 May 1846. Sources also say the branch was built 1845, or the track 'upgraded to Port Walthall in 1840' (virginiaplaces) - conflict recorded, 1846 drawn. [OPEN] END: 1853 is the last CONFIRMED passenger year (a tri-weekly 6 a.m. train from Richmond or Petersburg meeting the Norfolk boat). This is NOT a known end - service very probably ran on to 1861/62 (the July 1865 R&P report says the branch was disused after the evacuation of Norfolk in May 1862 and its track taken up for the main line; it was never restored), but no source dates the last passenger train. Do not extend without evidence. headway_min 3360 = tri-weekly (three trains a week each way), from the 1853 schedule only; an estimate for the other years.",
+      "sources": [
+       "Segment-level: start 1846 from Wikipedia (Port Walthall; Richmond and Petersburg Railroad). End 1853 is the last confirmed passenger year as established by the research report (1853 tri-weekly boat train), which does not tie that year to a single URL; disuse after May 1862 from the R&P annual report of 28 Jul 1865.",
+       "https://en.wikipedia.org/wiki/Port_Walthall",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_R_and_P_7-28-65_P.htm",
+       "https://civilwarintheeast.com/things/railroads/richmond-petersburg-railroad/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.402781,
+      37.31173
+     ],
+     [
+      -77.377884,
+      37.308419
+     ],
+     [
+      -77.374447,
+      37.307755
+     ],
+     [
+      -77.372147,
+      37.307546
+     ],
+     [
+      -77.369602,
+      37.307647
+     ],
+     [
+      -77.364441,
+      37.308509
+     ],
+     [
+      -77.357935,
+      37.310055
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic Coast Line Railroad",
+    "line": "Atlantic Coast Line: Richmond (Byrd Street) – Petersburg",
+    "id": "acl-richmond-byrd-street-petersburg",
+    "color": "#5B8C5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate, not sourced: no ACL timetable for 1898-1918 was checked; 40 km/h is interpolated between the 1884 R&P timing (~35 km/h) and the 1951 Guide (~60 km/h).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Same geometry as the postwar Richmond and Petersburg feature (traced 24.8 mi, Broad & Pine - Connection RR - old R&P bridge - Manchester - main line - Pocahontas - downtown Petersburg near Washington Street): through trains used the Connection RR to the RF&P, and Byrd Street Station (1887-1919) stood at the north end of the old bridge, where the drawn line passes the foot of 8th St; the station spot itself is not marked. STRAIGHT-LINE LEGS (approximated): Manchester 0.55 mi and 0.42 mi, Colonial Heights 0.22 mi, Pocahontas - Petersburg RR 0.17 mi; 1.4 mi in all. Middle section (Manchester - Falling Creek - Bellbluff - Centralia - Chester - Walthall - Swift Creek) is drawn on the old R&P main as it survives: OSM 'Clopton Lead' (ex-ACL) from south Richmond to about 37.459 N, then today's CSX North End Subdivision (A-line) to Swift Creek, which OpenHistoricalMap also draws as an 1850 railway on the same alignment. The research report found no main-line relocation between the James and the Appomattox, but says absence of a found relocation is not proof there was none; small curve or station-track changes since the R&P era were NOT checked. LATER/EARLIER ALIGNMENT NOTES: the old bridge was rebuilt in 1902 on (it is assumed) the same line. At Petersburg the ACL built a new station on West Washington Street in 1902-03, N&W Union Station (May 1910) was used by some ACL trains, and around 1918 all trains moved to Union Station; the drawn downtown end follows the Petersburg RR toward Washington Street throughout. Wikipedia (Petersburg station) also says the ACL built a 'belt line' west of downtown in 1894-95 for through trains; if that is the Ettrick line, through trains may have bypassed downtown in these years - unresolved, not drawn.",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1918,
+      "headway_min": 180,
+      "note": "From the March 1898 merger the trains were Atlantic Coast Line Railroad of Virginia trains, and from 1900 Atlantic Coast Line Railroad (same operating family, so one colour and no split). New York - Florida through trains including the Florida Special (other train names for this era are not sourced), plus Richmond - Petersburg locals (assumed, not confirmed for these years). Passengers stayed on the downtown route over the old R&P bridge (it 'carried passengers through the first 15 years of the 1900s' - Wikipedia) and the Connection RR until Broad Street Station and the double-track Belt Line opened in 1919; the 1891 Belt Line was a FREIGHT bypass (Wikipedia CSX A-Line Bridge; virginiaplaces). The ACL report's claim that passenger trains moved to the Belt Line in 1891 is contradicted by both sources and is not followed. End 1918 is the end of this alignment, not of service. headway_min 180 is an ESTIMATE, not sourced.",
+      "sources": [
+       "Segment-level: start March 1898 merger from Wikipedia (Petersburg Railroad); end of the downtown alignment in 1918/1919 from Wikipedia (Richmond and Petersburg Railroad Bridge; CSX A-Line Bridge) and virginiaplaces (rfpconnection); Petersburg station history from Wikipedia (Petersburg station). Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Petersburg_Railroad",
+       "https://en.wikipedia.org/wiki/Richmond_and_Petersburg_Railroad_Bridge",
+       "https://virginiaplaces.org/rail/rfpconnection.html",
+       "https://en.wikipedia.org/wiki/Petersburg_station"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.448283,
+      37.549449
+     ],
+     [
+      -77.447991,
+      37.54818
+     ],
+     [
+      -77.448875,
+      37.546859
+     ],
+     [
+      -77.449045,
+      37.545952
+     ],
+     [
+      -77.449054,
+      37.543434
+     ],
+     [
+      -77.448917,
+      37.542974
+     ],
+     [
+      -77.446857,
+      37.540516
+     ],
+     [
+      -77.440561,
+      37.53657
+     ],
+     [
+      -77.440227,
+      37.536005
+     ],
+     [
+      -77.440181,
+      37.53562
+     ],
+     [
+      -77.440348,
+      37.535126
+     ],
+     [
+      -77.44149,
+      37.534263
+     ],
+     [
+      -77.446845,
+      37.528611
+     ],
+     [
+      -77.452294,
+      37.521862
+     ],
+     [
+      -77.452548,
+      37.520525
+     ],
+     [
+      -77.451463,
+      37.51371
+     ],
+     [
+      -77.448985,
+      37.500047
+     ],
+     [
+      -77.448747,
+      37.498101
+     ],
+     [
+      -77.448541,
+      37.472566
+     ],
+     [
+      -77.448743,
+      37.469437
+     ],
+     [
+      -77.452972,
+      37.44433
+     ],
+     [
+      -77.453331,
+      37.440871
+     ],
+     [
+      -77.454336,
+      37.376865
+     ],
+     [
+      -77.454213,
+      37.375126
+     ],
+     [
+      -77.453514,
+      37.372345
+     ],
+     [
+      -77.452522,
+      37.370264
+     ],
+     [
+      -77.443513,
+      37.357356
+     ],
+     [
+      -77.441962,
+      37.355701
+     ],
+     [
+      -77.439915,
+      37.353954
+     ],
+     [
+      -77.426093,
+      37.344219
+     ],
+     [
+      -77.42523,
+      37.343595
+     ],
+     [
+      -77.42417,
+      37.342579
+     ],
+     [
+      -77.406982,
+      37.318782
+     ],
+     [
+      -77.403582,
+      37.313664
+     ],
+     [
+      -77.402745,
+      37.311751
+     ],
+     [
+      -77.402444,
+      37.309894
+     ],
+     [
+      -77.402496,
+      37.308644
+     ],
+     [
+      -77.405856,
+      37.278156
+     ],
+     [
+      -77.405992,
+      37.275622
+     ],
+     [
+      -77.406639,
+      37.270296
+     ],
+     [
+      -77.406735,
+      37.268096
+     ],
+     [
+      -77.406453,
+      37.266233
+     ],
+     [
+      -77.40606,
+      37.264944
+     ],
+     [
+      -77.405037,
+      37.262568
+     ],
+     [
+      -77.396972,
+      37.249342
+     ],
+     [
+      -77.395558,
+      37.247254
+     ],
+     [
+      -77.395054,
+      37.246254
+     ],
+     [
+      -77.394914,
+      37.244982
+     ],
+     [
+      -77.395173,
+      37.243078
+     ],
+     [
+      -77.395472,
+      37.242522
+     ],
+     [
+      -77.396374,
+      37.241429
+     ],
+     [
+      -77.397489,
+      37.240515
+     ],
+     [
+      -77.401063,
+      37.239011
+     ],
+     [
+      -77.402491,
+      37.237471
+     ],
+     [
+      -77.402962,
+      37.236609
+     ],
+     [
+      -77.402164,
+      37.234299
+     ],
+     [
+      -77.399547,
+      37.233288
+     ],
+     [
+      -77.399011,
+      37.232991
+     ],
+     [
+      -77.398132,
+      37.232192
+     ],
+     [
+      -77.39771,
+      37.231489
+     ],
+     [
+      -77.397612,
+      37.231035
+     ],
+     [
+      -77.397921,
+      37.229831
+     ],
+     [
+      -77.398295,
+      37.229326
+     ],
+     [
+      -77.398767,
+      37.228964
+     ],
+     [
+      -77.399515,
+      37.228653
+     ],
+     [
+      -77.406019,
+      37.22754
+     ],
+     [
+      -77.407077,
+      37.227099
+     ],
+     [
+      -77.408036,
+      37.226206
+     ],
+     [
+      -77.409655,
+      37.223552
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic Coast Line Railroad",
+    "line": "Atlantic Coast Line: Richmond (Broad Street) – Petersburg",
+    "id": "acl-richmond-broad-street-petersburg-downtown",
+    "color": "#5B8C5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 55,
+    "speed_source": "Estimate, not sourced: the Feb 1952 Official Guide (ACL Table 2) gives roughly 40-45 min for 27-28 mi Broad Street - Petersburg on the trains whose times survive in the OCR, about 60 km/h; 55 km/h is assumed for 1919-1941, which is not sourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Traced 27.1 mi against 27-28 mi from Broad Street (1952 Guide Table 2; the Belt Line route is longer than the 22 mi R&P). Richmond end: Broad Street Station (opened 1919) on OSM abandoned station tracks behind the station building, then the RF&P Richmond Terminal Subdivision wye north of the station, then the ACL Belt Line (CSX North End Subdivision) down the west side of the city and over the 1919 A-Line arch bridge to rejoin the old R&P main near Falling Creek (about 37.463 N). The 1919 station-throat track layout was NOT checked; the drawn approach is today's CSX wye plus the abandoned stubs. STRAIGHT-LINE LEG: Broad Street Station stub tracks to the Richmond Terminal Sub, 0.38 mi (approximated). Petersburg end (this feature's own era, pre-1942): from Swift Creek on the abandoned ACL 'Original Main Line' through Colonial Heights to Pocahontas, then ACL spur track across the Appomattox to the N&W line by Union Station (River St), where it stops; the station spot is approximate. STRAIGHT-LINE LEG: Colonial Heights 0.22 mi (approximated). Total approximated 0.6 mi. Middle section (Manchester - Falling Creek - Bellbluff - Centralia - Chester - Walthall - Swift Creek) is drawn on the old R&P main as it survives: OSM 'Clopton Lead' (ex-ACL) from south Richmond to about 37.459 N, then today's CSX North End Subdivision (A-line) to Swift Creek, which OpenHistoricalMap also draws as an 1850 railway on the same alignment. The research report found no main-line relocation between the James and the Appomattox, but says absence of a found relocation is not proof there was none; small curve or station-track changes since the R&P era were NOT checked. ALIGNMENT CAVEAT: drawn through downtown Petersburg for 1919-1941 because the Ettrick station on the bypass opened only in 1942. Wikipedia (Petersburg station) says the ACL built a 'belt line' west of downtown in 1894-95 for through trains; if that is the Ettrick line, through trains may already have used it in these years and only locals came downtown - unresolved.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1941,
+      "headway_min": 180,
+      "note": "Broad Street Station and the double-track Belt Line with the James River arch bridge (the A-Line Bridge) opened in 1919 (virginiaplaces; Wikipedia R&P station table gives 1917 for the station and Wikipedia CSX A-Line Bridge dates the line's completion only 'around 1920' - conflict recorded, 1919 taken). Around 1918 all ACL trains at Petersburg had moved to N&W Union Station. New York - Florida through trains (the Florida Special, the Havana Special, the Champion from Dec 1939, others) plus Richmond - Petersburg locals. End 1941 is the end of this downtown-Petersburg alignment, not of service: Ettrick station on the line bypassing downtown opened in 1942. headway_min 180 is an ESTIMATE carried back from the 1951 Guide's eight southbound Table 2 trains; no 1919-1941 timetable was checked.",
+      "sources": [
+       "Segment-level: 1919 opening from virginiaplaces (rfpconnection) and Wikipedia (CSX A-Line Bridge; North End Subdivision); 1942 Ettrick station and c.1918 move to Union Station from Wikipedia (Petersburg station). Headway not sourced for these years.",
+       "https://virginiaplaces.org/rail/rfpconnection.html",
+       "https://en.wikipedia.org/wiki/CSX_A-Line_Bridge",
+       "https://en.wikipedia.org/wiki/North_End_Subdivision",
+       "https://en.wikipedia.org/wiki/Petersburg_station"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.46565,
+      37.561552
+     ],
+     [
+      -77.466725,
+      37.563153
+     ],
+     [
+      -77.46688,
+      37.563586
+     ],
+     [
+      -77.466602,
+      37.569542
+     ],
+     [
+      -77.468995,
+      37.572775
+     ],
+     [
+      -77.470164,
+      37.573945
+     ],
+     [
+      -77.471072,
+      37.574302
+     ],
+     [
+      -77.471611,
+      37.574388
+     ],
+     [
+      -77.472461,
+      37.574349
+     ],
+     [
+      -77.473211,
+      37.574136
+     ],
+     [
+      -77.474246,
+      37.573448
+     ],
+     [
+      -77.487695,
+      37.560952
+     ],
+     [
+      -77.488603,
+      37.559957
+     ],
+     [
+      -77.489237,
+      37.558985
+     ],
+     [
+      -77.489956,
+      37.556971
+     ],
+     [
+      -77.491455,
+      37.548062
+     ],
+     [
+      -77.491395,
+      37.545905
+     ],
+     [
+      -77.490588,
+      37.542014
+     ],
+     [
+      -77.490662,
+      37.541103
+     ],
+     [
+      -77.49123,
+      37.539948
+     ],
+     [
+      -77.496853,
+      37.531808
+     ],
+     [
+      -77.497299,
+      37.53071
+     ],
+     [
+      -77.497337,
+      37.529336
+     ],
+     [
+      -77.492508,
+      37.513102
+     ],
+     [
+      -77.491768,
+      37.511544
+     ],
+     [
+      -77.490836,
+      37.51054
+     ],
+     [
+      -77.474494,
+      37.495539
+     ],
+     [
+      -77.473108,
+      37.494126
+     ],
+     [
+      -77.45101,
+      37.463313
+     ],
+     [
+      -77.450428,
+      37.462124
+     ],
+     [
+      -77.450243,
+      37.461105
+     ],
+     [
+      -77.450324,
+      37.459842
+     ],
+     [
+      -77.452972,
+      37.44433
+     ],
+     [
+      -77.453393,
+      37.439632
+     ],
+     [
+      -77.454336,
+      37.376865
+     ],
+     [
+      -77.45408,
+      37.374335
+     ],
+     [
+      -77.45322,
+      37.371624
+     ],
+     [
+      -77.451952,
+      37.369361
+     ],
+     [
+      -77.449443,
+      37.365739
+     ],
+     [
+      -77.444112,
+      37.358164
+     ],
+     [
+      -77.44249,
+      37.356222
+     ],
+     [
+      -77.440879,
+      37.354728
+     ],
+     [
+      -77.439126,
+      37.353361
+     ],
+     [
+      -77.426093,
+      37.344219
+     ],
+     [
+      -77.42523,
+      37.343595
+     ],
+     [
+      -77.42417,
+      37.342579
+     ],
+     [
+      -77.406982,
+      37.318782
+     ],
+     [
+      -77.403582,
+      37.313664
+     ],
+     [
+      -77.402745,
+      37.311751
+     ],
+     [
+      -77.402444,
+      37.309894
+     ],
+     [
+      -77.402496,
+      37.308644
+     ],
+     [
+      -77.405856,
+      37.278156
+     ],
+     [
+      -77.405992,
+      37.275622
+     ],
+     [
+      -77.406639,
+      37.270296
+     ],
+     [
+      -77.406735,
+      37.268096
+     ],
+     [
+      -77.406453,
+      37.266233
+     ],
+     [
+      -77.40606,
+      37.264944
+     ],
+     [
+      -77.405037,
+      37.262568
+     ],
+     [
+      -77.396972,
+      37.249342
+     ],
+     [
+      -77.395558,
+      37.247254
+     ],
+     [
+      -77.395054,
+      37.246254
+     ],
+     [
+      -77.394914,
+      37.244982
+     ],
+     [
+      -77.395173,
+      37.243078
+     ],
+     [
+      -77.395472,
+      37.242522
+     ],
+     [
+      -77.396841,
+      37.240961
+     ],
+     [
+      -77.398165,
+      37.240199
+     ],
+     [
+      -77.401063,
+      37.239011
+     ],
+     [
+      -77.402491,
+      37.237471
+     ],
+     [
+      -77.403094,
+      37.236194
+     ],
+     [
+      -77.403818,
+      37.235297
+     ],
+     [
+      -77.406471,
+      37.233992
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic Coast Line Railroad",
+    "line": "Atlantic Coast Line: Richmond (Broad Street) – Petersburg (Ettrick)",
+    "id": "acl-richmond-broad-street-petersburg-ettrick",
+    "color": "#5B8C5A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 60,
+    "speed_source": "Estimate, not sourced: from the Feb 1952 Official Guide ACL Table 2 (schedules of 13 Dec 1951): the trains whose times survive in the OCR take roughly 40-45 min for 27-28 mi Broad Street - Petersburg, about 60 km/h. Not sourced for other years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Traced 26.6 mi against 27-28 mi from Broad Street (1952 Guide Table 2). Richmond end: Broad Street Station (opened 1919) on OSM abandoned station tracks behind the station building, then the RF&P Richmond Terminal Subdivision wye north of the station, then the ACL Belt Line (CSX North End Subdivision) down the west side of the city and over the 1919 A-Line arch bridge to rejoin the old R&P main near Falling Creek (about 37.463 N). The 1919 station-throat track layout was NOT checked; the drawn approach is today's CSX wye plus the abandoned stubs. STRAIGHT-LINE LEG: Broad Street Station stub tracks to the Richmond Terminal Sub, 0.38 mi (approximated). Petersburg end: from Swift Creek on today's CSX North End Subdivision bypassing downtown to the Ettrick station (today's Amtrak Petersburg; opened 1942, rebuilt 1955). No other straight-line legs; approximated 0.38 mi in all. Middle section (Manchester - Falling Creek - Bellbluff - Centralia - Chester - Walthall - Swift Creek) is drawn on the old R&P main as it survives: OSM 'Clopton Lead' (ex-ACL) from south Richmond to about 37.459 N, then today's CSX North End Subdivision (A-line) to Swift Creek, which OpenHistoricalMap also draws as an 1850 railway on the same alignment. The research report found no main-line relocation between the James and the Appomattox, but says absence of a found relocation is not proof there was none; small curve or station-track changes since the R&P era were NOT checked.",
+    "segments": [
+     {
+      "start": 1942,
+      "end": 1967,
+      "headway_min": 180,
+      "note": "From 1942 ACL trains called at the new Ettrick station on the line bypassing downtown Petersburg (rebuilt 1955). PRIMARY SOURCE for service: Official Guide Feb 1952 (schedules effective 13 Dec 1951), ACL Table 2 'RICHMOND AND PETERSBURG': eight southbound trains listed from Broad Street (11 15, 10 00, 9 00, 2 25, 8 30, 7 45, 6 30, 4 30), stations Broad Street 0, Falling Creek, Bellbluff 13, Centralia 16 (flag), Chester 18, Petersburg 27/28, on top of the through trains of Table 1 (Champion, Florida Special, Havana Special, Palmetto, Everglades, Vacationer and others). headway_min 180 = 1440/8 from the 1951 Table 2 count; an estimate for the other years. End 1967: the ACL merged with the Seaboard Air Line to form the Seaboard Coast Line on 1 Jul 1967.",
+      "sources": [
+       "Segment-level: start 1942 (Ettrick station) from Wikipedia (Petersburg station); 1951 service and headway from the Official Guide Feb 1952 ACL Table 2 (research/sources/official_guide_1952.txt, about line 116427); end 1 Jul 1967 SCL merger as recorded in the research report's ownership_split (from research/branches/atlantic_coast_line_railroad.txt).",
+       "https://en.wikipedia.org/wiki/Petersburg_station",
+       "research/sources/official_guide_1952.txt (ACL Table 2)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.46565,
+      37.561552
+     ],
+     [
+      -77.466725,
+      37.563153
+     ],
+     [
+      -77.46688,
+      37.563586
+     ],
+     [
+      -77.466602,
+      37.569542
+     ],
+     [
+      -77.468995,
+      37.572775
+     ],
+     [
+      -77.470164,
+      37.573945
+     ],
+     [
+      -77.471072,
+      37.574302
+     ],
+     [
+      -77.471611,
+      37.574388
+     ],
+     [
+      -77.472461,
+      37.574349
+     ],
+     [
+      -77.473211,
+      37.574136
+     ],
+     [
+      -77.474246,
+      37.573448
+     ],
+     [
+      -77.487695,
+      37.560952
+     ],
+     [
+      -77.488524,
+      37.560058
+     ],
+     [
+      -77.48916,
+      37.559127
+     ],
+     [
+      -77.489664,
+      37.558039
+     ],
+     [
+      -77.489956,
+      37.556971
+     ],
+     [
+      -77.491455,
+      37.548062
+     ],
+     [
+      -77.491395,
+      37.545905
+     ],
+     [
+      -77.490588,
+      37.542014
+     ],
+     [
+      -77.490662,
+      37.541103
+     ],
+     [
+      -77.49123,
+      37.539948
+     ],
+     [
+      -77.496853,
+      37.531808
+     ],
+     [
+      -77.497299,
+      37.53071
+     ],
+     [
+      -77.49737,
+      37.529572
+     ],
+     [
+      -77.492508,
+      37.513102
+     ],
+     [
+      -77.491768,
+      37.511544
+     ],
+     [
+      -77.490836,
+      37.51054
+     ],
+     [
+      -77.474494,
+      37.495539
+     ],
+     [
+      -77.473108,
+      37.494126
+     ],
+     [
+      -77.45101,
+      37.463313
+     ],
+     [
+      -77.450428,
+      37.462124
+     ],
+     [
+      -77.450243,
+      37.461105
+     ],
+     [
+      -77.450324,
+      37.459842
+     ],
+     [
+      -77.452972,
+      37.44433
+     ],
+     [
+      -77.453393,
+      37.439632
+     ],
+     [
+      -77.454336,
+      37.376865
+     ],
+     [
+      -77.45408,
+      37.374335
+     ],
+     [
+      -77.45322,
+      37.371624
+     ],
+     [
+      -77.451952,
+      37.369361
+     ],
+     [
+      -77.449443,
+      37.365739
+     ],
+     [
+      -77.444112,
+      37.358164
+     ],
+     [
+      -77.44249,
+      37.356222
+     ],
+     [
+      -77.440879,
+      37.354728
+     ],
+     [
+      -77.439126,
+      37.353361
+     ],
+     [
+      -77.426093,
+      37.344219
+     ],
+     [
+      -77.42523,
+      37.343595
+     ],
+     [
+      -77.42417,
+      37.342579
+     ],
+     [
+      -77.406982,
+      37.318782
+     ],
+     [
+      -77.403582,
+      37.313664
+     ],
+     [
+      -77.402678,
+      37.31151
+     ],
+     [
+      -77.402444,
+      37.309894
+     ],
+     [
+      -77.402496,
+      37.308644
+     ],
+     [
+      -77.405856,
+      37.278156
+     ],
+     [
+      -77.406077,
+      37.274853
+     ],
+     [
+      -77.406348,
+      37.27291
+     ],
+     [
+      -77.406652,
+      37.271807
+     ],
+     [
+      -77.407144,
+      37.270869
+     ],
+     [
+      -77.408195,
+      37.269675
+     ],
+     [
+      -77.415205,
+      37.264268
+     ],
+     [
+      -77.416329,
+      37.263105
+     ],
+     [
+      -77.429391,
+      37.24143
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Seaboard Coast Line Railroad",
+    "line": "Seaboard Coast Line: Richmond – Petersburg",
+    "id": "scl-richmond-petersburg",
+    "color": "#2D3142",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 60,
+    "speed_source": "Estimate, not sourced: carried over from the 1951 ACL Guide timings; no SCL timetable was checked.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-10-27) plus OpenHistoricalMap (2026-10-27), routed with opstrace.py's graph (Dijkstra between pinned way-end points, douglas_peucker 8 m, trim_reversals). old_railway_operator probed over the corridor: the line is tagged old_railway_operator=ACL (live 'CSX North End Subdivision'; abandoned 'North End Subdivision (Original Main Line)' at Colonial Heights/Petersburg; 'Clopton Lead' for the old main through south Richmond; 'Port Walthall Branch' razed). No 'Atlantic Coast Line' or 'R&P' spellings found. The 1838 James River bridge is the OSM way 'Richmond and Petersburg Railroad Bridge' (railway=abandoned, wikidata Q7331049). fetch_operator_ways and fetch_gap run over Richmond, Petersburg and Port Walthall.",
+    "geometry_quality": "Same geometry as the ACL 1942-1967 feature (traced 26.6 mi against 27-28 mi from Broad Street): Broad Street Station - Belt Line - A-Line bridge - main line - Ettrick bypass to the Ettrick station. STRAIGHT-LINE LEG: Broad Street Station stub tracks to the Richmond Terminal Sub, 0.38 mi (approximated). Middle section (Manchester - Falling Creek - Bellbluff - Centralia - Chester - Walthall - Swift Creek) is drawn on the old R&P main as it survives: OSM 'Clopton Lead' (ex-ACL) from south Richmond to about 37.459 N, then today's CSX North End Subdivision (A-line) to Swift Creek, which OpenHistoricalMap also draws as an 1850 railway on the same alignment. The research report found no main-line relocation between the James and the Appomattox, but says absence of a found relocation is not proof there was none; small curve or station-track changes since the R&P era were NOT checked.",
+    "segments": [
+     {
+      "start": 1967,
+      "end": 1971,
+      "headway_min": 360,
+      "note": "From the 1 Jul 1967 merger the trains were Seaboard Coast Line trains: the former ACL Florida trains and the consolidated SAL/ACL trains. Whether the Richmond - Petersburg locals of the 1951 Guide survived to 1967 is NOT established; this segment rests on the through trains alone. Amtrak took over the passenger trains on 1 May 1971 (three SCL trains through Petersburg were retained by Amtrak - Wikipedia, Petersburg station); Amtrak service from 1971 is drawn in amtrak.geojson. headway_min 360 is an ESTIMATE, not sourced.",
+      "sources": [
+       "Segment-level: end 1 May 1971 Amtrak takeover and the SCL trains retained from Wikipedia (Petersburg station); start 1 Jul 1967 merger as recorded in the research report's ownership_split. Headway not sourced.",
+       "https://en.wikipedia.org/wiki/Petersburg_station"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.46565,
+      37.561552
+     ],
+     [
+      -77.466725,
+      37.563153
+     ],
+     [
+      -77.46688,
+      37.563586
+     ],
+     [
+      -77.466602,
+      37.569542
+     ],
+     [
+      -77.468995,
+      37.572775
+     ],
+     [
+      -77.470164,
+      37.573945
+     ],
+     [
+      -77.471072,
+      37.574302
+     ],
+     [
+      -77.471611,
+      37.574388
+     ],
+     [
+      -77.472461,
+      37.574349
+     ],
+     [
+      -77.473211,
+      37.574136
+     ],
+     [
+      -77.474246,
+      37.573448
+     ],
+     [
+      -77.487695,
+      37.560952
+     ],
+     [
+      -77.488524,
+      37.560058
+     ],
+     [
+      -77.48916,
+      37.559127
+     ],
+     [
+      -77.489664,
+      37.558039
+     ],
+     [
+      -77.489956,
+      37.556971
+     ],
+     [
+      -77.491455,
+      37.548062
+     ],
+     [
+      -77.491395,
+      37.545905
+     ],
+     [
+      -77.490588,
+      37.542014
+     ],
+     [
+      -77.490662,
+      37.541103
+     ],
+     [
+      -77.49123,
+      37.539948
+     ],
+     [
+      -77.496853,
+      37.531808
+     ],
+     [
+      -77.497299,
+      37.53071
+     ],
+     [
+      -77.49737,
+      37.529572
+     ],
+     [
+      -77.492508,
+      37.513102
+     ],
+     [
+      -77.491768,
+      37.511544
+     ],
+     [
+      -77.490836,
+      37.51054
+     ],
+     [
+      -77.474494,
+      37.495539
+     ],
+     [
+      -77.473108,
+      37.494126
+     ],
+     [
+      -77.45101,
+      37.463313
+     ],
+     [
+      -77.450428,
+      37.462124
+     ],
+     [
+      -77.450243,
+      37.461105
+     ],
+     [
+      -77.450324,
+      37.459842
+     ],
+     [
+      -77.452972,
+      37.44433
+     ],
+     [
+      -77.453393,
+      37.439632
+     ],
+     [
+      -77.454336,
+      37.376865
+     ],
+     [
+      -77.45408,
+      37.374335
+     ],
+     [
+      -77.45322,
+      37.371624
+     ],
+     [
+      -77.451952,
+      37.369361
+     ],
+     [
+      -77.449443,
+      37.365739
+     ],
+     [
+      -77.444112,
+      37.358164
+     ],
+     [
+      -77.44249,
+      37.356222
+     ],
+     [
+      -77.440879,
+      37.354728
+     ],
+     [
+      -77.439126,
+      37.353361
+     ],
+     [
+      -77.426093,
+      37.344219
+     ],
+     [
+      -77.42523,
+      37.343595
+     ],
+     [
+      -77.42417,
+      37.342579
+     ],
+     [
+      -77.406982,
+      37.318782
+     ],
+     [
+      -77.403582,
+      37.313664
+     ],
+     [
+      -77.402678,
+      37.31151
+     ],
+     [
+      -77.402444,
+      37.309894
+     ],
+     [
+      -77.402496,
+      37.308644
+     ],
+     [
+      -77.405856,
+      37.278156
+     ],
+     [
+      -77.406077,
+      37.274853
+     ],
+     [
+      -77.406348,
+      37.27291
+     ],
+     [
+      -77.406652,
+      37.271807
+     ],
+     [
+      -77.407144,
+      37.270869
+     ],
+     [
+      -77.408195,
+      37.269675
+     ],
+     [
+      -77.415205,
+      37.264268
+     ],
+     [
+      -77.416329,
+      37.263105
+     ],
+     [
+      -77.429391,
+      37.24143
+     ]
+    ]
+   }
+  }
+ ]
+}
