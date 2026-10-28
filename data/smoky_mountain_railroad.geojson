@@ -1,0 +1,585 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Knoxville – Sevierville, Tennessee: the Knoxville, Sevierville and Eastern (1909) and its successors, popularly the Smoky Mountain Railroad. One line, split into one feature per operator era sharing identical geometry (CLAUDE.md Rule 4): KS&E 1910-1921, Knoxville and Carolina 1921-1926, Smoky Mountain Railroad 1926-1927 and 1938-1950 (one feature with a gap), Tennessee and North Carolina (lessee, 'Knoxville Branch') 1927-1938. Boundary years are shared by the outgoing and incoming features, as in ulster_delaware_railroad.geojson. Drawn passenger span 1910-1950 from research/branches/smoky_mountain_railroad.txt.",
+  "sources": [
+   "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912",
+   "https://taplines.net/November/smry.htm",
+   "https://en.wikipedia.org/wiki/Smoky_Mountain_Railroad",
+   "https://chicagorailfan.com/stbcknx.html",
+   "https://hawkinsrails.net/shortlines/smn/smn.htm",
+   "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt l.126499-126503)"
+  ],
+  "geometry_sources": [
+   "Knoxville – Vestal: OpenStreetMap (ODbL) via Overpass (maps.mail.ru mirror), routed with opstrace.py over ways tagged old_railway_operator=Southern, Douglas-Peucker 8 m. Vestal – Sevierville: straight lines between OSM/GNIS place nodes (Nominatim geocodes, each checked for type)."
+  ],
+  "freight_only_audit": "Nothing freight-only drawn: the 1950/51 - 16 Jan 1961 freight-and-express years, the Pigeon River Railroad (Sevierville – McCookville, a lumber line with no passenger evidence, mostly abandoned by 1930) and the 1942 TVA Douglas Dam construction spur are all omitted (Rule 1).",
+  "not_yet_sourced": [
+   "Passenger end: 1950 (Rogers, citing Gatlinburg Press 19 Jan 1950; chicagorailfan) vs 1951 (taplines, Wikipedia, hawkinsrails). Drawn to 1950; the month is not established and a contemporary 'last train' notice would settle it. Freight-only by Aug 1951 per the Official Guide.",
+   "1945-1949: no dated schedule checked; rests on Rogers's narrative.",
+   "All headway_min and avg_speed_kmh values are estimates (track limited to 25 mph per Wikipedia; gas car scheduled at 25 mph per Rogers).",
+   "Knoxville depot: whether the 1909 AK&N Main Avenue depot and the 1942 'Smoky Mountain Station, 848 W. Main St.' are the same building is not established; its exact site is not geocoded.",
+   "Station sites: Pitner, Revilo, Ewing and Burnett's not located; the Vestal – Sevierville alignment is not traced (lifted 1964-66, absent from OSM and OHM).",
+   "branchline.uk Tennessee station list (Fowler letter codes) not checked."
+  ],
+  "research_report": "research/branches/smoky_mountain_railroad.txt"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Knoxville, Sevierville and Eastern Railway",
+    "line": "Knoxville, Sevierville and Eastern: Knoxville – Sevierville",
+    "id": "smoky-mountain-ksande",
+    "color": "#2e6f73",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: steam short line limited to 25 mph (Wikipedia), gasoline motor car scheduled at 25 mph (Rogers 1969); no end-to-end timetable timing checked",
+    "geometry_source": "Knoxville – Vestal: OpenStreetMap (ODbL) via Overpass (maps.mail.ru mirror), routed with opstrace.py over ways tagged old_railway_operator=Southern, Douglas-Peucker 8 m. Vestal – Sevierville: straight lines between OSM/GNIS place nodes (Nominatim geocodes, each checked for type).",
+    "geometry_quality": "Mixed: traced 2.5 mi, approximated 23.2 mi. TRACED: Knoxville – Vestal (2.5 mi) from OpenStreetMap on the Southern Railway's Knoxville & Augusta line, which survives as Norfolk Southern's 'Knoxville District K&A Line' (old_railway_operator=Southern), across the Tennessee River bridge into downtown; documented 2.2 mi of Southern trackage (taplines.net), traced 2.5 mi. The north end stops on the K&A track below the bluff near W. Main St; the depot itself (old Atlanta, Knoxville & Northern depot on Main Avenue in 1909; 'Smoky Mountain Station, 848 W. Main St.' in 1942) is placed only by a road-centroid geocode of Main Street West, not a matched address, and the exact Vestal junction point is not established (trace ends 0.2 km from the GNIS Vestal node). Drawn on the K&A alignment as it exists today, which may differ in detail from 1909-50. APPROXIMATED: the company's own 27.8 mi Vestal – Sevierville line was lifted 1964-66 and nothing of it survives in OpenStreetMap (no old_railway_operator ways for any Smoky Mountain / KS&E spelling; no railway=abandoned/razed/demolished, abandoned:railway or historic=railway ways east of Vestal; OpenHistoricalMap has no railway ways in the corridor; the SoKno Rail Trail / KXHR spur nearby is a different, Southern-built line). It is drawn as 8 straight-line legs between GNIS place nodes for stations and mail points named in Rogers 1969: Vestal – Neubert 5.0 mi; Neubert – Shooks Gap 2.8 mi; Shooks Gap – Seymour 2.2 mi; Seymour – Trundle Crossroad 1.7 mi; Trundle Crossroad – Oak City 2.0 mi; Oak City – McMahan 2.1 mi; McMahan – Boyds Creek 0.9 mi; Boyds Creek – Sevierville 6.5 mi. Straight-line total 23.2 mi against the documented 27.8 mi, so the drawing is about 17% short of the real winding route over Bays Mountain (Shooks Gap) and along Boyds Creek. Station positions are those of the present-day place names, not verified depot sites; Pitner, Revilo, Ewing and Burnett's could not be located and are not waypoints. Whole line 25.7 mi drawn against ~30 mi documented (Official Guide 1951: 'Knoxville to Sevierville (30 miles)'). LATER ALIGNMENT: the Sevierville end is drawn to the town centre, which trains reached only c.1916-18 (Bruce Street extension to the new depot); 1910-c.1916 trains stopped about a mile short of town.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1921,
+      "headway_min": 360,
+      "note": "Knoxville, Sevierville and Eastern Railway (promoted by contractor W. J. Oliver; Revilo = Oliver backwards). First passenger train Knoxville – Revilo 18 Dec 1909, regular traffic from 19 Dec 1909; first train to within one mile of Sevierville 9 Jan 1910 (Rogers pp.17-18 PDF, citing the Journal and Tribune). Drawn from 1910 because the full Knoxville – Sevierville length was not reached until Jan 1910 (conservative choice; Wikipedia/taplines give 20 Dec 1909). Trains ran over 2.2 mi of Southern Railway track from Vestal across the Tennessee River to the old Atlanta, Knoxville & Northern depot on Main Avenue. Twice-daily service from March 1910 (Rogers); headway_min 360 is an estimate derived from that, not a timetable. 1919: 54,868 passengers (taplines, from ICC statistics). Receivership from 4 Dec 1920 (same company operating); foreclosed and sold, succeeded by the Knoxville and Carolina 4 Nov 1921.",
+      "sources": [
+       "Segment-level: start (Dec 1909 / 9 Jan 1910) and twice-daily service from Rogers 1969 PDF pp.17-18; operator end 4 Nov 1921 from Rogers (ICC FD 2207, 72 ICC 221) and taplines. Headway is an estimate from 'twice daily'.",
+       "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912 (PDF pp.17-18)",
+       "https://taplines.net/November/smry.htm",
+       "https://en.wikipedia.org/wiki/Smoky_Mountain_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.923278,
+      35.959174
+     ],
+     [
+      -83.922337,
+      35.957387
+     ],
+     [
+      -83.9179,
+      35.953747
+     ],
+     [
+      -83.917459,
+      35.953159
+     ],
+     [
+      -83.917209,
+      35.952376
+     ],
+     [
+      -83.917399,
+      35.95127
+     ],
+     [
+      -83.919561,
+      35.947398
+     ],
+     [
+      -83.919811,
+      35.946542
+     ],
+     [
+      -83.919894,
+      35.945601
+     ],
+     [
+      -83.919747,
+      35.944543
+     ],
+     [
+      -83.91942,
+      35.943703
+     ],
+     [
+      -83.917163,
+      35.940332
+     ],
+     [
+      -83.91646,
+      35.938712
+     ],
+     [
+      -83.916197,
+      35.936345
+     ],
+     [
+      -83.9163,
+      35.934072
+     ],
+     [
+      -83.916937,
+      35.932184
+     ],
+     [
+      -83.920882,
+      35.925921
+     ],
+     [
+      -83.841568,
+      35.893418
+     ],
+     [
+      -83.792121,
+      35.884252
+     ],
+     [
+      -83.7571,
+      35.8705
+     ],
+     [
+      -83.7352,
+      35.8865
+     ],
+     [
+      -83.702674,
+      35.898698
+     ],
+     [
+      -83.672673,
+      35.915921
+     ],
+     [
+      -83.659062,
+      35.923421
+     ],
+     [
+      -83.5657,
+      35.8673
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Knoxville and Carolina Railroad",
+    "line": "Knoxville and Carolina: Knoxville – Sevierville",
+    "id": "smoky-mountain-knoxville-carolina",
+    "color": "#6b5b95",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: steam short line limited to 25 mph (Wikipedia), gasoline motor car scheduled at 25 mph (Rogers 1969); no end-to-end timetable timing checked",
+    "geometry_source": "Knoxville – Vestal: OpenStreetMap (ODbL) via Overpass (maps.mail.ru mirror), routed with opstrace.py over ways tagged old_railway_operator=Southern, Douglas-Peucker 8 m. Vestal – Sevierville: straight lines between OSM/GNIS place nodes (Nominatim geocodes, each checked for type).",
+    "geometry_quality": "Mixed: traced 2.5 mi, approximated 23.2 mi. TRACED: Knoxville – Vestal (2.5 mi) from OpenStreetMap on the Southern Railway's Knoxville & Augusta line, which survives as Norfolk Southern's 'Knoxville District K&A Line' (old_railway_operator=Southern), across the Tennessee River bridge into downtown; documented 2.2 mi of Southern trackage (taplines.net), traced 2.5 mi. The north end stops on the K&A track below the bluff near W. Main St; the depot itself (old Atlanta, Knoxville & Northern depot on Main Avenue in 1909; 'Smoky Mountain Station, 848 W. Main St.' in 1942) is placed only by a road-centroid geocode of Main Street West, not a matched address, and the exact Vestal junction point is not established (trace ends 0.2 km from the GNIS Vestal node). Drawn on the K&A alignment as it exists today, which may differ in detail from 1909-50. APPROXIMATED: the company's own 27.8 mi Vestal – Sevierville line was lifted 1964-66 and nothing of it survives in OpenStreetMap (no old_railway_operator ways for any Smoky Mountain / KS&E spelling; no railway=abandoned/razed/demolished, abandoned:railway or historic=railway ways east of Vestal; OpenHistoricalMap has no railway ways in the corridor; the SoKno Rail Trail / KXHR spur nearby is a different, Southern-built line). It is drawn as 8 straight-line legs between GNIS place nodes for stations and mail points named in Rogers 1969: Vestal – Neubert 5.0 mi; Neubert – Shooks Gap 2.8 mi; Shooks Gap – Seymour 2.2 mi; Seymour – Trundle Crossroad 1.7 mi; Trundle Crossroad – Oak City 2.0 mi; Oak City – McMahan 2.1 mi; McMahan – Boyds Creek 0.9 mi; Boyds Creek – Sevierville 6.5 mi. Straight-line total 23.2 mi against the documented 27.8 mi, so the drawing is about 17% short of the real winding route over Bays Mountain (Shooks Gap) and along Boyds Creek. Station positions are those of the present-day place names, not verified depot sites; Pitner, Revilo, Ewing and Burnett's could not be located and are not waypoints. Whole line 25.7 mi drawn against ~30 mi documented (Official Guide 1951: 'Knoxville to Sevierville (30 miles)'). LATER ALIGNMENT: the Sevierville end is drawn to the town centre, which trains reached only c.1916-18 (Bruce Street extension to the new depot); 1910-c.1916 trains stopped about a mile short of town.",
+    "segments": [
+     {
+      "start": 1921,
+      "end": 1922,
+      "headway_min": 360,
+      "note": "Knoxville and Carolina Railroad, reorganized from the KS&E 4 Nov 1921. Service level for 1921-22 not documented; headway_min 360 assumes the KS&E's twice-daily pattern continued — an estimate, unsourced.",
+      "sources": [
+       "Segment-level: operator start 4 Nov 1921 from Rogers 1969 (ICC FD 2207) and taplines. NOT SOURCED for the 1921-22 headway, which is assumed.",
+       "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912",
+       "https://taplines.net/November/smry.htm"
+      ]
+     },
+     {
+      "start": 1922,
+      "end": 1926,
+      "headway_min": 240,
+      "note": "Oct 1922: a $16,000 self-propelled gasoline car bought, making three round trips a day Knoxville – Sevierville with steam handling the rest (Rogers PDF p.49); still three round trips in Oct 1926 (Rogers ch. II fn 29, PDF p.55, citing Knoxville Journal 17 Oct 1926). Passenger traffic 'seriously reduced' from Sept 1923 when Oliver started a Knoxville – Sevierville bus; passenger revenue $43,296 (1923) -> $10,568 (1925) (taplines). headway_min 240 is an estimate from three round trips a day. Sold at auction 1 May and again 18 Oct 1926; the new owners ran it under the Smoky Mountain Railroad charter from Oct 1926.",
+      "sources": [
+       "Segment-level: gas-car service and three daily round trips from Rogers 1969 PDF pp.49, 55; end of K&C operation Oct 1926 from Rogers and taplines. Headway is an estimate.",
+       "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912 (PDF pp.49, 55)",
+       "https://taplines.net/November/smry.htm",
+       "https://en.wikipedia.org/wiki/Smoky_Mountain_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.923278,
+      35.959174
+     ],
+     [
+      -83.922337,
+      35.957387
+     ],
+     [
+      -83.9179,
+      35.953747
+     ],
+     [
+      -83.917459,
+      35.953159
+     ],
+     [
+      -83.917209,
+      35.952376
+     ],
+     [
+      -83.917399,
+      35.95127
+     ],
+     [
+      -83.919561,
+      35.947398
+     ],
+     [
+      -83.919811,
+      35.946542
+     ],
+     [
+      -83.919894,
+      35.945601
+     ],
+     [
+      -83.919747,
+      35.944543
+     ],
+     [
+      -83.91942,
+      35.943703
+     ],
+     [
+      -83.917163,
+      35.940332
+     ],
+     [
+      -83.91646,
+      35.938712
+     ],
+     [
+      -83.916197,
+      35.936345
+     ],
+     [
+      -83.9163,
+      35.934072
+     ],
+     [
+      -83.916937,
+      35.932184
+     ],
+     [
+      -83.920882,
+      35.925921
+     ],
+     [
+      -83.841568,
+      35.893418
+     ],
+     [
+      -83.792121,
+      35.884252
+     ],
+     [
+      -83.7571,
+      35.8705
+     ],
+     [
+      -83.7352,
+      35.8865
+     ],
+     [
+      -83.702674,
+      35.898698
+     ],
+     [
+      -83.672673,
+      35.915921
+     ],
+     [
+      -83.659062,
+      35.923421
+     ],
+     [
+      -83.5657,
+      35.8673
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Smoky Mountain Railroad",
+    "line": "Smoky Mountain Railroad: Knoxville – Sevierville",
+    "id": "smoky-mountain-railroad",
+    "color": "#b8476a",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: steam short line limited to 25 mph (Wikipedia), gasoline motor car scheduled at 25 mph (Rogers 1969); no end-to-end timetable timing checked",
+    "geometry_source": "Knoxville – Vestal: OpenStreetMap (ODbL) via Overpass (maps.mail.ru mirror), routed with opstrace.py over ways tagged old_railway_operator=Southern, Douglas-Peucker 8 m. Vestal – Sevierville: straight lines between OSM/GNIS place nodes (Nominatim geocodes, each checked for type).",
+    "geometry_quality": "Mixed: traced 2.5 mi, approximated 23.2 mi. TRACED: Knoxville – Vestal (2.5 mi) from OpenStreetMap on the Southern Railway's Knoxville & Augusta line, which survives as Norfolk Southern's 'Knoxville District K&A Line' (old_railway_operator=Southern), across the Tennessee River bridge into downtown; documented 2.2 mi of Southern trackage (taplines.net), traced 2.5 mi. The north end stops on the K&A track below the bluff near W. Main St; the depot itself (old Atlanta, Knoxville & Northern depot on Main Avenue in 1909; 'Smoky Mountain Station, 848 W. Main St.' in 1942) is placed only by a road-centroid geocode of Main Street West, not a matched address, and the exact Vestal junction point is not established (trace ends 0.2 km from the GNIS Vestal node). Drawn on the K&A alignment as it exists today, which may differ in detail from 1909-50. APPROXIMATED: the company's own 27.8 mi Vestal – Sevierville line was lifted 1964-66 and nothing of it survives in OpenStreetMap (no old_railway_operator ways for any Smoky Mountain / KS&E spelling; no railway=abandoned/razed/demolished, abandoned:railway or historic=railway ways east of Vestal; OpenHistoricalMap has no railway ways in the corridor; the SoKno Rail Trail / KXHR spur nearby is a different, Southern-built line). It is drawn as 8 straight-line legs between GNIS place nodes for stations and mail points named in Rogers 1969: Vestal – Neubert 5.0 mi; Neubert – Shooks Gap 2.8 mi; Shooks Gap – Seymour 2.2 mi; Seymour – Trundle Crossroad 1.7 mi; Trundle Crossroad – Oak City 2.0 mi; Oak City – McMahan 2.1 mi; McMahan – Boyds Creek 0.9 mi; Boyds Creek – Sevierville 6.5 mi. Straight-line total 23.2 mi against the documented 27.8 mi, so the drawing is about 17% short of the real winding route over Bays Mountain (Shooks Gap) and along Boyds Creek. Station positions are those of the present-day place names, not verified depot sites; Pitner, Revilo, Ewing and Burnett's could not be located and are not waypoints. Whole line 25.7 mi drawn against ~30 mi documented (Official Guide 1951: 'Knoxville to Sevierville (30 miles)'). LATER ALIGNMENT: the Sevierville end is drawn to the town centre, which trains reached only c.1916-18 (Bruce Street extension to the new depot); 1910-c.1916 trains stopped about a mile short of town.",
+    "segments": [
+     {
+      "start": 1926,
+      "end": 1927,
+      "headway_min": 240,
+      "note": "Smoky Mountain Railroad Co. (chartered Aug 1926) operated the line for its new owners from 18 Oct 1926 until 31 May 1927 — 'the Smoky Mountain charter had been secured to enable the new owners to operate' (Rogers). The gasoline car was still making three round trips a day in Oct 1926 (Rogers PDF p.55). headway_min 240 is an estimate from that. From 1 Jun 1927 the line was leased to the Tennessee and North Carolina.",
+      "sources": [
+       "Segment-level: Oct 1926 - 31 May 1927 operation and three daily gas-car trips from Rogers 1969 (ch. II, PDF p.55; ICC FD 5956, 124 ICC 523). Headway is an estimate.",
+       "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912 (PDF p.55)",
+       "https://taplines.net/November/smry.htm"
+      ]
+     },
+     {
+      "start": 1938,
+      "end": 1950,
+      "headway_min": 1440,
+      "note": "Smoky Mountain Railroad operating under its own charter again from 14 Oct 1938, when the Tennessee and North Carolina's working agreement ended (Midwest Steel Corp. had bought the stock Dec 1937). 1942: 'Smoky Mountain Station, 848 W. Main St.', one train each way (chicagorailfan). 1944: 'only one mixed train daily, except Sunday, between Knoxville and Sevierville', fare $1.00 (Rogers PDF p.79, citing the ICC rate case). headway_min 1440 reflects one daily mixed train; an estimate. 1945-1949 rest on Rogers's narrative that service ran until it was discontinued, not on a dated schedule. Passenger service 'discontinued in 1950' (Rogers PDF p.90, citing Gatlinburg Press 19 Jan 1950); taplines, Wikipedia and hawkinsrails say 1951 — SOURCE CONFLICT, bracket 1950-1951; the Official Guide's Aug 1951 entry already reads 'Operated for freight and express service only'. Drawn to 1950, the inward choice; the month is not established. Freight and express continued until operations were suspended 16 Jan 1961 (abandoned 1964) — not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: 14 Oct 1938 operator change from Rogers 1969 and taplines; 1942 service from chicagorailfan; 1944 mixed train from Rogers PDF p.79; 1950 end from Rogers PDF p.90, conflicting with taplines/Wikipedia/hawkinsrails (1951); freight-only status by Aug 1951 from the Official Guide. Headway is an estimate.",
+       "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912 (PDF pp.79, 90)",
+       "https://chicagorailfan.com/stbcknx.html",
+       "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt l.126499-126503)",
+       "https://taplines.net/November/smry.htm",
+       "https://en.wikipedia.org/wiki/Smoky_Mountain_Railroad",
+       "https://hawkinsrails.net/shortlines/smn/smn.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.923278,
+      35.959174
+     ],
+     [
+      -83.922337,
+      35.957387
+     ],
+     [
+      -83.9179,
+      35.953747
+     ],
+     [
+      -83.917459,
+      35.953159
+     ],
+     [
+      -83.917209,
+      35.952376
+     ],
+     [
+      -83.917399,
+      35.95127
+     ],
+     [
+      -83.919561,
+      35.947398
+     ],
+     [
+      -83.919811,
+      35.946542
+     ],
+     [
+      -83.919894,
+      35.945601
+     ],
+     [
+      -83.919747,
+      35.944543
+     ],
+     [
+      -83.91942,
+      35.943703
+     ],
+     [
+      -83.917163,
+      35.940332
+     ],
+     [
+      -83.91646,
+      35.938712
+     ],
+     [
+      -83.916197,
+      35.936345
+     ],
+     [
+      -83.9163,
+      35.934072
+     ],
+     [
+      -83.916937,
+      35.932184
+     ],
+     [
+      -83.920882,
+      35.925921
+     ],
+     [
+      -83.841568,
+      35.893418
+     ],
+     [
+      -83.792121,
+      35.884252
+     ],
+     [
+      -83.7571,
+      35.8705
+     ],
+     [
+      -83.7352,
+      35.8865
+     ],
+     [
+      -83.702674,
+      35.898698
+     ],
+     [
+      -83.672673,
+      35.915921
+     ],
+     [
+      -83.659062,
+      35.923421
+     ],
+     [
+      -83.5657,
+      35.8673
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tennessee and North Carolina Railroad",
+    "line": "Tennessee and North Carolina: Knoxville Branch",
+    "id": "smoky-mountain-tnc",
+    "color": "#3f7d58",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: steam short line limited to 25 mph (Wikipedia), gasoline motor car scheduled at 25 mph (Rogers 1969); no end-to-end timetable timing checked",
+    "geometry_source": "Knoxville – Vestal: OpenStreetMap (ODbL) via Overpass (maps.mail.ru mirror), routed with opstrace.py over ways tagged old_railway_operator=Southern, Douglas-Peucker 8 m. Vestal – Sevierville: straight lines between OSM/GNIS place nodes (Nominatim geocodes, each checked for type).",
+    "geometry_quality": "Mixed: traced 2.5 mi, approximated 23.2 mi. TRACED: Knoxville – Vestal (2.5 mi) from OpenStreetMap on the Southern Railway's Knoxville & Augusta line, which survives as Norfolk Southern's 'Knoxville District K&A Line' (old_railway_operator=Southern), across the Tennessee River bridge into downtown; documented 2.2 mi of Southern trackage (taplines.net), traced 2.5 mi. The north end stops on the K&A track below the bluff near W. Main St; the depot itself (old Atlanta, Knoxville & Northern depot on Main Avenue in 1909; 'Smoky Mountain Station, 848 W. Main St.' in 1942) is placed only by a road-centroid geocode of Main Street West, not a matched address, and the exact Vestal junction point is not established (trace ends 0.2 km from the GNIS Vestal node). Drawn on the K&A alignment as it exists today, which may differ in detail from 1909-50. APPROXIMATED: the company's own 27.8 mi Vestal – Sevierville line was lifted 1964-66 and nothing of it survives in OpenStreetMap (no old_railway_operator ways for any Smoky Mountain / KS&E spelling; no railway=abandoned/razed/demolished, abandoned:railway or historic=railway ways east of Vestal; OpenHistoricalMap has no railway ways in the corridor; the SoKno Rail Trail / KXHR spur nearby is a different, Southern-built line). It is drawn as 8 straight-line legs between GNIS place nodes for stations and mail points named in Rogers 1969: Vestal – Neubert 5.0 mi; Neubert – Shooks Gap 2.8 mi; Shooks Gap – Seymour 2.2 mi; Seymour – Trundle Crossroad 1.7 mi; Trundle Crossroad – Oak City 2.0 mi; Oak City – McMahan 2.1 mi; McMahan – Boyds Creek 0.9 mi; Boyds Creek – Sevierville 6.5 mi. Straight-line total 23.2 mi against the documented 27.8 mi, so the drawing is about 17% short of the real winding route over Bays Mountain (Shooks Gap) and along Boyds Creek. Station positions are those of the present-day place names, not verified depot sites; Pitner, Revilo, Ewing and Burnett's could not be located and are not waypoints. Whole line 25.7 mi drawn against ~30 mi documented (Official Guide 1951: 'Knoxville to Sevierville (30 miles)'). LATER ALIGNMENT: the Sevierville end is drawn to the town centre, which trains reached only c.1916-18 (Bruce Street extension to the new depot); 1910-c.1916 trains stopped about a mile short of town.",
+    "segments": [
+     {
+      "start": 1927,
+      "end": 1938,
+      "headway_min": 720,
+      "note": "Leased to and operated by the Tennessee and North Carolina Railroad as its 'Knoxville Branch' from 1 Jun 1927 (ICC FD 5957, 170 ICC 716). The lease was cancelled effective March 1938 (Rogers: 31 Mar; taplines: 6 Mar — conflict), but the T&NC kept operating under a working agreement until 14 Oct 1938, when the Smoky Mountain Railroad took over. 1930 roster: 2 coaches plus the gasoline car (taplines); 1933-37 'little passenger service' (Rogers PDF p.60). No timetable checked for these years: headway_min 720 is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: lease 1 Jun 1927 and operation to 14 Oct 1938 from Rogers 1969 and taplines; 'little passenger service' 1933-37 from Rogers PDF p.60. NOT SOURCED for the headway, which is an estimate.",
+       "Rogers, 'A History of the Smoky Mountain Railroad', M.A. thesis, Univ. of Tennessee 1969, https://trace.tennessee.edu/utk_gradthes/2912 (PDF p.60)",
+       "https://taplines.net/November/smry.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.923278,
+      35.959174
+     ],
+     [
+      -83.922337,
+      35.957387
+     ],
+     [
+      -83.9179,
+      35.953747
+     ],
+     [
+      -83.917459,
+      35.953159
+     ],
+     [
+      -83.917209,
+      35.952376
+     ],
+     [
+      -83.917399,
+      35.95127
+     ],
+     [
+      -83.919561,
+      35.947398
+     ],
+     [
+      -83.919811,
+      35.946542
+     ],
+     [
+      -83.919894,
+      35.945601
+     ],
+     [
+      -83.919747,
+      35.944543
+     ],
+     [
+      -83.91942,
+      35.943703
+     ],
+     [
+      -83.917163,
+      35.940332
+     ],
+     [
+      -83.91646,
+      35.938712
+     ],
+     [
+      -83.916197,
+      35.936345
+     ],
+     [
+      -83.9163,
+      35.934072
+     ],
+     [
+      -83.916937,
+      35.932184
+     ],
+     [
+      -83.920882,
+      35.925921
+     ],
+     [
+      -83.841568,
+      35.893418
+     ],
+     [
+      -83.792121,
+      35.884252
+     ],
+     [
+      -83.7571,
+      35.8705
+     ],
+     [
+      -83.7352,
+      35.8865
+     ],
+     [
+      -83.702674,
+      35.898698
+     ],
+     [
+      -83.672673,
+      35.915921
+     ],
+     [
+      -83.659062,
+      35.923421
+     ],
+     [
+      -83.5657,
+      35.8673
+     ]
+    ]
+   }
+  }
+ ]
+}
