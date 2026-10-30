@@ -1,0 +1,683 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Dayton and Michigan Railroad's own era, 1853-1863: Dayton - Toledo drawn as five sections, each from its own opening year to the 1 May 1863 perpetual lease to the Cincinnati, Hamilton and Dayton. Non-overlapping sections so the line grows north year by year without double drawing. The D&M owned one line and no branches (ICC Val. vol. 42: 139.966 mi, all built by the company); it never built in Michigan.",
+  "source": "research/branches/dayton_and_michigan_railroad.txt (researched 2026-10-29)",
+  "ownership_split": "D&M to 1863 here; CH&D 1863-1917 and B&O 1917-1971 already drawn on identical geometry in cincinnati_hamilton_and_dayton_railway.geojson.",
+  "conflicts": [
+   "Piqua opening: 1854 (Ohio Commissioner 1867) vs 1856 (Harbaugh 1909); drawn from 1856.",
+   "Operator 1859-1863: ICC Val. vol. 42 says CH&D from 1859; contemporary D&M timetables signed by the D&M superintendent say D&M. Drawn as D&M to the 1863 lease.",
+   "Toledo completion day: 28 Jul (michiganrailroads.com), 18 Aug last rail (Perrysburg Journal), 1 Sep opening (Ohio Commissioner 1867) - same year, no effect on drawn span."
+  ],
+  "not_yet_sourced": [
+   "Whether Sidney - Wapakoneta opened before Lima (1857?).",
+   "D&M running times and frequency outside Nov 1858; avg_speed_kmh and headway_min are estimates."
+  ],
+  "omitted": [
+   "Piqua and Troy Branch RR (1883, CH&D-operated, not D&M property).",
+   "Wapakoneta - St. Marys connection: a road hack, not rail (Rule 5 would exclude it anyway).",
+   "Through routes to Chicago (PFW&C), Detroit (Michigan Southern side) and Cincinnati (CH&D) - other companies' track."
+  ],
+  "freight_only_check": "Nothing excluded: one line, carried passengers from each opening.",
+  "horsecar_check": "None: steam from April 1853.",
+  "colour": "#8A4F7D new for Dayton and Michigan Railroad; checked unused in data/ (distinct from CH&D #E07B39 and B&O #00447C)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.193537,
+      39.755038
+     ],
+     [
+      -84.190849,
+      39.755202
+     ],
+     [
+      -84.189746,
+      39.755456
+     ],
+     [
+      -84.188762,
+      39.755912
+     ],
+     [
+      -84.179036,
+      39.762787
+     ],
+     [
+      -84.178453,
+      39.763424
+     ],
+     [
+      -84.178212,
+      39.764073
+     ],
+     [
+      -84.178659,
+      39.771543
+     ],
+     [
+      -84.176463,
+      39.794673
+     ],
+     [
+      -84.175021,
+      39.818278
+     ],
+     [
+      -84.175156,
+      39.821492
+     ],
+     [
+      -84.176831,
+      39.831974
+     ],
+     [
+      -84.176892,
+      39.834254
+     ],
+     [
+      -84.172728,
+      39.872461
+     ],
+     [
+      -84.172316,
+      39.873964
+     ],
+     [
+      -84.171599,
+      39.875663
+     ],
+     [
+      -84.167614,
+      39.882362
+     ],
+     [
+      -84.167231,
+      39.883396
+     ],
+     [
+      -84.167005,
+      39.884717
+     ],
+     [
+      -84.16588,
+      39.897605
+     ],
+     [
+      -84.165897,
+      39.89862
+     ],
+     [
+      -84.16618,
+      39.899988
+     ],
+     [
+      -84.168838,
+      39.908125
+     ],
+     [
+      -84.16989,
+      39.91653
+     ],
+     [
+      -84.169947,
+      39.918166
+     ],
+     [
+      -84.169606,
+      39.920637
+     ],
+     [
+      -84.166547,
+      39.933193
+     ],
+     [
+      -84.166343,
+      39.935155
+     ],
+     [
+      -84.166417,
+      39.936657
+     ],
+     [
+      -84.166995,
+      39.939316
+     ],
+     [
+      -84.180599,
+      39.98254
+     ],
+     [
+      -84.18097,
+      39.986274
+     ],
+     [
+      -84.181699,
+      39.988735
+     ],
+     [
+      -84.182249,
+      39.989741
+     ],
+     [
+      -84.183032,
+      39.990624
+     ],
+     [
+      -84.186407,
+      39.993173
+     ],
+     [
+      -84.187757,
+      39.994471
+     ],
+     [
+      -84.19353,
+      40.001838
+     ],
+     [
+      -84.194169,
+      40.002966
+     ],
+     [
+      -84.194507,
+      40.003931
+     ],
+     [
+      -84.196029,
+      40.01325
+     ],
+     [
+      -84.202638,
+      40.032969
+     ],
+     [
+      -84.202846,
+      40.033985
+     ],
+     [
+      -84.202718,
+      40.035019
+     ],
+     [
+      -84.202283,
+      40.035909
+     ],
+     [
+      -84.200707,
+      40.038068
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Dayton and Michigan Railroad",
+    "line": "Dayton and Michigan: Dayton – Troy",
+    "id": "dm-dayton-troy",
+    "color": "#8A4F7D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - typical 1850s Ohio steam passenger schedule; no D&M running times recovered (timetable OCR unreadable).",
+    "geometry_source": "Cut from chd-dayton-toledo (OpenStreetMap ways tagged old_railway_operator=B&O plus untagged OSM rail, maps.mail.ru Overpass, routed with opstrace.py, 2026-10-29)",
+    "geometry_quality": "Traced, no straight-line legs: 20.5 mi, cut at drawn milepost 0.0 - 20.5 from the chd-dayton-toledo trace in cincinnati_hamilton_and_dayton_railway.geojson (142.4 mi drawn against 139.966 mi documented by ICC Val. vol. 42, 1.7% long). Stage boundaries are at drawn mileposts, not surveyed station locations (Piqua sits ~1.5 km from its town-centre geocode). ALIGNMENT ERA: drawn on today's CSX Toledo Subdivision, a LATER alignment than 1853-1863; the ICC records about 1 mile built in 1905, and 1850s station and street-running details at Dayton, Lima and Toledo are not reconstructed.",
+    "segments": [
+     {
+      "start": 1853,
+      "end": 1863,
+      "headway_min": 720,
+      "note": "Dayton - Troy, the first stage of the D&M, \"opened for traffic, from Dayton to Troy, in April, 1853\" (Ohio Commissioner of Railroads and Telegraphs, Annual Report for 1867, which calls the stations \"for receiving passengers and freight\"). Steam from opening; no animal-power era. Ends at the perpetual lease of the D&M to the Cincinnati, Hamilton and Dayton on 1 May 1863 (Ohio Commissioner of Railroads, Annual Report for 1873); from 1863 the same track is drawn as chd-dayton-toledo (CH&D 1863-1917) and bo-dayton-toledo (B&O 1917-1971). CONFLICT: ICC Valuation vol. 42 says the CH&D operated the D&M from its completion in 1859; contemporary D&M timetables (Nov 1858, Apr 1859, Nov 1862, Feb 1863) were signed by the D&M's own superintendent R. M. Shoemaker beside separately signed CH&D ads, so this feature follows the 1863 lease. headway_min 720 is an ESTIMATE from the D&M's Nov 1858 \"Two Daily Trains\" advertisement (Dayton Daily Empire, 6 Apr 1859); no frequency is sourced for other years.",
+      "sources": [
+       "Segment-level: April 1853 opening from Ohio Commissioner of Railroads and Telegraphs, Annual Report for 1867; 1 May 1863 lease from the same, Annual Report for 1873 (both read for research/branches/dayton_and_michigan_railroad.txt, 2026-10-29)",
+       "https://archive.org/details/annualreportofco1867ohio",
+       "https://archive.org/details/annualreportofco1873ohio"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.200707,
+      40.038068
+     ],
+     [
+      -84.196927,
+      40.043246
+     ],
+     [
+      -84.196519,
+      40.044557
+     ],
+     [
+      -84.196621,
+      40.045858
+     ],
+     [
+      -84.22569,
+      40.147767
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Dayton and Michigan Railroad",
+    "line": "Dayton and Michigan: Troy – Piqua",
+    "id": "dm-troy-piqua",
+    "color": "#8A4F7D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - typical 1850s Ohio steam passenger schedule; no D&M running times recovered (timetable OCR unreadable).",
+    "geometry_source": "Cut from chd-dayton-toledo (OpenStreetMap ways tagged old_railway_operator=B&O plus untagged OSM rail, maps.mail.ru Overpass, routed with opstrace.py, 2026-10-29)",
+    "geometry_quality": "Traced, no straight-line legs: 7.8 mi, cut at drawn milepost 20.5 - 28.3 from the chd-dayton-toledo trace in cincinnati_hamilton_and_dayton_railway.geojson (142.4 mi drawn against 139.966 mi documented by ICC Val. vol. 42, 1.7% long). Stage boundaries are at drawn mileposts, not surveyed station locations (Piqua sits ~1.5 km from its town-centre geocode). ALIGNMENT ERA: drawn on today's CSX Toledo Subdivision, a LATER alignment than 1853-1863; the ICC records about 1 mile built in 1905, and 1850s station and street-running details at Dayton, Lima and Toledo are not reconstructed.",
+    "segments": [
+     {
+      "start": 1856,
+      "end": 1863,
+      "headway_min": 720,
+      "note": "Troy - Piqua. CONFLICT on the opening year: the Ohio Commissioner's 1867 report says \"to Piqua in 1854\"; Harbaugh, History of Miami County (1909), says \"completed to Piqua in 1856\". Drawn from the LATER year, 1856, so 1854-1855 are withheld rather than asserted. The Nov 1858 D&M timetable has trains connecting at Piqua for Columbus. Ends at the perpetual lease of the D&M to the Cincinnati, Hamilton and Dayton on 1 May 1863 (Ohio Commissioner of Railroads, Annual Report for 1873); from 1863 the same track is drawn as chd-dayton-toledo (CH&D 1863-1917) and bo-dayton-toledo (B&O 1917-1971). CONFLICT: ICC Valuation vol. 42 says the CH&D operated the D&M from its completion in 1859; contemporary D&M timetables (Nov 1858, Apr 1859, Nov 1862, Feb 1863) were signed by the D&M's own superintendent R. M. Shoemaker beside separately signed CH&D ads, so this feature follows the 1863 lease. headway_min 720 is an ESTIMATE from the D&M's Nov 1858 \"Two Daily Trains\" advertisement (Dayton Daily Empire, 6 Apr 1859); no frequency is sourced for other years.",
+      "sources": [
+       "Segment-level: start 1856 from Harbaugh, History of Miami County (1909) ch. 9, against 1854 in the Ohio Commissioner 1867 report (conflict recorded); Piqua stop confirmed by D&M timetable effective 29 Nov 1858 (Dayton Daily Empire 6 Apr 1859 p.4); lease 1863 from Ohio Commissioner 1873",
+       "https://thetroyhistoricalsociety.org/Stories/hist1909/chap-09.htm",
+       "https://archive.org/details/annualreportofco1867ohio",
+       "https://chroniclingamerica.loc.gov/lccn/sn85026002/1859-04-06/ed-1/seq-4/",
+       "https://archive.org/details/annualreportofco1873ohio"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.22569,
+      40.147767
+     ],
+     [
+      -84.226428,
+      40.150356
+     ],
+     [
+      -84.227623,
+      40.153148
+     ],
+     [
+      -84.227811,
+      40.154735
+     ],
+     [
+      -84.227604,
+      40.155881
+     ],
+     [
+      -84.227116,
+      40.157019
+     ],
+     [
+      -84.194595,
+      40.219768
+     ],
+     [
+      -84.18795,
+      40.234539
+     ],
+     [
+      -84.186401,
+      40.237316
+     ],
+     [
+      -84.185188,
+      40.239097
+     ],
+     [
+      -84.183586,
+      40.241088
+     ],
+     [
+      -84.177009,
+      40.248218
+     ],
+     [
+      -84.175483,
+      40.250118
+     ],
+     [
+      -84.159432,
+      40.272211
+     ],
+     [
+      -84.158577,
+      40.273947
+     ],
+     [
+      -84.158295,
+      40.275668
+     ],
+     [
+      -84.158371,
+      40.276768
+     ],
+     [
+      -84.158696,
+      40.277951
+     ],
+     [
+      -84.160535,
+      40.281271
+     ],
+     [
+      -84.161284,
+      40.283092
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Dayton and Michigan Railroad",
+    "line": "Dayton and Michigan: Piqua – Sidney",
+    "id": "dm-piqua-sidney",
+    "color": "#8A4F7D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - typical 1850s Ohio steam passenger schedule; no D&M running times recovered (timetable OCR unreadable).",
+    "geometry_source": "Cut from chd-dayton-toledo (OpenStreetMap ways tagged old_railway_operator=B&O plus untagged OSM rail, maps.mail.ru Overpass, routed with opstrace.py, 2026-10-29)",
+    "geometry_quality": "Traced, no straight-line legs: 10.2 mi, cut at drawn milepost 28.3 - 38.5 from the chd-dayton-toledo trace in cincinnati_hamilton_and_dayton_railway.geojson (142.4 mi drawn against 139.966 mi documented by ICC Val. vol. 42, 1.7% long). Stage boundaries are at drawn mileposts, not surveyed station locations (Piqua sits ~1.5 km from its town-centre geocode). ALIGNMENT ERA: drawn on today's CSX Toledo Subdivision, a LATER alignment than 1853-1863; the ICC records about 1 mile built in 1905, and 1850s station and street-running details at Dayton, Lima and Toledo are not reconstructed.",
+    "segments": [
+     {
+      "start": 1856,
+      "end": 1863,
+      "headway_min": 720,
+      "note": "Piqua - Sidney, opened \"to Sidney in November, 1856\" (Ohio Commissioner 1867). Sidney was the D&M's connection with the Bellefontaine and Indiana (Nov 1858 timetable). Ends at the perpetual lease of the D&M to the Cincinnati, Hamilton and Dayton on 1 May 1863 (Ohio Commissioner of Railroads, Annual Report for 1873); from 1863 the same track is drawn as chd-dayton-toledo (CH&D 1863-1917) and bo-dayton-toledo (B&O 1917-1971). CONFLICT: ICC Valuation vol. 42 says the CH&D operated the D&M from its completion in 1859; contemporary D&M timetables (Nov 1858, Apr 1859, Nov 1862, Feb 1863) were signed by the D&M's own superintendent R. M. Shoemaker beside separately signed CH&D ads, so this feature follows the 1863 lease. headway_min 720 is an ESTIMATE from the D&M's Nov 1858 \"Two Daily Trains\" advertisement (Dayton Daily Empire, 6 Apr 1859); no frequency is sourced for other years.",
+      "sources": [
+       "Segment-level: November 1856 opening from Ohio Commissioner of Railroads and Telegraphs, Annual Report for 1867; service confirmed by D&M timetable effective 29 Nov 1858 (Dayton Daily Empire 6 Apr 1859 p.4); lease 1863 from Ohio Commissioner 1873",
+       "https://archive.org/details/annualreportofco1867ohio",
+       "https://chroniclingamerica.loc.gov/lccn/sn85026002/1859-04-06/ed-1/seq-4/",
+       "https://archive.org/details/annualreportofco1873ohio"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.161284,
+      40.283092
+     ],
+     [
+      -84.16141,
+      40.283399
+     ],
+     [
+      -84.170951,
+      40.320504
+     ],
+     [
+      -84.17139,
+      40.322977
+     ],
+     [
+      -84.194632,
+      40.562722
+     ],
+     [
+      -84.194586,
+      40.564339
+     ],
+     [
+      -84.19409,
+      40.565931
+     ],
+     [
+      -84.192715,
+      40.568426
+     ],
+     [
+      -84.104165,
+      40.724089
+     ],
+     [
+      -84.101425,
+      40.730037
+     ],
+     [
+      -84.101191,
+      40.731203
+     ],
+     [
+      -84.101034,
+      40.73736
+     ],
+     [
+      -84.101064,
+      40.740462
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Dayton and Michigan Railroad",
+    "line": "Dayton and Michigan: Sidney – Lima",
+    "id": "dm-sidney-lima",
+    "color": "#8A4F7D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - typical 1850s Ohio steam passenger schedule; no D&M running times recovered (timetable OCR unreadable).",
+    "geometry_source": "Cut from chd-dayton-toledo (OpenStreetMap ways tagged old_railway_operator=B&O plus untagged OSM rail, maps.mail.ru Overpass, routed with opstrace.py, 2026-10-29)",
+    "geometry_quality": "Traced, no straight-line legs: 32.7 mi, cut at drawn milepost 38.5 - 71.2 from the chd-dayton-toledo trace in cincinnati_hamilton_and_dayton_railway.geojson (142.4 mi drawn against 139.966 mi documented by ICC Val. vol. 42, 1.7% long). Stage boundaries are at drawn mileposts, not surveyed station locations (Piqua sits ~1.5 km from its town-centre geocode). ALIGNMENT ERA: drawn on today's CSX Toledo Subdivision, a LATER alignment than 1853-1863; the ICC records about 1 mile built in 1905, and 1850s station and street-running details at Dayton, Lima and Toledo are not reconstructed.",
+    "segments": [
+     {
+      "start": 1858,
+      "end": 1863,
+      "headway_min": 720,
+      "note": "Sidney - Wapakoneta - Lima. Start 1858 from positive passenger evidence: a D&M timetable \"ON AND AFTER MONDAY, NOV. 29, 1858, Passenger trains will leave Dayton ... for Sidney, Lima\", connecting at Lima with the Pittsburgh, Fort Wayne & Chicago (Dayton Daily Empire, 6 Apr 1859 p.4); Ohio Historical Marker 5-6 at Wapakoneta also gives 1858. Whether Sidney - Wapakoneta opened earlier (e.g. 1857) is not established, so nothing earlier is drawn. Ends at the perpetual lease of the D&M to the Cincinnati, Hamilton and Dayton on 1 May 1863 (Ohio Commissioner of Railroads, Annual Report for 1873); from 1863 the same track is drawn as chd-dayton-toledo (CH&D 1863-1917) and bo-dayton-toledo (B&O 1917-1971). CONFLICT: ICC Valuation vol. 42 says the CH&D operated the D&M from its completion in 1859; contemporary D&M timetables (Nov 1858, Apr 1859, Nov 1862, Feb 1863) were signed by the D&M's own superintendent R. M. Shoemaker beside separately signed CH&D ads, so this feature follows the 1863 lease. headway_min 720 is an ESTIMATE from the D&M's Nov 1858 \"Two Daily Trains\" advertisement (Dayton Daily Empire, 6 Apr 1859); no frequency is sourced for other years.",
+      "sources": [
+       "Segment-level: 1858 start from the D&M timetable effective 29 Nov 1858 (Dayton Daily Empire 6 Apr 1859 p.4) and Ohio Historical Marker 5-6 (marker text via remarkableohio.org/hmdb.org search summaries only, page not fetched); lease 1863 from Ohio Commissioner 1873",
+       "https://chroniclingamerica.loc.gov/lccn/sn85026002/1859-04-06/ed-1/seq-4/",
+       "https://archive.org/details/annualreportofco1873ohio"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.101064,
+      40.740462
+     ],
+     [
+      -84.101182,
+      40.752518
+     ],
+     [
+      -84.10072,
+      40.756047
+     ],
+     [
+      -84.075952,
+      40.851799
+     ],
+     [
+      -84.059382,
+      40.917197
+     ],
+     [
+      -84.047725,
+      41.018886
+     ],
+     [
+      -84.047365,
+      41.021876
+     ],
+     [
+      -84.047115,
+      41.022819
+     ],
+     [
+      -84.04625,
+      41.0245
+     ],
+     [
+      -84.044987,
+      41.025922
+     ],
+     [
+      -84.033847,
+      41.033522
+     ],
+     [
+      -84.032012,
+      41.035026
+     ],
+     [
+      -84.030216,
+      41.037009
+     ],
+     [
+      -83.931398,
+      41.167474
+     ],
+     [
+      -83.817787,
+      41.316763
+     ],
+     [
+      -83.723415,
+      41.440132
+     ],
+     [
+      -83.63552,
+      41.554477
+     ],
+     [
+      -83.634652,
+      41.55538
+     ],
+     [
+      -83.633374,
+      41.556272
+     ],
+     [
+      -83.631883,
+      41.557002
+     ],
+     [
+      -83.628596,
+      41.558242
+     ],
+     [
+      -83.620071,
+      41.561345
+     ],
+     [
+      -83.617072,
+      41.562891
+     ],
+     [
+      -83.558399,
+      41.604754
+     ],
+     [
+      -83.535073,
+      41.619164
+     ],
+     [
+      -83.524953,
+      41.625267
+     ],
+     [
+      -83.523583,
+      41.62623
+     ],
+     [
+      -83.523032,
+      41.62678
+     ],
+     [
+      -83.52261,
+      41.627703
+     ],
+     [
+      -83.522503,
+      41.628406
+     ],
+     [
+      -83.522626,
+      41.629312
+     ],
+     [
+      -83.523382,
+      41.630223
+     ],
+     [
+      -83.526228,
+      41.631992
+     ],
+     [
+      -83.528175,
+      41.633468
+     ],
+     [
+      -83.530529,
+      41.635947
+     ],
+     [
+      -83.531043,
+      41.636887
+     ],
+     [
+      -83.53148,
+      41.638355
+     ],
+     [
+      -83.531798,
+      41.640567
+     ],
+     [
+      -83.531653,
+      41.641787
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Dayton and Michigan Railroad",
+    "line": "Dayton and Michigan: Lima – Toledo",
+    "id": "dm-lima-toledo",
+    "color": "#8A4F7D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE - typical 1850s Ohio steam passenger schedule; no D&M running times recovered (timetable OCR unreadable).",
+    "geometry_source": "Cut from chd-dayton-toledo (OpenStreetMap ways tagged old_railway_operator=B&O plus untagged OSM rail, maps.mail.ru Overpass, routed with opstrace.py, 2026-10-29)",
+    "geometry_quality": "Traced, no straight-line legs: 71.2 mi, cut at drawn milepost 71.2 - 142.4 from the chd-dayton-toledo trace in cincinnati_hamilton_and_dayton_railway.geojson (142.4 mi drawn against 139.966 mi documented by ICC Val. vol. 42, 1.7% long). Stage boundaries are at drawn mileposts, not surveyed station locations (Piqua sits ~1.5 km from its town-centre geocode). ALIGNMENT ERA: drawn on today's CSX Toledo Subdivision, a LATER alignment than 1853-1863; the ICC records about 1 mile built in 1905, and 1850s station and street-running details at Dayton, Lima and Toledo are not reconstructed. TOLEDO END: stops ~0.9 km east of Toledo Union Station; the Maumee crossing on the Cleveland and Toledo bridge into Middle Grounds is not drawn - it was C&T track, which matches the D&M's own property limit.",
+    "segments": [
+     {
+      "start": 1859,
+      "end": 1863,
+      "headway_min": 720,
+      "note": "Lima - Ottawa - Deshler - Perrysburg - Toledo, built from both ends in 1859. Last rail laid near Ottawa on 18 Aug 1859 (Perrysburg Journal, 25 Aug 1859); opened to Toledo 1 Sept 1859 (Ohio Commissioner 1867). D&M trains crossed the Maumee on the Cleveland and Toledo's bridge into Toledo (Ohio Commissioner 1873). By 1862-63 the D&M advertised a \"Toledo and Chicago Mail\" and a \"Chicago and Detroit Express\". Ends at the perpetual lease of the D&M to the Cincinnati, Hamilton and Dayton on 1 May 1863 (Ohio Commissioner of Railroads, Annual Report for 1873); from 1863 the same track is drawn as chd-dayton-toledo (CH&D 1863-1917) and bo-dayton-toledo (B&O 1917-1971). CONFLICT: ICC Valuation vol. 42 says the CH&D operated the D&M from its completion in 1859; contemporary D&M timetables (Nov 1858, Apr 1859, Nov 1862, Feb 1863) were signed by the D&M's own superintendent R. M. Shoemaker beside separately signed CH&D ads, so this feature follows the 1863 lease. headway_min 720 is an ESTIMATE from the D&M's Nov 1858 \"Two Daily Trains\" advertisement (Dayton Daily Empire, 6 Apr 1859); no frequency is sourced for other years.",
+      "sources": [
+       "Segment-level: 1 Sept 1859 opening from Ohio Commissioner 1867; last rail 18 Aug 1859 from Perrysburg Journal 25 Aug 1859; lease 1863 from Ohio Commissioner 1873",
+       "https://archive.org/details/annualreportofco1867ohio",
+       "https://chroniclingamerica.loc.gov/lccn/sn85026192/",
+       "https://archive.org/details/annualreportofco1873ohio"
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
