@@ -539,7 +539,8 @@
   "ymv_baton_rouge.geojson",
   "ymv_memphis_vicksburg.geojson",
   "youngstown_railroads.geojson",
-  "sonoma_marin_area_rail_transit.geojson"
+  "sonoma_marin_area_rail_transit.geojson",
+  "zanesville_and_western_railway.geojson"
  ],
  "stations": [
   "stations/amtrak.geojson"
