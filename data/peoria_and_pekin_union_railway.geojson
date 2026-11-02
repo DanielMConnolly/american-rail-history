@@ -1,0 +1,228 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Peoria and Pekin Union Railway (incorporated 1880, operating from Feb 1881) was a jointly owned terminal and switching road with two Peoria - Pekin lines. This layer draws only the passenger trains the P&PU ran itself that a source dates: the Eastern Division suburban service Peoria (Fulton Street) - Pekin, 1928 [earliest confirmed] - 7 Nov 1931. Research report: research/branches/peoria_and_pekin_union_railway.txt.",
+  "sources": [
+   "https://dieselshop.us/Hometown%20Action.HTML ('Hometown Action' photo essay: 1928 tank engines, 9.3-mile run, 25 min / 22.3 mph, last day 7 Nov 1931, six trips a day by the mid-1920s, Western Division service eliminated first)",
+   "https://en.wikipedia.org/wiki/Peoria_and_Pekin_Union_Railway",
+   "https://www.peoriamagazine.com/?p=20218",
+   "https://american-rails.com/ppu.html",
+   "https://www.branchline.uk/jfpdf/illinoisrrs2.pdf (tables 220 Eastern Division, 221 Western Division)",
+   "https://en.wikipedia.org/wiki/Peoria_Union_Station",
+   "https://passengertrainjournal.com/peoria-part-2/",
+   "https://chicagorailfan.com/stbcpeo.html",
+   "https://pekinpubliclibrary.org/how-the-railroad-came-to-pekin/",
+   "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): P&PU section has no passenger table; the station index daggers Bridge Junction, Grove, Hollis and Wesley 'for freight only'"
+  ],
+  "not_yet_sourced": [
+   "OPEN START (Eastern Division, the drawn feature): 1928 is the earliest CONFIRMED year of P&PU-operated passenger trains, not the opening. Service ran 'by the mid-20s' (dieselshop.us, undated), probably in 1916 (Fowler's working-timetable stops, operator not named) and possibly from 1881. Stringham, 'Pioneer Switching and Terminal Railway: The Peoria & Pekin Union', Railroad History 1988, is the likeliest source; not seen.",
+   "Frequency 1928-1931: only 'six trips per day by the mid-20s' is known, and whether that is six each way or six in all is unclear; headway_min 180 is an estimate.",
+   "Western Division commuter trains (Peoria Union Depot - Bartonville area): dieselshop.us says the P&PU ran them and that they were 'eliminated first', before the mid-1920s, but no year of operation is confirmed and the outer terminus (Bartonville? Hollis Junction?) is unknown. NOT DRAWN. Candidate if sourced: 1916 [ANCHOR], Union Depot - B. & E. Mine (~5.7 mi), from Fowler table 221's 1916 working-timetable street and mine stops.",
+   "Passenger Train Journal's 1917 list of Peoria boarding points names 'P&PU's Union Depot and Fulton Street station' but not whose trains used Fulton Street; the full article (PTJ 2015-4) was not seen.",
+   "Peoria Union Station closing: last used 1955 (Wikipedia text, chicagorailfan, Fowler) vs 1961 in the Wikipedia infobox (the year of the fire). Recorded as a conflict; not relevant to the drawn 1928-1931 span."
+  ],
+  "omitted": [
+   "Western Division commuter trains (report block [2]): drawable NONE - no confirmable P&PU passenger year.",
+   "Pre-1884 west-side route Hollis Junction - Illinois River bridge - Pekin (block [3]): no P&PU-operated passenger train found; bridge and a mile of track abandoned 1884 (american-rails.com), which is an abandonment date, not a passenger date.",
+   "Peoria Union Station / Union Depot (block [4]): a station, not a line feature; a gazetteer candidate whose services[] would reference the tenant lines plus this feature for 1928-1931.",
+   "Tenant passenger trains over P&PU track 1881-1955 (block [5]) - Peoria & Eastern / Big Four / NYC, Chicago & Alton / GM&O, PD&E / Illinois Central, Vandalia / Pennsylvania, PP&J / Wabash / CP&StL / C&IM, LE&W / Nickel Plate on the Eastern Division; TP&W, Iowa Central / M&StL, C&NW and Rock Island on the Western Division. Each belongs to its own company's feature, never in P&PU colour."
+  ],
+  "freight_only": "Not drawn (Rule 1): the whole P&PU after 7 Nov 1931 - freight switching only (tenant passenger trains over its track to 1955 belong to the tenants); the East Peoria yard and roundhouse (1907; its 1916 'employees' stop was an employees' train, not public service); Western Division industrial and mine spurs; Hollis - Pekin after 1884. The Feb 1952 Official Guide index daggers every P&PU station 'for freight only'.",
+  "horsecar": "None - all P&PU operation was steam (4-4-0s, then 2-4-6T tank engines).",
+  "ownership_split": "None. The P&PU ran its own trains throughout 1928-1931. Changes among its trunk-line proprietors (e.g. the C&IM's quarter share in 1926) were stock changes, not a change of operator. The 2004 Tazewell & Peoria lease falls in the freight-only era.",
+  "colour": "#35A619 is new: no company in data/ used it (checked programmatically over every data/*.geojson colour), and it is far from the other Peoria-area layers' colours (TP&W #C8008C, Rock Island #D62839, Illinois Terminal #CC8400, CB&Q #8E1B3C, Iowa Central #5E2B7E, M&StL #B5452B, Amtrak #1c4e80)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Peoria and Pekin Union Railway",
+    "line": "Peoria and Pekin Union: Peoria – Pekin",
+    "id": "peoria-and-pekin-union-peoria-pekin",
+    "color": "#35A619",
+    "mode": "commuter_rail",
+    "avg_speed_kmh": 36,
+    "speed_source": "Quoted, not estimated: dieselshop.us 'Hometown Action' gives the P&PU commuter run as 25 min one way at a 22.3 mph average (36 km/h) - a figure for the late-1920s/1931 tank-engine service.",
+    "geometry_source": "OpenStreetMap rail (maps.mail.ru Overpass mirror, 2026-11-01, after retries), routed with opstrace.py preferring ways tagged tiger:name_base='Peoria and Pekin Union Railway'; see geometry_quality for the way ids.",
+    "geometry_quality": "Traced 9.65 mi against 9.3 mi documented Pekin - Fulton Street (dieselshop.us; Fowler table 220 gives Pekin 9.3, Court Street / IC Junction 9.6) - 3.8% long, because the drawn south end is the P&PU track at the Court Street crossing in Pekin rather than the old Pekin depot. No straight-line approximated legs. Routed with opstrace.py over OpenStreetMap rail (maps.mail.ru Overpass mirror, 2026-11-01): 8.2 mi on ways the TIGER import names 'Peoria and Pekin Union Railway' (tiger:name_base; OSM carries no old_railway_operator or operator tag for the P&PU or the Tazewell & Peoria, and probes for both returned nothing) and 1.5 mi on other track - the downtown Peoria riverfront (ex-Rock Island / BNSF Peoria Subdivision, ways 124282844 and 104894363) from Fulton Street past Union Depot to Bridge Junction. Ways: 104894363 (BNSF Peoria Sub, Union Depot - Bridge Junction), 104632104 (P&PU, Bridge Junction), 104632105 (P&PU Illinois River vertical-lift bridge), 1022749485 and 22034449 (P&PU, East Peoria / Wesley Junction south past Wesley), 367110133, 367103697, 205016141 (P&PU, Grove - Pekin), 1360417122 / 1360417125 / 205016049 (P&PU yard tracks into Pekin). Simplified douglas_peucker 8 m then trim_reversals; no spurs. Waypoints and their distance from the line: Fulton Street (hand-pinned at Water St and Fulton St - Nominatim returned the street centroid) 0.03 km; Peoria Union Depot (40.6845, -89.5942, the TP&W layer's site) 0.10 km, the depot sitting back from the running track; Bridge Junction 0.0 km; bridge east end 0.0 km; Wesley Junction 0.0 km; Wesley (Nominatim hamlet, Creve Coeur) 0.02 km; Pekin Court Street (hand-pinned on the P&PU track at Court Street's latitude - Nominatim returned the street centroid) 0.0 km. Grove (5.6) is not separately located. LATER ALIGNMENT: this draws the modern surviving track (today worked by the Tazewell & Peoria), not a verified 1928-1931 alignment. Yard and riverfront track in downtown Peoria, East Peoria and Pekin has been rebuilt since, the Peoria Union Depot and Fulton Street station tracks are gone, and the date of the present Illinois River lift bridge is not established here, so the line can differ from the 1928-1931 route by tens of metres locally; no relocation of the main line is known. It does NOT use the TP&W bridge further north.",
+    "segments": [
+     {
+      "start": 1928,
+      "end": 1931,
+      "headway_min": 180,
+      "note": "Peoria and Pekin Union's own Eastern Division suburban (commuter) trains, Peoria Fulton Street (the Rock Island depot) - Peoria Union Depot - Bridge Junction - P&PU Illinois River bridge - Wesley Junction - Wesley - Grove - Pekin, 9.3 mi, steam: 4-4-0s, then from March 1928 two ex-IC 2-4-6T tank engines nos. 18 and 19 (dieselshop.us). START 1928 IS THE EARLIEST CONFIRMED YEAR, NOT THE OPENING [OPEN start]: the March 1928 tank-engine purchase is the first dated evidence of P&PU-operated passenger trains. Service certainly ran earlier - dieselshop.us says 'by the mid-20s' it was down to six trips a day; Fowler's 1916 working-timetable stops (Hilliards, Lakeside Cemetery, East Peoria employees' stop) probably were P&PU locals; the line itself dates from 1872 and the P&PU from 1881 - but no source dates the first P&PU train. Do not move the start earlier without a dated source (Stringham, Railroad History 1988, is the best lead). END is exact: the last day of P&PU commuter trains was 7 November 1931, after which the tank engines were retired (dieselshop.us; Wikipedia 'service was suspended on 7 November 1931'; Peoria Magazine; american-rails.com - four agree; the Feb 1952 Official Guide index daggers every P&PU station 'for freight only'). After 1931 the P&PU was a freight switching road (Tazewell & Peoria since 2004); tenant roads' passenger trains used its track to 1955 and belong to those companies' features. headway_min 180 is an ESTIMATE from 'six trips per day by the mid-20s' (dieselshop.us), read as six departures each way spread over the day; if 'six trips' means six one-way trips in total the true headway was nearer 360 min. The 1928-1931 frequency itself is not sourced.",
+      "sources": [
+       "Segment-level: start 1928 = dieselshop.us 'Hometown Action' (March 1928 purchase of two ex-IC 2-4-6T tank engines that let the P&PU retire the 4-4-0s on 'the commuter runs') - the earliest confirmed year, not the opening; end 7 Nov 1931 = dieselshop.us ('The last day of the P&PU commuter trains was November 7, 1931'), Wikipedia ('service was suspended on 7 November 1931'), Peoria Magazine ('dropped its Peoria-Pekin suburban service in 1931') and american-rails.com; route and 9.3 mi = dieselshop.us and Fowler Illinois Railroads (2) table 220. Headway NOT SOURCED for 1928-1931 (estimate from the mid-1920s 'six trips per day').",
+       "https://dieselshop.us/Hometown%20Action.HTML",
+       "https://en.wikipedia.org/wiki/Peoria_and_Pekin_Union_Railway",
+       "https://www.peoriamagazine.com/?p=20218",
+       "https://american-rails.com/ppu.html",
+       "https://www.branchline.uk/jfpdf/illinoisrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.588715,
+      40.689014
+     ],
+     [
+      -89.598702,
+      40.682865
+     ],
+     [
+      -89.601194,
+      40.68076
+     ],
+     [
+      -89.605076,
+      40.678306
+     ],
+     [
+      -89.607012,
+      40.677366
+     ],
+     [
+      -89.611738,
+      40.674359
+     ],
+     [
+      -89.613071,
+      40.673493
+     ],
+     [
+      -89.613554,
+      40.672862
+     ],
+     [
+      -89.613805,
+      40.672101
+     ],
+     [
+      -89.613871,
+      40.67086
+     ],
+     [
+      -89.613362,
+      40.669599
+     ],
+     [
+      -89.612819,
+      40.668922
+     ],
+     [
+      -89.609022,
+      40.665542
+     ],
+     [
+      -89.608064,
+      40.664457
+     ],
+     [
+      -89.604394,
+      40.658255
+     ],
+     [
+      -89.603993,
+      40.657336
+     ],
+     [
+      -89.603757,
+      40.656099
+     ],
+     [
+      -89.603805,
+      40.655105
+     ],
+     [
+      -89.604125,
+      40.653914
+     ],
+     [
+      -89.604473,
+      40.653124
+     ],
+     [
+      -89.610414,
+      40.646902
+     ],
+     [
+      -89.61452,
+      40.641439
+     ],
+     [
+      -89.615906,
+      40.639263
+     ],
+     [
+      -89.617588,
+      40.636078
+     ],
+     [
+      -89.620721,
+      40.63137
+     ],
+     [
+      -89.626639,
+      40.62148
+     ],
+     [
+      -89.627973,
+      40.618285
+     ],
+     [
+      -89.628554,
+      40.617221
+     ],
+     [
+      -89.633531,
+      40.611491
+     ],
+     [
+      -89.634326,
+      40.610362
+     ],
+     [
+      -89.636502,
+      40.606138
+     ],
+     [
+      -89.640256,
+      40.596442
+     ],
+     [
+      -89.644064,
+      40.588739
+     ],
+     [
+      -89.645823,
+      40.58424
+     ],
+     [
+      -89.646466,
+      40.581927
+     ],
+     [
+      -89.647657,
+      40.579282
+     ],
+     [
+      -89.650163,
+      40.574813
+     ],
+     [
+      -89.652778,
+      40.572268
+     ],
+     [
+      -89.654932,
+      40.569344
+     ]
+    ]
+   }
+  }
+ ]
+}
