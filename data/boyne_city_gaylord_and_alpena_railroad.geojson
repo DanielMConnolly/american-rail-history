@@ -1,0 +1,1240 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Boyne City, Gaylord and Alpena Railroad ('the White Road') and its predecessor the Boyne City and South Eastern, drawn from the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02) on 2026-11-02. Before this layer the map drew nothing of this road. Only the report's drawable spans are drawn. Three companies, three colours (Rule 4): Boyne City and South Eastern 1901-1905, Boyne City, Gaylord and Alpena 1905-1926, and the Boyne City Railroad's 1971-1973 tourist excursions; the BC&SE / BCG&A split at the 1905 purchase shares identical geometry, as does the 1971-73 Boyne City Railroad feature. The Michigan Central offered to buy the road in 1930-32 but never did, so there is no NYC-coloured successor.",
+  "sources": [
+   "https://www.michiganrailroads.com/railroads-in-history/457-b/2375-boyne-city-gaylord-and-alpena-railroad-company",
+   "https://www.michiganrailroads.com/railroads-in-history/457-b/2374-boyne-city-and-southeastern-railroad-company",
+   "https://www.michiganrailroads.com/railroads-in-history/457-b/2376-boyne-city-railroad-company",
+   "https://www.michiganrailroads.com/timetables-routes/311-boyne-city-gaylord-alpena-railroad-timetables/4918-main-line-bcg-a",
+   "https://www.michiganrailroads.com/stories/7959-bcg-a-excerpts-from-the-icc-s-valuation-report",
+   "https://www.michiganrailroads.com/stories/7041-dispatching-the-boyne-city-gaylord-alpena-in-1925",
+   "https://www.michiganrailroads.com/stories/7903-for-sale-lock-stock-and-linch-pin-the-boyne-city-line-michigan-s-shortest-prettiest-railroad-1976",
+   "https://www.branchline.uk/jfpdf/michiganrrs2lwrp.pdf (John Fowler, Michigan passenger stations, entry 204 Boyne City Gaylord & Alpena RR: a = 1919 Michigan Guide, b = 1926 Official Guide; also 1901t, 1909WG tags)",
+   "https://en.wikipedia.org/wiki/Boyne_City_Railroad",
+   "https://en.wikipedia.org/wiki/Flying_Duchess",
+   "https://boynefallshistory.com/railroad.php",
+   "https://www.michiganrailroads.com/stations-locations/133-otsego-county-69/1730-gaylord-mi",
+   "https://www.michiganrailroads.com/stations-locations/124-montmorency-county-60/1532-atlanta-mi",
+   "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): station index daggers Boyne City 'For freight only'"
+  ],
+  "geometry_method": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+  "not_yet_sourced": "OPEN ENDS - every BCG&A end year (Boyne City - Boyne Falls, Boyne Falls - Gaylord, Gaylord - Atlanta, Atlanta - Alpena) is 1926, the last CONFIRMED passenger year (Fowler's 'b' = 1926 Official Guide), not a known end; no source dates the last passenger train on any piece. Trains ran to 1 Dec 1931 (Atlanta - Alpena suspended by 10 Mar 1931 after flooding); a dated 1927-31 newspaper item or Official Guide/Michigan Guide entry showing the motor car carrying passengers would extend these. Whether passengers rode Boyne City - Boyne Falls 1932-1935 or later is unknown (freight-only by the Feb 1952 Guide). OPEN START - the BC&SE is drawn from 1901 (first confirmed year); built 1893 (michiganrailroads) vs organised 1897 (PNR 1960). BCG&A incorporation 1905 (ICC) vs 1903 (PNR 1960). Alpena completion 15 Aug vs 20 Dec 1918. Tourist era 1970/1971 start and 1973/1975 end in conflict. Whether the USRA operated the road in 1918 is not established. The Boyne Falls station site and the BCG&A's Alpena terminal approach (last ~1.5 mi) are not located. All headways and speeds are estimates. Station-level data (Rule 8) has not been started for this railroad.",
+  "branches_deliberately_omitted": "Boyne Valley Railroad tourist excursions 1976-77 (claimed, no dated report - report block [7], drawable NONE); Thumb Lake Branch [8], BC&SE camp branches incl. White's Jct - Camp No. 2 and Maple Slope - White Headquarters Camp [9], Southend Branch [10] and the Dobbins/Rust logging spurs [11] (logging, no passenger evidence, Rule 1); the proposed Alpena - Rockport and cement shale-bed extensions [12] (never built); the BC&SE's 1893-1900 years and the BCG&A's 1914-1918 Gaylord - Atlanta years (built, but no passenger year confirmed).",
+  "freight_only_excluded": "Boyne City Railroad, Boyne City - Boyne Falls 1935-1970 (freight, LCL and express only; Feb 1952 Official Guide index daggers Boyne City 'for freight only') [13]; Boyne Valley Railroad 1976-78 freight if any; the main line 1932-1935 (track standing, out of use).",
+  "horsecar_audit": "None needed: steam from the outset (BC&SE 1902 locomotive roster), gasoline motor cars from 1910. Nothing trimmed (Rule 5)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boyne City and South Eastern Railroad",
+    "line": "Boyne City and South Eastern: Boyne City – Boyne Falls",
+    "id": "bcse-boyne-city-boyne-falls",
+    "color": "#9C5A2B",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated; not computed from any timetable (Rule 3)",
+    "geometry_source": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+    "geometry_quality": "6.3 mi drawn Boyne City - Boyne Falls against 7.2 mi documented (Fowler, michiganrailroads; ICC valuation 7.31 / 7.13 mi). No straight-line leg: all of it on the OHM 'Boyne City Southeastern Railroad' way; OSM also maps part of the grade as 'Boyne City Railroad' (railway=abandoned) and the Boyne City - Boyne Falls section as the Boyne Valley Trailway. The drawn Boyne Falls end is the line's closest approach to the village (about 1.2 km WSW of the village centre), NOT a located station: measured along the OHM line, Fowler's MP 7.2 would fall 2.3 km south of the village, although the same line matches Fowler's North Elmira and Gaylord mileposts to within 0.05 mi, so either the Boyne City zero point differs or the BCG&A's Boyne Falls stop lay south of the village; the station site is NOT sourced. Starts at the OHM line's Boyne City end at the White lumber dock, about 0.8 km from the city centre. One alignment known; no relocation is documented, so no later-alignment issue is known.",
+    "segments": [
+     {
+      "start": 1901,
+      "end": 1905,
+      "headway_min": 720,
+      "note": "The W. H. White lumber company's Boyne City and South Eastern, built 1893 (michiganrailroads; a 1960 Petoskey News-Review article says 'organized in 1897' - conflict recorded). Drawn from 1901 [OPEN START]: 1901 is the earliest CONFIRMED passenger year (Fowler's '1901t' company-timetable tags at Thumb Lake Junction and White's Junction); 1893-1900 passenger service is unproven, not disproven. The Michigan Commissioner of Railroads' 1902 report (quoted by michiganrailroads) records a heated passenger car, conductors and 12 stations. 1905 is a corporate end only: the Boyne City, Gaylord and Alpena bought the line in 1905 (ICC valuation) and service continued under it. Steam from the outset; no animal traction (Rule 5). The 1902 'main line' of 19.6 mi ran on east of Boyne Falls as logging track and is not drawn. Headway is an estimate and is NOT sourced.",
+      "sources": [
+       "Segment-level: 1901 start = Fowler 1901t tags; 1902 passenger car = MCR-1903 via michiganrailroads; 1905 end = BCG&A purchase per ICC valuation. Headway NOT sourced. (as checked by the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02))",
+       "https://www.branchline.uk/jfpdf/michiganrrs2lwrp.pdf (John Fowler, Michigan passenger stations, entry 204 Boyne City Gaylord & Alpena RR: a = 1919 Michigan Guide, b = 1926 Official Guide; also 1901t, 1909WG tags)",
+       "https://www.michiganrailroads.com/railroads-in-history/457-b/2374-boyne-city-and-southeastern-railroad-company",
+       "https://www.michiganrailroads.com/stories/7959-bcg-a-excerpts-from-the-icc-s-valuation-report"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.019235,
+      45.210358
+     ],
+     [
+      -85.016532,
+      45.212142
+     ],
+     [
+      -85.015716,
+      45.212595
+     ],
+     [
+      -85.014858,
+      45.212807
+     ],
+     [
+      -85.005717,
+      45.212202
+     ],
+     [
+      -85.002391,
+      45.212111
+     ],
+     [
+      -84.993937,
+      45.212474
+     ],
+     [
+      -84.992263,
+      45.212338
+     ],
+     [
+      -84.990568,
+      45.211764
+     ],
+     [
+      -84.939027,
+      45.181295
+     ],
+     [
+      -84.938447,
+      45.180796
+     ],
+     [
+      -84.937825,
+      45.179949
+     ],
+     [
+      -84.927234,
+      45.160571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boyne City, Gaylord and Alpena Railroad",
+    "line": "Boyne City, Gaylord and Alpena: Boyne City – Boyne Falls",
+    "id": "bcga-boyne-city-boyne-falls",
+    "color": "#2E6B5E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated about 22 km/h from 1925 train-order times (Boyne City - Gaylord about 1.5-2 h for 23 mi, ~12-15 mph, research report); not a published schedule (Rule 3)",
+    "geometry_source": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+    "geometry_quality": "6.3 mi drawn Boyne City - Boyne Falls against 7.2 mi documented (Fowler, michiganrailroads; ICC valuation 7.31 / 7.13 mi). No straight-line leg: all of it on the OHM 'Boyne City Southeastern Railroad' way; OSM also maps part of the grade as 'Boyne City Railroad' (railway=abandoned) and the Boyne City - Boyne Falls section as the Boyne Valley Trailway. The drawn Boyne Falls end is the line's closest approach to the village (about 1.2 km WSW of the village centre), NOT a located station: measured along the OHM line, Fowler's MP 7.2 would fall 2.3 km south of the village, although the same line matches Fowler's North Elmira and Gaylord mileposts to within 0.05 mi, so either the Boyne City zero point differs or the BCG&A's Boyne Falls stop lay south of the village; the station site is NOT sourced. Starts at the OHM line's Boyne City end at the White lumber dock, about 0.8 km from the city centre. One alignment known; no relocation is documented, so no later-alignment issue is known.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1926,
+      "headway_min": 720,
+      "note": "The BCG&A bought the Boyne City and South Eastern in 1905 (ICC valuation; a 1960 Petoskey News-Review article says 1903 - conflict recorded) and ran this stub as the west end of its line; drawn from 1905 to continue the BC&SE seamlessly (first year proven under the BCG&A name is 1906). Receivership (Michigan Trust Co.) Nov 1913 - c.1917/18 operated the same company's trains, so no split. Fowler lists Doyle's Siding and Cushman in the 1909 Woods Michigan Guide and Boyne City and Boyne Falls in the 1926 Official Guide. In Feb-Apr 1925 the dispatcher's order book shows trains No. 1/2, a Boyne City - Boyne Falls shuttle, every weekday plus through trains No. 17/18 to Alpena; the headway (about two trains each way a day) is an estimate from that order book, which does not itself say the trains carried passengers. This end year is the last CONFIRMED passenger year (Fowler's 'b' letter = the 1926 Official Guide; his legend defines no later letter for this road), NOT a known end. Trains ran on this section into 1931 and a gasoline motor car described elsewhere as a passenger/mail car was 'practically all the company has had on the line ... for about four years' (Detroit Free Press 29 Nov 1931), but no source dated after 1926 says passengers were carried. Do not extend without evidence. On this stub the open question runs to 1935: whether the BCG&A kept a passenger car here after through trains east of Boyne Falls stopped (Dec 1931 / 1932) is not established. From 1935 the Boyne City Railroad carried freight, LCL and express only, and the Feb 1952 Official Guide daggers Boyne City 'for freight only' - not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: 1905 start = BCG&A purchase (ICC valuation); 1909 stations = Fowler 1909WG; 1926 end = Fowler 'b' (1926 Official Guide) at Boyne City and Boyne Falls, [OPEN]; 1925 trains = dispatcher's order book. Headway is an estimate. (as checked by the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02))",
+       "https://www.branchline.uk/jfpdf/michiganrrs2lwrp.pdf (John Fowler, Michigan passenger stations, entry 204 Boyne City Gaylord & Alpena RR: a = 1919 Michigan Guide, b = 1926 Official Guide; also 1901t, 1909WG tags)",
+       "https://www.michiganrailroads.com/stories/7959-bcg-a-excerpts-from-the-icc-s-valuation-report",
+       "https://www.michiganrailroads.com/stories/7041-dispatching-the-boyne-city-gaylord-alpena-in-1925",
+       "https://www.michiganrailroads.com/railroads-in-history/457-b/2376-boyne-city-railroad-company",
+       "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): station index daggers Boyne City 'For freight only'"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.019235,
+      45.210358
+     ],
+     [
+      -85.016532,
+      45.212142
+     ],
+     [
+      -85.015716,
+      45.212595
+     ],
+     [
+      -85.014858,
+      45.212807
+     ],
+     [
+      -85.005717,
+      45.212202
+     ],
+     [
+      -85.002391,
+      45.212111
+     ],
+     [
+      -84.993937,
+      45.212474
+     ],
+     [
+      -84.992263,
+      45.212338
+     ],
+     [
+      -84.990568,
+      45.211764
+     ],
+     [
+      -84.939027,
+      45.181295
+     ],
+     [
+      -84.938447,
+      45.180796
+     ],
+     [
+      -84.937825,
+      45.179949
+     ],
+     [
+      -84.927234,
+      45.160571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boyne City, Gaylord and Alpena Railroad",
+    "line": "Boyne City, Gaylord and Alpena: Boyne Falls – Gaylord",
+    "id": "bcga-boyne-falls-gaylord",
+    "color": "#2E6B5E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated about 22 km/h from 1925 train-order times (Boyne City - Gaylord about 1.5-2 h for 23 mi, ~12-15 mph, research report); not a published schedule (Rule 3)",
+    "geometry_source": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+    "geometry_quality": "16.9 mi drawn Boyne Falls - Gaylord against 16.0 mi in Fowler's mileposts (7.2-23.2) and 16.93 mi in the ICC valuation. No straight-line leg: entirely on the OHM way OHM labels 'Boyne City Southeastern Railroad / W.H. White Lumber Company 1893-1905' (OHM's dating, which conflicts with the report: the line reached Gaylord in 1905 under the BCG&A; the geometry is used, not the dates). Starts at the line's closest approach to Boyne Falls village (see the Boyne City - Boyne Falls feature: about 0.9 mi less than Fowler's MP 7.2 is drawn west of here, which is why this feature measures 0.9 mi over Fowler) and ends at the Michigan Central crossing at Gaylord. Check of the OHM line against Fowler's mileposts, measured along the drawn line from its Boyne City end: the GR&I overhead crossing at North Elmira falls at 13.23 mi (Fowler 13.2), the Michigan Central crossing at Gaylord at 23.22 mi (Fowler 23.2), Sparr 29.0 (28.8), Rust 63.0 (62.7), Spratt 74.0 (74.4), Herron 79.1 (80.3), McHarg 81.5 (81.4). One alignment known; no relocation documented.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1926,
+      "headway_min": 1440,
+      "note": "The BCG&A's extension to the Michigan Central's Mackinaw Division at Gaylord (track reached Gaylord 25 Nov 1905 per Wikipedia; 'between 1905 and 1907' per the ICC valuation). Drawn from 1906, the first CONFIRMED passenger year: the Michigan Central's Detroit passenger agent announced the line's completion to Gaylord and 'Two BCG&A trains run west daily from here' (Detroit Free Press 1 July 1906, quoted on michiganrailroads' Gaylord page). Fowler lists Project and Hamilton in the 1909 Woods guide; first motor-car trip Boyne City - Gaylord and return 1910. The 1925 order book shows one through round trip (No. 17/18) a weekday - the headway is an estimate from it. This end year is the last CONFIRMED passenger year (Fowler's 'b' letter = the 1926 Official Guide; his legend defines no later letter for this road), NOT a known end. Trains ran on this section into 1931 and a gasoline motor car described elsewhere as a passenger/mail car was 'practically all the company has had on the line ... for about four years' (Detroit Free Press 29 Nov 1931), but no source dated after 1926 says passengers were carried. Do not extend without evidence. The line was unused from 1932 (Detroit Free Press 9 Oct 1949) and pulled up in 1935.",
+      "sources": [
+       "Segment-level: 1906 start = DFP 1906-07-01 via michiganrailroads Gaylord page; 1926 end = Fowler 'b' at Boyne Falls, North Elmira, Mosher, Marion, Hallock, Yuill, Gaylord, [OPEN]; 1925 trains = dispatcher's order book. Headway is an estimate. (as checked by the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02))",
+       "https://www.branchline.uk/jfpdf/michiganrrs2lwrp.pdf (John Fowler, Michigan passenger stations, entry 204 Boyne City Gaylord & Alpena RR: a = 1919 Michigan Guide, b = 1926 Official Guide; also 1901t, 1909WG tags)",
+       "https://www.michiganrailroads.com/stations-locations/133-otsego-county-69/1730-gaylord-mi",
+       "https://www.michiganrailroads.com/stories/7041-dispatching-the-boyne-city-gaylord-alpena-in-1925",
+       "https://www.michiganrailroads.com/railroads-in-history/457-b/2375-boyne-city-gaylord-and-alpena-railroad-company",
+       "https://www.michiganrailroads.com/timetables-routes/311-boyne-city-gaylord-alpena-railroad-timetables/4918-main-line-bcg-a",
+       "https://en.wikipedia.org/wiki/Boyne_City_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.927234,
+      45.160571
+     ],
+     [
+      -84.925092,
+      45.156621
+     ],
+     [
+      -84.914854,
+      45.131537
+     ],
+     [
+      -84.91435,
+      45.130688
+     ],
+     [
+      -84.911211,
+      45.127728
+     ],
+     [
+      -84.902722,
+      45.120889
+     ],
+     [
+      -84.90043,
+      45.118801
+     ],
+     [
+      -84.897291,
+      45.115576
+     ],
+     [
+      -84.896462,
+      45.114429
+     ],
+     [
+      -84.894512,
+      45.108074
+     ],
+     [
+      -84.893861,
+      45.107035
+     ],
+     [
+      -84.893351,
+      45.106505
+     ],
+     [
+      -84.889685,
+      45.103597
+     ],
+     [
+      -84.884121,
+      45.098361
+     ],
+     [
+      -84.87884,
+      45.094224
+     ],
+     [
+      -84.876873,
+      45.093435
+     ],
+     [
+      -84.875811,
+      45.093145
+     ],
+     [
+      -84.873263,
+      45.092825
+     ],
+     [
+      -84.872357,
+      45.092775
+     ],
+     [
+      -84.866071,
+      45.093275
+     ],
+     [
+      -84.864372,
+      45.093125
+     ],
+     [
+      -84.86348,
+      45.092785
+     ],
+     [
+      -84.859842,
+      45.090776
+     ],
+     [
+      -84.847712,
+      45.086141
+     ],
+     [
+      -84.845596,
+      45.085454
+     ],
+     [
+      -84.841872,
+      45.084627
+     ],
+     [
+      -84.835601,
+      45.083635
+     ],
+     [
+      -84.83366,
+      45.08311
+     ],
+     [
+      -84.830392,
+      45.082434
+     ],
+     [
+      -84.828378,
+      45.082346
+     ],
+     [
+      -84.82213,
+      45.082377
+     ],
+     [
+      -84.820699,
+      45.08256
+     ],
+     [
+      -84.819059,
+      45.083124
+     ],
+     [
+      -84.815398,
+      45.084742
+     ],
+     [
+      -84.814276,
+      45.085087
+     ],
+     [
+      -84.811755,
+      45.085385
+     ],
+     [
+      -84.799868,
+      45.08488
+     ],
+     [
+      -84.798616,
+      45.084673
+     ],
+     [
+      -84.796128,
+      45.083927
+     ],
+     [
+      -84.794388,
+      45.083031
+     ],
+     [
+      -84.783508,
+      45.075556
+     ],
+     [
+      -84.780354,
+      45.073213
+     ],
+     [
+      -84.77915,
+      45.072122
+     ],
+     [
+      -84.777319,
+      45.06988
+     ],
+     [
+      -84.769867,
+      45.058247
+     ],
+     [
+      -84.768193,
+      45.056701
+     ],
+     [
+      -84.733389,
+      45.037614
+     ],
+     [
+      -84.730878,
+      45.036417
+     ],
+     [
+      -84.729441,
+      45.035962
+     ],
+     [
+      -84.704636,
+      45.028667
+     ],
+     [
+      -84.69425,
+      45.025498
+     ],
+     [
+      -84.688263,
+      45.024254
+     ],
+     [
+      -84.683736,
+      45.023739
+     ],
+     [
+      -84.67878,
+      45.023598
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boyne City, Gaylord and Alpena Railroad",
+    "line": "Boyne City, Gaylord and Alpena: Gaylord – Atlanta",
+    "id": "bcga-gaylord-atlanta",
+    "color": "#2E6B5E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated about 22 km/h from 1925 train-order times (Boyne City - Gaylord about 1.5-2 h for 23 mi, ~12-15 mph, research report); not a published schedule (Rule 3)",
+    "geometry_source": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+    "geometry_quality": "29.6 mi drawn Gaylord - Atlanta against 29.7 mi in Fowler's mileposts (23.2-52.9). No straight-line leg: entirely on OHM way 198929511 'Boyne City, Gaylord and Alpena Railroad' (source tag USGS Topo; USGS 3DEP). Gaylord end at the Michigan Central crossing; Atlanta end is the OHM vertex nearest Fowler's MP 52.9, 0.65 km from the Atlanta geocode. Sparr lies on the line (0.0 km). One alignment known.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1926,
+      "headway_min": 1440,
+      "note": "Track reached Atlanta from Gaylord on 27 Oct 1914 ('Alpena Dates of Early Events', 1915, quoted by michiganrailroads), but the first CONFIRMED passenger year is 1919 (Fowler's 'a' = 1919 Michigan Guide at Spar, Johnston, Gibbs, Meaford, Green and Atlanta), so 1914-1918 is not drawn. Mixed trains stopped at logging camps and hamlets (michiganrailroads). By c.1927 the timber was gone and 'the daily passenger train was reduced to a modified automobile on rails' (undated). Trains between Gaylord, Atlanta and Alpena were announced to cease on 1 Dec 1931 (Detroit Free Press 29 Nov 1931). Headway (one through round trip a weekday in 1925) is an estimate from the dispatcher's order book. This end year is the last CONFIRMED passenger year (Fowler's 'b' letter = the 1926 Official Guide; his legend defines no later letter for this road), NOT a known end. Trains ran on this section into 1931 and a gasoline motor car described elsewhere as a passenger/mail car was 'practically all the company has had on the line ... for about four years' (Detroit Free Press 29 Nov 1931), but no source dated after 1926 says passengers were carried. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: 1914 track = ADEE 1915 via michiganrailroads timetable page; 1919 start = Fowler 'a'; 1926 end = Fowler 'b', [OPEN]; 1 Dec 1931 cessation = DFP 1931-11-29. Headway is an estimate. (as checked by the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02))",
+       "https://www.branchline.uk/jfpdf/michiganrrs2lwrp.pdf (John Fowler, Michigan passenger stations, entry 204 Boyne City Gaylord & Alpena RR: a = 1919 Michigan Guide, b = 1926 Official Guide; also 1901t, 1909WG tags)",
+       "https://www.michiganrailroads.com/timetables-routes/311-boyne-city-gaylord-alpena-railroad-timetables/4918-main-line-bcg-a",
+       "https://www.michiganrailroads.com/railroads-in-history/457-b/2375-boyne-city-gaylord-and-alpena-railroad-company",
+       "https://www.michiganrailroads.com/stories/7959-bcg-a-excerpts-from-the-icc-s-valuation-report",
+       "https://www.michiganrailroads.com/stations-locations/124-montmorency-county-60/1532-atlanta-mi",
+       "https://www.michiganrailroads.com/stories/7041-dispatching-the-boyne-city-gaylord-alpena-in-1925"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.67878,
+      45.023598
+     ],
+     [
+      -84.66702,
+      45.023071
+     ],
+     [
+      -84.659977,
+      45.023126
+     ],
+     [
+      -84.648944,
+      45.021694
+     ],
+     [
+      -84.647643,
+      45.021714
+     ],
+     [
+      -84.646209,
+      45.021929
+     ],
+     [
+      -84.644147,
+      45.02251
+     ],
+     [
+      -84.642599,
+      45.023256
+     ],
+     [
+      -84.641953,
+      45.023704
+     ],
+     [
+      -84.640633,
+      45.025292
+     ],
+     [
+      -84.638186,
+      45.029615
+     ],
+     [
+      -84.636885,
+      45.030707
+     ],
+     [
+      -84.634685,
+      45.032066
+     ],
+     [
+      -84.633535,
+      45.033428
+     ],
+     [
+      -84.632229,
+      45.035317
+     ],
+     [
+      -84.630779,
+      45.03663
+     ],
+     [
+      -84.629246,
+      45.037582
+     ],
+     [
+      -84.627399,
+      45.03823
+     ],
+     [
+      -84.625737,
+      45.038617
+     ],
+     [
+      -84.622454,
+      45.038814
+     ],
+     [
+      -84.62078,
+      45.038647
+     ],
+     [
+      -84.613871,
+      45.037085
+     ],
+     [
+      -84.603035,
+      45.036201
+     ],
+     [
+      -84.600169,
+      45.036158
+     ],
+     [
+      -84.598272,
+      45.036443
+     ],
+     [
+      -84.596801,
+      45.036865
+     ],
+     [
+      -84.589833,
+      45.039647
+     ],
+     [
+      -84.588087,
+      45.040078
+     ],
+     [
+      -84.586638,
+      45.040193
+     ],
+     [
+      -84.581636,
+      45.03982
+     ],
+     [
+      -84.579659,
+      45.039902
+     ],
+     [
+      -84.568016,
+      45.042043
+     ],
+     [
+      -84.560774,
+      45.043559
+     ],
+     [
+      -84.556719,
+      45.044196
+     ],
+     [
+      -84.550324,
+      45.044757
+     ],
+     [
+      -84.548115,
+      45.045053
+     ],
+     [
+      -84.546347,
+      45.045555
+     ],
+     [
+      -84.544055,
+      45.046442
+     ],
+     [
+      -84.513632,
+      45.058325
+     ],
+     [
+      -84.497045,
+      45.064948
+     ],
+     [
+      -84.494732,
+      45.065679
+     ],
+     [
+      -84.493753,
+      45.065855
+     ],
+     [
+      -84.490384,
+      45.066034
+     ],
+     [
+      -84.488844,
+      45.065874
+     ],
+     [
+      -84.486724,
+      45.065364
+     ],
+     [
+      -84.48505,
+      45.064706
+     ],
+     [
+      -84.483963,
+      45.06411
+     ],
+     [
+      -84.48259,
+      45.063018
+     ],
+     [
+      -84.47156,
+      45.052681
+     ],
+     [
+      -84.469586,
+      45.050983
+     ],
+     [
+      -84.467398,
+      45.049649
+     ],
+     [
+      -84.466089,
+      45.04921
+     ],
+     [
+      -84.464673,
+      45.048906
+     ],
+     [
+      -84.463256,
+      45.048694
+     ],
+     [
+      -84.385644,
+      45.045632
+     ],
+     [
+      -84.379657,
+      45.04545
+     ],
+     [
+      -84.378026,
+      45.045556
+     ],
+     [
+      -84.352256,
+      45.047891
+     ],
+     [
+      -84.344174,
+      45.048568
+     ],
+     [
+      -84.341951,
+      45.048648
+     ],
+     [
+      -84.321872,
+      45.047239
+     ],
+     [
+      -84.306015,
+      45.045995
+     ],
+     [
+      -84.304319,
+      45.045995
+     ],
+     [
+      -84.300028,
+      45.046359
+     ],
+     [
+      -84.247761,
+      45.053565
+     ],
+     [
+      -84.244385,
+      45.053706
+     ],
+     [
+      -84.236728,
+      45.053515
+     ],
+     [
+      -84.205886,
+      45.053223
+     ],
+     [
+      -84.201831,
+      45.053604
+     ],
+     [
+      -84.190997,
+      45.055338
+     ],
+     [
+      -84.188638,
+      45.055406
+     ],
+     [
+      -84.1868,
+      45.055207
+     ],
+     [
+      -84.184354,
+      45.054561
+     ],
+     [
+      -84.182065,
+      45.053437
+     ],
+     [
+      -84.180639,
+      45.052397
+     ],
+     [
+      -84.179343,
+      45.050919
+     ],
+     [
+      -84.165007,
+      45.021232
+     ],
+     [
+      -84.16466,
+      45.020374
+     ],
+     [
+      -84.164327,
+      45.018812
+     ],
+     [
+      -84.163595,
+      45.01764
+     ],
+     [
+      -84.159504,
+      45.014088
+     ],
+     [
+      -84.157562,
+      45.012847
+     ],
+     [
+      -84.155526,
+      45.011764
+     ],
+     [
+      -84.153434,
+      45.010932
+     ],
+     [
+      -84.151472,
+      45.010285
+     ],
+     [
+      -84.14882,
+      45.009677
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boyne City, Gaylord and Alpena Railroad",
+    "line": "Boyne City, Gaylord and Alpena: Atlanta – Alpena",
+    "id": "bcga-atlanta-alpena",
+    "color": "#2E6B5E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "estimated about 22 km/h from 1925 train-order times (Boyne City - Gaylord about 1.5-2 h for 23 mi, ~12-15 mph, research report); not a published schedule (Rule 3)",
+    "geometry_source": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+    "geometry_quality": "37.7 mi drawn Atlanta - BCG&A Junction against 39.1 mi documented Atlanta - Alpena (Fowler MPs 52.9-92.0; ICC main line 91.52 mi in all). No straight-line leg, but two caveats: (1) the last 8.4 mi, McHarg - BCG&A Junction, is OHM way 198826096 (dated 20 Dec 1918), which is nearly straight - 21 vertices, at most 185 m off its own chord - so it may be the OHM mapper's generalisation of the grade rather than a faithful trace; (2) the line stops where that OHM way ends, at the Detroit and Mackinac main line about 2.8 km north of Alpena's centre (BCG&A Junction). The last ~1.5 mi into the BCG&A's Alpena terminal (about 1 mi from the city centre, on D&M terminal facilities rented from 1918) is NOT drawn, because its route is not sourced. Rust, Spratt, Herron and McHarg each lie within 0.1 km of the line; the Fletcher Floodwaters section (track still under the reservoir) is drawn on its original alignment. One alignment known.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1926,
+      "headway_min": 1440,
+      "note": "Completed to Alpena in 1918 - date in conflict: 15 Aug 1918 ('most histories', michiganrailroads) vs 20 Dec 1918 (Wikipedia) vs '1919' (1920 trial report). The eastern 24 mi were built west from Alpena c.1912-14 with local money; no evidence that section carried passengers before the 1918 junction. Drawn from 1919, the first CONFIRMED passenger year (Fowler's 'a' at Dobbins, Rust, Spratt, Stinson, Herron and McHarg). For the Kerston - Alpena tip only 1926 is confirmed by Fowler; drawing it from 1919 follows the 1918 completion and the 1919 listings to McHarg. Whether the USRA operated the road after the Director of Railroads' May 1918 announcement is not established. By 10 Mar 1931 trucks had replaced trains Alpena - Atlanta for mail and express after Alpena Power Co.'s dam flooded the track (Fletcher Floodwaters); trains formally ceased 1 Dec 1931. Headway (one through round trip a weekday in 1925) is an estimate from the dispatcher's order book. This end year is the last CONFIRMED passenger year (Fowler's 'b' letter = the 1926 Official Guide; his legend defines no later letter for this road), NOT a known end. Trains ran on this section into 1931 and a gasoline motor car described elsewhere as a passenger/mail car was 'practically all the company has had on the line ... for about four years' (Detroit Free Press 29 Nov 1931), but no source dated after 1926 says passengers were carried. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: 1918 completion conflict = michiganrailroads timetable page vs Wikipedia; 1919 start = Fowler 'a' (to McHarg); Alpena itself only Fowler 'b'; 1926 end = Fowler 'b', [OPEN]; 1931 = SJH 1931-03-10 and DFP 1931-11-29. Headway is an estimate. (as checked by the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02))",
+       "https://www.branchline.uk/jfpdf/michiganrrs2lwrp.pdf (John Fowler, Michigan passenger stations, entry 204 Boyne City Gaylord & Alpena RR: a = 1919 Michigan Guide, b = 1926 Official Guide; also 1901t, 1909WG tags)",
+       "https://www.michiganrailroads.com/timetables-routes/311-boyne-city-gaylord-alpena-railroad-timetables/4918-main-line-bcg-a",
+       "https://www.michiganrailroads.com/railroads-in-history/457-b/2375-boyne-city-gaylord-and-alpena-railroad-company",
+       "https://www.michiganrailroads.com/stories/7959-bcg-a-excerpts-from-the-icc-s-valuation-report",
+       "https://en.wikipedia.org/wiki/Boyne_City_Railroad",
+       "https://www.michiganrailroads.com/stories/7041-dispatching-the-boyne-city-gaylord-alpena-in-1925"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.14882,
+      45.009677
+     ],
+     [
+      -84.13126,
+      45.007643
+     ],
+     [
+      -84.125905,
+      45.00722
+     ],
+     [
+      -84.118659,
+      45.006335
+     ],
+     [
+      -84.084849,
+      45.006142
+     ],
+     [
+      -84.064743,
+      45.003041
+     ],
+     [
+      -84.048247,
+      45.0017
+     ],
+     [
+      -84.046459,
+      45.001233
+     ],
+     [
+      -84.044903,
+      45.00038
+     ],
+     [
+      -84.043336,
+      44.998878
+     ],
+     [
+      -84.041448,
+      44.997346
+     ],
+     [
+      -84.03986,
+      44.996359
+     ],
+     [
+      -84.036942,
+      44.995419
+     ],
+     [
+      -84.036019,
+      44.995343
+     ],
+     [
+      -84.033243,
+      44.995412
+     ],
+     [
+      -84.028747,
+      44.99571
+     ],
+     [
+      -84.02657,
+      44.995579
+     ],
+     [
+      -83.995271,
+      44.991504
+     ],
+     [
+      -83.96105,
+      44.991576
+     ],
+     [
+      -83.95953,
+      44.99154
+     ],
+     [
+      -83.958454,
+      44.991382
+     ],
+     [
+      -83.95669,
+      44.991003
+     ],
+     [
+      -83.955209,
+      44.990532
+     ],
+     [
+      -83.952742,
+      44.989227
+     ],
+     [
+      -83.951755,
+      44.988256
+     ],
+     [
+      -83.949094,
+      44.985115
+     ],
+     [
+      -83.938773,
+      44.972107
+     ],
+     [
+      -83.9377,
+      44.971302
+     ],
+     [
+      -83.936176,
+      44.970437
+     ],
+     [
+      -83.934448,
+      44.969843
+     ],
+     [
+      -83.932228,
+      44.969313
+     ],
+     [
+      -83.930726,
+      44.969161
+     ],
+     [
+      -83.929031,
+      44.969177
+     ],
+     [
+      -83.921869,
+      44.970467
+     ],
+     [
+      -83.918577,
+      44.971256
+     ],
+     [
+      -83.898153,
+      44.97789
+     ],
+     [
+      -83.895112,
+      44.979068
+     ],
+     [
+      -83.892106,
+      44.980712
+     ],
+     [
+      -83.882446,
+      44.985069
+     ],
+     [
+      -83.877232,
+      44.987072
+     ],
+     [
+      -83.872683,
+      44.98818
+     ],
+     [
+      -83.865645,
+      44.989455
+     ],
+     [
+      -83.859186,
+      44.990077
+     ],
+     [
+      -83.854873,
+      44.990305
+     ],
+     [
+      -83.853007,
+      44.990836
+     ],
+     [
+      -83.850283,
+      44.992032
+     ],
+     [
+      -83.848889,
+      44.993121
+     ],
+     [
+      -83.840244,
+      45.001683
+     ],
+     [
+      -83.838918,
+      45.0028
+     ],
+     [
+      -83.837595,
+      45.003556
+     ],
+     [
+      -83.826465,
+      45.008878
+     ],
+     [
+      -83.823674,
+      45.009711
+     ],
+     [
+      -83.820112,
+      45.009954
+     ],
+     [
+      -83.801444,
+      45.009923
+     ],
+     [
+      -83.797045,
+      45.009817
+     ],
+     [
+      -83.781218,
+      45.008739
+     ],
+     [
+      -83.777178,
+      45.008576
+     ],
+     [
+      -83.72205,
+      45.008588
+     ],
+     [
+      -83.717527,
+      45.008829
+     ],
+     [
+      -83.697885,
+      45.010543
+     ],
+     [
+      -83.682633,
+      45.011167
+     ],
+     [
+      -83.680122,
+      45.011607
+     ],
+     [
+      -83.676946,
+      45.012578
+     ],
+     [
+      -83.665305,
+      45.016702
+     ],
+     [
+      -83.605192,
+      45.037435
+     ],
+     [
+      -83.470384,
+      45.077567
+     ],
+     [
+      -83.446019,
+      45.086055
+     ],
+     [
+      -83.443422,
+      45.086798
+     ],
+     [
+      -83.442585,
+      45.086828
+     ],
+     [
+      -83.441448,
+      45.086646
+     ],
+     [
+      -83.439925,
+      45.08604
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boyne City Railroad",
+    "line": "Boyne City Railroad: Boyne City – Boyne Falls (excursion)",
+    "id": "boyne-city-railroad-tourist",
+    "color": "#AD7A36",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 15,
+    "speed_source": "estimated; three round trips a day over 7 mi implies a slow excursion pace, but no running time is sourced (Rule 3)",
+    "geometry_source": "OpenHistoricalMap (CC0) ways traced by their mapper from USGS topographic maps / USGS 3DEP lidar: 'Boyne City Southeastern Railroad' (OHM way 199360232, Boyne City - Gaylord), 'Boyne City, Gaylord and Alpena Railroad' (OHM ways 198929511, Gaylord - McHarg, and 198826096, McHarg - BCG&A Junction). Routed with opstrace.py (the Wabash/Monon/M&StL method) over cached OSM degree tiles (mail.ru Overpass mirror) plus OSM abandoned/historic ways and OHM ways for the lifted corridor; waypoints Nominatim-geocoded and type-checked, with Boyne City, Boyne Falls, Gaylord, Atlanta and the Alpena end hand-pinned to vertices of the OHM line. Simplified with Douglas-Peucker at 8 m, then trim_reversals.",
+    "geometry_quality": "6.3 mi drawn Boyne City - Boyne Falls against 7.2 mi documented (Fowler, michiganrailroads; ICC valuation 7.31 / 7.13 mi). No straight-line leg: all of it on the OHM 'Boyne City Southeastern Railroad' way; OSM also maps part of the grade as 'Boyne City Railroad' (railway=abandoned) and the Boyne City - Boyne Falls section as the Boyne Valley Trailway. The drawn Boyne Falls end is the line's closest approach to the village (about 1.2 km WSW of the village centre), NOT a located station: measured along the OHM line, Fowler's MP 7.2 would fall 2.3 km south of the village, although the same line matches Fowler's North Elmira and Gaylord mileposts to within 0.05 mi, so either the Boyne City zero point differs or the BCG&A's Boyne Falls stop lay south of the village; the station site is NOT sourced. Starts at the OHM line's Boyne City end at the White lumber dock, about 0.8 km from the city centre. Drawn on the same geometry as the BCG&A stub; the 1971-73 excursions ran over the same track. The tourist-era Boyne Falls 'Victorian station' site is NOT located, so the end is the same closest-approach point.",
+    "segments": [
+     {
+      "start": 1971,
+      "end": 1973,
+      "headway_min": 180,
+      "note": "Summer tourist excursions after freight ended in 1970: the British steam locomotive 'Flying Duchess' with British Rail Mk 1 coaches, and a GE 44-ton diesel with open observation cars; three round trips daily in summer, about 25,000 riders a year (AP 1976, Boyne Falls History). Start 1971: the Flying Duchess 'began its operations at the BCRR on July 24, 1971' (Wikipedia); a michiganrailroads postcard caption says 1970 - conflict recorded. End 1973 per the AP (engineer Fineout: 'The energy crisis forced the line to close in 1973'), Boyne Falls History and Wikipedia; the Detroit Free Press (2 May 1976) says the line stopped in Oct 1975 'after just two summers' - conflict recorded, drawn to the earlier reading. The Boyne Valley Railroad's claimed 1976-77 excursions are not drawn (no dated report). Headway is an estimate from 'three round trips daily'. The 1935-1970 freight-only years are not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: 1971 start = Wikipedia Flying Duchess (24 Jul 1971); 1973 end = AP 1976-06-21 via michiganrailroads, Boyne Falls History, Wikipedia; conflict with DFP 1976-05-02 (Oct 1975). Three round trips daily = AP 1976 / BFH; headway is an estimate. (as checked by the research report research/branches/boyne_city_gaylord_and_alpena_railroad.txt (2026-11-02))",
+       "https://en.wikipedia.org/wiki/Flying_Duchess",
+       "https://en.wikipedia.org/wiki/Boyne_City_Railroad",
+       "https://boynefallshistory.com/railroad.php",
+       "https://www.michiganrailroads.com/stories/7903-for-sale-lock-stock-and-linch-pin-the-boyne-city-line-michigan-s-shortest-prettiest-railroad-1976",
+       "https://www.michiganrailroads.com/railroads-in-history/457-b/2376-boyne-city-railroad-company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.019235,
+      45.210358
+     ],
+     [
+      -85.016532,
+      45.212142
+     ],
+     [
+      -85.015716,
+      45.212595
+     ],
+     [
+      -85.014858,
+      45.212807
+     ],
+     [
+      -85.005717,
+      45.212202
+     ],
+     [
+      -85.002391,
+      45.212111
+     ],
+     [
+      -84.993937,
+      45.212474
+     ],
+     [
+      -84.992263,
+      45.212338
+     ],
+     [
+      -84.990568,
+      45.211764
+     ],
+     [
+      -84.939027,
+      45.181295
+     ],
+     [
+      -84.938447,
+      45.180796
+     ],
+     [
+      -84.937825,
+      45.179949
+     ],
+     [
+      -84.927234,
+      45.160571
+     ]
+    ]
+   }
+  }
+ ]
+}
