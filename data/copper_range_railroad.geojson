@@ -1,0 +1,2437 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Copper Range Railroad (Michigan, 1899-1973; one company and one operator throughout, the 1935-38 bankruptcy notwithstanding), passenger years only: Houghton - Mill Mine Jct - Painesdale - Ricedale - McKeever main line (with the pre-Dec-1913 Mill Mine Jct - Messner - Ricedale line as its own feature), the original Mass City end (1902 anchor), the Calumet extension via Lake Linden, the Freda Branch and Freda Park spur, and the 1911-12 Calumet - Ontonagon train over Milwaukee Road track. Drawn spans follow the report's drawable: fields exactly. Research report: research/branches/copper_range_railroad.txt. Colour #B87333 is new; a script confirmed no other company in data/ used it and no Copper Range feature existed before.",
+  "operator_split": "None. Copper Range ran all its own trains throughout; the bankruptcy (26 Mar 1935 - 1 Jul 1938) left the same company and management in place.",
+  "omitted": [
+   "[8] Calumet Junction - Laurium (Laurium branch): drawable NONE - no dated passenger service; Copper Range's Calumet station was 'Calumet-Laurium'.",
+   "[11] Redridge Junction - Redridge spur: drawable NONE - Redridge was served from/near the Freda Branch.",
+   "[12] Mohawk - Gay (Mohawk & Traverse Bay lease, Copper Range from 1917): drawable NONE as Copper Range - no confirmed Copper Range passenger year; Mineral Range years belong to the DSS&A layer.",
+   "[13] Calumet Junction - Copper City/Mohawk (ex Keweenaw Central): drawable NONE as Copper Range; Keweenaw Central-era years are that company's.",
+   "No passenger evidence, not drawn: Senter (Point Mills) Branch, Edgemere Branch, Baltic Mine Branch, Greenland/Adventure Branch, Winona Mine branch, Ellis Spur, Cole's Creek branch.",
+   "1946-1972 freight-only years (Feb 1952 Official Guide: 'Operated for Freight Service only'; dagger at 15 Copper Range stations).",
+   "Other companies' trains over Copper Range track (Milwaukee Road via Mass City from 1906 and McKeever - Calumet from 1911; DSS&A/Mineral Range Hancock - Calumet 1933-34; Keweenaw Central tourist excursions Calumet - Lake Linden 1967-1971) belong in those companies' colours and are not drawn here."
+  ],
+  "not_yet_sourced": [
+   "[OPEN] ends - last CONFIRMED year, not a known end: copper-range-mill-mine-jct-ricedale-old 1912 (line certainly used to the 1 Dec 1913 cutover); copper-range-painesdale-ricedale and copper-range-ricedale-mckeever 1917; copper-range-houghton-calumet 1919 (end bracket 1919-1928 or later); copper-range-mckeever-ontonagon 1912.",
+   "[ANCHOR] copper-range-peppard-mass-city 1902 only (bracket 1900-1909).",
+   "THE 1913-1943 GAP: nothing confirms Copper Range passenger service south of Painesdale between 1918 and 31 May 1944, or on the Calumet line after 1919. Sources conflict: MTU 'In 1928, passenger service ended'; copperrange.org 'by 1930 a few mixed trains'; Drury (via Wikipedia) mixed trains only 'for some time' before 1944. A 1920s Official Guide or a Daily Mining Gazette 'last train' story would close it.",
+   "1913/1914-1917 on the south main line rests solely on an April 1917 'Local and Through Passenger Train Schedule' known only as a rare-book dealer's search-result title (Buckingham Books, page HTTP 410). A strict reading would draw copper-range-ricedale-mckeever 1900-1912 + 1944-1946 and copper-range-painesdale-ricedale 1944-1946 only.",
+   "School trains as passenger service: copper-range-houghton-mill-mine-jct and copper-range-mill-mine-jct-painesdale 1913-1943 and copper-range-freda-branch 1918-1941 rest on Copper Range school trains (MRR-CO 1907-1944; Wikipedia 1909-1945; copperrange.org to June 1941 Stanton Twp / June 1944 Adams Twp). If the project rules they are not passenger service, those segments shrink (Houghton - Painesdale keeps 1899/1902-1912 + a 1930 anchor + 1944-46; Freda Branch keeps 1908-1917).",
+   "Who ran the 1911-12 Calumet - Ontonagon train (copper-range-mckeever-ontonagon): MRR-CO says the COPR on Milwaukee trackage rights; copperrange.org describes repainting for the Milwaukee's Northern Michigan Special.",
+   "Starts withheld: Houghton - Calumet drawn from 1908 (built 1903); Freda Branch and Freda Park from 1908 (excursions 1905 per copperrange.org); Painesdale branch from 1902 (completed early 1901); Toivola - Winona opened 8 Dec 1899 but drawn from 1900 with the rest of the south main line.",
+   "Geometry interpretations: the Mass City piece is drawn on the OSM Copper Range grade from Peppard Junction, not from McKeever as the report names it; Houghton depot/Yard and Calumet station sites not pinned from a source; Ricedale split taken at the old/new line junction, not the new Ricedale station.",
+   "Mileage conflicts in the sources: Painesdale extension 3.4 (MRR text) / 5.2 (MRR mileposts) / 3.7 (Fowler); Mill Mine Jct - Painesdale 4.71 / 4.0; pre-1913 Mill Mine Jct - Ricedale 5.1 (Fowler) / 7.7 (MRR mileposts).",
+   "Headways and average speeds are estimates throughout (speed loosely from the 1902 Houghton - Mass City ~1.5 h)."
+  ],
+  "sources": [
+   "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet -- michiganrailroads.com, Copper Range main line (mileposts; 1902 and 1930 operating snapshots)",
+   "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company -- michiganrailroads.com, Copper Range Railroad Company history (dated entries 1899-1980)",
+   "https://www.michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/7980-baltic-mill-branch-redridge-jct-to-baltic-mill -- michiganrailroads.com, Freda / Redridge branch (1930 mixed-train schedule)",
+   "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/7983-painesdale-branch-painesdale-to-mill-mine-junction -- michiganrailroads.com, Painesdale Branch",
+   "https://copperrange.org/midc.htm -- copperrange.org history (school trains, Freda Park, 1944-46 Chippewa connection)",
+   "https://en.wikipedia.org/wiki/Copper_Range_Railroad -- Wikipedia, Copper Range Railroad (cites Drury 1994 p.105)",
+   "https://en.wikipedia.org/wiki/Copper_Range_29 -- Wikipedia, Copper Range 29",
+   "https://www.mtu.edu/library/archives/exhibits/copper-range-railroad/panel-6-beyond-the-formative-years/ -- Michigan Tech Archives exhibit, panel 6",
+   "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf -- John Fowler, Michigan Railroads (1) Upper Peninsula, Passenger Stations & Stops, routes 24-27",
+   "https://buckinghambooks.com/book/northern-michigan-copper-range-railroad-the-copper-country-route-local-and-through-passenger-train-schedule-april-1917 -- Buckingham Books dealer listing title only (page HTTP 410)",
+   "research/sources/official_guide_1952.txt -- Official Guide, Feb 1952: Copper Range 'Operated for Freight Service only' (Aug 1951 entry)"
+  ],
+  "geometry_note": "Traced 2026-11-02 with opstrace.py over OSM (old_railway_operator=Copper Range Railroad, Bill Nicholls Trail, ST-3, Keweenaw State Trail West) and OpenHistoricalMap. Straight-line legs: 0.3 mi Mill Mine Jct - north end of the pre-1913 grade; 0.1 mi across the Portage Lake bridge. Features meet at shared vertices: Houghton, Mill Mine Junction, Painesdale, old Ricedale, Peppard Junction, McKeever, Freda."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Houghton – Mill Mine Junction",
+    "id": "copper-range-houghton-mill-mine-jct",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 6.5 mi against 6.5 mi documented (MRR-ML mileposts Houghton Yard 42.8 - Mill Mine Jct 36.3; Fowler route 24 agrees). 5.8 mi on old_railway_operator=Copper Range Railroad ways (Bill Nicholls Trail), 0.7 mi along the Houghton waterfront on an untagged OpenHistoricalMap rail way that joins the Copper Range-tagged grade west of downtown; no straight-line legs. The Houghton end is a pin on that OHM way at about Isle Royale St, shared with copper-range-houghton-calumet: the exact site of the Copper Range depot and Houghton Yard was not established, so the line may stop up to ~0.5 km short of or beyond the real terminal. Atlantic Mine is passed about 0.6 km from the hamlet's map node. Same alignment in every era (no realignment recorded on this stretch).",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1912,
+      "headway_min": 360,
+      "note": "Common stem of every Copper Range passenger service south of Portage Lake: Houghton, Houghton Yard, Atlantic (Atlantic Mine), Atlantic Crossing (A&LS crossing), Mill Mine Junction (a.k.a. Painesdale Junction). First passenger train 8 Dec 1899 Houghton - Winona Mine (MRR-CO). 1902: daily Houghton - Mass City round trip (No.4 mixed, No.3 passenger) plus daily Houghton - Baltic/Trimountain Nos.1/2 (MRR-ML). Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 8 Dec 1899 first train (MRR-CO); 1902 operating snapshot (MRR-ML).",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet"
+      ]
+     },
+     {
+      "start": 1913,
+      "end": 1943,
+      "headway_min": 480,
+      "note": "School and first-class trains: Copper Range school trains to Jeffers High School (Painesdale) ran from 1907/1908 (sources differ) to June 1944 (MRR-CO 'From 1907 to 1944'; copperrange.org: last Adams Township school train June 1944; Wikipedia '1909 to 1945'). 1930 employee timetable: weekday-only first-class No.6 Houghton 5:30 a.m. - Atlantic - Mill Mine and No.7 back, with Nos.8/11 Atlantic - Painesdale carrying school children (MRR-ML). Continuity 1913-1943 rests on those multi-source school-train statements plus the 1930 timetable; school trains on a company schedule are counted as passenger service (Rule 1: specials count) - see metadata.not_yet_sourced. Sources conflict on general passenger service in this era (MTU: 'In 1928, passenger service ended'; copperrange.org: 'by 1930 a few mixed trains'). Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: school trains 1907/08-1944 (MRR-CO; copperrange.org; Wikipedia), 1930 working timetable (MRR-ML).",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Copper_Range_Railroad"
+      ]
+     },
+     {
+      "start": 1944,
+      "end": 1946,
+      "headway_min": 1440,
+      "note": "1 Jun 1944 - 15 Sep 1946: first-class Houghton - McKeever train (engine 58/29, combine 26, coach 60) connecting with the Milwaukee Road's Chippewa to Chicago, started for wartime gas rationing; the last Copper Range passenger train ran 15 Sep 1946 (copperrange.org; Wikipedia). Freight continued to 27 Oct 1972; the Feb 1952 Official Guide prints the road 'Operated for Freight Service only'. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1 Jun 1944 start and 15 Sep 1946 end (copperrange.org; Wikipedia Copper Range Railroad and Copper Range 29).",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Copper_Range_Railroad",
+       "https://en.wikipedia.org/wiki/Copper_Range_29"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.5769614,
+      47.1219
+     ],
+     [
+      -88.5823473,
+      47.1208925
+     ],
+     [
+      -88.5836133,
+      47.1204253
+     ],
+     [
+      -88.5844502,
+      47.1199727
+     ],
+     [
+      -88.5859522,
+      47.1201333
+     ],
+     [
+      -88.5872397,
+      47.1200895
+     ],
+     [
+      -88.5902652,
+      47.1196368
+     ],
+     [
+      -88.5905976,
+      47.1198802
+     ],
+     [
+      -88.5933506,
+      47.1194821
+     ],
+     [
+      -88.5947716,
+      47.1196144
+     ],
+     [
+      -88.6047749,
+      47.1211967
+     ],
+     [
+      -88.611059,
+      47.1225136
+     ],
+     [
+      -88.6125241,
+      47.1225735
+     ],
+     [
+      -88.6151846,
+      47.123009
+     ],
+     [
+      -88.6187942,
+      47.123831
+     ],
+     [
+      -88.6203719,
+      47.1245464
+     ],
+     [
+      -88.6216701,
+      47.124853
+     ],
+     [
+      -88.6233062,
+      47.1247223
+     ],
+     [
+      -88.626581,
+      47.1233853
+     ],
+     [
+      -88.6301178,
+      47.1225138
+     ],
+     [
+      -88.6310348,
+      47.122494
+     ],
+     [
+      -88.6326504,
+      47.122702
+     ],
+     [
+      -88.6355759,
+      47.1239201
+     ],
+     [
+      -88.637468,
+      47.1244351
+     ],
+     [
+      -88.6390399,
+      47.1245044
+     ],
+     [
+      -88.64067,
+      47.1242172
+     ],
+     [
+      -88.6413105,
+      47.1238805
+     ],
+     [
+      -88.6454149,
+      47.1208203
+     ],
+     [
+      -88.6462882,
+      47.1196714
+     ],
+     [
+      -88.6462445,
+      47.1186513
+     ],
+     [
+      -88.6456041,
+      47.1175321
+     ],
+     [
+      -88.6450801,
+      47.1170864
+     ],
+     [
+      -88.6383995,
+      47.1138277
+     ],
+     [
+      -88.6366161,
+      47.1128245
+     ],
+     [
+      -88.636015,
+      47.1122781
+     ],
+     [
+      -88.635366,
+      47.1113366
+     ],
+     [
+      -88.6351306,
+      47.1104308
+     ],
+     [
+      -88.6351862,
+      47.1095898
+     ],
+     [
+      -88.636944,
+      47.1053185
+     ],
+     [
+      -88.6403382,
+      47.0991721
+     ],
+     [
+      -88.6437768,
+      47.095995
+     ],
+     [
+      -88.64456,
+      47.0948519
+     ],
+     [
+      -88.6447156,
+      47.0934824
+     ],
+     [
+      -88.6445332,
+      47.0901881
+     ],
+     [
+      -88.6446575,
+      47.0891884
+     ],
+     [
+      -88.6451333,
+      47.0882251
+     ],
+     [
+      -88.645551,
+      47.087622
+     ],
+     [
+      -88.6469905,
+      47.0864054
+     ],
+     [
+      -88.6481933,
+      47.085792
+     ],
+     [
+      -88.6508256,
+      47.084877
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Mill Mine Junction – Painesdale",
+    "id": "copper-range-mill-mine-jct-painesdale",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 3.9 mi against 4.71 mi (MRR Painesdale Branch page) or 4.0 mi (Fowler) - the sources themselves conflict by ~0.7 mi; the trace sits between and nearer Fowler. All on old_railway_operator=Copper Range Railroad ways (Bill Nicholls Trail); no straight-line legs. Via South Range (on the line), Baltic and Trimountain (line passes ~0.9 km from the Trimountain map node). The Painesdale end is the trace vertex nearest Painesdale, 0.65 km from the hamlet's map node; the station site was not pinned from a source. One alignment 1902-1946.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1912,
+      "headway_min": 720,
+      "note": "Painesdale Branch (completed early 1901 for the Copper Range Company's own Painesdale/Trimountain/Baltic mines): South Range, Baltic Junction, Trimountain, Painesdale. MTU: a new timecard ran 'two daily trains back and forth to Houghton for both freight and passenger traffic' (undated); first DATED passenger evidence is 1902 daily Houghton - Baltic/Trimountain Nos.1/2 (MRR-ML), so the drawn start is 1902 (bracket 1901-1902). Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1902 Nos.1/2 (MRR-ML); 1901 completion (MTU panel 6; MRR-CO).",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/7983-painesdale-branch-painesdale-to-mill-mine-junction",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://www.mtu.edu/library/archives/exhibits/copper-range-railroad/panel-6-beyond-the-formative-years/",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company"
+      ]
+     },
+     {
+      "start": 1913,
+      "end": 1943,
+      "headway_min": 480,
+      "note": "From the 1 Dec 1913 opening of the Painesdale - Ricedale extension this became part of the through main line. School trains to Jeffers High School, Painesdale (MRR-CO 1907-1944; Wikipedia 1909-1945); 1930 working timetable Nos.8/11 Atlantic - Mill Mine Jct - South Range - Baltic - Trimountain - Painesdale, weekdays (MRR-ML). Rests on school trains being counted as passenger service - see metadata.not_yet_sourced. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: school trains (MRR-CO; Wikipedia; copperrange.org) and 1930 working timetable (MRR-ML).",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Copper_Range_Railroad"
+      ]
+     },
+     {
+      "start": 1944,
+      "end": 1946,
+      "headway_min": 1440,
+      "note": "Houghton - McKeever first-class train for the Milwaukee Road's Chippewa connection, 1 Jun 1944 - 15 Sep 1946 (copperrange.org; Wikipedia); last Adams Township school train June 1944. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1944-1946 Chippewa connection (copperrange.org; Wikipedia).",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Copper_Range_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.6508256,
+      47.084877
+     ],
+     [
+      -88.6511175,
+      47.0843389
+     ],
+     [
+      -88.651033,
+      47.0839332
+     ],
+     [
+      -88.6497636,
+      47.081868
+     ],
+     [
+      -88.6455516,
+      47.0736075
+     ],
+     [
+      -88.6444578,
+      47.0721033
+     ],
+     [
+      -88.642452,
+      47.0698066
+     ],
+     [
+      -88.6407233,
+      47.0672164
+     ],
+     [
+      -88.6403187,
+      47.0668963
+     ],
+     [
+      -88.6397989,
+      47.0649677
+     ],
+     [
+      -88.6393605,
+      47.0621568
+     ],
+     [
+      -88.6396288,
+      47.0596503
+     ],
+     [
+      -88.6398434,
+      47.058934
+     ],
+     [
+      -88.6411829,
+      47.0559635
+     ],
+     [
+      -88.6419463,
+      47.0547458
+     ],
+     [
+      -88.6467773,
+      47.050126
+     ],
+     [
+      -88.6485016,
+      47.0494315
+     ],
+     [
+      -88.6518718,
+      47.0492003
+     ],
+     [
+      -88.6528988,
+      47.0489459
+     ],
+     [
+      -88.6534811,
+      47.0486721
+     ],
+     [
+      -88.6546988,
+      47.047581
+     ],
+     [
+      -88.6568148,
+      47.0449945
+     ],
+     [
+      -88.6578156,
+      47.0445178
+     ],
+     [
+      -88.6589606,
+      47.0443073
+     ],
+     [
+      -88.6602481,
+      47.0438979
+     ],
+     [
+      -88.6633945,
+      47.0423245
+     ],
+     [
+      -88.6638851,
+      47.0417703
+     ],
+     [
+      -88.6646839,
+      47.0400947
+     ],
+     [
+      -88.6664234,
+      47.0390392
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Mill Mine Junction – Ricedale (pre-1913 line)",
+    "id": "copper-range-mill-mine-jct-ricedale-old",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 6.4 mi. Documented: Fowler route 24 footnote ('former route') Mill Mine 38.5 - Messner 40.1 - Ricedale 43.6 = 5.1 mi; MRR-ML old-line mileposts (Ricedale (old) 28.6, Messner 32.7, Mill Mine Jct 36.3 from McKeever) imply 7.7 mi. The sources conflict; the trace falls between. 6.1 mi on an old_railway_operator=Copper Range Railroad way (OSM way 17797215, an abandoned grade west of the Painesdale line) plus ONE STRAIGHT-LINE LEG of 0.3 mi from the Mill Mine Junction pin to the north end of that tagged grade, where OSM shows no connecting way. The south end is the node where the old grade meets the post-1913 main line (taken as old Ricedale). This is the pre-Dec-1913 alignment drawn for its own era; Messner was not geocoded (no map node) and the grade was assumed to be the old main line from its Copper Range tag and position.",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1912,
+      "headway_min": 1440,
+      "note": "Original main line south of Mill Mine Junction via Messner to Ricedale (old; 'Painesdale (1st)' in Fowler), the only route south until the Painesdale extension became the main line on 1 Dec 1913, after which this line was removed (MRR-CO; MRR-ML) - a reroute, not a loss of service. First passenger train 8 Dec 1899 Houghton - Winona over it (MRR-CO); 1902 daily Houghton - Mass City round trip (MRR-ML); 1912 Sunday 'flyer' Calumet - Winona (MRR-ML) and Calumet - Ontonagon daily train (MRR-CO). [OPEN] 1912 is the last CONFIRMED passenger year, not a known end: no source dates when this service actually stopped. Do not extend without evidence. The alignment certainly carried the main-line trains until the Dec 1913 cutover, but no 1913 timetable was seen. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1899 first train (MRR-CO); 1902 and 1912 services (MRR-ML; MRR-CO); route per Fowler route 24 footnote.",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.6508256,
+      47.084877
+     ],
+     [
+      -88.6558687,
+      47.0821152
+     ],
+     [
+      -88.6606022,
+      47.0798604
+     ],
+     [
+      -88.6645195,
+      47.0785749
+     ],
+     [
+      -88.6673572,
+      47.0765949
+     ],
+     [
+      -88.668693,
+      47.0760432
+     ],
+     [
+      -88.6697065,
+      47.0758307
+     ],
+     [
+      -88.6799714,
+      47.0758181
+     ],
+     [
+      -88.6814126,
+      47.0757104
+     ],
+     [
+      -88.6889718,
+      47.0739691
+     ],
+     [
+      -88.6965124,
+      47.0711067
+     ],
+     [
+      -88.6977017,
+      47.0704835
+     ],
+     [
+      -88.6987921,
+      47.0682862
+     ],
+     [
+      -88.7000325,
+      47.0652548
+     ],
+     [
+      -88.701439,
+      47.063336
+     ],
+     [
+      -88.701784,
+      47.0629747
+     ],
+     [
+      -88.7071189,
+      47.0594976
+     ],
+     [
+      -88.7109894,
+      47.0546717
+     ],
+     [
+      -88.7112683,
+      47.0540028
+     ],
+     [
+      -88.7169577,
+      47.0311567
+     ],
+     [
+      -88.7210852,
+      47.0222915
+     ],
+     [
+      -88.7227403,
+      47.0203253
+     ],
+     [
+      -88.72328,
+      47.019889
+     ],
+     [
+      -88.7247725,
+      47.0191243
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Painesdale – Ricedale (1913 extension)",
+    "id": "copper-range-painesdale-ricedale",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 3.9 mi against 3.4 mi (MRR-ML text), 3.7 mi (Fowler) or 5.2 mi (MRR-ML mileposts Painesdale 32.2 - Ricedale (new) 27.0) - the sources conflict. All on old_railway_operator=Copper Range Railroad ways (Bill Nicholls Trail); no straight-line legs. The south end is cut at the junction with the pre-1913 grade (old Ricedale), not at the new Ricedale station (MP 27.0), whose site was not established; so the split with copper-range-ricedale-mckeever may sit up to ~1.6 mi from the new Ricedale station. Drawn on its own (post-1913) alignment, for post-1913 years only.",
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1917,
+      "headway_min": 1440,
+      "note": "Painesdale extension, opened as the through main line 1 Dec 1913 (MRR-ML; MRR-CO); whatever ran Houghton - McKeever after the cutover could only run here. The years 1914-1917 rest on a single weak item: a rare-book dealer's listing 'Northern Michigan Copper Range Railroad, The Copper Country Route. Local and Through Passenger Train Schedule, April 1917' (Buckingham Books), seen only as a search-result title (page now HTTP 410). A strict reading without it would draw 1944-1946 only here. [OPEN] 1917 is the last CONFIRMED passenger year, not a known end: no source dates when this service actually stopped. Do not extend without evidence. Nothing is confirmed on the south main line 1918-1943 (see metadata.not_yet_sourced). Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: Dec 1913 opening (MRR-ML; MRR-CO); April 1917 public passenger timetable known only from a dealer listing title (Buckingham Books).",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://buckinghambooks.com/book/northern-michigan-copper-range-railroad-the-copper-country-route-local-and-through-passenger-train-schedule-april-1917"
+      ]
+     },
+     {
+      "start": 1944,
+      "end": 1946,
+      "headway_min": 1440,
+      "note": "Houghton - McKeever first-class train meeting the Milwaukee Road's Chippewa, 1 Jun 1944 - 15 Sep 1946 (copperrange.org; Wikipedia). The gap 1918-1943 is an unconfirmed span, not a known suspension. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1944-1946 Chippewa connection (copperrange.org; Wikipedia).",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Copper_Range_Railroad",
+       "https://en.wikipedia.org/wiki/Copper_Range_29"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.6664234,
+      47.0390392
+     ],
+     [
+      -88.6672404,
+      47.0381154
+     ],
+     [
+      -88.6675627,
+      47.0369651
+     ],
+     [
+      -88.6677782,
+      47.0365549
+     ],
+     [
+      -88.6680852,
+      47.0363352
+     ],
+     [
+      -88.6687763,
+      47.0361412
+     ],
+     [
+      -88.6692398,
+      47.0362188
+     ],
+     [
+      -88.6692398,
+      47.0362188
+     ],
+     [
+      -88.6687763,
+      47.0361412
+     ],
+     [
+      -88.6684104,
+      47.0361966
+     ],
+     [
+      -88.6684532,
+      47.0348446
+     ],
+     [
+      -88.6701564,
+      47.0323995
+     ],
+     [
+      -88.6712876,
+      47.0317742
+     ],
+     [
+      -88.6755926,
+      47.0312788
+     ],
+     [
+      -88.6761344,
+      47.0310631
+     ],
+     [
+      -88.6769122,
+      47.0304598
+     ],
+     [
+      -88.6772448,
+      47.0299881
+     ],
+     [
+      -88.6773467,
+      47.0294908
+     ],
+     [
+      -88.6770001,
+      47.0264268
+     ],
+     [
+      -88.6772008,
+      47.0253562
+     ],
+     [
+      -88.6776659,
+      47.0245433
+     ],
+     [
+      -88.6783335,
+      47.0237829
+     ],
+     [
+      -88.67928,
+      47.0230999
+     ],
+     [
+      -88.680147,
+      47.0226765
+     ],
+     [
+      -88.6820917,
+      47.0221287
+     ],
+     [
+      -88.6877313,
+      47.0212993
+     ],
+     [
+      -88.6890514,
+      47.0212076
+     ],
+     [
+      -88.692585,
+      47.0211769
+     ],
+     [
+      -88.6994056,
+      47.0215653
+     ],
+     [
+      -88.7005382,
+      47.0217965
+     ],
+     [
+      -88.7016289,
+      47.0222664
+     ],
+     [
+      -88.7039127,
+      47.0242343
+     ],
+     [
+      -88.7048049,
+      47.0247707
+     ],
+     [
+      -88.706155,
+      47.0251885
+     ],
+     [
+      -88.7079719,
+      47.0252812
+     ],
+     [
+      -88.7167558,
+      47.0228909
+     ],
+     [
+      -88.7226374,
+      47.0197953
+     ],
+     [
+      -88.7232286,
+      47.0195205
+     ],
+     [
+      -88.7247725,
+      47.0191243
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Ricedale – McKeever",
+    "id": "copper-range-ricedale-mckeever",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 27.8 mi against 27.9 mi (Fowler Ricedale 46.2 - McKeever 74.1) or ~27-28.6 mi (MRR-ML). All on old_railway_operator=Copper Range Railroad ways (Bill Nicholls Trail south of Painesdale); no straight-line legs. Via Toivola, Stonington, Donken, Twin Lakes, Winona (0.6 km from the map node), Lake Mine, Greenland Jct and Peppard (crossing with the Mineral Range Mass line) to McKeever, the junction with the Milwaukee Road. North end is the junction with the pre-1913 grade (old Ricedale), so the line is continuous with both copper-range-mill-mine-jct-ricedale-old (to 1912) and copper-range-painesdale-ricedale (from 1913). This is the 1972 alignment; no relocation south of Ricedale is recorded, not checked further.",
+    "segments": [
+     {
+      "start": 1900,
+      "end": 1912,
+      "headway_min": 1440,
+      "note": "Main line south: Toivola, Stonington, Donken, Twin Lakes, Winona, Lake Mine, Greenland Jct, Peppard, McKeever (originally 'Range Junction'). Toivola - Winona opened 8 Dec 1899; through passenger trains Houghton - Range Junction began 4 Jan 1900 (MRR-CO), so the whole feature is drawn from 1900. 1902: daily Houghton - Mass City round trip, about 1.5 h (MRR-ML). 1911: Copper Range trackage rights over the Milwaukee for a daily Calumet - Ontonagon train; 1912 new cars on it (MRR-CO; copperrange.org); 1912 Sunday flyer Calumet - Winona (MRR-ML). Fowler station citations Homestead (Toivola) 1904G, Faleston (Lake Roland) 1911G. Reached via the pre-1913 line until 1 Dec 1913. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 4 Jan 1900 through trains (MRR-CO); 1902 snapshot (MRR-ML); 1911-1912 Calumet - Ontonagon train (MRR-CO); Fowler route 24 citations.",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://copperrange.org/midc.htm",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     },
+     {
+      "start": 1913,
+      "end": 1917,
+      "headway_min": 1440,
+      "note": "After the Dec 1913 cutover, reached via Painesdale. The years 1913-1917 rest on one weak item: the April 1917 'Local and Through Passenger Train Schedule' known only as a rare-book dealer's search-result title (Buckingham Books, page now HTTP 410); 'through' service could only mean the McKeever connection. [OPEN] 1917 is the last CONFIRMED passenger year, not a known end: no source dates when this service actually stopped. Do not extend without evidence. Then NOTHING is confirmed on this line until 1 Jun 1944: copperrange.org 'by 1930 a few mixed trains', Drury (via Wikipedia) 'only mixed train service had been offered for some time' before 1944, MTU 'In 1928, passenger service ended' - none names this route or a year. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: April 1917 public passenger timetable, known only from a dealer listing title (Buckingham Books). Weak.",
+       "https://buckinghambooks.com/book/northern-michigan-copper-range-railroad-the-copper-country-route-local-and-through-passenger-train-schedule-april-1917",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company"
+      ]
+     },
+     {
+      "start": 1944,
+      "end": 1946,
+      "headway_min": 1440,
+      "note": "1 Jun 1944 - 15 Sep 1946: first-class Houghton - McKeever train meeting the Milwaukee Road's Chippewa to Chicago, begun for wartime gas rationing; ended abruptly 15 Sep 1946 (copperrange.org; Wikipedia). Fowler: Donken 1944G. Freight to 27 Oct 1972; abandoned 1973, now a snowmobile trail. Later claims of passenger trains to 1950 or 1953 (american-rails.com; a Copper Range 29 snippet) conflict with the dated 1946 end and with the Aug 1951 Official Guide's freight-only notice - recorded, not adopted. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1944 start and 15 Sep 1946 end (copperrange.org; Wikipedia); Donken 1944G (Fowler).",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Copper_Range_Railroad",
+       "https://en.wikipedia.org/wiki/Copper_Range_29",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.7247725,
+      47.0191243
+     ],
+     [
+      -88.7368972,
+      47.0172127
+     ],
+     [
+      -88.7385632,
+      47.0167657
+     ],
+     [
+      -88.7493641,
+      47.0103671
+     ],
+     [
+      -88.750694,
+      47.0097109
+     ],
+     [
+      -88.7529616,
+      47.0089791
+     ],
+     [
+      -88.7576286,
+      47.0080962
+     ],
+     [
+      -88.7584947,
+      47.007765
+     ],
+     [
+      -88.7597592,
+      47.0069265
+     ],
+     [
+      -88.766987,
+      47.0007918
+     ],
+     [
+      -88.7709199,
+      46.9978378
+     ],
+     [
+      -88.7811689,
+      46.9859528
+     ],
+     [
+      -88.7821426,
+      46.984632
+     ],
+     [
+      -88.7825949,
+      46.983204
+     ],
+     [
+      -88.7843079,
+      46.9709725
+     ],
+     [
+      -88.7843264,
+      46.9699983
+     ],
+     [
+      -88.783903,
+      46.968542
+     ],
+     [
+      -88.7833979,
+      46.9674813
+     ],
+     [
+      -88.7833509,
+      46.966372
+     ],
+     [
+      -88.787255,
+      46.959684
+     ],
+     [
+      -88.7953775,
+      46.9432795
+     ],
+     [
+      -88.798624,
+      46.936759
+     ],
+     [
+      -88.8024044,
+      46.9319404
+     ],
+     [
+      -88.8047344,
+      46.9293004
+     ],
+     [
+      -88.8093814,
+      46.9261145
+     ],
+     [
+      -88.8189706,
+      46.9177335
+     ],
+     [
+      -88.8202788,
+      46.916731
+     ],
+     [
+      -88.8272164,
+      46.9127963
+     ],
+     [
+      -88.8315642,
+      46.9112682
+     ],
+     [
+      -88.8353971,
+      46.9090296
+     ],
+     [
+      -88.8362915,
+      46.9080538
+     ],
+     [
+      -88.8368559,
+      46.9058725
+     ],
+     [
+      -88.8370818,
+      46.9054927
+     ],
+     [
+      -88.8429643,
+      46.9005253
+     ],
+     [
+      -88.8442409,
+      46.8998568
+     ],
+     [
+      -88.851669,
+      46.8971609
+     ],
+     [
+      -88.8530203,
+      46.8963394
+     ],
+     [
+      -88.8757762,
+      46.8725804
+     ],
+     [
+      -88.8771602,
+      46.871737
+     ],
+     [
+      -88.8785917,
+      46.871333
+     ],
+     [
+      -88.9038428,
+      46.8694779
+     ],
+     [
+      -88.9050176,
+      46.8692395
+     ],
+     [
+      -88.9065841,
+      46.868616
+     ],
+     [
+      -88.9348841,
+      46.8525877
+     ],
+     [
+      -88.9622154,
+      46.8390735
+     ],
+     [
+      -88.9632753,
+      46.8381503
+     ],
+     [
+      -88.96452,
+      46.836363
+     ],
+     [
+      -88.967027,
+      46.831714
+     ],
+     [
+      -88.9679869,
+      46.8302271
+     ],
+     [
+      -88.96905,
+      46.829176
+     ],
+     [
+      -88.9704537,
+      46.828092
+     ],
+     [
+      -88.9722843,
+      46.827004
+     ],
+     [
+      -88.9734736,
+      46.8260428
+     ],
+     [
+      -88.9742083,
+      46.8249737
+     ],
+     [
+      -88.9750725,
+      46.8231626
+     ],
+     [
+      -88.9757323,
+      46.822623
+     ],
+     [
+      -88.977052,
+      46.8220577
+     ],
+     [
+      -88.97841,
+      46.821883
+     ],
+     [
+      -88.9836967,
+      46.8222364
+     ],
+     [
+      -88.9857165,
+      46.8221076
+     ],
+     [
+      -88.9868027,
+      46.8218363
+     ],
+     [
+      -88.987838,
+      46.8213922
+     ],
+     [
+      -88.9889002,
+      46.8205809
+     ],
+     [
+      -88.9897513,
+      46.8192761
+     ],
+     [
+      -88.9898712,
+      46.8178755
+     ],
+     [
+      -88.9897961,
+      46.8174313
+     ],
+     [
+      -88.9880419,
+      46.8145532
+     ],
+     [
+      -88.9874786,
+      46.8132132
+     ],
+     [
+      -88.9873821,
+      46.8093582
+     ],
+     [
+      -88.9872211,
+      46.8084127
+     ],
+     [
+      -88.9864529,
+      46.8070506
+     ],
+     [
+      -88.9857606,
+      46.8063504
+     ],
+     [
+      -88.9839918,
+      46.8049907
+     ],
+     [
+      -88.983377,
+      46.804272
+     ],
+     [
+      -88.9830798,
+      46.8036908
+     ],
+     [
+      -88.9819461,
+      46.7985427
+     ],
+     [
+      -88.982049,
+      46.797556
+     ],
+     [
+      -88.9824168,
+      46.7966035
+     ],
+     [
+      -88.9857113,
+      46.7920981
+     ],
+     [
+      -88.9868328,
+      46.7892545
+     ],
+     [
+      -88.9878327,
+      46.7879653
+     ],
+     [
+      -88.9891621,
+      46.7871449
+     ],
+     [
+      -88.9901072,
+      46.7868486
+     ],
+     [
+      -88.9913517,
+      46.7865107
+     ],
+     [
+      -88.9934224,
+      46.7863321
+     ],
+     [
+      -88.9943411,
+      46.7863864
+     ],
+     [
+      -88.9959647,
+      46.7866872
+     ],
+     [
+      -88.9996666,
+      46.7881122
+     ],
+     [
+      -89.0012156,
+      46.7883318
+     ],
+     [
+      -89.0031213,
+      46.7881783
+     ],
+     [
+      -89.0052361,
+      46.7874594
+     ],
+     [
+      -89.0161323,
+      46.7827609
+     ],
+     [
+      -89.0175171,
+      46.7824599
+     ],
+     [
+      -89.0196761,
+      46.7823799
+     ],
+     [
+      -89.0206026,
+      46.7822001
+     ],
+     [
+      -89.0219341,
+      46.7816335
+     ],
+     [
+      -89.0242841,
+      46.7803489
+     ],
+     [
+      -89.0329693,
+      46.7778816
+     ],
+     [
+      -89.0344487,
+      46.7775859
+     ],
+     [
+      -89.0475282,
+      46.7757305
+     ],
+     [
+      -89.0510421,
+      46.7750872
+     ],
+     [
+      -89.0530915,
+      46.7743626
+     ],
+     [
+      -89.056576,
+      46.7722279
+     ],
+     [
+      -89.0574722,
+      46.7713625
+     ],
+     [
+      -89.0594731,
+      46.7685002
+     ],
+     [
+      -89.0598218,
+      46.7661155
+     ],
+     [
+      -89.0597822,
+      46.7639584
+     ],
+     [
+      -89.0556335,
+      46.7523753
+     ],
+     [
+      -89.052887,
+      46.7452722
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Peppard Junction – Mass City",
+    "id": "copper-range-peppard-mass-city",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 1.2 mi, all on old_railway_operator=Copper Range Railroad ways, from the main line at Peppard Junction west to the vertex nearest Mass City (0.4 km north of the village's map node). INTERPRETATION, NOT SOURCED: the report gives this piece as 'McKeever (Range Junction) - Mass City', ~0.7 mi (Fowler: McKeever 74.1, Mass (Milw) 74.8). Fowler's figure is the Milwaukee Road's Mass station on the Ontonagon line ~0.7 mi west of McKeever, about 1.2 mi south of Mass City village. OSM's only Copper Range-tagged grade into Mass City leaves the main line at Peppard (MP 2.1), so that grade is drawn here as the line removed in 1909. If Copper Range trains in fact reached Mass over the Milwaukee from McKeever, this geometry is wrong. A second Copper Range-tagged grade from Peppard runs south-west toward Mass station and was not drawn.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1902,
+      "headway_min": 1440,
+      "note": "Original south end to Mass City, where the 1902 daily Houghton - Mass City round trip (No.4 mixed, No.3 passenger, ~1.5 h) terminated (MRR-ML). Line removed 1909, 'McKeever remains as the junction with the CMSt&P' (MRR-ML). [ANCHOR] 1902 is the only dated Copper Range passenger year here; service certainly ran wider both ways (bracket 1900-1909) but no other year is confirmed - do not widen this anchor to look plausible, and do not delete it to tidy the map. From 1906 Milwaukee Road passenger trains also used Copper Range track via Mass City - those were Milwaukee trains, not drawn here. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1902 operating snapshot and 1909 removal (MRR-ML); 1906 Milwaukee use (MRR-CO).",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.0601705,
+      46.7638641
+     ],
+     [
+      -89.062935,
+      46.762892
+     ],
+     [
+      -89.0646884,
+      46.7627943
+     ],
+     [
+      -89.0653475,
+      46.7628713
+     ],
+     [
+      -89.0671185,
+      46.7633529
+     ],
+     [
+      -89.073045,
+      46.766867
+     ],
+     [
+      -89.075007,
+      46.76762
+     ],
+     [
+      -89.0766387,
+      46.7678975
+     ],
+     [
+      -89.078634,
+      46.7678966
+     ],
+     [
+      -89.0798072,
+      46.7677578
+     ],
+     [
+      -89.0822534,
+      46.7670817
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Houghton – Calumet (via Lake Linden)",
+    "id": "copper-range-houghton-calumet",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 16.8 mi against 17.1 mi documented (MRR-ML Houghton Yard 42.8 - Calumet 59.9; Fowler routes 24/25 agree). Mix: about 6.9 mi on ways tagged or named Copper Range (OSM old_railway_operator=Copper Range Railroad incl. snowmobile trail ST-3 past Dollar Bay, and the OHM 'Copper Range Railroad' way Hubbell - Calumet Junction), 8.6 mi on untagged abandoned OSM rail running the same corridor, 1.2 mi on Soo Line (ex-Mineral Range)-tagged ways along the Hancock shore from the bridge to Ripley - whether that is Copper Range's own track or the parallel Mineral Range one is NOT established - 0.2 mi on an untagged OHM way along the Houghton waterfront, and ONE STRAIGHT-LINE LEG of 0.1 mi across the Portage Lake bridge (shared with the Mineral Range under a cost-sharing agreement). Calumet Junction - Calumet follows the Keweenaw State Trail West; the Calumet end is the trail vertex nearest the Copper Range ('Calumet-Laurium') station area, which was not pinned from a source (~0.3 km tolerance). Houghton end shared with copper-range-houghton-mill-mine-jct. Lake Linden - Calumet abandonment dates conflict (MRR-ML 1964 vs tourist use to 1971); geometry unaffected.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1919,
+      "headway_min": 1440,
+      "note": "Copper Range's own line to Calumet, east of and separate from the Mineral Range's direct Hancock - Calumet line: Houghton, Portage Lake bridge, Hancock, Ripley ('Green', 1919G), Dollar Bay, Point Mills Jct (Atlas), Mills, Hubbell, Lake Linden, Calumet Junction, Calumet. Built 1903; first DATED passenger service is the Freda Park Sunday excursion 'extended to Calumet around 1908' (copperrange.org), so drawn from 1908 (start bracket 1903-1908). 1911-1912 Copper Range daily Calumet - Ontonagon train (MRR-CO); 1912 Sunday flyer Calumet - Winona (MRR-ML). Last confirmed year 1919 (Fowler: 'Green 1919G'). [OPEN] 1919 is the last CONFIRMED passenger year, not a known end: no source dates when this service actually stopped. Do not extend without evidence. MTU says 'In 1928, passenger service ended' system-wide; the line was freight-only (daggered) by 1951. NOT drawn here: the Milwaukee Road's Northern Michigan Special (1911-) and the DSS&A/Mineral Range Hancock - Calumet trains (1933-34 coordination agreement) over this track, and the 1967-1971 Keweenaw Central tourist steam excursions Calumet - Lake Linden - all other companies' trains. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: c.1908 Calumet excursions (copperrange.org); 1911-1912 Calumet - Ontonagon (MRR-CO); 1912 Sunday flyer (MRR-ML); Green 1919G (Fowler).",
+       "https://copperrange.org/midc.htm",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/4930-copper-range-railroad-main-line-maas-to-calumet",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.5769614,
+      47.1219
+     ],
+     [
+      -88.5746011,
+      47.1222285
+     ],
+     [
+      -88.5742148,
+      47.1226008
+     ],
+     [
+      -88.5740088,
+      47.1232479
+     ],
+     [
+      -88.5743938,
+      47.1245963
+     ],
+     [
+      -88.5742228,
+      47.1250629
+     ],
+     [
+      -88.5742522,
+      47.125322
+     ],
+     [
+      -88.5730689,
+      47.1255044
+     ],
+     [
+      -88.570121,
+      47.1257937
+     ],
+     [
+      -88.565379,
+      47.125698
+     ],
+     [
+      -88.5603014,
+      47.1263915
+     ],
+     [
+      -88.5588005,
+      47.1264585
+     ],
+     [
+      -88.5455779,
+      47.1246294
+     ],
+     [
+      -88.5424069,
+      47.1245721
+     ],
+     [
+      -88.5408721,
+      47.1243753
+     ],
+     [
+      -88.5369206,
+      47.1234767
+     ],
+     [
+      -88.5329427,
+      47.1221433
+     ],
+     [
+      -88.523377,
+      47.11977
+     ],
+     [
+      -88.5200489,
+      47.1191232
+     ],
+     [
+      -88.5180156,
+      47.1189898
+     ],
+     [
+      -88.5165559,
+      47.1190194
+     ],
+     [
+      -88.513564,
+      47.1193205
+     ],
+     [
+      -88.5105106,
+      47.1201088
+     ],
+     [
+      -88.5081223,
+      47.1210033
+     ],
+     [
+      -88.4934861,
+      47.1273126
+     ],
+     [
+      -88.4912219,
+      47.1284675
+     ],
+     [
+      -88.4871821,
+      47.1310743
+     ],
+     [
+      -88.4858744,
+      47.1317824
+     ],
+     [
+      -88.4810786,
+      47.1334131
+     ],
+     [
+      -88.4748471,
+      47.1359394
+     ],
+     [
+      -88.4722783,
+      47.1372841
+     ],
+     [
+      -88.4705865,
+      47.1383266
+     ],
+     [
+      -88.4646074,
+      47.1426617
+     ],
+     [
+      -88.4638481,
+      47.1433702
+     ],
+     [
+      -88.4632151,
+      47.1450371
+     ],
+     [
+      -88.462417,
+      47.1463574
+     ],
+     [
+      -88.4598123,
+      47.149211
+     ],
+     [
+      -88.4574846,
+      47.1509949
+     ],
+     [
+      -88.4563116,
+      47.1521189
+     ],
+     [
+      -88.4473713,
+      47.1616277
+     ],
+     [
+      -88.4458449,
+      47.1634452
+     ],
+     [
+      -88.4444135,
+      47.1648487
+     ],
+     [
+      -88.4436724,
+      47.1659502
+     ],
+     [
+      -88.4438816,
+      47.1661618
+     ],
+     [
+      -88.4423336,
+      47.1681646
+     ],
+     [
+      -88.4409181,
+      47.1687618
+     ],
+     [
+      -88.4396759,
+      47.1695365
+     ],
+     [
+      -88.4356222,
+      47.1733717
+     ],
+     [
+      -88.4324425,
+      47.1759019
+     ],
+     [
+      -88.4307282,
+      47.1775684
+     ],
+     [
+      -88.4287673,
+      47.1797766
+     ],
+     [
+      -88.4286627,
+      47.1801786
+     ],
+     [
+      -88.4249513,
+      47.1850506
+     ],
+     [
+      -88.4171895,
+      47.1926016
+     ],
+     [
+      -88.4160161,
+      47.1954179
+     ],
+     [
+      -88.4155905,
+      47.1959716
+     ],
+     [
+      -88.4147273,
+      47.1969301
+     ],
+     [
+      -88.4159035,
+      47.1971634
+     ],
+     [
+      -88.4153513,
+      47.1985354
+     ],
+     [
+      -88.4149803,
+      47.2004735
+     ],
+     [
+      -88.4147933,
+      47.2074836
+     ],
+     [
+      -88.414281,
+      47.209704
+     ],
+     [
+      -88.4137363,
+      47.2112837
+     ],
+     [
+      -88.41044,
+      47.2169827
+     ],
+     [
+      -88.4098447,
+      47.2192892
+     ],
+     [
+      -88.4074435,
+      47.2230465
+     ],
+     [
+      -88.4071317,
+      47.2238298
+     ],
+     [
+      -88.4065633,
+      47.2271727
+     ],
+     [
+      -88.4051436,
+      47.230509
+     ],
+     [
+      -88.4030976,
+      47.2340152
+     ],
+     [
+      -88.4021774,
+      47.2363013
+     ],
+     [
+      -88.3995523,
+      47.2437361
+     ],
+     [
+      -88.3988061,
+      47.2464564
+     ],
+     [
+      -88.3990207,
+      47.2480441
+     ],
+     [
+      -88.3999041,
+      47.2493678
+     ],
+     [
+      -88.400918,
+      47.2502803
+     ],
+     [
+      -88.4093961,
+      47.2552633
+     ],
+     [
+      -88.4105328,
+      47.2557437
+     ],
+     [
+      -88.4121467,
+      47.2561151
+     ],
+     [
+      -88.4146848,
+      47.2562296
+     ],
+     [
+      -88.4168306,
+      47.2558364
+     ],
+     [
+      -88.4188092,
+      47.2550397
+     ],
+     [
+      -88.4205016,
+      47.2539189
+     ],
+     [
+      -88.4219107,
+      47.2535507
+     ],
+     [
+      -88.4227306,
+      47.2535036
+     ],
+     [
+      -88.426166,
+      47.2537228
+     ],
+     [
+      -88.4362878,
+      47.254587
+     ],
+     [
+      -88.437695,
+      47.2543743
+     ],
+     [
+      -88.4391849,
+      47.2539212
+     ],
+     [
+      -88.4445776,
+      47.2517102
+     ],
+     [
+      -88.444905,
+      47.2517405
+     ],
+     [
+      -88.4453806,
+      47.2521705
+     ],
+     [
+      -88.4461231,
+      47.2523046
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Freda Branch",
+    "id": "copper-range-freda-branch",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: short mining-district branch with mixed/school/excursion trains; no running time sourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 10.7 mi against 10.7 mi documented (MRR-FR; Fowler route 26 agrees). All on old_railway_operator=Copper Range Railroad ways; no straight-line legs. Via Obenhoff, Salmon Trout, Redridge Jct (the line passes ~0.8 km from the Redridge map node; the Redridge spur itself is not drawn), Stanwood, Edgemere Jct, Beacon Hill, to Freda (trace vertex 0.14 km from the hamlet's map node). Same alignment throughout.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1917,
+      "headway_min": 1440,
+      "note": "Lake shore branch to the Champion, Trimountain, Baltic and Atlantic stamp mills (completed Jul 1901, MTU panel 6). Freda Park Sunday and holiday excursions began 1905 (copperrange.org) or 1908 (Wikipedia 'Freda, Michigan': park opened 1908) - conflict recorded, drawn from 1908. Park excursions ended when the park closed Labor Day 1917 (copperrange.org). Stanton Township school trains also picked up at Redridge, Beacon Hill and Freda. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: Freda Park excursions 1905/1908-1917 (copperrange.org; Wikipedia Freda, Michigan); 1901 completion (MTU panel 6).",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Freda,_Michigan",
+       "https://www.mtu.edu/library/archives/exhibits/copper-range-railroad/panel-6-beyond-the-formative-years/",
+       "https://www.michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/7980-baltic-mill-branch-redridge-jct-to-baltic-mill"
+      ]
+     },
+     {
+      "start": 1918,
+      "end": 1941,
+      "headway_min": 1440,
+      "note": "Stanton Township school trains (Redridge, Beacon Hill, Freda) to June 1941, the last school train on the branch (copperrange.org). 1930 working timetable: three round-trip second-class trains Mill Mine Jct - Freda, which MRR-FR reads as freight trains 'with a caboose or passenger car on the end' - probably mixed, not proven. If school trains are not accepted as passenger service this segment should go (see metadata.not_yet_sourced). Freight-only by 1951 (Official Guide); rails removed 1971. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: school trains to June 1941 (copperrange.org); 1930 working timetable (MRR-FR).",
+       "https://copperrange.org/midc.htm",
+       "https://www.michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/7980-baltic-mill-branch-redridge-jct-to-baltic-mill"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.6508256,
+      47.084877
+     ],
+     [
+      -88.6507237,
+      47.0853355
+     ],
+     [
+      -88.6515542,
+      47.0855411
+     ],
+     [
+      -88.6523455,
+      47.0859589
+     ],
+     [
+      -88.6535263,
+      47.0879165
+     ],
+     [
+      -88.6565556,
+      47.0962693
+     ],
+     [
+      -88.657134,
+      47.0970661
+     ],
+     [
+      -88.6579326,
+      47.0976285
+     ],
+     [
+      -88.6588689,
+      47.0980972
+     ],
+     [
+      -88.6601771,
+      47.0984909
+     ],
+     [
+      -88.6722531,
+      47.0991189
+     ],
+     [
+      -88.6765905,
+      47.1000563
+     ],
+     [
+      -88.6781189,
+      47.1001594
+     ],
+     [
+      -88.6794546,
+      47.100075
+     ],
+     [
+      -88.6826492,
+      47.0995501
+     ],
+     [
+      -88.6842051,
+      47.0994189
+     ],
+     [
+      -88.6869315,
+      47.0995688
+     ],
+     [
+      -88.6911726,
+      47.1002531
+     ],
+     [
+      -88.6961021,
+      47.1013123
+     ],
+     [
+      -88.6988285,
+      47.1025776
+     ],
+     [
+      -88.7029543,
+      47.1049305
+     ],
+     [
+      -88.7046325,
+      47.105522
+     ],
+     [
+      -88.7066584,
+      47.1059055
+     ],
+     [
+      -88.7093195,
+      47.1059381
+     ],
+     [
+      -88.7105722,
+      47.1057668
+     ],
+     [
+      -88.7150314,
+      47.1046041
+     ],
+     [
+      -88.7175967,
+      47.104649
+     ],
+     [
+      -88.7232307,
+      47.10542
+     ],
+     [
+      -88.7256221,
+      47.105265
+     ],
+     [
+      -88.7271385,
+      47.1050039
+     ],
+     [
+      -88.7299315,
+      47.1041839
+     ],
+     [
+      -88.7321551,
+      47.1038983
+     ],
+     [
+      -88.7331261,
+      47.1039228
+     ],
+     [
+      -88.7348463,
+      47.1043471
+     ],
+     [
+      -88.7354996,
+      47.1046164
+     ],
+     [
+      -88.7405042,
+      47.1088386
+     ],
+     [
+      -88.7494167,
+      47.1167437
+     ],
+     [
+      -88.7498003,
+      47.1172249
+     ],
+     [
+      -88.7502795,
+      47.117982
+     ],
+     [
+      -88.7505075,
+      47.118991
+     ],
+     [
+      -88.7499801,
+      47.121907
+     ],
+     [
+      -88.750088,
+      47.1238646
+     ],
+     [
+      -88.7505974,
+      47.1252062
+     ],
+     [
+      -88.7516763,
+      47.1267803
+     ],
+     [
+      -88.7608984,
+      47.134827
+     ],
+     [
+      -88.7613375,
+      47.1353027
+     ],
+     [
+      -88.7635283,
+      47.1388871
+     ],
+     [
+      -88.7649964,
+      47.1408055
+     ],
+     [
+      -88.767517,
+      47.1431505
+     ],
+     [
+      -88.7703466,
+      47.1453847
+     ],
+     [
+      -88.7713386,
+      47.1460041
+     ],
+     [
+      -88.7727859,
+      47.1466898
+     ],
+     [
+      -88.7738429,
+      47.1470327
+     ],
+     [
+      -88.7761607,
+      47.1475264
+     ],
+     [
+      -88.7774195,
+      47.1476478
+     ],
+     [
+      -88.7787259,
+      47.1476813
+     ],
+     [
+      -88.7813632,
+      47.1474634
+     ],
+     [
+      -88.7828421,
+      47.1471533
+     ],
+     [
+      -88.7875253,
+      47.1453595
+     ],
+     [
+      -88.7894849,
+      47.1448147
+     ],
+     [
+      -88.7993935,
+      47.1435154
+     ],
+     [
+      -88.8035961,
+      47.1427861
+     ],
+     [
+      -88.8076877,
+      47.1415706
+     ],
+     [
+      -88.8144784,
+      47.1392318
+     ],
+     [
+      -88.8173622,
+      47.1378234
+     ],
+     [
+      -88.819864,
+      47.1362221
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: Freda – Freda Park",
+    "id": "copper-range-freda-park",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: short mining-district branch with mixed/school/excursion trains; no running time sourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 0.6 mi against 0.7 mi documented (MRR-FR), on old_railway_operator=Copper Range Railroad ways from Freda south-west to the end of the tagged grade, taken as the park terminus (not pinned from a source). No straight-line legs.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1917,
+      "headway_min": 1440,
+      "note": "Spur to Freda Park, the Copper Range's own amusement and picnic park: Sunday and holiday excursions from Houghton and, from about 1908, Calumet (copperrange.org). Start drawn at 1908 (bracket 1905-1908, see copper-range-freda-branch). Park closed Labor Day 1917, patronage lost to automobiles (copperrange.org); spur removed 1928 - the abandonment year, not the passenger end. Excursion traffic, not heritage tourist rail, so intercity_rail. Sundays and holidays only: the headway is nominal and an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: park excursions to Labor Day 1917 (copperrange.org); start bracket per Wikipedia 'Freda, Michigan' and michiganrailroads.com.",
+       "https://copperrange.org/midc.htm",
+       "https://en.wikipedia.org/wiki/Freda,_Michigan",
+       "https://michiganrailroads.com/stations-locations/95-houghton-county-31/3253-freda-park-mi",
+       "https://www.michiganrailroads.com/timetables-routes/313-copper-range-railroad-timetables/7980-baltic-mill-branch-redridge-jct-to-baltic-mill"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.819864,
+      47.1362221
+     ],
+     [
+      -88.8211622,
+      47.1349356
+     ],
+     [
+      -88.8235561,
+      47.1316248
+     ],
+     [
+      -88.8255123,
+      47.1297372
+     ],
+     [
+      -88.82641,
+      47.1284978
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Copper Range Railroad",
+    "line": "Copper Range: McKeever – Ontonagon (Milwaukee Road track)",
+    "id": "copper-range-mckeever-ontonagon",
+    "color": "#B87333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: MRR-ML's 1902 operating snapshot gives Houghton - Mass City (about 38 mi) in about 1.5 h, about 40 km/h end to end; read from the research report, not from the timetable itself. Applied to every main-line era; not sourced for later years.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-02) and OpenHistoricalMap, routed with opstrace.py. The Copper Range is tagged old_railway_operator=Copper Range Railroad on ~97 OSM ways in the 46.5,-89.5 to 47.4,-88.2 box (railway=abandoned; much of the main line is the Bill Nicholls Trail, the Calumet line partly snowmobile trail ST-3).",
+    "geometry_quality": "Traced 19.0 mi against 19.4 mi documented (Fowler Milwaukee route 22: McKeever 73.1 - Ontonagon 92.5). Drawn on the Milwaukee Road's Ontonagon branch as it survives in OSM (untagged railway ways, later Escanaba & Lake Superior) - TODAY'S/LATEST alignment of another company's line; relocations since 1911 were not checked. Passes the Milwaukee's Mass station and Rockland (0.8 km from the map node); Ontonagon end 0.8 km from the town node. No straight-line legs. This geometry is the Milwaukee Road's track; no Milwaukee Road Ontonagon-branch feature exists in data/.",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1912,
+      "headway_min": 1440,
+      "note": "LOW CONFIDENCE ON OPERATOR. MRR-CO: in 1911 'The COPR begins trackage rights on the MILW to run a daily passenger train from Calumet to Ontonagon and return', and in 1912 new cars were placed in service 'between Calumet and Ontonagon', painted to match the St. Paul's. MRR-CO does not say whose crews ran it, and copperrange.org describes 1911 equipment being repainted for the Milwaukee's own Northern Michigan Special - possibly one joint operation described two ways. Drawn as Copper Range on MRR-CO's explicit statement; if the operator proves to be the Milwaukee Road, delete this feature. [OPEN] 1912 is the last CONFIRMED passenger year, not a known end: no source dates when this service actually stopped. Do not extend without evidence. An unverified american-rails.com claim of Copper Range service east to Channing is not drawn. Headway is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: as established by the research report (research/branches/copper_range_railroad.txt), not re-checked by the tracer: 1911 trackage-rights train and 1912 new cars (MRR-CO); operator not confirmed.",
+       "https://www.michiganrailroads.com/railroads-in-history/458-c/3392-copper-range-railroad-company",
+       "https://copperrange.org/midc.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.052887,
+      46.7452722
+     ],
+     [
+      -89.053465,
+      46.7455495
+     ],
+     [
+      -89.0546693,
+      46.7461432
+     ],
+     [
+      -89.0554981,
+      46.7463931
+     ],
+     [
+      -89.0572402,
+      46.7466137
+     ],
+     [
+      -89.0608743,
+      46.7463229
+     ],
+     [
+      -89.0687958,
+      46.7467534
+     ],
+     [
+      -89.0708732,
+      46.7465733
+     ],
+     [
+      -89.084777,
+      46.7431057
+     ],
+     [
+      -89.0966588,
+      46.7387108
+     ],
+     [
+      -89.098763,
+      46.738039
+     ],
+     [
+      -89.1104628,
+      46.736664
+     ],
+     [
+      -89.1399202,
+      46.7292525
+     ],
+     [
+      -89.1543706,
+      46.7275985
+     ],
+     [
+      -89.1584153,
+      46.7273532
+     ],
+     [
+      -89.1608632,
+      46.7269893
+     ],
+     [
+      -89.1640199,
+      46.7258114
+     ],
+     [
+      -89.1694379,
+      46.7232191
+     ],
+     [
+      -89.1725747,
+      46.7214097
+     ],
+     [
+      -89.1740178,
+      46.720711
+     ],
+     [
+      -89.1753034,
+      46.720278
+     ],
+     [
+      -89.1809258,
+      46.7195673
+     ],
+     [
+      -89.1838464,
+      46.7189187
+     ],
+     [
+      -89.1855493,
+      46.7189871
+     ],
+     [
+      -89.1871069,
+      46.7192272
+     ],
+     [
+      -89.1878974,
+      46.7194857
+     ],
+     [
+      -89.1887254,
+      46.7200906
+     ],
+     [
+      -89.1889816,
+      46.7210505
+     ],
+     [
+      -89.1888351,
+      46.7214863
+     ],
+     [
+      -89.1872531,
+      46.7237777
+     ],
+     [
+      -89.1870606,
+      46.7252251
+     ],
+     [
+      -89.1879812,
+      46.7278482
+     ],
+     [
+      -89.1880691,
+      46.7318793
+     ],
+     [
+      -89.1886368,
+      46.7335736
+     ],
+     [
+      -89.1891433,
+      46.734251
+     ],
+     [
+      -89.1904059,
+      46.7350868
+     ],
+     [
+      -89.1930547,
+      46.7360009
+     ],
+     [
+      -89.1950386,
+      46.7363575
+     ],
+     [
+      -89.1989537,
+      46.7366529
+     ],
+     [
+      -89.1998935,
+      46.736968
+     ],
+     [
+      -89.2009254,
+      46.7376364
+     ],
+     [
+      -89.2047958,
+      46.7410439
+     ],
+     [
+      -89.2054129,
+      46.7418679
+     ],
+     [
+      -89.2067472,
+      46.7449971
+     ],
+     [
+      -89.2075522,
+      46.7462786
+     ],
+     [
+      -89.2081417,
+      46.7467968
+     ],
+     [
+      -89.2117802,
+      46.7491953
+     ],
+     [
+      -89.2121868,
+      46.7500059
+     ],
+     [
+      -89.2121861,
+      46.7516604
+     ],
+     [
+      -89.2126475,
+      46.7530683
+     ],
+     [
+      -89.219135,
+      46.7607451
+     ],
+     [
+      -89.2247815,
+      46.7715665
+     ],
+     [
+      -89.2257123,
+      46.7724779
+     ],
+     [
+      -89.227154,
+      46.773365
+     ],
+     [
+      -89.2391329,
+      46.7792162
+     ],
+     [
+      -89.240676,
+      46.780302
+     ],
+     [
+      -89.3003973,
+      46.8429579
+     ],
+     [
+      -89.3072126,
+      46.8541894
+     ],
+     [
+      -89.3076255,
+      46.8546403
+     ],
+     [
+      -89.3086792,
+      46.855403
+     ],
+     [
+      -89.3132083,
+      46.8576405
+     ],
+     [
+      -89.3146379,
+      46.8586771
+     ],
+     [
+      -89.3151987,
+      46.8593597
+     ],
+     [
+      -89.3157348,
+      46.8604974
+     ],
+     [
+      -89.3155599,
+      46.8635222
+     ]
+    ]
+   }
+  }
+ ]
+}
