@@ -1,0 +1,1955 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Co. - the 'Dan Patch Line' (also 'Dan Patch Electric Line', 'Dan Patch Air Line') - from its first train on 4 July 1910 to the 6 August 1918 foreclosure sale to the Minneapolis, Northfield and Southern Railway. Drawn from research/branches/minneapolis_st_paul_rochester_and_dubuque_electric_traction.txt in the site repo (DanielMConnolly/historical-trains), researched 2026-11-03: its seven drawable blocks, each with its own years, as seven features - the High Line (54th St - Auto Club) and main line (Auto Club - Northfield) 1910-1918, the St. Louis Park cut-off and leased Electric Short Line downtown approach 1915-1916, and the three runs over Chicago Great Western track (Northfield - Faribault 1913-1915, Faribault - Mankato and Northfield - Randolph 1914-1915). Never electrified despite the name: gas-electric motor cars and trailers, steam for freight - so intercity_rail, not interurban (Rule 7 is about electric railways), matching the MN&S layer. Geometry is copied from the MN&S layer's trace of the same track (Rule 4 splits share geometry), cut at Glenwood Jct and Faribault where a block covers only part of an MN&S feature.",
+  "sources": [
+   "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+   "St. Louis Park Historical Society - https://slphistory.org/?p=627",
+   "MNopedia (MNHS), \"Minneapolis, Northfield and Southern Railway\" - https://www.mnhs.org/mnopedia/search/index/thing/minneapolis-northfield-and-southern-railway",
+   "oocities, \"Dan Patch Line\" - https://www.oocities.org/heartland/Acres/6038/Dan_Patch_Line.html",
+   "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (lines 39, 130, 131, 132, 136) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf",
+   "Mankato Free Press 1913-1917, Mower County Transcript 7 Sep 1910, Redwood Gazette 22 Nov 1910, New Ulm Review Feb 1916 (Chronicling America, loc.gov)",
+   "Mankato Free Press, 3 Jul 1914 pp.1-2 (Chronicling America) - https://www.loc.gov/resource/sn83016589/1914-07-03/ed-1/?sp=1"
+  ],
+  "freight_only": "Rule 1 exclusions. (1) The St. Louis Park cut-off from mid-1916 to Aug 1918: passenger service unproven after the receivership cut trains back to 54th St; steam freight ran on it in 1916 'without Council approval'. Drawn only 1915-1916. (2) The CGW Mankato branch freight business the Dan Patch took over with the passenger trains (Jul 1914 - Jan 1916, CGW steam): same track, no freight-only years added. (3) 1916-18 steam freight and the Savage-area industrial spurs: not drawn. (4) Successor freight (MN&S belt road 1942-1982, Soo/CP, Progressive Rail, CPKC) belongs to other companies and is not drawn by anyone.",
+  "horsecar": "None. The road never ran animal-drawn cars: gas-electric from the first train in 1910. Teams and scrapers were used in 1907-08 construction - construction, not traction.",
+  "rule_9": "All features lie in Minnesota, inside US_BOUNDS.",
+  "ownership": "Split from the MN&S at 6 AUGUST 1918, the foreclosure sale to the Minneapolis, Northfield and Southern Railway (a new South Dakota corporation, inc. 21 June 1918): every feature here ends at 1918 or earlier, and the MN&S layer (colour #2F7F86) draws the same track from 1918. Not splits: the 16 July 1916 receivership (same company run by a court officer); the May 1915 GE / J. G. White / Stevens Chapman & Co. note issue with management of the road ('Road's Ownership Unchanged'); the bondholders' Dec 1917 purchase of the cut-off, under whom no passenger trains are known (and none are drawn). The predecessor Minneapolis, Rochester and Dubuque Traction Co. (1906-07) ran no trains. The CGW legs are Chicago Great Western track run by Dan Patch trains under lease, Sep 1913/Jul 1914 - 31 Jan 1916, drawn in Dan Patch colour; the CGW's own trains there before and after are a CGW matter.",
+  "drawable_blocks_omitted": "Report block [8], drawable NONE, deliberately not drawn: (a) the Faribault extension on the company's own grade (1911-12, never completed); (b) Rochester, Dubuque, Owatonna, St. Clair - projected, never built; (c) Lake Minnetonka - no Dan Patch line or service found; (d) 1916-18 freight on the cut-off and Savage spurs.",
+  "not_yet_sourced": [
+   "St. Louis Park cut-off (dan-patch-st-louis-park-cutoff) 1917 - Aug 1918: whether any passenger car ran Auto Club - St. Louis Park - Glenwood after the July 1916 receivership, even without the downtown lease, is not established; the Dec 1917 bondholders' purchase and the March 1918 scrap plan suggest it was idle. Drawn 1915-1916 only. A Minneapolis Tribune/Journal search 1916-18 (not in Chronicling America) would settle it.",
+   "Exact day the Electric Short Line downtown access was lost (tied to the 16 Jul 1916 receivership without a day), and which city terminal the cars used 29 May - 5 Dec 1915 before the temporary downtown station opened.",
+   "1910 opening sequence: SLP's first train 4 July 1910 'to Antlers Park' vs the Mower County Transcript's 7 Sep 1910 report of regular trains only to Savage; Northfield 22 Nov (Redwood Gazette) vs 1 Dec 1910 (SLP). All 1910, so the drawn span is unaffected.",
+   "50th St vs 54th St as the 1910-11 city terminal (Fowler line 131 footnote vs SLP); 0.5 mi, not drawn.",
+   "Exact start days: Faribault 1 or 8 Sep 1913; Mankato probably 1 Jul 1914. Years firm.",
+   "Receiver identity: C. P. Bratnober (appointed ~20 Jul 1916) vs 'the receiver, C. E. Warner' (Twin City Star 17 Nov 1917). Immaterial to Rule 4.",
+   "Service pattern on the High Line between the cut-off's opening (29 May 1915) and the receivership.",
+   "Every headway_min is an estimate or guess except the announced 1913 Faribault two-hour interval and the 1915 hourly suburban cars; receivership (1916-18) frequencies are guesses for 'greatly reduced'. avg_speed_kmh is measured only for the CGW legs (one Jul 1914 run); the main-line 40 km/h is an estimate.",
+   "Station sites at Northfield, Faribault and Mankato were not established; the Faribault cut point is the town-centre vertex.",
+   "NOTE ON ANOTHER LAYER (not changed here): this report finds the Dan Patch company's trains over the CGW ended 31 Jan 1916 and the CGW resumed its own Mankato - Randolph trains (New Ulm Review 2 & 9 Feb 1916; Mankato Free Press 22 Sep 1916). That questions the MN&S layer's 1918 start for mns-northfield-mankato, which rests on continuity from the predecessor and Fowler's continuous '1913>1931'; the Dan Patch Corridor article (uncited) gives 1921. minneapolis_northfield_and_southern_railway.geojson is not edited by this change."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: High Line (54th St \u2013 Auto Club)",
+    "id": "dan-patch-high-line",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not measured. The one measured run (Jul 1914, No. 18 Mankato 6:15 - Northfield 8:49, about 32 km/h all stops) is on the CGW leg; no main-line running time was recovered (research report UNRESOLVED 9). 40 km/h matches the successor MN&S layer's estimate for the same cars on the same track (Rule 3).",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-high-line); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. Whole feature copied; no cut.",
+    "geometry_quality": "Copied from the MN&S trace of the same track: 9.82 mi drawn against the documented 10.2 mi (Fowler line 131, 54th St MP 0.0 to Auto Club 10.2). TWO STRAIGHT-LINE LEGS, approximated (both inherited from the MN&S trace): 0.77 mi from the north end of surviving track near 61st St (44.8950,-93.2833) to the 54th St & Nicollet Ave terminal (pinned at 44.9055,-93.2780), lifted and redeveloped, in neither OSM nor OHM - most of the shortfall; and a 0.16 mi join at the west end from the spur's last mapped vertex to the Auto Club point shared with the main line. The rest follows the surviving 'Dan Patch Line' / CP / Progressive Rail High Line spur through Richfield and Bloomington. ERA: this is the original 1910 Dan Patch route into the city - the through Minneapolis - Northfield route of 1910-1915 and the receivership terminal route of 1916-1918 - drawn as it survives today, so the alignment fits its era. Two caveats: (1) the drawn track is today's spur; the 1910 track layout at Auto Club (a plain through line until the 1915 cut-off made it a junction) is not known and is covered only by the 0.16 mi straight join; (2) Fowler says the cars may have run 0.5 mi further north to 50th St in 1910-11 before being cut back to 54th St (report UNRESOLVED 3) - that 0.5 mi is not drawn.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1915,
+      "headway_min": 120,
+      "note": "The Dan Patch Line's original and, until the cut-off opened on 29 May 1915, only Minneapolis entry: 54th St & Nicollet Ave (transfer to the Twin City Rapid Transit Nicollet streetcar) - 58th St - the Richfield stations (Bachman, Goodspeed, Irwin, Wilson) - Oxboro Heath - Bloomington - Masonic Home - Auto Club, carrying the through Minneapolis - Northfield trains, not a separate shuttle. First train from 54th & Nicollet 4 July 1910 (SLP Hist. Soc.; oocities). Fowler's line-131 footnote says the road was cut back from 50th St to 54th St in 1911 when TCRT electrified 50th-54th; SLP gives 54th & Nicollet from the start (UNRESOLVED). Special race trains 54th St - Savage 21 Sep 1911 (Minneapolis Journal via SLP). From 29 May 1915 it was the through trains' second city route; the exact 1915-16 service pattern was not recovered. headway_min 120 is an ESTIMATE derived from the summer 1912 '18 trains each day' Minneapolis - Northfield (Minneapolis Tribune 7 Apr 1912 via SLP), i.e. about 9 each way over a long day.",
+      "sources": [
+       "Segment-level: SLP Historical Society (first train from 54th & Nicollet 4 Jul 1910; 1912 frequency; 1911 race specials) and Fowler line 131 (route, 50th/54th St footnote); headway is an estimate from the 1912 daily train count.",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (line 131) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf",
+       "oocities, \"Dan Patch Line\" - https://www.oocities.org/heartland/Acres/6038/Dan_Patch_Line.html"
+      ]
+     },
+     {
+      "start": 1916,
+      "end": 1918,
+      "headway_min": 240,
+      "note": "Receivership: from 16 July 1916 (receiver C. P. Bratnober) the road lost its downtown access over the Electric Short Line and 'Passenger service continued to the Nicollet Ave. and 54th Street terminal', 'greatly reduced' (SLP Hist. Soc.) - so the High Line again carried every Minneapolis train. Same company under a court officer, not a Rule 4 split. Ends at the 6 Aug 1918 foreclosure sale to the Minneapolis, Northfield and Southern, whose layer draws this track from 1918 (both layers show 1918, the year of the sale). Evidence for 1917 is positive but indirect: in Nov 1917 the court distributed money from 'the sale of equipment not necessary for the operation of the road' (Mankato Free Press 16 Nov 1917 p.2), i.e. still operating. headway_min 240 is a GUESS for 'greatly reduced'; no receivership timetable was found.",
+      "sources": [
+       "Segment-level: SLP Historical Society (receivership service cut back to 54th St, 'greatly reduced'); Mankato Free Press 16 Nov 1917 p.2 (road still operating, indirect); headway is a guess.",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+       "Chronicling America (loc.gov): Mankato Free Press, 16 Nov 1917 p.2 (sn83016589)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.278,
+      44.9055
+     ],
+     [
+      -93.283238,
+      44.895046
+     ],
+     [
+      -93.283239,
+      44.873345
+     ],
+     [
+      -93.28355,
+      44.83664
+     ],
+     [
+      -93.283989,
+      44.835514
+     ],
+     [
+      -93.284474,
+      44.834937
+     ],
+     [
+      -93.289527,
+      44.830877
+     ],
+     [
+      -93.290713,
+      44.830062
+     ],
+     [
+      -93.29218,
+      44.829234
+     ],
+     [
+      -93.297401,
+      44.826797
+     ],
+     [
+      -93.299979,
+      44.825452
+     ],
+     [
+      -93.305246,
+      44.821583
+     ],
+     [
+      -93.309524,
+      44.81939
+     ],
+     [
+      -93.310654,
+      44.8189
+     ],
+     [
+      -93.32954,
+      44.813686
+     ],
+     [
+      -93.347557,
+      44.807464
+     ],
+     [
+      -93.348789,
+      44.806874
+     ],
+     [
+      -93.358466,
+      44.800161
+     ],
+     [
+      -93.360745,
+      44.799505
+     ],
+     [
+      -93.363956,
+      44.798826
+     ],
+     [
+      -93.364536,
+      44.798818
+     ],
+     [
+      -93.366538,
+      44.800608
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: Auto Club \u2013 Northfield",
+    "id": "dan-patch-auto-club-northfield",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not measured. The one measured run (Jul 1914, No. 18 Mankato 6:15 - Northfield 8:49, about 32 km/h all stops) is on the CGW leg; no main-line running time was recovered (research report UNRESOLVED 9). 40 km/h matches the successor MN&S layer's estimate for the same cars on the same track (Rule 3).",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-auto-club-northfield); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. Whole feature copied; no cut.",
+    "geometry_quality": "Copied from the MN&S trace of the same track: 27.74 mi drawn against the documented 27.7 mi (Fowler line 130, Auto Club MP 17.6 to Northfield MP 45.3). NO STRAIGHT-LINE LEG (the MN&S trace reported none). Drawn on surviving track - Twin Cities & Western at the Savage Minnesota River crossing, then Progressive Rail and OSM ways tagged 'MN&S' / 'Minneapolis Northfield & Southern' - with the OHM 'Minneapols Northfield and Southern Railway' way as guide; about 0.3 mi has no mapped way within 40 m. The Northfield end is the approach at (44.4558,-93.1660); the exact Dan Patch Northfield station site was not established. ERA: this IS the original 1910 Dan Patch alignment, as it survives; no later realignment is known, so it fits 1910-1918.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1915,
+      "headway_min": 120,
+      "note": "Main line Auto Club - Valley View - Savage (Minnesota River crossing; Dan Patch's stables) - Orchard Gardens - Orchard Lake - Antlers Park (Lake Marion amusement park) - Lakeville - Eureka Center - Northfield, gas-electric motor cars ('Augereta', 'Irene') and trailers; never electrified despite the name. Opened in stages in 1910; the day-level order is CONFLICTED: SLP Hist. Soc. has the first train 4 July 1910, but the Mower County Transcript (7 Sep 1910 p.4) reports regular trains only Minneapolis - Savage with rails still being laid Savage - Lakeville, so a July 1910 train to Antlers Park is not settled; Northfield reached late 1910 ('now running cars to Northfield', Redwood Gazette 22 Nov 1910 p.7; 1 Dec 1910 per SLP). Every source agrees on 1910. Summer 1912: '18 trains each day' Minneapolis - Northfield (Minneapolis Tribune 7 Apr 1912 via SLP); Antlers Park picnic trains were the signature traffic. 1914: the 'Dan Patch Flyer' limited ran Minneapolis - Mankato stopping Savage, Orchard Lake, Antler's Park, Lakeville, Livingston, Northfield (Mankato Free Press 3 Jul 1914 p.2). From 29 May 1915 through trains could also reach downtown over the St. Louis Park cut-off. headway_min 120 is an ESTIMATE from the 1912 daily count (about 9 each way).",
+      "sources": [
+       "Segment-level: SLP Historical Society (4 Jul 1910 opening, Northfield 1 Dec 1910, 1912 frequency), Mower County Transcript 7 Sep 1910 p.4 and Redwood Gazette 22 Nov 1910 p.7 (1910 opening sequence), Mankato Free Press 3 Jul 1914 p.2 (Flyer stops); headway is an estimate.",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+       "St. Louis Park Historical Society - https://slphistory.org/?p=627",
+       "MNopedia (MNHS), \"Minneapolis, Northfield and Southern Railway\" - https://www.mnhs.org/mnopedia/search/index/thing/minneapolis-northfield-and-southern-railway",
+       "oocities, \"Dan Patch Line\" - https://www.oocities.org/heartland/Acres/6038/Dan_Patch_Line.html",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (line 130) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf",
+       "Mankato Free Press, 3 Jul 1914 pp.1-2 (Chronicling America) - https://www.loc.gov/resource/sn83016589/1914-07-03/ed-1/?sp=1",
+       "Chronicling America (loc.gov): Mower County Transcript, 7 Sep 1910 p.4; Redwood Gazette, 22 Nov 1910 p.7"
+      ]
+     },
+     {
+      "start": 1916,
+      "end": 1918,
+      "headway_min": 240,
+      "note": "Receivership from 16 July 1916 (receiver C. P. Bratnober; a Nov 1917 report names C. E. Warner - UNRESOLVED, immaterial to Rule 4): trains continued Northfield - 54th St, 'greatly reduced', with 8 of 11 motor cars and 17 of 19 trailers sold (SLP Hist. Soc.); steam increasingly used for freight. The 1917 court sale drew no bid (Mankato Free Press 6 Jul 1917, 'MAY BE SOLD FOR JUNK'), but no source says passenger service stopped before the sale, and in Nov 1917 the court distributed money from 'the sale of equipment not necessary for the operation of the road' (Mankato Free Press 16 Nov 1917 p.2) - positive but indirect for 1917. Ends at the 6 Aug 1918 foreclosure sale to the Minneapolis, Northfield and Southern (Rule 4 split, not an end of service; the MN&S layer draws this track from 1918 and both layers show 1918). headway_min 240 is a GUESS for 'greatly reduced'.",
+      "sources": [
+       "Segment-level: SLP Historical Society (receivership service 'greatly reduced', equipment sold); Mankato Free Press 6 Jul 1917 and 16 Nov 1917 p.2 (road still operating, indirect); headway is a guess.",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+       "Chronicling America (loc.gov): Mankato Free Press, 6 Jul 1917 and 16 Nov 1917 p.2 (sn83016589)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.366538,
+      44.800608
+     ],
+     [
+      -93.367079,
+      44.796446
+     ],
+     [
+      -93.367893,
+      44.793589
+     ],
+     [
+      -93.367874,
+      44.792895
+     ],
+     [
+      -93.36764,
+      44.792322
+     ],
+     [
+      -93.367234,
+      44.791854
+     ],
+     [
+      -93.366632,
+      44.79146
+     ],
+     [
+      -93.36579,
+      44.791191
+     ],
+     [
+      -93.362097,
+      44.790727
+     ],
+     [
+      -93.358044,
+      44.791401
+     ],
+     [
+      -93.356401,
+      44.791425
+     ],
+     [
+      -93.35498,
+      44.791072
+     ],
+     [
+      -93.351479,
+      44.789718
+     ],
+     [
+      -93.350889,
+      44.789357
+     ],
+     [
+      -93.350458,
+      44.788749
+     ],
+     [
+      -93.350353,
+      44.78805
+     ],
+     [
+      -93.350549,
+      44.779344
+     ],
+     [
+      -93.350348,
+      44.778513
+     ],
+     [
+      -93.349857,
+      44.777772
+     ],
+     [
+      -93.341083,
+      44.770789
+     ],
+     [
+      -93.340085,
+      44.770291
+     ],
+     [
+      -93.338301,
+      44.76992
+     ],
+     [
+      -93.333365,
+      44.769592
+     ],
+     [
+      -93.331757,
+      44.769157
+     ],
+     [
+      -93.330361,
+      44.768409
+     ],
+     [
+      -93.329755,
+      44.767906
+     ],
+     [
+      -93.329149,
+      44.766905
+     ],
+     [
+      -93.327293,
+      44.760605
+     ],
+     [
+      -93.327014,
+      44.760129
+     ],
+     [
+      -93.326048,
+      44.759211
+     ],
+     [
+      -93.318651,
+      44.753763
+     ],
+     [
+      -93.314048,
+      44.75107
+     ],
+     [
+      -93.308624,
+      44.744879
+     ],
+     [
+      -93.307359,
+      44.74302
+     ],
+     [
+      -93.30665,
+      44.741557
+     ],
+     [
+      -93.306264,
+      44.7402
+     ],
+     [
+      -93.305964,
+      44.738965
+     ],
+     [
+      -93.305685,
+      44.734149
+     ],
+     [
+      -93.305105,
+      44.733219
+     ],
+     [
+      -93.302552,
+      44.730521
+     ],
+     [
+      -93.302166,
+      44.729865
+     ],
+     [
+      -93.301565,
+      44.727823
+     ],
+     [
+      -93.301136,
+      44.727015
+     ],
+     [
+      -93.300406,
+      44.726344
+     ],
+     [
+      -93.298518,
+      44.725017
+     ],
+     [
+      -93.298089,
+      44.723935
+     ],
+     [
+      -93.298218,
+      44.723402
+     ],
+     [
+      -93.298904,
+      44.722411
+     ],
+     [
+      -93.300127,
+      44.72142
+     ],
+     [
+      -93.300921,
+      44.720459
+     ],
+     [
+      -93.301458,
+      44.719117
+     ],
+     [
+      -93.301715,
+      44.717852
+     ],
+     [
+      -93.302423,
+      44.716357
+     ],
+     [
+      -93.302981,
+      44.715595
+     ],
+     [
+      -93.306843,
+      44.711905
+     ],
+     [
+      -93.307487,
+      44.710395
+     ],
+     [
+      -93.30738,
+      44.709038
+     ],
+     [
+      -93.306908,
+      44.708077
+     ],
+     [
+      -93.306114,
+      44.707208
+     ],
+     [
+      -93.305513,
+      44.706873
+     ],
+     [
+      -93.296286,
+      44.70248
+     ],
+     [
+      -93.29399,
+      44.700909
+     ],
+     [
+      -93.293282,
+      44.70001
+     ],
+     [
+      -93.282446,
+      44.681933
+     ],
+     [
+      -93.282274,
+      44.68059
+     ],
+     [
+      -93.282639,
+      44.678393
+     ],
+     [
+      -93.282489,
+      44.676654
+     ],
+     [
+      -93.282081,
+      44.675891
+     ],
+     [
+      -93.278455,
+      44.671389
+     ],
+     [
+      -93.276803,
+      44.6682
+     ],
+     [
+      -93.276481,
+      44.667193
+     ],
+     [
+      -93.275966,
+      44.666582
+     ],
+     [
+      -93.274571,
+      44.665652
+     ],
+     [
+      -93.273863,
+      44.665407
+     ],
+     [
+      -93.269185,
+      44.664476
+     ],
+     [
+      -93.268048,
+      44.664141
+     ],
+     [
+      -93.265602,
+      44.662981
+     ],
+     [
+      -93.253865,
+      44.656128
+     ],
+     [
+      -93.251998,
+      44.654846
+     ],
+     [
+      -93.249208,
+      44.652129
+     ],
+     [
+      -93.248071,
+      44.650663
+     ],
+     [
+      -93.239767,
+      44.634617
+     ],
+     [
+      -93.236548,
+      44.626692
+     ],
+     [
+      -93.226592,
+      44.60048
+     ],
+     [
+      -93.225605,
+      44.598632
+     ],
+     [
+      -93.220176,
+      44.590365
+     ],
+     [
+      -93.211808,
+      44.578476
+     ],
+     [
+      -93.211164,
+      44.577115
+     ],
+     [
+      -93.210262,
+      44.572774
+     ],
+     [
+      -93.209533,
+      44.57094
+     ],
+     [
+      -93.208374,
+      44.569427
+     ],
+     [
+      -93.205885,
+      44.567363
+     ],
+     [
+      -93.205413,
+      44.566675
+     ],
+     [
+      -93.204898,
+      44.565651
+     ],
+     [
+      -93.203868,
+      44.561401
+     ],
+     [
+      -93.199083,
+      44.552594
+     ],
+     [
+      -93.198053,
+      44.54874
+     ],
+     [
+      -93.196401,
+      44.5401
+     ],
+     [
+      -93.195864,
+      44.538892
+     ],
+     [
+      -93.189234,
+      44.527481
+     ],
+     [
+      -93.182067,
+      44.516634
+     ],
+     [
+      -93.181145,
+      44.514354
+     ],
+     [
+      -93.171016,
+      44.485428
+     ],
+     [
+      -93.16621,
+      44.472169
+     ],
+     [
+      -93.165287,
+      44.470118
+     ],
+     [
+      -93.162562,
+      44.464957
+     ],
+     [
+      -93.162176,
+      44.462966
+     ],
+     [
+      -93.16224,
+      44.461894
+     ],
+     [
+      -93.162863,
+      44.459919
+     ],
+     [
+      -93.163313,
+      44.458831
+     ],
+     [
+      -93.164086,
+      44.457744
+     ],
+     [
+      -93.165051,
+      44.456595
+     ],
+     [
+      -93.166038,
+      44.455753
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: Minneapolis \u2013 Glenwood Jct (Electric Short Line)",
+    "id": "dan-patch-electric-short-line",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not measured. The one measured run (Jul 1914, No. 18 Mankato 6:15 - Northfield 8:49, about 32 km/h all stops) is on the CGW leg; no main-line running time was recovered (research report UNRESOLVED 9). 40 km/h matches the successor MN&S layer's estimate for the same cars on the same track (Rule 3).",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-minneapolis-auto-club); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. This is that feature's first 20 vertices (downtown terminal to Glenwood Jct), cut at vertex 19 (44.986994,-93.333014), the vertex nearest the Nominatim railway=junction 'Glenwood Junction' (44.9873,-93.3328), 37 m away; that point agrees with the end of the OHM 'Electric Short Line Railway' way (1913), which is where the leased ESL track meets the 1915 cut-off.",
+    "geometry_quality": "Cut from the MN&S trace: 3.24 mi drawn against the documented 3.3 mi (Fowler line 130, Glenwood Jct MP 3.3; SLP: '3.3 miles leased from the Electric Short Line'). ONE STRAIGHT-LINE LEG, approximated (inherited): 0.45 mi from the end of the mapped Electric Short Line grade (44.9791,-93.2881) to the downtown terminal at 7th Street & 3rd Avenue North (pinned at 44.9818,-93.2797, accurate to about a block - the final approach is redeveloped and is in neither OSM nor OHM). The rest follows OHM's 'Electric Short Line Railway' way (start_date 1913). FOREIGN TRACK: Electric Short Line railroad, drawn in Dan Patch colour because these were Dan Patch trains; the ESL's own Minneapolis - Hutchinson trains are not drawn here. ERA: the 1913 ESL alignment, so it fits 1915-1916; but the drawn downtown end is the 7th St & 3rd Ave N terminal, which opened only as a temporary freight-house station on 5 Dec 1915 (SLP) - which city terminal the cars used from May to Dec 1915 is not established, so for those months the last 0.45 mi may draw a terminal not yet in use.",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1916,
+      "headway_min": 60,
+      "note": "Downtown approach over 3.3 mi of Electric Short Line ('Luce Line') track under lease: Glenwood Junction - Glenwood Park - Cedar Lake Road - Munsing - downtown terminal at 7th St & 3rd Ave N (jointly owned with the ESL). Opened with the St. Louis Park cut-off on 29 May 1915 (SLP Hist. Soc., from the Minneapolis Journal / Morning Tribune), the road's first downtown entry - agreement announced 15 Jul 1912. The downtown station opened as a temporary freight-house station 5 Dec 1915; before that the city terminal in use is not clear. Lost on the receivership of 16 July 1916, when the road 'could no longer pay for its use of tracks into Minneapolis and the downtown terminal' (SLP); the exact last day is not given, but it falls in 1916. headway_min 60 is the hourly Auto Club - downtown 'suburban' schedule of 30 May 1915 (SLP), plus 'seven daily trains between downtown and Mankato'; 1916 frequency not known.",
+      "sources": [
+       "Segment-level: SLP Historical Society (lease, 29 May 1915 opening, hourly suburban schedule, 1916 loss of access); Fowler line 130 (mileage).",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (lines 130, 136) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.2797,
+      44.9818
+     ],
+     [
+      -93.288103,
+      44.979096
+     ],
+     [
+      -93.289026,
+      44.979081
+     ],
+     [
+      -93.292266,
+      44.979354
+     ],
+     [
+      -93.293017,
+      44.979309
+     ],
+     [
+      -93.29424,
+      44.978944
+     ],
+     [
+      -93.299948,
+      44.976683
+     ],
+     [
+      -93.301299,
+      44.97647
+     ],
+     [
+      -93.302651,
+      44.976531
+     ],
+     [
+      -93.310956,
+      44.977563
+     ],
+     [
+      -93.31205,
+      44.977958
+     ],
+     [
+      -93.313015,
+      44.978489
+     ],
+     [
+      -93.317971,
+      44.986357
+     ],
+     [
+      -93.319625,
+      44.988739
+     ],
+     [
+      -93.320504,
+      44.989316
+     ],
+     [
+      -93.321534,
+      44.98968
+     ],
+     [
+      -93.322629,
+      44.989862
+     ],
+     [
+      -93.324538,
+      44.989756
+     ],
+     [
+      -93.331813,
+      44.98751
+     ],
+     [
+      -93.333014,
+      44.986994
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: St. Louis Park Cut-off (Glenwood Jct \u2013 Auto Club)",
+    "id": "dan-patch-st-louis-park-cutoff",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not measured. The one measured run (Jul 1914, No. 18 Mankato 6:15 - Northfield 8:49, about 32 km/h all stops) is on the CGW leg; no main-line running time was recovered (research report UNRESOLVED 9). 40 km/h matches the successor MN&S layer's estimate for the same cars on the same track (Rule 3).",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-minneapolis-auto-club); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. This is that feature from vertex 19 (Glenwood Jct, see dan-patch-electric-short-line) to its end at Auto Club, the same vertex the main line and High Line start/end on.",
+    "geometry_quality": "Cut from the MN&S trace: 13.95 mi drawn against the documented 14.3 mi (Fowler line 130, Glenwood Jct MP 3.3 - Auto Club MP 17.6; SLP '14 miles from Auto Club Junction to Glenwood Park'). NO STRAIGHT-LINE LEG on this piece (the MN&S feature's only straight leg is on the downtown end, in dan-patch-electric-short-line). Glenwood Jct - St. Louis Park follows OHM's 1915 cut-off grade, mostly within 40 m of surviving CP/BNSF track; about 0.3 mi near (44.977,-93.352) has no mapped way within 40 m and is drawn on the OHM grade alone. South of St. Louis Park it is the live CPKC 'MN&S Subdivision' and Progressive Rail track to Auto Club. ERA: this is the 1915 cut-off alignment itself, so it fits 1915-1916; present-day track and yards are drawn where they coincide with the grade.",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1916,
+      "headway_min": 60,
+      "note": "The company's own St. Louis Park cut-off, built 1913-15: Auto Club - Nesbitt - Bush Lake - Cahill - Edina (Perry, Warden, Lucius) - Brookside - Excelsior Ave - St. Louis Park - Park Manor - Superior Boulevard - Glenwood Junction, gas-electric cars only (St. Louis Park's 1913 franchise prohibited steam). Opened 29 May 1915 with 'seven daily trains between downtown and Mankato' and an hourly Auto Club - downtown suburban schedule from 30 May (SLP Hist. Soc., from the Minneapolis Journal 6 May 1915 / Morning Tribune 25 Apr 1915). The May 1915 GE / J. G. White / Stevens Chapman note issue gave them management of the road - 'Road's Ownership Unchanged' (Mankato Free Press 28 May 1915): not a Rule 4 split. 1916 is confirmed by three cut-off stops Fowler tags '1916t' (Thompson, Grand View Heights, Kelley) - a 1916 public timetable. END 1916 IS COLLAPSED INWARD, not a known end: on the 16 July 1916 receivership the road lost its downtown access and passenger service was cut back to 54th St (SLP); whether any passenger car used the cut-off from mid-1916 to the Aug 1918 sale is NOT established, and the bondholders' Dec 1917 purchase of the cut-off (Mankato Free Press 21 Dec 1917 p.2) and their March 1918 plan 'to tear up and sell the cut-off's rails' (Tribune 7 Mar 1918 via SLP) suggest it was idle. Steam freight ran on it in 1916 'without Council approval' - freight, not drawn (Rule 1). Do not extend to 1918 without evidence. headway_min 60 is the hourly 1915 suburban schedule; 1916 frequency not known.",
+      "sources": [
+       "Segment-level: SLP Historical Society (29 May 1915 opening and schedule, 1916 loss of downtown access, 1917-18 sale and scrap plan); Fowler line 130 '1916t' stops (1916 service); Mankato Free Press 28 May 1915 pp.1-2 and 21 Dec 1917 p.2. The 1917-1918 years are deliberately not drawn: unproven.",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (line 130) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf",
+       "Chronicling America (loc.gov): Mankato Free Press, 28 May 1915 pp.1-2 and 21 Dec 1917 p.2 (sn83016589)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.333014,
+      44.986994
+     ],
+     [
+      -93.337885,
+      44.98408
+     ],
+     [
+      -93.338829,
+      44.983655
+     ],
+     [
+      -93.347798,
+      44.98062
+     ],
+     [
+      -93.349788,
+      44.97967
+     ],
+     [
+      -93.351165,
+      44.978298
+     ],
+     [
+      -93.351877,
+      44.977291
+     ],
+     [
+      -93.359188,
+      44.96625
+     ],
+     [
+      -93.360206,
+      44.962479
+     ],
+     [
+      -93.360316,
+      44.961448
+     ],
+     [
+      -93.360028,
+      44.960374
+     ],
+     [
+      -93.358066,
+      44.956959
+     ],
+     [
+      -93.357735,
+      44.955985
+     ],
+     [
+      -93.357489,
+      44.945599
+     ],
+     [
+      -93.357818,
+      44.944708
+     ],
+     [
+      -93.358385,
+      44.944012
+     ],
+     [
+      -93.36235,
+      44.94104
+     ],
+     [
+      -93.362859,
+      44.940241
+     ],
+     [
+      -93.363047,
+      44.93921
+     ],
+     [
+      -93.362746,
+      44.938228
+     ],
+     [
+      -93.36075,
+      44.935087
+     ],
+     [
+      -93.355801,
+      44.93057
+     ],
+     [
+      -93.355177,
+      44.929748
+     ],
+     [
+      -93.354742,
+      44.928771
+     ],
+     [
+      -93.354586,
+      44.927873
+     ],
+     [
+      -93.354524,
+      44.923538
+     ],
+     [
+      -93.353534,
+      44.919669
+     ],
+     [
+      -93.353618,
+      44.909707
+     ],
+     [
+      -93.353834,
+      44.907361
+     ],
+     [
+      -93.354338,
+      44.906068
+     ],
+     [
+      -93.35536,
+      44.90508
+     ],
+     [
+      -93.358824,
+      44.903077
+     ],
+     [
+      -93.360014,
+      44.9022
+     ],
+     [
+      -93.361099,
+      44.900787
+     ],
+     [
+      -93.361572,
+      44.899193
+     ],
+     [
+      -93.362152,
+      44.887882
+     ],
+     [
+      -93.361763,
+      44.886765
+     ],
+     [
+      -93.359842,
+      44.883897
+     ],
+     [
+      -93.359555,
+      44.883045
+     ],
+     [
+      -93.359526,
+      44.882352
+     ],
+     [
+      -93.362434,
+      44.862059
+     ],
+     [
+      -93.362604,
+      44.860043
+     ],
+     [
+      -93.364196,
+      44.849625
+     ],
+     [
+      -93.364035,
+      44.848523
+     ],
+     [
+      -93.361014,
+      44.838526
+     ],
+     [
+      -93.360812,
+      44.837068
+     ],
+     [
+      -93.361294,
+      44.835614
+     ],
+     [
+      -93.363961,
+      44.831593
+     ],
+     [
+      -93.364444,
+      44.830006
+     ],
+     [
+      -93.364487,
+      44.828544
+     ],
+     [
+      -93.364006,
+      44.82543
+     ],
+     [
+      -93.362611,
+      44.821121
+     ],
+     [
+      -93.362481,
+      44.820133
+     ],
+     [
+      -93.365388,
+      44.809453
+     ],
+     [
+      -93.366538,
+      44.800608
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: Northfield \u2013 Faribault (CGW)",
+    "id": "dan-patch-northfield-faribault",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 32,
+    "speed_source": "Derived from one timetable: Jul 1914 No. 18 left Mankato 6:15 a.m. and reached Northfield 8:49 a.m., 51.5 mi in 2 h 34 min = about 32 km/h with all stops (Mankato Free Press 3 Jul 1914, research report UNRESOLVED 9). One train, one day; applied to the whole leg.",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-northfield-mankato); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. This is that feature's first 41 vertices, cut at vertex 40 (44.302584,-93.275099), the vertex nearest the Nominatim point for the city of Faribault (boundary/administrative, addresstype town, 44.2950,-93.2688 - checked: not Faribault County), 0.61 mi away. No CGW Faribault depot was found in OSM or OHM, so the exact station site is not established.",
+    "geometry_quality": "Cut from the MN&S trace on the Chicago Great Western alignment: 12.95 mi drawn against the documented 11.3 mi (Fowler CGW line 39, Northfield MP 52.1 - Faribault 63.4; the Sept 1913 press, 39 -> 51 mi from Minneapolis, implies about 12) - 15% long: the parent trace is itself 3.9% long overall, the cut point is a town-centre vertex not a known depot, and the Northfield start is the Dan Patch main-line end, not the CGW milepost. ONE STRAIGHT-LINE LEG, approximated (inherited): a 0.16 mi join at Northfield from the Dan Patch main line's end vertex to the CGW. The rest follows OHM 'Chicago Great Western' over surviving/abandoned OSM track; the parent trace reports about 1.3 mi without a mapped way within 40 m somewhere on Northfield - Mankato, not localized to either cut piece. The Dan Patch - CGW connections built in 1913 at Northfield Junction and Faribault Junction are not drawn separately. FOREIGN TRACK: Chicago Great Western railroad, drawn in Dan Patch colour because the Dan Patch company ran these passenger trains under lease. ERA: the CGW line as last mapped before abandonment; no realignment between 1913 and 1916 is known.",
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1915,
+      "headway_min": 120,
+      "note": "Dan Patch gas-electric cars over Chicago Great Western track Northfield - Dundas - Tower City (a Dan Patch-only stop, Fowler '1914(MNS)t') - Faribault, reached by connections built in 1913 because Faribault refused the company a right of way through town and its own 1911-12 grade was never finished (MNopedia). Began September 1913: 'the first train for Faribault over the completed Dan Patch line will leave Minneapolis at 7 a.m. Monday, and thereafter at intervals of two hours' (Mankato Free Press 5 Sep 1913 p.5, quoting the Minneapolis Journal - the Monday is 1 or 8 Sep); CGW conductors 'sent as pilots on the Dan Patch line between Faribault and Northfield' (Mankato Free Press 12 Sep 1913 p.7). The lease was with the Chicago GREAT Western, not the 'Chicago North Western' of SLP's summary. Last Dan Patch trains 31 January 1916: 'After January 31st the Dan Patch electric line will cease to operate trains over the old Great Western ... They have abandoned their lease' (New Ulm Review 2 Feb 1916 p.8); 'The Dan Patch line has discontinued service to Faribault' (9 Feb 1916 p.3). 1916 itself is not drawn because service ended in its first month. Dec 1917 reorganisation plans to rebuild 'to Northfield and Faribault' were plans; no later Dan Patch train to Faribault was found. The CGW's own trains on this track before Sep 1913 and after Jan 1916 are a CGW matter, not drawn here. headway_min 120 is the announced 1913 'intervals of two hours'; from Jul 1914 the leg also carried the Mankato trains.",
+      "sources": [
+       "Segment-level: Mankato Free Press 5 Sep 1913 p.5 and 12 Sep 1913 p.7 (start, frequency); New Ulm Review 2 Feb 1916 p.8 and 9 Feb 1916 p.3 (end 31 Jan 1916).",
+       "Chronicling America (loc.gov): Mankato Free Press 5 Sep 1913 p.5, 12 Sep 1913 p.7 (sn83016589); New Ulm Review 2 Feb 1916 p.8, 9 Feb 1916 p.3 (sn89081128)",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (CGW line 39) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf",
+       "MNopedia (MNHS), \"Minneapolis, Northfield and Southern Railway\" - https://www.mnhs.org/mnopedia/search/index/thing/minneapolis-northfield-and-southern-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.166038,
+      44.455753
+     ],
+     [
+      -93.168791,
+      44.454632
+     ],
+     [
+      -93.170899,
+      44.45358
+     ],
+     [
+      -93.18497,
+      44.44758
+     ],
+     [
+      -93.185779,
+      44.447153
+     ],
+     [
+      -93.185884,
+      44.446843
+     ],
+     [
+      -93.188438,
+      44.445751
+     ],
+     [
+      -93.189787,
+      44.44495
+     ],
+     [
+      -93.193625,
+      44.442001
+     ],
+     [
+      -93.204813,
+      44.432561
+     ],
+     [
+      -93.205724,
+      44.431563
+     ],
+     [
+      -93.20774,
+      44.428555
+     ],
+     [
+      -93.214749,
+      44.406753
+     ],
+     [
+      -93.215302,
+      44.405847
+     ],
+     [
+      -93.221872,
+      44.398307
+     ],
+     [
+      -93.222604,
+      44.397656
+     ],
+     [
+      -93.22597,
+      44.395693
+     ],
+     [
+      -93.228246,
+      44.394833
+     ],
+     [
+      -93.245565,
+      44.389487
+     ],
+     [
+      -93.246801,
+      44.388953
+     ],
+     [
+      -93.247972,
+      44.388325
+     ],
+     [
+      -93.259179,
+      44.381235
+     ],
+     [
+      -93.260188,
+      44.3803
+     ],
+     [
+      -93.260698,
+      44.378864
+     ],
+     [
+      -93.262751,
+      44.367075
+     ],
+     [
+      -93.262609,
+      44.366063
+     ],
+     [
+      -93.258263,
+      44.350172
+     ],
+     [
+      -93.258164,
+      44.348653
+     ],
+     [
+      -93.258334,
+      44.340858
+     ],
+     [
+      -93.258461,
+      44.340291
+     ],
+     [
+      -93.261647,
+      44.336443
+     ],
+     [
+      -93.262114,
+      44.33461
+     ],
+     [
+      -93.262893,
+      44.329152
+     ],
+     [
+      -93.263261,
+      44.328049
+     ],
+     [
+      -93.270672,
+      44.316793
+     ],
+     [
+      -93.271251,
+      44.31559
+     ],
+     [
+      -93.271513,
+      44.307878
+     ],
+     [
+      -93.271662,
+      44.307036
+     ],
+     [
+      -93.272839,
+      44.304777
+     ],
+     [
+      -93.274109,
+      44.303333
+     ],
+     [
+      -93.275099,
+      44.302584
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: Faribault \u2013 Mankato (CGW)",
+    "id": "dan-patch-faribault-mankato",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 32,
+    "speed_source": "Derived from one timetable: Jul 1914 No. 18 left Mankato 6:15 a.m. and reached Northfield 8:49 a.m., 51.5 mi in 2 h 34 min = about 32 km/h with all stops (Mankato Free Press 3 Jul 1914, research report UNRESOLVED 9). One train, one day; applied to the whole leg.",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-northfield-mankato); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. This is that feature from vertex 40 (Faribault, see dan-patch-northfield-faribault) to its Mankato end.",
+    "geometry_quality": "Cut from the MN&S trace on the Chicago Great Western alignment: 40.57 mi drawn against the documented 40.2 mi (Fowler CGW line 39, Faribault MP 63.4 - Mankato 103.6). NO STRAIGHT-LINE LEG on this piece (the parent feature's only straight leg is the Northfield join). Faribault - Mankato is the abandoned CGW (ex-Wisconsin, Minnesota and Pacific) grade, now the Sakatah Singing Hills State Trail, with OHM's 'Wisconsin, Minnesota and Pacific Railroad' ways filling Madison Lake - Mankato; the parent trace reports about 1.3 mi without a mapped way within 40 m somewhere on Northfield - Mankato. The Mankato end runs to the north side of the city (44.1799,-94.0012); the exact CGW Mankato station used was not established. The Faribault start is a town-centre vertex, not a known depot. FOREIGN TRACK: Chicago Great Western railroad drawn in Dan Patch colour because the Dan Patch company ran these trains under lease. ERA: the CGW line as last mapped before abandonment; no realignment 1914-1916 is known.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1915,
+      "headway_min": 180,
+      "note": "Dan Patch gas-electric motor car plus mail/baggage car ('absolutely no smoke, but some odor of gasoline') over the Chicago Great Western's Mankato branch: Faribault - Cannon Lake - Morristown - Waterville - Elysian - Madison Lake - Benning - Mankato. 'Formal Inauguration of New System This Morning' (Mankato Free Press 3 Jul 1914 p.1, set among 1 July dispatches - first day very probably Wed 1 Jul 1914): 'The company has taken over all of the Mankato freight and passenger business of the Chicago Great Western'. Northbound No. 18 6:15 a.m. (on to Northfield and Randolph), No. 2 'the Dan Patch Flyer' limited to Minneapolis arr. 12:45 p.m., No. 4 12:40 p.m., No. 20 2 p.m., No. 6 4:40 p.m.; five southbound. Earlier announcements (by 1 Jan 1914, 'next spring') were plans, not service. 1915: 'seven daily trains between downtown and Mankato' after the cut-off opened (SLP). Ended 31 January 1916 when the Dan Patch gave up the lease and the CGW 'put four trains on the Faribault Mankato branch' (New Ulm Review 2 & 9 Feb 1916; Mankato Free Press 22 Sep 1916 p.1: the Great Western 'took over the road from the Dan Patch company last February'); 1916 not drawn. Freight on the branch, run with CGW steam, is not drawn (Rule 1 - same track). headway_min 180 is an ESTIMATE from about five trains each way in Jul 1914.",
+      "sources": [
+       "Segment-level: Mankato Free Press 3 Jul 1914 pp.1-2 (start, schedule), 8 May 1914 p.4, 22 Sep 1916 p.1; New Ulm Review 2 Feb 1916 p.8 (end 31 Jan 1916); headway estimated from the 1914 schedule.",
+       "Mankato Free Press, 3 Jul 1914 pp.1-2 (Chronicling America) - https://www.loc.gov/resource/sn83016589/1914-07-03/ed-1/?sp=1",
+       "Chronicling America (loc.gov): Mankato Free Press 8 May 1914 p.4, 22 Sep 1916 p.1 (sn83016589); New Ulm Review 2 Feb 1916 p.8, 9 Feb 1916 p.3 (sn89081128)",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (CGW line 39) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf",
+       "St. Louis Park Historical Society, \"The Dan Patch Line\" - https://slphistory.org/danpatch/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.275099,
+      44.302584
+     ],
+     [
+      -93.277042,
+      44.301755
+     ],
+     [
+      -93.292117,
+      44.298814
+     ],
+     [
+      -93.294876,
+      44.298016
+     ],
+     [
+      -93.31117,
+      44.291277
+     ],
+     [
+      -93.320863,
+      44.287563
+     ],
+     [
+      -93.321855,
+      44.287028
+     ],
+     [
+      -93.330473,
+      44.281533
+     ],
+     [
+      -93.332831,
+      44.279822
+     ],
+     [
+      -93.333644,
+      44.278914
+     ],
+     [
+      -93.337694,
+      44.270425
+     ],
+     [
+      -93.340133,
+      44.264836
+     ],
+     [
+      -93.341548,
+      44.262553
+     ],
+     [
+      -93.345532,
+      44.258454
+     ],
+     [
+      -93.347353,
+      44.257522
+     ],
+     [
+      -93.348378,
+      44.257242
+     ],
+     [
+      -93.364932,
+      44.254063
+     ],
+     [
+      -93.395,
+      44.246352
+     ],
+     [
+      -93.421296,
+      44.241144
+     ],
+     [
+      -93.424906,
+      44.240084
+     ],
+     [
+      -93.432208,
+      44.237532
+     ],
+     [
+      -93.440566,
+      44.233408
+     ],
+     [
+      -93.443152,
+      44.232639
+     ],
+     [
+      -93.448616,
+      44.23145
+     ],
+     [
+      -93.455592,
+      44.230868
+     ],
+     [
+      -93.457153,
+      44.230891
+     ],
+     [
+      -93.459153,
+      44.231159
+     ],
+     [
+      -93.461381,
+      44.231707
+     ],
+     [
+      -93.462845,
+      44.231847
+     ],
+     [
+      -93.463934,
+      44.2318
+     ],
+     [
+      -93.469938,
+      44.230862
+     ],
+     [
+      -93.471657,
+      44.230714
+     ],
+     [
+      -93.484546,
+      44.230487
+     ],
+     [
+      -93.486041,
+      44.230353
+     ],
+     [
+      -93.48845,
+      44.229898
+     ],
+     [
+      -93.505132,
+      44.226377
+     ],
+     [
+      -93.511744,
+      44.226257
+     ],
+     [
+      -93.513351,
+      44.225788
+     ],
+     [
+      -93.516396,
+      44.224651
+     ],
+     [
+      -93.522485,
+      44.224021
+     ],
+     [
+      -93.523737,
+      44.223995
+     ],
+     [
+      -93.529229,
+      44.224717
+     ],
+     [
+      -93.530704,
+      44.224704
+     ],
+     [
+      -93.531582,
+      44.22457
+     ],
+     [
+      -93.545051,
+      44.220367
+     ],
+     [
+      -93.547311,
+      44.219604
+     ],
+     [
+      -93.551122,
+      44.218024
+     ],
+     [
+      -93.560518,
+      44.216431
+     ],
+     [
+      -93.567616,
+      44.216431
+     ],
+     [
+      -93.56827,
+      44.21631
+     ],
+     [
+      -93.568998,
+      44.215949
+     ],
+     [
+      -93.569465,
+      44.21548
+     ],
+     [
+      -93.569746,
+      44.213298
+     ],
+     [
+      -93.570381,
+      44.212414
+     ],
+     [
+      -93.57492,
+      44.209549
+     ],
+     [
+      -93.576078,
+      44.20904
+     ],
+     [
+      -93.576975,
+      44.208705
+     ],
+     [
+      -93.588949,
+      44.206617
+     ],
+     [
+      -93.592255,
+      44.205371
+     ],
+     [
+      -93.594123,
+      44.204956
+     ],
+     [
+      -93.595169,
+      44.204889
+     ],
+     [
+      -93.601744,
+      44.205157
+     ],
+     [
+      -93.604154,
+      44.20513
+     ],
+     [
+      -93.621617,
+      44.203392
+     ],
+     [
+      -93.6302,
+      44.202039
+     ],
+     [
+      -93.633419,
+      44.201408
+     ],
+     [
+      -93.640822,
+      44.199577
+     ],
+     [
+      -93.641895,
+      44.199362
+     ],
+     [
+      -93.644126,
+      44.199147
+     ],
+     [
+      -93.648246,
+      44.19907
+     ],
+     [
+      -93.65449,
+      44.199624
+     ],
+     [
+      -93.660155,
+      44.199285
+     ],
+     [
+      -93.662644,
+      44.199654
+     ],
+     [
+      -93.664017,
+      44.19967
+     ],
+     [
+      -93.666206,
+      44.199285
+     ],
+     [
+      -93.670476,
+      44.198193
+     ],
+     [
+      -93.671742,
+      44.198024
+     ],
+     [
+      -93.672557,
+      44.197962
+     ],
+     [
+      -93.67833,
+      44.19827
+     ],
+     [
+      -93.692064,
+      44.199285
+     ],
+     [
+      -93.696377,
+      44.199715
+     ],
+     [
+      -93.715217,
+      44.203361
+     ],
+     [
+      -93.717963,
+      44.203715
+     ],
+     [
+      -93.722512,
+      44.204084
+     ],
+     [
+      -93.724873,
+      44.204422
+     ],
+     [
+      -93.745172,
+      44.209606
+     ],
+     [
+      -93.746159,
+      44.209929
+     ],
+     [
+      -93.749764,
+      44.211682
+     ],
+     [
+      -93.755944,
+      44.214005
+     ],
+     [
+      -93.757724,
+      44.214466
+     ],
+     [
+      -93.759205,
+      44.214635
+     ],
+     [
+      -93.761758,
+      44.214558
+     ],
+     [
+      -93.770127,
+      44.213836
+     ],
+     [
+      -93.783538,
+      44.211482
+     ],
+     [
+      -93.791585,
+      44.21079
+     ],
+     [
+      -93.796413,
+      44.210498
+     ],
+     [
+      -93.797485,
+      44.210329
+     ],
+     [
+      -93.818528,
+      44.204965
+     ],
+     [
+      -93.821508,
+      44.204118
+     ],
+     [
+      -93.82327,
+      44.203287
+     ],
+     [
+      -93.837273,
+      44.195014
+     ],
+     [
+      -93.839478,
+      44.194121
+     ],
+     [
+      -93.840649,
+      44.19382
+     ],
+     [
+      -93.882476,
+      44.186236
+     ],
+     [
+      -93.897102,
+      44.182036
+     ],
+     [
+      -93.898775,
+      44.18179
+     ],
+     [
+      -93.900052,
+      44.18176
+     ],
+     [
+      -93.901833,
+      44.181958
+     ],
+     [
+      -93.913803,
+      44.184083
+     ],
+     [
+      -93.915282,
+      44.184397
+     ],
+     [
+      -93.917535,
+      44.185174
+     ],
+     [
+      -93.91953,
+      44.186389
+     ],
+     [
+      -93.921097,
+      44.187713
+     ],
+     [
+      -93.929267,
+      44.186881
+     ],
+     [
+      -93.942634,
+      44.192674
+     ],
+     [
+      -93.944558,
+      44.194245
+     ],
+     [
+      -93.946488,
+      44.196902
+     ],
+     [
+      -93.947678,
+      44.19817
+     ],
+     [
+      -93.948733,
+      44.198696
+     ],
+     [
+      -93.951504,
+      44.199541
+     ],
+     [
+      -93.954008,
+      44.200618
+     ],
+     [
+      -93.954749,
+      44.200806
+     ],
+     [
+      -93.956533,
+      44.201005
+     ],
+     [
+      -93.957728,
+      44.200961
+     ],
+     [
+      -93.959195,
+      44.20074
+     ],
+     [
+      -93.960255,
+      44.200386
+     ],
+     [
+      -93.961696,
+      44.199547
+     ],
+     [
+      -93.962559,
+      44.199247
+     ],
+     [
+      -93.963471,
+      44.199185
+     ],
+     [
+      -93.968544,
+      44.19949
+     ],
+     [
+      -93.969489,
+      44.199767
+     ],
+     [
+      -93.970733,
+      44.200474
+     ],
+     [
+      -93.971613,
+      44.20132
+     ],
+     [
+      -93.972578,
+      44.201997
+     ],
+     [
+      -93.974136,
+      44.202502
+     ],
+     [
+      -93.97599,
+      44.202428
+     ],
+     [
+      -93.977127,
+      44.202136
+     ],
+     [
+      -93.977879,
+      44.20149
+     ],
+     [
+      -93.978243,
+      44.200859
+     ],
+     [
+      -93.978651,
+      44.199074
+     ],
+     [
+      -93.979402,
+      44.193367
+     ],
+     [
+      -93.980067,
+      44.191521
+     ],
+     [
+      -93.980969,
+      44.190167
+     ],
+     [
+      -93.982277,
+      44.189019
+     ],
+     [
+      -93.984843,
+      44.187426
+     ],
+     [
+      -93.999723,
+      44.182182
+     ],
+     [
+      -94.000557,
+      44.18162
+     ],
+     [
+      -94.000986,
+      44.181051
+     ],
+     [
+      -94.001211,
+      44.180501
+     ],
+     [
+      -94.001229,
+      44.179912
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Minneapolis, St. Paul, Rochester and Dubuque Electric Traction Company",
+    "line": "Dan Patch Line: Northfield \u2013 Randolph (CGW)",
+    "id": "dan-patch-northfield-randolph",
+    "color": "#8DB236",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 32,
+    "speed_source": "ESTIMATE: no Northfield - Randolph running time was found; 32 km/h is carried over from the measured Jul 1914 Mankato - Northfield run of the same motor-car trains (Rule 3).",
+    "geometry_source": "Geometry copied programmatically, vertex for vertex, from the successor layer minneapolis_northfield_and_southern_railway.geojson (feature mns-northfield-randolph); that trace is OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap (CC0), routed with opstrace.py. A Rule 4 split shares identical geometry, so the Dan Patch track was not re-traced. Whole feature copied; no cut.",
+    "geometry_quality": "Copied from the MN&S trace on the Chicago Great Western alignment: 9.23 mi drawn against the documented 8.9 mi (Fowler line 132). ONE STRAIGHT-LINE LEG, approximated (inherited): a 0.31 mi join at Northfield from the Dan Patch main line's end vertex to the CGW, which is most of the excess. The rest follows the surviving 'Cannon Valley Line' track and OHM/OSM 'Chicago Great Western' ways to the junction with the CGW Chicago - Twin Cities main line at Randolph. FOREIGN TRACK: Chicago Great Western railroad drawn in Dan Patch colour because the Dan Patch company ran these trains under lease. ERA: the line as it survives; no realignment known.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1915,
+      "headway_min": 480,
+      "note": "Dan Patch trains over Chicago Great Western track Northfield - Waterford - Wallace - Randolph, meeting the CGW Chicago - Twin Cities main line, from the July 1914 lease of the CGW Mankato branch: the first Dan Patch train out of Mankato, No. 18, carried passengers 'for Faribault, Randolph and other stations ... this train ran on to Randolph, where it arrived at 9:20, making connection with the Great Western' (Mankato Free Press 3 Jul 1914). Fowler's '1913>1931' overstates the start for this leg and spans a break - do not use it as evidence of continuous service. Ended 31 January 1916: 'the Great Western company will again put on trains over that line from Mankato to Randolph' (New Ulm Review 2 Feb 1916 p.8); 1916 not drawn. Only some trains ran to Randolph (Nos. 18-21 appear to be the Randolph workings). headway_min 480 is a GUESS; the frequency on this leg was not established.",
+      "sources": [
+       "Segment-level: Mankato Free Press 3 Jul 1914 p.1 (start, No. 18 to Randolph); New Ulm Review 2 Feb 1916 p.8 (end 31 Jan 1916); headway is a guess.",
+       "Mankato Free Press, 3 Jul 1914 pp.1-2 (Chronicling America) - https://www.loc.gov/resource/sn83016589/1914-07-03/ed-1/?sp=1",
+       "Chronicling America (loc.gov): New Ulm Review 2 Feb 1916 p.8 (sn89081128)",
+       "John Fowler, \"Minnesota Railroads - Passenger Stations & Stops\" (lines 39, 132) - https://www.branchline.uk/jfpdf/minnesotarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.166038,
+      44.455753
+     ],
+     [
+      -93.162719,
+      44.459642
+     ],
+     [
+      -93.161212,
+      44.462144
+     ],
+     [
+      -93.158322,
+      44.464853
+     ],
+     [
+      -93.15452,
+      44.469426
+     ],
+     [
+      -93.1524,
+      44.471467
+     ],
+     [
+      -93.151383,
+      44.473441
+     ],
+     [
+      -93.145454,
+      44.481069
+     ],
+     [
+      -93.144669,
+      44.481842
+     ],
+     [
+      -93.142605,
+      44.483248
+     ],
+     [
+      -93.137851,
+      44.485381
+     ],
+     [
+      -93.135861,
+      44.486234
+     ],
+     [
+      -93.131882,
+      44.487693
+     ],
+     [
+      -93.048429,
+      44.517963
+     ],
+     [
+      -93.014036,
+      44.525437
+     ]
+    ]
+   }
+  }
+ ]
+}
