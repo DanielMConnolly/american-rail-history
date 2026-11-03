@@ -1,0 +1,577 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Fairchild and Northeastern (Fairchild & North-Eastern Railway; reorganized 7 Jul 1897 from N. C. Foster's Chicago, Fairchild & Eau Claire River logging road) ran Fairchild - Greenwood - Owen, Clark County, Wisconsin, with Fairchild - Cleghorn added 1912-14. Two features drawn, only where a passenger year is proven: Fairchild - Greenwood 1910-1917 [OPEN both ends] and Greenwood - Owen 1910 [ANCHOR]. Research report: research/branches/fairchild_and_northeastern_railway.txt.",
+  "sources": [
+   "https://www.wiclarkcountyhistory.org/4data/93/93485.htm",
+   "https://wiclarkcountyhistory.org/clark/news/OldDays/2009_10_21.htm",
+   "https://www.wiclarkcountyhistory.org/clark/news/OldDays/2003_9_10.htm",
+   "https://www.wiclarkcountyhistory.org/0data/16/16708.htm",
+   "https://www.branchline.uk/jfpdf/wisconsinrrs.pdf",
+   "https://www.wiclarkcountyhistory.org/hixon/history/TrainHistory1.htm",
+   "https://www.wiclarkcountyhistory.org/4data/95/95993.htm",
+   "https://en.wikipedia.org/wiki/Fairchild_and_Northeastern_Railroad",
+   "https://donsdepot.irm.org/dr4254.htm"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru / overpass-api.de), 2026-11-03: railway=abandoned ways named 'Fairchild and Northeastern' (397731455, 397731463, 397731464) and adjoining unnamed abandoned ways",
+   "OpenHistoricalMap via Overpass, 2026-11-03: way 200561206 'Foster Line' (operator Fairchild and Northeastern Railroad) and way 200561248"
+  ],
+  "omitted": "Not drawn: (a) Fairchild - Cleghorn (report block [3], ~27 mi via Hay Creek, Rickard, Strader, Foster, Allen; built 1912-14, abandoned 1926) - no passenger year confirmed; Fowler lists its stations without date letters, and its only documented post-war operation (c.1919, local businessmen, ~3 months) was explicitly without a coach. (b) Chicago, Fairchild & Eau Claire River, Fairchild - Eau Claire River (block [4], 13 mi, 1884 [ANCHOR]) - its only evidence is a single Fowler letter for the 1884 Official Guide, the Guide page itself was not seen, and the Foster family and Don's Depot describe it as a private logging road, not a common carrier; omitted until the 1884 Guide is checked. (c) Fairchild - Greenwood 1918-1929 and Greenwood - Owen after 1910 - passenger status not established. (d) Logging lines: Forseman & Price Lumber Co. railroad, Foster's 'North Division' and other spurs, Owen Lumber Co. lines (Rule 1). (e) The 1878-82 horse tramway on wooden rails (Rule 5).",
+  "freight_only": "Rule 1: Fairchild - Cleghorn c.1919 businessmen's operation ran without passengers and is not drawn. Fairchild - Greenwood after 1917 to the 1 May 1929 discontinuance, including the Central Wisconsin Ry lease 1920-24, is not drawn because passenger service is unproven (not because it is proven freight-only). Sunday baseball crowds carried in a freight car are anecdote, not a passenger service.",
+  "horsecar": "Rule 5: the CF&EC horse tramway on wooden rails, 1878-1882, is not drawn (block [4] omitted in any case).",
+  "ownership_split": "None within the drawn years (1910-1917): the F&NE (Foster family) ran its own trains. The 1897/98 CF&EC River -> F&NE change is a reorganization of the same enterprise. Outside the drawn spans: USRA federal control 28 Dec 1917 - 1 Mar 1919 (worked by the Omaha Road per Willard Foster); Central Wisconsin Railway lease 11 Nov 1920 - 31 Oct 1924 (would need its own colour if those years are ever shown to carry passengers); Jan 1925 sale to a Chicago group (owner change, company name kept).",
+  "not_yet_sourced": [
+   "OPEN ENDS: Fairchild - Greenwood is drawn 1910-1917 and BOTH years are evidence touch-downs, not opening/closing dates. Bracket for the start 1896 (track to Greenwood) - 1910; for the end 1917 - 1929. A pre-1920 Official Guide or Russell's Guide 'Fairchild & North-Eastern' entry, or Wisconsin Railroad Commission / ICC Statistics of Railways passenger counts, would settle both.",
+   "ANCHOR: Greenwood - Owen is drawn 1910 only. Start bracket 1906 (or 1905) - 1910; end bracket 1910 - 1920 (Central Wisconsin Ry never operated it).",
+   "Did the Central Wisconsin Ry (lessee 1920-24) or the Chicago owners (1925-29) carry passengers Fairchild - Greenwood? 'Train service ... discontinued May 1, 1929' does not say.",
+   "Was the CF&EC a public passenger carrier in 1884 (Fowler's 1884 Official Guide letters) or a private logging road (Foster family, Don's Depot)? Block [4] stands or falls on the 1884 Guide page.",
+   "Did the 1913-17 F&NE run a mixed train Fairchild - Cleghorn? Nothing found says so.",
+   "headway_min (360) and avg_speed_kmh (24) on both features are estimates; no timetable was seen.",
+   "SOURCE CONFLICT - Owen reached 1906 (Clark Co. history; Don's Depot; Owen history) vs 'put in operation in 1905' (Foster biography); the Fairchild Observer of 3 Aug 1905 shows the Owen extension still only proposed.",
+   "SOURCE CONFLICT - abandonment: Willard Foster 'in 1928 scrapped everything'; Clark Co. history 29 Oct 1929; Don's Depot all operations suspended 1929, final abandonment 30 Oct 1930; Clark Co. history also has the entire operation abandoned 28 May 1926 and Fairchild - Greenwood revived 1926. None is a passenger end date.",
+   "SOURCE CONFLICT - 1920-24 lessee: Clark Co. history and Don's Depot name the Central Wisconsin Railway (11 Nov 1920 - 31 Oct 1924); the Owen history calls it 'the WC' (likely a confusion with the Wisconsin Central); Willard Foster describes instead a ~3-month operation by businessmen along the Fairchild - Cleghorn line.",
+   "SOURCE CONFLICT - Cleghorn line built '1912 until 1914' (Clark Co. history) vs 1913 (Wikipedia, Foster bio) vs 1914 (Don's Depot). Not drawn.",
+   "SOURCE CONFLICT - F&NE name date: reorganized 7 Jul 1897 (Clark Co. history; Wikipedia/Don's Depot 1897) vs name changed 'in 1898' (Clark County Press 2003)."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Fairchild and Northeastern",
+    "line": "Fairchild and Northeastern: Fairchild \u2013 Greenwood",
+    "id": "fairchild-and-northeastern-fairchild-greenwood",
+    "color": "#94703A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "estimated: mixed (freight-and-passenger) trains on a lightly built logging-road successor; no timetable running time found. Unsourced.",
+    "geometry_source": "OpenStreetMap railway=abandoned ways named 'Fairchild and Northeastern' (397731455 Fairchild - Mentor side, 397731463 to Greenwood) plus unnamed abandoned ways 1147015651 (Fairchild end) and 1147015657 (Greenwood link); the ~5.5 mi between them that OSM leaves unnamed was routed on OpenHistoricalMap way 200561206 'Foster Line' (operator 'Fairchild and Northeastern Railroad'; its start/end dates 1895/1940 were used for nothing). Routed with opstrace.py 2026-11-03 (maps.mail.ru / overpass-api.de Overpass, OHM Overpass); probed old_railway_operator for F&NE / Fairchild / North-Eastern / Foster spellings in 44.4-45.1N, 91.3-90.3W - none tagged; the OSM name tag was counted as ownership. douglas_peucker 8 m then trim_reversals.",
+    "geometry_quality": "Traced 21.9 mi against ~23 mi documented (Fowler mileposts 27-50, wisconsinrrs.pdf entry 126) - about 5% short. No straight-line approximated legs. The route report put 20.9 mi on F&NE-named OSM/OHM ways and 0.5 mi on an unnamed OHM way at the Fairchild end; every vertex of OSM ways 397731455 and 397731463 lies within 25 m of the drawn line. Alignment is the line's own (built 1896 to Greenwood, lifted 1928-30; no relocation is known), not a later one. South end is the west end of abandoned way 1147015651 at the UP Wyeville Subdivision (ex-Omaha Road) in Fairchild - the line touches the Omaha there and does not run on it. North end is the fork of OSM ways 397731463/397731464 on the west side of Greenwood (44.7620, -90.6121), shared with the Greenwood - Owen feature; OHM instead carries the F&NE ~0.4 mi further east to the end of the Soo Greenwood branch (44.7598, -90.6040), which is not drawn, so the line stops short of the Soo. Tioga falls at mp 10.4 on the drawn line (Fowler 10) and Willard at 13.8 (Fowler 15; Nominatim hamlet point 158 m off the line). Mentor (Fowler mp 5) and Gormans and Owego/Truman are not separately located: Nominatim returns the Town of Mentor polygon (administrative) and nothing for Gormans, Owego or Truman, so none was used as a waypoint. Fairchild and Greenwood were hand-pinned to the F&NE grade rather than Nominatim's village/city points.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1917,
+      "headway_min": 360,
+      "note": "Mixed trains (freight and passengers) Fairchild - Greenwood, as part of the Fairchild - Owen service. Greenwood Gleaner, 17 Mar 1910 (reprinting the Owen Enterprise): the road, 'spurred on by the need of facilities to handle the constantly increasing freight and passenger traffic', would put two more mixed trains in regular service between Fairchild and Owen - 'two passenger trains daily each way'. A 1917 photo at the Tioga depot shows 'passengers waiting for the train' (Clark County Press, 21 Oct 2009). BOTH YEARS ARE EVIDENCE TOUCH-DOWNS [OPEN], NOT AN OPENING OR A CLOSING: track reached Greenwood in 1896, so mixed service may well have begun earlier, and 1917 is the last CONFIRMED passenger year, not a known end - 'train service' Fairchild - Greenwood was discontinued 1 May 1929, but no source says those later trains carried passengers, and Willard Foster refused c.1919 to lease the coach to the line's operators for fear of making it a common carrier. Do not extend either end without evidence. Operated by the F&NE (Foster family) throughout the drawn years; federal control (USRA, worked by the Omaha Road) began 28 Dec 1917, after the drawn span. headway_min 360 is an ESTIMATE from the newspaper's two trains each way daily, not a timetable.",
+      "sources": [
+       "Segment-level: Greenwood Gleaner 17 Mar 1910 (mixed trains Fairchild - Owen, two each way daily) for 1910 and the headway estimate; Clark County Press 21 Oct 2009 'Oldies' (1917 Tioga depot photo caption; Clark County News Oct 1929 on the 1 May 1929 discontinuance) for 1917; Willard Foster via Clark County Press 10 Sep 2003 for the post-1919 coach refusal; Clark County history and Fowler entries 126/128 for route and mileposts.",
+       "https://www.wiclarkcountyhistory.org/4data/93/93485.htm",
+       "https://wiclarkcountyhistory.org/clark/news/OldDays/2009_10_21.htm",
+       "https://www.wiclarkcountyhistory.org/clark/news/OldDays/2003_9_10.htm",
+       "https://www.wiclarkcountyhistory.org/0data/16/16708.htm",
+       "https://www.branchline.uk/jfpdf/wisconsinrrs.pdf (entries 126 and 128)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.9633192,
+      44.6011315
+     ],
+     [
+      -90.9623454,
+      44.6006539
+     ],
+     [
+      -90.9611137,
+      44.6004652
+     ],
+     [
+      -90.9596429,
+      44.6009491
+     ],
+     [
+      -90.9589777,
+      44.6013769
+     ],
+     [
+      -90.952991,
+      44.6103139
+     ],
+     [
+      -90.9528915,
+      44.6106875
+     ],
+     [
+      -90.9479974,
+      44.614371
+     ],
+     [
+      -90.9320316,
+      44.6208244
+     ],
+     [
+      -90.923275,
+      44.6237688
+     ],
+     [
+      -90.8993889,
+      44.6360692
+     ],
+     [
+      -90.8868177,
+      44.640431
+     ],
+     [
+      -90.8851613,
+      44.6412469
+     ],
+     [
+      -90.8845384,
+      44.6416699
+     ],
+     [
+      -90.8792579,
+      44.646414
+     ],
+     [
+      -90.8659822,
+      44.658724
+     ],
+     [
+      -90.8642909,
+      44.6597535
+     ],
+     [
+      -90.8628436,
+      44.6604012
+     ],
+     [
+      -90.8534117,
+      44.6624138
+     ],
+     [
+      -90.834055,
+      44.666856
+     ],
+     [
+      -90.8317899,
+      44.6675608
+     ],
+     [
+      -90.8056745,
+      44.6778488
+     ],
+     [
+      -90.8033822,
+      44.6789267
+     ],
+     [
+      -90.7948539,
+      44.6835447
+     ],
+     [
+      -90.7934243,
+      44.6845173
+     ],
+     [
+      -90.7863378,
+      44.6903353
+     ],
+     [
+      -90.7760471,
+      44.7011459
+     ],
+     [
+      -90.7751475,
+      44.7021621
+     ],
+     [
+      -90.774827,
+      44.702749
+     ],
+     [
+      -90.7747161,
+      44.7036687
+     ],
+     [
+      -90.7748147,
+      44.7044308
+     ],
+     [
+      -90.774482,
+      44.7054819
+     ],
+     [
+      -90.7741369,
+      44.7059899
+     ],
+     [
+      -90.7732002,
+      44.7067169
+     ],
+     [
+      -90.7653374,
+      44.7105095
+     ],
+     [
+      -90.7639817,
+      44.7108248
+     ],
+     [
+      -90.7483054,
+      44.7133384
+     ],
+     [
+      -90.7468265,
+      44.7138551
+     ],
+     [
+      -90.745668,
+      44.7144857
+     ],
+     [
+      -90.7163297,
+      44.7397633
+     ],
+     [
+      -90.7143886,
+      44.740937
+     ],
+     [
+      -90.7025642,
+      44.7466819
+     ],
+     [
+      -90.7009577,
+      44.74773
+     ],
+     [
+      -90.6964558,
+      44.7511527
+     ],
+     [
+      -90.6946438,
+      44.7521079
+     ],
+     [
+      -90.6929813,
+      44.7527313
+     ],
+     [
+      -90.6913935,
+      44.7530762
+     ],
+     [
+      -90.6868356,
+      44.7534212
+     ],
+     [
+      -90.6860137,
+      44.7536599
+     ],
+     [
+      -90.6847808,
+      44.7541905
+     ],
+     [
+      -90.6828755,
+      44.7552385
+     ],
+     [
+      -90.6670348,
+      44.7641652
+     ],
+     [
+      -90.6654283,
+      44.7648151
+     ],
+     [
+      -90.6643075,
+      44.7651201
+     ],
+     [
+      -90.6628879,
+      44.7653058
+     ],
+     [
+      -90.6423025,
+      44.7673747
+     ],
+     [
+      -90.6409762,
+      44.7673747
+     ],
+     [
+      -90.638772,
+      44.7670299
+     ],
+     [
+      -90.6221281,
+      44.7622022
+     ],
+     [
+      -90.6172153,
+      44.7615794
+     ],
+     [
+      -90.6136043,
+      44.7619907
+     ],
+     [
+      -90.6120933,
+      44.7619516
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Fairchild and Northeastern",
+    "line": "Fairchild and Northeastern: Greenwood \u2013 Owen",
+    "id": "fairchild-and-northeastern-greenwood-owen",
+    "color": "#94703A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "estimated: mixed (freight-and-passenger) trains on a lightly built logging-road successor; no timetable running time found. Unsourced.",
+    "geometry_source": "OpenStreetMap railway=abandoned way 397731464 'Fairchild and Northeastern' (Greenwood - 1.9 mi short of Owen), routed with opstrace.py 2026-11-03 (route report: 13.8 mi all on F&NE-named ways) and taken whole from the way; douglas_peucker 8 m then trim_reversals. Cross-checked against OpenHistoricalMap way 200561248 (unnamed, railway=rail). The last leg to Owen is a labelled straight line through the 0.02-mi OSM abandoned fragment 1082445096.",
+    "geometry_quality": "15.9 mi drawn against ~15 mi documented (Fowler mileposts 50-65) - about 6% long: 14.1 mi traced on OSM way 397731464 'Fairchild and Northeastern', plus ONE STRAIGHT-LINE APPROXIMATED LEG of 1.8 mi from the north end of that way (44.9254, -90.5487) via abandoned fragment 1082445096 (44.9423, -90.5545) to Owen (44.9486, -90.5643, Nominatim city point, type checked), where neither OSM nor OHM maps the grade into town (the 1906 approach used an old J. S. Owen Lumber Co. grade). The straight leg ends near, not on, the Soo/Wisconsin Central at Owen and does not run along it. The traced 14.1 mi agrees with OHM way 200561248 except its last ~1.5 mi, where OHM bends ~0.9 km further east (ending 44.9246, -90.5340) - the two mappers disagree there and neither reaches Owen. Bright falls at mp 10.8 on the drawn line (Fowler 10; Nominatim hamlet 17 m off). Shilling and Coxie are not located (no Nominatim result). Alignment is the line's own (built 1898-1906, abandoned 1926), not a later one. South end is the shared Greenwood fork with the Fairchild - Greenwood feature; the drawn line passes through west Greenwood without using the Soo Greenwood branch.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1910,
+      "headway_min": 360,
+      "note": "[ANCHOR] 1910 is the single proven passenger year: the Greenwood Gleaner of 17 Mar 1910 reports mixed trains in regular service between Fairchild and Owen, two each way daily from March. Service certainly ran wider than this one year both ways - the line reached Owen in 1906 (1905 per the Foster biography; conflict recorded in metadata), and the Central Wisconsin Ry lessee never operated Greenwood - Owen (Nov 1920 on), so passengers ended by 1920 at the latest - but no other year is confirmed. Do not widen without evidence. Formally abandoned effective 9 Aug 1926. headway_min 360 is an ESTIMATE from the newspaper's two trains each way daily, not a timetable.",
+      "sources": [
+       "Segment-level: Greenwood Gleaner 17 Mar 1910 (mixed trains Fairchild - Owen, two each way daily) for 1910 and the headway estimate; Clark County history, the Owen and Hixon train histories for construction to Owen and the 1920-26 end.",
+       "https://www.wiclarkcountyhistory.org/4data/93/93485.htm",
+       "https://www.wiclarkcountyhistory.org/0data/16/16708.htm",
+       "https://www.wiclarkcountyhistory.org/hixon/history/TrainHistory1.htm",
+       "https://www.wiclarkcountyhistory.org/4data/95/95993.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.6120933,
+      44.7619516
+     ],
+     [
+      -90.6093467,
+      44.7618526
+     ],
+     [
+      -90.6083596,
+      44.7616165
+     ],
+     [
+      -90.6060207,
+      44.7601919
+     ],
+     [
+      -90.6049693,
+      44.7599405
+     ],
+     [
+      -90.6040252,
+      44.7599024
+     ],
+     [
+      -90.5988002,
+      44.7612813
+     ],
+     [
+      -90.5964399,
+      44.7617841
+     ],
+     [
+      -90.5938328,
+      44.7620583
+     ],
+     [
+      -90.5899704,
+      44.7618679
+     ],
+     [
+      -90.5886722,
+      44.7620202
+     ],
+     [
+      -90.5872345,
+      44.7624163
+     ],
+     [
+      -90.5863977,
+      44.7628658
+     ],
+     [
+      -90.5857325,
+      44.7635819
+     ],
+     [
+      -90.583179,
+      44.7696528
+     ],
+     [
+      -90.5799819,
+      44.7787352
+     ],
+     [
+      -90.5797512,
+      44.779196
+     ],
+     [
+      -90.578807,
+      44.7801213
+     ],
+     [
+      -90.5776001,
+      44.7807952
+     ],
+     [
+      -90.5756233,
+      44.7814616
+     ],
+     [
+      -90.5501718,
+      44.7876715
+     ],
+     [
+      -90.5490909,
+      44.7880256
+     ],
+     [
+      -90.5481682,
+      44.7885662
+     ],
+     [
+      -90.5475244,
+      44.7892134
+     ],
+     [
+      -90.5470846,
+      44.7901195
+     ],
+     [
+      -90.5471141,
+      44.8011781
+     ],
+     [
+      -90.5467171,
+      44.8058445
+     ],
+     [
+      -90.546363,
+      44.80707
+     ],
+     [
+      -90.5418489,
+      44.8159867
+     ],
+     [
+      -90.5415565,
+      44.8169875
+     ],
+     [
+      -90.5414707,
+      44.8347556
+     ],
+     [
+      -90.5437023,
+      44.8397692
+     ],
+     [
+      -90.544177,
+      44.8404577
+     ],
+     [
+      -90.5452392,
+      44.8413326
+     ],
+     [
+      -90.5459688,
+      44.842177
+     ],
+     [
+      -90.5462799,
+      44.8430442
+     ],
+     [
+      -90.5462048,
+      44.8437364
+     ],
+     [
+      -90.5457649,
+      44.844596
+     ],
+     [
+      -90.5448422,
+      44.845623
+     ],
+     [
+      -90.5443487,
+      44.8464369
+     ],
+     [
+      -90.5432973,
+      44.8499587
+     ],
+     [
+      -90.5336459,
+      44.8782397
+     ],
+     [
+      -90.5332719,
+      44.8787809
+     ],
+     [
+      -90.5323888,
+      44.8795419
+     ],
+     [
+      -90.5320149,
+      44.8802184
+     ],
+     [
+      -90.531816,
+      44.8881892
+     ],
+     [
+      -90.5321263,
+      44.8898012
+     ],
+     [
+      -90.5354411,
+      44.8986448
+     ],
+     [
+      -90.5427046,
+      44.9194722
+     ],
+     [
+      -90.5435521,
+      44.9207181
+     ],
+     [
+      -90.5463497,
+      44.9238972
+     ],
+     [
+      -90.5469616,
+      44.9244434
+     ],
+     [
+      -90.5487218,
+      44.9253852
+     ],
+     [
+      -90.5545313,
+      44.94234
+     ],
+     [
+      -90.5643,
+      44.9486
+     ]
+    ]
+   }
+  }
+ ]
+}
