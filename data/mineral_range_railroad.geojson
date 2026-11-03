@@ -1,0 +1,2529 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Mineral Range Railroad (Houghton County, Michigan; Hancock - Calumet opened 1873, 3 ft gauge, standard-gauged 1896-1902) and the Hancock and Calumet Railroad (1885; owned by the Mineral Range from 1886 but run under its own name until the 1 Jun 1901 lease), passenger years only, drawn exactly to the research report's drawable: spans. Research report: research/branches/mineral_range_railroad.txt. Colours #3D7A5C (Mineral Range) and #8B5A83 (Hancock and Calumet) are new; a script confirmed no company in data/ used either and no Mineral Range or Hancock and Calumet feature existed before.",
+  "operator_split": [
+   "1885 - 31 May 1901 HANCOCK AND CALUMET colour; Mineral Range colour from the 1 Jun 1901 lease (MRR-HC). The Jul/Aug 1886 Mineral Range purchase is NOT a split: the H&C kept running its own trains under its own name (1887 timetable, 1887 Allouez trains, own Calumet depot 1886-88, 1896-97 tickets 'via ... Hancock & Calumet'). DMG Dec 2015 says the H&C leased its line to the MR in 1885 - conflict recorded (report UNRESOLVED 5). In practice no drawn year falls in a Mineral Range-run H&C span except Calumet - Allouez, split into hancock-calumet-calumet-allouez (1887) and mineral-range-calumet-allouez (1912-1917) on identical geometry.",
+   "Dec 1892/1893 DSS&A majority stock purchase (DFP 1892-12-25; DMG/DuLong 1893): NOT a split. The Mineral Range kept its own name, superintendent, conductors, working timetable, ICC filings and trustees; contemporary papers call the trains 'Mineral Range' trains in 1893, 1912 and 1913.",
+   "1 Jan 1933 DSS&A: recommended split date per the report (IWT 30 Dec 1932: the Mineral Range 'has been purchased by the DSS&A company and will be consolidated with their line'; DSS&A trains 1/2 and 9/10 to Calumet in ETT-1945). Medium-low confidence (one newspaper line); the only documented alternative is the Sept 1949 formal merger, which would understate DSS&A operation. Every Mineral Range feature therefore ends 1932."
+  ],
+  "scope": [
+   "NOT DRAWN HERE - the DSS&A and Soo Line eras: Houghton - Hancock - Calumet passenger trains as DSS&A 1939 [OPEN start, bracket 1935-1939] - 1960 and Soo Line 1961-1967 (report blocks [1], [3], [4]), and block [12], the 8 Jan 1933 - c.1934 DSS&A Hancock - Calumet trains over COPPER RANGE track via Lake Linden (drawable 1933 [ANCHOR]). These belong in DSS&A / Soo Line colours on the existing data/dssa_upper_peninsula.geojson feature (or new features there / on copper-range-houghton-calumet's geometry) - a separate fix, not made by this layer.",
+   "The Keweenaw Central Railroad (Calumet - Mohawk - Lac La Belle, 1907-1918) and the Houghton County Traction street railway are separate companies and are not drawn.",
+   "The Calumet - Ontonagon trains of 1900/01-c.1912 ran over DSS&A track Houghton - Keweenaw Bay and Milwaukee Road track beyond Riddle Junction; only the Mineral Range's own Keweenaw Bay - Mass rails are drawn."
+  ],
+  "omitted": [
+   "All freight-only trackage (report RULE NOTES): the Lake Linden Line after its unknown passenger end (freight-only by ETT-1945; 'Operated for Freight Service only' in the Feb 1952 Guide); Arcadian Jct / St. Mary's Jct - Woodside - Point Mills - Grosse Point stamp-rock line (abandonment approved 1927); Centennial cut-off and spur; Tamarack mine branch and Tamarack-Osceola Mining Co. lines; Mohawk mine spur; Allouez stamp-mill line; Franklin Mine branch, Atlas Powder spur, Union Coal Dock, Ripley Mill, Ahmeek Mill and the Torch Lake stamp-mill sidings; Kearsarge - Ahmeek mine branches (to C&H 1926); Bollman logging branch beyond Mohawk (removed 1902); Traverse Bay coal-dock spur; Riddle Junction - Michigan Mine extension (1903-1913); Keweenaw Bay - Simar log runs (1923-1930s); Mohawk - Gay before 1912 (rock trains only).",
+   "Hancock - Lake Linden and Lake Junction - Calumet in Mineral Range years (1901 on): no Mineral Range-era passenger year confirmed (report [6]/[7]; the MRR-GAY 'from Lake Linden' 1912 claim conflicts with The Calumet News and is not used).",
+   "Informal caboose passengers Calumet - Allouez after 1887: undated, not drawable.",
+   "Riddle Junction end of the Mass City Branch (32.8 - 35.6 mi): not drawn; the drawable piece is Keweenaw Bay - Mass."
+  ],
+  "not_yet_sourced": [
+   "[OPEN] ends - last CONFIRMED year, not a known end: hancock-calumet-hancock-lake-linden 1893 (end bracket 1893-1945); hancock-calumet-lake-junction-calumet 1890 (mixed train; Lake Junction - Osceola abandoned 1930); mineral-range-mass-city-branch 1912 (end bracket 1912-1923).",
+   "[ANCHOR] single proven years: mineral-range-calumet-laurium 1903; hancock-calumet-calumet-allouez 1887.",
+   "Withheld ends: mineral-range-osceola-red-jacket stops 1896 because the 1897 relocation is approximate; the Gay trains' 1917 end rests on one secondary source (MRR-GAY).",
+   "WHO RAN HOUGHTON - CALUMET BEFORE 1933: through DSS&A / Milwaukee Road cars (Copper Country Limited from 1907) may have run over Mineral Range rails earlier, under DSS&A or MR crews. An ICC valuation report for the Mineral Range (c.1918-20) would settle it (report UNRESOLVED 1).",
+   "1912 Gay train southern terminal: Calumet (The Calumet News 16 Feb 1912, drawn) vs Lake Linden (MRR-GAY, not drawn). If Lake Linden is right, the Lake Linden line and Lake Junction - Osceola gain 1912-1917 Mineral Range years.",
+   "Source conflicts recorded, not resolved: first passenger train 7 Oct 1873 (DMG) vs 11 Oct 1873 (MRR-MR); Gay branch 13.7 mi (Fowler) vs 17.3 mi (MRR-GAY); Mass branch first through train 18 Dec 1900 vs completion Dec 1901; H&C purchase 1886 (MRR-HC) vs lease 1885 (DMG); DSS&A control Dec 1892 vs 1893.",
+   "All headway_min and avg_speed_kmh values are estimates (see each segment note and speed_source); only the 1887 H&C Lake Linden (8 trains/day), 1887 Allouez (2/day) and 1912 Gay (2 each way/day) frequencies come from a source.",
+   "Geometry interpretations needing a period map: the original Osceola - Red Jacket grade and Torch Lake Junction; the 1902-03 Laurium extension; whether the Lake Junction - Osceola climb is the H&C's own grade or the Calumet & Hecla's; the Houghton, Hancock, Calumet and Mass station sites."
+  ],
+  "dssa_feature_defects_for_followup": [
+   "data/dssa_upper_peninsula.geojson feature dssa-keweenaw-branch ('Duluth, South Shore and Atlantic: Nestoria – Calumet (Keweenaw Branch)', drawn 1890-1958) - found by the research report, re-confirmed against the file by this tracer only as far as its id, label, colour #4A4E69 and single 1890-1958 segment; not edited here:",
+   "Rule 4: Houghton - Hancock - Calumet is Mineral Range track worked by the Mineral Range as its own operation to about 1932, yet it is drawn in DSS&A colour from 1890 - about 43 years in the wrong company's colour. This layer now draws the Mineral Range years; the DSS&A feature should start its Houghton - Calumet portion no earlier than 1933 (on Copper Range track for 1933-34, report [12]) and 1939 [OPEN start] on MR track.",
+   "Rule 2: per the report, vertex 121 is L'Anse (46.7566, -88.4529), vertex 122 a stray point at (46.8591, -88.7775) - the Houghton County centroid Nominatim returns for 'Houghton, Michigan' - and vertex 123 Calumet, reached by one ~30.8 mi straight leg that skips Chassell, Houghton, the Portage bridge, Hancock and the MR grade; geometry_quality does not declare it.",
+   "End year 1958 vs the report: DSS&A passenger trains to Calumet are drawable 1939-1960, Soo Line 1961-1967; and 1933-34 trains ran on Copper Range track, not this alignment.",
+   "Its segment note's 'further connections to Calumet and Lake Linden': the Lake Linden line's passenger end is unknown (before 1945) - say so if kept.",
+   "The DSS&A research report's blocks [6] (Mass City branch 'DSS&A from 1893' - it was built 1899-1901 and operated as the Mineral Range) and [8]/[9] ('whole network north of Portage Lake freight-only by 1945' - true only of the Lake Linden and Allouez/Mohawk lines) are wrong per this report."
+  ],
+  "sources": [
+   "https://www.michiganrailroads.com/railroads-in-history/464-m/3861-mineral-range-railroad-company",
+   "https://www.michiganrailroads.com/railroads-in-history/461-g-h/3492-hancock-and-calumet-railroad-company",
+   "https://michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/6925-hancock-calumet-railroad",
+   "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/4954-time-table-dssa-calumet-branch",
+   "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/8115-gay-branch-mohawk-to-gay",
+   "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/4956-time-table-dssa-mass-city-branch",
+   "https://www.michiganrailroads.com/stations-locations/95-houghton-county-31/870-calumet-mi",
+   "https://www.mininggazette.com/news/features/2015/11/the-copper-country-s-first-common-carrier/",
+   "https://www.mininggazette.com/news/features/2015/12/a-tangle-of-copper-country-railroads/",
+   "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf",
+   "https://www.loc.gov/resource/sn86086633/1912-02-16/ed-1/?sp=8",
+   "research/sources/official_guide_1952.txt (Feb 1952 Official Guide)"
+  ],
+  "geometry_note": "Traced 2026-11-03 with opstrace.py. Probe of old_railway_operator in 46.6,-89.2 to 47.45,-88.2 found Copper Range Railroad, Soo Line Railroad, DSS&A (the active L'Anse Subdivision), Calumet and Hecla Railroad and Ile/Isle Royale Copper Company - no Mineral Range or Hancock and Calumet tag. Soo Line Railroad-tagged ways (snowmobile trails ST-17/ST-3, Houghton Waterfront Trail) carry the Hancock waterfront, the climb out of Hancock and the Lake Linden line; elsewhere north of Portage Lake the trace leans on untagged OpenHistoricalMap ways (199395663 Hancock - Calumet - Ahmeek; the Gay line) and Keweenaw State Trail West / ST-153; the Mass City Branch is OHM way 199267342 'Keweenaw Bay Branch'. The Portage Lake bridge crossing is copied from copper-range-houghton-calumet. Geocodes checked by type: 'Houghton, Michigan' (returned Houghton County) and 'Keweenaw Bay, Michigan' (returned the bay) were hand-pinned; Franklin (a township), Swedetown (the Calumet-area hamlet, not Hancock's), Woodside, Mills, Otter Lake, Hazel, Froberg and Simar returned wrong or non-settlement features and were not used as waypoints."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Hancock – Osceola",
+    "id": "mineral-range-hancock-osceola",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: the Feb 1952 Official Guide (research report, G52) times DSS&A no.9 Hancock 8:20 - Calumet 8:55 a.m. (about 12.5 mi in 35 min, ~34 km/h) - a later operator's timing on the same steep line, used as a rough estimate for Mineral Range years; not sourced for 1873-1932.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 10.9 mi against about 10.7-11.7 mi documented (MRR-CB mileposts Hancock 1.9 - Osceola 12.6 = 10.7; Fowler route 4 gives 12.2 mi from the Hancock-Houghton point to Osceola). About 4.5 mi on old_railway_operator=Soo Line Railroad ways (the Hancock waterfront as snowmobile trail ST-17, the hairpin climb west of Hancock past Swedetown towards Quincy/Franklin), 4.8 mi on an untagged OpenHistoricalMap railway way (199395663, Hancock - Calumet - Ahmeek) and 1.6 mi on untagged abandoned OSM rail; no straight-line legs. Via Boston (line passes 0.6 km from the hamlet's map node). The Hancock end is a pin on the ST-17 waterfront grade about 0.5 km west of the lift bridge, not the sourced site of the Hancock depot (Tezcuco St, relocated 1892) - tolerance ~0.4 km. The Osceola end is a vertex of OHM way 199395663 about 0.2 km south of where OHM way 201213174 (towards Osceola village) approaches it, 1.3 km south-west of the Osceola village node: taken as the junction of the original line [2] and the ex-Hancock & Calumet line [3]; the station site itself was not pinned. Drawn on the surviving (later, standard-gauge) alignment for all years including the 3 ft era 1873-1897; no relocation south of Osceola is recorded in the report, but none was checked either.",
+    "segments": [
+     {
+      "start": 1873,
+      "end": 1897,
+      "headway_min": 720,
+      "note": "Mineral Range common-carrier service Hancock - Calumet, 3 ft gauge. First passenger train into Calumet 7 Oct 1873 (Daily Mining Gazette 2015, the day after the first freight); MRR-MR's construction list says 11 Oct 1873 - conflict recorded, 1873 either way. DMG records two passenger round trips a day in the first service (two coaches, two Baldwin locomotives), which is the basis of the 720-min headway - an estimate carried forward, not sourced for later years. North of Osceola these trains used the original line to Red Jacket (feature mineral-range-osceola-red-jacket) until about 1897. Third rail ordered 1896; coaches onto standard-gauge trucks Feb 1898.",
+      "sources": [
+       "Segment-level: start year from the Daily Mining Gazette (14 Nov 2015) and MRR-MR, as quoted in the research report (research/branches/mineral_range_railroad.txt [1]); not re-checked by the tracer. Headway is an estimate.",
+       "https://www.mininggazette.com/news/features/2015/11/the-copper-country-s-first-common-carrier/",
+       "https://www.michiganrailroads.com/railroads-in-history/464-m/3861-mineral-range-railroad-company"
+      ]
+     },
+     {
+      "start": 1898,
+      "end": 1932,
+      "headway_min": 360,
+      "note": "Standard-gauge era, through to Calumet over the ex-Hancock & Calumet Osceola - Calumet line. DSS&A bought majority stock control in Dec 1892 (DFP 1892-12-25) but the Mineral Range kept running its own trains under its own name, superintendent and conductors (1912 Gay schedule, 1913 strike reports, 1916 working timetable) - not an operator change. Weekend excursion specials Calumet - Hancock in the 1890s; payroll train robbed near Boston 15 Sep 1893; trains carrying passengers and mail attacked during the 1913 strike. Drawn to 1932 because that is the end of Mineral Range operation, not of passenger service: a newspaper of 30 Dec 1932 reported the DSS&A purchase 'to be consolidated with their line' (IWT-1932-1230, via the research report), and trains ran on over this line in DSS&A and Soo Line colours (ETT-1945, Feb 1952 Official Guide; through trains to 1967). Those later years belong to a DSS&A / Soo Line feature and are deliberately not drawn here (see metadata.scope). Headway 360 min is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: Mineral Range operation through 1932 per the research report's ownership_split (IWT-1932-1230 purchase report, CN-1912, 1913 strike reports); the 1932 end is the ownership-change date, medium-low confidence. Not re-checked by the tracer. Headway is an estimate.",
+       "https://www.michiganrailroads.com/railroads-in-history/464-m/3861-mineral-range-railroad-company",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/4954-time-table-dssa-calumet-branch",
+       "https://www.loc.gov/resource/sn86086633/1912-02-16/ed-1/?sp=8"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.5809523,
+      47.1250615
+     ],
+     [
+      -88.5881346,
+      47.1248553
+     ],
+     [
+      -88.589777,
+      47.124988
+     ],
+     [
+      -88.5910676,
+      47.1253753
+     ],
+     [
+      -88.5996349,
+      47.1295138
+     ],
+     [
+      -88.6011968,
+      47.131127
+     ],
+     [
+      -88.602753,
+      47.133135
+     ],
+     [
+      -88.6030962,
+      47.1339002
+     ],
+     [
+      -88.6033002,
+      47.1354811
+     ],
+     [
+      -88.603659,
+      47.13646
+     ],
+     [
+      -88.6060841,
+      47.1394052
+     ],
+     [
+      -88.6061274,
+      47.1401905
+     ],
+     [
+      -88.6057954,
+      47.140606
+     ],
+     [
+      -88.6052603,
+      47.1409009
+     ],
+     [
+      -88.6036573,
+      47.1410439
+     ],
+     [
+      -88.6025489,
+      47.1412879
+     ],
+     [
+      -88.6010666,
+      47.1419964
+     ],
+     [
+      -88.6006792,
+      47.1420614
+     ],
+     [
+      -88.599563,
+      47.1426704
+     ],
+     [
+      -88.5995427,
+      47.1428548
+     ],
+     [
+      -88.5981286,
+      47.1436962
+     ],
+     [
+      -88.5956081,
+      47.1457345
+     ],
+     [
+      -88.589013,
+      47.149349
+     ],
+     [
+      -88.5854341,
+      47.1520475
+     ],
+     [
+      -88.583515,
+      47.152856
+     ],
+     [
+      -88.5761968,
+      47.1552625
+     ],
+     [
+      -88.5745291,
+      47.1560468
+     ],
+     [
+      -88.5489864,
+      47.1700741
+     ],
+     [
+      -88.5469538,
+      47.1710406
+     ],
+     [
+      -88.5457653,
+      47.1714713
+     ],
+     [
+      -88.5439812,
+      47.1718708
+     ],
+     [
+      -88.5337288,
+      47.1734645
+     ],
+     [
+      -88.5308704,
+      47.1741739
+     ],
+     [
+      -88.530055,
+      47.1742468
+     ],
+     [
+      -88.5271153,
+      47.1738093
+     ],
+     [
+      -88.5256991,
+      47.1737655
+     ],
+     [
+      -88.5208067,
+      47.1742468
+     ],
+     [
+      -88.5184249,
+      47.1746407
+     ],
+     [
+      -88.5172447,
+      47.1750928
+     ],
+     [
+      -88.508726,
+      47.1792789
+     ],
+     [
+      -88.5049924,
+      47.1812478
+     ],
+     [
+      -88.5040912,
+      47.1820499
+     ],
+     [
+      -88.5029968,
+      47.1855063
+     ],
+     [
+      -88.5020312,
+      47.1875333
+     ],
+     [
+      -88.5005507,
+      47.1895748
+     ],
+     [
+      -88.4990486,
+      47.1911788
+     ],
+     [
+      -88.4653815,
+      47.2201447
+     ],
+     [
+      -88.4650811,
+      47.2204507
+     ],
+     [
+      -88.4646734,
+      47.2213397
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Osceola – Red Jacket (original 3 ft line)",
+    "id": "mineral-range-osceola-red-jacket",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: the Feb 1952 Official Guide (research report, G52) times DSS&A no.9 Hancock 8:20 - Calumet 8:55 a.m. (about 12.5 mi in 35 min, ~34 km/h) - a later operator's timing on the same steep line, used as a rough estimate for Mineral Range years; not sourced for 1873-1932.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "INTERPRETATION, NOT SOURCED: traced 3.5 mi against about 2.8 mi documented (Fowler route 4 footnote: Osceola 12.2, Torch Lake Junction 13, Calumet (1st) 14, Red Jacket 15). No OSM way survives for this grade. Drawn on OpenHistoricalMap ways that a mapper dated 1893-1900 (201215178 north-east from the main line towards the C&H works, then 201213177, which loops east and north into the south side of Red Jacket), plus 0.4 mi on the OHM way named 'Calumet and Heola Railroad' between them and 0.1 mi of connector; no straight-line legs. Chosen because it is the only pre-1900-dated alignment between Osceola and Red Jacket and its length roughly fits Fowler's 2.8 mi; the trace runs ~25% long, and Torch Lake Junction and Calumet (1st) were not located. Treat the shape as approximate (~0.5 km). Red Jacket end is the north end of OHM way 201213177, 0.5 km south-east of the later Calumet (2nd) point - not a sourced depot site.",
+    "segments": [
+     {
+      "start": 1873,
+      "end": 1896,
+      "headway_min": 720,
+      "note": "The original Mineral Range terminal approach: Osceola - Torch Lake Junction - Calumet (1st) - Red Jacket (Red Jacket stop from 1887, Fowler/1887 Guide). Calumet was then 'Red Jacket'. Fowler: 'Former route until 1897 (3' 0\" gauge)'; trains moved to the ex-Hancock & Calumet line when the road was standard-gauged (Calumet depot moving work Nov-Dec 1897, MRR-CAL). The 1897 relocation date is approximate, so 1897 is withheld and the drawn span ends 1896. Headway follows the main-line estimate (two round trips a day, DMG 1873) - not sourced for this piece.",
+      "sources": [
+       "Segment-level: Fowler route 4 footnote ('former route until 1897'), DMG 2015-11 (1873 opening) and MRR-CAL (1897 depot move), as quoted in the research report [2]; not re-checked by the tracer. Headway is an estimate.",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf",
+       "https://www.mininggazette.com/news/features/2015/11/the-copper-country-s-first-common-carrier/",
+       "https://www.michiganrailroads.com/stations-locations/95-houghton-county-31/870-calumet-mi"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4646734,
+      47.2213397
+     ],
+     [
+      -88.4647593,
+      47.2222724
+     ],
+     [
+      -88.465435,
+      47.2233558
+     ],
+     [
+      -88.4644559,
+      47.2242415
+     ],
+     [
+      -88.4609573,
+      47.2261884
+     ],
+     [
+      -88.4600201,
+      47.2265913
+     ],
+     [
+      -88.4592602,
+      47.2267593
+     ],
+     [
+      -88.4504081,
+      47.2277056
+     ],
+     [
+      -88.4496748,
+      47.2278578
+     ],
+     [
+      -88.4486878,
+      47.2284229
+     ],
+     [
+      -88.4484187,
+      47.2286864
+     ],
+     [
+      -88.4482221,
+      47.2292241
+     ],
+     [
+      -88.4483192,
+      47.2300416
+     ],
+     [
+      -88.4510907,
+      47.2344833
+     ],
+     [
+      -88.4514555,
+      47.2352992
+     ],
+     [
+      -88.4486599,
+      47.2352062
+     ],
+     [
+      -88.4456337,
+      47.2386184
+     ],
+     [
+      -88.4453703,
+      47.2393002
+     ],
+     [
+      -88.4436907,
+      47.2413981
+     ],
+     [
+      -88.442372,
+      47.2424349
+     ],
+     [
+      -88.4391743,
+      47.2443739
+     ],
+     [
+      -88.4374488,
+      47.2464835
+     ],
+     [
+      -88.4374737,
+      47.2470647
+     ],
+     [
+      -88.4378007,
+      47.247756
+     ],
+     [
+      -88.4381346,
+      47.2480551
+     ],
+     [
+      -88.440512,
+      47.2490615
+     ],
+     [
+      -88.4426089,
+      47.2494786
+     ],
+     [
+      -88.4439979,
+      47.2494917
+     ],
+     [
+      -88.4449729,
+      47.2493879
+     ],
+     [
+      -88.4480232,
+      47.2482552
+     ],
+     [
+      -88.4499681,
+      47.2481058
+     ],
+     [
+      -88.4508686,
+      47.2479285
+     ],
+     [
+      -88.4512746,
+      47.2476405
+     ],
+     [
+      -88.451511,
+      47.2472332
+     ],
+     [
+      -88.4515151,
+      47.2460792
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Osceola – Calumet",
+    "id": "mineral-range-osceola-calumet",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: the Feb 1952 Official Guide (research report, G52) times DSS&A no.9 Hancock 8:20 - Calumet 8:55 a.m. (about 12.5 mi in 35 min, ~34 km/h) - a later operator's timing on the same steep line, used as a rough estimate for Mineral Range years; not sourced for 1873-1932.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 1.9 mi against 2.0 mi documented (Fowler route 4: Osceola 12.2 - Calumet (2nd) 14.2; MRR-CB 12.6 - 14.2 = 1.6). All on the untagged OpenHistoricalMap way 199395663 (Hancock - Calumet - Ahmeek), passing Tamarack Junction west of Calumet; no straight-line legs. Calumet (2nd) end is the vertex of that way nearest Calumet village's map node (0.3 km west of it); the depot site was not pinned from a source. Identified as the ex-H&C line because it is the alignment that survived as the later Soo Line route to Calumet and continues to Allouez (an H&C line); not proved.",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1932,
+      "headway_min": 360,
+      "note": "The Hancock & Calumet's Osceola - Calumet (2nd) line, Mineral Range main line from the 1897 standard-gauge changeover (Fowler: 'Osceola-Calumet (2nd) ex Hancock & Calumet'). Changeover dated 'approx 1897', so drawn from 1898. The H&C's own passenger years over this piece are in hancock-calumet-lake-junction-calumet. Drawn to 1932 because that is the end of Mineral Range operation, not of passenger service: a newspaper of 30 Dec 1932 reported the DSS&A purchase 'to be consolidated with their line' (IWT-1932-1230, via the research report), and trains ran on over this line in DSS&A and Soo Line colours (ETT-1945, Feb 1952 Official Guide; through trains to 1967). Those later years belong to a DSS&A / Soo Line feature and are deliberately not drawn here (see metadata.scope). Headway 360 min is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: Fowler route 4 (Osceola-Calumet (2nd) ex H&C; former route until 1897) for the start, the report's ownership_split (IWT-1932-1230) for the 1932 end, as quoted in the research report [3]; not re-checked by the tracer. Headway is an estimate.",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4646734,
+      47.2213397
+     ],
+     [
+      -88.4647593,
+      47.2222724
+     ],
+     [
+      -88.4649953,
+      47.2227679
+     ],
+     [
+      -88.4680423,
+      47.2261341
+     ],
+     [
+      -88.4683427,
+      47.2268482
+     ],
+     [
+      -88.467935,
+      47.2298062
+     ],
+     [
+      -88.4645018,
+      47.2337693
+     ],
+     [
+      -88.462635,
+      47.2363627
+     ],
+     [
+      -88.4581838,
+      47.2456186
+     ],
+     [
+      -88.4579438,
+      47.2470206
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Houghton – Hancock (Portage Lake bridge)",
+    "id": "mineral-range-houghton-hancock",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: a 1 mi bridge crossing with a station stop at each end; no running time sourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 0.7 mi against 1.1 mi documented (Feb 1952 Guide; MRR-CB gives 1.9 from Houghton, Fowler 0.5 mi from the Hancock-Houghton point to Houghton Union Depot). The first 0.34 mi - from the Houghton pin across the Portage Lake bridge - is copied vertex-for-vertex from copper-range-houghton-calumet (shared joint bridge, not a duplicate drawing); it includes that feature's untagged OHM waterfront way and its OHM bridge way 201308640 (~0.1 mi). The remaining 0.3 mi along the Hancock waterfront is on old_railway_operator=Soo Line Railroad ways (ST-17). No straight-line legs. The Houghton end is the Copper Range layer's pin near Isle Royale St, NOT the sourced site of the Mineral Range / Union depot (the report places Houghton Union Depot ~0.5 mi from the DSS&A Hancock-Houghton point) - tolerance ~0.5 km. Drawn on the crossing as OHM/OSM record it (the latest bridge site); whether the 1886 bridge stood on exactly this line was not checked.",
+    "segments": [
+     {
+      "start": 1886,
+      "end": 1932,
+      "headway_min": 360,
+      "note": "Mineral Range trains reached Houghton across the Portage Lake drawbridge in March 1886, connecting with the Marquette, Houghton & Ontonagon (DMG: 'In March 1886 the first Mineral Range train rolled into Houghton'). Fowler: Reservation Street commuter service to/from Houghton 1886-1887 - folded into this feature. After the 1893 DSS&A takeover passenger business was consolidated at the Mineral Range depot in Houghton (SOO 2022 Q1, via the report). The bridge was joint with the Copper Range from 1903. Drawn to 1932 because that is the end of Mineral Range operation, not of passenger service: a newspaper of 30 Dec 1932 reported the DSS&A purchase 'to be consolidated with their line' (IWT-1932-1230, via the research report), and trains ran on over this line in DSS&A and Soo Line colours (ETT-1945, Feb 1952 Official Guide; through trains to 1967). Those later years belong to a DSS&A / Soo Line feature and are deliberately not drawn here (see metadata.scope). Headway 360 min is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: Daily Mining Gazette 2015-11 (March 1886 first train) and Fowler route 4, as quoted in the research report [4]; end per the report's ownership_split. Not re-checked by the tracer. Headway is an estimate.",
+       "https://www.mininggazette.com/news/features/2015/11/the-copper-country-s-first-common-carrier/",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.5769614,
+      47.1219
+     ],
+     [
+      -88.5746011,
+      47.1222285
+     ],
+     [
+      -88.5742148,
+      47.1226008
+     ],
+     [
+      -88.5740088,
+      47.1232479
+     ],
+     [
+      -88.5743938,
+      47.1245963
+     ],
+     [
+      -88.5742228,
+      47.1250629
+     ],
+     [
+      -88.5742522,
+      47.125322
+     ],
+     [
+      -88.576066,
+      47.125399
+     ],
+     [
+      -88.5809523,
+      47.1250615
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Calumet – Laurium",
+    "id": "mineral-range-calumet-laurium",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "INTERPRETATION, NOT SOURCED: traced 3.2 mi against 3.4 mi documented (Fowler route 4: Calumet (2nd) 14.2 - Laurium 17.6; MRR-CB '3 miles'). Drawn on 1.3 mi of OSM ST-153 snowmobile trail and 1.0 mi of Keweenaw State Trail West (both untagged as to railway operator) plus 0.9 mi of untagged OHM rail, looping north and east round Calumet into Laurium; no straight-line legs. The extension's real alignment (via the Centennial spur at MP 15.6) was not identified; this path may in part be the Copper Range's parallel Laurium branch or Calumet & Hecla track. The Laurium end is 0.6 km from the village map node; the depot (Florida & Third Sts) was not pinned.",
+    "segments": [
+     {
+      "start": 1903,
+      "end": 1903,
+      "headway_min": 360,
+      "note": "[ANCHOR] Laurium depot opened 1 Jan 1903 (MRR-CB, which misprints the year as '1993'); the extension itself opened summer 1902, built to head off the Copper Range, and 'most MR passenger trains started from this depot' for a time. Fowler: 'Laurium (op.1903, cl. shortly after)', listed in the 1903 company timetable. 1903 is the single proven year: service certainly ran wider both ways, but no other year is confirmed - do not widen. 'Not successful': trains went back to originating at Red Jacket/Calumet. The track stayed in freight use. Headway is an estimate.",
+      "sources": [
+       "Segment-level: MRR-CB 1902 entry and Fowler route 4 ('r' = 1903 company timetable), as quoted in the research report [5]; not re-checked by the tracer. Headway is an estimate.",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/4954-time-table-dssa-calumet-branch",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4579438,
+      47.2470206
+     ],
+     [
+      -88.4577426,
+      47.2502454
+     ],
+     [
+      -88.4570989,
+      47.2512504
+     ],
+     [
+      -88.4563004,
+      47.2516406
+     ],
+     [
+      -88.4449632,
+      47.2517964
+     ],
+     [
+      -88.4446456,
+      47.2516982
+     ],
+     [
+      -88.4391849,
+      47.2539212
+     ],
+     [
+      -88.437695,
+      47.2543743
+     ],
+     [
+      -88.4362878,
+      47.254587
+     ],
+     [
+      -88.4240752,
+      47.2536135
+     ],
+     [
+      -88.423647,
+      47.2534813
+     ],
+     [
+      -88.4230421,
+      47.2531618
+     ],
+     [
+      -88.4224728,
+      47.2524928
+     ],
+     [
+      -88.4224305,
+      47.2518337
+     ],
+     [
+      -88.4226559,
+      47.2512538
+     ],
+     [
+      -88.428149,
+      47.2450851
+     ],
+     [
+      -88.4294687,
+      47.241924
+     ],
+     [
+      -88.4299193,
+      47.2411811
+     ],
+     [
+      -88.4333205,
+      47.2367191
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hancock and Calumet Railroad",
+    "line": "Hancock and Calumet: Hancock – Lake Linden",
+    "id": "hancock-calumet-hancock-lake-linden",
+    "color": "#8B5A83",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 10.7 mi against 9.8 mi documented (Fowler route 5; MRR-NP 10.1 mi from Houghton; DMG 'nine miles') - about 10% long, mostly because the Lake Linden end is the village map node, north of 'South Lake Linden'. 9.3 mi on old_railway_operator=Soo Line Railroad ways (incl. snowmobile trails ST-17 and ST-3 past Ripley and Dollar Bay), 1.4 mi on untagged abandoned OSM rail into Lake Linden; no straight-line legs. Via Ripley, Dollar Bay, Mason and Hubbell (all within 0.5 km). Hancock end shared with mineral-range-hancock-osceola (same un-sourced pin). Drawn on the line's later, standard-gauge alignment (converted 1901): for 1887-1893 this is a LATER alignment than the feature's own 3 ft era; no relocation is recorded but none was checked. Along the Hancock shore the line shares or parallels the Copper Range's 1.2 mi stretch in copper-range-houghton-calumet.",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1893,
+      "headway_min": 240,
+      "note": "Hancock & Calumet 3 ft line, run under its own name although the Mineral Range bought it in Jul/Aug 1886 (MRR-HC: 'operated independently'). 1887: an H&C timetable lists eight trains daily (4 each way) Hancock - Lake Linden (headway 240 min derived from that 1887 snapshot, applied to the whole span as an estimate); 1888: the H&C 'runs between Houghton, Hancock, Calumet, Red Jacket and Lake Linden' (DFP 1888-05-26); 1893: Clark, Junction and South Lake Linden in the 1893 Official Guide (Fowler 'z'). Line opened 1885 (MRR-MR: 1 Dec 1885) but the first CONFIRMED passenger year is 1887. [OPEN] 1893 is the last CONFIRMED passenger year, not a known end: no source dates when passenger service on this line stopped - somewhere between 1893 and 1945 (ETT-1945 and the Feb 1952 Guide show it freight-only). Do not extend without evidence. Leased to the Mineral Range 1 Jun 1901; no Mineral Range-era passenger year is confirmed, so none is drawn.",
+      "sources": [
+       "Segment-level: MRR-HC (1887 H&C timetable), DFP 1888-05-26 via MRR-MR, and Fowler route 5 (1893 Official Guide stations), as quoted in the research report [6]; not re-checked by the tracer.",
+       "https://www.michiganrailroads.com/railroads-in-history/461-g-h/3492-hancock-and-calumet-railroad-company",
+       "https://www.michiganrailroads.com/railroads-in-history/464-m/3861-mineral-range-railroad-company",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf",
+       "https://michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/6925-hancock-calumet-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.5809523,
+      47.1250615
+     ],
+     [
+      -88.576066,
+      47.125399
+     ],
+     [
+      -88.5742522,
+      47.125322
+     ],
+     [
+      -88.570121,
+      47.1257937
+     ],
+     [
+      -88.565379,
+      47.125698
+     ],
+     [
+      -88.5603014,
+      47.1263915
+     ],
+     [
+      -88.5588005,
+      47.1264585
+     ],
+     [
+      -88.5520979,
+      47.1255852
+     ],
+     [
+      -88.5463956,
+      47.1245179
+     ],
+     [
+      -88.545403,
+      47.124233
+     ],
+     [
+      -88.542174,
+      47.124305
+     ],
+     [
+      -88.539904,
+      47.123555
+     ],
+     [
+      -88.536684,
+      47.123216
+     ],
+     [
+      -88.534435,
+      47.122333
+     ],
+     [
+      -88.53067,
+      47.121413
+     ],
+     [
+      -88.528522,
+      47.120556
+     ],
+     [
+      -88.519626,
+      47.1188
+     ],
+     [
+      -88.516845,
+      47.118589
+     ],
+     [
+      -88.514535,
+      47.118773
+     ],
+     [
+      -88.512264,
+      47.119258
+     ],
+     [
+      -88.51,
+      47.120052
+     ],
+     [
+      -88.4906256,
+      47.1282955
+     ],
+     [
+      -88.488727,
+      47.1293799
+     ],
+     [
+      -88.4867634,
+      47.1310152
+     ],
+     [
+      -88.4851006,
+      47.131868
+     ],
+     [
+      -88.4740258,
+      47.135259
+     ],
+     [
+      -88.4721588,
+      47.1360267
+     ],
+     [
+      -88.4693671,
+      47.1376889
+     ],
+     [
+      -88.4656864,
+      47.1401661
+     ],
+     [
+      -88.464208,
+      47.141556
+     ],
+     [
+      -88.4620369,
+      47.1440745
+     ],
+     [
+      -88.4587917,
+      47.1473602
+     ],
+     [
+      -88.4569781,
+      47.1498409
+     ],
+     [
+      -88.4536895,
+      47.1527157
+     ],
+     [
+      -88.4513566,
+      47.1551472
+     ],
+     [
+      -88.449519,
+      47.1565353
+     ],
+     [
+      -88.4472779,
+      47.1596255
+     ],
+     [
+      -88.446531,
+      47.160172
+     ],
+     [
+      -88.444089,
+      47.161271
+     ],
+     [
+      -88.443382,
+      47.162015
+     ],
+     [
+      -88.4424342,
+      47.163459
+     ],
+     [
+      -88.4414847,
+      47.1644526
+     ],
+     [
+      -88.441089,
+      47.164755
+     ],
+     [
+      -88.4398906,
+      47.1652875
+     ],
+     [
+      -88.437069,
+      47.165914
+     ],
+     [
+      -88.4348322,
+      47.167247
+     ],
+     [
+      -88.4333812,
+      47.168693
+     ],
+     [
+      -88.4298893,
+      47.1730905
+     ],
+     [
+      -88.4280743,
+      47.1750634
+     ],
+     [
+      -88.4260191,
+      47.1762303
+     ],
+     [
+      -88.4240627,
+      47.1770244
+     ],
+     [
+      -88.4231983,
+      47.1777129
+     ],
+     [
+      -88.4204365,
+      47.1789243
+     ],
+     [
+      -88.4191907,
+      47.1796845
+     ],
+     [
+      -88.4156436,
+      47.182599
+     ],
+     [
+      -88.4121202,
+      47.1847129
+     ],
+     [
+      -88.4109819,
+      47.1855363
+     ],
+     [
+      -88.4088643,
+      47.1877879
+     ],
+     [
+      -88.4060185,
+      47.193888
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hancock and Calumet Railroad",
+    "line": "Hancock and Calumet: Lake Junction – Calumet (via Osceola)",
+    "id": "hancock-calumet-lake-junction-calumet",
+    "color": "#8B5A83",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "INTERPRETATION in part: traced 8.4 mi against 7.3 mi documented (MRR-NP mileposts Lake Junction - Calumet; DMG 'another eight miles'). Lake Junction - Osceola (6.5 mi, documented ~6 mi in the 1930 abandonment) climbs from the Torch Lake shore near Tamarack City/Hubbell by a hairpin to Osceola: 2.9 mi on OSM ways tagged old_railway_operator=Calumet and Hecla Railroad, 1.5 mi on snowmobile trail ST-3, 1.1 mi of untagged abandoned OSM rail and 0.7 mi of untagged OHM rail (incl. OHM way 201213174 west from Osceola village to the main line). Whether that climb is the H&C's own grade or the parallel Calumet & Hecla (Hecla & Torch Lake) line was not established. ONE STRAIGHT-LINE LEG (approximated) of 0.28 mi joins the Lake Linden line (at the vertex taken as Lake Junction, near Tamarack City; not a sourced site) to the start of the climb. Osceola - Calumet is identical to mineral-range-osceola-calumet (OHM way 199395663, 1.9 mi); Osceola village is passed ~0.3 km away. Drawn on later alignments throughout; the H&C was 3 ft gauge.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1890,
+      "headway_min": 720,
+      "note": "The Hancock & Calumet's climb from Lake Junction on the Lake Linden line to Osceola and Calumet (via Upper Mills, Midway, Osceola Mine Jct, Osceola, Tamarack Jct), built for the Osceola and Tamarack mines. H&C depot in Calumet 1886-1888 (MRR-CAL). First confirmed passenger year 1888 (DFP 1888-05-26: the H&C runs between Houghton, Hancock, Calumet, Red Jacket and Lake Linden). By 1890 a MIXED service: '1890G notes rock train carried passengers from Junction to Osceola and Calumet' (Fowler route 5) - mixed trains count as passenger service. [OPEN] 1890 is the last CONFIRMED passenger year, not a known end: no source dates when passengers stopped. Do not extend without evidence. Osceola - Calumet became Mineral Range main line from 1897/98; Lake Junction - Osceola abandonment authorized 12 Mar 1930. Headway 720 min is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: DFP 1888-05-26 (via MRR-MR) and Fowler route 5's 1890 Official Guide note, as quoted in the research report [7]; not re-checked by the tracer. Headway is an estimate.",
+       "https://www.michiganrailroads.com/railroads-in-history/461-g-h/3492-hancock-and-calumet-railroad-company",
+       "https://michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/6925-hancock-calumet-railroad",
+       "https://www.michiganrailroads.com/stations-locations/95-houghton-county-31/870-calumet-mi",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4348322,
+      47.167247
+     ],
+     [
+      -88.4396759,
+      47.1695365
+     ],
+     [
+      -88.4356222,
+      47.1733717
+     ],
+     [
+      -88.4324425,
+      47.1759019
+     ],
+     [
+      -88.4307282,
+      47.1775684
+     ],
+     [
+      -88.4287673,
+      47.1797766
+     ],
+     [
+      -88.4286627,
+      47.1801786
+     ],
+     [
+      -88.4265849,
+      47.1829243
+     ],
+     [
+      -88.4265853,
+      47.1831857
+     ],
+     [
+      -88.4269607,
+      47.1836595
+     ],
+     [
+      -88.4253419,
+      47.1860802
+     ],
+     [
+      -88.4193331,
+      47.1923242
+     ],
+     [
+      -88.4179071,
+      47.1948797
+     ],
+     [
+      -88.4170138,
+      47.196079
+     ],
+     [
+      -88.4171,
+      47.196382
+     ],
+     [
+      -88.4179723,
+      47.1973332
+     ],
+     [
+      -88.4189773,
+      47.197794
+     ],
+     [
+      -88.420098,
+      47.197949
+     ],
+     [
+      -88.421154,
+      47.197829
+     ],
+     [
+      -88.422244,
+      47.197442
+     ],
+     [
+      -88.423971,
+      47.196166
+     ],
+     [
+      -88.424908,
+      47.19584
+     ],
+     [
+      -88.425711,
+      47.195743
+     ],
+     [
+      -88.426404,
+      47.19572
+     ],
+     [
+      -88.427617,
+      47.195931
+     ],
+     [
+      -88.429036,
+      47.196588
+     ],
+     [
+      -88.429434,
+      47.196942
+     ],
+     [
+      -88.431929,
+      47.202004
+     ],
+     [
+      -88.439163,
+      47.212424
+     ],
+     [
+      -88.446291,
+      47.226669
+     ],
+     [
+      -88.447352,
+      47.22747
+     ],
+     [
+      -88.448504,
+      47.227778
+     ],
+     [
+      -88.449742,
+      47.227817
+     ],
+     [
+      -88.4592602,
+      47.2267593
+     ],
+     [
+      -88.4600201,
+      47.2265913
+     ],
+     [
+      -88.4612048,
+      47.2260714
+     ],
+     [
+      -88.4644559,
+      47.2242415
+     ],
+     [
+      -88.465435,
+      47.2233558
+     ],
+     [
+      -88.4647593,
+      47.2222724
+     ],
+     [
+      -88.4646734,
+      47.2213397
+     ],
+     [
+      -88.4647593,
+      47.2222724
+     ],
+     [
+      -88.4649953,
+      47.2227679
+     ],
+     [
+      -88.4680423,
+      47.2261341
+     ],
+     [
+      -88.4683427,
+      47.2268482
+     ],
+     [
+      -88.467935,
+      47.2298062
+     ],
+     [
+      -88.4645018,
+      47.2337693
+     ],
+     [
+      -88.462635,
+      47.2363627
+     ],
+     [
+      -88.4581838,
+      47.2456186
+     ],
+     [
+      -88.4579438,
+      47.2470206
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hancock and Calumet Railroad",
+    "line": "Hancock and Calumet: Calumet – Allouez",
+    "id": "hancock-calumet-calumet-allouez",
+    "color": "#8B5A83",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 3.8 mi against ~3.6 mi documented (MRR-NP Calumet 7.3 - Allouez ~10.9 from Lake Junction; Fowler route 6 Calumet 0.0 - Kearsarge 2.6 - Allouez Crossing - Ahmeek 4.7). All on the untagged OpenHistoricalMap way 199395663 (Hancock - Calumet - Ahmeek), via Kearsarge (0.2 km); no straight-line legs. Calumet end shared with mineral-range-osceola-calumet. Drawn on the line as it last existed; north of Kearsarge it was sold to Calumet & Hecla in 1926 (Trap Rock Valley RR), later than both drawn eras. hancock-calumet-calumet-allouez and mineral-range-calumet-allouez share this geometry exactly (Rule 4 ownership split).",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1887,
+      "headway_min": 720,
+      "note": "[ANCHOR] 12 Mar 1887: 'The H&C opens an extension of their line between Calumet and Allouez. Two passenger trains continue north to Allouez each day' (SOO 2022 Q1 via MRR-HC); the same year 'scheduled passenger trains between Calumet and Allouez are discontinued'. 1887 is the single proven year. Later passengers 'sometimes accommodated in cabooses of freight trains' - informal, undated, not drawn. Headway 720 min from 'two passenger trains ... each day'.",
+      "sources": [
+       "Segment-level: MRR-HC (citing Soo Line Historical & Technical Society 2022 Q1) for the 1887 opening, two trains a day and discontinuance, as quoted in the research report [8]; not re-checked by the tracer.",
+       "https://www.michiganrailroads.com/railroads-in-history/461-g-h/3492-hancock-and-calumet-railroad-company",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4579438,
+      47.2470206
+     ],
+     [
+      -88.4577426,
+      47.2502454
+     ],
+     [
+      -88.4570989,
+      47.2512504
+     ],
+     [
+      -88.4566268,
+      47.2515417
+     ],
+     [
+      -88.4511551,
+      47.2533623
+     ],
+     [
+      -88.4477862,
+      47.2558528
+     ],
+     [
+      -88.4450826,
+      47.2575713
+     ],
+     [
+      -88.4261322,
+      47.2659358
+     ],
+     [
+      -88.4213189,
+      47.2713922
+     ],
+     [
+      -88.4162507,
+      47.2820439
+     ],
+     [
+      -88.4157977,
+      47.2826393
+     ],
+     [
+      -88.4142971,
+      47.283907
+     ],
+     [
+      -88.4133911,
+      47.284368
+     ],
+     [
+      -88.4095121,
+      47.2859621
+     ],
+     [
+      -88.4075868,
+      47.2860966
+     ],
+     [
+      -88.407332,
+      47.2861638
+     ],
+     [
+      -88.4071621,
+      47.2864231
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Calumet – Allouez",
+    "id": "mineral-range-calumet-allouez",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 3.8 mi against ~3.6 mi documented (MRR-NP Calumet 7.3 - Allouez ~10.9 from Lake Junction; Fowler route 6 Calumet 0.0 - Kearsarge 2.6 - Allouez Crossing - Ahmeek 4.7). All on the untagged OpenHistoricalMap way 199395663 (Hancock - Calumet - Ahmeek), via Kearsarge (0.2 km); no straight-line legs. Calumet end shared with mineral-range-osceola-calumet. Drawn on the line as it last existed; north of Kearsarge it was sold to Calumet & Hecla in 1926 (Trap Rock Valley RR), later than both drawn eras. hancock-calumet-calumet-allouez and mineral-range-calumet-allouez share this geometry exactly (Rule 4 ownership split).",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1917,
+      "headway_min": 720,
+      "note": "Calumet - Gay passenger trains, first leg. Route by inference: the Allouez line was the Mineral Range's only path Calumet - Mohawk (H&C-built, Mineral Range by the 1901 lease) - medium confidence. The Calumet News of 16 Feb 1912 announced 'the new train schedule between Calumet and Gay', two trains each way a day (Supt. Smith); MRR-GAY says the twice-daily train ran 'from Lake Linden' - the contemporary paper is preferred, so this Calumet routing is drawn and Lake Linden is not (UNRESOLVED 3). End 1917 rests on one secondary source (MRR-GAY: 'This train continued until the COPR took over operations on this branch', 1917 lease) - a later end is withheld. Headway 720 min from two trains each way a day.",
+      "sources": [
+       "Segment-level: The Calumet News 16 Feb 1912 p.8 (start, two trains each way) and MRR-GAY (1917 end), as quoted in the research report [8]/[10]; route inferred, not sourced. Not re-checked by the tracer.",
+       "https://www.loc.gov/resource/sn86086633/1912-02-16/ed-1/?sp=8",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/8115-gay-branch-mohawk-to-gay",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4579438,
+      47.2470206
+     ],
+     [
+      -88.4577426,
+      47.2502454
+     ],
+     [
+      -88.4570989,
+      47.2512504
+     ],
+     [
+      -88.4566268,
+      47.2515417
+     ],
+     [
+      -88.4511551,
+      47.2533623
+     ],
+     [
+      -88.4477862,
+      47.2558528
+     ],
+     [
+      -88.4450826,
+      47.2575713
+     ],
+     [
+      -88.4261322,
+      47.2659358
+     ],
+     [
+      -88.4213189,
+      47.2713922
+     ],
+     [
+      -88.4162507,
+      47.2820439
+     ],
+     [
+      -88.4157977,
+      47.2826393
+     ],
+     [
+      -88.4142971,
+      47.283907
+     ],
+     [
+      -88.4133911,
+      47.284368
+     ],
+     [
+      -88.4095121,
+      47.2859621
+     ],
+     [
+      -88.4075868,
+      47.2860966
+     ],
+     [
+      -88.407332,
+      47.2861638
+     ],
+     [
+      -88.4071621,
+      47.2864231
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Allouez – Mohawk",
+    "id": "mineral-range-allouez-mohawk",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 2.8 mi against ~2.4-2.6 mi documented (Fowler route 6: Allouez Crossing ~3.5, Ahmeek 4.7, Keweenaw County Jct 5.5, Mohawk 6.0; MRR-NP Mohawk ~6.2 from Calumet). 2.5 mi on untagged OpenHistoricalMap rail (end of way 199395663 at Ahmeek, then an OHM way north-east towards Mohawk) plus ONE STRAIGHT-LINE LEG (approximated) of 0.28 mi at the Mohawk end joining it to the start of the Gay line, where OSM/OHM show no connection. Avoids the Keweenaw Central grade (a separate company, which crossed overhead near Mohawk). Ahmeek passed at 0.2 km; the Mohawk end (the Gay line's MP 0 junction, near Fulton) is 0.4 km from the Mohawk village node. Kearsarge - Ahmeek went to Calumet & Hecla in 1926; drawn on the line as it last existed.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1917,
+      "headway_min": 720,
+      "note": "Calumet - Gay passenger trains, middle leg, over the Allouez line's north end (H&C extension Allouez - Fulton opened 28 Oct 1891; no H&C-era passenger year is known). Route by inference, as mineral-range-calumet-allouez. The Calumet News of 16 Feb 1912 announced 'the new train schedule between Calumet and Gay', two trains each way a day (Supt. Smith); MRR-GAY says the twice-daily train ran 'from Lake Linden' - the contemporary paper is preferred, so this Calumet routing is drawn and Lake Linden is not (UNRESOLVED 3). End 1917 rests on one secondary source (MRR-GAY: 'This train continued until the COPR took over operations on this branch', 1917 lease) - a later end is withheld. Headway 720 min from two trains each way a day.",
+      "sources": [
+       "Segment-level: The Calumet News 16 Feb 1912 p.8 and MRR-GAY, as quoted in the research report [9]/[10]; route inferred, not sourced. Not re-checked by the tracer.",
+       "https://www.loc.gov/resource/sn86086633/1912-02-16/ed-1/?sp=8",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/8115-gay-branch-mohawk-to-gay",
+       "https://www.michiganrailroads.com/railroads-in-history/464-m/3861-mineral-range-railroad-company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4071621,
+      47.2864231
+     ],
+     [
+      -88.4069214,
+      47.288382
+     ],
+     [
+      -88.3995654,
+      47.2950083
+     ],
+     [
+      -88.3985567,
+      47.2956037
+     ],
+     [
+      -88.3958294,
+      47.2960471
+     ],
+     [
+      -88.3952317,
+      47.2963259
+     ],
+     [
+      -88.3945779,
+      47.2967946
+     ],
+     [
+      -88.3931208,
+      47.2992903
+     ],
+     [
+      -88.3924297,
+      47.2998604
+     ],
+     [
+      -88.3916825,
+      47.3002277
+     ],
+     [
+      -88.390599,
+      47.3004304
+     ],
+     [
+      -88.3811656,
+      47.3011778
+     ],
+     [
+      -88.3745529,
+      47.3034706
+     ],
+     [
+      -88.3737684,
+      47.303914
+     ],
+     [
+      -88.3720872,
+      47.3051933
+     ],
+     [
+      -88.371396,
+      47.305396
+     ],
+     [
+      -88.3705367,
+      47.3053833
+     ],
+     [
+      -88.3677721,
+      47.3033693
+     ],
+     [
+      -88.362492,
+      47.3016145
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Gay Branch (Mohawk – Gay)",
+    "id": "mineral-range-mohawk-gay",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Traced 14.3 mi against 13.7 mi (Fowler route 24) or 17.3 mi (MRR-GAY mileposts) - the sources conflict; the trace agrees with Fowler. All on untagged OpenHistoricalMap rail (ways 199395697, 201330773 and neighbours, OHM-dated 1900-1970, i.e. through the Copper Range era), via Traverse (0.1 km) to Gay (0.1 km); no straight-line legs. Same alignment throughout as far as recorded; the line was worked by the Copper Range after 1917 and abandoned 1964.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1917,
+      "headway_min": 720,
+      "note": "Mohawk & Traverse Bay line of the Mohawk Mining Co., leased to and worked by the Mineral Range 1902-1917. Rock trains only before 1912 (the 1909 Gay depot is not evidence of passenger trains), so drawn from 1912. The Calumet News of 16 Feb 1912 announced 'the new train schedule between Calumet and Gay', two trains each way a day (Supt. Smith); MRR-GAY says the twice-daily train ran 'from Lake Linden' - the contemporary paper is preferred, so this Calumet routing is drawn and Lake Linden is not (UNRESOLVED 3). End 1917 rests on one secondary source (MRR-GAY: 'This train continued until the COPR took over operations on this branch', 1917 lease) - a later end is withheld. Copper Range from 1917, with no confirmed Copper Range passenger year. Headway 720 min from two trains each way a day.",
+      "sources": [
+       "Segment-level: The Calumet News 16 Feb 1912 p.8 (start) and MRR-GAY (end 1917), as quoted in the research report [10]; not re-checked by the tracer.",
+       "https://www.loc.gov/resource/sn86086633/1912-02-16/ed-1/?sp=8",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/8115-gay-branch-mohawk-to-gay"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.362492,
+      47.3016145
+     ],
+     [
+      -88.3634361,
+      47.3009597
+     ],
+     [
+      -88.3642622,
+      47.2998465
+     ],
+     [
+      -88.3642194,
+      47.2992426
+     ],
+     [
+      -88.3634308,
+      47.2974563
+     ],
+     [
+      -88.3637151,
+      47.296434
+     ],
+     [
+      -88.3647558,
+      47.2957937
+     ],
+     [
+      -88.3680174,
+      47.2946877
+     ],
+     [
+      -88.3700129,
+      47.2933488
+     ],
+     [
+      -88.3728399,
+      47.2925156
+     ],
+     [
+      -88.3733174,
+      47.2922208
+     ],
+     [
+      -88.3739933,
+      47.2914713
+     ],
+     [
+      -88.3740791,
+      47.2909474
+     ],
+     [
+      -88.3739092,
+      47.2901271
+     ],
+     [
+      -88.3728561,
+      47.2877453
+     ],
+     [
+      -88.3725342,
+      47.2843684
+     ],
+     [
+      -88.3722982,
+      47.2837716
+     ],
+     [
+      -88.3717832,
+      47.2831166
+     ],
+     [
+      -88.3707532,
+      47.2823597
+     ],
+     [
+      -88.3696374,
+      47.2818647
+     ],
+     [
+      -88.3685431,
+      47.2816609
+     ],
+     [
+      -88.3675131,
+      47.2816609
+     ],
+     [
+      -88.3495959,
+      47.2841647
+     ],
+     [
+      -88.349038,
+      47.2842811
+     ],
+     [
+      -88.347536,
+      47.2849216
+     ],
+     [
+      -88.3466133,
+      47.2850235
+     ],
+     [
+      -88.3448109,
+      47.2848924
+     ],
+     [
+      -88.3439526,
+      47.2846596
+     ],
+     [
+      -88.3413562,
+      47.2828255
+     ],
+     [
+      -88.3407768,
+      47.2826945
+     ],
+     [
+      -88.3394894,
+      47.2826508
+     ],
+     [
+      -88.3385452,
+      47.2828109
+     ],
+     [
+      -88.3367428,
+      47.2836552
+     ],
+     [
+      -88.3350047,
+      47.2839754
+     ],
+     [
+      -88.3316144,
+      47.2843393
+     ],
+     [
+      -88.3291253,
+      47.2842957
+     ],
+     [
+      -88.327237,
+      47.2844994
+     ],
+     [
+      -88.3089551,
+      47.2874542
+     ],
+     [
+      -88.3079895,
+      47.287527
+     ],
+     [
+      -88.3065733,
+      47.2874833
+     ],
+     [
+      -88.3036121,
+      47.2867701
+     ],
+     [
+      -88.3017453,
+      47.2865809
+     ],
+     [
+      -88.3007154,
+      47.2862607
+     ],
+     [
+      -88.296059,
+      47.2834077
+     ],
+     [
+      -88.2954797,
+      47.2824761
+     ],
+     [
+      -88.2949862,
+      47.2811951
+     ],
+     [
+      -88.2943639,
+      47.2804382
+     ],
+     [
+      -88.2921108,
+      47.2794628
+     ],
+     [
+      -88.2865533,
+      47.2773956
+     ],
+     [
+      -88.2817468,
+      47.2743384
+     ],
+     [
+      -88.2808026,
+      47.2732901
+     ],
+     [
+      -88.2776054,
+      47.2687475
+     ],
+     [
+      -88.2692799,
+      47.2608261
+     ],
+     [
+      -88.2688722,
+      47.2602727
+     ],
+     [
+      -88.2633361,
+      47.2495681
+     ],
+     [
+      -88.2632717,
+      47.2485048
+     ],
+     [
+      -88.2648381,
+      47.2457809
+     ],
+     [
+      -88.2650742,
+      47.2450234
+     ],
+     [
+      -88.264881,
+      47.2442659
+     ],
+     [
+      -88.2643446,
+      47.2433191
+     ],
+     [
+      -88.2637652,
+      47.2427509
+     ],
+     [
+      -88.2629928,
+      47.2421828
+     ],
+     [
+      -88.2604179,
+      47.2407552
+     ],
+     [
+      -88.2584437,
+      47.2403181
+     ],
+     [
+      -88.2529291,
+      47.2394149
+     ],
+     [
+      -88.2479509,
+      47.237317
+     ],
+     [
+      -88.2347974,
+      47.2283563
+     ],
+     [
+      -88.2320937,
+      47.2266806
+     ],
+     [
+      -88.2314071,
+      47.226462
+     ],
+     [
+      -88.2221803,
+      47.225748
+     ],
+     [
+      -88.2216868,
+      47.2256168
+     ],
+     [
+      -88.21673,
+      47.2230229
+     ],
+     [
+      -88.2143268,
+      47.2224254
+     ],
+     [
+      -88.2096919,
+      47.2223817
+     ],
+     [
+      -88.201774,
+      47.2237078
+     ],
+     [
+      -88.2003364,
+      47.2237224
+     ],
+     [
+      -88.1989845,
+      47.2236058
+     ],
+     [
+      -88.1974825,
+      47.2232561
+     ],
+     [
+      -88.1942853,
+      47.2220902
+     ],
+     [
+      -88.1917318,
+      47.2213761
+     ],
+     [
+      -88.1812605,
+      47.2215365
+     ],
+     [
+      -88.1737503,
+      47.2203997
+     ],
+     [
+      -88.1726345,
+      47.220458
+     ],
+     [
+      -88.1714758,
+      47.2207203
+     ],
+     [
+      -88.1699738,
+      47.2212596
+     ],
+     [
+      -88.1649741,
+      47.223941
+     ],
+     [
+      -88.1629142,
+      47.22636
+     ],
+     [
+      -88.1624207,
+      47.2275549
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Mineral Range Railroad",
+    "line": "Mineral Range: Mass City Branch",
+    "id": "mineral-range-mass-city-branch",
+    "color": "#3D7A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: no running time sourced for this branch; a guess for a short mining-district line with mixed/rock-train working.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-03) and OpenHistoricalMap, routed with opstrace.py. No OSM way in the 46.6,-89.2 to 47.45,-88.2 box carries old_railway_operator=Mineral Range or Hancock and Calumet; the ex-Mineral Range grades north of Portage Lake are tagged old_railway_operator=Soo Line Railroad (their last owner; Hancock waterfront, the climb out of Hancock as far as Quincy, and the Lake Linden line, partly snowmobile trails ST-17/ST-3), and the rest is untagged abandoned OSM rail, Keweenaw State Trail West / ST-153, and untagged OpenHistoricalMap railway ways (notably OHM way 199395663, Hancock - Calumet - Ahmeek, and 199395697 and neighbours on the Gay line).",
+    "geometry_quality": "Drawn 32.9 mi against 32.8 mi documented (Fowler route 7, Keweenaw Bay - Mass; MRR-MASS ~33). Geometry is the OpenHistoricalMap way 199267342 'Keweenaw Bay Branch' (Keweenaw Bay crossing of the DSS&A - Mass), simplified at 8 m and cut at its vertex nearest Mass City (0.6 km south of the village node; the Mass station site was not pinned). Cross-check: an independent opstrace route over OSM abandoned grades (incl. 'Hamar', 'Otter Siding Road', 'Old Railroad Grade') measured 34.3 mi and lies a median 6 m from the OHM line; it diverges by up to ~1 km west of Simar, where OSM tags a parallel grade Copper Range Railroad, so the OHM line was preferred there. No straight-line legs. The Keweenaw Bay end is a hand pin at the OHM way's junction with the DSS&A line (Nominatim returns the bay itself). Riddle Junction (35.6 mi) and the Milwaukee Road beyond are not drawn. One alignment 1901-1912 as far as recorded.",
+    "segments": [
+     {
+      "start": 1901,
+      "end": 1906,
+      "headway_min": 720,
+      "note": "Built 1899-1901 (grading let by the DSS&A, but operated as the Mineral Range) against the Copper Range's advance and for the Mass mines. First through train Keweenaw Bay - Riddle Jct 18 Dec 1900, 'thereafter passenger service was established between Calumet and Ontonagon' (DSS via MRR-MASS); MRR-MASS also says the branch was completed Dec 1901 - conflict recorded, drawable start collapsed to 1901. Calumet - Ontonagon trains used DSS&A track Houghton - Keweenaw Bay (trackage rights) and Milwaukee Road track beyond Riddle Jct; only the Mineral Range's own rails are drawn here. Headway 720 min is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: MRR-MASS (DSS: 18 Dec 1900 first through train and Calumet - Ontonagon passenger service; 'Dec 1901' completion conflict), as quoted in the research report [11]; not re-checked by the tracer. Headway is an estimate.",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/4956-time-table-dssa-mass-city-branch",
+       "https://www.branchline.uk/jfpdf/michiganrrs1uprp.pdf"
+      ]
+     },
+     {
+      "start": 1907,
+      "end": 1912,
+      "headway_min": 1440,
+      "note": "Reduced to a MIXED train by 1907 (mixed trains count). 18 May 1912: an eastbound mixed train 'with a passenger combine' partly fell through the Firesteel River bridge - the last confirmed passenger year. [OPEN] 1912 is the last CONFIRMED passenger year, not a known end: passenger working ended somewhere between 1912 and 1923 (Michigan PSC closed the Firesteel bridge and authorized ending operations Firesteel - Riddle Jct - Mass 14 Jul 1923). Do not extend without evidence. Later log trains (1923-1930s) were freight. Headway 1440 min (one mixed a day) is an estimate, not sourced.",
+      "sources": [
+       "Segment-level: MRR-MASS (mixed by 1907; 18 May 1912 Firesteel bridge accident), as quoted in the research report [11]; not re-checked by the tracer. Headway is an estimate.",
+       "https://www.michiganrailroads.com/timetables-routes/320-duluth-south-shore-atlantic-railway-timetables/4956-time-table-dssa-mass-city-branch"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -88.4805092,
+      46.863667
+     ],
+     [
+      -88.4805389,
+      46.8646191
+     ],
+     [
+      -88.4810324,
+      46.8655141
+     ],
+     [
+      -88.4815259,
+      46.8659689
+     ],
+     [
+      -88.4821267,
+      46.866365
+     ],
+     [
+      -88.4839721,
+      46.8666877
+     ],
+     [
+      -88.5102363,
+      46.8665557
+     ],
+     [
+      -88.5144634,
+      46.8659102
+     ],
+     [
+      -88.5169525,
+      46.8653527
+     ],
+     [
+      -88.5196133,
+      46.8645604
+     ],
+     [
+      -88.5224457,
+      46.8634601
+     ],
+     [
+      -88.5409851,
+      46.8538641
+     ],
+     [
+      -88.5492678,
+      46.8489921
+     ],
+     [
+      -88.5541387,
+      46.8459542
+     ],
+     [
+      -88.5667558,
+      46.8367074
+     ],
+     [
+      -88.5946508,
+      46.8186054
+     ],
+     [
+      -88.597848,
+      46.816579
+     ],
+     [
+      -88.5989208,
+      46.8160798
+     ],
+     [
+      -88.6012383,
+      46.8153602
+     ],
+     [
+      -88.6026759,
+      46.8151106
+     ],
+     [
+      -88.6396475,
+      46.8127169
+     ],
+     [
+      -88.6408062,
+      46.8124526
+     ],
+     [
+      -88.6427589,
+      46.8115715
+     ],
+     [
+      -88.6489601,
+      46.8069306
+     ],
+     [
+      -88.6500545,
+      46.806255
+     ],
+     [
+      -88.6525006,
+      46.8052269
+     ],
+     [
+      -88.6542173,
+      46.8047569
+     ],
+     [
+      -88.6555262,
+      46.804566
+     ],
+     [
+      -88.6567278,
+      46.8044925
+     ],
+     [
+      -88.6587877,
+      46.804566
+     ],
+     [
+      -88.6661906,
+      46.8060934
+     ],
+     [
+      -88.6682077,
+      46.806255
+     ],
+     [
+      -88.6699672,
+      46.8060787
+     ],
+     [
+      -88.681211,
+      46.8043016
+     ],
+     [
+      -88.6822624,
+      46.8040519
+     ],
+     [
+      -88.6840649,
+      46.8034791
+     ],
+     [
+      -88.686039,
+      46.8026712
+     ],
+     [
+      -88.6895795,
+      46.8007617
+     ],
+     [
+      -88.6973686,
+      46.7955764
+     ],
+     [
+      -88.6990423,
+      46.7945775
+     ],
+     [
+      -88.7000294,
+      46.7941515
+     ],
+     [
+      -88.7012096,
+      46.7937548
+     ],
+     [
+      -88.7069173,
+      46.7925796
+     ],
+     [
+      -88.7204356,
+      46.7903025
+     ],
+     [
+      -88.7232037,
+      46.7895826
+     ],
+     [
+      -88.7258644,
+      46.7885688
+     ],
+     [
+      -88.7270875,
+      46.7879665
+     ],
+     [
+      -88.7291474,
+      46.7867617
+     ],
+     [
+      -88.7307997,
+      46.7855422
+     ],
+     [
+      -88.7329025,
+      46.7836909
+     ],
+     [
+      -88.7376018,
+      46.7786803
+     ],
+     [
+      -88.7434383,
+      46.7729491
+     ],
+     [
+      -88.7455197,
+      46.7711267
+     ],
+     [
+      -88.7471075,
+      46.770142
+     ],
+     [
+      -88.7511845,
+      46.7681432
+     ],
+     [
+      -88.7526007,
+      46.7675994
+     ],
+     [
+      -88.7542744,
+      46.7672467
+     ],
+     [
+      -88.7567635,
+      46.7669233
+     ],
+     [
+      -88.7580509,
+      46.7668939
+     ],
+     [
+      -88.76157,
+      46.7672761
+     ],
+     [
+      -88.7648101,
+      46.767864
+     ],
+     [
+      -88.7667198,
+      46.7683784
+     ],
+     [
+      -88.7729426,
+      46.7706417
+     ],
+     [
+      -88.7737794,
+      46.7707446
+     ],
+     [
+      -88.7759681,
+      46.770627
+     ],
+     [
+      -88.7768908,
+      46.7706858
+     ],
+     [
+      -88.7824698,
+      46.7713472
+     ],
+     [
+      -88.7833495,
+      46.7713178
+     ],
+     [
+      -88.7854524,
+      46.770921
+     ],
+     [
+      -88.7886925,
+      46.7698775
+     ],
+     [
+      -88.790216,
+      46.7695836
+     ],
+     [
+      -88.7917824,
+      46.7695248
+     ],
+     [
+      -88.7930699,
+      46.7696276
+     ],
+     [
+      -88.7961168,
+      46.7700686
+     ],
+     [
+      -88.7982626,
+      46.7701273
+     ],
+     [
+      -88.8000651,
+      46.7699216
+     ],
+     [
+      -88.8014598,
+      46.7697011
+     ],
+     [
+      -88.8033052,
+      46.7691867
+     ],
+     [
+      -88.807189,
+      46.7678346
+     ],
+     [
+      -88.8093991,
+      46.7673055
+     ],
+     [
+      -88.8118668,
+      46.7670556
+     ],
+     [
+      -88.8379593,
+      46.7684813
+     ],
+     [
+      -88.8388605,
+      46.7685988
+     ],
+     [
+      -88.8399763,
+      46.7689516
+     ],
+     [
+      -88.8410277,
+      46.7694807
+     ],
+     [
+      -88.844933,
+      46.7719791
+     ],
+     [
+      -88.8457699,
+      46.7723171
+     ],
+     [
+      -88.8470788,
+      46.7726405
+     ],
+     [
+      -88.8488813,
+      46.7730079
+     ],
+     [
+      -88.8622494,
+      46.7750653
+     ],
+     [
+      -88.8879638,
+      46.7789194
+     ],
+     [
+      -88.89008,
+      46.7794003
+     ],
+     [
+      -88.8920628,
+      46.7801304
+     ],
+     [
+      -88.8933076,
+      46.7808486
+     ],
+     [
+      -88.8994419,
+      46.7854703
+     ],
+     [
+      -88.900481,
+      46.7861424
+     ],
+     [
+      -88.9017328,
+      46.7866023
+     ],
+     [
+      -88.9033197,
+      46.7869005
+     ],
+     [
+      -88.9235422,
+      46.7893055
+     ],
+     [
+      -88.9389795,
+      46.7904895
+     ],
+     [
+      -88.9410909,
+      46.7905982
+     ],
+     [
+      -88.9435954,
+      46.7905669
+     ],
+     [
+      -88.9457198,
+      46.7903402
+     ],
+     [
+      -88.9493246,
+      46.7895679
+     ],
+     [
+      -88.9509915,
+      46.7889614
+     ],
+     [
+      -88.9523219,
+      46.7882168
+     ],
+     [
+      -88.953423,
+      46.7869236
+     ],
+     [
+      -88.9543639,
+      46.7821287
+     ],
+     [
+      -88.9551089,
+      46.7811333
+     ],
+     [
+      -88.9640682,
+      46.77511
+     ],
+     [
+      -88.97176,
+      46.7716401
+     ],
+     [
+      -88.97382,
+      46.7709788
+     ],
+     [
+      -88.9752791,
+      46.7707142
+     ],
+     [
+      -88.9770386,
+      46.7705673
+     ],
+     [
+      -88.979356,
+      46.7705379
+     ],
+     [
+      -88.9804075,
+      46.7706849
+     ],
+     [
+      -88.9942048,
+      46.7739181
+     ],
+     [
+      -88.9958355,
+      46.7739621
+     ],
+     [
+      -88.9973805,
+      46.7738446
+     ],
+     [
+      -88.9998481,
+      46.7731392
+     ],
+     [
+      -89.0022728,
+      46.7715814
+     ],
+     [
+      -89.0036855,
+      46.7705028
+     ],
+     [
+      -89.0050989,
+      46.7698542
+     ],
+     [
+      -89.0072935,
+      46.7692716
+     ],
+     [
+      -89.0089847,
+      46.7692942
+     ],
+     [
+      -89.0213916,
+      46.7709347
+     ],
+     [
+      -89.0263203,
+      46.7717217
+     ],
+     [
+      -89.0279326,
+      46.7718849
+     ],
+     [
+      -89.02974,
+      46.7718408
+     ],
+     [
+      -89.0311978,
+      46.7716695
+     ],
+     [
+      -89.0333666,
+      46.7711839
+     ],
+     [
+      -89.0353391,
+      46.7703909
+     ],
+     [
+      -89.0425845,
+      46.7653491
+     ],
+     [
+      -89.0436432,
+      46.7647323
+     ],
+     [
+      -89.0454751,
+      46.7641094
+     ],
+     [
+      -89.0473974,
+      46.7638301
+     ],
+     [
+      -89.0576418,
+      46.7642664
+     ],
+     [
+      -89.05843,
+      46.7642158
+     ],
+     [
+      -89.0591758,
+      46.764078
+     ],
+     [
+      -89.0627835,
+      46.7629097
+     ],
+     [
+      -89.0778038,
+      46.7575737
+     ],
+     [
+      -89.0801427,
+      46.7573973
+     ],
+     [
+      -89.0811727,
+      46.7575884
+     ],
+     [
+      -89.083061,
+      46.7581617
+     ]
+    ]
+   }
+  }
+ ]
+}
