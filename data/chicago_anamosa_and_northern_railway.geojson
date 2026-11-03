@@ -1,0 +1,491 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Chicago, Anamosa and Northern Railway (the 'CAN'), a single-track steam short line in Jones, Linn, Delaware and Buchanan counties, Iowa: Anamosa to Coggon (IC junction) 1904-05, extended to Quasqueton 1912, all operation stopped by federal-court order 20 Nov 1915, sold for scrap Nov 1916 and lifted 1917. Drawn from research/branches/chicago_anamosa_and_northern_railway.txt in the site repo (DanielMConnolly/historical-trains), researched 2026-11-03. Before this layer the map drew nothing for this company. Two features, one company, one colour: Anamosa - Prairieburg (opened Dec 1904 with a passenger special) and Prairieburg - Coggon (regular trains by May 1905), split because the two pieces opened in different years and a feature's segments all draw its whole geometry. Both are drawn only to 1910, the last confirmed passenger year ([OPEN] ends).",
+  "sources": [
+   "Evening Times-Republican (Marshalltown), 22 Dec 1904 p2, \"Road to Prairieburg\" - https://www.loc.gov/resource/sn85049554/1904-12-22/ed-1/?sp=2",
+   "Evening Times-Republican, 1 May 1905 p2, \"Road is to be extended\" - https://www.loc.gov/resource/sn85049554/1905-05-01/ed-1/?sp=2",
+   "\"Souvenir of Anamosa\" (1907), IAGenWeb transcription - https://iagenweb.org/jones/history/twps_towns/anamosa1907.html",
+   "Decorah Public Opinion, 16 Oct 1907 p7 (road \"now stops at Coggon\") - https://www.loc.gov/resource/sn87058235/1907-10-16/ed-1/?sp=7",
+   "1910 Official Guide as quoted in a Trains.com forum post (NOT SEEN FIRSTHAND; known via search snippet) - https://forum.trains.com/t/chicago-anamosa-northern-rwy/57810",
+   "Manchester Democrat, 24 Nov 1915 p8, \"C. A. & N. Ry. Quits\" - https://www.loc.gov/resource/sn84038306/1915-11-24/ed-1/?sp=8",
+   "Evening Times-Republican, 20 Nov 1915 p3 (receiver asks court to abandon) - https://www.loc.gov/resource/sn85049554/1915-11-20/ed-1/?sp=3",
+   "Cedar Rapids Gazette, \"Time Machine: A short-lived shortline\" (secondary) - https://www.thegazette.com/news/history/time-machine-a-short-lived-shortline/article_e58ec06e-22d1-4379-a19d-7ccc59c0721c.html",
+   "John Fowler, Iowa Railroads passenger stations & stops, section 128 (mileposts; no dated timetable letters) - https://www.branchline.uk/jfpdf/iowarrs.pdf"
+  ],
+  "freight_only": "No freight-only line excluded as such: the road had no branches. No train of any kind ran after 20 Nov 1915 [MD15]; the 1916 sale and 1917 dismantling are not drawn. The 1912 Coggon - Quasqueton extension is withheld for lack of PASSENGER evidence, not because it is known to have been freight-only.",
+  "horsecar": "None. Steam from the first train (1904).",
+  "rule_9": "All features lie in Iowa, inside US_BOUNDS.",
+  "ownership": "No Rule 4 split: the Chicago, Anamosa and Northern ran every train 1904-1915. The 1914 receivership (receiver G. E. Farmer) and the L. E. Myers construction company's creditor control did not change the operating company. The Midland Construction Co. and the Myers company were builders; the Iowa Northwestern Railway (1906) was a paper company; the 1916 buyer (Herman Sonken) never operated.",
+  "mode": "intercity_rail, not interurban: a 1904 Gazette item called it an 'interurban road', but a 1914 Iowa newspaper is explicit that 'it is NOT an electric line but a steam road'. Rule 7's interurban is for electric lines.",
+  "not_yet_sourced": [
+   "[OPEN] ends: both features (Anamosa - Prairieburg, Prairieburg - Coggon) stop at 1910, the last CONFIRMED passenger year (1910 Official Guide via a Trains.com forum quote, not seen firsthand). All operation ended 20 Nov 1915; any dated 1911-1915 passenger mention would extend both to 1915 as a hard end. Gary L. Holzinger, 'Chicago, Anamosa and Northern Railway: The Wapsie Valley Route' (Quasqueton Area Historical Society, 2022) was not consulted and is the likeliest source.",
+   "Coggon - Quasqueton (1912 extension, ~16.8 mi via Robinson, Monti, Kiene): NOT DRAWN (report drawable: NONE). The line was built and operated 1912-1915 (TR12, TR13, TR15, GAZ; dismantled from Quasqueton May 1917), and Fowler lists Robinson, Monti and Quasqueton as passenger stops without dated timetable letters, but no source seen names a passenger train, timetable or fare beyond Coggon. Geometry is ready in OSM way 171728265 if a source turns up.",
+   "Anamosa terminal: whether CA&N trains ran ~1.5 mi over the C&NW into the Anamosa depot (GAZ: junction at the prison quarry, C&NW roundhouse leased; JF lists Anamosa at 0.0 ahead of the junction) or stopped at their own station 'about a mile from Anamosa' (GAZ). Drawn as a straight chord to the C&NW terminal, labelled in geometry_quality.",
+   "Opening date: 21 Dec 1904 (TR04) vs 19 Dec 1904 (GAZ). Year agrees.",
+   "Frequencies: two trains each way daily in 1905 (TR05) and 1910 (OG10); 1906-1909 carried forward as an estimate. Speed is an estimate; no running time found.",
+   "Mileage: Anamosa - Coggon 19.2 mi (JF) / 19 mi (OG10); TR04's 'twenty miles' for Anamosa - Prairieburg conflicts with JF's 12.5 (JF used)."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago, Anamosa and Northern Railway",
+    "line": "Chicago, Anamosa and Northern: Anamosa \u2013 Prairieburg",
+    "id": "can-anamosa-prairieburg",
+    "color": "#4362BF",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not measured. No CA&N running time was recovered; 30 km/h is the order of magnitude for a light steam short line with a combine (probably mixed trains) on 19 mi of track, nothing more (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap, routed with opstrace.py. The road survives in OSM as one way, 171728265 (railway=abandoned, name/old_railway_operator='Chicago, Anamosa and Northern Railway', source='USGS topos; 1915 Jones County atlas'), the only hit for old_railway_operator~'Anamosa' in a 41.9-42.6N / 91-92W box; it runs from about 1.3 mi west of the Anamosa C&NW terminal to Quasqueton (33.25 mi). Costed 1x; untagged rail 1.25x, trails 3x, other operators 12x - the traced legs used only CA&N way. Nominatim answers checked by type: Anamosa, Prairieburg and Coggon each came back as the town's own administrative boundary (not a county or township) and were used only to locate the nearest point on the CA&N way; 'Jackson, Linn County' came back as a Cedar Rapids bar and was not used. Douglas-Peucker 8 m, then trim_reversals; no out-and-back spurs.",
+    "geometry_quality": "12.57 mi drawn against the documented 12.5 mi (Fowler section 128, Anamosa MP 0.0 to Prairieburg MP 12.5; TR04's 'twenty miles' is a conflict, probably counting graded line onward - JF used). 11.27 mi traced on the CA&N's own OSM way 171728265, from the C&NW junction area west of Anamosa up the Buffalo Creek valley to the way's closest point to Prairieburg. ONE STRAIGHT-LINE LEG, approximated: 1.30 mi from the east end of the CA&N way (42.1168,-91.3073) to the Anamosa end of OpenHistoricalMap's C&NW Clinton-Anamosa way (42.1090,-91.2842), standing in for the Anamosa depot. This is probably ANOTHER COMPANY'S TRACK: the Gazette says the CA&N joined the C&NW near the penitentiary quarry about 1.5 mi west of Anamosa and leased C&NW roundhouse space, and Fowler puts 'Anamosa' at 0.0 ahead of 'Chicago Anamosa & Northern Junction', which suggests trackage rights into town - but neither OSM nor OHM maps that C&NW stretch, and the Gazette also says the line 'started about a mile from Anamosa', so whether CA&N trains reached the C&NW depot at all is unresolved (report UNRESOLVED 6). The chord does not follow the real C&NW alignment. Prairieburg end: the drawn line passes 0.66 km from the village centre; the Gazette puts the station on a spur about 1 mi south of the village, and no spur is mapped, so the station point is approximate to within about a mile. ERA: the abandoned grade is the road's only alignment (built 1904, lifted 1917); no later alignment is drawn.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1904,
+      "headway_min": null,
+      "note": "Opening passenger special: the last rails reached Prairieburg about 21 Dec 1904 and 'the first train over the new line was a special from this city [Anamosa], carrying the most prominent citizens' to a banquet [TR04]. The Gazette dates the first train 19 Dec 1904 - two-day conflict, year agrees. Drawn under Rule 1 as a one-off passenger special. Whether any regular trains ran to Prairieburg between the special and spring 1905 is not established. headway_min null: a single special, no regular service.",
+      "sources": [
+       "Segment-level: TR04 names the 1904 opening special and its passengers; GAZ gives the conflicting 19 Dec date.",
+       "Evening Times-Republican (Marshalltown), 22 Dec 1904 p2, \"Road to Prairieburg\" - https://www.loc.gov/resource/sn85049554/1904-12-22/ed-1/?sp=2",
+       "Cedar Rapids Gazette, \"Time Machine: A short-lived shortline\" (secondary) - https://www.thegazette.com/news/history/time-machine-a-short-lived-shortline/article_e58ec06e-22d1-4379-a19d-7ccc59c0721c.html"
+      ]
+     },
+     {
+      "start": 1905,
+      "end": 1910,
+      "headway_min": 720,
+      "note": "Anamosa - Jackson - Anderson - Prairieburg, the south end of the Anamosa - Coggon service. By 1 May 1905 'two regular trains each day have been put on, connecting this city with the Illinois Central at Coggon' [TR05]; the 1907 'Souvenir of Anamosa' says the road runs Anamosa to Coggon [SA07]; the 1910 Official Guide (secondhand) shows a morning and an evening passenger train [OG10]. Steam, a leased locomotive and a combine - probably mixed trains, which count under Rule 1. headway_min 720 reflects two trains each way daily (1905, 1910); it is an ESTIMATE for the years between. [OPEN] END: 1910 is the last CONFIRMED passenger year (1910 Official Guide, known only secondhand via a Trains.com forum quote), NOT a known end. Operation of some kind continued until the whole road was shut down by federal-court order on 20 Nov 1915 [MD15, TR15], but no 1911-1915 source seen names a passenger train. Do not extend without evidence; one dated 1911-1915 passenger mention would let this run to 1915 as a hard end. Track lifted 1917 after a 1916 scrap sale - not drawn.",
+      "sources": [
+       "Segment-level: TR05 (regular trains by May 1905), SA07 (1907), OG10 (1910, secondhand - not seen firsthand); MD15/TR15 date the end of all operation (20 Nov 1915) but do not prove passengers after 1910.",
+       "Evening Times-Republican, 1 May 1905 p2, \"Road is to be extended\" - https://www.loc.gov/resource/sn85049554/1905-05-01/ed-1/?sp=2",
+       "\"Souvenir of Anamosa\" (1907), IAGenWeb transcription - https://iagenweb.org/jones/history/twps_towns/anamosa1907.html",
+       "1910 Official Guide as quoted in a Trains.com forum post (NOT SEEN FIRSTHAND; known via search snippet) - https://forum.trains.com/t/chicago-anamosa-northern-rwy/57810",
+       "Manchester Democrat, 24 Nov 1915 p8, \"C. A. & N. Ry. Quits\" - https://www.loc.gov/resource/sn84038306/1915-11-24/ed-1/?sp=8",
+       "Evening Times-Republican, 20 Nov 1915 p3 (receiver asks court to abandon) - https://www.loc.gov/resource/sn85049554/1915-11-20/ed-1/?sp=3"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.2842,
+      42.109046
+     ],
+     [
+      -91.307269,
+      42.116833
+     ],
+     [
+      -91.310571,
+      42.118954
+     ],
+     [
+      -91.31315,
+      42.12006
+     ],
+     [
+      -91.313896,
+      42.120564
+     ],
+     [
+      -91.31542,
+      42.122649
+     ],
+     [
+      -91.31792,
+      42.123883
+     ],
+     [
+      -91.318467,
+      42.124591
+     ],
+     [
+      -91.319422,
+      42.126835
+     ],
+     [
+      -91.320162,
+      42.127901
+     ],
+     [
+      -91.320838,
+      42.128569
+     ],
+     [
+      -91.325033,
+      42.130845
+     ],
+     [
+      -91.326106,
+      42.131291
+     ],
+     [
+      -91.326953,
+      42.131434
+     ],
+     [
+      -91.328723,
+      42.13133
+     ],
+     [
+      -91.329421,
+      42.130941
+     ],
+     [
+      -91.330869,
+      42.129707
+     ],
+     [
+      -91.331577,
+      42.129333
+     ],
+     [
+      -91.332296,
+      42.129103
+     ],
+     [
+      -91.333262,
+      42.129095
+     ],
+     [
+      -91.333959,
+      42.129246
+     ],
+     [
+      -91.334978,
+      42.129914
+     ],
+     [
+      -91.336588,
+      42.131561
+     ],
+     [
+      -91.337628,
+      42.133646
+     ],
+     [
+      -91.338615,
+      42.134497
+     ],
+     [
+      -91.339388,
+      42.134704
+     ],
+     [
+      -91.340268,
+      42.134744
+     ],
+     [
+      -91.342113,
+      42.134418
+     ],
+     [
+      -91.342832,
+      42.134449
+     ],
+     [
+      -91.343797,
+      42.134616
+     ],
+     [
+      -91.344613,
+      42.134911
+     ],
+     [
+      -91.345096,
+      42.135301
+     ],
+     [
+      -91.345289,
+      42.135818
+     ],
+     [
+      -91.345128,
+      42.137091
+     ],
+     [
+      -91.344699,
+      42.137528
+     ],
+     [
+      -91.343604,
+      42.138014
+     ],
+     [
+      -91.342746,
+      42.139088
+     ],
+     [
+      -91.342424,
+      42.139867
+     ],
+     [
+      -91.342317,
+      42.14083
+     ],
+     [
+      -91.34251,
+      42.141546
+     ],
+     [
+      -91.342896,
+      42.14219
+     ],
+     [
+      -91.344302,
+      42.14293
+     ],
+     [
+      -91.346898,
+      42.143304
+     ],
+     [
+      -91.347692,
+      42.143622
+     ],
+     [
+      -91.348593,
+      42.144338
+     ],
+     [
+      -91.349258,
+      42.145142
+     ],
+     [
+      -91.349484,
+      42.145794
+     ],
+     [
+      -91.349387,
+      42.14799
+     ],
+     [
+      -91.349623,
+      42.148896
+     ],
+     [
+      -91.350181,
+      42.149708
+     ],
+     [
+      -91.354258,
+      42.152571
+     ],
+     [
+      -91.355009,
+      42.153255
+     ],
+     [
+      -91.360695,
+      42.162608
+     ],
+     [
+      -91.361446,
+      42.163372
+     ],
+     [
+      -91.378956,
+      42.175061
+     ],
+     [
+      -91.380093,
+      42.175665
+     ],
+     [
+      -91.381638,
+      42.176174
+     ],
+     [
+      -91.385672,
+      42.176778
+     ],
+     [
+      -91.388011,
+      42.177891
+     ],
+     [
+      -91.388719,
+      42.178384
+     ],
+     [
+      -91.389449,
+      42.179211
+     ],
+     [
+      -91.393869,
+      42.188767
+     ],
+     [
+      -91.397538,
+      42.194029
+     ],
+     [
+      -91.4061,
+      42.200324
+     ],
+     [
+      -91.407044,
+      42.201246
+     ],
+     [
+      -91.417837,
+      42.215662
+     ],
+     [
+      -91.418223,
+      42.216743
+     ],
+     [
+      -91.417344,
+      42.221971
+     ],
+     [
+      -91.417387,
+      42.222877
+     ],
+     [
+      -91.417687,
+      42.223878
+     ],
+     [
+      -91.423953,
+      42.231155
+     ],
+     [
+      -91.425669,
+      42.232394
+     ],
+     [
+      -91.427472,
+      42.233443
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Chicago, Anamosa and Northern Railway",
+    "line": "Chicago, Anamosa and Northern: Prairieburg \u2013 Coggon",
+    "id": "can-prairieburg-coggon",
+    "color": "#4362BF",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE, not measured. No CA&N running time was recovered; 30 km/h is the order of magnitude for a light steam short line with a combine (probably mixed trains) on 19 mi of track, nothing more (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (mail.ru mirror) plus OpenHistoricalMap, routed with opstrace.py. The road survives in OSM as one way, 171728265 (railway=abandoned, name/old_railway_operator='Chicago, Anamosa and Northern Railway', source='USGS topos; 1915 Jones County atlas'), the only hit for old_railway_operator~'Anamosa' in a 41.9-42.6N / 91-92W box; it runs from about 1.3 mi west of the Anamosa C&NW terminal to Quasqueton (33.25 mi). Costed 1x; untagged rail 1.25x, trails 3x, other operators 12x - the traced legs used only CA&N way. Nominatim answers checked by type: Anamosa, Prairieburg and Coggon each came back as the town's own administrative boundary (not a county or township) and were used only to locate the nearest point on the CA&N way; 'Jackson, Linn County' came back as a Cedar Rapids bar and was not used. Douglas-Peucker 8 m, then trim_reversals; no out-and-back spurs.",
+    "geometry_quality": "6.43 mi drawn against the documented 6.7 mi (Fowler section 128, Prairieburg MP 12.5 to Coggon MP 19.2), all traced on the CA&N's own OSM way 171728265 - no straight-line legs, no other company's track. Ends at the way's point nearest the Illinois Central (CN Cedar Rapids Subdivision) at Coggon, 62 m from the IC track and 0.55 km from the town centre. Whole Anamosa - Coggon: 19.00 mi drawn against 19.2 mi (JF) / 19 mi (OG10). The OSM way continues north-west to Quasqueton (the 1912 extension); that part is deliberately not drawn (no passenger source). Prairieburg end: approximate to within about a mile (station on an unmapped spur south of the village, see the Anamosa - Prairieburg feature). ERA: the abandoned grade is the road's only alignment (1904-1917).",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1910,
+      "headway_min": 720,
+      "note": "Prairieburg - Coggon, the north end of the Anamosa - Coggon service, connecting with the Illinois Central at Coggon. TR04 (22 Dec 1904) reported the line graded on to Coggon with steel due 'by the first of the year'; TR05 (1 May 1905): the road 'was constructed from Anamosa to Coggon last year ... two regular trains each day have been put on, connecting this city with the Illinois Central at Coggon.' SA07 (1907): runs Anamosa to Coggon; DPO07 (Oct 1907): the road 'now stops at Coggon'. The Gazette's 'regular trains to Coggon by June 1907' is a later floor, not a conflict. 1910 Official Guide (secondhand): 19 miles, morning and evening passenger train [OG10]. headway_min 720 reflects two trains each way daily (1905, 1910); it is an ESTIMATE for the years between. Coggon was the end of the line until the 1912 extension to Quasqueton, which is not drawn. [OPEN] END: 1910 is the last CONFIRMED passenger year (1910 Official Guide, known only secondhand via a Trains.com forum quote), NOT a known end. Operation of some kind continued until the whole road was shut down by federal-court order on 20 Nov 1915 [MD15, TR15], but no 1911-1915 source seen names a passenger train. Do not extend without evidence; one dated 1911-1915 passenger mention would let this run to 1915 as a hard end.",
+      "sources": [
+       "Segment-level: TR04 and TR05 (regular trains by May 1905), SA07 and DPO07 (1907), OG10 (1910, secondhand - not seen firsthand); MD15/TR15 date the end of all operation (20 Nov 1915) but do not prove passengers after 1910.",
+       "Evening Times-Republican (Marshalltown), 22 Dec 1904 p2, \"Road to Prairieburg\" - https://www.loc.gov/resource/sn85049554/1904-12-22/ed-1/?sp=2",
+       "Evening Times-Republican, 1 May 1905 p2, \"Road is to be extended\" - https://www.loc.gov/resource/sn85049554/1905-05-01/ed-1/?sp=2",
+       "\"Souvenir of Anamosa\" (1907), IAGenWeb transcription - https://iagenweb.org/jones/history/twps_towns/anamosa1907.html",
+       "Decorah Public Opinion, 16 Oct 1907 p7 (road \"now stops at Coggon\") - https://www.loc.gov/resource/sn87058235/1907-10-16/ed-1/?sp=7",
+       "1910 Official Guide as quoted in a Trains.com forum post (NOT SEEN FIRSTHAND; known via search snippet) - https://forum.trains.com/t/chicago-anamosa-northern-rwy/57810",
+       "Manchester Democrat, 24 Nov 1915 p8, \"C. A. & N. Ry. Quits\" - https://www.loc.gov/resource/sn84038306/1915-11-24/ed-1/?sp=8",
+       "Evening Times-Republican, 20 Nov 1915 p3 (receiver asks court to abandon) - https://www.loc.gov/resource/sn85049554/1915-11-20/ed-1/?sp=3"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.427472,
+      42.233443
+     ],
+     [
+      -91.428802,
+      42.233888
+     ],
+     [
+      -91.430411,
+      42.234158
+     ],
+     [
+      -91.434917,
+      42.234316
+     ],
+     [
+      -91.435947,
+      42.234459
+     ],
+     [
+      -91.440175,
+      42.235508
+     ],
+     [
+      -91.441634,
+      42.235683
+     ],
+     [
+      -91.445432,
+      42.235858
+     ],
+     [
+      -91.447835,
+      42.236366
+     ],
+     [
+      -91.462748,
+      42.242911
+     ],
+     [
+      -91.471696,
+      42.246533
+     ],
+     [
+      -91.474314,
+      42.248328
+     ],
+     [
+      -91.480386,
+      42.253839
+     ],
+     [
+      -91.490557,
+      42.262748
+     ],
+     [
+      -91.491351,
+      42.263558
+     ],
+     [
+      -91.494613,
+      42.267989
+     ],
+     [
+      -91.495342,
+      42.268671
+     ],
+     [
+      -91.50208,
+      42.271593
+     ],
+     [
+      -91.520019,
+      42.282214
+     ],
+     [
+      -91.52137,
+      42.282913
+     ],
+     [
+      -91.527175,
+      42.285199
+     ]
+    ]
+   }
+  }
+ ]
+}
