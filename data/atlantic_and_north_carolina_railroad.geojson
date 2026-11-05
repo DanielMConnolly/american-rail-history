@@ -1,0 +1,1837 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Atlantic and North Carolina Rail Road (\"Old Mullet Road\"), Goldsboro - Kinston - Dover - New Bern - Havelock - Morehead City, 96.1 mi (ICC), chartered 1852, built 1855-1858, state majority-owned; and its operating lessees in their own eras. Drawn from research/branches/atlantic_and_north_carolina_railroad.txt in the site repo (DanielMConnolly/historical-trains) (2026-11-04). Only the report's drawable spans are drawn. Rule 4 splits by operator, all on identical geometry: A&NC 1857/58-1861 (four opening pieces) and Kinston - Goldsboro to 1865; A&NC 1865-1881; Midland North Carolina Railway (lessee) 1881-1883; A&NC 1883-1904; Howland Improvement Co., trading as the Atlantic & North Carolina Company (lessee) 1904-1906; Norfolk & Southern 1908-1932 (already drawn in norfolk_southern_railway_original.geojson as ns-anc-goldsboro-morehead-city, not changed); A&NC 1939 [ANCHOR]; Atlantic and East Carolina Railway 1939-1950. One A&NC colour across all its eras (the 1877 receivership and 1935 reincorporation are the same company).",
+  "sources": [
+   "Report of the President of the A&NC, 1857 - https://archive.org/details/reportofpresiden1857atla",
+   "Report of the President of the A&NC, June 1858 - https://archive.org/details/reportofpresiden1858atla",
+   "A&NC Proceedings, 11th annual report, FY to 31 May 1865 - https://archive.org/details/proceedingsofann18641865",
+   "A&NC Proceedings, FY to 31 May 1866 - https://archive.org/details/proceedingsofann18651866",
+   "A&NC Proceedings 1867 - https://archive.org/details/proceedingsofann1867atla",
+   "A&NC Proceedings 1882 - https://archive.org/details/proceedingsofann1882atla",
+   "A&NC Proceedings 1883 - https://archive.org/details/proceedingsofann1883atla",
+   "A&NC Proceedings 1884 - https://archive.org/details/proceedingsofann1884atla",
+   "A&NC Proceedings 1904 - https://archive.org/details/proceedingsofann1904atla",
+   "A&NC Proceedings 1905 - https://archive.org/details/proceedingsofann1905atla",
+   "A&NC Proceedings, 52nd report, FY to 1 Sep 1906 - https://archive.org/details/proceedingsofann1906atla",
+   "A&NC Proceedings, 53rd report, FY to 1 Aug 1907 - https://archive.org/details/proceedingsofann1907atla",
+   "John Fowler, North Carolina Railroads passenger stations, table 77 - https://www.branchline.uk/jfpdf/northcarolinarrs.pdf",
+   "Official Guide of the Railways, Feb 1952, A&EC table dated 30 Apr 1951 (\"Freight and Express Service only\") and index daggers - https://archive.org/details/the-official-guide-of-the-railways-images",
+   "Carteret County News-Times 31 Mar 1950 p1, \"Last Passenger Train Out Of Morehead City Leaves Today\" (read as search extract only) - https://newspapers.digitalnc.org/lccn/sn94058246/1950-03-31/ed-1/seq-1/",
+   "Carteret County News-Times 6 Jun 1958 p12 (\"the passenger run was discontinued March 31, 1950\"; search extract only) - https://newspapers.digitalnc.org/lccn/sn94058246/1958-06-06/ed-1/seq-12/",
+   "Carteret County News-Times 28 Jun 1949 p2 (railroad proposes to stop the passenger train; search extract only) - https://newspapers.digitalnc.org/lccn/sn94058246/1949-06-28/ed-1/seq-2/",
+   "https://en.wikipedia.org/wiki/Atlantic_and_North_Carolina_Railroad",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Atlantic_and_North_Carolina_Railroad",
+   "https://en.wikipedia.org/wiki/Atlantic_and_East_Carolina_Railway",
+   "https://en.wikipedia.org/wiki/Goldsboro_Union_Station",
+   "https://davidcecelski.com/2025/09/03/on-the-old-mullet-road-1942/",
+   "https://www.american-rails.com/aec.html"
+  ],
+  "geometry_sources": [
+   "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line."
+  ],
+  "operator_split": "Features share identical geometry per Rule 4 era: A&NC (#333980), Midland North Carolina (#807333), Howland Improvement / A&NC Company (#7DB247), Atlantic and East Carolina (#B23693); NS (#0E7C86) in its own layer. The lessee's company string is \"Howland Improvement Company\" so that it does not normalise to the lessor A&NC's.",
+  "not_yet_sourced": [
+   "[OPEN] ends: New Bern - Dover, Dover - Kinston and New Bern - Morehead City end 1861 as the last CONFIRMED year; service probably ran to the fall of New Bern, 14 Mar 1862, but is unproven.",
+   "Kinston - Goldsboro 1862-1863: rests only on the FY 1865 report's \"for three years we have run all kind of trains ... from Goldsboro' to Kinston\"; passenger receipts are proven for FY 1864-65 only (the 1862-63 and 1863-64 proceedings were not found). STRICT alternative: 1858-1861 plus 1864-1865 as two segments.",
+   "1859: no year-specific document read; drawn continuous 1858-1861 on the 1858 report and the FY 1865 statement that the whole road ran passenger trains \"for one year before the war\".",
+   "A&NC 1935-1939: drawn only as a 1939 [ANCHOR]. The Beaufort News (DigitalNC sn91068210) 1935-39 or any 1936-38 Official Guide should settle whether the A&NC ran passenger trains in 1936-38 (DigitalNC was unreachable during research). If confirmed, upgrade to 1936 [OPEN]-1939.",
+   "Norfolk Southern rail bus 1935-1937 (blog citing Beaufort News 20 Dec 1934, 3 Jan 1935, NS ad 8 Apr 1937, https://beaufortartist.blogspot.com/2013/01/rail-bus.html): could extend the NS feature to 1935, but 1936-37 conflicts with the A&NC's own operation from late 1935. Nothing drawn on it.",
+   "Howland era hand-over to the Norfolk & Southern: Nov 1906 per the NS research; month not read in a primary source.",
+   "Midland end: receiver from 19 Mar 1883 (company report) vs 20 Mar (ICC); property returned ~20 May 1883.",
+   "The 31 Mar 1950 newspaper pages were seen only as search-engine extracts (DigitalNC refused direct fetches).",
+   "headway_min (1440, one train each way a day) is an estimate on every segment; avg_speed_kmh is sourced only for the pre-war pieces (27 mph average, FY 1865 report) and estimated (40) elsewhere."
+  ],
+  "source_conflicts": [
+   "Union occupation: ICC valuation via Wikipedia says Federal troops took \"part of the line in 1864 and the entire line in 1865\"; the A&NC's own FY 1865 report says the larger part had been \"in the possession of the United States ... for more than three years\" (i.e. since the Mar 1862 capture of New Bern). The company report is preferred.",
+   "Passenger end: Carteret County News-Times 31 Mar 1950 (\"Last Passenger Train Out Of Morehead City Leaves Today\") and its 1958 retrospective vs Wikipedia \"would end by 1951\" and american-rails \"1951\" (also \"by 1954\"). 1950 adopted; the Official Guide's A&EC table dated 30 Apr 1951 is freight and express only.",
+   "NS lease end: 1934 \"forfeited\" (Wikipedia) vs 1935 (default; NS still operating 29 Jul 1935) vs ICC \"abandonment\" decision 1937 (via Wikipedia) - recorded in the NS layer too; affects only the undrawn 1933-38 gap."
+  ],
+  "geometry_check": "2026-11-04: a screenshot review read the Dover - New Bern piece as a ruled straight line ~2 mi north of the railway. Checked and NOT a defect: the line was re-traced from OSM (same 91.6 mi, same alignment); the 55 raw OSM nodes of the EC Line between Dover and New Bern lie within 4 m of the drawn line, Cove City and Tuscarora geocode 0.0 km from it, and the only other rail within 8 km is the NS NB-Line to the north and abandoned ACL grade to the south. The basemap line passing south of Cove City is US 70, not the railway. The A&NC is straight across this stretch. The NS layer's ns-anc-goldsboro-morehead-city geometry (54 vertices, DP 8 m) is the same alignment and was left unchanged; this layer now uses its own 5 m re-trace (73 vertices).",
+  "omitted": "Not drawn: US Military Railroads operation, New Bern - Morehead City Mar 1862 - 26 Oct 1865 and the whole line Mar - Oct 1865 (military, no public passenger service found; report block 5); Norfolk & Southern lease era (already drawn, unchanged; block 10); Morehead City - Beaufort (not an A&NC line; NS feature stands; the Beaufort & Morehead from 1937 was freight only; block 11); A&NC 1935-1938 (unproven; block 12); Havelock / Cherry Point spur (freight/military; block 14); everything after 31 Mar 1950 (freight only)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic and North Carolina Railroad",
+    "line": "Atlantic and North Carolina: New Bern – Dover",
+    "id": "anc-new-bern-dover",
+    "color": "#333980",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 43,
+    "speed_source": "Sourced for the pre-war era: \"for one year before the war we ... ran at an average speed of twenty-seven miles an hour from Goldsboro' to Morehead City with the passenger trains\" (A&NC report FY 1865) = ~43 km/h.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 24.0 mi against the documented 23.3 mi (1952 Guide mileposts New Bern 58.8 - Dover 35.5; \"24 miles\" to Rouse's in the 1857 report), all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 14 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1857,
+      "end": 1861,
+      "headway_min": 1440,
+      "note": "Opening section. From 1 Jan 1857 a second-class passenger car ran with the construction train New Bern - Core Creek (today's Cove), connecting with the New Bern - Kinston - Goldsboro stage line; extended to Rouse's (= Dover, 24 mi) 3 Apr 1857 and to Tilghman's (27 mi, a few miles past Dover) 28 May 1857. Mixed-train passenger service, steam from the outset. Through service from 1858 (see the other pre-war pieces); the company \"for one year before the war ... operated the whole Road\" with passenger trains. This end is [OPEN]: 1861 is the last CONFIRMED year, not a known end - service probably ran until New Bern fell on 14 Mar 1862, but no source dates it. Do not extend without evidence. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1857 from the 1857 President's report (passenger car from 1 Jan 1857, to Rouse's 3 Apr 1857); pre-war operation from the 1858 report and the FY 1865 report. End 1861 is the last confirmed year [OPEN]. headway_min NOT sourced.",
+       "Report of the President of the A&NC, 1857 - https://archive.org/details/reportofpresiden1857atla",
+       "Report of the President of the A&NC, June 1858 - https://archive.org/details/reportofpresiden1858atla",
+       "A&NC Proceedings, 11th annual report, FY to 31 May 1865 - https://archive.org/details/proceedingsofann18641865"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.437014,
+      35.215991
+     ],
+     [
+      -77.3512229,
+      35.1944293
+     ],
+     [
+      -77.2652381,
+      35.1726663
+     ],
+     [
+      -77.1720192,
+      35.1490197
+     ],
+     [
+      -77.0678899,
+      35.1225046
+     ],
+     [
+      -77.0452817,
+      35.1167299
+     ],
+     [
+      -77.0447388,
+      35.1165784
+     ],
+     [
+      -77.0438022,
+      35.1161699
+     ],
+     [
+      -77.0433275,
+      35.1158755
+     ],
+     [
+      -77.0427997,
+      35.1153673
+     ],
+     [
+      -77.0406734,
+      35.1128064
+     ],
+     [
+      -77.0405562,
+      35.1124643
+     ],
+     [
+      -77.040565,
+      35.1120995
+     ],
+     [
+      -77.041504,
+      35.107045
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic and North Carolina Railroad",
+    "line": "Atlantic and North Carolina: Dover – Kinston",
+    "id": "anc-dover-kinston",
+    "color": "#333980",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 43,
+    "speed_source": "Sourced for the pre-war era: \"for one year before the war we ... ran at an average speed of twenty-seven miles an hour from Goldsboro' to Morehead City with the passenger trains\" (A&NC report FY 1865) = ~43 km/h.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 9.0 mi against the documented 8.7 mi (1952 Guide mileposts Kinston 26.8 - Dover 35.5), all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 13 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1858,
+      "end": 1861,
+      "headway_min": 1440,
+      "note": "\"On the 8th day of [January 1858] ... a passenger train ran through to Kinston\" (1858 report). Dover - Tilghman's (~3 mi) had carried the mixed car from 28 May 1857 - too short to split, so the piece starts 1858. Kinston was Confederate-held through the war while this stretch lay between the lines, largely unworked; some of its iron was taken up by order of the US military superintendent (FY 1865 report). This end is [OPEN]: 1861 is the last CONFIRMED year, not a known end - service probably ran until New Bern fell on 14 Mar 1862, but no source dates it. Do not extend without evidence. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1858 from the 1858 President's report; pre-war operation of the whole road and the wartime state of this stretch from the FY 1865 report. End 1861 is the last confirmed year [OPEN]. headway_min NOT sourced.",
+       "Report of the President of the A&NC, June 1858 - https://archive.org/details/reportofpresiden1858atla",
+       "Report of the President of the A&NC, 1857 - https://archive.org/details/reportofpresiden1857atla",
+       "A&NC Proceedings, 11th annual report, FY to 31 May 1865 - https://archive.org/details/proceedingsofann18641865"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.580755,
+      35.263935
+     ],
+     [
+      -77.5803038,
+      35.2637271
+     ],
+     [
+      -77.5794001,
+      35.2631496
+     ],
+     [
+      -77.577433,
+      35.2615529
+     ],
+     [
+      -77.5759931,
+      35.2602569
+     ],
+     [
+      -77.5568568,
+      35.2427471
+     ],
+     [
+      -77.556221,
+      35.2422252
+     ],
+     [
+      -77.5555002,
+      35.2417704
+     ],
+     [
+      -77.5544552,
+      35.2412814
+     ],
+     [
+      -77.5534773,
+      35.2409696
+     ],
+     [
+      -77.4996168,
+      35.2315861
+     ],
+     [
+      -77.496854,
+      35.2310302
+     ],
+     [
+      -77.437014,
+      35.215991
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic and North Carolina Railroad",
+    "line": "Atlantic and North Carolina: Kinston – Goldsboro",
+    "id": "anc-kinston-goldsboro",
+    "color": "#333980",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 43,
+    "speed_source": "Sourced for the pre-war era: \"for one year before the war we ... ran at an average speed of twenty-seven miles an hour from Goldsboro' to Morehead City with the passenger trains\" (A&NC report FY 1865) = ~43 km/h.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 24.9 mi against the documented 26.8 mi (1952 Guide milepost Kinston 26.8; \"26 miles\" in the FY 1865 report). The trace is ~1.9 mi short, most likely in the Goldsboro and Kinston terminal approaches. , all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 27 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1858,
+      "end": 1865,
+      "headway_min": 1440,
+      "note": "Trains reached Moseley Hall (La Grange) 17 Feb 1858 and \"On the 20th day of April, the Road was opened to Goldsboro'\" (1858 report). The only part of the road the company kept through the Civil War (Confederate side of the lines after New Bern fell, Mar 1862). FY June 1864 - Mar 1865 shows $32,519 \"Passenger\" and $20,220 \"Way Travel\" receipts on these 26 miles, separate from troop and government transport, so this is genuine passenger service; the same report says \"for three years we have run all kind of trains ... from Goldsboro' to Kinston\". Ends Mar 1865, when the US Army took it (\"since the middle of March last\"); the Army ran it as part of the Military Railroad Raleigh - Morehead City until 26 Oct 1865 (military operation, not drawn). 1862-63 rest only on the \"all kind of trains ... for three years\" statement: the STRICT alternative is 1858-1861 plus 1864-1865 (see metadata.not_yet_sourced). headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1858 from the 1858 President's report; wartime passenger receipts (FY 1864-65), the \"three years\" statement and the Mar 1865 end from the FY 1865 report. 1862-63 are not separately sourced. headway_min NOT sourced.",
+       "Report of the President of the A&NC, June 1858 - https://archive.org/details/reportofpresiden1858atla",
+       "A&NC Proceedings, 11th annual report, FY to 31 May 1865 - https://archive.org/details/proceedingsofann18641865"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9847475,
+      35.391145
+     ],
+     [
+      -77.9483402,
+      35.3841578
+     ],
+     [
+      -77.9453862,
+      35.3835607
+     ],
+     [
+      -77.9422593,
+      35.3827673
+     ],
+     [
+      -77.9390578,
+      35.3816831
+     ],
+     [
+      -77.8741848,
+      35.3569871
+     ],
+     [
+      -77.8725782,
+      35.3562863
+     ],
+     [
+      -77.8320263,
+      35.3355208
+     ],
+     [
+      -77.8289732,
+      35.3337446
+     ],
+     [
+      -77.8272178,
+      35.3325413
+     ],
+     [
+      -77.8255566,
+      35.3312742
+     ],
+     [
+      -77.8057504,
+      35.3154236
+     ],
+     [
+      -77.8027624,
+      35.3133943
+     ],
+     [
+      -77.8003726,
+      35.3120376
+     ],
+     [
+      -77.7975805,
+      35.3107126
+     ],
+     [
+      -77.7933354,
+      35.3089989
+     ],
+     [
+      -77.7274368,
+      35.2825151
+     ],
+     [
+      -77.7222379,
+      35.2804426
+     ],
+     [
+      -77.7209671,
+      35.2800224
+     ],
+     [
+      -77.7179334,
+      35.2792408
+     ],
+     [
+      -77.7146338,
+      35.2787205
+     ],
+     [
+      -77.5895878,
+      35.2663111
+     ],
+     [
+      -77.587498,
+      35.2660602
+     ],
+     [
+      -77.5859427,
+      35.2657464
+     ],
+     [
+      -77.5843506,
+      35.2653078
+     ],
+     [
+      -77.5817022,
+      35.2643722
+     ],
+     [
+      -77.580755,
+      35.263935
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic and North Carolina Railroad",
+    "line": "Atlantic and North Carolina: New Bern – Morehead City",
+    "id": "anc-new-bern-morehead-city",
+    "color": "#333980",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 43,
+    "speed_source": "Sourced for the pre-war era: \"for one year before the war we ... ran at an average speed of twenty-seven miles an hour from Goldsboro' to Morehead City with the passenger trains\" (A&NC report FY 1865) = ~43 km/h.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 33.7 mi against the documented ~35.2 mi (1952 Guide New Bern 58.8; Fowler Morehead City 94.0). , all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 25 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1858,
+      "end": 1861,
+      "headway_min": 1440,
+      "note": "Trent River bridge 19 Feb 1858, tracks met 31 May, and \"on the 7th of June, the first train ran through from Goldsboro' to the ocean\"; \"On and after this day a regular passenger train will be run from Morehead City to Goldsboro'\" (1858 report). Morehead City (Shepard's Point) was the company's own deep-water terminal. From Mar 1862 the Union held and ran New Bern - Morehead City as a military road (US Military Railroads to 26 Oct 1865) - no public passenger service found, not drawn. This end is [OPEN]: 1861 is the last CONFIRMED year, not a known end - service probably ran until New Bern fell on 14 Mar 1862, but no source dates it. Do not extend without evidence. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1858 from the 1858 President's report; pre-war passenger operation of the whole road from the FY 1865 report. End 1861 is the last confirmed year [OPEN]. headway_min NOT sourced.",
+       "Report of the President of the A&NC, June 1858 - https://archive.org/details/reportofpresiden1858atla",
+       "A&NC Proceedings, 11th annual report, FY to 31 May 1865 - https://archive.org/details/proceedingsofann18641865"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.041504,
+      35.107045
+     ],
+     [
+      -77.0421089,
+      35.1037859
+     ],
+     [
+      -77.0403695,
+      35.0946633
+     ],
+     [
+      -77.0398162,
+      35.0927573
+     ],
+     [
+      -76.9906829,
+      35.003585
+     ],
+     [
+      -76.9707701,
+      34.9672847
+     ],
+     [
+      -76.926546,
+      34.8862205
+     ],
+     [
+      -76.9219539,
+      34.8793462
+     ],
+     [
+      -76.9149808,
+      34.8692233
+     ],
+     [
+      -76.8978742,
+      34.8439308
+     ],
+     [
+      -76.8730037,
+      34.8070461
+     ],
+     [
+      -76.8433607,
+      34.7628189
+     ],
+     [
+      -76.8412171,
+      34.7598443
+     ],
+     [
+      -76.8387463,
+      34.7570928
+     ],
+     [
+      -76.8364805,
+      34.7550571
+     ],
+     [
+      -76.8354934,
+      34.7542699
+     ],
+     [
+      -76.8336674,
+      34.7529608
+     ],
+     [
+      -76.8314139,
+      34.7515537
+     ],
+     [
+      -76.8295352,
+      34.750542
+     ],
+     [
+      -76.8269518,
+      34.7493302
+     ],
+     [
+      -76.82034,
+      34.7468672
+     ],
+     [
+      -76.762435,
+      34.7258558
+     ],
+     [
+      -76.760169,
+      34.7252596
+     ],
+     [
+      -76.7579457,
+      34.7249097
+     ],
+     [
+      -76.7283171,
+      34.7225655
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic and North Carolina Railroad",
+    "line": "Atlantic and North Carolina: Goldsboro – Morehead City",
+    "id": "anc-goldsboro-morehead-city",
+    "color": "#333980",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not sourced: ~40 km/h assumed (as the NS layer), roughly the pre-war 27 mph figure the A&NC reported for 1860-61.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 91.6 mi against the documented 96.1 mi (ICC valuation via Wikipedia; Fowler 94.0 to Morehead City). The trace is ~4.5 mi (5%) short of the ICC figure, ~1.9 mi of it on Kinston - Goldsboro, most likely in terminal approaches and yard trackage not drawn. , all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 73 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1865,
+      "end": 1881,
+      "headway_min": 1440,
+      "note": "Post-war. The US Army held the road \"until October 26th, 1865 ... Its management was undertaken on that day\", with passenger receipts of $31,965.50 for 26 Oct 1865 - 31 May 1866. Further confirmations: 1867 proceedings (\"Passengers $29,475.62\"); 1875 Official Guide (twelve stops, Fowler); 1881 Guide (Woodbridge, Hollywood). The Mar - Sep 1877 receivership was a court officer for the same company, not a new operator. Ends at the lease to the Midland North Carolina Railway, 1 Jul 1881 (separate feature). headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1865 from the FY 1866 proceedings; 1867 proceedings; Fowler (1875 and 1881 Guide entries); end 1881 at the Midland lease date (ICC valuation via Wikipedia). headway_min NOT sourced.",
+       "A&NC Proceedings, FY to 31 May 1866 - https://archive.org/details/proceedingsofann18651866",
+       "A&NC Proceedings 1867 - https://archive.org/details/proceedingsofann1867atla",
+       "John Fowler, North Carolina Railroads passenger stations, table 77 - https://www.branchline.uk/jfpdf/northcarolinarrs.pdf",
+       "https://en.wikipedia.org/wiki/Atlantic_and_North_Carolina_Railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Atlantic_and_North_Carolina_Railroad"
+      ]
+     },
+     {
+      "start": 1883,
+      "end": 1904,
+      "headway_min": 1440,
+      "note": "The A&NC took its road back after the Midland lease was abrogated (receiver from 19/20 Mar 1883; property returned ~20 May 1883). 1884 proceedings: \"the passenger train from Morehead\", receipts \"For Freight, Passengers, Mail and Express\"; 1904 proceedings: passenger-car accounts and the lease's passenger obligations; Fowler 1902 Guide entry \"Atlantic\" (Morehead Bluffs). A resort line after the Atlantic Hotel opened at Morehead City (1880); summer excursion trains were the company's own. Ends at the lease to the Howland Improvement Co., 1 Sep 1904 (separate feature). Annual proceedings exist for every year 1884-1904; only 1884 and 1904 were read. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1883 from the 1883 proceedings (receivership, return to the A&NC); service from the 1884 and 1904 proceedings and Fowler 1902G; end 1904 at the Howland lease date (ICC via Wikipedia). headway_min NOT sourced.",
+       "A&NC Proceedings 1883 - https://archive.org/details/proceedingsofann1883atla",
+       "A&NC Proceedings 1884 - https://archive.org/details/proceedingsofann1884atla",
+       "A&NC Proceedings 1904 - https://archive.org/details/proceedingsofann1904atla",
+       "John Fowler, North Carolina Railroads passenger stations, table 77 - https://www.branchline.uk/jfpdf/northcarolinarrs.pdf",
+       "https://en.wikipedia.org/wiki/Atlantic_and_North_Carolina_Railroad"
+      ]
+     },
+     {
+      "start": 1939,
+      "end": 1939,
+      "headway_min": 1440,
+      "note": "[ANCHOR] - one year only. After the Norfolk Southern lease ended (A&NC voted 8 Aug 1935 not to re-lease; reincorporated 16 Nov 1935) the state-owned A&NC ran the line itself until leasing it to the Atlantic and East Carolina from 1 Aug 1939. Only the 1939 handover is supported, by Wikipedia's statement that passenger trains passed \"from the Atlantic and North Carolina name to the Atlantic and East Carolina\" name. A&NC passenger service in 1935-38 is very likely (a 1936 Beaufort News mention of \"the Atlantic and North Carolina train\" for the Sunday mail; conductor J. B. Davis, fired after the 1939 takeover for not collecting fares) but no source read proves passengers. Service certainly ran wider both ways; do not widen this anchor without a 1935-38 Guide or newspaper showing an A&NC passenger train. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: secondary only - Wikipedia (A&EC article) for the 1939 handover of passenger trains; Cecelski and a Beaufort News page seen only as a search extract. No primary source was read for 1935-1939.",
+       "https://en.wikipedia.org/wiki/Atlantic_and_East_Carolina_Railway",
+       "https://davidcecelski.com/2025/09/03/on-the-old-mullet-road-1942/",
+       "Beaufort News 20 Feb 1936 p1 (not opened) - https://newspapers.digitalnc.org/lccn/sn91068210/1936-02-20/ed-1/seq-1/",
+       "https://www.american-rails.com/aec.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9847475,
+      35.391145
+     ],
+     [
+      -77.9483402,
+      35.3841578
+     ],
+     [
+      -77.9453862,
+      35.3835607
+     ],
+     [
+      -77.9422593,
+      35.3827673
+     ],
+     [
+      -77.9390578,
+      35.3816831
+     ],
+     [
+      -77.8741848,
+      35.3569871
+     ],
+     [
+      -77.8725782,
+      35.3562863
+     ],
+     [
+      -77.8320263,
+      35.3355208
+     ],
+     [
+      -77.8289732,
+      35.3337446
+     ],
+     [
+      -77.8272178,
+      35.3325413
+     ],
+     [
+      -77.8255566,
+      35.3312742
+     ],
+     [
+      -77.8057504,
+      35.3154236
+     ],
+     [
+      -77.8027624,
+      35.3133943
+     ],
+     [
+      -77.8003726,
+      35.3120376
+     ],
+     [
+      -77.7975805,
+      35.3107126
+     ],
+     [
+      -77.7933354,
+      35.3089989
+     ],
+     [
+      -77.7274368,
+      35.2825151
+     ],
+     [
+      -77.7222379,
+      35.2804426
+     ],
+     [
+      -77.7209671,
+      35.2800224
+     ],
+     [
+      -77.7179334,
+      35.2792408
+     ],
+     [
+      -77.7146338,
+      35.2787205
+     ],
+     [
+      -77.5895878,
+      35.2663111
+     ],
+     [
+      -77.587498,
+      35.2660602
+     ],
+     [
+      -77.5859427,
+      35.2657464
+     ],
+     [
+      -77.5843506,
+      35.2653078
+     ],
+     [
+      -77.5817022,
+      35.2643722
+     ],
+     [
+      -77.5803038,
+      35.2637271
+     ],
+     [
+      -77.5794001,
+      35.2631496
+     ],
+     [
+      -77.577433,
+      35.2615529
+     ],
+     [
+      -77.5759931,
+      35.2602569
+     ],
+     [
+      -77.5568568,
+      35.2427471
+     ],
+     [
+      -77.556221,
+      35.2422252
+     ],
+     [
+      -77.5555002,
+      35.2417704
+     ],
+     [
+      -77.5544552,
+      35.2412814
+     ],
+     [
+      -77.5534773,
+      35.2409696
+     ],
+     [
+      -77.4996168,
+      35.2315861
+     ],
+     [
+      -77.496854,
+      35.2310302
+     ],
+     [
+      -77.3512229,
+      35.1944293
+     ],
+     [
+      -77.2652381,
+      35.1726663
+     ],
+     [
+      -77.1720192,
+      35.1490197
+     ],
+     [
+      -77.0678899,
+      35.1225046
+     ],
+     [
+      -77.0452817,
+      35.1167299
+     ],
+     [
+      -77.0447388,
+      35.1165784
+     ],
+     [
+      -77.0438022,
+      35.1161699
+     ],
+     [
+      -77.0433275,
+      35.1158755
+     ],
+     [
+      -77.0427997,
+      35.1153673
+     ],
+     [
+      -77.0406734,
+      35.1128064
+     ],
+     [
+      -77.0405562,
+      35.1124643
+     ],
+     [
+      -77.040565,
+      35.1120995
+     ],
+     [
+      -77.0421089,
+      35.1037859
+     ],
+     [
+      -77.0403695,
+      35.0946633
+     ],
+     [
+      -77.0398162,
+      35.0927573
+     ],
+     [
+      -76.9906829,
+      35.003585
+     ],
+     [
+      -76.9707701,
+      34.9672847
+     ],
+     [
+      -76.926546,
+      34.8862205
+     ],
+     [
+      -76.9219539,
+      34.8793462
+     ],
+     [
+      -76.9149808,
+      34.8692233
+     ],
+     [
+      -76.8978742,
+      34.8439308
+     ],
+     [
+      -76.8730037,
+      34.8070461
+     ],
+     [
+      -76.8433607,
+      34.7628189
+     ],
+     [
+      -76.8412171,
+      34.7598443
+     ],
+     [
+      -76.8387463,
+      34.7570928
+     ],
+     [
+      -76.8364805,
+      34.7550571
+     ],
+     [
+      -76.8354934,
+      34.7542699
+     ],
+     [
+      -76.8336674,
+      34.7529608
+     ],
+     [
+      -76.8314139,
+      34.7515537
+     ],
+     [
+      -76.8295352,
+      34.750542
+     ],
+     [
+      -76.8269518,
+      34.7493302
+     ],
+     [
+      -76.82034,
+      34.7468672
+     ],
+     [
+      -76.762435,
+      34.7258558
+     ],
+     [
+      -76.760169,
+      34.7252596
+     ],
+     [
+      -76.7579457,
+      34.7249097
+     ],
+     [
+      -76.7283171,
+      34.7225655
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Midland North Carolina Railway",
+    "line": "Midland North Carolina: Goldsboro – Morehead City",
+    "id": "midland-nc-goldsboro-morehead-city",
+    "color": "#807333",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not sourced: ~40 km/h assumed (as the NS layer), roughly the pre-war 27 mph figure the A&NC reported for 1860-61.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 91.6 mi against the documented 96.1 mi (ICC valuation via Wikipedia). , all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 73 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1881,
+      "end": 1883,
+      "headway_min": 1440,
+      "note": "Lessee era (Rule 4 split, identical geometry to the A&NC features). The Midland North Carolina Railway (W. J. Best, which also built the Smithfield & Goldsboro) leased the A&NC from 1 Jul 1881 and ran its trains: the 1882 A&NC stockholders resolved that the Midland \"has operated the line ... [freight] and passenger, [and] has greatly facilitated business, travel\". Fowler's 1882 Guide entries (Andrews, San Souci Hotel) fall in this era. Lease abrogated: receiver from 19 Mar 1883 (company report; ICC 20 Mar), property returned to the A&NC ~20 May 1883. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: lease start 1 Jul 1881 (ICC via Wikipedia); Midland operation of passenger trains from the 1882 proceedings; end 1883 from the 1883 proceedings. headway_min NOT sourced.",
+       "A&NC Proceedings 1882 - https://archive.org/details/proceedingsofann1882atla",
+       "A&NC Proceedings 1883 - https://archive.org/details/proceedingsofann1883atla",
+       "https://en.wikipedia.org/wiki/Atlantic_and_North_Carolina_Railroad",
+       "John Fowler, North Carolina Railroads passenger stations, table 77 - https://www.branchline.uk/jfpdf/northcarolinarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9847475,
+      35.391145
+     ],
+     [
+      -77.9483402,
+      35.3841578
+     ],
+     [
+      -77.9453862,
+      35.3835607
+     ],
+     [
+      -77.9422593,
+      35.3827673
+     ],
+     [
+      -77.9390578,
+      35.3816831
+     ],
+     [
+      -77.8741848,
+      35.3569871
+     ],
+     [
+      -77.8725782,
+      35.3562863
+     ],
+     [
+      -77.8320263,
+      35.3355208
+     ],
+     [
+      -77.8289732,
+      35.3337446
+     ],
+     [
+      -77.8272178,
+      35.3325413
+     ],
+     [
+      -77.8255566,
+      35.3312742
+     ],
+     [
+      -77.8057504,
+      35.3154236
+     ],
+     [
+      -77.8027624,
+      35.3133943
+     ],
+     [
+      -77.8003726,
+      35.3120376
+     ],
+     [
+      -77.7975805,
+      35.3107126
+     ],
+     [
+      -77.7933354,
+      35.3089989
+     ],
+     [
+      -77.7274368,
+      35.2825151
+     ],
+     [
+      -77.7222379,
+      35.2804426
+     ],
+     [
+      -77.7209671,
+      35.2800224
+     ],
+     [
+      -77.7179334,
+      35.2792408
+     ],
+     [
+      -77.7146338,
+      35.2787205
+     ],
+     [
+      -77.5895878,
+      35.2663111
+     ],
+     [
+      -77.587498,
+      35.2660602
+     ],
+     [
+      -77.5859427,
+      35.2657464
+     ],
+     [
+      -77.5843506,
+      35.2653078
+     ],
+     [
+      -77.5817022,
+      35.2643722
+     ],
+     [
+      -77.5803038,
+      35.2637271
+     ],
+     [
+      -77.5794001,
+      35.2631496
+     ],
+     [
+      -77.577433,
+      35.2615529
+     ],
+     [
+      -77.5759931,
+      35.2602569
+     ],
+     [
+      -77.5568568,
+      35.2427471
+     ],
+     [
+      -77.556221,
+      35.2422252
+     ],
+     [
+      -77.5555002,
+      35.2417704
+     ],
+     [
+      -77.5544552,
+      35.2412814
+     ],
+     [
+      -77.5534773,
+      35.2409696
+     ],
+     [
+      -77.4996168,
+      35.2315861
+     ],
+     [
+      -77.496854,
+      35.2310302
+     ],
+     [
+      -77.3512229,
+      35.1944293
+     ],
+     [
+      -77.2652381,
+      35.1726663
+     ],
+     [
+      -77.1720192,
+      35.1490197
+     ],
+     [
+      -77.0678899,
+      35.1225046
+     ],
+     [
+      -77.0452817,
+      35.1167299
+     ],
+     [
+      -77.0447388,
+      35.1165784
+     ],
+     [
+      -77.0438022,
+      35.1161699
+     ],
+     [
+      -77.0433275,
+      35.1158755
+     ],
+     [
+      -77.0427997,
+      35.1153673
+     ],
+     [
+      -77.0406734,
+      35.1128064
+     ],
+     [
+      -77.0405562,
+      35.1124643
+     ],
+     [
+      -77.040565,
+      35.1120995
+     ],
+     [
+      -77.0421089,
+      35.1037859
+     ],
+     [
+      -77.0403695,
+      35.0946633
+     ],
+     [
+      -77.0398162,
+      35.0927573
+     ],
+     [
+      -76.9906829,
+      35.003585
+     ],
+     [
+      -76.9707701,
+      34.9672847
+     ],
+     [
+      -76.926546,
+      34.8862205
+     ],
+     [
+      -76.9219539,
+      34.8793462
+     ],
+     [
+      -76.9149808,
+      34.8692233
+     ],
+     [
+      -76.8978742,
+      34.8439308
+     ],
+     [
+      -76.8730037,
+      34.8070461
+     ],
+     [
+      -76.8433607,
+      34.7628189
+     ],
+     [
+      -76.8412171,
+      34.7598443
+     ],
+     [
+      -76.8387463,
+      34.7570928
+     ],
+     [
+      -76.8364805,
+      34.7550571
+     ],
+     [
+      -76.8354934,
+      34.7542699
+     ],
+     [
+      -76.8336674,
+      34.7529608
+     ],
+     [
+      -76.8314139,
+      34.7515537
+     ],
+     [
+      -76.8295352,
+      34.750542
+     ],
+     [
+      -76.8269518,
+      34.7493302
+     ],
+     [
+      -76.82034,
+      34.7468672
+     ],
+     [
+      -76.762435,
+      34.7258558
+     ],
+     [
+      -76.760169,
+      34.7252596
+     ],
+     [
+      -76.7579457,
+      34.7249097
+     ],
+     [
+      -76.7283171,
+      34.7225655
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Howland Improvement Company",
+    "line": "Howland Improvement (A&NC Company): Goldsboro – Morehead City",
+    "id": "howland-anc-company-goldsboro-morehead-city",
+    "color": "#7DB247",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not sourced: ~40 km/h assumed (as the NS layer), roughly the pre-war 27 mph figure the A&NC reported for 1860-61.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 91.6 mi against the documented 96.1 mi (ICC valuation via Wikipedia). , all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 73 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1906,
+      "headway_min": 1440,
+      "note": "Lessee era (Rule 4 split, identical geometry). Leased 1 Sep 1904 \"for 91 years and 4 months\" to the Howland Improvement Co. (R. S. Howland, Asheville), which operated it as \"the Atlantic & North Carolina Company\" (FY 1906 report) - a lessee corporation distinct from the lessor Atlantic and North Carolina Rail Road Co. The company string is \"Howland Improvement Company\" deliberately, so that Rule 4's name normalisation does not merge the lessee with the lessor; the label carries the trading name. The lessee bought six new passenger coaches (FY 1905) and built new passenger depots at Kinston, Morehead City and Dover (FY 1906); Fowler 1905G (Mansfield) and 1906G (Neuse Crossing). Absorbed into the Norfolk & Southern consolidation, Nov 1906 (per the NS research; exact month not read in a primary source); by FY to Aug 1907 the road was \"operated and known as the Norfolk & Southern Railway\". 1904 is the lease date on an uninterrupted service. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: lease 1 Sep 1904 (ICC via Wikipedia); 1905 and 1906 operation from the FY 1905 and FY 1906 proceedings; NS operation by FY 1907 from the FY 1907 proceedings. Nov 1906 hand-over month not primary-sourced. headway_min NOT sourced.",
+       "A&NC Proceedings 1905 - https://archive.org/details/proceedingsofann1905atla",
+       "A&NC Proceedings, 52nd report, FY to 1 Sep 1906 - https://archive.org/details/proceedingsofann1906atla",
+       "A&NC Proceedings, 53rd report, FY to 1 Aug 1907 - https://archive.org/details/proceedingsofann1907atla",
+       "https://en.wikipedia.org/wiki/Atlantic_and_North_Carolina_Railroad",
+       "John Fowler, North Carolina Railroads passenger stations, table 77 - https://www.branchline.uk/jfpdf/northcarolinarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9847475,
+      35.391145
+     ],
+     [
+      -77.9483402,
+      35.3841578
+     ],
+     [
+      -77.9453862,
+      35.3835607
+     ],
+     [
+      -77.9422593,
+      35.3827673
+     ],
+     [
+      -77.9390578,
+      35.3816831
+     ],
+     [
+      -77.8741848,
+      35.3569871
+     ],
+     [
+      -77.8725782,
+      35.3562863
+     ],
+     [
+      -77.8320263,
+      35.3355208
+     ],
+     [
+      -77.8289732,
+      35.3337446
+     ],
+     [
+      -77.8272178,
+      35.3325413
+     ],
+     [
+      -77.8255566,
+      35.3312742
+     ],
+     [
+      -77.8057504,
+      35.3154236
+     ],
+     [
+      -77.8027624,
+      35.3133943
+     ],
+     [
+      -77.8003726,
+      35.3120376
+     ],
+     [
+      -77.7975805,
+      35.3107126
+     ],
+     [
+      -77.7933354,
+      35.3089989
+     ],
+     [
+      -77.7274368,
+      35.2825151
+     ],
+     [
+      -77.7222379,
+      35.2804426
+     ],
+     [
+      -77.7209671,
+      35.2800224
+     ],
+     [
+      -77.7179334,
+      35.2792408
+     ],
+     [
+      -77.7146338,
+      35.2787205
+     ],
+     [
+      -77.5895878,
+      35.2663111
+     ],
+     [
+      -77.587498,
+      35.2660602
+     ],
+     [
+      -77.5859427,
+      35.2657464
+     ],
+     [
+      -77.5843506,
+      35.2653078
+     ],
+     [
+      -77.5817022,
+      35.2643722
+     ],
+     [
+      -77.5803038,
+      35.2637271
+     ],
+     [
+      -77.5794001,
+      35.2631496
+     ],
+     [
+      -77.577433,
+      35.2615529
+     ],
+     [
+      -77.5759931,
+      35.2602569
+     ],
+     [
+      -77.5568568,
+      35.2427471
+     ],
+     [
+      -77.556221,
+      35.2422252
+     ],
+     [
+      -77.5555002,
+      35.2417704
+     ],
+     [
+      -77.5544552,
+      35.2412814
+     ],
+     [
+      -77.5534773,
+      35.2409696
+     ],
+     [
+      -77.4996168,
+      35.2315861
+     ],
+     [
+      -77.496854,
+      35.2310302
+     ],
+     [
+      -77.3512229,
+      35.1944293
+     ],
+     [
+      -77.2652381,
+      35.1726663
+     ],
+     [
+      -77.1720192,
+      35.1490197
+     ],
+     [
+      -77.0678899,
+      35.1225046
+     ],
+     [
+      -77.0452817,
+      35.1167299
+     ],
+     [
+      -77.0447388,
+      35.1165784
+     ],
+     [
+      -77.0438022,
+      35.1161699
+     ],
+     [
+      -77.0433275,
+      35.1158755
+     ],
+     [
+      -77.0427997,
+      35.1153673
+     ],
+     [
+      -77.0406734,
+      35.1128064
+     ],
+     [
+      -77.0405562,
+      35.1124643
+     ],
+     [
+      -77.040565,
+      35.1120995
+     ],
+     [
+      -77.0421089,
+      35.1037859
+     ],
+     [
+      -77.0403695,
+      35.0946633
+     ],
+     [
+      -77.0398162,
+      35.0927573
+     ],
+     [
+      -76.9906829,
+      35.003585
+     ],
+     [
+      -76.9707701,
+      34.9672847
+     ],
+     [
+      -76.926546,
+      34.8862205
+     ],
+     [
+      -76.9219539,
+      34.8793462
+     ],
+     [
+      -76.9149808,
+      34.8692233
+     ],
+     [
+      -76.8978742,
+      34.8439308
+     ],
+     [
+      -76.8730037,
+      34.8070461
+     ],
+     [
+      -76.8433607,
+      34.7628189
+     ],
+     [
+      -76.8412171,
+      34.7598443
+     ],
+     [
+      -76.8387463,
+      34.7570928
+     ],
+     [
+      -76.8364805,
+      34.7550571
+     ],
+     [
+      -76.8354934,
+      34.7542699
+     ],
+     [
+      -76.8336674,
+      34.7529608
+     ],
+     [
+      -76.8314139,
+      34.7515537
+     ],
+     [
+      -76.8295352,
+      34.750542
+     ],
+     [
+      -76.8269518,
+      34.7493302
+     ],
+     [
+      -76.82034,
+      34.7468672
+     ],
+     [
+      -76.762435,
+      34.7258558
+     ],
+     [
+      -76.760169,
+      34.7252596
+     ],
+     [
+      -76.7579457,
+      34.7249097
+     ],
+     [
+      -76.7283171,
+      34.7225655
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Atlantic and East Carolina Railway",
+    "line": "Atlantic and East Carolina: Goldsboro – Morehead City",
+    "id": "aec-goldsboro-morehead-city",
+    "color": "#B23693",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "ESTIMATE, not sourced: ~40 km/h assumed (as the NS layer), roughly the pre-war 27 mph figure the A&NC reported for 1860-61.",
+    "geometry_source": "Re-traced 2026-11-04 with opstrace.py from OpenStreetMap (Overpass, maps.mail.ru mirror): 148 ways tagged old_railway_operator='Atlantic and East Carolina' (the main line is named 'Raleigh East District (EC Line)', operator Norfolk Southern) plus the cached railway degree tiles; waypoints Goldsboro Union Station, La Grange, Kinston, Dover, Cove City, New Bern, James City, Havelock, Newport, Morehead City; 91.6 mi, all of it on the A&EC-tagged ways; Douglas-Peucker 5 m then trim_reversals (73 vertices). Cut at Kinston, Dover and New Bern by projecting the Nominatim town point (each checked type=administrative and named for the right town and county; 162 m, 33 m and 150 m off the line) onto the line.",
+    "geometry_quality": "Traced from OpenStreetMap: 91.6 mi against the documented ~95-96 mi (1952 Guide table; ICC 96.1; Fowler 94.0). The surviving alignment is this era's own in most places, but not checked station by station. , all on ways tagged old_railway_operator='Atlantic and East Carolina'. No straight-line leg: 73 vertices; the long runs between vertices (up to 13.8 km, e.g. Dover - Cove City - New Bern) are the line's genuinely straight tangents in OSM, with every raw OSM node within 5 m of the drawn line. Drawn on the 20th-century alignment (the surviving EC Line, OSM ways tagged old_railway_operator='Atlantic and East Carolina'), which is LATER than this feature's era: Goldsboro is reached at the Union Station site (opened 1907, replacing the first Union Depot at Center/Walnut Sts), and the Kinston and New Bern station approaches and the Morehead City terminal area may differ locally from the 1850s-1900s track.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1950,
+      "headway_min": 1440,
+      "note": "Atlantic and East Carolina Railway (chartered 19 Jun 1939; lease effective 1 Aug 1939; HQ Kinston), passenger trains continuing across the change from the A&NC. One train a day each way, Goldsboro Union Station - Morehead City, timed to connect at Goldsboro with a Southern overnight train (Wikipedia, citing the Jan 1950 Official Guide). Wartime traffic heavy (Camp Lejeune, Cherry Point MCAS); Cherry Point station in the 1947 Guide and Piney Grove / Edgewater in the 1949 working timetable (Fowler). The railroad petitioned to drop the train in June 1949; the last passenger train left Morehead City at 4 p.m. on 31 Mar 1950 (Carteret County News-Times). Freight and express only thereafter (Guide table dated 30 Apr 1951) - not drawn; Southern Railway stock control 1957 came after passengers had gone. CONFLICT: Wikipedia (\"would end by 1951\") and american-rails (\"1951\") vs the contemporary 1950 headline - the newspaper is preferred and the 1951 Guide agrees. headway_min is an ESTIMATE (one train each way a day), not sourced.",
+      "sources": [
+       "Segment-level: start 1939 from the lease date (Wikipedia); Jan 1950 Guide via Wikipedia; Fowler 1947G and 1949w; end 1950 from the Carteret County News-Times headline (seen as search extracts only) and the Apr 1951 freight-only Guide table. headway_min NOT sourced.",
+       "Carteret County News-Times 31 Mar 1950 p1, \"Last Passenger Train Out Of Morehead City Leaves Today\" (read as search extract only) - https://newspapers.digitalnc.org/lccn/sn94058246/1950-03-31/ed-1/seq-1/",
+       "Carteret County News-Times 6 Jun 1958 p12 (\"the passenger run was discontinued March 31, 1950\"; search extract only) - https://newspapers.digitalnc.org/lccn/sn94058246/1958-06-06/ed-1/seq-12/",
+       "Carteret County News-Times 28 Jun 1949 p2 (railroad proposes to stop the passenger train; search extract only) - https://newspapers.digitalnc.org/lccn/sn94058246/1949-06-28/ed-1/seq-2/",
+       "Official Guide of the Railways, Feb 1952, A&EC table dated 30 Apr 1951 (\"Freight and Express Service only\") and index daggers - https://archive.org/details/the-official-guide-of-the-railways-images",
+       "https://en.wikipedia.org/wiki/Atlantic_and_East_Carolina_Railway",
+       "https://en.wikipedia.org/wiki/Goldsboro_Union_Station",
+       "John Fowler, North Carolina Railroads passenger stations, table 77 - https://www.branchline.uk/jfpdf/northcarolinarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9847475,
+      35.391145
+     ],
+     [
+      -77.9483402,
+      35.3841578
+     ],
+     [
+      -77.9453862,
+      35.3835607
+     ],
+     [
+      -77.9422593,
+      35.3827673
+     ],
+     [
+      -77.9390578,
+      35.3816831
+     ],
+     [
+      -77.8741848,
+      35.3569871
+     ],
+     [
+      -77.8725782,
+      35.3562863
+     ],
+     [
+      -77.8320263,
+      35.3355208
+     ],
+     [
+      -77.8289732,
+      35.3337446
+     ],
+     [
+      -77.8272178,
+      35.3325413
+     ],
+     [
+      -77.8255566,
+      35.3312742
+     ],
+     [
+      -77.8057504,
+      35.3154236
+     ],
+     [
+      -77.8027624,
+      35.3133943
+     ],
+     [
+      -77.8003726,
+      35.3120376
+     ],
+     [
+      -77.7975805,
+      35.3107126
+     ],
+     [
+      -77.7933354,
+      35.3089989
+     ],
+     [
+      -77.7274368,
+      35.2825151
+     ],
+     [
+      -77.7222379,
+      35.2804426
+     ],
+     [
+      -77.7209671,
+      35.2800224
+     ],
+     [
+      -77.7179334,
+      35.2792408
+     ],
+     [
+      -77.7146338,
+      35.2787205
+     ],
+     [
+      -77.5895878,
+      35.2663111
+     ],
+     [
+      -77.587498,
+      35.2660602
+     ],
+     [
+      -77.5859427,
+      35.2657464
+     ],
+     [
+      -77.5843506,
+      35.2653078
+     ],
+     [
+      -77.5817022,
+      35.2643722
+     ],
+     [
+      -77.5803038,
+      35.2637271
+     ],
+     [
+      -77.5794001,
+      35.2631496
+     ],
+     [
+      -77.577433,
+      35.2615529
+     ],
+     [
+      -77.5759931,
+      35.2602569
+     ],
+     [
+      -77.5568568,
+      35.2427471
+     ],
+     [
+      -77.556221,
+      35.2422252
+     ],
+     [
+      -77.5555002,
+      35.2417704
+     ],
+     [
+      -77.5544552,
+      35.2412814
+     ],
+     [
+      -77.5534773,
+      35.2409696
+     ],
+     [
+      -77.4996168,
+      35.2315861
+     ],
+     [
+      -77.496854,
+      35.2310302
+     ],
+     [
+      -77.3512229,
+      35.1944293
+     ],
+     [
+      -77.2652381,
+      35.1726663
+     ],
+     [
+      -77.1720192,
+      35.1490197
+     ],
+     [
+      -77.0678899,
+      35.1225046
+     ],
+     [
+      -77.0452817,
+      35.1167299
+     ],
+     [
+      -77.0447388,
+      35.1165784
+     ],
+     [
+      -77.0438022,
+      35.1161699
+     ],
+     [
+      -77.0433275,
+      35.1158755
+     ],
+     [
+      -77.0427997,
+      35.1153673
+     ],
+     [
+      -77.0406734,
+      35.1128064
+     ],
+     [
+      -77.0405562,
+      35.1124643
+     ],
+     [
+      -77.040565,
+      35.1120995
+     ],
+     [
+      -77.0421089,
+      35.1037859
+     ],
+     [
+      -77.0403695,
+      35.0946633
+     ],
+     [
+      -77.0398162,
+      35.0927573
+     ],
+     [
+      -76.9906829,
+      35.003585
+     ],
+     [
+      -76.9707701,
+      34.9672847
+     ],
+     [
+      -76.926546,
+      34.8862205
+     ],
+     [
+      -76.9219539,
+      34.8793462
+     ],
+     [
+      -76.9149808,
+      34.8692233
+     ],
+     [
+      -76.8978742,
+      34.8439308
+     ],
+     [
+      -76.8730037,
+      34.8070461
+     ],
+     [
+      -76.8433607,
+      34.7628189
+     ],
+     [
+      -76.8412171,
+      34.7598443
+     ],
+     [
+      -76.8387463,
+      34.7570928
+     ],
+     [
+      -76.8364805,
+      34.7550571
+     ],
+     [
+      -76.8354934,
+      34.7542699
+     ],
+     [
+      -76.8336674,
+      34.7529608
+     ],
+     [
+      -76.8314139,
+      34.7515537
+     ],
+     [
+      -76.8295352,
+      34.750542
+     ],
+     [
+      -76.8269518,
+      34.7493302
+     ],
+     [
+      -76.82034,
+      34.7468672
+     ],
+     [
+      -76.762435,
+      34.7258558
+     ],
+     [
+      -76.760169,
+      34.7252596
+     ],
+     [
+      -76.7579457,
+      34.7249097
+     ],
+     [
+      -76.7283171,
+      34.7225655
+     ]
+    ]
+   }
+  }
+ ]
+}
