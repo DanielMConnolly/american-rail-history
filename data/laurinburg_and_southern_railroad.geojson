@@ -1,0 +1,262 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Laurinburg and Southern Railroad (chartered 1909 by Laurinburg mill and merchant interests; John F. McNair president, James A. Jones general manager) built 18 mi Johns (ACL connection) - Laurinburg (SAL connection) - Wagram, opening to freight in July 1909 and to passengers 11 June 1910, and bought the 12-mi Wagram - Raeford line from the Aberdeen and Rockfish on 12 Nov 1921. Passenger traffic (a mixed train) was discontinued by NC Corporation Commission order in 1923-24; the company then ran a Laurinburg - Raeford highway bus (franchise listed July 1928). Freight continues to this day as the LRS. Drawn: Johns - Wagram 1910-1923 only. One company throughout; no Rule 4 split.",
+  "sources": [
+   "https://www.ncpedia.org/laurinburg-southern-railroad",
+   "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_laurinburg_southern.html",
+   "https://american-rails.com/laurinburg.html",
+   "NC Corporation Commission annual/biennial reports (archive.org: annualreportofco1910nort ... annualreportofco1916nort, reportofcorporat1918nort ... reportofcorporat1924nort), Laurinburg and Southern returns: Johns - Wagram 18 mi, passenger-train revenue in every return FY1911 - CY1923; 1923-24 biennium 'Application for discontinuance of passenger traffic. Granted.'",
+   "Official Guide of the Railways, Feb 1952 issue, Laurinburg and Southern entry ('Operated for freight service only') and station index",
+   "https://www.branchline.uk/jfpdf/northcarolinarrs.pdf (tables 74B, 99)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py; see the feature's geometry_source."
+  ],
+  "omitted": "Wagram - Raeford (12 mi, ex-Aberdeen and Rockfish, owned by the L&S from 12 Nov 1921) is NOT drawn: the only evidence of L&S passenger trains on it is road-wide revenue that roughly doubled after the purchase, which does not show which stations were served. Omitted rather than invented (research/branches/laurinburg_and_southern_railroad.txt block [2], drawable: NONE). The Aberdeen and Rockfish layer does not draw it either.",
+  "not_yet_sourced": [
+   "Whether L&S passenger (mixed) trains ever ran Wagram - Raeford, 1921-1924. Settles whether Wagram - Raeford can be drawn.",
+   "The Hoke County Journal (Raeford) of 19 June 1924, p.5, said by a search-engine summary to print an L&S schedule 'effective December 9, 1923' with daily trains Johns - Laurinburg - Wagram - Raeford (also hits 6 Dec 1923 p.1 and 17 Jan 1924 p.1). UNREAD - newspapers.digitalnc.org refused connections. If it is real and current in June 1924, Johns - Wagram extends to 1924 and Wagram - Raeford gains its first confirmed year(s).",
+   "Exact date of the passenger discontinuance: the NCCC 1923-24 order is undated. The drawn end is the last confirmed year (1923), not a known end.",
+   "What the 1924-1931 'passenger' revenue and revenue-passenger counts in the NCCC returns were: a highway bus that replaced the trains (bus franchise by July 1928; 1930-31 line headed 'passenger train service and Highway Bus') or unadvertised mixed-train / caboose riding. Not drawn under omit-rather-than-invent.",
+   "The nature of the 1910 'through service with the Atlantic Coast Line' (NCpedia): through cars or only a connection at Johns.",
+   "Any timetable for any year: headway_min and avg_speed_kmh are estimates."
+  ],
+  "freight_only_audit": "Built 2026-11-05 to Rule 1: nothing drawn after 1923. Not drawn: the whole road after the 1923-24 passenger discontinuance (freight only; 'Operated for freight service only' in the Feb 1952 Guide - 1951 is NOT an end year), the Laurinburg - Raeford highway bus (a motor coach), the 'L Line' and industrial sidings at Laurinburg, and the L&S holding company's later freight short lines."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Laurinburg and Southern",
+    "line": "Laurinburg and Southern: Johns \u2013 Wagram",
+    "id": "laurinburg-and-southern-johns-wagram",
+    "color": "#5C7A29",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 18-mile steam short line worked by a mixed train; no timetable running time has been seen for 1910-1923. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (Operator subclassed to also match operator/name = 'Laurinburg and Southern Railroad'). The line survives in OSM as the LRS: live track (railway=rail) Johns - Laurinburg - north of Laurinburg and embargoed track (railway=disused) on to Wagram, tagged old_railway_operator='Laurinburg and Southern', operator/name='Laurinburg and Southern Railroad' (ways 169448670, 1258939412, 1107669931, 1107669945-1107669968, 1119068231-1119068242, 1258942346, 16768337, 1029357092, 1029357091, 1119068244, 1119068246). Way 169448670 at the Johns end carries old_railway_operator='ACL' but operator/name 'Laurinburg and Southern Railroad'. The trace ran 17.0 mi on L&S-tagged ways and 0 mi on any other operator (no CSX ex-ACL or ex-SAL track). The 'Laurinburg and Southern Railroad (L Line)' ways (operator tag only, an eastward spur at Laurinburg) were deliberately excluded. Spellings 'L&S' and 'LRS' in old_railway_operator return nothing in OSM. OSM abandoned/rail-trail ways and OpenHistoricalMap were queried for 34.65,-79.50,34.92,-79.33: OHM has no railway ways there. Waypoints (Nominatim, each type checked): Johns (hamlet, Scotland County; 0.6 km from the drawn south end, which is the L&S's own south end at the ACL/CSX main), Laurinburg (town; 0.5 km), Wagram (town; 0.1 km). Simplified with Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Johns - Wagram: traced 17.0 mi on the L&S's own surviving OSM track against a documented 18.00 mi (every NCCC return 1910-1919) - 5.6% short. Chainage at Laurinburg 5.9 mi vs c.6 (Fowler mileposts Johns 30 / Laurinburg 24 from Raeford). No approximated (straight-line) legs. The south end stops where the L&S track meets the ex-ACL (CSX South End Subdivision) main near Johns; the shortfall is probably the original Johns station/wye trackage and any later realignment, not a missing leg. ERA CAVEAT: the drawn alignment is the present-day (2020s OSM) LRS track, live to north of Laurinburg and disused beyond; it follows the 1909-10 right-of-way as far as is known, but any yard, siding or minor realignment in Laurinburg since 1923 has not been checked against a period map. The line north of Wagram to Raeford (ex-Aberdeen and Rockfish, L&S from 1921) is in OSM but is deliberately not drawn - see metadata.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1923,
+      "headway_min": 1440,
+      "note": "Passenger service began 11 June 1910 (NCpedia); the NC Corporation Commission returns bracket it (no passenger revenue line in the return to 30 June 1910, $2,017.99 passenger-train revenue in FY1911) and show passenger-train revenue every year through CY1923 ($1,875.02 in 1923, more than 1922 - a full or near-full year of service). The FY1912 return labels that revenue 'mixed', so the passenger service was a mixed train, with through service via the Atlantic Coast Line at Johns from later in 1910 (NCpedia; whether through cars or only a connection is not established). END: the Commission granted the road's 'application for discontinuance of passenger traffic' in its 1923-1924 biennium, entry undated - so the end bracket is 1923-1924. 1923 is the last CONFIRMED year; 1924 is withheld because the only evidence for it (a Hoke County Journal, Raeford, 19 June 1924 L&S schedule 'effective December 9, 1923', known only from a search-engine summary) has not been read. Do not extend without evidence. Passenger revenue after 1923 is not counted as rail: from at least July 1928 the company held a Laurinburg - Raeford highway-bus franchise, and its 1930-31 return heads the line 'passenger train service and Highway Bus'. Freight continued: 'Operated for freight service only' in the Feb 1952 Official Guide; the road is still the LRS freight short line (Gulf & Ohio since 1994). headway_min 1440 (one round trip a day) is an ESTIMATE - no timetable has been seen; the payrolls show one engine crew in most years, consistent with a single daily mixed train.",
+      "sources": [
+       "Segment-level: start 11 June 1910 from NCpedia, corroborated by the NCCC returns (no passenger revenue to 30 June 1910, revenue FY1911 onward); end 1923 from the NCCC CY1923 return (passenger-train revenue) and the 1923-24 biennial report's order granting discontinuance of passenger traffic (undated). headway_min is an estimate, not sourced.",
+       "https://www.ncpedia.org/laurinburg-southern-railroad",
+       "NC Corporation Commission annual/biennial reports (archive.org: annualreportofco1910nort ... annualreportofco1916nort, reportofcorporat1918nort ... reportofcorporat1924nort), Laurinburg and Southern returns: Johns - Wagram 18 mi, passenger-train revenue in every return FY1911 - CY1923; 1923-24 biennium 'Application for discontinuance of passenger traffic. Granted.'",
+       "https://www.carolana.com/NC/Transportation/railroads/nc_rrs_laurinburg_southern.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.437901,
+      34.703049
+     ],
+     [
+      -79.435911,
+      34.703833
+     ],
+     [
+      -79.434939,
+      34.704496
+     ],
+     [
+      -79.43402,
+      34.705618
+     ],
+     [
+      -79.433473,
+      34.707253
+     ],
+     [
+      -79.429459,
+      34.723451
+     ],
+     [
+      -79.429155,
+      34.725173
+     ],
+     [
+      -79.42916,
+      34.72804
+     ],
+     [
+      -79.430368,
+      34.733153
+     ],
+     [
+      -79.439108,
+      34.766479
+     ],
+     [
+      -79.439437,
+      34.767315
+     ],
+     [
+      -79.440133,
+      34.768098
+     ],
+     [
+      -79.4409,
+      34.768568
+     ],
+     [
+      -79.447829,
+      34.770825
+     ],
+     [
+      -79.451494,
+      34.772758
+     ],
+     [
+      -79.453241,
+      34.77433
+     ],
+     [
+      -79.455697,
+      34.775453
+     ],
+     [
+      -79.458314,
+      34.777331
+     ],
+     [
+      -79.46073,
+      34.778719
+     ],
+     [
+      -79.463561,
+      34.78075
+     ],
+     [
+      -79.464258,
+      34.781684
+     ],
+     [
+      -79.464487,
+      34.782473
+     ],
+     [
+      -79.464379,
+      34.783417
+     ],
+     [
+      -79.462302,
+      34.788249
+     ],
+     [
+      -79.461945,
+      34.789409
+     ],
+     [
+      -79.461927,
+      34.790587
+     ],
+     [
+      -79.462399,
+      34.795406
+     ],
+     [
+      -79.462139,
+      34.796861
+     ],
+     [
+      -79.461539,
+      34.797827
+     ],
+     [
+      -79.460865,
+      34.79847
+     ],
+     [
+      -79.449812,
+      34.805991
+     ],
+     [
+      -79.44842,
+      34.807087
+     ],
+     [
+      -79.4444,
+      34.810885
+     ],
+     [
+      -79.443324,
+      34.812525
+     ],
+     [
+      -79.442766,
+      34.814137
+     ],
+     [
+      -79.440981,
+      34.826063
+     ],
+     [
+      -79.441159,
+      34.82779
+     ],
+     [
+      -79.442621,
+      34.833144
+     ],
+     [
+      -79.442582,
+      34.834528
+     ],
+     [
+      -79.433258,
+      34.856755
+     ],
+     [
+      -79.432692,
+      34.857727
+     ],
+     [
+      -79.431524,
+      34.858944
+     ],
+     [
+      -79.408632,
+      34.880518
+     ],
+     [
+      -79.407503,
+      34.88125
+     ],
+     [
+      -79.406466,
+      34.881725
+     ],
+     [
+      -79.383961,
+      34.891491
+     ],
+     [
+      -79.382148,
+      34.891993
+     ],
+     [
+      -79.380652,
+      34.892036
+     ],
+     [
+      -79.379369,
+      34.891807
+     ],
+     [
+      -79.366582,
+      34.88741
+     ]
+    ]
+   }
+  }
+ ]
+}
