@@ -1,0 +1,292 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Georgetown and Western Railroad (Georgetown and Lane's Railroad to c.1886), Georgetown - Lanes SC, 36 mi, and its two pieces under the Seaboard Air Line after the April 1915 sale. Drawn from research/branches/georgetown_and_western_railroad.txt in the site repo (DanielMConnolly/historical-trains), researched 2026-11-05. Only the report's drawable spans are drawn. Before this layer the map drew no part of this railroad.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+   "https://en.wikipedia.org/wiki/Georgetown_and_Western_Railroad",
+   "https://historicnewspapers.sc.edu/lccn/sn93067841/1915-04-29/ed-1/seq-1/",
+   "https://historicnewspapers.sc.edu/lccn/sn93067841/1913-11-27/ed-1/seq-8/",
+   "https://historicnewspapers.sc.edu/lccn/sn86063782/1919-07-10/ed-1/seq-2/",
+   "https://historicnewspapers.sc.edu/lccn/sn86063785/1919-12-12/ed-1/seq-9/",
+   "https://historicnewspapers.sc.edu/lccn/sn93067846/1922-10-18/ed-1/seq-2/",
+   "https://historicnewspapers.sc.edu/lccn/sn93067841/1921-10-20/ed-1/seq-1/",
+   "https://historicnewspapers.sc.edu/lccn/sn86063784/1927-04-12/ed-1/seq-1/",
+   "https://historicnewspapers.sc.edu/lccn/sn86063785/1928-01-27/ed-1/seq-1/",
+   "https://historicnewspapers.sc.edu/lccn/sn86063784/1928-10-09/ed-1/seq-4/",
+   "https://historicnewspapers.sc.edu/lccn/sn86063785/1933-07-14/ed-1/seq-4/",
+   "https://www.abandonedrails.com/georgetown-and-lanes-railroad",
+   "https://www.abandonedrails.com/carolina-atlantic-and-western-railroad",
+   "Official Guide Feb 1952 (schedules of Dec 1951), SAL Table 28 and Index of Stations - research/sources/official_guide_1952.txt in the site repo"
+  ],
+  "rule4_note": "Rule 4 split at the April 1915 sale: the Georgetown and Western feature ends 1915 in its own new colour #7A4E9E (checked unused by any company in data/); the two Seaboard Air Line features begin 1915 in SAL colour #BE3455, pulled programmatically from the existing 'Seaboard Air Line Railway' features (seaboard_and_roanoke_railroad, raleigh_and_gaston_railroad, southwest_florida_railroads). The c.1886 Georgetown and Lanes -> Georgetown and Western change is a foreclosure reorganization of the same property and trains, so it is not split; the G&L name is mentioned in the segment note. The SAL era is split at Andrews into two features because the two halves end at different last-confirmed years; all three features share identical geometry with the corresponding pieces.",
+  "not_yet_sourced": [
+   "[OPEN] Seaboard Air Line Georgetown - Andrews: 1928 is the last confirmed passenger year (Oct 1928 SAL excursion ad). The real end lies between 1929 and Dec 1951 (Feb 1952 Official Guide shows only an SAL bus; Kent and Sampit 'not shown in time tables'). Candidate sources: SAL public timetables 1930s-40s, the Georgetown Times, SC Railroad / Public Service Commission train-discontinuance orders.",
+   "[OPEN] Seaboard Air Line Andrews - Lanes: 1927 is the last confirmed passenger year (Apr 1927 excursion tickets from Lanes and Trio). The real end lies between 1927 and July 1933 (track abandoned 'some time ago', Camden Chronicle 14 Jul 1933); ICC abandonment docket not found. Wikipedia's 'abandoned in the 1940s' conflicts with the 1933 newspaper.",
+   "[OPEN] Georgetown and Western start: 1884 is the earliest proven year (Fowler, 1884 Official Guide). Wikipedia says operation began 1883 and abandonedrails says built 1882, both unsourced.",
+   "G&L -> G&W rename date: c.1886 (Wikipedia citing Poor's 1889; its categories say 1887). Not used as a split.",
+   "Georgetown and Western 1901-1914 passenger service is interpolated between the 1900 Official Guide anchor and the 1915 sale; no timetable for those years was found.",
+   "Corporate path of the 1915 sale: County Record 29 Apr 1915 says sold to the Seaboard Air Line; Wikipedia routes it through the Carolina, Atlantic and Western (1914/15). Recorded as a source conflict over the corporate path, not over who ran the trains.",
+   "No headway, schedule or speed found for any era: every headway_min and avg_speed_kmh in this layer is an estimate.",
+   "Andrews - Lanes geometry: the through-Andrews alignment between the SAL junction and West Andrews is not mapped (straight line) and Seaboard Road is assumed to follow the right-of-way per abandonedrails.com."
+  ],
+  "branches_deliberately_omitted": [
+   "Andrews - Poston (Pee Dee River) extension, built by the G&W in 1911: no G&W passenger year confirmed; from 1915 it is part of the Seaboard's Hamlet - Charleston 'East Carolina Line' main line and belongs with the SAL main-line research, not here.",
+   "Georgetown & Pawleys Island RR (Hagley Landing - Pawley's Island, 1901-1906): a separate company, not a G&W branch.",
+   "Georgetown Junction and Sykes Junction: junctions with other (probably lumber/logging) lines; no G&W passenger branch found from either.",
+   "Andrews - Georgetown after the unknown passenger end, and Andrews - Lanes after its unknown passenger end: freight only (Rule 1)."
+  ],
+  "freight_only_audit": "Nothing freight-only drawn: both SAL features end at their last confirmed passenger year; the CSX Georgetown Subdivision's present freight service and the Pennyroyal Spur are not drawn.",
+  "horsecar_audit": "None: steam from the start; nothing trimmed."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Georgetown and Western: Georgetown – Lanes",
+    "id": "georgetown-western-georgetown-lanes",
+    "company": "Georgetown and Western Railroad",
+    "color": "#7A4E9E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no schedule or running time found for any era (report UNRESOLVED 7); 25 km/h assumed for a 19th-century steam local/mixed branch.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) routed with opstrace.py: OSM ways tagged old_railway_operator=SAL costed 1x, untagged track 1.25x, any other named operator 12x; waypoints Georgetown, Olin, Kent, Andrews geocoded with Nominatim and checked by type (Georgetown SC returned Georgetown County and was hand-pinned to the end of the CSX Georgetown Subdivision track at Georgetown; Lanes returned 'Lanes Creek' and was hand-pinned to the CSX (ex-ACL) Charleston Subdivision at the Seaboard Road / Lane Subdivision junction; Gapway returned a place in Marion County and Sampit a hamlet off the line, both dropped). Andrews - Lanes: no surviving track, no OSM abandoned-railway ways and no OpenHistoricalMap ways in the fetch_gap search; drawn along OSM way 12547494 'Seaboard Road', which follows the lifted right-of-way (abandonedrails.com). Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Whole route Georgetown - Lanes 35.4 mi against the documented 36.0 mi (Fowler; Wikipedia / 1957 SAL ETT agree within ~0.3 mi). Georgetown - Andrews 16.1 mi traced from OSM (CSX Georgetown Subdivision, documented 16.3 mi). Andrews - Lanes is APPROXIMATED: the track was lifted before July 1933 and no rail, abandoned-railway or OpenHistoricalMap way survives. Drawn 19.3 mi against the documented 19.5 mi (Fowler: Lanes 0.0 - Andrews 19.5; 19.7 mi by the 1957 SAL mileposts). Legs: (a) a 1.4 mi STRAIGHT LINE from the Georgetown Subdivision / Andrews Subdivision junction at Andrews west to the east end of Seaboard Road at West Andrews (through-town alignment not mapped); (b) 17.8 mi ROAD-FOLLOWING approximation along OSM 'Seaboard Road' (way 12547494), which follows the old right-of-way (abandonedrails.com) and is near-straight between curves; (c) a 121 m straight connector to the ex-ACL main line at Lanes. The trace does not run along the ACL main (CSX Charleston Subdivision) at Lanes. LATER ALIGNMENT: Georgetown - Andrews draws the surviving track as rebuilt by the Seaboard after 1915, not necessarily the G&L/G&W alignment of 1884-1915; Andrews is drawn at its post-1915 junction with the SAL main line, which did not exist in the G&W era.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1915,
+      "headway_min": 720,
+      "note": "Georgetown and Lane's Railroad (chartered 1881; Wikipedia says it 'began operation' in 1883, abandonedrails says built 1882 - neither sourced), reorganized after foreclosure c.1886 as the Georgetown and Western Railroad - the same property and trains, so one company and one colour here; the G&L name is the first ~2 years. Receivership 1902-1912; controlled from 1900 by the Atlantic Coast Lumber syndicate; the Seaboard publicly denied owning it in Nov 1913 (County Record 27 Nov 1913). Start 1884 is the earliest PROVEN year: Fowler marks 'Earl' (later Sykes Junction) as in the 1884 Official Guide. This is a last-confirmed start, not a known opening - service may have begun in 1883 [OPEN]; do not move earlier without evidence. Passenger service is also proven in 1893 (four stations in the 1893 Official Guide per Fowler) and 1900 (Sykes Junction '1900G'); 1901-1914 is interpolated across a continuously operating common carrier - no timetable for those years was found. End 1915 is the April 1915 sale to the Seaboard Air Line ('The Seaboard will take up the operation of the new property at once', County Record 29 Apr 1915), not an end of service: trains continue under SAL on the two Seaboard features. headway_min 720 is an ESTIMATE (about two trains each way a day assumed); no frequency was found for the G&L/G&W era.",
+      "sources": [
+       "Segment-level: start 1884 from Fowler's SC table 4 ('Earl' q = 1884 Official Guide; also 1893 and 1900 Official Guide marks); 1886 reorganization from Wikipedia (citing Poor's Manual 1889); end 1915 from The County Record (Kingstree) 29 Apr 1915 p.1; SAL ownership denial from County Record 27 Nov 1913 p.8. Headway and speed are estimates, not sourced.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+       "https://en.wikipedia.org/wiki/Georgetown_and_Western_Railroad",
+       "https://historicnewspapers.sc.edu/lccn/sn93067841/1915-04-29/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067841/1913-11-27/ed-1/seq-8/",
+       "https://www.abandonedrails.com/georgetown-and-lanes-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.293572,
+      33.374789
+     ],
+     [
+      -79.341733,
+      33.392291
+     ],
+     [
+      -79.364083,
+      33.400292
+     ],
+     [
+      -79.378943,
+      33.404013
+     ],
+     [
+      -79.404869,
+      33.410241
+     ],
+     [
+      -79.423057,
+      33.414807
+     ],
+     [
+      -79.438752,
+      33.418467
+     ],
+     [
+      -79.453888,
+      33.422363
+     ],
+     [
+      -79.554241,
+      33.446656
+     ],
+     [
+      -79.555085,
+      33.447062
+     ],
+     [
+      -79.555738,
+      33.447659
+     ],
+     [
+      -79.556162,
+      33.448445
+     ],
+     [
+      -79.556251,
+      33.448969
+     ],
+     [
+      -79.580551,
+      33.452998
+     ],
+     [
+      -79.719417,
+      33.486244
+     ],
+     [
+      -79.87825,
+      33.523957
+     ],
+     [
+      -79.879302,
+      33.524608
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard Air Line: Georgetown Branch",
+    "id": "sal-georgetown-andrews",
+    "company": "Seaboard Air Line Railway",
+    "color": "#BE3455",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE: no schedule or running time found; 30 km/h assumed for an SAL branch local/mixed train.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) routed with opstrace.py: OSM ways tagged old_railway_operator=SAL costed 1x, untagged track 1.25x, any other named operator 12x; waypoints Georgetown, Olin, Kent, Andrews geocoded with Nominatim and checked by type (Georgetown SC returned Georgetown County and was hand-pinned to the end of the CSX Georgetown Subdivision track at Georgetown; Lanes returned 'Lanes Creek' and was hand-pinned to the CSX (ex-ACL) Charleston Subdivision at the Seaboard Road / Lane Subdivision junction; Gapway returned a place in Marion County and Sampit a hamlet off the line, both dropped). Andrews - Lanes: no surviving track, no OSM abandoned-railway ways and no OpenHistoricalMap ways in the fetch_gap search; drawn along OSM way 12547494 'Seaboard Road', which follows the lifted right-of-way (abandonedrails.com). Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Georgetown - Andrews traced from OpenStreetMap along the CSX Georgetown Subdivision (OSM old_railway_operator=SAL): 16.1 mi against the documented 16.3 mi (Wikipedia / 1957 SAL employee timetable; 16.5 mi by Fowler mileposts). Trace by operator: 16.0 mi SAL-tagged track, no router straight-line leg; it stays off the SAL (CSX Andrews Subdivision) Hamlet - Charleston main line at Andrews and ends at the Georgetown Subdivision's junction with it. The Georgetown end is the end of mapped track on the waterfront. LATER ALIGNMENT: this is the alignment that survives today, after the Seaboard's post-1915 rebuild ('the heaviest rails ... grades reduced', County Record 29 Apr 1915); any earlier line changes and the Andrews junction layout are drawn on their later form.",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1928,
+      "headway_min": 720,
+      "note": "Georgetown - Andrews under the Seaboard Air Line after the April 1915 purchase of the Georgetown and Western (County Record 29 Apr 1915: SAL to operate 'at once'; Wikipedia routes the sale through the SAL-controlled Carolina, Atlantic and Western - no trains in CA&W's own name found, so no separate era). Connected at Andrews with SAL's Hamlet - Charleston trains. Service evidence: July 1919 SC Railroad Commission hearing on 'additional service between Georgetown and Andrews' (Cheraw Chronicle); Dec 1919 Georgetown - Andrews locals annulled in the coal strike (Camden Chronicle 12 Dec 1919); Oct 1922 special train 'from Georgetown and Andrews by the Seaboard'; Apr 1927 Sunday excursion tickets from Andrews and Georgetown (Wateree Messenger); Jan 1928 SAL passenger agent naming Georgetown and Andrews passengers (Camden Chronicle); Oct 1928 SAL excursion ad with fares from Georgetown (Wateree Messenger 9 Oct 1928). END 1928 [OPEN]: this is the last CONFIRMED year, not a known end - no source dates when passenger trains actually stopped. By Dec 1951 the Official Guide shows only an SAL bus Andrews - Georgetown and marks Kent and Sampit 'not shown in time tables', so the end lies somewhere 1929-1951. Do not extend without evidence. A highway Georgetown - Andrews opened c.1922 (context only). Freight continues today (CSX Georgetown Subdivision) - not drawn (Rule 1). headway_min 720 is an ESTIMATE from the Dec 1919 notice implying a Georgetown - Andrews pair plus the Lanes - Georgetown pair (about two trains each way a day); not a counted timetable frequency.",
+      "sources": [
+       "Segment-level: start 1915 from The County Record 29 Apr 1915 p.1; service 1919-1928 and the last confirmed year 1928 from the Cheraw Chronicle 10 Jul 1919, Camden Chronicle 12 Dec 1919 p.9, Watchman and Southron 18 Oct 1922 p.2, Wateree Messenger 12 Apr 1927 p.1, Camden Chronicle 27 Jan 1928 p.1 and Wateree Messenger 9 Oct 1928 p.4; Dec 1951 bus-only from the Feb 1952 Official Guide (research/sources/official_guide_1952.txt, Table 28 and index). Headway and speed are estimates.",
+       "https://historicnewspapers.sc.edu/lccn/sn93067841/1915-04-29/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063782/1919-07-10/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1919-12-12/ed-1/seq-9/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1922-10-18/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063784/1927-04-12/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1928-01-27/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063784/1928-10-09/ed-1/seq-4/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.293572,
+      33.374789
+     ],
+     [
+      -79.341733,
+      33.392291
+     ],
+     [
+      -79.364083,
+      33.400292
+     ],
+     [
+      -79.378943,
+      33.404013
+     ],
+     [
+      -79.404869,
+      33.410241
+     ],
+     [
+      -79.423057,
+      33.414807
+     ],
+     [
+      -79.438752,
+      33.418467
+     ],
+     [
+      -79.453888,
+      33.422363
+     ],
+     [
+      -79.554241,
+      33.446656
+     ],
+     [
+      -79.555085,
+      33.447062
+     ],
+     [
+      -79.555738,
+      33.447659
+     ],
+     [
+      -79.556162,
+      33.448445
+     ],
+     [
+      -79.556251,
+      33.448969
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "line": "Seaboard Air Line: Andrews – Lanes",
+    "id": "sal-andrews-lanes",
+    "company": "Seaboard Air Line Railway",
+    "color": "#BE3455",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "ESTIMATE: no schedule or running time found; 30 km/h assumed for an SAL branch local/mixed train.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, cached degree tiles) routed with opstrace.py: OSM ways tagged old_railway_operator=SAL costed 1x, untagged track 1.25x, any other named operator 12x; waypoints Georgetown, Olin, Kent, Andrews geocoded with Nominatim and checked by type (Georgetown SC returned Georgetown County and was hand-pinned to the end of the CSX Georgetown Subdivision track at Georgetown; Lanes returned 'Lanes Creek' and was hand-pinned to the CSX (ex-ACL) Charleston Subdivision at the Seaboard Road / Lane Subdivision junction; Gapway returned a place in Marion County and Sampit a hamlet off the line, both dropped). Andrews - Lanes: no surviving track, no OSM abandoned-railway ways and no OpenHistoricalMap ways in the fetch_gap search; drawn along OSM way 12547494 'Seaboard Road', which follows the lifted right-of-way (abandonedrails.com). Douglas-Peucker 8 m, trim_reversals.",
+    "geometry_quality": "Andrews - Lanes is APPROXIMATED: the track was lifted before July 1933 and no rail, abandoned-railway or OpenHistoricalMap way survives. Drawn 19.3 mi against the documented 19.5 mi (Fowler: Lanes 0.0 - Andrews 19.5; 19.7 mi by the 1957 SAL mileposts). Legs: (a) a 1.4 mi STRAIGHT LINE from the Georgetown Subdivision / Andrews Subdivision junction at Andrews west to the east end of Seaboard Road at West Andrews (through-town alignment not mapped); (b) 17.8 mi ROAD-FOLLOWING approximation along OSM 'Seaboard Road' (way 12547494), which follows the old right-of-way (abandonedrails.com) and is near-straight between curves; (c) a 121 m straight connector to the ex-ACL main line at Lanes. The trace does not run along the ACL main (CSX Charleston Subdivision) at Lanes.",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1927,
+      "headway_min": 1440,
+      "note": "Andrews - Lanes (ACL connection) under the Seaboard Air Line after the April 1915 purchase (County Record 29 Apr 1915). After 1915 SAL's own main line crossed at Andrews, so this piece served mainly as the interchange with the Atlantic Coast Line at Lanes. Service evidence: Dec 1919 'Trains 31 and 32, between Lanes and Georgetown' (Camden Chronicle 12 Dec 1919); Oct 1921 Agriculture Secretary Wallace 'arrived in Andrews at noon on a special train from Lanes over the Seaboard Air Line' (County Record 20 Oct 1921); Apr 1927 SAL Sunday excursion tickets 'To Georgetown ... sold from Andrews, Lanes, Trio and West Andrews' (Wateree Messenger 12 Apr 1927) - Lanes and Trio are only on this piece. END 1927 [OPEN]: this is the last CONFIRMED year, not a known end - no source dates when passenger trains stopped. The track was abandoned 'some time ago' by July 1933 (Camden Chronicle 14 Jul 1933), which is a ceiling on the rails, not the passenger end; abandonedrails places removal after a 1928 map and before a 1939 map, and Wikipedia's 'abandoned in the 1940s' is contradicted by the 1933 newspaper. Do not extend without evidence. headway_min 1440 is an ESTIMATE from the one numbered pair (31/32) named in Dec 1919; not a counted timetable frequency.",
+      "sources": [
+       "Segment-level: start 1915 from The County Record 29 Apr 1915 p.1; service and last confirmed year 1927 from the Camden Chronicle 12 Dec 1919 p.9, County Record 20 Oct 1921 p.1 and Wateree Messenger 12 Apr 1927 p.1; abandonment ceiling from the Camden Chronicle 14 Jul 1933 p.4 and abandonedrails.com. Headway and speed are estimates.",
+       "https://historicnewspapers.sc.edu/lccn/sn93067841/1915-04-29/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1919-12-12/ed-1/seq-9/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067841/1921-10-20/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063784/1927-04-12/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1933-07-14/ed-1/seq-4/",
+       "https://www.abandonedrails.com/carolina-atlantic-and-western-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.556251,
+      33.448969
+     ],
+     [
+      -79.580551,
+      33.452998
+     ],
+     [
+      -79.719417,
+      33.486244
+     ],
+     [
+      -79.87825,
+      33.523957
+     ],
+     [
+      -79.879302,
+      33.524608
+     ]
+    ]
+   }
+  }
+ ]
+}
