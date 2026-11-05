@@ -1,0 +1,2224 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "description": "Charleston–Savannah main line and two branches before the Atlantic Coast Line took over in 1902, across four operators. No service is drawn for 1865–1866; passenger service came back in stages from the Charleston end from 1867 and ran through from 11 Mar 1870.",
+  "research_report": "research/branches/charleston_and_savannah_railway.txt",
+  "date": "2026-11-05",
+  "open_and_anchor_spans": {
+   "[OPEN]": "savannah-charleston-rr-ashley-salkehatchie-1867-1869 start: 1867 is the earliest confirmed year, not the reopening.",
+   "[ANCHOR]": "plant-system-yonges-island-branch-1897: 1897 is the only proven year."
+  },
+  "omitted": [
+   "Walterboro – Ehrhardt (Walterboro and Western): no confirmed passenger year before 1906.",
+   "Green Pond – Riverside logging branch of the Charleston Lumber Company: not this road's, and no passenger service.",
+   "Anything west of Coosawhatchie before 11 Mar 1870: no passenger evidence.",
+   "West Ashley Greenway grade after 1877: passenger trains left it for the Bee's Ferry line; freight only.",
+   "Atlantic Coast Line service from 1902: belongs to the ACL layer."
+  ],
+  "not_yet_sourced": [
+   "First post-war passenger train: confirmed by 1 June 1867, implied by Feb 1867; an 1866 timetable on railga.com could not be read.",
+   "Last wartime service at the Charleston end, Jan–Feb 1865: nothing drawn for 1865.",
+   "Reopening conflict: carolana 'spring 1869', railga and Wikipedia '1869-70', company notices 2 Mar 1870 last spike and 11 Mar 1870 daily trains; the company is followed.",
+   "Any working between Coosawhatchie and Hardeeville in 1869: unconfirmed.",
+   "Charter year 1853 vs 1854: no map effect.",
+   "Ashley bridge opening: complete by 11 Dec 1877, 27 Dec 1877 in the NYT via carolana, regular schedule 7 Jan 1878, Fowler 'c. 1880'.",
+   "Sale to Plant: scheduled 7 June 1880; the notice was found, not a report of the sale.",
+   "Savannah depot after 1880: not established, so the Plant feature stops at Central Junction. Whether the road stayed on the Central's track through 1880 is also carried from the 1864 report.",
+   "Location of the Northeastern depot in Charleston and of the last stretch to it: not drawn.",
+   "Gauge: 4 ft 8.5 in, 4 ft 9 in and 5 ft all reported; no map effect.",
+   "Charleston – Savannah mileage: 106.5 (1866), 108 (1894), 110 (1861), 115 (1894), 116.8 (1951 Guide); not reconciled. The trace is measured and recorded on each feature.",
+   "Mill Street ferry to the end of the west-bank era: Apr 1877 omnibuses suggest a change; no map effect.",
+   "Yonges Island Branch: opening year and last regular passenger year unknown.",
+   "Walterboro branch: last passenger year unknown, between Feb 1922 and Sept 1951; ACL era, not drawn here.",
+   "Headway and speed figures are estimates except where a segment note names the schedule."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Charleston and Savannah Railroad",
+    "line": "Charleston and Savannah: Charleston (Ashley ferry) – Savannah",
+    "id": "charleston-savannah-rr-1860-1864",
+    "color": "#A64B84",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 32,
+    "speed_source": "Estimate. 1861 notice gives about 5.5–6 hours end to end over about 110 mi; whether those times include the ferry is not stated.",
+    "geometry_source": "OpenStreetMap (Overpass): CSX Charleston Subdivision ways, West Ashley Greenway, Central of Georgia-tagged ways; OpenHistoricalMap Atack ways used only as a position check",
+    "geometry_quality": "Traced 103.5 mi against 110 mi of own line plus about 3 mi of Central of Georgia (csa-railroads.com, Black's no. 35); the shortfall includes the 1861 figure's unmeasured Ashley end and is not resolved. Pre-1878 approach: 8.4 mi from the divergence from the later main line (32.7922, -80.1099, found from the diverging geometry and taken as the road's Johns Island / Johns Island Ferry point, not on the sea island) along the West Ashley Greenway (ex-ACL Croghans Branch) to its east end at 32.7766, -79.9682. Measured divergence – St. Andrews 7.4 mi against the 7.7 mi of ACL 1949 mileposts. The line stops at the greenway's end, about 0.45 mi short of today's Ashley River shoreline, because the last stretch to Albemarle Point has no traced grade; no straight leg is drawn and the river itself is not drawn, the crossing having been a steam ferry. The parallel West Ashley Bikeway is the Seaboard grade and is not used. Another company's track: the last 3.4 mi, Central Junction (32.0908, -81.1543) into Savannah, is Central of Georgia (OSM ways tagged old_railway_operator=CoG, mostly NS Savannah Terminal and lifted ways) and is drawn because the road paid for 'three miles of their track and their depots'. Its final 0.23 mi into the depot is a straight line. Measured: divergence – Salkehatchie 41.6 mi (ACL mileposts 42.1), Salkehatchie – Coosawhatchie 10.7 (10.6), divergence – Central Junction 91.7, plus Central track 3.4 = 95.1 against about 96 for Johns Island – Savannah across sources. The 91.7-mile Johns Island junction – Central Junction stretch follows OSM ways named CSX Charleston Subdivision (old_railway_operator=ACL), which is today's track and so a later state of the alignment; OpenHistoricalMap's Atack-derived Charleston & Savannah ways (202210839, 202210840) and the Savannah River crossing way (202210689) lie within 60 m of it, which is the check that the modern line and river crossing are the original location near Monteith and Hardeeville. No individual realignment or period bridge site was checked otherwise. Station-distance sample against the trace: Rantowles 0.09 mi, Ravenel 0.02, Jacksonboro 0.53, Ashepoo 0.14, Green Pond 0.03 (hand-pinned; Nominatim returned Laurens County), White Hall 0.01, Salkehatchie 0.02, Yemassee 0.27, Coosawhatchie 0.12, Ridgeland 0.15, Hardeeville 0.73. Larger: Adams Run hamlet 2.38 mi and Pocotaligo hamlet 1.24 mi, both geocoded to today's hamlet rather than a depot site; depot sites not established. Later alignment: the surviving track is drawn for an 1860 road, and the 1860 Savannah River bridge was a temporary wooden structure at the crossing checked above.",
+    "segments": [
+     {
+      "start": 1860,
+      "end": 1864,
+      "headway_min": 1440,
+      "note": "Opened 1 Nov 1860 for passengers and freight (company notice). Daily train each way in the 1861 notice; the 1440-minute headway is sourced for 1860–61 only and is an estimate after that. Passengers crossed the Ashley on the company's steamer, so the line ends on the west bank. The end year is when through service was cut, around Sherman's capture of Savannah in Dec 1864; no 1865 service is claimed and any shuttle at the Charleston end into Feb 1865 is unsourced.",
+      "sources": [
+       "Segment-level: dates and service from the company notices and President's report cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/NP/SMN/NP,_SMN_1-1-61.htm",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_C_and_S_1-1-61_S.htm",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/AR/AR,_C_and_S_1-1-64_P.htm",
+       "https://csa-railroads.com/Charleston_and_Savannah_Savannah_River_%20Bridge.htm",
+       "https://uscpress.com/Vital-Rails"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.968216,
+      32.776648
+     ],
+     [
+      -79.968465,
+      32.776533
+     ],
+     [
+      -79.969384,
+      32.776573
+     ],
+     [
+      -79.969935,
+      32.776783
+     ],
+     [
+      -79.972197,
+      32.777054
+     ],
+     [
+      -79.995368,
+      32.781078
+     ],
+     [
+      -80.001197,
+      32.781964
+     ],
+     [
+      -80.011054,
+      32.783803
+     ],
+     [
+      -80.017443,
+      32.784782
+     ],
+     [
+      -80.043688,
+      32.789304
+     ],
+     [
+      -80.052262,
+      32.790612
+     ],
+     [
+      -80.058401,
+      32.791761
+     ],
+     [
+      -80.074478,
+      32.794409
+     ],
+     [
+      -80.077239,
+      32.79497
+     ],
+     [
+      -80.085448,
+      32.796204
+     ],
+     [
+      -80.08835,
+      32.796308
+     ],
+     [
+      -80.092752,
+      32.796124
+     ],
+     [
+      -80.097223,
+      32.795472
+     ],
+     [
+      -80.107154,
+      32.792993
+     ],
+     [
+      -80.111697,
+      32.791649
+     ],
+     [
+      -80.188864,
+      32.770633
+     ],
+     [
+      -80.19226,
+      32.769917
+     ],
+     [
+      -80.322376,
+      32.755534
+     ],
+     [
+      -80.33144,
+      32.754624
+     ],
+     [
+      -80.336591,
+      32.754609
+     ],
+     [
+      -80.374256,
+      32.756773
+     ],
+     [
+      -80.416314,
+      32.761258
+     ],
+     [
+      -80.421713,
+      32.761709
+     ],
+     [
+      -80.4641,
+      32.762702
+     ],
+     [
+      -80.468491,
+      32.762708
+     ],
+     [
+      -80.472955,
+      32.762291
+     ],
+     [
+      -80.476679,
+      32.761584
+     ],
+     [
+      -80.565498,
+      32.73842
+     ],
+     [
+      -80.569441,
+      32.737629
+     ],
+     [
+      -80.827286,
+      32.704094
+     ],
+     [
+      -80.829113,
+      32.703744
+     ],
+     [
+      -80.831581,
+      32.702968
+     ],
+     [
+      -80.834657,
+      32.701422
+     ],
+     [
+      -80.836871,
+      32.699735
+     ],
+     [
+      -80.838513,
+      32.698021
+     ],
+     [
+      -80.856703,
+      32.676359
+     ],
+     [
+      -80.92983,
+      32.588693
+     ],
+     [
+      -80.931876,
+      32.585992
+     ],
+     [
+      -80.933047,
+      32.584085
+     ],
+     [
+      -81.006755,
+      32.432281
+     ],
+     [
+      -81.066236,
+      32.309149
+     ],
+     [
+      -81.067466,
+      32.30681
+     ],
+     [
+      -81.068855,
+      32.304636
+     ],
+     [
+      -81.095238,
+      32.269983
+     ],
+     [
+      -81.09752,
+      32.26731
+     ],
+     [
+      -81.099575,
+      32.265321
+     ],
+     [
+      -81.101839,
+      32.26347
+     ],
+     [
+      -81.165291,
+      32.217656
+     ],
+     [
+      -81.177613,
+      32.208606
+     ],
+     [
+      -81.181065,
+      32.205573
+     ],
+     [
+      -81.183281,
+      32.203165
+     ],
+     [
+      -81.185968,
+      32.199387
+     ],
+     [
+      -81.187221,
+      32.197174
+     ],
+     [
+      -81.188122,
+      32.195231
+     ],
+     [
+      -81.189053,
+      32.192731
+     ],
+     [
+      -81.189853,
+      32.189794
+     ],
+     [
+      -81.190297,
+      32.187201
+     ],
+     [
+      -81.190488,
+      32.184909
+     ],
+     [
+      -81.190462,
+      32.181971
+     ],
+     [
+      -81.190239,
+      32.179683
+     ],
+     [
+      -81.18975,
+      32.177029
+     ],
+     [
+      -81.189262,
+      32.175225
+     ],
+     [
+      -81.167453,
+      32.117859
+     ],
+     [
+      -81.158855,
+      32.097471
+     ],
+     [
+      -81.157742,
+      32.095558
+     ],
+     [
+      -81.154125,
+      32.090494
+     ],
+     [
+      -81.113211,
+      32.079892
+     ],
+     [
+      -81.103026,
+      32.077109
+     ],
+     [
+      -81.0992,
+      32.0763
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Savannah and Charleston Railroad",
+    "line": "Savannah and Charleston: Charleston (Ashley ferry) – Salkehatchie",
+    "id": "savannah-charleston-rr-ashley-salkehatchie-1867-1869",
+    "color": "#4B8CA6",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate; no running time for this partial service was found.",
+    "geometry_source": "OpenStreetMap (Overpass): CSX Charleston Subdivision ways, West Ashley Greenway, Central of Georgia-tagged ways; OpenHistoricalMap Atack ways used only as a position check",
+    "geometry_quality": "Traced 50.0 mi against about 49 mi (ACL 1949 mileposts, St. Andrews – Salkehatchie, not checked against a period source); the traced figure runs past St. Andrews to the end of the greenway. Pre-1878 approach: 8.4 mi from the divergence from the later main line (32.7922, -80.1099, found from the diverging geometry and taken as the road's Johns Island / Johns Island Ferry point, not on the sea island) along the West Ashley Greenway (ex-ACL Croghans Branch) to its east end at 32.7766, -79.9682. Measured divergence – St. Andrews 7.4 mi against the 7.7 mi of ACL 1949 mileposts. The line stops at the greenway's end, about 0.45 mi short of today's Ashley River shoreline, because the last stretch to Albemarle Point has no traced grade; no straight leg is drawn and the river itself is not drawn, the crossing having been a steam ferry. The parallel West Ashley Bikeway is the Seaboard grade and is not used. The main-line part is today's CSX Charleston Subdivision, a later state of the alignment. Salkehatchie 0.02 mi from the trace.",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1869,
+      "headway_min": 3360,
+      "note": "[OPEN] start: 1867 is the earliest CONFIRMED year, not the reopening. Trains ran before the June 1867 notice, which is headed 'Change of Schedule', and a Feb 1867 notice already speaks of the head of the road near Salkehatchie; an 1866 timetable listed on railga.com could not be read and may move this earlier. Do not treat 1867 as a known start or extend it without evidence. Tri-weekly passenger and freight trains from the Mill Street wharves and the St. Andrews depot, so headway about 3360 minutes (estimate from the Tue/Thu/Sat schedule). End year hands over to the through service of March 1870; it is not a closure.",
+      "sources": [
+       "Segment-level: notices cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1867-02-09/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1867-06-01/ed-2/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn84027008/1865-11-26/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026912/1866-01-20/ed-1/seq-2/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.968216,
+      32.776648
+     ],
+     [
+      -79.968465,
+      32.776533
+     ],
+     [
+      -79.969384,
+      32.776573
+     ],
+     [
+      -79.969935,
+      32.776783
+     ],
+     [
+      -79.972197,
+      32.777054
+     ],
+     [
+      -79.995368,
+      32.781078
+     ],
+     [
+      -80.001197,
+      32.781964
+     ],
+     [
+      -80.011054,
+      32.783803
+     ],
+     [
+      -80.017443,
+      32.784782
+     ],
+     [
+      -80.043688,
+      32.789304
+     ],
+     [
+      -80.052262,
+      32.790612
+     ],
+     [
+      -80.058401,
+      32.791761
+     ],
+     [
+      -80.074478,
+      32.794409
+     ],
+     [
+      -80.077239,
+      32.79497
+     ],
+     [
+      -80.085448,
+      32.796204
+     ],
+     [
+      -80.08835,
+      32.796308
+     ],
+     [
+      -80.092752,
+      32.796124
+     ],
+     [
+      -80.097223,
+      32.795472
+     ],
+     [
+      -80.107154,
+      32.792993
+     ],
+     [
+      -80.111697,
+      32.791649
+     ],
+     [
+      -80.188864,
+      32.770633
+     ],
+     [
+      -80.193534,
+      32.769712
+     ],
+     [
+      -80.322376,
+      32.755534
+     ],
+     [
+      -80.33144,
+      32.754624
+     ],
+     [
+      -80.336591,
+      32.754609
+     ],
+     [
+      -80.374256,
+      32.756773
+     ],
+     [
+      -80.419666,
+      32.761597
+     ],
+     [
+      -80.4641,
+      32.762702
+     ],
+     [
+      -80.468491,
+      32.762708
+     ],
+     [
+      -80.470757,
+      32.762544
+     ],
+     [
+      -80.472955,
+      32.762291
+     ],
+     [
+      -80.476679,
+      32.761584
+     ],
+     [
+      -80.565498,
+      32.73842
+     ],
+     [
+      -80.569441,
+      32.737629
+     ],
+     [
+      -80.812859,
+      32.70602
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Savannah and Charleston Railroad",
+    "line": "Savannah and Charleston: Salkehatchie – Coosawhatchie",
+    "id": "savannah-charleston-rr-salkehatchie-coosawhatchie-1867-1869",
+    "color": "#4B8CA6",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate; no running time for this partial service was found.",
+    "geometry_source": "OpenStreetMap (Overpass): CSX Charleston Subdivision ways",
+    "geometry_quality": "Traced 10.7 mi against about 11 mi (ACL mileposts 440.8 – 451.4). All on today's CSX Charleston Subdivision, a later state of the alignment; it stays on the through line at Yemassee and does not take the Port Royal line. Yemassee 0.27 mi, Pocotaligo hamlet 1.24 mi (geocoded to the hamlet, not a depot), Coosawhatchie 0.12 mi from the trace. The company claimed 62 mi complete in Dec 1868, so the railhead may have lain a little past Coosawhatchie; nothing is drawn beyond where passenger advertising stops.",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1869,
+      "headway_min": 3360,
+      "note": "Extended in stages: Pocotaligo from 8 Oct 1867, Coosawhatchie from 9 Dec 1867 (company notices). Tri-weekly; headway about 3360 minutes is an estimate from the schedule. The 1867 notice names a junction with the Port Royal Road, not a connecting train. No passenger evidence west of Coosawhatchie before 11 Mar 1870, so nothing is drawn there.",
+      "sources": [
+       "Segment-level: notices cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1867-10-04/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1867-12-09/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1868-01-17/ed-1/seq-4/",
+       "https://historicnewspapers.sc.edu/lccn/sn84027008/1868-12-11/ed-1/seq-2/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.812859,
+      32.70602
+     ],
+     [
+      -80.827286,
+      32.704094
+     ],
+     [
+      -80.830014,
+      32.703507
+     ],
+     [
+      -80.832147,
+      32.702732
+     ],
+     [
+      -80.834657,
+      32.701422
+     ],
+     [
+      -80.835811,
+      32.700613
+     ],
+     [
+      -80.837704,
+      32.698931
+     ],
+     [
+      -80.856703,
+      32.676359
+     ],
+     [
+      -80.928308,
+      32.590511
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Savannah and Charleston Railroad",
+    "line": "Savannah and Charleston: Charleston (Ashley ferry) – Savannah",
+    "id": "savannah-charleston-rr-ashley-savannah-1870-1877",
+    "color": "#4B8CA6",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate. The 1870 notice gives Savannah to Charleston as 11 am to 6 pm, including the ferry; arrival at Savannah is garbled in the OCR.",
+    "geometry_source": "OpenStreetMap (Overpass): CSX Charleston Subdivision ways, West Ashley Greenway, Central of Georgia-tagged ways; OpenHistoricalMap Atack ways used only as a position check",
+    "geometry_quality": "Traced 103.5 mi against 110 mi of own line (1861) and 106.5 mi Charleston – Savannah in a Dec 1866 Post Office ad; the sources conflict and neither is preferred here. Pre-1878 approach: 8.4 mi from the divergence from the later main line (32.7922, -80.1099, found from the diverging geometry and taken as the road's Johns Island / Johns Island Ferry point, not on the sea island) along the West Ashley Greenway (ex-ACL Croghans Branch) to its east end at 32.7766, -79.9682. Measured divergence – St. Andrews 7.4 mi against the 7.7 mi of ACL 1949 mileposts. The line stops at the greenway's end, about 0.45 mi short of today's Ashley River shoreline, because the last stretch to Albemarle Point has no traced grade; no straight leg is drawn and the river itself is not drawn, the crossing having been a steam ferry. The parallel West Ashley Bikeway is the Seaboard grade and is not used. Another company's track: the last 3.4 mi, Central Junction (32.0908, -81.1543) into Savannah, is Central of Georgia (OSM ways tagged old_railway_operator=CoG, mostly NS Savannah Terminal and lifted ways) and is drawn because the road paid for 'three miles of their track and their depots'. Its final 0.23 mi into the depot is a straight line. Measured: divergence – Salkehatchie 41.6 mi (ACL mileposts 42.1), Salkehatchie – Coosawhatchie 10.7 (10.6), divergence – Central Junction 91.7, plus Central track 3.4 = 95.1 against about 96 for Johns Island – Savannah across sources. The 91.7-mile Johns Island junction – Central Junction stretch follows OSM ways named CSX Charleston Subdivision (old_railway_operator=ACL), which is today's track and so a later state of the alignment; OpenHistoricalMap's Atack-derived Charleston & Savannah ways (202210839, 202210840) and the Savannah River crossing way (202210689) lie within 60 m of it, which is the check that the modern line and river crossing are the original location near Monteith and Hardeeville. No individual realignment or period bridge site was checked otherwise. Station-distance sample against the trace: Rantowles 0.09 mi, Ravenel 0.02, Jacksonboro 0.53, Ashepoo 0.14, Green Pond 0.03 (hand-pinned; Nominatim returned Laurens County), White Hall 0.01, Salkehatchie 0.02, Yemassee 0.27, Coosawhatchie 0.12, Ridgeland 0.15, Hardeeville 0.73. Larger: Adams Run hamlet 2.38 mi and Pocotaligo hamlet 1.24 mi, both geocoded to today's hamlet rather than a depot site; depot sites not established. Later alignment: the surviving track is drawn. Whether the road still used the Central's track and depot through 1877 is carried from the 1864 report, not separately shown.",
+    "segments": [
+     {
+      "start": 1870,
+      "end": 1877,
+      "headway_min": 1440,
+      "note": "Last spike 2 Mar 1870; daily passenger trains from Fri 11 Mar 1870 (company notice), superseding the published 'spring 1869'. Headway 1440 minutes from the 1870 notice, an estimate for later years. Ferry still running Dec 1871; omnibuses over a causeway in Apr 1877 may mean the transfer changed. Under receivers from about 1874–77, same company name and same trains. Ends with the west-bank terminal: trains used the new bridge route from 7 Jan 1878.",
+      "sources": [
+       "Segment-level: notices cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1868-12-08/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1869-05-15/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1870-03-03/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1870-03-28/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1870-04-16/ed-1/seq-4/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026994/1871-12-22/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn86053227/1877-04-21/ed-1/seq-2/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.968216,
+      32.776648
+     ],
+     [
+      -79.968465,
+      32.776533
+     ],
+     [
+      -79.969384,
+      32.776573
+     ],
+     [
+      -79.969935,
+      32.776783
+     ],
+     [
+      -79.972197,
+      32.777054
+     ],
+     [
+      -79.995368,
+      32.781078
+     ],
+     [
+      -80.001197,
+      32.781964
+     ],
+     [
+      -80.011054,
+      32.783803
+     ],
+     [
+      -80.017443,
+      32.784782
+     ],
+     [
+      -80.043688,
+      32.789304
+     ],
+     [
+      -80.052262,
+      32.790612
+     ],
+     [
+      -80.058401,
+      32.791761
+     ],
+     [
+      -80.074478,
+      32.794409
+     ],
+     [
+      -80.077239,
+      32.79497
+     ],
+     [
+      -80.085448,
+      32.796204
+     ],
+     [
+      -80.08835,
+      32.796308
+     ],
+     [
+      -80.092752,
+      32.796124
+     ],
+     [
+      -80.097223,
+      32.795472
+     ],
+     [
+      -80.107154,
+      32.792993
+     ],
+     [
+      -80.111697,
+      32.791649
+     ],
+     [
+      -80.188864,
+      32.770633
+     ],
+     [
+      -80.19226,
+      32.769917
+     ],
+     [
+      -80.322376,
+      32.755534
+     ],
+     [
+      -80.33144,
+      32.754624
+     ],
+     [
+      -80.336591,
+      32.754609
+     ],
+     [
+      -80.374256,
+      32.756773
+     ],
+     [
+      -80.416314,
+      32.761258
+     ],
+     [
+      -80.421713,
+      32.761709
+     ],
+     [
+      -80.4641,
+      32.762702
+     ],
+     [
+      -80.468491,
+      32.762708
+     ],
+     [
+      -80.472955,
+      32.762291
+     ],
+     [
+      -80.476679,
+      32.761584
+     ],
+     [
+      -80.565498,
+      32.73842
+     ],
+     [
+      -80.569441,
+      32.737629
+     ],
+     [
+      -80.827286,
+      32.704094
+     ],
+     [
+      -80.829113,
+      32.703744
+     ],
+     [
+      -80.831581,
+      32.702968
+     ],
+     [
+      -80.834657,
+      32.701422
+     ],
+     [
+      -80.836871,
+      32.699735
+     ],
+     [
+      -80.838513,
+      32.698021
+     ],
+     [
+      -80.856703,
+      32.676359
+     ],
+     [
+      -80.92983,
+      32.588693
+     ],
+     [
+      -80.931876,
+      32.585992
+     ],
+     [
+      -80.933047,
+      32.584085
+     ],
+     [
+      -81.006755,
+      32.432281
+     ],
+     [
+      -81.066236,
+      32.309149
+     ],
+     [
+      -81.067466,
+      32.30681
+     ],
+     [
+      -81.068855,
+      32.304636
+     ],
+     [
+      -81.095238,
+      32.269983
+     ],
+     [
+      -81.09752,
+      32.26731
+     ],
+     [
+      -81.099575,
+      32.265321
+     ],
+     [
+      -81.101839,
+      32.26347
+     ],
+     [
+      -81.165291,
+      32.217656
+     ],
+     [
+      -81.177613,
+      32.208606
+     ],
+     [
+      -81.181065,
+      32.205573
+     ],
+     [
+      -81.183281,
+      32.203165
+     ],
+     [
+      -81.185968,
+      32.199387
+     ],
+     [
+      -81.187221,
+      32.197174
+     ],
+     [
+      -81.188122,
+      32.195231
+     ],
+     [
+      -81.189053,
+      32.192731
+     ],
+     [
+      -81.189853,
+      32.189794
+     ],
+     [
+      -81.190297,
+      32.187201
+     ],
+     [
+      -81.190488,
+      32.184909
+     ],
+     [
+      -81.190462,
+      32.181971
+     ],
+     [
+      -81.190239,
+      32.179683
+     ],
+     [
+      -81.18975,
+      32.177029
+     ],
+     [
+      -81.189262,
+      32.175225
+     ],
+     [
+      -81.167453,
+      32.117859
+     ],
+     [
+      -81.158855,
+      32.097471
+     ],
+     [
+      -81.157742,
+      32.095558
+     ],
+     [
+      -81.154125,
+      32.090494
+     ],
+     [
+      -81.113211,
+      32.079892
+     ],
+     [
+      -81.103026,
+      32.077109
+     ],
+     [
+      -81.0992,
+      32.0763
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Savannah and Charleston Railroad",
+    "line": "Savannah and Charleston: Charleston – Savannah (via Ashley River bridge)",
+    "id": "savannah-charleston-rr-charleston-savannah-1878-1880",
+    "color": "#4B8CA6",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 31,
+    "speed_source": "Estimate from the April 1879 Fast Mail schedule (7:00 am – 12:40 pm) over the traced distance; the Fast Mail was the quick train, so the road's average was lower.",
+    "geometry_source": "OpenStreetMap (Overpass): CSX Charleston Subdivision ways, West Ashley Greenway, Central of Georgia-tagged ways; OpenHistoricalMap Atack ways used only as a position check",
+    "geometry_quality": "Traced 110.5 mi against 108–115 mi for later Charleston – Savannah figures and 106.4 mi Ashley Junction – Savannah (ACL); the sources conflict and neither is preferred here. Another company's track: Charleston – Ashley Junction (6.9 mi) is the Northeastern Railroad's. It is traced on surviving CSX track on the Neck (ways named Seaboard System Railroad and Csx Railroad, plus ACL-tagged pieces), which was not independently confirmed as the 1878 Northeastern alignment, and it stops at the end of that track (32.8019, -79.9356) because the depot site was not located and the last stretch is not mapped. Ashley Junction – divergence measures 8.5 mi against Fowler's 9.1. Another company's track: the last 3.4 mi, Central Junction (32.0908, -81.1543) into Savannah, is Central of Georgia (OSM ways tagged old_railway_operator=CoG, mostly NS Savannah Terminal and lifted ways) and is drawn because the road paid for 'three miles of their track and their depots'. Its final 0.23 mi into the depot is a straight line. Measured: divergence – Salkehatchie 41.6 mi (ACL mileposts 42.1), Salkehatchie – Coosawhatchie 10.7 (10.6), divergence – Central Junction 91.7, plus Central track 3.4 = 95.1 against about 96 for Johns Island – Savannah across sources. The 91.7-mile Johns Island junction – Central Junction stretch follows OSM ways named CSX Charleston Subdivision (old_railway_operator=ACL), which is today's track and so a later state of the alignment; OpenHistoricalMap's Atack-derived Charleston & Savannah ways (202210839, 202210840) and the Savannah River crossing way (202210689) lie within 60 m of it, which is the check that the modern line and river crossing are the original location near Monteith and Hardeeville. No individual realignment or period bridge site was checked otherwise. Station-distance sample against the trace: Rantowles 0.09 mi, Ravenel 0.02, Jacksonboro 0.53, Ashepoo 0.14, Green Pond 0.03 (hand-pinned; Nominatim returned Laurens County), White Hall 0.01, Salkehatchie 0.02, Yemassee 0.27, Coosawhatchie 0.12, Ridgeland 0.15, Hardeeville 0.73. Larger: Adams Run hamlet 2.38 mi and Pocotaligo hamlet 1.24 mi, both geocoded to today's hamlet rather than a depot site; depot sites not established. Later alignment: surviving CSX track is drawn, including over the Ashley at the Bee's Ferry location rather than a located 1877 bridge. Sources disagree whether the S&C or the Ashley River Railroad owned the Bee's Ferry link.",
+    "segments": [
+     {
+      "start": 1878,
+      "end": 1880,
+      "headway_min": 720,
+      "note": "Bridge at Bee's Ferry complete by 11 Dec 1877; regular schedule from the Northeastern depot from 7 Jan 1878. Fast Mail, an accommodation train and a night passenger train, so headway about 720 minutes (estimate). Ends with the sale set for 7 June 1880; the notice was found, not a report of the sale. Ads under the old name run to Dec 1880 but repeat an 1879 schedule and prove nothing about ownership.",
+      "sources": [
+       "Segment-level: notices cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://historicnewspapers.sc.edu/lccn/sn92065401/1877-07-19/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067705/1877-12-11/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026925/1878-01-03/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067681/1878-06-13/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067681/1880-12-16/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn84026925/1880-05-06/ed-1/seq-2/",
+       "https://www.carolana.com/SC/Transportation/railroads/sc_rrs_ashley_river.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.935601,
+      32.801945
+     ],
+     [
+      -79.941699,
+      32.806905
+     ],
+     [
+      -79.941942,
+      32.807248
+     ],
+     [
+      -79.942613,
+      32.809027
+     ],
+     [
+      -79.942804,
+      32.809858
+     ],
+     [
+      -79.942776,
+      32.810731
+     ],
+     [
+      -79.942356,
+      32.811893
+     ],
+     [
+      -79.93836,
+      32.817416
+     ],
+     [
+      -79.937567,
+      32.819032
+     ],
+     [
+      -79.937412,
+      32.820249
+     ],
+     [
+      -79.93758,
+      32.821419
+     ],
+     [
+      -79.937959,
+      32.822354
+     ],
+     [
+      -79.938868,
+      32.823573
+     ],
+     [
+      -79.941998,
+      32.825975
+     ],
+     [
+      -79.942915,
+      32.826386
+     ],
+     [
+      -79.94604,
+      32.826832
+     ],
+     [
+      -79.950976,
+      32.825429
+     ],
+     [
+      -79.951498,
+      32.825443
+     ],
+     [
+      -79.952059,
+      32.825718
+     ],
+     [
+      -79.952392,
+      32.826234
+     ],
+     [
+      -79.952529,
+      32.828098
+     ],
+     [
+      -79.952855,
+      32.830043
+     ],
+     [
+      -79.954577,
+      32.832793
+     ],
+     [
+      -79.955914,
+      32.833977
+     ],
+     [
+      -79.960003,
+      32.836095
+     ],
+     [
+      -79.961055,
+      32.836926
+     ],
+     [
+      -79.965165,
+      32.841546
+     ],
+     [
+      -79.96813,
+      32.844031
+     ],
+     [
+      -79.96845,
+      32.844495
+     ],
+     [
+      -79.968925,
+      32.845701
+     ],
+     [
+      -79.971792,
+      32.848895
+     ],
+     [
+      -79.972719,
+      32.849616
+     ],
+     [
+      -79.973869,
+      32.850201
+     ],
+     [
+      -79.98437,
+      32.853103
+     ],
+     [
+      -79.985937,
+      32.853755
+     ],
+     [
+      -79.987503,
+      32.854635
+     ],
+     [
+      -79.98842,
+      32.855338
+     ],
+     [
+      -79.995621,
+      32.863025
+     ],
+     [
+      -79.996998,
+      32.864988
+     ],
+     [
+      -79.997648,
+      32.865695
+     ],
+     [
+      -79.999446,
+      32.865106
+     ],
+     [
+      -80.001046,
+      32.864621
+     ],
+     [
+      -80.027446,
+      32.855374
+     ],
+     [
+      -80.031041,
+      32.854541
+     ],
+     [
+      -80.042744,
+      32.852651
+     ],
+     [
+      -80.044689,
+      32.852042
+     ],
+     [
+      -80.046235,
+      32.851212
+     ],
+     [
+      -80.047522,
+      32.850181
+     ],
+     [
+      -80.102909,
+      32.796276
+     ],
+     [
+      -80.104597,
+      32.794885
+     ],
+     [
+      -80.107023,
+      32.793364
+     ],
+     [
+      -80.108973,
+      32.792521
+     ],
+     [
+      -80.111697,
+      32.791649
+     ],
+     [
+      -80.188864,
+      32.770633
+     ],
+     [
+      -80.191086,
+      32.770131
+     ],
+     [
+      -80.193534,
+      32.769712
+     ],
+     [
+      -80.206062,
+      32.768323
+     ],
+     [
+      -80.322376,
+      32.755534
+     ],
+     [
+      -80.33144,
+      32.754624
+     ],
+     [
+      -80.336591,
+      32.754609
+     ],
+     [
+      -80.374256,
+      32.756773
+     ],
+     [
+      -80.419666,
+      32.761597
+     ],
+     [
+      -80.4641,
+      32.762702
+     ],
+     [
+      -80.468491,
+      32.762708
+     ],
+     [
+      -80.470757,
+      32.762544
+     ],
+     [
+      -80.472955,
+      32.762291
+     ],
+     [
+      -80.476679,
+      32.761584
+     ],
+     [
+      -80.565498,
+      32.73842
+     ],
+     [
+      -80.569441,
+      32.737629
+     ],
+     [
+      -80.827286,
+      32.704094
+     ],
+     [
+      -80.829113,
+      32.703744
+     ],
+     [
+      -80.831581,
+      32.702968
+     ],
+     [
+      -80.834657,
+      32.701422
+     ],
+     [
+      -80.836871,
+      32.699735
+     ],
+     [
+      -80.838513,
+      32.698021
+     ],
+     [
+      -80.856703,
+      32.676359
+     ],
+     [
+      -80.92983,
+      32.588693
+     ],
+     [
+      -80.931876,
+      32.585992
+     ],
+     [
+      -80.933047,
+      32.584085
+     ],
+     [
+      -81.006755,
+      32.432281
+     ],
+     [
+      -81.066236,
+      32.309149
+     ],
+     [
+      -81.067466,
+      32.30681
+     ],
+     [
+      -81.068855,
+      32.304636
+     ],
+     [
+      -81.095238,
+      32.269983
+     ],
+     [
+      -81.09752,
+      32.26731
+     ],
+     [
+      -81.099575,
+      32.265321
+     ],
+     [
+      -81.101839,
+      32.26347
+     ],
+     [
+      -81.165291,
+      32.217656
+     ],
+     [
+      -81.177613,
+      32.208606
+     ],
+     [
+      -81.181065,
+      32.205573
+     ],
+     [
+      -81.183281,
+      32.203165
+     ],
+     [
+      -81.185968,
+      32.199387
+     ],
+     [
+      -81.187221,
+      32.197174
+     ],
+     [
+      -81.188122,
+      32.195231
+     ],
+     [
+      -81.189053,
+      32.192731
+     ],
+     [
+      -81.189853,
+      32.189794
+     ],
+     [
+      -81.190297,
+      32.187201
+     ],
+     [
+      -81.190488,
+      32.184909
+     ],
+     [
+      -81.190462,
+      32.181971
+     ],
+     [
+      -81.190239,
+      32.179683
+     ],
+     [
+      -81.18975,
+      32.177029
+     ],
+     [
+      -81.189262,
+      32.175225
+     ],
+     [
+      -81.167453,
+      32.117859
+     ],
+     [
+      -81.158855,
+      32.097471
+     ],
+     [
+      -81.157742,
+      32.095558
+     ],
+     [
+      -81.154125,
+      32.090494
+     ],
+     [
+      -81.113211,
+      32.079892
+     ],
+     [
+      -81.103026,
+      32.077109
+     ],
+     [
+      -81.0992,
+      32.0763
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Plant System (Charleston and Savannah Railway)",
+    "line": "Plant System: Charleston – Savannah (Charleston and Savannah Railway)",
+    "id": "plant-system-charleston-savannah-1880-1902",
+    "color": "#CA6702",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate. An April 1894 report of a timed run exists but was not used for an average.",
+    "geometry_source": "OpenStreetMap (Overpass): CSX Charleston Subdivision ways and CSX track on the Charleston Neck",
+    "geometry_quality": "Traced 107.1 mi to Central Junction, against 108 mi (April 1894 report of a timed run), 115 mi operated (Official Railway List 1894) and 116.8 mi from the 1951 Guide; the figures conflict and none is preferred here. The line stops at Central Junction, about 3 mi short of downtown Savannah: which depot and approach the Plant-era trains used is unconfirmed, so no approach is drawn. Another company's track: Charleston – Ashley Junction (6.9 mi) is the Northeastern Railroad's. It is traced on surviving CSX track on the Neck (ways named Seaboard System Railroad and Csx Railroad, plus ACL-tagged pieces), which was not independently confirmed as the 1878 Northeastern alignment, and it stops at the end of that track (32.8019, -79.9356) because the depot site was not located and the last stretch is not mapped. Ashley Junction – divergence measures 8.5 mi against Fowler's 9.1. Measured: divergence – Salkehatchie 41.6 mi (ACL mileposts 42.1), Salkehatchie – Coosawhatchie 10.7 (10.6), divergence – Central Junction 91.7. The 91.7-mile Johns Island junction – Central Junction stretch follows OSM ways named CSX Charleston Subdivision (old_railway_operator=ACL), which is today's track and so a later state of the alignment; OpenHistoricalMap's Atack-derived Charleston & Savannah ways (202210839, 202210840) and the Savannah River crossing way (202210689) lie within 60 m of it, which is the check that the modern line and river crossing are the original location near Monteith and Hardeeville. No individual realignment or period bridge site was checked otherwise. Station-distance sample against the trace: Rantowles 0.09 mi, Ravenel 0.02, Jacksonboro 0.53, Ashepoo 0.14, Green Pond 0.03 (hand-pinned; Nominatim returned Laurens County), White Hall 0.01, Salkehatchie 0.02, Yemassee 0.27, Coosawhatchie 0.12, Ridgeland 0.15, Hardeeville 0.73. Larger: Adams Run hamlet 2.38 mi and Pocotaligo hamlet 1.24 mi, both geocoded to today's hamlet rather than a depot site; depot sites not established. Later alignment: surviving CSX track is drawn.",
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1902,
+      "headway_min": 720,
+      "note": "Plant control from the sale set for 7 June 1880; the owner changed then, though 'Plant system' is first seen naming this road's trains in Jan 1893. The Charleston and Savannah Railway stayed a named timetable road until merged into the Savannah, Florida and Western in 1901, which was a paper change inside Plant. Headway 720 minutes is an estimate carried from the 1878 schedule. Jan 1890 ads have train 501 arriving at Ashley Junction, so not every train used the Charleston terminal. Ends when the Atlantic Coast Line took the Plant System in 1902.",
+      "sources": [
+       "Segment-level: sources cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://www.plantmuseum.com/discover/learn/chronology",
+       "https://en.wikipedia.org/wiki/Plant_System",
+       "https://railga.com/charlsav.html",
+       "https://historicnewspapers.sc.edu/lccn/sn84027853/1883-10-18/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067777/1887-12-29/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1893-01-11/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1894-04-18/ed-1/seq-4/",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.935601,
+      32.801945
+     ],
+     [
+      -79.941699,
+      32.806905
+     ],
+     [
+      -79.941942,
+      32.807248
+     ],
+     [
+      -79.942613,
+      32.809027
+     ],
+     [
+      -79.942804,
+      32.809858
+     ],
+     [
+      -79.942776,
+      32.810731
+     ],
+     [
+      -79.942356,
+      32.811893
+     ],
+     [
+      -79.93836,
+      32.817416
+     ],
+     [
+      -79.937567,
+      32.819032
+     ],
+     [
+      -79.937412,
+      32.820249
+     ],
+     [
+      -79.93758,
+      32.821419
+     ],
+     [
+      -79.937959,
+      32.822354
+     ],
+     [
+      -79.938868,
+      32.823573
+     ],
+     [
+      -79.941998,
+      32.825975
+     ],
+     [
+      -79.942915,
+      32.826386
+     ],
+     [
+      -79.94604,
+      32.826832
+     ],
+     [
+      -79.950976,
+      32.825429
+     ],
+     [
+      -79.951498,
+      32.825443
+     ],
+     [
+      -79.952059,
+      32.825718
+     ],
+     [
+      -79.952392,
+      32.826234
+     ],
+     [
+      -79.952529,
+      32.828098
+     ],
+     [
+      -79.952855,
+      32.830043
+     ],
+     [
+      -79.954577,
+      32.832793
+     ],
+     [
+      -79.955914,
+      32.833977
+     ],
+     [
+      -79.960003,
+      32.836095
+     ],
+     [
+      -79.961055,
+      32.836926
+     ],
+     [
+      -79.965165,
+      32.841546
+     ],
+     [
+      -79.96813,
+      32.844031
+     ],
+     [
+      -79.96845,
+      32.844495
+     ],
+     [
+      -79.968925,
+      32.845701
+     ],
+     [
+      -79.971792,
+      32.848895
+     ],
+     [
+      -79.972719,
+      32.849616
+     ],
+     [
+      -79.973869,
+      32.850201
+     ],
+     [
+      -79.98437,
+      32.853103
+     ],
+     [
+      -79.985937,
+      32.853755
+     ],
+     [
+      -79.987503,
+      32.854635
+     ],
+     [
+      -79.98842,
+      32.855338
+     ],
+     [
+      -79.995621,
+      32.863025
+     ],
+     [
+      -79.996998,
+      32.864988
+     ],
+     [
+      -79.997648,
+      32.865695
+     ],
+     [
+      -79.999446,
+      32.865106
+     ],
+     [
+      -80.001046,
+      32.864621
+     ],
+     [
+      -80.027446,
+      32.855374
+     ],
+     [
+      -80.031041,
+      32.854541
+     ],
+     [
+      -80.042744,
+      32.852651
+     ],
+     [
+      -80.044689,
+      32.852042
+     ],
+     [
+      -80.046235,
+      32.851212
+     ],
+     [
+      -80.047522,
+      32.850181
+     ],
+     [
+      -80.102909,
+      32.796276
+     ],
+     [
+      -80.104597,
+      32.794885
+     ],
+     [
+      -80.107023,
+      32.793364
+     ],
+     [
+      -80.108973,
+      32.792521
+     ],
+     [
+      -80.111697,
+      32.791649
+     ],
+     [
+      -80.188864,
+      32.770633
+     ],
+     [
+      -80.191086,
+      32.770131
+     ],
+     [
+      -80.193534,
+      32.769712
+     ],
+     [
+      -80.206062,
+      32.768323
+     ],
+     [
+      -80.322376,
+      32.755534
+     ],
+     [
+      -80.33144,
+      32.754624
+     ],
+     [
+      -80.336591,
+      32.754609
+     ],
+     [
+      -80.374256,
+      32.756773
+     ],
+     [
+      -80.419666,
+      32.761597
+     ],
+     [
+      -80.4641,
+      32.762702
+     ],
+     [
+      -80.468491,
+      32.762708
+     ],
+     [
+      -80.470757,
+      32.762544
+     ],
+     [
+      -80.472955,
+      32.762291
+     ],
+     [
+      -80.476679,
+      32.761584
+     ],
+     [
+      -80.565498,
+      32.73842
+     ],
+     [
+      -80.569441,
+      32.737629
+     ],
+     [
+      -80.827286,
+      32.704094
+     ],
+     [
+      -80.829113,
+      32.703744
+     ],
+     [
+      -80.831581,
+      32.702968
+     ],
+     [
+      -80.834657,
+      32.701422
+     ],
+     [
+      -80.836871,
+      32.699735
+     ],
+     [
+      -80.838513,
+      32.698021
+     ],
+     [
+      -80.856703,
+      32.676359
+     ],
+     [
+      -80.92983,
+      32.588693
+     ],
+     [
+      -80.931876,
+      32.585992
+     ],
+     [
+      -80.933047,
+      32.584085
+     ],
+     [
+      -81.006755,
+      32.432281
+     ],
+     [
+      -81.066236,
+      32.309149
+     ],
+     [
+      -81.067466,
+      32.30681
+     ],
+     [
+      -81.068855,
+      32.304636
+     ],
+     [
+      -81.095238,
+      32.269983
+     ],
+     [
+      -81.09752,
+      32.26731
+     ],
+     [
+      -81.099575,
+      32.265321
+     ],
+     [
+      -81.101839,
+      32.26347
+     ],
+     [
+      -81.165291,
+      32.217656
+     ],
+     [
+      -81.177613,
+      32.208606
+     ],
+     [
+      -81.181065,
+      32.205573
+     ],
+     [
+      -81.183281,
+      32.203165
+     ],
+     [
+      -81.185563,
+      32.200019
+     ],
+     [
+      -81.187221,
+      32.197174
+     ],
+     [
+      -81.188122,
+      32.195231
+     ],
+     [
+      -81.189444,
+      32.191442
+     ],
+     [
+      -81.189989,
+      32.189132
+     ],
+     [
+      -81.190379,
+      32.18651
+     ],
+     [
+      -81.190511,
+      32.1838
+     ],
+     [
+      -81.190358,
+      32.180702
+     ],
+     [
+      -81.190041,
+      32.178441
+     ],
+     [
+      -81.189262,
+      32.175225
+     ],
+     [
+      -81.167453,
+      32.117859
+     ],
+     [
+      -81.158855,
+      32.097471
+     ],
+     [
+      -81.157742,
+      32.095558
+     ],
+     [
+      -81.154291,
+      32.090791
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Green Pond, Walterboro and Branchville Railroad",
+    "line": "Green Pond, Walterboro and Branchville: Green Pond – Walterboro",
+    "id": "green-pond-walterboro-branchville-1887-1891",
+    "color": "#A4A63A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate; no schedule for this branch was found.",
+    "geometry_source": "OpenStreetMap (Overpass): lifted grade and ACE Basin Greenway",
+    "geometry_quality": "Traced 12.3 mi against 11.9 mi (Fowler SC table 25). From the main line just west of Green Pond (32.7321, -80.6124) along lifted grade in OSM: ways 992306655 and 12332865 (railway=abandoned, named Seaboard Coast Line Railroad), 992306656 (ACE Basin Greenway, a path on the grade) and 359889498 (railway=abandoned, named Hampton and Branchville, a label not confirmed by any source here), cut at its nearest point to Walterboro, 0.14 mi from the town centre. Ritter 0.04 mi from the trace. No straight legs, but the depot site at Walterboro was not located and the OSM grade is itself a later state; the extra 0.4 mi may be that. The grade continues toward Ehrhardt and is not drawn.",
+    "segments": [
+     {
+      "start": 1887,
+      "end": 1891,
+      "headway_min": 1440,
+      "note": "Built 1887 and running by June 1887, with one passenger coach bought for the road. Its own company, not the Charleston and Savannah; carolana's claim that Plant owned it from the start is contradicted by the 1887–91 papers. Plant's agent bought road and stock in Oct 1889, but the handover was reported in May 1891, and this feature splits there. Headway 1440 minutes is an estimate, not a sourced schedule.",
+      "sources": [
+       "Segment-level: papers cited below, as read in research/branches/charleston_and_savannah_railway.txt.",
+       "https://historicnewspapers.sc.edu/lccn/2012218613/1887-06-29/ed-1/seq-4/",
+       "https://historicnewspapers.sc.edu/lccn/2012218613/1889-10-09/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063789/1891-05-21/ed-1/seq-2/",
+       "https://en.wikipedia.org/wiki/Green_Pond,_Walterboro_and_Branchville_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.61243,
+      32.732055
+     ],
+     [
+      -80.614252,
+      32.732
+     ],
+     [
+      -80.614672,
+      32.732123
+     ],
+     [
+      -80.615233,
+      32.732543
+     ],
+     [
+      -80.615582,
+      32.733236
+     ],
+     [
+      -80.615619,
+      32.735124
+     ],
+     [
+      -80.619761,
+      32.749978
+     ],
+     [
+      -80.622542,
+      32.758657
+     ],
+     [
+      -80.625081,
+      32.767803
+     ],
+     [
+      -80.627268,
+      32.774932
+     ],
+     [
+      -80.629345,
+      32.783159
+     ],
+     [
+      -80.631315,
+      32.790195
+     ],
+     [
+      -80.653053,
+      32.863495
+     ],
+     [
+      -80.656763,
+      32.877997
+     ],
+     [
+      -80.659389,
+      32.887285
+     ],
+     [
+      -80.660556,
+      32.892033
+     ],
+     [
+      -80.661616,
+      32.895514
+     ],
+     [
+      -80.662443,
+      32.896835
+     ],
+     [
+      -80.663247,
+      32.897434
+     ],
+     [
+      -80.665402,
+      32.898757
+     ],
+     [
+      -80.667497,
+      32.899471
+     ],
+     [
+      -80.66857,
+      32.900361
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Plant System (Green Pond, Walterboro and Branchville Railroad)",
+    "line": "Plant System: Green Pond – Walterboro",
+    "id": "plant-system-green-pond-walterboro-1891-1902",
+    "color": "#CA6702",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate; no schedule for this branch was found.",
+    "geometry_source": "OpenStreetMap (Overpass): lifted grade and ACE Basin Greenway",
+    "geometry_quality": "Traced 12.3 mi against 11.9 mi (Fowler SC table 25). From the main line just west of Green Pond (32.7321, -80.6124) along lifted grade in OSM: ways 992306655 and 12332865 (railway=abandoned, named Seaboard Coast Line Railroad), 992306656 (ACE Basin Greenway, a path on the grade) and 359889498 (railway=abandoned, named Hampton and Branchville, a label not confirmed by any source here), cut at its nearest point to Walterboro, 0.14 mi from the town centre. Ritter 0.04 mi from the trace. No straight legs, but the depot site at Walterboro was not located and the OSM grade is itself a later state; the extra 0.4 mi may be that. The grade continues toward Ehrhardt and is not drawn.",
+    "segments": [
+     {
+      "start": 1891,
+      "end": 1902,
+      "headway_min": 1440,
+      "note": "Plant System from the May 1891 handover, corporately the GPW&B until merged into the Savannah, Florida and Western in 1901. Direct passenger evidence only at the end: Mar and Apr 1901 notices on passenger schedules and an afternoon train connecting at Green Pond. The 1891–1900 stretch rests on continuity between the 1887 and 1901 evidence, not on a dated timetable. Headway 1440 minutes is an estimate. Ends at the Atlantic Coast Line takeover of 1902; passenger trains continued under ACL, which this layer does not draw.",
+      "sources": [
+       "Segment-level: papers cited below, as read in research/branches/charleston_and_savannah_railway.txt; these prove 1891 and 1901, not the years between.",
+       "https://historicnewspapers.sc.edu/lccn/sn86063789/1891-05-21/ed-1/seq-2/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063790/1901-03-07/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063790/1901-04-11/ed-1/seq-2/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.61243,
+      32.732055
+     ],
+     [
+      -80.614252,
+      32.732
+     ],
+     [
+      -80.614672,
+      32.732123
+     ],
+     [
+      -80.615233,
+      32.732543
+     ],
+     [
+      -80.615582,
+      32.733236
+     ],
+     [
+      -80.615619,
+      32.735124
+     ],
+     [
+      -80.619761,
+      32.749978
+     ],
+     [
+      -80.622542,
+      32.758657
+     ],
+     [
+      -80.625081,
+      32.767803
+     ],
+     [
+      -80.627268,
+      32.774932
+     ],
+     [
+      -80.629345,
+      32.783159
+     ],
+     [
+      -80.631315,
+      32.790195
+     ],
+     [
+      -80.653053,
+      32.863495
+     ],
+     [
+      -80.656763,
+      32.877997
+     ],
+     [
+      -80.659389,
+      32.887285
+     ],
+     [
+      -80.660556,
+      32.892033
+     ],
+     [
+      -80.661616,
+      32.895514
+     ],
+     [
+      -80.662443,
+      32.896835
+     ],
+     [
+      -80.663247,
+      32.897434
+     ],
+     [
+      -80.665402,
+      32.898757
+     ],
+     [
+      -80.667497,
+      32.899471
+     ],
+     [
+      -80.66857,
+      32.900361
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Plant System (Charleston and Savannah Railway)",
+    "line": "Plant System: Ravenel – Yonges Island (Yonges Island Branch)",
+    "id": "plant-system-yonges-island-branch-1897",
+    "color": "#CA6702",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimate; no schedule for this branch was found.",
+    "geometry_source": "OpenStreetMap (Overpass): way 327181359, railway=abandoned",
+    "geometry_quality": "Traced 5.65 mi against 5.5 mi (Fowler SC table 24). One unnamed OSM railway=abandoned way (327181359), from the main line just east of Ravenel to 32.6884, -80.2239. Nothing names it as this branch; the fit is its mileage plus Hollywood at 0.00 mi, Meggett 0.03 mi and Yonges Island 0.09 mi from the line (Ravenel 0.34 mi). No straight legs. Two other unnamed abandoned ways near Meggett (327181360, 327182261) were not used; what they are is not established.",
+    "segments": [
+     {
+      "start": 1897,
+      "end": 1897,
+      "headway_min": 1440,
+      "note": "[ANCHOR] 1897 is the one proven year: Fowler table 24 marks Younge's Island with the letter for an 1897 Plant public timetable. Service certainly ran wider both ways, but no other regular-service year is confirmed, so do not widen this without evidence. Opening is given only as 'the 1880s', uncited to a date. Headway 1440 minutes is an estimate, not sourced.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: only the Fowler timetable letter supports this year; the timetable itself was not read.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+       "https://en.wikipedia.org/wiki/Charleston_and_Savannah_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.240217,
+      32.764544
+     ],
+     [
+      -80.242367,
+      32.764011
+     ],
+     [
+      -80.243625,
+      32.763174
+     ],
+     [
+      -80.244377,
+      32.762266
+     ],
+     [
+      -80.244818,
+      32.760374
+     ],
+     [
+      -80.243871,
+      32.750456
+     ],
+     [
+      -80.242532,
+      32.743007
+     ],
+     [
+      -80.241683,
+      32.733678
+     ],
+     [
+      -80.239239,
+      32.71621
+     ],
+     [
+      -80.238979,
+      32.715412
+     ],
+     [
+      -80.236617,
+      32.710292
+     ],
+     [
+      -80.233126,
+      32.703633
+     ],
+     [
+      -80.230371,
+      32.697566
+     ],
+     [
+      -80.229381,
+      32.696042
+     ],
+     [
+      -80.228103,
+      32.694793
+     ],
+     [
+      -80.225169,
+      32.692299
+     ],
+     [
+      -80.224321,
+      32.690064
+     ],
+     [
+      -80.223863,
+      32.688391
+     ]
+    ]
+   }
+  }
+ ]
+}
