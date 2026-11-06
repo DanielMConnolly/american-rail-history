@@ -1,0 +1,345 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Hampton and Branchville Railroad and Lumber Company (chartered 16 Dec 1891; renamed Hampton and Branchville Railroad 1924, a name change only) never reached Branchville. It ran NE from Hampton (Charleston & Western Carolina connection) through Crocketville, Miley, Moselle and Ashton to H&B Junction on the ACL Walterboro Branch (16 mi, open by 1 Jan 1901), then on to Padgett and Smoaks (Feb 1909) and Cannadys (by 1933). Passenger service is confirmed from the 1902 Official Guide to the December 1951 Guide (one daily-except-Sunday train Hampton - Cannadys); neither end is a known opening or closing, so every span is drawn [OPEN]. Drawn: Hampton - H&B Junction 1902-1951, H&B Junction - Smoaks 1926-1951, Smoaks - Cannadys 1933-1951, and the H&B's 1905 run over the ACL from H&B Junction to Lodge as a one-year [ANCHOR]. One operating company throughout (control passed from the Mauldin heirs to the Lightsey family without changing who ran the trains), so no Rule 4 split.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Hampton_and_Branchville_Railroad_and_Lumber_Company",
+   "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+   "https://palmettorailways.com/?p=1206",
+   "Official Guide of the Railways, Feb 1952 issue, Hampton & Branchville Railroad entry dated December 1951 (research/sources/official_guide_1952.txt, line ~112650)",
+   "https://en.wikipedia.org/wiki/Hampton_and_Branchville_Railroad"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (degree-tile rail graph + per-railroad cache). The road's own line is OSM railway=rail named 'Hampton and Branchville' (no old_railway_operator tag); the lifted Smoaks/Cannadys extension and the ACL Lodge stretch are OSM railway=abandoned ways. OpenHistoricalMap returned nothing for the road. Waypoint geocodes (Nominatim) were type-checked: Padgett (-> Padgett Acres, Columbia), Hiott(s) (-> a cemetery) and Bennetts (-> Bennetts Point) were wrong places and were not used; Hampton and H&B Junction were hand-pinned."
+  ],
+  "not_yet_sourced": "(1) [OPEN] ends on every drawn span: passenger START is confirmed only from 1902 (Hampton - H&B Junction), 1926 (to Smoaks) and 1933 (to Cannadys) - the first Guide listings in Fowler - though the lines opened 1892-1901, 1909 and 1926-33; passenger END is confirmed only to Dec 1951 (Feb 1952 Guide) on all three, with no last-train date found (Palmetto Railways: 'until about the 1950s'). Chronicling America pages for 1895-1924 (Savannah Morning News 1896-10-09 p6, 1898-09-15 p3; Manning Times 1904-03-30 p1) and the Hampton County Guardian are the places to look. (2) [ANCHOR] H&B Junction - Lodge over the ACL drawn for 1905 only. (3) Whether the 1951 train was mixed; the 'Boll Weevil' car nickname. (4) Mauldinton (1902 terminus) location - if beyond the junction, part of the Smoaks extension carried passengers by 1902. (5) Smoaks - Cannadys construction date. (6) Positions of Hiotts, Bennetts and Sidney: the report lists Sidney between Smoaks and Cannadys, but Nominatim puts Sidney, Colleton County, at (-80.568, 33.000), SE of Canadys on the grade toward Cottageville - unresolved. (7) ICC 16 mi vs Guide 17 mi to H&B Junction. All headways and speeds are estimates (only the 1951 schedule is sourced). (8) Exact divergence of the Smoaks extension at H&B Junction (drawn as a 0.84 mi straight line).",
+  "omitted": "Cannadys - Cottageville (12 mi): Dec 1951 Guide 'No regular service between Cannadys and Cottageville'; Fowler 'irregular service only beyond Cannadys, passengers?'. No confirmable passenger year - not drawn (report block [5], drawable NONE).",
+  "freight_only_excluded": "Mauldin and Sons lumber tram (1890, ~6 mi E of Hampton; logging only). All post-passenger freight operation: the Canadys power-plant coal traffic (to Dec 2012) over the 1962 ACL Stokes - Canadys spur and the ex-ACL Walterboro - Stokes trackage the H&B bought from CSX (1986 or 1988 - sources conflict), and the 2026 Palmetto Railways Salkehatchie Subdivision reactivation. None ever carried passengers; none drawn (Rule 1).",
+  "research_report": "research/branches/hampton_and_branchville_railroad.txt"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hampton and Branchville Railroad",
+    "line": "Hampton and Branchville: Hampton – H&B Junction",
+    "id": "hampton-and-branchville-hampton-hb-junction",
+    "color": "#FF77CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "Partly sourced, mostly estimated: 26 km/h is the Dec 1951 schedule speed (Hampton 9:45 a.m. - Cannadys 12:00 noon, 36 mi in 2 h 15 min, about 16 mph; return 1:30 - 3:40 p.m.), from the Feb 1952 Official Guide entry as quoted in the research report. No earlier running time was checked; applying it to 1902-1950 is an ESTIMATE (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. No OSM way carries old_railway_operator for this road (probe for 'Hampton|Branchville' on old_railway_operator returned 0 ways); it is tagged by name only ('Hampton and Branchville', TIGER name_base 'Hampton and Branchville RR' on the road's own line and 'Seaboard Coast Line Railroad' on the ex-ACL track it later bought). OpenHistoricalMap has nothing for the road (one untagged industrial way in the area); fetch_gap's OSM rail-trail query returned nothing. This line is the road's own, still-active track (OSM ways 927160600, 927160604, 927160605, 927160601, 12410773, 937881793, 937881794, 12410770, 1528205374-1528205393, 131558454, 320800571; railway=rail, usage=industrial, named 'Hampton and Branchville'; some carry operator=CSX Transportation from the TIGER import). Waypoints: Hampton = the west end of OSM way 927160600 at the connection with the CSX Augusta Subdivision (ex-Charleston & Western Carolina), hand-pinned at (-81.1162, 32.8753), 0.6 km from the Nominatim centre of Hampton town; Crocketville, Miley, Moselle, Ashton (Nominatim hamlets, all checked - correct places in Hampton/Colleton counties); H&B Junction hand-pinned at (-80.9345, 33.0552), where the H&B meets the ex-ACL Walterboro Branch. Trace: 16.7 mi, all on rail ways, 0 straight legs; waypoints within 0.5 km (Crocketville 0.48, others <0.1).",
+    "geometry_quality": "Traced 16.7 mi against a documented 16 mi (ICC valuation 'about 16 miles'; Fowler 16) and 17 mi (Dec 1951 Guide): 4% over ICC, 2% under the Guide. Traced chainage vs Fowler's mileposts: Crocketville 4.0/4, Miley 7.4/7, Moselle 9.1/9, Ashton 13.3/13, H&B Junction 16.7/16-17. No approximated (straight-line) legs. ERA CAVEAT: drawn on the alignment OSM maps today (the live freight line, reactivated 2026); any realignment since 1902 is not known and not checked. The Hampton end is the H&B's present connection with the CSX (ex-C&WC) line; the site of the H&B's own passenger station in Hampton was not located.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "[OPEN] both ends. Hampton (connection with the Charleston & Western Carolina) - Crocketville - Miley - Moselle - Ashton - Hampton & Branchville Junction (formerly Mauldins Junction; crossing/connection with the ACL Walterboro Branch). The Hampton and Branchville Railroad and Lumber Company (chartered 1891, renamed Hampton and Branchville Railroad 1924 - a name change, same operating company) had the line open to the junction by 1 Jan 1901 (ICC valuation) and was a freight common carrier from Sept 1892 (Palmetto Railways). START 1902 [OPEN]: the first POSITIVE passenger evidence is the 1902 Official Guide (Fowler lists Mauldinton as terminus of service in 1902G; its location is uncertain, but it can only be reached over this line). 1902 is the first CONFIRMED year, not a known opening - passenger service may have begun anywhere from 1892 to 1902; do not extend earlier without evidence. 1902-1925 the trains ended at or near the junction (in 1905 they ran on to Lodge over the ACL - separate [ANCHOR] feature); from 1926 they ran through to Smoaks and from 1933 to Cannadys (separate features). END 1951 [OPEN]: passenger service is confirmed to December 1951 by the Feb 1952 Official Guide (one train daily except Sunday, Hampton 9:45 a.m. - H&B Junction - Cannadys 12:00 noon, returning Cannadys 1:30 p.m. - Hampton 3:40 p.m.; all stations indexed without the freight-only dagger). This is the last CONFIRMED year, not a known end - no source dates when service actually stopped (Palmetto Railways says only 'until about the 1950s'). Do not extend without evidence. headway_min 1440 is an ESTIMATE: the Dec 1951 Guide shows one daily-except-Sunday round trip; no earlier frequency is sourced, and whether the train was mixed is not established. Freight continued after passengers ended (coal to the Canadys power plant until Dec 2012; Palmetto Railways' Salkehatchie Subdivision reactivation, 2026) - freight only, not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: start 1902 from Fowler, South Carolina railroads file table 76 (Mauldinton '1902G'); route and the 1 Jan 1901 opening from the ICC valuation abstract; end 1951 and the 1951 service from the Feb 1952 Official Guide H&B entry (Dec 1951) and its station index - all as read in research/branches/hampton_and_branchville_railroad.txt (2026-11-05); the tracer did not re-open these sources. Headway is an estimate.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Hampton_and_Branchville_Railroad_and_Lumber_Company",
+       "Official Guide of the Railways, Feb 1952 issue, Hampton & Branchville Railroad entry dated December 1951 (research/sources/official_guide_1952.txt, line ~112650)",
+       "https://palmettorailways.com/?p=1206"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.11618,
+      32.875266
+     ],
+     [
+      -81.115306,
+      32.874711
+     ],
+     [
+      -81.11413,
+      32.874204
+     ],
+     [
+      -81.111196,
+      32.872604
+     ],
+     [
+      -81.110239,
+      32.872476
+     ],
+     [
+      -81.109535,
+      32.872558
+     ],
+     [
+      -81.10888,
+      32.872738
+     ],
+     [
+      -81.107913,
+      32.87325
+     ],
+     [
+      -81.07766,
+      32.908871
+     ],
+     [
+      -81.057608,
+      32.931556
+     ],
+     [
+      -81.057004,
+      32.932037
+     ],
+     [
+      -81.032601,
+      32.947597
+     ],
+     [
+      -81.016034,
+      32.961533
+     ],
+     [
+      -81.014646,
+      32.963359
+     ],
+     [
+      -81.006481,
+      32.975456
+     ],
+     [
+      -80.942811,
+      33.045877
+     ],
+     [
+      -80.9348,
+      33.054772
+     ],
+     [
+      -80.93448,
+      33.055351
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hampton and Branchville Railroad",
+    "line": "Hampton and Branchville: H&B Junction – Smoaks",
+    "id": "hampton-and-branchville-hb-junction-smoaks",
+    "color": "#FF77CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "Partly sourced, mostly estimated: 26 km/h is the Dec 1951 schedule speed (Hampton 9:45 a.m. - Cannadys 12:00 noon, 36 mi in 2 h 15 min, about 16 mph; return 1:30 - 3:40 p.m.), from the Feb 1952 Official Guide entry as quoted in the research report. No earlier running time was checked; applying it to 1902-1950 is an ESTIMATE (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. No OSM way carries old_railway_operator for this road (probe for 'Hampton|Branchville' on old_railway_operator returned 0 ways); it is tagged by name only ('Hampton and Branchville', TIGER name_base 'Hampton and Branchville RR' on the road's own line and 'Seaboard Coast Line Railroad' on the ex-ACL track it later bought). OpenHistoricalMap has nothing for the road (one untagged industrial way in the area); fetch_gap's OSM rail-trail query returned nothing. This extension is lifted. From H&B Junction a 0.84 mi straight line runs ENE to the west end of OSM way 368652261 (railway=abandoned, unnamed) at (-80.9233, 33.0631); the trace then follows that way east to the vertex nearest Smoaks (Nominatim town, 0.36 km from the line). The grade's identity as the H&B is inferred from position - it is the only railway grade through Smoaks and continues to Canadys - since OSM gives it no name or operator.",
+    "geometry_quality": "Traced 7.4 mi (6.6 mi on the abandoned grade + one 0.84 mi straight line) against a documented about 8 mi (ICC: H&B Junction - Smoaks; Hampton - Smoaks 24.243 mi, so 8.2 mi from a 16 mi junction): about 10% short, most of it probably the unmapped first mile. Traced chainage from Hampton: Smoaks 24.2 vs ICC 24.243 / Fowler 24. APPROXIMATED LEG: H&B Junction - start of mapped grade at (-80.9233, 33.0631), 0.84 mi straight line, where OSM maps no grade (where exactly the extension left the junction is not known). Padgett (Fowler mi 20) geocoded to Padgett Acres in Columbia, Richland County (wrong place) and was not used. ERA CAVEAT: the 1909 alignment survives only as OSM's abandoned-railway trace; no historical map was checked against it.",
+    "segments": [
+     {
+      "start": 1926,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "[OPEN] both ends. H&B Junction - Padgett - (Strickland Switch / Mauldinton?) - Smoaks. Built with the carrier's own forces and 'completed and opened for operation' in February 1909 (ICC valuation) - a line opening, not proven passenger service. START 1926 [OPEN]: the first positive passenger evidence is Fowler's listing of Smoaks as terminus of service in the 1926 Official Guide (Padgett also lettered 1926G). 1926 is the first CONFIRMED year, not a known start - service may date from 1909; do not extend earlier without evidence. If Mauldinton (the 1902 terminus) actually lay beyond the junction, part of this line carried passengers by 1902; Fowler himself is unsure, so it is not used. END 1951 [OPEN]: passenger service is confirmed to December 1951 by the Feb 1952 Official Guide (one train daily except Sunday, Hampton 9:45 a.m. - H&B Junction - Cannadys 12:00 noon, returning Cannadys 1:30 p.m. - Hampton 3:40 p.m.; all stations indexed without the freight-only dagger). This is the last CONFIRMED year, not a known end - no source dates when service actually stopped (Palmetto Railways says only 'until about the 1950s'). Do not extend without evidence. The 1951 train ran through to Cannadys, which can only be reached via Smoaks. headway_min 1440 is an ESTIMATE: the Dec 1951 Guide shows one daily-except-Sunday round trip; no earlier frequency is sourced, and whether the train was mixed is not established. Freight continued after passengers ended (coal to the Canadys power plant until Dec 2012; Palmetto Railways' Salkehatchie Subdivision reactivation, 2026) - freight only, not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: 1909 opening from the ICC valuation abstract; start 1926 from Fowler, South Carolina railroads file table 76 (Smoaks and Padgett lettered b = 1926G); end 1951 from the Feb 1952 Official Guide H&B entry (Dec 1951) - all as read in research/branches/hampton_and_branchville_railroad.txt (2026-11-05); the tracer did not re-open these sources. Headway is an estimate.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Hampton_and_Branchville_Railroad_and_Lumber_Company",
+       "Official Guide of the Railways, Feb 1952 issue, Hampton & Branchville Railroad entry dated December 1951 (research/sources/official_guide_1952.txt, line ~112650)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.93448,
+      33.055351
+     ],
+     [
+      -80.923321,
+      33.06311
+     ],
+     [
+      -80.858679,
+      33.076772
+     ],
+     [
+      -80.825462,
+      33.084081
+     ],
+     [
+      -80.813455,
+      33.086437
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hampton and Branchville Railroad",
+    "line": "Hampton and Branchville: Smoaks – Cannadys",
+    "id": "hampton-and-branchville-smoaks-cannadys",
+    "color": "#FF77CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "Partly sourced, mostly estimated: 26 km/h is the Dec 1951 schedule speed (Hampton 9:45 a.m. - Cannadys 12:00 noon, 36 mi in 2 h 15 min, about 16 mph; return 1:30 - 3:40 p.m.), from the Feb 1952 Official Guide entry as quoted in the research report. No earlier running time was checked; applying it to 1902-1950 is an ESTIMATE (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. No OSM way carries old_railway_operator for this road (probe for 'Hampton|Branchville' on old_railway_operator returned 0 ways); it is tagged by name only ('Hampton and Branchville', TIGER name_base 'Hampton and Branchville RR' on the road's own line and 'Seaboard Coast Line Railroad' on the ex-ACL track it later bought). OpenHistoricalMap has nothing for the road (one untagged industrial way in the area); fetch_gap's OSM rail-trail query returned nothing. This extension is lifted. From the vertex nearest Smoaks the trace follows OSM way 368652261 (railway=abandoned), then 368652264, 368652265, 368652266 ('Snow Bird Lane') and 12325714 - abandoned-railway ways that also carry a dirt road on the former grade - and then way 368652267 (railway=abandoned) east to the vertex nearest Canadys (Nominatim hamlet, 0.15 km from the line). The grade's identity as the H&B's own extension is inferred from position (it runs on past Canadys toward Sidney and Cottageville, the 1951 H&B's 'no regular service' continuation), since OSM gives it no name or operator.",
+    "geometry_quality": "Traced 11.5 mi against a documented about 12 mi (Fowler 24 -> 36; Guide: Cannadys 36 mi from Hampton): 4% short. Traced chainage from Hampton: Cannadys 35.6 vs 36. No approximated (straight-line) legs; about 4.8 mi of the OSM ways used are abandoned-railway ways that now also carry a road. This is the H&B's own 1926-33 extension to Canadys, NOT the 1962 ACL Stokes - Canadys power-plant spur (the active ex-ACL track that today reaches the plant from the south, which the H&B used later for coal and which is not drawn). The line stops at Canadys; the Cannadys - Cottageville continuation is deliberately not drawn (no confirmed passenger year). ERA CAVEAT: drawn on OSM's abandoned-railway trace; no historical map was checked against it.",
+    "segments": [
+     {
+      "start": 1933,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "[OPEN] both ends. Smoaks - Sidney? - Cannadys (Canadys, Colleton County; Guide/Fowler spelling 'Cannadys'). Hiotts and Bennetts (Colleton Co.) are indexed as H&B passenger stations in the 1952 Guide but their order along the line is not established. Construction date not found: the ICC valuation ends at Smoaks (24.243 mi) and Smoaks was still the terminus in 1926. START 1933 [OPEN]: Cannadys is lettered c = 1933 Official Guide in Fowler. 1933 is the first CONFIRMED year, not a known start - service may date from as early as 1926; do not extend earlier without evidence. Cannadys was the end of the regular 1951 train (arr. 12:00 noon, dep. 1:30 p.m.); beyond it the Guide says 'No regular service between Cannadys and Cottageville (12 miles)', which is not drawn. END 1951 [OPEN]: passenger service is confirmed to December 1951 by the Feb 1952 Official Guide (one train daily except Sunday, Hampton 9:45 a.m. - H&B Junction - Cannadys 12:00 noon, returning Cannadys 1:30 p.m. - Hampton 3:40 p.m.; all stations indexed without the freight-only dagger). This is the last CONFIRMED year, not a known end - no source dates when service actually stopped (Palmetto Railways says only 'until about the 1950s'). Do not extend without evidence. headway_min 1440 is an ESTIMATE: the Dec 1951 Guide shows one daily-except-Sunday round trip; no earlier frequency is sourced, and whether the train was mixed is not established. Freight continued after passengers ended (coal to the Canadys power plant until Dec 2012; Palmetto Railways' Salkehatchie Subdivision reactivation, 2026) - freight only, not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: start 1933 from Fowler, South Carolina railroads file table 76 (Cannadys lettered c = 1933G); end 1951 and the Cannadys terminus from the Feb 1952 Official Guide H&B entry (Dec 1951); the ICC valuation used only for what it does not include - all as read in research/branches/hampton_and_branchville_railroad.txt (2026-11-05); the tracer did not re-open these sources. Headway is an estimate.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Hampton & Branchville Railroad entry dated December 1951 (research/sources/official_guide_1952.txt, line ~112650)",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Hampton_and_Branchville_Railroad_and_Lumber_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.813455,
+      33.086437
+     ],
+     [
+      -80.807136,
+      33.087771
+     ],
+     [
+      -80.804876,
+      33.088437
+     ],
+     [
+      -80.803667,
+      33.08862
+     ],
+     [
+      -80.802578,
+      33.088664
+     ],
+     [
+      -80.797353,
+      33.087486
+     ],
+     [
+      -80.760775,
+      33.07864
+     ],
+     [
+      -80.733644,
+      33.07021
+     ],
+     [
+      -80.723026,
+      33.065968
+     ],
+     [
+      -80.691681,
+      33.063049
+     ],
+     [
+      -80.646718,
+      33.058643
+     ],
+     [
+      -80.628963,
+      33.056964
+     ],
+     [
+      -80.623146,
+      33.056525
+     ],
+     [
+      -80.622123,
+      33.056278
+     ],
+     [
+      -80.620734,
+      33.055505
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Hampton and Branchville Railroad",
+    "line": "Hampton and Branchville: H&B Junction – Lodge (over the ACL)",
+    "id": "hampton-and-branchville-hb-junction-lodge-1905",
+    "color": "#FF77CC",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 26,
+    "speed_source": "Partly sourced, mostly estimated: 26 km/h is the Dec 1951 schedule speed (Hampton 9:45 a.m. - Cannadys 12:00 noon, 36 mi in 2 h 15 min, about 16 mph; return 1:30 - 3:40 p.m.), from the Feb 1952 Official Guide entry as quoted in the research report. No earlier running time was checked; applying it to 1902-1950 is an ESTIMATE (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. No OSM way carries old_railway_operator for this road (probe for 'Hampton|Branchville' on old_railway_operator returned 0 ways); it is tagged by name only ('Hampton and Branchville', TIGER name_base 'Hampton and Branchville RR' on the road's own line and 'Seaboard Coast Line Railroad' on the ex-ACL track it later bought). OpenHistoricalMap has nothing for the road (one untagged industrial way in the area); fetch_gap's OSM rail-trail query returned nothing. Drawn on the Atlantic Coast Line Walterboro Branch (ex Green Pond, Walterboro & Branchville), now lifted: from H&B Junction 71 m across the junction to OSM way 12331030 (railway=abandoned, TIGER 'Hampton and Branchville RR') and then way 320800573 (railway=abandoned, unnamed) NW to the point on it nearest Lodge (Nominatim, town-level administrative result for Lodge itself - correct place; 0.02 km from the grade). The line is cut at that projected point.",
+    "geometry_quality": "Traced 1.46 mi against a documented 1.3 mi (Fowler ACL table 25: H&B Junction 32.0, Lodge 33.3): 12% over, within the uncertainty of the hand-pinned junction and a town-centre Lodge point. No approximated (straight-line) legs beyond a 71 m join across the junction. ANOTHER COMPANY'S TRACK: this whole feature is drawn on the Atlantic Coast Line's Walterboro Branch, not on H&B-owned track - it records H&B trains running over the ACL in 1905, and is coloured and labelled for the H&B because the H&B ran the trains. No ACL Walterboro Branch feature exists in data/. ERA CAVEAT: drawn on OSM's abandoned-railway trace of the ACL branch; no historical map was checked against it.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1905,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. Fowler's H&B table header notes that 'in 1905G, service continued over BEW (25) to Lodge' - i.e. in the 1905 Official Guide H&B trains ran on from H&B Junction over the Atlantic Coast Line Walterboro Branch to the ACL station at Lodge (ACL table 25: H&B Junction mi 32.0, Lodge 33.3), presumably for connections, before the 1909 Smoaks extension. Service certainly ran wider than 1905 in both directions but no other year is confirmed: do NOT widen this anchor without a dated timetable. The track is the ACL's; this feature records H&B trains on it, not the ACL's own service. headway_min 1440 is an ESTIMATE: the Dec 1951 Guide shows one daily-except-Sunday round trip; no earlier frequency is sourced, and whether the train was mixed is not established.",
+      "sources": [
+       "Segment-level: 1905 from Fowler, South Carolina railroads file table 76 header note and ACL table 25, as read in research/branches/hampton_and_branchville_railroad.txt (2026-11-05); the tracer did not re-open the PDF. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.93448,
+      33.055351
+     ],
+     [
+      -80.93448,
+      33.055351
+     ],
+     [
+      -80.934472,
+      33.055567
+     ],
+     [
+      -80.934502,
+      33.056118
+     ],
+     [
+      -80.934625,
+      33.056475
+     ],
+     [
+      -80.934915,
+      33.05744
+     ],
+     [
+      -80.935105,
+      33.057811
+     ],
+     [
+      -80.93557,
+      33.058229
+     ],
+     [
+      -80.9424,
+      33.061878
+     ],
+     [
+      -80.953822,
+      33.067789
+     ]
+    ]
+   }
+  }
+ ]
+}
