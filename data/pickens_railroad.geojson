@@ -1,0 +1,310 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Pickens Railroad (SC charter 24 Dec 1890 / incorporated 10 May 1892) built one 9.3-mile line from the Southern Railway at Easley to the county seat at Pickens, opened 1898. Mixed trains carried passengers until 1928 (secondary sources); freight only thereafter until the last train of 2 Apr 2013 (renamed Pickens Railway c.1996). The railbed is now the Doodle Trail. One feature, one company throughout the passenger era: Southern's c.1910 control is not treated as an operating change.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+   "Official Guide of the Railways, Feb 1952 issue, Pickens Railroad entry (research/sources/official_guide_1952.txt)",
+   "https://historicnewspapers.sc.edu/lccn/sn93067671/1921-04-14/ed-1/seq-7/",
+   "https://historicnewspapers.sc.edu/lccn/sn93067659/1905-07-26/ed-1/seq-2/",
+   "https://en.wikipedia.org/wiki/Pickens_Railroad",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Pickens_Railroad",
+   "https://www.yourpickenscounty.com/?p=15525",
+   "https://hawkinsrails.net/shortlines/pick/pick.htm"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. No OSM way carries old_railway_operator for this road (probed 'Pickens Railroad|Pickens Railway|Pickens|PICK' over 34.78,-82.76,34.93,-82.54: 0 ways), and OpenHistoricalMap has no railway ways in that box. The line follows the Doodle Trail, the rail-trail built on the railbed after the last train of 2 Apr 2013: OSM ways 484292226, 1341300957, 134090958, 134090957, 134090961, 134090959, 357532286 (highway=path, name 'Doodle Trail', old_name 'Pickens Doodle', railway=abandoned). The trace ran 7.5 mi on those ways and 0 mi on any other railroad. Waypoints: Easley - the trail's east end at the Southern (now Norfolk Southern Greenville District) main line, hand-pinned (-82.6174, 34.8352); Arial and Ferguson check points on the trail; Pickens - the trail's west end, hand-pinned (-82.7011, 34.8839) because Nominatim returned Pickens County for 'Pickens, South Carolina'. All waypoints within 0.1 km of the drawn line. The Doodle Trail's 'Thomas H. Wright Downtown Trail Connector' in Easley (ways 484292218/484292225/1339505442/484292217) is a new trail, not railbed, and is not drawn. Simplified with douglas_peucker(8 m) + trim_reversals."
+  ],
+  "not_yet_sourced": [
+   "START 1898: secondary only (Wikipedia, yourpickenscounty, HawkinsRails - possibly one origin). Earliest primary evidence of passenger service is the 1902 Official Guide (via branchline.uk). If primary evidence is required at each end, the confirmed span is 1902-1921.",
+   "END 1928: secondary only (yourpickenscounty, HawkinsRails, a historical marker whose text was not read directly - hmdb returned 403). Last primary evidence of passengers is the Feb 1921 mixed schedule and the 1921 Official Guide; the Pickens Sentinel digitization has no hits after 1922. Mixed trains may have carried passengers unadvertised after 1928, but nothing supports a later date. Do not extend without evidence.",
+   "Southern Railway control c.1910 to 'several years later': nature (stock control vs operation) and duration not established. If a source shows Southern ran the trains in its own name, that span needs a split feature in Southern's colour.",
+   "headway_min (300) is from the single Feb 1921 schedule; avg_speed_kmh is an estimate from the same schedule.",
+   "Charter date conflict: 24 Dec 1890 (SC General Assembly per yourpickenscounty/Wikipedia) vs incorporation 10 May 1892 (ICC valuation). Does not affect drawn years.",
+   "Locations of the Easley and Pickens passenger depots not established; the drawn line stops at the Southern junction in Easley and at the Doodle Trail's Pickens trailhead (see geometry_quality)."
+  ],
+  "omitted": "The never-built 19-mile extension Pickens - Oolenoy Gap (1890 charter).",
+  "freight_only_excluded": "1928-2013 freight-only years on Easley - Pickens; the 1991+ Pickens-operated Norfolk Southern leases Belton - Honea Path and Belton - Anderson; Singer/Poinsett Lumber and Appalachian Lumber Co. logging lines in upper Pickens County (1927+); the 1922 Carolina Timber Co. Jocassee - Pickens proposal (no evidence it was built). Rule 1.",
+  "research_report": "research/branches/pickens_railroad.txt"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Pickens Railroad",
+    "line": "Pickens Railroad: Easley \u2013 Pickens",
+    "id": "pickens-railroad-easley-pickens",
+    "color": "#9C2A5C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 12,
+    "speed_source": "estimated: about 9 mi in about 1h15m per the Feb 1921 mixed-train schedule (Pickens Sentinel), ~7 mph; mixed-train running time from one timetable only, not known for other years. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py. No OSM way carries old_railway_operator for this road (probed 'Pickens Railroad|Pickens Railway|Pickens|PICK' over 34.78,-82.76,34.93,-82.54: 0 ways), and OpenHistoricalMap has no railway ways in that box. The line follows the Doodle Trail, the rail-trail built on the railbed after the last train of 2 Apr 2013: OSM ways 484292226, 1341300957, 134090958, 134090957, 134090961, 134090959, 357532286 (highway=path, name 'Doodle Trail', old_name 'Pickens Doodle', railway=abandoned). The trace ran 7.5 mi on those ways and 0 mi on any other railroad. Waypoints: Easley - the trail's east end at the Southern (now Norfolk Southern Greenville District) main line, hand-pinned (-82.6174, 34.8352); Arial and Ferguson check points on the trail; Pickens - the trail's west end, hand-pinned (-82.7011, 34.8839) because Nominatim returned Pickens County for 'Pickens, South Carolina'. All waypoints within 0.1 km of the drawn line. The Doodle Trail's 'Thomas H. Wright Downtown Trail Connector' in Easley (ways 484292218/484292225/1339505442/484292217) is a new trail, not railbed, and is not drawn. Simplified with douglas_peucker(8 m) + trim_reversals.",
+    "geometry_quality": "Easley - Pickens: traced 7.5 mi on the railbed (Doodle Trail) against a documented 9.3 mi (branchline.uk/Fowler mileposts; Feb 1952 Official Guide) and an ICC valuation main line of 8.527 mi - about 12% short of the ICC figure and 19% short of 9.3. No approximated (straight-line) legs. The shortfall is at the ends, not in the middle: Arial (milepost 2.3 from Easley) falls at 1.7 mi on the trace, so roughly 0.6 mi at the Easley end is not drawn - probably the road's own or Southern trackage from the junction to the Easley depot, whose location was not established; and the line stops at the trail's Pickens trailhead, about 0.4 mi (650 m) east of the Pickens town centre, so the last few hundred metres to the Pickens depot (site not located) are probably undrawn too. ERA CAVEAT: drawn on the railbed as it stood when the line closed in 2013, i.e. the freight-era alignment; no realignment is documented, but none was checked for 1898-1928, and the junction point with the Southern at Easley may reflect a later track arrangement.",
+    "segments": [
+     {
+      "start": 1898,
+      "end": 1928,
+      "headway_min": 300,
+      "note": "Easley - Pickens, the 'Pickens Doodle' (the steam engine ran backward one way, there being no turning facility). Stations from Easley: Mauldin (1.3), Arial (2.3), Parsons (4.8; 'Parma' in the 1920 timetable), Sheriff (5.8), Ferguson (7.8), Pickens. Mixed / 'combination' trains carried passengers, mail, express and freight (a 1905 Greenville News item, read only via a search snippet, says the road 'is compelled to operate combination trains' and was contemplating a motor car; no evidence one was bought). START 1898 and END 1928 are SECONDARY-SOURCED: Wikipedia, yourpickenscounty and HawkinsRails agree on both (opening 1898; 'Passenger service was discontinued in 1928 as better roads were built'), but the three may share one origin, and a historical marker reported to give 1928 was not read directly. The PRIMARY-confirmed core is 1902-1921: the road appears in the 1902 and 1921 Official Guides (branchline.uk SC Short Lines no. 83, letters a=1902G, b=1921G), and the Pickens Sentinel printed the company's 'Schedule No. 19 ... Effective February 7th, 1921 ... MIXED' (Apr-May 1921): two round trips daily, leaving Pickens 7:00am and 12:00m, about 1h15m each way. headway_min 300 is an ESTIMATE from that single 1921 schedule and is not known for other years. Southern Railway 'briefly acquired control' c.1910, reverting to local interests several years later; there is no evidence Southern ran the trains in its own name (the 1921 schedule is the Pickens Railroad Company's own, and the Guide lists it as an independent short line), so the feature is not split (Rule 4). After 1928 the road carried freight only - Singer bought it in 1939 for its Pickens cabinet plant, dieselized 1947; the Aug 1951 Guide schedule says 'operated for freight and express only' - until the last train on 2 Apr 2013; the track was lifted and the Doodle Trail opened in 2015. Those freight years are deliberately not drawn (Rule 1).",
+      "sources": [
+       "Segment-level: the 1902-1921 core is primary-sourced - Official Guide 1902 and 1921 listings via branchline.uk SC Short Lines no. 83 (letters a=1902G, b=1921G), and the company's Feb 1921 mixed-train Schedule No. 19 printed in the Pickens Sentinel 14 Apr, 28 Apr, 12 May and 19 May 1921 (2 round trips, basis of the headway estimate). The 1898 start and 1928 end rest only on three agreeing SECONDARY sources (Wikipedia, yourpickenscounty, HawkinsRails), possibly of one origin; no primary source for either end was found. Feb 1952 Guide confirms passengers gone by Aug 1951 (freight and express only). All as quoted in research/branches/pickens_railroad.txt (2026-11-06); the tracer did not re-open these pages.",
+       "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Pickens Railroad entry (research/sources/official_guide_1952.txt)",
+       "https://historicnewspapers.sc.edu/lccn/sn93067671/1921-04-14/ed-1/seq-7/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067659/1905-07-26/ed-1/seq-2/",
+       "https://en.wikipedia.org/wiki/Pickens_Railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Pickens_Railroad",
+       "https://www.yourpickenscounty.com/?p=15525",
+       "https://hawkinsrails.net/shortlines/pick/pick.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.617148,
+      34.835266
+     ],
+     [
+      -82.618791,
+      34.836283
+     ],
+     [
+      -82.620179,
+      34.836976
+     ],
+     [
+      -82.623763,
+      34.837535
+     ],
+     [
+      -82.625992,
+      34.838188
+     ],
+     [
+      -82.631419,
+      34.84085
+     ],
+     [
+      -82.633672,
+      34.841169
+     ],
+     [
+      -82.635589,
+      34.84087
+     ],
+     [
+      -82.636384,
+      34.840873
+     ],
+     [
+      -82.637023,
+      34.841057
+     ],
+     [
+      -82.638195,
+      34.841715
+     ],
+     [
+      -82.639056,
+      34.84199
+     ],
+     [
+      -82.641856,
+      34.842532
+     ],
+     [
+      -82.644507,
+      34.84332
+     ],
+     [
+      -82.647661,
+      34.843689
+     ],
+     [
+      -82.648371,
+      34.844002
+     ],
+     [
+      -82.648984,
+      34.844471
+     ],
+     [
+      -82.649949,
+      34.845757
+     ],
+     [
+      -82.650149,
+      34.846529
+     ],
+     [
+      -82.64972,
+      34.848835
+     ],
+     [
+      -82.648711,
+      34.852618
+     ],
+     [
+      -82.648803,
+      34.854143
+     ],
+     [
+      -82.649162,
+      34.855283
+     ],
+     [
+      -82.649578,
+      34.856003
+     ],
+     [
+      -82.652035,
+      34.858523
+     ],
+     [
+      -82.652759,
+      34.859769
+     ],
+     [
+      -82.653034,
+      34.860773
+     ],
+     [
+      -82.653521,
+      34.864595
+     ],
+     [
+      -82.653555,
+      34.866366
+     ],
+     [
+      -82.653811,
+      34.867172
+     ],
+     [
+      -82.654551,
+      34.868156
+     ],
+     [
+      -82.655811,
+      34.869296
+     ],
+     [
+      -82.658225,
+      34.870792
+     ],
+     [
+      -82.659754,
+      34.871386
+     ],
+     [
+      -82.662499,
+      34.871774
+     ],
+     [
+      -82.663083,
+      34.87208
+     ],
+     [
+      -82.663515,
+      34.872537
+     ],
+     [
+      -82.663724,
+      34.87325
+     ],
+     [
+      -82.663279,
+      34.874901
+     ],
+     [
+      -82.663606,
+      34.876865
+     ],
+     [
+      -82.664595,
+      34.879057
+     ],
+     [
+      -82.665754,
+      34.882777
+     ],
+     [
+      -82.666194,
+      34.885696
+     ],
+     [
+      -82.66723,
+      34.88799
+     ],
+     [
+      -82.668622,
+      34.889165
+     ],
+     [
+      -82.671666,
+      34.890646
+     ],
+     [
+      -82.672691,
+      34.890875
+     ],
+     [
+      -82.675295,
+      34.890441
+     ],
+     [
+      -82.680147,
+      34.890441
+     ],
+     [
+      -82.682709,
+      34.890082
+     ],
+     [
+      -82.686901,
+      34.889161
+     ],
+     [
+      -82.688986,
+      34.888919
+     ],
+     [
+      -82.693277,
+      34.887252
+     ],
+     [
+      -82.695292,
+      34.886039
+     ],
+     [
+      -82.695876,
+      34.885927
+     ],
+     [
+      -82.697497,
+      34.886045
+     ],
+     [
+      -82.698161,
+      34.885914
+     ],
+     [
+      -82.698976,
+      34.885486
+     ],
+     [
+      -82.699931,
+      34.884562
+     ],
+     [
+      -82.701103,
+      34.883896
+     ]
+    ]
+   }
+  }
+ ]
+}
