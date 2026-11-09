@@ -1,0 +1,836 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Northwestern Railroad of South Carolina (Wilson and Summerton Railroad, chartered 1888, opened Feb 1889; renamed 28 Feb 1899 - the same corporation) was Thomas Wilson's X-shaped short line centred on Sumter: Sumter - Camden (1900), Sumter - Millard - Wilson's Mill (the original W&S plus the ex-CS&N Sumter - Millard piece bought 1895), the Millard - St. Paul stub, and the Rose Hill branch (1914-15). Full passenger trains ended 17 Jan 1915; mixed trains carried passengers thereafter; operations ceased 4 Aug 1935 and the ACL Co. of Connecticut bought and scrapped the property in Dec 1935-1936. It was operated by its own organization throughout (ICC), despite joint ACL/Wilson stock control - no ACL-operated years, so no Rule 4 split. The predecessor Charleston, Sumter & Northern's Sumter - Merriam piece (1890-1895) is drawn as its own feature in its own colour.",
+  "research_report": "research/branches/northwestern_railroad_of_south_carolina.txt",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Northwestern_Railroad_of_South_Carolina",
+   "https://www.abandonedrails.com/north-western-railroad-of-south-carolina",
+   "https://www.branchline.uk/jfpdf/southcarolinarrs.pdf",
+   "https://historicnewspapers.sc.edu",
+   "https://en.wikipedia.org/wiki/Charleston,_Sumter_and_Northern_Railroad"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror; 0.3 x 0.25 degree boxes because 1-degree tiles kept returning 504) and OpenHistoricalMap Overpass (CC0, geometry only - its dates are not used). OSM ways 12531340 (razed), 1385486813 (razed, not drawn - OHM 201947508 used instead), 359405552 (abandoned), 321571669 (abandoned, old_railway_operator=ACL), 12438477 (US 521), 321030112 (Southern SB-Line, abandoned), 320549331 (CSX AK Line); OHM ways 201947503, 201947504, 201947508. No way in the area carries an NWRR, W&S or CS&N operator tag."
+  ],
+  "not_yet_sourced": "(1) [OPEN] ends: Sumter - Camden 1932, Sumter - Millard and Millard - Wilson's Mill 1919, St. Paul Branch 1912 are last-confirmed years, not ends. Mixed trains ran to 4 Aug 1935; whether they carried passengers after 1932 (Camden line) / 1919 (south lines) is unproven. Candidate sources: Sumter Daily Item (July-Aug 1935 'Northwestern Railroad Folds'), the ICC Finance Docket abandonment report (application 9 May 1935), SC Railroad Commission annual reports 1925-1935. (2) Strict reading on named passengers would end Camden at 1922 and the south lines at 1916; the report's public-schedule ends (1932/1919) are drawn. (3) No 1889-1894 W&S public timetable found; 1889 rests on the opening-for-business report and the Aug 1889 excursion. (4) Whether W&S trains reached Sumter over the CS&N before 1895 is unresolved and not drawn. (5) All headways and speeds are estimates. (6) Station sites at Sumter, Camden and St. Paul not located; Merriam placed by chainage.",
+  "omitted": "Rose Hill Branch, Seale's Siding (Manville Junction) - Rose Hill, 9.5 mi, built 1914-15 (ICC; abandonedrails says 1913, terminus 'Manville'): report drawable NONE - no passenger train, mixed train or fare found for it. Not evidence it was freight-only, just unproven. Also not drawn: W&S part-line construction trains/excursions of Oct-Dec 1888; the CS&N beyond Sumter - Merriam (Merriam - Vance - Pregnall's; Sumter - Darlington - Bennettsville), which belong to the Eutawville/ACL and a future CS&N report.",
+  "freight_only_excluded": "None positively freight-only. The ends drawn are [OPEN] last-confirmed passenger years, not freight-only cut-offs; the 1915-1935 mixed-train era beyond them is left undrawn for want of passenger evidence, not because it was freight-only."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Northwestern Railroad of South Carolina",
+    "line": "Northwestern of South Carolina: Sumter \u2013 Camden",
+    "id": "northwestern-sc-sumter-camden",
+    "color": "#5B6E3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 30 mi steam/mixed short line; the 1915 mixed schedule (lv Camden 7 a.m., lv Sumter 9.50 a.m.) bounds the run under 2 h 50 min with a turnaround, but no running time was read. 25 km/h is an estimate (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, small-box queries) and OpenHistoricalMap (CC0), cached and routed with opstrace.py's graph; no OSM way carries any NWRR/W&S/CS&N old_railway_operator tag (probed: only ACL, SAL, Southern in the area), so the grade ways were identified by position and assembled from their own geometry, then simplified with douglas_peucker(8 m) + trim_reversals. Pieces, Sumter to Camden: CSX AK Line (OSM 320549331) from the Sumter depot crossing (-80.33338, 33.91898) west to the CSX junction, 0.6 mi; OHM way 201947504 (the ACL Eastover line) to the point where the NWRR grade leaves it, 0.5 mi; OHM way 201947503 (untagged railway, Sumter - Dalzell, the NWRR grade), 9.5 mi; OSM railway=abandoned way 321571669 (tagged old_railway_operator=ACL, which bought the property at the Dec 1935 foreclosure; its route through Borden and Rembert is the NWRR's), 8.2 mi; US 521 (OSM way 12438477), which abandonedrails says was built on the grade from Rembert to the SC 261 junction, 4.6 mi; OSM abandoned Southern Railway SB-Line way 321030112 (the ex-S.C.&G. Extension, Southern trackage) from Northwestern Junction into Camden, 4.3 mi. Nominatim: Dalzell (census place), Rembert (CDP), Borden (hamlet) used only as checks; Providence geocoded to a Sumter street and was not used.",
+    "geometry_quality": "Sumter - Camden: 29.7 mi drawn against 30.0 mi documented (branchline.uk SC line 80) and ICC 24.49 mi owned Sumter - Northwestern Jct plus ~4 mi Southern trackage. Chainage vs branchline mileposts: Dalzell 10.3/10.0, Borden 14.5/14, Rembert 17.9/19.0, Northwestern Junction 25.4/26.0, Camden 29.7/30.0. STRAIGHT-LINE LEGS (3, total 1.9 mi): (1) Dalzell - Borden gap, 1.6 mi, from the north end of the OHM grade (-80.4394, 34.0276) to the south end of the OSM abandoned grade (-80.451, 34.048) - neither source maps this stretch (Prairie Road follows the chord for ~0.4 mi); (2) 0.1 mi connector from the abandoned grade's north end onto US 521 near Rembert; (3) 0.3 mi from the US 521 / SC 261 junction to Northwestern Junction on the Southern line (placed at the nearest point of the Southern grade, -80.58307, 34.18725). LATER-ALIGNMENT CAVEATS: 4.6 mi (Rembert - SC 261) is drawn on US 521, a highway later built on the grade - same corridor, later structure; the 1.1 mi in Sumter is on the present CSX/ACL layout (the NWRR used ACL track into the ACL depot under a 1914 joint-facility agreement), and the Sumter terminal is the AK Line / N-S line crossing by the depot area, not a located depot. CAMDEN END: the Southern line's crossing of DeKalb Street (-80.5960, 34.2465); the Southern (ex-S.C.&G. Extension) depot the NWRR used was not located. The NWRR-owned grade on OSM/OHM is not dated; any 1900-1935 relocation is unchecked.",
+    "segments": [
+     {
+      "start": 1900,
+      "end": 1914,
+      "headway_min": 720,
+      "note": "Opened Oct 1900: 'The first regular train over the Northwestern road from Sumter arrived Tuesday ... Trains leave Camden at 6.15 a.m. and 8.00 p.m.' (Camden Chronicle 19 Oct 1900); inspected and opened for regular traffic by Railroad Commission chairman W. D. Evans the same week (Watchman and Southron 24 Oct 1900). ICC dates construction 1900-1901; the newspapers show trains in 1900. Full passenger trains ran until 17 Jan 1915. Through excursions Wilson's Mill - Camden 1913. Operated by the NWRR's own organization throughout (ICC: 'operated by its own organization during its entire life'), though stock-controlled jointly by Thomas Wilson and the Atlantic Coast Line Co. of Connecticut - control, not operation, so no ACL split. headway_min 720 (two round trips a day, from the 1900 departures) is an ESTIMATE for the whole span.",
+      "sources": [
+       "Segment-level: Camden Chronicle 19 Oct 1900, Watchman and Southron 24 Oct 1900, County Record 25 Oct 1900; ICC Valuation Reports vol. 141 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1900-10-19/ed-1/seq-3/",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Northwestern_Railroad_of_South_Carolina"
+      ]
+     },
+     {
+      "start": 1915,
+      "end": 1928,
+      "headway_min": 720,
+      "note": "From 17 Jan 1915 the road 'removed its full passenger trains, and from now on indefinitely will operate only mixed trains' (Camden Chronicle 22 Jan 1915): lv Camden 7 a.m., lv Sumter 9.50 a.m., lv Camden 3.20 p.m. The mixed trains carried passengers - the 24 Aug 1915 wreck near White's Siding was a mixed train with 'the regular passenger coach, the colored coach and baggage combination car', passengers injured (Camden Chronicle / Lancaster News 27 Aug 1915). The Railroad Commission left 'the passenger service and schedule' as they were (Watchman and Southron 12 Jan 1916). 13 Jan 1922 display ad 'Condensed and Improved Schedules via Northwestern Rail Road' with fares (Camden Chronicle) - the last explicit passenger evidence. Washed out in the Sept 1928 storm, trains suspended for a time. headway_min 720 is an ESTIMATE from the 1915 schedule.",
+      "sources": [
+       "Segment-level: Camden Chronicle 22 Jan 1915, 27 Aug 1915, 13 Jan 1922; Watchman and Southron 12 Jan 1916 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1915-01-22/ed-1/seq-8/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1922-01-13/ed-1/seq-4/"
+      ]
+     },
+     {
+      "start": 1929,
+      "end": 1932,
+      "headway_min": 1440,
+      "note": "May 1929: schedule renegotiated with the Camden Chamber of Commerce, 'one train a day between these two points' (Wateree Messenger 7 May 1929). 10 Jun 1932 public notice 'Change of Schedule' (Nos. 69, 72, 73) in the Camden Chronicle. These are public train schedules on a road known to run passenger-carrying mixed trains; neither names passengers. [OPEN] This is the last CONFIRMED year, not a known end: the road ran only mixed trains from 17 Jan 1915 and operated until midnight 4 Aug 1935, but no source found names passengers on this line after 1932 (public schedule) - the last year a source names passengers or fares outright is 1922, so a strict reading would end this line in 1922. Do not extend without evidence. Railway mail ended Nov 1933; receivership Oct 1934; last trains 2 Aug 1935, operations ceased midnight 4 Aug 1935 by court order; property sold to the ACL Co. of Connecticut Dec 1935 and scrapped 1936 - no ACL-operated years. headway_min 1440 (one train a day, 1929) is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Wateree Messenger 7 May 1929, 15 Nov 1933; Camden Chronicle 10 Jun 1932, 2 Aug 1935 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1932-06-10/ed-1/seq-1/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1935-08-02/ed-1/seq-1/",
+       "https://www.abandonedrails.com/north-western-railroad-of-south-carolina"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.333491,
+      33.919128
+     ],
+     [
+      -80.342903,
+      33.9139
+     ],
+     [
+      -80.344954,
+      33.912853
+     ],
+     [
+      -80.346235,
+      33.912362
+     ],
+     [
+      -80.347389,
+      33.912084
+     ],
+     [
+      -80.351559,
+      33.911609
+     ],
+     [
+      -80.352555,
+      33.911773
+     ],
+     [
+      -80.353876,
+      33.912297
+     ],
+     [
+      -80.408166,
+      33.985244
+     ],
+     [
+      -80.428439,
+      34.012739
+     ],
+     [
+      -80.436508,
+      34.02341
+     ],
+     [
+      -80.439435,
+      34.027615
+     ],
+     [
+      -80.451251,
+      34.047992
+     ],
+     [
+      -80.451978,
+      34.048856
+     ],
+     [
+      -80.467557,
+      34.059878
+     ],
+     [
+      -80.481418,
+      34.070046
+     ],
+     [
+      -80.484894,
+      34.073388
+     ],
+     [
+      -80.489014,
+      34.077866
+     ],
+     [
+      -80.490991,
+      34.078816
+     ],
+     [
+      -80.493606,
+      34.078791
+     ],
+     [
+      -80.511674,
+      34.079395
+     ],
+     [
+      -80.516223,
+      34.079786
+     ],
+     [
+      -80.528411,
+      34.09116
+     ],
+     [
+      -80.541457,
+      34.109816
+     ],
+     [
+      -80.54854,
+      34.122312
+     ],
+     [
+      -80.549583,
+      34.124356
+     ],
+     [
+      -80.551325,
+      34.124113
+     ],
+     [
+      -80.578465,
+      34.187096
+     ],
+     [
+      -80.583073,
+      34.187249
+     ],
+     [
+      -80.582214,
+      34.205344
+     ],
+     [
+      -80.582171,
+      34.210668
+     ],
+     [
+      -80.58313,
+      34.213221
+     ],
+     [
+      -80.592857,
+      34.227666
+     ],
+     [
+      -80.595561,
+      34.235649
+     ],
+     [
+      -80.596326,
+      34.241597
+     ],
+     [
+      -80.595981,
+      34.246499
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Northwestern Railroad of South Carolina",
+    "line": "Northwestern of South Carolina: Sumter \u2013 Millard",
+    "id": "northwestern-sc-sumter-millard",
+    "color": "#5B6E3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: steam short line, mixed trains from 1915. The Sept 1895 W&S timetable (Wilson's Mill 9.10 a.m. - Sumter 12.50 p.m., ~38 mi with the St. Paul dog-leg) works out to ~17 km/h; 20 km/h is a rounded estimate, not a sourced figure (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, small-box queries) and OpenHistoricalMap (CC0), cached and routed with opstrace.py's graph; no OSM way carries any NWRR/W&S/CS&N old_railway_operator tag (probed: only ACL, SAL, Southern in the area), so the grade ways were identified by position and assembled from their own geometry, then simplified with douglas_peucker(8 m) + trim_reversals. Pieces: OHM way 201947508 (untagged railway, the N-S line along -80.3335 south from the Sumter depot crossing), 1.6 mi; OSM untagged railway=razed way 12531340 (the CS&N grade: passes Tindal, Paxville, Silver, St. Paul within 0.6 km), Sumter south side - Millard Junction, 19.2 mi. Millard Junction is OSM node 3641276669, where abandoned way 359405552 (the W&S line) leaves the razed CS&N grade. Nominatim checks: Tindal, Silver (hamlets), Paxville (municipality) - all correct places.",
+    "geometry_quality": "Sumter - Millard: 21.0 mi drawn against 21.0 mi documented (branchline.uk SC line 79). Chainage vs mileposts: Tindal 6.8/7.1, Packsville (Paxville) 13.2/12.8, Silver 17.2/17.0, Millard 21.0/21.0. STRAIGHT-LINE LEG: 0.2 mi at Sumter's south side, from the south end of OHM way 201947508 (-80.33795, 33.89682) to the north end of the razed grade (-80.34000, 33.89441). Sumter terminal is the AK Line / N-S line crossing by the depot area, not a located depot (the W&S used ACL track and depot at Sumter). The grade is not dated in OSM/OHM; it is the CS&N's 1885-1892 alignment, unchecked for later relocation.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1914,
+      "headway_min": 1440,
+      "note": "The ex-Charleston, Sumter & Northern line Sumter - Millard, passed to the Wilson & Summerton at the CS&N foreclosure sale of 25 Feb 1895 (the CS&N years are the separate feature charleston-sumter-northern-sumter-merriam). W&S timetable 'In effect September 16th, 1895': No. 72 lv Wilson's Mill 9.10 a.m. ... Silver, Packsville, Tindal, ar Sumter 12.50 p.m.; No. 73 return (Watchman and Southron 4 Mar 1896); the Jan 1896 timetable runs via Millard. Renamed Northwestern Railroad of South Carolina 28 Feb 1899 - the same corporation, not a change of operator. Passenger complaints 1905, new Summerton passenger depot Feb 1906, Jan 1912 derailment of the train for Summerton and St. Paul with passengers aboard. Ran as one service with Millard - Wilson's Mill. headway_min 1440 (one round trip a day) is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Watchman and Southron 4 Mar 1896, 17 Jun 1896, 1 Nov 1905, 17 Jan 1912; Manning Times 14 Feb 1906; ICC Valuation Reports vol. 141 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1896-03-04/ed-1/seq-8/",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1912-01-17/ed-1/seq-3/",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Northwestern_Railroad_of_South_Carolina"
+      ]
+     },
+     {
+      "start": 1915,
+      "end": 1919,
+      "headway_min": 1440,
+      "note": "Mixed trains only from 17 Jan 1915 (Camden Chronicle 22 Jan 1915: Wilson's Mill - Summerton - Sumter, laying over at Summerton). Mar 1916: 'the passengers on board got a good jolt' on the train from Summerton, and a crowded special Sumter - Summerton for a revival (Watchman and Southron 1 and 29 Mar 1916) - the last explicit passenger evidence. Apr 1919: after a Railroad Commission hearing 'the trains of the company have been pretty well in schedule' (Manning Times 9 Apr 1919), public service, passengers not named. [OPEN] This is the last CONFIRMED year, not a known end: the road ran only mixed trains from 17 Jan 1915 and operated until midnight 4 Aug 1935, but no source found names passengers on this line after 1919 (public schedule; strict reading on named passengers is 1916). Do not extend without evidence. Rails lifted Davis Station - Sumter Feb 1936. headway_min 1440 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Camden Chronicle 22 Jan 1915; Watchman and Southron 1 Mar 1916, 29 Mar 1916; Manning Times 9 Apr 1919 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn86063760/1919-04-09/ed-1/seq-13/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.33338,
+      33.918984
+     ],
+     [
+      -80.333579,
+      33.918461
+     ],
+     [
+      -80.333463,
+      33.908939
+     ],
+     [
+      -80.333565,
+      33.904801
+     ],
+     [
+      -80.333792,
+      33.903034
+     ],
+     [
+      -80.334471,
+      33.901747
+     ],
+     [
+      -80.337948,
+      33.896821
+     ],
+     [
+      -80.349428,
+      33.883017
+     ],
+     [
+      -80.350623,
+      33.881124
+     ],
+     [
+      -80.351782,
+      33.875906
+     ],
+     [
+      -80.354405,
+      33.867558
+     ],
+     [
+      -80.354941,
+      33.864173
+     ],
+     [
+      -80.354877,
+      33.855549
+     ],
+     [
+      -80.3561,
+      33.825607
+     ],
+     [
+      -80.357151,
+      33.807494
+     ],
+     [
+      -80.357408,
+      33.795434
+     ],
+     [
+      -80.357065,
+      33.787997
+     ],
+     [
+      -80.357387,
+      33.751288
+     ],
+     [
+      -80.357344,
+      33.733249
+     ],
+     [
+      -80.355434,
+      33.70596
+     ],
+     [
+      -80.355799,
+      33.698355
+     ],
+     [
+      -80.357308,
+      33.689613
+     ],
+     [
+      -80.357682,
+      33.683605
+     ],
+     [
+      -80.358935,
+      33.675296
+     ],
+     [
+      -80.361049,
+      33.669842
+     ],
+     [
+      -80.363325,
+      33.664658
+     ],
+     [
+      -80.368789,
+      33.650229
+     ],
+     [
+      -80.369798,
+      33.639047
+     ],
+     [
+      -80.371093,
+      33.621815
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Northwestern Railroad of South Carolina",
+    "line": "Northwestern of South Carolina: Millard \u2013 Wilson's Mill",
+    "id": "northwestern-sc-millard-wilsons-mill",
+    "color": "#5B6E3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: steam short line, mixed trains from 1915. The Sept 1895 W&S timetable (Wilson's Mill 9.10 a.m. - Sumter 12.50 p.m., ~38 mi with the St. Paul dog-leg) works out to ~17 km/h; 20 km/h is a rounded estimate, not a sourced figure (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, small-box queries) and OpenHistoricalMap (CC0), cached and routed with opstrace.py's graph; no OSM way carries any NWRR/W&S/CS&N old_railway_operator tag (probed: only ACL, SAL, Southern in the area), so the grade ways were identified by position and assembled from their own geometry, then simplified with douglas_peucker(8 m) + trim_reversals. OSM untagged railway=abandoned way 359405552 in full: it leaves the razed CS&N grade at node 3641276669 (Millard Junction), passes Summerton (0.2 km), Davis Station (0.5 km), Jordan (0.05 km) and Bloomville (0.8 km), and ends on the CSX Lane Subdivision (ex-Central RR of SC / ACL) at (-80.11389, 33.66108), 0.1 km from the Nominatim hamlet 'Wilson' - Wilson's Mill. Nominatim's 'Wilsons Mill, SC' returned a road in Maryland and was not used; Millard did not geocode and is placed at the junction node.",
+    "geometry_quality": "Millard - Wilson's Mill: 16.9 mi drawn against 16.47 mi (ICC valuation) and 17.0 mi (branchline.uk SC line 79: Millard 21.0 - Wilsons Mill 38.0) - within 3%. Chainage from Millard vs Fowler: Summerton (2nd) 1.4/2.0, Davis 6.4/7.0, Jordan 10.0/10, Wilson's Mill 16.9/17.0. No straight-line legs. The grade is not dated in OSM; the 1888-89 construction alignment is assumed, relocation unchecked.",
+    "segments": [
+     {
+      "start": 1889,
+      "end": 1914,
+      "headway_min": 1440,
+      "note": "Wilson and Summerton Railroad, Thomas Wilson's lumber road and a public common carrier: 'opened for business on February 13' 1889, 'from Wilson's Mill on the Central Railroad, to a point very near Summerton' (Yorkville Enquirer 20 Feb 1889); inaugural through excursion Aug 1889 (Manning Times 14 Aug 1889). Construction-era excursions and part-line trains ran in Oct-Dec 1888 but not over the whole line, so the drawn start is 1889. From 1895 the trains ran through to Sumter (first printed timetable found: 16 Sep 1895). Renamed Northwestern Railroad of South Carolina 28 Feb 1899 - same corporation, so one feature and colour. Oct 1904 wreck of 'the Northwestern's passenger train, bound from Sumter to Charleston' (Fort Mill Times 30 Nov 1904); 1914 suit by a passenger who boarded at Summerton for Wilson's Mill and paid his fare (Manning Times 30 Sep 1914). headway_min 1440 (one round trip a day, per the 1895 timetable) is an ESTIMATE; no 1889-1894 timetable was found.",
+      "sources": [
+       "Segment-level: Yorkville Enquirer 20 Feb 1889; Manning Times 24 Oct 1888, 5 Dec 1888, 14 Aug 1889, 30 Sep 1914; Watchman and Southron 4 Mar 1896, 17 Jun 1896; ICC Valuation Reports vol. 141 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn84026925/1889-02-20/ed-1/seq-2/",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Northwestern_Railroad_of_South_Carolina"
+      ]
+     },
+     {
+      "start": 1915,
+      "end": 1919,
+      "headway_min": 1440,
+      "note": "Mixed trains only from 17 Jan 1915; the Jan 1915 schedule runs Wilson's Mill - Summerton - Sumter, the train laying over at Summerton (Camden Chronicle 22 Jan 1915). Same end evidence as Sumter - Millard (Manning Times 9 Apr 1919: trains 'pretty well in schedule'). [OPEN] This is the last CONFIRMED year, not a known end: the road ran only mixed trains from 17 Jan 1915 and operated until midnight 4 Aug 1935, but no source found names passengers on this line after 1919 (public schedule; strict reading on named passengers is 1916). Do not extend without evidence. Lifted 1936 from Davis Station northward. headway_min 1440 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Camden Chronicle 22 Jan 1915; Manning Times 9 Apr 1919 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn86063760/1919-04-09/ed-1/seq-13/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.371093,
+      33.621815
+     ],
+     [
+      -80.370852,
+      33.621061
+     ],
+     [
+      -80.369557,
+      33.62014
+     ],
+     [
+      -80.352913,
+      33.609267
+     ],
+     [
+      -80.34926,
+      33.60638
+     ],
+     [
+      -80.344504,
+      33.602001
+     ],
+     [
+      -80.342607,
+      33.60055
+     ],
+     [
+      -80.341418,
+      33.599754
+     ],
+     [
+      -80.340033,
+      33.599083
+     ],
+     [
+      -80.337839,
+      33.598386
+     ],
+     [
+      -80.336364,
+      33.598069
+     ],
+     [
+      -80.270089,
+      33.601981
+     ],
+     [
+      -80.257035,
+      33.603027
+     ],
+     [
+      -80.211985,
+      33.605851
+     ],
+     [
+      -80.21033,
+      33.606055
+     ],
+     [
+      -80.208677,
+      33.606359
+     ],
+     [
+      -80.207797,
+      33.606735
+     ],
+     [
+      -80.206918,
+      33.607342
+     ],
+     [
+      -80.205201,
+      33.609933
+     ],
+     [
+      -80.201103,
+      33.615116
+     ],
+     [
+      -80.200523,
+      33.615652
+     ],
+     [
+      -80.194816,
+      33.619101
+     ],
+     [
+      -80.192605,
+      33.620298
+     ],
+     [
+      -80.174774,
+      33.626015
+     ],
+     [
+      -80.174045,
+      33.626337
+     ],
+     [
+      -80.173165,
+      33.626855
+     ],
+     [
+      -80.155561,
+      33.640006
+     ],
+     [
+      -80.152384,
+      33.64204
+     ],
+     [
+      -80.145664,
+      33.64442
+     ],
+     [
+      -80.128732,
+      33.650859
+     ],
+     [
+      -80.124846,
+      33.654568
+     ],
+     [
+      -80.12413,
+      33.655448
+     ],
+     [
+      -80.121528,
+      33.659468
+     ],
+     [
+      -80.120211,
+      33.661052
+     ],
+     [
+      -80.119443,
+      33.661785
+     ],
+     [
+      -80.118241,
+      33.662177
+     ],
+     [
+      -80.117168,
+      33.66216
+     ],
+     [
+      -80.116589,
+      33.66207
+     ],
+     [
+      -80.11389,
+      33.66108
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Northwestern Railroad of South Carolina",
+    "line": "Northwestern of South Carolina: St. Paul Branch",
+    "id": "northwestern-sc-st-paul-branch",
+    "color": "#5B6E3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: steam short line, mixed trains from 1915. The Sept 1895 W&S timetable (Wilson's Mill 9.10 a.m. - Sumter 12.50 p.m., ~38 mi with the St. Paul dog-leg) works out to ~17 km/h; 20 km/h is a rounded estimate, not a sourced figure (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, small-box queries) and OpenHistoricalMap (CC0), cached and routed with opstrace.py's graph; no OSM way carries any NWRR/W&S/CS&N old_railway_operator tag (probed: only ACL, SAL, Southern in the area), so the grade ways were identified by position and assembled from their own geometry, then simplified with douglas_peucker(8 m) + trim_reversals. OSM untagged railway=razed way 12531340 (the CS&N grade) from Millard Junction (node 3641276669) south to the vertex nearest St. Paul (Nominatim hamlet, 0.2 km off the line).",
+    "geometry_quality": "Millard - St. Paul: 3.5 mi drawn against 3.5 mi (branchline.uk SC line 81: Millard 21.0, Summerton (1st) 21.8, St. Paul 24.5) and ~3.94 mi implied by the ICC branch total. No straight-line legs. St. Paul terminal is the grade point nearest the hamlet; the station was not located. Grade undated in OSM; CS&N alignment assumed.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1912,
+      "headway_min": 1440,
+      "note": "The stub of the CS&N main line south of Summerton, taken over by the Wilson & Summerton 25 Feb 1895 (St. Paul - Merriam abandoned 1 July 1895, ICC). The Sept 1895 W&S timetable serves St. Paul with the through Wilson's Mill - Sumter train as a dog-leg (Summerton 10.10, St. Paul 11.10, Silver 11.45; Watchman and Southron 4 Mar 1896); 1905 complaints about passenger service Sumter - St. Paul; Jan 1912 derailment of 'the Northwestern train for Summerton and St. Paul' with passengers (Watchman and Southron 17 Jan 1912). The Jan 1915 mixed-train schedule does not name the branch - absence, not evidence. [OPEN] This is the last CONFIRMED year, not a known end: the road ran only mixed trains from 17 Jan 1915 and operated until midnight 4 Aug 1935, but no source found names passengers on this line after Jan 1912. Do not extend without evidence. The branch survived to the end (Dec 1935 sale 'from St. Paul through Millard to Sumter'). headway_min 1440 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Watchman and Southron 4 Mar 1896, 1 Nov 1905, 17 Jan 1912; Camden Chronicle 6 Dec 1935; ICC Valuation Reports vol. 141 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1912-01-17/ed-1/seq-3/",
+       "https://historicnewspapers.sc.edu/lccn/sn86063785/1935-12-06/ed-1/seq-1/",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Northwestern_Railroad_of_South_Carolina"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.371093,
+      33.621815
+     ],
+     [
+      -80.373081,
+      33.595396
+     ],
+     [
+      -80.37331,
+      33.593775
+     ],
+     [
+      -80.373912,
+      33.59261
+     ],
+     [
+      -80.374725,
+      33.591689
+     ],
+     [
+      -80.384355,
+      33.586049
+     ],
+     [
+      -80.391595,
+      33.58163
+     ],
+     [
+      -80.392333,
+      33.581016
+     ],
+     [
+      -80.392873,
+      33.579293
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Charleston, Sumter and Northern Railroad",
+    "line": "Charleston, Sumter & Northern: Sumter \u2013 Merriam",
+    "id": "charleston-sumter-northern-sumter-merriam",
+    "color": "#9E3B4F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated from the Apr 1890 schedule (Sumter 6.55 a.m. - Pregnall's 9.30 a.m., ~65 mi via Merriam and Vance, ~40 km/h); rounded down to 35 km/h for stops - an estimate, not a sourced figure (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, small-box queries) and OpenHistoricalMap (CC0), cached and routed with opstrace.py's graph; no OSM way carries any NWRR/W&S/CS&N old_railway_operator tag (probed: only ACL, SAL, Southern in the area), so the grade ways were identified by position and assembled from their own geometry, then simplified with douglas_peucker(8 m) + trim_reversals. Pieces: OHM way 201947508 at Sumter, 1.6 mi; OSM untagged railway=razed way 12531340, Sumter south side - Merriam, 28.3 mi (the way runs on ~0.7 mi past Merriam toward Vance and Lake Marion). Merriam did not geocode; it is PLACED by chainage 9.1 mi beyond Millard Junction (branchline.uk Millard 21.0, Merriam 30.1) at (-80.39420, 33.49754).",
+    "geometry_quality": "Sumter - Merriam: 30.1 mi drawn against 30.10 mi documented (ICC). Chainage vs branchline.uk line 79/81: Tindal 6.8/7.1, Packsville 13.2/12.8, Silver 17.2/17.0, Millard 21.0/21.0, St. Paul 24.4/24.5, Merriam 30.1/30.1 (Merriam placed by chainage, so that last match is by construction). STRAIGHT-LINE LEG: 0.2 mi at Sumter's south side (OHM way end to razed-grade end). Only Sumter - Merriam is drawn, per the report: the CS&N's Merriam - Vance - Pregnall's and Sumter - Darlington - Bennettsville parts belong to separate research. Sumter terminal is the AK Line / N-S line crossing by the depot area. Grade undated in OSM; relocation unchecked.",
+    "segments": [
+     {
+      "start": 1890,
+      "end": 1895,
+      "headway_min": 1440,
+      "note": "Charleston, Sumter & Northern (ex-Eutawville Railroad, renamed 6 Jan 1890), through service Sumter - Pregnall's - Charleston over the South Carolina Railway: 'On Monday next, April 21st, the following schedule for passenger trains over the Charleston, Sumter and Northern R.R. will go into effect: Leave Sumter 6 55 a.m. and arrive at Pregnall's 9.30 a.m.' (Watchman and Southron 16 Apr 1890). Timetables of 21 Aug 1893 and 9 July 1894 list Charleston - Pregnall's - ... - Merriam - St Paul - Summerton - Silver - Packsville - Tindal - Sumter - Darlington - Bennettsville (Watchman and Southron 23 May 1894, 7 Nov 1894). In receivership under Charles E. Kimball from 1892; the ACL bought control Oct 1894 but the receiver kept running the trains, so no ACL span. Foreclosure sale 25 Feb 1895: Sumter - Merriam passed the same day to the Wilson & Summerton (separate features northwestern-sc-sumter-millard and northwestern-sc-st-paul-branch from 1895); St. Paul - Merriam abandoned 1 July 1895. The end year 1895 overlaps the W&S start because the handover was in Feb 1895. headway_min 1440 (one train each way) is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Watchman and Southron 16 Apr 1890, 23 May 1894, 7 Nov 1894; Weekly Union Times 10 Jul 1891; ICC Valuation Reports vol. 141 -- as quoted in research/branches/northwestern_railroad_of_south_carolina.txt (researched 2026-11-06); the tracer did not re-open these pages.",
+       "https://historicnewspapers.sc.edu/lccn/sn93067846/1890-04-16/ed-1/seq-3/",
+       "https://en.wikipedia.org/wiki/Charleston,_Sumter_and_Northern_Railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Northwestern_Railroad_of_South_Carolina"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.33338,
+      33.918984
+     ],
+     [
+      -80.333579,
+      33.918461
+     ],
+     [
+      -80.333463,
+      33.908939
+     ],
+     [
+      -80.333565,
+      33.904801
+     ],
+     [
+      -80.333792,
+      33.903034
+     ],
+     [
+      -80.334471,
+      33.901747
+     ],
+     [
+      -80.337948,
+      33.896821
+     ],
+     [
+      -80.349428,
+      33.883017
+     ],
+     [
+      -80.350623,
+      33.881124
+     ],
+     [
+      -80.351782,
+      33.875906
+     ],
+     [
+      -80.354405,
+      33.867558
+     ],
+     [
+      -80.354941,
+      33.864173
+     ],
+     [
+      -80.354877,
+      33.855549
+     ],
+     [
+      -80.3561,
+      33.825607
+     ],
+     [
+      -80.357151,
+      33.807494
+     ],
+     [
+      -80.357408,
+      33.795434
+     ],
+     [
+      -80.357065,
+      33.787997
+     ],
+     [
+      -80.357387,
+      33.751288
+     ],
+     [
+      -80.357344,
+      33.733249
+     ],
+     [
+      -80.355434,
+      33.70596
+     ],
+     [
+      -80.355799,
+      33.698355
+     ],
+     [
+      -80.357308,
+      33.689613
+     ],
+     [
+      -80.357682,
+      33.683605
+     ],
+     [
+      -80.358935,
+      33.675296
+     ],
+     [
+      -80.361049,
+      33.669842
+     ],
+     [
+      -80.363325,
+      33.664658
+     ],
+     [
+      -80.368789,
+      33.650229
+     ],
+     [
+      -80.369798,
+      33.639047
+     ],
+     [
+      -80.373081,
+      33.595396
+     ],
+     [
+      -80.37331,
+      33.593775
+     ],
+     [
+      -80.373912,
+      33.59261
+     ],
+     [
+      -80.374725,
+      33.591689
+     ],
+     [
+      -80.384355,
+      33.586049
+     ],
+     [
+      -80.391595,
+      33.58163
+     ],
+     [
+      -80.392333,
+      33.581016
+     ],
+     [
+      -80.392873,
+      33.579293
+     ],
+     [
+      -80.393429,
+      33.534897
+     ],
+     [
+      -80.394266,
+      33.503197
+     ],
+     [
+      -80.394201,
+      33.497543
+     ]
+    ]
+   }
+  }
+ ]
+}
