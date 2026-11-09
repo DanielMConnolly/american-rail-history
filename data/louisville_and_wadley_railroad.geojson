@@ -1,0 +1,225 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Louisville and Wadley Railroad (chartered 1872 as the Louisville Branch Railroad, renamed 14 Aug 1879, opened Oct 1879), Wadley (junction with the Central of Georgia Macon - Savannah main line) - Moxley - Aldreds - Louisville, Jefferson County GA, 10.0 mi. The Central of Georgia bought its stock 7 Dec 1898 but the L&W kept running its own trains under its own name (every Guide table 1906-1955 is headed 'Louisville & Wadley R.R.'), so there is no Rule 4 split; USRA control 1918-1920 is likewise not a split. Drawn 1879-1955, the end [OPEN]: the last confirmed passenger (mixed-train) year is 1955 and no source dates the end. Not drawn (Rule 1): CofG freight after passengers ended, the Louisville and Wadley Railway freight short line (local owners from Sept 1961), and the Wadley - Gibson Jct remnant left after the 1971 cut at Boggy Gut Creek. The 1929 Guide's two '‡Bus' trips are motor coaches and are not drawn. Colour #6EBC1A is new to the dataset.",
+  "sources": [
+   "https://railga.com/louwarr.html",
+   "https://railga.com/louwary.html",
+   "https://www.cofga.org/railway/history/louisville-and-wadley-railroad-company/",
+   "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+   "research/sources/official_guide_1952.txt lines 132470-132493 (L&W table)",
+   "https://www.abandonedrails.com/louisville-and-wadley-railroad",
+   "https://en.wikipedia.org/wiki/Louisville_and_Wadley_Railway",
+   "research/branches/louisville_and_wadley_railroad.txt"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap, way 9347655 (name='Louisville and Wadley Railway', railway=abandoned, note:old_railway_operator='Louisville and Wadley', old_railway_operator='CoG', wikidata Q105333747), traced with opstrace.py on 2026-11-09. The maps.mail.ru Overpass mirror returned 504 throughout, so the rail ways were read from the OSM API (api.openstreetmap.org/api/0.6/map.json, two boxes covering lon -82.46..-82.34, lat 32.66..33.03) and fed to opstrace as extra_files; OpenHistoricalMap was queried for the same area and holds no Louisville and Wadley way (only untitled 1826-1911 Atack-dataset rail and the Central of Georgia main line)."
+  ],
+  "not_yet_sourced": "(1) [OPEN] Wadley - Louisville passenger (mixed-train) end: drawn to 1955, the last year confirmed (Aug 1955 Official Guide, table dated 5 July 1954); the real end is later and undated. Next: Georgia PSC / ICC discontinuance notices, the Louisville News and Farmer and Wadley Herald (Georgia Historic Newspapers). (2) Opening year: Oct 1879 (railga) vs 'about 1875' (Knight 1913); no ICC valuation abstract found. (3) When the 1906-1918 three-train service was cut to one round trip (between 1918 and 1929). (4) Period depot sites at Wadley and Louisville not checked against a historical map."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Louisville and Wadley Railroad",
+    "line": "Louisville and Wadley: Wadley – Louisville",
+    "id": "louisville-and-wadley-wadley-louisville",
+    "color": "#6EBC1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: 10-mile steam branch with two flag stops. The Aug 1955 mixed train was timed 15 min southbound and 30 min northbound (about 32-64 km/h); 30 km/h allows for slower 19th-century running and is not a timetable figure. Rule 3.",
+    "geometry_source": "OpenStreetMap, way 9347655 (name='Louisville and Wadley Railway', railway=abandoned, note:old_railway_operator='Louisville and Wadley', old_railway_operator='CoG', wikidata Q105333747), traced with opstrace.py on 2026-11-09. The maps.mail.ru Overpass mirror returned 504 throughout, so the rail ways were read from the OSM API (api.openstreetmap.org/api/0.6/map.json, two boxes covering lon -82.46..-82.34, lat 32.66..33.03) and fed to opstrace as extra_files; OpenHistoricalMap was queried for the same area and holds no Louisville and Wadley way (only untitled 1826-1911 Atack-dataset rail and the Central of Georgia main line).",
+    "geometry_quality": "Wadley - Louisville: traced 9.8 mi (9.76 mi), all of it on the single OSM way tagged for the Louisville and Wadley, against a documented 10.0 mi (Official Guide 1890 '10 miles'; 1954 table Wadley 0 - Moxley 4.7 - Aldreds 6.7 - Louisville 10.0; the 1906 Guide's '11 miles' is the outlier) - 2.4% short. No approximated (straight-line) legs. Waypoints: both terminals hand-pinned to the ends of the tagged OSM way - Wadley at its junction with the Central of Georgia main line (west end of the Wadley yard, 0.6 km SW of the Nominatim town point) and Louisville at its end of track on the south side of town (0.8 km S of the Nominatim town point; the line entered Louisville from the south); Nominatim returned both towns as administrative areas, so neither was used raw. Moxley and Aldreds geocode as hamlets about 1.5-2 km east of the drawn line and were not used as waypoints. ALIGNMENT ERA (Rule 2): the trace is the alignment as mapped in OSM after the 1971 abandonment of Louisville - Gibson Junction (lifted grade, Boggy Gut Creek bridge gone) plus the Wadley - Gibson Jct remnant, which the report says is still in place but disused and OSM tags as abandoned. No source found describes a relocation between 1879 and 1955, but none rules one out; the depot locations at either end were not verified against a period map.",
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1928,
+      "headway_min": 360,
+      "note": "Louisville and Wadley passenger trains, Wadley - Moxley - Aldreds - Louisville, steam from opening (1889 return: 1 locomotive, 2 passenger cars; 1919: 1 locomotive, 2 combination cars, 14,151 passengers). Opened October 1879 per railga.com (cofga.org: 'constructed in 1879'; the corporate rename to L&W was 14 Aug 1879). SOURCE CONFLICT: Knight, Georgia's Landmarks (1913), says 'built about 1875' - a loose recollection; 1879 is followed here. The earliest timetable seen is the Mar 1890 Official Guide; 1879-1889 rests on the opening date alone. Official Guide tables: 1890 two round trips (Louisville lv 10:00a/6:00p), 1891 two, Nov 1906 three, Apr 1918 three. Headway 360 min is an estimate for two to three round trips a day, not a timetable figure. This segment ends at 1928 only because the Jul 1929 Guide shows a single rail round trip; when the cut from three trains came between 1918 and 1929 is not known.",
+      "sources": [
+       "Segment-level: opening Oct 1879 from railga.com and cofga.org; train counts from the Official Guide excerpts of Mar 1890, Jan 1896 (Nov 7 1891 table), Nov 1906 and Apr 1918 reproduced on railga.com, as read in research/branches/louisville_and_wadley_railroad.txt (researched 2026-11-09); the tracer did not re-open these pages. Headway is an estimate.",
+       "https://railga.com/louwarr.html",
+       "https://www.cofga.org/railway/history/louisville-and-wadley-railroad-company/"
+      ]
+     },
+     {
+      "start": 1929,
+      "end": 1955,
+      "headway_min": 1440,
+      "note": "Louisville and Wadley, one rail round trip daily except Sunday. Jul 1929 Official Guide: one train each way plus two trips marked '‡Bus' (motor coaches, not drawn). Sept 1951 / Feb 1952 Guide: 'Mixed Passenger and Freight Trains, Daily, except Sunday', Wadley 12:10 PM. Aug 1955 Guide (table dated July 5 1954): mixed train, Wadley lv 12:15 PM - Louisville ar 12:30 PM, return Louisville 1:45 PM - Wadley 2:15 PM; Moxley and Aldreds flag stops. [OPEN] END: passenger service is confirmed to 1955 by the Aug 1955 Official Guide. This is the last CONFIRMED year, not a known end - no source dates when the mixed train actually stopped. abandonedrails.com's 'passenger trains ended in 1953' is unsourced and contradicted by the 1955 Guide. Do not extend without evidence; in particular do not extend to the 1961 sale or the 1971 abandonment, which are freight-era events. Headway 1440 min is the once-daily round trip, not a measured interval.",
+      "sources": [
+       "Segment-level: Official Guide tables of Jul 1929 and Aug 1955 reproduced on railga.com, and the Feb 1952 Guide (research/sources/official_guide_1952.txt lines 132470-132493), as read in research/branches/louisville_and_wadley_railroad.txt (researched 2026-11-09); the tracer did not re-open these. End year is [OPEN].",
+       "https://railga.com/louwarr.html",
+       "research/sources/official_guide_1952.txt"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.4111328,
+      32.862109
+     ],
+     [
+      -82.4102345,
+      32.8624647
+     ],
+     [
+      -82.4096914,
+      32.8632292
+     ],
+     [
+      -82.409171,
+      32.866214
+     ],
+     [
+      -82.406599,
+      32.8721
+     ],
+     [
+      -82.404691,
+      32.876862
+     ],
+     [
+      -82.402745,
+      32.88082
+     ],
+     [
+      -82.39801,
+      32.886825
+     ],
+     [
+      -82.396542,
+      32.888252
+     ],
+     [
+      -82.395611,
+      32.889356
+     ],
+     [
+      -82.394925,
+      32.890476
+     ],
+     [
+      -82.394382,
+      32.891951
+     ],
+     [
+      -82.392839,
+      32.898015
+     ],
+     [
+      -82.391781,
+      32.900191
+     ],
+     [
+      -82.389579,
+      32.903605
+     ],
+     [
+      -82.389303,
+      32.904381
+     ],
+     [
+      -82.389149,
+      32.905727
+     ],
+     [
+      -82.391054,
+      32.917955
+     ],
+     [
+      -82.392032,
+      32.922896
+     ],
+     [
+      -82.393785,
+      32.933841
+     ],
+     [
+      -82.393777,
+      32.935046
+     ],
+     [
+      -82.393603,
+      32.935935
+     ],
+     [
+      -82.392049,
+      32.938752
+     ],
+     [
+      -82.39173,
+      32.939891
+     ],
+     [
+      -82.391853,
+      32.945558
+     ],
+     [
+      -82.391993,
+      32.946452
+     ],
+     [
+      -82.395353,
+      32.96063
+     ],
+     [
+      -82.396317,
+      32.964069
+     ],
+     [
+      -82.397148,
+      32.965653
+     ],
+     [
+      -82.398786,
+      32.967376
+     ],
+     [
+      -82.400044,
+      32.969048
+     ],
+     [
+      -82.400453,
+      32.969782
+     ],
+     [
+      -82.400726,
+      32.970745
+     ],
+     [
+      -82.400685,
+      32.97318
+     ],
+     [
+      -82.399647,
+      32.981547
+     ],
+     [
+      -82.399635,
+      32.983243
+     ],
+     [
+      -82.400086,
+      32.984347
+     ],
+     [
+      -82.402207,
+      32.98724
+     ],
+     [
+      -82.406425,
+      32.992677
+     ],
+     [
+      -82.408218,
+      32.9945688
+     ]
+    ]
+   }
+  }
+ ]
+}
