@@ -1,0 +1,951 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "One 35-mile line Albany - Cordele, Georgia, in four operator eras on identical geometry (Rule 4 split). 1952-1977 was freight only and is not drawn. All charter extensions (Jeffersonville, Pensacola, Colquitt, St. Andrews Bay) went unbuilt.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Albany_and_Northern_Railway",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Georgia_Southwestern_and_Gulf_Railroad",
+   "https://railga.com/albn.html",
+   "https://railga.com/albfn.html",
+   "https://railga.com/gswgulf.html",
+   "https://hawkinsrails.net/shortlines/aln/aln.html",
+   "https://en.wikipedia.org/wiki/Albany_and_Northern_Railway",
+   "research/sources/official_guide_1952.txt",
+   "https://en.wikipedia.org/wiki/Heritage_Plaza_(Albany,_Georgia)"
+  ],
+  "geometry_sources": {
+   "osm": "OpenStreetMap, ODbL",
+   "ohm": "OpenHistoricalMap, CC0, ways 202210024 and 202210026"
+  },
+  "not_yet_sourced": [
+   "Start 1893 is [OPEN]: passengers in 1891-1892 are unproven. railga's 1891 timetable and 1890 Guide image could move it earlier but were not seen.",
+   "Operator 1892-1895: Savannah, Americus and Montgomery lessee (railga, Wikipedia) or the Albany, Florida and Northern receiver (ICC). If the former, the first feature belongs in SA&M's name and colour.",
+   "Name change from Georgia Southwestern and Gulf to Albany and Northern: 1942 (railga, Wikipedia citing Edson) vs 1940 (HawkinsRails).",
+   "Last passenger train: only the 24 Sep 1952 authorization headline is known, through Wikipedia's citation; the article was not read.",
+   "Headways before 1951 are unknown, and speed before 1951 is unmeasured.",
+   "Site of the Albany depot used before Union Station opened in 1912-13, and the exact Cordele depot site."
+  ],
+  "pulled": "2026-11-06"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Albany, Florida and Northern Railway",
+    "line": "Albany, Florida and Northern: Albany – Cordele",
+    "id": "albany-florida-northern-albany-cordele",
+    "color": "#9C5A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no timing found for this era; rounded from the 36.6 km/h measured from the 1951 timetable, a back-projection and not evidence for these years",
+    "geometry_source": "OpenStreetMap (ODbL) ways for Albany to north of Philema and the Cordele approach; OpenHistoricalMap (CC0) ways 202210024 and 202210026 for the lifted middle, geometry only, OHM dates not used.",
+    "geometry_quality": "Traced 35.4 mi against documented 35.020 (ICC valuation), 35.7 (Fowler, to Albany Terminal Station) and 36.0 (Feb 1952 Official Guide). Milepost test against Fowler section 84, measured from the Cordele end: Raines 7.38 vs 7.6, Warwick 12.68 vs 12.8, Oakfield 17.47 vs 17.5, Philema 20.63 vs 20.7, Chehaw 24.38 vs 24.4, Beloit 27.23 vs 27.5; those places lie 7-47 m off the line. The stretches, Albany to Cordele: (1) 1.46 mi Albany terminal throat and yards on OSM ways not tagged as this road (9178175 disused, 164924978 today's Georgia and Florida Railway track), so the corridor is shared and its historic owner is not established; (2) about 15.4 mi from Albany to about a mile short of Oakfield on OSM's abandoned grade named Albany and Northern Railway, old_railway_operator=Georgia Northern; (3) 16.4 mi from there through Oakfield and Warwick to near Cordele on OpenHistoricalMap ways 202210024 and 202210026, digitised from Atack's Railroads 1826-1911 and much coarser than a survey trace, including one 5.37 mi vector through Raines and one 1.85 mi vector through Warwick; (4) 1.27 mi on OSM way 956563078, surviving track named Stella Jones Lead and tagged old_railway_operator=Southern, taken to be this road's grade by inference: it coincides with the OHM line and Southern bought the road in 1966; (5) the last 0.6 mi into Cordele on Seaboard/Heart of Georgia track, and the end of (4), about 0.3 mi past where the OHM line ends at a junction, also coincides with an OHM line dated 1889 that the Seaboard/Heart of Georgia track follows, so about 0.9 mi at Cordele is another company's corridor. Approximated legs, each a straight bridge between mapped pieces, 1.76 mi in all: 31.5858,-84.1499 to 31.5855,-84.1491 (0.051 mi); 31.6021,-84.1493 to 31.6021,-84.1494 (0.003 mi); 31.6073,-84.1473 to 31.6083,-84.1466 (0.079 mi); 31.6098,-84.1455 to 31.6101,-84.1453 (0.023 mi); 31.6118,-84.1435 to 31.616,-84.1377 (0.448 mi); 31.6174,-84.1356 to 31.6178,-84.135 (0.045 mi); 31.621,-84.1302 to 31.6212,-84.13 (0.021 mi); 31.6216,-84.1293 to 31.622,-84.1287 (0.046 mi); 31.6243,-84.1255 to 31.625,-84.1245 (0.075 mi); 31.6346,-84.1107 to 31.6347,-84.1105 (0.015 mi); 31.6362,-84.1084 to 31.6415,-84.1007 (0.582 mi); 31.655,-84.0903 to 31.6552,-84.0901 (0.022 mi); 31.6566,-84.0891 to 31.6576,-84.0884 (0.078 mi); 31.7698,-83.9861 to 31.7704,-83.9844 (0.107 mi); 31.9517,-83.8079 to 31.9536,-83.8061 (0.169 mi). The two longest (0.448 and 0.582 mi) keep close to the bearing of the mapped grade on at least one side. A straight of 9.3 mi in the drawn line, through Raines toward Cordele after simplification, comes from these coarse source vectors; only its last mile or so is confirmed by surviving track. Era alignment: all four features draw the same line, the last alignment before abandonment in 1977, because no relocation is documented and no earlier survey was found. LATER ALIGNMENT AT ALBANY: the line ends at Union Station (100 W Roosevelt Ave), Fowler's Terminal Station, built 1912-13 per Wikipedia and the Thronateeska Heritage Center. That is later than the 1893-1895 and 1895-1910 features and the first years of the 1910-1942 feature; earlier trains would have used a predecessor depot whose site and approach were not traced. The Cordele end stops at today's SAM Shortline Cordele station, used as a stand-in for the depot; Fowler puts West Cordele 0.4 mi out; if that was the junction, which is drawn 0.88 mi from the end, the depot lay west of the end drawn.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1895,
+      "headway_min": 720,
+      "note": "[OPEN] The start is the earliest CONFIRMED passenger year, not the opening: the line was constructed 1889-1891 (ICC), and the earliest passenger evidence is Fowler's citation of the 1893 Official Guide for Philemma and Wilkersons (Wilkersons marked 'pass?'). Passengers in 1891-1892 are unproven; do not extend earlier without evidence. Who ran the trains 1892-1895 is unresolved: railga and Wikipedia report a lease to the Savannah, Americus and Montgomery in 1892, while the ICC gives a receivership from 10 Dec 1892 and foreclosure 17 May 1895 with no lease mentioned. Ends 16 Aug 1895 when Albany and Northern's books begin. Headway is an estimate: no frequency found for this era, so the 1951 pattern of two round trips a day is carried back.",
+      "sources": [
+       "Segment-level: dates from the ICC valuation of the Albany and Northern and Fowler's Georgia station list section 84 (1893 Guide citation), as read by the research report; railga pages read, but the timetables they list were not seen.",
+       "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Albany_and_Northern_Railway",
+       "https://railga.com/albfn.html",
+       "https://railga.com/sam.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.15093,
+      31.58204
+     ],
+     [
+      -84.150598,
+      31.582791
+     ],
+     [
+      -84.1499012,
+      31.5858152
+     ],
+     [
+      -84.149109,
+      31.58553
+     ],
+     [
+      -84.1490598,
+      31.5949537
+     ],
+     [
+      -84.1492979,
+      31.5983893
+     ],
+     [
+      -84.1493518,
+      31.6034473
+     ],
+     [
+      -84.1483566,
+      31.6059901
+     ],
+     [
+      -84.1451222,
+      31.6102858
+     ],
+     [
+      -84.1438556,
+      31.6115089
+     ],
+     [
+      -84.137745,
+      31.6159915
+     ],
+     [
+      -84.1299659,
+      31.6211608
+     ],
+     [
+      -84.1083678,
+      31.636187
+     ],
+     [
+      -84.1007427,
+      31.6415466
+     ],
+     [
+      -84.0995413,
+      31.6426212
+     ],
+     [
+      -84.0987403,
+      31.6435304
+     ],
+     [
+      -84.0776099,
+      31.6721105
+     ],
+     [
+      -84.0226589,
+      31.7455358
+     ],
+     [
+      -84.016463,
+      31.7537963
+     ],
+     [
+      -84.0142147,
+      31.7565546
+     ],
+     [
+      -84.0124469,
+      31.7579847
+     ],
+     [
+      -83.9936691,
+      31.7675672
+     ],
+     [
+      -83.986104,
+      31.7697656
+     ],
+     [
+      -83.984423,
+      31.770353
+     ],
+     [
+      -83.982516,
+      31.7706081
+     ],
+     [
+      -83.9808299,
+      31.7712301
+     ],
+     [
+      -83.9778077,
+      31.7729312
+     ],
+     [
+      -83.9756636,
+      31.7744482
+     ],
+     [
+      -83.9740615,
+      31.7759602
+     ],
+     [
+      -83.9725055,
+      31.7772213
+     ],
+     [
+      -83.9614879,
+      31.7886254
+     ],
+     [
+      -83.9558416,
+      31.7945915
+     ],
+     [
+      -83.945839,
+      31.8054866
+     ],
+     [
+      -83.9311743,
+      31.8209437
+     ],
+     [
+      -83.9290922,
+      31.8229408
+     ],
+     [
+      -83.9061411,
+      31.841273
+     ],
+     [
+      -83.904699,
+      31.842555
+     ],
+     [
+      -83.903387,
+      31.84352
+     ],
+     [
+      -83.9017769,
+      31.845013
+     ],
+     [
+      -83.9004118,
+      31.847029
+     ],
+     [
+      -83.8997708,
+      31.849234
+     ],
+     [
+      -83.8972376,
+      31.855895
+     ],
+     [
+      -83.8955205,
+      31.858248
+     ],
+     [
+      -83.7965657,
+      31.9637545
+     ],
+     [
+      -83.795527,
+      31.964739
+     ],
+     [
+      -83.793511,
+      31.965981
+     ],
+     [
+      -83.784482,
+      31.9700854
+     ],
+     [
+      -83.7832691,
+      31.9704662
+     ],
+     [
+      -83.7822125,
+      31.9705947
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Albany and Northern Railway",
+    "line": "Albany and Northern: Albany – Cordele",
+    "id": "albany-northern-albany-cordele-1895",
+    "color": "#3F7F93",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no timing found for this era; rounded from the 36.6 km/h measured from the 1951 timetable, a back-projection and not evidence for these years",
+    "geometry_source": "OpenStreetMap (ODbL) ways for Albany to north of Philema and the Cordele approach; OpenHistoricalMap (CC0) ways 202210024 and 202210026 for the lifted middle, geometry only, OHM dates not used.",
+    "geometry_quality": "Traced 35.4 mi against documented 35.020 (ICC valuation), 35.7 (Fowler, to Albany Terminal Station) and 36.0 (Feb 1952 Official Guide). Milepost test against Fowler section 84, measured from the Cordele end: Raines 7.38 vs 7.6, Warwick 12.68 vs 12.8, Oakfield 17.47 vs 17.5, Philema 20.63 vs 20.7, Chehaw 24.38 vs 24.4, Beloit 27.23 vs 27.5; those places lie 7-47 m off the line. The stretches, Albany to Cordele: (1) 1.46 mi Albany terminal throat and yards on OSM ways not tagged as this road (9178175 disused, 164924978 today's Georgia and Florida Railway track), so the corridor is shared and its historic owner is not established; (2) about 15.4 mi from Albany to about a mile short of Oakfield on OSM's abandoned grade named Albany and Northern Railway, old_railway_operator=Georgia Northern; (3) 16.4 mi from there through Oakfield and Warwick to near Cordele on OpenHistoricalMap ways 202210024 and 202210026, digitised from Atack's Railroads 1826-1911 and much coarser than a survey trace, including one 5.37 mi vector through Raines and one 1.85 mi vector through Warwick; (4) 1.27 mi on OSM way 956563078, surviving track named Stella Jones Lead and tagged old_railway_operator=Southern, taken to be this road's grade by inference: it coincides with the OHM line and Southern bought the road in 1966; (5) the last 0.6 mi into Cordele on Seaboard/Heart of Georgia track, and the end of (4), about 0.3 mi past where the OHM line ends at a junction, also coincides with an OHM line dated 1889 that the Seaboard/Heart of Georgia track follows, so about 0.9 mi at Cordele is another company's corridor. Approximated legs, each a straight bridge between mapped pieces, 1.76 mi in all: 31.5858,-84.1499 to 31.5855,-84.1491 (0.051 mi); 31.6021,-84.1493 to 31.6021,-84.1494 (0.003 mi); 31.6073,-84.1473 to 31.6083,-84.1466 (0.079 mi); 31.6098,-84.1455 to 31.6101,-84.1453 (0.023 mi); 31.6118,-84.1435 to 31.616,-84.1377 (0.448 mi); 31.6174,-84.1356 to 31.6178,-84.135 (0.045 mi); 31.621,-84.1302 to 31.6212,-84.13 (0.021 mi); 31.6216,-84.1293 to 31.622,-84.1287 (0.046 mi); 31.6243,-84.1255 to 31.625,-84.1245 (0.075 mi); 31.6346,-84.1107 to 31.6347,-84.1105 (0.015 mi); 31.6362,-84.1084 to 31.6415,-84.1007 (0.582 mi); 31.655,-84.0903 to 31.6552,-84.0901 (0.022 mi); 31.6566,-84.0891 to 31.6576,-84.0884 (0.078 mi); 31.7698,-83.9861 to 31.7704,-83.9844 (0.107 mi); 31.9517,-83.8079 to 31.9536,-83.8061 (0.169 mi). The two longest (0.448 and 0.582 mi) keep close to the bearing of the mapped grade on at least one side. A straight of 9.3 mi in the drawn line, through Raines toward Cordele after simplification, comes from these coarse source vectors; only its last mile or so is confirmed by surviving track. Era alignment: all four features draw the same line, the last alignment before abandonment in 1977, because no relocation is documented and no earlier survey was found. LATER ALIGNMENT AT ALBANY: the line ends at Union Station (100 W Roosevelt Ave), Fowler's Terminal Station, built 1912-13 per Wikipedia and the Thronateeska Heritage Center. That is later than the 1893-1895 and 1895-1910 features and the first years of the 1910-1942 feature; earlier trains would have used a predecessor depot whose site and approach were not traced. The Cordele end stops at today's SAM Shortline Cordele station, used as a stand-in for the depot; Fowler puts West Cordele 0.4 mi out; if that was the junction, which is drawn 0.88 mi from the end, the depot lay west of the end drawn.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1910,
+      "headway_min": 720,
+      "note": "Albany and Northern operated 'by its own organization' from 16 Aug 1895 (ICC) to 14 Feb 1910, when Georgia Southwestern and Gulf bought its stock. Passenger evidence inside the era is Fowler's 1899 Guide list for Raines and McDonald's (later Beloit); service between anchors is inferred, not documented year by year. Headway is an estimate: no frequency found for this era, so the 1951 pattern of two round trips a day is carried back.",
+      "sources": [
+       "Segment-level: operator dates from the ICC valuation; 1899 Guide list via Fowler section 84, as read by the research report. A 1906 timetable listed by railga was not seen.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Albany_and_Northern_Railway",
+       "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+       "https://railga.com/albn.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.15093,
+      31.58204
+     ],
+     [
+      -84.150598,
+      31.582791
+     ],
+     [
+      -84.1499012,
+      31.5858152
+     ],
+     [
+      -84.149109,
+      31.58553
+     ],
+     [
+      -84.1490598,
+      31.5949537
+     ],
+     [
+      -84.1492979,
+      31.5983893
+     ],
+     [
+      -84.1493518,
+      31.6034473
+     ],
+     [
+      -84.1483566,
+      31.6059901
+     ],
+     [
+      -84.1451222,
+      31.6102858
+     ],
+     [
+      -84.1438556,
+      31.6115089
+     ],
+     [
+      -84.137745,
+      31.6159915
+     ],
+     [
+      -84.1299659,
+      31.6211608
+     ],
+     [
+      -84.1083678,
+      31.636187
+     ],
+     [
+      -84.1007427,
+      31.6415466
+     ],
+     [
+      -84.0995413,
+      31.6426212
+     ],
+     [
+      -84.0987403,
+      31.6435304
+     ],
+     [
+      -84.0776099,
+      31.6721105
+     ],
+     [
+      -84.0226589,
+      31.7455358
+     ],
+     [
+      -84.016463,
+      31.7537963
+     ],
+     [
+      -84.0142147,
+      31.7565546
+     ],
+     [
+      -84.0124469,
+      31.7579847
+     ],
+     [
+      -83.9936691,
+      31.7675672
+     ],
+     [
+      -83.986104,
+      31.7697656
+     ],
+     [
+      -83.984423,
+      31.770353
+     ],
+     [
+      -83.982516,
+      31.7706081
+     ],
+     [
+      -83.9808299,
+      31.7712301
+     ],
+     [
+      -83.9778077,
+      31.7729312
+     ],
+     [
+      -83.9756636,
+      31.7744482
+     ],
+     [
+      -83.9740615,
+      31.7759602
+     ],
+     [
+      -83.9725055,
+      31.7772213
+     ],
+     [
+      -83.9614879,
+      31.7886254
+     ],
+     [
+      -83.9558416,
+      31.7945915
+     ],
+     [
+      -83.945839,
+      31.8054866
+     ],
+     [
+      -83.9311743,
+      31.8209437
+     ],
+     [
+      -83.9290922,
+      31.8229408
+     ],
+     [
+      -83.9061411,
+      31.841273
+     ],
+     [
+      -83.904699,
+      31.842555
+     ],
+     [
+      -83.903387,
+      31.84352
+     ],
+     [
+      -83.9017769,
+      31.845013
+     ],
+     [
+      -83.9004118,
+      31.847029
+     ],
+     [
+      -83.8997708,
+      31.849234
+     ],
+     [
+      -83.8972376,
+      31.855895
+     ],
+     [
+      -83.8955205,
+      31.858248
+     ],
+     [
+      -83.7965657,
+      31.9637545
+     ],
+     [
+      -83.795527,
+      31.964739
+     ],
+     [
+      -83.793511,
+      31.965981
+     ],
+     [
+      -83.784482,
+      31.9700854
+     ],
+     [
+      -83.7832691,
+      31.9704662
+     ],
+     [
+      -83.7822125,
+      31.9705947
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Southwestern and Gulf Railroad",
+    "line": "Georgia, Southwestern and Gulf: Albany – Cordele",
+    "id": "georgia-southwestern-gulf-albany-cordele",
+    "color": "#A23E48",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no timing found for this era; rounded from the 36.6 km/h measured from the 1951 timetable, a back-projection and not evidence for these years",
+    "geometry_source": "OpenStreetMap (ODbL) ways for Albany to north of Philema and the Cordele approach; OpenHistoricalMap (CC0) ways 202210024 and 202210026 for the lifted middle, geometry only, OHM dates not used.",
+    "geometry_quality": "Traced 35.4 mi against documented 35.020 (ICC valuation), 35.7 (Fowler, to Albany Terminal Station) and 36.0 (Feb 1952 Official Guide). Milepost test against Fowler section 84, measured from the Cordele end: Raines 7.38 vs 7.6, Warwick 12.68 vs 12.8, Oakfield 17.47 vs 17.5, Philema 20.63 vs 20.7, Chehaw 24.38 vs 24.4, Beloit 27.23 vs 27.5; those places lie 7-47 m off the line. The stretches, Albany to Cordele: (1) 1.46 mi Albany terminal throat and yards on OSM ways not tagged as this road (9178175 disused, 164924978 today's Georgia and Florida Railway track), so the corridor is shared and its historic owner is not established; (2) about 15.4 mi from Albany to about a mile short of Oakfield on OSM's abandoned grade named Albany and Northern Railway, old_railway_operator=Georgia Northern; (3) 16.4 mi from there through Oakfield and Warwick to near Cordele on OpenHistoricalMap ways 202210024 and 202210026, digitised from Atack's Railroads 1826-1911 and much coarser than a survey trace, including one 5.37 mi vector through Raines and one 1.85 mi vector through Warwick; (4) 1.27 mi on OSM way 956563078, surviving track named Stella Jones Lead and tagged old_railway_operator=Southern, taken to be this road's grade by inference: it coincides with the OHM line and Southern bought the road in 1966; (5) the last 0.6 mi into Cordele on Seaboard/Heart of Georgia track, and the end of (4), about 0.3 mi past where the OHM line ends at a junction, also coincides with an OHM line dated 1889 that the Seaboard/Heart of Georgia track follows, so about 0.9 mi at Cordele is another company's corridor. Approximated legs, each a straight bridge between mapped pieces, 1.76 mi in all: 31.5858,-84.1499 to 31.5855,-84.1491 (0.051 mi); 31.6021,-84.1493 to 31.6021,-84.1494 (0.003 mi); 31.6073,-84.1473 to 31.6083,-84.1466 (0.079 mi); 31.6098,-84.1455 to 31.6101,-84.1453 (0.023 mi); 31.6118,-84.1435 to 31.616,-84.1377 (0.448 mi); 31.6174,-84.1356 to 31.6178,-84.135 (0.045 mi); 31.621,-84.1302 to 31.6212,-84.13 (0.021 mi); 31.6216,-84.1293 to 31.622,-84.1287 (0.046 mi); 31.6243,-84.1255 to 31.625,-84.1245 (0.075 mi); 31.6346,-84.1107 to 31.6347,-84.1105 (0.015 mi); 31.6362,-84.1084 to 31.6415,-84.1007 (0.582 mi); 31.655,-84.0903 to 31.6552,-84.0901 (0.022 mi); 31.6566,-84.0891 to 31.6576,-84.0884 (0.078 mi); 31.7698,-83.9861 to 31.7704,-83.9844 (0.107 mi); 31.9517,-83.8079 to 31.9536,-83.8061 (0.169 mi). The two longest (0.448 and 0.582 mi) keep close to the bearing of the mapped grade on at least one side. A straight of 9.3 mi in the drawn line, through Raines toward Cordele after simplification, comes from these coarse source vectors; only its last mile or so is confirmed by surviving track. Era alignment: all four features draw the same line, the last alignment before abandonment in 1977, because no relocation is documented and no earlier survey was found. LATER ALIGNMENT AT ALBANY: the line ends at Union Station (100 W Roosevelt Ave), Fowler's Terminal Station, built 1912-13 per Wikipedia and the Thronateeska Heritage Center. That is later than the 1893-1895 and 1895-1910 features and the first years of the 1910-1942 feature; earlier trains would have used a predecessor depot whose site and approach were not traced. The Cordele end stops at today's SAM Shortline Cordele station, used as a stand-in for the depot; Fowler puts West Cordele 0.4 mi out; if that was the junction, which is drawn 0.88 mi from the end, the depot lay west of the end drawn.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1942,
+      "headway_min": 720,
+      "note": "Georgia Southwestern and Gulf operated with its own organization and books from 15 Feb 1910 (ICC); Wikipedia and railga call this a lease, the ICC a stock purchase, and the split date is unaffected. Receivership from 1932; Pidcock became receiver in 1939. The end is approximate and disputed: 1942 per railga and Wikipedia citing Edson, 1940 per HawkinsRails. railga says passengers and freight continued under both names, so only the operator's name is in doubt, not service. Passenger evidence: 1911 Guide citations and a 1935 company timetable via Fowler. Headway is an estimate: no frequency found for this era, so the 1951 pattern of two round trips a day is carried back.",
+      "sources": [
+       "Segment-level: operator dates from the ICC valuation; 1911 and 1935 evidence via Fowler section 84, as read by the research report; end-date conflict from railga and HawkinsRails. 1918 and 1940 timetables listed by railga were not seen.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Georgia_Southwestern_and_Gulf_Railroad",
+       "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+       "https://railga.com/gswgulf.html",
+       "https://hawkinsrails.net/shortlines/aln/aln.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.15093,
+      31.58204
+     ],
+     [
+      -84.150598,
+      31.582791
+     ],
+     [
+      -84.1499012,
+      31.5858152
+     ],
+     [
+      -84.149109,
+      31.58553
+     ],
+     [
+      -84.1490598,
+      31.5949537
+     ],
+     [
+      -84.1492979,
+      31.5983893
+     ],
+     [
+      -84.1493518,
+      31.6034473
+     ],
+     [
+      -84.1483566,
+      31.6059901
+     ],
+     [
+      -84.1451222,
+      31.6102858
+     ],
+     [
+      -84.1438556,
+      31.6115089
+     ],
+     [
+      -84.137745,
+      31.6159915
+     ],
+     [
+      -84.1299659,
+      31.6211608
+     ],
+     [
+      -84.1083678,
+      31.636187
+     ],
+     [
+      -84.1007427,
+      31.6415466
+     ],
+     [
+      -84.0995413,
+      31.6426212
+     ],
+     [
+      -84.0987403,
+      31.6435304
+     ],
+     [
+      -84.0776099,
+      31.6721105
+     ],
+     [
+      -84.0226589,
+      31.7455358
+     ],
+     [
+      -84.016463,
+      31.7537963
+     ],
+     [
+      -84.0142147,
+      31.7565546
+     ],
+     [
+      -84.0124469,
+      31.7579847
+     ],
+     [
+      -83.9936691,
+      31.7675672
+     ],
+     [
+      -83.986104,
+      31.7697656
+     ],
+     [
+      -83.984423,
+      31.770353
+     ],
+     [
+      -83.982516,
+      31.7706081
+     ],
+     [
+      -83.9808299,
+      31.7712301
+     ],
+     [
+      -83.9778077,
+      31.7729312
+     ],
+     [
+      -83.9756636,
+      31.7744482
+     ],
+     [
+      -83.9740615,
+      31.7759602
+     ],
+     [
+      -83.9725055,
+      31.7772213
+     ],
+     [
+      -83.9614879,
+      31.7886254
+     ],
+     [
+      -83.9558416,
+      31.7945915
+     ],
+     [
+      -83.945839,
+      31.8054866
+     ],
+     [
+      -83.9311743,
+      31.8209437
+     ],
+     [
+      -83.9290922,
+      31.8229408
+     ],
+     [
+      -83.9061411,
+      31.841273
+     ],
+     [
+      -83.904699,
+      31.842555
+     ],
+     [
+      -83.903387,
+      31.84352
+     ],
+     [
+      -83.9017769,
+      31.845013
+     ],
+     [
+      -83.9004118,
+      31.847029
+     ],
+     [
+      -83.8997708,
+      31.849234
+     ],
+     [
+      -83.8972376,
+      31.855895
+     ],
+     [
+      -83.8955205,
+      31.858248
+     ],
+     [
+      -83.7965657,
+      31.9637545
+     ],
+     [
+      -83.795527,
+      31.964739
+     ],
+     [
+      -83.793511,
+      31.965981
+     ],
+     [
+      -83.784482,
+      31.9700854
+     ],
+     [
+      -83.7832691,
+      31.9704662
+     ],
+     [
+      -83.7822125,
+      31.9705947
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Albany and Northern Railway",
+    "line": "Albany and Northern: Albany – Cordele",
+    "id": "albany-northern-albany-cordele-1942",
+    "color": "#3F7F93",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 36.6,
+    "speed_source": "measured for 1951 only: Official Guide Feb 1952, table dated November 13, 1951, 36.0 mi in 95 min (No. 2 and No. 4) = 36.6 km/h; earlier years of this era are assumed the same",
+    "geometry_source": "OpenStreetMap (ODbL) ways for Albany to north of Philema and the Cordele approach; OpenHistoricalMap (CC0) ways 202210024 and 202210026 for the lifted middle, geometry only, OHM dates not used.",
+    "geometry_quality": "Traced 35.4 mi against documented 35.020 (ICC valuation), 35.7 (Fowler, to Albany Terminal Station) and 36.0 (Feb 1952 Official Guide). Milepost test against Fowler section 84, measured from the Cordele end: Raines 7.38 vs 7.6, Warwick 12.68 vs 12.8, Oakfield 17.47 vs 17.5, Philema 20.63 vs 20.7, Chehaw 24.38 vs 24.4, Beloit 27.23 vs 27.5; those places lie 7-47 m off the line. The stretches, Albany to Cordele: (1) 1.46 mi Albany terminal throat and yards on OSM ways not tagged as this road (9178175 disused, 164924978 today's Georgia and Florida Railway track), so the corridor is shared and its historic owner is not established; (2) about 15.4 mi from Albany to about a mile short of Oakfield on OSM's abandoned grade named Albany and Northern Railway, old_railway_operator=Georgia Northern; (3) 16.4 mi from there through Oakfield and Warwick to near Cordele on OpenHistoricalMap ways 202210024 and 202210026, digitised from Atack's Railroads 1826-1911 and much coarser than a survey trace, including one 5.37 mi vector through Raines and one 1.85 mi vector through Warwick; (4) 1.27 mi on OSM way 956563078, surviving track named Stella Jones Lead and tagged old_railway_operator=Southern, taken to be this road's grade by inference: it coincides with the OHM line and Southern bought the road in 1966; (5) the last 0.6 mi into Cordele on Seaboard/Heart of Georgia track, and the end of (4), about 0.3 mi past where the OHM line ends at a junction, also coincides with an OHM line dated 1889 that the Seaboard/Heart of Georgia track follows, so about 0.9 mi at Cordele is another company's corridor. Approximated legs, each a straight bridge between mapped pieces, 1.76 mi in all: 31.5858,-84.1499 to 31.5855,-84.1491 (0.051 mi); 31.6021,-84.1493 to 31.6021,-84.1494 (0.003 mi); 31.6073,-84.1473 to 31.6083,-84.1466 (0.079 mi); 31.6098,-84.1455 to 31.6101,-84.1453 (0.023 mi); 31.6118,-84.1435 to 31.616,-84.1377 (0.448 mi); 31.6174,-84.1356 to 31.6178,-84.135 (0.045 mi); 31.621,-84.1302 to 31.6212,-84.13 (0.021 mi); 31.6216,-84.1293 to 31.622,-84.1287 (0.046 mi); 31.6243,-84.1255 to 31.625,-84.1245 (0.075 mi); 31.6346,-84.1107 to 31.6347,-84.1105 (0.015 mi); 31.6362,-84.1084 to 31.6415,-84.1007 (0.582 mi); 31.655,-84.0903 to 31.6552,-84.0901 (0.022 mi); 31.6566,-84.0891 to 31.6576,-84.0884 (0.078 mi); 31.7698,-83.9861 to 31.7704,-83.9844 (0.107 mi); 31.9517,-83.8079 to 31.9536,-83.8061 (0.169 mi). The two longest (0.448 and 0.582 mi) keep close to the bearing of the mapped grade on at least one side. A straight of 9.3 mi in the drawn line, through Raines toward Cordele after simplification, comes from these coarse source vectors; only its last mile or so is confirmed by surviving track. Era alignment: all four features draw the same line, the last alignment before abandonment in 1977, because no relocation is documented and no earlier survey was found. LATER ALIGNMENT AT ALBANY: the line ends at Union Station (100 W Roosevelt Ave), Fowler's Terminal Station, built 1912-13 per Wikipedia and the Thronateeska Heritage Center. That is later than the 1893-1895 and 1895-1910 features and the first years of the 1910-1942 feature; earlier trains would have used a predecessor depot whose site and approach were not traced. The Cordele end stops at today's SAM Shortline Cordele station, used as a stand-in for the depot; Fowler puts West Cordele 0.4 mi out; if that was the junction, which is drawn 0.88 mi from the end, the depot lay west of the end drawn.",
+    "segments": [
+     {
+      "start": 1942,
+      "end": 1952,
+      "headway_min": 720,
+      "note": "Albany and Northern under Pidcock control; the start is approximate (1942 vs 1940, see the previous era). Official Guide Feb 1952, table dated November 13, 1951: two round trips a day, No. 2 lv Cordele 7:00 AM ar Albany 8:35, No. 4 lv Cordele 3:10 PM ar Albany 4:45, No. 1 lv Albany 12:15 PM ar Cordele 1:45, No. 3 ar Cordele 6:35 PM, its Albany departure printing as '1500' and read as 5:00 PM (OCR). The headway of 720 stands for that count and is sourced for 1951 only. The Guide does not say whether these were mixed trains. The 1952 end is an authorization date, known only through Wikipedia's citation of an unread article (Waycross Journal-Herald, 24 Sep 1952); the last train date is not established. Freight and mail continued after 1952, and the line was abandoned in 1977; those years are not drawn because no passengers rode.",
+      "sources": [
+       "Segment-level: 1951 service, headway and speed from the Official Guide Feb 1952 table (research/sources/official_guide_1952.txt); 1952 end through Wikipedia's citation of a newspaper article that was not read.",
+       "research/sources/official_guide_1952.txt",
+       "https://en.wikipedia.org/wiki/Albany_and_Northern_Railway",
+       "https://railga.com/albn.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.15093,
+      31.58204
+     ],
+     [
+      -84.150598,
+      31.582791
+     ],
+     [
+      -84.1499012,
+      31.5858152
+     ],
+     [
+      -84.149109,
+      31.58553
+     ],
+     [
+      -84.1490598,
+      31.5949537
+     ],
+     [
+      -84.1492979,
+      31.5983893
+     ],
+     [
+      -84.1493518,
+      31.6034473
+     ],
+     [
+      -84.1483566,
+      31.6059901
+     ],
+     [
+      -84.1451222,
+      31.6102858
+     ],
+     [
+      -84.1438556,
+      31.6115089
+     ],
+     [
+      -84.137745,
+      31.6159915
+     ],
+     [
+      -84.1299659,
+      31.6211608
+     ],
+     [
+      -84.1083678,
+      31.636187
+     ],
+     [
+      -84.1007427,
+      31.6415466
+     ],
+     [
+      -84.0995413,
+      31.6426212
+     ],
+     [
+      -84.0987403,
+      31.6435304
+     ],
+     [
+      -84.0776099,
+      31.6721105
+     ],
+     [
+      -84.0226589,
+      31.7455358
+     ],
+     [
+      -84.016463,
+      31.7537963
+     ],
+     [
+      -84.0142147,
+      31.7565546
+     ],
+     [
+      -84.0124469,
+      31.7579847
+     ],
+     [
+      -83.9936691,
+      31.7675672
+     ],
+     [
+      -83.986104,
+      31.7697656
+     ],
+     [
+      -83.984423,
+      31.770353
+     ],
+     [
+      -83.982516,
+      31.7706081
+     ],
+     [
+      -83.9808299,
+      31.7712301
+     ],
+     [
+      -83.9778077,
+      31.7729312
+     ],
+     [
+      -83.9756636,
+      31.7744482
+     ],
+     [
+      -83.9740615,
+      31.7759602
+     ],
+     [
+      -83.9725055,
+      31.7772213
+     ],
+     [
+      -83.9614879,
+      31.7886254
+     ],
+     [
+      -83.9558416,
+      31.7945915
+     ],
+     [
+      -83.945839,
+      31.8054866
+     ],
+     [
+      -83.9311743,
+      31.8209437
+     ],
+     [
+      -83.9290922,
+      31.8229408
+     ],
+     [
+      -83.9061411,
+      31.841273
+     ],
+     [
+      -83.904699,
+      31.842555
+     ],
+     [
+      -83.903387,
+      31.84352
+     ],
+     [
+      -83.9017769,
+      31.845013
+     ],
+     [
+      -83.9004118,
+      31.847029
+     ],
+     [
+      -83.8997708,
+      31.849234
+     ],
+     [
+      -83.8972376,
+      31.855895
+     ],
+     [
+      -83.8955205,
+      31.858248
+     ],
+     [
+      -83.7965657,
+      31.9637545
+     ],
+     [
+      -83.795527,
+      31.964739
+     ],
+     [
+      -83.793511,
+      31.965981
+     ],
+     [
+      -83.784482,
+      31.9700854
+     ],
+     [
+      -83.7832691,
+      31.9704662
+     ],
+     [
+      -83.7822125,
+      31.9705947
+     ]
+    ]
+   }
+  }
+ ]
+}
