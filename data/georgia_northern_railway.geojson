@@ -1,0 +1,1690 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Georgia Northern main line Boston (originally Pidcock) - Moultrie - Doerun - Ticknor - Albany, about 68 mi, built in stages 1893-1905, plus the Flint River and Northeastern (Pelham - Ticknor), a separate company. One feature per drawable span and operator: the Boston and Albany (of Georgia) ran the first trains 1893-1894 and is split from the Georgia Northern (legally distinct after a receivership sale); the 1905 relocation of the south end from Pidcock to Boston gives two southern pieces; the northward extensions of 1899 (Doerun), 1904 (Ticknor) and 1905 (Albany) each have their own geometry. The Boston and Albany Railroad (of Georgia) is not the Massachusetts Boston and Albany and carries its own colour.",
+  "research_report": "research/branches/georgia_northern_railway.txt",
+  "sources": [
+   "https://gahistoricnewspapers.galileo.usg.edu",
+   "https://railga.com/gnorth.html",
+   "https://railga.com/boston.html",
+   "https://railga.com/flintne.html",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Georgia_Northern_Railway",
+   "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+   "https://taplines.net/GN/GN.html",
+   "https://hawkinsrails.net/shortlines/gano/gano.htm",
+   "https://www.rrpicturearchives.net/albums/84922",
+   "https://mountie17.rrpicturearchives.net/showPicture.aspx?id=3334567",
+   "research/sources/official_guide_1952.txt"
+  ],
+  "geometry_sources": {
+   "osm": "OpenStreetMap, ODbL: ways 124281259, 9186515, 164908382, 344285792 and the Moultrie-Schley Junction Line ways"
+  },
+  "not_yet_sourced": [
+   "Albany - Doerun - Ticknor - Moultrie end 1953 is [OPEN]: the 30 Oct 1953 notice is an APPLICATION to discontinue (hearing 12 Nov 1953); the Commission's order and the last-train date were not found.",
+   "Moultrie - Oak Lawn - Boston end 1951 is [OPEN]: rests on a partly legible Sept 1951 Official Guide table; the 1953 notice is silent on this end, which may have lost its trains earlier or later.",
+   "Flint River and Northeastern end 1926 is [OPEN]: rests on Fowler's 1926G listing; the last timetable seen is the April 1921 card (printed to Jan 1922). Abandoned 1946.",
+   "Doerun - Ticknor start 1904 is [OPEN]: the GN was at Ticknor by Feb 1904; opening date not found, and whether GN (rather than FR&NE) trains used it before Oct 1905 is not shown.",
+   "Doerun opening: track 9 mi north of Moultrie by Aug 1898; first card naming Doerun is effective 30 Jan 1899; late-1898 service not drawn.",
+   "Pidcock after Oct 1905: whether any passenger train used Pidcock - Oak Lawn after the Boston relocation is unknown; not drawn.",
+   "1893-94 operator name: contemporary papers and the ICC say Boston and Albany; railga says the Pidcocks ran it as the Georgia Northern without a charter.",
+   "Mileage: ICC 66.723 Boston - Albany vs Fowler 68.0, not reconciled.",
+   "Headways other than 1894-95 (one round trip), 1905 (two daily pairs plus a Sunday train) and 1953 (Nos. 1-6) are estimates; FR&NE one round trip in 1921.",
+   "Sites of the Pidcock-era alignment, Lake Station, the Boston, Moultrie and Ticknor depots."
+  ],
+  "omitted": [
+   "Southern Railway 'Railroad Day' steam special to Moultrie, 26 Feb 1968: drawable NONE, no source shows the public rode the GN leg.",
+   "Georgia, Ashburn, Sylvester and Camilla (Pidcock-controlled, its own company and timetable): drawable NONE here; needs its own research.",
+   "Albany and Northern / Georgia Southwestern and Gulf: separate road, already in albany_and_northern_railway.geojson."
+  ],
+  "freight_only": "Not drawn: the GN after its passenger end (freight, mail by highway and express only; Southern control 1966; abandonments 1971, 1976, 1990 are freight-era dates); Moultrie - Sparks, added to the GN only in the Southern era; the Quitman Lumber Co. tram before 1893; the FR&NE after its unknown passenger end to 1946.",
+  "horsecar_check": "None: steam from 1893, gas motor cars from 1932.",
+  "ownership_split": "Boston and Albany (of Georgia) 1893-1894 -> Georgia Northern from the 30 Jan 1895 card (ICC: property passed 7 Feb 1895). Not splits: Pidcock acquisitions of the FR&NE (1910), GAS&C (1922) and A&N (1939), each run under its own name; Southern control 1966 came after passenger service.",
+  "pulled": "2026-11-09"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Boston and Albany Railroad (of Georgia)",
+    "line": "Boston and Albany (Georgia): Pidcock – Moultrie",
+    "id": "boston-albany-georgia-pidcock-moultrie",
+    "color": "#8E5B2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 18,
+    "speed_source": "estimated: no timing found for the Boston and Albany itself; taken from the Georgia Northern's 1895 card (Pidcock about 2:30 pm to Moultrie about 5:10 pm, OCR approximate, roughly 30 mi in 2 h 40 min = 18 km/h), which ran the same single round trip over the same track a few months later",
+    "geometry_source": "Straight line Pidcock - Oak Lawn (no surviving alignment); OpenStreetMap (ODbL) way 124281259, abandoned grade tagged old_railway_operator=Georgia Northern, Oak Lawn - Moultrie; Moultrie-Schley Junction Line ways into Moultrie.",
+    "geometry_quality": "Traced 28.31 mi against documented about 30.0 (Fowler: Pidcock 0 - Oak Lawn 7, Oak Lawn 5.8 - Moultrie 28.8 from Boston) and 31 operated (1894 Official Railway List, via railga). Approximated: Pidcock - Oak Lawn, one straight line of 4.95 mi against Fowler's 7 mi; the original 1893-1905 southern end was relocated to Boston in 1905 and no trace of it was found in OSM or OpenHistoricalMap, so the straight chord understates the route by about 2 mi. Pidcock is placed on today's CSX Thomasville Subdivision (the SF&W junction) 31 m from the Pidcock hamlet node; Oak Lawn is the Oaklawn hamlet node (OSM 153966407) projected onto the grade, 263 m away, at 5.66 mi from Boston against Fowler's 5.8. Oak Lawn - Moultrie (23.36 mi against Fowler's 23.0) is traced on the OSM abandoned Georgia Northern grade through Barwick (11 m), Pavo (0.3 km) and Autreyville (0.3 km); that grade is the road's final alignment, taken to be the 1893 one because no relocation north of Oak Lawn is recorded. The last ~1.3 mi into Moultrie follows tracks now tagged Moultrie-Schley Junction Line (Georgia and Florida Railway); the Moultrie end point is approximate (the 1893 depot site was not located).",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1894,
+      "headway_min": 1440,
+      "note": "First scheduled train into Moultrie 21 Mar 1893 (Savannah Morning News 13 Feb 1900, retrospective; corroborated by a 1927 Wiregrass Farmer obituary and Southern's 1968 75th-anniversary event). Contemporary 1893-94 papers name the operating company the Boston and Albany Railroad, C. W. Pidcock superintendent; in receivership from June 1893 (Tifton Gazette 16 Jun 1893). Headway from the only schedule seen for this operator: 'Train No. 5, on the Boston and Albany railroad, now leaves Pidcock for Moultrie at 3:15 p.m. daily and train No. 6 leaves Moultrie at 7 a.m.' (Thomasville Daily Times-Enterprise 7 Aug 1894) - one round trip a day; 1893 frequency is assumed the same. Ends 1894: trains ran as the Georgia Northern from the timetable effective 30 Jan 1895 (property passed 7 Feb 1895 per the ICC). Source conflict: railga says the B&A built no track and the Pidcocks ran the line as the Georgia Northern without a charter; the ICC and contemporary papers say the B&A operated it. A different railroad from the Massachusetts Boston and Albany, so it carries its own company string and colour.",
+      "sources": [
+       "Segment-level: Savannah Morning News 13 Feb 1900 p9 (first train 21 Mar 1893); Thomasville Daily Times-Enterprise 7 Apr 1893 p1 and 7 Aug 1894 p1; Tifton Gazette 16 Jun 1893 p1, via Georgia Historic Newspapers, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://railga.com/boston.html",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Georgia_Northern_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.707712,
+      30.784634
+     ],
+     [
+      -83.739917,
+      30.85072
+     ],
+     [
+      -83.740093,
+      30.852717
+     ],
+     [
+      -83.739689,
+      30.885713
+     ],
+     [
+      -83.739312,
+      30.894273
+     ],
+     [
+      -83.739063,
+      30.918195
+     ],
+     [
+      -83.738909,
+      30.925976
+     ],
+     [
+      -83.738595,
+      30.932761
+     ],
+     [
+      -83.738371,
+      30.934062
+     ],
+     [
+      -83.734979,
+      30.940672
+     ],
+     [
+      -83.73472,
+      30.941918
+     ],
+     [
+      -83.735069,
+      30.949562
+     ],
+     [
+      -83.735041,
+      30.966359
+     ],
+     [
+      -83.736228,
+      30.970139
+     ],
+     [
+      -83.736257,
+      30.970575
+     ],
+     [
+      -83.734372,
+      30.98992
+     ],
+     [
+      -83.734142,
+      30.993321
+     ],
+     [
+      -83.734956,
+      31.010932
+     ],
+     [
+      -83.736266,
+      31.020229
+     ],
+     [
+      -83.7368,
+      31.022556
+     ],
+     [
+      -83.749441,
+      31.038967
+     ],
+     [
+      -83.749739,
+      31.040263
+     ],
+     [
+      -83.749636,
+      31.042249
+     ],
+     [
+      -83.749734,
+      31.043607
+     ],
+     [
+      -83.750237,
+      31.044879
+     ],
+     [
+      -83.751708,
+      31.047763
+     ],
+     [
+      -83.752754,
+      31.049409
+     ],
+     [
+      -83.757578,
+      31.055522
+     ],
+     [
+      -83.761575,
+      31.062589
+     ],
+     [
+      -83.76791,
+      31.085509
+     ],
+     [
+      -83.784599,
+      31.170343
+     ],
+     [
+      -83.784676,
+      31.171277
+     ],
+     [
+      -83.784137,
+      31.177064
+     ],
+     [
+      -83.784103,
+      31.179997
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Northern Railway",
+    "line": "Georgia Northern: Pidcock – Oak Lawn",
+    "id": "georgia-northern-pidcock-oak-lawn",
+    "color": "#2E6F57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 18,
+    "speed_source": "estimated from the 1895 card (about 30 mi Pidcock - Moultrie in roughly 2 h 40 min = 18 km/h, OCR approximate); later years in this span not timed",
+    "geometry_source": "Straight line: no surviving alignment found in OpenStreetMap or OpenHistoricalMap.",
+    "geometry_quality": "Approximated in full: one straight line Pidcock - Oak Lawn of 4.95 mi against Fowler's 7 mi (Pidcock 0, Lake Station 2, Oak Lawn 7), so it understates the route by about 2 mi and does not pass through Lake Station, Spangler or Phoebe, whose sites were not located. railga describes the 1905 relocation as 'the southernmost four miles', which does not square exactly with Fowler's 7 mi Pidcock - Oak Lawn against 5.8 mi Boston - Oak Lawn; not reconciled. Pidcock is placed on today's CSX Thomasville Subdivision (ex SF&W) 31 m from the hamlet node; Oak Lawn is the Oaklawn hamlet node projected onto the later grade (263 m). This is the pre-1905 alignment, deliberately not drawn on the Boston line (Rule 2).",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1905,
+      "headway_min": 1440,
+      "note": "Georgia Northern timetables 'to take effect on and after Jan. 30th, 1895' (C. W. Pidcock, Supt.), trains Nos. 5/6 passenger Pidcock - Moultrie, printed through 1895; further cards 1895, 1896, 5 Apr 1897 (printed 19 Oct 1897) list Pidcock - Lake Station - ... - Moultrie. Ends 1905: 'the Georgia Northern railroad ran its trains into Boston the 4th of October, 1905' (Weekly Times-Enterprise 16 Mar 1906). Whether any passenger train still used Pidcock after that is not established and none is drawn. Headway: one round trip a day per the 1895 cards; later years in the span are an estimate carried forward.",
+      "sources": [
+       "Segment-level: Thomasville Daily Times-Enterprise 26 May 1895, 13 Jul 1895 and 19 Oct 1897 (GN cards); Weekly Times-Enterprise and South Georgia Progress 16 Mar 1906 p12 (Boston entry 4 Oct 1905), via Georgia Historic Newspapers, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://railga.com/gnorth.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.707712,
+      30.784634
+     ],
+     [
+      -83.739917,
+      30.85072
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Northern Railway",
+    "line": "Georgia Northern: Boston – Oak Lawn",
+    "id": "georgia-northern-boston-oak-lawn",
+    "color": "#2E6F57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no timing found for the south end after 1905; a round figure between the 1895 (18 km/h) and 1905 Albany - Moultrie (37.8 km/h) timings",
+    "geometry_source": "OpenStreetMap (ODbL) way 124281259, abandoned grade named Georgia Northern Railway, old_railway_operator=Georgia Northern.",
+    "geometry_quality": "Traced 5.66 mi against Fowler's 5.8 (Boston 0 - Oak Lawn 5.8), all on the OSM abandoned Georgia Northern grade (lifted 1971 per railga). No straight-line leg. The Boston end is the south end of that OSM way, beside the CSX (ex ACL) line; the depot site itself was not located. Oak Lawn is the Oaklawn hamlet node projected onto the grade (263 m).",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1951,
+      "headway_min": 720,
+      "note": "Opened to passengers 4 Oct 1905, when 'the Georgia Northern railroad ran its trains into Boston' (Weekly Times-Enterprise 16 Mar 1906); the 'Albany - Boston Line' card effective the same day (Albany Daily Herald 12 Feb 1906). Connection at Boston with the ACL. [OPEN] 1951 is the last CONFIRMED year, not a known end: the Feb 1952 Official Guide (schedules of Sept 1951) prints a Georgia Northern rail table naming Boston (footnote 'With A.C.L.') and train No. 11, but its OCR does not tie the surviving times to stations, so which trains ran south of Moultrie is not shown. The 30 Oct 1953 discontinuance notice covers only Albany - Moultrie and is silent on Moultrie - Boston. Service here may have ended before 1951 or after 1953; no source dates it. Do not extend without evidence. Headway is an estimate: the 1905 card's southern working is not fully read, and the 'twice daily, except Sunday, local Boston to Moultrie' of an undated rrpicturearchives caption and Hensley's 'six passenger trains a day' in the 1930s are secondary. Boston - Barwick was abandoned in 1971 (railga) - a freight-era date, not a passenger end.",
+      "sources": [
+       "Segment-level: Weekly Times-Enterprise and South Georgia Progress 16 Mar 1906 p12; Albany Daily Herald 12 Feb 1906 p2 (card eff. 4 Oct 1905), via Georgia Historic Newspapers; Feb 1952 Official Guide GN table (Sept 1951 schedules, partial OCR), as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "research/sources/official_guide_1952.txt",
+       "https://railga.com/gnorth.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.790846,
+      30.793611
+     ],
+     [
+      -83.790184,
+      30.793713
+     ],
+     [
+      -83.789475,
+      30.794031
+     ],
+     [
+      -83.788592,
+      30.794165
+     ],
+     [
+      -83.780307,
+      30.793216
+     ],
+     [
+      -83.777777,
+      30.793337
+     ],
+     [
+      -83.777046,
+      30.793521
+     ],
+     [
+      -83.767088,
+      30.797911
+     ],
+     [
+      -83.765625,
+      30.799032
+     ],
+     [
+      -83.739115,
+      30.834898
+     ],
+     [
+      -83.738718,
+      30.835579
+     ],
+     [
+      -83.738401,
+      30.836298
+     ],
+     [
+      -83.73826,
+      30.837115
+     ],
+     [
+      -83.738357,
+      30.840483
+     ],
+     [
+      -83.738939,
+      30.8436
+     ],
+     [
+      -83.739917,
+      30.85072
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Northern Railway",
+    "line": "Georgia Northern: Oak Lawn – Moultrie",
+    "id": "georgia-northern-oak-lawn-moultrie",
+    "color": "#2E6F57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: 1895 card about 18 km/h over Pidcock - Moultrie (OCR approximate); no later timing found south of Moultrie; 25 is a round figure, not a measurement",
+    "geometry_source": "OpenStreetMap (ODbL) way 124281259, abandoned grade named Georgia Northern Railway, old_railway_operator=Georgia Northern; Moultrie-Schley Junction Line ways (old_railway_operator=Georgia Northern) into Moultrie.",
+    "geometry_quality": "Traced 23.36 mi against Fowler's 23.0 (Oak Lawn 5.8 - Moultrie 28.8 from Boston), all on ways tagged old_railway_operator=Georgia Northern. No straight-line leg. Waypoints: Barwick 11 m, Pavo 0.3 km and Autreyville 0.3 km from the line. The grade is the road's last alignment (lifted Barwick - Pavo 1976, Pavo - Moultrie 1990 per railga); no relocation north of Oak Lawn is recorded, so it is taken to be the 1893 alignment too. The Moultrie end point is approximate (depot site not located).",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1905,
+      "headway_min": 1440,
+      "note": "Georgia Northern from the card 'to take effect on and after Jan. 30th, 1895' (trains Nos. 5/6, passenger, Pidcock - Moultrie); further cards Aug and Dec 1895, Apr 1897, Jan 1899. In May 1895 'a new coach and engine has been put on the road' (Savannah Morning News 30 May 1895). 1893-1894 on this track is drawn under the Boston and Albany. Headway: one round trip a day per the 1895 cards; the 1899 card notes a coach carried on another train too (OCR fragment), so later years in this span are an estimate. Segment ends Oct 1905 when the southern terminus moved to Boston and through Albany - Boston trains began.",
+      "sources": [
+       "Segment-level: GN cards in the Thomasville Daily Times-Enterprise 26 May, 13 Jul, 30 Jul, 3 Aug, 6 Aug, 12 Sep 1895, 5 May 1896, 19 Oct 1897, 8 Apr 1899; Savannah Morning News 30 May 1895, via Georgia Historic Newspapers, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://railga.com/gnorth.html"
+      ]
+     },
+     {
+      "start": 1905,
+      "end": 1951,
+      "headway_min": 720,
+      "note": "Through 'Albany - Boston Line' from the card effective 4 Oct 1905 (Albany Daily Herald 12 Feb 1906). A Georgia Northern 'motor train' with motorman and porter was at Moultrie in Aug 1946 (Omega News 1 Aug 1946; which side of Moultrie not stated); gas motor cars were bought from 1932 especially for the rural south end (Hensley, taplines.net, secondary). [OPEN] 1951 is the last CONFIRMED year, not a known end: the Feb 1952 Official Guide (schedules of Sept 1951) prints a Georgia Northern rail table naming Boston (footnote 'With A.C.L.') and train No. 11, but its OCR does not tie the surviving times to stations, so which trains ran south of Moultrie is not shown. The 30 Oct 1953 discontinuance notice covers only Albany - Moultrie and is silent on Moultrie - Boston. Service here may have ended before 1951 or after 1953; no source dates it. Do not extend without evidence. Headway is an estimate (secondary sources: six trains a day in the 1930s; a twice-daily-except-Sunday Boston - Moultrie motor-car local, undated). Pavo - Moultrie was abandoned in 1990 - a freight-era date.",
+      "sources": [
+       "Segment-level: Albany Daily Herald 12 Feb 1906 p2 (card eff. 4 Oct 1905); Omega News 1 Aug 1946 p1, via Georgia Historic Newspapers; Feb 1952 Official Guide GN table (Sept 1951 schedules, partial OCR), as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "research/sources/official_guide_1952.txt",
+       "https://taplines.net/GN/GN.html",
+       "https://www.rrpicturearchives.net/albums/84922"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.739917,
+      30.85072
+     ],
+     [
+      -83.740093,
+      30.852717
+     ],
+     [
+      -83.739689,
+      30.885713
+     ],
+     [
+      -83.739312,
+      30.894273
+     ],
+     [
+      -83.739063,
+      30.918195
+     ],
+     [
+      -83.738909,
+      30.925976
+     ],
+     [
+      -83.738595,
+      30.932761
+     ],
+     [
+      -83.738371,
+      30.934062
+     ],
+     [
+      -83.734979,
+      30.940672
+     ],
+     [
+      -83.73472,
+      30.941918
+     ],
+     [
+      -83.735069,
+      30.949562
+     ],
+     [
+      -83.735041,
+      30.966359
+     ],
+     [
+      -83.736228,
+      30.970139
+     ],
+     [
+      -83.736257,
+      30.970575
+     ],
+     [
+      -83.734372,
+      30.98992
+     ],
+     [
+      -83.734142,
+      30.993321
+     ],
+     [
+      -83.734956,
+      31.010932
+     ],
+     [
+      -83.736266,
+      31.020229
+     ],
+     [
+      -83.7368,
+      31.022556
+     ],
+     [
+      -83.749441,
+      31.038967
+     ],
+     [
+      -83.749739,
+      31.040263
+     ],
+     [
+      -83.749636,
+      31.042249
+     ],
+     [
+      -83.749734,
+      31.043607
+     ],
+     [
+      -83.750237,
+      31.044879
+     ],
+     [
+      -83.751708,
+      31.047763
+     ],
+     [
+      -83.752754,
+      31.049409
+     ],
+     [
+      -83.757578,
+      31.055522
+     ],
+     [
+      -83.761575,
+      31.062589
+     ],
+     [
+      -83.76791,
+      31.085509
+     ],
+     [
+      -83.784599,
+      31.170343
+     ],
+     [
+      -83.784676,
+      31.171277
+     ],
+     [
+      -83.784137,
+      31.177064
+     ],
+     [
+      -83.784103,
+      31.179997
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Northern Railway",
+    "line": "Georgia Northern: Moultrie – Doerun",
+    "id": "georgia-northern-moultrie-doerun",
+    "color": "#2E6F57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 38,
+    "speed_source": "measured for 1905 only: Albany - Moultrie 39.2 mi in 100 min = 23.5 mph = 37.8 km/h (card eff. 4 Oct 1905); other years are an estimate",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator=Georgia Northern: Moultrie-Schley Junction Line (incl. way 344285792) and Albany-Sparks Line way 9186515, today's Georgia and Florida Railway track.",
+    "geometry_quality": "Traced 12.87 mi against Fowler's 13.0 (Moultrie 28.8 - Doerun 41.8), all on ways tagged old_railway_operator=Georgia Northern. No straight-line leg. Draws today's track (Georgia and Florida Railway, still in place); no relocation is recorded, but the modern track is a later state of the line than 1899. The Moultrie end point is approximate (depot site not located); the Doerun end is the town geocode (Nominatim, administrative, on the line).",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1905,
+      "headway_min": 1440,
+      "note": "Track was 'completed nine miles above Moultrie' with Doerun to be 'for the time ... the northern terminus' (Macon Telegraph 25 Aug 1898); first card seen naming Doerun is the GN 'Local Time Table, Effective Jan. 30th, 1899' (Moultrie ... Schley, Sigsbee, Dewey, Dewey Junction, Arrive Doerun; Thomasville Daily Times-Enterprise 8 Apr 1899). Service between Aug 1898 and Jan 1899 is unproven, so 1899 is the start. June 1900 card lists Doerun, Moultrie, Pidcock. Headway is an estimate (one round trip, as on the south end).",
+      "sources": [
+       "Segment-level: Macon Telegraph 25 Aug 1898 p6; Thomasville Daily Times-Enterprise 8 Apr 1899 p4; Thomasville Times-Enterprise 30 Mar 1901 p4 (June 1900 card), via Georgia Historic Newspapers, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://railga.com/gnorth.html"
+      ]
+     },
+     {
+      "start": 1905,
+      "end": 1953,
+      "headway_min": 480,
+      "note": "Through Albany - Moultrie trains from the card effective 4 Oct 1905: No. 2 daily Albany 7:30 am - Doerun 8:30 - Moultrie 9:10, No. 4 Sunday only, No. 6 daily except Sunday, northbound Nos. 1/3 (Albany Daily Herald 12 Feb 1906). [OPEN] 1953 is the year of the APPLICATION to discontinue, not a known last-train date: a 'Notice to the Public' dated 30 Oct 1953, signed by the Georgia Northern Railway Company, says it has applied to the Georgia Public Service Commission to discontinue all passenger trains between Albany and Moultrie, Nos. 1-6, hearing 12 Nov 1953, so three round trips a day were still running in late Oct 1953. The Commission's order and the last train were not found; service may have run into 1954. This is the last CONFIRMED year, not a known end. Do not extend without evidence, and do not use the c.1970 date of the photograph of the notice. Headway: three round trips (Nos. 1-6) in 1953 per the notice; 1905 had two daily pairs plus a Sunday train; years between are an estimate.",
+      "sources": [
+       "Segment-level: Albany Daily Herald 12 Feb 1906 p2 (card eff. 4 Oct 1905), via Georgia Historic Newspapers; GN 'Notice to the Public' dated 30 Oct 1953, photographed by Bob Hasty, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://mountie17.rrpicturearchives.net/showPicture.aspx?id=3334567"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.784103,
+      31.179997
+     ],
+     [
+      -83.78408,
+      31.185981
+     ],
+     [
+      -83.78434,
+      31.186982
+     ],
+     [
+      -83.784893,
+      31.187846
+     ],
+     [
+      -83.789673,
+      31.191965
+     ],
+     [
+      -83.790248,
+      31.192599
+     ],
+     [
+      -83.790633,
+      31.193527
+     ],
+     [
+      -83.79089,
+      31.196715
+     ],
+     [
+      -83.791051,
+      31.197329
+     ],
+     [
+      -83.791405,
+      31.198109
+     ],
+     [
+      -83.793285,
+      31.200191
+     ],
+     [
+      -83.794874,
+      31.201278
+     ],
+     [
+      -83.80118,
+      31.202913
+     ],
+     [
+      -83.802776,
+      31.203892
+     ],
+     [
+      -83.822876,
+      31.221587
+     ],
+     [
+      -83.823777,
+      31.22275
+     ],
+     [
+      -83.826853,
+      31.228531
+     ],
+     [
+      -83.827451,
+      31.229411
+     ],
+     [
+      -83.842899,
+      31.242928
+     ],
+     [
+      -83.843854,
+      31.243924
+     ],
+     [
+      -83.844388,
+      31.244801
+     ],
+     [
+      -83.845751,
+      31.248114
+     ],
+     [
+      -83.846326,
+      31.25136
+     ],
+     [
+      -83.846938,
+      31.252842
+     ],
+     [
+      -83.852204,
+      31.259237
+     ],
+     [
+      -83.860013,
+      31.265095
+     ],
+     [
+      -83.8662,
+      31.268368
+     ],
+     [
+      -83.877672,
+      31.276924
+     ],
+     [
+      -83.883526,
+      31.279482
+     ],
+     [
+      -83.884543,
+      31.280224
+     ],
+     [
+      -83.884995,
+      31.28071
+     ],
+     [
+      -83.886515,
+      31.283037
+     ],
+     [
+      -83.898629,
+      31.301966
+     ],
+     [
+      -83.906802,
+      31.309599
+     ],
+     [
+      -83.911505,
+      31.315456
+     ],
+     [
+      -83.917208,
+      31.319555
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Northern Railway",
+    "line": "Georgia Northern: Doerun – Ticknor",
+    "id": "georgia-northern-doerun-ticknor",
+    "color": "#2E6F57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 38,
+    "speed_source": "measured for 1905 only (Albany - Moultrie 37.8 km/h, card eff. 4 Oct 1905); other years an estimate",
+    "geometry_source": "OpenStreetMap (ODbL) way 9186515, Albany-Sparks Line, old_railway_operator=Georgia Northern.",
+    "geometry_quality": "Traced 1.46 mi against Fowler's 1.6 (Doerun 41.8 - Ticknor 43.4), on way 9186515. No straight-line leg. Ticknor is placed at the node where the abandoned Flint River and Northeastern grade (way 164908382) meets the Georgia Northern; the Ticknor hamlet node lies 0.7 km west on the FR&NE grade and the station site was not located. Draws today's Georgia and Florida Railway track.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1905,
+      "headway_min": 1440,
+      "note": "[OPEN] start: the Georgia Northern was at Ticknor by Feb 1904 (Flint River & Northeastern card, Camilla Enterprise 12 Feb 1904: 'Ar Tichnor ... 25 Doerun', connection 'No. 2 Tichnor Ga., Georgia Northern Ry.'); the opening date was not found and 1904 is the earliest confirmed year. Whether Georgia Northern trains themselves (rather than FR&NE trains running through to Doerun) served Doerun - Ticknor before Oct 1905 is not shown. Headway is an estimate.",
+      "sources": [
+       "Segment-level: Camilla Enterprise 12 Feb 1904 p1 (FR&NE card), via Georgia Historic Newspapers, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://railga.com/flintne.html"
+      ]
+     },
+     {
+      "start": 1905,
+      "end": 1953,
+      "headway_min": 480,
+      "note": "Through Albany - Moultrie trains from the card effective 4 Oct 1905 (No. 2 ar Ticknor 8:24, Doerun 8:30; Albany Daily Herald 12 Feb 1906). [OPEN] 1953 is the year of the APPLICATION to discontinue, not a known last-train date: a 'Notice to the Public' dated 30 Oct 1953, signed by the Georgia Northern Railway Company, says it has applied to the Georgia Public Service Commission to discontinue all passenger trains between Albany and Moultrie, Nos. 1-6, hearing 12 Nov 1953, so three round trips a day were still running in late Oct 1953. The Commission's order and the last train were not found; service may have run into 1954. This is the last CONFIRMED year, not a known end. Do not extend without evidence, and do not use the c.1970 date of the photograph of the notice. Headway: three round trips in 1953 per the notice; other years an estimate.",
+      "sources": [
+       "Segment-level: Albany Daily Herald 12 Feb 1906 p2, via Georgia Historic Newspapers; GN notice dated 30 Oct 1953, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://mountie17.rrpicturearchives.net/showPicture.aspx?id=3334567"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.917208,
+      31.319555
+     ],
+     [
+      -83.918672,
+      31.320611
+     ],
+     [
+      -83.922658,
+      31.324075
+     ],
+     [
+      -83.923609,
+      31.325147
+     ],
+     [
+      -83.924764,
+      31.326751
+     ],
+     [
+      -83.92584,
+      31.327623
+     ],
+     [
+      -83.927626,
+      31.328396
+     ],
+     [
+      -83.930099,
+      31.328993
+     ],
+     [
+      -83.933831,
+      31.330246
+     ],
+     [
+      -83.935043,
+      31.330799
+     ],
+     [
+      -83.936473,
+      31.331791
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Georgia Northern Railway",
+    "line": "Georgia Northern: Ticknor – Albany",
+    "id": "georgia-northern-ticknor-albany",
+    "color": "#2E6F57",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 38,
+    "speed_source": "measured for 1905 only: Albany - Moultrie 39.2 mi in 100 min = 37.8 km/h (card eff. 4 Oct 1905); other years an estimate",
+    "geometry_source": "OpenStreetMap (ODbL) way 9186515 (Albany-Sparks Line, old_railway_operator=Georgia Northern) and untagged Albany yard track; short straight leg to the Albany terminal.",
+    "geometry_quality": "Traced 24.17 mi against Fowler's 24.6 (Ticknor 43.4 - Albany 68.0): 23.0 mi on way 9186515 through Bridgeboro (0.3 km) and Pecan City (0.1 km), 0.8 mi on untagged Albany yard track whose historic owner is not established. Approximated: one straight leg of 0.31 mi from the end of mapped track to the Albany terminal point shared with albany_and_northern_railway.geojson (the 1950s GN express car stood on track 4 of the Albany Passenger Terminal Co. station). Draws today's Georgia and Florida Railway track, a later state of the line than 1905. Whole line Boston - Albany: ICC 66.723 mi vs Fowler 68.0 (not reconciled); traced Boston - Albany sums to about 67.5 mi.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1953,
+      "headway_min": 480,
+      "note": "Opened through to Albany with the 'Albany - Boston Line' card effective 4 Oct 1905: No. 2 daily lv Albany 7:30 am, ar Ticknor 8:24; No. 4 Sunday only; No. 6 daily except Sunday; northbound Nos. 1/3 (Albany Daily Herald 12 Feb 1906). Grading toward Albany was under way in April 1899 (Tifton Gazette 21 Apr 1899). [OPEN] 1953 is the year of the APPLICATION to discontinue, not a known last-train date: a 'Notice to the Public' dated 30 Oct 1953, signed by the Georgia Northern Railway Company, says it has applied to the Georgia Public Service Commission to discontinue all passenger trains between Albany and Moultrie, Nos. 1-6, hearing 12 Nov 1953, so three round trips a day were still running in late Oct 1953. The Commission's order and the last train were not found; service may have run into 1954. This is the last CONFIRMED year, not a known end. Do not extend without evidence, and do not use the c.1970 date of the photograph of the notice. Headway: three round trips (Nos. 1-6) in 1953; 1905 had two daily pairs plus a Sunday train; years between are an estimate.",
+      "sources": [
+       "Segment-level: Albany Daily Herald 12 Feb 1906 p2 (card eff. 4 Oct 1905); Tifton Gazette 21 Apr 1899 p6, via Georgia Historic Newspapers; GN notice dated 30 Oct 1953, as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://mountie17.rrpicturearchives.net/showPicture.aspx?id=3334567",
+       "https://railga.com/gnorth.html",
+       "https://hawkinsrails.net/shortlines/gano/gano.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.936473,
+      31.331791
+     ],
+     [
+      -83.937351,
+      31.332758
+     ],
+     [
+      -83.938047,
+      31.333972
+     ],
+     [
+      -83.939192,
+      31.337587
+     ],
+     [
+      -83.939907,
+      31.339122
+     ],
+     [
+      -83.940767,
+      31.34196
+     ],
+     [
+      -83.941249,
+      31.342806
+     ],
+     [
+      -83.941997,
+      31.3434
+     ],
+     [
+      -83.94392,
+      31.344404
+     ],
+     [
+      -83.945549,
+      31.344905
+     ],
+     [
+      -83.947099,
+      31.34591
+     ],
+     [
+      -83.947957,
+      31.347419
+     ],
+     [
+      -83.9486,
+      31.349319
+     ],
+     [
+      -83.949538,
+      31.350897
+     ],
+     [
+      -83.950581,
+      31.352018
+     ],
+     [
+      -83.951358,
+      31.353276
+     ],
+     [
+      -83.951869,
+      31.354831
+     ],
+     [
+      -83.952112,
+      31.356136
+     ],
+     [
+      -83.952621,
+      31.357165
+     ],
+     [
+      -83.953771,
+      31.358353
+     ],
+     [
+      -83.954368,
+      31.359611
+     ],
+     [
+      -83.95633,
+      31.365188
+     ],
+     [
+      -83.957647,
+      31.367725
+     ],
+     [
+      -83.958328,
+      31.370258
+     ],
+     [
+      -83.960641,
+      31.375423
+     ],
+     [
+      -83.961459,
+      31.376613
+     ],
+     [
+      -83.963774,
+      31.37822
+     ],
+     [
+      -83.964851,
+      31.379436
+     ],
+     [
+      -83.968656,
+      31.387723
+     ],
+     [
+      -83.970384,
+      31.390444
+     ],
+     [
+      -83.972348,
+      31.396089
+     ],
+     [
+      -83.972754,
+      31.396936
+     ],
+     [
+      -83.973774,
+      31.398063
+     ],
+     [
+      -83.974563,
+      31.398584
+     ],
+     [
+      -83.978887,
+      31.400393
+     ],
+     [
+      -83.979909,
+      31.40096
+     ],
+     [
+      -83.981347,
+      31.402218
+     ],
+     [
+      -83.981949,
+      31.402947
+     ],
+     [
+      -83.98265,
+      31.404132
+     ],
+     [
+      -83.983932,
+      31.407198
+     ],
+     [
+      -83.983945,
+      31.408154
+     ],
+     [
+      -83.983724,
+      31.408852
+     ],
+     [
+      -83.981927,
+      31.411127
+     ],
+     [
+      -83.981447,
+      31.412168
+     ],
+     [
+      -83.981403,
+      31.413205
+     ],
+     [
+      -83.982036,
+      31.416314
+     ],
+     [
+      -83.982099,
+      31.417175
+     ],
+     [
+      -83.981981,
+      31.417779
+     ],
+     [
+      -83.981077,
+      31.419725
+     ],
+     [
+      -83.981053,
+      31.420863
+     ],
+     [
+      -83.981581,
+      31.422006
+     ],
+     [
+      -83.986481,
+      31.427711
+     ],
+     [
+      -83.986924,
+      31.428467
+     ],
+     [
+      -83.987153,
+      31.429359
+     ],
+     [
+      -83.987161,
+      31.43017
+     ],
+     [
+      -83.98643,
+      31.435431
+     ],
+     [
+      -83.986616,
+      31.437066
+     ],
+     [
+      -83.987175,
+      31.438911
+     ],
+     [
+      -83.987737,
+      31.439963
+     ],
+     [
+      -83.988426,
+      31.44091
+     ],
+     [
+      -83.989859,
+      31.442276
+     ],
+     [
+      -83.991707,
+      31.4434
+     ],
+     [
+      -83.99505,
+      31.444706
+     ],
+     [
+      -83.99584,
+      31.445219
+     ],
+     [
+      -83.996348,
+      31.44577
+     ],
+     [
+      -83.996716,
+      31.446431
+     ],
+     [
+      -83.997807,
+      31.449485
+     ],
+     [
+      -83.998233,
+      31.450351
+     ],
+     [
+      -83.999049,
+      31.451517
+     ],
+     [
+      -84.00246,
+      31.45545
+     ],
+     [
+      -84.003346,
+      31.456656
+     ],
+     [
+      -84.00408,
+      31.457888
+     ],
+     [
+      -84.00719,
+      31.4641
+     ],
+     [
+      -84.0089,
+      31.4667
+     ],
+     [
+      -84.01025,
+      31.46814
+     ],
+     [
+      -84.01162,
+      31.46934
+     ],
+     [
+      -84.0174,
+      31.47317
+     ],
+     [
+      -84.01855,
+      31.47407
+     ],
+     [
+      -84.02984,
+      31.4851
+     ],
+     [
+      -84.03094,
+      31.48603
+     ],
+     [
+      -84.03262,
+      31.4871
+     ],
+     [
+      -84.04213,
+      31.49167
+     ],
+     [
+      -84.04373,
+      31.49267
+     ],
+     [
+      -84.04442,
+      31.49337
+     ],
+     [
+      -84.04492,
+      31.4941
+     ],
+     [
+      -84.04633,
+      31.49736
+     ],
+     [
+      -84.04943,
+      31.50172
+     ],
+     [
+      -84.05052,
+      31.5029
+     ],
+     [
+      -84.05202,
+      31.50387
+     ],
+     [
+      -84.05525,
+      31.50522
+     ],
+     [
+      -84.05629,
+      31.50577
+     ],
+     [
+      -84.06195,
+      31.51029
+     ],
+     [
+      -84.07004,
+      31.51594
+     ],
+     [
+      -84.070961,
+      31.51672
+     ],
+     [
+      -84.07215,
+      31.51809
+     ],
+     [
+      -84.0742,
+      31.52132
+     ],
+     [
+      -84.07516,
+      31.52261
+     ],
+     [
+      -84.110584,
+      31.561977
+     ],
+     [
+      -84.111607,
+      31.562657
+     ],
+     [
+      -84.115441,
+      31.56438
+     ],
+     [
+      -84.116511,
+      31.565196
+     ],
+     [
+      -84.117678,
+      31.5667
+     ],
+     [
+      -84.121163,
+      31.572479
+     ],
+     [
+      -84.12172,
+      31.5732
+     ],
+     [
+      -84.125385,
+      31.576727
+     ],
+     [
+      -84.12757,
+      31.57901
+     ],
+     [
+      -84.136891,
+      31.59112
+     ],
+     [
+      -84.13764,
+      31.59189
+     ],
+     [
+      -84.13878,
+      31.59252
+     ],
+     [
+      -84.144862,
+      31.594995
+     ],
+     [
+      -84.146068,
+      31.595139
+     ],
+     [
+      -84.14719,
+      31.59491
+     ],
+     [
+      -84.14791,
+      31.59448
+     ],
+     [
+      -84.148749,
+      31.593742
+     ],
+     [
+      -84.1502,
+      31.59331
+     ],
+     [
+      -84.1506,
+      31.5928
+     ],
+     [
+      -84.150689,
+      31.592303
+     ],
+     [
+      -84.149856,
+      31.590145
+     ],
+     [
+      -84.14958,
+      31.589046
+     ],
+     [
+      -84.14951,
+      31.586293
+     ],
+     [
+      -84.15093,
+      31.58204
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Flint River and Northeastern Railroad",
+    "line": "Flint River and Northeastern: Pelham – Ticknor",
+    "id": "flint-river-northeastern-pelham-ticknor",
+    "color": "#3D7EA6",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: no running times were read from the 1904 or 1921 cards; a round figure for a light logging-line conversion",
+    "geometry_source": "OpenStreetMap (ODbL) way 164908382, abandoned grade named Flint River and Northeastern Railroad (old_railway_operator=Georgia Northern).",
+    "geometry_quality": "Traced 23.29 mi against documented 24 (Fowler; railga '24 miles'; the 1904 card gives 25 to Doerun, which includes 1.5 mi of Georgia Northern track not drawn here), all on the one OSM abandoned FR&NE way through Hinsonton (0.1 km) and Sale City (0 km). No straight-line leg. The Pelham end is the south end of that way at the ACL; Ticknor is the junction node with the Georgia Northern.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1926,
+      "headway_min": 1440,
+      "note": "Converted from a logging line in 1904 (railga); timetable in the Camilla Enterprise 12 Feb 1904 (Pelham - Wilma - Maples - Hinson - Floride - Akridge - Sale City - Tuton - Tichnor - Doerun). Last newspaper card: 'Schedule effective April 17, 1921', Nos. 8/9 daily except Sunday Pelham - Sale City - Ticknor, 'All trains connect at Ticknor with Georgia Northern trains' (Pelham Journal, printed through 6 Jan 1922). [OPEN] end: 1926 rests on Fowler's listing of a 1926 Official Guide ('Cotton (2nd)? 1926G'), not on a timetable seen; it is the last CONFIRMED year, not a known end - service may have run on toward the 1946 abandonment, which is a freight-era date, not a passenger end. Do not extend without evidence. Run under its own name throughout: the Pidcocks/GN bought it in 1910 but it kept its separate identity and timetable, so it is not split to the GN. Headway: one round trip daily except Sunday in 1921; other years an estimate.",
+      "sources": [
+       "Segment-level: Camilla Enterprise 12 Feb 1904 p1; Pelham Journal 10 Sep 1920, 2 Sep 1921, 4 Nov 1921, 2 Dec 1921, via Georgia Historic Newspapers; Fowler's Georgia station list section 96 (1926G listing), as read by the research report",
+       "https://gahistoricnewspapers.galileo.usg.edu",
+       "https://www.branchline.uk/jfpdf/georgiarrs.pdf",
+       "https://railga.com/flintne.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.153163,
+      31.125531
+     ],
+     [
+      -84.153711,
+      31.129078
+     ],
+     [
+      -84.154377,
+      31.137253
+     ],
+     [
+      -84.154164,
+      31.13814
+     ],
+     [
+      -84.153252,
+      31.13976
+     ],
+     [
+      -84.153304,
+      31.142232
+     ],
+     [
+      -84.153235,
+      31.143134
+     ],
+     [
+      -84.152964,
+      31.14389
+     ],
+     [
+      -84.152403,
+      31.144544
+     ],
+     [
+      -84.139491,
+      31.151596
+     ],
+     [
+      -84.137078,
+      31.152294
+     ],
+     [
+      -84.122705,
+      31.153312
+     ],
+     [
+      -84.120836,
+      31.153777
+     ],
+     [
+      -84.119248,
+      31.154407
+     ],
+     [
+      -84.117591,
+      31.155569
+     ],
+     [
+      -84.11028,
+      31.162466
+     ],
+     [
+      -84.109547,
+      31.162928
+     ],
+     [
+      -84.108755,
+      31.163134
+     ],
+     [
+      -84.098795,
+      31.163083
+     ],
+     [
+      -84.09614,
+      31.163442
+     ],
+     [
+      -84.095311,
+      31.163329
+     ],
+     [
+      -84.093341,
+      31.162733
+     ],
+     [
+      -84.092128,
+      31.162527
+     ],
+     [
+      -84.055696,
+      31.162482
+     ],
+     [
+      -84.054201,
+      31.162583
+     ],
+     [
+      -84.052944,
+      31.162903
+     ],
+     [
+      -84.051856,
+      31.163412
+     ],
+     [
+      -84.042121,
+      31.169532
+     ],
+     [
+      -84.040711,
+      31.170623
+     ],
+     [
+      -84.039454,
+      31.171131
+     ],
+     [
+      -84.03541,
+      31.171756
+     ],
+     [
+      -84.033389,
+      31.17257
+     ],
+     [
+      -84.031486,
+      31.174053
+     ],
+     [
+      -84.030636,
+      31.174954
+     ],
+     [
+      -84.029974,
+      31.176277
+     ],
+     [
+      -84.028071,
+      31.182426
+     ],
+     [
+      -84.028173,
+      31.183472
+     ],
+     [
+      -84.029158,
+      31.186946
+     ],
+     [
+      -84.029311,
+      31.188196
+     ],
+     [
+      -84.028937,
+      31.203121
+     ],
+     [
+      -84.022175,
+      31.224147
+     ],
+     [
+      -84.022039,
+      31.225076
+     ],
+     [
+      -84.022595,
+      31.232614
+     ],
+     [
+      -84.022527,
+      31.235171
+     ],
+     [
+      -84.02154,
+      31.242014
+     ],
+     [
+      -84.02166,
+      31.243925
+     ],
+     [
+      -84.024145,
+      31.259091
+     ],
+     [
+      -84.024179,
+      31.261103
+     ],
+     [
+      -84.023873,
+      31.262018
+     ],
+     [
+      -84.023456,
+      31.262729
+     ],
+     [
+      -84.022845,
+      31.263383
+     ],
+     [
+      -84.009168,
+      31.273468
+     ],
+     [
+      -84.006671,
+      31.275559
+     ],
+     [
+      -84.003409,
+      31.27903
+     ],
+     [
+      -84.002033,
+      31.280699
+     ],
+     [
+      -84.001387,
+      31.281905
+     ],
+     [
+      -83.998439,
+      31.291741
+     ],
+     [
+      -83.997831,
+      31.294969
+     ],
+     [
+      -83.997692,
+      31.298334
+     ],
+     [
+      -83.997404,
+      31.299822
+     ],
+     [
+      -83.996971,
+      31.300541
+     ],
+     [
+      -83.99625,
+      31.30129
+     ],
+     [
+      -83.993823,
+      31.303132
+     ],
+     [
+      -83.986942,
+      31.30798
+     ],
+     [
+      -83.984258,
+      31.310578
+     ],
+     [
+      -83.982814,
+      31.312901
+     ],
+     [
+      -83.982559,
+      31.314004
+     ],
+     [
+      -83.98235,
+      31.318389
+     ],
+     [
+      -83.982015,
+      31.320158
+     ],
+     [
+      -83.981336,
+      31.321334
+     ],
+     [
+      -83.98069,
+      31.322016
+     ],
+     [
+      -83.972858,
+      31.325933
+     ],
+     [
+      -83.971308,
+      31.327061
+     ],
+     [
+      -83.970299,
+      31.32739
+     ],
+     [
+      -83.95516,
+      31.330926
+     ],
+     [
+      -83.954379,
+      31.331078
+     ],
+     [
+      -83.952748,
+      31.331144
+     ],
+     [
+      -83.951066,
+      31.331441
+     ],
+     [
+      -83.942935,
+      31.333758
+     ],
+     [
+      -83.941661,
+      31.333845
+     ],
+     [
+      -83.940149,
+      31.333671
+     ],
+     [
+      -83.939027,
+      31.333337
+     ],
+     [
+      -83.937702,
+      31.332699
+     ],
+     [
+      -83.936473,
+      31.331791
+     ]
+    ]
+   }
+  }
+ ]
+}
