@@ -1,0 +1,1286 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Live Oak, Perry and Gulf Railroad, Florida (Suwannee, Lafayette and Taylor counties): main line Live Oak - Perry (44.0 mi), the Mayo Branch, and the main line west of Perry through Hampton Springs and Waylonzo to Scanlon, with the 1921 extension across the Aucilla to Flint Rock. Eight features: Live Oak - Perry 1906-1956 (the 1952-1956 tail on a single secondary source); Mayo Branch 1906-1951 [OPEN]; Mayo - Alton 1906 [ANCHOR]; Perry - Hampton Springs 1906-1939 [OPEN]; Hampton Springs - Waylonzo 1923 [OPEN] - 1939 [OPEN]; Waylonzo - Scanlon 1939 [ANCHOR]; Waylonzo - Loughridge 1914 [ANCHOR]; Econfena - Flint Rock 1923 [ANCHOR]. NO Rule 4 split: ACL stock control 1918-1928, Brooks-Scanlon ownership 1928/29-1954 and Southern Railway control 1954-1956 were changes of control - the LOP&G ran its own trains under its own name throughout (the 1951 Guide prints its own officers at Perry/Foley). Not drawn: the Murat branch (no passenger evidence), the pre-1906 Dowling log road and Live Oak and Perry RR (no passenger evidence), the South Georgia Railway's through trains Perry - Hampton Springs (another company), the rival Florida Railway Live Oak - Mayo - Perry (another company), and everything after passenger service ended (freight only). Colour #5F8A3C is new to the dataset.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad",
+   "https://www.hawkinsrails.net/shortlines/lopg/lopg.htm",
+   "https://sites.google.com/site/taylorcountyhistory/home/9d-railroads/live-oak-perry-gulf",
+   "https://sites.google.com/site/taylorcountyhistory/home/9d-railroads/south-georgia",
+   "https://ecbpublishing.com/the-lopin-gopher-railroad",
+   "https://www.taplines.net/July/LOPG1.htm",
+   "https://www.taplines.net/July/LOPG2.htm",
+   "https://www.taplines.net/July/LOPG4.htm",
+   "https://www.taplines.net/July/LOPG5.htm",
+   "https://www.loc.gov/resource/sn95026788/1907-05-02/ed-1/?sp=5",
+   "research/sources/official_guide_1952.txt",
+   "research/branches/live_oak_perry_and_gulf_railroad.txt"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (53056128, 53056129, 53056135, 53056136, 220257214, 85943549, 85943517, 53764759, 53764762, 53764832, 53764757, 53144183, 53144182, 53144176, 53144180, 53764772, 11003955, 53763796, 1528266146, 53144171, 1528266145)",
+   "Nominatim (OSM) geocodes bounded to Suwannee/Lafayette/Taylor counties, FL; Mayo Junction, Foley Junction and Flint Rock hand-pinned"
+  ],
+  "not_yet_sourced": [
+   "END OF PASSENGER SERVICE: Live Oak - Perry is drawn to 1956 on Tap Lines alone (the 1956 employee-timetable supplement, not seen). Primary/photographic evidence runs to Aug 1951 (Official Guide) and 1952 (dated photo). Worth checking: Suwannee Democrat / Perry Taco Times / Mayo Free Press 1955-56; Florida Railroad and Public Utilities Commission discontinuance orders; Trains magazine 1956.",
+   "[OPEN] ends: Mayo Branch (confirmed to Aug 1951 - the system-wide 1956 deletion does not name the branch); Perry - Hampton Springs (confirmed to 1939; ended before Aug 1951, year unknown); Hampton Springs - Waylonzo (confirmed to 1939).",
+   "[OPEN] start: Hampton Springs - Waylonzo confirmed only from 1923 though built 1907-1908.",
+   "[ANCHOR] single years: Mayo - Alton 1906; Waylonzo - Loughridge 1914; Econfena - Flint Rock 1923; Waylonzo - Scanlon 1939.",
+   "Passenger trains before 1906 on Live Oak - Dowling Park - Day (Live Oak and Perry RR from 1903; Dowling log road earlier): plausible, unproven.",
+   "The 1917-1932 'motor coach' (Tap Lines) is treated as a rail motor car; if it was a highway bus, rail passenger service in those years needs re-checking.",
+   "Fowler shows Murat Junction as the 1929G terminus: whether Murat Jct - Waylonzo lost service c.1929 and regained it by 1939 is unresolved.",
+   "Scanlon vs Loughridge (both 64.0 mi): one place renamed or two spurs? Loughridge's geometry is drawn at Scanlon on inference.",
+   "Whether LOP&G passenger/mixed trains ran through to Flint Rock over Brooks-Scanlon's last 1.5 mi, or stopped at mp 72.5.",
+   "Pre-1930 alignment at Foley Junction - Foley - Perry (Foley appears only from 1939)."
+  ],
+  "source_conflicts": [
+   "Construction of MP31-MP49 (incl. Perry and Hampton Springs): ICC valuation 1908 vs Fowler's 1906 Official Guide letters and Tap Lines (Perry Feb 1906, Hampton Springs Apr 1906). Drawn from 1906; ICC year taken as completion/accounting.",
+   "LOP&G incorporation: ICC 16 Jun 1905 vs Tap Lines 16 Jun 1906 - ICC preferred.",
+   "Brooks-Scanlon purchase: Hawkins 1928 vs Taylor County history 1929 - not a split either way.",
+   "Motor-car chronology: Tap Lines 1937-1940 doodlebug, mixed from 1940, vs Hawkins' Smalley motorcar #206 acquired 'early 1940s'."
+  ],
+  "freight_only_audit": "Applied at creation (2026-11-10): no freight-only years drawn. Omitted as freight-only or without passenger evidence: Murat branch; Springdale spur (MP46.5, 1912); Brooks-Scanlon/Burton-Swartz logging spurs; the pre-1906 Dowling log road; all post-1956 operation (Southern, LOP&SG 1971, NS 1994, G&O 1995, Georgia and Florida Railnet).",
+  "horsecar_audit": "Not applicable: steam log road from the start; no animal-powered years."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Live Oak \u2013 Perry",
+    "id": "lopg-live-oak-perry",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: the Aug 1951 Official Guide mixed No.1 ran Mayo Jct 6:19 - Perry 7:33 AM (23.3 mi in 74 min, about 30 km/h) and No.2 Perry 8:18 - Live Oak 11:38 AM (44 mi in 200 min incl. a Mayo Jct wait, about 21 km/h). 25 km/h is that 1951 mixed-train figure applied to every era - earlier trains and the motor cars were probably faster but no earlier running time was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Live Oak - Perry: traced 43.0 mi against a documented 44.0 mi (Aug 1951 Official Guide; Fowler mileposts) - 2.3% short, mostly at the Live Oak end, where the OSM grade stops 0.6 km short of the ACL/SAL union depot. 43.0 mi on OSM ways tagged for the LOP&G (old_railway_operator='LOP&G'); NO straight-line (approximated) legs. Station check, trace vs Fowler/Guide milepost: Newburn 9.8 vs 10.0, Lancaster 13.1 vs 14.0 (GNIS point 1.2 km off the line), Dowling Park 16.1 vs 17.0, Mayo Junction 20.0 vs 20.7, Day 21.8 vs 22.0, Townsend 27.3 vs 28.0, Fenholloway 37.3 vs 38.0 (GNIS point 1.5 km off), Foley Junction 39.0 vs 40.0, Perry 43.0 vs 44.0. Mayo Junction and Foley Junction are hand-pinned to the OSM junction nodes (no Nominatim entry); Live Oak, Mayo and Perry geocoded as the town boundaries in Suwannee/Lafayette/Taylor counties, checked. ALIGNMENT ERA (Rule 2): drawn on the grade as OSM maps it, i.e. the alignment as last used; no relocation is known, but the pre-1930 geometry around Foley Junction - Foley - Perry is not established (the Brooks-Scanlon mill town of Foley dates from c.1930; Foley appears in timetables only from 1939), so the 1906-1938 years may be drawn on the later Foley-era alignment there.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1916,
+      "headway_min": 720,
+      "note": "Live Oak, Perry and Gulf Railroad (Live Oak and Perry RR inc. 23 Sep 1903; LOP&G inc. 16 Jun 1905 per the ICC valuation, 16 Jun 1906 per Tap Lines - ICC preferred), Live Oak (ACL/SAL union depot) - Starr - Mercer - Newburn - Lancaster - Dowling Park (Suwannee River) - Chancey - Mayo Junction - Day - Townsend - Smith - Fenholloway - Blue Creek (later Foley) Junction - Perry, 44.0 mi. Steam passenger trains from 1906: Tap Lines says the road reached Perry in February 1906, and Fowler's digest of the 1906 Official Guide lists every station Live Oak - Perry. The Live Oak Daily Democrat of 2 May 1907 advertises Sunday trains Live Oak - Dowling Park. SOURCE CONFLICT, recorded: the ICC valuation dates construction MP31-MP49 (which includes Perry) to 1908; two independent sources put trains at Perry in 1906, so the ICC year is taken as a completion/accounting date. The Live Oak - MP31 section existed by Sep 1903 (Live Oak and Perry; earlier the R. L. Dowling log road), but no passenger train before 1906 is proven, so none is drawn. Rival service: the Florida Railway ran Live Oak - Mayo - Perry until 1916 (a separate company, not drawn here). Headway 720 min (two trains each way) is an ESTIMATE - no pre-1923 frequency was read.",
+      "sources": [
+       "Segment-level: start from Fowler's 1906G letters (section 87) and Tap Lines ('built on to Perry (February of 1906)'); 1907 service from the Live Oak Daily Democrat 2 May 1907 p5; ICC construction table for the 1908 conflict; Hawkins for the 1903 MP31 railhead - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://www.loc.gov/resource/sn95026788/1907-05-02/ed-1/?sp=5",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad",
+       "https://www.hawkinsrails.net/shortlines/lopg/lopg.htm"
+      ]
+     },
+     {
+      "start": 1917,
+      "end": 1931,
+      "headway_min": 720,
+      "note": "Tap Lines: traffic rose after the rival Florida Railway quit in 1916, then 'declining passengers led to the use of a motor coach on the line from 1917 to 1932'. Taken as a RAIL motor car (ECB describes a 'doodlebug ... self-propelled rail car' bought used from the Tampa and Jacksonville; Hawkins records a Smalley rail motorcar), but no source states it outright - if it was a highway bus, rail passenger service in these years would need re-checking. Fowler's 1923 Official Guide letters list the stations. Atlantic Coast Line held stock control 1918-1928 and Brooks-Scanlon bought the road in 1928 (Hawkins) or 1929 (Taylor County history); both were changes of control only - the LOP&G kept running its own trains, so no Rule 4 split. Headway 720 min is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Tap Lines (1916 rise; 1917-1932 motor coach); Fowler 1923G letters; ECB and Hawkins for the motor-car identification; Hawkins/Taylor for the control changes - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://ecbpublishing.com/the-lopin-gopher-railroad",
+       "https://www.hawkinsrails.net/shortlines/lopg/lopg.htm",
+       "https://sites.google.com/site/taylorcountyhistory/home/9d-railroads/live-oak-perry-gulf"
+      ]
+     },
+     {
+      "start": 1932,
+      "end": 1951,
+      "headway_min": 600,
+      "note": "Mixed trains from 1932 (Tap Lines), a new doodlebug 1937-1940, mixed trains again from 1940 (Hawkins: in June 1940 'No. 1, the morning mixed train from Live Oak to Perry, returning to Live Oak as No. 2'). Fowler's 1939 and 1947 Official Guide letters list the stations, with Foley (41.0) from 1939. The August 1951 Official Guide (Feb 1952 edition) prints mixed trains Nos. 1-4, two round trips daily except Sunday, with legible times: No.1 Mayo Jct 6:19, Foley Jct 6:58, Foley 7:23, arr Perry 7:33 AM; No.2 lv Perry 8:18 AM, arr Live Oak 11:38 AM; No.4 lv Perry 4:33 PM, arr Live Oak 6:46 PM. Fenholloway is daggered freight-only in that Guide's index - a flag stop dropped, not the line. Headway 600 min is an ESTIMATE from the two 1951 round trips.",
+      "sources": [
+       "Segment-level: Tap Lines (1932 mixed, 1937-1940 doodlebug); Hawkins (June 1940 operation); Fowler 1939G/1947G letters; Official Guide Aug 1951 LOP&G table and Index of Stations (research/sources/official_guide_1952.txt, Guide p.618) - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "research/sources/official_guide_1952.txt",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://www.hawkinsrails.net/shortlines/lopg/lopg.htm",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf"
+      ]
+     },
+     {
+      "start": 1952,
+      "end": 1956,
+      "headway_min": 600,
+      "note": "SINGLE SECONDARY SOURCE. A dated 1952 photograph shows a 'Jim Crow' combine on the back of an LOP&G mixed train (Tap Lines LOPG4). The 1956 end rests on Tap Lines alone: 'the mixed trains were deleted from the timetable in 1956, at which time all trains were ran as extras', the 1956 employee-timetable supplement having 'listed no trains and mentioned that passenger service was no longer offered'. That supplement was not seen, and no month is given. A reader requiring a primary document would stop this line at 1952 [OPEN]. Southern Railway bought control of the LOP&G (and the South Georgia) from Brooks-Scanlon in 1954 and 'operated them as a shortline' - the LOP&G remained the operating company, so the 1954-1956 tail is not split into Southern's colour (caller decision, following the research report's recommendation). Freight continued: Live Oak, Perry and South Georgia 1971, Norfolk Southern 1994, Gulf and Ohio 1995, Georgia and Florida Railnet. Headway 600 min is the 1951 figure carried forward - an ESTIMATE.",
+      "sources": [
+       "Segment-level: SINGLE SECONDARY SOURCE - Tap Lines LOPG4 (1952 photo) and LOPG5/LOPG1 (1956 timetable deletion, citing the 1956 employee-timetable supplement); Taylor County history and Tap Lines for the 1954 Southern purchase - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://www.taplines.net/July/LOPG4.htm",
+       "https://www.taplines.net/July/LOPG5.htm",
+       "https://sites.google.com/site/taylorcountyhistory/home/9d-railroads/live-oak-perry-gulf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.985051,
+      30.301312
+     ],
+     [
+      -82.985566,
+      30.30184
+     ],
+     [
+      -82.988796,
+      30.303257
+     ],
+     [
+      -82.996993,
+      30.305425
+     ],
+     [
+      -83.00264,
+      30.304716
+     ],
+     [
+      -83.015907,
+      30.30436
+     ],
+     [
+      -83.024909,
+      30.304239
+     ],
+     [
+      -83.025982,
+      30.304128
+     ],
+     [
+      -83.031014,
+      30.302887
+     ],
+     [
+      -83.032645,
+      30.302368
+     ],
+     [
+      -83.052536,
+      30.295485
+     ],
+     [
+      -83.061322,
+      30.2923
+     ],
+     [
+      -83.063017,
+      30.291771
+     ],
+     [
+      -83.06704,
+      30.290864
+     ],
+     [
+      -83.069562,
+      30.290141
+     ],
+     [
+      -83.083573,
+      30.283739
+     ],
+     [
+      -83.0844,
+      30.28361
+     ],
+     [
+      -83.090526,
+      30.283369
+     ],
+     [
+      -83.093927,
+      30.282831
+     ],
+     [
+      -83.1187,
+      30.276698
+     ],
+     [
+      -83.131885,
+      30.274011
+     ],
+     [
+      -83.141734,
+      30.272167
+     ],
+     [
+      -83.147013,
+      30.27099
+     ],
+     [
+      -83.148225,
+      30.270601
+     ],
+     [
+      -83.15992,
+      30.265699
+     ],
+     [
+      -83.18203,
+      30.256099
+     ],
+     [
+      -83.187354,
+      30.253986
+     ],
+     [
+      -83.191538,
+      30.253114
+     ],
+     [
+      -83.216708,
+      30.245116
+     ],
+     [
+      -83.217448,
+      30.245014
+     ],
+     [
+      -83.240054,
+      30.244931
+     ],
+     [
+      -83.242468,
+      30.244542
+     ],
+     [
+      -83.244753,
+      30.243893
+     ],
+     [
+      -83.246083,
+      30.24418
+     ],
+     [
+      -83.246684,
+      30.244514
+     ],
+     [
+      -83.247242,
+      30.245061
+     ],
+     [
+      -83.248132,
+      30.246284
+     ],
+     [
+      -83.248615,
+      30.246673
+     ],
+     [
+      -83.249227,
+      30.246905
+     ],
+     [
+      -83.249699,
+      30.24697
+     ],
+     [
+      -83.250847,
+      30.246859
+     ],
+     [
+      -83.252875,
+      30.246979
+     ],
+     [
+      -83.253905,
+      30.246803
+     ],
+     [
+      -83.254999,
+      30.246414
+     ],
+     [
+      -83.2559,
+      30.245904
+     ],
+     [
+      -83.256554,
+      30.24532
+     ],
+     [
+      -83.265578,
+      30.234318
+     ],
+     [
+      -83.266071,
+      30.233243
+     ],
+     [
+      -83.266178,
+      30.232316
+     ],
+     [
+      -83.266307,
+      30.207043
+     ],
+     [
+      -83.26694,
+      30.205569
+     ],
+     [
+      -83.268109,
+      30.204577
+     ],
+     [
+      -83.269225,
+      30.203965
+     ],
+     [
+      -83.288269,
+      30.194748
+     ],
+     [
+      -83.289492,
+      30.193988
+     ],
+     [
+      -83.290458,
+      30.19319
+     ],
+     [
+      -83.29182,
+      30.191595
+     ],
+     [
+      -83.292357,
+      30.190677
+     ],
+     [
+      -83.302785,
+      30.168975
+     ],
+     [
+      -83.303268,
+      30.168335
+     ],
+     [
+      -83.303997,
+      30.167685
+     ],
+     [
+      -83.308707,
+      30.164402
+     ],
+     [
+      -83.309716,
+      30.163938
+     ],
+     [
+      -83.31243,
+      30.163131
+     ],
+     [
+      -83.317612,
+      30.161841
+     ],
+     [
+      -83.319029,
+      30.161257
+     ],
+     [
+      -83.319983,
+      30.160654
+     ],
+     [
+      -83.325691,
+      30.15558
+     ],
+     [
+      -83.326528,
+      30.154708
+     ],
+     [
+      -83.328255,
+      30.152314
+     ],
+     [
+      -83.328577,
+      30.151479
+     ],
+     [
+      -83.32906,
+      30.148074
+     ],
+     [
+      -83.329672,
+      30.146924
+     ],
+     [
+      -83.334706,
+      30.140492
+     ],
+     [
+      -83.337815,
+      30.135549
+     ],
+     [
+      -83.338566,
+      30.134556
+     ],
+     [
+      -83.340154,
+      30.132812
+     ],
+     [
+      -83.342417,
+      30.13065
+     ],
+     [
+      -83.343211,
+      30.130102
+     ],
+     [
+      -83.34393,
+      30.129787
+     ],
+     [
+      -83.352846,
+      30.127662
+     ],
+     [
+      -83.353919,
+      30.127541
+     ],
+     [
+      -83.354756,
+      30.127588
+     ],
+     [
+      -83.357502,
+      30.128228
+     ],
+     [
+      -83.361139,
+      30.129518
+     ],
+     [
+      -83.362255,
+      30.129675
+     ],
+     [
+      -83.363296,
+      30.129629
+     ],
+     [
+      -83.368081,
+      30.128896
+     ],
+     [
+      -83.369079,
+      30.128877
+     ],
+     [
+      -83.369926,
+      30.129054
+     ],
+     [
+      -83.370817,
+      30.129434
+     ],
+     [
+      -83.37455,
+      30.131225
+     ],
+     [
+      -83.375376,
+      30.131522
+     ],
+     [
+      -83.376245,
+      30.131624
+     ],
+     [
+      -83.377962,
+      30.131438
+     ],
+     [
+      -83.381867,
+      30.130631
+     ],
+     [
+      -83.383541,
+      30.130752
+     ],
+     [
+      -83.384582,
+      30.130705
+     ],
+     [
+      -83.39103,
+      30.128432
+     ],
+     [
+      -83.39206,
+      30.127949
+     ],
+     [
+      -83.39354,
+      30.126502
+     ],
+     [
+      -83.394366,
+      30.125871
+     ],
+     [
+      -83.398304,
+      30.123059
+     ],
+     [
+      -83.400214,
+      30.121899
+     ],
+     [
+      -83.401168,
+      30.121556
+     ],
+     [
+      -83.410052,
+      30.119208
+     ],
+     [
+      -83.411586,
+      30.118957
+     ],
+     [
+      -83.419461,
+      30.119059
+     ],
+     [
+      -83.420738,
+      30.11892
+     ],
+     [
+      -83.429181,
+      30.115421
+     ],
+     [
+      -83.437872,
+      30.113741
+     ],
+     [
+      -83.443022,
+      30.111607
+     ],
+     [
+      -83.453343,
+      30.107087
+     ],
+     [
+      -83.458557,
+      30.105518
+     ],
+     [
+      -83.464308,
+      30.10305
+     ],
+     [
+      -83.468664,
+      30.101991
+     ],
+     [
+      -83.469565,
+      30.101676
+     ],
+     [
+      -83.475337,
+      30.099086
+     ],
+     [
+      -83.479146,
+      30.098613
+     ],
+     [
+      -83.480422,
+      30.098297
+     ],
+     [
+      -83.4879,
+      30.094872
+     ],
+     [
+      -83.489993,
+      30.093777
+     ],
+     [
+      -83.494787,
+      30.090877
+     ],
+     [
+      -83.495441,
+      30.090636
+     ],
+     [
+      -83.496214,
+      30.09058
+     ],
+     [
+      -83.497061,
+      30.090691
+     ],
+     [
+      -83.503949,
+      30.093216
+     ],
+     [
+      -83.507726,
+      30.094367
+     ],
+     [
+      -83.508616,
+      30.094423
+     ],
+     [
+      -83.509217,
+      30.094358
+     ],
+     [
+      -83.509957,
+      30.094061
+     ],
+     [
+      -83.515869,
+      30.091295
+     ],
+     [
+      -83.516802,
+      30.091183
+     ],
+     [
+      -83.520997,
+      30.091471
+     ],
+     [
+      -83.521716,
+      30.09135
+     ],
+     [
+      -83.522435,
+      30.0911
+     ],
+     [
+      -83.523326,
+      30.090589
+     ],
+     [
+      -83.526548,
+      30.088501
+     ],
+     [
+      -83.527483,
+      30.088157
+     ],
+     [
+      -83.528476,
+      30.087999
+     ],
+     [
+      -83.530949,
+      30.088203
+     ],
+     [
+      -83.54694,
+      30.096446
+     ],
+     [
+      -83.579286,
+      30.114731
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Mayo Branch",
+    "id": "lopg-mayo-branch",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: the Aug 1951 Official Guide mixed No.5 ran Mayo Jct 9:22 - Mayo 9:58 AM, 12.0 mi in 36 min, about 32 km/h; 30 km/h applied to every era. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Mayo Junction - Mayo: traced 12.2 mi against a documented 12.0 mi (Aug 1951 Official Guide 32.7 less 20.7; Fowler the same) - 2% long. All on OSM ways tagged old_railway_operator='LOP&G' (railway=abandoned grade, in Mayo the street 'Old Rail Road'); NO straight-line (approximated) legs. The line ends at the drawn vertex nearest Mayo (0.56 km from the town point; Nominatim's 'administrative' answer for Mayo, Lafayette County, checked as the town, not the county). Mayo Junction hand-pinned to the OSM junction node. ALIGNMENT ERA (Rule 2): drawn on the grade as OSM maps it; no relocation is known.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Mayo Branch, Mayo Junction - Dell (Clark in 1906) - Peterson - Mayo, seat of Lafayette County, 12.0 mi. Built 1906 as part of Mayo Jct - Alton (ICC, 14.53 mi); Tap Lines dates the branch opening to April 1906; Fowler's 1906G letters list Peterson and Mayo (1906 trains ran on to Alton - see the Mayo - Alton feature), and Mayo is the terminus in 1923, 1939 and 1947. Hawkins records a Mayo Jct - Mayo mixed in June 1940; Tap Lines has a 1948 photo of the mixed switching the branch; the August 1951 Official Guide table 'LIVE OAK AND MAYO' prints Mixed No.5 Mayo Jct 9:22 - Dell 9:36 - Peterson 9:46 - arr Mayo 9:58 AM and No.6 back to Live Oak 11:38 AM. [OPEN] END: passenger service on the branch is confirmed to Aug 1951. This is the last CONFIRMED year, not a known end - Tap Lines' 1956 deletion of the mixed trains is system-wide and does not name the branch, which could have lost its mixed earlier. Do not extend without evidence. Not to be confused with the Florida Railway's separate Stokely Jct - Mayo line (opened 1902, ended 1916). Headway 1440 min (one round trip daily) is the 1951 figure applied to every era - an ESTIMATE.",
+      "sources": [
+       "Segment-level: ICC construction table (1906); Tap Lines (April 1906 opening; 1948 photo); Fowler sections 87-88 letters a-d; Hawkins (June 1940); Official Guide Aug 1951 'Live Oak and Mayo' table (research/sources/official_guide_1952.txt) - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://www.hawkinsrails.net/shortlines/lopg/lopg.htm",
+       "research/sources/official_guide_1952.txt"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.266307,
+      30.207043
+     ],
+     [
+      -83.266146,
+      30.205717
+     ],
+     [
+      -83.265653,
+      30.204188
+     ],
+     [
+      -83.263335,
+      30.197873
+     ],
+     [
+      -83.252338,
+      30.169002
+     ],
+     [
+      -83.246609,
+      30.154364
+     ],
+     [
+      -83.243637,
+      30.146182
+     ],
+     [
+      -83.240601,
+      30.138555
+     ],
+     [
+      -83.24,
+      30.136477
+     ],
+     [
+      -83.23956,
+      30.134333
+     ],
+     [
+      -83.237661,
+      30.122437
+     ],
+     [
+      -83.237082,
+      30.120887
+     ],
+     [
+      -83.236717,
+      30.120284
+     ],
+     [
+      -83.227232,
+      30.108333
+     ],
+     [
+      -83.212384,
+      30.088755
+     ],
+     [
+      -83.195057,
+      30.06664
+     ],
+     [
+      -83.18694,
+      30.05587
+     ],
+     [
+      -83.183474,
+      30.051561
+     ],
+     [
+      -83.18297,
+      30.051134
+     ],
+     [
+      -83.181736,
+      30.050512
+     ],
+     [
+      -83.179644,
+      30.050178
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Mayo \u2013 Alton",
+    "id": "lopg-mayo-alton",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: the 1951 Mayo Branch running speed (about 32 km/h) applied to the 1906 extension; no 1906 running time was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Mayo - Alton: traced 2.4 mi against a documented 2.3 mi (Fowler mileposts 32.7 - 35.0; the ICC branch total of 14.53 mi implies c.2.5) - Mayo Branch plus this extension trace 14.6 mi against the ICC's 14.53. All on OSM way 53763796 (old_railway_operator='LOP&G', railway=abandoned); NO straight-line (approximated) legs. Alton geocoded as the Lafayette County, FL hamlet (0.3 km from the line). ALIGNMENT ERA (Rule 2): the stub was abandoned in 1928; the OSM grade is the only alignment known.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1906,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Mayo - Alton, the 1906 end of the Mayo Branch at the Alton sawmill town. ONE proven year: Fowler's digest of the 1906 Official Guide lists Alton (letter a only); by 1923 Mayo is the timetable terminus. Service certainly ran wider than this single year both ways - the branch was built in 1906 (ICC) and the stub stood until 1928, when the Alton mill shut and the LOP&G abandoned Mayo - Alton (Tap Lines; 1928 is the abandonment, a ceiling, not a passenger end) - but no other year is confirmed. Do not widen this anchor without evidence. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Fowler section 88 (Alton letter a = 1906G); ICC construction table; Tap Lines (1928 abandonment) - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad",
+       "https://www.taplines.net/July/LOPG1.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.179644,
+      30.050178
+     ],
+     [
+      -83.16325,
+      30.050169
+     ],
+     [
+      -83.144035,
+      30.051877
+     ],
+     [
+      -83.142048,
+      30.051772
+     ],
+     [
+      -83.140202,
+      30.051029
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Perry \u2013 Hampton Springs",
+    "id": "lopg-perry-hampton-springs",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: the 1951 main-line mixed-train speed (about 25 km/h) applied; no running time west of Perry was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Perry - Hampton Springs: drawn 5.3 mi against a documented 5.0 mi (Fowler mileposts 44.0 - 49.0; the South Georgia's Fowler entry gives 5.3) - 6% long. 4.0 mi on OSM ways tagged old_railway_operator='LOP&G'; two short STRAIGHT-LINE legs: 0.6 mi from the end of the drawn main line at the Perry depot to the start of the tagged grade west of town (the yard throat, where OSM maps only South Georgia and ACL tracks), and 0.7 mi at Hampton Springs bridging a gap between two tagged LOP&G ways. Hampton Springs geocoded as the Taylor County, FL hamlet (0.6 km from the line). ALIGNMENT ERA (Rule 2): drawn on the grade as OSM maps it; no relocation is known.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1939,
+      "headway_min": 720,
+      "note": "Perry - Springdale - Pershing - Hampton Springs, the LOP&G main line west of Perry to the Hampton Springs sulphur-spring resort (Hotel Hampton, burned 1954). Opened April 1906 (Tap Lines); Fowler's 1906G letters show Hampton Springs as the terminus, and it is listed again in 1923 and 1939. SOURCE CONFLICT, recorded: the ICC valuation dates MP31-MP49 to 1908 (see Live Oak - Perry). In 1923 South Georgia Railway trains also ran through Perry to Hampton Springs over this track (Fowler section 99) - a separate company, not drawn in this layer. [OPEN] END: passenger service is confirmed to 1939 by the 1939 Official Guide (via Fowler). This is the last CONFIRMED year, not a known end - Hampton Springs is absent from the 1947 list, which is not evidence of an end, and by Aug 1951 the row at 47.0 mi (Springdale) sits under the Guide's 'Freight service only' footnote, so passengers stopped at an unknown year between 1939 and 1951. Do not extend without evidence. Headway 720 min is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Tap Lines (April 1906 opening); Fowler sections 87 and 99 (letters a, b, c); ICC construction table (1908 conflict); Official Guide Aug 1951 freight-only footnote (research/sources/official_guide_1952.txt) - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad",
+       "research/sources/official_guide_1952.txt"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.579286,
+      30.114731
+     ],
+     [
+      -83.588842,
+      30.112465
+     ],
+     [
+      -83.611727,
+      30.103567
+     ],
+     [
+      -83.628522,
+      30.097217
+     ],
+     [
+      -83.645677,
+      30.090552
+     ],
+     [
+      -83.650115,
+      30.088708
+     ],
+     [
+      -83.660048,
+      30.08458
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Hampton Springs \u2013 Waylonzo",
+    "id": "lopg-hampton-springs-waylonzo",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: the 1951 main-line mixed-train speed (about 25 km/h) applied; no running time west of Perry was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Hampton Springs - Waylonzo: drawn 10.6 mi against a documented 11.0 mi (Fowler mileposts 49.0 - 60.0) - 4% short. 9.0 mi on OSM way 53144171 (old_railway_operator='LOP&G', no railway tag); one STRAIGHT-LINE leg of 1.6 mi from the west end of that tagged grade to the GNIS point for Waylonzo - nothing (OSM rail, abandoned grade, rail-trail or OpenHistoricalMap) is mapped beyond it. Waylonzo geocoded as the Taylor County, FL hamlet. ALIGNMENT ERA (Rule 2): drawn on the grade as OSM maps it; no relocation is known.",
+    "segments": [
+     {
+      "start": 1923,
+      "end": 1939,
+      "headway_min": 1440,
+      "note": "Hampton Springs - Roach - Murat Junction - Deaver's Mill - Blue's Siding - Waylonzo, the LOP&G main line west into Brooks-Scanlon lumber country, built 1907-1908 (ICC: MP49-56.85 1907, MP56.85-60 1908; Tap Lines: 'In 1907 the main line was extended from Hampton Springs to Still Number 3'). [OPEN] START: the earliest CONFIRMED passenger year is 1923 (Fowler's 1923G letters: Deaver's Mill, Waylonzo); service from 1907/08 is likely but no earlier listing was found - do not move the start back without evidence. [OPEN] END: 1939 is the last CONFIRMED year (Fowler 1939G: Roach, Blue's Siding, Waylonzo), not a known end. UNRESOLVED: Fowler also shows Murat Junction as a 1929G terminus, i.e. in 1929 trains may have turned at Murat Junction, so Murat Junction - Waylonzo may have lost service around 1929 and regained it by 1939; drawn straight through 1923-1939 on the research report's bracket, not split. The Murat branch itself (Murat Jct - Murat, 3.88 mi) has no passenger evidence and is not drawn. Headway 1440 min is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Fowler section 87 letters b and c and the 1929G Murat Junction terminus; ICC construction dates; Tap Lines (1907 extension) - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad",
+       "https://www.taplines.net/July/LOPG1.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.660048,
+      30.08458
+     ],
+     [
+      -83.661899,
+      30.083979
+     ],
+     [
+      -83.664336,
+      30.083797
+     ],
+     [
+      -83.665345,
+      30.083909
+     ],
+     [
+      -83.666589,
+      30.084215
+     ],
+     [
+      -83.668746,
+      30.085116
+     ],
+     [
+      -83.765477,
+      30.138453
+     ],
+     [
+      -83.767934,
+      30.139186
+     ],
+     [
+      -83.769886,
+      30.139325
+     ],
+     [
+      -83.771335,
+      30.139232
+     ],
+     [
+      -83.791398,
+      30.136745
+     ],
+     [
+      -83.8171,
+      30.130488
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Waylonzo \u2013 Scanlon",
+    "id": "lopg-waylonzo-scanlon",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: the 1951 main-line mixed-train speed (about 25 km/h) applied; no running time west of Perry was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Waylonzo - Econfena - Scanlon: drawn 4.7 mi against a documented 4.0 mi (Fowler mileposts 60.0 - 64.0). ENTIRELY STRAIGHT-LINE (approximated): Waylonzo - Econfena 2.9 mi and Econfena - Scanlon 1.9 mi, joining the GNIS points for the three Taylor County, FL hamlets. No OSM rail, abandoned grade, rail-trail or OpenHistoricalMap way survives here. ALIGNMENT ERA (Rule 2): chords, not an alignment.",
+    "segments": [
+     {
+      "start": 1939,
+      "end": 1939,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Waylonzo - Econfena - Scanlon, the end of the LOP&G main line near the Econfina River (ICC: MP60-62.40 built 1911, main line ending at 62.402 mi; Scanlon, named for the Brooks-Scanlon owners of 1928/29 onward, sits at 64.0). ONE proven year: Econfena and Scanlon (as terminus) appear only in Fowler's digest of the 1939 Official Guide. Service certainly ran wider than this single year both ways but no other year is confirmed. Do not widen this anchor without evidence. Scanlon (64.0) and Loughridge (64.0, 1914) share a milepost and may be one place renamed - see the Waylonzo - Loughridge feature. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Fowler section 87 letter c (1939G); ICC construction table - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.8171,
+      30.130488
+     ],
+     [
+      -83.86488,
+      30.131598
+     ],
+     [
+      -83.895992,
+      30.130486
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Waylonzo \u2013 Loughridge",
+    "id": "lopg-waylonzo-loughridge",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: the 1951 main-line mixed-train speed (about 25 km/h) applied; no running time west of Perry was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Waylonzo - Loughridge: drawn 4.7 mi against a documented c.2-4 mi. ENTIRELY STRAIGHT-LINE (approximated) and LOCATION-UNCERTAIN: Loughridge has no geocode, so it is placed at Scanlon (Waylonzo - Econfena 2.9 mi, Econfena - Scanlon 1.9 mi, the same chords as the Waylonzo - Scanlon feature), on the inference that the ICC's 'MP62 to Loughridge, 2.12 mi' ends at about mp 64, Fowler's milepost for both Loughridge and Scanlon. Fowler hangs Loughridge off Waylonzo as a branch; if it was a separate spur, this geometry is wrong. ALIGNMENT ERA (Rule 2): chords, not an alignment.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1914,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Waylonzo - Loughridge (ICC: MP62 - Loughridge, 2.12 mi, built 1913). ONE proven year: Fowler lists Loughridge from the 1914 Official Guide only. Service certainly ran wider than this single year both ways but no other year is confirmed. Do not widen this anchor without evidence. Whether Loughridge is the later Scanlon (both at 64.0 mi) is unresolved. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Fowler section 87 (Loughridge 1914G); ICC construction table - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Live_Oak,_Perry_and_Gulf_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.8171,
+      30.130488
+     ],
+     [
+      -83.86488,
+      30.131598
+     ],
+     [
+      -83.895992,
+      30.130486
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Live Oak, Perry and Gulf",
+    "line": "Live Oak, Perry and Gulf: Econfena \u2013 Flint Rock (Aucilla extension)",
+    "id": "lopg-econfena-flint-rock",
+    "color": "#5F8A3C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: the 1951 main-line mixed-train speed (about 25 km/h) applied; no running time west of Perry was read. Rule 3.",
+    "geometry_source": "OpenStreetMap (ODbL) ways tagged old_railway_operator='LOP&G' (mostly railway=abandoned grade; the Foley Junction - Perry stretch is live track, OSM ways 53144182/53144176/53144180 'Adel-Foley Line', operator Georgia and Florida Railway), fetched with opstrace.fetch_operator_ways and traced with opstrace.py on 2026-11-10 (OpenHistoricalMap and OSM rail-trail ways for the lifted stretches fetched with fetch_gap and offered to the router; none was needed or chosen). Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Econfena - Scanlon - Mandalay - Flint Rock: drawn 11.4 mi against a documented 12.0 mi (Fowler mileposts 62.0 - 74.0) - 5% short. 5.9 mi on OSM way 1528266145 (old_railway_operator='LOP&G', no railway tag) from the Aucilla River at Mandalay to its west end, taken as Flint Rock (hand-pinned there - no geocode). Two STRAIGHT-LINE (approximated) legs: Econfena - Scanlon 1.9 mi and Scanlon - Mandalay 3.7 mi (to the east end of the tagged way, 0.5 km from the GNIS point for Mandalay) - nothing is mapped east of the Aucilla. Of the drawn line, the last c.1.5 mi into Flint Rock was Brooks-Scanlon track, not LOP&G (Tap Lines: LOP&G end of line at mp 72.5). ALIGNMENT ERA (Rule 2): the Aucilla bridge was removed c.1945; the tagged grade is the only alignment known.",
+    "segments": [
+     {
+      "start": 1923,
+      "end": 1923,
+      "headway_min": 1440,
+      "note": "[ANCHOR] The Aucilla extension: from the end of the ICC main line near the Econfina River, via Scanlon and the Aucilla River bridge at Mandalay (68.0), to the logging town of Flint Rock (74.0, near the Pinhook River). Built 1921 (Tap Lines: Flint Rock reached 1921, 74 mi from Live Oak; LOP&G end of line at mp 72.5, the final 1.5 mi owned by Brooks-Scanlon). ONE proven year: Mandalay and Flint Rock appear only in Fowler's digest of the 1923 Official Guide. Service certainly ran wider than this single year both ways but no other year is confirmed; absence from the 1939 list is not evidence of an end, and the c.1945 bridge removal (ECB) is a ceiling, not a passenger end. Whether LOP&G trains ran through over the lumber company's last 1.5 mi is not established. Do not widen this anchor without evidence. Drawn from Econfena as the research report's endpoint; the 2 mi Waylonzo - Econfena link that 1923 trains must have used has no 1923 listing and is left undrawn for that year. Headway is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Fowler section 87 letter b (1923G: Mandalay, Flint Rock); Tap Lines (1921 opening, mp 72.5); ECB (bridge removed c.1945; unsourced local history) - as read in research/branches/live_oak_perry_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these sources.",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "https://www.taplines.net/July/LOPG1.htm",
+       "https://ecbpublishing.com/the-lopin-gopher-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.86488,
+      30.131598
+     ],
+     [
+      -83.895992,
+      30.130486
+     ],
+     [
+      -83.957642,
+      30.129623
+     ],
+     [
+      -83.961718,
+      30.128497
+     ],
+     [
+      -83.963803,
+      30.128437
+     ],
+     [
+      -83.980569,
+      30.127959
+     ],
+     [
+      -83.981481,
+      30.128033
+     ],
+     [
+      -83.982307,
+      30.128246
+     ],
+     [
+      -83.983079,
+      30.128599
+     ],
+     [
+      -83.992488,
+      30.134361
+     ],
+     [
+      -84.000782,
+      30.139539
+     ],
+     [
+      -84.006668,
+      30.143012
+     ],
+     [
+      -84.009028,
+      30.14446
+     ],
+     [
+      -84.012719,
+      30.146631
+     ],
+     [
+      -84.01362,
+      30.147336
+     ],
+     [
+      -84.014307,
+      30.148078
+     ],
+     [
+      -84.014779,
+      30.148764
+     ],
+     [
+      -84.015079,
+      30.149395
+     ],
+     [
+      -84.015294,
+      30.150379
+     ],
+     [
+      -84.015358,
+      30.151251
+     ],
+     [
+      -84.015938,
+      30.159043
+     ],
+     [
+      -84.016024,
+      30.159637
+     ],
+     [
+      -84.016112,
+      30.159887
+     ],
+     [
+      -84.016174,
+      30.160064
+     ],
+     [
+      -84.016388,
+      30.160583
+     ],
+     [
+      -84.016732,
+      30.161158
+     ],
+     [
+      -84.018105,
+      30.163515
+     ],
+     [
+      -84.018684,
+      30.16422
+     ],
+     [
+      -84.01935,
+      30.164795
+     ],
+     [
+      -84.020186,
+      30.165296
+     ],
+     [
+      -84.021109,
+      30.165704
+     ],
+     [
+      -84.022075,
+      30.165963
+     ],
+     [
+      -84.022761,
+      30.166251
+     ],
+     [
+      -84.023383,
+      30.166715
+     ],
+     [
+      -84.024318,
+      30.167852
+     ],
+     [
+      -84.024406,
+      30.167959
+     ],
+     [
+      -84.024577,
+      30.168189
+     ],
+     [
+      -84.024971,
+      30.168718
+     ],
+     [
+      -84.028319,
+      30.173393
+     ]
+    ]
+   }
+  }
+ ]
+}
