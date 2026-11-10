@@ -1,0 +1,1270 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Tavares and Gulf ('Tug and Grunt') was a Lake and Orange county, Florida steam short line: Tavares - Ellsworth Jct (over SAL trackage) - Astatula - Ferndale - Montverde - Wait's Jct - Killarney - Oakland - Winter Garden - Ocoee, 32.2 mi, with a 7-mi line from Wait's Jct to Clermont. Built 1885-1887 by the Tavares, Apopka & Gulf as Tavares - Clermont; foreclosed 1890 and reorganised as the Tavares and Gulf; extended to Oakland (1891), Winter Garden (1899) and Ocoee (1914/15), when Wait's Jct - Clermont became the branch. SAL bought its stock in 1926 but it ran its own trains until absorbed into SCL in 1969. Passenger service ended 1938 per one secondary source (primary floor 1934); freight ran to 28 Dec 1969. Drawn as one feature per piece of track, each from its own opening year, so no piece is drawn before it opened: Tavares - Wait's Jct 1888-1938, Wait's Jct - Oakland 1891-1938, Oakland - Winter Garden 1899-1938, Winter Garden - Ocoee 1915-1938, and the Clermont line 1888-1890 [OPEN].",
+  "sources": [
+   "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+   "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad",
+   "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+   "https://oaklandfl.gov/218/Oakland-Timeline",
+   "https://sltablet.com/?p=76929",
+   "Official Guide of the Railways, Feb 1952 issue, Tavares & Gulf entry: 'Freight and express service only' (research/sources/official_guide_1952.txt lines 122555-122569)",
+   "Chronicling America (loc.gov): Weekly Floridian 21 May 1892 p1; Ocala Evening Star 17 May 1909 p4; Brooksville Journal 24 Dec 1931 p6; Lakeland Evening Telegram 6 Apr 1921 p5 (none states a passenger date)",
+   "research/branches/tavares_and_gulf_railroad.txt (2026-11-10)"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror) plus OpenHistoricalMap, traced 2026-11-10 with opstrace.py. old_railway_operator probe: 'T&G', 'Tavares' and 'Seaboard' return nothing in the T&G's area; OSM tags the T&G grade old_railway_operator='SAL' with note='Tavares and Gulf Railroad' (it was SAL-controlled from 1926), and the SAL Orlando Subdivision (ex Tavares, Orlando & Atlantic) carries old_railway_operator='SAL' without that note. OHM names the line 'Tavares, Apopka & Gulf Railroad' and the branch 'Tavares, Apopka & Gulf Railroad -- Clermont Branch'. The West Orange Trail and South Lake Trail ways tagged old_railway_operator='ACL' are the parallel ex-Orange Belt (ACL) grade and were NOT used; the West Orange Trail ways that sit on the T&G grade between Oakland and Winter Garden are the SAL/T&G-noted ones (ways 48622469, 48622477, 1193221390, 151199847). Waypoints: Tavares (hand-pinned on the SAL Orlando Subdivision in downtown Tavares, -81.7300 28.8004 -- the T&G shared the SAL depot; the Nominatim answer is the city-boundary centroid), Ellsworth Junction (Nominatim 'Ellsworth Junction', type hamlet, -81.7256 28.7636 -- at the north end of OSM T&G way 1207322088 where it meets the SAL), Astatula, Montverde, Oakland (Orange County), Winter Garden (Nominatim, type administrative = town boundary centroid, each checked to be the Florida town, not a county), Ferndale (Nominatim locality), Wait's Junction (hand-pinned at -81.6892 28.5759, the node where OSM T&G way 1272641213 to Minneola leaves way 48622464 toward Killarney), Ocoee (hand-pinned at the east end of OSM way 11173968, the T&G-noted Forest City Subdivision, at the ACL connection), Minneola (Nominatim, town), Clermont (hand-pinned at the west end of the OHM Clermont Branch way, -81.7685 28.5575; Nominatim's Clermont is the city centroid 0.4 km south). Simplified Douglas-Peucker 8 m, trim_reversals; no spurs."
+  ],
+  "ownership_decisions": "Rule 4: NOT split at the 12 Mar 1926 Seaboard Air Line stock purchase -- the T&G kept running its own trains (own superintendent, locomotives and name; the 1951 Guide lists 'TAVARES & GULF RAILROAD (SEABOARD AIR LINE RAILROAD COMPANY)' under its own superintendent), so all years are T&G-coloured. If Rule 4 is read as following control rather than operation, the split date would be 12 Mar 1926. NOT split at the 1890-1892 Tavares, Apopka & Gulf -> Tavares and Gulf receivership reorganisation -- the same physical operation under the same superintendent (Capt. W. B. Tucker); the 1891 timetables still carried the TA&G name. Colour #7A9A3A is new: no T&G feature existed and no other company in data/ uses it.",
+  "source_conflicts": [
+   "Passenger end: 1938 (Cross history; Orange Observer summary, unread) vs 1934 last primary-derived year (Fowler, 1934 company public timetable) vs 'before late 1951' (Feb 1952 Official Guide, freight and express only). Drawn to 1938.",
+   "Wait's Jct - Oakland opening: Feb 1891 (Tavares Herald 12 Feb 1891 via Cross; Oakland timeline) vs 1890 (Wikipedia) vs 'about 1894' (ICC). Drawn from 1891.",
+   "Winter Garden - Ocoee opening: 1914 (ICC, Cross) vs 1915 (Wikipedia). Drawn from 1915.",
+   "Tavares - Ellsworth Jct: 3.4 mi (T&G mileposts) vs 3.7 mi (Fowler's SAL mileposts).",
+   "Wait's Jct - Clermont length: 7 mi (Wikipedia/Fowler mileposts) vs 6 mi (Feb 1952 Official Guide); Cross gives 38 mi for the whole road.",
+   "Charter: ICC says the Tavares, Apopka & Gulf was incorporated 10 Oct 1881; Cross says that filing was the never-built Tavares, Brooksville & Gulf. Does not affect drawn years."
+  ],
+  "not_yet_sourced": "[OPEN] end: the Clermont Branch (Wait's Jct - Clermont) is drawn 1888-1890 only; 1890 is the last confirmed passenger year, not a known end -- a T&G timetable or Official Guide of the 1890s-1930s showing the branch would extend it. Passenger end 1938 is single-sourced (see source_conflicts); a Florida Railroad Commission report for 1938/39 or an Orlando Sentinel 'discontinued' story would settle it, and whether any public timetable after 1934 listed the T&G is unknown. No first-passenger-train date for 1886-1888 (drawn from 1888). Frequencies after 1891 and all speeds are estimates. Whether T&G trains ran into Tavares on SAL track for the whole span or sometimes connected at Ellsworth is undocumented. The T&G's Clermont depot site was not located for the geometry.",
+  "omitted": "Not drawn: the whole road after 1938 (freight and express only to 28 Dec 1969 -- Rule 1); the Clermont branch after 1890 (no dated passenger evidence); the 1891 Oakland - Kissimmee grade (graded and partly tied, never railed); the paper Tavares - Brooksville - Gulf (1881), Clermont - Punta Gorda (1890) and Lakeland - Clermont (1921) schemes.",
+  "rule_notes": "Rule 5: steam from the start, no animal-power years. Rule 9: Lake and Orange counties, Florida -- inside US_BOUNDS.",
+  "traced": "2026-11-10"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tavares and Gulf",
+    "line": "Tavares and Gulf: Tavares – Wait's Junction (main line)",
+    "id": "tavares-and-gulf-tavares-waits-junction",
+    "color": "#7A9A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: rural steam short line running passenger and mixed trains (mixed/caboose only in the later years); no timetable running time was checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) plus OpenHistoricalMap, traced 2026-11-10 with opstrace.py. old_railway_operator probe: 'T&G', 'Tavares' and 'Seaboard' return nothing in the T&G's area; OSM tags the T&G grade old_railway_operator='SAL' with note='Tavares and Gulf Railroad' (it was SAL-controlled from 1926), and the SAL Orlando Subdivision (ex Tavares, Orlando & Atlantic) carries old_railway_operator='SAL' without that note. OHM names the line 'Tavares, Apopka & Gulf Railroad' and the branch 'Tavares, Apopka & Gulf Railroad -- Clermont Branch'. The West Orange Trail and South Lake Trail ways tagged old_railway_operator='ACL' are the parallel ex-Orange Belt (ACL) grade and were NOT used; the West Orange Trail ways that sit on the T&G grade between Oakland and Winter Garden are the SAL/T&G-noted ones (ways 48622469, 48622477, 1193221390, 151199847). Waypoints: Tavares (hand-pinned on the SAL Orlando Subdivision in downtown Tavares, -81.7300 28.8004 -- the T&G shared the SAL depot; the Nominatim answer is the city-boundary centroid), Ellsworth Junction (Nominatim 'Ellsworth Junction', type hamlet, -81.7256 28.7636 -- at the north end of OSM T&G way 1207322088 where it meets the SAL), Astatula, Montverde, Oakland (Orange County), Winter Garden (Nominatim, type administrative = town boundary centroid, each checked to be the Florida town, not a county), Ferndale (Nominatim locality), Wait's Junction (hand-pinned at -81.6892 28.5759, the node where OSM T&G way 1272641213 to Minneola leaves way 48622464 toward Killarney), Ocoee (hand-pinned at the east end of OSM way 11173968, the T&G-noted Forest City Subdivision, at the ACL connection), Minneola (Nominatim, town), Clermont (hand-pinned at the west end of the OHM Clermont Branch way, -81.7685 28.5575; Nominatim's Clermont is the city centroid 0.4 km south). Simplified Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Tavares - Ellsworth Jct - Wait's Junction: traced 21.3 mi against 21.9 mi documented (T&G mileposts, Wikipedia/Fowler: Tavares 0.0 - Wait's Jct 21.9), 2.7% short. Chainage traced/milepost: Ellsworth Jct 3.6/3.4 (Fowler's SAL mileposts give 3.7), Astatula 7.5/7.8, Ferndale 15.5/15.2, Montverde 18.2/18.3, Wait's Jct 21.3/21.9; every waypoint within 0.08 km of the line. Sources by stretch: Tavares - Ellsworth Jct 3.6 mi on the live SAL Orlando Subdivision (this 3.4-3.7 mi is NOT T&G track -- T&G trains used it under trackage rights over the Tavares, Orlando & Atlantic / FC&P / SAL); Ellsworth Jct - Astatula 2.5 mi on the OSM T&G grade and 1.3 mi on OHM; Astatula - Double Run 0.6 mi on OSM way 1207322089; Double Run - Ferndale - Montverde - Wait's Jct 12.6 mi on the OSM T&G grade (unnamed abandoned ways and the Lake Apopka Loop Trail, Ferndale Connector, Central Lake Trail and Montverde Greenway rail-trails). APPROXIMATED: ONE straight-line leg of 0.63 mi between the south end of OSM way 1207322089 (-81.7321 28.7007) and the north end of way 162110078 (-81.7290 28.6920), near Double Run, where neither OSM nor OHM maps the grade. Alignment: the drawn line is the grade as it was at abandonment (1969); no later realignment of the T&G is known, but none was checked against period maps. The Tavares - Ellsworth piece is today's SAL/CSX-successor alignment.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1890,
+      "headway_min": 720,
+      "note": "Tavares, Apopka & Gulf era. Ellsworth - Double Run graded 1885 and railed 1886, extended to Minneola and Clermont in 1887 (Cross history; Wikipedia); the ICC valuation dates Ellsworth Jct - Clermont construction '1885-1888'. No source dates the first passenger train, so the drawn start is collapsed inward to 1888; Cross says that 'during these first few years the line had provided its customers with passenger, freight, mail and express service'. Trains reached Tavares over the Tavares, Orlando & Atlantic from Ellsworth under trackage rights (whether every train ran into Tavares or some connected at Ellsworth is undocumented). Through trains ran Tavares - Clermont (see the Clermont Branch feature for Wait's Jct - Clermont). The TA&G was foreclosed 6 Jan 1890 and reorganised in receivership (receiver Joseph H. Durkee) as the Tavares and Gulf (articles filed 5 Apr 1890, recorded 7 Jan 1892); the receivership ran 'one passenger train and one mixed train daily in each direction' (Cross). The TA&G -> T&G reorganisation is NOT split: same physical operation, same superintendent (Capt. W. B. Tucker). headway_min is an ESTIMATE, not a timetable figure. 720 applies the 1890-91 two-trains-each-way pattern to the whole era.",
+      "sources": [
+       "Segment-level: construction 1885-1888 and Clermont 1887 from CROSS, ICC and WIKI (no first-passenger-train date -- start collapsed to 1888); first-years 'passenger, freight, mail and express service', TO&A trackage rights and the 1890-91 receivership train pattern from CROSS -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad"
+      ]
+     },
+     {
+      "start": 1891,
+      "end": 1925,
+      "headway_min": 720,
+      "note": "Tavares and Gulf (timetables printed in the Tavares Herald in June and Nov 1891 still carried the TA&G name under the receiver; not split, see 1888-1890). From Feb 1891 trains ran through to Oakland, and later to Winter Garden (1899) and Ocoee (1914/15); from 1914 the passenger run was Tavares - Ocoee and Wait's Jct - Clermont became the branch (Cross). Florida Railroad Commission orders of 1908-1919, quoted by Cross, repeatedly found the track unsafe 'for the transportation of freight and passengers' and ordered combination freight-and-passenger depots at Astatula (by 1 Nov 1914) and Ferndale (by 1 Feb 1917); a 1916 tourist brochure advertised the 'Lake Region Route'. headway_min is an ESTIMATE, not a timetable figure. 720 carries forward the 1890-91 pattern; no later frequency was found.",
+      "sources": [
+       "Segment-level: 1891 Herald timetables, Railroad Commission orders 1908-1919, the Astatula and Ferndale combination depots and the 1916 brochure from CROSS (quoting the dated documents) -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad"
+      ]
+     },
+     {
+      "start": 1926,
+      "end": 1938,
+      "headway_min": 1440,
+      "note": "Seaboard Air Line bought the T&G's stock effective 12 Mar 1926 (ICC approval 25 Jan 1926), but the T&G kept operating as a separate company with its own superintendent at Tavares, its own locomotives and its own name until absorbed into Seaboard Coast Line on 1 Aug 1969 -- so the trains stay T&G-coloured and the feature is NOT split at 1926 (a 1931 Brooksville Journal item calls it 'a division of the Seaboard Air Line', which describes control, not who ran the trains). From 1929 the road ran a caboose (X-100) instead of a passenger car at the rear of its trains, and passengers rode it 'on occasion' -- passengers on mixed/freight trains, which counts as passenger service under Rule 1. Mail service was discontinued in 1933 (Cross). END 1938 IS SINGLE-SOURCED (Rule 3 conflict recorded): the 'Cross' history (republished on DeviantArt) says the X-100 caboose 'was used on occasion to haul passengers until the discontinuance of the service in 1938'; an Orange Observer item (16 Oct 2014) giving 1938 was seen only as a search-engine summary. The last PRIMARY-derived year is 1934 (John Fowler's station list marks Ellsworth Jct, Astatula, Ferndale, Montverde, Wait's Jct, Killarney, Oakland, Tildenville, Winter Garden and Ocoee 'c' = 1934 company public timetable). The Feb 1952 Official Guide lists the T&G as 'Freight and express service only', so service ended at some unknown year before late 1951. Drawn to 1938 on the secondary source; a strictly primary reading would stop at 1934. Never draw past 1938: freight and express continued to the last run of 28 Dec 1969 (Rule 1). headway_min 1440 (about one mixed train each way a day) is an ESTIMATE: no frequency for 1926-1938 was found.",
+      "sources": [
+       "Segment-level: (end single-sourced) SAL stock purchase 12 Mar 1926 and continued separate T&G operation from CROSS and ICC; 1929 caboose and 1938 discontinuance from CROSS only; 1934 passenger stop listing from FOWLER section 102 ('c' = 1934 company public timetable); freight-and-express-only status from the Feb 1952 Official Guide -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Tavares & Gulf entry: 'Freight and express service only' (research/sources/official_guide_1952.txt lines 122555-122569)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.729994,
+      28.800366
+     ],
+     [
+      -81.731466,
+      28.800465
+     ],
+     [
+      -81.73268,
+      28.80004
+     ],
+     [
+      -81.733692,
+      28.799096
+     ],
+     [
+      -81.744907,
+      28.790171
+     ],
+     [
+      -81.746024,
+      28.788868
+     ],
+     [
+      -81.74691,
+      28.787363
+     ],
+     [
+      -81.747429,
+      28.785842
+     ],
+     [
+      -81.74766,
+      28.784025
+     ],
+     [
+      -81.747604,
+      28.782974
+     ],
+     [
+      -81.747311,
+      28.781705
+     ],
+     [
+      -81.74675,
+      28.78043
+     ],
+     [
+      -81.746129,
+      28.779459
+     ],
+     [
+      -81.74479,
+      28.777965
+     ],
+     [
+      -81.738873,
+      28.772097
+     ],
+     [
+      -81.737481,
+      28.770872
+     ],
+     [
+      -81.735589,
+      28.76958
+     ],
+     [
+      -81.726027,
+      28.764281
+     ],
+     [
+      -81.72527,
+      28.763318
+     ],
+     [
+      -81.72514,
+      28.762827
+     ],
+     [
+      -81.729176,
+      28.746547
+     ],
+     [
+      -81.728884,
+      28.743079
+     ],
+     [
+      -81.726435,
+      28.730327
+     ],
+     [
+      -81.726359,
+      28.729327
+     ],
+     [
+      -81.72671,
+      28.727743
+     ],
+     [
+      -81.727132,
+      28.726954
+     ],
+     [
+      -81.732625,
+      28.719846
+     ],
+     [
+      -81.732958,
+      28.719182
+     ],
+     [
+      -81.733078,
+      28.718431
+     ],
+     [
+      -81.733084,
+      28.710022
+     ],
+     [
+      -81.732968,
+      28.703555
+     ],
+     [
+      -81.732893,
+      28.703075
+     ],
+     [
+      -81.732723,
+      28.702461
+     ],
+     [
+      -81.732284,
+      28.701218
+     ],
+     [
+      -81.73207,
+      28.700705
+     ],
+     [
+      -81.728969,
+      28.691973
+     ],
+     [
+      -81.728434,
+      28.689045
+     ],
+     [
+      -81.728302,
+      28.686728
+     ],
+     [
+      -81.728469,
+      28.686139
+     ],
+     [
+      -81.731637,
+      28.679631
+     ],
+     [
+      -81.733571,
+      28.676868
+     ],
+     [
+      -81.734222,
+      28.675514
+     ],
+     [
+      -81.734421,
+      28.674444
+     ],
+     [
+      -81.734395,
+      28.673195
+     ],
+     [
+      -81.733669,
+      28.671187
+     ],
+     [
+      -81.733016,
+      28.668611
+     ],
+     [
+      -81.730534,
+      28.665937
+     ],
+     [
+      -81.729613,
+      28.664672
+     ],
+     [
+      -81.72854,
+      28.662508
+     ],
+     [
+      -81.727898,
+      28.66204
+     ],
+     [
+      -81.726656,
+      28.661705
+     ],
+     [
+      -81.726158,
+      28.661705
+     ],
+     [
+      -81.722652,
+      28.662851
+     ],
+     [
+      -81.722079,
+      28.662944
+     ],
+     [
+      -81.720345,
+      28.662746
+     ],
+     [
+      -81.71851,
+      28.661958
+     ],
+     [
+      -81.717239,
+      28.661261
+     ],
+     [
+      -81.716305,
+      28.660715
+     ],
+     [
+      -81.715495,
+      28.660028
+     ],
+     [
+      -81.714984,
+      28.659379
+     ],
+     [
+      -81.714326,
+      28.657811
+     ],
+     [
+      -81.714154,
+      28.656799
+     ],
+     [
+      -81.714251,
+      28.655645
+     ],
+     [
+      -81.714637,
+      28.654586
+     ],
+     [
+      -81.715114,
+      28.654012
+     ],
+     [
+      -81.7174,
+      28.652355
+     ],
+     [
+      -81.71799,
+      28.651714
+     ],
+     [
+      -81.718279,
+      28.651008
+     ],
+     [
+      -81.718296,
+      28.650627
+     ],
+     [
+      -81.718022,
+      28.649808
+     ],
+     [
+      -81.7177,
+      28.649412
+     ],
+     [
+      -81.716855,
+      28.648894
+     ],
+     [
+      -81.715886,
+      28.648761
+     ],
+     [
+      -81.712593,
+      28.648733
+     ],
+     [
+      -81.710114,
+      28.648343
+     ],
+     [
+      -81.708974,
+      28.648009
+     ],
+     [
+      -81.707619,
+      28.647486
+     ],
+     [
+      -81.705777,
+      28.646414
+     ],
+     [
+      -81.703922,
+      28.646046
+     ],
+     [
+      -81.702941,
+      28.645635
+     ],
+     [
+      -81.701703,
+      28.644963
+     ],
+     [
+      -81.700869,
+      28.644325
+     ],
+     [
+      -81.700311,
+      28.64367
+     ],
+     [
+      -81.699904,
+      28.642604
+     ],
+     [
+      -81.699806,
+      28.64196
+     ],
+     [
+      -81.699509,
+      28.637888
+     ],
+     [
+      -81.699057,
+      28.63501
+     ],
+     [
+      -81.699026,
+      28.634539
+     ],
+     [
+      -81.699562,
+      28.630985
+     ],
+     [
+      -81.699103,
+      28.628708
+     ],
+     [
+      -81.699128,
+      28.627873
+     ],
+     [
+      -81.700119,
+      28.626278
+     ],
+     [
+      -81.702702,
+      28.62325
+     ],
+     [
+      -81.703197,
+      28.622175
+     ],
+     [
+      -81.703167,
+      28.621057
+     ],
+     [
+      -81.702652,
+      28.61893
+     ],
+     [
+      -81.702592,
+      28.617859
+     ],
+     [
+      -81.702732,
+      28.617056
+     ],
+     [
+      -81.703614,
+      28.614777
+     ],
+     [
+      -81.703695,
+      28.613795
+     ],
+     [
+      -81.703336,
+      28.612628
+     ],
+     [
+      -81.702491,
+      28.611334
+     ],
+     [
+      -81.701659,
+      28.610757
+     ],
+     [
+      -81.700814,
+      28.610393
+     ],
+     [
+      -81.697955,
+      28.610162
+     ],
+     [
+      -81.695074,
+      28.610334
+     ],
+     [
+      -81.694413,
+      28.610289
+     ],
+     [
+      -81.693798,
+      28.610088
+     ],
+     [
+      -81.690924,
+      28.608454
+     ],
+     [
+      -81.689954,
+      28.607761
+     ],
+     [
+      -81.688197,
+      28.605401
+     ],
+     [
+      -81.687602,
+      28.604776
+     ],
+     [
+      -81.686109,
+      28.603411
+     ],
+     [
+      -81.68482,
+      28.602751
+     ],
+     [
+      -81.683655,
+      28.602563
+     ],
+     [
+      -81.681688,
+      28.602647
+     ],
+     [
+      -81.681077,
+      28.602535
+     ],
+     [
+      -81.678718,
+      28.601509
+     ],
+     [
+      -81.676715,
+      28.600993
+     ],
+     [
+      -81.669525,
+      28.600889
+     ],
+     [
+      -81.668464,
+      28.600767
+     ],
+     [
+      -81.667176,
+      28.600265
+     ],
+     [
+      -81.666598,
+      28.5998
+     ],
+     [
+      -81.665892,
+      28.598688
+     ],
+     [
+      -81.665774,
+      28.598286
+     ],
+     [
+      -81.665806,
+      28.596117
+     ],
+     [
+      -81.666084,
+      28.595354
+     ],
+     [
+      -81.667039,
+      28.593574
+     ],
+     [
+      -81.667125,
+      28.593103
+     ],
+     [
+      -81.666931,
+      28.592018
+     ],
+     [
+      -81.665926,
+      28.590255
+     ],
+     [
+      -81.666283,
+      28.58904
+     ],
+     [
+      -81.666588,
+      28.588598
+     ],
+     [
+      -81.667443,
+      28.587906
+     ],
+     [
+      -81.673206,
+      28.586424
+     ],
+     [
+      -81.675046,
+      28.585816
+     ],
+     [
+      -81.676655,
+      28.585552
+     ],
+     [
+      -81.681698,
+      28.58534
+     ],
+     [
+      -81.68283,
+      28.584803
+     ],
+     [
+      -81.685324,
+      28.582679
+     ],
+     [
+      -81.68681,
+      28.581624
+     ],
+     [
+      -81.687234,
+      28.580969
+     ],
+     [
+      -81.688401,
+      28.577794
+     ],
+     [
+      -81.689219,
+      28.575906
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tavares and Gulf",
+    "line": "Tavares and Gulf: Wait's Junction – Oakland (main line)",
+    "id": "tavares-and-gulf-waits-junction-oakland",
+    "color": "#7A9A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: rural steam short line running passenger and mixed trains (mixed/caboose only in the later years); no timetable running time was checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) plus OpenHistoricalMap, traced 2026-11-10 with opstrace.py. old_railway_operator probe: 'T&G', 'Tavares' and 'Seaboard' return nothing in the T&G's area; OSM tags the T&G grade old_railway_operator='SAL' with note='Tavares and Gulf Railroad' (it was SAL-controlled from 1926), and the SAL Orlando Subdivision (ex Tavares, Orlando & Atlantic) carries old_railway_operator='SAL' without that note. OHM names the line 'Tavares, Apopka & Gulf Railroad' and the branch 'Tavares, Apopka & Gulf Railroad -- Clermont Branch'. The West Orange Trail and South Lake Trail ways tagged old_railway_operator='ACL' are the parallel ex-Orange Belt (ACL) grade and were NOT used; the West Orange Trail ways that sit on the T&G grade between Oakland and Winter Garden are the SAL/T&G-noted ones (ways 48622469, 48622477, 1193221390, 151199847). Waypoints: Tavares (hand-pinned on the SAL Orlando Subdivision in downtown Tavares, -81.7300 28.8004 -- the T&G shared the SAL depot; the Nominatim answer is the city-boundary centroid), Ellsworth Junction (Nominatim 'Ellsworth Junction', type hamlet, -81.7256 28.7636 -- at the north end of OSM T&G way 1207322088 where it meets the SAL), Astatula, Montverde, Oakland (Orange County), Winter Garden (Nominatim, type administrative = town boundary centroid, each checked to be the Florida town, not a county), Ferndale (Nominatim locality), Wait's Junction (hand-pinned at -81.6892 28.5759, the node where OSM T&G way 1272641213 to Minneola leaves way 48622464 toward Killarney), Ocoee (hand-pinned at the east end of OSM way 11173968, the T&G-noted Forest City Subdivision, at the ACL connection), Minneola (Nominatim, town), Clermont (hand-pinned at the west end of the OHM Clermont Branch way, -81.7685 28.5575; Nominatim's Clermont is the city centroid 0.4 km south). Simplified Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Wait's Jct - Killarney - Oakland: traced 5.5 mi against 5.2 mi documented (mileposts 21.9 - 27.1; ICC 6 mi; Cross 'seven miles'), 5.6% long; the Oakland end is the point on the line nearest the town centroid (0.10 km off), chainage 26.8 against milepost 27.1. Killarney (Nominatim hamlet) lies 0.07 km from the line, chainage 25.2/25.5. Traced on the OHM 'Tavares, Apopka & Gulf Railroad' way (4.9 mi) and the first 0.2 mi of the OHM Clermont Branch way at Wait's Jct; the OSM T&G ways 48622464/1272641212 cover only part of this stretch. No straight-line legs. Alignment as abandoned (1969); no realignment known, none checked against period maps. The T&G ran alongside, and crossed at Killarney, the ex-Orange Belt (ACL) line; the ACL-tagged West Orange/South Lake Trail ways were not used.",
+    "segments": [
+     {
+      "start": 1891,
+      "end": 1925,
+      "headway_min": 720,
+      "note": "Opened Feb 1891: the Tavares Herald of 12 Feb 1891, quoted by Cross, reads 'The T&G Railroad is now open and running through to Oakland. An excursion party from Orlando will go over the road tomorrow (Friday)'; the Town of Oakland timeline adds that 'a passenger and mixed train soon ran daily in each direction'. START CONFLICT recorded (Rule 3): Wikipedia says completed 1890; the ICC valuation says 'about 1894'. 1891 is used because it rests on a dated newspaper quotation; a strict-collapse reading would start 1894. Crossed the Orange Belt at Killarney (laid overnight, Saturday to Sunday, without permission -- Cross). Receivership timetables of June/Nov 1891 still used the TA&G name (not split). headway_min is an ESTIMATE, not a timetable figure. 720 from the Oakland timeline's 'a passenger and mixed train ... daily in each direction'.",
+      "sources": [
+       "Segment-level: opening from the Tavares Herald of 12 Feb 1891 as quoted by CROSS, and the Town of Oakland timeline; conflicting 1890 (WIKI) and 'about 1894' (ICC) recorded -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://oaklandfl.gov/218/Oakland-Timeline",
+       "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad"
+      ]
+     },
+     {
+      "start": 1926,
+      "end": 1938,
+      "headway_min": 1440,
+      "note": "Seaboard Air Line bought the T&G's stock effective 12 Mar 1926 (ICC approval 25 Jan 1926), but the T&G kept operating as a separate company with its own superintendent at Tavares, its own locomotives and its own name until absorbed into Seaboard Coast Line on 1 Aug 1969 -- so the trains stay T&G-coloured and the feature is NOT split at 1926 (a 1931 Brooksville Journal item calls it 'a division of the Seaboard Air Line', which describes control, not who ran the trains). From 1929 the road ran a caboose (X-100) instead of a passenger car at the rear of its trains, and passengers rode it 'on occasion' -- passengers on mixed/freight trains, which counts as passenger service under Rule 1. Fowler's 'c' (1934 public timetable) marks Killarney and Oakland. Oakland's T&G depot closed in 1950 (an agency date, not a passenger date). END 1938 IS SINGLE-SOURCED (Rule 3 conflict recorded): the 'Cross' history (republished on DeviantArt) says the X-100 caboose 'was used on occasion to haul passengers until the discontinuance of the service in 1938'; an Orange Observer item (16 Oct 2014) giving 1938 was seen only as a search-engine summary. The last PRIMARY-derived year is 1934 (John Fowler's station list marks Ellsworth Jct, Astatula, Ferndale, Montverde, Wait's Jct, Killarney, Oakland, Tildenville, Winter Garden and Ocoee 'c' = 1934 company public timetable). The Feb 1952 Official Guide lists the T&G as 'Freight and express service only', so service ended at some unknown year before late 1951. Drawn to 1938 on the secondary source; a strictly primary reading would stop at 1934. Never draw past 1938: freight and express continued to the last run of 28 Dec 1969 (Rule 1). headway_min 1440 (about one mixed train each way a day) is an ESTIMATE: no frequency for 1926-1938 was found.",
+      "sources": [
+       "Segment-level: (end single-sourced) SAL stock purchase 12 Mar 1926 and continued separate T&G operation from CROSS and ICC; 1929 caboose and 1938 discontinuance from CROSS only; 1934 passenger stop listing from FOWLER section 102 ('c' = 1934 company public timetable); freight-and-express-only status from the Feb 1952 Official Guide -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Tavares & Gulf entry: 'Freight and express service only' (research/sources/official_guide_1952.txt lines 122555-122569)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.689219,
+      28.575906
+     ],
+     [
+      -81.690495,
+      28.572966
+     ],
+     [
+      -81.691203,
+      28.570417
+     ],
+     [
+      -81.691082,
+      28.569308
+     ],
+     [
+      -81.690718,
+      28.568714
+     ],
+     [
+      -81.688679,
+      28.566943
+     ],
+     [
+      -81.687757,
+      28.566236
+     ],
+     [
+      -81.686984,
+      28.565831
+     ],
+     [
+      -81.679871,
+      28.564257
+     ],
+     [
+      -81.679141,
+      28.563984
+     ],
+     [
+      -81.678594,
+      28.563607
+     ],
+     [
+      -81.678058,
+      28.562825
+     ],
+     [
+      -81.677875,
+      28.561657
+     ],
+     [
+      -81.677897,
+      28.560507
+     ],
+     [
+      -81.677468,
+      28.55931
+     ],
+     [
+      -81.672822,
+      28.552676
+     ],
+     [
+      -81.671631,
+      28.551865
+     ],
+     [
+      -81.66999,
+      28.55113
+     ],
+     [
+      -81.669228,
+      28.550923
+     ],
+     [
+      -81.666331,
+      28.550433
+     ],
+     [
+      -81.664373,
+      28.550442
+     ],
+     [
+      -81.663885,
+      28.550603
+     ],
+     [
+      -81.66087,
+      28.552349
+     ],
+     [
+      -81.65955,
+      28.552648
+     ],
+     [
+      -81.65853,
+      28.552572
+     ],
+     [
+      -81.655023,
+      28.551507
+     ],
+     [
+      -81.65395,
+      28.551008
+     ],
+     [
+      -81.653306,
+      28.550527
+     ],
+     [
+      -81.652877,
+      28.549981
+     ],
+     [
+      -81.652577,
+      28.549425
+     ],
+     [
+      -81.65219,
+      28.548067
+     ],
+     [
+      -81.651579,
+      28.547229
+     ],
+     [
+      -81.650957,
+      28.546739
+     ],
+     [
+      -81.64983,
+      28.546465
+     ],
+     [
+      -81.649326,
+      28.546456
+     ],
+     [
+      -81.642695,
+      28.547615
+     ],
+     [
+      -81.641569,
+      28.547907
+     ],
+     [
+      -81.63967,
+      28.548755
+     ],
+     [
+      -81.632181,
+      28.55294
+     ],
+     [
+      -81.627643,
+      28.553166
+     ],
+     [
+      -81.62701,
+      28.553722
+     ],
+     [
+      -81.62701,
+      28.55519
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tavares and Gulf",
+    "line": "Tavares and Gulf: Oakland – Winter Garden (main line)",
+    "id": "tavares-and-gulf-oakland-winter-garden",
+    "color": "#7A9A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: rural steam short line running passenger and mixed trains (mixed/caboose only in the later years); no timetable running time was checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) plus OpenHistoricalMap, traced 2026-11-10 with opstrace.py. old_railway_operator probe: 'T&G', 'Tavares' and 'Seaboard' return nothing in the T&G's area; OSM tags the T&G grade old_railway_operator='SAL' with note='Tavares and Gulf Railroad' (it was SAL-controlled from 1926), and the SAL Orlando Subdivision (ex Tavares, Orlando & Atlantic) carries old_railway_operator='SAL' without that note. OHM names the line 'Tavares, Apopka & Gulf Railroad' and the branch 'Tavares, Apopka & Gulf Railroad -- Clermont Branch'. The West Orange Trail and South Lake Trail ways tagged old_railway_operator='ACL' are the parallel ex-Orange Belt (ACL) grade and were NOT used; the West Orange Trail ways that sit on the T&G grade between Oakland and Winter Garden are the SAL/T&G-noted ones (ways 48622469, 48622477, 1193221390, 151199847). Waypoints: Tavares (hand-pinned on the SAL Orlando Subdivision in downtown Tavares, -81.7300 28.8004 -- the T&G shared the SAL depot; the Nominatim answer is the city-boundary centroid), Ellsworth Junction (Nominatim 'Ellsworth Junction', type hamlet, -81.7256 28.7636 -- at the north end of OSM T&G way 1207322088 where it meets the SAL), Astatula, Montverde, Oakland (Orange County), Winter Garden (Nominatim, type administrative = town boundary centroid, each checked to be the Florida town, not a county), Ferndale (Nominatim locality), Wait's Junction (hand-pinned at -81.6892 28.5759, the node where OSM T&G way 1272641213 to Minneola leaves way 48622464 toward Killarney), Ocoee (hand-pinned at the east end of OSM way 11173968, the T&G-noted Forest City Subdivision, at the ACL connection), Minneola (Nominatim, town), Clermont (hand-pinned at the west end of the OHM Clermont Branch way, -81.7685 28.5575; Nominatim's Clermont is the city centroid 0.4 km south). Simplified Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Oakland - Tildenville - Brayton - Winter Garden: traced 2.7 mi against 2.3 mi documented (mileposts 27.1 - 29.4; ICC 3 mi). Both ends are points on the line nearest the town centroids (0.10 km off each), so the split point, not the line, accounts for most of the difference; chainage at Winter Garden 29.5 against milepost 29.4. Traced on the OHM 'Tavares, Apopka & Gulf Railroad' way, which follows the West Orange Trail ways OSM tags as the T&G grade (old_railway_operator=SAL, note=Tavares and Gulf Railroad). No straight-line legs. This stretch runs alongside the ex-Orange Belt (ACL) grade; the T&G's own grade was traced, not the ACL's. Alignment as abandoned (1969).",
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1925,
+      "headway_min": 720,
+      "note": "Extension from Oakland to Winter Garden, built 'about 1899' (ICC) / 1899 (Cross, Wikipedia) alongside the Orange Belt rather than on the 1891 grade. Winter Garden became the T&G's chief citrus and vegetable shipping point; its brick passenger station of 1913 is now the Central Florida Railroad Museum (Cross). No source dates the first passenger train to Winter Garden; the drawn start is the construction year. headway_min is an ESTIMATE, not a timetable figure. 720 carries forward the 1890s pattern.",
+      "sources": [
+       "Segment-level: 1899 construction from ICC, CROSS and WIKI (a construction date, not a dated first passenger train); 1913 passenger station from CROSS -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad"
+      ]
+     },
+     {
+      "start": 1926,
+      "end": 1938,
+      "headway_min": 1440,
+      "note": "Seaboard Air Line bought the T&G's stock effective 12 Mar 1926 (ICC approval 25 Jan 1926), but the T&G kept operating as a separate company with its own superintendent at Tavares, its own locomotives and its own name until absorbed into Seaboard Coast Line on 1 Aug 1969 -- so the trains stay T&G-coloured and the feature is NOT split at 1926 (a 1931 Brooksville Journal item calls it 'a division of the Seaboard Air Line', which describes control, not who ran the trains). From 1929 the road ran a caboose (X-100) instead of a passenger car at the rear of its trains, and passengers rode it 'on occasion' -- passengers on mixed/freight trains, which counts as passenger service under Rule 1. Fowler's 'c' (1934 public timetable) marks Tildenville and Winter Garden. END 1938 IS SINGLE-SOURCED (Rule 3 conflict recorded): the 'Cross' history (republished on DeviantArt) says the X-100 caboose 'was used on occasion to haul passengers until the discontinuance of the service in 1938'; an Orange Observer item (16 Oct 2014) giving 1938 was seen only as a search-engine summary. The last PRIMARY-derived year is 1934 (John Fowler's station list marks Ellsworth Jct, Astatula, Ferndale, Montverde, Wait's Jct, Killarney, Oakland, Tildenville, Winter Garden and Ocoee 'c' = 1934 company public timetable). The Feb 1952 Official Guide lists the T&G as 'Freight and express service only', so service ended at some unknown year before late 1951. Drawn to 1938 on the secondary source; a strictly primary reading would stop at 1934. Never draw past 1938: freight and express continued to the last run of 28 Dec 1969 (Rule 1). headway_min 1440 (about one mixed train each way a day) is an ESTIMATE: no frequency for 1926-1938 was found.",
+      "sources": [
+       "Segment-level: (end single-sourced) SAL stock purchase 12 Mar 1926 and continued separate T&G operation from CROSS and ICC; 1929 caboose and 1938 discontinuance from CROSS only; 1934 passenger stop listing from FOWLER section 102 ('c' = 1934 company public timetable); freight-and-express-only status from the Feb 1952 Official Guide -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Tavares & Gulf entry: 'Freight and express service only' (research/sources/official_guide_1952.txt lines 122555-122569)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.62701,
+      28.55519
+     ],
+     [
+      -81.62701,
+      28.555842
+     ],
+     [
+      -81.626881,
+      28.556436
+     ],
+     [
+      -81.626656,
+      28.55687
+     ],
+     [
+      -81.626044,
+      28.557284
+     ],
+     [
+      -81.625293,
+      28.557388
+     ],
+     [
+      -81.61892,
+      28.557378
+     ],
+     [
+      -81.602237,
+      28.562778
+     ],
+     [
+      -81.590822,
+      28.564646
+     ],
+     [
+      -81.58565,
+      28.564753
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tavares and Gulf",
+    "line": "Tavares and Gulf: Winter Garden – Ocoee (main line)",
+    "id": "tavares-and-gulf-winter-garden-ocoee",
+    "color": "#7A9A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: rural steam short line running passenger and mixed trains (mixed/caboose only in the later years); no timetable running time was checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) plus OpenHistoricalMap, traced 2026-11-10 with opstrace.py. old_railway_operator probe: 'T&G', 'Tavares' and 'Seaboard' return nothing in the T&G's area; OSM tags the T&G grade old_railway_operator='SAL' with note='Tavares and Gulf Railroad' (it was SAL-controlled from 1926), and the SAL Orlando Subdivision (ex Tavares, Orlando & Atlantic) carries old_railway_operator='SAL' without that note. OHM names the line 'Tavares, Apopka & Gulf Railroad' and the branch 'Tavares, Apopka & Gulf Railroad -- Clermont Branch'. The West Orange Trail and South Lake Trail ways tagged old_railway_operator='ACL' are the parallel ex-Orange Belt (ACL) grade and were NOT used; the West Orange Trail ways that sit on the T&G grade between Oakland and Winter Garden are the SAL/T&G-noted ones (ways 48622469, 48622477, 1193221390, 151199847). Waypoints: Tavares (hand-pinned on the SAL Orlando Subdivision in downtown Tavares, -81.7300 28.8004 -- the T&G shared the SAL depot; the Nominatim answer is the city-boundary centroid), Ellsworth Junction (Nominatim 'Ellsworth Junction', type hamlet, -81.7256 28.7636 -- at the north end of OSM T&G way 1207322088 where it meets the SAL), Astatula, Montverde, Oakland (Orange County), Winter Garden (Nominatim, type administrative = town boundary centroid, each checked to be the Florida town, not a county), Ferndale (Nominatim locality), Wait's Junction (hand-pinned at -81.6892 28.5759, the node where OSM T&G way 1272641213 to Minneola leaves way 48622464 toward Killarney), Ocoee (hand-pinned at the east end of OSM way 11173968, the T&G-noted Forest City Subdivision, at the ACL connection), Minneola (Nominatim, town), Clermont (hand-pinned at the west end of the OHM Clermont Branch way, -81.7685 28.5575; Nominatim's Clermont is the city centroid 0.4 km south). Simplified Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Winter Garden - Ocoee: traced 2.4 mi against 2.8 mi documented (mileposts 29.4 - 32.2; ICC 3 mi; Cross 2.5 mi), 15% short of the mileposts but within Cross's figure; the Winter Garden end is the point nearest the town centroid and the Ocoee end is the end of the T&G-noted OSM way at the ACL connection (0.27 km from Ocoee's centroid). Traced entirely on OSM way 11173968, the T&G grade still in freight use today (Florida Central Railroad, Forest City Subdivision; old_railway_operator=SAL, note=Tavares and Gulf Railroad). No straight-line legs. Alignment: today's track, the T&G's own.",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1925,
+      "headway_min": 720,
+      "note": "Final extension, Winter Garden - Ocoee. START CONFLICT recorded (Rule 3): ICC 'about 1914' and Cross 1914 ('the first train into the city was operated by Morgan Mills'; a wye at Ocoee turned the train; Ocoee depot 1915) against Wikipedia 1915; the drawn start is collapsed inward to 1915. From then the passenger run was Tavares - Ocoee, with an ACL (ex Florida Midland) connection at Ocoee. headway_min is an ESTIMATE, not a timetable figure. 720 carries forward the 1890s pattern.",
+      "sources": [
+       "Segment-level: 1914 (ICC, CROSS) vs 1915 (WIKI) opening, drawn from 1915; Ocoee depot 1915 from CROSS -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad"
+      ]
+     },
+     {
+      "start": 1926,
+      "end": 1938,
+      "headway_min": 1440,
+      "note": "Seaboard Air Line bought the T&G's stock effective 12 Mar 1926 (ICC approval 25 Jan 1926), but the T&G kept operating as a separate company with its own superintendent at Tavares, its own locomotives and its own name until absorbed into Seaboard Coast Line on 1 Aug 1969 -- so the trains stay T&G-coloured and the feature is NOT split at 1926 (a 1931 Brooksville Journal item calls it 'a division of the Seaboard Air Line', which describes control, not who ran the trains). From 1929 the road ran a caboose (X-100) instead of a passenger car at the rear of its trains, and passengers rode it 'on occasion' -- passengers on mixed/freight trains, which counts as passenger service under Rule 1. Fowler's 'c' (1934 public timetable) marks Ocoee. Winter Garden - Ocoee is the only part of the T&G still in use, by the Florida Central Railroad, freight only. END 1938 IS SINGLE-SOURCED (Rule 3 conflict recorded): the 'Cross' history (republished on DeviantArt) says the X-100 caboose 'was used on occasion to haul passengers until the discontinuance of the service in 1938'; an Orange Observer item (16 Oct 2014) giving 1938 was seen only as a search-engine summary. The last PRIMARY-derived year is 1934 (John Fowler's station list marks Ellsworth Jct, Astatula, Ferndale, Montverde, Wait's Jct, Killarney, Oakland, Tildenville, Winter Garden and Ocoee 'c' = 1934 company public timetable). The Feb 1952 Official Guide lists the T&G as 'Freight and express service only', so service ended at some unknown year before late 1951. Drawn to 1938 on the secondary source; a strictly primary reading would stop at 1934. Never draw past 1938: freight and express continued to the last run of 28 Dec 1969 (Rule 1). headway_min 1440 (about one mixed train each way a day) is an ESTIMATE: no frequency for 1926-1938 was found.",
+      "sources": [
+       "Segment-level: (end single-sourced) SAL stock purchase 12 Mar 1926 and continued separate T&G operation from CROSS and ICC; 1929 caboose and 1938 discontinuance from CROSS only; 1934 passenger stop listing from FOWLER section 102 ('c' = 1934 company public timetable); freight-and-express-only status from the Feb 1952 Official Guide -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Tavares & Gulf entry: 'Freight and express service only' (research/sources/official_guide_1952.txt lines 122555-122569)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.58565,
+      28.564753
+     ],
+     [
+      -81.583842,
+      28.56479
+     ],
+     [
+      -81.582023,
+      28.564497
+     ],
+     [
+      -81.573183,
+      28.564513
+     ],
+     [
+      -81.571976,
+      28.564089
+     ],
+     [
+      -81.571275,
+      28.563966
+     ],
+     [
+      -81.565921,
+      28.564052
+     ],
+     [
+      -81.56527,
+      28.564189
+     ],
+     [
+      -81.564093,
+      28.564695
+     ],
+     [
+      -81.55632,
+      28.56972
+     ],
+     [
+      -81.555442,
+      28.570123
+     ],
+     [
+      -81.554083,
+      28.570374
+     ],
+     [
+      -81.548925,
+      28.570236
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Tavares and Gulf",
+    "line": "Tavares and Gulf: Clermont Branch",
+    "id": "tavares-and-gulf-clermont-branch",
+    "color": "#7A9A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: rural steam short line running passenger and mixed trains (mixed/caboose only in the later years); no timetable running time was checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) plus OpenHistoricalMap, traced 2026-11-10 with opstrace.py. old_railway_operator probe: 'T&G', 'Tavares' and 'Seaboard' return nothing in the T&G's area; OSM tags the T&G grade old_railway_operator='SAL' with note='Tavares and Gulf Railroad' (it was SAL-controlled from 1926), and the SAL Orlando Subdivision (ex Tavares, Orlando & Atlantic) carries old_railway_operator='SAL' without that note. OHM names the line 'Tavares, Apopka & Gulf Railroad' and the branch 'Tavares, Apopka & Gulf Railroad -- Clermont Branch'. The West Orange Trail and South Lake Trail ways tagged old_railway_operator='ACL' are the parallel ex-Orange Belt (ACL) grade and were NOT used; the West Orange Trail ways that sit on the T&G grade between Oakland and Winter Garden are the SAL/T&G-noted ones (ways 48622469, 48622477, 1193221390, 151199847). Waypoints: Tavares (hand-pinned on the SAL Orlando Subdivision in downtown Tavares, -81.7300 28.8004 -- the T&G shared the SAL depot; the Nominatim answer is the city-boundary centroid), Ellsworth Junction (Nominatim 'Ellsworth Junction', type hamlet, -81.7256 28.7636 -- at the north end of OSM T&G way 1207322088 where it meets the SAL), Astatula, Montverde, Oakland (Orange County), Winter Garden (Nominatim, type administrative = town boundary centroid, each checked to be the Florida town, not a county), Ferndale (Nominatim locality), Wait's Junction (hand-pinned at -81.6892 28.5759, the node where OSM T&G way 1272641213 to Minneola leaves way 48622464 toward Killarney), Ocoee (hand-pinned at the east end of OSM way 11173968, the T&G-noted Forest City Subdivision, at the ACL connection), Minneola (Nominatim, town), Clermont (hand-pinned at the west end of the OHM Clermont Branch way, -81.7685 28.5575; Nominatim's Clermont is the city centroid 0.4 km south). Simplified Douglas-Peucker 8 m, trim_reversals; no spurs.",
+    "geometry_quality": "Wait's Jct - Crenshaws - Mohawk - Minneola - Louise - Clermont: traced 5.75 mi against 7 mi documented (Wikipedia/Fowler mileposts) and 6 mi (Feb 1952 Official Guide) -- 18% short of the mileposts, 4% short of the Guide. Traced on the OHM way 'Tavares, Apopka & Gulf Railroad -- Clermont Branch' (5.5 mi), plus a 0.25 mi link from the main-line Wait's Jct junction node to the OHM way's east end and 0.1 mi of an untagged OHM way. Minneola (Nominatim town centroid) lies 0.23 km off the line. The Clermont end is the end of the OHM way on the Lake Minneola shore (-81.7685 28.5575); the T&G's Clermont depot site was not independently located, and the shortfall against the mileposts may be there or in OHM's drawing of the grade (OSM maps only the Wait's Jct - Minneola part, ways 1272641213/1272641214/48622465, which were reachable but not preferred). No straight-line legs. Alignment: the OHM-mapped grade; not checked against period maps.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1890,
+      "headway_min": 720,
+      "note": "Wait's Jct - Clermont was the original end of the Tavares, Apopka & Gulf -- Clermont (reached 1887 per Cross, Wikipedia and the South Lake Tablet) was its headquarters, shops, engine house, water tank and steamboat connection, and the only terminus until Oakland opened in Feb 1891; so the TA&G's 'passenger, freight, mail and express service' of its first years and the receivership's daily passenger and mixed train of 1890 necessarily ran here. Drawn from 1888 (collapsed from the 1887 opening; ICC construction 1885-1888). [OPEN] END: 1890 is the last CONFIRMED year, NOT a known end. Service very probably continued once this became the branch (perhaps to 1938, with the rest of the road), but no source dates a passenger train on it after 1890: Fowler lists the branch stations with no dated letter, a Feb 1914 railway-mail listing shows mail pickups only, and a South Lake Tablet anecdote of 'a Tavares train' to Clermont in the early 1920s is undated and could be the ACL. Do not extend without evidence. The Feb 1952 Official Guide lists the branch 'Freight and express service only' and daggers Minneola freight-only; the branch was abandoned in 1962 (Cross, Wikipedia; South Lake Tablet says rails lifted 1967) -- freight dates, not passenger ones. TA&G -> T&G reorganisation not split (same operation). headway_min is an ESTIMATE, not a timetable figure. 720 from the 1890 receivership pattern.",
+      "sources": [
+       "Segment-level: Clermont reached 1887 (CROSS, WIKI, SLTABLET; ICC construction 1885-1888); Clermont as sole terminus until the Feb 1891 Oakland opening and the 1890 receivership passenger + mixed train from CROSS. End [OPEN] at 1890: no dated passenger evidence for the branch after 1890 (FOWLER sec. 103 carries no letters) -- as quoted in research/branches/tavares_and_gulf_railroad.txt (researched 2026-11-10); the tracer did not re-open these pages.",
+       "https://www.deviantart.com/squashfloridarailfan/journal/HISTORY-OF-THE-TAVARES-AND-GULF-RAILROAD-724090138",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Tavares_and_Gulf_Railroad",
+       "https://en.wikipedia.org/wiki/Tavares_and_Gulf_Railroad",
+       "https://sltablet.com/?p=76929",
+       "https://www.branchline.uk/jfpdf/floridarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.689219,
+      28.575906
+     ],
+     [
+      -81.691576,
+      28.574886
+     ],
+     [
+      -81.692455,
+      28.575222
+     ],
+     [
+      -81.69385,
+      28.576192
+     ],
+     [
+      -81.694791,
+      28.576664
+     ],
+     [
+      -81.695435,
+      28.576901
+     ],
+     [
+      -81.696278,
+      28.57695
+     ],
+     [
+      -81.697604,
+      28.576685
+     ],
+     [
+      -81.699449,
+      28.576099
+     ],
+     [
+      -81.699909,
+      28.576061
+     ],
+     [
+      -81.701544,
+      28.576192
+     ],
+     [
+      -81.702847,
+      28.576509
+     ],
+     [
+      -81.704609,
+      28.576347
+     ],
+     [
+      -81.710187,
+      28.574097
+     ],
+     [
+      -81.711178,
+      28.573942
+     ],
+     [
+      -81.712034,
+      28.57406
+     ],
+     [
+      -81.713174,
+      28.574538
+     ],
+     [
+      -81.716126,
+      28.577093
+     ],
+     [
+      -81.716678,
+      28.577379
+     ],
+     [
+      -81.717824,
+      28.577634
+     ],
+     [
+      -81.723204,
+      28.577621
+     ],
+     [
+      -81.724773,
+      28.577473
+     ],
+     [
+      -81.726286,
+      28.57703
+     ],
+     [
+      -81.729891,
+      28.574553
+     ],
+     [
+      -81.730806,
+      28.573224
+     ],
+     [
+      -81.731572,
+      28.572568
+     ],
+     [
+      -81.732562,
+      28.572207
+     ],
+     [
+      -81.734692,
+      28.57247
+     ],
+     [
+      -81.739767,
+      28.574353
+     ],
+     [
+      -81.741281,
+      28.574722
+     ],
+     [
+      -81.743839,
+      28.574397
+     ],
+     [
+      -81.750534,
+      28.573202
+     ],
+     [
+      -81.752041,
+      28.572481
+     ],
+     [
+      -81.752824,
+      28.571949
+     ],
+     [
+      -81.753452,
+      28.571294
+     ],
+     [
+      -81.75593,
+      28.564203
+     ],
+     [
+      -81.756214,
+      28.563671
+     ],
+     [
+      -81.756901,
+      28.562983
+     ],
+     [
+      -81.76174,
+      28.559694
+     ],
+     [
+      -81.762668,
+      28.559223
+     ],
+     [
+      -81.766772,
+      28.55763
+     ],
+     [
+      -81.768504,
+      28.557484
+     ]
+    ]
+   }
+  }
+ ]
+}
