@@ -1,0 +1,962 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Ocala Northern Railroad (E. P. Rentz, 1910-1915) and its successor the Ocklawaha Valley Railroad (1915-1922): a single line Ocala - Silver Springs - Fort McCoy - Orange Springs - Palatka, ~50 mi, through Marion and Putnam counties, Florida. Ocala - Fort McCoy opened to passengers 15 Jan 1910, the through line to Palatka Jan 1912; operations ceased by court order 30 Dec 1922 and the track was scrapped (never absorbed by the SAL or ACL). Ocala - Silver Springs Junction and the Silver Springs spur were Seaboard Air Line track the road ran its own trains over. Ownership: the Ocala Northern (E. P. Rentz; in receivership from 1913) was sold to H. S. Cummings of the Rodman Lumber interests and reorganized as the Ocklawaha Valley Railroad on 16 Apr 1915 (research report, company_legal / ownership_split; Wikipedia). Rule 4 split at 1915: the Ocala Northern features end 1915 and the Ocklawaha Valley features begin 1915 on identical geometry. Drawn as four features: two sections (Ocala - Fort McCoy from 1910; Fort McCoy - Palatka from 1912) x two operators.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad",
+   "https://www.loc.gov/resource/sn84027621/1910-01-15/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn84027621/1910-04-15/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn84027621/1912-01-24/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn84027621/1913-11-19/ed-1/?sp=5",
+   "https://www.loc.gov/resource/sn84027621/1914-06-04/ed-1/?sp=8",
+   "https://www.loc.gov/resource/sn84027621/1916-09-22/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn84027621/1918-04-04/ed-1/?sp=4",
+   "https://www.loc.gov/resource/sn84027621/1918-10-09/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn88074815/1918-12-13/ed-1/?sp=4",
+   "https://www.loc.gov/resource/sn88074815/1919-12-19/ed-1/?sp=1",
+   "https://www.loc.gov/resource/sn78001466/1922-09-14/ed-1/?sp=3",
+   "https://www.loc.gov/resource/sn78001466/1922-12-26/ed-1/?sp=1",
+   "https://www.loc.gov/resource/sn88074815/1922-12-29/ed-1/?sp=1"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (Operator want='ocklawaha valley'/'ocala northern'; fetch_operator_ways for old_railway_operator ~ Ocklawaha|Oklawaha|OVRR|Ocala Northern and ~ SAL|Seaboard; fetch_gap over 29.15-29.45 N / 82.20-81.80 W). Trace report: Ocklawaha Valley-tagged ways 11.7 mi, untagged (CSX) 3.7 mi, SAL-tagged 1.9 mi, straight 0 mi; douglas_peucker 8 m + trim_reversals; no spurs. OpenHistoricalMap was fetched but not needed here (it maps Ocala - Silver Springs - Bay Lake as 'Silver Springs, Ocala & Gulf Railroad 1909', which appears to be a mislabel of this grade north of Silver Springs; not used as a source of attribution).",
+   "OpenStreetMap via Overpass (maps.mail.ru mirror): opstrace.py trace Fort McCoy - Bay Lake - Orange Springs - Kenwood (Ocklawaha Valley-tagged ways 27.5 mi, no straight legs), then assembled by hand from named OSM ways because the tracer could not bridge the unmapped stretch west of Palatka: the main grade way 421392828 from the Fort McCoy vertex to its end, ways 1279822400 / 11273194 / 128620087 (SR 19, tagged as the OV grade), one labelled straight leg, and the Southern Railway ways into Palatka. fetch_gap over 29.40-29.70 N / 81.95-81.60 W returned an OHM 'Ocklawaha Valley Railroad (1909)' way (Orange Springs - Rodman area, 4.5 mi) consistent with the OSM grade; it was not needed. Rodman Reservoir polygon: OSM relation 1202698."
+  ],
+  "not_yet_sourced": "(1) Fort McCoy - Palatka is drawn from 1912; passenger trains may have reached Orange Springs / Bay Lake in 1911 (rails beyond Fort McCoy from early 1911) - not checked. (2) 1911, 1915, 1917 (after Nov), 1920 and 1921 were not directly sampled for a running train; no suspension found. (3) All headways are estimates between the dated snapshots (two daily promised Jan 1912; tri-weekly mixed Oct 1918; motor cars Dec 1919; daily Sept 1922). (4) The Ocala passenger terminal 1910-1912 (SAL 'Seaboard depot') vs later (union station by 1919), and whether the 1911 Osceola Street track was built, are unsettled; the line is drawn to the union-station area. (5) Where the road joined the Southern Railway west of Palatka is unknown (2.65 mi straight leg). (6) Florida Railroad Commission annual reports 1910-1922 (train-miles, passengers) not consulted. (7) None of the end years is [OPEN]: 30 Dec 1922 is a dated shutdown.",
+  "omitted": "[3] Rodman Junction (Cummings) - Rodman spur, 1.5 mi, drawable 1918 [ANCHOR]: NOT DRAWN. The only evidence is the Oct 1918 timetable's Palatka - Rodman trains Nos. 73/74 ('runs only to Rodman'), which may have stopped at Rodman Junction rather than running down the spur, and No. 73 is not itself labelled passenger (low confidence). OSM has a 3.9 mi abandoned way tagged old_railway_operator='Ocklawaha Valley Railroad' (way 53830744) running from the main grade toward Rodman, longer than the documented 1.5 mi spur and unidentified (possibly a lumber line), so it was not used. The Palatka - Rodman Junction part of that run is already inside the Fort McCoy - Palatka features.",
+  "freight_only_excluded": "Rentz's and the Rodman Lumber Co.'s logging railroads off the main line (logging only); the pre-1910 Silver Springs mill logging road (the line is drawn from the first regular passenger train, 15 Jan 1910); the Rodman spur outside its unproven 1918 anchor. No freight-only afterlife exists: the whole road ceased 30 Dec 1922.",
+  "research_report": "research/branches/ocklawaha_valley_railroad.txt"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Ocala Northern Railroad",
+    "line": "Ocala Northern: Ocala – Fort McCoy",
+    "id": "ocala-northern-ocala-fort-mccoy",
+    "color": "#BFB41C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE (Rule 3): no Ocala Northern running time was checked; set equal to the Ocklawaha Valley's sourced schedules (about 25 km/h).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (Operator want='ocklawaha valley'/'ocala northern'; fetch_operator_ways for old_railway_operator ~ Ocklawaha|Oklawaha|OVRR|Ocala Northern and ~ SAL|Seaboard; fetch_gap over 29.15-29.45 N / 82.20-81.80 W). Trace report: Ocklawaha Valley-tagged ways 11.7 mi, untagged (CSX) 3.7 mi, SAL-tagged 1.9 mi, straight 0 mi; douglas_peucker 8 m + trim_reversals; no spurs. OpenHistoricalMap was fetched but not needed here (it maps Ocala - Silver Springs - Bay Lake as 'Silver Springs, Ocala & Gulf Railroad 1909', which appears to be a mislabel of this grade north of Silver Springs; not used as a source of attribution).",
+    "geometry_quality": "Ocala - Fort McCoy: traced 17.3 mi against a documented ~19 mi (Wikipedia mileposts Ocala MP 54 - Fort McCoy MP 35; report: ~19-20 mi), about 9% short. Made of 3.7 mi of present-day CSX track (OSM, untagged with any historical operator) from Ocala east to Silver Springs Junction, read as the Seaboard Air Line track the road used under trackage rights (the report says Ocala - Silver Springs Jct is SAL, later CSX, still in place); 1.9 mi of the leased SAL Silver Springs spur (OSM abandoned way 53417701, old_railway_operator=SAL); and 11.7 mi of the road's own abandoned grade (OSM ways 53425655, 421392836 'White Blaze Trail', 421469102, 421392828, all old_railway_operator='Ocklawaha Valley Railroad'). NO straight-line or approximated legs. Ocala end pinned at the later Ocala union station / SAL depot area (-82.1338, 29.1910): where the 1910-1912 'Seaboard depot' stood was not located separately, and the 1911 Osceola Street track the road was permitted to build (report UNRESOLVED) is not drawn; that terminal uncertainty may account for part of the shortfall. Fort McCoy is the grade vertex nearest the Nominatim hamlet point (1.2 km W of it); Burbank and Silver Springs lie within 0.1 km of the line; Daisy did not geocode and was not used. ERA CAVEAT: the Ocala - Silver Springs Jct leg is drawn on the track as it exists today; whether it was relocated after 1922 was not checked.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1911,
+      "headway_min": 1440,
+      "note": "Ocala Northern local Ocala - Silver Springs - Burbank - (Daisy) - Fort McCoy, before the line reached Palatka. First regular passenger train Saturday 15 Jan 1910, 7 a.m. from the Seaboard depot in Ocala 'to Burbank and Fort McCoy', 70 passengers out and about 100 back (Ocala Evening Star 15 Jan 1910 p.2). Further 1910 evidence: 15 Apr 1910 Star, a campaign picnic party 'went to Fort McCoy this morning on the Ocala Northern train, packing the train to its limit', and an ad 'Take Ocala Northern R.R. to Burbank'. Trains ran from Ocala over Seaboard Air Line track to Silver Springs Junction and the 1.9 mi SAL Silver Springs spur (leased 14 Dec 1909) - the Ocala Northern's own trains, not an SAL service. Rentz's earlier Silver Springs sawmill logging road is freight/logging and is not drawn before 15 Jan 1910 (Rule 1). 1911 is not directly sampled. headway_min 1440 is an ESTIMATE (one round trip a day, as the opening-day account implies); no 1910-1911 timetable was checked.",
+      "sources": [
+       "Segment-level: start 15 Jan 1910 from Ocala Evening Star 15 Jan 1910 p.2; 1910 service also Ocala Evening Star 15 Apr 1910 p.3 - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. 1911 not sampled; headway not sourced.",
+       "https://www.loc.gov/resource/sn84027621/1910-01-15/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn84027621/1910-04-15/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     },
+     {
+      "start": 1912,
+      "end": 1915,
+      "headway_min": 720,
+      "note": "From Jan 1912 the Ocala - Fort McCoy section is part of the Ocala Northern's through Ocala - Palatka line (see the Fort McCoy - Palatka feature). Opening excursion to Palatka 24 Jan 1912; 'only one through passenger train each day will be operated ... after a few days two through passenger trains will be operated each way daily' (Ocala Evening Star 24 Jan 1912 p.2). 1912 Silver Springs excursion connection: 'The Ocala Northern train leaves the Ocala Seaboard station at 7:10 a.m.' for the Sunday Oklawaha steamer (Star 23 Apr 1912, per the report). 1913: Ocala Northern round-trip fare table to the Marion County Fair from Palatka, Penile, Cummings, Kenwood, Orange Springs, Bay Lake, Fort McCoy, Daisy, Burbank, Oak Junction and Silver Springs (Star 19 Nov 1913 p.5). 1914: ~500 Palatka Sunday-school excursionists 'came in on the Ocala Northern' to Silver Springs (Star 4 Jun 1914 p.8). In receivership from 1913 (no change of operating company). Ends 16 Apr 1915 at the sale and reorganization as the Ocklawaha Valley Railroad (Rule 4 split; continued by the Ocklawaha Valley feature). 1915 itself not directly sampled for a train. headway_min 720 is an ESTIMATE from the Jan 1912 promise of two daily round trips; later frequency under the Ocala Northern is not sourced.",
+      "sources": [
+       "Segment-level: Ocala Evening Star 24 Jan 1912 p.2 (through opening, two daily trains promised); Star 19 Nov 1913 p.5; Star 4 Jun 1914 p.8; end = 16 Apr 1915 reorganization per the report's ownership_split and Wikipedia - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. Headway an estimate.",
+       "https://www.loc.gov/resource/sn84027621/1912-01-24/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn84027621/1913-11-19/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn84027621/1914-06-04/ed-1/?sp=8",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.134435,
+      29.190873
+     ],
+     [
+      -82.13425,
+      29.192644
+     ],
+     [
+      -82.13322,
+      29.194503
+     ],
+     [
+      -82.132712,
+      29.196904
+     ],
+     [
+      -82.132193,
+      29.197952
+     ],
+     [
+      -82.131455,
+      29.198854
+     ],
+     [
+      -82.130771,
+      29.199423
+     ],
+     [
+      -82.129667,
+      29.20006
+     ],
+     [
+      -82.119302,
+      29.205178
+     ],
+     [
+      -82.117458,
+      29.205624
+     ],
+     [
+      -82.09311,
+      29.209437
+     ],
+     [
+      -82.084837,
+      29.211166
+     ],
+     [
+      -82.068402,
+      29.214802
+     ],
+     [
+      -82.06528,
+      29.215682
+     ],
+     [
+      -82.059186,
+      29.217957
+     ],
+     [
+      -82.058178,
+      29.21821
+     ],
+     [
+      -82.057244,
+      29.218257
+     ],
+     [
+      -82.056086,
+      29.218051
+     ],
+     [
+      -82.055406,
+      29.218202
+     ],
+     [
+      -82.052899,
+      29.216684
+     ],
+     [
+      -82.051856,
+      29.21648
+     ],
+     [
+      -82.050891,
+      29.216667
+     ],
+     [
+      -82.050032,
+      29.217341
+     ],
+     [
+      -82.049487,
+      29.218538
+     ],
+     [
+      -82.047393,
+      29.22751
+     ],
+     [
+      -82.046664,
+      29.229402
+     ],
+     [
+      -82.045571,
+      29.230991
+     ],
+     [
+      -82.044112,
+      29.232564
+     ],
+     [
+      -82.00478,
+      29.261368
+     ],
+     [
+      -82.004201,
+      29.262276
+     ],
+     [
+      -82.003697,
+      29.264157
+     ],
+     [
+      -81.999674,
+      29.289369
+     ],
+     [
+      -81.99948,
+      29.290735
+     ],
+     [
+      -81.999394,
+      29.297013
+     ],
+     [
+      -81.999094,
+      29.299512
+     ],
+     [
+      -81.998193,
+      29.301879
+     ],
+     [
+      -81.997613,
+      29.303011
+     ],
+     [
+      -81.9955,
+      29.306023
+     ],
+     [
+      -81.993558,
+      29.308512
+     ],
+     [
+      -81.993054,
+      29.309438
+     ],
+     [
+      -81.98579,
+      29.327539
+     ],
+     [
+      -81.980812,
+      29.348602
+     ],
+     [
+      -81.979482,
+      29.360179
+     ],
+     [
+      -81.97946,
+      29.362787
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Ocala Northern Railroad",
+    "line": "Ocala Northern: Fort McCoy – Palatka",
+    "id": "ocala-northern-fort-mccoy-palatka",
+    "color": "#BFB41C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE (Rule 3): no Ocala Northern running time was checked; set equal to the Ocklawaha Valley's sourced schedules (about 25 km/h).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror): opstrace.py trace Fort McCoy - Bay Lake - Orange Springs - Kenwood (Ocklawaha Valley-tagged ways 27.5 mi, no straight legs), then assembled by hand from named OSM ways because the tracer could not bridge the unmapped stretch west of Palatka: the main grade way 421392828 from the Fort McCoy vertex to its end, ways 1279822400 / 11273194 / 128620087 (SR 19, tagged as the OV grade), one labelled straight leg, and the Southern Railway ways into Palatka. fetch_gap over 29.40-29.70 N / 81.95-81.60 W returned an OHM 'Ocklawaha Valley Railroad (1909)' way (Orange Springs - Rodman area, 4.5 mi) consistent with the OSM grade; it was not needed. Rodman Reservoir polygon: OSM relation 1202698.",
+    "geometry_quality": "Fort McCoy - Palatka: traced 33.0 mi against a documented ~35 mi (Wikipedia mileposts Fort McCoy MP 35 - Palatka MP 0), about 6% short. Made of: 27.3 mi on OSM way 421392828, an abandoned-grade way named and tagged 'Ocklawaha Valley Railroad' (OSM carries FIXME 'alignment very rough between Bay Lake and Orange Springs', so treat the Bay Lake - Orange Springs stretch, c. 4 mi, as a mapper's approximation rather than a surveyed grade); 0.2 mi on way 1279822400 (same tags); a 0.3 mi unmapped gap bridged straight; 1.9 mi ALONG STATE ROAD 19 (ways 11273194 and 128620087), which OSM itself tags old_railway_operator='Ocklawaha Valley Railroad' (and the report, citing Wikipedia, says SR 19 reuses the grade) - drawn on the road for that reason; then an APPROXIMATED STRAIGHT LEG of 2.65 mi from where the SR 19 grade tagging ends (-81.6899, 29.6289) north-east to the former Southern Railway (Georgia Southern & Florida) grade at -81.6594, 29.6566 - where the road actually joined the Southern is not known, this leg simply continues the grade's own bearing; finally 1.1 mi on the former Southern grade into Palatka (OSM ways 432294792, 158092045, 432294789, 53137696, 432294784, 432294785, old_railway_operator=Southern), ending at -81.641, 29.6542 by Dunham Street, the Southern's Palatka terminal area (the Southern station itself was not pinned exactly). Approximated legs total about 2.95 mi (2.65 + 0.3). RODMAN RESERVOIR: checked against the OSM Rodman Reservoir polygon (relation 1202698) - only 0.1 mi of the drawn grade falls inside the mapped water, so the grade largely skirts the 1968 impoundment; the reservoir's flooded margins and the Kenwood area (Nominatim gave only a road there; the line passes 1.0 km from it) are not verifiable on the ground. Bay Lake 0.5 km, Orange Springs 0.1 km from the line. Cummings/Rodman Junction, Penial (Penile), Stokley (Silver Lake) were not used as waypoints (no reliable geocode). No OSM or OHM line survives for the Rodman spur (see metadata.omitted).",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1915,
+      "headway_min": 720,
+      "note": "Ocala Northern through line opened to Palatka Jan 1912: opening excursion with banquet at Palatka, 'return on the regular Ocala Northern train Friday'; one through passenger train a day at first, two each way daily promised 'after a few days' (Ocala Evening Star 24 Jan 1912 p.2). Stations Fort McCoy - Bay Lake - Orange Springs - Kenwood - Cummings (Rodman Junction) - Penile - Stokley (Silver Lake) - Palatka, the Palatka terminal reached over Southern Railway trackage. 1913 station list from the Ocala Northern fare table (Star 19 Nov 1913 p.5); 1914 Palatka excursion to Silver Springs (Star 4 Jun 1914 p.8). Rail was being laid beyond Fort McCoy from early 1911 and trains may have reached Orange Springs in 1911 - NOT checked, so this feature starts in 1912 only. Ends 16 Apr 1915 at the reorganization as the Ocklawaha Valley Railroad (Rule 4 split). headway_min 720 is an ESTIMATE from the Jan 1912 two-trains promise.",
+      "sources": [
+       "Segment-level: Ocala Evening Star 24 Jan 1912 p.2; Star 19 Nov 1913 p.5; Star 4 Jun 1914 p.8; end = 16 Apr 1915 reorganization per the report and Wikipedia - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. 1911 Orange Springs service not checked; headway an estimate.",
+       "https://www.loc.gov/resource/sn84027621/1912-01-24/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn84027621/1913-11-19/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn84027621/1914-06-04/ed-1/?sp=8",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.97946,
+      29.362787
+     ],
+     [
+      -81.979911,
+      29.364143
+     ],
+     [
+      -81.987453,
+      29.376223
+     ],
+     [
+      -81.987807,
+      29.37699
+     ],
+     [
+      -81.997442,
+      29.403968
+     ],
+     [
+      -81.997592,
+      29.405557
+     ],
+     [
+      -81.997485,
+      29.420184
+     ],
+     [
+      -81.997453,
+      29.421043
+     ],
+     [
+      -81.997141,
+      29.422426
+     ],
+     [
+      -81.996401,
+      29.424136
+     ],
+     [
+      -81.995489,
+      29.425557
+     ],
+     [
+      -81.985501,
+      29.440339
+     ],
+     [
+      -81.978087,
+      29.449813
+     ],
+     [
+      -81.975802,
+      29.454428
+     ],
+     [
+      -81.969869,
+      29.467207
+     ],
+     [
+      -81.962917,
+      29.481395
+     ],
+     [
+      -81.961554,
+      29.483674
+     ],
+     [
+      -81.947853,
+      29.499615
+     ],
+     [
+      -81.94693,
+      29.500969
+     ],
+     [
+      -81.944495,
+      29.505227
+     ],
+     [
+      -81.940118,
+      29.509961
+     ],
+     [
+      -81.935815,
+      29.51617
+     ],
+     [
+      -81.934775,
+      29.517421
+     ],
+     [
+      -81.933165,
+      29.518364
+     ],
+     [
+      -81.914197,
+      29.523471
+     ],
+     [
+      -81.913038,
+      29.52362
+     ],
+     [
+      -81.908575,
+      29.523807
+     ],
+     [
+      -81.907416,
+      29.524106
+     ],
+     [
+      -81.906236,
+      29.524591
+     ],
+     [
+      -81.905378,
+      29.525207
+     ],
+     [
+      -81.895829,
+      29.534645
+     ],
+     [
+      -81.894617,
+      29.535298
+     ],
+     [
+      -81.893887,
+      29.53542
+     ],
+     [
+      -81.863975,
+      29.536045
+     ],
+     [
+      -81.861894,
+      29.536185
+     ],
+     [
+      -81.841434,
+      29.538556
+     ],
+     [
+      -81.831649,
+      29.539219
+     ],
+     [
+      -81.818345,
+      29.539798
+     ],
+     [
+      -81.81753,
+      29.539984
+     ],
+     [
+      -81.815953,
+      29.541039
+     ],
+     [
+      -81.811028,
+      29.546135
+     ],
+     [
+      -81.805771,
+      29.551213
+     ],
+     [
+      -81.799141,
+      29.557027
+     ],
+     [
+      -81.794538,
+      29.561507
+     ],
+     [
+      -81.792757,
+      29.562879
+     ],
+     [
+      -81.71228,
+      29.613651
+     ],
+     [
+      -81.701731,
+      29.620426
+     ],
+     [
+      -81.68989,
+      29.628933
+     ],
+     [
+      -81.659351,
+      29.656584
+     ],
+     [
+      -81.640987,
+      29.654185
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Ocklawaha Valley Railroad",
+    "line": "Ocklawaha Valley: Ocala – Fort McCoy",
+    "id": "ocklawaha-valley-ocala-fort-mccoy",
+    "color": "#1CBF68",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE (Rule 3), derived from two schedules quoted in the research report: Sept 1922 Palatka 8:00 a.m. - Ocala 11:00 a.m. (3 h for ~50 mi, about 27 km/h) and Oct 1918 No. 71 Palatka 6:30 - Ocala 10:30 a.m. (4 h, about 20 km/h, mixed train). Rounded to 25.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (Operator want='ocklawaha valley'/'ocala northern'; fetch_operator_ways for old_railway_operator ~ Ocklawaha|Oklawaha|OVRR|Ocala Northern and ~ SAL|Seaboard; fetch_gap over 29.15-29.45 N / 82.20-81.80 W). Trace report: Ocklawaha Valley-tagged ways 11.7 mi, untagged (CSX) 3.7 mi, SAL-tagged 1.9 mi, straight 0 mi; douglas_peucker 8 m + trim_reversals; no spurs. OpenHistoricalMap was fetched but not needed here (it maps Ocala - Silver Springs - Bay Lake as 'Silver Springs, Ocala & Gulf Railroad 1909', which appears to be a mislabel of this grade north of Silver Springs; not used as a source of attribution).",
+    "geometry_quality": "Ocala - Fort McCoy: traced 17.3 mi against a documented ~19 mi (Wikipedia mileposts Ocala MP 54 - Fort McCoy MP 35; report: ~19-20 mi), about 9% short. Made of 3.7 mi of present-day CSX track (OSM, untagged with any historical operator) from Ocala east to Silver Springs Junction, read as the Seaboard Air Line track the road used under trackage rights (the report says Ocala - Silver Springs Jct is SAL, later CSX, still in place); 1.9 mi of the leased SAL Silver Springs spur (OSM abandoned way 53417701, old_railway_operator=SAL); and 11.7 mi of the road's own abandoned grade (OSM ways 53425655, 421392836 'White Blaze Trail', 421469102, 421392828, all old_railway_operator='Ocklawaha Valley Railroad'). NO straight-line or approximated legs. Ocala end pinned at the later Ocala union station / SAL depot area (-82.1338, 29.1910): where the 1910-1912 'Seaboard depot' stood was not located separately, and the 1911 Osceola Street track the road was permitted to build (report UNRESOLVED) is not drawn; that terminal uncertainty may account for part of the shortfall. Fort McCoy is the grade vertex nearest the Nominatim hamlet point (1.2 km W of it); Burbank and Silver Springs lie within 0.1 km of the line; Daisy did not geocode and was not used. ERA CAVEAT: the Ocala - Silver Springs Jct leg is drawn on the track as it exists today; whether it was relocated after 1922 was not checked.",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1919,
+      "headway_min": 2880,
+      "note": "Ocklawaha Valley Railroad from the 16 Apr 1915 reorganization (H. S. Cummings / Rodman Lumber interests; SAL Silver Springs spur lease transferred 19 Aug 1915). Part of the through Ocala - Palatka line (Ocala - Silver Springs - Fort McCoy section). Positive passenger evidence: 1916, O.V.R.R. excursion Ocala - Fort McCoy and Palatka - Fort McCoy, 'a coach on both trains' (Ocala Evening Star 22 Sep 1916 p.3); 1918, a special train Ocala - Palatka via the Ocklawaha Valley (Star 4 Apr 1918 p.4); Oct 1918 timetable: 'Train No. 71, first class passenger and mixed, leaves Palatka at 6:30 a.m. every Monday, Wednesday and Friday, arriving at Ocala at 10:30 a.m.', No. 72 returning from Ocala 2 p.m. M-W-F to Palatka 5:50 p.m. (Star 9 Oct 1918 p.3, from the Palatka News); Dec 1918 the OV 'came in yesterday carrying two passenger cars and five freight cars' (Ocala Banner 13 Dec 1918 p.4). So by 1918 service was a TRI-WEEKLY MIXED train - passenger service under Rule 1. Nov 1917 the owners moved to stop service and a foreclosure decree followed 24 Dec 1917, but the courts kept the road operating; receivers (Cummings c.1917-21) did not change the operating company. 1915 and 1917 are not directly sampled for a running train; no suspension was found. headway_min 2880 is an ESTIMATE from the 1918 tri-weekly schedule (three round trips a week); the 1915-1917 frequency is not sourced.",
+      "sources": [
+       "Segment-level: Ocala Evening Star 22 Sep 1916 p.3; Star 4 Apr 1918 p.4; Star 9 Oct 1918 p.3; Ocala Banner 13 Dec 1918 p.4; start = 16 Apr 1915 reorganization per the report and Wikipedia - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. 1915 and 1917 not directly sampled; headway an estimate from the 1918 timetable.",
+       "https://www.loc.gov/resource/sn84027621/1916-09-22/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84027621/1918-04-04/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn84027621/1918-10-09/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88074815/1918-12-13/ed-1/?sp=4",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     },
+     {
+      "start": 1919,
+      "end": 1922,
+      "headway_min": 1440,
+      "note": "Gasoline motor cars put into Palatka - Ocala service by the receiver Cummings on 17 Dec 1919: 'the new motor driven cars of the Ocklawaha Valley Railroad ... a new better passenger service between Central Florida and the East Coast was inaugurated'; the first trip brought officials 'from Palatka, Rodman and Ft. McCoy' and ran on to Silver Springs (Ocala Banner 19 Dec 1919 p.1). 1921 sources speak of the train being 'run principally as a convenience for the Rodman Lumber Company' (Star, quoted by Palatka Daily News 21 Sep 1921) - a train still ran. Sept 1922 ad: 'Ocklawaha Valley Railroad Company / Silver Springs Route / Fastest, most direct route between PALATKA AND OCALA / Daily Service / Leave Palatka daily 8:00 a.m. Arrive Ocala daily 11:00 a.m.' (Palatka Daily News 14 Sep 1922 p.3). Operations suspended by order of Judge Bullock on Saturday night 30 Dec 1922 (Palatka Daily News 26 Dec 1922 p.1; Ocala Banner 29 Dec 1922 p.1 'THE OCKLAWAHA VALLEY R. R. SCRAPPED ... will cease operations tomorrow night'); the track was then torn up, so there is no freight-only afterlife and 1922 is a known end, not an [OPEN] one. 1920 and 1921 are not directly sampled for a timetable. headway_min 1440 is an ESTIMATE from the Sept 1922 daily service; the 1919-1921 frequency is not sourced.",
+      "sources": [
+       "Segment-level: Ocala Banner 19 Dec 1919 p.1; Palatka Daily News 14 Sep 1922 p.3; Palatka Daily News 26 Dec 1922 p.1; Ocala Banner 29 Dec 1922 p.1 - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. 1920-1921 not directly sampled; headway an estimate.",
+       "https://www.loc.gov/resource/sn88074815/1919-12-19/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn78001466/1922-09-14/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn78001466/1922-12-26/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88074815/1922-12-29/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.134435,
+      29.190873
+     ],
+     [
+      -82.13425,
+      29.192644
+     ],
+     [
+      -82.13322,
+      29.194503
+     ],
+     [
+      -82.132712,
+      29.196904
+     ],
+     [
+      -82.132193,
+      29.197952
+     ],
+     [
+      -82.131455,
+      29.198854
+     ],
+     [
+      -82.130771,
+      29.199423
+     ],
+     [
+      -82.129667,
+      29.20006
+     ],
+     [
+      -82.119302,
+      29.205178
+     ],
+     [
+      -82.117458,
+      29.205624
+     ],
+     [
+      -82.09311,
+      29.209437
+     ],
+     [
+      -82.084837,
+      29.211166
+     ],
+     [
+      -82.068402,
+      29.214802
+     ],
+     [
+      -82.06528,
+      29.215682
+     ],
+     [
+      -82.059186,
+      29.217957
+     ],
+     [
+      -82.058178,
+      29.21821
+     ],
+     [
+      -82.057244,
+      29.218257
+     ],
+     [
+      -82.056086,
+      29.218051
+     ],
+     [
+      -82.055406,
+      29.218202
+     ],
+     [
+      -82.052899,
+      29.216684
+     ],
+     [
+      -82.051856,
+      29.21648
+     ],
+     [
+      -82.050891,
+      29.216667
+     ],
+     [
+      -82.050032,
+      29.217341
+     ],
+     [
+      -82.049487,
+      29.218538
+     ],
+     [
+      -82.047393,
+      29.22751
+     ],
+     [
+      -82.046664,
+      29.229402
+     ],
+     [
+      -82.045571,
+      29.230991
+     ],
+     [
+      -82.044112,
+      29.232564
+     ],
+     [
+      -82.00478,
+      29.261368
+     ],
+     [
+      -82.004201,
+      29.262276
+     ],
+     [
+      -82.003697,
+      29.264157
+     ],
+     [
+      -81.999674,
+      29.289369
+     ],
+     [
+      -81.99948,
+      29.290735
+     ],
+     [
+      -81.999394,
+      29.297013
+     ],
+     [
+      -81.999094,
+      29.299512
+     ],
+     [
+      -81.998193,
+      29.301879
+     ],
+     [
+      -81.997613,
+      29.303011
+     ],
+     [
+      -81.9955,
+      29.306023
+     ],
+     [
+      -81.993558,
+      29.308512
+     ],
+     [
+      -81.993054,
+      29.309438
+     ],
+     [
+      -81.98579,
+      29.327539
+     ],
+     [
+      -81.980812,
+      29.348602
+     ],
+     [
+      -81.979482,
+      29.360179
+     ],
+     [
+      -81.97946,
+      29.362787
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Ocklawaha Valley Railroad",
+    "line": "Ocklawaha Valley: Fort McCoy – Palatka",
+    "id": "ocklawaha-valley-fort-mccoy-palatka",
+    "color": "#1CBF68",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE (Rule 3), derived from two schedules quoted in the research report: Sept 1922 Palatka 8:00 a.m. - Ocala 11:00 a.m. (3 h for ~50 mi, about 27 km/h) and Oct 1918 No. 71 Palatka 6:30 - Ocala 10:30 a.m. (4 h, about 20 km/h, mixed train). Rounded to 25.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror): opstrace.py trace Fort McCoy - Bay Lake - Orange Springs - Kenwood (Ocklawaha Valley-tagged ways 27.5 mi, no straight legs), then assembled by hand from named OSM ways because the tracer could not bridge the unmapped stretch west of Palatka: the main grade way 421392828 from the Fort McCoy vertex to its end, ways 1279822400 / 11273194 / 128620087 (SR 19, tagged as the OV grade), one labelled straight leg, and the Southern Railway ways into Palatka. fetch_gap over 29.40-29.70 N / 81.95-81.60 W returned an OHM 'Ocklawaha Valley Railroad (1909)' way (Orange Springs - Rodman area, 4.5 mi) consistent with the OSM grade; it was not needed. Rodman Reservoir polygon: OSM relation 1202698.",
+    "geometry_quality": "Fort McCoy - Palatka: traced 33.0 mi against a documented ~35 mi (Wikipedia mileposts Fort McCoy MP 35 - Palatka MP 0), about 6% short. Made of: 27.3 mi on OSM way 421392828, an abandoned-grade way named and tagged 'Ocklawaha Valley Railroad' (OSM carries FIXME 'alignment very rough between Bay Lake and Orange Springs', so treat the Bay Lake - Orange Springs stretch, c. 4 mi, as a mapper's approximation rather than a surveyed grade); 0.2 mi on way 1279822400 (same tags); a 0.3 mi unmapped gap bridged straight; 1.9 mi ALONG STATE ROAD 19 (ways 11273194 and 128620087), which OSM itself tags old_railway_operator='Ocklawaha Valley Railroad' (and the report, citing Wikipedia, says SR 19 reuses the grade) - drawn on the road for that reason; then an APPROXIMATED STRAIGHT LEG of 2.65 mi from where the SR 19 grade tagging ends (-81.6899, 29.6289) north-east to the former Southern Railway (Georgia Southern & Florida) grade at -81.6594, 29.6566 - where the road actually joined the Southern is not known, this leg simply continues the grade's own bearing; finally 1.1 mi on the former Southern grade into Palatka (OSM ways 432294792, 158092045, 432294789, 53137696, 432294784, 432294785, old_railway_operator=Southern), ending at -81.641, 29.6542 by Dunham Street, the Southern's Palatka terminal area (the Southern station itself was not pinned exactly). Approximated legs total about 2.95 mi (2.65 + 0.3). RODMAN RESERVOIR: checked against the OSM Rodman Reservoir polygon (relation 1202698) - only 0.1 mi of the drawn grade falls inside the mapped water, so the grade largely skirts the 1968 impoundment; the reservoir's flooded margins and the Kenwood area (Nominatim gave only a road there; the line passes 1.0 km from it) are not verifiable on the ground. Bay Lake 0.5 km, Orange Springs 0.1 km from the line. Cummings/Rodman Junction, Penial (Penile), Stokley (Silver Lake) were not used as waypoints (no reliable geocode). No OSM or OHM line survives for the Rodman spur (see metadata.omitted).",
+    "segments": [
+     {
+      "start": 1915,
+      "end": 1919,
+      "headway_min": 2880,
+      "note": "Ocklawaha Valley Railroad from the 16 Apr 1915 reorganization (H. S. Cummings / Rodman Lumber interests). Part of the through Ocala - Palatka line (Fort McCoy - Palatka section). Positive passenger evidence: 1916, O.V.R.R. excursion Ocala - Fort McCoy and Palatka - Fort McCoy, 'a coach on both trains' (Ocala Evening Star 22 Sep 1916 p.3); 1918, a special train Ocala - Palatka via the Ocklawaha Valley (Star 4 Apr 1918 p.4); Oct 1918 timetable: 'Train No. 71, first class passenger and mixed, leaves Palatka at 6:30 a.m. every Monday, Wednesday and Friday, arriving at Ocala at 10:30 a.m.', No. 72 returning from Ocala 2 p.m. M-W-F to Palatka 5:50 p.m. (Star 9 Oct 1918 p.3, from the Palatka News); Dec 1918 the OV 'came in yesterday carrying two passenger cars and five freight cars' (Ocala Banner 13 Dec 1918 p.4). So by 1918 service was a TRI-WEEKLY MIXED train - passenger service under Rule 1. Nov 1917 the owners moved to stop service and a foreclosure decree followed 24 Dec 1917, but the courts kept the road operating; receivers (Cummings c.1917-21) did not change the operating company. 1915 and 1917 are not directly sampled for a running train; no suspension was found. headway_min 2880 is an ESTIMATE from the 1918 tri-weekly schedule (three round trips a week); the 1915-1917 frequency is not sourced.",
+      "sources": [
+       "Segment-level: Ocala Evening Star 22 Sep 1916 p.3; Star 4 Apr 1918 p.4; Star 9 Oct 1918 p.3; Ocala Banner 13 Dec 1918 p.4; start = 16 Apr 1915 reorganization per the report and Wikipedia - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. 1915 and 1917 not directly sampled; headway an estimate from the 1918 timetable.",
+       "https://www.loc.gov/resource/sn84027621/1916-09-22/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn84027621/1918-04-04/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn84027621/1918-10-09/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88074815/1918-12-13/ed-1/?sp=4",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     },
+     {
+      "start": 1919,
+      "end": 1922,
+      "headway_min": 1440,
+      "note": "Gasoline motor cars put into Palatka - Ocala service by the receiver Cummings on 17 Dec 1919: 'the new motor driven cars of the Ocklawaha Valley Railroad ... a new better passenger service between Central Florida and the East Coast was inaugurated'; the first trip brought officials 'from Palatka, Rodman and Ft. McCoy' and ran on to Silver Springs (Ocala Banner 19 Dec 1919 p.1). 1921 sources speak of the train being 'run principally as a convenience for the Rodman Lumber Company' (Star, quoted by Palatka Daily News 21 Sep 1921) - a train still ran. Sept 1922 ad: 'Ocklawaha Valley Railroad Company / Silver Springs Route / Fastest, most direct route between PALATKA AND OCALA / Daily Service / Leave Palatka daily 8:00 a.m. Arrive Ocala daily 11:00 a.m.' (Palatka Daily News 14 Sep 1922 p.3). Operations suspended by order of Judge Bullock on Saturday night 30 Dec 1922 (Palatka Daily News 26 Dec 1922 p.1; Ocala Banner 29 Dec 1922 p.1 'THE OCKLAWAHA VALLEY R. R. SCRAPPED ... will cease operations tomorrow night'); the track was then torn up, so there is no freight-only afterlife and 1922 is a known end, not an [OPEN] one. 1920 and 1921 are not directly sampled for a timetable. headway_min 1440 is an ESTIMATE from the Sept 1922 daily service; the 1919-1921 frequency is not sourced.",
+      "sources": [
+       "Segment-level: Ocala Banner 19 Dec 1919 p.1; Palatka Daily News 14 Sep 1922 p.3; Palatka Daily News 26 Dec 1922 p.1; Ocala Banner 29 Dec 1922 p.1 - as quoted in research/branches/ocklawaha_valley_railroad.txt (researched 2026-11-10); the tracer did not re-open the newspaper pages. 1920-1921 not directly sampled; headway an estimate.",
+       "https://www.loc.gov/resource/sn88074815/1919-12-19/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn78001466/1922-09-14/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn78001466/1922-12-26/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88074815/1922-12-29/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Ocklawaha_Valley_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.97946,
+      29.362787
+     ],
+     [
+      -81.979911,
+      29.364143
+     ],
+     [
+      -81.987453,
+      29.376223
+     ],
+     [
+      -81.987807,
+      29.37699
+     ],
+     [
+      -81.997442,
+      29.403968
+     ],
+     [
+      -81.997592,
+      29.405557
+     ],
+     [
+      -81.997485,
+      29.420184
+     ],
+     [
+      -81.997453,
+      29.421043
+     ],
+     [
+      -81.997141,
+      29.422426
+     ],
+     [
+      -81.996401,
+      29.424136
+     ],
+     [
+      -81.995489,
+      29.425557
+     ],
+     [
+      -81.985501,
+      29.440339
+     ],
+     [
+      -81.978087,
+      29.449813
+     ],
+     [
+      -81.975802,
+      29.454428
+     ],
+     [
+      -81.969869,
+      29.467207
+     ],
+     [
+      -81.962917,
+      29.481395
+     ],
+     [
+      -81.961554,
+      29.483674
+     ],
+     [
+      -81.947853,
+      29.499615
+     ],
+     [
+      -81.94693,
+      29.500969
+     ],
+     [
+      -81.944495,
+      29.505227
+     ],
+     [
+      -81.940118,
+      29.509961
+     ],
+     [
+      -81.935815,
+      29.51617
+     ],
+     [
+      -81.934775,
+      29.517421
+     ],
+     [
+      -81.933165,
+      29.518364
+     ],
+     [
+      -81.914197,
+      29.523471
+     ],
+     [
+      -81.913038,
+      29.52362
+     ],
+     [
+      -81.908575,
+      29.523807
+     ],
+     [
+      -81.907416,
+      29.524106
+     ],
+     [
+      -81.906236,
+      29.524591
+     ],
+     [
+      -81.905378,
+      29.525207
+     ],
+     [
+      -81.895829,
+      29.534645
+     ],
+     [
+      -81.894617,
+      29.535298
+     ],
+     [
+      -81.893887,
+      29.53542
+     ],
+     [
+      -81.863975,
+      29.536045
+     ],
+     [
+      -81.861894,
+      29.536185
+     ],
+     [
+      -81.841434,
+      29.538556
+     ],
+     [
+      -81.831649,
+      29.539219
+     ],
+     [
+      -81.818345,
+      29.539798
+     ],
+     [
+      -81.81753,
+      29.539984
+     ],
+     [
+      -81.815953,
+      29.541039
+     ],
+     [
+      -81.811028,
+      29.546135
+     ],
+     [
+      -81.805771,
+      29.551213
+     ],
+     [
+      -81.799141,
+      29.557027
+     ],
+     [
+      -81.794538,
+      29.561507
+     ],
+     [
+      -81.792757,
+      29.562879
+     ],
+     [
+      -81.71228,
+      29.613651
+     ],
+     [
+      -81.701731,
+      29.620426
+     ],
+     [
+      -81.68989,
+      29.628933
+     ],
+     [
+      -81.659351,
+      29.656584
+     ],
+     [
+      -81.640987,
+      29.654185
+     ]
+    ]
+   }
+  }
+ ]
+}
