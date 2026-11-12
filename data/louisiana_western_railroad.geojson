@@ -1,0 +1,760 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "description": "The Louisiana Western Railroad's passenger lines in southwest Louisiana: the main line Lafayette - Lake Charles - Orange, Tex. in its own-name era (1880-1882; from 1883 the same corridor is drawn as Southern Pacific in southern_pacific_sunset_route.geojson and later amtrak.geojson), and two branches the LW built but Southern Pacific always operated - the Eunice Branch (Abbeville - Gueydan - Midland - Eunice) and the Lake Arthur Branch (Mallard Junction - Lake Arthur).",
+  "research_report": "research/branches/louisiana_western_railroad.txt (2026-11-12)",
+  "colour_normalization": "Rule 4: Louisiana Western #5D3954 is new - the company had no feature anywhere in data/, and the hex was checked programmatically to be unused by any feature. The two branch features carry company 'Southern Pacific Railroad' and colour #C1272D, both pulled programmatically from southern_pacific_sunset_route.geojson's sp-sunset-route-early feature.",
+  "ownership_splits": "Main line: LW own-name operation from 30 Aug 1880; the map hands off to Southern Pacific at 1882/1883, where the existing SP layer begins (Sunset Route completed 5 Feb 1883). The ICC says the LW ran its own trains to 28 Feb 1885, the start of the SP Company lease; that is an operator-naming question about the SP layer's 1883-1884 years, recorded in not_yet_sourced, not resolved here. Later corporate changes (1902-17 LW 'own organization' inside SP's Atlantic System, USRA 1918-20, T&NO lease 1927, T&NO merger 30 Jun 1934) did not change whose trains ran and are not splits. The branches opened 1894-1908, after SP control, and are SP throughout.",
+  "omitted": [
+   "Main line 1883 onward (report blocks [2], [3]): already drawn as sp-sunset-route-early / sp-sunset-limited and amtrak-36930; no new feature.",
+   "Eunice - Mamou (block [7], opened Jan 1908): drawable NONE - no passenger year sourced (the Rock Island also served Mamou). Omitted under the governing principle, not under Rule 1.",
+   "Eunice Branch 1894-1903 and 1928-1950: withheld, not claimed freight-only - no passenger evidence before 1904 (Midland - Gueydan has a 1902 sighting but the one-feature through route is drawn at the intersection 1904-1927) and none after 1927.",
+   "Lake Arthur Branch every year except 1909: withheld ([ANCHOR]).",
+   "New Iberia - Abbeville, Lake Charles - De Ridder, Lafayette - Opelousas - Alexandria, Lafayette - Baton Rouge, and the MoPac / KCS lines through Lake Charles (blocks [9]-[12]): not Louisiana Western property."
+  ],
+  "not_yet_sourced": [
+   "Main line 1880 start: TSHA's 30 Aug 1880 first through train vs the ICC's 'placed in operation, July 1, 1881'. No local 'first train' story for Aug/Sept 1880 was found.",
+   "Main line operator 1883-1884: the ICC says the LW ran its own trains until the SP Company lease of 1 Mar 1885. If 1883-1884 timetables show the LW name, the SP layer's 1883-1884 years carry the wrong company name (not wrong years). The 1882/1883 hand-off here follows the existing SP layer.",
+   "Main line 1880-1882 frequency: no timetable read; headway null.",
+   "Eunice Branch START: 1904 is the first confirmed year of the through train; passenger service may have begun as early as 1894 (Midland - Eunice) / 1895 (Midland - Gueydan; 1902 Official Guide sighting at Daspit) / 1902 (Gueydan - Abbeville).",
+   "Eunice Branch END [OPEN]: 1927 is the last CONFIRMED year (1927 SP public timetable sightings). The true end is UNKNOWN, somewhere before 1951 (stations daggered freight-only in the Sept-Nov 1951 Official Guide index). A 1930s SP Atlantic System timetable or a Louisiana PSC discontinuance order would settle it. The 1976 ICC abandonment is not a passenger end.",
+   "Lake Arthur Branch: only 1909 proven [ANCHOR]. Opening Dec 1903 (ICC) vs 1904 (local history blog); end unknown before 1951. Mayville is 'pass?' in Fowler.",
+   "Branch train type (passenger local vs mixed) and frequency not established for any branch; headways null.",
+   "Exact Mallard Junction site and the Lake Arthur and Abbeville depot sites not pinned."
+  ],
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Louisiana_Western_Railroad",
+   "https://www.tshaonline.org/handbook/entries/texas-and-new-orleans-railroad",
+   "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+   "Chronicling America (loc.gov): St. Landry Democrat 31 Jul 1880; Lake Charles Echo 18 Dec 1880, 5 Feb 1881; Weekly Iberian 16 Jan and 4 Jun 1904; Morgan City Daily Review 30 May 1918",
+   "research/sources/official_guide_1952.txt (Official Guide, Feb 1952 issue; SP Lines schedules Sept-Nov 1951)"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Louisiana Western Railroad",
+    "line": "Louisiana Western: Lafayette \u2013 Orange",
+    "id": "louisiana-western-lafayette-orange",
+    "color": "#5D3954",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: no 1880-82 timetable read; a typical figure for a new Gulf Coast steam road of the early 1880s. NOT sourced.",
+    "geometry_source": "Traced with opstrace.py over OpenStreetMap (Overpass, maps.mail.ru mirror) plus OpenHistoricalMap (OHM returned no railway ways in these boxes). Preferred at 1x: OSM ways tagged old_railway_operator=SP (262 ways in SW Louisiana / SE Texas, both the live UP track and railway=abandoned grades); fetch_operator_ways and fetch_gap pulled the abandoned branch grades. Douglas-Peucker 8 m, reversals trimmed; no out-and-back spurs. Main line followed today's Union Pacific Lafayette and Lake Charles Subdivisions (OSM old_railway_operator=SP), Lafayette - Rayne - Crowley - Midland - Jennings - Welsh - Lake Charles - Sulphur - Vinton - Sabine River - Orange.",
+    "geometry_quality": "Traced end to end, no straight-line leg: 111.3 mi drawn vs 112.58 mi Lafayette - Orange as built (ICC; 105.888 mi Lafayette - Sabine River LW-owned plus 6.7 mi Louisiana Western Extension Sabine River - Orange). Operator split of the trace: SP-tagged 111.3 mi, untagged 0.1 mi. Waypoints Lafayette 0.4, Scott 0.1, Duson 0.3, Rayne 0.1, Crowley 0.7, Estherwood 0.4, Midland 0.0, Mermentau 0.4, Jennings 0.2, Welsh 0.1, Iowa 0.1, Lake Charles 0.9, Sulphur 0.1, Vinton 0.1, Orange (hand-pinned near the downtown depot; Nominatim returned Orange County) 0.9 km from the line. Includes the 6.7 mi Sabine River - Orange piece that the LW Extension owned and the LW worked (report block [3]). LATER ALIGNMENT: this draws the MODERN alignment (the 2020s UP main line), not necessarily the 1880 one. The Calcasieu River crossing at Lake Charles and the Sabine River crossing near Echo/Orange are drawn on today's bridges and approaches; whether the 1880 timber bridges, the 1880 Lake Charles depot approach or the Lafayette (Vermilionville) junction sat on the same lines has NOT been checked, and no relocation date was found either way. Treat the river crossings and the two terminal approaches as the later alignment.",
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1882,
+      "headway_min": null,
+      "note": "Louisiana Western own-name operation: one link of the New Orleans (Algiers) - Morgan City - Lafayette - Lake Charles - Orange - Houston through route (Morgan's Louisiana and Texas east of Lafayette, Texas and New Orleans west of Orange). First through scheduled Houston - New Orleans train 30 Aug 1880 (TSHA). The LW managers promised completion 'by the 1st of September' 1880 (N.O. Picayune, reprinted St. Landry Democrat 31 Jul 1880). LW passenger trains running by Feb 1881 ('a train of passenger cars filled with people from the heart of Texas', Lake Charles Echo 5 Feb 1881). CONFLICT, recorded not resolved: the ICC valuation gives 'placed in operation, July 1, 1881', read here as formal acceptance from the contractor because passenger trains demonstrably ran earlier; the 1880 start rests on TSHA. END 1882 IS A DISPLAY BOUNDARY, not the end of service: from 1883 the same trains are drawn as Southern Pacific in southern_pacific_sunset_route.geojson (sp-sunset-route-early, Sunset Route completed 5 Feb 1883). Corporately the LW ran its own trains to 28 Feb 1885 (ICC), so the 1883-1884 years may carry the wrong company NAME on the SP layer (not wrong years) - see metadata.not_yet_sourced. Huntington's 1881 stock purchase (TSHA) did not change who ran the trains. Frequency not established for 1880-82 (no timetable read): headway_min deliberately left null.",
+      "sources": [
+       "Segment-level: start year from TSHA (first through scheduled train 30 Aug 1880) and contemporary newspapers (St. Landry Democrat 31 Jul 1880; Lake Charles Echo 18 Dec 1880 and 5 Feb 1881); operating organization and the conflicting 1 Jul 1881 date from the ICC valuation. End year 1882 is a hand-off to the existing SP layer, not a sourced end; headway not sourced.",
+       "https://www.tshaonline.org/handbook/entries/texas-and-new-orleans-railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Louisiana_Western_Railroad",
+       "https://www.loc.gov/resource/sn88064537/1880-07-31/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn86053696/1880-12-18/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86053696/1881-02-05/ed-1/?sp=2"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -92.014603,
+      30.227758
+     ],
+     [
+      -92.016871,
+      30.231965
+     ],
+     [
+      -92.017451,
+      30.232754
+     ],
+     [
+      -92.018621,
+      30.233732
+     ],
+     [
+      -92.020393,
+      30.234515
+     ],
+     [
+      -92.022184,
+      30.234761
+     ],
+     [
+      -92.039587,
+      30.234875
+     ],
+     [
+      -92.043735,
+      30.235436
+     ],
+     [
+      -92.064359,
+      30.235463
+     ],
+     [
+      -92.066073,
+      30.23538
+     ],
+     [
+      -92.069391,
+      30.234999
+     ],
+     [
+      -92.072019,
+      30.234942
+     ],
+     [
+      -92.303044,
+      30.235808
+     ],
+     [
+      -92.305095,
+      30.235702
+     ],
+     [
+      -92.307571,
+      30.235305
+     ],
+     [
+      -92.310494,
+      30.234404
+     ],
+     [
+      -92.431631,
+      30.183492
+     ],
+     [
+      -92.43486,
+      30.18215
+     ],
+     [
+      -92.437935,
+      30.181218
+     ],
+     [
+      -92.440256,
+      30.180847
+     ],
+     [
+      -92.442104,
+      30.180749
+     ],
+     [
+      -92.557118,
+      30.179465
+     ],
+     [
+      -92.55919,
+      30.179602
+     ],
+     [
+      -92.561287,
+      30.179991
+     ],
+     [
+      -92.577087,
+      30.184896
+     ],
+     [
+      -92.582446,
+      30.186591
+     ],
+     [
+      -92.582446,
+      30.186591
+     ],
+     [
+      -92.597223,
+      30.191178
+     ],
+     [
+      -92.599357,
+      30.191721
+     ],
+     [
+      -92.601715,
+      30.192044
+     ],
+     [
+      -92.619695,
+      30.193368
+     ],
+     [
+      -92.621352,
+      30.193655
+     ],
+     [
+      -92.623286,
+      30.194302
+     ],
+     [
+      -92.62448,
+      30.194856
+     ],
+     [
+      -92.625921,
+      30.195769
+     ],
+     [
+      -92.677754,
+      30.235152
+     ],
+     [
+      -92.679223,
+      30.236119
+     ],
+     [
+      -92.680764,
+      30.236768
+     ],
+     [
+      -92.682082,
+      30.237094
+     ],
+     [
+      -92.683465,
+      30.237264
+     ],
+     [
+      -92.775054,
+      30.2376
+     ],
+     [
+      -92.992786,
+      30.23811
+     ],
+     [
+      -93.159039,
+      30.238294
+     ],
+     [
+      -93.193492,
+      30.238191
+     ],
+     [
+      -93.213427,
+      30.238331
+     ],
+     [
+      -93.495577,
+      30.236879
+     ],
+     [
+      -93.497889,
+      30.236572
+     ],
+     [
+      -93.499513,
+      30.236186
+     ],
+     [
+      -93.501559,
+      30.235497
+     ],
+     [
+      -93.503306,
+      30.234695
+     ],
+     [
+      -93.658317,
+      30.148815
+     ],
+     [
+      -93.659652,
+      30.148203
+     ],
+     [
+      -93.660908,
+      30.147832
+     ],
+     [
+      -93.662317,
+      30.147618
+     ],
+     [
+      -93.663771,
+      30.1476
+     ],
+     [
+      -93.665038,
+      30.14775
+     ],
+     [
+      -93.693426,
+      30.153593
+     ],
+     [
+      -93.696822,
+      30.153952
+     ],
+     [
+      -93.698673,
+      30.153908
+     ],
+     [
+      -93.7003,
+      30.153732
+     ],
+     [
+      -93.716056,
+      30.151255
+     ],
+     [
+      -93.744268,
+      30.150174
+     ],
+     [
+      -93.745903,
+      30.149884
+     ],
+     [
+      -93.747277,
+      30.149342
+     ],
+     [
+      -93.74873,
+      30.148322
+     ],
+     [
+      -93.749788,
+      30.147015
+     ],
+     [
+      -93.750459,
+      30.145294
+     ],
+     [
+      -93.750542,
+      30.143764
+     ],
+     [
+      -93.741611,
+      30.099272
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Eunice Branch",
+    "id": "sp-eunice-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: no branch running time read; a typical figure for an SP branch local (passenger or mixed - not established). NOT sourced.",
+    "geometry_source": "Traced with opstrace.py over OpenStreetMap (Overpass, maps.mail.ru mirror) plus OpenHistoricalMap (OHM returned no railway ways in these boxes). Preferred at 1x: OSM ways tagged old_railway_operator=SP (262 ways in SW Louisiana / SE Texas, both the live UP track and railway=abandoned grades); fetch_operator_ways and fetch_gap pulled the abandoned branch grades. Douglas-Peucker 8 m, reversals trimmed; no out-and-back spurs. Abbeville - Kaplan - Gueydan: abandoned SP grade (OSM railway=abandoned, old_railway_operator=SP). Gueydan - Morse - Midland: the surviving track (today's Louisiana and Delta 'Midland Branch', OSM old_railway_operator=SP). Midland - Egan - Iota - Eunice: abandoned SP grade, then surviving track into Eunice.",
+    "geometry_quality": "Traced end to end, no straight-line leg: 58.4 mi drawn vs 58.64 mi documented (ICC: Gueydan - Abbeville 23.83 + Midland - Gueydan 11.10 + Midland - Eunice 23.71; Fowler table 62 MP 20.9 - 44.7 - 55.8 - 79.1 = 58.2 mi). All on SP-tagged ways (58.5 mi before simplification). Waypoints Abbeville 0.6, Kaplan 0.6, Gueydan 0.6, Morse 0.0, Midland 0.0-0.2, Egan 0.1, Iota 0.0, Eunice 0.3 km from the line. The branch is drawn through the main-line junction at Midland as one continuous line (the Abbeville - Midland and Midland - Eunice pieces meet the main line there). LATER ALIGNMENT: the grades drawn are those surviving in OSM (abandoned 1970s-80s, or still in use as the Louisiana and Delta); built 1894-1902 by the LW and never known to have been relocated, but no relocation check was made. The Abbeville terminal is where the SP grade reaches town; the SP Abbeville depot site is not pinned.",
+    "segments": [
+     {
+      "start": 1904,
+      "end": 1927,
+      "headway_min": null,
+      "note": "The Southern Pacific 'Eunice Branch' train, which ran New Iberia - Abbeville - Kaplan - Gueydan - Morse - Midland - Iota - Eunice (the New Iberia - Abbeville piece was not LW property and is not drawn here). Built by the Louisiana Western: Midland - Eunice opened Sept 1894, Midland - Gueydan Oct 1895, Gueydan - Abbeville May 1902 (ICC); SP (Atlantic System) trains from the start. BOTH ENDS ARE CONFIRMED YEARS, NOT KNOWN ENDS. START 1904: first year a source shows the through train - the New Iberia 'Railroad Schedule' lists 'Eunice Branch lvs 12 37 p m' in every Weekly Iberian issue read 16 Jan - 4 Jun 1904; passenger service may well have begun earlier (Midland - Gueydan has a 1902 Official Guide sighting at Daspit; the branch opened 1894), but 1894-1903 is withheld. Also confirmed 1918 ('the passenger train on the Eunice Branch' at the Abbeville depot, Abbeville Meridional quoted in Morgan City Daily Review 30 May 1918). END 1927 is the last CONFIRMED year (Fowler: Amy and Haire stops in the 1927 SP public timetable, on the Midland - Eunice and Gueydan - Abbeville pieces; Midland - Gueydan in 1927 is inferred from the through route). The branch stations are daggered 'For freight only' in the Sept-Nov 1951 Official Guide index, so passengers ended at an UNKNOWN year between 1928 and 1951. Do not extend without evidence; do not use the 1976 ICC abandonment (AB-12 Sub 52) as a passenger end. Passenger local vs mixed not established; headway_min deliberately left null. Eunice - Mamou (opened Jan 1908) is omitted: no passenger year sourced.",
+      "sources": [
+       "Segment-level: start year from the Weekly Iberian's 1904 public schedule; 1918 confirmed by the Morgan City Daily Review; end year from Fowler table 62's 1927 company-timetable sightings (Amy, Haire). Both ends are last/first CONFIRMED years only. Opening dates from the ICC valuation; 1951 freight-only status from the Official Guide (Feb 1952 issue) index. Headway not sourced.",
+       "https://www.loc.gov/resource/sn88064323/1904-01-16/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn88064323/1904-06-04/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn88064293/1918-05-30/ed-1/?sp=3",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Louisiana_Western_Railroad",
+       "research/sources/official_guide_1952.txt (index lines 297490, 278793, 316783, 288682, 301030, 247175)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -92.138002,
+      29.970861
+     ],
+     [
+      -92.140626,
+      29.97127
+     ],
+     [
+      -92.14556,
+      29.973061
+     ],
+     [
+      -92.148913,
+      29.97371
+     ],
+     [
+      -92.159151,
+      29.974978
+     ],
+     [
+      -92.251848,
+      29.987579
+     ],
+     [
+      -92.31524,
+      30.006326
+     ],
+     [
+      -92.31651,
+      30.006554
+     ],
+     [
+      -92.317624,
+      30.006647
+     ],
+     [
+      -92.393535,
+      30.005298
+     ],
+     [
+      -92.394829,
+      30.00535
+     ],
+     [
+      -92.410945,
+      30.007197
+     ],
+     [
+      -92.412431,
+      30.007259
+     ],
+     [
+      -92.467843,
+      30.007083
+     ],
+     [
+      -92.504413,
+      30.006833
+     ],
+     [
+      -92.50609,
+      30.006878
+     ],
+     [
+      -92.507463,
+      30.007083
+     ],
+     [
+      -92.50909,
+      30.007567
+     ],
+     [
+      -92.510462,
+      30.008272
+     ],
+     [
+      -92.511615,
+      30.009108
+     ],
+     [
+      -92.512665,
+      30.010179
+     ],
+     [
+      -92.513547,
+      30.011515
+     ],
+     [
+      -92.514139,
+      30.01293
+     ],
+     [
+      -92.514433,
+      30.014458
+     ],
+     [
+      -92.514593,
+      30.07282
+     ],
+     [
+      -92.514335,
+      30.07412
+     ],
+     [
+      -92.513561,
+      30.075296
+     ],
+     [
+      -92.511124,
+      30.077566
+     ],
+     [
+      -92.499924,
+      30.085746
+     ],
+     [
+      -92.498907,
+      30.086596
+     ],
+     [
+      -92.498331,
+      30.087271
+     ],
+     [
+      -92.497907,
+      30.088121
+     ],
+     [
+      -92.497755,
+      30.089059
+     ],
+     [
+      -92.498308,
+      30.177102
+     ],
+     [
+      -92.49844,
+      30.178546
+     ],
+     [
+      -92.497905,
+      30.179542
+     ],
+     [
+      -92.499091,
+      30.180541
+     ],
+     [
+      -92.50013,
+      30.180826
+     ],
+     [
+      -92.500814,
+      30.181267
+     ],
+     [
+      -92.501079,
+      30.181652
+     ],
+     [
+      -92.506491,
+      30.199284
+     ],
+     [
+      -92.506759,
+      30.200218
+     ],
+     [
+      -92.507137,
+      30.202729
+     ],
+     [
+      -92.507248,
+      30.208644
+     ],
+     [
+      -92.507221,
+      30.236634
+     ],
+     [
+      -92.506926,
+      30.308166
+     ],
+     [
+      -92.506764,
+      30.315008
+     ],
+     [
+      -92.506211,
+      30.316809
+     ],
+     [
+      -92.505429,
+      30.318165
+     ],
+     [
+      -92.497324,
+      30.329162
+     ],
+     [
+      -92.483374,
+      30.348726
+     ],
+     [
+      -92.419183,
+      30.436552
+     ],
+     [
+      -92.418571,
+      30.438407
+     ],
+     [
+      -92.418457,
+      30.441078
+     ],
+     [
+      -92.421292,
+      30.461994
+     ],
+     [
+      -92.421281,
+      30.463196
+     ],
+     [
+      -92.421026,
+      30.464403
+     ],
+     [
+      -92.420608,
+      30.465422
+     ],
+     [
+      -92.415362,
+      30.476028
+     ],
+     [
+      -92.41495,
+      30.477114
+     ],
+     [
+      -92.414671,
+      30.47904
+     ],
+     [
+      -92.414636,
+      30.480334
+     ],
+     [
+      -92.414665,
+      30.493462
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Lake Arthur Branch",
+    "id": "sp-lake-arthur-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: no branch running time read; a typical figure for an SP branch local (passenger or mixed - not established). NOT sourced.",
+    "geometry_source": "Traced with opstrace.py over OpenStreetMap (Overpass, maps.mail.ru mirror) plus OpenHistoricalMap (OHM returned no railway ways in these boxes). Preferred at 1x: OSM ways tagged old_railway_operator=SP (262 ways in SW Louisiana / SE Texas, both the live UP track and railway=abandoned grades); fetch_operator_ways and fetch_gap pulled the abandoned branch grades. Douglas-Peucker 8 m, reversals trimmed; no out-and-back spurs. Mallard Junction (main line ~3.5 mi east of the Lake Charles depot; hand-pinned, no geocode exists) - Holmwood - Bell City - Hayes - Thornwell: abandoned SP grade (OSM ways 138746744 and 1493519742, railway=abandoned, old_railway_operator=SP). The OSM grade stops 1.3 mi short of Lake Arthur town.",
+    "geometry_quality": "Traced Mallard Junction - Thornwell - west edge of Lake Arthur on the abandoned SP grade (31.6 mi); ONE APPROXIMATED LEG: a 1.4 mi straight line from where the OSM grade ends (30.0881 N, 92.6929 W) to Lake Arthur town centre, because no OSM or OHM trace of the last stretch or of the depot site was found. Total 33.0 mi drawn vs 34.10 mi documented (ICC: Mallard Jct - Hayes 18.61 + Hayes - Lake Arthur 15.49; Fowler table 66 33.4 mi). Waypoints Mallard Junction 0.2, Holmwood 0.0, Bell City 0.1, Hayes 0.0, Thornwell 0.1 km from the traced line. Mallard Junction was hand-pinned on the main line east of Lake Charles; the exact junction site is not sourced. LATER ALIGNMENT: the grade is the one abandoned by the SP/T&NO in later years; built 1903 and not known to have been relocated, but not checked.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1909,
+      "headway_min": null,
+      "note": "[ANCHOR] One single proven year. Bell City (Daniels Switch) is a flag stop in the 1909 SP working timetable (Fowler table 66, '1909w(fstop)') - a passenger stop. Service certainly ran wider both ways - the branch opened to Hayes Aug 1903 and Lake Arthur Dec 1903 (ICC; a local history page says 1904, with an excursion - conflict recorded) and the stations are daggered freight-only in the Sept-Nov 1951 Official Guide index - but NO OTHER YEAR IS CONFIRMED. Do not widen this anchor to look plausible, and do not delete it to tidy the map. Passenger local vs mixed not established; headway_min deliberately left null.",
+      "sources": [
+       "Segment-level: the single year 1909 rests on Fowler table 66 (Bell City 1909 working-timetable flag stop). Opening dates from the ICC valuation (1903) and a local history blog (1904); 1951 freight-only from the Official Guide (Feb 1952 issue) index. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Louisiana_Western_Railroad",
+       "https://history-hunts-warehouse.blogspot.com/2011/06/lake-arthur-to-mallard-junction-on.html",
+       "research/sources/official_guide_1952.txt (index lines 295030, 303796)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -93.148443,
+      30.228761
+     ],
+     [
+      -93.125396,
+      30.194065
+     ],
+     [
+      -93.125195,
+      30.193216
+     ],
+     [
+      -93.125413,
+      30.19226
+     ],
+     [
+      -93.1241,
+      30.192114
+     ],
+     [
+      -93.114194,
+      30.177434
+     ],
+     [
+      -93.082298,
+      30.128946
+     ],
+     [
+      -93.080582,
+      30.126515
+     ],
+     [
+      -93.079069,
+      30.124835
+     ],
+     [
+      -93.077556,
+      30.123647
+     ],
+     [
+      -93.075915,
+      30.122895
+     ],
+     [
+      -93.074413,
+      30.122496
+     ],
+     [
+      -93.073285,
+      30.122387
+     ],
+     [
+      -92.989117,
+      30.115073
+     ],
+     [
+      -92.962512,
+      30.112564
+     ],
+     [
+      -92.9175,
+      30.108572
+     ],
+     [
+      -92.91007,
+      30.10776
+     ],
+     [
+      -92.900484,
+      30.107008
+     ],
+     [
+      -92.826233,
+      30.100129
+     ],
+     [
+      -92.810912,
+      30.098621
+     ],
+     [
+      -92.78386,
+      30.096286
+     ],
+     [
+      -92.692933,
+      30.088062
+     ],
+     [
+      -92.671531,
+      30.080764
+     ]
+    ]
+   }
+  }
+ ]
+}
