@@ -1,0 +1,2142 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The New Orleans Great Northern (Ozone Route), operator 1906 - June 30, 1933, and its predecessor the East Louisiana Railroad (1893 - 1905 as drawn). One feature per drawable span and operator (Rule 4). Every NOGN span ending in 1933 ends at the July 1, 1933 lease to the Gulf, Mobile and Northern, not at a service end; the GM&N and GM&O continuations are drawn in gulf_mobile_and_northern_railroad.geojson and are not redrawn here. Geometry for the alignments the GM&N layer already traced is cut from that layer's coordinates (identical shapes).",
+  "research_report": "research/branches/new_orleans_great_northern_railroad.txt (2026-11-11)",
+  "sources": [
+   "Official Guide, Sept 1910, NOGN page, schedules of Nov 14, 1909: https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+   "NOGN public timetable effective Mar 30, 1913: https://www.msrailroads.com/images/NOGN_timetable.jpg",
+   "Lemly, James H., The Gulf, Mobile and Ohio (1953), ch. VIII, XI, XXI: https://acmeme.com/gmo/chapter_viii.htm ; https://acmeme.com/gmo/chapter_xi.htm ; https://acmeme.com/gmo/chapter___xxi.htm",
+   "St. Tammany Farmer Dec 29, 1906 p.4, Aug 31, 1907 p.5, Sept 9, 1922 p.1; Bogalusa Enterprise Sept 14, 1922 p.2 (Chronicling America)",
+   "Fowler station lists, Louisiana SL 248 and Mississippi SL 246: https://www.branchline.uk/jfpdf/louisianarrs.pdf ; https://www.branchline.uk/jfpdf/mississippirrs.pdf",
+   "https://en.wikipedia.org/wiki/New_Orleans_Great_Northern_Railroad",
+   "https://www.msrailroads.com/NOGN.htm",
+   "https://hawkinsrails.net/mainlines/nogn/nogn.htm",
+   "https://en.wikipedia.org/wiki/East_Louisiana_Railroad"
+  ],
+  "geometry_sources": "OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror, traced with opstrace.py on ways tagged old_railway_operator=GM&O (no NOGN/East Louisiana mark exists in OSM) and, for 1909-1927 Nogan - Jackson, old_railway_operator=IC; main line, Bogue Chitto Branch and Shore Line coordinates reused from gulf_mobile_and_northern_railroad.geojson. OpenHistoricalMap was queried for St. Tammany Parish and returned no railway ways.",
+  "not_yet_sourced": [
+   "[OPEN] start years (earliest confirmed, not openings): nogn-main-florenville-bogalusa 1906, nogn-shore-line-abita-springs-covington 1906, nogn-shore-line-covington-folsom 1906, nogn-main-bogalusa-st-paul 1907, elr-pearl-river-covington and elr-mandeville-branch 1893.",
+   "[OPEN] end years (last confirmed, not known ends): nogn-shore-line-covington-folsom 1913, nogn-columbia-branch 1913.",
+   "[ANCHOR] single year: nogn-pearl-river-branch 1913 (mixed trains).",
+   "Start brackets withheld: New Orleans - Florenville 1906-1909 (the 1906 routing - via North Slidell or via Pearl River and the ex-ELR - is unknown); North Slidell - Abita Springs 1906-1909 (shore route opening not dated); St. Paul - Nogan 1907-1909.",
+   "NOGN -> GM&N split date: 1933 lease used vs 1930 'Louisiana Division' (Lemly ch. VIII). If changed, move it in both layers.",
+   "Headways and speeds are estimates; only the 1909 Guide and 1913 timetable were read.",
+   "The St. Tammany Farmer 1905-1908 (Chronicling America) should settle the 1906 New Orleans - Florenville routing and the shore route opening."
+  ],
+  "omitted": "Report block [8] (Mandeville Junction - Abita Springs and the Mandeville branch under the NOGN): drawable NONE, no NOGN passenger year - drawn only for the ELR to 1905. Blocks [10]-[12] (GM&N/GM&O era): already drawn in gulf_mobile_and_northern_railroad.geojson. Great Southern Lumber Co. logging lines and NOGN 'Branch B'/'Branch D' spurs: no passenger timetable (Rule 1). Bus tables (1939 GM&N, 1951 GM&O) are not rail evidence. ELR New Orleans - Pearl River and NOGN New Orleans - Slidell are NO&NE track; only the latter is drawn, inside the NOGN main-line feature, because NOGN through trains to Jackson ran over it.",
+  "pulled": "2026-11-11"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Main Line (New Orleans – Florenville)",
+    "id": "nogn-main-new-orleans-florenville",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: Nov 14, 1909 Official Guide, trains 62/63 New Orleans 6:30 AM - Jackson 1:50 PM, 185.6 mi in 7 h 20 min = ~41 km/h including stops (1913 tt: No. 2 6:50 AM - 3:00 PM, ~37 km/h). Other years unsourced.",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-jackson-ms-new-orleans, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 40.3 mi against a documented 44.6 mi (Nov 1909 Guide: New Orleans 0 - Florenville 44.6). Cut from gmn-jackson-ms-new-orleans; its caveats carry forward. New Orleans - Slidell (30.1 mi traced vs 34.7 documented) is TRACKAGE RIGHTS over ANOTHER COMPANY'S TRACK, the Southern's New Orleans and Northeastern, drawn on the present NS NO&NE District (old_railway_operator=Southern) across the Lake Pontchartrain trestle; it is drawn here only because NOGN trains ran over it. STRAIGHT-LINE LEGS: the final 2.8 mi from the NO&NE at Almonaster/Press St. to the site of New Orleans Terminal Station (Canal and Basin streets; approach tracks lifted) is a straight line, not the historical approach route; and a 0.34 mi straight join at Slidell where the Southern and GM&O-tagged traces meet. Slidell - North Slidell - Florenville (10.3 mi traced vs 9.9 documented) is on OSM ways tagged old_railway_operator=GM&O. LATER ALIGNMENT: corridor as mapped today; the 1909-1933 lake-trestle and city approach alignments were not separately verified. Terminal Station was the New Orleans terminal for all drawn years (from 1908; the Press St. terminal used 1906-1908 falls before this span).",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1933,
+      "headway_min": 360,
+      "note": "New Orleans (Terminal Station) - Slidell - North Slidell - Florenville. Start 1909 = the Nov 14, 1909 Official Guide, the first source showing the main line via North Slidell (trains 62/63 New Orleans - Jackson plus 54/55, 56, 58, 59 to Bogalusa / West Columbia). START BRACKET 1906-1909: NOGN trains reached Florenville from New Orleans by Dec 1906, but the route they took is NOT established - either the NO&NE to Slidell and NOGN's new Slidell - Florenville line, or the NO&NE to Pearl River and the ex-ELR (see nogn-pearl-river-branch) - so 1906-1908 are withheld here rather than guessed. New Orleans terminal: Press St. 1906-1908, Terminal Station from 1908. New Orleans - Slidell (34.7 mi) was trackage rights over the New Orleans and Northeastern (Southern / Queen and Crescent); NOGN's own rails began at Slidell (depot shared with the NO&NE, 1913 building). 1913 tt: Nos. 2, 4, 8, 10, 12 plus Sunday-only and Bogalusa trains. Sept 1922: NOGN warned it might 'have to discontinue some of its passenger trains' because of bus competition - a threat, not a discontinuance. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 360 is an estimate from the 1909 and 1913 tables (about four trains each way); headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909 schedules (Sept 1910 Guide page); NOGN public timetable eff. Mar 30, 1913; St. Tammany Farmer Dec 29, 1906 p.4; Lemly ch. XXI; Fowler LA line 8 (research report block [1]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4",
+       "https://acmeme.com/gmo/chapter___xxi.htm",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.0712,
+      29.9577
+     ],
+     [
+      -90.029611,
+      29.9777
+     ],
+     [
+      -90.026614,
+      29.988021
+     ],
+     [
+      -90.027717,
+      29.992796
+     ],
+     [
+      -90.028474,
+      30.000385
+     ],
+     [
+      -90.028321,
+      30.003109
+     ],
+     [
+      -90.028107,
+      30.0037
+     ],
+     [
+      -90.027616,
+      30.004114
+     ],
+     [
+      -90.024987,
+      30.004814
+     ],
+     [
+      -90.024026,
+      30.005186
+     ],
+     [
+      -90.023582,
+      30.005729
+     ],
+     [
+      -90.023504,
+      30.006323
+     ],
+     [
+      -90.026826,
+      30.016699
+     ],
+     [
+      -90.029916,
+      30.025031
+     ],
+     [
+      -90.031036,
+      30.028856
+     ],
+     [
+      -90.031346,
+      30.029162
+     ],
+     [
+      -90.032767,
+      30.029795
+     ],
+     [
+      -90.033308,
+      30.030677
+     ],
+     [
+      -90.034039,
+      30.031437
+     ],
+     [
+      -90.026866,
+      30.033336
+     ],
+     [
+      -90.018205,
+      30.035896
+     ],
+     [
+      -90.0114,
+      30.038163
+     ],
+     [
+      -90.00415,
+      30.040824
+     ],
+     [
+      -89.997026,
+      30.043715
+     ],
+     [
+      -89.988845,
+      30.047373
+     ],
+     [
+      -89.982043,
+      30.050716
+     ],
+     [
+      -89.975102,
+      30.054413
+     ],
+     [
+      -89.968384,
+      30.058345
+     ],
+     [
+      -89.962441,
+      30.062136
+     ],
+     [
+      -89.958132,
+      30.065101
+     ],
+     [
+      -89.953089,
+      30.068801
+     ],
+     [
+      -89.945458,
+      30.074798
+     ],
+     [
+      -89.941186,
+      30.078341
+     ],
+     [
+      -89.934536,
+      30.084181
+     ],
+     [
+      -89.930427,
+      30.088003
+     ],
+     [
+      -89.926354,
+      30.092033
+     ],
+     [
+      -89.922577,
+      30.096011
+     ],
+     [
+      -89.916132,
+      30.103479
+     ],
+     [
+      -89.802636,
+      30.245011
+     ],
+     [
+      -89.800853,
+      30.247443
+     ],
+     [
+      -89.800064,
+      30.24874
+     ],
+     [
+      -89.789202,
+      30.26725
+     ],
+     [
+      -89.788636,
+      30.268659
+     ],
+     [
+      -89.786679,
+      30.272063
+     ],
+     [
+      -89.783789,
+      30.276369
+     ],
+     [
+      -89.78225,
+      30.279782
+     ],
+     [
+      -89.779061,
+      30.287884
+     ],
+     [
+      -89.77889,
+      30.288478
+     ],
+     [
+      -89.778831,
+      30.289522
+     ],
+     [
+      -89.779022,
+      30.2905
+     ],
+     [
+      -89.785728,
+      30.30659
+     ],
+     [
+      -89.791145,
+      30.319
+     ],
+     [
+      -89.792747,
+      30.322008
+     ],
+     [
+      -89.79956,
+      30.339729
+     ],
+     [
+      -89.831749,
+      30.416577
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Main Line (Florenville – Bogalusa)",
+    "id": "nogn-main-florenville-bogalusa",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: Nov 14, 1909 Official Guide, trains 62/63 New Orleans 6:30 AM - Jackson 1:50 PM, 185.6 mi in 7 h 20 min = ~41 km/h including stops (1913 tt: No. 2 6:50 AM - 3:00 PM, ~37 km/h). Other years unsourced.",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-jackson-ms-new-orleans, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 27.1 mi against a documented 26.0 mi (Nov 1909 Guide: Florenville 44.6 - Bogalusa 70.6). Cut from gmn-jackson-ms-new-orleans; all on OSM ways tagged old_railway_operator=GM&O (abandoned grade, parts now LA-3241), no straight-line legs. Cut at Bogalusa by projecting the town point onto the line (1.1 km off the line; the depot site was not pinned). LATER ALIGNMENT: corridor as mapped today.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1933,
+      "headway_min": 480,
+      "note": "[OPEN] START - 1906 is the earliest CONFIRMED year, not a known opening date: St. Tammany Farmer, Dec 29, 1906, says the 7:20 AM ex New Orleans 'has at Florenville made connection with a combination freight and passenger train which went on to Bogalusa, and passengers going to Bogalusa had to transfer at Florenville' - a MIXED train, which counts as passenger service. Lemly ch. XXI: 'The 36 miles of line from Slidell to Bogalusa were completed in 1906.' Do not move the start earlier without evidence. Rio (mi 64.6) is the junction of the Bogue Chitto Branch. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 480 is an estimate (1909: about three trains each way New Orleans - Bogalusa); headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909 schedules (Sept 1910 Guide page); NOGN public timetable eff. Mar 30, 1913; St. Tammany Farmer Dec 29, 1906 p.4; Lemly ch. XXI; Fowler LA line 8 (research report block [1]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4",
+       "https://acmeme.com/gmo/chapter___xxi.htm",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.831749,
+      30.416577
+     ],
+     [
+      -89.862045,
+      30.488908
+     ],
+     [
+      -89.90222,
+      30.584245
+     ],
+     [
+      -89.902809,
+      30.585752
+     ],
+     [
+      -89.903236,
+      30.587358
+     ],
+     [
+      -89.903511,
+      30.589733
+     ],
+     [
+      -89.897483,
+      30.665267
+     ],
+     [
+      -89.892203,
+      30.683575
+     ],
+     [
+      -89.89054,
+      30.690088
+     ],
+     [
+      -89.889434,
+      30.693867
+     ],
+     [
+      -89.888254,
+      30.697035
+     ],
+     [
+      -89.871922,
+      30.752512
+     ],
+     [
+      -89.859961,
+      30.793447
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Main Line (Bogalusa – St. Paul)",
+    "id": "nogn-main-bogalusa-st-paul",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: Nov 14, 1909 Official Guide, trains 62/63 New Orleans 6:30 AM - Jackson 1:50 PM, 185.6 mi in 7 h 20 min = ~41 km/h including stops (1913 tt: No. 2 6:50 AM - 3:00 PM, ~37 km/h). Other years unsourced.",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-jackson-ms-new-orleans, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 20.1 mi against a documented ~21.1 mi (Bogalusa 70.6 - Angie 84.0 per Nov 1909 Guide, plus 7.7 mi Angie - St. Paul per Fowler). Cut from gmn-jackson-ms-new-orleans; all on OSM ways tagged old_railway_operator=GM&O (CN Bogalusa Subdivision), no straight-line legs. St. Paul cut by projecting the GNIS point (99 m off the line). LATER ALIGNMENT: corridor as mapped today.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1933,
+      "headway_min": 720,
+      "note": "Bogalusa - Varnado - Angie - St. Paul (Baker City), MS. [OPEN] START - 1907 is the earliest CONFIRMED year: through New Orleans - Angie service was announced in Dec 1906 for 'the near future' (St. Tammany Farmer), and St. Paul [Baker City] appears in a 1907 NOGN public timetable (Fowler MS line 60, '1907t'), so trains reached at least Baker City in 1907. Lemly: ~36 mi built beyond Bogalusa by June 1907. The first run is not dated. 1925: motor train Bogalusa - Jackson (Lemly ch. XXI). END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 720 is an estimate (1909: one through train plus Bogalusa - West Columbia trains; 1913: two daily plus Sunday); headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909; NOGN tt Mar 30, 1913; Lemly ch. XXI; Fowler MS line 60 ('St. Paul [Baker City 1907t]'); St. Tammany Farmer Dec 29, 1906 p.4 (research report block [2]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://acmeme.com/gmo/chapter___xxi.htm",
+       "https://www.branchline.uk/jfpdf/mississippirrs.pdf",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.859961,
+      30.793447
+     ],
+     [
+      -89.795393,
+      31.014417
+     ],
+     [
+      -89.795018,
+      31.016737
+     ],
+     [
+      -89.79505,
+      31.019003
+     ],
+     [
+      -89.795201,
+      31.020055
+     ],
+     [
+      -89.795827,
+      31.022399
+     ],
+     [
+      -89.799499,
+      31.03252
+     ],
+     [
+      -89.814961,
+      31.074916
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Main Line (St. Paul – Nogan)",
+    "id": "nogn-main-st-paul-nogan",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: Nov 14, 1909 Official Guide, trains 62/63 New Orleans 6:30 AM - Jackson 1:50 PM, 185.6 mi in 7 h 20 min = ~41 km/h including stops (1913 tt: No. 2 6:50 AM - 3:00 PM, ~37 km/h). Other years unsourced.",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-jackson-ms-new-orleans, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 90.0 mi against a documented ~89.9 mi (St. Paul ~91.7 - Nogan 181.6, Nov 1909 Guide and Fowler). Cut from gmn-jackson-ms-new-orleans; all on OSM ways tagged old_railway_operator=GM&O (CN Bogalusa Subdivision and abandoned grade north of Wanilla), no straight-line legs. Byram - Elton - Nogan runs alongside the Illinois Central (CN McComb Subdivision) within ~100 m; the trace stays on the GM&O-tagged grade. Nogan cut where the GM&O grade diverges from the IC (314 m from the GNIS point). LATER ALIGNMENT: corridor as mapped today.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1933,
+      "headway_min": 720,
+      "note": "St. Paul - West Columbia (Foxworth) - Tilton - Monticello - Wanilla - Georgetown - Gatesville - Byram - Elton - Nogan. Start 1909 = the Nov 14, 1909 Official Guide (trains 62/63 New Orleans - Jackson; Lemly: Bogalusa - Jackson '(actually Nogan)' opened in fiscal 1909-10). START BRACKET 1907-1909: St. Tammany Farmer, Aug 31, 1907 forecast trains to West Columbia about Sept 15, 1907 and through New Orleans - Jackson service by Jan 1, 1908 - forecasts, not proof, so 1907-1908 are withheld. Main-line trains ran in to Columbia and back (see nogn-columbia-branch). 1927-1933 New Orleans - Jackson trains ran through to the GM&N (joint service), still NOGN-operated south of Jackson. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 720 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909; NOGN tt Mar 30, 1913; Lemly ch. XXI; Fowler MS line 60 ('St. Paul [Baker City 1907t]'); St. Tammany Farmer Dec 29, 1906 p.4 (research report block [2]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://acmeme.com/gmo/chapter___xxi.htm",
+       "https://www.branchline.uk/jfpdf/mississippirrs.pdf",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.814961,
+      31.074916
+     ],
+     [
+      -89.860099,
+      31.198679
+     ],
+     [
+      -89.86041,
+      31.200376
+     ],
+     [
+      -89.860286,
+      31.202061
+     ],
+     [
+      -89.857839,
+      31.20913
+     ],
+     [
+      -89.857758,
+      31.209866
+     ],
+     [
+      -89.857915,
+      31.210891
+     ],
+     [
+      -89.858249,
+      31.211655
+     ],
+     [
+      -89.858853,
+      31.212436
+     ],
+     [
+      -89.862587,
+      31.215583
+     ],
+     [
+      -89.863244,
+      31.216364
+     ],
+     [
+      -89.863743,
+      31.217262
+     ],
+     [
+      -89.872416,
+      31.238781
+     ],
+     [
+      -89.87243,
+      31.239684
+     ],
+     [
+      -89.872257,
+      31.240334
+     ],
+     [
+      -89.874272,
+      31.243393
+     ],
+     [
+      -89.888508,
+      31.278684
+     ],
+     [
+      -89.89043,
+      31.283066
+     ],
+     [
+      -89.892509,
+      31.285906
+     ],
+     [
+      -89.933731,
+      31.326707
+     ],
+     [
+      -89.934716,
+      31.32727
+     ],
+     [
+      -89.935804,
+      31.327454
+     ],
+     [
+      -89.93947,
+      31.3267
+     ],
+     [
+      -89.940661,
+      31.326774
+     ],
+     [
+      -89.943101,
+      31.327377
+     ],
+     [
+      -89.943876,
+      31.327867
+     ],
+     [
+      -89.94515,
+      31.329314
+     ],
+     [
+      -89.94653,
+      31.330566
+     ],
+     [
+      -89.947454,
+      31.332103
+     ],
+     [
+      -89.947831,
+      31.332522
+     ],
+     [
+      -89.950585,
+      31.334879
+     ],
+     [
+      -89.95127,
+      31.335778
+     ],
+     [
+      -89.955961,
+      31.343703
+     ],
+     [
+      -89.956493,
+      31.344185
+     ],
+     [
+      -89.95821,
+      31.344905
+     ],
+     [
+      -89.959231,
+      31.345562
+     ],
+     [
+      -89.960447,
+      31.346899
+     ],
+     [
+      -89.961166,
+      31.348292
+     ],
+     [
+      -89.962417,
+      31.349948
+     ],
+     [
+      -89.964475,
+      31.354728
+     ],
+     [
+      -89.964542,
+      31.355937
+     ],
+     [
+      -89.96383,
+      31.358441
+     ],
+     [
+      -89.963971,
+      31.359189
+     ],
+     [
+      -89.964477,
+      31.360055
+     ],
+     [
+      -89.979525,
+      31.371051
+     ],
+     [
+      -89.980466,
+      31.371959
+     ],
+     [
+      -89.981292,
+      31.373049
+     ],
+     [
+      -89.982086,
+      31.374742
+     ],
+     [
+      -89.985661,
+      31.386562
+     ],
+     [
+      -89.986179,
+      31.38767
+     ],
+     [
+      -89.986881,
+      31.388763
+     ],
+     [
+      -89.988378,
+      31.390418
+     ],
+     [
+      -89.990128,
+      31.391709
+     ],
+     [
+      -89.992441,
+      31.39284
+     ],
+     [
+      -90.008728,
+      31.397275
+     ],
+     [
+      -90.00984,
+      31.397706
+     ],
+     [
+      -90.011055,
+      31.398497
+     ],
+     [
+      -90.011965,
+      31.399488
+     ],
+     [
+      -90.012522,
+      31.400463
+     ],
+     [
+      -90.025287,
+      31.42484
+     ],
+     [
+      -90.025999,
+      31.425848
+     ],
+     [
+      -90.0273,
+      31.426802
+     ],
+     [
+      -90.02839,
+      31.427171
+     ],
+     [
+      -90.03014,
+      31.42721
+     ],
+     [
+      -90.032963,
+      31.426727
+     ],
+     [
+      -90.034112,
+      31.426651
+     ],
+     [
+      -90.035883,
+      31.426878
+     ],
+     [
+      -90.037384,
+      31.427487
+     ],
+     [
+      -90.063021,
+      31.44641
+     ],
+     [
+      -90.06393,
+      31.447175
+     ],
+     [
+      -90.064977,
+      31.44829
+     ],
+     [
+      -90.06617,
+      31.450132
+     ],
+     [
+      -90.079067,
+      31.475389
+     ],
+     [
+      -90.084607,
+      31.4837
+     ],
+     [
+      -90.085914,
+      31.485883
+     ],
+     [
+      -90.086181,
+      31.487646
+     ],
+     [
+      -90.084745,
+      31.496629
+     ],
+     [
+      -90.084691,
+      31.497784
+     ],
+     [
+      -90.084882,
+      31.499424
+     ],
+     [
+      -90.094653,
+      31.530603
+     ],
+     [
+      -90.095713,
+      31.533354
+     ],
+     [
+      -90.096477,
+      31.534759
+     ],
+     [
+      -90.098066,
+      31.536936
+     ],
+     [
+      -90.119819,
+      31.564499
+     ],
+     [
+      -90.120663,
+      31.566008
+     ],
+     [
+      -90.121,
+      31.566884
+     ],
+     [
+      -90.121476,
+      31.569159
+     ],
+     [
+      -90.149284,
+      31.759893
+     ],
+     [
+      -90.170413,
+      31.902808
+     ],
+     [
+      -90.171822,
+      31.906367
+     ],
+     [
+      -90.172828,
+      31.907847
+     ],
+     [
+      -90.174119,
+      31.909171
+     ],
+     [
+      -90.215612,
+      31.947712
+     ],
+     [
+      -90.216881,
+      31.949081
+     ],
+     [
+      -90.217865,
+      31.950469
+     ],
+     [
+      -90.21892,
+      31.9523
+     ],
+     [
+      -90.246846,
+      32.004523
+     ],
+     [
+      -90.253801,
+      32.017762
+     ],
+     [
+      -90.254253,
+      32.019297
+     ],
+     [
+      -90.256752,
+      32.032292
+     ],
+     [
+      -90.258128,
+      32.049793
+     ],
+     [
+      -90.259168,
+      32.055734
+     ],
+     [
+      -90.259302,
+      32.057255
+     ],
+     [
+      -90.259084,
+      32.060453
+     ],
+     [
+      -90.256535,
+      32.067885
+     ],
+     [
+      -90.256217,
+      32.06932
+     ],
+     [
+      -90.256066,
+      32.072461
+     ],
+     [
+      -90.25714,
+      32.088634
+     ],
+     [
+      -90.260242,
+      32.106335
+     ],
+     [
+      -90.260225,
+      32.1073
+     ],
+     [
+      -90.259035,
+      32.111689
+     ],
+     [
+      -90.258887,
+      32.114925
+     ],
+     [
+      -90.261017,
+      32.131031
+     ],
+     [
+      -90.261353,
+      32.133862
+     ],
+     [
+      -90.261369,
+      32.13567
+     ],
+     [
+      -90.261017,
+      32.137622
+     ],
+     [
+      -90.252889,
+      32.165733
+     ],
+     [
+      -90.251209,
+      32.169813
+     ],
+     [
+      -90.250041,
+      32.171781
+     ],
+     [
+      -90.245181,
+      32.1776
+     ],
+     [
+      -90.236201,
+      32.187637
+     ],
+     [
+      -90.227992,
+      32.197045
+     ],
+     [
+      -90.227096,
+      32.198164
+     ],
+     [
+      -90.225736,
+      32.200308
+     ],
+     [
+      -90.218856,
+      32.220692
+     ],
+     [
+      -90.214588,
+      32.232547
+     ],
+     [
+      -90.209657,
+      32.24715
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Main Line (Nogan – Jackson, over the IC)",
+    "id": "nogn-main-nogan-jackson-ic",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: Nov 14, 1909 Official Guide, trains 62/63 New Orleans 6:30 AM - Jackson 1:50 PM, 185.6 mi in 7 h 20 min = ~41 km/h including stops (1913 tt: No. 2 6:50 AM - 3:00 PM, ~37 km/h). Other years unsourced.",
+    "geometry_source": "Real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on the Illinois Central main line (CN McComb Subdivision, old_railway_operator=IC) - ANOTHER COMPANY'S TRACK",
+    "geometry_quality": "Traced 3.9 mi against a documented 4.0 mi (Nov 1909 Guide: Nogan 181.6 - Jackson 185.6). This is ILLINOIS CENTRAL TRACK, drawn only because NOGN trains used it under trackage rights 1909 - July 1927: 3.7 mi on ways tagged old_railway_operator=IC, 0.2 mi untagged station trackage at Jackson, and a 0.06 mi join from the NOGN grade at Nogan. Ends at the IC passenger station site on Capitol St.; the IC terminal NOGN leased before 1927 was at this site (the present Union Station building dates from 1927, so the platform layout drawn is later than this span). LATER ALIGNMENT: the IC main line as mapped today.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1927,
+      "headway_min": 720,
+      "note": "Nogan - Jackson over the Illinois Central (IC terminal leased at Jackson) until NOGN's own Nogan - Jackson line opened July 17, 1927 (Lemly ch. XXI); from 1927 see nogn-main-nogan-jackson. Fowler: 'Nogan 1911G pass?'. Start 1909 = first confirmed Jackson train (Nov 14, 1909 Guide). Track belonged to the Illinois Central; the trains were NOGN's. Headway 720 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909 (Nogan 181.6 - Jackson 185.6, connections 'At Jackson - With all lines diverging'); Lemly ch. XXI (IC trackage until the 1927 cut-off); Fowler MS line 60 (research report blocks [2], [7]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://acmeme.com/gmo/chapter___xxi.htm",
+       "https://www.branchline.uk/jfpdf/mississippirrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.209657,
+      32.24715
+     ],
+     [
+      -90.210376,
+      32.247851
+     ],
+     [
+      -90.209762,
+      32.249959
+     ],
+     [
+      -90.209255,
+      32.252483
+     ],
+     [
+      -90.207804,
+      32.268633
+     ],
+     [
+      -90.207492,
+      32.270362
+     ],
+     [
+      -90.207045,
+      32.271796
+     ],
+     [
+      -90.205853,
+      32.27426
+     ],
+     [
+      -90.204296,
+      32.2764
+     ],
+     [
+      -90.19507,
+      32.285442
+     ],
+     [
+      -90.193662,
+      32.287131
+     ],
+     [
+      -90.192763,
+      32.288528
+     ],
+     [
+      -90.192146,
+      32.289978
+     ],
+     [
+      -90.191135,
+      32.295341
+     ],
+     [
+      -90.191034,
+      32.296614
+     ],
+     [
+      -90.191171,
+      32.299507
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Main Line (Nogan – Jackson)",
+    "id": "nogn-main-nogan-jackson",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: Nov 14, 1909 Official Guide, trains 62/63 New Orleans 6:30 AM - Jackson 1:50 PM, 185.6 mi in 7 h 20 min = ~41 km/h including stops (1913 tt: No. 2 6:50 AM - 3:00 PM, ~37 km/h). Other years unsourced.",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-jackson-ms-new-orleans, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 3.5 mi against a documented ~4 mi. Cut from gmn-jackson-ms-new-orleans; all on OSM ways tagged old_railway_operator=GM&O (abandoned grade into the 1927 GM&N/NOGN depot), no straight-line legs. LATER ALIGNMENT: corridor as mapped today.",
+    "segments": [
+     {
+      "start": 1927,
+      "end": 1933,
+      "headway_min": 720,
+      "note": "NOGN's own Nogan - Jackson line, opened July 17, 1927 as part of the GM&N/Burlington arrangement (Lemly ch. XXI; Jackson depot golden spike July 1927), replacing the Illinois Central trackage drawn as nogn-main-nogan-jackson-ic for 1909-1927. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 720 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Lemly ch. XXI (NOGN's own Nogan - Jackson line opened July 17, 1927); GM&N research report block [4] (Jackson depot, July 1927) (research report block [7]).",
+       "https://acmeme.com/gmo/chapter___xxi.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.209657,
+      32.24715
+     ],
+     [
+      -90.206788,
+      32.255647
+     ],
+     [
+      -90.205188,
+      32.260047
+     ],
+     [
+      -90.202888,
+      32.261647
+     ],
+     [
+      -90.196988,
+      32.263247
+     ],
+     [
+      -90.191488,
+      32.267346
+     ],
+     [
+      -90.188204,
+      32.273426
+     ],
+     [
+      -90.181757,
+      32.286215
+     ],
+     [
+      -90.181021,
+      32.288871
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Bogue Chitto Branch",
+    "id": "nogn-bogue-chitto-branch",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: branch timetables (1909 Guide, 1913 tt) not converted to speeds; unsourced",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-bogue-chitto-branch, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 40.9 mi against a documented 41.0 mi (Nov 1909 Guide: Rio 64.6 - Tylertown 105.6; Lemly 41). Identical geometry to gmn-bogue-chitto-branch: no straight-line legs, all on OSM ways tagged old_railway_operator=GM&O. LATER ALIGNMENT: corridor as mapped today.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1933,
+      "headway_min": 480,
+      "note": "Rio - Isabel - Zona - Franklinton - Clifton - Warnerton - Lexie - Tylertown, MS. Start 1909 = Nov 14, 1909 Official Guide, three trains each way New Orleans - Bogalusa - Rio - Tylertown (Lemly ch. XXI: opened fiscal 1909-10) - exact to the year. Trains reversed at Rio; only Rio - Tylertown is drawn here (Bogalusa - Rio is the main line). 1913: Nos. 31-38 through to New Orleans. 1924: 'Motor coach No. 2 went into service between Bogalusa and Tylertown' (Lemly ch. XXI) - a rail motor car. Connection at Tylertown with the separate Fernwood and Gulf. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 480 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909; NOGN tt Mar 30, 1913; Lemly ch. XXI; Fowler LA line 10 (research report block [3]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://acmeme.com/gmo/chapter___xxi.htm",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.89014,
+      30.693261
+     ],
+     [
+      -89.891417,
+      30.692586
+     ],
+     [
+      -89.892669,
+      30.692163
+     ],
+     [
+      -89.914301,
+      30.691621
+     ],
+     [
+      -89.917408,
+      30.691383
+     ],
+     [
+      -89.918129,
+      30.69152
+     ],
+     [
+      -89.943956,
+      30.690836
+     ],
+     [
+      -89.945285,
+      30.690884
+     ],
+     [
+      -89.947869,
+      30.690733
+     ],
+     [
+      -89.967033,
+      30.690225
+     ],
+     [
+      -89.972412,
+      30.69017
+     ],
+     [
+      -89.974319,
+      30.690258
+     ],
+     [
+      -89.976334,
+      30.6906
+     ],
+     [
+      -89.986132,
+      30.692989
+     ],
+     [
+      -89.987242,
+      30.693787
+     ],
+     [
+      -90.013883,
+      30.701432
+     ],
+     [
+      -90.015286,
+      30.701939
+     ],
+     [
+      -90.016583,
+      30.702605
+     ],
+     [
+      -90.018646,
+      30.703937
+     ],
+     [
+      -90.026193,
+      30.709354
+     ],
+     [
+      -90.029479,
+      30.711505
+     ],
+     [
+      -90.03129,
+      30.71299
+     ],
+     [
+      -90.056024,
+      30.730451
+     ],
+     [
+      -90.05924,
+      30.732845
+     ],
+     [
+      -90.070589,
+      30.740732
+     ],
+     [
+      -90.086824,
+      30.751875
+     ],
+     [
+      -90.09757,
+      30.758836
+     ],
+     [
+      -90.099477,
+      30.760259
+     ],
+     [
+      -90.10117,
+      30.761978
+     ],
+     [
+      -90.104135,
+      30.765692
+     ],
+     [
+      -90.10649,
+      30.768328
+     ],
+     [
+      -90.117586,
+      30.777409
+     ],
+     [
+      -90.119069,
+      30.778739
+     ],
+     [
+      -90.120975,
+      30.781008
+     ],
+     [
+      -90.122404,
+      30.783368
+     ],
+     [
+      -90.12957,
+      30.797734
+     ],
+     [
+      -90.136542,
+      30.812044
+     ],
+     [
+      -90.137416,
+      30.814108
+     ],
+     [
+      -90.145172,
+      30.829538
+     ],
+     [
+      -90.14876,
+      30.837144
+     ],
+     [
+      -90.151797,
+      30.844234
+     ],
+     [
+      -90.154706,
+      30.849735
+     ],
+     [
+      -90.156032,
+      30.851575
+     ],
+     [
+      -90.159632,
+      30.855442
+     ],
+     [
+      -90.177073,
+      30.873426
+     ],
+     [
+      -90.179427,
+      30.875663
+     ],
+     [
+      -90.18051,
+      30.877352
+     ],
+     [
+      -90.180983,
+      30.878767
+     ],
+     [
+      -90.181032,
+      30.879977
+     ],
+     [
+      -90.180678,
+      30.897328
+     ],
+     [
+      -90.178753,
+      30.963989
+     ],
+     [
+      -90.178769,
+      30.96683
+     ],
+     [
+      -90.179447,
+      30.982006
+     ],
+     [
+      -90.179857,
+      30.999466
+     ],
+     [
+      -90.180962,
+      31.031104
+     ],
+     [
+      -90.177901,
+      31.060812
+     ],
+     [
+      -90.177712,
+      31.061718
+     ],
+     [
+      -90.177318,
+      31.06265
+     ],
+     [
+      -90.168735,
+      31.079581
+     ],
+     [
+      -90.168073,
+      31.08073
+     ],
+     [
+      -90.167032,
+      31.082054
+     ],
+     [
+      -90.165691,
+      31.083459
+     ],
+     [
+      -90.139786,
+      31.106776
+     ],
+     [
+      -90.138446,
+      31.108248
+     ],
+     [
+      -90.138004,
+      31.109167
+     ],
+     [
+      -90.137436,
+      31.111436
+     ],
+     [
+      -90.137436,
+      31.112179
+     ],
+     [
+      -90.13772,
+      31.113111
+     ],
+     [
+      -90.138709,
+      31.114375
+     ],
+     [
+      -90.139345,
+      31.114862
+     ],
+     [
+      -90.139836,
+      31.115072
+     ],
+     [
+      -90.140973,
+      31.115244
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Shore Line (North Slidell – Abita Springs)",
+    "id": "nogn-shore-line",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: branch timetables (1909 Guide, 1913 tt) not converted to speeds; unsourced",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-shore-line, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 26.1 mi against a documented 26.5 mi (Nov 1909 Guide: North Slidell 36.0 - Abita Springs 62.5). Cut from gmn-shore-line (which starts at Slidell; the Slidell - North Slidell mile is dropped here because it is the main line). No straight-line legs; mostly the Tammany Trace rail-trail (old_railway_operator=GM&O). LATER ALIGNMENT: the trail alignment as mapped today.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1933,
+      "headway_min": 480,
+      "note": "North Slidell - Bonfouca - Lacombe - Mandeville - Ozone Park - Abita Springs: NOGN-built shore route. Start 1909 = Nov 14, 1909 Official Guide (three trains each way New Orleans - Folsom). START BRACKET 1906-1909: St. Tammany Farmer, Aug 31, 1907: the shore line 'which the company is building between Slidell and Mandeville' expected complete by Oct 1, 1907 - a plan, not an opening, so 1906-1908 are withheld. 1913: Nos. 21-28 New Orleans - Folsom. GM&N ran a 'newly scheduled train' New Orleans - Covington from Jan 1935 (Lemly ch. XI), so service ran on both sides of the hand-off. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 480 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909; NOGN tt Mar 30, 1913; St. Tammany Farmer Dec 29, 1906 p.4 and Sept 9, 1922 p.1; Bogalusa Enterprise Sept 14, 1922 p.2; Fowler LA line 9; Lemly ch. XI, XXI (research report block [4]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn82015387/1922-09-09/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064055/1922-09-14/ed-1/?sp=2",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://acmeme.com/gmo/chapter_xi.htm",
+       "https://acmeme.com/gmo/chapter___xxi.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.785125,
+      30.300703
+     ],
+     [
+      -89.785629,
+      30.300878
+     ],
+     [
+      -89.786598,
+      30.301122
+     ],
+     [
+      -89.787479,
+      30.301181
+     ],
+     [
+      -89.912746,
+      30.301287
+     ],
+     [
+      -89.914791,
+      30.301472
+     ],
+     [
+      -89.916899,
+      30.301878
+     ],
+     [
+      -89.920105,
+      30.302973
+     ],
+     [
+      -90.053344,
+      30.355879
+     ],
+     [
+      -90.055069,
+      30.356654
+     ],
+     [
+      -90.067464,
+      30.362999
+     ],
+     [
+      -90.068098,
+      30.363549
+     ],
+     [
+      -90.068512,
+      30.364311
+     ],
+     [
+      -90.068625,
+      30.365174
+     ],
+     [
+      -90.068349,
+      30.366118
+     ],
+     [
+      -90.06395,
+      30.372855
+     ],
+     [
+      -90.058708,
+      30.380449
+     ],
+     [
+      -90.052964,
+      30.389138
+     ],
+     [
+      -90.051363,
+      30.391759
+     ],
+     [
+      -90.050521,
+      30.393779
+     ],
+     [
+      -90.033828,
+      30.466976
+     ],
+     [
+      -90.033729,
+      30.468547
+     ],
+     [
+      -90.03392,
+      30.469741
+     ],
+     [
+      -90.035125,
+      30.475084
+     ],
+     [
+      -90.035659,
+      30.476385
+     ],
+     [
+      -90.036121,
+      30.476906
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Shore Line (Abita Springs – Covington)",
+    "id": "nogn-shore-line-abita-springs-covington",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: branch timetables (1909 Guide, 1913 tt) not converted to speeds; unsourced",
+    "geometry_source": "Coordinates cut from the merged gulf_mobile_and_northern_railroad.geojson feature gmn-shore-line, itself real-traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O (the ex-NOGN lines carry the GM&O mark in OSM)",
+    "geometry_quality": "Traced 3.5 mi against a documented 3.5 mi (Nov 1909 Guide: Abita Springs 62.5 - Covington 66.0). Cut from gmn-shore-line at the junction with the ex-ELR grade from Pearl River; on the Tammany Trace (old_railway_operator=GM&O), no straight-line legs. Same geometry as the Abita Springs - Covington end of elr-pearl-river-covington. LATER ALIGNMENT: the trail alignment as mapped today.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1933,
+      "headway_min": 480,
+      "note": "Abita Springs - Claiborne - Covington: the East Louisiana Railroad's 1888 line, NOGN-operated from June 1, 1905. [OPEN] START - 1906 is the earliest CONFIRMED NOGN passenger year, not a known start: St. Tammany Farmer, Dec 29, 1906: 'Heretofore the principal service has been operated between New Orleans and Folsom' - those trains had to run through Covington. NOGN passenger trains in June - Dec 1905 are not proven. Do not move the start earlier without evidence. END = the July 1, 1933 lease of the reorganized NOGN Railway to the Gulf, Mobile and Northern (Lemly ch. XXI), not a service end; the GM&N-era continuation is drawn in gulf_mobile_and_northern_railroad.geojson. SOURCE CONFLICT, recorded not resolved: Lemly ch. VIII says that after Feb 1930 the NOGN 'ceased to exist as an operating entity. It became the Louisiana Division of the GM&N' - which would put the split at 1930; ch. XXI has the NOGN still a separate corporation and in its own receivership Nov 7, 1932 - June 1933. 1933 is used in both layers so they join without gap or overlap. Headway 480 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909; NOGN tt Mar 30, 1913; St. Tammany Farmer Dec 29, 1906 p.4 and Sept 9, 1922 p.1; Bogalusa Enterprise Sept 14, 1922 p.2; Fowler LA line 9; Lemly ch. XI, XXI (research report block [4]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn82015387/1922-09-09/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064055/1922-09-14/ed-1/?sp=2",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://acmeme.com/gmo/chapter_xi.htm",
+       "https://acmeme.com/gmo/chapter___xxi.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.036121,
+      30.476906
+     ],
+     [
+      -90.036325,
+      30.477136
+     ],
+     [
+      -90.038156,
+      30.47824
+     ],
+     [
+      -90.038191,
+      30.478401
+     ],
+     [
+      -90.040582,
+      30.479737
+     ],
+     [
+      -90.041908,
+      30.480089
+     ],
+     [
+      -90.074958,
+      30.480047
+     ],
+     [
+      -90.082639,
+      30.477766
+     ],
+     [
+      -90.085157,
+      30.477539
+     ],
+     [
+      -90.085623,
+      30.477045
+     ],
+     [
+      -90.085884,
+      30.477286
+     ],
+     [
+      -90.085876,
+      30.477504
+     ],
+     [
+      -90.092017,
+      30.477198
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Shore Line (Covington – Folsom)",
+    "id": "nogn-shore-line-covington-folsom",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "estimated: branch timetables (1909 Guide, 1913 tt) not converted to speeds; unsourced",
+    "geometry_source": "Partly traced from OpenStreetMap (ODbL) via Overpass with opstrace.py on ways tagged old_railway_operator=GM&O at each end; the middle is a labelled straight-line approximation (the grade is lifted and absent from OSM and OpenHistoricalMap)",
+    "geometry_quality": "Drawn 12.4 mi against a documented 13.2 mi (Nov 1909 Guide: Covington 66.0 - Folsom 79.2; Fowler LA line 9: 66.2 - 79.4). Traced: 1.41 mi out of Covington (Tammany Trace stub and abandoned grade tagged old_railway_operator=GM&O, plus a 0.19 mi join from the Trace end) and 0.59 mi into Folsom (Railroad Avenue, abandoned, old_railway_operator=GM&O). STRAIGHT-LINE LEGS (10.2 mi): north edge of Covington - Ramsay 2.56 mi and Ramsay - south edge of Folsom 7.67 mi, through the GNIS point for Ramsay; Red Bluff and Onville were not located. These are chords, not the historical alignment.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1913,
+      "headway_min": 480,
+      "note": "Covington - Ramsay - Red Bluff - Onville - Folsom: extension 'the East Louisiana had built or operated' (Lemly); opening year not found. BOTH ENDS [OPEN]. START: 1906 is the earliest CONFIRMED year (St. Tammany Farmer, Dec 29, 1906: the 'St. Tammany Special ... will go through to Folsom, as at present'), not a known start. END: 1913 is the last CONFIRMED year (NOGN tt Mar 30, 1913: all Shore Line trains Nos. 21-28 run to/from Folsom; Pfalzheim [Pruden] in a 1911 timetable per Fowler), NOT a known end - no source dates when passenger trains to Folsom stopped. The Sept 1922 NOGN statement that bus competition paralleled every foot 'with the exception of the line between Covington and Folsom, where there is practically no passenger business' suggests trains still ran but does not say so, and is not used to extend the span. Do not extend without evidence. Headway 480 is an estimate (1913: all Shore Line trains through to Folsom); headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909; NOGN tt Mar 30, 1913; St. Tammany Farmer Dec 29, 1906 p.4 and Sept 9, 1922 p.1; Bogalusa Enterprise Sept 14, 1922 p.2; Fowler LA line 9; Lemly ch. XI, XXI (research report block [4]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.loc.gov/resource/sn82015387/1906-12-29/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn82015387/1922-09-09/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064055/1922-09-14/ed-1/?sp=2",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://acmeme.com/gmo/chapter_xi.htm",
+       "https://acmeme.com/gmo/chapter___xxi.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.092017,
+      30.477198
+     ],
+     [
+      -90.095213,
+      30.476756
+     ],
+     [
+      -90.096055,
+      30.477173
+     ],
+     [
+      -90.096354,
+      30.477554
+     ],
+     [
+      -90.096679,
+      30.478669
+     ],
+     [
+      -90.097793,
+      30.481162
+     ],
+     [
+      -90.107208,
+      30.486608
+     ],
+     [
+      -90.107971,
+      30.487415
+     ],
+     [
+      -90.108535,
+      30.488332
+     ],
+     [
+      -90.108741,
+      30.489007
+     ],
+     [
+      -90.108909,
+      30.490755
+     ],
+     [
+      -90.109475,
+      30.491579
+     ],
+     [
+      -90.1259122,
+      30.5257469
+     ],
+     [
+      -90.186882,
+      30.623618
+     ],
+     [
+      -90.189384,
+      30.631853
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Pearl River Branch",
+    "id": "nogn-pearl-river-branch",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: mixed trains (1913 tt); unsourced",
+    "geometry_source": "Real-traced from OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror with opstrace.py, on ways tagged old_railway_operator=GM&O (no OSM way carries an NOGN, New Orleans Great Northern, East Louisiana or ELR mark; the ex-NOGN/ELR grades are tagged with the last owner). OpenHistoricalMap was queried and has no railway ways in St. Tammany Parish.",
+    "geometry_quality": "Traced 9.5 mi against a documented ~9 mi (Fowler LA line 88, ELR mileage Pearl River 36 - St. Tammany 45). All on OSM ways tagged old_railway_operator=GM&O (the ex-ELR grade, now Shinglemill Rd, Sid Crawford Rd, Dummy Line Rd and LA-36 / Hickory Highway), no straight-line legs. Starts at the junction with the Southern's NO&NE at Pearl River; crosses the NOGN main line at Florenville. St. Tammany end placed by projecting the GNIS point onto the grade (the point is 3.8 km off the grade; the projection falls at 9.5 mi, agreeing with Fowler's 9). Same geometry as the first 9.5 mi of elr-pearl-river-covington. LATER ALIGNMENT: road-converted grade as mapped today.",
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1913,
+      "headway_min": 1440,
+      "note": "[ANCHOR] - a single proven year. NOGN public timetable eff. Mar 30, 1913, 'Pearl River Branch': Pearl River - Hill's Switch - Florenville - St. Tammany, Nos. 42/43 daily except Sunday and 44-48 Sunday, EVERY train headed 'Mixed' (mixed trains carried passengers, so this counts). The surviving stub of the East Louisiana's 1887 main line, NOGN-operated from June 1905. Service certainly ran wider than 1913 both ways, but no other NOGN passenger year is confirmed: the Nov 1909 Guide page has no Pearl River table (absence, not evidence) and nothing later was found. Do not widen or delete this anchor. Headway 1440 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: NOGN tt Mar 30, 1913 'Pearl River Branch' (every train headed Mixed); Fowler LA lines 9, 88; hawkinsrails NOGN page (research report block [5]).",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://hawkinsrails.net/mainlines/nogn/nogn.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.74369,
+      30.378414
+     ],
+     [
+      -89.749435,
+      30.387744
+     ],
+     [
+      -89.75064,
+      30.390045
+     ],
+     [
+      -89.752342,
+      30.393764
+     ],
+     [
+      -89.752944,
+      30.394536
+     ],
+     [
+      -89.754028,
+      30.394992
+     ],
+     [
+      -89.807281,
+      30.411962
+     ],
+     [
+      -89.813827,
+      30.412155
+     ],
+     [
+      -89.885761,
+      30.42717
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "New Orleans Great Northern Railroad",
+    "line": "New Orleans Great Northern: Columbia Branch",
+    "id": "nogn-columbia-branch",
+    "color": "#29A632",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated: branch timetables (1909 Guide, 1913 tt) not converted to speeds; unsourced",
+    "geometry_source": "Real-traced from OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror with opstrace.py, on ways tagged old_railway_operator=GM&O (no OSM way carries an NOGN, New Orleans Great Northern, East Louisiana or ELR mark; the ex-NOGN/ELR grades are tagged with the last owner). OpenHistoricalMap was queried and has no railway ways in St. Tammany Parish.",
+    "geometry_quality": "Traced 2.9 mi against a documented 2.7 mi (Nov 1909 Guide) / 2.42 mi (1913 tt, Foxworth 103.40 - Columbia 105.82). All on OSM ways tagged old_railway_operator=GM&O (abandoned), no straight-line legs; starts on the main line at West Columbia (Foxworth). LATER ALIGNMENT: abandoned grade as mapped today.",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1913,
+      "headway_min": 180,
+      "note": "West Columbia (Foxworth) - Columbia, MS. Start 1909 = Nov 14, 1909 Official Guide 'Columbia Branch', eight shuttle trains a day. [OPEN] END - 1913 is the last CONFIRMED year (Mar 30, 1913 tt: main-line trains run in to Columbia and back out), NOT a known end - no source dates when rail passenger service on the spur stopped. The Dec 1939 GM&N table for Columbia - West Columbia is a motor BUS (not evidence of rail's end), and the Fernwood, Columbia and Gulf's 1951 motor cars are another company. Do not extend without evidence. Connection with the Gulf and Ship Island at Columbia. Headway 180 is an estimate from the 1909 eight-train shuttle; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Official Guide Nov 14, 1909 'Columbia Branch'; NOGN tt Mar 30, 1913 main-line table; Fowler MS line 60 (research report block [6]).",
+       "https://hawkinsrails.net/mainlines/nogn/nogn_guide1910.jpg",
+       "https://www.msrailroads.com/images/NOGN_timetable.jpg",
+       "https://www.branchline.uk/jfpdf/mississippirrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.872416,
+      31.238781
+     ],
+     [
+      -89.87243,
+      31.239684
+     ],
+     [
+      -89.872257,
+      31.240334
+     ],
+     [
+      -89.871877,
+      31.240945
+     ],
+     [
+      -89.871439,
+      31.241339
+     ],
+     [
+      -89.870598,
+      31.241822
+     ],
+     [
+      -89.857149,
+      31.246867
+     ],
+     [
+      -89.850385,
+      31.249586
+     ],
+     [
+      -89.847118,
+      31.250145
+     ],
+     [
+      -89.845005,
+      31.250238
+     ],
+     [
+      -89.836413,
+      31.250256
+     ],
+     [
+      -89.835311,
+      31.249972
+     ],
+     [
+      -89.834217,
+      31.249869
+     ],
+     [
+      -89.828355,
+      31.249816
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Louisiana Railroad",
+    "line": "East Louisiana: New Orleans – Covington",
+    "id": "elr-pearl-river-covington",
+    "color": "#BF699D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated; no East Louisiana timetable was read; unsourced",
+    "geometry_source": "Real-traced from OpenStreetMap (ODbL) via the maps.mail.ru Overpass mirror with opstrace.py, on ways tagged old_railway_operator=GM&O (no OSM way carries an NOGN, New Orleans Great Northern, East Louisiana or ELR mark; the ex-NOGN/ELR grades are tagged with the last owner). OpenHistoricalMap was queried and has no railway ways in St. Tammany Parish.",
+    "geometry_quality": "Drawn 22.7 mi against a documented 24 mi (Fowler LA line 88: Pearl River 36 - Covington 60). Pearl River - Florenville - St. Tammany - Mandeville Junction - Abita Springs (19.2 mi) traced on OSM ways tagged old_railway_operator=GM&O (the ex-ELR grade, now local roads and LA-36 / Hickory Highway); Abita Springs - Covington (3.5 mi) is the same Tammany Trace geometry as nogn-shore-line-abita-springs-covington. No straight-line legs. Only Pearl River - Covington is drawn: New Orleans - Pearl River was trackage over the New Orleans and Northeastern (another company's track) and is not drawn for the ELR. LATER ALIGNMENT: road-converted grade and rail-trail as mapped today.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1905,
+      "headway_min": 720,
+      "note": "Pearl River - River Junction - Florenville - St. Tammany (Generelly) - Mandeville Junction - Pontchatalawa - Abita Springs - Claiborne - Covington; ELR trains ran in from New Orleans over the NO&NE. [OPEN] START - 1893 is the earliest CONFIRMED passenger year (River Switch tagged in the 1893 Official Guide, Fowler), not the opening: Pearl River - Abita Springs was completed June 1887 and Covington reached May 16, 1888 (one source says 1887) - construction dates, not proof of passenger trains, so 1887-1892 are withheld. END = sale to the New Orleans Great Northern, June 1, 1905 - an operator change, not a service end. The ELR 'inaugurated' the New Orleans - 'Ozone Belt' trains. Headway 720 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Fowler LA line 88 (River Switch and Chinchuba tagged z = 1893 Official Guide, confirming passenger service on the main line and the Mandeville branch in 1893); opening and sale dates from Wikipedia, msrailroads and the Tammany Family blog, read via search snippets only, not in full (research report block [9]).",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://en.wikipedia.org/wiki/East_Louisiana_Railroad",
+       "https://www.msrailroads.com/East_Lou.htm",
+       "https://tammanyfamily.blogspot.com/2018/04/covington-train-depot.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.74369,
+      30.378414
+     ],
+     [
+      -89.749435,
+      30.387744
+     ],
+     [
+      -89.75064,
+      30.390045
+     ],
+     [
+      -89.752342,
+      30.393764
+     ],
+     [
+      -89.752944,
+      30.394536
+     ],
+     [
+      -89.754028,
+      30.394992
+     ],
+     [
+      -89.807281,
+      30.411962
+     ],
+     [
+      -89.813827,
+      30.412155
+     ],
+     [
+      -89.885894,
+      30.427198
+     ],
+     [
+      -89.995513,
+      30.45404
+     ],
+     [
+      -89.99765,
+      30.454753
+     ],
+     [
+      -90.003585,
+      30.457067
+     ],
+     [
+      -90.00521,
+      30.45783
+     ],
+     [
+      -90.036094,
+      30.476924
+     ],
+     [
+      -90.036325,
+      30.477136
+     ],
+     [
+      -90.038156,
+      30.47824
+     ],
+     [
+      -90.038191,
+      30.478401
+     ],
+     [
+      -90.040582,
+      30.479737
+     ],
+     [
+      -90.041908,
+      30.480089
+     ],
+     [
+      -90.074958,
+      30.480047
+     ],
+     [
+      -90.082639,
+      30.477766
+     ],
+     [
+      -90.085157,
+      30.477539
+     ],
+     [
+      -90.085623,
+      30.477045
+     ],
+     [
+      -90.085884,
+      30.477286
+     ],
+     [
+      -90.085876,
+      30.477504
+     ],
+     [
+      -90.092017,
+      30.477198
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "East Louisiana Railroad",
+    "line": "East Louisiana: Mandeville Branch",
+    "id": "elr-mandeville-branch",
+    "color": "#BF699D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "estimated; no East Louisiana timetable was read; unsourced",
+    "geometry_source": "Straight-line approximation (no trace: the grade is absent from OpenStreetMap and OpenHistoricalMap)",
+    "geometry_quality": "Drawn 12.4 mi against a documented 13 mi (Fowler LA line 88: Mandeville Junction 47 - Mandeville 60). ENTIRELY STRAIGHT-LINE LEGS: Mandeville Junction - Leslie (Chinchuba) 10.2 mi and Chinchuba - Mandeville 2.2 mi, through the GNIS point for Chinchuba to the centre of Mandeville (the ELR terminal site was not located). Mandeville Junction is placed on the traced ELR main line 11.5 mi from Pearl River (Fowler: 2 mi beyond St. Tammany). Burford was not located. These are chords, not the historical alignment.",
+    "segments": [
+     {
+      "start": 1893,
+      "end": 1905,
+      "headway_min": 720,
+      "note": "Mandeville Junction - Leslie (Chinchuba) - Burford - Mandeville. [OPEN] START - 1893 is the earliest CONFIRMED passenger year (Chinchuba tagged in the 1893 Official Guide, Fowler); the branch's opening year was not found. END = sale to the New Orleans Great Northern, June 1, 1905. Under the NOGN this branch has no confirmed passenger year (research report block [8]) and is not drawn after 1905. Headway 720 is an estimate; headway_min and avg_speed_kmh are estimates (Rule 3).",
+      "sources": [
+       "Segment-level: Fowler LA line 88 (River Switch and Chinchuba tagged z = 1893 Official Guide, confirming passenger service on the main line and the Mandeville branch in 1893); opening and sale dates from Wikipedia, msrailroads and the Tammany Family blog, read via search snippets only, not in full (research report block [9]).",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://en.wikipedia.org/wiki/East_Louisiana_Railroad",
+       "https://www.msrailroads.com/East_Lou.htm",
+       "https://tammanyfamily.blogspot.com/2018/04/covington-train-depot.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -89.91806,
+      30.435074
+     ],
+     [
+      -90.0797984,
+      30.3871388
+     ],
+     [
+      -90.0657477,
+      30.3582305
+     ]
+    ]
+   }
+  }
+ ]
+}
