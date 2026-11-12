@@ -1,0 +1,2569 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Morgan's Louisiana and Texas Railroad and Steamship Company (Charles Morgan's road, 1869-1885) and the Southern Pacific branch service on its lines. Morgan's own-name main line Algiers - Morgan City 1870-1882 and Morgan City - Lafayette 1880-1882 (from 1883 the main line is drawn by data/southern_pacific_sunset_route.geojson); and the branches Alexandria, Thibodaux, Napoleonville, Cypremort, St. Martinville, Arnaudville and Salt Mine, each drawn only for its research report's drawable span.",
+  "source": "research/branches/morgan_s_louisiana_and_texas_railroad_and_steamship_company.txt (researched 2026-11-12)",
+  "pulled": "20261112",
+  "ownership_split": "Main line: Morgan's L&T to 1882; Southern Pacific from 1883 (existing Sunset Route layer; SP through service from 5 Feb 1883). Branches: split at the SP Company lease of 1 Mar 1885 (CSRM) - Morgan's L&T to 1884, Southern Pacific from 1885 - because an Alexandria timetable card still read 'TIME TABLE MORGAN'S LOUISIANA AND TEXAS' in Jan 1884. Rule 4 split features share identical geometry: mlt-alexandria-branch / sp-mlt-alexandria-branch and mlt-thibodaux-branch / sp-mlt-thibodaux-branch. NOT splits: Charles Morgan individual -> Morgan's L&T RR & SS Co (1 Apr 1878, same name on the trains); T&NO title/lease 1927, merger 1934, SP 1961 (Southern Pacific trains throughout). The Southern Pacific colour is pulled from data/southern_pacific_sunset_route.geojson; Morgan's L&T has its own new colour.",
+  "omitted": "Not drawn, per the report's drawable fields: Leonville Branch Arnaudville - Port Barre, Weeks Island extension Cypremort - Weeks Island, Lockport Branch Raceland Jct - Lockport, South Bend Branch Bayou Sale - South Bend (drawable NONE - no confirmable passenger year; not proven freight-only either). Houma Branch Schriever - Houma: the report offers a LOW-confidence 1900 [ANCHOR] resting on one indirect social note ('arrived on Thursday evening's train from Houma', St. Mary Banner 23 Jun 1900) against an 1887 livery ad offering buggy connections to Houma from the main-line train; OMITTED until a timetable is read. Lafayette - Baton Rouge Branch: already drawn as tno-lafayette-baton-rouge in data/ymv_baton_rouge.geojson (not edited here; the report lists a start-year defect there, 1900 drawn vs 1911 proven). Main line from 1883: already drawn by the Southern Pacific Sunset Route layer. Morgan City - Galveston etc. Morgan Line steamships and bayou steamers: water transport. Davids - Milton (Franklin and Abbeville Ry), New Iberia - Abbeville (Iberia and Vermilion), Westwego - Bayou Goula (sold to the New Orleans Pacific 1881): not Morgan's trains. Alexandria Branch trains' run Cheneyville - Alexandria over the Texas and Pacific: not Morgan's track.",
+  "not_yet_sourced": "[OPEN] ends (last CONFIRMED year, not a known end): Southern Pacific Alexandria Branch 1911; Thibodaux Branch 1922; Napoleonville Branch 1922 (and its 1909 start - opened 1899, passengers unproven 1899-1908); Cypremort Branch 1951 (and its 1900 start - opened 1884; the 1923-1950 continuity is unchecked); St. Martinville Branch 1904 (and its 1886 start - opened 1882). [ANCHOR] single years: Arnaudville Branch 1899, Salt Mine Branch 1885. Houma Branch omitted: a single low-confidence 1900 sighting, and whether it carried passengers at all in the 1870s-80s is open. Salt Mine Branch in 1951: a headerless Official Guide fragment (OG52 173229-173232) may or may not be an SP mixed. Alexandria Branch 1881 (Lafayette - Washington opened May 1881) has no passenger sighting. Main-line local trains 1883-1884 may still have carried the Morgan's name (the existing SP layer draws them as SP; not asserted as a defect). Every headway and most speeds are estimates. A 1920s-1940s SP Atlantic System public timetable or Louisiana PSC discontinuance orders would settle most branch ends.",
+  "freight_only_check": "Every branch ends at its last confirmed passenger year, never at the 1951 freight-only dagger or an abandonment date. No freight-only branch, spur or extension is drawn.",
+  "horsecar_check": "None - steam road from the NOO&GW's 1854 opening."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morgan's Louisiana and Texas Railroad and Steamship Company",
+    "line": "Morgan's Louisiana and Texas: Algiers \u2013 Morgan City",
+    "id": "mlt-algiers-morgan-city",
+    "color": "#3B6E91",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 32,
+    "speed_source": "Segment-level, 1870-71 only: ads give 'trains leave Algiers Depot [8 A.M.] ... arriving at Brashear City at 12 M.' - 80.6 mi in 4 h is about 32 km/h (Planters' Banner 29 Mar 1871 p3, CA). Later years not checked.",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 80.1 mi against 80.6 mi Algiers - Morgan City (Fowler tables 55/56; ICC 'about 80.60 miles'). Miles by source (router, before simplification): {'SP': 76.4, 'trail:Mississippi River Trail': 1.5, 'MP': 1.4, '(untagged)': 1.2, '(connector)': 0.1}. The Algiers end (about 3 mi through Algiers and Gretna) runs over OSM ways tagged MP (Brooklyn Ave razed grade) and the Mississippi River Trail; the Algiers terminal point is placed at the Algiers Point riverfront and is APPROXIMATE - the exact Morgan's depot/ferry slip site (opposite Esplanade/Elysian Fields) was not located. Drawn on the ORIGINAL west-bank alignment Algiers - Gretna - Westwego - Avondale (abandoned SP grade, then the SP Avondale Subdivision), NOT the 1935 Huey P. Long Bridge approach used by the Southern Pacific Sunset Route layer. LATER ALIGNMENT: west of Avondale the line is drawn on the present BNSF Lafayette Subdivision as OSM records it; any realignment since the 1870s (bridges at Des Allemands, Bayou Lafourche, Bayou Boeuf; the 5 ft 6 in gauge era to 1872) was not checked. The Brashear (Morgan City) terminus is drawn at the east-bank town, about 0.5 km short of the Berwick Bay waterfront where the trains met the Morgan Line steamships.",
+    "documented_mileage": "80.6 mi (Fowler 55/56; ICC about 80.60 mi)",
+    "traced_mileage": 80.1,
+    "segments": [
+     {
+      "start": 1870,
+      "end": 1879,
+      "headway_min": 1440,
+      "note": "Morgan's boat-train era: Algiers (ferry from New Orleans) - Brashear City (renamed Morgan City), connecting at Berwick Bay with the Morgan Line steamships to Galveston, Sabine Pass and Indianola and bayou steamers to Franklin, New Iberia and St. Martinville. Charles Morgan bought the New Orleans, Opelousas and Great Western at foreclosure 31 Jul 1869 (ICC); 1869 is left to the NOO&GW, whose own ads run in Jan and Mar 1869 - first Morgan-name passenger evidence is May 1870 (New Orleans Republican 3 May 1870 p8: 'the arrival of the 8 A.M. trains from Algiers'), and a Jan 1871 ad reads 'BERWICK'S BAY ROUTE VIA MORGAN'S LOUISIANA AND TEXAS RAILROAD'. Charles Morgan owned it individually to 1 Apr 1878, then Morgan's L&T RR & SS Co (ICC) - same name on the trains, not a split. Gauge 5 ft 6 in until 1872 (ICC). Headway 1440 is an ESTIMATE from the 1869-71 ads' one morning train each way; no finer headway is asserted.",
+      "sources": [
+       "Segment-level: start 1870 from New Orleans Republican 3 May 1870 p8 and Planters' Banner 29 Mar 1871 p3 (Morgan-name train ads); ownership dates from the ICC valuation; end 1879 = the year before the Lafayette extension opened (ICC, May 1880).",
+       "https://www.loc.gov/resource/sn83016555/1870-05-03/ed-1/?sp=8",
+       "https://www.loc.gov/resource/sn86053688/1871-03-29/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn86053688/1869-01-23/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     },
+     {
+      "start": 1880,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "Through-route era under Morgan's own name: from May 1880 the main line ran on west of Morgan City to Lafayette (Vermilionville) - see mlt-morgan-city-lafayette - and through New Orleans - Houston trains ran from 30 Aug 1880 (TSHA). Ends 1882 as a DISPLAY boundary, not an end of service: Southern Pacific Sunset Route through service began 5 Feb 1883 and data/southern_pacific_sunset_route.geojson draws this corridor as Southern Pacific from 1883 (on the later Huey P. Long Bridge approach). Headway 1440 is an ESTIMATE; no finer headway is asserted.",
+      "sources": [
+       "Segment-level: 1880 extension opening from the ICC valuation and St. Landry Democrat 31 Jul 1880 p4; 1883 SP through-service boundary from TSHA and the existing Sunset Route layer.",
+       "https://www.loc.gov/resource/sn88064537/1880-07-31/ed-1/?sp=4",
+       "https://www.tshaonline.org/handbook/entries/texas-and-new-orleans-railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.050424,
+      29.955237
+     ],
+     [
+      -90.053551,
+      29.954987
+     ],
+     [
+      -90.054579,
+      29.954235
+     ],
+     [
+      -90.055127,
+      29.953653
+     ],
+     [
+      -90.055054,
+      29.951033
+     ],
+     [
+      -90.055396,
+      29.950606
+     ],
+     [
+      -90.055405,
+      29.950359
+     ],
+     [
+      -90.055056,
+      29.949692
+     ],
+     [
+      -90.054725,
+      29.944377
+     ],
+     [
+      -90.054277,
+      29.94328
+     ],
+     [
+      -90.054419,
+      29.942867
+     ],
+     [
+      -90.054359,
+      29.942157
+     ],
+     [
+      -90.053919,
+      29.940564
+     ],
+     [
+      -90.053655,
+      29.938553
+     ],
+     [
+      -90.053763,
+      29.936499
+     ],
+     [
+      -90.055381,
+      29.930326
+     ],
+     [
+      -90.055095,
+      29.928704
+     ],
+     [
+      -90.054853,
+      29.928745
+     ],
+     [
+      -90.054786,
+      29.925186
+     ],
+     [
+      -90.055305,
+      29.923822
+     ],
+     [
+      -90.055992,
+      29.922769
+     ],
+     [
+      -90.057739,
+      29.921022
+     ],
+     [
+      -90.059654,
+      29.919685
+     ],
+     [
+      -90.060447,
+      29.918277
+     ],
+     [
+      -90.060925,
+      29.917881
+     ],
+     [
+      -90.071424,
+      29.911452
+     ],
+     [
+      -90.074178,
+      29.910293
+     ],
+     [
+      -90.104429,
+      29.902429
+     ],
+     [
+      -90.106472,
+      29.902026
+     ],
+     [
+      -90.112974,
+      29.901265
+     ],
+     [
+      -90.114058,
+      29.901211
+     ],
+     [
+      -90.115573,
+      29.901419
+     ],
+     [
+      -90.135656,
+      29.906403
+     ],
+     [
+      -90.141083,
+      29.908358
+     ],
+     [
+      -90.141075,
+      29.908538
+     ],
+     [
+      -90.143794,
+      29.909605
+     ],
+     [
+      -90.146449,
+      29.911199
+     ],
+     [
+      -90.146924,
+      29.91053
+     ],
+     [
+      -90.151847,
+      29.912391
+     ],
+     [
+      -90.154487,
+      29.913171
+     ],
+     [
+      -90.155525,
+      29.913352
+     ],
+     [
+      -90.165046,
+      29.914443
+     ],
+     [
+      -90.165499,
+      29.914884
+     ],
+     [
+      -90.16864,
+      29.915245
+     ],
+     [
+      -90.170421,
+      29.915115
+     ],
+     [
+      -90.171661,
+      29.915178
+     ],
+     [
+      -90.192954,
+      29.91758
+     ],
+     [
+      -90.205281,
+      29.918115
+     ],
+     [
+      -90.208183,
+      29.918336
+     ],
+     [
+      -90.210067,
+      29.918621
+     ],
+     [
+      -90.213844,
+      29.919448
+     ],
+     [
+      -90.215103,
+      29.919771
+     ],
+     [
+      -90.217514,
+      29.920677
+     ],
+     [
+      -90.24733,
+      29.934025
+     ],
+     [
+      -90.24733,
+      29.934025
+     ],
+     [
+      -90.260696,
+      29.939994
+     ],
+     [
+      -90.262641,
+      29.940666
+     ],
+     [
+      -90.264403,
+      29.941091
+     ],
+     [
+      -90.266487,
+      29.941379
+     ],
+     [
+      -90.2686,
+      29.941471
+     ],
+     [
+      -90.27141,
+      29.941242
+     ],
+     [
+      -90.274058,
+      29.940657
+     ],
+     [
+      -90.275527,
+      29.940189
+     ],
+     [
+      -90.324501,
+      29.919795
+     ],
+     [
+      -90.326248,
+      29.919153
+     ],
+     [
+      -90.388207,
+      29.902194
+     ],
+     [
+      -90.392226,
+      29.900983
+     ],
+     [
+      -90.394053,
+      29.900169
+     ],
+     [
+      -90.406148,
+      29.893737
+     ],
+     [
+      -90.408467,
+      29.892653
+     ],
+     [
+      -90.410454,
+      29.891994
+     ],
+     [
+      -90.420507,
+      29.889444
+     ],
+     [
+      -90.423712,
+      29.888107
+     ],
+     [
+      -90.445345,
+      29.874941
+     ],
+     [
+      -90.447556,
+      29.873356
+     ],
+     [
+      -90.449119,
+      29.871865
+     ],
+     [
+      -90.451194,
+      29.869492
+     ],
+     [
+      -90.452435,
+      29.867499
+     ],
+     [
+      -90.453358,
+      29.865274
+     ],
+     [
+      -90.453898,
+      29.862956
+     ],
+     [
+      -90.454033,
+      29.860849
+     ],
+     [
+      -90.453231,
+      29.85316
+     ],
+     [
+      -90.453369,
+      29.851139
+     ],
+     [
+      -90.453842,
+      29.848573
+     ],
+     [
+      -90.453956,
+      29.845163
+     ],
+     [
+      -90.454185,
+      29.843368
+     ],
+     [
+      -90.454902,
+      29.84095
+     ],
+     [
+      -90.455696,
+      29.83922
+     ],
+     [
+      -90.457077,
+      29.837137
+     ],
+     [
+      -90.459182,
+      29.834888
+     ],
+     [
+      -90.467422,
+      29.828771
+     ],
+     [
+      -90.468605,
+      29.828058
+     ],
+     [
+      -90.470664,
+      29.82707
+     ],
+     [
+      -90.481016,
+      29.823226
+     ],
+     [
+      -90.482866,
+      29.822316
+     ],
+     [
+      -90.485351,
+      29.820608
+     ],
+     [
+      -90.487213,
+      29.818853
+     ],
+     [
+      -90.515018,
+      29.789882
+     ],
+     [
+      -90.516399,
+      29.788713
+     ],
+     [
+      -90.55908,
+      29.75627
+     ],
+     [
+      -90.561247,
+      29.754799
+     ],
+     [
+      -90.56556,
+      29.752286
+     ],
+     [
+      -90.569414,
+      29.75046
+     ],
+     [
+      -90.574034,
+      29.748703
+     ],
+     [
+      -90.579995,
+      29.747038
+     ],
+     [
+      -90.585345,
+      29.746108
+     ],
+     [
+      -90.590635,
+      29.745655
+     ],
+     [
+      -90.595748,
+      29.745657
+     ],
+     [
+      -90.600771,
+      29.746062
+     ],
+     [
+      -90.671161,
+      29.756191
+     ],
+     [
+      -90.746249,
+      29.766841
+     ],
+     [
+      -90.757648,
+      29.768347
+     ],
+     [
+      -90.759066,
+      29.768398
+     ],
+     [
+      -90.760275,
+      29.768259
+     ],
+     [
+      -90.761603,
+      29.767902
+     ],
+     [
+      -90.813621,
+      29.74747
+     ],
+     [
+      -90.904447,
+      29.708729
+     ],
+     [
+      -90.906688,
+      29.70794
+     ],
+     [
+      -90.927325,
+      29.701072
+     ],
+     [
+      -90.93284,
+      29.699506
+     ],
+     [
+      -90.991132,
+      29.689209
+     ],
+     [
+      -90.996362,
+      29.688237
+     ],
+     [
+      -90.998432,
+      29.68771
+     ],
+     [
+      -91.000562,
+      29.686854
+     ],
+     [
+      -91.001878,
+      29.686174
+     ],
+     [
+      -91.004549,
+      29.684368
+     ],
+     [
+      -91.005757,
+      29.683282
+     ],
+     [
+      -91.009593,
+      29.678672
+     ],
+     [
+      -91.011666,
+      29.676624
+     ],
+     [
+      -91.015212,
+      29.673741
+     ],
+     [
+      -91.017179,
+      29.672445
+     ],
+     [
+      -91.019765,
+      29.671012
+     ],
+     [
+      -91.022096,
+      29.669942
+     ],
+     [
+      -91.026215,
+      29.66843
+     ],
+     [
+      -91.028829,
+      29.667749
+     ],
+     [
+      -91.031344,
+      29.667246
+     ],
+     [
+      -91.035314,
+      29.666801
+     ],
+     [
+      -91.039417,
+      29.666722
+     ],
+     [
+      -91.101659,
+      29.668526
+     ],
+     [
+      -91.115328,
+      29.668973
+     ],
+     [
+      -91.1201,
+      29.669548
+     ],
+     [
+      -91.123604,
+      29.670322
+     ],
+     [
+      -91.125424,
+      29.670854
+     ],
+     [
+      -91.12843,
+      29.671948
+     ],
+     [
+      -91.131925,
+      29.673589
+     ],
+     [
+      -91.133843,
+      29.674679
+     ],
+     [
+      -91.136634,
+      29.676554
+     ],
+     [
+      -91.144057,
+      29.682832
+     ],
+     [
+      -91.145466,
+      29.683868
+     ],
+     [
+      -91.148305,
+      29.685407
+     ],
+     [
+      -91.150942,
+      29.686329
+     ],
+     [
+      -91.153693,
+      29.686915
+     ],
+     [
+      -91.199506,
+      29.693876
+     ],
+     [
+      -91.202997,
+      29.694222
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morgan's Louisiana and Texas Railroad and Steamship Company",
+    "line": "Morgan's Louisiana and Texas: Morgan City \u2013 Lafayette",
+    "id": "mlt-morgan-city-lafayette",
+    "color": "#3B6E91",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE: no running time was read for this piece; assumed close to the 1871 Algiers - Brashear average (about 32 km/h)",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 64.4 mi against 63.96 mi Morgan City - Lafayette (ICC; Fowler 55: 80.6 -> 144.7 = 64.1 mi). Miles by source (router, before simplification): {'SP': 62.2, '(untagged)': 1.8}. LATER ALIGNMENT: Berwick Bay (Morgan City - Berwick, about 0.5 mi) is drawn over the later railroad bridge; in 1880-1882 the bay was crossed by ferry (the bridge date is not established in the research). The rest is drawn on the present BNSF Lafayette Subdivision as OSM records it; realignments since 1880 were not checked. The Lafayette end is the router's snap to the line about 0.5 km from the town centre.",
+    "documented_mileage": "63.96 mi (ICC); Fowler 55: 64.1 mi",
+    "traced_mileage": 64.4,
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "Morgan's extension west of Berwick Bay via Berwick, Patterson, Franklin, Baldwin, Jeanerette, New Iberia, Cade and Broussard to Lafayette (then Vermilionville), opened May 1880 (ICC); on 27 Jul 1880 the Morgan superintendent said it had been open 'for several weeks' (N.O. Picayune via St. Landry Democrat 31 Jul 1880). First through Houston - New Orleans train 30 Aug 1880 (TSHA), with the Louisiana Western beyond Lafayette. The roadbed had been graded by the NOO&GW before 1862 but no trains ran on it (ICC). Ends 1882 as a DISPLAY boundary: from 1883 this track is drawn as Southern Pacific (Sunset Route layer). Headway 1440 is an ESTIMATE; no headway is asserted by the sources.",
+      "sources": [
+       "Segment-level: opening May 1880 from the ICC valuation and St. Landry Democrat 31 Jul 1880 p4; through service from TSHA; 1883 boundary from the existing Sunset Route layer.",
+       "https://www.loc.gov/resource/sn88064537/1880-07-31/ed-1/?sp=4",
+       "https://www.tshaonline.org/handbook/entries/texas-and-new-orleans-railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.202997,
+      29.694222
+     ],
+     [
+      -91.208553,
+      29.693529
+     ],
+     [
+      -91.216139,
+      29.691621
+     ],
+     [
+      -91.283113,
+      29.67772
+     ],
+     [
+      -91.285142,
+      29.677441
+     ],
+     [
+      -91.287299,
+      29.677391
+     ],
+     [
+      -91.289274,
+      29.677543
+     ],
+     [
+      -91.291722,
+      29.677999
+     ],
+     [
+      -91.29335,
+      29.67847
+     ],
+     [
+      -91.295956,
+      29.679563
+     ],
+     [
+      -91.297527,
+      29.680455
+     ],
+     [
+      -91.306862,
+      29.687159
+     ],
+     [
+      -91.309998,
+      29.688728
+     ],
+     [
+      -91.312003,
+      29.689416
+     ],
+     [
+      -91.313512,
+      29.689769
+     ],
+     [
+      -91.357856,
+      29.696341
+     ],
+     [
+      -91.367964,
+      29.697011
+     ],
+     [
+      -91.369376,
+      29.697197
+     ],
+     [
+      -91.371577,
+      29.69773
+     ],
+     [
+      -91.379046,
+      29.70005
+     ],
+     [
+      -91.382645,
+      29.701757
+     ],
+     [
+      -91.385169,
+      29.703293
+     ],
+     [
+      -91.493344,
+      29.776668
+     ],
+     [
+      -91.497292,
+      29.779664
+     ],
+     [
+      -91.529496,
+      29.811644
+     ],
+     [
+      -91.590113,
+      29.872328
+     ],
+     [
+      -91.592215,
+      29.874352
+     ],
+     [
+      -91.595521,
+      29.876896
+     ],
+     [
+      -91.598112,
+      29.878527
+     ],
+     [
+      -91.600487,
+      29.879723
+     ],
+     [
+      -91.6534,
+      29.9031
+     ],
+     [
+      -91.658864,
+      29.905548
+     ],
+     [
+      -91.661563,
+      29.906987
+     ],
+     [
+      -91.665044,
+      29.909337
+     ],
+     [
+      -91.748395,
+      29.970284
+     ],
+     [
+      -91.752003,
+      29.972869
+     ],
+     [
+      -91.754578,
+      29.974459
+     ],
+     [
+      -91.75815,
+      29.976218
+     ],
+     [
+      -91.810929,
+      29.998436
+     ],
+     [
+      -91.815662,
+      30.000465
+     ],
+     [
+      -91.817339,
+      30.001392
+     ],
+     [
+      -91.826832,
+      30.011268
+     ],
+     [
+      -91.870677,
+      30.049932
+     ],
+     [
+      -91.876009,
+      30.055061
+     ],
+     [
+      -91.969715,
+      30.158387
+     ],
+     [
+      -91.987887,
+      30.179496
+     ],
+     [
+      -91.990197,
+      30.182622
+     ],
+     [
+      -91.992319,
+      30.186328
+     ],
+     [
+      -92.005859,
+      30.211551
+     ],
+     [
+      -92.007184,
+      30.213594
+     ],
+     [
+      -92.012365,
+      30.223337
+     ],
+     [
+      -92.013055,
+      30.224857
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morgan's Louisiana and Texas Railroad and Steamship Company",
+    "line": "Morgan's Louisiana and Texas: Alexandria Branch",
+    "id": "mlt-alexandria-branch",
+    "color": "#3B6E91",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Segment-level, 1884 only: through mail-and-express Nos. 1/2 left New Orleans 8 A.M. and reached Alexandria 6:38 P.M. - about 230 mi including the Algiers ferry and the T&P to Alexandria in 10 h 38 min, about 35 km/h overall (Louisiana Democrat 2 Jan 1884 p4). Branch-only speed not separated.",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 61.0 mi against 60.13 mi Lafayette - Cheneyville (ICC: Lafayette - Washington 27.90 + Washington - Cheneyville 32.23; Fowler 65: 60.4). Miles by source (router, before simplification): {'SP': 61.4, 'OHM:(untagged)': 4.2, '(connector)': 0.3, '(untagged)': 0.2} - the OHM miles are an untagged USGS-topo-derived OpenHistoricalMap way used for short lifted stretches (about 1.7 mi of it leaving Lafayette). Drawn only over Morgan's/SP's own track to Cheneyville: the trains ran on 25 mi to Alexandria over the Texas and Pacific (Fowler 65), which is NOT drawn here. LATER ALIGNMENT: drawn on the grade as OSM records it (active SP/UP track near Lafayette and Opelousas, abandoned SP grade elsewhere); no realignment is known but none was checked.",
+    "documented_mileage": "60.13 mi Lafayette - Cheneyville (ICC); Fowler 65: 60.4 (85.3 to Alexandria over the T&P)",
+    "traced_mileage": 61.0,
+    "segments": [
+     {
+      "start": 1882,
+      "end": 1884,
+      "headway_min": 1440,
+      "note": "Lafayette - Carencro - Sunset (Grand Coteau) - Opelousas - Washington - Cheneyville, Morgan's own track; trains ran on to Alexandria over the Texas and Pacific (not drawn). Lafayette - Washington opened May 1881 and Washington - Cheneyville May 1882 (ICC), but no 1881 passenger sighting was found and 'Trains are running to Cheneyville' already in Jan 1882 (Donaldsonville Chief) - CONFLICT with the ICC May 1882 date recorded; drawn from the first confirmed passenger year 1882. Jan 1884: through New Orleans - Alexandria mail-and-express Nos. 1/2 under a 'TIME TABLE MORGAN'S LOUISIANA AND TEXAS' heading. Ends 1884 at an OWNERSHIP boundary (SP Company lease 1 Mar 1885, CSRM), continued as sp-mlt-alexandria-branch. Headway 1440 is an ESTIMATE from the one through train each way in Jan 1884 (freight trains 9/10 not counted).",
+      "sources": [
+       "Segment-level: 1882 from Donaldsonville Chief 21 Jan 1882 p4 ('Trains are running to Cheneyville on the Alexandria branch of the Morgan railroad') and Louisiana Democrat 7 Jun 1882 p3; 1884 from Louisiana Democrat 2 Jan 1884 p4 ('TIME TABLE MORGAN'S LOUISIANA AND TEXAS'); track dates from the ICC valuation.",
+       "https://www.loc.gov/resource/sn85034248/1882-01-21/ed-1/?sp=4",
+       "https://www.loc.gov/resource/sn82003389/1882-06-07/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn82003389/1884-01-02/ed-1/?sp=4",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -92.008897,
+      30.21679
+     ],
+     [
+      -92.016924,
+      30.23229
+     ],
+     [
+      -92.021078,
+      30.239408
+     ],
+     [
+      -92.022041,
+      30.241893
+     ],
+     [
+      -92.024672,
+      30.246614
+     ],
+     [
+      -92.027051,
+      30.25195
+     ],
+     [
+      -92.028987,
+      30.257888
+     ],
+     [
+      -92.033863,
+      30.27774
+     ],
+     [
+      -92.036523,
+      30.288013
+     ],
+     [
+      -92.037635,
+      30.292956
+     ],
+     [
+      -92.042441,
+      30.311807
+     ],
+     [
+      -92.0432,
+      30.315354
+     ],
+     [
+      -92.045793,
+      30.325247
+     ],
+     [
+      -92.050119,
+      30.343031
+     ],
+     [
+      -92.053933,
+      30.357634
+     ],
+     [
+      -92.088376,
+      30.495379
+     ],
+     [
+      -92.089348,
+      30.500206
+     ],
+     [
+      -92.090153,
+      30.506751
+     ],
+     [
+      -92.090573,
+      30.508784
+     ],
+     [
+      -92.091211,
+      30.514257
+     ],
+     [
+      -92.091285,
+      30.516573
+     ],
+     [
+      -92.091177,
+      30.519382
+     ],
+     [
+      -92.090953,
+      30.521219
+     ],
+     [
+      -92.090399,
+      30.524685
+     ],
+     [
+      -92.088696,
+      30.533355
+     ],
+     [
+      -92.086941,
+      30.543229
+     ],
+     [
+      -92.086727,
+      30.543822
+     ],
+     [
+      -92.083961,
+      30.558417
+     ],
+     [
+      -92.083136,
+      30.561245
+     ],
+     [
+      -92.081935,
+      30.56389
+     ],
+     [
+      -92.066229,
+      30.591288
+     ],
+     [
+      -92.064537,
+      30.594534
+     ],
+     [
+      -92.057476,
+      30.606437
+     ],
+     [
+      -92.049974,
+      30.619756
+     ],
+     [
+      -92.049464,
+      30.621179
+     ],
+     [
+      -92.048801,
+      30.623951
+     ],
+     [
+      -92.048742,
+      30.625241
+     ],
+     [
+      -92.04932,
+      30.636002
+     ],
+     [
+      -92.049694,
+      30.638833
+     ],
+     [
+      -92.055595,
+      30.661269
+     ],
+     [
+      -92.0702,
+      30.721256
+     ],
+     [
+      -92.073267,
+      30.728376
+     ],
+     [
+      -92.074688,
+      30.731296
+     ],
+     [
+      -92.076798,
+      30.73501
+     ],
+     [
+      -92.078783,
+      30.737694
+     ],
+     [
+      -92.082516,
+      30.742168
+     ],
+     [
+      -92.085458,
+      30.744895
+     ],
+     [
+      -92.089279,
+      30.748035
+     ],
+     [
+      -92.18648,
+      30.815337
+     ],
+     [
+      -92.18946,
+      30.817737
+     ],
+     [
+      -92.191818,
+      30.820297
+     ],
+     [
+      -92.193872,
+      30.823232
+     ],
+     [
+      -92.194812,
+      30.824995
+     ],
+     [
+      -92.196203,
+      30.828602
+     ],
+     [
+      -92.196614,
+      30.830467
+     ],
+     [
+      -92.203331,
+      30.895599
+     ],
+     [
+      -92.203993,
+      30.897691
+     ],
+     [
+      -92.204497,
+      30.898544
+     ],
+     [
+      -92.205437,
+      30.899737
+     ],
+     [
+      -92.206828,
+      30.901192
+     ],
+     [
+      -92.244583,
+      30.934571
+     ],
+     [
+      -92.26252,
+      30.950251
+     ],
+     [
+      -92.265196,
+      30.952909
+     ],
+     [
+      -92.266256,
+      30.95425
+     ],
+     [
+      -92.26774,
+      30.956443
+     ],
+     [
+      -92.269422,
+      30.959919
+     ],
+     [
+      -92.285358,
+      31.006827
+     ],
+     [
+      -92.285596,
+      31.007349
+     ],
+     [
+      -92.286694,
+      31.008435
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Alexandria Branch",
+    "id": "sp-mlt-alexandria-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "ESTIMATE carried from the Jan 1884 through-train average (about 35 km/h, Louisiana Democrat 2 Jan 1884); no SP-era running time was converted",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 61.0 mi against 60.13 mi Lafayette - Cheneyville (ICC: Lafayette - Washington 27.90 + Washington - Cheneyville 32.23; Fowler 65: 60.4). Miles by source (router, before simplification): {'SP': 61.4, 'OHM:(untagged)': 4.2, '(connector)': 0.3, '(untagged)': 0.2} - the OHM miles are an untagged USGS-topo-derived OpenHistoricalMap way used for short lifted stretches (about 1.7 mi of it leaving Lafayette). Drawn only over Morgan's/SP's own track to Cheneyville: the trains ran on 25 mi to Alexandria over the Texas and Pacific (Fowler 65), which is NOT drawn here. LATER ALIGNMENT: drawn on the grade as OSM records it (active SP/UP track near Lafayette and Opelousas, abandoned SP grade elsewhere); no realignment is known but none was checked.",
+    "documented_mileage": "60.13 mi Lafayette - Cheneyville (ICC); Fowler 65: 60.4 (85.3 to Alexandria over the T&P)",
+    "traced_mileage": 61.0,
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1911,
+      "headway_min": 1440,
+      "note": "Southern Pacific (Atlantic System) under the 1 Mar 1885 lease of Morgan's L&T (CSRM); the 1885 start is an ownership boundary inside a span confirmed at 1884 and 1911, not a fresh opening. Continuity rests on sightings at both ends: Grand Coteau in the 1884 Official Guide (Fowler 'q'), Willow Glen 1909w(fstop) (Fowler), and the Lafayette Advertiser station card of 14 and 21 Feb 1911 ('Alexandria Branch. No. 706, 10:40 a.m. ... No. 705 ... 1:45 p.m.'). [OPEN] Passenger service confirmed to 1911. This is the last CONFIRMED year, NOT a known end - no source dates when passenger service actually stopped (the stations are daggered freight-only by the 1951 Official Guide index). Do not extend without evidence. By 1951 Carencro, Sunset and Cheneyville are daggered and the Guide prints a 'Freight Service only' table Lafayette - Opelousas - Washington. Service surely ran past 1911 (Fowler cites a 1927 company timetable for nearby SP branches) but no later timetable was read. Title passed to the Texas and New Orleans 1927 (CSRM) - still Southern Pacific trains, not a split. Headway 1440 is an ESTIMATE (one or two round trips a day on branches in the schedules read).",
+      "sources": [
+       "Segment-level: 1885 lease from the CSRM finding aid; continuity and the 1911 last-confirmed year from Fowler 65 dated sightings and Lafayette Advertiser 14 Feb 1911 p3; freight-only by 1951 from the Official Guide index (OG52).",
+       "https://www.loc.gov/resource/sn86079068/1911-02-14/ed-1/?sp=3",
+       "https://www.oac.cdlib.org/findaid/ark:/13030/c89w0h82/admin/",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -92.008897,
+      30.21679
+     ],
+     [
+      -92.016924,
+      30.23229
+     ],
+     [
+      -92.021078,
+      30.239408
+     ],
+     [
+      -92.022041,
+      30.241893
+     ],
+     [
+      -92.024672,
+      30.246614
+     ],
+     [
+      -92.027051,
+      30.25195
+     ],
+     [
+      -92.028987,
+      30.257888
+     ],
+     [
+      -92.033863,
+      30.27774
+     ],
+     [
+      -92.036523,
+      30.288013
+     ],
+     [
+      -92.037635,
+      30.292956
+     ],
+     [
+      -92.042441,
+      30.311807
+     ],
+     [
+      -92.0432,
+      30.315354
+     ],
+     [
+      -92.045793,
+      30.325247
+     ],
+     [
+      -92.050119,
+      30.343031
+     ],
+     [
+      -92.053933,
+      30.357634
+     ],
+     [
+      -92.088376,
+      30.495379
+     ],
+     [
+      -92.089348,
+      30.500206
+     ],
+     [
+      -92.090153,
+      30.506751
+     ],
+     [
+      -92.090573,
+      30.508784
+     ],
+     [
+      -92.091211,
+      30.514257
+     ],
+     [
+      -92.091285,
+      30.516573
+     ],
+     [
+      -92.091177,
+      30.519382
+     ],
+     [
+      -92.090953,
+      30.521219
+     ],
+     [
+      -92.090399,
+      30.524685
+     ],
+     [
+      -92.088696,
+      30.533355
+     ],
+     [
+      -92.086941,
+      30.543229
+     ],
+     [
+      -92.086727,
+      30.543822
+     ],
+     [
+      -92.083961,
+      30.558417
+     ],
+     [
+      -92.083136,
+      30.561245
+     ],
+     [
+      -92.081935,
+      30.56389
+     ],
+     [
+      -92.066229,
+      30.591288
+     ],
+     [
+      -92.064537,
+      30.594534
+     ],
+     [
+      -92.057476,
+      30.606437
+     ],
+     [
+      -92.049974,
+      30.619756
+     ],
+     [
+      -92.049464,
+      30.621179
+     ],
+     [
+      -92.048801,
+      30.623951
+     ],
+     [
+      -92.048742,
+      30.625241
+     ],
+     [
+      -92.04932,
+      30.636002
+     ],
+     [
+      -92.049694,
+      30.638833
+     ],
+     [
+      -92.055595,
+      30.661269
+     ],
+     [
+      -92.0702,
+      30.721256
+     ],
+     [
+      -92.073267,
+      30.728376
+     ],
+     [
+      -92.074688,
+      30.731296
+     ],
+     [
+      -92.076798,
+      30.73501
+     ],
+     [
+      -92.078783,
+      30.737694
+     ],
+     [
+      -92.082516,
+      30.742168
+     ],
+     [
+      -92.085458,
+      30.744895
+     ],
+     [
+      -92.089279,
+      30.748035
+     ],
+     [
+      -92.18648,
+      30.815337
+     ],
+     [
+      -92.18946,
+      30.817737
+     ],
+     [
+      -92.191818,
+      30.820297
+     ],
+     [
+      -92.193872,
+      30.823232
+     ],
+     [
+      -92.194812,
+      30.824995
+     ],
+     [
+      -92.196203,
+      30.828602
+     ],
+     [
+      -92.196614,
+      30.830467
+     ],
+     [
+      -92.203331,
+      30.895599
+     ],
+     [
+      -92.203993,
+      30.897691
+     ],
+     [
+      -92.204497,
+      30.898544
+     ],
+     [
+      -92.205437,
+      30.899737
+     ],
+     [
+      -92.206828,
+      30.901192
+     ],
+     [
+      -92.244583,
+      30.934571
+     ],
+     [
+      -92.26252,
+      30.950251
+     ],
+     [
+      -92.265196,
+      30.952909
+     ],
+     [
+      -92.266256,
+      30.95425
+     ],
+     [
+      -92.26774,
+      30.956443
+     ],
+     [
+      -92.269422,
+      30.959919
+     ],
+     [
+      -92.285358,
+      31.006827
+     ],
+     [
+      -92.285596,
+      31.007349
+     ],
+     [
+      -92.286694,
+      31.008435
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Morgan's Louisiana and Texas Railroad and Steamship Company",
+    "line": "Morgan's Louisiana and Texas: Thibodaux Branch",
+    "id": "mlt-thibodaux-branch",
+    "color": "#3B6E91",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no timetable running time was converted for this line; a typical 19th/early-20th-century branch-local speed is assumed",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced except one approximated leg. Traced 4.4 mi against 4.20 mi Thibodaux Junction - Thibodaux (ICC; Fowler 58: 4.2). Approximated: a straight-line leg of 0.9 mi at the Thibodaux end, joining the end of the traced branch to the start of the traced Napoleonville extension where OSM shows no track through town; the Thibodaux station site is not located exactly. The junction is drawn where the branch grade meets the main line east of Schriever (Fowler: Thibodaux Junction 54.3, Schriever 55.1). LATER ALIGNMENT: drawn on the grade as OSM records it; none was checked.",
+    "documented_mileage": "4.20 mi (ICC); Fowler 58: 4.2",
+    "traced_mileage": 4.4,
+    "segments": [
+     {
+      "start": 1879,
+      "end": 1884,
+      "headway_min": 720,
+      "note": "Thibodaux Junction (on the main line near Schriever) - Thibodaux, opened May 1879 (ICC); a Jan 1879 notice says Morgan's trains would run to Thibodaux via the branch from 1 Feb (freight context), and on 24 May 1879 an excursion train was to 'leave the depot in Thibodaux at 8 o'clock in the morning' (Weekly Thibodaux Sentinel) - an excursion, which counts as passenger service. Ends 1884 at an OWNERSHIP boundary (SP lease 1 Mar 1885, CSRM), continued as sp-mlt-thibodaux-branch. Headway 720 is an ESTIMATE borrowed from the 1887 schedule's two round trips a day; no 1879-84 schedule was read.",
+      "sources": [
+       "Segment-level: opening from the ICC valuation (May 1879) and Weekly Thibodaux Sentinel 25 Jan 1879 p2; passenger evidence Weekly Thibodaux Sentinel 24 May 1879 p3 (excursion train from the Thibodaux depot).",
+       "https://www.loc.gov/resource/sn88064492/1879-01-25/ed-1/?sp=2",
+       "https://www.loc.gov/resource/sn88064492/1879-05-24/ed-2/?sp=3",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.808763,
+      29.749372
+     ],
+     [
+      -90.80271,
+      29.751802
+     ],
+     [
+      -90.800864,
+      29.752594
+     ],
+     [
+      -90.800193,
+      29.753352
+     ],
+     [
+      -90.799913,
+      29.754099
+     ],
+     [
+      -90.800054,
+      29.755416
+     ],
+     [
+      -90.801428,
+      29.761764
+     ],
+     [
+      -90.802822,
+      29.766896
+     ],
+     [
+      -90.802796,
+      29.76772
+     ],
+     [
+      -90.801957,
+      29.772715
+     ],
+     [
+      -90.80192,
+      29.773586
+     ],
+     [
+      -90.802289,
+      29.774832
+     ],
+     [
+      -90.803689,
+      29.77724
+     ],
+     [
+      -90.804466,
+      29.778152
+     ],
+     [
+      -90.808435,
+      29.781865
+     ],
+     [
+      -90.810173,
+      29.783904
+     ],
+     [
+      -90.810878,
+      29.784504
+     ],
+     [
+      -90.811824,
+      29.785025
+     ],
+     [
+      -90.812712,
+      29.785348
+     ],
+     [
+      -90.814539,
+      29.785643
+     ],
+     [
+      -90.816907,
+      29.785564
+     ],
+     [
+      -90.819402,
+      29.786318
+     ],
+     [
+      -90.834133,
+      29.787222
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Thibodaux Branch",
+    "id": "sp-mlt-thibodaux-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no timetable running time was converted for this line; a typical 19th/early-20th-century branch-local speed is assumed",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced except one approximated leg. Traced 4.4 mi against 4.20 mi Thibodaux Junction - Thibodaux (ICC; Fowler 58: 4.2). Approximated: a straight-line leg of 0.9 mi at the Thibodaux end, joining the end of the traced branch to the start of the traced Napoleonville extension where OSM shows no track through town; the Thibodaux station site is not located exactly. The junction is drawn where the branch grade meets the main line east of Schriever (Fowler: Thibodaux Junction 54.3, Schriever 55.1). LATER ALIGNMENT: drawn on the grade as OSM records it; none was checked.",
+    "documented_mileage": "4.20 mi (ICC); Fowler 58: 4.2",
+    "traced_mileage": 4.4,
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1922,
+      "headway_min": 720,
+      "note": "Southern Pacific (Atlantic System) under the 1 Mar 1885 lease of Morgan's L&T (CSRM). 1887 'RAILROAD SCHEDULE. THIBODAUX BRANCH': two round trips daily Thibodaux - Schriever, 'connection at Schriever Station with the trains of the Southern Pacific Company, Atlantic System, Morgan line' (Weekly Thibodaux Sentinel 3 Sep 1887). From 1899 every Napoleonville train also ran over this piece. Last CONFIRMED year 1922: train No. 203 was due at Thibodaux at 6 P.M. until 11 Sep 1922, when Nos. 203/204 were discontinued on the PSC petition (filed in the corporate name Morgan's L&T) - the paper calls it a CURTAILMENT, so other trains continued by an unknown amount (Thibodaux Commercial Journal 19 Aug and 23 Sep 1922). [OPEN] Passenger service confirmed to 1922. This is the last CONFIRMED year, NOT a known end - no source dates when passenger service actually stopped (the stations are daggered freight-only by the 1951 Official Guide index). Do not extend without evidence. (Thibodaux is indexed 'Southern Pacific, 56\u2020' in 1951.) TRAP: the Texas and Pacific's own 'Thibodaux Branch' out of Donaldsonville is a different railroad. Headway 720 from the 1887 two round trips a day; ESTIMATE for other years.",
+      "sources": [
+       "Segment-level: 1885 lease from CSRM; 1887 schedule Weekly Thibodaux Sentinel 3 Sep 1887 p1; 1922 last-confirmed year Thibodaux Commercial Journal 19 Aug 1922 p1 and 23 Sep 1922 p3; freight-only by 1951 from the OG52 index.",
+       "https://www.loc.gov/resource/sn88064492/1887-09-03/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064094/1922-08-19/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064094/1922-09-23/ed-1/?sp=3",
+       "https://www.oac.cdlib.org/findaid/ark:/13030/c89w0h82/admin/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.808763,
+      29.749372
+     ],
+     [
+      -90.80271,
+      29.751802
+     ],
+     [
+      -90.800864,
+      29.752594
+     ],
+     [
+      -90.800193,
+      29.753352
+     ],
+     [
+      -90.799913,
+      29.754099
+     ],
+     [
+      -90.800054,
+      29.755416
+     ],
+     [
+      -90.801428,
+      29.761764
+     ],
+     [
+      -90.802822,
+      29.766896
+     ],
+     [
+      -90.802796,
+      29.76772
+     ],
+     [
+      -90.801957,
+      29.772715
+     ],
+     [
+      -90.80192,
+      29.773586
+     ],
+     [
+      -90.802289,
+      29.774832
+     ],
+     [
+      -90.803689,
+      29.77724
+     ],
+     [
+      -90.804466,
+      29.778152
+     ],
+     [
+      -90.808435,
+      29.781865
+     ],
+     [
+      -90.810173,
+      29.783904
+     ],
+     [
+      -90.810878,
+      29.784504
+     ],
+     [
+      -90.811824,
+      29.785025
+     ],
+     [
+      -90.812712,
+      29.785348
+     ],
+     [
+      -90.814539,
+      29.785643
+     ],
+     [
+      -90.816907,
+      29.785564
+     ],
+     [
+      -90.819402,
+      29.786318
+     ],
+     [
+      -90.834133,
+      29.787222
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Napoleonville Branch",
+    "id": "sp-mlt-napoleonville-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no timetable running time was converted for this line; a typical 19th/early-20th-century branch-local speed is assumed",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 18.0 mi against 17.71 mi Thibodaux - Napoleonville (ICC; Fowler 58: 4.2 -> 21.7 = 17.5 mi), all on OSM ways tagged old_railway_operator=SP (abandoned grade along Bayou Lafourche via Labadieville). Starts where the traced grade enters Thibodaux; the straight 0.9 mi through town is on sp-mlt-thibodaux-branch. LATER ALIGNMENT: drawn on the grade as OSM records it; none was checked.",
+    "documented_mileage": "17.71 mi (ICC); Fowler 58: 17.5 mi",
+    "traced_mileage": 18.0,
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1922,
+      "headway_min": 1440,
+      "note": "Thibodaux - Labadieville - Napoleonville extension, opened for operation April 1899 (ICC), but the first CONFIRMED passenger year is 1909: three flag stops on this piece in the 1909 working timetable (Fowler 58: Webre, Pugh, St. Thomas '1909w(fstop)'). [OPEN] start: trains very likely ran from 1899, but no 1899-1908 passenger evidence was found - do not move the start earlier without a source. [OPEN] Passenger service confirmed to 1922: Nos. 203/204 'on the Napoleonville Branch' were discontinued from 11 Sep 1922 on a PSC petition citing earnings that had 'fallen off considerably' and bus competition, but the paper calls it a curtailment, so service continued by an unknown amount (Thibodaux Commercial Journal 19 Aug and 23 Sep 1922). This is the last CONFIRMED year, NOT a known end - no source dates when passenger service actually stopped (the stations are daggered freight-only by the 1951 Official Guide index). Do not extend without evidence. (Labadieville is daggered in 1951.) TRAP: the Texas and Pacific's own 'Napoleonville Branch' out of Donaldsonville is a different railroad. Headway 1440 is an ESTIMATE; no schedule frequency was read.",
+      "sources": [
+       "Segment-level: 1909 from Fowler 58 dated flag-stop sightings; 1922 from Thibodaux Commercial Journal 19 Aug 1922 p1 and 23 Sep 1922 p3; opening date from the ICC valuation; freight-only by 1951 from the OG52 index.",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://www.loc.gov/resource/sn88064094/1922-08-19/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064094/1922-09-23/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -90.834133,
+      29.787222
+     ],
+     [
+      -90.83482,
+      29.787343
+     ],
+     [
+      -90.839923,
+      29.789031
+     ],
+     [
+      -90.858888,
+      29.796196
+     ],
+     [
+      -90.862225,
+      29.797912
+     ],
+     [
+      -90.870005,
+      29.802282
+     ],
+     [
+      -90.895619,
+      29.811919
+     ],
+     [
+      -90.91697,
+      29.820164
+     ],
+     [
+      -90.930935,
+      29.82534
+     ],
+     [
+      -90.93185,
+      29.825614
+     ],
+     [
+      -90.952666,
+      29.829744
+     ],
+     [
+      -90.955252,
+      29.830761
+     ],
+     [
+      -90.960896,
+      29.83264
+     ],
+     [
+      -90.985388,
+      29.840382
+     ],
+     [
+      -90.986884,
+      29.841079
+     ],
+     [
+      -90.988269,
+      29.842004
+     ],
+     [
+      -91.001234,
+      29.852263
+     ],
+     [
+      -91.002231,
+      29.853513
+     ],
+     [
+      -91.014975,
+      29.873645
+     ],
+     [
+      -91.017811,
+      29.877893
+     ],
+     [
+      -91.018248,
+      29.878766
+     ],
+     [
+      -91.021815,
+      29.88871
+     ],
+     [
+      -91.028693,
+      29.909147
+     ],
+     [
+      -91.029382,
+      29.910307
+     ],
+     [
+      -91.029724,
+      29.91066
+     ],
+     [
+      -91.036538,
+      29.916193
+     ],
+     [
+      -91.041571,
+      29.920043
+     ],
+     [
+      -91.042112,
+      29.920704
+     ],
+     [
+      -91.042334,
+      29.921302
+     ],
+     [
+      -91.042371,
+      29.921899
+     ],
+     [
+      -91.042198,
+      29.922646
+     ],
+     [
+      -91.041804,
+      29.923414
+     ],
+     [
+      -91.041324,
+      29.923948
+     ],
+     [
+      -91.03357,
+      29.930476
+     ],
+     [
+      -91.032339,
+      29.931351
+     ],
+     [
+      -91.030492,
+      29.9323
+     ],
+     [
+      -91.026166,
+      29.935946
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Cypremort Branch",
+    "id": "sp-mlt-cypremort-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 18,
+    "speed_source": "Segment-level, 1922 only: 'Leaves Cypremort 7:00 a.m. Arrives Franklin 8:45 a.m.' - about 20 mi (15 mi branch plus about 5 mi of main line Baldwin - Franklin) in 1 h 45 min, about 18 km/h (St. Mary Banner 10 Jun 1922). Other years not checked.",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 15.3 mi against 14.95 mi Baldwin - Cypremort (ICC; Fowler 61: 15.1). Miles by source (router, before simplification): {'SP': 15.1, '(untagged)': 0.3} - OSM still names it 'Cypremort Branch'. The trains ran to and from Franklin over about 5 mi of the main line, which is not redrawn here. The Weeks Island extension beyond Cypremort is NOT drawn (no passenger evidence). LATER ALIGNMENT: drawn on the track as OSM records it; none was checked.",
+    "documented_mileage": "14.95 mi (ICC); Fowler 61: 15.1",
+    "traced_mileage": 15.3,
+    "segments": [
+     {
+      "start": 1900,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Baldwin - Glencoe - Cypremort, trains running to and from Franklin. Opened August 1884 under Morgan's (ICC; Sugar Bowl via Opelousas Courier 9 Aug 1884), but nothing confirms PASSENGERS 1884-1899, so neither the Morgan's era nor 1885-1899 is drawn. [OPEN] start: first CONFIRMED passenger year 1900 ('Nos. 68 and 69 are the Cypremort Branch trains', St. Mary Banner 17 Mar 1900). Confirmed again 1903 (Nos. 70/71, St. Mary Banner 21 Feb 1903), 1922 (one round trip Franklin - Cypremort, St. Mary Banner 3 and 10 Jun 1922) and 1951 (Official Guide table dated 29 Apr 1951: No. 406 MIXED, Franklin 1:16 PM - Baldwin - F. & A. Junction - Caneland - Glencoe - Cypremort; Cypremort and Glencoe indexed with no dagger). GAP CAVEAT: drawing straight through 1923-1950 rests on sightings at both ends of a single branch with no evidence of a gap - no 1923-1950 timetable was read, and a suspension in those years would not be visible in these sources. [OPEN] Passenger service (a mixed train) confirmed to 1951. This is the last CONFIRMED year, NOT a known end - no source dates when it stopped. Do not extend without evidence. Southern Pacific trains throughout (T&NO title 1927, merger 1934, SP 1961 are not splits). Headway 1440 is an ESTIMATE from the one round trip a day in the 1903 and 1922 schedules.",
+      "sources": [
+       "Segment-level: 1900 from St. Mary Banner 17 Mar 1900 p3; 1903 St. Mary Banner 21 Feb 1903 p3; 1922 St. Mary Banner 10 Jun 1922 p5; 1951 Official Guide (research/sources/official_guide_1952.txt lines 173270-173281 and index).",
+       "https://www.loc.gov/resource/sn88064384/1900-03-17/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88064384/1903-02-21/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88064384/1922-06-10/ed-1/?sp=5",
+       "https://www.loc.gov/resource/sn83026389/1884-08-09/ed-1/?sp=1",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.550758,
+      29.832942
+     ],
+     [
+      -91.552975,
+      29.835095
+     ],
+     [
+      -91.553743,
+      29.835717
+     ],
+     [
+      -91.554357,
+      29.835982
+     ],
+     [
+      -91.555075,
+      29.836094
+     ],
+     [
+      -91.574785,
+      29.83287
+     ],
+     [
+      -91.62149,
+      29.831012
+     ],
+     [
+      -91.629944,
+      29.830819
+     ],
+     [
+      -91.653884,
+      29.829743
+     ],
+     [
+      -91.655118,
+      29.829584
+     ],
+     [
+      -91.656366,
+      29.828972
+     ],
+     [
+      -91.657235,
+      29.82801
+     ],
+     [
+      -91.66215,
+      29.81714
+     ],
+     [
+      -91.666522,
+      29.806351
+     ],
+     [
+      -91.670032,
+      29.800751
+     ],
+     [
+      -91.671225,
+      29.799246
+     ],
+     [
+      -91.673728,
+      29.796705
+     ],
+     [
+      -91.676431,
+      29.794624
+     ],
+     [
+      -91.689174,
+      29.787246
+     ],
+     [
+      -91.690755,
+      29.786724
+     ],
+     [
+      -91.692334,
+      29.786483
+     ],
+     [
+      -91.722076,
+      29.785835
+     ],
+     [
+      -91.724703,
+      29.785673
+     ],
+     [
+      -91.725948,
+      29.785373
+     ],
+     [
+      -91.738208,
+      29.781194
+     ],
+     [
+      -91.740656,
+      29.780619
+     ],
+     [
+      -91.774284,
+      29.775705
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: St. Martinville Branch",
+    "id": "sp-mlt-st-martinville-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no timetable running time was converted for this line; a typical 19th/early-20th-century branch-local speed is assumed",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Partly traced. Traced 6.8 mi against 6.40 mi Cade - St. Martinville (ICC; Fowler 60: 6.4). Approximated: a straight-line leg of 2.7 mi from the main line at Cade east to the surviving end of the mapped SP grade (OSM way 762091900, old_railway_operator=SP, note:old_railway_operator=ML&T) - that westernmost stretch of the grade is not in OSM. The remaining 4.1 mi follow that grade north to St. Martinville Junction and the SP spur into St. Martinville (way 13464816). LATER ALIGNMENT: none known; not checked. From Feb 1899 the branch trains ran through to New Iberia over the main line (not redrawn).",
+    "documented_mileage": "6.40 mi (ICC); Fowler 60: 6.4",
+    "traced_mileage": 6.8,
+    "segments": [
+     {
+      "start": 1886,
+      "end": 1904,
+      "headway_min": 1440,
+      "note": "Cade (main line) - Delacroix - St. Martinville Junction - St. Martinville, opened May 1882 under Morgan's (ICC), but no passenger sighting was found for 1882-1885, so the Morgan's era is NOT drawn. [OPEN] start: first CONFIRMED passenger year 1886 - complaints about 'passengers taking the local train hereto to meet the west bound train at Cade Station' (Weekly Messenger, St. Martinville, 24 Apr 1886). From Feb 1899 the branch trains ran through to New Iberia (New Iberia Enterprise 11 Feb 1899). Last CONFIRMED year 1904: New Iberia 'Railroad Schedule' lists 'St. Martinsville 12:05 p.m.' (Weekly Iberian 23 Apr, 4 Jun, 20 Aug 1904); St. Martinsville Junction 'fstop 1902w' (Fowler 60). [OPEN] Passenger service confirmed to 1904. This is the last CONFIRMED year, NOT a known end - no source dates when passenger service actually stopped (the stations are daggered freight-only by the 1951 Official Guide index). Do not extend without evidence. (St. Martinville is indexed 'Southern Pacific, 46\u2020' in 1951.) TRAP: St. Martinville was also on the New Iberia and Northern (Missouri Pacific), whose motor cars ran by 1912 - a 1922 'train from Alexandria' there is most likely that road and is not used. Headway 1440 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: 1886 from Weekly Messenger 24 Apr 1886 p1; 1904 from Weekly Iberian 4 Jun 1904 p2; opening from the ICC valuation; freight-only by 1951 from the OG52 index.",
+       "https://www.loc.gov/resource/sn88064454/1886-04-24/ed-1/?sp=1",
+       "https://www.loc.gov/resource/sn88064323/1904-06-04/ed-1/?sp=2",
+       "https://www.branchline.uk/jfpdf/louisianarrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.876009,
+      30.055061
+     ],
+     [
+      -91.866393,
+      30.093417
+     ],
+     [
+      -91.852144,
+      30.093809
+     ],
+     [
+      -91.850656,
+      30.093977
+     ],
+     [
+      -91.849406,
+      30.094424
+     ],
+     [
+      -91.848673,
+      30.094872
+     ],
+     [
+      -91.848113,
+      30.095431
+     ],
+     [
+      -91.846847,
+      30.097728
+     ],
+     [
+      -91.838662,
+      30.124099
+     ],
+     [
+      -91.83826,
+      30.124957
+     ],
+     [
+      -91.836925,
+      30.126282
+     ],
+     [
+      -91.83617,
+      30.126823
+     ],
+     [
+      -91.834735,
+      30.127407
+     ],
+     [
+      -91.832969,
+      30.12784
+     ],
+     [
+      -91.831847,
+      30.127803
+     ],
+     [
+      -91.826325,
+      30.126145
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Arnaudville Branch",
+    "id": "sp-mlt-arnaudville-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no timetable running time was converted for this line; a typical 19th/early-20th-century branch-local speed is assumed",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Partly traced. Traced 22.9 mi against 21.94 mi St. Martinville Junction - Arnaudville (ICC; Fowler 60: 5.9 -> 28.9 = 23.0 mi). Real-traced on OSM ways tagged old_railway_operator=SP (note ML&T) St. Martinville Junction - Parks - Breaux Bridge - north of Breaux Bridge, and again for 4.4 mi further north. Approximated: two straight-line legs where the grade is missing from OSM - 1.8 mi north of Breaux Bridge (between the mapped fragments ending near 30.302 N and resuming near 30.325 N), and 0.8 mi at the Arnaudville end (from the last mapped fragment to the town; station site not located). Starts at St. Martinville Junction on sp-mlt-st-martinville-branch. LATER ALIGNMENT: none known; not checked.",
+    "documented_mileage": "21.94 mi (ICC); Fowler 60: 23.0 mi",
+    "traced_mileage": 22.9,
+    "segments": [
+     {
+      "start": 1899,
+      "end": 1899,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. St. Martinville Junction - Levert - Parks - Breaux Bridge - Lelia - De Clouet - Arnaudville. Feb 1899: a Mardi Gras 'special train will leave St. Martinville for Breaux Bridge and Arnaudville' and 'Wednesday the train on the branch road commenced to run from Arnaudville to New Iberia' (Weekly Messenger 4 Feb 1899); 'The trains over the branch road to Arnaudville now make New Iberia their terminus instead of Cade Station ... passengers travelling over the Arnaudville road' (New Iberia Enterprise 11 Feb 1899). CONFLICT recorded: the ICC gives 'opened for operation May, 1899'; the newspapers show trains in February. Service certainly ran wider than 1899 both ways (into later years at least), but NO other year is confirmed - do not widen this anchor without a source, and do not delete it. Operator: Southern Pacific (corporate name Morgan's L&T) from opening. By 1951 Breaux Bridge is daggered for SP and Arnaudville is Missouri Pacific only. TRAP: the New Iberia and Northern (MoPac) also served Breaux Bridge and Arnaudville. Headway 1440 is an ESTIMATE.",
+      "sources": [
+       "Segment-level: Weekly Messenger 4 Feb 1899 p3 and New Iberia Enterprise 11 Feb 1899 p3; opening date conflict from the ICC valuation.",
+       "https://www.loc.gov/resource/sn88064454/1899-02-04/ed-1/?sp=3",
+       "https://www.loc.gov/resource/sn88064327/1899-02-11/ed-1/?sp=3",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.834735,
+      30.127407
+     ],
+     [
+      -91.833968,
+      30.127763
+     ],
+     [
+      -91.832992,
+      30.129112
+     ],
+     [
+      -91.822164,
+      30.152362
+     ],
+     [
+      -91.821772,
+      30.154096
+     ],
+     [
+      -91.82178,
+      30.154601
+     ],
+     [
+      -91.822095,
+      30.155637
+     ],
+     [
+      -91.822095,
+      30.155637
+     ],
+     [
+      -91.827259,
+      30.182993
+     ],
+     [
+      -91.830702,
+      30.202235
+     ],
+     [
+      -91.832715,
+      30.212236
+     ],
+     [
+      -91.833185,
+      30.213387
+     ],
+     [
+      -91.834026,
+      30.214507
+     ],
+     [
+      -91.835601,
+      30.215648
+     ],
+     [
+      -91.836959,
+      30.216085
+     ],
+     [
+      -91.838373,
+      30.216239
+     ],
+     [
+      -91.841267,
+      30.21593
+     ],
+     [
+      -91.860167,
+      30.212922
+     ],
+     [
+      -91.861917,
+      30.212871
+     ],
+     [
+      -91.862608,
+      30.212976
+     ],
+     [
+      -91.863822,
+      30.213345
+     ],
+     [
+      -91.864936,
+      30.213945
+     ],
+     [
+      -91.866883,
+      30.215822
+     ],
+     [
+      -91.877622,
+      30.227557
+     ],
+     [
+      -91.878564,
+      30.228894
+     ],
+     [
+      -91.879772,
+      30.231039
+     ],
+     [
+      -91.882364,
+      30.237514
+     ],
+     [
+      -91.884973,
+      30.243237
+     ],
+     [
+      -91.888267,
+      30.251343
+     ],
+     [
+      -91.890306,
+      30.255974
+     ],
+     [
+      -91.897508,
+      30.266577
+     ],
+     [
+      -91.899058,
+      30.268051
+     ],
+     [
+      -91.93348,
+      30.291108
+     ],
+     [
+      -91.934048,
+      30.291682
+     ],
+     [
+      -91.934798,
+      30.292894
+     ],
+     [
+      -91.938036,
+      30.302224
+     ],
+     [
+      -91.923293,
+      30.325484
+     ],
+     [
+      -91.919726,
+      30.330108
+     ],
+     [
+      -91.91918,
+      30.33105
+     ],
+     [
+      -91.918793,
+      30.332751
+     ],
+     [
+      -91.918831,
+      30.333516
+     ],
+     [
+      -91.919733,
+      30.337409
+     ],
+     [
+      -91.932813,
+      30.386264
+     ],
+     [
+      -91.931605,
+      30.397648
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Salt Mine Branch",
+    "id": "sp-mlt-salt-mine-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "ESTIMATE: no timetable running time was converted for this line; a typical 19th/early-20th-century branch-local speed is assumed",
+    "geometry_source": [
+     "OpenStreetMap ways tagged old_railway_operator=SP (BNSF Lafayette Subdivision where active; abandoned/razed SP grades where lifted), untagged rail, rail-trails and OpenHistoricalMap ways, routed with opstrace.py via the Overpass mirror maps.mail.ru, traced 2026-11-12"
+    ],
+    "geometry_quality": "Real-traced, no straight-line legs. Traced 9.0 mi against 9.86 mi New Iberia - Salt Mine (Avery Island) (ICC; Fowler 63: 9.7). Miles by source (router, before simplification): {'SP': 9.0} (OSM 'Salt Mine Spur' / SP-tagged track via Davids and I&V Junction). The New Iberia end starts about 0.3 km from the main line. LATER ALIGNMENT: drawn on the track as OSM records it; none was checked.",
+    "documented_mileage": "9.86 mi (ICC); Fowler 63: 9.7",
+    "traced_mileage": 9.0,
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1885,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. New Iberia - Davids - Iberia & Vermilion Junction - Salt Mine (Avery Island), opened June 1883 under Morgan's (ICC). The only confirmed passenger year: in April 1885 a party of excursionists 'proceeded to the Salt Mines ... The train going out at 7 o'clock and returning at 10 would barely have given them time ... hence ... a request for special hours in the running of the train' (New Iberia Enterprise 4 Apr 1885) - a regular train carrying passengers, in the Southern Pacific lease era (from 1 Mar 1885, CSRM). Service certainly ran wider than 1885 both ways, but NO other year is confirmed - do not widen this anchor, and do not delete it. A headerless 1951 Official Guide fragment with Salt Mine times could not be attributed (see not_yet_sourced). Headway 1440 is an ESTIMATE from the one out-and-back trip the 1885 item describes.",
+      "sources": [
+       "Segment-level: New Iberia Enterprise 4 Apr 1885 p2; opening from the ICC valuation; lease date from CSRM.",
+       "https://www.loc.gov/resource/sn88064327/1885-04-04/ed-1/?sp=2",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Morgan%27s_Louisiana_and_Texas_Railroad_and_Steamship_Company",
+       "https://www.oac.cdlib.org/findaid/ark:/13030/c89w0h82/admin/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -91.825062,
+      30.005615
+     ],
+     [
+      -91.833027,
+      30.000018
+     ],
+     [
+      -91.834168,
+      29.999119
+     ],
+     [
+      -91.83581,
+      29.997533
+     ],
+     [
+      -91.869743,
+      29.959186
+     ],
+     [
+      -91.870688,
+      29.957914
+     ],
+     [
+      -91.871473,
+      29.956592
+     ],
+     [
+      -91.876669,
+      29.946169
+     ],
+     [
+      -91.877668,
+      29.944808
+     ],
+     [
+      -91.87874,
+      29.943765
+     ],
+     [
+      -91.893372,
+      29.931911
+     ],
+     [
+      -91.894554,
+      29.930122
+     ],
+     [
+      -91.906104,
+      29.910903
+     ],
+     [
+      -91.907129,
+      29.909366
+     ],
+     [
+      -91.909467,
+      29.906544
+     ],
+     [
+      -91.909886,
+      29.905673
+     ],
+     [
+      -91.910017,
+      29.904893
+     ],
+     [
+      -91.909485,
+      29.90102
+     ]
+    ]
+   }
+  }
+ ]
+}
