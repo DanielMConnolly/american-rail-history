@@ -1,0 +1,4340 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Buffalo Bayou, Brazos and Colorado (1853-1870, the first railroad in Texas) and its successor the Galveston, Harrisburg and San Antonio (the 'Peirce Line', renamed 27 Jul 1870) for their independent years, plus the GH&SA branches and the 1905-merged lines run as Southern Pacific. The GH&SA main line from Feb 1883 is NOT in this layer: southern_pacific_sunset_route.geojson draws it (Southern Pacific: Sunset Route / Sunset Limited, 1883-1971) and amtrak.geojson after 1971; the GH&SA main-line features here stop at 1882 as a hand-off, not a service end. Features are split by drawable span x operator: BB&C to 1870, GH&SA 1870-1882 on the main line and 1883-1884 on the branches, Southern Pacific from the 1 Mar 1885 SP Company lease (branches). The 1889 end of the lease, the 1927 T&NO lease, the 1934 merger into T&NO and the 1961 merger into SP are not splits - the trains ran as Southern Pacific throughout, and the map already colours T&NO as SP. Research report: research/branches/galveston_harrisburg_and_san_antonio_railway.txt.",
+  "sources": [
+   "TSHA Handbook of Texas, Buffalo Bayou, Brazos and Colorado Railway: https://www.tshaonline.org/handbook/entries/buffalo-bayou-brazos-and-colorado-railway",
+   "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+   "TSHA Handbook of Texas, New York, Texas and Mexican Railway: https://www.tshaonline.org/handbook/entries/new-york-texas-and-mexican-railway",
+   "TSHA Handbook of Texas, Gulf, Western Texas and Pacific Railway: https://www.tshaonline.org/handbook/entries/gulf-western-texas-and-pacific-railway",
+   "TSHA Handbook of Texas, San Antonio and Gulf Railroad: https://www.tshaonline.org/handbook/entries/san-antonio-and-gulf-railroad",
+   "TSHA Handbook of Texas, Galveston, Houston and Northern Railway: https://www.tshaonline.org/handbook/entries/galveston-houston-and-northern-railway",
+   "TSHA Handbook of Texas, Gonzales Branch Railroad: https://www.tshaonline.org/handbook/entries/gonzales-branch-railroad",
+   "John Fowler, Texas Railroads (1), branchline.uk SL 261: https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+   "Official Guide of the Railways, Feb 1952 (schedules Sept-Dec 1951), research/sources/official_guide_1952.txt",
+   "chicagorailfan.com, SP trains at Houston: https://chicagorailfan.com/stbchou.html",
+   "chicagorailfan.com, SP trains at San Antonio: https://chicagorailfan.com/stbcsat.html",
+   "Texas Transportation Museum, San Antonio and Gulf Shore: https://txtransportationmuseum.org/newpagea616653e",
+   "Texas Transportation Museum, Southern Pacific: https://www.txtransportationmuseum.org/southern-pacific",
+   "Palacios history, Matagorda County USGenWeb: https://www.usgenwebsites.org/TXMatagorda/palacios/palacios_history.htm",
+   "USGS Bulletin 845: https://www.npshistory.com/publications/geology/bul/845/sec11.htm"
+  ],
+  "colours": "Southern Pacific Railroad colour pulled programmatically from southern_pacific_sunset_route.geojson. Galveston, Harrisburg and San Antonio (#9C6A3A) and Buffalo Bayou, Brazos and Colorado (#3D6E9E) are new colours, checked by script to be used by no other company in data/.",
+  "not_yet_sourced": [
+   "OPEN ends (last CONFIRMED year, not an ending): Southern Pacific Eagle Pass Branch 1885-1951 (Dec 1951 mixed trains 227/228); Gonzales Branch 1885-1951 (Sept 1951 mixed 216/217); Rosenberg - Victoria 1905-1951; Victoria - Beeville 1905-1951. Each needs a last-train date - ICC discontinuance dockets or Texas newspapers on the Portal to Texas History.",
+   "ANCHORS (single proven year, not a duration): GH&SA La Grange Branch 1884 (1884 Official Guide letter at Ellinger); Southern Pacific Bay City Junction - Palacios 1906 (Baptist encampment trains).",
+   "Victoria 1953 last passenger train: one HMdb transcription (marker 192410, page returned 403); the THC Atlas text reportedly differs. Not drawn - Rosenberg - Victoria stops at 1951 [OPEN].",
+   "San Antonio - Stockdale end: TTM-SAGS timeline 1947 vs its own narrative 'probably early 1950s'; 1947 drawn (agrees with OG52 daggers).",
+   "Marion - San Antonio opening day: 2 vs 5 Feb 1877 first train, 16 vs 19 Feb formal opening (TSHA-GHSA vs TTM-SP) - year agrees.",
+   "Columbus - Schulenburg: TSHA gives 'December' with no year (context 1873); collapsed to 1874.",
+   "BB&C Civil War operation 1861-65: passenger continuity not sourced; drawn continuous.",
+   "BB&C Richmond - Alleyton: tracks reached Alleyton 'late 1860', no first-train date; 1861 drawn.",
+   "Eagle Pass and Gonzales branches: completed 1882 but no dated first train; 1883 drawn.",
+   "La Grange Branch passenger end: unknown, before the 1942 abandonment.",
+   "Pre-1905 years of the merged roads (NYT&M 1882-1905, GWT&P 1873-1905, SA&GS/SA&G 1894-1905, GL&H/GH&N 1890s-1905) belong to their own reports and are not drawn here.",
+   "headway_min and avg_speed_kmh are estimates throughout (see each speed_source and segment note)."
+  ],
+  "branches_deliberately_omitted": [
+   "San Antonio - Hondo 1882 (GH&SA, western extension before through service): evidence is only station names first recorded in the 1881/1882 Official Guides per BL-TX1, the Guide pages themselves not seen - too weak. The line from San Antonio west is drawn from 1883 by southern_pacific_sunset_route.geojson.",
+   "Houston - Clinton (1914 anchor in BL-TX1): ownership by GH&SA (ex-GH&N spur via Galena Junction) is inferred, not sourced.",
+   "Port Lavaca - Victoria - Cuero (ex-GWT&P): no positive passenger evidence in the GH&SA era (1905+); freight-only by 1951 (OG52 Table 40 and index 68 dagger at Cuero). Pre-1905 years are the GWT&P's own.",
+   "Cuero - Stockdale (built 1907): no source names a passenger train on it; freight-only by 1951 (OG52 Table 68 daggers).",
+   "Bay City Junction - Hawkinsville: no passenger evidence of any kind found.",
+   "Houston - La Porte - Galveston (ex-GH&N): no post-1905 passenger year found; freight-only by 1951 with bus substitution (OG52 Table 56). SP trains 171/172 Houston - Galveston (1942) are not shown to have used this route.",
+   "Strang - Seabrook (Sylvan Beach line, built 1914): no passenger evidence found.",
+   "Harrisburg - Stella after 1882: passenger end unknown (freight-only by 1951, OG52 Table 49); drawn only 1853-1882 as part of the BB&C / GH&SA main line.",
+   "Wharton - Bay City Junction: no separate GH&SA-era passenger evidence; only Bay City Junction - Palacios drawn (1906 anchor).",
+   "Rosenberg - Needville - Damon: ownership as GH&SA not established; no passenger evidence."
+  ],
+  "research_findings_for_other_layers": [
+   "southern_pacific_sunset_route.geojson (not edited here) draws three LATER ALIGNMENTS over GH&SA territory for years before they existed: (a) Comstock - Shumla via the Pecos High Bridge, opened 1892 (TSHA-GHSA; BL-TX1 'Former route until 1891' via Flanders, Painted Cave) - 1883-1891/92 trains used the Rio Grande canyon shelf route with two tunnels and a river-level Pecos crossing, 10.7 mi longer; (b) Del Rio - Cabra, relocated 1969 for Amistad Reservoir (BL-TX1 'Former route until 1969' via McKee's, Devil's River, Bullis, Feely) - 1883-1968 drawn on the post-1969 line; (c) the Houston entrance, the 1918 Chaney Jct - West Junction line (TSHA-GHSA) that replaced the 1880 Chaney Jct - Stella entry - 1883-1917 drawn on it. That file's geometry_quality should name these (Rule 2).",
+   "southern_pacific_sunset_route.geojson sp-sunset-route-early: operator of record east of El Paso 1883 - Feb 1885 was GH&SA (SP Company lease from 1 Mar 1885). Left as SP from 1883, consistent with the Morgan's L&T layer."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Buffalo Bayou, Brazos and Colorado Railway",
+    "line": "Buffalo Bayou, Brazos and Colorado: Harrisburg – Stafford",
+    "id": "bbc-harrisburg-staffords-point",
+    "color": "#3D6E9E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "Estimate: no 1850s-1860s timetable found; typical Texas steam-road schedule speed of the period (about 12-15 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 18.4 mi of an implied 20 mi (TSHA-BBBC: Harrisburg - Stafford's Point 20 mi; BL-TX1 Harrisburg - Stella 7.8 mi, traced 7.9). 100% on OSM ways tagged old_railway_operator=SP: the UP Harrisburg Subdivision from Harrisburg (east Houston, pinned at the Harrisburg Sub's east end) west through Stella (pinned where the Houston Tap crossed, 7.9 mi out) to West Junction, then the UP Glidden Subdivision to Stafford. This is the ORIGINAL BB&C line, not the later Houston entrance via Chaney Junction (1880/1918), and not the Santa Fe (GC&SF) line that crosses near Stafford. Harrisburg terminal position approximate (within about 0.5 mi). No straight-line leg. Present-day alignment; no relocation of this stretch found in the research, not otherwise checked.",
+    "segments": [
+     {
+      "start": 1853,
+      "end": 1870,
+      "headway_min": 1440,
+      "note": "First railroad in Texas. Harrisburg - Stafford's Point, 20 mi, opened Aug 1853 (TSHA-BBBC); steam from the outset (locomotive 'General Sherman', late 1852), so no animal-power trim (Rule 5). Galveston connection by Buffalo Bayou steamer; Houston reached only over the separate Houston Tap (not drawn here). End 1870 is the RENAME, not a service end: sold 24 Jan 1870 to T. W. Peirce and associates and renamed Galveston, Harrisburg and San Antonio 27 Jul 1870 (TSHA-GHSA) - the GH&SA feature continues the same track from 1870. Civil War years 1861-65: TSHA-BBBC says the road ran through the war with no new construction, but continuity of PASSENGER service is not stated - drawn continuous, unsourced. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1853 opening and 1870 rename from TSHA-BBBC / TSHA-GHSA (research report block 1). Civil War continuity 1861-65 NOT sourced. Headway is an estimate.",
+       "TSHA Handbook of Texas, Buffalo Bayou, Brazos and Colorado Railway: https://www.tshaonline.org/handbook/entries/buffalo-bayou-brazos-and-colorado-railway",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.279471,
+      29.720578
+     ],
+     [
+      -95.283018,
+      29.720563
+     ],
+     [
+      -95.283707,
+      29.720425
+     ],
+     [
+      -95.284309,
+      29.72014
+     ],
+     [
+      -95.312955,
+      29.704046
+     ],
+     [
+      -95.335875,
+      29.689633
+     ],
+     [
+      -95.33761,
+      29.68869
+     ],
+     [
+      -95.339242,
+      29.688006
+     ],
+     [
+      -95.432085,
+      29.660065
+     ],
+     [
+      -95.545336,
+      29.616435
+     ],
+     [
+      -95.546968,
+      29.615973
+     ],
+     [
+      -95.548253,
+      29.615743
+     ],
+     [
+      -95.550842,
+      29.615622
+     ],
+     [
+      -95.554615,
+      29.615892
+     ],
+     [
+      -95.557805,
+      29.61667
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Buffalo Bayou, Brazos and Colorado Railway",
+    "line": "Buffalo Bayou, Brazos and Colorado: Stafford – Richmond",
+    "id": "bbc-staffords-point-richmond",
+    "color": "#3D6E9E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "Estimate: no 1850s-1860s timetable found; typical Texas steam-road schedule speed of the period (about 12-15 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 13.1 mi Stafford - Sugar Land - Richmond against 12.5 mi documented to East Richmond (TSHA-BBBC) - drawn to Richmond on the west bank, slightly past the 1856 East Richmond terminus. 100% on OSM ways tagged old_railway_operator=SP (today's UP Glidden Subdivision). No straight-line leg. Present-day alignment including today's Brazos crossing; the 1856 terminus was on the east bank, so the river-crossing end (under 1 mi) is a LATER alignment than this era.",
+    "segments": [
+     {
+      "start": 1856,
+      "end": 1870,
+      "headway_min": 1440,
+      "note": "Stafford's Point - East Richmond (Brazos River), 12.5 mi, reached 'by 1 Jan 1856' (TSHA-BBBC) - bracket 1855/1856, the later year taken. Drawn to Richmond on the present line. End 1870 is the rename to GH&SA, not a service end. Civil War continuity of passenger service 1861-65 not sourced; drawn continuous. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 'by 1 Jan 1856' from TSHA-BBBC (report block 1); 1870 rename from TSHA-GHSA. Civil War continuity NOT sourced. Headway is an estimate.",
+       "TSHA Handbook of Texas, Buffalo Bayou, Brazos and Colorado Railway: https://www.tshaonline.org/handbook/entries/buffalo-bayou-brazos-and-colorado-railway",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.557805,
+      29.61667
+     ],
+     [
+      -95.559527,
+      29.617359
+     ],
+     [
+      -95.566695,
+      29.620731
+     ],
+     [
+      -95.571686,
+      29.622786
+     ],
+     [
+      -95.580549,
+      29.62699
+     ],
+     [
+      -95.582489,
+      29.627801
+     ],
+     [
+      -95.584918,
+      29.628503
+     ],
+     [
+      -95.58749,
+      29.628899
+     ],
+     [
+      -95.5897,
+      29.628971
+     ],
+     [
+      -95.592594,
+      29.628733
+     ],
+     [
+      -95.63382,
+      29.620585
+     ],
+     [
+      -95.636143,
+      29.620029
+     ],
+     [
+      -95.639276,
+      29.618876
+     ],
+     [
+      -95.65924,
+      29.609184
+     ],
+     [
+      -95.67405,
+      29.603728
+     ],
+     [
+      -95.676337,
+      29.603092
+     ],
+     [
+      -95.67803,
+      29.602809
+     ],
+     [
+      -95.735272,
+      29.596722
+     ],
+     [
+      -95.736855,
+      29.596514
+     ],
+     [
+      -95.738743,
+      29.596105
+     ],
+     [
+      -95.741074,
+      29.595324
+     ],
+     [
+      -95.743329,
+      29.594233
+     ],
+     [
+      -95.75589,
+      29.586458
+     ],
+     [
+      -95.761708,
+      29.583705
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Buffalo Bayou, Brazos and Colorado Railway",
+    "line": "Buffalo Bayou, Brazos and Colorado: Richmond – Alleyton",
+    "id": "bbc-richmond-alleyton",
+    "color": "#3D6E9E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "Estimate: no 1850s-1860s timetable found; typical Texas steam-road schedule speed of the period (about 12-15 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 48.2 mi Richmond - Rosenberg - East Bernard - Eagle Lake - Alleyton; BL-TX1 mileposts Richmond 396.0 - Alleyton 444.2 = 48.2 mi. 47.6 mi on OSM ways tagged old_railway_operator=SP (today's UP Glidden Subdivision), 0.6 mi untagged rail. BB&C total Harrisburg - Alleyton traced 79.6 mi against 80 mi documented (TSHA-BBBC). No straight-line leg. Present-day alignment; the 1856-60 Brazos crossing at Richmond is drawn on today's bridge (a later structure).",
+    "segments": [
+     {
+      "start": 1861,
+      "end": 1870,
+      "headway_min": 1440,
+      "note": "East Richmond - Alleyton (Colorado River, opposite Columbus), via the Rosenberg site, East Bernard and Eagle Lake. Tracks reached Alleyton 'late 1860' (TSHA-BBBC); no first-train date is given, so 1861, the first full year, is drawn (collapsed inward). The whole 1861-1865 span lies in the Civil War: TSHA-BBBC says the road kept running with no new construction, but whether passenger trains ran continuously is NOT sourced - drawn continuous, flag if a source shows suspension. End 1870 is the rename to GH&SA, not a service end. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: 'late 1860' track completion (TSHA-BBBC) is not a dated train; 1861 start is inferred and Civil War passenger continuity is unsourced. Headway is an estimate.",
+       "TSHA Handbook of Texas, Buffalo Bayou, Brazos and Colorado Railway: https://www.tshaonline.org/handbook/entries/buffalo-bayou-brazos-and-colorado-railway",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.761708,
+      29.583705
+     ],
+     [
+      -95.767385,
+      29.581527
+     ],
+     [
+      -95.769112,
+      29.580629
+     ],
+     [
+      -95.770873,
+      29.579451
+     ],
+     [
+      -95.784029,
+      29.567405
+     ],
+     [
+      -95.786222,
+      29.565683
+     ],
+     [
+      -95.787723,
+      29.564796
+     ],
+     [
+      -95.789933,
+      29.563793
+     ],
+     [
+      -95.792168,
+      29.563092
+     ],
+     [
+      -95.793932,
+      29.562737
+     ],
+     [
+      -95.957678,
+      29.544015
+     ],
+     [
+      -96.098513,
+      29.528332
+     ],
+     [
+      -96.101257,
+      29.528191
+     ],
+     [
+      -96.104685,
+      29.52853
+     ],
+     [
+      -96.317661,
+      29.579229
+     ],
+     [
+      -96.32079,
+      29.579993
+     ],
+     [
+      -96.323331,
+      29.580941
+     ],
+     [
+      -96.32572,
+      29.582231
+     ],
+     [
+      -96.327919,
+      29.583896
+     ],
+     [
+      -96.37867,
+      29.632117
+     ],
+     [
+      -96.401631,
+      29.653813
+     ],
+     [
+      -96.405427,
+      29.65723
+     ],
+     [
+      -96.407724,
+      29.658708
+     ],
+     [
+      -96.410232,
+      29.659831
+     ],
+     [
+      -96.461212,
+      29.677869
+     ],
+     [
+      -96.464275,
+      29.679263
+     ],
+     [
+      -96.466948,
+      29.68113
+     ],
+     [
+      -96.468145,
+      29.682248
+     ],
+     [
+      -96.469291,
+      29.683537
+     ],
+     [
+      -96.483626,
+      29.702613
+     ],
+     [
+      -96.484537,
+      29.703616
+     ],
+     [
+      -96.485674,
+      29.704448
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Buffalo Bayou, Brazos and Colorado Railway",
+    "line": "Buffalo Bayou, Brazos and Colorado: Alleyton – Columbus (Columbus Tap)",
+    "id": "bbc-columbus-tap",
+    "color": "#3D6E9E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 22,
+    "speed_source": "Estimate: no 1850s-1860s timetable found; typical Texas steam-road schedule speed of the period (about 12-15 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 3.0 mi Alleyton - Columbus against 3 mi documented (TSHA-BBBC). 100% on OSM ways tagged old_railway_operator=SP (today's UP Glidden Subdivision), across today's Colorado River bridge (a later structure than the 1867 Tap bridge). No straight-line leg.",
+    "segments": [
+     {
+      "start": 1867,
+      "end": 1870,
+      "headway_min": 1440,
+      "note": "Columbus Tap, 3 mi with the Colorado River bridge, completed Nov 1867; '1867: service extended to Columbus over the Columbus Tap' (TSHA-BBBC). The Tap was a separate company whose line BB&C trains ran over; merged into GH&SA by the 27 Jul 1870 legislative amendment (TSHA-GHSA). End 1870 = merger/rename, not a service end. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: Nov 1867 completion and service from TSHA-BBBC; 1870 merger from TSHA-GHSA. Headway is an estimate.",
+       "TSHA Handbook of Texas, Buffalo Bayou, Brazos and Colorado Railway: https://www.tshaonline.org/handbook/entries/buffalo-bayou-brazos-and-colorado-railway",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -96.490837,
+      29.705452
+     ],
+     [
+      -96.50528,
+      29.702323
+     ],
+     [
+      -96.507759,
+      29.702139
+     ],
+     [
+      -96.509128,
+      29.702287
+     ],
+     [
+      -96.538034,
+      29.70751
+     ],
+     [
+      -96.539306,
+      29.707633
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Harrisburg – Columbus",
+    "id": "ghsa-harrisburg-columbus",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Identical geometry to the four BB&C features joined: traced 82.6 mi Harrisburg - Stella - Stafford - Richmond - Alleyton - Columbus against 83 mi documented (80 mi BB&C + 3 mi Columbus Tap; TSHA-BBBC/TSHA-GHSA). 99% on OSM ways tagged old_railway_operator=SP (UP Harrisburg and Glidden Subdivisions), 0.6 mi untagged. Draws the original Harrisburg - Stella - West Junction line, which this era used - not the Chaney Junction entrances. No straight-line leg. Present-day bridges at the Brazos and Colorado are later structures.",
+    "segments": [
+     {
+      "start": 1870,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "The former BB&C main line plus the Columbus Tap, under the name Galveston, Harrisburg and San Antonio from 27 Jul 1870 (legislative amendment that also merged the Columbus Tap and the Brazos Iron Bridge Association; TSHA-GHSA). Popularly the 'Peirce Line'. Harrisburg stayed the eastern terminal; GH&SA reached Houston over I&GN tracks in 1877 and on its own line in 1880 (separate feature). Drawn via the original Harrisburg - Stella - Stafford alignment (see geometry_quality). End 1882 is the HAND-OFF to the existing 'Southern Pacific: Sunset Route' feature (southern_pacific_sunset_route.geojson), which draws this line from Feb 1883 when through Sunset Route trains began - NOT a service end. (Strictly GH&SA stayed operator of record until the SP Company lease of 1 Mar 1885; the main line is split at 1883 to match that layer and the Morgan's L&T precedent.) Huntington's 1 Jul 1881 interest was stock, not an operator change. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1870 rename/merger and continuing operation from TSHA-GHSA and TSHA-BBBC (report blocks 1-3); 1883 hand-off from TSHA-GHSA. Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "TSHA Handbook of Texas, Buffalo Bayou, Brazos and Colorado Railway: https://www.tshaonline.org/handbook/entries/buffalo-bayou-brazos-and-colorado-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.279471,
+      29.720578
+     ],
+     [
+      -95.283018,
+      29.720563
+     ],
+     [
+      -95.283707,
+      29.720425
+     ],
+     [
+      -95.284309,
+      29.72014
+     ],
+     [
+      -95.312955,
+      29.704046
+     ],
+     [
+      -95.335875,
+      29.689633
+     ],
+     [
+      -95.33761,
+      29.68869
+     ],
+     [
+      -95.339242,
+      29.688006
+     ],
+     [
+      -95.432085,
+      29.660065
+     ],
+     [
+      -95.545336,
+      29.616435
+     ],
+     [
+      -95.546968,
+      29.615973
+     ],
+     [
+      -95.548253,
+      29.615743
+     ],
+     [
+      -95.550842,
+      29.615622
+     ],
+     [
+      -95.554615,
+      29.615892
+     ],
+     [
+      -95.557805,
+      29.61667
+     ],
+     [
+      -95.559527,
+      29.617359
+     ],
+     [
+      -95.566695,
+      29.620731
+     ],
+     [
+      -95.571686,
+      29.622786
+     ],
+     [
+      -95.580549,
+      29.62699
+     ],
+     [
+      -95.582489,
+      29.627801
+     ],
+     [
+      -95.584918,
+      29.628503
+     ],
+     [
+      -95.58749,
+      29.628899
+     ],
+     [
+      -95.5897,
+      29.628971
+     ],
+     [
+      -95.592594,
+      29.628733
+     ],
+     [
+      -95.63382,
+      29.620585
+     ],
+     [
+      -95.636143,
+      29.620029
+     ],
+     [
+      -95.639276,
+      29.618876
+     ],
+     [
+      -95.65924,
+      29.609184
+     ],
+     [
+      -95.67405,
+      29.603728
+     ],
+     [
+      -95.676337,
+      29.603092
+     ],
+     [
+      -95.67803,
+      29.602809
+     ],
+     [
+      -95.735272,
+      29.596722
+     ],
+     [
+      -95.736855,
+      29.596514
+     ],
+     [
+      -95.738743,
+      29.596105
+     ],
+     [
+      -95.741074,
+      29.595324
+     ],
+     [
+      -95.743329,
+      29.594233
+     ],
+     [
+      -95.75589,
+      29.586458
+     ],
+     [
+      -95.761708,
+      29.583705
+     ],
+     [
+      -95.767385,
+      29.581527
+     ],
+     [
+      -95.769112,
+      29.580629
+     ],
+     [
+      -95.770873,
+      29.579451
+     ],
+     [
+      -95.784029,
+      29.567405
+     ],
+     [
+      -95.786222,
+      29.565683
+     ],
+     [
+      -95.787723,
+      29.564796
+     ],
+     [
+      -95.789933,
+      29.563793
+     ],
+     [
+      -95.792168,
+      29.563092
+     ],
+     [
+      -95.793932,
+      29.562737
+     ],
+     [
+      -95.957678,
+      29.544015
+     ],
+     [
+      -96.098513,
+      29.528332
+     ],
+     [
+      -96.101257,
+      29.528191
+     ],
+     [
+      -96.104685,
+      29.52853
+     ],
+     [
+      -96.317661,
+      29.579229
+     ],
+     [
+      -96.32079,
+      29.579993
+     ],
+     [
+      -96.323331,
+      29.580941
+     ],
+     [
+      -96.32572,
+      29.582231
+     ],
+     [
+      -96.327919,
+      29.583896
+     ],
+     [
+      -96.37867,
+      29.632117
+     ],
+     [
+      -96.401631,
+      29.653813
+     ],
+     [
+      -96.405427,
+      29.65723
+     ],
+     [
+      -96.407724,
+      29.658708
+     ],
+     [
+      -96.410232,
+      29.659831
+     ],
+     [
+      -96.461212,
+      29.677869
+     ],
+     [
+      -96.464275,
+      29.679263
+     ],
+     [
+      -96.466948,
+      29.68113
+     ],
+     [
+      -96.468145,
+      29.682248
+     ],
+     [
+      -96.469291,
+      29.683537
+     ],
+     [
+      -96.483626,
+      29.702613
+     ],
+     [
+      -96.484537,
+      29.703616
+     ],
+     [
+      -96.485674,
+      29.704448
+     ],
+     [
+      -96.50528,
+      29.702323
+     ],
+     [
+      -96.507759,
+      29.702139
+     ],
+     [
+      -96.509128,
+      29.702287
+     ],
+     [
+      -96.538034,
+      29.70751
+     ],
+     [
+      -96.539306,
+      29.707633
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Columbus – Waelder",
+    "id": "ghsa-columbus-waelder",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 46.8 mi Columbus - Glidden - Weimar - Schulenburg - Flatonia - Waelder. 46.8 mi on OSM ways tagged old_railway_operator=SP (today's UP Glidden Subdivision), 0.1 mi untagged. No straight-line leg. Columbus - San Antonio total over the four GH&SA features traced 123.9 mi against 125.0 mi documented (TSHA-GHSA; BL-TX1 mileposts 447.3 - 572.3). Present-day UP alignment; BL-TX1's mileposts still sum to the original 125 mi, so no major relocation; local realignments not checked.",
+    "segments": [
+     {
+      "start": 1874,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "Westward extension built under J. Converse from Apr 1873 (TSHA-GHSA). Columbus - Schulenburg reached 'December' with no year stated (context Dec 1873) - bracket Dec 1873/1874, the later year taken; Schulenburg - Waelder opened summer 1874 (TSHA-GHSA). Positive passenger evidence: Columbus, Weimar, Schulenburg, Flatonia and Waelder are all marked 'y' (in the 1875 Official Guide) in BL-TX1 p.12. End 1882 is the HAND-OFF to the existing 'Southern Pacific: Sunset Route' feature (southern_pacific_sunset_route.geojson), which draws this line from Feb 1883 when through Sunset Route trains began - NOT a service end. (Strictly GH&SA stayed operator of record until the SP Company lease of 1 Mar 1885; the main line is split at 1883 to match that layer and the Morgan's L&T precedent.) Huntington's 1 Jul 1881 interest was stock, not an operator change. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: construction stages from TSHA-GHSA; 1875 Official Guide letters (y) from BL-TX1 p.12. 1874 start collapses a Dec 1873/1874 bracket. Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -96.539306,
+      29.707633
+     ],
+     [
+      -96.546988,
+      29.7075
+     ],
+     [
+      -96.552257,
+      29.707634
+     ],
+     [
+      -96.553827,
+      29.707497
+     ],
+     [
+      -96.637026,
+      29.694344
+     ],
+     [
+      -96.639772,
+      29.693998
+     ],
+     [
+      -96.641154,
+      29.694042
+     ],
+     [
+      -96.642387,
+      29.694251
+     ],
+     [
+      -96.65262,
+      29.696764
+     ],
+     [
+      -96.654402,
+      29.697035
+     ],
+     [
+      -96.688112,
+      29.696688
+     ],
+     [
+      -96.703869,
+      29.695753
+     ],
+     [
+      -96.706286,
+      29.69573
+     ],
+     [
+      -96.781179,
+      29.702231
+     ],
+     [
+      -96.783292,
+      29.702393
+     ],
+     [
+      -96.784901,
+      29.702314
+     ],
+     [
+      -96.786573,
+      29.701964
+     ],
+     [
+      -96.795501,
+      29.699057
+     ],
+     [
+      -96.79737,
+      29.698558
+     ],
+     [
+      -96.807794,
+      29.697125
+     ],
+     [
+      -96.80962,
+      29.69676
+     ],
+     [
+      -96.811845,
+      29.696075
+     ],
+     [
+      -96.816837,
+      29.694028
+     ],
+     [
+      -96.818719,
+      29.693428
+     ],
+     [
+      -96.820424,
+      29.693149
+     ],
+     [
+      -96.828604,
+      29.692423
+     ],
+     [
+      -96.829961,
+      29.692179
+     ],
+     [
+      -96.831108,
+      29.691799
+     ],
+     [
+      -96.832794,
+      29.690871
+     ],
+     [
+      -96.836264,
+      29.688215
+     ],
+     [
+      -96.83806,
+      29.686749
+     ],
+     [
+      -96.841318,
+      29.683712
+     ],
+     [
+      -96.842557,
+      29.682842
+     ],
+     [
+      -96.851915,
+      29.678648
+     ],
+     [
+      -96.865056,
+      29.671623
+     ],
+     [
+      -96.866497,
+      29.671069
+     ],
+     [
+      -96.86786,
+      29.670868
+     ],
+     [
+      -96.875411,
+      29.671422
+     ],
+     [
+      -96.877211,
+      29.671733
+     ],
+     [
+      -96.878631,
+      29.6723
+     ],
+     [
+      -96.884471,
+      29.675288
+     ],
+     [
+      -96.899351,
+      29.679303
+     ],
+     [
+      -96.901024,
+      29.679461
+     ],
+     [
+      -96.90485,
+      29.679486
+     ],
+     [
+      -96.927536,
+      29.679223
+     ],
+     [
+      -96.92905,
+      29.679297
+     ],
+     [
+      -96.93091,
+      29.679703
+     ],
+     [
+      -96.948767,
+      29.685194
+     ],
+     [
+      -96.950162,
+      29.68553
+     ],
+     [
+      -96.951603,
+      29.685669
+     ],
+     [
+      -96.963425,
+      29.684581
+     ],
+     [
+      -96.975853,
+      29.685139
+     ],
+     [
+      -96.977708,
+      29.685114
+     ],
+     [
+      -97.000451,
+      29.680962
+     ],
+     [
+      -97.003224,
+      29.680638
+     ],
+     [
+      -97.005178,
+      29.680629
+     ],
+     [
+      -97.05096,
+      29.682749
+     ],
+     [
+      -97.053254,
+      29.682459
+     ],
+     [
+      -97.061249,
+      29.68021
+     ],
+     [
+      -97.062948,
+      29.679824
+     ],
+     [
+      -97.064496,
+      29.679704
+     ],
+     [
+      -97.076452,
+      29.679541
+     ],
+     [
+      -97.077893,
+      29.679616
+     ],
+     [
+      -97.079155,
+      29.679859
+     ],
+     [
+      -97.103119,
+      29.686704
+     ],
+     [
+      -97.105272,
+      29.687149
+     ],
+     [
+      -97.109722,
+      29.687173
+     ],
+     [
+      -97.134608,
+      29.686826
+     ],
+     [
+      -97.137254,
+      29.686503
+     ],
+     [
+      -97.174991,
+      29.679642
+     ],
+     [
+      -97.176621,
+      29.679446
+     ],
+     [
+      -97.256498,
+      29.679128
+     ],
+     [
+      -97.257764,
+      29.679297
+     ],
+     [
+      -97.259154,
+      29.679674
+     ],
+     [
+      -97.298035,
+      29.692431
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Waelder – Kingsbury",
+    "id": "ghsa-waelder-kingsbury",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 31.6 mi Waelder - Harwood - Luling - Kingsbury, 100% on OSM ways tagged old_railway_operator=SP (today's UP Glidden Subdivision). No straight-line leg. Waypoint check: Kingsbury geocode (town centre) lies 1.4 km from the line - the depot side of town, not a routing error. Part of the 123.9 mi traced vs 125.0 mi documented Columbus - San Antonio. Present-day alignment.",
+    "segments": [
+     {
+      "start": 1875,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "Waelder - Harwood - Luling - Kingsbury opened summer 1875 (TSHA-GHSA). BL-TX1 marks Kingsbury 'y(tm)' = TERMINUS in the 1875 Official Guide, and Harwood and Luling 'y' - positive 1875 passenger evidence. End 1882 is the HAND-OFF to the existing 'Southern Pacific: Sunset Route' feature (southern_pacific_sunset_route.geojson), which draws this line from Feb 1883 when through Sunset Route trains began - NOT a service end. (Strictly GH&SA stayed operator of record until the SP Company lease of 1 Mar 1885; the main line is split at 1883 to match that layer and the Morgan's L&T precedent.) Huntington's 1 Jul 1881 interest was stock, not an operator change. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: summer 1875 from TSHA-GHSA; Kingsbury terminus in the 1875 Official Guide per BL-TX1 p.12. Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.300607,
+      29.693288
+     ],
+     [
+      -97.328855,
+      29.702581
+     ],
+     [
+      -97.330573,
+      29.703028
+     ],
+     [
+      -97.332327,
+      29.703328
+     ],
+     [
+      -97.335019,
+      29.703543
+     ],
+     [
+      -97.337197,
+      29.703486
+     ],
+     [
+      -97.351144,
+      29.700937
+     ],
+     [
+      -97.353041,
+      29.700819
+     ],
+     [
+      -97.357161,
+      29.700948
+     ],
+     [
+      -97.358869,
+      29.700798
+     ],
+     [
+      -97.360772,
+      29.700344
+     ],
+     [
+      -97.402099,
+      29.686748
+     ],
+     [
+      -97.404917,
+      29.686219
+     ],
+     [
+      -97.414449,
+      29.685369
+     ],
+     [
+      -97.416215,
+      29.685008
+     ],
+     [
+      -97.431393,
+      29.678742
+     ],
+     [
+      -97.445093,
+      29.675022
+     ],
+     [
+      -97.458173,
+      29.669052
+     ],
+     [
+      -97.46038,
+      29.668303
+     ],
+     [
+      -97.462351,
+      29.668081
+     ],
+     [
+      -97.496809,
+      29.667497
+     ],
+     [
+      -97.498426,
+      29.667233
+     ],
+     [
+      -97.519681,
+      29.662504
+     ],
+     [
+      -97.522229,
+      29.662175
+     ],
+     [
+      -97.530434,
+      29.662121
+     ],
+     [
+      -97.532389,
+      29.662355
+     ],
+     [
+      -97.534358,
+      29.663017
+     ],
+     [
+      -97.544786,
+      29.667552
+     ],
+     [
+      -97.546004,
+      29.667974
+     ],
+     [
+      -97.547702,
+      29.668323
+     ],
+     [
+      -97.549204,
+      29.668431
+     ],
+     [
+      -97.550872,
+      29.668334
+     ],
+     [
+      -97.556427,
+      29.667344
+     ],
+     [
+      -97.557697,
+      29.667349
+     ],
+     [
+      -97.558801,
+      29.667489
+     ],
+     [
+      -97.584595,
+      29.674429
+     ],
+     [
+      -97.586526,
+      29.67483
+     ],
+     [
+      -97.588983,
+      29.675056
+     ],
+     [
+      -97.627617,
+      29.676265
+     ],
+     [
+      -97.630286,
+      29.676766
+     ],
+     [
+      -97.639706,
+      29.679782
+     ],
+     [
+      -97.641721,
+      29.680291
+     ],
+     [
+      -97.661227,
+      29.682234
+     ],
+     [
+      -97.664024,
+      29.682283
+     ],
+     [
+      -97.666285,
+      29.681914
+     ],
+     [
+      -97.688525,
+      29.676747
+     ],
+     [
+      -97.690662,
+      29.676155
+     ],
+     [
+      -97.692038,
+      29.675513
+     ],
+     [
+      -97.693364,
+      29.674615
+     ],
+     [
+      -97.705537,
+      29.664974
+     ],
+     [
+      -97.707658,
+      29.663592
+     ],
+     [
+      -97.709809,
+      29.662849
+     ],
+     [
+      -97.727727,
+      29.658478
+     ],
+     [
+      -97.77953,
+      29.650575
+     ],
+     [
+      -97.78147,
+      29.650577
+     ],
+     [
+      -97.78348,
+      29.650872
+     ],
+     [
+      -97.794549,
+      29.654211
+     ],
+     [
+      -97.796667,
+      29.654682
+     ],
+     [
+      -97.798293,
+      29.654814
+     ],
+     [
+      -97.800417,
+      29.654688
+     ],
+     [
+      -97.801906,
+      29.654399
+     ],
+     [
+      -97.804529,
+      29.653668
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Kingsbury – Marion",
+    "id": "ghsa-kingsbury-marion",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 21.0 mi Kingsbury - Seguin - Marion, 100% on OSM ways tagged old_railway_operator=SP (today's UP Glidden Subdivision). No straight-line leg. Seguin and Kingsbury town-centre geocodes lie 1.3-1.6 km from the line (the railroad skirts both). Marion was hand-pinned (Nominatim returned Marion County in East Texas). Part of the 123.9 mi traced vs 125.0 mi documented Columbus - San Antonio. Present-day alignment.",
+    "segments": [
+     {
+      "start": 1876,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "Kingsbury - Seguin - Marion opened spring 1876 (TSHA-GHSA; season, not a dated first train). End 1882 is the HAND-OFF to the existing 'Southern Pacific: Sunset Route' feature (southern_pacific_sunset_route.geojson), which draws this line from Feb 1883 when through Sunset Route trains began - NOT a service end. (Strictly GH&SA stayed operator of record until the SP Company lease of 1 Mar 1885; the main line is split at 1883 to match that layer and the Morgan's L&T precedent.) Huntington's 1 Jul 1881 interest was stock, not an operator change. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: spring 1876 from TSHA-GHSA (report block 3). Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.817141,
+      29.650114
+     ],
+     [
+      -97.839498,
+      29.646905
+     ],
+     [
+      -97.840844,
+      29.646622
+     ],
+     [
+      -97.84213,
+      29.646171
+     ],
+     [
+      -97.843201,
+      29.645621
+     ],
+     [
+      -97.844337,
+      29.644817
+     ],
+     [
+      -97.853297,
+      29.637212
+     ],
+     [
+      -97.855365,
+      29.635996
+     ],
+     [
+      -97.857099,
+      29.635336
+     ],
+     [
+      -97.886758,
+      29.62576
+     ],
+     [
+      -97.888402,
+      29.625017
+     ],
+     [
+      -97.8895,
+      29.624265
+     ],
+     [
+      -97.895592,
+      29.619087
+     ],
+     [
+      -97.896741,
+      29.618282
+     ],
+     [
+      -97.898407,
+      29.617407
+     ],
+     [
+      -97.905052,
+      29.614594
+     ],
+     [
+      -97.906647,
+      29.613682
+     ],
+     [
+      -97.927446,
+      29.598022
+     ],
+     [
+      -97.928984,
+      29.597101
+     ],
+     [
+      -97.930727,
+      29.596376
+     ],
+     [
+      -97.951335,
+      29.589414
+     ],
+     [
+      -97.964861,
+      29.583573
+     ],
+     [
+      -97.965998,
+      29.583192
+     ],
+     [
+      -97.967743,
+      29.582995
+     ],
+     [
+      -97.969324,
+      29.583191
+     ],
+     [
+      -98.020053,
+      29.594068
+     ],
+     [
+      -98.021695,
+      29.594183
+     ],
+     [
+      -98.03305,
+      29.594038
+     ],
+     [
+      -98.035097,
+      29.5937
+     ],
+     [
+      -98.042817,
+      29.591018
+     ],
+     [
+      -98.045756,
+      29.590367
+     ],
+     [
+      -98.076138,
+      29.588107
+     ],
+     [
+      -98.078882,
+      29.587739
+     ],
+     [
+      -98.106255,
+      29.581025
+     ],
+     [
+      -98.109104,
+      29.579896
+     ],
+     [
+      -98.116185,
+      29.576192
+     ],
+     [
+      -98.118389,
+      29.575395
+     ],
+     [
+      -98.138606,
+      29.571957
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Marion – San Antonio",
+    "id": "ghsa-marion-san-antonio",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 24.4 mi Marion - San Antonio (to the SP station, today's Sunset Station), 24.2 mi on OSM ways tagged old_railway_operator SP / Southern Pacific Railroad, 0.4 mi untagged. No straight-line leg. Part of the 123.9 mi traced vs 125.0 mi documented Columbus - San Antonio. Present-day alignment; the 1877 San Antonio terminal arrangements were not checked.",
+    "segments": [
+     {
+      "start": 1877,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "Marion - San Antonio opened Feb 1877: TSHA-GHSA gives 5 Feb; TTM-SP gives first train 2 or 5 Feb and the formal opening 16/19 Feb - the sources disagree on the day, not the year. Completed the 208-mi Harrisburg - San Antonio line. End 1882 is the HAND-OFF to the existing 'Southern Pacific: Sunset Route' feature (southern_pacific_sunset_route.geojson), which draws this line from Feb 1883 when through Sunset Route trains began - NOT a service end. (Strictly GH&SA stayed operator of record until the SP Company lease of 1 Mar 1885; the main line is split at 1883 to match that layer and the Morgan's L&T precedent.) Huntington's 1 Jul 1881 interest was stock, not an operator change. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: Feb 1877 opening from TSHA-GHSA and TTM-SP (day conflicts recorded). Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "Texas Transportation Museum, Southern Pacific: https://www.txtransportationmuseum.org/southern-pacific"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -98.141337,
+      29.571415
+     ],
+     [
+      -98.174287,
+      29.566008
+     ],
+     [
+      -98.252027,
+      29.559613
+     ],
+     [
+      -98.254369,
+      29.559264
+     ],
+     [
+      -98.25677,
+      29.55843
+     ],
+     [
+      -98.292957,
+      29.542028
+     ],
+     [
+      -98.294948,
+      29.540956
+     ],
+     [
+      -98.296204,
+      29.540012
+     ],
+     [
+      -98.297395,
+      29.538816
+     ],
+     [
+      -98.313699,
+      29.518998
+     ],
+     [
+      -98.31483,
+      29.517871
+     ],
+     [
+      -98.315849,
+      29.517082
+     ],
+     [
+      -98.317109,
+      29.516329
+     ],
+     [
+      -98.318766,
+      29.515611
+     ],
+     [
+      -98.33305,
+      29.510894
+     ],
+     [
+      -98.335458,
+      29.509731
+     ],
+     [
+      -98.336585,
+      29.508932
+     ],
+     [
+      -98.337628,
+      29.507991
+     ],
+     [
+      -98.342176,
+      29.502282
+     ],
+     [
+      -98.343093,
+      29.501333
+     ],
+     [
+      -98.344354,
+      29.500338
+     ],
+     [
+      -98.439003,
+      29.436688
+     ],
+     [
+      -98.440468,
+      29.435993
+     ],
+     [
+      -98.441941,
+      29.4355
+     ],
+     [
+      -98.443524,
+      29.435182
+     ],
+     [
+      -98.445365,
+      29.435036
+     ],
+     [
+      -98.463811,
+      29.436505
+     ],
+     [
+      -98.47437,
+      29.436542
+     ],
+     [
+      -98.475075,
+      29.436466
+     ],
+     [
+      -98.475699,
+      29.436189
+     ],
+     [
+      -98.476141,
+      29.435755
+     ],
+     [
+      -98.477272,
+      29.434192
+     ],
+     [
+      -98.47774,
+      29.43285
+     ],
+     [
+      -98.477909,
+      29.419512
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Houston – Stella",
+    "id": "ghsa-houston-stella",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py; Chaney Jct - Stella is a labelled straight line",
+    "geometry_quality": "8.1 mi drawn against no documented figure for the 1880 Houston - Stella line. Houston (SP Grand Central area, pinned) - Chaney Junction 1.2 mi traced on OSM rail tagged old_railway_operator=SP (1.1 mi) and untagged (0.1 mi). APPROXIMATED: Chaney Junction - Stella, 6.9 mi STRAIGHT LINE - the 1880 Chaney Jct - Stella entry was partly abandoned after the 1918 Chaney Jct - West Junction line replaced it (TSHA-GHSA) and neither OSM nor OpenHistoricalMap holds its grade (OHM's nearby north-south line is the separate Houston Tap and Brazoria, deliberately not used). Chaney Junction and Stella positions are hand-pinned approximations (Stella placed where the Houston Tap crossed the BB&C line, 7.9 mi from Harrisburg, matching BL-TX1's 7.8 mi).",
+    "segments": [
+     {
+      "start": 1880,
+      "end": 1882,
+      "headway_min": 1440,
+      "note": "GH&SA's own Houston entrance, built 1880 (TSHA-GHSA) from Houston via Chaney Junction to Stella on the old BB&C line; from 1877 GH&SA trains had reached Houston over I&GN tracks (not drawn). The 1880 Chaney Jct - Stella entry was partly abandoned when the 1918 Chaney Jct - West Junction entrance was built (TSHA-GHSA) - abandonment, not a passenger end. End 1882 is the HAND-OFF to the existing 'Southern Pacific: Sunset Route' feature (southern_pacific_sunset_route.geojson), which draws this line from Feb 1883 when through Sunset Route trains began - NOT a service end. (Strictly GH&SA stayed operator of record until the SP Company lease of 1 Mar 1885; the main line is split at 1883 to match that layer and the Morgan's L&T precedent.) Huntington's 1 Jul 1881 interest was stock, not an operator change. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1880 own line into Houston from TSHA-GHSA (report block 4). Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.367033,
+      29.767627
+     ],
+     [
+      -95.370901,
+      29.768585
+     ],
+     [
+      -95.3875,
+      29.770359
+     ],
+     [
+      -95.396,
+      29.671
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Eagle Pass Branch",
+    "id": "ghsa-eagle-pass-branch",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 34.0 mi Spofford - Darling - Eagle Pass against 34.0 mi documented (BL-TX1 table 77; USGS Bulletin 845 '34 miles'). 100% on OSM ways tagged old_railway_operator=SP (UP Eagle Pass Subdivision). No straight-line leg. Present-day alignment; the Eagle Pass terminal layout of the 1880s not checked.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1884,
+      "headway_min": 1440,
+      "note": "Spofford (ex-Eagle Pass Junction) - Eagle Pass, 34.0 mi. 'Late 1882: completed the Spofford to Eagle Pass branch' (TSHA-GHSA); BL-TX1 records 'Eagle Pass Junction' from the 1882 Official Guide; some sources say it opened with the 1883 completion of the through line - collapsed to 1883. GH&SA ran it until the Southern Pacific Company lease of 1 Mar 1885 (TSHA-GHSA); the SP feature on identical geometry carries 1885 on. End 1884 = operator change, not a service end. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: late-1882 completion from TSHA-GHSA, 1882G name from BL-TX1 table 77; 1885 lease from TSHA-GHSA. Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+       "USGS Bulletin 845 (Eagle Pass branch, 34 miles): https://www.npshistory.com/publications/geology/bul/845/sec11.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.410123,
+      29.172938
+     ],
+     [
+      -100.400973,
+      29.167291
+     ],
+     [
+      -100.400484,
+      29.166623
+     ],
+     [
+      -100.400266,
+      29.166003
+     ],
+     [
+      -100.399947,
+      29.162548
+     ],
+     [
+      -100.400061,
+      28.985221
+     ],
+     [
+      -100.400145,
+      28.941878
+     ],
+     [
+      -100.400325,
+      28.940149
+     ],
+     [
+      -100.401094,
+      28.93784
+     ],
+     [
+      -100.409752,
+      28.917144
+     ],
+     [
+      -100.41051,
+      28.915912
+     ],
+     [
+      -100.424252,
+      28.896581
+     ],
+     [
+      -100.424887,
+      28.895561
+     ],
+     [
+      -100.425143,
+      28.894897
+     ],
+     [
+      -100.425377,
+      28.893297
+     ],
+     [
+      -100.425473,
+      28.891207
+     ],
+     [
+      -100.424452,
+      28.877917
+     ],
+     [
+      -100.424528,
+      28.875963
+     ],
+     [
+      -100.433704,
+      28.840473
+     ],
+     [
+      -100.435422,
+      28.834209
+     ],
+     [
+      -100.435938,
+      28.832814
+     ],
+     [
+      -100.444427,
+      28.813575
+     ],
+     [
+      -100.445878,
+      28.810613
+     ],
+     [
+      -100.44678,
+      28.809503
+     ],
+     [
+      -100.448179,
+      28.808361
+     ],
+     [
+      -100.461865,
+      28.800739
+     ],
+     [
+      -100.462935,
+      28.799945
+     ],
+     [
+      -100.46375,
+      28.799059
+     ],
+     [
+      -100.469495,
+      28.790852
+     ],
+     [
+      -100.470361,
+      28.789145
+     ],
+     [
+      -100.470626,
+      28.788179
+     ],
+     [
+      -100.471187,
+      28.784714
+     ],
+     [
+      -100.47069,
+      28.777181
+     ],
+     [
+      -100.470932,
+      28.775952
+     ],
+     [
+      -100.471468,
+      28.77477
+     ],
+     [
+      -100.472259,
+      28.773704
+     ],
+     [
+      -100.485857,
+      28.759555
+     ],
+     [
+      -100.487174,
+      28.757822
+     ],
+     [
+      -100.487971,
+      28.755786
+     ],
+     [
+      -100.492934,
+      28.729182
+     ],
+     [
+      -100.498096,
+      28.71375
+     ],
+     [
+      -100.498269,
+      28.712635
+     ],
+     [
+      -100.498298,
+      28.709116
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: Gonzales Branch",
+    "id": "ghsa-gonzales-branch",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 12.4 mi Harwood - Gonzales against 12.5 mi (BL-TX1 table 76) / 12 mi (TSHA-GBR) documented. 12.3 mi on OSM ways tagged old_railway_operator=SP (today's Texas, Gonzales and Northern), 0.1 mi untagged. Gonzales was hand-pinned (Nominatim returned Gonzales County). No straight-line leg.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1884,
+      "headway_min": 1440,
+      "note": "Harwood - Gonzales, 12-12.5 mi. Built by the Gonzales Branch Railroad (chartered 12 Nov 1881; completed Aug 1882), a paper company operated throughout by GH&SA (TSHA-GBR) - so GH&SA is the operator drawn. Aug 1882 completion collapsed to 1883 (no dated first train). End 1884 = Southern Pacific Company lease from 1 Mar 1885 (TSHA-GHSA), not a service end; the SP feature on identical geometry continues. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: charter and Aug 1882 completion from TSHA-GBR; 1885 lease from TSHA-GHSA. Headway is an estimate.",
+       "TSHA Handbook of Texas, Gonzales Branch Railroad: https://www.tshaonline.org/handbook/entries/gonzales-branch-railroad",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.503864,
+      29.666021
+     ],
+     [
+      -97.499708,
+      29.666902
+     ],
+     [
+      -97.498703,
+      29.666937
+     ],
+     [
+      -97.49772,
+      29.666776
+     ],
+     [
+      -97.496934,
+      29.666476
+     ],
+     [
+      -97.496193,
+      29.666043
+     ],
+     [
+      -97.495393,
+      29.665295
+     ],
+     [
+      -97.484744,
+      29.650728
+     ],
+     [
+      -97.479759,
+      29.641333
+     ],
+     [
+      -97.475193,
+      29.636193
+     ],
+     [
+      -97.474311,
+      29.635044
+     ],
+     [
+      -97.473701,
+      29.63385
+     ],
+     [
+      -97.473075,
+      29.631931
+     ],
+     [
+      -97.472588,
+      29.630902
+     ],
+     [
+      -97.471941,
+      29.629936
+     ],
+     [
+      -97.470024,
+      29.627623
+     ],
+     [
+      -97.469129,
+      29.626121
+     ],
+     [
+      -97.468673,
+      29.624989
+     ],
+     [
+      -97.467918,
+      29.622162
+     ],
+     [
+      -97.467505,
+      29.621283
+     ],
+     [
+      -97.466986,
+      29.62056
+     ],
+     [
+      -97.464571,
+      29.618128
+     ],
+     [
+      -97.463997,
+      29.617235
+     ],
+     [
+      -97.463723,
+      29.616558
+     ],
+     [
+      -97.463508,
+      29.614851
+     ],
+     [
+      -97.464426,
+      29.608537
+     ],
+     [
+      -97.464304,
+      29.606598
+     ],
+     [
+      -97.463792,
+      29.605059
+     ],
+     [
+      -97.457799,
+      29.592258
+     ],
+     [
+      -97.45666,
+      29.582852
+     ],
+     [
+      -97.456327,
+      29.581853
+     ],
+     [
+      -97.452914,
+      29.574109
+     ],
+     [
+      -97.451035,
+      29.562148
+     ],
+     [
+      -97.450964,
+      29.560543
+     ],
+     [
+      -97.451063,
+      29.558985
+     ],
+     [
+      -97.452113,
+      29.552502
+     ],
+     [
+      -97.45206,
+      29.551436
+     ],
+     [
+      -97.451307,
+      29.547159
+     ],
+     [
+      -97.451282,
+      29.545556
+     ],
+     [
+      -97.451546,
+      29.544397
+     ],
+     [
+      -97.452604,
+      29.542112
+     ],
+     [
+      -97.452783,
+      29.541119
+     ],
+     [
+      -97.452764,
+      29.540226
+     ],
+     [
+      -97.447044,
+      29.516234
+     ],
+     [
+      -97.445753,
+      29.511795
+     ],
+     [
+      -97.4456,
+      29.51061
+     ],
+     [
+      -97.445689,
+      29.509911
+     ],
+     [
+      -97.445972,
+      29.50916
+     ],
+     [
+      -97.446874,
+      29.507972
+     ],
+     [
+      -97.44794,
+      29.507252
+     ],
+     [
+      -97.45048,
+      29.506328
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Harrisburg and San Antonio Railway",
+    "line": "Galveston, Harrisburg and San Antonio: La Grange Branch",
+    "id": "ghsa-la-grange-branch",
+    "color": "#9C6A3A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate: no GH&SA timetable read; typical 1870s-1880s Texas schedule speed (about 18-20 mph including stops). Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 25.0 mi Glidden - Ellinger - La Grange against 25.2 mi (BL-TX1 table 75) / 24.76 mi (abandonment figure) documented. 24.8 mi on OSM razed ways tagged old_railway_operator=SP ('La Grange Tap', lifted after the 1942 abandonment) and 0.2 mi untagged. No straight-line leg. LATER ALIGNMENT WARNING: BL-TX1 says the former route until c.1910 ran from Smith Junction via Boeschers to Lorine, the junction later moving to Glidden; this feature (an 1884 anchor) draws the Glidden junction leg (about 3.5 mi, Glidden - the junction with the old grade north of Columbus), which may be the post-c.1910 connection. OSM also holds a razed SP grade from near Alleyton (-96.485, 29.704) to that junction that may be the earlier route; not resolved, so not used. Lorine could not be geocoded (Nominatim returned a street in Corpus Christi) and was dropped as a waypoint.",
+    "segments": [
+     {
+      "start": 1884,
+      "end": 1884,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Glidden (orig. Smith's Junction) - La Grange, 25.2 mi (BL-TX1; 24.76 mi abandonment figure). 1884 is the ONLY proven passenger year: BL-TX1 marks Ellinger ('Ellenger q') as in the 1884 Official Guide. Service certainly ran wider both ways - the branch was completed 1880 (TSHA-GHSA) on grade partly built by the BB&C c.1860, and trains ran on under Southern Pacific after the 1885 lease - but no other year is confirmed, so the single year is drawn. This is NOT a service duration. SP abandoned Glidden - La Grange in 1942 (HMdb 297390 via search summary): an ABANDONMENT year, not a passenger end, and the passenger end is unknown (before 1942). Do not widen without a dated timetable. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1884 Official Guide letter (q) at Ellinger from BL-TX1 table 75 - the only timetable anchor; 1880 completion from TSHA-GHSA; 1942 abandonment from an HMdb search summary (marker page not opened). Headway is an estimate.",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "HMdb marker 297390 (La Grange; search summary only): https://www.hmdb.org/m.asp?m=297390"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -96.589799,
+      29.702272
+     ],
+     [
+      -96.590309,
+      29.701995
+     ],
+     [
+      -96.592251,
+      29.70148
+     ],
+     [
+      -96.593294,
+      29.701353
+     ],
+     [
+      -96.59471,
+      29.701489
+     ],
+     [
+      -96.595489,
+      29.701739
+     ],
+     [
+      -96.596433,
+      29.702434
+     ],
+     [
+      -96.596903,
+      29.703171
+     ],
+     [
+      -96.597095,
+      29.703891
+     ],
+     [
+      -96.597218,
+      29.713163
+     ],
+     [
+      -96.59709,
+      29.718926
+     ],
+     [
+      -96.596869,
+      29.722587
+     ],
+     [
+      -96.594085,
+      29.745972
+     ],
+     [
+      -96.594302,
+      29.747877
+     ],
+     [
+      -96.594681,
+      29.748688
+     ],
+     [
+      -96.595317,
+      29.749534
+     ],
+     [
+      -96.596705,
+      29.750923
+     ],
+     [
+      -96.631252,
+      29.777243
+     ],
+     [
+      -96.632771,
+      29.778639
+     ],
+     [
+      -96.633908,
+      29.779897
+     ],
+     [
+      -96.63487,
+      29.781295
+     ],
+     [
+      -96.640138,
+      29.791756
+     ],
+     [
+      -96.644377,
+      29.79769
+     ],
+     [
+      -96.646367,
+      29.799512
+     ],
+     [
+      -96.662592,
+      29.812082
+     ],
+     [
+      -96.663634,
+      29.81306
+     ],
+     [
+      -96.664297,
+      29.814059
+     ],
+     [
+      -96.664771,
+      29.815117
+     ],
+     [
+      -96.66511,
+      29.816245
+     ],
+     [
+      -96.665489,
+      29.818383
+     ],
+     [
+      -96.666322,
+      29.819792
+     ],
+     [
+      -96.66747,
+      29.82088
+     ],
+     [
+      -96.668884,
+      29.821691
+     ],
+     [
+      -96.670445,
+      29.822201
+     ],
+     [
+      -96.674765,
+      29.822624
+     ],
+     [
+      -96.676864,
+      29.822965
+     ],
+     [
+      -96.677921,
+      29.823318
+     ],
+     [
+      -96.679993,
+      29.824634
+     ],
+     [
+      -96.688416,
+      29.831788
+     ],
+     [
+      -96.689432,
+      29.832434
+     ],
+     [
+      -96.690664,
+      29.832845
+     ],
+     [
+      -96.691585,
+      29.832998
+     ],
+     [
+      -96.696636,
+      29.833163
+     ],
+     [
+      -96.698071,
+      29.833351
+     ],
+     [
+      -96.699277,
+      29.833785
+     ],
+     [
+      -96.700292,
+      29.834361
+     ],
+     [
+      -96.701169,
+      29.834986
+     ],
+     [
+      -96.724479,
+      29.854623
+     ],
+     [
+      -96.733688,
+      29.866614
+     ],
+     [
+      -96.734446,
+      29.867295
+     ],
+     [
+      -96.739253,
+      29.870055
+     ],
+     [
+      -96.740269,
+      29.870442
+     ],
+     [
+      -96.74138,
+      29.870642
+     ],
+     [
+      -96.749613,
+      29.871452
+     ],
+     [
+      -96.7509,
+      29.871699
+     ],
+     [
+      -96.751807,
+      29.872016
+     ],
+     [
+      -96.753297,
+      29.873002
+     ],
+     [
+      -96.753947,
+      29.873731
+     ],
+     [
+      -96.755003,
+      29.875433
+     ],
+     [
+      -96.755599,
+      29.876126
+     ],
+     [
+      -96.759296,
+      29.879743
+     ],
+     [
+      -96.760081,
+      29.8804
+     ],
+     [
+      -96.760867,
+      29.880823
+     ],
+     [
+      -96.762925,
+      29.88134
+     ],
+     [
+      -96.782401,
+      29.883716
+     ],
+     [
+      -96.783408,
+      29.883942
+     ],
+     [
+      -96.784286,
+      29.884299
+     ],
+     [
+      -96.792247,
+      29.889365
+     ],
+     [
+      -96.793963,
+      29.890312
+     ],
+     [
+      -96.796511,
+      29.891417
+     ],
+     [
+      -96.800041,
+      29.892254
+     ],
+     [
+      -96.801967,
+      29.892546
+     ],
+     [
+      -96.808803,
+      29.893241
+     ],
+     [
+      -96.810915,
+      29.894039
+     ],
+     [
+      -96.815921,
+      29.896979
+     ],
+     [
+      -96.817058,
+      29.897401
+     ],
+     [
+      -96.829874,
+      29.898857
+     ],
+     [
+      -96.833623,
+      29.899562
+     ],
+     [
+      -96.834414,
+      29.899825
+     ],
+     [
+      -96.83514,
+      29.90021
+     ],
+     [
+      -96.835779,
+      29.900782
+     ],
+     [
+      -96.836104,
+      29.90129
+     ],
+     [
+      -96.836548,
+      29.903149
+     ],
+     [
+      -96.836786,
+      29.903685
+     ],
+     [
+      -96.837133,
+      29.904098
+     ],
+     [
+      -96.838336,
+      29.904774
+     ],
+     [
+      -96.840632,
+      29.905065
+     ],
+     [
+      -96.842008,
+      29.905009
+     ],
+     [
+      -96.846017,
+      29.904642
+     ],
+     [
+      -96.851087,
+      29.903854
+     ],
+     [
+      -96.85567,
+      29.904549
+     ],
+     [
+      -96.858367,
+      29.905262
+     ],
+     [
+      -96.859895,
+      29.905854
+     ],
+     [
+      -96.862868,
+      29.907537
+     ],
+     [
+      -96.864857,
+      29.909009
+     ],
+     [
+      -96.865745,
+      29.909441
+     ],
+     [
+      -96.866601,
+      29.909676
+     ],
+     [
+      -96.867782,
+      29.909723
+     ],
+     [
+      -96.868996,
+      29.909534
+     ],
+     [
+      -96.872246,
+      29.907987
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Eagle Pass Branch",
+    "id": "sp-eagle-pass-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate for a mixed train on a short branch; the 1951 Official Guide tables were OCR-mangled and no running time was recovered. Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 34.0 mi Spofford - Darling - Eagle Pass against 34.0 mi documented (BL-TX1 table 77; USGS Bulletin 845 '34 miles'). 100% on OSM ways tagged old_railway_operator=SP (UP Eagle Pass Subdivision). No straight-line leg. Present-day alignment; the Eagle Pass terminal layout of the 1880s not checked.",
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Spofford - Darling - Paloma - Eagle Pass under the Southern Pacific Company lease from 1 Mar 1885 (TSHA-GHSA); after the lease ended in 1889 GH&SA (and from 1927 T&NO) remained the corporate owner, but the trains ran as Southern Pacific - not a split (same convention as the T&NO features). 1951: OG52 Table 83 'SPOFFORD AND EAGLE PASS', dated 1 Dec 1951, headed 'Mix', trains 227/228 - a mixed train carrying passengers; index entries Eagle Pass and Paloma (Table 83) carry no freight-only dagger. The parallel Winter Garden Bus Line Table 83a is the bus, not the train. Interchange with the Mexican International at Piedras Negras. [OPEN] Passenger service confirmed to 1951 by the Feb 1952 Official Guide. This is the last CONFIRMED year, not a known end - no source dates when service actually stopped. Do not extend without evidence. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1885 lease from TSHA-GHSA; Dec 1951 mixed trains 227/228 from OG52 Table 83 and index (research report block 6). End withheld [OPEN]. Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "Official Guide of the Railways, Feb 1952 (schedules of Sept-Dec 1951), Southern Pacific Texas tables and index (research/sources/official_guide_1952.txt)",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+       "USGS Bulletin 845 (Eagle Pass branch, 34 miles): https://www.npshistory.com/publications/geology/bul/845/sec11.htm"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.410123,
+      29.172938
+     ],
+     [
+      -100.400973,
+      29.167291
+     ],
+     [
+      -100.400484,
+      29.166623
+     ],
+     [
+      -100.400266,
+      29.166003
+     ],
+     [
+      -100.399947,
+      29.162548
+     ],
+     [
+      -100.400061,
+      28.985221
+     ],
+     [
+      -100.400145,
+      28.941878
+     ],
+     [
+      -100.400325,
+      28.940149
+     ],
+     [
+      -100.401094,
+      28.93784
+     ],
+     [
+      -100.409752,
+      28.917144
+     ],
+     [
+      -100.41051,
+      28.915912
+     ],
+     [
+      -100.424252,
+      28.896581
+     ],
+     [
+      -100.424887,
+      28.895561
+     ],
+     [
+      -100.425143,
+      28.894897
+     ],
+     [
+      -100.425377,
+      28.893297
+     ],
+     [
+      -100.425473,
+      28.891207
+     ],
+     [
+      -100.424452,
+      28.877917
+     ],
+     [
+      -100.424528,
+      28.875963
+     ],
+     [
+      -100.433704,
+      28.840473
+     ],
+     [
+      -100.435422,
+      28.834209
+     ],
+     [
+      -100.435938,
+      28.832814
+     ],
+     [
+      -100.444427,
+      28.813575
+     ],
+     [
+      -100.445878,
+      28.810613
+     ],
+     [
+      -100.44678,
+      28.809503
+     ],
+     [
+      -100.448179,
+      28.808361
+     ],
+     [
+      -100.461865,
+      28.800739
+     ],
+     [
+      -100.462935,
+      28.799945
+     ],
+     [
+      -100.46375,
+      28.799059
+     ],
+     [
+      -100.469495,
+      28.790852
+     ],
+     [
+      -100.470361,
+      28.789145
+     ],
+     [
+      -100.470626,
+      28.788179
+     ],
+     [
+      -100.471187,
+      28.784714
+     ],
+     [
+      -100.47069,
+      28.777181
+     ],
+     [
+      -100.470932,
+      28.775952
+     ],
+     [
+      -100.471468,
+      28.77477
+     ],
+     [
+      -100.472259,
+      28.773704
+     ],
+     [
+      -100.485857,
+      28.759555
+     ],
+     [
+      -100.487174,
+      28.757822
+     ],
+     [
+      -100.487971,
+      28.755786
+     ],
+     [
+      -100.492934,
+      28.729182
+     ],
+     [
+      -100.498096,
+      28.71375
+     ],
+     [
+      -100.498269,
+      28.712635
+     ],
+     [
+      -100.498298,
+      28.709116
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Gonzales Branch",
+    "id": "sp-gonzales-branch",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimate for a mixed train on a short branch; the 1951 Official Guide tables were OCR-mangled and no running time was recovered. Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 12.4 mi Harwood - Gonzales against 12.5 mi (BL-TX1 table 76) / 12 mi (TSHA-GBR) documented. 12.3 mi on OSM ways tagged old_railway_operator=SP (today's Texas, Gonzales and Northern), 0.1 mi untagged. Gonzales was hand-pinned (Nominatim returned Gonzales County). No straight-line leg.",
+    "segments": [
+     {
+      "start": 1885,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Harwood - Kokernot - Gonzales under the SP Company lease from 1 Mar 1885 (TSHA-GHSA); Gonzales Branch RR merged into GH&SA 1905 (TSHA-GBR); SP system throughout - not a split. 1951: OG52 Table 67 'GONZALES AND HARWOOD', dated 30 Sept 1951, trains 216/217 (possibly also 218/219) headed 'Mix', with surviving times (e.g. Gonzales 1400/1240, Harwood 430/110) - rail, with times; index 'Gonzales, Tex., South. Pacific, 67' carries no dagger. Mixed trains connected with the main line at Harwood. Sold 15 Nov 1992 to TNW Corp. (Texas, Gonzales & Northern) for freight - context only. [OPEN] Passenger service confirmed to 1951 by the Feb 1952 Official Guide. This is the last CONFIRMED year, not a known end - no source dates when service actually stopped. Do not extend without evidence. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1885 lease from TSHA-GHSA; Sept 1951 mixed trains 216/217 with times from OG52 Table 67 and index (report block 7). End withheld [OPEN]. Headway is an estimate.",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "TSHA Handbook of Texas, Gonzales Branch Railroad: https://www.tshaonline.org/handbook/entries/gonzales-branch-railroad",
+       "Official Guide of the Railways, Feb 1952 (schedules of Sept-Dec 1951), Southern Pacific Texas tables and index (research/sources/official_guide_1952.txt)",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.503864,
+      29.666021
+     ],
+     [
+      -97.499708,
+      29.666902
+     ],
+     [
+      -97.498703,
+      29.666937
+     ],
+     [
+      -97.49772,
+      29.666776
+     ],
+     [
+      -97.496934,
+      29.666476
+     ],
+     [
+      -97.496193,
+      29.666043
+     ],
+     [
+      -97.495393,
+      29.665295
+     ],
+     [
+      -97.484744,
+      29.650728
+     ],
+     [
+      -97.479759,
+      29.641333
+     ],
+     [
+      -97.475193,
+      29.636193
+     ],
+     [
+      -97.474311,
+      29.635044
+     ],
+     [
+      -97.473701,
+      29.63385
+     ],
+     [
+      -97.473075,
+      29.631931
+     ],
+     [
+      -97.472588,
+      29.630902
+     ],
+     [
+      -97.471941,
+      29.629936
+     ],
+     [
+      -97.470024,
+      29.627623
+     ],
+     [
+      -97.469129,
+      29.626121
+     ],
+     [
+      -97.468673,
+      29.624989
+     ],
+     [
+      -97.467918,
+      29.622162
+     ],
+     [
+      -97.467505,
+      29.621283
+     ],
+     [
+      -97.466986,
+      29.62056
+     ],
+     [
+      -97.464571,
+      29.618128
+     ],
+     [
+      -97.463997,
+      29.617235
+     ],
+     [
+      -97.463723,
+      29.616558
+     ],
+     [
+      -97.463508,
+      29.614851
+     ],
+     [
+      -97.464426,
+      29.608537
+     ],
+     [
+      -97.464304,
+      29.606598
+     ],
+     [
+      -97.463792,
+      29.605059
+     ],
+     [
+      -97.457799,
+      29.592258
+     ],
+     [
+      -97.45666,
+      29.582852
+     ],
+     [
+      -97.456327,
+      29.581853
+     ],
+     [
+      -97.452914,
+      29.574109
+     ],
+     [
+      -97.451035,
+      29.562148
+     ],
+     [
+      -97.450964,
+      29.560543
+     ],
+     [
+      -97.451063,
+      29.558985
+     ],
+     [
+      -97.452113,
+      29.552502
+     ],
+     [
+      -97.45206,
+      29.551436
+     ],
+     [
+      -97.451307,
+      29.547159
+     ],
+     [
+      -97.451282,
+      29.545556
+     ],
+     [
+      -97.451546,
+      29.544397
+     ],
+     [
+      -97.452604,
+      29.542112
+     ],
+     [
+      -97.452783,
+      29.541119
+     ],
+     [
+      -97.452764,
+      29.540226
+     ],
+     [
+      -97.447044,
+      29.516234
+     ],
+     [
+      -97.445753,
+      29.511795
+     ],
+     [
+      -97.4456,
+      29.51061
+     ],
+     [
+      -97.445689,
+      29.509911
+     ],
+     [
+      -97.445972,
+      29.50916
+     ],
+     [
+      -97.446874,
+      29.507972
+     ],
+     [
+      -97.44794,
+      29.507252
+     ],
+     [
+      -97.45048,
+      29.506328
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Rosenberg – Victoria",
+    "id": "sp-rosenberg-victoria",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate: typical SP Texas secondary-line passenger speed of the 1910s-1940s (about 25-30 mph including stops); no running time for this stretch was read. Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 91.6 mi Rosenberg - Kendleton - Hungerford - Wharton - El Campo - Louise - Edna - Inez - Victoria against 91 mi documented (TSHA-NYTM). 91.1 mi on ways owned by this railroad - mostly the CPKC Rosenberg Subdivision (OSM old_railway_operator=SP; the line abandoned by SP and rebuilt by KCS on the old right of way, reopened 2009) and OpenHistoricalMap's New York, Texas and Mexican Railway; 0.4 mi untagged. Wharton and Victoria were hand-pinned (Nominatim returned the counties). No straight-line leg. The modern rebuild follows the historic grade; any local deviations of the rebuild were not checked.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Ex-New York, Texas and Mexican (91 mi, completed 1882; TSHA-NYTM), via Kendleton, Hungerford, Wharton, El Campo, Louise, Edna and Inez. Merged into GH&SA 8 Aug 1905 (TSHA-GHSA) - start 1905 is that corporate date; the NYT&M's own years 1882-1905 (SP-owned from Sept 1885) are a SEPARATE ROAD needing their own research (BL-TX1 1884 Guide letters at Humbert and Margaret are the only evidence found for them). Trains: the Border Limited 303/304 Houston - Corpus Christi/Brownsville in 1942 (CRF-HOU). 1951: OG52 Table 53 'HOUSTON, SKIDMORE, McALLEN AND CORPUS CHRISTI' (March 1951) lists Rosenberg - Kendleton - Hungerford - Wharton...; index Kendleton, Edna and Ganado (53) carry no dagger; times not recoverable from the OCR. A Victoria SP depot marker (THC 1986, HMdb 192410 via search summary) says 'The last passenger train left Victoria in 1953' - SINGLE SOURCE, the THC Atlas text reportedly differs, and the page could not be opened (403), so 1953 is NOT drawn. [OPEN] Passenger service confirmed to 1951 by the Feb 1952 Official Guide. This is the last CONFIRMED year, not a known end - no source dates when service actually stopped. Do not extend without evidence. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1905 merger from TSHA-GHSA/TSHA-NYTM; 1942 Border Limited from CRF-HOU; March 1951 station list and undaggered index from OG52 Table 53 (report block 9). End withheld [OPEN]; 1953 single-source end unverified. Headway is an estimate.",
+       "TSHA Handbook of Texas, New York, Texas and Mexican Railway: https://www.tshaonline.org/handbook/entries/new-york-texas-and-mexican-railway",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "Official Guide of the Railways, Feb 1952 (schedules of Sept-Dec 1951), Southern Pacific Texas tables and index (research/sources/official_guide_1952.txt)",
+       "chicagorailfan.com, SP trains at Houston 1942/1956: https://chicagorailfan.com/stbchou.html",
+       "HMdb marker 192410, Victoria SP depot (search summary; page returned 403): https://www.hmdb.org/m.asp?m=192410",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.809513,
+      29.560518
+     ],
+     [
+      -95.816074,
+      29.559971
+     ],
+     [
+      -95.816897,
+      29.559773
+     ],
+     [
+      -95.818444,
+      29.559087
+     ],
+     [
+      -95.937006,
+      29.486019
+     ],
+     [
+      -96.01803,
+      29.437064
+     ],
+     [
+      -96.053259,
+      29.415607
+     ],
+     [
+      -96.060747,
+      29.41093
+     ],
+     [
+      -96.063127,
+      29.409607
+     ],
+     [
+      -96.072878,
+      29.403666
+     ],
+     [
+      -96.075583,
+      29.401858
+     ],
+     [
+      -96.077951,
+      29.399385
+     ],
+     [
+      -96.079415,
+      29.397255
+     ],
+     [
+      -96.079878,
+      29.396315
+     ],
+     [
+      -96.087953,
+      29.377071
+     ],
+     [
+      -96.08833,
+      29.375937
+     ],
+     [
+      -96.100313,
+      29.327179
+     ],
+     [
+      -96.103687,
+      29.317306
+     ],
+     [
+      -96.104597,
+      29.315838
+     ],
+     [
+      -96.107173,
+      29.312922
+     ],
+     [
+      -96.107782,
+      29.311386
+     ],
+     [
+      -96.107863,
+      29.310577
+     ],
+     [
+      -96.107543,
+      29.308932
+     ],
+     [
+      -96.105039,
+      29.304053
+     ],
+     [
+      -96.104735,
+      29.302949
+     ],
+     [
+      -96.104638,
+      29.30137
+     ],
+     [
+      -96.104997,
+      29.29943
+     ],
+     [
+      -96.105921,
+      29.297578
+     ],
+     [
+      -96.107308,
+      29.296039
+     ],
+     [
+      -96.108654,
+      29.295085
+     ],
+     [
+      -96.190131,
+      29.244551
+     ],
+     [
+      -96.296122,
+      29.178531
+     ],
+     [
+      -96.394989,
+      29.116663
+     ],
+     [
+      -96.515516,
+      29.040994
+     ],
+     [
+      -96.51754,
+      29.039937
+     ],
+     [
+      -96.546681,
+      29.027543
+     ],
+     [
+      -96.557249,
+      29.022222
+     ],
+     [
+      -96.568465,
+      29.017264
+     ],
+     [
+      -96.680152,
+      28.959663
+     ],
+     [
+      -96.681227,
+      28.959221
+     ],
+     [
+      -96.689631,
+      28.956461
+     ],
+     [
+      -96.69184,
+      28.955511
+     ],
+     [
+      -96.718397,
+      28.941722
+     ],
+     [
+      -96.85286,
+      28.871338
+     ],
+     [
+      -96.9603,
+      28.814948
+     ],
+     [
+      -96.995435,
+      28.80125
+     ],
+     [
+      -96.996997,
+      28.800755
+     ],
+     [
+      -96.998448,
+      28.80054
+     ],
+     [
+      -96.998945,
+      28.800578
+     ],
+     [
+      -96.99996,
+      28.800929
+     ],
+     [
+      -97.001027,
+      28.801596
+     ],
+     [
+      -97.00171,
+      28.802382
+     ],
+     [
+      -97.002127,
+      28.803237
+     ],
+     [
+      -97.002818,
+      28.805538
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Victoria – Beeville",
+    "id": "sp-victoria-beeville",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 45,
+    "speed_source": "Estimate: typical SP Texas secondary-line passenger speed of the 1910s-1940s (about 25-30 mph including stops); no running time for this stretch was read. Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 56.0 mi Victoria - Goliad - Berclair - Beeville against 55 mi documented (TSHA-GWTP). 54.6 mi on ways owned by this railroad - OpenHistoricalMap's Gulf, Western Texas and Pacific Railway (1889) and OSM abandoned/razed ways tagged old_railway_operator=SP either side of Goliad - 1.3 mi untagged and 0.1 mi of connector between the two databases. Victoria and Goliad were hand-pinned (Nominatim returned the counties). No straight-line leg. OHM's GWT&P geometry is coarser than OSM's traced grade.",
+    "segments": [
+     {
+      "start": 1905,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Ex-Gulf, Western Texas and Pacific (55 mi via Goliad and Berclair, built 1889; TSHA-GWTP). Merged into GH&SA 1905 (TSHA-GHSA); the GWT&P's 1889-1905 years are a SEPARATE ROAD. WEAKEST EVIDENCE IN THIS LAYER: the 1951 end rests only on OG52 Table 53 (March 1951) listing Berclair and Beeville in a station list with NO recoverable times, plus the index 'Goliad, Tex., South. Pac., 53' without a freight-only dagger. Nothing between 1905 and 1951 is individually dated; the 1942 Border Limited's route via Victoria - Beeville is inferred, not stated. Beeville - Skidmore - Corpus Christi beyond is SA&AP, a separate road. [OPEN] Passenger service confirmed to 1951 by the Feb 1952 Official Guide. This is the last CONFIRMED year, not a known end - no source dates when service actually stopped. Do not extend without evidence. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: 1905 is the corporate merger date (TSHA-GHSA); 1951 rests on an OG52 Table 53 station list without times and an undaggered index entry - the weakest acceptable evidence. End withheld [OPEN]. Headway is an estimate.",
+       "TSHA Handbook of Texas, Gulf, Western Texas and Pacific Railway: https://www.tshaonline.org/handbook/entries/gulf-western-texas-and-pacific-railway",
+       "TSHA Handbook of Texas, Galveston, Harrisburg and San Antonio Railway: https://www.tshaonline.org/handbook/entries/galveston-harrisburg-and-san-antonio-railway",
+       "Official Guide of the Railways, Feb 1952 (schedules of Sept-Dec 1951), Southern Pacific Texas tables and index (research/sources/official_guide_1952.txt)",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.002818,
+      28.805538
+     ],
+     [
+      -97.002127,
+      28.803237
+     ],
+     [
+      -97.001315,
+      28.801863
+     ],
+     [
+      -97.000375,
+      28.801148
+     ],
+     [
+      -96.998693,
+      28.800384
+     ],
+     [
+      -96.997782,
+      28.79935
+     ],
+     [
+      -96.997614,
+      28.798853
+     ],
+     [
+      -96.997783,
+      28.797798
+     ],
+     [
+      -96.999851,
+      28.792894
+     ],
+     [
+      -97.000302,
+      28.792164
+     ],
+     [
+      -97.001295,
+      28.791296
+     ],
+     [
+      -97.002034,
+      28.7909
+     ],
+     [
+      -97.003087,
+      28.790599
+     ],
+     [
+      -97.012287,
+      28.78974
+     ],
+     [
+      -97.013786,
+      28.78976
+     ],
+     [
+      -97.017307,
+      28.790057
+     ],
+     [
+      -97.024569,
+      28.790186
+     ],
+     [
+      -97.026106,
+      28.790041
+     ],
+     [
+      -97.02764,
+      28.789647
+     ],
+     [
+      -97.042473,
+      28.783992
+     ],
+     [
+      -97.044277,
+      28.783209
+     ],
+     [
+      -97.110899,
+      28.745813
+     ],
+     [
+      -97.113424,
+      28.74465
+     ],
+     [
+      -97.122395,
+      28.740906
+     ],
+     [
+      -97.123452,
+      28.740335
+     ],
+     [
+      -97.16929,
+      28.710642
+     ],
+     [
+      -97.172967,
+      28.708679
+     ],
+     [
+      -97.175841,
+      28.707506
+     ],
+     [
+      -97.178988,
+      28.706508
+     ],
+     [
+      -97.18175,
+      28.70587
+     ],
+     [
+      -97.246161,
+      28.693607
+     ],
+     [
+      -97.255108,
+      28.69173
+     ],
+     [
+      -97.256879,
+      28.691607
+     ],
+     [
+      -97.358936,
+      28.672176
+     ],
+     [
+      -97.380292,
+      28.66807
+     ],
+     [
+      -97.381748,
+      28.667653
+     ],
+     [
+      -97.382728,
+      28.667229
+     ],
+     [
+      -97.384069,
+      28.666476
+     ],
+     [
+      -97.385073,
+      28.665737
+     ],
+     [
+      -97.386375,
+      28.664587
+     ],
+     [
+      -97.388252,
+      28.662443
+     ],
+     [
+      -97.402595,
+      28.644841
+     ],
+     [
+      -97.403713,
+      28.64236
+     ],
+     [
+      -97.408808,
+      28.635488
+     ],
+     [
+      -97.433586,
+      28.611587
+     ],
+     [
+      -97.435501,
+      28.609872
+     ],
+     [
+      -97.437171,
+      28.608607
+     ],
+     [
+      -97.482634,
+      28.5803
+     ],
+     [
+      -97.514951,
+      28.560276
+     ],
+     [
+      -97.516437,
+      28.559475
+     ],
+     [
+      -97.517716,
+      28.559011
+     ],
+     [
+      -97.519877,
+      28.558661
+     ],
+     [
+      -97.538885,
+      28.556985
+     ],
+     [
+      -97.540172,
+      28.556763
+     ],
+     [
+      -97.541406,
+      28.556353
+     ],
+     [
+      -97.545589,
+      28.554186
+     ],
+     [
+      -97.546585,
+      28.553876
+     ],
+     [
+      -97.550837,
+      28.553028
+     ],
+     [
+      -97.552185,
+      28.552645
+     ],
+     [
+      -97.554154,
+      28.551655
+     ],
+     [
+      -97.567417,
+      28.54043
+     ],
+     [
+      -97.57009,
+      28.538437
+     ],
+     [
+      -97.572243,
+      28.5373
+     ],
+     [
+      -97.60279,
+      28.523589
+     ],
+     [
+      -97.609425,
+      28.520519
+     ],
+     [
+      -97.610405,
+      28.519933
+     ],
+     [
+      -97.634585,
+      28.50113
+     ],
+     [
+      -97.725498,
+      28.429838
+     ],
+     [
+      -97.72735,
+      28.427984
+     ],
+     [
+      -97.743183,
+      28.410411
+     ],
+     [
+      -97.744457,
+      28.409136
+     ],
+     [
+      -97.745289,
+      28.408603
+     ],
+     [
+      -97.751293,
+      28.405919
+     ],
+     [
+      -97.751586,
+      28.405701
+     ],
+     [
+      -97.751919,
+      28.404925
+     ],
+     [
+      -97.751827,
+      28.404331
+     ],
+     [
+      -97.749453,
+      28.400136
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: San Antonio – Stockdale",
+    "id": "sp-san-antonio-stockdale",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate: typical SP Texas secondary-line passenger speed of the 1910s-1940s (about 25-30 mph including stops); no running time for this stretch was read. Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py; San Antonio city end is a labelled straight line",
+    "geometry_quality": "35.9 mi drawn San Antonio - Adkins - La Vernia - Sutherland Springs - Stockdale against 38.8 mi documented (BL-TX1 mileposts San Antonio 140.9 - Stockdale 102.1). Traced 31.0 mi on OSM razed/abandoned ways tagged old_railway_operator=SP ('Cuero Branch / Victoria Subdivision', lifted after the 1965 abandonment) from the east side of San Antonio (-98.388, 29.424) to Stockdale. APPROXIMATED: San Antonio (SA&G terminal near Commerce St, position approximate) - the start of the surviving grade, 4.9 mi STRAIGHT LINE: the city end of the SA&G is not in OSM or OpenHistoricalMap, and the router would otherwise have run on other companies' city tracks. The straight leg explains most of the 2.9 mi shortfall. Sutherland Springs geocode lies 1.8 km from the line (town centre). No other straight-line leg.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1947,
+      "headway_min": 720,
+      "note": "Ex-San Antonio and Gulf (SP-backed; reached Stockdale 1898, TSHA-SAG; predecessor San Antonio and Gulf Shore reached Sutherland Springs 1894/1896), via Martinez, Adkins, Lavernia and Sutherland Springs; merged into GH&SA Aug 1905. The SA&GS/SA&G years and 1905-1913 are not drawn: 1914 is the first GH&SA-era year with positive evidence - 'two SP passenger trains a day to Sutherland Springs' for the spa traffic (TTM-SAGS). End 1947: TTM-SAGS timeline '1947: passenger service ends'; its own narrative says 'probably early 1950s' (conflict recorded). OG52 daggers (Lavernia, Sutherland Springs, Stockdale all freight-only by Sept 1951) agree with 1947, so the earlier end is drawn. Track San Antonio - Stockdale pulled 1965 - context, not drawn. headway_min 720 reads the 1914 'two trains a day' as two round trips - an ESTIMATE.",
+      "sources": [
+       "Segment-level: 1914 two trains a day and 1947 end from TTM-SAGS (timeline vs narrative conflict recorded); OG52 index daggers consistent. Headway is an estimate.",
+       "Texas Transportation Museum, San Antonio and Gulf Shore line: https://txtransportationmuseum.org/newpagea616653e",
+       "TSHA Handbook of Texas, San Antonio and Gulf Railroad: https://www.tshaonline.org/handbook/entries/san-antonio-and-gulf-railroad",
+       "Official Guide of the Railways, Feb 1952 (schedules of Sept-Dec 1951), Southern Pacific Texas tables and index (research/sources/official_guide_1952.txt)",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -98.47,
+      29.42
+     ],
+     [
+      -98.388117,
+      29.42389
+     ],
+     [
+      -98.376495,
+      29.423913
+     ],
+     [
+      -98.374433,
+      29.423988
+     ],
+     [
+      -98.371797,
+      29.424435
+     ],
+     [
+      -98.361171,
+      29.424318
+     ],
+     [
+      -98.357496,
+      29.423071
+     ],
+     [
+      -98.350178,
+      29.418448
+     ],
+     [
+      -98.349509,
+      29.418399
+     ],
+     [
+      -98.339429,
+      29.418864
+     ],
+     [
+      -98.338941,
+      29.418808
+     ],
+     [
+      -98.335331,
+      29.416966
+     ],
+     [
+      -98.332839,
+      29.41462
+     ],
+     [
+      -98.331201,
+      29.413439
+     ],
+     [
+      -98.330203,
+      29.413057
+     ],
+     [
+      -98.325652,
+      29.412123
+     ],
+     [
+      -98.323623,
+      29.411328
+     ],
+     [
+      -98.318634,
+      29.406867
+     ],
+     [
+      -98.318126,
+      29.406512
+     ],
+     [
+      -98.316412,
+      29.405714
+     ],
+     [
+      -98.299277,
+      29.402595
+     ],
+     [
+      -98.294893,
+      29.402631
+     ],
+     [
+      -98.293555,
+      29.402438
+     ],
+     [
+      -98.29116,
+      29.401135
+     ],
+     [
+      -98.287253,
+      29.398665
+     ],
+     [
+      -98.285877,
+      29.3981
+     ],
+     [
+      -98.283302,
+      29.397464
+     ],
+     [
+      -98.282537,
+      29.397351
+     ],
+     [
+      -98.276471,
+      29.397196
+     ],
+     [
+      -98.259325,
+      29.397247
+     ],
+     [
+      -98.248045,
+      29.399405
+     ],
+     [
+      -98.246274,
+      29.399682
+     ],
+     [
+      -98.244809,
+      29.399749
+     ],
+     [
+      -98.238197,
+      29.398272
+     ],
+     [
+      -98.235555,
+      29.397388
+     ],
+     [
+      -98.23272,
+      29.39555
+     ],
+     [
+      -98.230932,
+      29.394781
+     ],
+     [
+      -98.224797,
+      29.393296
+     ],
+     [
+      -98.213372,
+      29.389214
+     ],
+     [
+      -98.208573,
+      29.386561
+     ],
+     [
+      -98.201594,
+      29.38233
+     ],
+     [
+      -98.200957,
+      29.382084
+     ],
+     [
+      -98.186446,
+      29.379801
+     ],
+     [
+      -98.183295,
+      29.379472
+     ],
+     [
+      -98.182224,
+      29.379595
+     ],
+     [
+      -98.176144,
+      29.381045
+     ],
+     [
+      -98.172294,
+      29.381835
+     ],
+     [
+      -98.170795,
+      29.381965
+     ],
+     [
+      -98.169823,
+      29.381842
+     ],
+     [
+      -98.167589,
+      29.381097
+     ],
+     [
+      -98.158118,
+      29.377096
+     ],
+     [
+      -98.152473,
+      29.374916
+     ],
+     [
+      -98.146792,
+      29.372886
+     ],
+     [
+      -98.14567,
+      29.372327
+     ],
+     [
+      -98.132446,
+      29.364283
+     ],
+     [
+      -98.130733,
+      29.363359
+     ],
+     [
+      -98.112274,
+      29.356643
+     ],
+     [
+      -98.109847,
+      29.355638
+     ],
+     [
+      -98.106505,
+      29.353687
+     ],
+     [
+      -98.106217,
+      29.353352
+     ],
+     [
+      -98.105621,
+      29.352096
+     ],
+     [
+      -98.104875,
+      29.351551
+     ],
+     [
+      -98.102235,
+      29.350378
+     ],
+     [
+      -98.09587,
+      29.346999
+     ],
+     [
+      -98.094077,
+      29.345843
+     ],
+     [
+      -98.093175,
+      29.344812
+     ],
+     [
+      -98.069561,
+      29.308735
+     ],
+     [
+      -98.068939,
+      29.307994
+     ],
+     [
+      -98.06811,
+      29.307379
+     ],
+     [
+      -98.058024,
+      29.301739
+     ],
+     [
+      -98.057133,
+      29.301169
+     ],
+     [
+      -98.0562,
+      29.300365
+     ],
+     [
+      -98.032835,
+      29.271497
+     ],
+     [
+      -98.032306,
+      29.270728
+     ],
+     [
+      -98.031985,
+      29.269752
+     ],
+     [
+      -98.029736,
+      29.255663
+     ],
+     [
+      -98.029155,
+      29.254686
+     ],
+     [
+      -98.027828,
+      29.253917
+     ],
+     [
+      -98.026999,
+      29.253763
+     ],
+     [
+      -98.024072,
+      29.253741
+     ],
+     [
+      -98.022113,
+      29.253212
+     ],
+     [
+      -98.021329,
+      29.252897
+     ],
+     [
+      -98.020458,
+      29.252362
+     ],
+     [
+      -98.019339,
+      29.251077
+     ],
+     [
+      -98.018613,
+      29.250625
+     ],
+     [
+      -98.017753,
+      29.250354
+     ],
+     [
+      -98.016695,
+      29.250263
+     ],
+     [
+      -98.013057,
+      29.250544
+     ],
+     [
+      -98.011378,
+      29.250399
+     ],
+     [
+      -98.005645,
+      29.247053
+     ],
+     [
+      -98.004474,
+      29.246555
+     ],
+     [
+      -97.997518,
+      29.244547
+     ],
+     [
+      -97.994129,
+      29.243996
+     ],
+     [
+      -97.986013,
+      29.243014
+     ],
+     [
+      -97.977305,
+      29.242576
+     ],
+     [
+      -97.975864,
+      29.242277
+     ],
+     [
+      -97.974299,
+      29.241572
+     ],
+     [
+      -97.96809,
+      29.238053
+     ],
+     [
+      -97.967416,
+      29.237773
+     ],
+     [
+      -97.966442,
+      29.237619
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Southern Pacific Railroad",
+    "line": "Southern Pacific: Bay City Junction – Palacios",
+    "id": "sp-bay-city-jct-palacios",
+    "color": "#C1272D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimate: typical SP Texas secondary-line passenger speed of the 1910s-1940s (about 25-30 mph including stops); no running time for this stretch was read. Not a timetable reading.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror, 2026-11-20) and OpenHistoricalMap, routed with opstrace.py",
+    "geometry_quality": "Traced 36.4 mi Bay City Junction - Bay City - Midfield - Blessing - Palacios. Documented: 68.8 mi Wharton - Palacios (BL-TX1 table 71); a check trace of Wharton - Bay City Junction on the same data gave 31.0 mi, so 31.0 + 36.4 = 67.4 mi against 68.8 (2% short). 100% on ways owned by this railroad: OpenHistoricalMap's New York, Texas and Mexican Railway (1903) and OSM razed/abandoned ways tagged old_railway_operator=SP (Midfield - Palacios). Bay City Junction hand-pinned at the junction of the Hawkinsville line near Van Vleck (OHM). No straight-line leg.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1906,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Bay City Junction - Bay City - Midfield - Blessing - Palacios, ex-New York, Texas and Mexican (built 1901-03; first train at Palacios 29 Jun 1903), merged into GH&SA Aug 1905. 1906 is the ONLY confirmed GH&SA-era passenger year: the first Texas Baptist encampment at Palacios in 1906 'drew crowds by rail' (Palacios history). Service certainly ran wider both ways - an early account gives two trains daily, one passenger and one freight, and SP advertised excursion rates in 1904 (NYT&M era, a separate road) - but no other year is confirmed, so one year is drawn. Not a service duration. By Sept 1951 Palacios and Midfield are freight-only (OG52 index 41 with dagger); the passenger end is unknown. Wharton - Bay City Junction is not drawn: no separate evidence, although trains to Palacios must have used it. headway_min is an ESTIMATE (about one train each way a day), not a timetable reading.",
+      "sources": [
+       "Segment-level: 1906 encampment trains from the Palacios history (USGenWeb); NYT&M construction and 1905 merger from TSHA-NYTM; freight-only by 1951 from OG52 index. Headway is an estimate.",
+       "Palacios history, Matagorda County USGenWeb: https://www.usgenwebsites.org/TXMatagorda/palacios/palacios_history.htm",
+       "TSHA Handbook of Texas, New York, Texas and Mexican Railway: https://www.tshaonline.org/handbook/entries/new-york-texas-and-mexican-railway",
+       "Official Guide of the Railways, Feb 1952 (schedules of Sept-Dec 1951), Southern Pacific Texas tables and index (research/sources/official_guide_1952.txt)",
+       "John Fowler, Texas Railroads (1), branchline.uk SL 261, SP section pp.12-20: https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.893895,
+      29.022156
+     ],
+     [
+      -95.894544,
+      29.022261
+     ],
+     [
+      -95.895096,
+      29.022176
+     ],
+     [
+      -95.906365,
+      29.011977
+     ],
+     [
+      -95.945933,
+      28.988649
+     ],
+     [
+      -95.947264,
+      28.988142
+     ],
+     [
+      -95.949452,
+      28.987804
+     ],
+     [
+      -95.951963,
+      28.987654
+     ],
+     [
+      -95.966125,
+      28.987166
+     ],
+     [
+      -95.967241,
+      28.98666
+     ],
+     [
+      -95.968829,
+      28.985327
+     ],
+     [
+      -95.969987,
+      28.985027
+     ],
+     [
+      -95.977755,
+      28.984876
+     ],
+     [
+      -96.000822,
+      28.986209
+     ],
+     [
+      -96.01213,
+      28.986979
+     ],
+     [
+      -96.013804,
+      28.98696
+     ],
+     [
+      -96.014984,
+      28.986791
+     ],
+     [
+      -96.016486,
+      28.986322
+     ],
+     [
+      -96.017881,
+      28.985721
+     ],
+     [
+      -96.031592,
+      28.978044
+     ],
+     [
+      -96.070152,
+      28.95683
+     ],
+     [
+      -96.07189,
+      28.956192
+     ],
+     [
+      -96.112037,
+      28.950221
+     ],
+     [
+      -96.215291,
+      28.935706
+     ],
+     [
+      -96.215849,
+      28.935593
+     ],
+     [
+      -96.216686,
+      28.935086
+     ],
+     [
+      -96.21718,
+      28.934504
+     ],
+     [
+      -96.217437,
+      28.933941
+     ],
+     [
+      -96.217545,
+      28.933265
+     ],
+     [
+      -96.217523,
+      28.89553
+     ],
+     [
+      -96.218017,
+      28.800297
+     ],
+     [
+      -96.218789,
+      28.714423
+     ]
+    ]
+   }
+  }
+ ]
+}
