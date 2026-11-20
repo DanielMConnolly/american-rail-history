@@ -1,0 +1,1337 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Beaumont, Sour Lake and Western Railway (incorporated 1903 as the Beaumont, Sour Lake & Port Arthur Traction Co., renamed 1904) and its subsidiary the Houston North Shore Railway. Drawn: the original Beaumont - Sour Lake line 1906 [OPEN start] - 1907; the Houston - Beaumont main line (the Gulf Coast Lines' and later Missouri Pacific's Houston - New Orleans route) in BSL&W colour 1907-1924 and Missouri Pacific colour 1925-1967, split at the Missouri Pacific purchase as for the St. Louis, Brownsville and Mexico in south_texas_railroads.geojson; and the Houston North Shore interurban (Missouri Pacific throughout) 1927-1931 from Union Station and 1927-1961 McCarty Avenue - Baytown. Not drawn: the KCS trackage east of Beaumont used by the through trains (deferred to the NOT&M / Gulf Coast Lines research), oil-field spurs, charter routes never built, the HNS bus connection, and all post-passenger freight (Rule 1).",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Beaumont,_Sour_Lake_and_Western_Railway",
+   "https://www.tshaonline.org/handbook/entries/beaumont-sour-lake-and-western-railway",
+   "https://en.wikipedia.org/wiki/Beaumont,_Sour_Lake_and_Western_Railway",
+   "https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+   "https://www.branchline.uk/jfpdf/texasinterurbanrlys.pdf",
+   "https://www.tshaonline.org/handbook/entries/sour-lake-tx",
+   "Official Guide of the Railways, Feb 1952 issue (research/sources/official_guide_1952.txt), Tables 58 and 69",
+   "https://chicagorailfan.com/sthmp.html",
+   "https://chicagorailfan.com/stbchou.html",
+   "https://streamlinerschedules.com/concourse/track9/houstonian195705.html",
+   "https://stormhawk1070.rrpicturearchives.net/showPicture.aspx?id=4983355",
+   "https://tnmot.org/collection/mopac-604-railbus/",
+   "https://chicagorailfan.com/aattzzin.html"
+  ],
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py; OSM street centre-line for Lyons Avenue. See each feature's geometry_source."
+  ],
+  "not_yet_sourced": [
+   "Beaumont - Sour Lake passenger start: 1906 is the first confirmed year ([OPEN] early end); ICC 'acquired for operation June 1904' is not a passenger date and the 17 Sep 1904 Galveston Tribune ad was not seen.",
+   "Grayburg - Sour Lake stub: only 1906 is confirmed; whether a Beaumont - Sour Lake local ran after Dec 1907 (Fowler's 'terminus of service to Sour Lake via Grayburg') and when it stopped is unknown - not drawn after 1907.",
+   "Main-line end: Houstonian 1967 (two secondary sources) vs Orleanean 1965 / '11 March 1962'. An Official Guide or ICC discontinuance for MP Nos. 9/10 would pin it.",
+   "Houston North Shore end: 1961 (Wikipedia) vs 1962; electric end 1948 vs 1949; when the terminus moved from McCarty Avenue to MK Yard (between 1949 and 1951).",
+   "Houston North Shore downtown routing between Union Station and Lyons Avenue (drawn as a straight line).",
+   "Rule 6/4 open choice: 1905/1916-1924 trains were advertised as Frisco Lines / Gulf Coast Lines; this layer names the BSL&W, following stlbm-robstown-brownsville.",
+   "Whether any local Houston - Beaumont train ran besides the through New Orleans trains in Gulf Coast Lines / MoPac years.",
+   "Defect noted, not fixed here (outside this layer): southern_pacific_sunset_route.geojson draws sp-sunset-route-early (1883-1894) and sp-sunset-limited (1894-1971) Beaumont - Houston on this BSL&W/MoPac line instead of SP's own route via Liberty and Dayton; amtrak-36930's 1971-~1996 years probably have the same issue (unresolved)."
+  ],
+  "freight_only_audit": "Built 2026-11-20 under Rule 1: no freight-only content drawn. Post-1967 main-line freight, post-1961 HNS refinery freight and oil-field spurs are excluded.",
+  "horsecar_audit": "No animal-powered operation: steam from 1904, electric (HNS) from 1927."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Beaumont, Sour Lake and Western Railway",
+    "line": "Beaumont, Sour Lake and Western: Beaumont \u2013 Sour Lake",
+    "id": "bslw-beaumont-sour-lake",
+    "color": "#158C35",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Estimated (Rule 3): no 1904-1907 timetable was consulted; 35 km/h is a guess for a new oil-boom steam short line.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1907,
+      "headway_min": 720,
+      "note": "The whole railroad before the Houston extension: a Beaumont - Sour Lake oil-boom line built 1903-04 by the Beaumont, Sour Lake & Port Arthur Traction Co. (renamed Beaumont, Sour Lake & Western 30 Jun 1904), from the Beaumont (Bowie Street / Texarkana & Fort Smith-KCS) depot via Landry, Elizabeth, Westbury and Brazier to Sour Lake. START IS [OPEN] AT THE EARLY END: 1906 is the first CONFIRMED passenger year (Fowler cites the 1906 Official Guide for Sand Pit, McLain, Zeigler, West, Brosier and Texas New Orleans Crossing, the last on the Grayburg - Sour Lake stub). Service probably began in 1904 (ICC: acquired for operation June 1904; charter amended to carry passengers; a 17 Sep 1904 Galveston Tribune ad not verified) - do not move the start earlier without evidence. Ends 1907: from December 1907 the line was extended from Grayburg to Houston and this became the east end of the main line (feature bslw-houston-beaumont). The Grayburg - Sour Lake stub's own evidence is the single 1906 Guide year (an [ANCHOR] in the research); it is drawn through 1907 only because until the December 1907 extension Sour Lake was the line's terminus (the report's block [4]). Whether a Beaumont - Sour Lake local survived after 1907 is unknown and is not drawn. headway_min 720 (about one round trip a day) is an unsourced estimate.",
+      "sources": [
+       "Segment-level: 1906 confirmed by J. Fowler, Texas Railroads (1), MP route 1 / SL 261, citing the 1906 Official Guide for the line's stations; construction and 'acquired for operation June 1904' from the ICC valuation; Dec 1907 extension from the ICC valuation and the Handbook of Texas - as quoted in research/branches/beaumont_sour_lake_and_western_railway.txt (2026-11-20); the tracer did not re-open these sources. headway_min is an estimate.",
+       "https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Beaumont,_Sour_Lake_and_Western_Railway",
+       "https://www.tshaonline.org/handbook/entries/beaumont-sour-lake-and-western-railway"
+      ]
+     }
+    ],
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (old_railway_operator probe: the Houston - Beaumont line is tagged old_railway_operator='MP', name 'UP Beaumont Subdivision'; no way in the area carries BSL&W, GCL or 'Sour Lake'; the parallel Southern Pacific line via Liberty and Dayton is 'UP Houston Subdivision', old_railway_operator='SP', and was costed as another operator's track). Only ways tagged exactly MP were treated as own track (a substring match on 'mp' would also hit 'Company' in OpenHistoricalMap names). Waypoints: Beaumont (hand position at the downtown KCS/UP junction, -94.100, 30.079), Westbury, Grayburg, Hull, Hardin, Kenefick, Huffman, Dyersdale, Settegast (Nominatim; types checked - Hardin and Kenefick return their incorporated-town boundaries, not counties) and Houston Union Station (hand position, 501 Crawford St). Douglas-Peucker 8 m, then trim_reversals. Beaumont - Grayburg traced separately with the same waypoints; Grayburg - Sour Lake is a straight line (see geometry_quality).",
+    "geometry_quality": "Beaumont - Sour Lake: traced 19.0 mi Beaumont - Grayburg on the UP Beaumont Subdivision (old_railway_operator=MP, 16.4 mi; untagged Beaumont terminal trackage 2.6 mi) against Fowler's 20.0 mi (MP 279.0 -> 299.0), plus ONE APPROXIMATED LEG: Grayburg - Sour Lake, a 1.3-mi straight line from the main line at Grayburg to the Nominatim centre of Sour Lake (city), standing in for the 1.5-mi stub (Fowler 299.0 -> 300.5). The stub is not in OSM; the only abandoned way there is tagged old_railway_operator=SP (the T&NO, which the stub crossed) and was not used; OpenHistoricalMap has nothing in the area. Total 20.3 mi against the ICC's 21.030 mi - 3% short. LATER ALIGNMENT (Rule 2): this feature's 1906-1907 era is drawn on the post-1906 alignment. Fowler: 'Former route until after 1906' left Beaumont via Texas & New Orleans Junction - Sand Pit - Elizabeth; the later (drawn) alignment runs Landry - McLain - Elizabeth. The first ~6 mi out of Beaumont are therefore a later alignment than this feature's era, and the old route was not located in OSM or OHM."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.105137,
+      30.075989
+     ],
+     [
+      -94.123732,
+      30.076358
+     ],
+     [
+      -94.124985,
+      30.076366
+     ],
+     [
+      -94.12986,
+      30.07583
+     ],
+     [
+      -94.131107,
+      30.075553
+     ],
+     [
+      -94.156456,
+      30.072198
+     ],
+     [
+      -94.172149,
+      30.070357
+     ],
+     [
+      -94.173891,
+      30.0705
+     ],
+     [
+      -94.175539,
+      30.070915
+     ],
+     [
+      -94.176965,
+      30.071542
+     ],
+     [
+      -94.180109,
+      30.073575
+     ],
+     [
+      -94.181269,
+      30.074176
+     ],
+     [
+      -94.18277,
+      30.074691
+     ],
+     [
+      -94.18451,
+      30.074981
+     ],
+     [
+      -94.189808,
+      30.074954
+     ],
+     [
+      -94.231433,
+      30.076112
+     ],
+     [
+      -94.233824,
+      30.076275
+     ],
+     [
+      -94.276661,
+      30.087723
+     ],
+     [
+      -94.329533,
+      30.110444
+     ],
+     [
+      -94.331036,
+      30.111138
+     ],
+     [
+      -94.333768,
+      30.112758
+     ],
+     [
+      -94.33503,
+      30.113262
+     ],
+     [
+      -94.336422,
+      30.113512
+     ],
+     [
+      -94.363601,
+      30.11625
+     ],
+     [
+      -94.365226,
+      30.116542
+     ],
+     [
+      -94.382516,
+      30.120525
+     ],
+     [
+      -94.384721,
+      30.12089
+     ],
+     [
+      -94.386636,
+      30.121018
+     ],
+     [
+      -94.411233,
+      30.120938
+     ],
+     [
+      -94.411024,
+      30.140212
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Beaumont, Sour Lake and Western Railway",
+    "line": "Beaumont, Sour Lake and Western: Houston \u2013 Beaumont",
+    "id": "bslw-houston-beaumont",
+    "color": "#158C35",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "Estimated (Rule 3): no 1907-1924 timetable running time was checked.",
+    "segments": [
+     {
+      "start": 1907,
+      "end": 1924,
+      "headway_min": 720,
+      "note": "Grayburg - Houston extension opened December 1907 (ICC 'acquired for operation December 1907'; service to Houston from 31 Dec 1907 per Wikipedia), making the BSL&W the Houston - Beaumont link of what was marketed as the Frisco Lines and, from 1916, the Gulf Coast Lines: Houston - New Orleans through trains ran on to the NOT&M via KCS trackage east of Beaumont (not drawn here). Stations Beaumont, Landry, Elizabeth, Westbury, Brazier, Grayburg, Hull, Hardin, Kenefick, Huffman, Dyersdale, Settegast, Houston (I&GN 1st Union Depot until 1911, then Houston Union Station). Fowler cites a 1922 company timetable for intermediate stops (Nora, Zeigler, Bradford, Dunks, Spencer). Yoakum/Frisco stock control from 1905, receivership 1913-1916, NOT&M stock control from 1916 and USRA 1918-1920 did not change the corporation that ran the trains. Ends 1924: Missouri Pacific bought the Gulf Coast Lines in December 1924 and controlled it from 1925 (feature mp-houston-beaumont), following the stlbm-robstown-brownsville precedent. 1916 passenger earnings $180,000 (Handbook). headway_min 720 is an unsourced estimate.",
+      "sources": [
+       "Segment-level: Dec 1907 opening from the ICC valuation, Wikipedia and the Handbook of Texas; 1922 timetable stations from Fowler TX (1) MP route 1; the 1924/1925 Missouri Pacific purchase from Wikipedia - as quoted in research/branches/beaumont_sour_lake_and_western_railway.txt (2026-11-20); the tracer did not re-open these sources. headway_min is an estimate.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Beaumont,_Sour_Lake_and_Western_Railway",
+       "https://en.wikipedia.org/wiki/Beaumont,_Sour_Lake_and_Western_Railway",
+       "https://www.tshaonline.org/handbook/entries/beaumont-sour-lake-and-western-railway",
+       "https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ],
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (old_railway_operator probe: the Houston - Beaumont line is tagged old_railway_operator='MP', name 'UP Beaumont Subdivision'; no way in the area carries BSL&W, GCL or 'Sour Lake'; the parallel Southern Pacific line via Liberty and Dayton is 'UP Houston Subdivision', old_railway_operator='SP', and was costed as another operator's track). Only ways tagged exactly MP were treated as own track (a substring match on 'mp' would also hit 'Company' in OpenHistoricalMap names). Waypoints: Beaumont (hand position at the downtown KCS/UP junction, -94.100, 30.079), Westbury, Grayburg, Hull, Hardin, Kenefick, Huffman, Dyersdale, Settegast (Nominatim; types checked - Hardin and Kenefick return their incorporated-town boundaries, not counties) and Houston Union Station (hand position, 501 Crawford St). Douglas-Peucker 8 m, then trim_reversals.",
+    "geometry_quality": "Beaumont - Houston: traced 87.2 mi against the documented ~89 mi (Fowler mileposts 279.0 Beaumont -> 368.3 Houston; the 1957 timetable gives 278 -> 367) and the ICC's 21.0 (Beaumont - Sour Lake incl. the 1.5-mi stub) + 63.2 (Grayburg - Houston) owned miles - 2% short. By operator: 80.4 mi on ways tagged old_railway_operator=MP (UP Beaumont Subdivision and the MP-tagged Houston East/West Belt pieces), 6.7 mi on untagged Houston/Beaumont terminal trackage (HB&T-area yard leads into downtown Houston), 0.2 mi on an SP-tagged piece at the Beaumont end, 0 mi on the parallel SP Liberty/Dayton line. Waypoints Westbury 0.0 km, Grayburg 0.0 km, Hull 0.4 km, Hardin 0.4 km, Kenefick 0.1 km, Huffman 0.3 km, Dyersdale 0.7 km, Settegast 0.4 km from the line. Grayburg falls at traced mile 19.2 (Fowler 20.0). No approximated (straight-line) legs. HOUSTON END: the line stops on the UP West Belt about 1.0 km north-east of the Union Station building (the station tracks were removed for the ballpark); the last ~1 km into the station is NOT drawn. LATER ALIGNMENT (Rule 2): drawn on the line as OSM maps it today. Fowler records a 'former route until after 1906' leaving Beaumont via Texas & New Orleans Junction - Sand Pit - Elizabeth, replaced by Landry - McLain - Elizabeth; this feature's era (from Dec 1907) post-dates that change, but whether the Houston terminal approach (I&GN 1st Union Depot until 1911, Houston Union Station after) matches today's track was not checked."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.105137,
+      30.075989
+     ],
+     [
+      -94.123732,
+      30.076358
+     ],
+     [
+      -94.124985,
+      30.076366
+     ],
+     [
+      -94.12986,
+      30.07583
+     ],
+     [
+      -94.131107,
+      30.075553
+     ],
+     [
+      -94.156456,
+      30.072198
+     ],
+     [
+      -94.172149,
+      30.070357
+     ],
+     [
+      -94.173891,
+      30.0705
+     ],
+     [
+      -94.175539,
+      30.070915
+     ],
+     [
+      -94.176965,
+      30.071542
+     ],
+     [
+      -94.180109,
+      30.073575
+     ],
+     [
+      -94.181269,
+      30.074176
+     ],
+     [
+      -94.18277,
+      30.074691
+     ],
+     [
+      -94.18451,
+      30.074981
+     ],
+     [
+      -94.189808,
+      30.074954
+     ],
+     [
+      -94.233407,
+      30.076215
+     ],
+     [
+      -94.234997,
+      30.076539
+     ],
+     [
+      -94.276661,
+      30.087723
+     ],
+     [
+      -94.329533,
+      30.110444
+     ],
+     [
+      -94.331036,
+      30.111138
+     ],
+     [
+      -94.333768,
+      30.112758
+     ],
+     [
+      -94.33503,
+      30.113262
+     ],
+     [
+      -94.336422,
+      30.113512
+     ],
+     [
+      -94.363601,
+      30.11625
+     ],
+     [
+      -94.384037,
+      30.120803
+     ],
+     [
+      -94.386636,
+      30.121018
+     ],
+     [
+      -94.413963,
+      30.120967
+     ],
+     [
+      -94.606274,
+      30.139153
+     ],
+     [
+      -94.727631,
+      30.150464
+     ],
+     [
+      -94.729879,
+      30.150569
+     ],
+     [
+      -94.731538,
+      30.150495
+     ],
+     [
+      -94.733249,
+      30.150272
+     ],
+     [
+      -94.735365,
+      30.149805
+     ],
+     [
+      -94.737217,
+      30.149179
+     ],
+     [
+      -94.739634,
+      30.148035
+     ],
+     [
+      -94.749594,
+      30.141724
+     ],
+     [
+      -94.75184,
+      30.13972
+     ],
+     [
+      -94.761409,
+      30.129293
+     ],
+     [
+      -94.762537,
+      30.128321
+     ],
+     [
+      -94.764005,
+      30.12728
+     ],
+     [
+      -94.766253,
+      30.126067
+     ],
+     [
+      -94.767803,
+      30.125445
+     ],
+     [
+      -94.770156,
+      30.124769
+     ],
+     [
+      -94.772548,
+      30.124369
+     ],
+     [
+      -94.824598,
+      30.120165
+     ],
+     [
+      -94.827042,
+      30.119709
+     ],
+     [
+      -94.829969,
+      30.118835
+     ],
+     [
+      -94.861865,
+      30.108476
+     ],
+     [
+      -95.093698,
+      30.02105
+     ],
+     [
+      -95.09668,
+      30.019854
+     ],
+     [
+      -95.098862,
+      30.018653
+     ],
+     [
+      -95.100054,
+      30.017862
+     ],
+     [
+      -95.101606,
+      30.01651
+     ],
+     [
+      -95.103545,
+      30.014264
+     ],
+     [
+      -95.104803,
+      30.012138
+     ],
+     [
+      -95.109159,
+      30.002226
+     ],
+     [
+      -95.110027,
+      30.000659
+     ],
+     [
+      -95.111321,
+      29.998905
+     ],
+     [
+      -95.112538,
+      29.997573
+     ],
+     [
+      -95.115027,
+      29.995626
+     ],
+     [
+      -95.11669,
+      29.994653
+     ],
+     [
+      -95.131505,
+      29.987592
+     ],
+     [
+      -95.137094,
+      29.985049
+     ],
+     [
+      -95.13891,
+      29.984528
+     ],
+     [
+      -95.140608,
+      29.98425
+     ],
+     [
+      -95.148173,
+      29.983618
+     ],
+     [
+      -95.150624,
+      29.983153
+     ],
+     [
+      -95.152326,
+      29.982599
+     ],
+     [
+      -95.154001,
+      29.981839
+     ],
+     [
+      -95.155515,
+      29.980911
+     ],
+     [
+      -95.157091,
+      29.979671
+     ],
+     [
+      -95.223467,
+      29.915395
+     ],
+     [
+      -95.286134,
+      29.854492
+     ],
+     [
+      -95.287115,
+      29.853351
+     ],
+     [
+      -95.287738,
+      29.852276
+     ],
+     [
+      -95.288184,
+      29.851052
+     ],
+     [
+      -95.28841,
+      29.849573
+     ],
+     [
+      -95.28862,
+      29.80223
+     ],
+     [
+      -95.288722,
+      29.800136
+     ],
+     [
+      -95.288978,
+      29.799438
+     ],
+     [
+      -95.289411,
+      29.799034
+     ],
+     [
+      -95.292018,
+      29.797625
+     ],
+     [
+      -95.311531,
+      29.789281
+     ],
+     [
+      -95.314034,
+      29.788475
+     ],
+     [
+      -95.314729,
+      29.788226
+     ],
+     [
+      -95.339464,
+      29.777685
+     ],
+     [
+      -95.343932,
+      29.775589
+     ],
+     [
+      -95.344578,
+      29.774869
+     ],
+     [
+      -95.344893,
+      29.773869
+     ],
+     [
+      -95.344699,
+      29.770283
+     ],
+     [
+      -95.344717,
+      29.765505
+     ],
+     [
+      -95.345289,
+      29.763914
+     ],
+     [
+      -95.346905,
+      29.761796
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Missouri Pacific Railroad",
+    "line": "Missouri Pacific: Houston \u2013 Beaumont",
+    "id": "mp-houston-beaumont",
+    "color": "#0057B8",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 60,
+    "speed_source": "Estimated (Rule 3) at about 40 mph; the 1951 Guide Table 58 times quoted in the research (Beaumont 5:30/5:40, Houston 7:50 AM / 6:10 PM) were not re-paired by train by the tracer, so no running time was computed.",
+    "segments": [
+     {
+      "start": 1925,
+      "end": 1967,
+      "headway_min": 720,
+      "note": "Missouri Pacific control from the December 1924 purchase (the BSL&W stayed a corporate shell until the merger of 1 Mar 1956); trains advertised under 'Missouri Pacific Lines'. The 1951 Official Guide Table 58 'New Orleans and Houston' shows times at Beaumont, Grayburg, Huffman (flag) and Houston, with sleepers New Orleans - Houston on the Orleanean (Nos. 3/4) and Houstonian (Nos. 9/10); the October 1956 timetable (May 1957 Guide) lists Nos. 303/304 Orleanean and 309/310 Houstonian calling at Houston, Huffman, Hardin, Hull, Grayburg and Beaumont. Departure boards for 1942 and 1956 at Houston show both trains. END 1967 rests on two secondary sources that agree on the year (chicagorailfan MP train list: Houstonian discontinued 1967; a rrpicturearchives caption: 'until 25 May 1967 (approximate date)'). The Orleanean ended earlier - 1965 per chicagorailfan; the same caption's '11 March 1962' contradicts its own 1 Feb 1965 photo of both Orleaneans and looks like a typo (conflict recorded, not settled). 1965 is the photo-confirmed year. A mopac.org note of a 'New Orleans - Houston segment discontinued May 8 1956' names no train and is contradicted by the 1957 timetable. Freight continued after 1967 and the line is today UP's Beaumont Subdivision; Amtrak's Sunset Limited uses it now, as its own feature. headway_min 720 = two trains each way a day in the 1950s; earlier years are an estimate.",
+      "sources": [
+       "Segment-level: 1951 Official Guide Table 58 (research/sources/official_guide_1952.txt), the May 1957 Guide (streamlinerschedules.com), chicagorailfan.com MP and Houston pages and the rrpicturearchives caption - as quoted in research/branches/beaumont_sour_lake_and_western_railway.txt (2026-11-20); the tracer did not re-open these sources. 1925-1941 service level not checked.",
+       "https://chicagorailfan.com/sthmp.html",
+       "https://chicagorailfan.com/stbchou.html",
+       "https://streamlinerschedules.com/concourse/track9/houstonian195705.html",
+       "https://stormhawk1070.rrpicturearchives.net/showPicture.aspx?id=4983355",
+       "https://en.wikipedia.org/wiki/Beaumont,_Sour_Lake_and_Western_Railway"
+      ]
+     }
+    ],
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py (old_railway_operator probe: the Houston - Beaumont line is tagged old_railway_operator='MP', name 'UP Beaumont Subdivision'; no way in the area carries BSL&W, GCL or 'Sour Lake'; the parallel Southern Pacific line via Liberty and Dayton is 'UP Houston Subdivision', old_railway_operator='SP', and was costed as another operator's track). Only ways tagged exactly MP were treated as own track (a substring match on 'mp' would also hit 'Company' in OpenHistoricalMap names). Waypoints: Beaumont (hand position at the downtown KCS/UP junction, -94.100, 30.079), Westbury, Grayburg, Hull, Hardin, Kenefick, Huffman, Dyersdale, Settegast (Nominatim; types checked - Hardin and Kenefick return their incorporated-town boundaries, not counties) and Houston Union Station (hand position, 501 Crawford St). Douglas-Peucker 8 m, then trim_reversals.",
+    "geometry_quality": "Beaumont - Houston: traced 87.2 mi against the documented ~89 mi (Fowler mileposts 279.0 Beaumont -> 368.3 Houston; the 1957 timetable gives 278 -> 367) and the ICC's 21.0 (Beaumont - Sour Lake incl. the 1.5-mi stub) + 63.2 (Grayburg - Houston) owned miles - 2% short. By operator: 80.4 mi on ways tagged old_railway_operator=MP (UP Beaumont Subdivision and the MP-tagged Houston East/West Belt pieces), 6.7 mi on untagged Houston/Beaumont terminal trackage (HB&T-area yard leads into downtown Houston), 0.2 mi on an SP-tagged piece at the Beaumont end, 0 mi on the parallel SP Liberty/Dayton line. Waypoints Westbury 0.0 km, Grayburg 0.0 km, Hull 0.4 km, Hardin 0.4 km, Kenefick 0.1 km, Huffman 0.3 km, Dyersdale 0.7 km, Settegast 0.4 km from the line. Grayburg falls at traced mile 19.2 (Fowler 20.0). No approximated (straight-line) legs. HOUSTON END: the line stops on the UP West Belt about 1.0 km north-east of the Union Station building (the station tracks were removed for the ballpark); the last ~1 km into the station is NOT drawn. LATER ALIGNMENT (Rule 2): drawn on the line as OSM maps it today. Fowler records a 'former route until after 1906' leaving Beaumont via Texas & New Orleans Junction - Sand Pit - Elizabeth, replaced by Landry - McLain - Elizabeth; this feature's era (from Dec 1907) post-dates that change, but whether the Houston terminal approach (I&GN 1st Union Depot until 1911, Houston Union Station after) matches today's track was not checked."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.105137,
+      30.075989
+     ],
+     [
+      -94.123732,
+      30.076358
+     ],
+     [
+      -94.124985,
+      30.076366
+     ],
+     [
+      -94.12986,
+      30.07583
+     ],
+     [
+      -94.131107,
+      30.075553
+     ],
+     [
+      -94.156456,
+      30.072198
+     ],
+     [
+      -94.172149,
+      30.070357
+     ],
+     [
+      -94.173891,
+      30.0705
+     ],
+     [
+      -94.175539,
+      30.070915
+     ],
+     [
+      -94.176965,
+      30.071542
+     ],
+     [
+      -94.180109,
+      30.073575
+     ],
+     [
+      -94.181269,
+      30.074176
+     ],
+     [
+      -94.18277,
+      30.074691
+     ],
+     [
+      -94.18451,
+      30.074981
+     ],
+     [
+      -94.189808,
+      30.074954
+     ],
+     [
+      -94.233407,
+      30.076215
+     ],
+     [
+      -94.234997,
+      30.076539
+     ],
+     [
+      -94.276661,
+      30.087723
+     ],
+     [
+      -94.329533,
+      30.110444
+     ],
+     [
+      -94.331036,
+      30.111138
+     ],
+     [
+      -94.333768,
+      30.112758
+     ],
+     [
+      -94.33503,
+      30.113262
+     ],
+     [
+      -94.336422,
+      30.113512
+     ],
+     [
+      -94.363601,
+      30.11625
+     ],
+     [
+      -94.384037,
+      30.120803
+     ],
+     [
+      -94.386636,
+      30.121018
+     ],
+     [
+      -94.413963,
+      30.120967
+     ],
+     [
+      -94.606274,
+      30.139153
+     ],
+     [
+      -94.727631,
+      30.150464
+     ],
+     [
+      -94.729879,
+      30.150569
+     ],
+     [
+      -94.731538,
+      30.150495
+     ],
+     [
+      -94.733249,
+      30.150272
+     ],
+     [
+      -94.735365,
+      30.149805
+     ],
+     [
+      -94.737217,
+      30.149179
+     ],
+     [
+      -94.739634,
+      30.148035
+     ],
+     [
+      -94.749594,
+      30.141724
+     ],
+     [
+      -94.75184,
+      30.13972
+     ],
+     [
+      -94.761409,
+      30.129293
+     ],
+     [
+      -94.762537,
+      30.128321
+     ],
+     [
+      -94.764005,
+      30.12728
+     ],
+     [
+      -94.766253,
+      30.126067
+     ],
+     [
+      -94.767803,
+      30.125445
+     ],
+     [
+      -94.770156,
+      30.124769
+     ],
+     [
+      -94.772548,
+      30.124369
+     ],
+     [
+      -94.824598,
+      30.120165
+     ],
+     [
+      -94.827042,
+      30.119709
+     ],
+     [
+      -94.829969,
+      30.118835
+     ],
+     [
+      -94.861865,
+      30.108476
+     ],
+     [
+      -95.093698,
+      30.02105
+     ],
+     [
+      -95.09668,
+      30.019854
+     ],
+     [
+      -95.098862,
+      30.018653
+     ],
+     [
+      -95.100054,
+      30.017862
+     ],
+     [
+      -95.101606,
+      30.01651
+     ],
+     [
+      -95.103545,
+      30.014264
+     ],
+     [
+      -95.104803,
+      30.012138
+     ],
+     [
+      -95.109159,
+      30.002226
+     ],
+     [
+      -95.110027,
+      30.000659
+     ],
+     [
+      -95.111321,
+      29.998905
+     ],
+     [
+      -95.112538,
+      29.997573
+     ],
+     [
+      -95.115027,
+      29.995626
+     ],
+     [
+      -95.11669,
+      29.994653
+     ],
+     [
+      -95.131505,
+      29.987592
+     ],
+     [
+      -95.137094,
+      29.985049
+     ],
+     [
+      -95.13891,
+      29.984528
+     ],
+     [
+      -95.140608,
+      29.98425
+     ],
+     [
+      -95.148173,
+      29.983618
+     ],
+     [
+      -95.150624,
+      29.983153
+     ],
+     [
+      -95.152326,
+      29.982599
+     ],
+     [
+      -95.154001,
+      29.981839
+     ],
+     [
+      -95.155515,
+      29.980911
+     ],
+     [
+      -95.157091,
+      29.979671
+     ],
+     [
+      -95.223467,
+      29.915395
+     ],
+     [
+      -95.286134,
+      29.854492
+     ],
+     [
+      -95.287115,
+      29.853351
+     ],
+     [
+      -95.287738,
+      29.852276
+     ],
+     [
+      -95.288184,
+      29.851052
+     ],
+     [
+      -95.28841,
+      29.849573
+     ],
+     [
+      -95.28862,
+      29.80223
+     ],
+     [
+      -95.288722,
+      29.800136
+     ],
+     [
+      -95.288978,
+      29.799438
+     ],
+     [
+      -95.289411,
+      29.799034
+     ],
+     [
+      -95.292018,
+      29.797625
+     ],
+     [
+      -95.311531,
+      29.789281
+     ],
+     [
+      -95.314034,
+      29.788475
+     ],
+     [
+      -95.314729,
+      29.788226
+     ],
+     [
+      -95.339464,
+      29.777685
+     ],
+     [
+      -95.343932,
+      29.775589
+     ],
+     [
+      -95.344578,
+      29.774869
+     ],
+     [
+      -95.344893,
+      29.773869
+     ],
+     [
+      -95.344699,
+      29.770283
+     ],
+     [
+      -95.344717,
+      29.765505
+     ],
+     [
+      -95.345289,
+      29.763914
+     ],
+     [
+      -95.346905,
+      29.761796
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Missouri Pacific Railroad",
+    "line": "Missouri Pacific: Houston North Shore (Union Station \u2013 McCarty Ave)",
+    "id": "mp-houston-north-shore-union-station-mccarty",
+    "color": "#0057B8",
+    "mode": "interurban",
+    "avg_speed_kmh": 15,
+    "speed_source": "Estimated (Rule 3): street running in city traffic over the Houston Electric car line; no timetable running time checked.",
+    "segments": [
+     {
+      "start": 1927,
+      "end": 1931,
+      "headway_min": 60,
+      "note": "Houston North Shore Railway (chartered 27 Jun 1925, bought by Missouri Pacific 1926, leased to the BSL&W 1 May 1927 and run as its 'Electric Division' - MoPac-controlled from before its first train, so drawn in Missouri Pacific colour throughout). Its interurban cars ran from Houston Union Station over the Houston Electric street car tracks on Lyons Avenue to McCarty Avenue, where the HNS's own line began, from 1927 (Fowler: 1927 company timetable; one secondary source gives 19 Jun 1927) 'until 1931' (Fowler; Wikipedia: the HNS 'lost its downtown Houston rail link in 1931'). Afterwards cars terminated at McCarty Avenue; by 1951 a BUS ran Union Station - MK Yard, which is not rail and is not drawn. headway_min 60 is an unsourced estimate.",
+      "sources": [
+       "Segment-level: Fowler, Texas Interurban Railways, route 308 (1927 company timetable; terminus letters 1932, 1949, 1959 Guide) and Wikipedia - as quoted in research/branches/beaumont_sour_lake_and_western_railway.txt (2026-11-20); the tracer did not re-open these sources. headway_min is an estimate.",
+       "https://www.branchline.uk/jfpdf/texasinterurbanrlys.pdf",
+       "https://en.wikipedia.org/wiki/Beaumont,_Sour_Lake_and_Western_Railway"
+      ]
+     }
+    ],
+    "geometry_source": "Lyons Avenue centre-line from OpenStreetMap (highway ways named 'Lyons Avenue', Overpass via maps.mail.ru), points averaged in 0.0008-degree longitude bins (dual carriageways) and simplified at 15 m; Union Station hand position (501 Crawford St).",
+    "geometry_quality": "Houston Union Station - McCarty Avenue (street running over the Houston Electric car line): APPROXIMATED. The car tracks are gone and not in OSM or OpenHistoricalMap, so the drawing is a 1.1-mi STRAIGHT LINE from Union Station north across Buffalo Bayou to the west end of Lyons Avenue, then 3.9 mi along the OSM centre-line of Lyons Avenue (street geometry, simplified 15 m) to McCarty Street, then 0.1 mi to the start of the UP Baytown Subdivision. Total 5.1 mi against Fowler's 7.2 mi (HNS mileposts 0.0 -> 7.2) - 29% short: the actual downtown streetcar routing between Union Station and Lyons Avenue is not known and was certainly longer than the straight leg. Lyons Avenue itself is named by Fowler as the route; the street centre-line stands in for the track."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.3554,
+      29.7567
+     ],
+     [
+      -95.352113,
+      29.771564
+     ],
+     [
+      -95.346351,
+      29.771712
+     ],
+     [
+      -95.344715,
+      29.772222
+     ],
+     [
+      -95.337672,
+      29.775952
+     ],
+     [
+      -95.313746,
+      29.776506
+     ],
+     [
+      -95.296275,
+      29.776558
+     ],
+     [
+      -95.288232,
+      29.776788
+     ],
+     [
+      -95.288412,
+      29.775303
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Missouri Pacific Railroad",
+    "line": "Missouri Pacific: Houston North Shore (McCarty Ave \u2013 Baytown)",
+    "id": "mp-houston-north-shore-mccarty-baytown",
+    "color": "#0057B8",
+    "mode": "interurban",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimated (Rule 3): no HNS timetable running time was checked.",
+    "segments": [
+     {
+      "start": 1927,
+      "end": 1948,
+      "headway_min": 60,
+      "note": "The Houston North Shore's own line, McCarty Avenue - Greens Bayou - Highlands - McNair - Coady - Baytown 'C', 'B', 'A' (Goose Creek), opened 1927 as an electric interurban - the last interurban built in the US - run by the BSL&W Electric Division under Missouri Pacific control. Missouri Pacific sought to drop passengers in 1941 and withdrew. Electric operation ended 1948 (Wikipedia) or 1949 (Fowler: 'diesel operation from 1949') - conflict recorded; the segment break is placed at 1948 and does not change the drawn span. chicagorailfan's 'Houston-Goose Creek (1927-1949)' is the electric era, not the end of passenger service. headway_min 60 is an unsourced estimate.",
+      "sources": [
+       "Segment-level: Fowler, Texas Interurban Railways, route 308 (1927 company timetable; terminus letters 1932, 1949, 1959 Guide) and Wikipedia - as quoted in research/branches/beaumont_sour_lake_and_western_railway.txt (2026-11-20); the tracer did not re-open these sources. headway_min is an estimate.",
+       "https://www.branchline.uk/jfpdf/texasinterurbanrlys.pdf",
+       "https://en.wikipedia.org/wiki/Beaumont,_Sour_Lake_and_Western_Railway",
+       "https://chicagorailfan.com/aattzzin.html"
+      ]
+     },
+     {
+      "start": 1948,
+      "end": 1961,
+      "headway_min": 120,
+      "note": "Gasoline 'railbuses' on flanged wheels replaced the electric cars - still rail (the surviving MoPac 604 at the Texas Museum of Transportation is a Fageol Twin Coach 41-SRC built 1947 for this line). The 1951 Guide Table 69 'Houston and Baytown (B.S.L.&W.)' shows the motor rail coach running MK Yard - Baytown, with a bus from Union Station to MK Yard (the bus is not drawn); Fowler cites the 1959 Guide for MK Yard, Greens Bayou, Highlands, McNair, Coady and Baytown 'A'. Ends 1961 (Wikipedia: 'Railbus operations ended in 1961'; another secondary source gives 1962 - the bracket collapses to 1961; 1959 is the last year seen in a Guide). The westernmost ~1.2 mi (McCarty Ave - MK Yard) was no longer served by the 1951 Guide - see geometry_quality. Refinery freight continued after passengers. headway_min 120 is an unsourced estimate.",
+      "sources": [
+       "Segment-level: 1951 Official Guide Table 69 (research/sources/official_guide_1952.txt) and Fowler, Texas Interurban Railways, route 308 (1927 company timetable; terminus letters 1932, 1949, 1959 Guide) and Wikipedia - as quoted in research/branches/beaumont_sour_lake_and_western_railway.txt (2026-11-20); the tracer did not re-open these sources. headway_min is an estimate.",
+       "https://www.branchline.uk/jfpdf/texasinterurbanrlys.pdf",
+       "https://en.wikipedia.org/wiki/Beaumont,_Sour_Lake_and_Western_Railway",
+       "https://tnmot.org/collection/mopac-604-railbus/"
+      ]
+     }
+    ],
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py along the UP Baytown Subdivision (see geometry_quality for why its SP tag was overridden). Douglas-Peucker 8 m, then trim_reversals.",
+    "geometry_quality": "McCarty Avenue - Baytown 'A' (Goose Creek): traced 24.7 mi against Fowler's 26.1 mi (HNS mileposts 7.2 -> 33.3) - 5% short. All of it on the UP Baytown Subdivision, which OSM tags old_railway_operator=SP throughout; west of Baytown that is wrong - the track runs through Greens Bayou, Highlands, McNair and Coady, which are HNS stations, while the genuine ex-SP part of the subdivision (Baytown - Dayton) lies outside this trace. For this trace only, ways named 'UP Baytown Subdivision' were treated as own track (24.2 mi; 0.5 mi untagged at the junctions). Waypoints: McCarty Ave (west end of the UP Baytown Sub at Lyons Ave / McCarty St, 0.2 km), Greens Bayou (hand-pinned on the line at -95.180, 29.767: Nominatim's 'Greens Bayou' neighbourhood lies 1-2 km south, near the ship channel, and pulled the first trace onto industrial spurs), Highlands 0.2 km, McNair 0.3 km, Coady 0.0 km, Baytown 'A' (hand-pinned at the east end of the HNS in old Goose Creek, -94.990, 29.731, 0.1 km). No approximated legs. TERMINUS CAVEAT: drawn from McCarty Avenue for 1927-1961, but by the 1951 and 1959 Guides the rail coach ran from MK Yard (Fowler MP 8.4, about 1.2 mi further east), so the westernmost ~1.2 mi is overstated for some unknown part of 1949-1961 (Fowler still marks McCarty Ave as terminus in 1949)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.288412,
+      29.775303
+     ],
+     [
+      -95.289113,
+      29.774057
+     ],
+     [
+      -95.289365,
+      29.773261
+     ],
+     [
+      -95.289475,
+      29.769692
+     ],
+     [
+      -95.289295,
+      29.76915
+     ],
+     [
+      -95.288816,
+      29.768532
+     ],
+     [
+      -95.288078,
+      29.768089
+     ],
+     [
+      -95.287328,
+      29.767917
+     ],
+     [
+      -95.259616,
+      29.768348
+     ],
+     [
+      -95.258408,
+      29.768273
+     ],
+     [
+      -95.25194,
+      29.767278
+     ],
+     [
+      -95.250421,
+      29.767185
+     ],
+     [
+      -95.22566,
+      29.767559
+     ],
+     [
+      -95.22492,
+      29.767458
+     ],
+     [
+      -95.221875,
+      29.76635
+     ],
+     [
+      -95.220636,
+      29.76618
+     ],
+     [
+      -95.184463,
+      29.767058
+     ],
+     [
+      -95.178936,
+      29.767026
+     ],
+     [
+      -95.175627,
+      29.767269
+     ],
+     [
+      -95.167326,
+      29.76752
+     ],
+     [
+      -95.165746,
+      29.768059
+     ],
+     [
+      -95.149351,
+      29.777357
+     ],
+     [
+      -95.148104,
+      29.777898
+     ],
+     [
+      -95.096227,
+      29.79341
+     ],
+     [
+      -95.095335,
+      29.793785
+     ],
+     [
+      -95.09448,
+      29.794309
+     ],
+     [
+      -95.093535,
+      29.795176
+     ],
+     [
+      -95.077998,
+      29.813562
+     ],
+     [
+      -95.07713,
+      29.814414
+     ],
+     [
+      -95.075645,
+      29.81533
+     ],
+     [
+      -95.074357,
+      29.815723
+     ],
+     [
+      -95.07326,
+      29.815861
+     ],
+     [
+      -95.054778,
+      29.816246
+     ],
+     [
+      -95.053538,
+      29.815826
+     ],
+     [
+      -95.048813,
+      29.812208
+     ],
+     [
+      -95.047612,
+      29.81166
+     ],
+     [
+      -95.046762,
+      29.811582
+     ],
+     [
+      -95.033006,
+      29.811858
+     ],
+     [
+      -95.031742,
+      29.811631
+     ],
+     [
+      -95.01911,
+      29.805623
+     ],
+     [
+      -95.018254,
+      29.805032
+     ],
+     [
+      -95.017621,
+      29.804333
+     ],
+     [
+      -95.017073,
+      29.803196
+     ],
+     [
+      -95.016929,
+      29.802186
+     ],
+     [
+      -95.016603,
+      29.770211
+     ],
+     [
+      -95.022673,
+      29.743627
+     ],
+     [
+      -95.022804,
+      29.742791
+     ],
+     [
+      -95.02265,
+      29.74191
+     ],
+     [
+      -95.022201,
+      29.741149
+     ],
+     [
+      -95.021664,
+      29.74068
+     ],
+     [
+      -95.008017,
+      29.733304
+     ],
+     [
+      -95.007238,
+      29.733281
+     ],
+     [
+      -95.005609,
+      29.733869
+     ],
+     [
+      -95.004606,
+      29.733937
+     ],
+     [
+      -94.990432,
+      29.730664
+     ]
+    ]
+   }
+  }
+ ]
+}
