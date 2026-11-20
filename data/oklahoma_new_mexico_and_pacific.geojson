@@ -1,0 +1,908 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Oklahoma, New Mexico and Pacific ('the Ringling Railroad'): John Ringling's Ardmore - Wilson - Ringling line (1913-14, ~30 mi) and the Cobalt Junction - Healdton oil-field branch (Ringling and Oil Fields Railway, 6 mi, 1916-17, leased to the ONM&P 1917). Never got past Ringling despite the name. Bought 1926 by the Healdton and Santa Fe (AT&SF subsidiary) and operated by the Gulf, Colorado and Santa Fe; abandoned 1976. Rule 4 split at 1926: ONM&P features in its own colour (#6C36D9, new, unused elsewhere in data/), Santa Fe-era features in the GC&SF subsidiary colour pulled from gcsf-purcell-fort-worth. The Santa Fe-era features share the ONM&P geometry. Built from research/branches/oklahoma_new_mexico_and_pacific.txt, which supersedes block [50] of atchison_topeka_and_santa_fe_railway.txt (1914-1952, no split).",
+  "freight_only": "Nothing drawn after the last confirmed passenger year (1951). Not drawn: the reportedly freight-only years to the 1976 abandonment, the Healdton oil-field yard and industry spurs (1.591 mi of R&OF yard/sidings in 1918), and the never-built Ringling - Waurika - Lawton and Ringling - Oklahoma City extensions.",
+  "not_yet_sourced": [
+   "ONM&P main line 1919-1926: no passenger evidence found either way; both ONM&P features end at 1918 [OPEN]. Targets: Daily Ardmoreite on gateway.okhistory.org (a 4 Jan 1916 p.3 issue may carry a timetable), a 1920s Official Guide, the full ICC Valuation Docket 504 report (Google Books gMEWAQAAMAAJ p.394), and whether the 1923 OCC motor-car application was granted.",
+   "Santa Fe era 1926-1941: no passenger evidence found; GC&SF features start at 1942 [OPEN].",
+   "End of passenger (mixed) service after 1951 [OPEN]: the 1961 YouTube 'Santa Fe Mixed Train - Ardmore to Healdton to Ringling' film is title-only verified and not used; no discontinuance order found.",
+   "1926 handover date conflict: lease 1 Jan 1926 (Railroads of Oklahoma) vs ICC approval 17 Jul 1926 and ONM&P operation to 15 Oct 1926 (Wikipedia citing the Monthly Catalogue and RRB file).",
+   "First passenger train: late Oct 1913 (OKGenWeb) vs 19 Nov 1913 Daily Ardmoreite notice (not read directly). Wilson - Ringling first passenger train not sourced (1914 is the construction year).",
+   "Cobalt Junction - Healdton in the ONM&P era (1917-1926): omitted - a Healdton station existed in 1918 but no passenger train is confirmed.",
+   "Location of the ONM&P's own Ardmore station ('B' Street crossing / later own depot) and of the Healdton station: not located; line ends are drawn at the junction and the track end.",
+   "Abandonment 21 Dec 1976 vs last train 21 Dec 1979 (two ringlingdocents pages); irrelevant to drawn years.",
+   "OG52 Table 69 header date is mangled in the OCR ('June 3, 1951' nearby; 'January 6, 1952' probably belongs to Table 73); 1951 used as the confirmed year.",
+   "avg_speed_kmh and headway_min are estimates from the 1942/1951 schedule; nothing for the ONM&P era."
+  ],
+  "sources": [
+   "https://digitalprairie.ok.gov/digital/collection/okresources/id/70287",
+   "https://digitalprairie.ok.gov/digital/collection/okresources/id/70285",
+   "https://www.okhistory.org/publications/enc/entry?entry=RI008",
+   "https://en.wikipedia.org/wiki/Oklahoma,_New_Mexico_and_Pacific_Railway",
+   "https://okgenweb.net/~okcarter/wilson.htm",
+   "https://ringlingdocents.org/railroads.htm",
+   "https://ringlingdocents.org/railroads2.htm",
+   "https://www.abandonedrails.com/ardmore-to-ringling",
+   "https://www.abandonedrails.com/cobalt-junction-to-healdton",
+   "Official Guide of the Railways, Feb 1952, Santa Fe Table 69"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Oklahoma, New Mexico and Pacific Railway",
+    "line": "Oklahoma, New Mexico and Pacific: Ardmore – Wilson",
+    "id": "onmp-ardmore-wilson",
+    "color": "#6C36D9",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "ESTIMATE. The only running time in hand is the Feb 1952 Official Guide's Santa Fe Table 69 (schedule dated 1951): mixed train Ardmore dep 8:00 AM, Healdton arr 9:47 (train mp 30.7), Ringling arr 10:50 (train mp 41.8, i.e. via the Healdton out-and-back). 41.8 mi in 2 h 50 min = 14.8 mph = 23.7 km/h including switching at Healdton; Ardmore - Healdton 30.7 mi in 1 h 47 = 27.7 km/h. 24 km/h used. No ONM&P-era running time has been found; the Santa Fe-era figure is borrowed for 1913-1918 and is unverified for that era.",
+    "geometry_source": "opstrace.py over OpenStreetMap (Overpass, maps.mail.ru) and OpenHistoricalMap railway ways; Douglas-Peucker 8 m, trim_reversals. Traced 2026-11-18.",
+    "geometry_quality": "Traced with opstrace.py (Overpass mail.ru + OpenHistoricalMap). No OSM way carries an old_railway_operator for this road (probed ONM&P / Oklahoma, New Mexico / Ringling / Santa Fe / GC&SF / AT&SF spellings: only the active BNSF Red Rock Subdivision answers to AT&SF). Followed OpenHistoricalMap's 'Oklahoma, New Mexico and Pacific' ways (start_date 1913), which lie within ~30 m of the surviving OSM geometry (BNSF industrial spur from the main to west Ardmore, then the OSM railway=abandoned way named 'Atchispon Topeka and Sante Fe') for their whole length. 18.8 traced miles against a documented 20.0 mi (Railroads of Oklahoma item 33) / mp 19.9 at Wilson from the Santa Fe depot (19.3 mi from the junction where this feature starts). No straight-line legs. Wilson end is the OHM 1913/1914 construction split, 0.1 km from Wilson town. The east end is drawn at the line's own junction with the Santa Fe main on the south side of Ardmore (34.1626 N, 97.1320 W; the Santa Fe-era 'Ringling Junction', timetable mp 0.6), ~1.1 km from the Santa Fe depot; the line leaves westward from there and does NOT follow the Santa Fe main (gcsf-purcell-fort-worth) for any distance. The 0.6 mi the Santa Fe-era train ran over the main into the union depot is not drawn here; it is already drawn as the main. The ONM&P's own Ardmore station (reported at the 'B' Street crossing, later its own depot) has not been located, so it is not separately marked. The alignment is the one abandoned in 1976; no realignment of this road is recorded, so the drawn line is taken to be the 1913 alignment.",
+    "segments": [
+     {
+      "start": 1913,
+      "end": 1918,
+      "headway_min": 1440,
+      "note": "Built from Ardmore west in 1913 (construction began 1 May 1913) by John Ringling's Oklahoma, New Mexico and Pacific, promoted with Jake Hamon as an Ardmore - Waurika - Lawton road; the August 1913 Healdton oil strike turned it into an oil-field line. Regular passenger service Ardmore - Wilson began late October 1913 (OKGenWeb Carter County, Wilson history); a Daily Ardmoreite notice of 19 Nov 1913 (p.2) reportedly advertises trains leaving daily at 11:00 a.m. - that page was not read directly (bot wall), its content is as reported by a search summary. Mixed/local steam service; headway_min 1440 (one train a day each way) is an ESTIMATE from that notice and from the one daily mixed of 1942-1951. END IS [OPEN]: 1918 is the last CONFIRMED ONM&P passenger year (the 30 Jun 1918 ICC valuation lists 5 passenger cars leased from the Western Car and Locomotive Co.), NOT a known end. Nothing has been found either way for 1919-1926; service very probably ran on to the 1926 handover to the Santa Fe, but no source proves it. Extend only with evidence, and to 1926 (the operator change) at most.",
+      "sources": [
+       "Segment-level: per research/branches/oklahoma_new_mexico_and_pacific.txt (not re-read by the tracer) - start 1913 from the OKGenWeb Wilson history and the reported 19 Nov 1913 Daily Ardmoreite notice, construction from OHS 'Ringling' and Railroads of Oklahoma item 33; end 1918 from the 1918 ICC valuation (Docket 504) as reported by Wikipedia. headway_min is an estimate.",
+       "https://okgenweb.net/~okcarter/wilson.htm",
+       "https://gateway.okhistory.org/ark:/67531/metadc153785/m1/2/",
+       "https://digitalprairie.ok.gov/digital/collection/okresources/id/70287",
+       "https://www.okhistory.org/publications/enc/entry?entry=RI008",
+       "https://en.wikipedia.org/wiki/Oklahoma,_New_Mexico_and_Pacific_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.13203,
+      34.162568
+     ],
+     [
+      -97.131803,
+      34.163299
+     ],
+     [
+      -97.131893,
+      34.164018
+     ],
+     [
+      -97.1326,
+      34.164913
+     ],
+     [
+      -97.133654,
+      34.165382
+     ],
+     [
+      -97.139686,
+      34.165468
+     ],
+     [
+      -97.142017,
+      34.164992
+     ],
+     [
+      -97.147213,
+      34.164943
+     ],
+     [
+      -97.14941,
+      34.165177
+     ],
+     [
+      -97.151755,
+      34.165933
+     ],
+     [
+      -97.153291,
+      34.166845
+     ],
+     [
+      -97.154202,
+      34.167553
+     ],
+     [
+      -97.155808,
+      34.169484
+     ],
+     [
+      -97.156487,
+      34.17085
+     ],
+     [
+      -97.156703,
+      34.171656
+     ],
+     [
+      -97.156965,
+      34.174467
+     ],
+     [
+      -97.157407,
+      34.176016
+     ],
+     [
+      -97.158136,
+      34.176964
+     ],
+     [
+      -97.159114,
+      34.177635
+     ],
+     [
+      -97.16022,
+      34.178093
+     ],
+     [
+      -97.161523,
+      34.1783
+     ],
+     [
+      -97.163351,
+      34.178098
+     ],
+     [
+      -97.169648,
+      34.176845
+     ],
+     [
+      -97.171654,
+      34.176833
+     ],
+     [
+      -97.174044,
+      34.17724
+     ],
+     [
+      -97.175005,
+      34.177583
+     ],
+     [
+      -97.178799,
+      34.179372
+     ],
+     [
+      -97.198847,
+      34.189442
+     ],
+     [
+      -97.208288,
+      34.19401
+     ],
+     [
+      -97.211022,
+      34.194811
+     ],
+     [
+      -97.211931,
+      34.194948
+     ],
+     [
+      -97.213115,
+      34.194859
+     ],
+     [
+      -97.21388,
+      34.194548
+     ],
+     [
+      -97.222504,
+      34.190417
+     ],
+     [
+      -97.230356,
+      34.18948
+     ],
+     [
+      -97.249924,
+      34.187398
+     ],
+     [
+      -97.275958,
+      34.167244
+     ],
+     [
+      -97.277887,
+      34.166197
+     ],
+     [
+      -97.28346,
+      34.164482
+     ],
+     [
+      -97.287145,
+      34.163705
+     ],
+     [
+      -97.294025,
+      34.163993
+     ],
+     [
+      -97.296006,
+      34.163891
+     ],
+     [
+      -97.308723,
+      34.162295
+     ],
+     [
+      -97.309896,
+      34.162016
+     ],
+     [
+      -97.311427,
+      34.161518
+     ],
+     [
+      -97.313795,
+      34.160344
+     ],
+     [
+      -97.332016,
+      34.15209
+     ],
+     [
+      -97.334088,
+      34.151912
+     ],
+     [
+      -97.335028,
+      34.152033
+     ],
+     [
+      -97.365061,
+      34.159521
+     ],
+     [
+      -97.373714,
+      34.159682
+     ],
+     [
+      -97.404684,
+      34.163474
+     ],
+     [
+      -97.425515,
+      34.16086
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Oklahoma, New Mexico and Pacific Railway",
+    "line": "Oklahoma, New Mexico and Pacific: Wilson – Ringling",
+    "id": "onmp-wilson-ringling",
+    "color": "#6C36D9",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "ESTIMATE. The only running time in hand is the Feb 1952 Official Guide's Santa Fe Table 69 (schedule dated 1951): mixed train Ardmore dep 8:00 AM, Healdton arr 9:47 (train mp 30.7), Ringling arr 10:50 (train mp 41.8, i.e. via the Healdton out-and-back). 41.8 mi in 2 h 50 min = 14.8 mph = 23.7 km/h including switching at Healdton; Ardmore - Healdton 30.7 mi in 1 h 47 = 27.7 km/h. 24 km/h used. No ONM&P-era running time has been found; the Santa Fe-era figure is borrowed for 1913-1918 and is unverified for that era.",
+    "geometry_source": "opstrace.py over OpenStreetMap (Overpass, maps.mail.ru) and OpenHistoricalMap railway ways; Douglas-Peucker 8 m, trim_reversals. Traced 2026-11-18.",
+    "geometry_quality": "Traced with opstrace.py (Overpass mail.ru + OpenHistoricalMap). No OSM way carries an old_railway_operator for this road (probed ONM&P / Oklahoma, New Mexico / Ringling / Santa Fe / GC&SF / AT&SF spellings: only the active BNSF Red Rock Subdivision answers to AT&SF). Followed OpenHistoricalMap's 'Oklahoma, New Mexico and Pacific' way (start_date 1914), within ~30 m of the OSM railway=abandoned way for its whole length. 10.3 traced miles against a documented 10.0 mi (Railroads of Oklahoma item 34). No straight-line legs. Passes through Cobalt Junction (0.0 km) and ends at the OHM line end in Ringling, 0.3 km from the town centre. The alignment is the one abandoned in 1976; no realignment is recorded.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1918,
+      "headway_min": 1440,
+      "note": "Second stage, Wilson - Cobalt Junction (then 'Ringling Junction') - Ringling, built 1914 per the state construction record; westward construction stopped at the Ringling site in Jan 1914, Ringling bought the townsite Apr 1914 and the post office opened Jun 1914. The exact first passenger train is NOT SOURCED - 1914 is the construction year. A 1923 Corporation Commission docket shows the ONM&P APPLYING to run a gasoline motor car between Ringling and Ringling Junction (5 mi), suggesting through trains then ran Ardmore - Healdton with Ringling on a shuttle; it is only an application and is not used as a confirmed year. headway_min 1440 is an ESTIMATE. END IS [OPEN]: 1918 is the last CONFIRMED ONM&P passenger year (the 30 Jun 1918 ICC valuation lists 5 passenger cars leased from the Western Car and Locomotive Co.), NOT a known end. Nothing has been found either way for 1919-1926; service very probably ran on to the 1926 handover to the Santa Fe, but no source proves it. Extend only with evidence, and to 1926 (the operator change) at most.",
+      "sources": [
+       "Segment-level: per the research report (not re-read by the tracer) - start 1914 from Railroads of Oklahoma p.38 item 34 (construction year - first passenger train NOT SOURCED); end 1918 from the 1918 ICC valuation as reported by Wikipedia. headway_min is an estimate.",
+       "https://digitalprairie.ok.gov/digital/collection/okresources/id/70287",
+       "https://www.okhistory.org/publications/enc/entry?entry=RI008",
+       "https://en.wikipedia.org/wiki/Oklahoma,_New_Mexico_and_Pacific_Railway",
+       "https://books.google.com/books?id=fb8nAQAAMAAJ&pg=PA605"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.425515,
+      34.16086
+     ],
+     [
+      -97.437353,
+      34.159406
+     ],
+     [
+      -97.440752,
+      34.158739
+     ],
+     [
+      -97.445586,
+      34.15846
+     ],
+     [
+      -97.463259,
+      34.155911
+     ],
+     [
+      -97.46477,
+      34.15594
+     ],
+     [
+      -97.467156,
+      34.156209
+     ],
+     [
+      -97.492705,
+      34.160627
+     ],
+     [
+      -97.509726,
+      34.162474
+     ],
+     [
+      -97.524867,
+      34.163908
+     ],
+     [
+      -97.527647,
+      34.163993
+     ],
+     [
+      -97.549419,
+      34.162815
+     ],
+     [
+      -97.557424,
+      34.162139
+     ],
+     [
+      -97.558781,
+      34.162198
+     ],
+     [
+      -97.56019,
+      34.162477
+     ],
+     [
+      -97.564691,
+      34.163828
+     ],
+     [
+      -97.578901,
+      34.168277
+     ],
+     [
+      -97.580287,
+      34.169352
+     ],
+     [
+      -97.583463,
+      34.174993
+     ],
+     [
+      -97.586954,
+      34.178733
+     ],
+     [
+      -97.589049,
+      34.179524
+     ],
+     [
+      -97.590102,
+      34.179655
+     ],
+     [
+      -97.596248,
+      34.179712
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Gulf, Colorado and Santa Fe Railway (Santa Fe subsidiary)",
+    "line": "Gulf, Colorado and Santa Fe: Ardmore – Ringling",
+    "id": "gcsf-ardmore-ringling",
+    "color": "#003DA5",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "ESTIMATE. The only running time in hand is the Feb 1952 Official Guide's Santa Fe Table 69 (schedule dated 1951): mixed train Ardmore dep 8:00 AM, Healdton arr 9:47 (train mp 30.7), Ringling arr 10:50 (train mp 41.8, i.e. via the Healdton out-and-back). 41.8 mi in 2 h 50 min = 14.8 mph = 23.7 km/h including switching at Healdton; Ardmore - Healdton 30.7 mi in 1 h 47 = 27.7 km/h. 24 km/h used.",
+    "geometry_source": "opstrace.py over OpenStreetMap (Overpass, maps.mail.ru) and OpenHistoricalMap railway ways; Douglas-Peucker 8 m, trim_reversals. Traced 2026-11-18.",
+    "geometry_quality": "Traced with opstrace.py (Overpass mail.ru + OpenHistoricalMap). No OSM way carries an old_railway_operator for this road (probed ONM&P / Oklahoma, New Mexico / Ringling / Santa Fe / GC&SF / AT&SF spellings: only the active BNSF Red Rock Subdivision answers to AT&SF). Identical geometry to the two ONM&P features (onmp-ardmore-wilson + onmp-wilson-ringling) joined at Wilson: 29.2 traced miles from the junction at Ardmore to Ringling against 29.981 mi Ardmore - Ringling (1918 ICC valuation) and timetable mp 30.0 at Ringling less the 0.6 mi from the depot to the junction (29.4). No straight-line legs. The east end is drawn at the line's own junction with the Santa Fe main on the south side of Ardmore (34.1626 N, 97.1320 W; the Santa Fe-era 'Ringling Junction', timetable mp 0.6), ~1.1 km from the Santa Fe depot; the line leaves westward from there and does NOT follow the Santa Fe main (gcsf-purcell-fort-worth) for any distance. The 0.6 mi the Santa Fe-era train ran over the main into the union depot is not drawn here; it is already drawn as the main. The ONM&P's own Ardmore station (reported at the 'B' Street crossing, later its own depot) has not been located, so it is not separately marked.",
+    "segments": [
+     {
+      "start": 1942,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Santa Fe era over the ex-ONM&P main line, owned from 1926 by the Healdton and Santa Fe Railway (an AT&SF subsidiary) and operated by its lessee, the Gulf, Colorado and Santa Fe.  Nov 29 1942 Santa Fe employee timetable (GC&SF Northern Division, Ringling District, as transcribed on ringlingdocents.org): mixed No. 311 left Ardmore 8:00 AM to Cobalt Jct, ran to Healdton as No. 315, returned as No. 314, continued to Ringling as No. 311 and came back to Ardmore as No. 310. The Feb 1952 Official Guide, Santa Fe Table 69 'Ardmore-Ringling' (schedule dated June 3 1951 in the OCR), carries the same train almost unchanged: Ardmore 8:00, Wilson mp 19.9, Healdton arr 9:47 mp 30.7, Ringling 10:50 mp 41.8; the Guide's index lists Healdton and Ringling under 'Santa Fe (G.C.&S.F.), 69' with no freight-only mark. A mixed train carrying passengers counts as passenger service. headway_min 1440 = one round trip a day (from those schedules). The 1926 handover date is in conflict: Railroads of Oklahoma (1978) gives the Healdton and Santa Fe's lease to the GC&SF as 1 Jan 1926; Wikipedia, citing the Sep 1926 Monthly Catalogue and the RRB employer file, gives ICC approval of the purchase 17 Jul 1926 and ONM&P operation to 15 Oct 1926. The year is 1926 either way. BOTH ENDS ARE [OPEN]: 1942 is the first and 1951 the last CONFIRMED Santa Fe-era passenger year, not a known start or end. 1926-1941 is unproven, not disproved (the Santa Fe took over in 1926). After 1951: a YouTube film titled '1961 AT&SF, Santa Fe Mixed Train - Ardmore, OK to Healdton, OK to Ringling, OK' reportedly shows a revenue mixed in 1961, but only its title has been verified, so it is not used; by 1971 the line was reportedly freight only. Abandonment was filed 1973 and done 1976 (one source says last train 21 Dec 1979) - an abandonment date, not a passenger end. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: 1951 from the Feb 1952 Official Guide Table 69 (research/sources/official_guide_1952.txt ~lines 192585-192665; the tracer checked that the OCR there shows Healdton 30.7 arr and Ringling 41.8 at 10 50, and 'June 3, 1951'); 1942 from the Nov 29 1942 ETT as transcribed on ringlingdocents.org (not re-read by the tracer). headway_min from those schedules.",
+       "https://ringlingdocents.org/railroads.htm",
+       "https://www.abandonedrails.com/ardmore-to-ringling",
+       "https://digitalprairie.ok.gov/digital/collection/okresources/id/70285"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.13203,
+      34.162568
+     ],
+     [
+      -97.131803,
+      34.163299
+     ],
+     [
+      -97.131893,
+      34.164018
+     ],
+     [
+      -97.1326,
+      34.164913
+     ],
+     [
+      -97.133654,
+      34.165382
+     ],
+     [
+      -97.139686,
+      34.165468
+     ],
+     [
+      -97.142017,
+      34.164992
+     ],
+     [
+      -97.147213,
+      34.164943
+     ],
+     [
+      -97.14941,
+      34.165177
+     ],
+     [
+      -97.151755,
+      34.165933
+     ],
+     [
+      -97.153291,
+      34.166845
+     ],
+     [
+      -97.154202,
+      34.167553
+     ],
+     [
+      -97.155808,
+      34.169484
+     ],
+     [
+      -97.156487,
+      34.17085
+     ],
+     [
+      -97.156703,
+      34.171656
+     ],
+     [
+      -97.156965,
+      34.174467
+     ],
+     [
+      -97.157407,
+      34.176016
+     ],
+     [
+      -97.158136,
+      34.176964
+     ],
+     [
+      -97.159114,
+      34.177635
+     ],
+     [
+      -97.16022,
+      34.178093
+     ],
+     [
+      -97.161523,
+      34.1783
+     ],
+     [
+      -97.163351,
+      34.178098
+     ],
+     [
+      -97.169648,
+      34.176845
+     ],
+     [
+      -97.171654,
+      34.176833
+     ],
+     [
+      -97.174044,
+      34.17724
+     ],
+     [
+      -97.175005,
+      34.177583
+     ],
+     [
+      -97.178799,
+      34.179372
+     ],
+     [
+      -97.198847,
+      34.189442
+     ],
+     [
+      -97.208288,
+      34.19401
+     ],
+     [
+      -97.211022,
+      34.194811
+     ],
+     [
+      -97.211931,
+      34.194948
+     ],
+     [
+      -97.213115,
+      34.194859
+     ],
+     [
+      -97.21388,
+      34.194548
+     ],
+     [
+      -97.222504,
+      34.190417
+     ],
+     [
+      -97.230356,
+      34.18948
+     ],
+     [
+      -97.249924,
+      34.187398
+     ],
+     [
+      -97.275958,
+      34.167244
+     ],
+     [
+      -97.277887,
+      34.166197
+     ],
+     [
+      -97.28346,
+      34.164482
+     ],
+     [
+      -97.287145,
+      34.163705
+     ],
+     [
+      -97.294025,
+      34.163993
+     ],
+     [
+      -97.296006,
+      34.163891
+     ],
+     [
+      -97.308723,
+      34.162295
+     ],
+     [
+      -97.309896,
+      34.162016
+     ],
+     [
+      -97.311427,
+      34.161518
+     ],
+     [
+      -97.313795,
+      34.160344
+     ],
+     [
+      -97.332016,
+      34.15209
+     ],
+     [
+      -97.334088,
+      34.151912
+     ],
+     [
+      -97.335028,
+      34.152033
+     ],
+     [
+      -97.365061,
+      34.159521
+     ],
+     [
+      -97.373714,
+      34.159682
+     ],
+     [
+      -97.404684,
+      34.163474
+     ],
+     [
+      -97.425515,
+      34.16086
+     ],
+     [
+      -97.437353,
+      34.159406
+     ],
+     [
+      -97.440752,
+      34.158739
+     ],
+     [
+      -97.445586,
+      34.15846
+     ],
+     [
+      -97.463259,
+      34.155911
+     ],
+     [
+      -97.46477,
+      34.15594
+     ],
+     [
+      -97.467156,
+      34.156209
+     ],
+     [
+      -97.492705,
+      34.160627
+     ],
+     [
+      -97.509726,
+      34.162474
+     ],
+     [
+      -97.524867,
+      34.163908
+     ],
+     [
+      -97.527647,
+      34.163993
+     ],
+     [
+      -97.549419,
+      34.162815
+     ],
+     [
+      -97.557424,
+      34.162139
+     ],
+     [
+      -97.558781,
+      34.162198
+     ],
+     [
+      -97.56019,
+      34.162477
+     ],
+     [
+      -97.564691,
+      34.163828
+     ],
+     [
+      -97.578901,
+      34.168277
+     ],
+     [
+      -97.580287,
+      34.169352
+     ],
+     [
+      -97.583463,
+      34.174993
+     ],
+     [
+      -97.586954,
+      34.178733
+     ],
+     [
+      -97.589049,
+      34.179524
+     ],
+     [
+      -97.590102,
+      34.179655
+     ],
+     [
+      -97.596248,
+      34.179712
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Gulf, Colorado and Santa Fe Railway (Santa Fe subsidiary)",
+    "line": "Gulf, Colorado and Santa Fe: Cobalt Junction – Healdton",
+    "id": "gcsf-cobalt-junction-healdton",
+    "color": "#003DA5",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 24,
+    "speed_source": "ESTIMATE. The only running time in hand is the Feb 1952 Official Guide's Santa Fe Table 69 (schedule dated 1951): mixed train Ardmore dep 8:00 AM, Healdton arr 9:47 (train mp 30.7), Ringling arr 10:50 (train mp 41.8, i.e. via the Healdton out-and-back). 41.8 mi in 2 h 50 min = 14.8 mph = 23.7 km/h including switching at Healdton; Ardmore - Healdton 30.7 mi in 1 h 47 = 27.7 km/h. 24 km/h used.",
+    "geometry_source": "opstrace.py over OpenStreetMap (Overpass, maps.mail.ru) and OpenHistoricalMap railway ways; Douglas-Peucker 8 m, trim_reversals. Traced 2026-11-18.",
+    "geometry_quality": "Traced with opstrace.py (Overpass mail.ru + OpenHistoricalMap). No OSM way carries an old_railway_operator for this road (probed ONM&P / Oklahoma, New Mexico / Ringling / Santa Fe / GC&SF / AT&SF spellings: only the active BNSF Red Rock Subdivision answers to AT&SF). Followed the OSM railway=abandoned way (id 609872750, named 'Atchispon Topeka and Sante Fe') from its junction with the main at Cobalt Junction to its end at Healdton. 6.1 traced miles against a documented 6.0 mi (Railroads of Oklahoma item 35) / 5.913 mi (1918 ICC valuation) / mp 24.8-30.8 (1942 ETT). No straight-line legs. OpenHistoricalMap's 'Ringling and Oil Fields' way was not used: it is 0.3 mi longer and swings up to ~250 m east through the oil-field yard at Healdton, which is freight trackage (RULE NOTES); the OSM way runs straight into town, ending 0.3 km from Healdton's centre. Only one leg of the Cobalt Junction wye is drawn. The Healdton station site is not separately located.",
+    "segments": [
+     {
+      "start": 1942,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Santa Fe era over the Healdton branch, built 1916-17 by the Ringling and Oil Fields Railway and leased to the ONM&P 15 Sep 1917. The ONM&P-era branch (1917-1926) is NOT drawn: no passenger year in that era is confirmed. The mixed ran up the branch from Cobalt Junction to Healdton (arr 9:47 in 1951), switched, and came back to Cobalt Junction before going on to Ringling. Nov 29 1942 Santa Fe employee timetable (GC&SF Northern Division, Ringling District, as transcribed on ringlingdocents.org): mixed No. 311 left Ardmore 8:00 AM to Cobalt Jct, ran to Healdton as No. 315, returned as No. 314, continued to Ringling as No. 311 and came back to Ardmore as No. 310. The Feb 1952 Official Guide, Santa Fe Table 69 'Ardmore-Ringling' (schedule dated June 3 1951 in the OCR), carries the same train almost unchanged: Ardmore 8:00, Wilson mp 19.9, Healdton arr 9:47 mp 30.7, Ringling 10:50 mp 41.8; the Guide's index lists Healdton and Ringling under 'Santa Fe (G.C.&S.F.), 69' with no freight-only mark. A mixed train carrying passengers counts as passenger service. headway_min 1440 = one round trip a day (from those schedules). The 1926 handover date is in conflict: Railroads of Oklahoma (1978) gives the Healdton and Santa Fe's lease to the GC&SF as 1 Jan 1926; Wikipedia, citing the Sep 1926 Monthly Catalogue and the RRB employer file, gives ICC approval of the purchase 17 Jul 1926 and ONM&P operation to 15 Oct 1926. The year is 1926 either way. BOTH ENDS ARE [OPEN]: 1942 is the first and 1951 the last CONFIRMED Santa Fe-era passenger year, not a known start or end. 1926-1941 is unproven, not disproved (the Santa Fe took over in 1926). After 1951: a YouTube film titled '1961 AT&SF, Santa Fe Mixed Train - Ardmore, OK to Healdton, OK to Ringling, OK' reportedly shows a revenue mixed in 1961, but only its title has been verified, so it is not used; by 1971 the line was reportedly freight only. Abandonment was filed 1973 and done 1976 (one source says last train 21 Dec 1979) - an abandonment date, not a passenger end. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: 1951 from the Feb 1952 Official Guide Table 69 (research/sources/official_guide_1952.txt ~lines 192585-192665; the tracer checked that the OCR there shows Healdton 30.7 arr and Ringling 41.8 at 10 50, and 'June 3, 1951'); 1942 from the Nov 29 1942 ETT as transcribed on ringlingdocents.org (not re-read by the tracer). headway_min from those schedules.",
+       "https://ringlingdocents.org/railroads.htm",
+       "https://www.abandonedrails.com/cobalt-junction-to-healdton",
+       "https://digitalprairie.ok.gov/digital/collection/okresources/id/70285"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -97.511628,
+      34.162698
+     ],
+     [
+      -97.512888,
+      34.163219
+     ],
+     [
+      -97.513383,
+      34.163629
+     ],
+     [
+      -97.513758,
+      34.164062
+     ],
+     [
+      -97.514162,
+      34.164882
+     ],
+     [
+      -97.514261,
+      34.166159
+     ],
+     [
+      -97.513928,
+      34.169146
+     ],
+     [
+      -97.513312,
+      34.170552
+     ],
+     [
+      -97.510254,
+      34.173146
+     ],
+     [
+      -97.509943,
+      34.173556
+     ],
+     [
+      -97.509568,
+      34.174511
+     ],
+     [
+      -97.509462,
+      34.184934
+     ],
+     [
+      -97.509355,
+      34.185877
+     ],
+     [
+      -97.508895,
+      34.187188
+     ],
+     [
+      -97.505639,
+      34.193927
+     ],
+     [
+      -97.504521,
+      34.197786
+     ],
+     [
+      -97.503608,
+      34.199964
+     ],
+     [
+      -97.499495,
+      34.205004
+     ],
+     [
+      -97.49866,
+      34.206719
+     ],
+     [
+      -97.49849,
+      34.207995
+     ],
+     [
+      -97.498639,
+      34.215248
+     ],
+     [
+      -97.498426,
+      34.216103
+     ],
+     [
+      -97.497577,
+      34.217273
+     ],
+     [
+      -97.496919,
+      34.217782
+     ],
+     [
+      -97.492346,
+      34.220252
+     ],
+     [
+      -97.488224,
+      34.223422
+     ],
+     [
+      -97.485488,
+      34.227366
+     ],
+     [
+      -97.484927,
+      34.228635
+     ],
+     [
+      -97.484761,
+      34.230183
+     ],
+     [
+      -97.485051,
+      34.234178
+     ],
+     [
+      -97.485605,
+      34.236037
+     ],
+     [
+      -97.48722,
+      34.238533
+     ],
+     [
+      -97.488458,
+      34.239486
+     ],
+     [
+      -97.490061,
+      34.240255
+     ]
+    ]
+   }
+  }
+ ]
+}
