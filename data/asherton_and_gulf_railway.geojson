@@ -1,0 +1,197 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Asherton and Gulf Railway (Nueces Valley, Rio Grande and Mexico Ry until Mar 9 1909), Artesia Wells - Asherton, Texas, 32.5 mi. One feature, drawn 1916-1920 per the research report's drawable: field. Research report: research/branches/asherton_and_gulf_railway.txt.",
+  "operator_split": "Rule 4 split would fall at the Jan 2 1926 Missouri Pacific Lines purchase (via the NOT&M / Gulf Coast Lines; the A&G corporation survived until the Mar 1 1956 MP merger). It lies outside the drawable 1916-1920 span, so there is one feature in the A&G's own colour. #C04F7A is new; a script confirmed no other company in data/ uses it.",
+  "not_yet_sourced": [
+   "asherton-gulf-artesia-wells-asherton: START [OPEN] at 1916 and END [OPEN] at 1920. Opening Jun 27 / Aug 2 1909 (ICC, TSHA) vs 'began running in 1910' (TSHA Asherton entry) vs a 1908 photo caption (Texas Escapes) - no source says passengers were carried from opening. No source dates the end of passenger service; the doodlebug was bought at an unknown date after 1920; the Feb 1952 Official Guide Table 108 'Asherton & Gulf Railway' survives in OCR without times or a 'Freight Service only' line, so 1951 is neither confirmed nor denied. Whether passengers continued under MP Lines after Jan 1926 is unconfirmed. Best next sources: Railroad Commission of Texas annual reports, Moody's/Poor's manuals, Portal to Texas History newspapers (Carrizo Springs Javelin).",
+   "Geometry: the eastern ~10 mi (Artesia Wells - about MP 10.5) is a straight line; the actual grade there is unmapped in OSM and OHM.",
+   "headway_min and avg_speed_kmh are estimates."
+  ],
+  "sources": [
+   "https://www.tshaonline.org/handbook/entries/asherton-and-gulf-railway",
+   "https://www.txtransportationmuseum.org/asherton",
+   "https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Asherton_and_Gulf_Railway"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Asherton and Gulf",
+    "line": "Asherton and Gulf: Artesia Wells – Asherton",
+    "id": "asherton-gulf-artesia-wells-asherton",
+    "color": "#C04F7A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimated. No A&G timetable with running times was found; 25 km/h is a guess for a daily mixed train (a coach on the freight) over 32.5 miles of rural short line with switching at the onion-shipping stations.",
+    "geometry_source": "OpenStreetMap via Overpass (overpass-api.de, 2026-11-20), routed with opstrace.py. No old_railway_operator tag for this road exists in the corridor (only MP on the UP Laredo Subdivision main line at Artesia Wells). The grade survives in OSM as railway=razed ways named 'Asherton & Gulf' (way 150258672, plus 150258668/150258670 in Asherton). OpenHistoricalMap has only the I-GN main line in the 28.24,-99.82 to 28.50,-99.24 box, no A&G way.",
+    "geometry_quality": "Traced 31.7 mi against 32.489 mi documented (ICC valuation main line; Fowler mileposts Artesia Wells 0.0 - Asherton 32.0). 21.5 mi on the OSM railway=razed 'Asherton & Gulf' ways, from Asherton through Catarina to the point where the mapped grade stops at 28.3144 N, 99.4491 W (around Fowler MP 10-11, between Light MP 12.0 and Farmington MP 6.0). STRAIGHT-LINE LEG: that point - Artesia Wells junction on the UP/ex-I-GN main line, 10.3 mi, a ruled chord through Farmington, Happle and Bart; no OSM, OHM or rail-trail trace of this stretch exists, and FM 133 (which parallels it) runs about 1 km south of the mapped grade, so it was not used as a stand-in. Waypoints within 0.8 km (Artesia Wells 0.0, Catarina 0.8, Asherton 0.5 km; all three geocodes checked as the La Salle / Dimmit County places, not counties). The razed-way trace is a modern mapper's reconstruction of the lifted 1909 grade, not a surveyed alignment.",
+    "segments": [
+     {
+      "start": 1916,
+      "end": 1920,
+      "headway_min": 1440,
+      "note": "Asherton and Gulf mixed-train passenger service, Artesia Wells (junction with the I-GN San Antonio - Laredo main line) - Catarina - Asherton. 1916 is confirmed by TSHA's figure of $5,000 passenger earnings that year and by Lula appearing in the 1916 Official Guide (Fowler); 1920 by the Texas Transportation Museum's figure of 7,645 passengers carried, all on mixed trains (a coach on the daily freight). BOTH ENDS ARE [OPEN]: these are the first and last CONFIRMED years, not known dates. The line opened Jun 27 / Aug 2 1909 and a gasoline railbus was bought some time after 1920, so service very likely ran on both sides, but no other year is confirmed. Missouri Pacific Lines bought the road Jan 2 1926 (via the NOT&M / Gulf Coast Lines); any post-1926 passenger years belong in a separate Missouri Pacific-coloured feature. The line was abandoned in 1958 - that is not a passenger end. Do not extend without evidence. headway_min (one mixed train each way daily) is an estimate from the 1920 'daily freight' description, not a timetable.",
+      "sources": [
+       "Segment-level: 1916 from the TSHA Asherton and Gulf Railway entry (1916 passenger earnings) and Fowler's branchline.uk Texas station list (Lula tagged 1916G); 1920 and the mixed-train operation from the Texas Transportation Museum Asherton page. headway_min and avg_speed_kmh are estimates.",
+       "https://www.tshaonline.org/handbook/entries/asherton-and-gulf-railway",
+       "https://www.txtransportationmuseum.org/asherton",
+       "https://www.branchline.uk/jfpdf/texasrrs1.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -99.28478,
+      28.280191
+     ],
+     [
+      -99.449078,
+      28.314438
+     ],
+     [
+      -99.469634,
+      28.321061
+     ],
+     [
+      -99.485209,
+      28.327168
+     ],
+     [
+      -99.486715,
+      28.327653
+     ],
+     [
+      -99.488063,
+      28.327886
+     ],
+     [
+      -99.494096,
+      28.328503
+     ],
+     [
+      -99.495448,
+      28.328881
+     ],
+     [
+      -99.529351,
+      28.342252
+     ],
+     [
+      -99.531304,
+      28.3428
+     ],
+     [
+      -99.560615,
+      28.34433
+     ],
+     [
+      -99.563962,
+      28.344538
+     ],
+     [
+      -99.565697,
+      28.344771
+     ],
+     [
+      -99.613244,
+      28.353174
+     ],
+     [
+      -99.62449,
+      28.355211
+     ],
+     [
+      -99.626456,
+      28.355707
+     ],
+     [
+      -99.629692,
+      28.357193
+     ],
+     [
+      -99.630443,
+      28.357797
+     ],
+     [
+      -99.632155,
+      28.359512
+     ],
+     [
+      -99.63782,
+      28.365762
+     ],
+     [
+      -99.639987,
+      28.368368
+     ],
+     [
+      -99.64233,
+      28.36984
+     ],
+     [
+      -99.660254,
+      28.385415
+     ],
+     [
+      -99.661833,
+      28.386525
+     ],
+     [
+      -99.664524,
+      28.388176
+     ],
+     [
+      -99.672225,
+      28.392419
+     ],
+     [
+      -99.716862,
+      28.420231
+     ],
+     [
+      -99.722221,
+      28.422374
+     ],
+     [
+      -99.731307,
+      28.425683
+     ],
+     [
+      -99.73256,
+      28.42634
+     ],
+     [
+      -99.736741,
+      28.429446
+     ],
+     [
+      -99.744263,
+      28.435444
+     ],
+     [
+      -99.750322,
+      28.440072
+     ],
+     [
+      -99.752168,
+      28.441317
+     ],
+     [
+      -99.754464,
+      28.443619
+     ],
+     [
+      -99.756738,
+      28.44643
+     ]
+    ]
+   }
+  }
+ ]
+}
