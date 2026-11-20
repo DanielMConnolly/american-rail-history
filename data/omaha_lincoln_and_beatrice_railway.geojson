@@ -1,0 +1,157 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Omaha, Lincoln and Beatrice Railway (Lincoln, Nebraska): an electric suburban/interurban line chartered 1903 as the first leg of a Lincoln - Omaha interurban that never got past Bethany and never reached Omaha or Beatrice. Two features, one company, one colour: the ~5-mile Lincoln (14th & O) - Bethany main line 1906-1928 and the ~1-mile University Place Branch up Warren Avenue 1912-1928. Research report: research/branches/omaha_lincoln_and_beatrice_railway.txt.",
+  "references": [
+   "E. Bryant Phillips, \"Interurban Projects in Nebraska,\" Nebraska History 30 (1949): 163-182 (OL&B pp.169-182), https://history.nebraska.gov/wp-content/uploads/2017/12/doc_publications_NH1949InterurbanNebr.pdf",
+   "https://olbrailway.com/history/",
+   "https://www.trains.com/trn/railroads/profiles/short-lines/omaha-lincoln-and-beatrice-railway-company-profile/"
+  ],
+  "ownership_split": "None (Rule 4): the OL&B ran its own cars 1906-1928. Lincoln Traction cars over OL&B track 27th & Y - 49th & Holdrege, Sept 1915-1920, were Traction's own Bethany service, not an operator change; the 1928-29 sale to Abel Construction and NEBCO came after passenger service ended.",
+  "freight_only": "Not drawn (Rule 1): everything after c. May 1928 - Abel Construction / NEBCO freight between Bethany and 14th & X from 1928-29 and today's OLB switching railroad (2.5 route mi); the Elastic Stop Nut spur at 16th & X (1942); the ex-MoPac remnant worked by OLB to Lincoln Lumber. The Feb 1952 Official Guide lists the OL&B as switching service only.",
+  "horsecar_audit": "Not applicable: electric from opening (1906); gasoline and steam cars were considered and rejected. The Belmont horse car was a different company.",
+  "omitted": "Downtown loop (14th - N - 11th - P St) over Citizens Railway track: report drawable NONE - gained some time 1907-1909, lost at the 1909 Citizens/Traction merger or as late as 1914; no single year proven. The refused 1920 loop (14th, N, 11th, R) never ran. Never built: Lincoln - Omaha / Ashland / South Omaha, Beatrice, the Havelock branch (1907 franchise request), the Idylwild Drive spur to the State Farm (enjoined 1920-22).",
+  "not_yet_sourced": [
+   "Opening year: 1906 (Phillips, newspaper-footnoted) vs 1905 (company website photo caption). Drawn 1906.",
+   "Street route between X St and Bethany: Phillips lists the franchised streets (14th, X, Missouri Pacific right-of-way, Y, Starr) but no turn points. Which stretch of the MoPac ROW was used (drawn ~24th-27th), where the line left Y St for Starr St (drawn at N 33rd, a placeholder), whether it reached Bethany on Starr St or Holdrege St (drawn on Holdrege east of 49th), and the exact Bethany terminus (drawn at Holdrege & Cotner Blvd) all need a Sanborn map or the 1907 Census map.",
+   "University Place Branch junction (Starr vs Holdrege at 48th) and north terminus (drawn one mile up Warren Ave, ~Adams St); opening month in 1912.",
+   "Main-line headway (drawn 30 min, estimated from first-year car-miles) and both avg_speed_kmh values are estimates.",
+   "Whether OL&B service paused after the Nov 1920 power cut-off (no evidence of a stoppage).",
+   "A Birney car record (bera.org, not read) reportedly says OL&B No. 4 was 'used 1926-1939'; Phillips has the cars stored in the 30th & Y barn after 1928 until sold in 1941, so this is not treated as post-1928 passenger service."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Omaha, Lincoln and Beatrice Railway",
+    "line": "Omaha, Lincoln and Beatrice: Lincoln – Bethany",
+    "id": "olb-lincoln-bethany",
+    "color": "#9E2A2B",
+    "mode": "interurban",
+    "avg_speed_kmh": 16,
+    "speed_source": "estimated: no schedule speed found. ~16 km/h assumed for a 5-mile electric line running mostly in the street with a downtown start; not sourced.",
+    "geometry_source": "Hand-assembled on 2026-11-17 from one Overpass pull (maps.mail.ru mirror, bbox 40.80,-96.72,40.87,-96.60) of every railway, abandoned/historic railway and named highway way in north-east Lincoln, routed leg by leg (shortest path restricted to the named street or listed way ids for each leg) by the scratchpad script omaha_lincoln_and_beatrice_railway_trace.py, then opstrace.douglas_peucker (5 m) and opstrace.trim_reversals. No way in OSM carries old_railway_operator for the OL&B and OpenHistoricalMap was not needed: the 1906-28 line was street trackage, so the surviving street centrelines are the alignment, plus OSM way 14148494 (operator 'OL&B Railway', today's freight spur on the X Street line) and Missouri Pacific ROW ways 784633657, 70650323, 988357097, 70650324 (railway=abandoned / MoPac Trail). Endpoints are street intersections read from the OSM street geometry, not Nominatim (14th & O; Holdrege St & N Cotner Blvd for Bethany, which is also where Nominatim's 'Bethany' suburb node sits, type=suburb, 40.8280 -96.6305). The modern OL&B yard tracks on the diagonal along the BNSF Creston Subdivision (ways 783781445, 14152428, 788315516-9, 182679372 etc.) are the post-1928 freight layout, not the passenger route, and were not used; neither was the MoPac Trail east of N 27th, nor the Murdock Trail (C&NW/Rock Island).",
+    "geometry_quality": "Lincoln (14th & O) - Bethany (Holdrege St & Cotner Blvd): traced 4.68 mi against Phillips 1949's 'five mile suburban line' (-6%). Every leg follows either a surviving track/ROW or the documented street, but the order of streets is only partly sourced, so read it as follows. (a) N 14th St, O St - X St, 0.68 mi on the OSM street, including 0.14 mi (220 m) drawn straight along the 14th St line through the UNL campus where the street is no longer mapped as a road. (b) X St, 14th - ~19th, 0.24 mi along the X St line (0.16 mi of it a straight join because the OSM X St way has no vertex at 14th; X St is straight here, so the chord is the street). (c) STRAIGHT-LINE LEG 0.17 mi across the BNSF/OL&B yard tracks between the end of OSM X Street (~19th) and the west end of OL&B way 14148494 - approximated. (d) 0.37 mi on OSM way 14148494 (operator 'OL&B Railway', the Lincoln Lumber spur) on the X St alignment - this is the post-1928 Abel/NEBCO freight track, a later track on what is taken to be the same street line, not proven 1906 rail. (e) 0.21 mi on the Missouri Pacific ROW (abandoned way 784633657 and MoPac Trail ways) to N 27th - Phillips names the 'Missouri Pacific right-of-way' in the franchise route but not which stretch; that the OL&B used it from ~24th to 27th is an inference from the X St - ROW - Y St order. (f) STRAIGHT JOG 0.07 mi at N 27th from the ROW to Y St (approximated; Phillips gives a Lincoln Traction crossing on N 27th and a point at 27th & Y). (g) Y St, 27th - 33rd, 0.48 mi on the OSM street, passing the 30th & Y car barn. (h) N 33rd St, Y St - Starr St, 0.19 mi - ASSUMED: no source says where the line turned from Y St to Starr St; 33rd was chosen as a placeholder. (i) Starr St, 33rd - 49th, 1.06 mi on the OSM street, including 0.20 mi and 0.11 mi drawn straight along the Starr St line where the street is interrupted (~N 37th-38th by the East Campus/Idylwild area, and short breaks). (j) STRAIGHT JOG 0.07 mi from Starr St to Holdrege St at N 49th (approximated; '49th & Holdrege' is a point on OL&B track in Phillips p.178). (k) Holdrege St, 49th - Cotner Blvd, 1.14 mi on the OSM street - ASSUMED: whether the OL&B ran east to Bethany on Holdrege or on Starr St (one block, ~100 m, south) is not established, and Lincoln Traction's rival 1912 Bethany line was on Holdrege; the exact Bethany terminus is also unknown. Straight-line legs total 0.31 mi ((c), (f), (j)) plus 0.61 mi of straight joins that lie on a documented street's own line ((a), (b), (i)). The whole route is drawn on today's street grid; no pre-1928 alignment survives as track except the X St corridor, itself relaid after 1928.",
+    "segments": [
+     {
+      "start": 1906,
+      "end": 1928,
+      "headway_min": 30,
+      "note": "Omaha, Lincoln and Beatrice Railway electric cars, own operation throughout, 14th & O St (downtown Lincoln) - X St - Missouri Pacific right-of-way - Y St - Starr St - Bethany (Cotner College suburb; annexed by Lincoln 1926). Regular service inaugurated summer 1906 (Phillips 1949 p.172, fn 62: Lincoln Daily Star 30 Jul, 6 Aug, 25 Aug 1906); 378,413 fare passengers and 130,745 car-miles in the first year. The company's own website captions a photo 'First Day of Service ... 1905' - conflict recorded, 1906 adopted per Phillips' newspaper citations and the 'twenty-two years' remark on the last car. Last car c. 11 May 1928 after the Y Street paving assessment; Lincoln Traction substituted buses (Phillips pp.180-181, fn 132-133; NSJ 26 Apr, 11 May, 22 Dec 1928). Sept 1915-1920 Lincoln Traction's own Bethany cars also used OL&B track 27th & Y - 49th & Holdrege (Traction service, not drawn here). Nov 1920 power cut-off from Lincoln Traction: OL&B made temporary power arrangements; no stoppage documented. headway_min 30 is an ESTIMATE derived from the first-year census car-miles (about 36 round trips a day over a 5-mile line), not a timetable figure. After May 1928 Abel Construction / NEBCO ran the line as freight only (Bethany - 14th & X), and still do - Rule 1 context, not drawn.",
+      "sources": [
+       "Segment-level: Phillips 1949 pp.169-172, 176-181 (fn 41, 52, 58-63, 126-133) for opening 1906, the route and the c. May 1928 end; olbrailway.com history (1903 organization, 1928 end, 1905 photo caption conflict); Trains short-line profile (passenger service discontinued 1928). Headway estimated from Census 1907 car-miles via Phillips p.172.",
+       "https://history.nebraska.gov/wp-content/uploads/2017/12/doc_publications_NH1949InterurbanNebr.pdf",
+       "https://olbrailway.com/history/",
+       "https://www.trains.com/trn/railroads/profiles/short-lines/omaha-lincoln-and-beatrice-railway-company-profile/"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -96.70116,
+      40.813601
+     ],
+     [
+      -96.701134,
+      40.819442
+     ],
+     [
+      -96.701266,
+      40.820195
+     ],
+     [
+      -96.701263,
+      40.823488
+     ],
+     [
+      -96.69799,
+      40.823376
+     ],
+     [
+      -96.69324,
+      40.82358
+     ],
+     [
+      -96.6821,
+      40.823503
+     ],
+     [
+      -96.682096,
+      40.82437
+     ],
+     [
+      -96.672852,
+      40.824386
+     ],
+     [
+      -96.672853,
+      40.827105
+     ],
+     [
+      -96.652771,
+      40.82704
+     ],
+     [
+      -96.652348,
+      40.828076
+     ],
+     [
+      -96.651048,
+      40.828019
+     ],
+     [
+      -96.63049,
+      40.827932
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Omaha, Lincoln and Beatrice Railway",
+    "line": "Omaha, Lincoln and Beatrice: University Place Branch",
+    "id": "olb-university-place-branch",
+    "color": "#9E2A2B",
+    "mode": "interurban",
+    "avg_speed_kmh": 13,
+    "speed_source": "estimated: no schedule speed found. ~13 km/h assumed for a 1-mile single-truck shuttle in the street; not sourced.",
+    "geometry_source": "Hand-assembled on 2026-11-17 from one Overpass pull (maps.mail.ru mirror, bbox 40.80,-96.72,40.87,-96.60) of every railway, abandoned/historic railway and named highway way in north-east Lincoln, routed leg by leg (shortest path restricted to the named street or listed way ids for each leg) by the scratchpad script omaha_lincoln_and_beatrice_railway_trace.py, then opstrace.douglas_peucker (5 m) and opstrace.trim_reversals. No way in OSM carries old_railway_operator for the OL&B and OpenHistoricalMap was not needed: the 1906-28 line was street trackage, so the surviving street centrelines are the alignment, plus OSM way 14148494 (operator 'OL&B Railway', today's freight spur on the X Street line) and Missouri Pacific ROW ways 784633657, 70650323, 988357097, 70650324 (railway=abandoned / MoPac Trail). Endpoints are street intersections read from the OSM street geometry, not Nominatim (14th & O; Holdrege St & N Cotner Blvd for Bethany, which is also where Nominatim's 'Bethany' suburb node sits, type=suburb, 40.8280 -96.6305). The modern OL&B yard tracks on the diagonal along the BNSF Creston Subdivision (ways 783781445, 14152428, 788315516-9, 182679372 etc.) are the post-1928 freight layout, not the passenger route, and were not used; neither was the MoPac Trail east of N 27th, nor the Murdock Trail (C&NW/Rock Island).",
+    "geometry_quality": "University Place Branch: traced 1.07 mi against Phillips 1949's 'a mile north on Warren Avenue' (+7%). Drawn entirely on the OSM centreline of N 48th St (Warren Avenue), from the main line at Starr St north across St. Paul Ave (ex-18th St, the contested Lincoln Traction crossing) to ~Adams St. Street-following, not a surviving railway: the track was lifted after 1928 and no OSM or OHM way records it. The junction point (Starr St vs Holdrege St at 48th) and the exact north terminus are not sourced; the north end was placed one mile up Warren Ave per Phillips. No straight-line legs.",
+    "segments": [
+     {
+      "start": 1912,
+      "end": 1928,
+      "headway_min": 30,
+      "note": "OL&B single-truck 'dinky' shuttle up Warren Avenue (N 48th St) into University Place (Nebraska Wesleyan), connecting with Bethany main-line cars at the junction in the south of the suburb. Built 1912 as a reprisal in the Bethany fare war (Phillips 1949 p.177, fn 102: Lincoln Daily Star 15 Aug 1912; crossing fight with Lincoln Traction at St. Paul Ave Dec 1912, fn 103); opening month not given. Car every half hour per Phillips p.177 (fn 104 NSJ 1 Dec 1920; fn 105 1915) - headway_min 30 is that figure, applied to the whole span. Bus interlude: from about Aug 1926 an OL&B bus replaced the branch car (Lincoln Daily Star 7, 13 Aug 1926); streetcars returned about Apr-May 1927 (NSJ 27 Apr, 17 May 1927) and ran until the whole system closed c. May 1928 (pp.180-181). Every drawn year had some rail service; if the map is ever split finer, use 1912-1926 and 1927-1928. Track removed after 1928. Mode kept interurban with the parent line (University Place was a separate town until 1926); a streetcar reading of a 1-mile shuttle is defensible.",
+      "sources": [
+       "Segment-level: Phillips 1949 pp.177, 180-181 (fn 102-105, 126-131) for the 1912 opening, half-hourly shuttle, 1926-27 bus interlude and 1928 end.",
+       "https://history.nebraska.gov/wp-content/uploads/2017/12/doc_publications_NH1949InterurbanNebr.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -96.653729,
+      40.82704
+     ],
+     [
+      -96.653767,
+      40.830344
+     ],
+     [
+      -96.653592,
+      40.84251
+     ]
+    ]
+   }
+  }
+ ]
+}
