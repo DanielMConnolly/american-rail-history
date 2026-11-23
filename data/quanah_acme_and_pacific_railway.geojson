@@ -1,0 +1,880 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Quanah, Acme and Pacific Railway: Quanah - Acme - Paducah (1910) - Roaring Springs (1913) - MacBain - Floydada (1928), ~111 mi across the Texas Rolling Plains and up the Caprock. Chartered 1902 as the Acme, Red River and Northern (a plaster-plant switching road at Acme, no passenger evidence, not drawn), renamed QA&P 28 Jan 1909. The Frisco held stock control from c.1911 but the QA&P kept its own name, officers and trains to the end of passenger service, so there is no Rule 4 ownership split and every feature is QA&P colour. Until March 1931 QA&P trains reached Quanah over the Fort Worth & Denver City main; the QA&P's own Acme - Quanah line opened then - drawn as two era features. Passenger service (mixed trains by c.1950) is confirmed to 1951 by the Feb 1952 Official Guide; its actual end is unknown.",
+  "sources": [
+   "http://txrrhistory.com/towers/027/027.htm",
+   "https://www.tshaonline.org/handbook/entries/quanah-acme-and-pacific-railway",
+   "https://www.abandonedrails.com/quanah-acme-and-pacific-railway",
+   "https://en.wikipedia.org/wiki/Quanah,_Acme_and_Pacific_Railway",
+   "https://www.american-rails.com/quanah.html",
+   "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+   "Official Guide of the Railways, Feb 1952 issue, Quanah, Acme & Pacific Railway page (research/sources/official_guide_1952.txt lines ~137468-137669; table dated c. April 30, 1950)"
+  ],
+  "research_report": "research/branches/quanah_acme_and_pacific_railway.txt",
+  "omitted": [
+   "Matador branch (ex Motley County Railway, Matador Junction - Matador, 8 mi, 1914-1936): no source names a passenger or mixed train on it in any year - omitted, not drawn as freight. The 1952 Guide's 'Matador Line - Truck and Bus Service' note is road service after the 1936 abandonment.",
+   "Acme, Red River & Northern 1902-1909 and the Acme Tap / gypsite spurs: freight/industrial only (Rule 1).",
+   "Red River - Quanah (Frisco-owned, leased to QA&P 1914): passenger trains over it were the Frisco's Oklahoma City - Quanah trains; belongs in a Frisco layer.",
+   "Roaring Springs - MacBain 1913-1927 (stock-loading extension, no passenger evidence): drawn only from 1928."
+  ],
+  "not_yet_sourced": [
+   "END YEAR [OPEN] on all five features: every drawable span ends 1951, the last CONFIRMED year (Feb 1952 Official Guide). No source dates the end of QA&P passenger/mixed service. Leads: Britton, 'The Quanah Route' (Texas A&M Press, 1990); Railroad Commission of Texas annual reports; Quanah Tribune-Chief / Floydada Hesperian / Paducah Post on the Portal to Texas History.",
+   "Paducah - Roaring Springs start: opened summer 1913, drawn from 1914; a 1913 timetable or newspaper would allow 1913.",
+   "Paducah start: a December 1909 train is possible but unproven; drawn from 1910.",
+   "Headway 1440 min (one train each way daily) is read from the c.1950 table only; earlier frequencies and the 1930s expedited 'Plainsman' are unsourced. avg_speed_kmh is an estimate.",
+   "Guide index dagger conflict: QA&P stations in the Feb 1952 index end 'Pact'/'Pac!', which could be the 'For freight only' dagger; the QA&P's own page prints passenger/mixed times, which were preferred. Unresolved.",
+   "Quanah - Acme own line: OHM labels the drawn way 'Oklahoma City and Texas Railroad' (1903); T27 dates the QA&P's own line to 1931. Conflict recorded.",
+   "ARR&N charter date conflict: 3 May 1902 (WP, AMR) vs 12 July 1902 (NRHP nomination). Not load-bearing."
+  ],
+  "freight_only_audit": "Built to Rule 1 from the start: no freight-only years or features drawn. Freight afterlife (overhead 'Quanah Route' freight to 1973; last train from Floydada 5 May 1981; BN merger 8 Jun 1981; abandonments 1979-87) is context only.",
+  "horsecar_audit": "Not applicable: steam from the start.",
+  "line_label_audit": "Labels written to Rule 6 at creation.",
+  "geometry_sources": [
+   "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py. In OSM the QA&P grade is tagged old_railway_operator='Frisco' with name='Quanah, Acme and Pacific Railroad' (railway=razed; ways 103374621, 857953522, 858671468, 858671467, 161114761, 857954369, 161111404, 161111405 and the unnamed Frisco-tagged razed/track ways 1553047419, 161111402, 1553047423, 1553047421, 1553047420 east of Roaring Springs). Probed spellings: old_railway_operator 'QA&P'/'QAP'/'Quanah...' return nothing; 'Frisco' carries the whole surviving grade. Waypoints from Nominatim, each type checked: Quanah, Paducah, Roaring Springs, Floydada (administrative boundaries of the towns - correct places, centroids), Lazare, Sommer, Baker, Swearingen, Narcisso, Russellville (hamlets), Dougherty (village), Boothe (OSM place node, hamlet). 'Acme' geocoded to a park in San Antonio and to the QA&P track itself - rejected; Acme was hand-pinned at the junction of the razed QA&P grade with the FW&DC main (-99.824, 34.317). MacBain and Boothe Spur did not geocode and were not used as waypoints. OSM rail-trail/abandoned ways and OHM were fetched for Quanah - Acme and Roaring Springs - Floydada (fetch_gap); OHM has an 'Oklahoma City and Texas Railroad' way Quanah - Acme (used, see the 1931 feature) and nothing for the QA&P west of Roaring Springs."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Quanah, Acme and Pacific Railway",
+    "line": "Quanah, Acme and Pacific: Quanah – Acme (via FW&DC, 1910–1930)",
+    "id": "qap-quanah-acme-fwdc-trackage",
+    "color": "#C71585",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 29,
+    "speed_source": "estimated: 29 km/h is the end-to-end average of the c.1950 mixed-train schedule in the Feb 1952 Official Guide (Floydada 6:00 AM - Quanah 12:10 PM, ~111 mi in 6 h 10 min, times as read from OCR in the research report). Applied to all years as an estimate; earlier schedules (incl. the 1930s expedited 'Plainsman') not checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py. In OSM the QA&P grade is tagged old_railway_operator='Frisco' with name='Quanah, Acme and Pacific Railroad' (railway=razed; ways 103374621, 857953522, 858671468, 858671467, 161114761, 857954369, 161111404, 161111405 and the unnamed Frisco-tagged razed/track ways 1553047419, 161111402, 1553047423, 1553047421, 1553047420 east of Roaring Springs). Probed spellings: old_railway_operator 'QA&P'/'QAP'/'Quanah...' return nothing; 'Frisco' carries the whole surviving grade. Waypoints from Nominatim, each type checked: Quanah, Paducah, Roaring Springs, Floydada (administrative boundaries of the towns - correct places, centroids), Lazare, Sommer, Baker, Swearingen, Narcisso, Russellville (hamlets), Dougherty (village), Boothe (OSM place node, hamlet). 'Acme' geocoded to a park in San Antonio and to the QA&P track itself - rejected; Acme was hand-pinned at the junction of the razed QA&P grade with the FW&DC main (-99.824, 34.317). MacBain and Boothe Spur did not geocode and were not used as waypoints. OSM rail-trail/abandoned ways and OHM were fetched for Quanah - Acme and Roaring Springs - Floydada (fetch_gap); OHM has an 'Oklahoma City and Texas Railroad' way Quanah - Acme (used, see the 1931 feature) and nothing for the QA&P west of Roaring Springs.",
+    "geometry_quality": "Quanah - Acme on the FORT WORTH & DENVER CITY main line (today BNSF, untagged active rail in OSM), traced 4.9 mi against a documented 4.9 mi (branchline.uk mileposts Quanah 8.1 - Acme 13.0 from Red River, 1911). No straight-line legs. This is the track QA&P trains used under FW&DC trackage rights until March 1931; it deliberately overlaps fort_worth_denver.geojson (the FW&DC's own feature) - that double-draw is correct, two companies' trains on one track. Not drawn: the FW&DC-built spur from the main to the QA&P's 1909 Quanah depot (location not pinned); the line ends at the FW&DC main at Quanah. ERA: drawn on the present BNSF alignment; any FW&DC line changes 1910-1930 not checked.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1930,
+      "headway_min": 1440,
+      "note": "QA&P (until 28 Jan 1909 Acme, Red River & Northern) trains ran Quanah - Acme over the FW&DC main under trackage rights (T27). Passenger service from 1910: track reached Paducah 9 Dec 1909 and the Paducah depot opened New Year's Day 1910 (Abandoned Rails); in the 1911 Official Guide (branchline.uk letter a = 1911G at Quanah and Acme). FW&DC terminated the rights c.1929-30; the QA&P's own Acme - Quanah line went into service March 1931 (T27), so QA&P trains were on this track for part of 1931 too - drawn only to 1930 so that 1931 is not claimed twice (the 1931 feature carries that year). Headway 1440 min = one train each way daily, read from the Feb 1952 Guide's c.1950 table; for every earlier year it is an ESTIMATE carried back by continuity (NOT SOURCED).",
+      "sources": [
+       "Segment-level: start from branchline.uk 1911G letter at Quanah/Acme and Abandoned Rails (Paducah depot opened 1 Jan 1910); trackage-rights era and March 1931 changeover from txrrhistory.com Tower 27. Headway for these years NOT SOURCED (estimate).",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+       "https://www.abandonedrails.com/quanah-acme-and-pacific-railway",
+       "http://txrrhistory.com/towers/027/027.htm",
+       "https://www.tshaonline.org/handbook/entries/quanah-acme-and-pacific-railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -99.740013,
+      34.300215
+     ],
+     [
+      -99.761775,
+      34.304294
+     ],
+     [
+      -99.765928,
+      34.305513
+     ],
+     [
+      -99.808814,
+      34.31356
+     ],
+     [
+      -99.822491,
+      34.316403
+     ],
+     [
+      -99.823966,
+      34.316571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Quanah, Acme and Pacific Railway",
+    "line": "Quanah, Acme and Pacific: Quanah – Acme (own line, 1931–1951)",
+    "id": "qap-quanah-acme",
+    "color": "#C71585",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 29,
+    "speed_source": "estimated: 29 km/h is the end-to-end average of the c.1950 mixed-train schedule in the Feb 1952 Official Guide (Floydada 6:00 AM - Quanah 12:10 PM, ~111 mi in 6 h 10 min, times as read from OCR in the research report). Applied to all years as an estimate; earlier schedules (incl. the 1930s expedited 'Plainsman') not checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py. In OSM the QA&P grade is tagged old_railway_operator='Frisco' with name='Quanah, Acme and Pacific Railroad' (railway=razed; ways 103374621, 857953522, 858671468, 858671467, 161114761, 857954369, 161111404, 161111405 and the unnamed Frisco-tagged razed/track ways 1553047419, 161111402, 1553047423, 1553047421, 1553047420 east of Roaring Springs). Probed spellings: old_railway_operator 'QA&P'/'QAP'/'Quanah...' return nothing; 'Frisco' carries the whole surviving grade. Waypoints from Nominatim, each type checked: Quanah, Paducah, Roaring Springs, Floydada (administrative boundaries of the towns - correct places, centroids), Lazare, Sommer, Baker, Swearingen, Narcisso, Russellville (hamlets), Dougherty (village), Boothe (OSM place node, hamlet). 'Acme' geocoded to a park in San Antonio and to the QA&P track itself - rejected; Acme was hand-pinned at the junction of the razed QA&P grade with the FW&DC main (-99.824, 34.317). MacBain and Boothe Spur did not geocode and were not used as waypoints. OSM rail-trail/abandoned ways and OHM were fetched for Quanah - Acme and Roaring Springs - Floydada (fetch_gap); OHM has an 'Oklahoma City and Texas Railroad' way Quanah - Acme (used, see the 1931 feature) and nothing for the QA&P west of Roaring Springs.",
+    "geometry_quality": "QA&P's own 1931 Acme - Quanah line on its new right-of-way north of the FW&DC: drawn from OpenHistoricalMap way 202452981 (its east ~2 mi coincide with OSM way 189940822, a live BNSF 'Chickasha Subdivision' remnant tagged old_railway_operator=Frisco), 5.6 mi incl. a 0.2-km join at Acme to the razed QA&P grade. Up to 1.6 km north of the FW&DC, as T27 describes. Documented: the c.1950 Guide puts Lazare at MP 16.8 from Quanah against 15.4 mi via the FW&DC in 1911, implying the own line is ~1.4 mi longer than the 4.9-mi FW&DC route, i.e. ~6.3 mi. The trace is 5.6 mi; the shortfall is the Quanah end, which stops at the Frisco (Chickasha Sub) junction north-east of town rather than at the QA&P depot (not pinned). No straight-line legs. SOURCE CONFLICT: OHM names this way 'Oklahoma City and Texas Railroad', start_date 1903-03-29 - the Frisco's Red River - Quanah company. T27 dates the QA&P's own Acme - Quanah line to 1931 and says the 1903-1931 Acme connection was FW&DC track; the OHM label is taken to be a Frisco-lineage naming and the way is used as the 1931 QA&P line. Recorded, not resolved.",
+    "segments": [
+     {
+      "start": 1931,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "QA&P's own Acme - Quanah line: ICC approval January 1930, in service March 1931 (txrrhistory.com Tower 27), replacing FW&DC trackage rights. Feb 1952 Guide: Acme 11:?3, Quanah 12:10 PM legible. Headway 1440 min = one train each way daily, read from the Feb 1952 Guide's c.1950 table; for every earlier year it is an ESTIMATE carried back by continuity (NOT SOURCED). END YEAR [OPEN]: passenger service confirmed to 1951 by the Feb 1952 Official Guide, which prints legible QA&P times (Nos. 450/451, apparently mixed trains, Quanah - Floydada daily). 1951 is the last CONFIRMED year, not a known end - no source found dates when passenger service actually stopped. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: start from txrrhistory.com Tower 27 (own line in service March 1931); 1951 end from the Feb 1952 Official Guide QA&P page (legible times). End [OPEN] - no discontinuance date found.",
+       "http://txrrhistory.com/towers/027/027.htm",
+       "Official Guide of the Railways, Feb 1952 issue, Quanah, Acme & Pacific Railway page (research/sources/official_guide_1952.txt lines ~137468-137669; table dated c. April 30, 1950)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -99.730427,
+      34.311952
+     ],
+     [
+      -99.731004,
+      34.310938
+     ],
+     [
+      -99.731948,
+      34.310336
+     ],
+     [
+      -99.732764,
+      34.310212
+     ],
+     [
+      -99.736454,
+      34.310354
+     ],
+     [
+      -99.739415,
+      34.310194
+     ],
+     [
+      -99.741561,
+      34.309361
+     ],
+     [
+      -99.750595,
+      34.304841
+     ],
+     [
+      -99.752161,
+      34.304274
+     ],
+     [
+      -99.753513,
+      34.303973
+     ],
+     [
+      -99.754908,
+      34.303795
+     ],
+     [
+      -99.755981,
+      34.303813
+     ],
+     [
+      -99.815011,
+      34.314909
+     ],
+     [
+      -99.821512,
+      34.316255
+     ],
+     [
+      -99.822092,
+      34.316415
+     ],
+     [
+      -99.822542,
+      34.316699
+     ],
+     [
+      -99.822929,
+      34.317142
+     ],
+     [
+      -99.823966,
+      34.316571
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Quanah, Acme and Pacific Railway",
+    "line": "Quanah, Acme and Pacific: Acme – Paducah",
+    "id": "qap-acme-paducah",
+    "color": "#C71585",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 29,
+    "speed_source": "estimated: 29 km/h is the end-to-end average of the c.1950 mixed-train schedule in the Feb 1952 Official Guide (Floydada 6:00 AM - Quanah 12:10 PM, ~111 mi in 6 h 10 min, times as read from OCR in the research report). Applied to all years as an estimate; earlier schedules (incl. the 1930s expedited 'Plainsman') not checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py. In OSM the QA&P grade is tagged old_railway_operator='Frisco' with name='Quanah, Acme and Pacific Railroad' (railway=razed; ways 103374621, 857953522, 858671468, 858671467, 161114761, 857954369, 161111404, 161111405 and the unnamed Frisco-tagged razed/track ways 1553047419, 161111402, 1553047423, 1553047421, 1553047420 east of Roaring Springs). Probed spellings: old_railway_operator 'QA&P'/'QAP'/'Quanah...' return nothing; 'Frisco' carries the whole surviving grade. Waypoints from Nominatim, each type checked: Quanah, Paducah, Roaring Springs, Floydada (administrative boundaries of the towns - correct places, centroids), Lazare, Sommer, Baker, Swearingen, Narcisso, Russellville (hamlets), Dougherty (village), Boothe (OSM place node, hamlet). 'Acme' geocoded to a park in San Antonio and to the QA&P track itself - rejected; Acme was hand-pinned at the junction of the razed QA&P grade with the FW&DC main (-99.824, 34.317). MacBain and Boothe Spur did not geocode and were not used as waypoints. OSM rail-trail/abandoned ways and OHM were fetched for Quanah - Acme and Roaring Springs - Floydada (fetch_gap); OHM has an 'Oklahoma City and Texas Railroad' way Quanah - Acme (used, see the 1931 feature) and nothing for the QA&P west of Roaring Springs.",
+    "geometry_quality": "Traced 36.9 mi entirely on the razed QA&P grade in OSM (36.8 mi on QA&P-tagged ways, 0 mi on any other operator) against a documented 37.2 mi (branchline.uk: Acme 13.0 - Paducah 50.2) and ~37.2 mi from the c.1950 Guide (Paducah MP 43.8 from Quanah less ~6.6 mi own-line Quanah - Acme); TSHA's 'thirty-five miles'. No straight-line legs. Waypoints Acme 0.0, Lazare 0.1, Sommer 0.0, Baker 0.0, Swearingen 0.0 km from the line; Paducah town centroid 1.3 km (the line ends where the mapped grade stops on the north-east side of town; the depot is not pinned, and the Paducah - Roaring Springs feature bridges the unmapped 0.9 mi through town). ERA: drawn on the grade as OSM maps it today; no relocations are known, not checked.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Acme - Lazare - Sommer - Baker - Swearingen - Paducah. Track reached Paducah 9 Dec 1909; Paducah depot opened New Year's Day 1910 (Abandoned Rails); TSHA and T27 'reached Paducah in 1910'. Confirmed in the 1911 Official Guide (branchline.uk letter a at Acme, Lazare, Sommer, Baker, Swearingen, Paducah; Paducah a terminus). A December 1909 train is possible but unproven, so drawn from 1910. Feb 1952 Guide times legible at Acme, Lazare, Sommer, Swearingen, Paducah. Headway 1440 min = one train each way daily, read from the Feb 1952 Guide's c.1950 table; for every earlier year it is an ESTIMATE carried back by continuity (NOT SOURCED). END YEAR [OPEN]: passenger service confirmed to 1951 by the Feb 1952 Official Guide, which prints legible QA&P times (Nos. 450/451, apparently mixed trains, Quanah - Floydada daily). 1951 is the last CONFIRMED year, not a known end - no source found dates when passenger service actually stopped. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: start from branchline.uk (1911G letters) and Abandoned Rails / TSHA / txrrhistory.com (Paducah reached Dec 1909 - 1910); end from the Feb 1952 Official Guide QA&P page. End [OPEN]. Headway before c.1950 NOT SOURCED.",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+       "https://www.abandonedrails.com/quanah-acme-and-pacific-railway",
+       "https://www.tshaonline.org/handbook/entries/quanah-acme-and-pacific-railway",
+       "http://txrrhistory.com/towers/027/027.htm",
+       "Official Guide of the Railways, Feb 1952 issue, Quanah, Acme & Pacific Railway page (research/sources/official_guide_1952.txt lines ~137468-137669; table dated c. April 30, 1950)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -99.823966,
+      34.316571
+     ],
+     [
+      -99.825755,
+      34.316402
+     ],
+     [
+      -99.829587,
+      34.317076
+     ],
+     [
+      -99.832324,
+      34.317355
+     ],
+     [
+      -99.841302,
+      34.318196
+     ],
+     [
+      -99.844149,
+      34.318203
+     ],
+     [
+      -99.910734,
+      34.309661
+     ],
+     [
+      -99.913951,
+      34.309132
+     ],
+     [
+      -99.915913,
+      34.308617
+     ],
+     [
+      -100.043138,
+      34.27004
+     ],
+     [
+      -100.044106,
+      34.269734
+     ],
+     [
+      -100.045622,
+      34.269045
+     ],
+     [
+      -100.047622,
+      34.267564
+     ],
+     [
+      -100.055605,
+      34.257633
+     ],
+     [
+      -100.055905,
+      34.256781
+     ],
+     [
+      -100.05612,
+      34.255753
+     ],
+     [
+      -100.056077,
+      34.254689
+     ],
+     [
+      -100.052663,
+      34.246008
+     ],
+     [
+      -100.052386,
+      34.245182
+     ],
+     [
+      -100.0523,
+      34.244259
+     ],
+     [
+      -100.052534,
+      34.243099
+     ],
+     [
+      -100.05528,
+      34.237244
+     ],
+     [
+      -100.057471,
+      34.234544
+     ],
+     [
+      -100.059851,
+      34.232294
+     ],
+     [
+      -100.061119,
+      34.231705
+     ],
+     [
+      -100.068348,
+      34.228937
+     ],
+     [
+      -100.075427,
+      34.224912
+     ],
+     [
+      -100.076461,
+      34.22477
+     ],
+     [
+      -100.077212,
+      34.22484
+     ],
+     [
+      -100.084401,
+      34.226525
+     ],
+     [
+      -100.085414,
+      34.22646
+     ],
+     [
+      -100.085969,
+      34.226307
+     ],
+     [
+      -100.086782,
+      34.225868
+     ],
+     [
+      -100.08736,
+      34.225322
+     ],
+     [
+      -100.087703,
+      34.224666
+     ],
+     [
+      -100.088883,
+      34.220141
+     ],
+     [
+      -100.097168,
+      34.207362
+     ],
+     [
+      -100.097704,
+      34.206758
+     ],
+     [
+      -100.099097,
+      34.205768
+     ],
+     [
+      -100.104871,
+      34.204079
+     ],
+     [
+      -100.110598,
+      34.201562
+     ],
+     [
+      -100.111995,
+      34.200849
+     ],
+     [
+      -100.113218,
+      34.199731
+     ],
+     [
+      -100.140768,
+      34.164463
+     ],
+     [
+      -100.143064,
+      34.159882
+     ],
+     [
+      -100.160919,
+      34.121589
+     ],
+     [
+      -100.161627,
+      34.120185
+     ],
+     [
+      -100.162268,
+      34.119372
+     ],
+     [
+      -100.189157,
+      34.094957
+     ],
+     [
+      -100.190938,
+      34.093571
+     ],
+     [
+      -100.228317,
+      34.06885
+     ],
+     [
+      -100.230118,
+      34.067982
+     ],
+     [
+      -100.255035,
+      34.060614
+     ],
+     [
+      -100.256103,
+      34.060008
+     ],
+     [
+      -100.290709,
+      34.028846
+     ],
+     [
+      -100.295263,
+      34.025312
+     ],
+     [
+      -100.297534,
+      34.023749
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Quanah, Acme and Pacific Railway",
+    "line": "Quanah, Acme and Pacific: Paducah – Roaring Springs",
+    "id": "qap-paducah-roaring-springs",
+    "color": "#C71585",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 29,
+    "speed_source": "estimated: 29 km/h is the end-to-end average of the c.1950 mixed-train schedule in the Feb 1952 Official Guide (Floydada 6:00 AM - Quanah 12:10 PM, ~111 mi in 6 h 10 min, times as read from OCR in the research report). Applied to all years as an estimate; earlier schedules (incl. the 1930s expedited 'Plainsman') not checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py. In OSM the QA&P grade is tagged old_railway_operator='Frisco' with name='Quanah, Acme and Pacific Railroad' (railway=razed; ways 103374621, 857953522, 858671468, 858671467, 161114761, 857954369, 161111404, 161111405 and the unnamed Frisco-tagged razed/track ways 1553047419, 161111402, 1553047423, 1553047421, 1553047420 east of Roaring Springs). Probed spellings: old_railway_operator 'QA&P'/'QAP'/'Quanah...' return nothing; 'Frisco' carries the whole surviving grade. Waypoints from Nominatim, each type checked: Quanah, Paducah, Roaring Springs, Floydada (administrative boundaries of the towns - correct places, centroids), Lazare, Sommer, Baker, Swearingen, Narcisso, Russellville (hamlets), Dougherty (village), Boothe (OSM place node, hamlet). 'Acme' geocoded to a park in San Antonio and to the QA&P track itself - rejected; Acme was hand-pinned at the junction of the razed QA&P grade with the FW&DC main (-99.824, 34.317). MacBain and Boothe Spur did not geocode and were not used as waypoints. OSM rail-trail/abandoned ways and OHM were fetched for Quanah - Acme and Roaring Springs - Floydada (fetch_gap); OHM has an 'Oklahoma City and Texas Railroad' way Quanah - Acme (used, see the 1931 feature) and nothing for the QA&P west of Roaring Springs.",
+    "geometry_quality": "Traced 36.1 mi against a documented 37.0 mi (branchline.uk: Paducah 50.2 - Roaring Springs 87.2), -2%: 35.2 mi on QA&P/Frisco-tagged razed grade in OSM (0 mi on any other operator) plus ONE APPROXIMATED LEG: a 0.9-mi straight line through Paducah from the east end of the mapped grade (-100.2975, 34.0237, where the Acme - Paducah feature ends) to the west grade (-100.3099, 34.0160) - the grade through town is not mapped in OSM or OHM. The line stops at the east edge of Roaring Springs where the mapped grade ends (-100.845, 33.907), 1.4 km from the town centroid; the last ~1 mi into the Roaring Springs depot is not drawn. Narcisso and Russellville lie 0.0 km from the line. No straight-line legs. Matador Junction (BL 81.8) is on this line; the Matador branch is NOT drawn (see metadata). ERA: drawn on the grade as OSM maps it today; not checked for relocations.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Paducah - Narcisso - Summit - Russellville - Matador Junction - Roaring Springs. Built late 1912-1913; track reached Roaring Springs summer 1913 (Abandoned Rails; TSHA and T27 '1913'). No timetable found confirming passenger trains in 1913, so drawn conservatively from 1914, the first full year. Feb 1952 Guide times legible at Narcisso 8:50, Russellville 8:14, Roaring Springs 7:40 AM / 4:30 PM. Headway 1440 min = one train each way daily, read from the Feb 1952 Guide's c.1950 table; for every earlier year it is an ESTIMATE carried back by continuity (NOT SOURCED). END YEAR [OPEN]: passenger service confirmed to 1951 by the Feb 1952 Official Guide, which prints legible QA&P times (Nos. 450/451, apparently mixed trains, Quanah - Floydada daily). 1951 is the last CONFIRMED year, not a known end - no source found dates when passenger service actually stopped. Do not extend without evidence.",
+      "sources": [
+       "NOT SOURCED AT SEGMENT LEVEL: the 1914 start is the first full year after the 1913 opening (Abandoned Rails, TSHA, txrrhistory.com) - no timetable confirms a passenger train before the Feb 1952 Official Guide, which confirms the 1951 end [OPEN]. Headway NOT SOURCED before c.1950. References:",
+       "https://www.abandonedrails.com/quanah-acme-and-pacific-railway",
+       "https://www.tshaonline.org/handbook/entries/quanah-acme-and-pacific-railway",
+       "http://txrrhistory.com/towers/027/027.htm",
+       "Official Guide of the Railways, Feb 1952 issue, Quanah, Acme & Pacific Railway page (research/sources/official_guide_1952.txt lines ~137468-137669; table dated c. April 30, 1950)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.297534,
+      34.023749
+     ],
+     [
+      -100.309875,
+      34.01601
+     ],
+     [
+      -100.330668,
+      34.009429
+     ],
+     [
+      -100.340431,
+      34.006138
+     ],
+     [
+      -100.343027,
+      34.005445
+     ],
+     [
+      -100.361417,
+      34.002563
+     ],
+     [
+      -100.364206,
+      34.001923
+     ],
+     [
+      -100.367596,
+      34.000606
+     ],
+     [
+      -100.38281,
+      33.99253
+     ],
+     [
+      -100.384655,
+      33.991765
+     ],
+     [
+      -100.391694,
+      33.990908
+     ],
+     [
+      -100.404369,
+      33.989823
+     ],
+     [
+      -100.406028,
+      33.990054
+     ],
+     [
+      -100.437785,
+      34.00023
+     ],
+     [
+      -100.439502,
+      34.000657
+     ],
+     [
+      -100.441476,
+      34.000301
+     ],
+     [
+      -100.453063,
+      33.996459
+     ],
+     [
+      -100.456411,
+      33.996459
+     ],
+     [
+      -100.48525,
+      34.003076
+     ],
+     [
+      -100.487893,
+      34.003567
+     ],
+     [
+      -100.497094,
+      34.004784
+     ],
+     [
+      -100.499669,
+      34.004855
+     ],
+     [
+      -100.504786,
+      34.004502
+     ],
+     [
+      -100.509351,
+      34.003496
+     ],
+     [
+      -100.514661,
+      34.002028
+     ],
+     [
+      -100.515587,
+      34.001556
+     ],
+     [
+      -100.516578,
+      34.000657
+     ],
+     [
+      -100.518449,
+      33.997946
+     ],
+     [
+      -100.519978,
+      33.996234
+     ],
+     [
+      -100.529538,
+      33.990268
+     ],
+     [
+      -100.530809,
+      33.988979
+     ],
+     [
+      -100.531427,
+      33.987207
+     ],
+     [
+      -100.531169,
+      33.985286
+     ],
+     [
+      -100.531581,
+      33.983713
+     ],
+     [
+      -100.535289,
+      33.977457
+     ],
+     [
+      -100.53692,
+      33.976532
+     ],
+     [
+      -100.538551,
+      33.976247
+     ],
+     [
+      -100.553142,
+      33.978169
+     ],
+     [
+      -100.555442,
+      33.978019
+     ],
+     [
+      -100.558892,
+      33.97646
+     ],
+     [
+      -100.560438,
+      33.975891
+     ],
+     [
+      -100.562841,
+      33.976033
+     ],
+     [
+      -100.565416,
+      33.976532
+     ],
+     [
+      -100.566703,
+      33.97703
+     ],
+     [
+      -100.567647,
+      33.977742
+     ],
+     [
+      -100.573552,
+      33.983713
+     ],
+     [
+      -100.578119,
+      33.989485
+     ],
+     [
+      -100.579492,
+      33.990268
+     ],
+     [
+      -100.581294,
+      33.990552
+     ],
+     [
+      -100.582839,
+      33.990481
+     ],
+     [
+      -100.584727,
+      33.98984
+     ],
+     [
+      -100.586959,
+      33.989271
+     ],
+     [
+      -100.588332,
+      33.989058
+     ],
+     [
+      -100.592092,
+      33.989335
+     ],
+     [
+      -100.594941,
+      33.989271
+     ],
+     [
+      -100.59683,
+      33.988773
+     ],
+     [
+      -100.600074,
+      33.986275
+     ],
+     [
+      -100.622647,
+      33.965918
+     ],
+     [
+      -100.62584,
+      33.96322
+     ],
+     [
+      -100.643779,
+      33.952257
+     ],
+     [
+      -100.678455,
+      33.925055
+     ],
+     [
+      -100.680257,
+      33.923346
+     ],
+     [
+      -100.682059,
+      33.922491
+     ],
+     [
+      -100.703088,
+      33.917363
+     ],
+     [
+      -100.705062,
+      33.916793
+     ],
+     [
+      -100.706092,
+      33.916152
+     ],
+     [
+      -100.712873,
+      33.909386
+     ],
+     [
+      -100.713903,
+      33.908744
+     ],
+     [
+      -100.715791,
+      33.908103
+     ],
+     [
+      -100.719739,
+      33.907462
+     ],
+     [
+      -100.726606,
+      33.906825
+     ],
+     [
+      -100.776947,
+      33.906593
+     ],
+     [
+      -100.799258,
+      33.901946
+     ],
+     [
+      -100.800868,
+      33.901657
+     ],
+     [
+      -100.802111,
+      33.901567
+     ],
+     [
+      -100.811132,
+      33.901916
+     ],
+     [
+      -100.812097,
+      33.902077
+     ],
+     [
+      -100.837162,
+      33.909981
+     ],
+     [
+      -100.83896,
+      33.910405
+     ],
+     [
+      -100.840425,
+      33.910348
+     ],
+     [
+      -100.84179,
+      33.909915
+     ],
+     [
+      -100.842739,
+      33.90933
+     ],
+     [
+      -100.845108,
+      33.907383
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Quanah, Acme and Pacific Railway",
+    "line": "Quanah, Acme and Pacific: Roaring Springs – Floydada",
+    "id": "qap-roaring-springs-floydada",
+    "color": "#C71585",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 29,
+    "speed_source": "estimated: 29 km/h is the end-to-end average of the c.1950 mixed-train schedule in the Feb 1952 Official Guide (Floydada 6:00 AM - Quanah 12:10 PM, ~111 mi in 6 h 10 min, times as read from OCR in the research report). Applied to all years as an estimate; earlier schedules (incl. the 1930s expedited 'Plainsman') not checked. Rule 3.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) and OpenHistoricalMap, traced with opstrace.py. In OSM the QA&P grade is tagged old_railway_operator='Frisco' with name='Quanah, Acme and Pacific Railroad' (railway=razed; ways 103374621, 857953522, 858671468, 858671467, 161114761, 857954369, 161111404, 161111405 and the unnamed Frisco-tagged razed/track ways 1553047419, 161111402, 1553047423, 1553047421, 1553047420 east of Roaring Springs). Probed spellings: old_railway_operator 'QA&P'/'QAP'/'Quanah...' return nothing; 'Frisco' carries the whole surviving grade. Waypoints from Nominatim, each type checked: Quanah, Paducah, Roaring Springs, Floydada (administrative boundaries of the towns - correct places, centroids), Lazare, Sommer, Baker, Swearingen, Narcisso, Russellville (hamlets), Dougherty (village), Boothe (OSM place node, hamlet). 'Acme' geocoded to a park in San Antonio and to the QA&P track itself - rejected; Acme was hand-pinned at the junction of the razed QA&P grade with the FW&DC main (-99.824, 34.317). MacBain and Boothe Spur did not geocode and were not used as waypoints. OSM rail-trail/abandoned ways and OHM were fetched for Quanah - Acme and Roaring Springs - Floydada (fetch_gap); OHM has an 'Oklahoma City and Texas Railroad' way Quanah - Acme (used, see the 1931 feature) and nothing for the QA&P west of Roaring Springs.",
+    "geometry_quality": "ENTIRELY APPROXIMATED: no QA&P grade west of Roaring Springs survives in OSM, OSM rail-trails/abandoned ways or OpenHistoricalMap. Drawn as straight-line legs: Roaring Springs (east end of surviving OSM grade) - Dougherty 14.2 mi, Dougherty - Boothe 6.9 mi, Boothe - Floydada 7.6 mi; total 28.7 mi against a documented 31.8 mi (branchline.uk Roaring Springs 87.2 - Floydada 119.0; c.1950 Guide mileposts Dougherty 96.2, Boothe Spur 103.0). The chords cut the climb up the Caprock Escarpment between MacBain and Dougherty, where the real line wound; MacBain (BL 91.0) did not geocode and is not a waypoint, so the line passes near but not through it. Dougherty is the Nominatim village, Boothe an OSM hamlet node (assumed to be Boothe Spur), Floydada the town centroid - the QA&P depot / Santa Fe interchange at Floydada was not pinned. Read this feature as 'the road ran from Roaring Springs up to Floydada', not as an alignment.",
+    "segments": [
+     {
+      "start": 1928,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Roaring Springs - MacBain - Dougherty - Boothe Spur - Floydada. Construction west from MacBain began 15 June 1927; rails reached Floydada April 1928; Santa Fe connection at Floydada opened 30 June 1928 (txrrhistory.com Tower 27; Abandoned Rails 'summer of 1928'; TSHA 1928). Roaring Springs - MacBain (~4 mi) was built in 1913 but served only as a livestock loading point with no passenger evidence, so it is drawn only from 1928. Feb 1952 Guide times legible at Dougherty 6:35, Boothe Spur 6:20, Floydada 6:00 AM / 6:00 PM. Headway 1440 min = one train each way daily, read from the Feb 1952 Guide's c.1950 table; for every earlier year it is an ESTIMATE carried back by continuity (NOT SOURCED). END YEAR [OPEN]: passenger service confirmed to 1951 by the Feb 1952 Official Guide, which prints legible QA&P times (Nos. 450/451, apparently mixed trains, Quanah - Floydada daily). 1951 is the last CONFIRMED year, not a known end - no source found dates when passenger service actually stopped. Do not extend without evidence.",
+      "sources": [
+       "Segment-level: 1928 start from txrrhistory.com Tower 27 (rails to Floydada April 1928, Santa Fe connection 30 June 1928), corroborated by Abandoned Rails and TSHA; 1951 end from the Feb 1952 Official Guide QA&P page. End [OPEN]. Headway before c.1950 NOT SOURCED.",
+       "http://txrrhistory.com/towers/027/027.htm",
+       "https://www.abandonedrails.com/quanah-acme-and-pacific-railway",
+       "https://www.tshaonline.org/handbook/entries/quanah-acme-and-pacific-railway",
+       "Official Guide of the Railways, Feb 1952 issue, Quanah, Acme & Pacific Railway page (research/sources/official_guide_1952.txt lines ~137468-137669; table dated c. April 30, 1950)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.845108,
+      33.907383
+     ],
+     [
+      -101.0887,
+      33.9419
+     ],
+     [
+      -101.2027,
+      33.9747
+     ],
+     [
+      -101.3345,
+      33.984
+     ]
+    ]
+   }
+  }
+ ]
+}
