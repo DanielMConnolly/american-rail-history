@@ -1,0 +1,157 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Texas Short Line Railway (chartered 28 Feb 1901; receivership Apr 1908, released without sale to investors led by T. B. Meeks) ran ~9.4 mi north from the Texas and Pacific at Grand Saline (Van Zandt Co.) across the Sabine bottom to the M-K-T at Hoyt, just SE of Alba (Wood Co.), built 1902-03 by Grand Saline interests for salt and the Alba lignite mines. The T&P bought its stock in early 1929 but kept it as a separate subsidiary under its own name, so there is no Rule 4 split. Passenger service is proven in only two years (1903 and c.1932), drawn as two [ANCHOR] segments. Freight-only by Jan 1951; Grand Saline - Alba abandoned 1959.",
+  "sources": [
+   "https://www.tshaonline.org/handbook/entries/texas-short-line-railway",
+   "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+   "https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+   "http://txrrhistory.com/towers/130/130.htm",
+   "Official Guide of the Railways, Feb 1952 issue, Texas Short Line Railway (T.& P. Lines) entry (research/sources/official_guide_1952.txt lines 150129-150150)"
+  ],
+  "geometry_sources": [
+   "OpenHistoricalMap way 202447993 ('Texas Short Line', constructed_by Texas Short Line Railway, 1902-09 to 1959, CC0) via the OHM Overpass, traced with opstrace.py (fetch_gap over 32.60-32.86 N, 95.55-95.80 W; the trace ran 9.3 mi on that way and 0 mi on any other). Its northern 2.7 mi coincide within 60 m with OSM way 103488452 (railway=razed, old_railway_operator=MP - the T&P/MP-controlled TSL), which independently corroborates that part. OSM probes: old_railway_operator ~ 'Texas Short|TSL|Short Line' returned nothing; a bare way[railway~abandoned|razed|disused|dismantled] / abandoned:railway / historic=railway probe over Grand Saline - Alba returned only that MP razed way, the MKT razed grade (103376106) through Alba, the MP razed Van extension (103488486, not drawn), short MP abandoned sidings at Grand Saline and the live UP Mineola Subdivision (ex-T&P). OHM dates were not used (geometry only). Waypoints: Grand Saline = the south end of the OHM way at the T&P (UP) main line (-95.71317, 32.67274; Nominatim's Grand Saline is the town boundary, 0.2 km NE); a mid-line check point on the OHM way; Hoyt hand-pinned (-95.63064, 32.78558) at the vertex where the TSL grade meets the Katy grade (OSM 103376106, 8 m), 0.55 mi SE of Nominatim's Alba (-95.63441, 32.79294) - matching txrrhistory's 'Hoyt, ~0.5 mi SE of Alba'. Nominatim's 'Hoyt' returned a street in McKinney, 'Grit' a hamlet in Mason County and 'Egbert' a Houston street; none was used."
+  ],
+  "not_yet_sourced": [
+   "Passenger END is OPEN: passengers are proven to c.1932 (Fowler 'c') and the road was freight-only by Jan 1951 (Feb 1952 Official Guide); no source dates the last passenger train. A 1930s-40s Official Guide or Texas Railroad Commission annual report would settle it. The 1932 anchor is the last CONFIRMED year, not an ending.",
+   "1904-1931 GAP: service very probably ran continuously between the 1903 and 1932 anchors on this one-company line, but no source covers 1904-1931 (Fowler has no 'a' or 'b' letters - absence, not evidence). Do not join the anchors without a source.",
+   "Passenger START: the Handbook gives a Sept 1902 opening, but only 4.5 mi were complete in 1902; whether passengers rode the partial line in 1902, and whether the 1903 earnings are calendar or fiscal year, is not established.",
+   "Fowler entry 253's letter 'c' has no legend line of its own: 1932t (T&P legend) or 1933G (short-lines convention). Drawn as 1932.",
+   "Whether the T&P itself ran the trains after the 1929 stock purchase (which would require a Rule 4 split) - sources say the TSL continued as a separate company.",
+   "Grand Saline Sun, 27 Feb 1936 clipping (shown on txrrhistory.com Tower 130) unread; it may bear on passenger service.",
+   "Train frequency and whether trains were mixed: not sourced (headway_min is a placeholder)."
+  ],
+  "omitted": [
+   "Grand Saline - Van extension (opened 10 Jul 1930, ~10 mi Handbook vs 11.5 mi txrrhistory; abandoned Mar 1962): drawable NONE - no confirmed passenger year (the 1930 opening barbecue is an event, not scheduled service; Van is daggered freight-only in the Feb 1952 Guide). Not drawn under Rule 1 until sourced. OSM razed way 103488486 and OHM ways 202448343-202448345 trace it if it is ever sourced.",
+   "Hoyt - Alba (~0.6 mi alongside the Katy): not drawn; the TSL did not build into Alba (txrrhistory)."
+  ],
+  "freight_only_excluded": [
+   "Grand Saline - Alba after the unknown passenger end (before Jan 1951) to abandonment in 1959.",
+   "~1 mi Grand Saline connecting track across the T&P to the salt mine (RCT 1910) - mine spur.",
+   "1.4 mi spurs Grand Saline - 'Salt Works' and Alba - 'Coal Mine' (abandoned 1922 per RCT records, Zlatkovich 1980 via txrrhistory) - industrial spurs."
+  ],
+  "research_report": "research/branches/texas_short_line_railway.txt"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Texas Short Line Railway",
+    "line": "Texas Short Line: Grand Saline – Alba",
+    "id": "texas-short-line-grand-saline-alba",
+    "color": "#6B4F8A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: steam short line almost certainly run as a mixed train; no timetable running time found. Rule 3.",
+    "geometry_source": "OpenHistoricalMap way 202447993 ('Texas Short Line', constructed_by Texas Short Line Railway, 1902-09 to 1959, CC0) via the OHM Overpass, traced with opstrace.py (fetch_gap over 32.60-32.86 N, 95.55-95.80 W; the trace ran 9.3 mi on that way and 0 mi on any other). Its northern 2.7 mi coincide within 60 m with OSM way 103488452 (railway=razed, old_railway_operator=MP - the T&P/MP-controlled TSL), which independently corroborates that part. OSM probes: old_railway_operator ~ 'Texas Short|TSL|Short Line' returned nothing; a bare way[railway~abandoned|razed|disused|dismantled] / abandoned:railway / historic=railway probe over Grand Saline - Alba returned only that MP razed way, the MKT razed grade (103376106) through Alba, the MP razed Van extension (103488486, not drawn), short MP abandoned sidings at Grand Saline and the live UP Mineola Subdivision (ex-T&P). OHM dates were not used (geometry only). Waypoints: Grand Saline = the south end of the OHM way at the T&P (UP) main line (-95.71317, 32.67274; Nominatim's Grand Saline is the town boundary, 0.2 km NE); a mid-line check point on the OHM way; Hoyt hand-pinned (-95.63064, 32.78558) at the vertex where the TSL grade meets the Katy grade (OSM 103376106, 8 m), 0.55 mi SE of Nominatim's Alba (-95.63441, 32.79294) - matching txrrhistory's 'Hoyt, ~0.5 mi SE of Alba'. Nominatim's 'Hoyt' returned a street in McKinney, 'Grit' a hamlet in Mason County and 'Egbert' a Houston street; none was used.",
+    "geometry_quality": "Grand Saline (T&P junction) - Hoyt (Katy junction): traced 9.3 mi against a documented 9.4 mi (txrrhistory: 4.5 mi built 1902 + 4.9 mi 1903, to Hoyt; Fowler: Hoyt milepost 9; Handbook ~10 mi) - about 1% short. No straight-line (approximated) legs. CAVEAT: the southern 6.6 mi (Grand Saline across the Sabine bottom to about 32.746 N) rest on OpenHistoricalMap alone, drawn there with long vertices (one leg over 5 mi between kinks after Douglas-Peucker), so they are a coarse hand-drawn alignment rather than a surveyed grade; only the northern 2.7 mi are corroborated by a surviving OSM razed grade. ALBA END: the line stops at Hoyt, the Katy junction. The OHM and OSM ways continue a further ~0.6 mi alongside the Katy (within 60-115 m of it) into Alba; the report (txrrhistory) says the TSL did not build into Alba, and Fowler's Alba milepost 10 is presumably reached over or beside Katy track, so that ~0.6 mi is NOT drawn (it would trace onto/beside the Katy). ERA: single era - the road was never realigned as far as known, so no later-alignment issue; drawn as the 1902/03 road throughout.",
+    "segments": [
+     {
+      "start": 1903,
+      "end": 1903,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. The Handbook of Texas reports passenger earnings of $1,000 for 1903 on the Texas Short Line - the earliest positive evidence of passengers. Service certainly ran wider both ways but no other year is confirmed: do NOT widen this anchor or bridge 1904-1931 to the 1932 anchor without a source. The first 4.5 mi north from Grand Saline were completed in 1902 and the remaining 4.9 mi to the Katy junction at Hoyt in 1903 (txrrhistory.com Tower 130, citing Railway Age 21 Mar 1902); whether the 1903 figure is a calendar or fiscal year, and so whether these passengers rode the partial line or the whole road to Hoyt, is not established - the full line is drawn. Passenger earnings were tiny ($1,000 vs $16,000 freight in 1903), so service was almost certainly a mixed train or a coach on the freight; no train name or schedule has been found. headway_min 1440 (one train a day) is a placeholder ESTIMATE, not sourced.",
+      "sources": [
+       "Segment-level: 1903 passenger earnings ($1,000) from Handbook of Texas Online, Diana J. Kleiner, 'Texas Short Line Railway' -- as quoted in research/branches/texas_short_line_railway.txt (2026-11-23); the tracer did not re-open the page. Headway not sourced.",
+       "https://www.tshaonline.org/handbook/entries/texas-short-line-railway",
+       "http://txrrhistory.com/towers/130/130.htm"
+      ]
+     },
+     {
+      "start": 1932,
+      "end": 1932,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. Fowler's Texas Railroads (2), entry 253 'TEXAS SHORT LINE', lists Grand Saline 0, Egbert, Grit, Hoyt 9 and Alba 10, each with only the letter 'c' (passenger stop). Entry 253 has no legend line of its own: 'c' is 1932t under the T&P legend (entry 35) and 1933G under the neighbouring short-lines convention, so it is read conservatively as 1932, the year neither reading can be wider than. Service certainly ran wider both ways but no other year is confirmed. The END IS OPEN: passengers ran at least to c.1932 and stopped at an unknown year before Jan 1951, when the Feb 1952 Official Guide says the road 'Operates for freight service only' and daggers Grand Saline and Alba as freight-only. Do NOT extend this to 1951 (freight-only that year) or 1959 (abandonment) without evidence. Fowler shows no 'a' or 'b' letters here; that is absence, not evidence of a gap. The Texas and Pacific bought the company's stock in early 1929 but kept it as a separate subsidiary operating under its own name ('Texas Short Line Railway (Texas and Pacific Lines)' in the 1951-52 Guide; txrrhistory.com citing Mount Pleasant Daily Times 24 Jan 1929), so this T&P-controlled-era year is still drawn as the Texas Short Line, not split to T&P. Freight continued after passengers ended; Grand Saline - Alba was abandoned in 1959. Passenger earnings were tiny ($1,000 vs $16,000 freight in 1903), so service was almost certainly a mixed train or a coach on the freight; no train name or schedule has been found. headway_min 1440 (one train a day) is a placeholder ESTIMATE, not sourced.",
+      "sources": [
+       "Segment-level: 1932 from John Fowler, Texas Railroads (2), branchline.uk texasrrs2.pdf entry 253 (all stations letter 'c', read conservatively as 1932 against the T&P legend 'c = 1932t' in texasrrs1.pdf entry 35) -- as read in research/branches/texas_short_line_railway.txt (2026-11-23); the tracer did not open the PDFs. Freight-only by Jan 1951 per the Feb 1952 Official Guide as quoted in the same report. Headway not sourced.",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+       "https://www.branchline.uk/jfpdf/texasrrs1.pdf",
+       "Official Guide of the Railways, Feb 1952 issue, Texas Short Line Railway (T.& P. Lines) entry (research/sources/official_guide_1952.txt lines 150129-150150)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.713173,
+      32.67274
+     ],
+     [
+      -95.712883,
+      32.674841
+     ],
+     [
+      -95.712454,
+      32.67642
+     ],
+     [
+      -95.712684,
+      32.678605
+     ],
+     [
+      -95.712494,
+      32.680235
+     ],
+     [
+      -95.712354,
+      32.68079
+     ],
+     [
+      -95.711655,
+      32.682117
+     ],
+     [
+      -95.703744,
+      32.692827
+     ],
+     [
+      -95.657138,
+      32.754764
+     ],
+     [
+      -95.656429,
+      32.755919
+     ],
+     [
+      -95.6557,
+      32.757723
+     ],
+     [
+      -95.654906,
+      32.763065
+     ],
+     [
+      -95.65467,
+      32.763895
+     ],
+     [
+      -95.65379,
+      32.765356
+     ],
+     [
+      -95.653297,
+      32.765915
+     ],
+     [
+      -95.631839,
+      32.783236
+     ],
+     [
+      -95.631045,
+      32.783957
+     ],
+     [
+      -95.630702,
+      32.784571
+     ],
+     [
+      -95.630643,
+      32.785579
+     ]
+    ]
+   }
+  }
+ ]
+}
