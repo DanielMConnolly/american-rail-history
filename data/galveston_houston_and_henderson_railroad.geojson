@@ -1,0 +1,1164 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Galveston, Houston and Henderson - \"Old Reliable Short Line\" - Galveston to Houston, 50 miles; Henderson was never reached. One corridor, split into features by who ran the passenger trains (Rule 4): the GH&H itself (1859 Virginia Point - Houston anchor; 1860-1862 and 1865-1882 Galveston - Houston), the International and Great Northern under lease (1883-1895), the GH&H again (1896-1914 [OPEN]), and then the two owners' own trains under trackage rights, running concurrently: the Katy (1916-1942) and the International-Great Northern / Missouri Pacific (1916-1951 [OPEN]). The GH&H became a terminal company from 1920 and the line was freight-only (later UP Galveston Subdivision) after the last MoPac passenger train - not drawn. The parallel Santa Fe line via Alvin and Hitchcock is a different railroad, drawn in santa_fe_gulf_main_line.geojson. The Galveston and Houston Junction connector in Houston (2 mi, 1865) is not drawn: no passenger use of it is proven.",
+  "researched": "research/branches/galveston_houston_and_henderson_railroad.txt (2026-11-20)",
+  "sources": [
+   "https://www.tshaonline.org/handbook/entries/galveston-houston-and-henderson-railroad",
+   "https://en.wikipedia.org/wiki/Galveston,_Houston_and_Henderson_Railroad",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Galveston,_Houston_and_Henderson_Railroad",
+   "https://atlas.thc.texas.gov/NR/pdfs/100004866/100004866.pdf",
+   "https://chicagorailfan.com/stbaaglv.html",
+   "https://csa-railroads.com/Essays/Orignial%20Docs/NP/DH/NP,_DH_1-21A-63.htm",
+   "https://csa-railroads.com/Essays/Orignial%20Docs/NP/HT/NP,_HT_2-24-65.htm",
+   "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): MoPac Table 47 and Table 51 (Palestine - Houston - Galveston, effective Oct 14 1951); Katy Table 14a and the Index of Stations freight-only daggers"
+  ],
+  "not_yet_sourced": [
+   "OPEN END: ghh-galveston-houston-1896 is drawn to 1914, the earliest reading of \"during the war\" / \"until World War I\"; the GH&H's own passenger trains ended somewhere in 1914-1918.",
+   "OPEN END: ign-houston-galveston-1916 is drawn to 1951, the last confirmed year (Feb 1952 Official Guide, Table 51 effective Oct 14 1951). Conflict: NRHP says 1950 (contradicted by the Guide); chicagorailfan says 1954 (unverified). A Galveston Daily News \"last train\" story 1951-1954 would settle it.",
+   "When Katy and I&GN began running passenger trains under their own names over the GH&H - 1895 (trackage rights) or June 1916 (NRHP/Rapp). A Jan 1897 \"Katy Flyer\" listing at Galveston was seen only as a search snippet. 1895-1916 is not drawn for either. Rapp, \"The Galveston, Houston & Henderson Railroad\", Railway History Monograph v.15 (1986) pp.8-17 is the source to read.",
+   "Civil War: civilian passenger service Jan 1863 - Feb 1865 not established; 1863-1864 omitted. Conflict: ICC says the 2.50-mi bay crossing was \"built by the city of Galveston in 1868\" vs TSHA/Wikipedia 1860; a possible 1865-1868 gap at the bay crossing is not established.",
+   "Whether service began Virginia Point - part-way before Houston was reached, and the exact 1859/1860 opening months. Conflict: ICC lists Virginia Point - Houston as built \"1853-1858\" and the island segment \"1858\".",
+   "Interruptions after the 1900 and 1915 hurricanes (months) not established.",
+   "Whether Houston and Texas Central trains ran through to Galveston over the G&HJ and GH&H in the 1860s-70s (another operator over these rails) - not researched to a conclusion.",
+   "Which Houston station GH&H trains used after Union Station opened in 1911, and the exact site of the original GH&H depots in Houston (Main and McKinney per TSHA) and Galveston - the 19th-century features stop about 1.6 km short of Main and McKinney.",
+   "All headway_min and avg_speed_kmh values are estimates.",
+   "branchline.uk Texas file not consulted; Chronicling America search was unproductive."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Houston and Henderson Railroad",
+    "line": "Galveston, Houston and Henderson: Virginia Point – Houston",
+    "id": "ghh-virginia-point-houston-1859",
+    "color": "#7B3F98",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimated, unsourced: no 19th-century GH&H timetable was consulted. 30 km/h is a guess for a light 1850s-80s coastal-plain road with several stops.",
+    "geometry_source": "Traced 2026-11-20 with opstrace.py over OpenStreetMap: the UP Galveston Subdivision, whose ways carry old_railway_operator=GH&H from the Galveston Causeway to the east edge of downtown Houston (42.1 mi of the trace on GH&H-tagged ways), plus present-day untagged track on Galveston Island and between the GH&H tag end and Houston Union Station. The parallel Santa Fe (AT&SF-tagged, via Hitchcock and Alvin) and Missouri Pacific lines were penalised and not used: the trace passes no closer than 9.4 km to Hitchcock and 18.2 km to Alvin. OpenHistoricalMap was searched over the bay crossing and the Houston terminal; it holds no GH&H trestle. Douglas-Peucker at 8 m, then trim_reversals. No straight-line legs.",
+    "geometry_quality": "Traced from OSM, 39.6 mi, Virginia Point (mainland end of the bay crossing) to the east edge of downtown Houston. The research report estimated the mainland part at about 48 mi (whole line 50 mi less the 2-mi bay crossing), but that leaves out the island track: on the trace, Galveston Union Station - Virginia Point is 8.5 mi (about 6.6 on the island plus the 1.9-mi crossing), and the whole Galveston - Houston line traces at 48.5 mi against the documented 50 (MoPac) / 48.8 (Katy), so about 40 mi for Virginia Point - Houston is consistent with the documented total. No straight-line legs; the GH&H was famously straight and the UP Galveston Subdivision is on the original right-of-way (Wikipedia). Houston end: the line stops where the GH&H-tagged (razed) track ends near Navigation and the east side of downtown, about 1.6 km east-southeast of the TSHA-named original terminal at Main and McKinney; the last 1.6 km to that depot is NOT drawn rather than drawn as a guess. Whether 1859 trains ran from Virginia Point itself or only part-way is not established.",
+    "segments": [
+     {
+      "start": 1859,
+      "end": 1859,
+      "headway_min": 720,
+      "note": "[ANCHOR] The one confirmed year of mainland-only service: construction began at Virginia Point in 1854, first rail was laid in 1857 and the line \"reached Houston in 1859\" (TSHA); the Galveston Bay trestle that completed the link to Galveston was finished in 1860 (TSHA; Wikipedia: Galveston - Houston service \"started in 1860\"). Service certainly ran wider than this single year (it continues as the Galveston - Houston feature from 1860), but no other year of Virginia Point - Houston-only working is confirmed, and whether trains ran Virginia Point - part-way before Houston was reached is not established. Do not widen this anchor. Source conflict: the ICC valuation lists Virginia Point - Houston as built \"1853-1858\" and the island segment \"1858\", against TSHA's 1859/1860. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: the 1859 arrival at Houston and the 1860 bay trestle are from the TSHA Handbook entry; the ICC valuation dates are recorded as a conflict. headway_min is an estimate.",
+       "https://www.tshaonline.org/handbook/entries/galveston-houston-and-henderson-railroad",
+       "https://en.wikipedia.org/wiki/Galveston,_Houston_and_Henderson_Railroad",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Galveston,_Houston_and_Henderson_Railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.9203215,
+      29.3256848
+     ],
+     [
+      -95.019513,
+      29.432465
+     ],
+     [
+      -95.071658,
+      29.488411
+     ],
+     [
+      -95.156073,
+      29.578773
+     ],
+     [
+      -95.202969,
+      29.628702
+     ],
+     [
+      -95.281538,
+      29.712838
+     ],
+     [
+      -95.282968,
+      29.714566
+     ],
+     [
+      -95.29128,
+      29.728045
+     ],
+     [
+      -95.292333,
+      29.729349
+     ],
+     [
+      -95.2939166,
+      29.7305972
+     ],
+     [
+      -95.2957918,
+      29.7314899
+     ],
+     [
+      -95.3435365,
+      29.7464651
+     ],
+     [
+      -95.3442747,
+      29.7467781
+     ],
+     [
+      -95.345744,
+      29.7478572
+     ],
+     [
+      -95.3465846,
+      29.7490125
+     ],
+     [
+      -95.3477669,
+      29.7525324
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Houston and Henderson Railroad",
+    "line": "Galveston, Houston and Henderson: Galveston – Houston",
+    "id": "ghh-galveston-houston-1860",
+    "color": "#7B3F98",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimated, unsourced: no 19th-century GH&H timetable was consulted. 30 km/h is a guess for a light 1850s-80s coastal-plain road with several stops.",
+    "geometry_source": "Traced 2026-11-20 with opstrace.py over OpenStreetMap: the UP Galveston Subdivision, whose ways carry old_railway_operator=GH&H from the Galveston Causeway to the east edge of downtown Houston (42.1 mi of the trace on GH&H-tagged ways), plus present-day untagged track on Galveston Island and between the GH&H tag end and Houston Union Station. The parallel Santa Fe (AT&SF-tagged, via Hitchcock and Alvin) and Missouri Pacific lines were penalised and not used: the trace passes no closer than 9.4 km to Hitchcock and 18.2 km to Alvin. OpenHistoricalMap was searched over the bay crossing and the Houston terminal; it holds no GH&H trestle. Douglas-Peucker at 8 m, then trim_reversals. No straight-line legs.",
+    "geometry_quality": "Traced from OSM, 48.1 mi, against a documented Galveston - Houston distance of 50 mi (TSHA: \"an even fifty miles\"); the shortfall is the undrawn last 1.6 km into the original Houston depot. No straight-line legs. The Galveston Bay crossing (about 1.9 mi, Virginia Point - Galveston Island) is drawn on the present-day Galveston Causeway (1912). That is a LATER ALIGNMENT for every pre-1912 year: 1860-1900 the GH&H used its own trestle (destroyed in the Sept 1900 hurricane; no trace of it survives in OSM or OpenHistoricalMap), and 1900-1912 its trains used the Gulf, Colorado and Santa Fe bridge. Both lay in the same narrow Virginia Point - island crossing, so the drawn position is off by at most a few hundred metres, but the structure drawn is not the one used. Galveston terminal drawn at the rail yard by Galveston Union Station (Santa Fe Place / 25th St), opened 1912-13; earlier GH&H Galveston depots were in the same Strand-district waterfront yards but their exact site is not drawn. Houston end: stops where the GH&H-tagged (razed) track ends on the east side of downtown, about 1.6 km east-southeast of the TSHA-named original terminal at Main and McKinney; that last stretch is not drawn. Houston Union Station (1911) is deliberately NOT used as the terminal for this pre-1911 era.",
+    "segments": [
+     {
+      "start": 1860,
+      "end": 1862,
+      "headway_min": 720,
+      "note": "Through Galveston - Houston service from completion of the two-mile Galveston Bay trestle in 1860 (TSHA; Wikipedia). Ends with the Civil War: Union forces held Galveston Oct 1862 - 1 Jan 1863, and a Confederate dispatch of Jan 1863 reports the Houston - Virginia Point line \"again gone into operation, but so far exclusively used for the transportation of troops and supplies\". 1863-1864 are omitted: only military use is proven for those years. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: the 1860 start is from TSHA and Wikipedia; the 1862 end rests on the Union occupation dates (TSHA) and the Jan 1863 Confederate dispatch (military use only). headway_min is an estimate.",
+       "https://www.tshaonline.org/handbook/entries/galveston-houston-and-henderson-railroad",
+       "https://en.wikipedia.org/wiki/Galveston,_Houston_and_Henderson_Railroad",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/NP/DH/NP,_DH_1-21A-63.htm"
+      ]
+     },
+     {
+      "start": 1865,
+      "end": 1882,
+      "headway_min": 720,
+      "note": "Passenger trains to Galveston are documented again by 22 Feb 1865 (Houston Telegraph item datelined Galveston reporting a derailment of the GH&H train \"that started from here at 9 A.M.\": \"The passenger cars are alright. None of the passengers were hurt\"). Same company name throughout despite the 1867-71 receivership, the Dec 1871 foreclosure and reorganisation (which absorbed the Galveston and Houston Junction connector in Houston, not drawn), and the 1 Aug / Dec 1882 Gould-Sage purchase and resale to the Katy - the ICC valuation still lists Dec 1 1882 - Mar 6 1883 as operation \"by its own organization\". From 1877 the line ran Texas's first daily newspaper train (Galveston News to Houston). Ends because the International and Great Northern took over operation on 6 Mar 1883 (ICC); 1883 is drawn on the I&GN feature. Source conflict: the ICC valuation says the 2.50-mi bay crossing was \"built by the city of Galveston in 1868\" - probably a rebuild of a war-damaged trestle; a post-war gap at the bay crossing 1865-1868 could not be established either way. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: the 1865 start is from the Feb 1865 Houston Telegraph derailment report; the end is the 6 Mar 1883 I&GN takeover in the ICC valuation; the newspaper train is from TSHA. headway_min is an estimate.",
+       "https://csa-railroads.com/Essays/Orignial%20Docs/NP/HT/NP,_HT_2-24-65.htm",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Galveston,_Houston_and_Henderson_Railroad",
+       "https://www.tshaonline.org/handbook/entries/galveston-houston-and-henderson-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.798491,
+      29.306279
+     ],
+     [
+      -94.7996994,
+      29.3059586
+     ],
+     [
+      -94.8012564,
+      29.3053172
+     ],
+     [
+      -94.803072,
+      29.3047641
+     ],
+     [
+      -94.8074843,
+      29.3035666
+     ],
+     [
+      -94.8081673,
+      29.3030939
+     ],
+     [
+      -94.809821,
+      29.301408
+     ],
+     [
+      -94.8106313,
+      29.3009816
+     ],
+     [
+      -94.8198126,
+      29.2985549
+     ],
+     [
+      -94.8235523,
+      29.2976998
+     ],
+     [
+      -94.8242411,
+      29.2978362
+     ],
+     [
+      -94.8257361,
+      29.2985778
+     ],
+     [
+      -94.8265652,
+      29.2986688
+     ],
+     [
+      -94.8375208,
+      29.2959111
+     ],
+     [
+      -94.8385862,
+      29.2957798
+     ],
+     [
+      -94.8412374,
+      29.2958357
+     ],
+     [
+      -94.8425901,
+      29.2956496
+     ],
+     [
+      -94.8506792,
+      29.2939552
+     ],
+     [
+      -94.8565221,
+      29.2915214
+     ],
+     [
+      -94.858199,
+      29.2909423
+     ],
+     [
+      -94.8658443,
+      29.2893308
+     ],
+     [
+      -94.8672196,
+      29.2891713
+     ],
+     [
+      -94.8689369,
+      29.2893661
+     ],
+     [
+      -94.8710107,
+      29.290075
+     ],
+     [
+      -94.8973326,
+      29.3029169
+     ],
+     [
+      -94.8997859,
+      29.3041536
+     ],
+     [
+      -94.9008233,
+      29.304831
+     ],
+     [
+      -94.902292,
+      29.306276
+     ],
+     [
+      -95.019513,
+      29.432465
+     ],
+     [
+      -95.071658,
+      29.488411
+     ],
+     [
+      -95.156073,
+      29.578773
+     ],
+     [
+      -95.202969,
+      29.628702
+     ],
+     [
+      -95.281538,
+      29.712838
+     ],
+     [
+      -95.282968,
+      29.714566
+     ],
+     [
+      -95.29128,
+      29.728045
+     ],
+     [
+      -95.292333,
+      29.729349
+     ],
+     [
+      -95.2939166,
+      29.7305972
+     ],
+     [
+      -95.2957918,
+      29.7314899
+     ],
+     [
+      -95.3435365,
+      29.7464651
+     ],
+     [
+      -95.3442747,
+      29.7467781
+     ],
+     [
+      -95.345744,
+      29.7478572
+     ],
+     [
+      -95.3465846,
+      29.7490125
+     ],
+     [
+      -95.3477669,
+      29.7525324
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "International–Great Northern Railroad (Missouri Pacific)",
+    "line": "International–Great Northern: Houston – Galveston",
+    "id": "ign-galveston-houston-1883",
+    "color": "#0057B8",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 30,
+    "speed_source": "Estimated, unsourced: no 19th-century GH&H timetable was consulted. 30 km/h is a guess for a light 1850s-80s coastal-plain road with several stops.",
+    "geometry_source": "Traced 2026-11-20 with opstrace.py over OpenStreetMap: the UP Galveston Subdivision, whose ways carry old_railway_operator=GH&H from the Galveston Causeway to the east edge of downtown Houston (42.1 mi of the trace on GH&H-tagged ways), plus present-day untagged track on Galveston Island and between the GH&H tag end and Houston Union Station. The parallel Santa Fe (AT&SF-tagged, via Hitchcock and Alvin) and Missouri Pacific lines were penalised and not used: the trace passes no closer than 9.4 km to Hitchcock and 18.2 km to Alvin. OpenHistoricalMap was searched over the bay crossing and the Houston terminal; it holds no GH&H trestle. Douglas-Peucker at 8 m, then trim_reversals. No straight-line legs.",
+    "geometry_quality": "Traced from OSM, 48.1 mi, against a documented Galveston - Houston distance of 50 mi (TSHA); the shortfall is the undrawn last 1.6 km into the original Houston depot. No straight-line legs. The Galveston Bay crossing (about 1.9 mi, Virginia Point - Galveston Island) is drawn on the present-day Galveston Causeway (1912). That is a LATER ALIGNMENT for every pre-1912 year: 1860-1900 the GH&H used its own trestle (destroyed in the Sept 1900 hurricane; no trace of it survives in OSM or OpenHistoricalMap), and 1900-1912 its trains used the Gulf, Colorado and Santa Fe bridge. Both lay in the same narrow Virginia Point - island crossing, so the drawn position is off by at most a few hundred metres, but the structure drawn is not the one used. Galveston terminal drawn at the rail yard by Galveston Union Station (Santa Fe Place / 25th St), opened 1912-13; earlier GH&H Galveston depots were in the same Strand-district waterfront yards but their exact site is not drawn. Houston end: stops where the GH&H-tagged (razed) track ends on the east side of downtown, about 1.6 km east-southeast of the TSHA-named original terminal at Main and McKinney; that last stretch is not drawn. Houston Union Station (1911) is deliberately NOT used as the terminal for this pre-1911 era.",
+    "segments": [
+     {
+      "start": 1883,
+      "end": 1895,
+      "headway_min": 720,
+      "note": "The International and Great Northern (the same company later reorganised as the International-Great Northern, Gould/Missouri Pacific system; the pre-reorganisation name is used here) operated the GH&H from 6 Mar 1883 to 22 Dec 1895 under an operating agreement the ICC valuation records and TSHA calls a lease, so these were I&GN trains. The Katy owned the GH&H stock but did not run the trains; after the Katy reached Houston in 1893 the I&GN refused to give the line back and kept exclusive use until the 19 Nov 1895 settlement (TSHA). Coloured as the existing I-GN features, the company that ran the trains. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: the 6 Mar 1883 - 22 Dec 1895 operating period is from the ICC valuation; the lease and the 1893-95 dispute from TSHA. headway_min is an estimate.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Galveston,_Houston_and_Henderson_Railroad",
+       "https://www.tshaonline.org/handbook/entries/galveston-houston-and-henderson-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.798491,
+      29.306279
+     ],
+     [
+      -94.7996994,
+      29.3059586
+     ],
+     [
+      -94.8012564,
+      29.3053172
+     ],
+     [
+      -94.803072,
+      29.3047641
+     ],
+     [
+      -94.8074843,
+      29.3035666
+     ],
+     [
+      -94.8081673,
+      29.3030939
+     ],
+     [
+      -94.809821,
+      29.301408
+     ],
+     [
+      -94.8106313,
+      29.3009816
+     ],
+     [
+      -94.8198126,
+      29.2985549
+     ],
+     [
+      -94.8235523,
+      29.2976998
+     ],
+     [
+      -94.8242411,
+      29.2978362
+     ],
+     [
+      -94.8257361,
+      29.2985778
+     ],
+     [
+      -94.8265652,
+      29.2986688
+     ],
+     [
+      -94.8375208,
+      29.2959111
+     ],
+     [
+      -94.8385862,
+      29.2957798
+     ],
+     [
+      -94.8412374,
+      29.2958357
+     ],
+     [
+      -94.8425901,
+      29.2956496
+     ],
+     [
+      -94.8506792,
+      29.2939552
+     ],
+     [
+      -94.8565221,
+      29.2915214
+     ],
+     [
+      -94.858199,
+      29.2909423
+     ],
+     [
+      -94.8658443,
+      29.2893308
+     ],
+     [
+      -94.8672196,
+      29.2891713
+     ],
+     [
+      -94.8689369,
+      29.2893661
+     ],
+     [
+      -94.8710107,
+      29.290075
+     ],
+     [
+      -94.8973326,
+      29.3029169
+     ],
+     [
+      -94.8997859,
+      29.3041536
+     ],
+     [
+      -94.9008233,
+      29.304831
+     ],
+     [
+      -94.902292,
+      29.306276
+     ],
+     [
+      -95.019513,
+      29.432465
+     ],
+     [
+      -95.071658,
+      29.488411
+     ],
+     [
+      -95.156073,
+      29.578773
+     ],
+     [
+      -95.202969,
+      29.628702
+     ],
+     [
+      -95.281538,
+      29.712838
+     ],
+     [
+      -95.282968,
+      29.714566
+     ],
+     [
+      -95.29128,
+      29.728045
+     ],
+     [
+      -95.292333,
+      29.729349
+     ],
+     [
+      -95.2939166,
+      29.7305972
+     ],
+     [
+      -95.2957918,
+      29.7314899
+     ],
+     [
+      -95.3435365,
+      29.7464651
+     ],
+     [
+      -95.3442747,
+      29.7467781
+     ],
+     [
+      -95.345744,
+      29.7478572
+     ],
+     [
+      -95.3465846,
+      29.7490125
+     ],
+     [
+      -95.3477669,
+      29.7525324
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Galveston, Houston and Henderson Railroad",
+    "line": "Galveston, Houston and Henderson: Galveston – Houston (1896–1914)",
+    "id": "ghh-galveston-houston-1896",
+    "color": "#7B3F98",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "Estimated, unsourced: no GH&H timetable of this era was consulted; 40 km/h is a guess.",
+    "geometry_source": "Traced 2026-11-20 with opstrace.py over OpenStreetMap: the UP Galveston Subdivision, whose ways carry old_railway_operator=GH&H from the Galveston Causeway to the east edge of downtown Houston (42.1 mi of the trace on GH&H-tagged ways), plus present-day untagged track on Galveston Island and between the GH&H tag end and Houston Union Station. The parallel Santa Fe (AT&SF-tagged, via Hitchcock and Alvin) and Missouri Pacific lines were penalised and not used: the trace passes no closer than 9.4 km to Hitchcock and 18.2 km to Alvin. OpenHistoricalMap was searched over the bay crossing and the Houston terminal; it holds no GH&H trestle. Douglas-Peucker at 8 m, then trim_reversals. No straight-line legs.",
+    "geometry_quality": "Traced from OSM, 48.1 mi, against a documented Galveston - Houston distance of 50 mi (TSHA). No straight-line legs. The Galveston Bay crossing (about 1.9 mi, Virginia Point - Galveston Island) is drawn on the present-day Galveston Causeway (1912). That is a LATER ALIGNMENT for every pre-1912 year: 1860-1900 the GH&H used its own trestle (destroyed in the Sept 1900 hurricane; no trace of it survives in OSM or OpenHistoricalMap), and 1900-1912 its trains used the Gulf, Colorado and Santa Fe bridge. Both lay in the same narrow Virginia Point - island crossing, so the drawn position is off by at most a few hundred metres, but the structure drawn is not the one used. Galveston terminal drawn at the rail yard by Galveston Union Station (Santa Fe Place / 25th St), opened 1912-13; earlier GH&H Galveston depots were in the same Strand-district waterfront yards but their exact site is not drawn. Houston end: stops at the east side of downtown where the GH&H-tagged track ends, about 1.6 km short of the original Main and McKinney terminal; Houston Union Station (1911) is not drawn for this feature even though it opened during the 1896-1914 span, because which Houston station GH&H trains used after 1911 is not established.",
+    "segments": [
+     {
+      "start": 1896,
+      "end": 1914,
+      "headway_min": 720,
+      "note": "[OPEN] The GH&H resumed operating its own line on 23 Dec 1895 (ICC valuation: \"own organization\" again; the last week of 1895 is not drawn as a separate year). NRHP: \"The railroad operated regular freight and passenger services between Houston and Galveston\", including the \"Seawall Special\" and the \"News Run\" chartered by the Galveston Daily News. The 1900 hurricane destroyed the GH&H bay trestle and trains used the GC&SF bridge until the 1912 Causeway (TSHA); the 1915 hurricane damaged the Causeway. END IS A WITHHELD UNKNOWN: the NRHP nomination (citing the Galveston Daily News, 24 Jul 1949) says the GH&H \"discontinued passenger services during the war and did not reinitiate them\", and TSHA says the newspaper train \"lasted until World War I\". 1914 is the earliest reading of that bracket (1914-1918), the last year treated as confirmed - not a known end. Do not extend without evidence. The ICC \"own organization\" period running to 31 Dec 1917 is operation of the property (freight continued to 1 Mar 1920), not proof of passengers. headway_min is an estimate, not a timetable count.",
+      "sources": [
+       "Segment-level: the 23 Dec 1895 start is from the ICC valuation; the end bracket (\"during the war\", \"until World War I\") is from the NRHP nomination and TSHA, drawn to its earliest year. headway_min is an estimate.",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Galveston,_Houston_and_Henderson_Railroad",
+       "https://atlas.thc.texas.gov/NR/pdfs/100004866/100004866.pdf",
+       "https://www.tshaonline.org/handbook/entries/galveston-houston-and-henderson-railroad"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.798491,
+      29.306279
+     ],
+     [
+      -94.7996994,
+      29.3059586
+     ],
+     [
+      -94.8012564,
+      29.3053172
+     ],
+     [
+      -94.803072,
+      29.3047641
+     ],
+     [
+      -94.8074843,
+      29.3035666
+     ],
+     [
+      -94.8081673,
+      29.3030939
+     ],
+     [
+      -94.809821,
+      29.301408
+     ],
+     [
+      -94.8106313,
+      29.3009816
+     ],
+     [
+      -94.8198126,
+      29.2985549
+     ],
+     [
+      -94.8235523,
+      29.2976998
+     ],
+     [
+      -94.8242411,
+      29.2978362
+     ],
+     [
+      -94.8257361,
+      29.2985778
+     ],
+     [
+      -94.8265652,
+      29.2986688
+     ],
+     [
+      -94.8375208,
+      29.2959111
+     ],
+     [
+      -94.8385862,
+      29.2957798
+     ],
+     [
+      -94.8412374,
+      29.2958357
+     ],
+     [
+      -94.8425901,
+      29.2956496
+     ],
+     [
+      -94.8506792,
+      29.2939552
+     ],
+     [
+      -94.8565221,
+      29.2915214
+     ],
+     [
+      -94.858199,
+      29.2909423
+     ],
+     [
+      -94.8658443,
+      29.2893308
+     ],
+     [
+      -94.8672196,
+      29.2891713
+     ],
+     [
+      -94.8689369,
+      29.2893661
+     ],
+     [
+      -94.8710107,
+      29.290075
+     ],
+     [
+      -94.8973326,
+      29.3029169
+     ],
+     [
+      -94.8997859,
+      29.3041536
+     ],
+     [
+      -94.9008233,
+      29.304831
+     ],
+     [
+      -94.902292,
+      29.306276
+     ],
+     [
+      -95.019513,
+      29.432465
+     ],
+     [
+      -95.071658,
+      29.488411
+     ],
+     [
+      -95.156073,
+      29.578773
+     ],
+     [
+      -95.202969,
+      29.628702
+     ],
+     [
+      -95.281538,
+      29.712838
+     ],
+     [
+      -95.282968,
+      29.714566
+     ],
+     [
+      -95.29128,
+      29.728045
+     ],
+     [
+      -95.292333,
+      29.729349
+     ],
+     [
+      -95.2939166,
+      29.7305972
+     ],
+     [
+      -95.2957918,
+      29.7314899
+     ],
+     [
+      -95.3435365,
+      29.7464651
+     ],
+     [
+      -95.3442747,
+      29.7467781
+     ],
+     [
+      -95.345744,
+      29.7478572
+     ],
+     [
+      -95.3465846,
+      29.7490125
+     ],
+     [
+      -95.3477669,
+      29.7525324
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Missouri-Kansas-Texas Railroad",
+    "line": "Katy: Houston – Galveston",
+    "id": "katy-houston-galveston",
+    "color": "#935116",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "Estimated, unsourced: no running time was read for this train. 50 km/h is a guess for a 50-mile run with seven intermediate stops.",
+    "geometry_source": "Traced 2026-11-20 with opstrace.py over OpenStreetMap: the UP Galveston Subdivision, whose ways carry old_railway_operator=GH&H from the Galveston Causeway to the east edge of downtown Houston (42.1 mi of the trace on GH&H-tagged ways), plus present-day untagged track on Galveston Island and between the GH&H tag end and Houston Union Station. The parallel Santa Fe (AT&SF-tagged, via Hitchcock and Alvin) and Missouri Pacific lines were penalised and not used: the trace passes no closer than 9.4 km to Hitchcock and 18.2 km to Alvin. OpenHistoricalMap was searched over the bay crossing and the Houston terminal; it holds no GH&H trestle. Douglas-Peucker at 8 m, then trim_reversals. No straight-line legs.",
+    "geometry_quality": "Traced from OSM, 48.5 mi, against a documented Houston - Galveston distance of 48.8 mi (Katy Table 14a, Feb 1952 Official Guide: mileposts 1084.7 - 1133.5). No straight-line legs. Present-day alignment throughout; the bay crossing is the 1912 Galveston Causeway, which is the correct crossing for this post-1912 era (1915 hurricane damage and repairs not modelled). Terminals: Houston Union Station (1911; the trace ends on the track 0.7 km from the station building, the last 1.6 mi from the GH&H tag end on present-day untagged terminal track) and Galveston Union Station (1912-13).",
+    "segments": [
+     {
+      "start": 1916,
+      "end": 1942,
+      "headway_min": 1440,
+      "note": "Katy (Missouri-Kansas-Texas) passenger trains over the GH&H under trackage rights held since 19 Nov 1895. Start: NRHP nomination (citing Rapp 1986): \"Beginning in June 1916, parent companies I&GN and M-K-T offered their own passenger services over the tracks\". Whether Katy trains ran under their own name earlier (a Jan 1897 Galveston Daily News schedule, seen only as a search snippet, lists a \"Katy Flyer\" at Galveston) is open; 1895-1916 is not drawn. Train: the Katy Flyer, Nos. 25/26 (Denison - Galveston in 1942, chicagorailfan). End: NRHP citing Rapp: \"The M-K-T ended its passenger service in 1942\"; the Feb 1952 Official Guide index daggers the Katy stations on this line \"For freight only\", so the Katy line is not drawn past 1942. headway_min (one train each way) is an estimate.",
+      "sources": [
+       "Segment-level: the June 1916 start and 1942 end are from the NRHP nomination (citing Rapp 1986), with the 1942 Katy Flyer schedule from chicagorailfan and the 1952 freight-only daggers from the Official Guide. headway_min is an estimate.",
+       "https://atlas.thc.texas.gov/NR/pdfs/100004866/100004866.pdf",
+       "https://chicagorailfan.com/stbaaglv.html",
+       "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): MoPac Table 47 and Table 51 (Palestine - Houston - Galveston, effective Oct 14 1951); Katy Table 14a and the Index of Stations freight-only daggers"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.798491,
+      29.306279
+     ],
+     [
+      -94.7996994,
+      29.3059586
+     ],
+     [
+      -94.8012564,
+      29.3053172
+     ],
+     [
+      -94.803072,
+      29.3047641
+     ],
+     [
+      -94.8074843,
+      29.3035666
+     ],
+     [
+      -94.8081673,
+      29.3030939
+     ],
+     [
+      -94.809821,
+      29.301408
+     ],
+     [
+      -94.8106313,
+      29.3009816
+     ],
+     [
+      -94.8198126,
+      29.2985549
+     ],
+     [
+      -94.8235523,
+      29.2976998
+     ],
+     [
+      -94.8242411,
+      29.2978362
+     ],
+     [
+      -94.8257361,
+      29.2985778
+     ],
+     [
+      -94.8265652,
+      29.2986688
+     ],
+     [
+      -94.8375208,
+      29.2959111
+     ],
+     [
+      -94.8385862,
+      29.2957798
+     ],
+     [
+      -94.8412374,
+      29.2958357
+     ],
+     [
+      -94.8425901,
+      29.2956496
+     ],
+     [
+      -94.8506792,
+      29.2939552
+     ],
+     [
+      -94.8565221,
+      29.2915214
+     ],
+     [
+      -94.858199,
+      29.2909423
+     ],
+     [
+      -94.8658443,
+      29.2893308
+     ],
+     [
+      -94.8672196,
+      29.2891713
+     ],
+     [
+      -94.8689369,
+      29.2893661
+     ],
+     [
+      -94.8710107,
+      29.290075
+     ],
+     [
+      -94.8973326,
+      29.3029169
+     ],
+     [
+      -94.8997859,
+      29.3041536
+     ],
+     [
+      -94.9008233,
+      29.304831
+     ],
+     [
+      -94.902292,
+      29.306276
+     ],
+     [
+      -95.019513,
+      29.432465
+     ],
+     [
+      -95.071658,
+      29.488411
+     ],
+     [
+      -95.156073,
+      29.578773
+     ],
+     [
+      -95.202969,
+      29.628702
+     ],
+     [
+      -95.281538,
+      29.712838
+     ],
+     [
+      -95.282968,
+      29.714566
+     ],
+     [
+      -95.29128,
+      29.728045
+     ],
+     [
+      -95.292333,
+      29.729349
+     ],
+     [
+      -95.2939166,
+      29.7305972
+     ],
+     [
+      -95.2957918,
+      29.7314899
+     ],
+     [
+      -95.3435365,
+      29.7464651
+     ],
+     [
+      -95.3442747,
+      29.7467781
+     ],
+     [
+      -95.345744,
+      29.7478572
+     ],
+     [
+      -95.3465846,
+      29.7490125
+     ],
+     [
+      -95.3493548,
+      29.7572599
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "International–Great Northern Railroad (Missouri Pacific)",
+    "line": "International–Great Northern: Houston – Galveston (1916–1951)",
+    "id": "ign-houston-galveston-1916",
+    "color": "#0057B8",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 50,
+    "speed_source": "Estimated, unsourced: no running time was read for this train. 50 km/h is a guess for a 50-mile run with seven intermediate stops.",
+    "geometry_source": "Traced 2026-11-20 with opstrace.py over OpenStreetMap: the UP Galveston Subdivision, whose ways carry old_railway_operator=GH&H from the Galveston Causeway to the east edge of downtown Houston (42.1 mi of the trace on GH&H-tagged ways), plus present-day untagged track on Galveston Island and between the GH&H tag end and Houston Union Station. The parallel Santa Fe (AT&SF-tagged, via Hitchcock and Alvin) and Missouri Pacific lines were penalised and not used: the trace passes no closer than 9.4 km to Hitchcock and 18.2 km to Alvin. OpenHistoricalMap was searched over the bay crossing and the Houston terminal; it holds no GH&H trestle. Douglas-Peucker at 8 m, then trim_reversals. No straight-line legs.",
+    "geometry_quality": "Traced from OSM, 48.5 mi, against a documented Houston - Galveston distance of 50 mi (MoPac Table 51, Oct 14 1951: Houston 232, Galveston 282 from Palestine). No straight-line legs. Present-day alignment throughout; the bay crossing is the 1912 Galveston Causeway, which is the correct crossing for this post-1912 era (1915 hurricane damage and repairs not modelled). Terminals: Houston Union Station (1911; the trace ends on the track 0.7 km from the station building, the last 1.6 mi from the GH&H tag end on present-day untagged terminal track) and Galveston Union Station (1912-13).",
+    "segments": [
+     {
+      "start": 1916,
+      "end": 1951,
+      "headway_min": 480,
+      "note": "[OPEN] International-Great Northern (Missouri Pacific-controlled from 1924-25; merged into the Missouri Pacific only in 1956, after passenger service) trains over the GH&H. Start: NRHP (citing Rapp 1986), June 1916; whether own-name I&GN trains ran earlier under the 1895 trackage rights is open and 1895-1916 is not drawn. Feb 1952 Official Guide, MoPac Table 51 (effective Oct 14 1951): Galveston arrivals 5:30, 9:50 and 12:01 and a 2:00 departure, League City 7:55; Texas Eagle and Sunshine Special consists list coaches Galveston - Houston and St. Louis - Galveston sleepers. END IS A WITHHELD UNKNOWN: service is confirmed running in Oct 1951, which is the last CONFIRMED year, not a known end. Source conflict: the NRHP nomination says the I&GN service \"operated until 1950\" (contradicted by the 1952 Guide); chicagorailfan says MoPac Nos. 21/22 \"ended in 1954\" (not verified). Do not extend without evidence. headway_min (about three trains each way in 1951) is an estimate across the whole span.",
+      "sources": [
+       "Segment-level: the June 1916 start is from the NRHP nomination; the Oct 1951 service is from the Feb 1952 Official Guide, MoPac Tables 47 and 51. The 1950 (NRHP) and 1954 (chicagorailfan) end dates conflict and neither is used. headway_min is an estimate.",
+       "Official Guide of the Railways, Feb 1952 (research/sources/official_guide_1952.txt): MoPac Table 47 and Table 51 (Palestine - Houston - Galveston, effective Oct 14 1951); Katy Table 14a and the Index of Stations freight-only daggers",
+       "https://atlas.thc.texas.gov/NR/pdfs/100004866/100004866.pdf",
+       "https://chicagorailfan.com/stbaaglv.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.798491,
+      29.306279
+     ],
+     [
+      -94.7996994,
+      29.3059586
+     ],
+     [
+      -94.8012564,
+      29.3053172
+     ],
+     [
+      -94.803072,
+      29.3047641
+     ],
+     [
+      -94.8074843,
+      29.3035666
+     ],
+     [
+      -94.8081673,
+      29.3030939
+     ],
+     [
+      -94.809821,
+      29.301408
+     ],
+     [
+      -94.8106313,
+      29.3009816
+     ],
+     [
+      -94.8198126,
+      29.2985549
+     ],
+     [
+      -94.8235523,
+      29.2976998
+     ],
+     [
+      -94.8242411,
+      29.2978362
+     ],
+     [
+      -94.8257361,
+      29.2985778
+     ],
+     [
+      -94.8265652,
+      29.2986688
+     ],
+     [
+      -94.8375208,
+      29.2959111
+     ],
+     [
+      -94.8385862,
+      29.2957798
+     ],
+     [
+      -94.8412374,
+      29.2958357
+     ],
+     [
+      -94.8425901,
+      29.2956496
+     ],
+     [
+      -94.8506792,
+      29.2939552
+     ],
+     [
+      -94.8565221,
+      29.2915214
+     ],
+     [
+      -94.858199,
+      29.2909423
+     ],
+     [
+      -94.8658443,
+      29.2893308
+     ],
+     [
+      -94.8672196,
+      29.2891713
+     ],
+     [
+      -94.8689369,
+      29.2893661
+     ],
+     [
+      -94.8710107,
+      29.290075
+     ],
+     [
+      -94.8973326,
+      29.3029169
+     ],
+     [
+      -94.8997859,
+      29.3041536
+     ],
+     [
+      -94.9008233,
+      29.304831
+     ],
+     [
+      -94.902292,
+      29.306276
+     ],
+     [
+      -95.019513,
+      29.432465
+     ],
+     [
+      -95.071658,
+      29.488411
+     ],
+     [
+      -95.156073,
+      29.578773
+     ],
+     [
+      -95.202969,
+      29.628702
+     ],
+     [
+      -95.281538,
+      29.712838
+     ],
+     [
+      -95.282968,
+      29.714566
+     ],
+     [
+      -95.29128,
+      29.728045
+     ],
+     [
+      -95.292333,
+      29.729349
+     ],
+     [
+      -95.2939166,
+      29.7305972
+     ],
+     [
+      -95.2957918,
+      29.7314899
+     ],
+     [
+      -95.3435365,
+      29.7464651
+     ],
+     [
+      -95.3442747,
+      29.7467781
+     ],
+     [
+      -95.345744,
+      29.7478572
+     ],
+     [
+      -95.3465846,
+      29.7490125
+     ],
+     [
+      -95.3493548,
+      29.7572599
+     ]
+    ]
+   }
+  }
+ ]
+}
