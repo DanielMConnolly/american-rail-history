@@ -1,0 +1,261 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Marshall and East Texas and its predecessors and successor: a lumber-traffic steam road from Marshall northwest through Harleton, Ashland, Gilmer and Rhonesboro to Winnsboro (completed June 1902 by the Texas Southern; M&ET from Aug 1908; all operation north of Marshall stopped by court order 15 Aug 1917; sold in six pieces 1920 and lifted), plus the 1909 Marshall - Elysian Fields extension (operation stopped 3 Aug 1918; revived 1922 by the Marshall, Elysian Fields and Southeastern, lifted 1940-45), and the Paris, Marshall and Sabine Pass's 1885-86 Marshall - Harleton stub that the Texas Southern grew from. Four operators, four colours, split per Rule 4: the main line is two features on identical geometry (Texas Southern 1902-1906, M&ET 1911-1916), the Elysian Fields line two (M&ET 1914, MEF&S 1926).",
+  "sources": [
+   "https://www.tshaonline.org/handbook/entries/marshall-and-east-texas-railway",
+   "https://www.tshaonline.org/handbook/entries/texas-southern-railway",
+   "https://www.tshaonline.org/handbook/entries/paris-marshall-and-sabine-pass-railway",
+   "https://www.tshaonline.org/handbook/entries/marshall-elysian-fields-and-southeastern-railway",
+   "https://ttarchive.com/Library/Articles/MEFSE_Historical.html",
+   "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+   "https://en.wikipedia.org/wiki/Marshall_and_East_Texas_Railway",
+   "https://en.wikipedia.org/wiki/Texas_Southern_Railway"
+  ],
+  "research_report": "research/branches/marshall_and_east_texas_railway.txt (researched 2026-11-23)",
+  "geometry_sources": [
+   "OSM (Overpass, maps.mail.ru mirror) was searched on 2026-11-23 over 32.25-33.10 N, 95.40-94.10 W for old_railway_operator matching M&ET / Marshall and East Texas / MEF&S / Elysian / Texas Southern / Sabine Pass (0 ways), for railway=abandoned|disused|razed|demolished|dismantled, abandoned:railway=*, historic=railway and named rail-trails (opstrace fetch_gap over Marshall - Winnsboro and Marshall - Elysian Fields), and for highways named Rail/Tram/Depot: nothing on this road's corridor (the abandoned/razed ways found are LR&N/MKT remnants near Jefferson, T&P/UP sidings in Marshall and Longview, and a few yard stubs in Winnsboro on the MKT/L&A). OpenHistoricalMap (overpass-api.openhistoricalmap.org) has no way for this road: only the T&P, East Line and Red River, Sherman Shreveport and Southern, Port Bolivar Iron Ore and an unnamed 1900-1920 logging network near Caddo Lake (ways 201833921-201833943, east of Jefferson - not this railroad). The whole line was lifted 1920-1945 and no grade is mapped, so every leg is a straight line between Nominatim town points (each checked to be a town/village/hamlet, never a county)."
+  ],
+  "omitted": "Lumber branches from Fowler's table, each a single low-confidence Guide-year anchor: Harleton - Lodwick (1905, 10.9 mi), Sully - Whitford (1904, 11.9 mi), Whiteman - Decker (1904, 8.2 mi) and Pine Ridge - Torrans (1905, 4.0 mi). NOT DRAWN because their endpoints cannot be located with confidence: Sully, Whitford, Whiteman, Decker and Torrans do not geocode to any place in the corridor (only streets in Austin, Fort Bend, Marshall, a house in Jefferson), Pine Ridge is unlocated, and Lodwick resolves only to Lodwick Church in Marion County, 4.2 mi straight from Harleton against Fowler's 10.9 mi, so a chord would misdraw a branch whose route is unknown. Their anchors stand in the research report for a later pass with a 1904-1906 Official Guide or a period map (e.g. the 1923 Rand McNally map on ttarchive.com). Also omitted: the Winnsboro and Gilmer Railroad (East Winnsboro - Gilmer, 1920-23; never operated as a common carrier, no passenger evidence) and every freight-only remnant (MEF&S after the 1920s passenger earnings, the 1940-45 Marshall - Cary's Spur stub, the T&P's 2 mi, the Commercial Lumber Co. tram at Gilmer).",
+  "not_yet_sourced": "(1) [OPEN] Texas Southern main line end: 1906 is the last confirmed year (Fowler 1906G); the operator changed with the Aug 1908 sale and 1907-1908 service is unchecked. (2) [OPEN] M&ET main line start: 1911 is the first confirmed M&ET year; 1908-1910 unchecked. (3) [OPEN] M&ET main line end: 1916 is the last confirmed year; all operation stopped 15 Aug 1917, passenger trains in 1917 unconfirmed; Fowler's 'Muntz 1919G pass?' treated as a stale listing. (4) [ANCHOR] M&ET Marshall - Elysian Fields 1914 only; c.1909/10 - 1917/18 unconfirmed. (5) [ANCHOR] MEF&S 1926 only, low confidence: passenger earnings (TSHA, Hammond) vs Official Guide 'freight only' (Hammond) - SOURCE CONFLICT recorded, owner may prefer to omit. (6) [ANCHOR] PM&SP 1895 only; 1885/86 start unconfirmed as passenger; Montvale Springs not located. (7) First through train 15 vs 16 Jun 1902; construction to Winnsboro 1901 (Wikipedia) vs 1902 (TSHA). (8) Texas Southern 1897-1902 on the Marshall - Harleton stub: no passenger evidence, not drawn. (9) The four lumber branches (see 'omitted'). (10) All headways and speeds are estimates. Next source: Marshall Messenger / Gilmer Mirror on the Portal to Texas History, and a 1907-1917 Official Guide."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Texas Southern Railway",
+    "line": "Texas Southern: Marshall – Winnsboro",
+    "id": "texas-southern-marshall-winnsboro",
+    "color": "#3D6E2F",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: lumber-traffic steam short line, probably one train each way a day; no timetable running time checked (Rule 3).",
+    "geometry_source": "OSM (Overpass, maps.mail.ru mirror) was searched on 2026-11-23 over 32.25-33.10 N, 95.40-94.10 W for old_railway_operator matching M&ET / Marshall and East Texas / MEF&S / Elysian / Texas Southern / Sabine Pass (0 ways), for railway=abandoned|disused|razed|demolished|dismantled, abandoned:railway=*, historic=railway and named rail-trails (opstrace fetch_gap over Marshall - Winnsboro and Marshall - Elysian Fields), and for highways named Rail/Tram/Depot: nothing on this road's corridor (the abandoned/razed ways found are LR&N/MKT remnants near Jefferson, T&P/UP sidings in Marshall and Longview, and a few yard stubs in Winnsboro on the MKT/L&A). OpenHistoricalMap (overpass-api.openhistoricalmap.org) has no way for this road: only the T&P, East Line and Red River, Sherman Shreveport and Southern, Port Bolivar Iron Ore and an unnamed 1900-1920 logging network near Caddo Lake (ways 201833921-201833943, east of Jefferson - not this railroad). The whole line was lifted 1920-1945 and no grade is mapped, so every leg is a straight line between Nominatim town points (each checked to be a town/village/hamlet, never a county). Waypoints (Nominatim, type checked): Marshall 32.5448, -94.3661; Harleton 32.6766, -94.5740; Ashland 32.6906, -94.7045; Gilmer 32.7288, -94.9446; Rhonesboro 32.7574, -95.1406; Winnsboro 32.9573, -95.2902; Elysian Fields 32.3699, -94.1832. Merrimac, Key, Blocker, Woodley, Montvale Springs, Elmira, Lockwood and Pine Ridge did not geocode to the right place (Dallas/Tyler streets, a creek, a cemetery, a lake) and were not used.",
+    "geometry_quality": "Marshall - Winnsboro, 5 straight-line legs: Marshall - Harleton STRAIGHT LINE 15.2 mi (Fowler mileposts 17.1 mi); Harleton - Ashland STRAIGHT LINE 7.7 mi (Fowler mileposts 8.8 mi); Ashland - Gilmer STRAIGHT LINE 14.2 mi (Fowler mileposts 16.7 mi); Gilmer - Rhonesboro STRAIGHT LINE 11.6 mi (Fowler mileposts 12.8 mi); Rhonesboro - Winnsboro STRAIGHT LINE 16.3 mi (Fowler mileposts 18.8 mi). TOTAL drawn 65.0 mi against a documented 72.5 mi (TSHA) / 73.7 mi owned 1904 (Wikipedia) / 74.2 mi (Fowler mileposts Winnsboro 0.0 - Marshall 74.2) - 88% of the milepost figure; the shortfall is the chords cutting the grade's curves. Every mile is approximated; NOTHING is traced. End points are town centres: the Marshall end is downtown Marshall (the M&ET's own Marshall depot was not located) and the north end is downtown Winnsboro (the line ran to East Winnsboro, 'Eser', MP 1.2, and on to the MKT connection; exact terminal not located). No later alignment is drawn - there is no alignment at all, only chords - so an era caveat does not arise, but the chords do not follow the 1902-1917 grade.",
+    "segments": [
+     {
+      "start": 1902,
+      "end": 1906,
+      "headway_min": 1440,
+      "note": "Texas Southern Railway (chartered 12 Mar 1897 as successor to the Paris, Marshall and Sabine Pass; in receivership from Jul 1904, which did not change who ran the trains). Construction Gilmer - Ashland 1901 and the East Winnsboro extension 1902 per TSHA; Wikipedia instead has the line reaching Winnsboro in 1901 - conflict recorded. START 1902 is firm: the first through passenger train Marshall - Gilmer - Winnsboro ran in June 1902 (15 Jun per a summary of the Marshall Messenger, 16 Jun per Hammond - day conflict recorded, year firm). Fowler's station table lists Hobo Siding, Pinetucky and Beaver's Spur (8/1904G), Eagle Creek (1904G), the road at 'a' = 1905 Official Guide, and Pine Tucky (1906G): in the Guide 1904-1906. END 1906 [OPEN]: 1906 is the last CONFIRMED Texas Southern year, NOT a known end - the company was sold in Aug 1908 to the Marshall and East Texas and trains presumably ran without a break, but no 1907-1908 source was checked. Do not extend without evidence. Headway 1440 (one train each way a day) is an estimate, unsourced. Texas Southern service 1897-1901 on the Marshall - Harleton stub (and any partial Gilmer service before June 1902) has no passenger evidence and is not drawn.",
+      "sources": [
+       "Segment-level: the note names the sources checked for this segment's start (TSHA Texas Southern Railway; Hammond; Wikipedia Texas Southern Railway) and end (Fowler's 1904-1906 Official Guide station listings). Headway is an estimate, not sourced.",
+       "https://www.tshaonline.org/handbook/entries/texas-southern-railway",
+       "https://ttarchive.com/Library/Articles/MEFSE_Historical.html",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+       "https://en.wikipedia.org/wiki/Texas_Southern_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.3661,
+      32.544776
+     ],
+     [
+      -94.573983,
+      32.676577
+     ],
+     [
+      -94.704454,
+      32.690623
+     ],
+     [
+      -94.944557,
+      32.728803
+     ],
+     [
+      -95.14063,
+      32.757359
+     ],
+     [
+      -95.290222,
+      32.957345
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Marshall and East Texas Railway",
+    "line": "Marshall and East Texas: Marshall – Winnsboro",
+    "id": "marshall-and-east-texas-marshall-winnsboro",
+    "color": "#7A3E1D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: lumber-traffic steam road (8 locomotives, 23 cars in 1916); no timetable running time checked (Rule 3).",
+    "geometry_source": "OSM (Overpass, maps.mail.ru mirror) was searched on 2026-11-23 over 32.25-33.10 N, 95.40-94.10 W for old_railway_operator matching M&ET / Marshall and East Texas / MEF&S / Elysian / Texas Southern / Sabine Pass (0 ways), for railway=abandoned|disused|razed|demolished|dismantled, abandoned:railway=*, historic=railway and named rail-trails (opstrace fetch_gap over Marshall - Winnsboro and Marshall - Elysian Fields), and for highways named Rail/Tram/Depot: nothing on this road's corridor (the abandoned/razed ways found are LR&N/MKT remnants near Jefferson, T&P/UP sidings in Marshall and Longview, and a few yard stubs in Winnsboro on the MKT/L&A). OpenHistoricalMap (overpass-api.openhistoricalmap.org) has no way for this road: only the T&P, East Line and Red River, Sherman Shreveport and Southern, Port Bolivar Iron Ore and an unnamed 1900-1920 logging network near Caddo Lake (ways 201833921-201833943, east of Jefferson - not this railroad). The whole line was lifted 1920-1945 and no grade is mapped, so every leg is a straight line between Nominatim town points (each checked to be a town/village/hamlet, never a county). Waypoints (Nominatim, type checked): Marshall 32.5448, -94.3661; Harleton 32.6766, -94.5740; Ashland 32.6906, -94.7045; Gilmer 32.7288, -94.9446; Rhonesboro 32.7574, -95.1406; Winnsboro 32.9573, -95.2902; Elysian Fields 32.3699, -94.1832. Merrimac, Key, Blocker, Woodley, Montvale Springs, Elmira, Lockwood and Pine Ridge did not geocode to the right place (Dallas/Tyler streets, a creek, a cemetery, a lake) and were not used.",
+    "geometry_quality": "Marshall - Winnsboro, 5 straight-line legs: Marshall - Harleton STRAIGHT LINE 15.2 mi (Fowler mileposts 17.1 mi); Harleton - Ashland STRAIGHT LINE 7.7 mi (Fowler mileposts 8.8 mi); Ashland - Gilmer STRAIGHT LINE 14.2 mi (Fowler mileposts 16.7 mi); Gilmer - Rhonesboro STRAIGHT LINE 11.6 mi (Fowler mileposts 12.8 mi); Rhonesboro - Winnsboro STRAIGHT LINE 16.3 mi (Fowler mileposts 18.8 mi). TOTAL drawn 65.0 mi against a documented 72.5 mi (TSHA) / 73.7 mi owned 1904 (Wikipedia) / 74.2 mi (Fowler mileposts Winnsboro 0.0 - Marshall 74.2) - 88% of the milepost figure; the shortfall is the chords cutting the grade's curves. Every mile is approximated; NOTHING is traced. End points are town centres: the Marshall end is downtown Marshall (the M&ET's own Marshall depot was not located) and the north end is downtown Winnsboro (the line ran to East Winnsboro, 'Eser', MP 1.2, and on to the MKT connection; exact terminal not located). No later alignment is drawn - there is no alignment at all, only chords - so an era caveat does not arise, but the chords do not follow the 1902-1917 grade. Same geometry as texas-southern-marshall-winnsboro (Rule 4 ownership split at the Aug 1908 sale).",
+    "segments": [
+     {
+      "start": 1911,
+      "end": 1916,
+      "headway_min": 1440,
+      "note": "Marshall and East Texas Railway (chartered 17 Aug 1908, bought the Texas Southern at foreclosure Aug 1908; receiver Bryan Snyder from 25 Jan 1917, not an operator change). START 1911 [OPEN]: 1911 is the first CONFIRMED M&ET-era year (Fowler lists Andrews and Hardee at 1911G, Genevieve at 1914G), NOT a known start - the M&ET took over the operating line in Aug 1908 and 1908-1910 service is very likely but unconfirmed. END 1916 [OPEN]: last CONFIRMED year (1916 passenger earnings $23,000 vs freight $164,000, TSHA), NOT a known end. Passenger train No. 2, southbound from Winnsboro, wrecked on a trestle a few miles east of Harleton about 5:20 pm on 18 Oct 1915 (two coaches overturned, 11 injured, conductor Cliff Riden died 22 Oct) - dated proof of a scheduled passenger train. A court order stopped ALL operation north of Marshall on 15 Aug 1917, so 1917 is a hard ceiling, but passenger trains in 1917 itself are not confirmed. Fowler's 'Muntz 1919G pass?' is almost certainly a stale Guide listing and is NOT used. After the 1920 sale in six pieces Gilmer - East Winnsboro went to the Winnsboro and Gilmer Railroad (never operated as a common carrier; not drawn), 2 mi + the Marshall terminal to the T&P, and the rest was abandoned. Do not extend either end without evidence. Headway 1440 (one train each way a day) is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: the note names the sources checked for this segment's start (Fowler 1911G/1914G station listings) and end (TSHA 1916 passenger earnings; 1915 wreck of passenger train No. 2 per Wikipedia and Hammond; 15 Aug 1917 court-ordered stop per TSHA and Hammond). Headway is an estimate, not sourced.",
+       "https://www.tshaonline.org/handbook/entries/marshall-and-east-texas-railway",
+       "https://ttarchive.com/Library/Articles/MEFSE_Historical.html",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf",
+       "https://en.wikipedia.org/wiki/Marshall_and_East_Texas_Railway"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.3661,
+      32.544776
+     ],
+     [
+      -94.573983,
+      32.676577
+     ],
+     [
+      -94.704454,
+      32.690623
+     ],
+     [
+      -94.944557,
+      32.728803
+     ],
+     [
+      -95.14063,
+      32.757359
+     ],
+     [
+      -95.290222,
+      32.957345
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Marshall and East Texas Railway",
+    "line": "Marshall and East Texas: Marshall – Elysian Fields",
+    "id": "marshall-and-east-texas-marshall-elysian-fields",
+    "color": "#7A3E1D",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "estimated: light-rail (65 lb) lumber extension; no timetable checked (Rule 3).",
+    "geometry_source": "OSM (Overpass, maps.mail.ru mirror) was searched on 2026-11-23 over 32.25-33.10 N, 95.40-94.10 W for old_railway_operator matching M&ET / Marshall and East Texas / MEF&S / Elysian / Texas Southern / Sabine Pass (0 ways), for railway=abandoned|disused|razed|demolished|dismantled, abandoned:railway=*, historic=railway and named rail-trails (opstrace fetch_gap over Marshall - Winnsboro and Marshall - Elysian Fields), and for highways named Rail/Tram/Depot: nothing on this road's corridor (the abandoned/razed ways found are LR&N/MKT remnants near Jefferson, T&P/UP sidings in Marshall and Longview, and a few yard stubs in Winnsboro on the MKT/L&A). OpenHistoricalMap (overpass-api.openhistoricalmap.org) has no way for this road: only the T&P, East Line and Red River, Sherman Shreveport and Southern, Port Bolivar Iron Ore and an unnamed 1900-1920 logging network near Caddo Lake (ways 201833921-201833943, east of Jefferson - not this railroad). The whole line was lifted 1920-1945 and no grade is mapped, so every leg is a straight line between Nominatim town points (each checked to be a town/village/hamlet, never a county). Waypoints (Nominatim, type checked): Marshall 32.5448, -94.3661; Elysian Fields 32.3699, -94.1832. Key, Blocker and Woodley (Fowler MP 81.3, 84.3, 88.2) did not geocode to a settlement (Key Creek; Blocker Lake NE of Marshall, wrong side; Woodley Cemetery) and were not used.",
+    "geometry_quality": "Marshall - Elysian Fields: ONE STRAIGHT LINE of 16.1 mi against a documented 17 mi (TSHA, Hammond) / 17.5 mi (Fowler mileposts 74.2 - 91.7) / 'approx. 18 mi' (MEF&S 1940 salvage list) / 19 mi (Wikipedia) - 92% of Fowler. Entirely approximated; nothing traced. Marshall end is the town centre, Elysian Fields end the village point. No grade survives in OSM or OHM.",
+    "segments": [
+     {
+      "start": 1914,
+      "end": 1914,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. Built southeast from Marshall toward the Louisiana line in 1909 (65 lb rail; turntable at Elysian Fields 1910, Hammond); Fowler marks Woodley '1914G' on this extension, the only Official Guide year confirmed for it at segment level. Service almost certainly ran wider both ways - c.1909/10 to 1917/18 (a court order stopped operation Marshall - Elysian Fields on 3 Aug 1918; Hammond says it 'operated infrequently' until then) - but no other passenger year is confirmed: TSHA's 1916 passenger earnings are system-wide. Fowler's unlettered Key, Blocker and Elysian Fields entries may come from the 1911 Guide, but that is inference. Do not widen this anchor without a source; a 1910-1917 Official Guide showing the Elysian Fields table would. Headway 1440 is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: the note names the source checked for this segment's single year (Fowler, Woodley 1914G); construction and the 1918 stop from TSHA and Hammond. Headway is an estimate, not sourced.",
+       "https://www.tshaonline.org/handbook/entries/marshall-and-east-texas-railway",
+       "https://ttarchive.com/Library/Articles/MEFSE_Historical.html",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.3661,
+      32.544776
+     ],
+     [
+      -94.183248,
+      32.369921
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Marshall, Elysian Fields and Southeastern Railway",
+    "line": "Marshall, Elysian Fields and Southeastern: Marshall – Elysian Fields",
+    "id": "marshall-elysian-fields-and-southeastern-marshall-elysian-fields",
+    "color": "#3B5F8C",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 15,
+    "speed_source": "estimated: Model-T rail trucks, Fordson tractors and a small steam engine on worn 65 lb rail; nothing sourced (Rule 3).",
+    "geometry_source": "Same geometry as marshall-and-east-texas-marshall-elysian-fields (the MEF&S bought that line at foreclosure, 1 Aug 1922). OSM (Overpass, maps.mail.ru mirror) was searched on 2026-11-23 over 32.25-33.10 N, 95.40-94.10 W for old_railway_operator matching M&ET / Marshall and East Texas / MEF&S / Elysian / Texas Southern / Sabine Pass (0 ways), for railway=abandoned|disused|razed|demolished|dismantled, abandoned:railway=*, historic=railway and named rail-trails (opstrace fetch_gap over Marshall - Winnsboro and Marshall - Elysian Fields), and for highways named Rail/Tram/Depot: nothing on this road's corridor (the abandoned/razed ways found are LR&N/MKT remnants near Jefferson, T&P/UP sidings in Marshall and Longview, and a few yard stubs in Winnsboro on the MKT/L&A). OpenHistoricalMap (overpass-api.openhistoricalmap.org) has no way for this road: only the T&P, East Line and Red River, Sherman Shreveport and Southern, Port Bolivar Iron Ore and an unnamed 1900-1920 logging network near Caddo Lake (ways 201833921-201833943, east of Jefferson - not this railroad). The whole line was lifted 1920-1945 and no grade is mapped, so every leg is a straight line between Nominatim town points (each checked to be a town/village/hamlet, never a county).",
+    "geometry_quality": "Marshall - Elysian Fields: ONE STRAIGHT LINE of 16.1 mi against a documented ~17-18 mi (Hammond; MEF&S 1940 salvage list 'approx. 18 mi') - 92% of 17.5. Entirely approximated; nothing traced. Same chord as the M&ET Elysian Fields feature.",
+    "segments": [
+     {
+      "start": 1926,
+      "end": 1926,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year, LOW CONFIDENCE. Marshall, Elysian Fields and Southeastern Railway (bought at foreclosure 1 Aug 1922, chartered 28 Aug 1922, began operating 1 Sep 1922; interstate approval 2 Feb 1924). TSHA reports passenger earnings of $1,000 in 1926 and Hammond 'some small passenger earnings in the 1920's' - revenue reported to a regulator, the only dated passenger evidence. SOURCE CONFLICT: Hammond also says the Official Guide listings of the 1920s and 1930s described the company as 'freight only'. Reading: no advertised public passenger train, but fares were collected - most likely riders on the U.S. Mail (contract from 1925) / rail-truck runs, a mixed-style service Rule 1 counts. Both recorded; the map owner may prefer to omit this feature. Service likely ran wider within the 1920s but no other year is confirmed; do not widen. After the passenger earnings stop the road was freight, cotton and truck hauling (ICC abandonment authority 11 Dec 1926, not exercised; rails lifted Elysian Fields - Cary's Spur June 1940; the 1940-45 Marshall - Cary's Spur stub was freight only) - none of that is drawn. Headway 1440 is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: the note names the sources checked for this single year (TSHA MEF&S entry, 1926 passenger earnings; Hammond, 1920s passenger earnings and the conflicting 'freight only' Official Guide listings). Headway is an estimate, not sourced.",
+       "https://www.tshaonline.org/handbook/entries/marshall-elysian-fields-and-southeastern-railway",
+       "https://ttarchive.com/Library/Articles/MEFSE_Historical.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.3661,
+      32.544776
+     ],
+     [
+      -94.183248,
+      32.369921
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Paris, Marshall and Sabine Pass Railway",
+    "line": "Paris, Marshall and Sabine Pass: Marshall – Harleton",
+    "id": "paris-marshall-and-sabine-pass-marshall-harleton",
+    "color": "#C08040",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: one-locomotive lumber road, presumably a mixed train; nothing sourced (Rule 3).",
+    "geometry_source": "OSM (Overpass, maps.mail.ru mirror) was searched on 2026-11-23 over 32.25-33.10 N, 95.40-94.10 W for old_railway_operator matching M&ET / Marshall and East Texas / MEF&S / Elysian / Texas Southern / Sabine Pass (0 ways), for railway=abandoned|disused|razed|demolished|dismantled, abandoned:railway=*, historic=railway and named rail-trails (opstrace fetch_gap over Marshall - Winnsboro and Marshall - Elysian Fields), and for highways named Rail/Tram/Depot: nothing on this road's corridor (the abandoned/razed ways found are LR&N/MKT remnants near Jefferson, T&P/UP sidings in Marshall and Longview, and a few yard stubs in Winnsboro on the MKT/L&A). OpenHistoricalMap (overpass-api.openhistoricalmap.org) has no way for this road: only the T&P, East Line and Red River, Sherman Shreveport and Southern, Port Bolivar Iron Ore and an unnamed 1900-1920 logging network near Caddo Lake (ways 201833921-201833943, east of Jefferson - not this railroad). The whole line was lifted 1920-1945 and no grade is mapped, so every leg is a straight line between Nominatim town points (each checked to be a town/village/hamlet, never a county). Waypoints: Marshall 32.5448, -94.3661; Harleton 32.6766, -94.5740 (Nominatim village). Montvale Springs did not geocode.",
+    "geometry_quality": "Marshall - Harleton: ONE STRAIGHT LINE of 15.2 mi against a documented 15 mi company-owned Marshall - Montvale Springs plus 3.5 mi over a Hope Lumber Company spur to Harleton (TSHA), and Fowler's later mileposts Marshall 74.2 - Harleton 57.1 = 17.1 mi. Entirely approximated; nothing traced. NORTH END APPROXIMATE: drawn to Harleton village because Montvale Springs (the company's own end, 'just short of Harleton') could not be located, and whether passenger trains used the lumber-company spur into Harleton is unknown - the last ~3.5 mi may overstate the passenger line. Same chord as the first leg of the Texas Southern / M&ET main-line features.",
+    "segments": [
+     {
+      "start": 1895,
+      "end": 1895,
+      "headway_min": 1440,
+      "note": "[ANCHOR] Single proven year. Built 1885-86 as the Marshall, Paris and Northwestern (renamed Paris, Marshall and Sabine Pass 7 May 1888 - renames of one company; receivership 1891, sold 4 Oct 1892 to E. Key; became the Texas Southern in 1897). TSHA gives 1895 passenger earnings of $1,700 (freight $14,000; one locomotive, fourteen cars) - positive evidence that fares were collected in 1895, presumably on a mixed train. Service almost certainly ran wider both ways (c.1885/86 to 1897) but no other passenger year is confirmed; do not widen. Headway 1440 is an estimate, unsourced.",
+      "sources": [
+       "Segment-level: the note names the source checked for this single year (TSHA Paris, Marshall and Sabine Pass Railway, 1895 passenger earnings); construction dates from TSHA and Hammond. Headway is an estimate, not sourced.",
+       "https://www.tshaonline.org/handbook/entries/paris-marshall-and-sabine-pass-railway",
+       "https://ttarchive.com/Library/Articles/MEFSE_Historical.html"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.3661,
+      32.544776
+     ],
+     [
+      -94.573983,
+      32.676577
+     ]
+    ]
+   }
+  }
+ ]
+}
