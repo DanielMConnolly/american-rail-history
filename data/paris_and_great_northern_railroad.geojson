@@ -1,0 +1,131 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "description": "The Paris and Great Northern Railroad, Paris, Texas - Red River (16.21 mi), the Frisco's first line into Texas, drawn as one Frisco feature for its confirmed passenger years 1888-1951 [OPEN].",
+  "research_report": "research/branches/paris_and_great_northern_railroad.txt (2026-11-23), block [1]",
+  "colour_normalization": "Rule 4: Frisco #B7410E pulled programmatically from frisco_railway.geojson; every feature in data/ with company 'St. Louis-San Francisco Railway (Frisco)' checked to share it.",
+  "ownership_split": "NOT split. The St. Louis and San Francisco Railroad operated the line directly Jan 1888 - 1 Sep 1902; from 1 Sep 1902 the Frisco-controlled Paris and Great Northern was operator of record for its own property (ICC VD 409 via Wikipedia), with USRA federal control Dec 1917 - Mar 1920; from 1 Jun 1928 it was merged into the St. Louis, San Francisco and Texas (Frisco system). The trains were Frisco through trains (Monett - Fort Smith - Paris) before and after, so the 1902 change is treated as corporate, not a change of who ran the trains. CAVEAT: read literally under Rule 4, 'the P&GN operated it' would give three features on identical geometry - Frisco 1888-1902, Paris and Great Northern 1902-1928, Frisco 1928-1951. Left for a reviewer to decide.",
+  "omitted": [
+   "Block [C] Frisco Red River - Hugo - Antlers - Fort Smith (Oklahoma/Arkansas): the Frisco's own line, not P&GN mileage; not drawn here (not researched in depth; belongs to a Frisco research pass). Until it is drawn, this feature is an island north of Paris.",
+   "The Red River bridge itself (~0.2 mi, north of the Texas bank) and ~1.3 mi of KRR track south/east of Paris Union Station.",
+   "Kiamichi Railroad Hugo - Paris excursions: mentioned on a forum, undated - would be tourist_rail if dated.",
+   "1952-1958: passenger end per secondary sources (1956) or a photo caption (1958); not drawn.",
+   "Freight-only years under Frisco, BN (1980) and Kiamichi (1987-present) - Rule 1."
+  ],
+  "not_yet_sourced": [
+   "Passenger end year: 1951 is the last PRIMARY-confirmed year ([OPEN]). Wikipedia (Paris Union Station) and a trainorders.com forum post say 1956; a condrenrails.com photo caption says the last #709 left Fort Smith for Paris 31 Jan 1958. A Paris News 'last train' story (Portal to Texas History) would settle it.",
+   "Opening 1887 vs 1888: TSHA says Jan 1888; some Frisco summaries say the Monett - Paris route was completed 1887. ICC Valuation Docket 409 not read directly.",
+   "Rule 4 split at 1 Sep 1902 (P&GN operator of record) and 1 Jun 1928 (merger into SLSF&T): not split - see ownership_split for the alternative three-feature reading.",
+   "headway_min (1440) and avg_speed_kmh (40) are estimates; only the 1951 Meteor through car is sourced.",
+   "Location of the Frisco's pre-1912 Paris depot and any realignment since 1888.",
+   "Mileposts for Powderly / Arthur City not cleanly recovered from the Guide OCR."
+  ],
+  "sources": [
+   "https://www.tshaonline.org/handbook/entries/paris-and-great-northern-railroad",
+   "https://en.wikipedia.org/wiki/Paris_and_Great_Northern_Railroad",
+   "https://www.tshaonline.org/handbook/entries/st-louis-san-francisco-and-texas-railway",
+   "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952, schedules of 14 Dec 1951: Frisco Table 5 'St. Louis - Fort Smith and Texas', Powderly mp 575, Camp Maxey mp 577.4, Paris mp 585.6, ~lines 136500-136570; Meteor Nos. 9-709/704-10 consist notes 'Reclining Chair Car (Seats Free) Monett to Ft. Smith and Paris', ~lines 135156-135200)",
+   "https://www.trainorders.com/discussion/read.php?11,5194305 (forum: Frisco passenger end 1956)",
+   "https://condrenrails.com/FSVB/Frisco-Passenger-Trains.htm (photo caption: last #709 for Paris 1/31/58)"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "St. Louis-San Francisco Railway (Frisco)",
+    "line": "Frisco: Paris – Red River",
+    "id": "frisco-paris-red-river",
+    "color": "#B7410E",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 40,
+    "speed_source": "estimated: no running time between Paris and the Red River was read; a typical figure for a single-track Frisco branch-grade line with intermediate stops. NOT sourced.",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror) traced with opstrace.py: the Kiamichi Railroad 'KRR Paris Subdivision' (ex-Frisco, ex-BN), ways tagged old_railway_operator=Frisco preferred at 1x, untagged rail 1.25x. OSM ways 21689622 (Union Station - north, no old_railway_operator tag), 148399488, 148399487 (bridge), 478412029, 478412030 (bridge), 763509059, 1359138410 (bridge), 1359138409, 763509058 (bridge), 21701228 (to the south abutment of the Red River bridge). Part of OSM route relation 7480153 (Kiamichi Railroad). Douglas-Peucker 8 m, reversals trimmed.",
+    "geometry_quality": "Traced from OpenStreetMap end to end: 15.36 mi drawn vs 16.21 mi documented main line (ICC Valuation Docket 409 via Wikipedia; TSHA 'sixteen mile'), about 5% short. No straight-line leg; 15.2 mi on track tagged old_railway_operator=Frisco, 0.2 mi on untagged KRR track in Paris. Waypoints Paris Union Station 0.1 km, Powderly 0.0 km, Arthur City 0.1 km from the line. SOUTH END: the track beside Paris Union Station (11th St SW). The KRR line continues ~1.3 mi south and east of the station to a junction with track tagged old_railway_operator=MP; that tail is not drawn, and the 0.85 mi shortfall falls within it - where the P&GN's own 16.21 mi ended in Paris is not established. NORTH END: stops at the Texas (south) end of the Red River bridge (33.8752, -95.5030), where the Texas - Oklahoma boundary follows the south bank; the ~0.2 mi bridge itself (OSM ways 14704577, 337359284, 495299126, 495299125) is NOT drawn. LATER ALIGNMENT: drawn on today's Kiamichi track. The 1912 Union Station is drawn as the Paris terminal for all years; where the Frisco's pre-1912 Paris depot stood, and whether Paris yard rearrangements or any grade revision since 1888 moved the line, has NOT been checked. The WWII Camp Maxey spur is not drawn.",
+    "segments": [
+     {
+      "start": 1888,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "The Paris and Great Northern's 16.21 mi (ICC Valuation Docket 409, via Wikipedia) from Paris, Texas north to the Red River bridge above Arthur City, where it met the Frisco's own Fort Smith - Hugo line in the Choctaw Nation, I.T. - the Frisco's first entry into Texas. Its passenger trains were Frisco through trains on the Monett - Fort Smith - Hugo - Paris route throughout. START 1888: construction began Feb 1886 and the line was 'placed in service in January 1888' (TSHA Handbook). SOURCE CONFLICT, recorded not resolved: some secondary Frisco summaries say the Monett - Paris route was 'completed in 1887' (probably the Oklahoma side reaching the river); the later year is drawn. END 1951 is [OPEN]: passenger service is confirmed to 1951 by the Feb 1952 Official Guide (schedules of 14 Dec 1951), whose Frisco Table 5 runs to Paris at mp 585.6 via Powderly and Camp Maxey and whose Meteor consist notes carry a chair car 'Monett to Ft. Smith and Paris' (Ar. Paris 12 20 PM). This is the last CONFIRMED year, not a known end - no primary source dates when service actually stopped. Do not extend without evidence. SOURCE CONFLICT on the end: Wikipedia (Paris Union Station) and a trainorders.com forum post say 1956; a condrenrails.com photo caption reads 'last Frisco #709 leaving for Paris, TX, 1/31/58' (which may mark the end at Fort Smith rather than at Paris). Neither is primary; neither is drawn. Operator of record: the St. Louis and San Francisco Railroad 1888 - 1 Sep 1902, the Frisco-controlled P&GN 1902 - 1 Jun 1928 (USRA federal control Dec 1917 - Mar 1920), then the St. Louis, San Francisco and Texas (Frisco system) - not split, see metadata.ownership_split. Paris station: Union Station, shared with the Santa Fe, from 1912. Freight continued after passenger service under Frisco, Burlington Northern (1980) and the Kiamichi Railroad (Hugo - Paris, 1987 - present); none of that is drawn. headway_min 1440 is an ESTIMATE: the 1951 Guide shows the Meteor's through car once each way daily; earlier frequencies are not sourced (TSHA's 1920 passenger peak suggests more trains then).",
+      "sources": [
+       "Segment-level: start 1888 from the TSHA Handbook ('placed in service in January 1888'); end 1951 [OPEN] from the Feb 1952 Official Guide Table 5 and Meteor consist notes (last confirmed year, not a known end). Mileage from ICC Valuation Docket 409 as quoted by Wikipedia (docket not read directly). headway_min and avg_speed_kmh NOT sourced (estimates). Per research/branches/paris_and_great_northern_railroad.txt block [1].",
+       "https://www.tshaonline.org/handbook/entries/paris-and-great-northern-railroad",
+       "research/sources/official_guide_1952.txt (Official Guide of the Railways, Feb 1952, schedules of 14 Dec 1951: Frisco Table 5 'St. Louis - Fort Smith and Texas', Powderly mp 575, Camp Maxey mp 577.4, Paris mp 585.6, ~lines 136500-136570; Meteor Nos. 9-709/704-10 consist notes 'Reclining Chair Car (Seats Free) Monett to Ft. Smith and Paris', ~lines 135156-135200)",
+       "https://en.wikipedia.org/wiki/Paris_and_Great_Northern_Railroad (citing ICC Valuation Docket 409, ICC Reports Jun-Jul 1932 pp. 793-805; mileage)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -95.5676166,
+      33.6607079
+     ],
+     [
+      -95.5676382,
+      33.6635355
+     ],
+     [
+      -95.5681176,
+      33.6660182
+     ],
+     [
+      -95.5681933,
+      33.6671631
+     ],
+     [
+      -95.5680996,
+      33.6681803
+     ],
+     [
+      -95.5678098,
+      33.669291
+     ],
+     [
+      -95.5577285,
+      33.689037
+     ],
+     [
+      -95.5570571,
+      33.6909278
+     ],
+     [
+      -95.5530701,
+      33.7259385
+     ],
+     [
+      -95.5527467,
+      33.72843
+     ],
+     [
+      -95.5524205,
+      33.7297619
+     ],
+     [
+      -95.5121694,
+      33.8488526
+     ],
+     [
+      -95.5116086,
+      33.8509141
+     ],
+     [
+      -95.5104262,
+      33.8579263
+     ],
+     [
+      -95.5101109,
+      33.8590965
+     ],
+     [
+      -95.5030274,
+      33.8751968
+     ]
+    ]
+   }
+  }
+ ]
+}
