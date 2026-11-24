@@ -1,0 +1,557 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "Roscoe, Snyder and Pacific Railway (chartered 1906; 'R-S Pacific Route'), a West Texas short line built new from Roscoe on the Texas & Pacific to Snyder (30.4 mi, opened 1908) and extended to Fluvanna (about 18.8 mi, opened 13 Sept 1909). One daily train, a mixed by 1951. Drawn: Roscoe - Snyder 1908-1951 [OPEN]; the Fluvanna Extension 1909 only [ANCHOR]; and the two one-day July 1976 Bicentennial passenger excursions [ANCHOR]. Freight ran on to 13 June 1984 and is not drawn. The RS&P ran its own trains throughout; stock-control changes (1908-12, 1967) and USRA control are not feature splits.",
+  "sources": [
+   "https://www.tshaonline.org/handbook/entries/roscoe-snyder-and-pacific-railway",
+   "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-2",
+   "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-3",
+   "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-4",
+   "https://www.american-rails.com/roscoe.html",
+   "https://www.branchline.uk/jfpdf/texasrrs2.pdf (Fowler, Texas passenger stations, #241)",
+   "https://atlas.thc.texas.gov/Details/5507017217 (Texas Historical Commission marker)",
+   "research/sources/official_guide_1952.txt lines 239246-239371 (Official Guide, Feb 1952 issue: RS&P mixed-train table headed 'February, 1951')",
+   "https://en.wikipedia.org/wiki/Roscoe,_Snyder_and_Pacific_Railway"
+  ],
+  "research_report": "research/branches/roscoe_snyder_and_pacific_railway.txt",
+  "not_yet_sourced": [
+   "Roscoe - Snyder END is [OPEN]: drawn to 1951, the last primary-confirmed year (Feb 1951 table in the Feb 1952 Guide). Secondary sources conflict: 1952 (RS&P history site home page) vs 1953 (Handbook, history ch.3, American-Rails, Wikipedia). A 1952-53 Snyder or Roscoe newspaper would settle it.",
+   "Snyder - Fluvanna is a 1909 [ANCHOR]: whether passengers rode after 1909 (runs ended Dec 1941) is unproven; Fowler's undefined letter 'c' on Dermott/Fluvanna is the nearest lead.",
+   "Opening day of Roscoe - Snyder: 22 May 1908 vs 12 June 1908 (year agreed).",
+   "Fluvanna mileage: 18.8 (Fowler) vs 18.5 (Handbook) vs American-Rails '10 mi' (treated as an error).",
+   "Snyder - Fluvanna alignment (lifted 1942) and the RS&P's own Snyder and Dermott station sites are not located; the extension is drawn mostly as straight legs.",
+   "Whether any passenger specials ran 1953-1984 besides the July 1976 excursions - none found; search not exhaustive.",
+   "headway_min and avg_speed_kmh: one daily round trip sourced for 1908/1909 and 1951 only; speeds derive from single timetables or are estimates."
+  ],
+  "omitted": "Post-passenger freight, 1952/53-1984 (Rule 1); the industrial stub at Roscoe kept after 1984 (freight only); RS&P Rail Equipment Co./National Railcar car leasing (not a railway operation).",
+  "freight_only_audit": "Written passenger-only from the start: no freight-only segments or features.",
+  "horsecar_audit": "Not applicable: steam from opening (1908)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Roscoe, Snyder and Pacific",
+    "line": "Roscoe, Snyder and Pacific: Roscoe \u2013 Snyder",
+    "id": "rsp-roscoe-snyder",
+    "color": "#C04A1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 35,
+    "speed_source": "Derived from the Feb 1951 mixed-train table (OCR of the Feb 1952 Official Guide): No. 6 apparently leaves Snyder 12:45 PM and reaches Roscoe 2:10 PM, 85 min for 30.4 mi = about 34 km/h. OCR-limited (the No. 5 column survives only at Snyder) and one year only; earlier speeds are not sourced - treat as an estimate (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over railtrace degree-tiles, with OSM abandoned/rail-trail ways and OpenHistoricalMap ways fetched for the corridor (fetch_gap). No OSM way carries an RS&P old_railway_operator (probe for 'RS.?P|Roscoe' over 32.3,-101.3,33.1,-100.4 returned none), and OHM has no RS&P ways (only the T&P and the Santa Fe's Pecos and Northern Texas). The grade is in OSM as UNTAGGED railway=abandoned ways (1231006425, 1231006418/1231006417, 44583730, 1231006419, 1231006420, 1231006424, plus 1231006415 at Inadale) and, at Roscoe, the surviving industrial yard track 302555800 with Roscoe yard ways 137493270/137493320/302555801. These are identified as the RS&P because they run Roscoe - Wastella - Inadale - Snyder as a separate grade west of the live BNSF Slaton Subdivision (the Santa Fe Sweetwater - Lubbock line, which was NOT used anywhere) and their traced length matches the RS&P's 30.4 mi. Waypoints: Nominatim hamlets for Wastella and Inadale (type checked: hamlet); Hermleigh (village) and Snyder (town boundary, type 'administrative', a town not a county) hand-pinned to the nearest vertex of the abandoned grade, 0.5 km and 0.3 km from the geocodes; Roscoe (town boundary centroid, 0.6 km south of the track) hand-pinned to the T&P/RS&P depot area on the T&P line.",
+    "geometry_quality": "Traced 30.5 mi (30.46 mi after simplification) against a documented 30.4 mi (Feb 1952 Official Guide table; Fowler #241). Entirely on OSM ways: about 28.2 mi on the untagged abandoned RS&P grade and 2.3 mi of surviving yard/industrial track leaving Roscoe (the post-1984 Roscoe stub). No approximated (straight-line) legs. Waypoints: Roscoe 0.0, Wastella 0.1, Inadale 0.2, Hermleigh 0.0, Snyder 0.0 km from the line (Hermleigh and Snyder pinned onto the grade). Draws the alignment as finally abandoned in 1984; no realignment is known, but the exact 1908 Snyder depot site is not located - the line ends at the point on the grade nearest central Snyder.",
+    "segments": [
+     {
+      "start": 1908,
+      "end": 1951,
+      "headway_min": 1440,
+      "note": "Roscoe, Snyder and Pacific Railway (chartered 1 Oct 1906), Roscoe (joint depot with the Texas & Pacific) - Wastella (mp 8.0) - Inadale (10.8) - Hermleigh (18.9) - Snyder (30.4). Built new by the RS&P; no predecessor. START 1908: the line opened in 1908 - the day conflicts (22 May 1908, RS&P history site ch.2, 'daily service began immediately', and American-Rails; vs 12 June 1908, Handbook of Texas), the year does not. A Monday-Saturday round trip ran from opening (RS&P history ch.2, quoting the first timetable). Passenger revenue $40,165 in 1909, $11,252 by 1912, under $4,000 passenger+express by 1924 (history ch.3); Handbook gives $15,984 passenger revenue in 1916. Stock control changed hands (Hughes/Wooten c.1908-1912; Wooten family to Mize and the Murchisons Sept 1967) and USRA federal control 1917/18-1920 applied, but the RS&P company ran the trains throughout - no feature split. END 1951 [OPEN]: passenger service confirmed to 1951 by the Feb 1952 Official Guide, which prints an RS&P table headed 'February, 1951' for mixed train Nos. 5/6 (a rail table, 'Mixed.', no motor-coach tag) with Roscoe, Wastella, Inadale, Hermleigh and Snyder and times legible. This is the last CONFIRMED year, not a known end - secondary sources put discontinuance in 1952 (RS&P history site home page) or 1953 (Handbook of Texas; RS&P history ch.3; American-Rails; Wikipedia), and no source dates a last train. Do not extend without evidence. Freight continued to 13 June 1984 (history ch.4), when all but a short industrial stub at Roscoe was abandoned - that is not a passenger date. headway_min 1440 = one round trip a day (the opening timetable and the 1951 mixed); not sourced for every year in between.",
+      "sources": [
+       "Segment-level: start year from the Handbook of Texas and RS&P history ch.2 (day conflicts, year agreed); end year is the last primary confirmation, the Feb 1951 mixed table in the Feb 1952 Official Guide; secondary end dates 1952/1953 recorded as a conflict, not drawn.",
+       "research/sources/official_guide_1952.txt lines 239246-239371 (Official Guide, Feb 1952 issue: RS&P mixed-train table headed 'February, 1951')",
+       "https://www.tshaonline.org/handbook/entries/roscoe-snyder-and-pacific-railway",
+       "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-2",
+       "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-3",
+       "https://www.american-rails.com/roscoe.html",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf (Fowler, Texas passenger stations, #241)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.538059,
+      32.447515
+     ],
+     [
+      -100.54055,
+      32.446998
+     ],
+     [
+      -100.541602,
+      32.447175
+     ],
+     [
+      -100.583651,
+      32.463929
+     ],
+     [
+      -100.598164,
+      32.469846
+     ],
+     [
+      -100.608104,
+      32.473645
+     ],
+     [
+      -100.610159,
+      32.474542
+     ],
+     [
+      -100.612557,
+      32.475926
+     ],
+     [
+      -100.616637,
+      32.478879
+     ],
+     [
+      -100.631123,
+      32.488875
+     ],
+     [
+      -100.634017,
+      32.491644
+     ],
+     [
+      -100.64256,
+      32.502105
+     ],
+     [
+      -100.646355,
+      32.506536
+     ],
+     [
+      -100.719832,
+      32.573584
+     ],
+     [
+      -100.720741,
+      32.574526
+     ],
+     [
+      -100.77927,
+      32.654222
+     ],
+     [
+      -100.780919,
+      32.655437
+     ],
+     [
+      -100.782437,
+      32.656164
+     ],
+     [
+      -100.790334,
+      32.659321
+     ],
+     [
+      -100.792018,
+      32.66017
+     ],
+     [
+      -100.793499,
+      32.661254
+     ],
+     [
+      -100.804767,
+      32.672589
+     ],
+     [
+      -100.809828,
+      32.676389
+     ],
+     [
+      -100.811185,
+      32.677208
+     ],
+     [
+      -100.812883,
+      32.677962
+     ],
+     [
+      -100.81884,
+      32.679685
+     ],
+     [
+      -100.830878,
+      32.681917
+     ],
+     [
+      -100.838667,
+      32.684261
+     ],
+     [
+      -100.840338,
+      32.684595
+     ],
+     [
+      -100.841687,
+      32.684665
+     ],
+     [
+      -100.84522,
+      32.684455
+     ],
+     [
+      -100.87569,
+      32.681933
+     ],
+     [
+      -100.877589,
+      32.682091
+     ],
+     [
+      -100.879909,
+      32.682827
+     ],
+     [
+      -100.881609,
+      32.683823
+     ],
+     [
+      -100.888267,
+      32.689108
+     ],
+     [
+      -100.896184,
+      32.694277
+     ],
+     [
+      -100.897625,
+      32.695354
+     ],
+     [
+      -100.899907,
+      32.697771
+     ],
+     [
+      -100.902112,
+      32.699775
+     ],
+     [
+      -100.906519,
+      32.704111
+     ],
+     [
+      -100.907564,
+      32.705322
+     ],
+     [
+      -100.913987,
+      32.710977
+     ],
+     [
+      -100.914719,
+      32.712215
+     ],
+     [
+      -100.914855,
+      32.712748
+     ],
+     [
+      -100.914759,
+      32.718205
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Roscoe, Snyder and Pacific",
+    "line": "Roscoe, Snyder and Pacific: Fluvanna Extension",
+    "id": "rsp-snyder-fluvanna",
+    "color": "#C04A1A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 23,
+    "speed_source": "Derived from the 13 Sept 1909 timetable (RS&P history ch.2): Roscoe - Fluvanna, about 49 mi, in 3.5 hours = about 23 km/h over the whole run. One timetable only; an estimate for this piece (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over railtrace degree-tiles, with OSM abandoned/rail-trail ways and OpenHistoricalMap ways fetched for the corridor (fetch_gap). No OSM way carries an RS&P old_railway_operator (probe for 'RS.?P|Roscoe' over 32.3,-101.3,33.1,-100.4 returned none), and OHM has no RS&P ways (only the T&P and the Santa Fe's Pecos and Northern Texas). The grade is in OSM as UNTAGGED railway=abandoned ways (1231006425, 1231006418/1231006417, 44583730, 1231006419, 1231006420, 1231006424, plus 1231006415 at Inadale) and, at Roscoe, the surviving industrial yard track 302555800 with Roscoe yard ways 137493270/137493320/302555801. These are identified as the RS&P because they run Roscoe - Wastella - Inadale - Snyder as a separate grade west of the live BNSF Slaton Subdivision (the Santa Fe Sweetwater - Lubbock line, which was NOT used anywhere) and their traced length matches the RS&P's 30.4 mi. Waypoints: Nominatim hamlets for Wastella and Inadale (type checked: hamlet); Hermleigh (village) and Snyder (town boundary, type 'administrative', a town not a county) hand-pinned to the nearest vertex of the abandoned grade, 0.5 km and 0.3 km from the geocodes; Roscoe (town boundary centroid, 0.6 km south of the track) hand-pinned to the T&P/RS&P depot area on the T&P line.",
+    "geometry_quality": "Mostly APPROXIMATED. Traced 1.2 mi on the abandoned RS&P grade north through Snyder (OSM way 1231006424, continuous with the main-line grade; assumed to be the start of the extension), then two labelled STRAIGHT-LINE legs: Snyder (end of surviving grade) - Dermott 10.0 mi and Dermott - Fluvanna 8.0 mi. Total drawn 19.2 mi against a documented 18.8 mi (Fowler mp 30.4-49.2; Handbook 18.5 mi). The grade (lifted 1942) is in neither OSM nor OpenHistoricalMap; the parallel BNSF Slaton Subdivision (Santa Fe, built 1911) was deliberately not used. Dermott is the present Nominatim hamlet point, which lies on the Santa Fe line, so the RS&P's own Dermott station site is not located; its distances (Snyder - Dermott 11.0 mi chord vs Fowler 10.9; Dermott - Fluvanna 8.0 vs 7.9) are consistent with the mileposts. Fluvanna is the Nominatim hamlet point (type hamlet).",
+    "segments": [
+     {
+      "start": 1909,
+      "end": 1909,
+      "headway_min": 1440,
+      "note": "Fluvanna Extension, Snyder - Dermott (mp 41.3, flag station) - Fluvanna (mp 49.2 by Fowler; Handbook 18.5 mi; American-Rails' '10-mile' figure treated as an error). Track reached Fluvanna late Aug 1909, completed 11 Sept and opened 13 Sept 1909 (Handbook); RS&P history ch.2 reproduces a new timetable effective 13 Sept 1909 with a Roscoe - Fluvanna run of 3.5 hours and an opening special passenger train. 1909 [ANCHOR]: the only year with explicit passenger evidence on this piece. Service very probably ran wider - the road ran one train over the whole line, and the runs to Fluvanna were discontinued in December 1941 (history ch.3; Handbook and THC marker: extension abandoned 1941; track taken up 1942) - but no source says those later runs carried passengers, so no other year is confirmed. Never widen this anchor to look plausible; extend only to a year a source proves (Fowler marks Dermott and Fluvanna with an undefined letter 'c' for some timetable - identifying it, or a 1920s/30s Official Guide listing Fluvanna, would extend it). Fluvanna was a cattle-shipping railhead. headway_min 1440 = one round trip a day per the 1909 timetable.",
+      "sources": [
+       "Segment-level: 1909 opening and timetable from the Handbook of Texas and RS&P history ch.2; the Dec 1941 end of runs (history ch.3, Handbook, THC marker) is NOT evidence of passengers and is not drawn.",
+       "https://www.tshaonline.org/handbook/entries/roscoe-snyder-and-pacific-railway",
+       "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-2",
+       "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-3",
+       "https://atlas.thc.texas.gov/Details/5507017217 (Texas Historical Commission marker)",
+       "https://www.branchline.uk/jfpdf/texasrrs2.pdf (Fowler, Texas passenger stations, #241)"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.914759,
+      32.718205
+     ],
+     [
+      -100.914667,
+      32.724413
+     ],
+     [
+      -100.915306,
+      32.726525
+     ],
+     [
+      -100.916478,
+      32.72921
+     ],
+     [
+      -100.916907,
+      32.729835
+     ],
+     [
+      -100.921061,
+      32.734192
+     ],
+     [
+      -101.015709,
+      32.854543
+     ],
+     [
+      -101.148737,
+      32.885659
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Roscoe, Snyder and Pacific",
+    "line": "Roscoe, Snyder and Pacific: Bicentennial Excursion (Roscoe \u2013 Inadale)",
+    "id": "rsp-1976-roscoe-inadale",
+    "color": "#C04A1A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimated; no running time is sourced for the 1976 excursions (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over railtrace degree-tiles, with OSM abandoned/rail-trail ways and OpenHistoricalMap ways fetched for the corridor (fetch_gap). No OSM way carries an RS&P old_railway_operator (probe for 'RS.?P|Roscoe' over 32.3,-101.3,33.1,-100.4 returned none), and OHM has no RS&P ways (only the T&P and the Santa Fe's Pecos and Northern Texas). The grade is in OSM as UNTAGGED railway=abandoned ways (1231006425, 1231006418/1231006417, 44583730, 1231006419, 1231006420, 1231006424, plus 1231006415 at Inadale) and, at Roscoe, the surviving industrial yard track 302555800 with Roscoe yard ways 137493270/137493320/302555801. These are identified as the RS&P because they run Roscoe - Wastella - Inadale - Snyder as a separate grade west of the live BNSF Slaton Subdivision (the Santa Fe Sweetwater - Lubbock line, which was NOT used anywhere) and their traced length matches the RS&P's 30.4 mi. Waypoints: Nominatim hamlets for Wastella and Inadale (type checked: hamlet); Hermleigh (village) and Snyder (town boundary, type 'administrative', a town not a county) hand-pinned to the nearest vertex of the abandoned grade, 0.5 km and 0.3 km from the geocodes; Roscoe (town boundary centroid, 0.6 km south of the track) hand-pinned to the T&P/RS&P depot area on the T&P line.",
+    "geometry_quality": "Slice of the traced Roscoe - Snyder line, cut at the vertex nearest Inadale (0.2 km off). Traced 10.9 mi against a documented 10.8 mi (Fowler / 1951 table mileposts). No approximated legs. Same 1908-1984 alignment.",
+    "segments": [
+     {
+      "start": 1976,
+      "end": 1976,
+      "headway_min": 1440,
+      "note": "Bicentennial excursion, Saturday 3 July 1976: Roscoe - Wastella - Inadale and return, 10.8 mi each way. RS&P regular crew with three vintage coaches leased from the Trinity Valley Railroad Club, ferried free by the Santa Fe from the Texas Railroad Museum, Weatherford. Sponsored by the Roscoe Lions Club and Jaycees; $3 fare; staged 'H & H gang' train robbery with riders on horseback. A genuine passenger special (Rule 1). 1976 [ANCHOR]: a one-day event - the single proven passenger year on this line after regular service ended in 1952/53. No other post-1953 excursions were found, but the search was not exhaustive. headway_min 1440 is nominal for a single round trip.",
+      "sources": [
+       "Segment-level: RS&P history ch.4 names the date, sponsors, equipment and route.",
+       "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-4"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.538059,
+      32.447515
+     ],
+     [
+      -100.54055,
+      32.446998
+     ],
+     [
+      -100.541602,
+      32.447175
+     ],
+     [
+      -100.583651,
+      32.463929
+     ],
+     [
+      -100.598164,
+      32.469846
+     ],
+     [
+      -100.608104,
+      32.473645
+     ],
+     [
+      -100.610159,
+      32.474542
+     ],
+     [
+      -100.612557,
+      32.475926
+     ],
+     [
+      -100.63167,
+      32.489343
+     ],
+     [
+      -100.634017,
+      32.491644
+     ],
+     [
+      -100.64256,
+      32.502105
+     ],
+     [
+      -100.646355,
+      32.506536
+     ],
+     [
+      -100.683799,
+      32.540729
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Roscoe, Snyder and Pacific",
+    "line": "Roscoe, Snyder and Pacific: Bicentennial Excursion (Snyder \u2013 Hermleigh)",
+    "id": "rsp-1976-snyder-hermleigh",
+    "color": "#C04A1A",
+    "mode": "tourist_rail",
+    "avg_speed_kmh": 25,
+    "speed_source": "Estimated; no running time is sourced for the 1976 excursions (Rule 3).",
+    "geometry_source": "OpenStreetMap via Overpass (maps.mail.ru mirror), traced with opstrace.py over railtrace degree-tiles, with OSM abandoned/rail-trail ways and OpenHistoricalMap ways fetched for the corridor (fetch_gap). No OSM way carries an RS&P old_railway_operator (probe for 'RS.?P|Roscoe' over 32.3,-101.3,33.1,-100.4 returned none), and OHM has no RS&P ways (only the T&P and the Santa Fe's Pecos and Northern Texas). The grade is in OSM as UNTAGGED railway=abandoned ways (1231006425, 1231006418/1231006417, 44583730, 1231006419, 1231006420, 1231006424, plus 1231006415 at Inadale) and, at Roscoe, the surviving industrial yard track 302555800 with Roscoe yard ways 137493270/137493320/302555801. These are identified as the RS&P because they run Roscoe - Wastella - Inadale - Snyder as a separate grade west of the live BNSF Slaton Subdivision (the Santa Fe Sweetwater - Lubbock line, which was NOT used anywhere) and their traced length matches the RS&P's 30.4 mi. Waypoints: Nominatim hamlets for Wastella and Inadale (type checked: hamlet); Hermleigh (village) and Snyder (town boundary, type 'administrative', a town not a county) hand-pinned to the nearest vertex of the abandoned grade, 0.5 km and 0.3 km from the geocodes; Roscoe (town boundary centroid, 0.6 km south of the track) hand-pinned to the T&P/RS&P depot area on the T&P line.",
+    "geometry_quality": "Slice of the traced Roscoe - Snyder line from the Hermleigh pin to Snyder. Traced 11.7 mi against a documented 11.5 mi (30.4 - 18.9). No approximated legs. Same 1908-1984 alignment.",
+    "segments": [
+     {
+      "start": 1976,
+      "end": 1976,
+      "headway_min": 1440,
+      "note": "Bicentennial excursion, Sunday 4 July 1976: Snyder - Hermleigh and return, 11.5 mi each way (30.4 - 18.9). Same RS&P crew and leased vintage coaches as the 3 July Roscoe - Inadale trip; sponsored by the Snyder Chamber of Commerce, with the same staged robbery. A genuine passenger special (Rule 1). 1976 [ANCHOR]: one day, the single proven passenger year. headway_min 1440 is nominal for a single round trip.",
+      "sources": [
+       "Segment-level: RS&P history ch.4 names the date, sponsor and route.",
+       "https://sites.google.com/view/roscoesnyderpacificrailway/home/history-of-the-rsp-4"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -100.763034,
+      32.632138
+     ],
+     [
+      -100.77927,
+      32.654222
+     ],
+     [
+      -100.780919,
+      32.655437
+     ],
+     [
+      -100.782437,
+      32.656164
+     ],
+     [
+      -100.790334,
+      32.659321
+     ],
+     [
+      -100.792018,
+      32.66017
+     ],
+     [
+      -100.793499,
+      32.661254
+     ],
+     [
+      -100.804767,
+      32.672589
+     ],
+     [
+      -100.810525,
+      32.676842
+     ],
+     [
+      -100.812883,
+      32.677962
+     ],
+     [
+      -100.81884,
+      32.679685
+     ],
+     [
+      -100.830878,
+      32.681917
+     ],
+     [
+      -100.838667,
+      32.684261
+     ],
+     [
+      -100.840338,
+      32.684595
+     ],
+     [
+      -100.841687,
+      32.684665
+     ],
+     [
+      -100.84522,
+      32.684455
+     ],
+     [
+      -100.87569,
+      32.681933
+     ],
+     [
+      -100.877589,
+      32.682091
+     ],
+     [
+      -100.879909,
+      32.682827
+     ],
+     [
+      -100.881609,
+      32.683823
+     ],
+     [
+      -100.888267,
+      32.689108
+     ],
+     [
+      -100.896184,
+      32.694277
+     ],
+     [
+      -100.897625,
+      32.695354
+     ],
+     [
+      -100.899907,
+      32.697771
+     ],
+     [
+      -100.902112,
+      32.699775
+     ],
+     [
+      -100.906519,
+      32.704111
+     ],
+     [
+      -100.907564,
+      32.705322
+     ],
+     [
+      -100.913987,
+      32.710977
+     ],
+     [
+      -100.914719,
+      32.712215
+     ],
+     [
+      -100.914855,
+      32.712748
+     ],
+     [
+      -100.914759,
+      32.718205
+     ]
+    ]
+   }
+  }
+ ]
+}
