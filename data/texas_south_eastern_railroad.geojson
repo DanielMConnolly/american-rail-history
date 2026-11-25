@@ -1,0 +1,276 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Texas Southeastern (from 1931 Texas South-Eastern) Railroad, the Southern Pine Lumber Co.'s tap line out of Diboll, Angelina County: a daily mixed train carried passengers Diboll - Blix - Lufkin, with passenger authority also over Diboll - Vair, until the Railroad Commission allowed discontinuance on 24 Aug 1942. Two features, one company, one colour; the 1931 rename is not an ownership change.",
+  "sources": [
+   "https://historycenter.s3.amazonaws.com/resources/tse_passenger_service_termination.pdf",
+   "https://historycenter.s3.amazonaws.com/resources/tse_passenger_service_termination_testimony.pdf",
+   "https://www.thehistorycenteronline.com/collections/03-texas-south-eastern-railroad-depot-1948",
+   "https://ttarchive.com/Library/Articles/Texas-South-Eastern_ICC-Tap-Line.html",
+   "https://www.tshaonline.org/handbook/entries/texas-south-eastern-railroad",
+   "https://www.branchline.uk/jfpdf/texasrrs2.pdf"
+  ],
+  "research_report": "research/branches/texas_south_eastern_railroad.txt (researched 2026-11-23)",
+  "geometry_sources": [
+   "OSM (Overpass, maps.mail.ru mirror; 1-degree tiles 504'd, so four quarter-degree tiles 31.0-31.5 N, 95.0-94.5 W were fetched for railway=*, abandoned:railway, historic=railway, railway:historic and old_railway_operator) was searched on 2026-11-23. No way carries a TSE / Texas South-Eastern / Texas Southeastern / Southern Pine old_railway_operator (opstrace fetch_operator_ways over 30.9-31.6 N, 95.2-94.4 W returned 0 ways); opstrace fetch_gap over 31.15-31.40 N, 94.95-94.65 W found no named rail-trail on the corridor, and OpenHistoricalMap has no railway way at all in that box. The road survives instead as untagged track and grade (the bare railway=* probe the research note asks for): live industrial track named 'Southern Pine Lumber Company' Diboll - Blix, plain railway=razed ways with no name/operator Blix - Peavy - northwest Lufkin, and untagged live yard/industrial track into Lufkin. Traced with opstrace (Graph over the cached quarter-degree tiles, trace, douglas_peucker 8 m, trim_reversals); no leg fell back to a straight line. Waypoints: Diboll start on the mill track at 31.1905, -94.7895 (the TSE depot stood beside the Southern Pine Lumber mill ~3,000 ft west of the HE&WT; the SP/HE&WT main through Diboll is NOT used); Blix 31.2630, -94.8672 (Nominatim hamlet, checked); Peavy 31.2952, -94.8108 (Nominatim hamlet, lies 9 m from the traced grade); Vair 31.2810, -94.9135 (Nominatim hamlet, Trinity County); Lufkin end at the Cotton Belt / UP crossing downtown, 31.3420, -94.7304 (Nominatim 'Lufkin' is the city, type administrative - not used as a point). McEnroe (Nominatim -> 'John McEnroe Place', El Paso), Gilbert (-> Gilbert Chapel Cemetery, Bald Hill), Frostville / Diboll Junction and Farrell (no result / O'Farrell Acres, San Patricio Co.) were wrong or unresolvable and were not used; Rutland resolved correctly (hamlet, 31.1877, -94.7941) but is not needed as a waypoint."
+  ],
+  "omitted": "Vair - Neff extension (~7.5 mi, TSE 1909 - March 1919): drawable NONE - plausible 1910-1911 passenger use, none confirmed segment-specifically. Also not drawn (freight/logging only or another company's trains): Neff - Bluff City logging railroad 1915-16; Cotton Belt trackage rights Lufkin - White City for log trains from 1915; the pre-1908 Diboll - Cushing - Ashford - Frostville line ('pass?' in Fowler, before common-carrier status); logging spurs off Vair; the Texas State Railroad lease 1962-1969; Groveton, Lufkin and Northern trains over Vair - Lufkin 1908-1932 (GL&N's own operation); all post-1942 freight.",
+  "not_yet_sourced": "(1) START: 1910 is the first dated passenger evidence (ICC year ending 30 Jun 1910); 1909 is likely (Fowler: McEnroe in the 1909 Official Guide; Blix - Lufkin complete early 1909) and 28 Nov 1908 (common-carrier status) is the earliest possible - a 1909 Official Guide TSE table would settle it. (2) Blix - Vair length conflict: 3.3 mi (Fowler mileposts, 1942 testimony) vs 2.4 mi (Handbook, abandoned 1978) vs 7 mi (hawkinsrails); the trace (2.9 mi) fits 3.3. (3) Whether the 1942 train actually ran Blix - Vair or only held authority: the testimony describes the run as Diboll - Lufkin and return, and Fowler's Gilbert 'c(tm)' (legend assumed to be 1933G, terminus) may put the end of passenger working at Gilbert, 1.4 mi short of Vair; drawn to Vair per the RRC order. (4) Lufkin approach: Fowler says the last ~3.5 mi from Diboll Junction/Frostville was 'operated over SSW'; the OSM razed TSE grade ends at mile 13.5 and live untagged track continues into Lufkin, consistent with Fowler but ownership is not tagged; the TSE passenger depot/terminal in Lufkin is unlocated. (5) Exact date of the last passenger run in 1942 not found. (6) headway_min and avg_speed_kmh are estimates."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Texas South-Eastern Railroad",
+    "line": "Texas South-Eastern: Diboll \u2013 Lufkin",
+    "id": "texas-south-eastern-diboll-lufkin",
+    "color": "#7A4F9A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: a lumber tap line's mixed train switching mills en route; no timetable running time was checked (Rule 3).",
+    "geometry_source": "OSM (Overpass, maps.mail.ru mirror; 1-degree tiles 504'd, so four quarter-degree tiles 31.0-31.5 N, 95.0-94.5 W were fetched for railway=*, abandoned:railway, historic=railway, railway:historic and old_railway_operator) was searched on 2026-11-23. No way carries a TSE / Texas South-Eastern / Texas Southeastern / Southern Pine old_railway_operator (opstrace fetch_operator_ways over 30.9-31.6 N, 95.2-94.4 W returned 0 ways); opstrace fetch_gap over 31.15-31.40 N, 94.95-94.65 W found no named rail-trail on the corridor, and OpenHistoricalMap has no railway way at all in that box. The road survives instead as untagged track and grade (the bare railway=* probe the research note asks for): live industrial track named 'Southern Pine Lumber Company' Diboll - Blix, plain railway=razed ways with no name/operator Blix - Peavy - northwest Lufkin, and untagged live yard/industrial track into Lufkin. Traced with opstrace (Graph over the cached quarter-degree tiles, trace, douglas_peucker 8 m, trim_reversals); no leg fell back to a straight line. Waypoints: Diboll start on the mill track at 31.1905, -94.7895 (the TSE depot stood beside the Southern Pine Lumber mill ~3,000 ft west of the HE&WT; the SP/HE&WT main through Diboll is NOT used); Blix 31.2630, -94.8672 (Nominatim hamlet, checked); Peavy 31.2952, -94.8108 (Nominatim hamlet, lies 9 m from the traced grade); Vair 31.2810, -94.9135 (Nominatim hamlet, Trinity County); Lufkin end at the Cotton Belt / UP crossing downtown, 31.3420, -94.7304 (Nominatim 'Lufkin' is the city, type administrative - not used as a point). McEnroe (Nominatim -> 'John McEnroe Place', El Paso), Gilbert (-> Gilbert Chapel Cemetery, Bald Hill), Frostville / Diboll Junction and Farrell (no result / O'Farrell Acres, San Patricio Co.) were wrong or unresolvable and were not used; Rutland resolved correctly (hamlet, 31.1877, -94.7941) but is not needed as a waypoint.",
+    "geometry_quality": "TRACED, 17.1 mi drawn against a documented 17.5-17.7 mi (Fowler mileposts Diboll 0.0 - Lufkin 17.5; Diboll - Blix 7.0 Fowler + Blix - Lufkin 10.7 RRC testimony, 18 Aug 1942) - 97%. No straight-line legs. Diboll - Blix 6.9 mi (doc 7.0) on LIVE industrial track (OSM ways 166897788, 289134096 / 1527569861 named 'Southern Pine Lumber Company', 20655405) - the TSE's own line, still used by the mill's switching railroad; the drawn line cuts the Blix wye corner by ~240 m. Blix - Peavy 4.0 mi (doc 4.2) and Peavy - northwest Lufkin to mile 13.5 on the RAZED TSE grade (OSM ways 20656724, 20657877: railway=razed, no name/operator tags); Peavy lies 9 m from the drawn line. Mile 13.5 - 17.1 (3.6 mi) on LIVE untagged industrial/yard track (OSM 446934898, 347457037, 655503428/655503429, 181550834) and the last ~0.3 mi on Cotton Belt track tagged old_railway_operator=SSW (181546299) to the SSW/UP crossing downtown. The razed grade's end at mile 13.5 matches Fowler's Diboll Junction / Frostville at MP 14.0, and Fowler says the TSE reached Lufkin from there 'operated over SSW' - so this final ~3.5 mi is probably Cotton Belt (later A&NR) track, not TSE-owned rail; it is drawn as TSE because TSE's own trains ran over it. OSM does not tag who owned it, so that ownership is inferred from Fowler, not proven. Era: the drawn alignment is the surviving one; the 1908 Blix - Lufkin route is not known to have been realigned, but the Lufkin terminal arrangement (exact depot used by TSE passengers) is unlocated - the line ends at the SSW/UP crossing. The SP/HE&WT main through Diboll is not drawn.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1942,
+      "headway_min": 1440,
+      "note": "Texas Southeastern Railroad (renamed Texas South-Eastern 6 Feb 1931 - a name change only, same company and operator, so no split), a Temple / Southern Pine Lumber Co. tap line, common carrier from 28 Nov 1908. Passengers rode ONE mixed train a day each way (daily except Sunday by 1942) in a combination coach; in 1942 it ran Diboll - Blix - Lufkin and return. START 1910 is the first DATED passenger evidence (ICC Tap Line record, year ending 30 Jun 1910), not a known first train: the Blix - Lufkin line was complete by early 1909 and Fowler lists McEnroe in the 1909 Official Guide, so 1909 is likely but unconfirmed - do not move the start earlier without a dated 1909 timetable. END 1942: the company petitioned 23 Jul 1942 to discontinue the train (64 passengers Jan-Jun 1942; 109 in 1941) and the Railroad Commission authorized discontinuance on 24 Aug 1942 (Docket 4824-R); the exact last run is not dated. Freight only afterwards (Feb 1952 Official Guide: 'Freight Service only'); TSE ran Diboll - Lufkin freight into the 1980s and sold Blix - Lufkin to the Angelina and Neches River in 1996 - context only, not drawn. Mileposts (Fowler): Rutland 0.7, McEnroe 4.0, Blix 7.0, Peavy 11.2, Diboll Junction/Frostville 14.0, Lufkin 17.5. headway_min 1440 = one mixed train each way a day, an estimate from the ICC and 1942 descriptions.",
+      "sources": [
+       "Segment-level: start 1910 from the ICC Tap Line record for the year ending 30 Jun 1910 (one mixed train daily each way carrying passengers, one combination car, $2,722.01 passenger receipts); end 1942 from Railroad Commission of Texas Docket No. 4824-R - TSE petition 23 Jul 1942, notice 30 Jul 1942, hearing 18 Aug 1942 and order 24 Aug 1942 authorizing discontinuance of passenger service between Diboll and Vair and between Blix and Lufkin. Headway and speed are estimates, not sourced.",
+       "https://ttarchive.com/Library/Articles/Texas-South-Eastern_ICC-Tap-Line.html",
+       "https://historycenter.s3.amazonaws.com/resources/tse_passenger_service_termination.pdf",
+       "https://historycenter.s3.amazonaws.com/resources/tse_passenger_service_termination_testimony.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.790371,
+      31.190244
+     ],
+     [
+      -94.790789,
+      31.189945
+     ],
+     [
+      -94.79105,
+      31.189644
+     ],
+     [
+      -94.791689,
+      31.189313
+     ],
+     [
+      -94.792311,
+      31.189304
+     ],
+     [
+      -94.793417,
+      31.189754
+     ],
+     [
+      -94.814744,
+      31.201634
+     ],
+     [
+      -94.816275,
+      31.20272
+     ],
+     [
+      -94.817591,
+      31.203861
+     ],
+     [
+      -94.834494,
+      31.219037
+     ],
+     [
+      -94.836888,
+      31.221336
+     ],
+     [
+      -94.83841,
+      31.223373
+     ],
+     [
+      -94.862604,
+      31.259285
+     ],
+     [
+      -94.863683,
+      31.260567
+     ],
+     [
+      -94.864606,
+      31.261297
+     ],
+     [
+      -94.86478,
+      31.262451
+     ],
+     [
+      -94.863621,
+      31.262562
+     ],
+     [
+      -94.862556,
+      31.262933
+     ],
+     [
+      -94.861283,
+      31.263599
+     ],
+     [
+      -94.857485,
+      31.267336
+     ],
+     [
+      -94.850269,
+      31.274055
+     ],
+     [
+      -94.842579,
+      31.27961
+     ],
+     [
+      -94.840096,
+      31.282385
+     ],
+     [
+      -94.838404,
+      31.284551
+     ],
+     [
+      -94.836792,
+      31.285879
+     ],
+     [
+      -94.83511,
+      31.286575
+     ],
+     [
+      -94.83313,
+      31.287213
+     ],
+     [
+      -94.818713,
+      31.291617
+     ],
+     [
+      -94.816297,
+      31.292474
+     ],
+     [
+      -94.811366,
+      31.294829
+     ],
+     [
+      -94.805465,
+      31.298099
+     ],
+     [
+      -94.803613,
+      31.299303
+     ],
+     [
+      -94.740484,
+      31.346666
+     ],
+     [
+      -94.739865,
+      31.346937
+     ],
+     [
+      -94.739246,
+      31.347047
+     ],
+     [
+      -94.738167,
+      31.346901
+     ],
+     [
+      -94.734744,
+      31.34546
+     ],
+     [
+      -94.733601,
+      31.344648
+     ],
+     [
+      -94.731731,
+      31.343047
+     ],
+     [
+      -94.731319,
+      31.342684
+     ],
+     [
+      -94.730391,
+      31.34204
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "company": "Texas South-Eastern Railroad",
+    "line": "Texas South-Eastern: Blix \u2013 Vair",
+    "id": "texas-south-eastern-blix-vair",
+    "color": "#7A4F9A",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated, not sourced: a lumber tap line's mixed train switching mills en route; no timetable running time was checked (Rule 3).",
+    "geometry_source": "OSM (Overpass, maps.mail.ru mirror; 1-degree tiles 504'd, so four quarter-degree tiles 31.0-31.5 N, 95.0-94.5 W were fetched for railway=*, abandoned:railway, historic=railway, railway:historic and old_railway_operator) was searched on 2026-11-23. No way carries a TSE / Texas South-Eastern / Texas Southeastern / Southern Pine old_railway_operator (opstrace fetch_operator_ways over 30.9-31.6 N, 95.2-94.4 W returned 0 ways); opstrace fetch_gap over 31.15-31.40 N, 94.95-94.65 W found no named rail-trail on the corridor, and OpenHistoricalMap has no railway way at all in that box. The road survives instead as untagged track and grade (the bare railway=* probe the research note asks for): live industrial track named 'Southern Pine Lumber Company' Diboll - Blix, plain railway=razed ways with no name/operator Blix - Peavy - northwest Lufkin, and untagged live yard/industrial track into Lufkin. Traced with opstrace (Graph over the cached quarter-degree tiles, trace, douglas_peucker 8 m, trim_reversals); no leg fell back to a straight line. Waypoints: Diboll start on the mill track at 31.1905, -94.7895 (the TSE depot stood beside the Southern Pine Lumber mill ~3,000 ft west of the HE&WT; the SP/HE&WT main through Diboll is NOT used); Blix 31.2630, -94.8672 (Nominatim hamlet, checked); Peavy 31.2952, -94.8108 (Nominatim hamlet, lies 9 m from the traced grade); Vair 31.2810, -94.9135 (Nominatim hamlet, Trinity County); Lufkin end at the Cotton Belt / UP crossing downtown, 31.3420, -94.7304 (Nominatim 'Lufkin' is the city, type administrative - not used as a point). McEnroe (Nominatim -> 'John McEnroe Place', El Paso), Gilbert (-> Gilbert Chapel Cemetery, Bald Hill), Frostville / Diboll Junction and Farrell (no result / O'Farrell Acres, San Patricio Co.) were wrong or unresolvable and were not used; Rutland resolved correctly (hamlet, 31.1877, -94.7941) but is not needed as a waypoint.",
+    "geometry_quality": "TRACED, 2.9 mi drawn against a documented 3.3 mi (Diboll - Vair 10.3 mi, RRC testimony 18 Aug 1942 and Fowler, less Diboll - Blix 7.0); the Handbook gives 2.4 mi and hawkinsrails 7 mi - SOURCE CONFLICT recorded, the 3.3 mi milepost figure fits the trace. No straight-line legs. Blix - mile 2.5 on the razed grade OSM 20656724 (railway=razed, untagged), then OSM 166897783 (railway=razed, named 'Groveton, Lufkin and Northern' by the mapper because the GL&N had trackage rights over it - it is the TSE's track) and a short untagged railway=abandoned stub (1467389271) to the GL&N junction at Vair; the drawn end is ~240 m from Nominatim's Vair point. Drawn alignment is the surviving grade; no realignment known.",
+    "segments": [
+     {
+      "start": 1910,
+      "end": 1942,
+      "headway_min": 1440,
+      "note": "Texas Southeastern / (from 6 Feb 1931) Texas South-Eastern main line north of Blix to Vair, the junction with the Groveton, Lufkin and Northern (whose own trains used Vair - Lufkin by trackage rights 1908-1932 - a different company's operation, not drawn here). START 1910: the ICC record for the year ending 30 Jun 1910 describes the road's daily mixed train carrying passengers on the Diboll - Neff main line, which includes Blix - Vair; it is not a segment-specific statement, and 1909 is possible but unconfirmed. END 1942: the RRC order of 24 Aug 1942 (Docket 4824-R) names 'between Diboll and Vair' explicitly. Whether the 1942 train actually ran beyond Blix or only held authority to is unclear - the testimony describes the round trip as Diboll to Lufkin, and Fowler's Gilbert (MP 8.9) 'c(tm)' may mean service ended 1.4 mi short of Vair; drawn to Vair because the order treats Diboll - Vair as a passenger line. Vair - Neff (sold to Southern Pine Lumber Co. March 1919) is NOT drawn: no confirmed passenger year. Freight only after 1942; Blix - Vair abandoned 1978 (Handbook). headway_min 1440 is an estimate.",
+      "sources": [
+       "Segment-level: start 1910 from the ICC Tap Line record for the year ending 30 Jun 1910 (one mixed train daily each way carrying passengers, one combination car, $2,722.01 passenger receipts); end 1942 from Railroad Commission of Texas Docket No. 4824-R - TSE petition 23 Jul 1942, notice 30 Jul 1942, hearing 18 Aug 1942 and order 24 Aug 1942 authorizing discontinuance of passenger service between Diboll and Vair and between Blix and Lufkin. Headway and speed are estimates, not sourced.",
+       "https://ttarchive.com/Library/Articles/Texas-South-Eastern_ICC-Tap-Line.html",
+       "https://historycenter.s3.amazonaws.com/resources/tse_passenger_service_termination.pdf",
+       "https://historycenter.s3.amazonaws.com/resources/tse_passenger_service_termination_testimony.pdf"
+      ]
+     }
+    ]
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -94.867269,
+      31.262809
+     ],
+     [
+      -94.904297,
+      31.28116
+     ],
+     [
+      -94.90542,
+      31.281459
+     ],
+     [
+      -94.906934,
+      31.281555
+     ],
+     [
+      -94.910135,
+      31.280493
+     ],
+     [
+      -94.911057,
+      31.280362
+     ]
+    ]
+   }
+  }
+ ]
+}
