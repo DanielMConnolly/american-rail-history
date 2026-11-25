@@ -1,0 +1,332 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "note": "The Santa Fe, Raton and Eastern (inc. 9 Feb 1906; opened 1 Dec 1906; built by E. D. Shepard and Co. to haul Yankee Fuel Co. coal; 'Santa Fe' is Shepard's town branding, not the AT&SF) ran from the AT&SF at Raton, NM, east to Yankee, with a branch Carisbrooke - Sugarite. Independent until sold to the AT&SF's Rocky Mountain and Santa Fe in 1924; RM&SF into AT&SF 1943; closed c.1944. The only confirmable passenger year is 1919, from Fowler's branchline.uk listing citing the 1919 Official Guide, so both drawn features are one-year [ANCHOR]s in the SFR&E's own colour. Omitted: Sugarite - Lake Alice (1906-1911, no passenger evidence) and Carisbrooke - Wallace (Santa Fe, Raton & Des Moines, SFR&E-operated 1910-1914, no passenger evidence). No RM&SF/AT&SF-era feature is drawn: no post-1924 passenger year is known. Research: research/branches/santa_fe_raton_and_eastern.txt.",
+  "sources": [
+   "https://www.branchline.uk/jfpdf/newmexicorrs.pdf",
+   "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Santa_Fe,_Raton_and_Eastern_Railroad",
+   "https://www.loc.gov/resource/sn84020630/1907-02-09/ed-1/?sp=7",
+   "https://www.loc.gov/resource/sn94056869/1919-05-01/ed-1/?sp=8",
+   "https://www.loc.gov/resource/sn84020630/1911-11-10/ed-1/?sp=2",
+   "https://www.loc.gov/resource/sn90051521/1913-08-15/ed-1/?sp=5",
+   "https://www.legendsofamerica.com/sugarite-canyon-new-mexico/",
+   "https://en.wikipedia.org/wiki/List_of_New_Mexico_railroads"
+  ],
+  "not_yet_sourced": [
+   "Is Fowler's '1919G' section really a PASSENGER table? The 1919 Official Guide page was not seen; a Guide listing can be a freight station list. If the SFR&E table proves freight-only, both features must be removed.",
+   "Actual passenger span: whether a coach or mixed train ran from the 1 Dec 1906 opening, and when it stopped, are unknown. Both drawn 1919 segments are ANCHORS. The c.1944 closure is an abandonment date, not a passenger end.",
+   "Succession: sale to the Rocky Mountain and Santa Fe Railway in 1924 (Wikipedia list only; a 14 Feb 1924 approval date was not seen at source) and RM&SF into AT&SF in 1943. Whether the RM&SF/AT&SF ran any passenger or mixed service 1924-1944 is unknown; if found, it needs a separate feature in the AT&SF colour (Rule 4 split at 1924).",
+   "Conflicting construction dates: a secondary source mentions an AT&SF branch up Sugarite Canyon in 1904 and Legends of America says 'line to Lake Alice in 1905'; the ICC valuation says construction began summer 1906, opened 1 Dec 1906. Recorded, not resolved.",
+   "Chicorica station not located (Fowler mp 6.2); the Carisbrook - Yankee leg follows NM 72, not a traced grade."
+  ],
+  "geometry_sources": [
+   "OpenHistoricalMap (overpass-api.openhistoricalmap.org) way 198659370; OpenStreetMap via Overpass (maps.mail.ru mirror): abandoned-railway way 254581689, NM 72 ways; Nominatim geocodes. Traced/assembled with opstrace.py helpers."
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -104.433404,
+      36.899584
+     ],
+     [
+      -104.431582,
+      36.898867
+     ],
+     [
+      -104.426598,
+      36.898497
+     ],
+     [
+      -104.415268,
+      36.896884
+     ],
+     [
+      -104.405806,
+      36.89443
+     ],
+     [
+      -104.404647,
+      36.894276
+     ],
+     [
+      -104.403617,
+      36.894499
+     ],
+     [
+      -104.402651,
+      36.895065
+     ],
+     [
+      -104.400505,
+      36.897056
+     ],
+     [
+      -104.39866,
+      36.898377
+     ],
+     [
+      -104.396128,
+      36.900059
+     ],
+     [
+      -104.392759,
+      36.902066
+     ],
+     [
+      -104.391558,
+      36.902667
+     ],
+     [
+      -104.390249,
+      36.903044
+     ],
+     [
+      -104.388661,
+      36.903216
+     ],
+     [
+      -104.387524,
+      36.903508
+     ],
+     [
+      -104.386601,
+      36.903971
+     ],
+     [
+      -104.385807,
+      36.904777
+     ],
+     [
+      -104.385142,
+      36.905772
+     ],
+     [
+      -104.384949,
+      36.906373
+     ],
+     [
+      -104.38409,
+      36.906991
+     ],
+     [
+      -104.383125,
+      36.907454
+     ],
+     [
+      -104.3804,
+      36.908037
+     ],
+     [
+      -104.379413,
+      36.908415
+     ],
+     [
+      -104.37628,
+      36.910233
+     ],
+     [
+      -104.375679,
+      36.910731
+     ],
+     [
+      -104.375057,
+      36.911486
+     ],
+     [
+      -104.374134,
+      36.913476
+     ],
+     [
+      -104.371945,
+      36.917456
+     ],
+     [
+      -104.369547,
+      36.91947
+     ],
+     [
+      -104.366425,
+      36.92026
+     ],
+     [
+      -104.365148,
+      36.920722
+     ],
+     [
+      -104.363156,
+      36.921926
+     ],
+     [
+      -104.360262,
+      36.924128
+     ],
+     [
+      -104.358674,
+      36.92645
+     ],
+     [
+      -104.357337,
+      36.928067
+     ],
+     [
+      -104.356758,
+      36.928558
+     ],
+     [
+      -104.356052,
+      36.928952
+     ],
+     [
+      -104.351155,
+      36.93059
+     ],
+     [
+      -104.350043,
+      36.931183
+     ],
+     [
+      -104.347481,
+      36.933111
+     ],
+     [
+      -104.345264,
+      36.935687
+     ],
+     [
+      -104.343928,
+      36.936827
+     ],
+     [
+      -104.336787,
+      36.941435
+     ],
+     [
+      -104.334096,
+      36.942669
+     ],
+     [
+      -104.328039,
+      36.945024
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Santa Fe, Raton and Eastern",
+    "line": "Santa Fe, Raton and Eastern: Raton \u2013 Yankee",
+    "id": "sfre-raton-yankee",
+    "color": "#C028F8",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: short steam coal-camp road with a mixed train or coach at most; no timetable running time seen. Rule 3.",
+    "geometry_source": "OpenHistoricalMap way 198659370 (untagged railway=rail, the SFR&E grade from the Raton yard east to Carisbrook and on up Sugarite Canyon), fetched with opstrace.fetch_gap; OSM abandoned-railway way 254581689 matches it Raton - Carisbrook. Carisbrook - Yankee: OSM NM 72 (ways 273581081, 273581084, 273581079, 273581076, 273581073, 273581060, 777609309). Waypoints: Raton (pinned to the Raton depot, data/stations/amtrak.geojson id 'raton'; Nominatim returns the administrative city), Carisbrook and Yankee (Nominatim hamlets, GNIS 902196 and 900000). Chicorica was NOT used: Nominatim returns Chicorica Creek (a waterway). opstrace's own DP trace was rejected: it left the grade before Carisbrook and drew a 3.5 mi chord to Yankee; geometry was assembled from the same cached ways instead. No old_railway_operator tags for SFR&E/AT&SF exist off the BNSF main line here.",
+    "geometry_quality": "Raton - Carisbrook: 4.17 mi traced on the OHM grade (Fowler: 4.0 mi). Carisbrook - Yankee: 3.18 mi ROAD-FOLLOWING APPROXIMATION along NM 72 (incl. a 0.19 mi straight join from the grade at Carisbrook to the highway), NOT a traced grade - no SFR&E grade survives in OSM or OHM there; NM 72 runs up the same East Fork Chicorica Creek valley (within 350 m of the creek throughout) but whether it sits on the old roadbed is unknown (Fowler: 3.4 mi). Total drawn 7.33 mi vs documented 7.389 mi (ICC valuation). The line starts at the west end of the OHM grade in the Raton yard, 0.43 km from the Raton depot. Waypoint offsets (km): {'Raton depot': 0.43, 'Carisbrook': 0.07, 'Yankee': 0.0}. ERA: OHM/OSM show the grade as it was abandoned c.1944; no realignment of the main line is recorded, so this is believed to be the 1919 alignment.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1919,
+      "headway_min": 1440,
+      "note": "Raton - Carisbrook(e) - Chicorica - Yankee, the SFR&E main line (ICC 7.389 mi; Fowler Raton 0.0, Carisbrook 4.0, Chicorica 6.2, Yankee 7.4), operated by the Santa Fe, Raton and Eastern itself in 1919 (independent coal road, in a state-court receivership Apr-May 1919; sold to the AT&SF's Rocky Mountain and Santa Fe in 1924). 1919 is an [ANCHOR]: a single proven year from Fowler's '1919G' listing (branchline.uk), citing the 1919 Official Guide, NOT a known service span. The line opened 1 Dec 1906 (ICC) and was closed c.1944, but no other passenger year is confirmed and the road was described in 1919 as 'a coal road'; service may have run wider either way (or, if the Guide table proves to be a freight listing, not at all). Do not widen without a dated passenger source; 1906 opening and c.1944 closure are NOT passenger dates. headway_min is an estimate (a mixed train or coach on the coal train, at most about daily, is assumed; no timetable seen).",
+      "sources": [
+       "Segment-level: the 1919 year rests on Jim Fowler's New Mexico passenger-station compilation (branchline.uk, newmexicorrs.pdf, section 34 'SANTA FE RATON & EASTERN RR', headed '1919G'), which lists this road's stations as passenger stations & stops on the strength of the 1919 Official Guide of the Railways as cited there. The 1919 Guide page itself was NOT seen; headway_min is an estimate, not sourced.",
+       "https://www.branchline.uk/jfpdf/newmexicorrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Santa_Fe,_Raton_and_Eastern_Railroad"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -104.371945,
+      36.917456
+     ],
+     [
+      -104.371079,
+      36.9196
+     ],
+     [
+      -104.37077,
+      36.920718
+     ],
+     [
+      -104.370639,
+      36.922793
+     ],
+     [
+      -104.370705,
+      36.925668
+     ],
+     [
+      -104.371069,
+      36.927378
+     ],
+     [
+      -104.371293,
+      36.927751
+     ],
+     [
+      -104.375151,
+      36.931402
+     ],
+     [
+      -104.375842,
+      36.932193
+     ],
+     [
+      -104.376393,
+      36.934971
+     ],
+     [
+      -104.377028,
+      36.935486
+     ],
+     [
+      -104.377691,
+      36.935673
+     ],
+     [
+      -104.378046,
+      36.935934
+     ],
+     [
+      -104.381929,
+      36.943913
+     ]
+    ]
+   },
+   "properties": {
+    "company": "Santa Fe, Raton and Eastern",
+    "line": "Santa Fe, Raton and Eastern: Sugarite Branch",
+    "id": "sfre-sugarite-branch",
+    "color": "#C028F8",
+    "mode": "intercity_rail",
+    "avg_speed_kmh": 20,
+    "speed_source": "estimated: short steam coal-camp road with a mixed train or coach at most; no timetable running time seen. Rule 3.",
+    "geometry_source": "OpenHistoricalMap way 198659370 north of Carisbrook (the grade up Sugarite/Chicorica Canyon), fetched with opstrace.fetch_gap, then a straight leg to the Sugarite hamlet node (Nominatim, GNIS 899930, inside Sugarite Canyon State Park). opstrace's DP trace was rejected (it started 0.5 km north of Carisbrook and stopped 0.9 km short of Sugarite).",
+    "geometry_quality": "Carisbrook - end of OHM grade: 1.43 mi traced. End of OHM grade - Sugarite: 0.59 mi STRAIGHT-LINE APPROXIMATION (the grade's last stretch into the coal camp is not mapped as rail; park footways there were not used). Total drawn 2.02 mi vs documented 1.918 mi (ICC). Waypoint offsets (km): {'Carisbrook': 0.07, 'Sugarite': 0.0}. ERA: the Santa Fe New Mexican (10 Nov 1911) reports 3/4 mi of the Sugarite spur realigned with a new Sugarite Creek bridge in 1911-12; the OHM grade presumably shows the post-1911 alignment, which is the correct one for 1919, but this is not verified.",
+    "segments": [
+     {
+      "start": 1919,
+      "end": 1919,
+      "headway_min": 1440,
+      "note": "Carisbrook(e) - Sugarite, the Sugarite branch (ICC 1.918 mi after the 1911 cut-back; Fowler lists 'Sugarite (branch)' at 6.0 from Raton), operated by the Santa Fe, Raton and Eastern itself in 1919. The 1906-1911 extension Sugarite - Lake Alice is not drawn (no passenger evidence). 1919 is an [ANCHOR]: a single proven year from Fowler's '1919G' listing (branchline.uk), citing the 1919 Official Guide, NOT a known service span. The line opened 1 Dec 1906 (ICC) and was closed c.1944, but no other passenger year is confirmed and the road was described in 1919 as 'a coal road'; service may have run wider either way (or, if the Guide table proves to be a freight listing, not at all). Do not widen without a dated passenger source; 1906 opening and c.1944 closure are NOT passenger dates. headway_min is an estimate (a mixed train or coach on the coal train, at most about daily, is assumed; no timetable seen).",
+      "sources": [
+       "Segment-level: the 1919 year rests on Jim Fowler's New Mexico passenger-station compilation (branchline.uk, newmexicorrs.pdf, section 34 'SANTA FE RATON & EASTERN RR', headed '1919G'), which lists this road's stations as passenger stations & stops on the strength of the 1919 Official Guide of the Railways as cited there. The 1919 Guide page itself was NOT seen; headway_min is an estimate, not sourced.",
+       "https://www.branchline.uk/jfpdf/newmexicorrs.pdf",
+       "https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Trains/ICC_valuations/Santa_Fe,_Raton_and_Eastern_Railroad"
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
